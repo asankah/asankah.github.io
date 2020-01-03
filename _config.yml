@@ -33,7 +33,9 @@ kramdown:
   footnote_backlink: "&#x21a9;&#xfe0e;"
   toc_levels:     1..6
   smart_quotes:   lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
+  math_engine: mathjax
+  syntax_highlighter: rogue
+
 
 # Exclusions from the final site
 exclude:
