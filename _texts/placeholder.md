@@ -1,5 +1,5 @@
 ---
-title: A placeholder article
+title: 'A placeholder article'
 layout: post
 ---
 
