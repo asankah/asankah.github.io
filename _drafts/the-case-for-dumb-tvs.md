@@ -30,8 +30,8 @@ count the ways.
 ## Life Expectancy
 
 Life expectancy of a LCD TV is said to be around 60,000 to 100,000 hours based
-on [extensive research conducted on the internet][rs]. This gives your new TV at least
-20 years of life assuming it's switched on 8 hours a day, everyday.
+on [extensive research conducted on the internet][rs]. This gives your new TV at
+least 20 years of life assuming it's switched on 8 hours a day, everyday.
 
 The smart innards of a TV, on the other hand, has a lifetime limited by how long
 the hardware and software embedded in it is supported by their respective
