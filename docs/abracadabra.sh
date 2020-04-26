@@ -6,5 +6,5 @@ pandoc  --no-highlight \
         --from       markdown_github+smart+yaml_metadata_block+auto_identifiers \
         --to         html5 \
         --template   ./cayman.template \
-        --output     ./index.html \
+        --output     ../index.html \
         ../README.md ./configuration.yaml
