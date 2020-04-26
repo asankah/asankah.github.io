@@ -7,4 +7,4 @@ pandoc  --no-highlight \
         --to         html5 \
         --template   ./cayman.template \
         --output     ../index.html \
-        ../README.md ./configuration.yaml
+        ../contents.md ./configuration.yaml
