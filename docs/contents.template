@@ -40,11 +40,6 @@ $endfor$
   <body>
     <section class="page-header">
       <h1 class="project-name">$website_title$</h1>
-      <h2 class="project-tagline">$website_tagline$</h2>
-      <a href="https://asankah.github.io/" class="btn">Home</a>
-      <a href="https://github.com/$your_github_username$/$your_github_reponame$" class="btn">View on GitHub</a>
-      <a href="https://github.com/$your_github_username$/$your_github_reponame$/issues" class="btn">Issues</a>
-      <a href="https://github.com/$your_github_username$/$your_github_reponame$/issues/new" class="btn">New Issue</a>
     </section>
     <section class="main-content">
  
@@ -53,9 +48,9 @@ $include-before$
 $endfor$
 
 $for(articles)$
-<h1><a href="$articles.url$">$articles.title$</a></h1>
+<h2><a href="$articles.url$">$articles.title$</a></h2>
 <p>$articles.tldr$</p>
-<p><strong><a href="$articles.url$">View</a></strong></p>
+<p><strong><a href="$articles.url$">Read more</a></strong></p>
 
 $endfor$
 

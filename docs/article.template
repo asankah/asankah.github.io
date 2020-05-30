@@ -38,15 +38,11 @@ $for(header-includes)$
 $endfor$
   </head>
   <body>
-    <section class="page-header">
-      <h1 class="project-name">$website_title$</h1>
-      <h2 class="project-tagline">$website_tagline$</h2>
+    <section class="main-content">
       <a href="https://asankah.github.io/" class="btn">Home</a>
       <a href="https://github.com/$your_github_username$/$your_github_reponame$" class="btn">View on GitHub</a>
       <a href="https://github.com/$your_github_username$/$your_github_reponame$/issues" class="btn">Issues</a>
       <a href="https://github.com/$your_github_username$/$your_github_reponame$/issues/new" class="btn">New Issue</a>
-    </section>
-    <section class="main-content">
  
 $for(include-before)$
 $include-before$
