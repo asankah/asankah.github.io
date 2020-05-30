@@ -12,11 +12,11 @@ TL;DR:
 
 [View](ephemeral-fingerprinting/)
 
-# [Identity Domains](identity-domains)
+# [Identity Domains](identity-domains/)
 
 TL;DR:
 
 *   An identity domain is a scope within which the privacy threat model can
     assume that the user's identity can be shared.
 
-[View](identity-domains)
+[View](identity-domains/)
