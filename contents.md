@@ -11,10 +11,12 @@ articles:
     This method of identity joining does not require coordination between
     multiple first parties. A single third party embedded within multiple first
     parties can also use this method.
+  date: 'March 2020'
 -
   title: Identity Domains
   url: identity-domains/
   tldr: |
     An identity domain is a scope within which the privacy threat model can
     assume that the user's identity can be shared.
+  date: 'April 2020'
 ...
