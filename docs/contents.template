@@ -48,7 +48,9 @@ $endfor$
 $for(articles)$
 <h2><a href="$articles.url$">$articles.title$</a></h2>
 <p class='date'>$articles.date$<p>
-<p>$articles.tldr$</p>
+
+$articles.tldr$
+
 <p><strong><a href="$articles.url$">Read more</a></strong></p>
 
 $endfor$

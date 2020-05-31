@@ -183,6 +183,8 @@ a:hover {
 .date {
   text-align: right;
   font-size: 70%;
+  margin: 0;
+  padding: 0;
 }
 
 .main-content {
