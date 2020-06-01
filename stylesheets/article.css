@@ -1,6 +1,6 @@
 :root {
-  --background: #000;
-  --banner: linear-gradient(0,0);
+  --background: #26a0da;
+  --banner: linear-gradient(#314755,#26a0da);
 }
 
 * {
@@ -156,6 +156,13 @@ a:hover {
 
 .main-content p {
   margin-bottom: 1em;
+}
+
+.main-content .date {
+  text-align: right;
+  font-size: 70%;
+  margin: 0;
+  padding: 0;
 }
 
 .main-content code {
@@ -341,9 +348,10 @@ h1 {
   background-color: var(--background);
   background-image: var(--banner);
   position: relative;
-  left: -var(--horz-padding, 0);
+  left: calc(-1 * var(--horz-padding, 0));
   width: calc(100% + var(--horz-padding, 0) * 2);
-  padding-vertical: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 @media screen and (min-width: 64em) {
@@ -364,13 +372,7 @@ h1 {
   }
 }
 
-.date {
-  text-align: right;
-  font-size: 70%;
-  margin: 0;
-  padding: 0;
-}
-
-.buttons + .main-content > h1 {
-  padding-vertical: 0;
+.buttons + .main-content h1 {
+  padding-top: 0;
+  padding-bottom: 0;
 }
