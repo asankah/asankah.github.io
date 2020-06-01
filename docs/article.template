@@ -21,9 +21,9 @@ $endif$
 $if(quotes)$
     <style type="text/css">q { quotes: "“" "”" "‘" "’"; }</style>
 $endif$
-    <link rel="stylesheet" href="stylesheets/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,700;1,500&family=Raleway:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/article.css">
+    <link rel="stylesheet" href="stylesheets/normalize.css">
     <link rel="stylesheet" href="stylesheets/highlight.css">
     <script src="javascripts/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
