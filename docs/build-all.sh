@@ -2,5 +2,7 @@
 
 BASEDIR=$(dirname "$0")
 sh $BASEDIR/build.sh
-(cd $BASEDIR/../../identity-domains/docs && sh build.sh)
-(cd $BASEDIR/../../ephemeral-fingerprinting/docs && sh build.sh)
+git commit -a -m 'formatting'
+git push
+(cd $BASEDIR/../../identity-domains/docs && sh build.sh && git commit -a -m 'formatting' && git push)
+(cd $BASEDIR/../../ephemeral-fingerprinting/docs && sh build.sh && git commit -a -m 'formatting' && git push)
