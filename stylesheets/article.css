@@ -118,9 +118,9 @@ a:hover {
 @media screen and (min-width: 64em) {
   .main-content {
     max-width: 64rem;
-    --horz-padding: 4rem;
+    --horz-padding: 6rem;
     padding: 0rem 4rem;
-    margin: 0 auto;
+    margin: 0 2rem;
     font-size: 1.4rem;
   }
 }
@@ -129,6 +129,7 @@ a:hover {
   .main-content {
     --horz-padding: 4rem;
     padding: 0rem 4rem;
+    margin: 0 0rem;
     font-size: 1.4rem;
   }
 
@@ -138,6 +139,7 @@ a:hover {
   .main-content {
     --horz-padding: 1rem;
     padding: 0rem 1rem;
+    margin: 0;
     font-size: 1rem;
   }
 }
