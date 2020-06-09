@@ -19,4 +19,9 @@ articles:
     An identity domain is a scope within which the privacy threat model can
     assume that the user's identity can be shared.
   date: 'April 2020'
+-
+  title: 'A new way to work with Ansible on the command line.'
+  url: ansible-cli-sugar/
+  tldr: "A little bit of command-line sugar to make it easier to run ad-hoc playbooks and tasks against predefined groups of machines."
+  date: 'June 2020'
 ...
