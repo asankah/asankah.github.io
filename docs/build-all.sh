@@ -6,3 +6,4 @@ git commit -a -m 'formatting'
 git push
 (cd $BASEDIR/../../identity-domains/docs && sh build.sh && git commit -a -m 'formatting' && git push)
 (cd $BASEDIR/../../ephemeral-fingerprinting/docs && sh build.sh && git commit -a -m 'formatting' && git push)
+(cd $BASEDIR/../../ansible-cli-sugar/docs && sh build.sh && git commit -a -m 'formatting' && git push)
