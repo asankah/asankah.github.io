@@ -3,4 +3,6 @@ languageCode: en-us
 title: "Asanka Herath"
 theme: kiss-em
 ignoreFiles: [ "content/sources/*", "content/drafts/*" ]
+googleAnalytics: UA-169355711-1
+
 
