@@ -21,36 +21,37 @@ You ...
 
 * ... live on the command-line.
 
-* ... `ansible-playbook` and `ansible` commands have too many knobs and too few
-  knobs at the same time.
+* ... think `ansible-playbook` and `ansible` commands have too many knobs and
+  too few knobs at the same time.
 
 ## A Possible Solution
 
 Taking a page from old school Posix tools, let's make a script that encodes
 Ansible group names into the filename.
 
-E.g.: Instead of:
+Then you can go from this:
 
 ```sh
 $ ansible atlanta -m copy -a "src=/etc/hosts dest=/tmp/hosts"
 $ ansible webservers -m service -a "name=httpd state=started"
 ```
 
-You could do:
+To this:
+
 
 ```sh
 $ atlanta copy "src=/etc/hosts dest=/tmp/hosts"
 $ webservers service "name=https state=started"
 ```
 
-E.g. Or better, instead of:
+Or from this:
 
 ```sh
 $ ansible-playbook -l atlanta go-to-the-moon
 $ ansible-playbook -l webservers do-the-other-things
 ```
 
-You could say:
+To this:
 
 ```sh
 $ atlanta go-to-the-moon
@@ -62,9 +63,10 @@ $ webservers do-the-other-things
 These are just examples. Please don't spend time bikeshedding names because you
 can use whichever names you like.
 
-1. Start with a file called `ansible-by-proxy` which looks like
-   [this](https://github.com/asankah/ansible-cli-sugar/blob/master/ansible-by-proxy).
-   Feel free to modify it to suit your environment.
+1. Download the contents of `ansible-by-proxy` from
+   [here](https://github.com/asankah/ansible-cli-sugar/blob/master/ansible-by-proxy).
+   It's a starter script that includes a bunch of sensible settings expressed
+   via environment variables. Remove or change these to match your needs.
 
    Note that the script expects to find a sub-directory called `ansible` in the
    same directory as the script which contains the playbooks and the inventory
@@ -78,8 +80,8 @@ can use whichever names you like.
    $ chmod +x ansible-by-proxy
    ```
 
-3. In that same directory, create symlinks to the file that have the same name
-   as:
+3. Create symlinks to the file that have the same name as hostnames or groups as
+   described in the includes:
 
    ```sh
    $ ln -s ansible-by-proxy atlanta
@@ -90,5 +92,4 @@ can use whichever names you like.
 
 That's it. Now you can invoke playbooks and tasks just by using the name of host
 or group.
-
 
