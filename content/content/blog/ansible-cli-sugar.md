@@ -1,5 +1,5 @@
 ---
-title: "A new way to work with Ansible on the command line"
+title: "Easier CLI for ad-hoc Ansible tasks and playbooks"
 date: 2020-06-01
 summary: |
   Encode the host and group names into the name of a wrapper script for quick
@@ -24,7 +24,7 @@ You ...
 * ... `ansible-playbook` and `ansible` commands have too many knobs and too few
   knobs at the same time.
 
-## Possible solution
+## A Possible Solution
 
 Taking a page from old school Posix tools, let's make a script that encodes
 Ansible group names into the filename.
@@ -57,7 +57,7 @@ $ atlanta go-to-the-moon
 $ webservers do-the-other-things
 ```
 
-## Setting it up
+## Setting Up
 
 These are just examples. Please don't spend time bikeshedding names because you
 can use whichever names you like.
