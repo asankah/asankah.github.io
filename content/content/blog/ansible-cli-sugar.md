@@ -1,7 +1,9 @@
 ---
 title: "A new way to work with Ansible on the command line"
 date: 2020-06-01
-description: "A convenient syntactic sugar for using Ansible on the command line."
+summary: |
+  Encode the host and group names into the name of a wrapper script for quick
+  ad-hoc invocation of Ansible tasks and playbooks.
 ---
 This article is about using [Ansible](https://ansible.com) on the command-line.
 

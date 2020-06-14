@@ -1,7 +1,7 @@
 ---
 title: "Ephemeral Fingerprinting On The Web"
 date: 2020-04-01
-description: |
+summary: |
   Any ephemeral low-entropy web observable property whose changes are
   concurrently observable by multiple sites can lead to cross site identity
   joining.

@@ -1,6 +1,7 @@
 ---
 title: The case for dumb TVs
 layout: post
+draft: true
 ---
 
 ![](/assets/images/dumb-tv.jpg)[^1]
