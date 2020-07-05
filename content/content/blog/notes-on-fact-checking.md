@@ -2,9 +2,10 @@
 
 Notes from [Crash
 Course](https://www.youtube.com/channel/UCX6b17PVsYBQ0ip5gyeme-Q)'s excellent
-series about fact checking information you see on the internet.
+series about fact checking information you see on the internet. The series
+starts [here](https://www.youtube.com/watch?v=pLlv2o6UfTU).
 
-## 3 Questions
+## Three Questions
 
 1. How is behind this information?
 2. What is the evidence for their claims?
@@ -44,7 +45,7 @@ verifiable citations.
 Because no source is perfectly objective, one might conclude that no source is
 trustworthy. This is not true.
 
-## Deciding whom to trust
+## Deciding Whom To Trust
 
 It is easy to be mislead. None of us have the time to be an expert in
 everything.
@@ -57,7 +58,7 @@ accredit and trust experts, even though they will be wrong some of the time.
 Before we place trust in a source, we should verify the authority, and the
 validity of their evidence.
 
-### Investigating a source's authority
+### Investigating A Source's Authority
 
 * The author or authors' professional background.
 * The process they used to produce that information.
