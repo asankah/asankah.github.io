@@ -1,9 +1,20 @@
+---
+title: |
+  Notes from Crash Course's Videos on Fact Checking Information You See On The Internet
+date: 2020-07-04
+summary: |
+  Hank Green's Crash Course YouTube channel has an excellent series about
+  navigating digital information. It's an excellent guide to how internet users
+  could intelligently consume information they see on the internet. These are my
+  (incomplete) notes from the series.
+---
 # Fact Checking
 
-Notes from [Crash
-Course](https://www.youtube.com/channel/UCX6b17PVsYBQ0ip5gyeme-Q)'s excellent
+Notes from [Crash Course]'s excellent
 series about fact checking information you see on the internet. The series
 starts [here](https://www.youtube.com/watch?v=pLlv2o6UfTU).
+
+[Crash Course]: https://www.youtube.com/channel/UCX6b17PVsYBQ0ip5gyeme-Q
 
 ## Three Questions
 
