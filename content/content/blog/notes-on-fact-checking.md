@@ -1,7 +1,7 @@
 ---
 title: |
   Notes from Crash Course's Videos on Fact Checking Information You See On The Internet
-date: 2020-07-04 6:30pm EST
+date: "2020-07-04T18:30:00"
 summary: |
   Hank Green's Crash Course YouTube channel has an excellent series about
   navigating digital information. It's an excellent guide to how internet users
