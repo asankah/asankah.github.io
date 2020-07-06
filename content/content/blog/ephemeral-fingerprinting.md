@@ -9,6 +9,8 @@ summary: |
   This method of identity joining does not require coordination between
   multiple first parties. A single third party embedded within multiple first
   parties can also use this method.
+tags:
+  - Privacy
 ---
 ## Background
 

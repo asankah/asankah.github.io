@@ -4,6 +4,9 @@ date: 2020-06-01
 summary: |
   Encode the host and group names into the name of a wrapper script for quick
   ad-hoc invocation of Ansible tasks and playbooks.
+tags:
+  - CommandLine
+  - Hacks
 ---
 This article is about using [Ansible](https://ansible.com) on the command-line.
 

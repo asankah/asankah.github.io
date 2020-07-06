@@ -7,6 +7,9 @@ summary: |
   navigating digital information. It's an excellent guide to how internet users
   could intelligently consume information they see on the internet. These are my
   (incomplete) notes from the series.
+tags:
+  - Commentary
+  - Incomplete
 ---
 # Fact Checking
 

@@ -4,6 +4,8 @@ date: 2020-05-01
 summary: |
   An Identity Domain is a scope within which we assume that the user's identity
   can roam freely.
+tags:
+  - Privacy
 ---
 ![Diagram of example identity domains described below](/images/identity-domains.png)
 

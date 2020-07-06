@@ -23,6 +23,6 @@ params:
                                 - "github"
                                 - "email"
                                 - "rss"
-
-
+taxonomies:
+        tag: "tags"
 
