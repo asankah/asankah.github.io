@@ -17,12 +17,14 @@ params:
                 github: asankah
                 email: "asanka@gmail.com"
                 rss: "index.xml"
+                linkedin: asankah
                 config:
                         platforms:
-                                - "twitter"
-                                - "github"
-                                - "email"
-                                - "rss"
+                                - twitter
+                                - github
+                                - email
+                                - rss
+                                - linkedin
 taxonomies:
         tag: "tags"
 
