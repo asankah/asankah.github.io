@@ -1,7 +1,6 @@
 ---
 title: "Vim: Use Drop Not Edit, SBuffer Not Buffer"
 date: 2020-07-07T12:02:20-04:00
-draft: true
 tags:
   - Vim
   - CommandLine
