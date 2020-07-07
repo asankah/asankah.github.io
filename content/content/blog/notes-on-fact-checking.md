@@ -40,8 +40,8 @@ what the creator wanted you to see. It is often impossible to tell reliable
 information from unreliable information.
 
 A better alternative is to leave the site and search for corroborating
-information. Look for conflicts of interest that are left undisclosed which is a
-red flag.
+information. Look for conflicts of interest that are left undisclosed which is
+a red flag.
 
 Newspapers can be a good start. These are now digital media companies. Sometimes
 they have their own point-of-view. Sometimes these are stated explicitly and/or

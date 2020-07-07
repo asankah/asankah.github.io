@@ -56,6 +56,15 @@ The “Identity domain” has the following properties:
 
     _(“Clear browsing data” effectively ends all identity domains.)_
 
+In the existing web privacy model third-parties can trivially associate
+identities across top-level contexts. Thus the entire internet essentially
+dissolves into a single identity domain.
+
+The boundaries discussed herein require moving to a different model of identity
+on the web. The privacy threat model guiding this model is discussed in PING's [Target
+Privacy Threat Model](https://w3cping.github.io/privacy-threat-model/) document
+which is a work in progress as of this writing.
+
 <!-- Footnotes themselves at the bottom. -->
 
 ## Notes

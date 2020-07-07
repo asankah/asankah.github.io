@@ -17,7 +17,12 @@ permissions / content settings, transient caches of credentials, cached
 resources, service workers) for all documents included in an identity domain
 also belong to the <strong><em>identity domain</em></strong>.</p></li><li><p><strong><em>Identity domains</em></strong> don’t span browser profiles.</p><p><em>(See clusters 1 and 4 in the diagram above. Both share top-level origins,
 but don’t share identity domains because they are in two different browser
-profiles.)</em></p></li><li><p><strong><em>Identity domains</em></strong> don’t span browsers.</p><p><em>(Derived from above).</em></p></li><li><p><strong><em>Identity domains</em></strong> don’t survive browsing data erasures.</p><p><em>(“Clear browsing data” effectively ends all identity domains.)</em></p></li></ul><h2 id=notes>Notes</h2><ul><li><p>The identity domain is a privacy boundary. The boundary is something that’s
+profiles.)</em></p></li><li><p><strong><em>Identity domains</em></strong> don’t span browsers.</p><p><em>(Derived from above).</em></p></li><li><p><strong><em>Identity domains</em></strong> don’t survive browsing data erasures.</p><p><em>(“Clear browsing data” effectively ends all identity domains.)</em></p></li></ul><p>In the existing web privacy model third-parties can trivially associate
+identities across top-level contexts. Thus the entire internet essentially
+dissolves into a single identity domain.</p><p>The boundaries discussed herein require moving to a different model of identity
+on the web. The privacy threat model guiding this model is discussed in PING&rsquo;s <a href=https://w3cping.github.io/privacy-threat-model/>Target
+Privacy Threat Model</a> document
+which is a work in progress as of this writing.</p><h2 id=notes>Notes</h2><ul><li><p>The identity domain is a privacy boundary. The boundary is something that’s
 asserted by the UA and doesn’t depend on the cooperation of sites. I.e.
 assume that sites involved are worst case actors.</p><ul><li>Not to be confused with security boundaries like those imposed via
 <a href=https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP>Content Security Policy</a>.</li></ul></li><li><p>The definition assume that sites can share information out-of-band. I.e the
