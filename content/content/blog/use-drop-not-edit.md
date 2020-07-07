@@ -17,7 +17,7 @@ _But that's often not what you want._ If you have the same file open in another
 window, then the most efficient and least disruptive thing to do is to switch to
 that window.
 
-## `:drop`
+## drop
 
 That's where `:drop` comes in. In case you aren't familiar with the `drop`
 command, have a look at the help page in your favorite editor (`:help drop`) or
@@ -36,7 +36,7 @@ basically it's as simple as opening up the configuration using `:CocConfig` and
 then adding a `"coc.preferences.jumpCommand": "drop",` mapping to the
 configuration JSON file.
 
-## `switchbuf` or `swb`
+## switchbuf or swb
 
 Or perhaps configuring each plugin is too much work. Enter `switchbuf`. This is
 a global setting in Vim that controls how Vim switches between buffers.

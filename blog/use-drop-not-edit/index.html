@@ -4,7 +4,7 @@
 Using <code>:edit</code> works if you want to open the file in the current window
 unconditionally.</p><p><em>But that&rsquo;s often not what you want.</em> If you have the same file open in another
 window, then the most efficient and least disruptive thing to do is to switch to
-that window.</p><h2 id=drop><code>:drop</code></h2><p>That&rsquo;s where <code>:drop</code> comes in. In case you aren&rsquo;t familiar with the <code>drop</code>
+that window.</p><h2 id=drop>drop</h2><p>That&rsquo;s where <code>:drop</code> comes in. In case you aren&rsquo;t familiar with the <code>drop</code>
 command, have a look at the help page in your favorite editor (<code>:help drop</code>) or
 <a href=http://vimdoc.sourceforge.net/htmldoc/windows.html#:drop>here on the web</a>. But the gist of it is that for most people<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup> <code>:drop {file}</code> will:</p><ul><li>Switch to the window in which <code>{file}</code> is already open.</li><li>Switch the buffer in the current window to <code>{file}</code> otherwise.</li></ul><p>The <code>:drop</code> command is intended to be used as the &ldquo;open buffer&rdquo; command for
 automated tooling like source browsers. For example, you can configure
@@ -13,7 +13,7 @@ command used for opening a source file by setting <code>coc.preferences.jumpComm
 to <code>drop</code>. See <code>:help coc-configuration</code> for details on how to set this, but
 basically it&rsquo;s as simple as opening up the configuration using <code>:CocConfig</code> and
 then adding a <code>"coc.preferences.jumpCommand": "drop",</code> mapping to the
-configuration JSON file.</p><h2 id=switchbuf-or-swb><code>switchbuf</code> or <code>swb</code></h2><p>Or perhaps configuring each plugin is too much work. Enter <code>switchbuf</code>. This is
+configuration JSON file.</p><h2 id=switchbuf-or-swb>switchbuf or swb</h2><p>Or perhaps configuring each plugin is too much work. Enter <code>switchbuf</code>. This is
 a global setting in Vim that controls how Vim switches between buffers.</p><p>Setting <code>set switchbuf=useopen</code> has the same effect when invoking <code>buffer</code>. Note
 that using <code>sbuffer</code>, <code>sbnext</code>, or <code>sbrewind</code> automatically behaves as if this
 is the case. I.e. they will use an existing window if one already has the buffer
