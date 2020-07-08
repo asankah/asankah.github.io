@@ -53,4 +53,4 @@ Gemfile.lock
 backstop_data/bitmaps_test
 backstop_data/html_report
 
-content/public/
+public/

@@ -1,12 +1,12 @@
 [submodule "content/themes/kiss-em"]
-	path = content/themes/kiss-em
+	path = themes/kiss-em
 	url = https://github.com/pavel-pi/kiss-em.git
 [submodule "content/content/sources/ephemeral-fingerprinting"]
-	path = content/content/sources/ephemeral-fingerprinting
+	path = content/sources/ephemeral-fingerprinting
 	url = https://github.com/asankah/ephemeral-fingerprinting.git
 [submodule "content/content/sources/identity-domains"]
-	path = content/content/sources/identity-domains
+	path = content/sources/identity-domains
 	url = https://github.com/asankah/identity-domains.git
 [submodule "content/content/sources/ansible-cli-sugar"]
-	path = content/content/sources/ansible-cli-sugar
+	path = content/sources/ansible-cli-sugar
 	url = https://github.com/asankah/ansible-cli-sugar.git
