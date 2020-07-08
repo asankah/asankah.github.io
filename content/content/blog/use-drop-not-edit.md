@@ -46,7 +46,6 @@ that using `sbuffer`, `sbnext`, or `sbrewind` automatically behaves as if this
 is the case. I.e. they will use an existing window if one already has the buffer
 open.
 
-
 Setting `set switchbuf=usetab` is similar to the effect of `useopen` except that
 it will look through windows in other tabs.
 
