@@ -1,10 +1,8 @@
 ---
 title: The case for dumb TVs
-layout: post
 draft: true
 ---
-
-![](/assets/images/dumb-tv.jpg)[^1]
+![](/images/dumb-tv.jpg)[^1]
 
 [^1]: An antique CRT television left on the sidewalk in Cambridge, MA. (CC by SA
       4.0 Asanka Herath)
