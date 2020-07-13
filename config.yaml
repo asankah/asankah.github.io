@@ -28,3 +28,6 @@ params:
 taxonomies:
         tag: "tags"
 
+markup:
+        defaultMarkdownHandler: "pandoc"
+
