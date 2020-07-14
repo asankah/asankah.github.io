@@ -25,6 +25,9 @@ params:
                                 - email
                                 - rss
                                 - linkedin
+        assets:
+                customCSS:
+                        - css/fonts.css
 taxonomies:
         tag: "tags"
 
