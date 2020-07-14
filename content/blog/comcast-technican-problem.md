@@ -5,6 +5,9 @@ summary: |
   Given a set of tasks, incentives are often aligned towards dropping a task
   rather than allowing for perpetual accretion of delays.
 date: 2020-07-13T13:21:51-04:00
+tags:
+  - Commentary
+  - Process
 ---
 
 ## The Story
@@ -121,11 +124,11 @@ got the short end of the stick.
 It just might be that all parties involved are rational actors, and there's
 really not a great alternative. Sometimes it's just life.
 
-[^1]: The Verge. _The worst company in America._
+[^1]: *The Verge*. _The worst company in America._
 https://www.theverge.com/2014/8/19/6004131/comcast-the-worst-company-in-america
 (Accessed July 13, 2020)
 
-[^2]: Urban Dictionary. _Long Wait_
+[^2]: *Urban Dictionary*. _Long Wait_
 https://www.urbandictionary.com/define.php?term=Long%20Wait (Accessed July 13,
 2020)
 
