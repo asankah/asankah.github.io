@@ -1,14 +1,14 @@
 baseURL: https://asankah.github.io/
 languageCode: en-us
 title: "Strong Opinions, Weakly Held"
+copyright: "&copy; 2020 Asanka Herath"
 theme: tale
 ignoreFiles: [ "content/sources/*", "content/drafts/*" ]
 googleAnalytics: UA-169355711-1
 enableGitInfo: true
 enableRobotsTXT: true
 params:
-        authorName: "Asanka Herath"
-        authorEmail: "asanka@gmail.com"
+        author: "Asanka Herath"
         rss:
                 enable: true
                 includeContent: true
@@ -18,18 +18,17 @@ params:
                 email: "asanka@gmail.com"
                 rss: "index.xml"
                 linkedin: asankah
-                config:
-                        platforms:
-                                - twitter
-                                - github
-                                - email
-                                - rss
-                                - linkedin
-        css:
-                - css/customfonts.css
+        mathjax: true
 taxonomies:
         tag: "tags"
 
 markup:
         defaultMarkdownHandler: "pandoc"
+
+imaging:
+        exif:
+                excludeFields: ".*"
+                disableDate: true
+                disableLatLong: true
+
 
