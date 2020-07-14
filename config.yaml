@@ -1,17 +1,17 @@
 baseURL: https://asankah.github.io/
 languageCode: en-us
-title: "Asanka Herath"
+title: "Strong Opinions, Weakly Held"
 theme: tale
 ignoreFiles: [ "content/sources/*", "content/drafts/*" ]
 googleAnalytics: UA-169355711-1
 enableGitInfo: true
 enableRobotsTXT: true
 params:
+        authorName: "Asanka Herath"
+        authorEmail: "asanka@gmail.com"
         rss:
                 enable: true
                 includeContent: true
-                authorName: "Asanka Herath"
-                authorEmail: "asanka@gmail.com"
         social:
                 twitter: "@asankah"
                 github: asankah
@@ -25,9 +25,8 @@ params:
                                 - email
                                 - rss
                                 - linkedin
-        assets:
-                customCSS:
-                        - css/fonts.css
+        css:
+                - css/customfonts.css
 taxonomies:
         tag: "tags"
 
