@@ -9,43 +9,39 @@ date: 2020-07-13T13:21:51-04:00
 
 ## The Story
 
-As is a rite of passage in this part of the world, I was waiting for the
-Comcast[^1] technician to arrive during their scheduled appointment window. This
-wasn't a trivial feat as I have to schedule a day of working from home in order
-to be present for the service appointment.
+As is a rite of passage in these parts, I waited for the Comcast[^1] technician
+to arrive during their scheduled appointment window. In preparation I had
+scheduled a day of working from home.
 
-The appointment window unceremoniously came to a close with no technician in
-sight. I was now vacillating over when it would be a reasonable time to call
-Comcast again to check on what's going on. That's when I noticed the
-technician's truck pull up beside our house. They rolled down the window and
-surveyed the scene for a brief moment, looked at something inside their truck,
-rolled up the window and promptly drove off.
+As the appointment window unceremoniously came to a close vacillated over when
+it would be a reasonable time to call Comcast again to see what's going on.
+That's when I noticed the technician's truck pull up beside our house. They
+rolled down the window and surveyed the scene for a brief moment, looked at
+something inside their truck, rolled up the window and promptly drove off.
 
-"This is it," I thought. This is the right time to call the service phone number
-and talk to someone. That's what I did. After a long wait[^2] I was told by the
-friendly service person on the other end of the line that the technician 
-reported that nobody answered the door and that they subsequently left. It took
-some convincing on my part to establish that:
+"That's it," I thought. That was the right time to call Comcast. That's what
+I did. After a long wait[^2] the friendly service person on the other end of
+the line told me that the according to the technician nobody answered the door.
+It took some convincing on my part to establish that:
 
-a) I was there the whole time. Nobody rang the doorbell.
-b) The doorbell works.
-c) The technician --- assuming that the person who drove by was the scheduled
-technician --- did drive by, but they didn't get out of the vehicle to ring any
-doorbell.
-d) My phone didn't ring, nor does it indicate any missed calls.
-e) My phone works and has a signal.
+  a) I was there the whole time. Nobody rang the doorbell.
+  b) The doorbell works.
+  c) The technician --- assuming that the person who drove by was the scheduled
+  technician --- did drive by, but they didn't get out of the vehicle to ring any
+  doorbell.
+  d) My phone didn't ring, nor does it indicate any missed calls.
+  e) My phone works and has a signal.
 
 They were kind enough to ask the technician to return, but noted that the
-appointment window would be unpredictable due to other appointments.
+appointment window would now be unpredictable due to prior appointments. Sure.
 
-Much later that evening, the same technician who drove by earlier showed up. I
-pretended to not know that this was the same person. I was just glad that
-someone was here and was about to fix my internet. After they were done, I
-thanked them for showing up and mentioned what happened to the original
-appointment slot. Once again I didn't mention anything about seeing the
-technician.
+Much later that evening, the same technician who drove by earlier showed up.
+After they were done, I thanked them for showing up and mentioned what happened
+to the original appointment slot. I didn't mention anything about seeing the
+same technician before. After all I was just happy that I was done with this and
+didn't want to cause any trouble.
 
-He said that technicians sometimes do that when they are running behind
+He said that technicians sometimes skip slots when they are running behind
 schedule.
 
 ## The Problem
