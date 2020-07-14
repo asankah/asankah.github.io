@@ -1,7 +1,7 @@
 baseURL: https://asankah.github.io/
 languageCode: en-us
 title: "Asanka Herath"
-theme: kiss-em
+theme: tale
 ignoreFiles: [ "content/sources/*", "content/drafts/*" ]
 googleAnalytics: UA-169355711-1
 enableGitInfo: true

@@ -30,8 +30,8 @@ It took some convincing on my part to establish that:
   a) I was there the whole time. Nobody rang the doorbell.
   b) The doorbell works.
   c) The technician --- assuming that the person who drove by was the scheduled
-  technician --- did drive by, but they didn't get out of the vehicle to ring any
-  doorbell.
+  technician --- did drive by, but they didn't get out of the vehicle to ring
+  any doorbell.
   d) My phone didn't ring, nor does it indicate any missed calls.
   e) My phone works and has a signal.
 
@@ -97,17 +97,18 @@ gets off scott free.
 It's easy to harp on Comcast[^1] and some random lowly technician. But this
 incentive pattern is everywhere. Even at Google and s.
 
-Dropping tasks instead of unbounded accretion of delay is sometimes a better strategy.
-
 Every time you measure someone's success on _how well_ they handled a number of
 issues or cases without taking into account _the cost they incurred_ to get
 there, you are creating a Comcast Technician problem for your subordinates.
 
 ## But Is It Bad?
 
-One might even argue that this is the cost of doing business and it actually
-makes sense. One customer's (or user's or client's or patient's) convenience
-doesn't outweigh the convenience of many others.
+Dropping tasks instead of unbounded accretion of delay is sometimes a better
+strategy.
+
+One might even argue that this is the cost of doing business and it would
+actually makes sense. One customer's (or user's or client's or patient's)
+convenience doesn't outweigh the convenience of many others.
 
 There could be additional complicating factors involved:
 
@@ -124,13 +125,13 @@ got the short end of the stick.
 It just might be that all parties involved are rational actors, and there's
 really not a great alternative. Sometimes it's just life.
 
-[^1]: *The Verge*. _The worst company in America._
-https://www.theverge.com/2014/8/19/6004131/comcast-the-worst-company-in-america
+[^1]: [*The Verge*. _The worst company in
+America._](https://www.theverge.com/2014/8/19/6004131/comcast-the-worst-company-in-america)
 (Accessed July 13, 2020)
 
-[^2]: *Urban Dictionary*. _Long Wait_
-https://www.urbandictionary.com/define.php?term=Long%20Wait (Accessed July 13,
-2020)
+[^2]: [*Urban Dictionary*. _Long
+Wait_](https://www.urbandictionary.com/define.php?term=Long%20Wait) (Accessed
+July 13, 2020)
 
 [^3]: "No-shows" are just going to be rescheduled. It's not the end of the
 world.
