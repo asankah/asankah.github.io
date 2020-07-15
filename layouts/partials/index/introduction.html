@@ -1,18 +1,15 @@
-<div>Random musings by Asanka Herath.</div>
+<div>Random musings by Asanka Herath.
 
 {{- if isset .Site.Params.social "twitter" }}
-<span class="social">
-    <a href="https://twitter.com/{{ .Site.Params.social.twitter }}">
-        <img src="{{ "/images/twitter.svg" | absURL }}" alt="Twitter" />
-    </a>
-</span>
+<a href="https://twitter.com/{{ .Site.Params.social.twitter }}">
+    <img src="{{ "/images/twitter.svg" | absURL }}" alt="Twitter" />
+</a>
 {{- end }}
 
 {{- if isset .Site.Params.social "github" }}
-<span class="social">
-    <a href="https://github.com/{{ .Site.Params.social.github }}">
-        <img src="{{ "/images/github.svg" | absURL }}" alt="GitHub" />
-    </a>
-</span>
+<a href="https://github.com/{{ .Site.Params.social.github }}">
+    <img src="{{ "/images/github.svg" | absURL }}" alt="GitHub" />
+</a>
 {{- end }}
 
+</div>
