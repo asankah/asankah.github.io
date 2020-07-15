@@ -23,8 +23,11 @@ textarea {
     justify-content: space-between;
 }
 
+.introduction div {
+    padding-top: 1em;
+}
+
 .social img {
     display: inline-block;
     padding-left: 1em;
-    padding-top: 1em;
 }
