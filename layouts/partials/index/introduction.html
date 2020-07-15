@@ -3,7 +3,7 @@
 {{- if isset .Site.Params.social "twitter" }}
 <span class="social">
     <a href="https://twitter.com/{{ .Site.Params.social.twitter }}">
-        <img src="{{ "/images/twitter.svg" | relURL }}" alt="Twitter" />
+        <img src="{{ "/images/twitter.svg" | absURL }}" alt="Twitter" />
     </a>
 </span>
 {{- end }}
@@ -11,7 +11,7 @@
 {{- if isset .Site.Params.social "github" }}
 <span class="social">
     <a href="https://github.com/{{ .Site.Params.social.github }}">
-        <img src="{{ "/images/github.svg" | relURL }}" alt="GitHub" />
+        <img src="{{ "/images/github.svg" | absURL }}" alt="GitHub" />
     </a>
 </span>
 {{- end }}
