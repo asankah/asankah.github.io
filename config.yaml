@@ -19,6 +19,13 @@ params:
                 rss: "index.xml"
                 linkedin: asankah
         mathjax: true
+menu:
+        main:
+                - name: About Me
+                  url: /about
+                - name: Topics
+                  url: /tags
+
 taxonomies:
         tag: "tags"
 

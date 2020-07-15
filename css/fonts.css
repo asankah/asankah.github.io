@@ -16,3 +16,14 @@ textarea {
 .content h6 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.introduction {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.social > img {
+    display: inline-block;
+    padding-left: 1em;
+}
