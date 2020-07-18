@@ -75,8 +75,8 @@ Honor all slots     $g$                     $l$               $n$
 Skip when late      $g + l - s$             $0$               $n + s$
 
 --------------------------------------------------------------------------------
-Table: The outcomes depending on the technician's decision on what to do with
-late appointments.
+The outcomes depending on the technician's decision on what to do with
+late appointments. {#table:outcomes}
 
 $g$ are the _good_ slots where the technician is able to show
 up during the appointment window. $l$ are those where the technician was not

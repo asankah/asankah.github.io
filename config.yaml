@@ -30,6 +30,10 @@ taxonomies:
 
 markup:
         defaultMarkdownHandler: "pandoc"
+        pandoc:
+                filters:
+                        - pandoc-plot
+                        - pandoc-citeproc
 
 imaging:
         exif:
