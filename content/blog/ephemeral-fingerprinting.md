@@ -5,7 +5,7 @@ summary: |
   Any ephemeral low-entropy web observable property whose changes are
   concurrently observable by multiple sites can lead to cross site identity
   joining.
-  
+
   This method of identity joining does not require coordination between
   multiple first parties. A single third party embedded within multiple first
   parties can also use this method.
@@ -128,7 +128,7 @@ WHATWG HTML specification.
 
 ### First-Party Restriction for APIs
 
-**Goal**: Deter identity correlation by third-party sites. 
+**Goal**: Deter identity correlation by third-party sites.
 
 Restrict APIs to the origin of the [top-level browsing context].
 
