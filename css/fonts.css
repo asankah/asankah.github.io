@@ -1,33 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+// Lora and Roboto
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Roboto:wght@900&display=swap');
 
-body,
-button,
-input,
-select,
-textarea {
-    font-family: 'Lora', Georgia, 'Times New Roman', Times, serif;
-}
-
-.content h1,
-.content h2,
-.content h3,
-.content h4,
-.content h5,
-.content h6 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.introduction {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.introduction div {
-    padding-top: 1em;
-}
-
-.social img {
-    display: inline-block;
-    padding-left: 1em;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
 }
