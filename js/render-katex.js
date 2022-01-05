@@ -1,4 +1,8 @@
 function renderMath() {
+  if (document.readyState != "complete") {
+    return;
+  }
+
   let inlineOptions = {
     throwOnError: false,
     trust: true

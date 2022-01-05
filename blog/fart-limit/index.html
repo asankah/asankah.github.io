@@ -11,7 +11,7 @@
 <link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png>
 <link href rel=alternate type=application/rss+xml title="Strong Opinions, Weekly Held">
 <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css integrity=sha384-zTROYFVGOfTw7JV7KUu8udsvW2fx4lWOsCEDqhBreBwlHI4ioVRtmIvEThzJHGET crossorigin=anonymous>
-<script defer src=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js integrity=sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb crossorigin=anonymous></script><script src=/js/render-katex.js></script>
+<script src=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js integrity=sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb crossorigin=anonymous></script><script src=/js/render-katex.js></script>
 </head>
 <body>
 <nav class=nav>
@@ -38,14 +38,12 @@
 <div class=post-info>
 <span>Written by</span>
 Asanka Herath
-<br>
 <span>on&nbsp;</span><time datetime="2021-06-14 11:30:18 -0400 EDT">June 14, 2021</time>
 <br>
 <a href=/tags/commentary>#Commentary</a>
 <a href=/tags/useless>#Useless</a>
 </div>
 <h1 class=post-title>Fart Limit</h1>
-<div class=post-line></div>
 <div class="social share">
 <a href="https://twitter.com/intent/tweet?text=Fart+Limit&url=https%3A%2F%2Fxn--izc.com%2Fblog%2Ffart-limit%2F&via=asankah" aria-label="Share on Twitter" target=_blank rel=noopener>
 <img src=/images/twitter.svg alt="Share on Twitter">
@@ -57,7 +55,6 @@ Asanka Herath
 <img src=/images/link-2.svg alt="Permanent link to post">
 </a>
 </div>
-<script language=javascript>const rewriteImageUrls=function(){var c=document.getElementsByTagName("img"),b,a;for(let d of c)b=new URL(d.src),a=b.pathname.split("/"),a.length>2&&a[a.length-2]=="media"&&(b.pathname="/"+a.slice(a.length-2).join("/"),d.src=b)};document.addEventListener("DOMContentLoaded",rewriteImageUrls)</script>
 <p>Thanks to <a href=https://youtu.be/suwg7-y70FQ>Vsauce</a> for bringing this particular issue to our attention. The TL;DR of that video is:</p>
 <ul>
 <li>Most of the gases in your farts are odorless.</li>
@@ -75,9 +72,9 @@ Asanka Herath
 <p>So I guess it is in fact possible.</p>
 <p>As an aside, I found it quite disappointing that the <strong>Listen</strong> button on the <a href=https://kidshealth.org/en/kids/fart.html>“What’s a Fart” page on KidsHealth.org</a> doesn’t make a fart sound. I mean, what else was that button supposed to do?</p>
 <figure>
-<img src=media/13189988a8dc964a1adae6fd409aed850e28aebe.png alt="KidsHealth: What’s a Fart?"><figcaption aria-hidden=true>KidsHealth: What’s a Fart?</figcaption>
+<img src=images/kids-health-fart.png alt="KidsHealth: What’s a Fart?"><figcaption aria-hidden=true>KidsHealth: What’s a Fart?</figcaption>
 </figure>
-<section class=footnotes role=doc-endnotes>
+<section class="footnotes footnotes-end-of-document" role=doc-endnotes>
 <hr>
 <ol>
 <li id=fn1 role=doc-endnote><p>https://web.archive.org/web/20210614200353/https://www.houstonmethodist.org/blog/articles/2020/oct/flatulence-everything-you-wanted-to-know-about-farting/<a href=#fnref1 class=footnote-back role=doc-backlink>↩︎</a></p></li>
@@ -86,42 +83,42 @@ Asanka Herath
 </ol>
 </section>
 <nav class=suggested>
-<h4 class=suggested>More articles on this blog</h4>
+<h2 class=suggested>More articles from this blog</h4>
 <ul>
 <li>
-<p class="suggested link">
-<a href=/blog/why-strong-opinions-weekly-held/>Why 'Strong Opinions Weekly Held'</a>
-</p>
-<p>Previously on this blog I wrote a short note on Why Strong Opinions Weakly Held.
-I’m trying to get something out every week. Hence the new blog title.</p>
+<h3 class="suggested title">
+<a href=/blog/symbol-name-types/>Names for Name Conventions</a>
+</h3>
+<p>Names I’ve seen used to refer to naming conventions:
+snake_case, hacker_case, unix_hacker_style : Everything is lower case, though exceptions exist. E.g. HTTP_foo_bar. SCREAMING_SNAKE_CASE : Usually reserved for macros and constants. camelCase : The first letter is lowercase. PascalCase : The first letter is uppercase. kabob-case : Like snake_case, but uses dashes instead of underscores. Common for command-line options1, CSS styles, commands (e.g. git-receive-pack). While looking idly looking for details on this, I stumbled on this Medium post which is relevant.</p>
 </li>
 <li>
-<p class="suggested link">
-<a href=/blog/ephemeral-fingerprinting/>Ephemeral Fingerprinting On The Web</a>
-</p>
-<p><p>Any ephemeral low-entropy web observable property whose changes are concurrently observable by multiple sites can lead to cross site identity joining.</p>
-<p>This method of identity joining does not require coordination between multiple first parties. A single third party embedded within multiple first parties can also use this method.</p>
-</p>
+<h3 class="suggested title">
+<a href=/blog/use-drop-not-edit/>Vim: Use Drop Not Edit, SBuffer Not Buffer</a>
+</h3>
+<p>I’m going to assume you are a Vim user.
+Say you have a several windows open in Vim and you want to edit another file. Using :edit works if you want to open the file in the current window unconditionally.
+But that’s often not what you want. If you have the same file open in another window, then the most efficient and least disruptive thing to do is to switch to that window.</p>
 </li>
 <li>
-<p class="suggested link">
-<a href=/blog/how-this-blog-works/>How This Blog Works</a>
-</p>
-<p>How I put this site together and why.</p>
+<h3 class="suggested title">
+<a href=/blog/identity-domains/>Identity Domains</a>
+</h3>
+<p>An Identity Domain is a scope within which we assume that the user’s identity can roam freely.</p>
 </li>
 <li>
-<p class="suggested link">
-<a href=/blog/sometimes-its-the-interviewers-who-suck/>Sometimes It's the Interviewers Who Suck</a>
-</p>
-<p>I’ve done hundreds of interviews. I’ve also served in numerous hiring committees over the years.
-Tech companies tend to have cultures built around tech people interviewing other tech people, typically in what is not-so-affectionately known as the “Tech interview.” This is good because candidates would be evaluated based on their actual skills instead of keywords in their resume. Interviewers are in effect choosing their future coworkers which makes in interview serve the interest of both the interviewer and the interviewee.</p>
+<h3 class="suggested title">
+<a href=/blog/comcast-technican-problem/>The Comcast Technician Problem</a>
+</h3>
+<p>Given a set of tasks, incentives are often aligned towards dropping a task rather than allowing for perpetual accretion of delays.</p>
 </li>
 <li>
-<p class="suggested link">
-<a href=/blog/notes-on-fact-checking/>Notes from Crash Course's Videos on Fact Checking Information You See On The Internet
-</a>
-</p>
-<p>Hank Green’s Crash Course YouTube channel has an excellent series about navigating digital information. It’s an excellent guide to how internet users could intelligently consume information they see on the internet. These are my (incomplete) notes from the series.</p>
+<h3 class="suggested title">
+<a href=/blog/why-strong-opinions-weakly-held/>Why 'Strong Opinions Weakly Held'</a>
+</h3>
+<p>Origins of the phrase The title of this blog is Strong Opinions, Weakly Held. The same concept shows up elsewhere are Strong Opinions Loosely Held. An eponymous essay by Paul Saffo in [1] introduced the world to this concept.
+In his essay – which isn’t very long if you would like to read the whole thing yourself – he lays out the concept as follows:
+I have found that the fastest way to an effective forecast is often through a sequence of lousy forecasts.</p>
 </li>
 </ul>
 </nav>

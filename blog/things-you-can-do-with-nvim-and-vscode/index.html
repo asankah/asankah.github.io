@@ -11,7 +11,7 @@
 <link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png>
 <link href rel=alternate type=application/rss+xml title="Strong Opinions, Weekly Held">
 <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css integrity=sha384-zTROYFVGOfTw7JV7KUu8udsvW2fx4lWOsCEDqhBreBwlHI4ioVRtmIvEThzJHGET crossorigin=anonymous>
-<script defer src=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js integrity=sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb crossorigin=anonymous></script><script src=/js/render-katex.js></script>
+<script src=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js integrity=sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb crossorigin=anonymous></script><script src=/js/render-katex.js></script>
 </head>
 <body>
 <nav class=nav>
@@ -38,14 +38,12 @@
 <div class=post-info>
 <span>Written by</span>
 Asanka Herath
-<br>
 <span>on&nbsp;</span><time datetime="2020-09-19 00:00:00 +0000 UTC">September 19, 2020</time>
 <br>
 <a href=/tags/vim>#Vim</a>
 <a href=/tags/programming>#Programming</a>
 </div>
 <h1 class=post-title>Things You Can Do With Neovim and Vscode That You Can't Do With Neovim Alone</h1>
-<div class=post-line></div>
 <div class="social share">
 <a href="https://twitter.com/intent/tweet?text=Things+You+Can+Do+With+Neovim+and+Vscode+That+You+Can%27t+Do+With+Neovim+Alone&url=https%3A%2F%2Fxn--izc.com%2Fblog%2Fthings-you-can-do-with-nvim-and-vscode%2F&via=asankah" aria-label="Share on Twitter" target=_blank rel=noopener>
 <img src=/images/twitter.svg alt="Share on Twitter">
@@ -57,7 +55,6 @@ Asanka Herath
 <img src=/images/link-2.svg alt="Permanent link to post">
 </a>
 </div>
-<script language=javascript>const rewriteImageUrls=function(){var c=document.getElementsByTagName("img"),b,a;for(let d of c)b=new URL(d.src),a=b.pathname.split("/"),a.length>2&&a[a.length-2]=="media"&&(b.pathname="/"+a.slice(a.length-2).join("/"),d.src=b)};document.addEventListener("DOMContentLoaded",rewriteImageUrls)</script>
 <p>This is the third time I’ve tried in earnest to switch to VSCode from Vim (or Neovim in my case) for reasons not all of which are relevant to this post. But I love Vim style modal editing and I’ve grown accustomed to some features that aren’t present or not well emulated in <a href=https://github.com/VSCodeVim/Vim>VSCodeVim</a>.</p>
 <p>Enter <a href=https://github.com/asvetliakov/vscode-neovim>VSCode Neovim</a>. I was intrigued by their claim to integrate Neovim instead of trying to emulate Vim. After going through the code a bit I thought this extension alone warranted a new attempt at switching to VSCode. So far it’s going great.</p>
 <h2 id=how-vscode-neovim-works>How VSCode Neovim Works</h2>
@@ -79,7 +76,33 @@ Asanka Herath
 <p>I’ve been using Neovim over SSH for a while, but the latency really bothers me. And no, neither SCP nor SSHFS scratches this itch because I won’t have access to language smarts like <code>clangd</code> which require access to all the source files and some build tooling.</p>
 <p><a href=https://code.visualstudio.com/docs/remote/remote-overview>VSCode Remote Development</a> was a nearly perfect answer with the exception that VSCodeVim didn’t quite have all the functionality I needed. VSCodeNeovim addresses that last piece of the puzzle.</p>
 <p>VSCode + Remote SSH + VSCodeNeovim + Neovim gives me:</p>
-<p><img src=media/90c91a589556c6d954dd57da43a309fbf0c8dee8.svg></p>
+<pre class=graphviz><code>digraph G {
+  node [shape=box];
+  rankdir=LR;
+
+  subgraph &quot;cluster_local&quot; {
+    label=&quot;local machine&quot;;
+    vscode [label=&quot;VSCode&quot;];
+    vscodenvim [label=&quot;VSCodeNeovim&quot;];
+    nvim [label=&quot;Neovim instance&quot;];
+    nvim_plugs [label=&quot;Neovim plugins&quot;];
+  }
+
+  subgraph &quot;cluster_remote&quot; {
+    label=&quot;remote machine&quot;;
+    vscodeserver [label=&quot;VSCode Server&quot;];
+    sources [label=&quot;source files&quot;]
+    clangd;
+  }
+
+  vscode -&gt; vscodenvim [label=&quot;instantiates&quot;];
+  vscodenvim -&gt; nvim [label=&quot;starts (embedded)&quot;];
+  nvim -&gt; nvim_plugs [label=&quot;starts/instantiates&quot;];
+
+  vscode -&gt; vscodeserver [label=&quot;communicates via SSH&quot;];
+  vscodeserver -&gt; sources [label=&quot;reads/writes&quot;];
+  vscodeserver -&gt; clangd [label=&quot;runs&quot;];
+}</code></pre>
 <ul>
 <li>On the remote machine:
 <ul>
@@ -104,7 +127,7 @@ Asanka Herath
 <p>Okay, so why would anyone actually want this? Turns out <a href="https://www.google.com/search?q=proportional+fonts+for+coding">I’m not the only one</a>. In my case I prefer monospace for regular code, but I’d much much rather read comments and prose in proportional font. Also, I now spend a lot of my time writing Markdown with LatexMath. Staring at monospaced prose all day is not my cup of tea.</p>
 <p>This is what it looks like when I’m editing this post in VSCode (in Markdown).</p>
 <figure>
-<img src=media/9cca9c3bc2aeaf1582c2ba6f87e15bd41c695623.png alt="Screenshot of VSCode editing Markdown in proportional font"><figcaption aria-hidden=true>Screenshot of VSCode editing Markdown in proportional font</figcaption>
+<img src=images/proportional-font-markdown.png alt="Screenshot of VSCode editing Markdown in proportional font"><figcaption aria-hidden=true>Screenshot of VSCode editing Markdown in proportional font</figcaption>
 </figure>
 <p>The best part is that I can use my familiar Vim/Neovim keybindings and modal editing. I had to make a couple of customizations and I only have this set up for Markdown. But it works fairly well. One gotcha is that the cursor jumps horizontally when moving the cursor up or down since the columns are no longer neatly aligned.</p>
 <h3 id=monospace-code-with-proportional-comments>Monospace Code With Proportional Comments?</h3>
@@ -116,7 +139,7 @@ Asanka Herath
 <li>VSCodeNeovim + “Remote SSH” is an awesome combination for editing remote files using Neovim with the latency of a local Neovim instance.</li>
 <li>You can use proportional fonts with VSCodeNeovim for super double awesomeness.</li>
 </ol>
-<section class=footnotes role=doc-endnotes>
+<section class="footnotes footnotes-end-of-document" role=doc-endnotes>
 <hr>
 <ol>
 <li id=fn1 role=doc-endnote><p>Not quite the whole story because it’s possible a buffer be created inside the Neovim instance and have it be mirrored in a VSCode editor. But that’s probably not what you’ll be using on a regular basis.<a href=#fnref1 class=footnote-back role=doc-backlink>↩︎</a></p></li>
@@ -124,33 +147,40 @@ Asanka Herath
 </ol>
 </section>
 <nav class=suggested>
-<h4 class=suggested>More articles on this blog</h4>
+<h2 class=suggested>More articles from this blog</h4>
 <ul>
 <li>
-<p class="suggested link">
+<h3 class="suggested title">
+<a href=/blog/ansible-cli-sugar/>Easier CLI for ad-hoc Ansible tasks and playbooks</a>
+</h3>
+<p>Encode the host and group names into the name of a wrapper script for quick ad-hoc invocation of Ansible tasks and playbooks.</p>
+</li>
+<li>
+<h3 class="suggested title">
+<a href=/blog/ephemeral-fingerprinting/>Ephemeral Fingerprinting On The Web</a>
+</h3>
+<p><p>Any ephemeral low-entropy web observable property whose changes are concurrently observable by multiple sites can lead to cross site identity joining.</p>
+<p>This method of identity joining does not require coordination between multiple first parties. A single third party embedded within multiple first parties can also use this method.</p>
+</p>
+</li>
+<li>
+<h3 class="suggested title">
+<a href=/blog/remarkable-first-impressions/>Note-taking on a reMarkable 2</a>
+</h3>
+<p>Sentiments after using the reMarkable 2 tablet for a month.</p>
+</li>
+<li>
+<h3 class="suggested title">
+<a href=/blog/notes-on-fact-checking/>Notes from Crash Course's Videos on Fact Checking Information You See On The Internet
+</a>
+</h3>
+<p>Hank Green’s Crash Course YouTube channel has an excellent series about navigating digital information. It’s an excellent guide to how internet users could intelligently consume information they see on the internet. These are my (incomplete) notes from the series.</p>
+</li>
+<li>
+<h3 class="suggested title">
 <a href=/blog/fart-limit/>Fart Limit</a>
-</p>
+</h3>
 <p>Can a fart be fatal? Let’s see what science and OSHA have to say.</p>
-</li>
-<li>
-<p class="suggested link">
-<a href=/blog/visualizing-people-2/>Visualizing A Million People</a>
-</p>
-<p>If your feature pisses off a million people what does this angry mob look like? Spoiler: We only get to 750,000.</p>
-</li>
-<li>
-<p class="suggested link">
-<a href=/blog/shannon-paper/>Shannon Paper</a>
-</p>
-<p>Claude Shannon’s <em>A mathematical theory of communication</em> is an oft cited classic in information theory. Let’s dive in and try to tease apart the “why”s that are often overlooked when people build on top of the introduced theory. They are definitely things that I didn’t consider to be obvious without the benefit of reading the paper.</p>
-</li>
-<li>
-<p class="suggested link">
-<a href=/blog/why-strong-opinions-weakly-held/>Why 'Strong Opinions Weakly Held'</a>
-</p>
-<p>Origins of the phrase The title of this blog is Strong Opinions, Weakly Held. The same concept shows up elsewhere are Strong Opinions Loosely Held. An eponymous essay by Paul Saffo in [1] introduced the world to this concept.
-In his essay – which isn’t very long if you would like to read the whole thing yourself – he lays out the concept as follows:
-I have found that the fastest way to an effective forecast is often through a sequence of lousy forecasts.</p>
 </li>
 </ul>
 </nav>

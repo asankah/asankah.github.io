@@ -11,7 +11,7 @@
 <link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png>
 <link href rel=alternate type=application/rss+xml title="Strong Opinions, Weekly Held">
 <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css integrity=sha384-zTROYFVGOfTw7JV7KUu8udsvW2fx4lWOsCEDqhBreBwlHI4ioVRtmIvEThzJHGET crossorigin=anonymous>
-<script defer src=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js integrity=sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb crossorigin=anonymous></script><script src=/js/render-katex.js></script>
+<script src=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js integrity=sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb crossorigin=anonymous></script><script src=/js/render-katex.js></script>
 </head>
 <body>
 <nav class=nav>
@@ -38,14 +38,12 @@
 <div class=post-info>
 <span>Written by</span>
 Asanka Herath
-<br>
 <span>on&nbsp;</span><time datetime="2020-08-24 12:32:45 -0400 EDT">August 24, 2020</time>
 <br>
 <a href=/tags/commentary>#Commentary</a>
 <a href=/tags/programming>#Programming</a>
 </div>
 <h1 class=post-title>Names for Name Conventions</h1>
-<div class=post-line></div>
 <div class="social share">
 <a href="https://twitter.com/intent/tweet?text=Names+for+Name+Conventions&url=https%3A%2F%2Fxn--izc.com%2Fblog%2Fsymbol-name-types%2F&via=asankah" aria-label="Share on Twitter" target=_blank rel=noopener>
 <img src=/images/twitter.svg alt="Share on Twitter">
@@ -57,7 +55,6 @@ Asanka Herath
 <img src=/images/link-2.svg alt="Permanent link to post">
 </a>
 </div>
-<script language=javascript>const rewriteImageUrls=function(){var c=document.getElementsByTagName("img"),b,a;for(let d of c)b=new URL(d.src),a=b.pathname.split("/"),a.length>2&&a[a.length-2]=="media"&&(b.pathname="/"+a.slice(a.length-2).join("/"),d.src=b)};document.addEventListener("DOMContentLoaded",rewriteImageUrls)</script>
 <p>Names I’ve seen used to refer to naming conventions:</p>
 <ul>
 <li><code>snake_case</code>, <code>hacker_case</code>, <code>unix_hacker_style</code> : Everything is lower case, though exceptions exist. E.g. <code>HTTP_foo_bar</code>.</li>
@@ -67,53 +64,48 @@ Asanka Herath
 <li><code>kabob-case</code> : Like <code>snake_case</code>, but uses dashes instead of underscores. Common for command-line options<a href=#fn1 class=footnote-ref id=fnref1 role=doc-noteref><sup>1</sup></a>, CSS styles, commands (e.g. <code>git-receive-pack</code>).</li>
 </ul>
 <p>While looking idly looking for details on this, I stumbled on <a href=https://medium.com/better-programming/string-case-styles-camel-pascal-snake-and-kebab-case-981407998841>this Medium post</a> which is relevant.</p>
-<section class=footnotes role=doc-endnotes>
+<section class="footnotes footnotes-end-of-document" role=doc-endnotes>
 <hr>
 <ol>
 <li id=fn1 role=doc-endnote><p>Opinions vary on whether the correct convention for command line options is <code>snake_case</code> or <code>kabob-case</code>. Long form options are often written as <code>--long-option</code>, but can also be <code>--long_option</code> (where the delimiter within the option is <code>_</code>).<a href=#fnref1 class=footnote-back role=doc-backlink>↩︎</a></p></li>
 </ol>
 </section>
 <nav class=suggested>
-<h4 class=suggested>More articles on this blog</h4>
+<h2 class=suggested>More articles from this blog</h4>
 <ul>
 <li>
-<p class="suggested link">
-<a href=/blog/why-strong-opinions-weakly-held/>Why 'Strong Opinions Weakly Held'</a>
-</p>
-<p>Origins of the phrase The title of this blog is Strong Opinions, Weakly Held. The same concept shows up elsewhere are Strong Opinions Loosely Held. An eponymous essay by Paul Saffo in [1] introduced the world to this concept.
-In his essay – which isn’t very long if you would like to read the whole thing yourself – he lays out the concept as follows:
-I have found that the fastest way to an effective forecast is often through a sequence of lousy forecasts.</p>
-</li>
-<li>
-<p class="suggested link">
-<a href=/blog/ten-years/>Ten Years</a>
-</p>
-<p>It’s been ten years since I started at Google. The work anniversary fell on 6th of December.
-Ten years ago my wife and I made our way to Mountain View for my orientation; all excited for a brand new chapter in our lives. After spending a week in Mountain View / Palo Alto we both decided that California was not for us. But that’s beside the point.
-I was elated. This was pretty much everything I dreamt of as a kid growing up in Sri Lanka.</p>
-</li>
-<li>
-<p class="suggested link">
-<a href=/blog/sometimes-its-the-interviewers-who-suck/>Sometimes It's the Interviewers Who Suck</a>
-</p>
-<p>I’ve done hundreds of interviews. I’ve also served in numerous hiring committees over the years.
-Tech companies tend to have cultures built around tech people interviewing other tech people, typically in what is not-so-affectionately known as the “Tech interview.” This is good because candidates would be evaluated based on their actual skills instead of keywords in their resume. Interviewers are in effect choosing their future coworkers which makes in interview serve the interest of both the interviewer and the interviewee.</p>
-</li>
-<li>
-<p class="suggested link">
+<h3 class="suggested title">
 <a href=/blog/visualizing-people/>Visualizing Internet Users</a>
-</p>
+</h3>
 <p>What does 0.3%1 of internet users look like?
-As of this writing the global population hovers around 7.7 billion according to the World Population Clock.2
+As of this writing the global population hovers around 7.7 billion according to the World Population Clock 2.
 Screenshot from census.gov showing the world population clock. The International Telecommunications Union “estimates that at the end of 2019, 53.6 per cent of the global population, or 4.1 billion people, are using the internet.”3
 Screenshot from itu.int showing historical internet usage numbers as a percentage of the world population So a 0.</p>
 </li>
 <li>
-<p class="suggested link">
-<a href=/blog/notes-on-fact-checking/>Notes from Crash Course's Videos on Fact Checking Information You See On The Internet
-</a>
-</p>
-<p>Hank Green’s Crash Course YouTube channel has an excellent series about navigating digital information. It’s an excellent guide to how internet users could intelligently consume information they see on the internet. These are my (incomplete) notes from the series.</p>
+<h3 class="suggested title">
+<a href=/blog/visualizing-people-2/>Visualizing A Million People</a>
+</h3>
+<p>If your feature pisses off a million people what does this angry mob look like? Spoiler: We only get to 750,000.</p>
+</li>
+<li>
+<h3 class="suggested title">
+<a href=/blog/why-strong-opinions-weekly-held/>Why 'Strong Opinions Weekly Held'</a>
+</h3>
+<p>Previously on this blog I wrote a short note on Why Strong Opinions Weakly Held.
+I’m trying to get something out every week. Hence the new blog title.</p>
+</li>
+<li>
+<h3 class="suggested title">
+<a href=/blog/shannon-paper/>Shannon Paper</a>
+</h3>
+<p>Claude Shannon’s <em>A mathematical theory of communication</em> is an oft cited classic in information theory. Let’s dive in and try to tease apart the “why”s that are often overlooked when people build on top of the introduced theory. They are definitely things that I didn’t consider to be obvious without the benefit of reading the paper.</p>
+</li>
+<li>
+<h3 class="suggested title">
+<a href=/blog/identity-domains/>Identity Domains</a>
+</h3>
+<p>An Identity Domain is a scope within which we assume that the user’s identity can roam freely.</p>
 </li>
 </ul>
 </nav>

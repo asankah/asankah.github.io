@@ -11,7 +11,7 @@
 <link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png>
 <link href rel=alternate type=application/rss+xml title="Strong Opinions, Weekly Held">
 <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css integrity=sha384-zTROYFVGOfTw7JV7KUu8udsvW2fx4lWOsCEDqhBreBwlHI4ioVRtmIvEThzJHGET crossorigin=anonymous>
-<script defer src=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js integrity=sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb crossorigin=anonymous></script><script src=/js/render-katex.js></script>
+<script src=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js integrity=sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb crossorigin=anonymous></script><script src=/js/render-katex.js></script>
 </head>
 <body>
 <nav class=nav>
@@ -38,13 +38,11 @@
 <div class=post-info>
 <span>Written by</span>
 Asanka Herath
-<br>
 <span>on&nbsp;</span><time datetime="2020-04-01 00:00:00 +0000 UTC">April 1, 2020</time>
 <br>
 <a href=/tags/privacy>#Privacy</a>
 </div>
 <h1 class=post-title>Ephemeral Fingerprinting On The Web</h1>
-<div class=post-line></div>
 <div class="social share">
 <a href="https://twitter.com/intent/tweet?text=Ephemeral+Fingerprinting+On+The+Web&url=https%3A%2F%2Fxn--izc.com%2Fblog%2Fephemeral-fingerprinting%2F&via=asankah" aria-label="Share on Twitter" target=_blank rel=noopener>
 <img src=/images/twitter.svg alt="Share on Twitter">
@@ -56,7 +54,6 @@ Asanka Herath
 <img src=/images/link-2.svg alt="Permanent link to post">
 </a>
 </div>
-<script language=javascript>const rewriteImageUrls=function(){var c=document.getElementsByTagName("img"),b,a;for(let d of c)b=new URL(d.src),a=b.pathname.split("/"),a.length>2&&a[a.length-2]=="media"&&(b.pathname="/"+a.slice(a.length-2).join("/"),d.src=b)};document.addEventListener("DOMContentLoaded",rewriteImageUrls)</script>
 <p>TL;DR:</p>
 <ul>
 <li><p>Any web observable property whose changes are concurrently observable by multiple top-level sites can lead to cross site identity joining.</p></li>
@@ -64,7 +61,7 @@ Asanka Herath
 </ul>
 <h2 id=background>Background</h2>
 <figure>
-<img src=media/4e86aa50c24794e27cbd462953a9e967bed2c725.png alt="diagram of site isolation boundaries with overlap"><figcaption aria-hidden=true>diagram of site isolation boundaries with overlap</figcaption>
+<img src=images/isolation-boundaries.png alt="diagram of site isolation boundaries with overlap"><figcaption aria-hidden=true>diagram of site isolation boundaries with overlap</figcaption>
 </figure>
 <p><strong>Figure 1</strong>: Two sites observe a sequence of device orientation changes at times 𝒕₀, 𝒕₁,𝒕₂ .</p>
 <p>All sites on the same UA instance share a clock and therefore can agree on the timestamps with a small margin of error. The triplet 𝒕₀, 𝒕₁,𝒕₂ has a high probability of uniquely identifying the user. The two sites can thus use these observations to conclude that the observations originate from the same user.</p>
@@ -75,7 +72,7 @@ Asanka Herath
 </ol>
 <p>Signals considered for ephemeral fingerprinting don’t need to be highly identifying by themselves. The <a href=https://github.com/bslassey/privacy-budget>privacy budget proposal</a> does not adequately account for fingerprinting based on concurrent observations of low entropy signals.</p>
 <p>Device orientation, from our earlier example, can take one of two values (portrait or landscape) and is unstable. Thus a single sample of device orientation carries almost no information. I.e. A recorded observation of device orientation doesn’t help at all with identifying the user at a later time. However the timestamps corresponding to orientation changes could have identifying levels of entropy.</p>
-<p>These are not new. For example, this is discussed by Van Goethem et. al.<a href=#fn1 class=footnote-ref id=fnref1 role=doc-noteref><sup>1</sup></a></p>
+<p>These are not new. For example, this is discussed by Van Goethem et. al. <a href=#fn1 class=footnote-ref id=fnref1 role=doc-noteref><sup>1</sup></a></p>
 <p>who calls these “Cross-Session Events” (§ 5 of linked paper). Potential ephemeral fingerprinting surfaces also get flagged during standardization discussions ( <a href=https://github.com/w3c/mediacapture-main/issues/403>Example: Polling enumerateDevices</a>, <a href=https://lists.w3.org/Archives/Public/public-privacy/2013JanMar/0007.html>Example: Ambient light events</a>).</p>
 <h3 id=modelling-correlated-events>Modelling Correlated Events</h3>
 <p>A correlatable event can be thought of as the tuple <code>&lt;surface-sample, timestamp></code>. The addition of the timestamp strictly increases the amount of information carried by the surface sample.</p>
@@ -95,7 +92,7 @@ Asanka Herath
 <h2 id=mitigation>Mitigation</h2>
 <h3 id=permissions>Permissions</h3>
 <p><strong>Goal:</strong> Require informed consent from users.</p>
-<p>There’s precedent for considering permissions<a href=#fn2 class=footnote-ref id=fnref2 role=doc-noteref><sup>2</sup></a> to be sufficient mitigation for similar issues. For example, the Media Capture API specification includes the following:</p>
+<p>There’s precedent for considering permissions <a href=#fn2 class=footnote-ref id=fnref2 role=doc-noteref><sup>2</sup></a> to be sufficient mitigation for similar issues. For example, the Media Capture API specification includes the following:</p>
 <blockquote>
 <p>For origins to which permission has been granted, the devicechange event will be emitted across browsing contexts and origins each time a new media device is added or removed; user agents can mitigate the risk of correlation of browsing activity across origins by fuzzing the timing of these events.</p>
 </blockquote>
@@ -205,9 +202,9 @@ From §15 of <a href=https://w3c.github.io/mediacapture-main/#privacy-and-securi
 <p>The <a href=https://html.spec.whatwg.org/multipage/interaction.html#focus-update-steps>focus update steps</a> involve firing up to three distinct events: <code>change</code> if the node losing focus is an <code>input</code> element, <code>focus</code>, and <code>blur</code>.</p>
 <p>When focus traverses a browsing context boundary, these events may be fired simultaneously to two different browsing contexts. Browsers mitigate this by not firing <code>blur</code> for cross site tab switches, but they still fire <code>blur</code> when the browser itself goes out of focus. Thus identity can be correlated when switching browser windows.</p>
 <h4 id=possible-mitigation>Possible Mitigation</h4>
-<p>When the <em>new chain</em> and the <em>old chain</em><a href=#fn3 class=footnote-ref id=fnref3 role=doc-noteref><sup>3</sup></a> are in different top-level browsing contexts whose active documents are not same-origin, queue but don’t fire <code>change</code> and <code>blur</code> events until focus returns to the old top-level browsing context.</p>
+<p>When the <em>new chain</em> and the <em>old chain</em> <a href=#fn3 class=footnote-ref id=fnref3 role=doc-noteref><sup>3</sup></a> are in different top-level browsing contexts whose active documents are not same-origin, queue but don’t fire <code>change</code> and <code>blur</code> events until focus returns to the old top-level browsing context.</p>
 <h3 id=notes>Notes</h3>
-<section class=footnotes role=doc-endnotes>
+<section class="footnotes footnotes-end-of-document" role=doc-endnotes>
 <hr>
 <ol>
 <li id=fn1 role=doc-endnote><p>Van Goethem, T. and Joosen, W., 2017. One side-channel to bring them all and in the darkness bind them: Associating isolated browsing sessions. In <em>11th {USENIX} Workshop on Offensive Technologies ({WOOT} 17)</em>. (<a href=https://pdfs.semanticscholar.org/5814/9610a57cb4626918bf003b8bad25e740b1f4.pdf>PDF</a>)<a href=#fnref1 class=footnote-back role=doc-backlink>↩︎</a></p></li>
@@ -216,44 +213,43 @@ From §15 of <a href=https://w3c.github.io/mediacapture-main/#privacy-and-securi
 </ol>
 </section>
 <nav class=suggested>
-<h4 class=suggested>More articles on this blog</h4>
+<h2 class=suggested>More articles from this blog</h4>
 <ul>
 <li>
-<p class="suggested link">
+<h3 class="suggested title">
 <a href=/blog/ansible-cli-sugar/>Easier CLI for ad-hoc Ansible tasks and playbooks</a>
-</p>
+</h3>
 <p>Encode the host and group names into the name of a wrapper script for quick ad-hoc invocation of Ansible tasks and playbooks.</p>
 </li>
 <li>
-<p class="suggested link">
-<a href=/blog/on-wontfixing-bugs/>On WontFixing Bugs</a>
-</p>
-<p><p>Large projects accumulate a large number of issue reports over time. This is normal. Typically for a “successful” project the rate of new issues being reported will exceed the rate of issues being fixed. Hence the growth.</p>
-<p>But what are they to do about this ever-growing pile of bugs?</p>
-</p>
-</li>
-<li>
-<p class="suggested link">
-<a href=/blog/use-drop-not-edit/>Vim: Use Drop Not Edit, SBuffer Not Buffer</a>
-</p>
-<p>I’m going to assume you are a Vim user.
-Say you have a several windows open in Vim and you want to edit another file. Using :edit works if you want to open the file in the current window unconditionally.
-But that’s often not what you want. If you have the same file open in another window, then the most efficient and least disruptive thing to do is to switch to that window.</p>
-</li>
-<li>
-<p class="suggested link">
+<h3 class="suggested title">
 <a href=/blog/ten-years/>Ten Years</a>
-</p>
+</h3>
 <p>It’s been ten years since I started at Google. The work anniversary fell on 6th of December.
 Ten years ago my wife and I made our way to Mountain View for my orientation; all excited for a brand new chapter in our lives. After spending a week in Mountain View / Palo Alto we both decided that California was not for us. But that’s beside the point.
 I was elated. This was pretty much everything I dreamt of as a kid growing up in Sri Lanka.</p>
 </li>
 <li>
-<p class="suggested link">
-<a href=/blog/notes-on-fact-checking/>Notes from Crash Course's Videos on Fact Checking Information You See On The Internet
-</a>
+<h3 class="suggested title">
+<a href=/blog/on-wontfixing-bugs/>On WontFixing Bugs</a>
+</h3>
+<p><p>Large projects accumulate a large number of issue reports over time. This is normal. Typically for a “successful” project the rate of new issues being reported will exceed the rate of issues being fixed. Hence the growth.</p>
+<p>But what are they to do about this ever-growing pile of bugs?</p>
 </p>
-<p>Hank Green’s Crash Course YouTube channel has an excellent series about navigating digital information. It’s an excellent guide to how internet users could intelligently consume information they see on the internet. These are my (incomplete) notes from the series.</p>
+</li>
+<li>
+<h3 class="suggested title">
+<a href=/blog/comcast-technican-problem/>The Comcast Technician Problem</a>
+</h3>
+<p>Given a set of tasks, incentives are often aligned towards dropping a task rather than allowing for perpetual accretion of delays.</p>
+</li>
+<li>
+<h3 class="suggested title">
+<a href=/blog/why-strong-opinions-weakly-held/>Why 'Strong Opinions Weakly Held'</a>
+</h3>
+<p>Origins of the phrase The title of this blog is Strong Opinions, Weakly Held. The same concept shows up elsewhere are Strong Opinions Loosely Held. An eponymous essay by Paul Saffo in [1] introduced the world to this concept.
+In his essay – which isn’t very long if you would like to read the whole thing yourself – he lays out the concept as follows:
+I have found that the fastest way to an effective forecast is often through a sequence of lousy forecasts.</p>
 </li>
 </ul>
 </nav>

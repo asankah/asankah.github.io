@@ -11,7 +11,7 @@
 <link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png>
 <link href rel=alternate type=application/rss+xml title="Strong Opinions, Weekly Held">
 <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css integrity=sha384-zTROYFVGOfTw7JV7KUu8udsvW2fx4lWOsCEDqhBreBwlHI4ioVRtmIvEThzJHGET crossorigin=anonymous>
-<script defer src=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js integrity=sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb crossorigin=anonymous></script><script src=/js/render-katex.js></script>
+<script src=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js integrity=sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb crossorigin=anonymous></script><script src=/js/render-katex.js></script>
 </head>
 <body>
 <nav class=nav>
@@ -38,34 +38,31 @@
 <div class=post-info>
 <span>Written by</span>
 Asanka Herath
-<br>
 <span>on&nbsp;</span><time datetime="2020-11-21 11:37:53 -0500 EST">November 21, 2020</time>
 <br>
 <a href=/tags/commentary>#Commentary</a>
 <a href=/tags/programming>#Programming</a>
 </div>
 <h1 class=post-title>Visualizing Internet Users</h1>
-<div class=post-line></div>
 <div class="social share">
 <a href="https://twitter.com/intent/tweet?text=Visualizing+Internet+Users&url=https%3A%2F%2Fxn--izc.com%2Fblog%2Fvisualizing-people%2F&via=asankah" aria-label="Share on Twitter" target=_blank rel=noopener>
 <img src=/images/twitter.svg alt="Share on Twitter">
 </a>
-<a href="mailto:?body=Via+https%3A%2F%2Ftwitter.com%2Fasankah%0A%0AWhat+does+0.3%251+of+internet+users+look+like%3F%0AAs+of+this+writing+the+global+population+hovers+around+7.7+billion+according+to+the+World+Population+Clock.2%0A+Screenshot+from+census.gov+showing+the+world+population+clock.++The+International+Telecommunications+Union+%E2%80%9Cestimates+that+at+the+end+of+2019%2C+53.6+per+cent+of+the+global+population%2C+or+4.1+billion+people%2C+are+using+the+internet.%E2%80%9D3%0A+Screenshot+from+itu.int+showing+historical+internet+usage+numbers+as+a+percentage+of+the+world+population++So+a+0.%0A%0ARead+more+at+https%3A%2F%2Fxn--izc.com%2Fblog%2Fvisualizing-people%2F%0A&subject=Visualizing+Internet+Users+-+Strong+Opinions%2C+Weekly+Held" aria-label="Share via Email" target=_blank rel=noopener>
+<a href="mailto:?body=Via+https%3A%2F%2Ftwitter.com%2Fasankah%0A%0AWhat+does+0.3%251+of+internet+users+look+like%3F%0AAs+of+this+writing+the+global+population+hovers+around+7.7+billion+according+to+the+World+Population+Clock+2.%0A+Screenshot+from+census.gov+showing+the+world+population+clock.++The+International+Telecommunications+Union+%E2%80%9Cestimates+that+at+the+end+of+2019%2C+53.6+per+cent+of+the+global+population%2C+or+4.1+billion+people%2C+are+using+the+internet.%E2%80%9D3%0A+Screenshot+from+itu.int+showing+historical+internet+usage+numbers+as+a+percentage+of+the+world+population++So+a+0.%0A%0ARead+more+at+https%3A%2F%2Fxn--izc.com%2Fblog%2Fvisualizing-people%2F%0A&subject=Visualizing+Internet+Users+-+Strong+Opinions%2C+Weekly+Held" aria-label="Share via Email" target=_blank rel=noopener>
 <img src=/images/mail.svg alt="Share via Email">
 </a>
 <a href=https://xn--izc.com/blog/visualizing-people/ aria-label="Permanent link to post">
 <img src=/images/link-2.svg alt="Permanent link to post">
 </a>
 </div>
-<script language=javascript>const rewriteImageUrls=function(){var c=document.getElementsByTagName("img"),b,a;for(let d of c)b=new URL(d.src),a=b.pathname.split("/"),a.length>2&&a[a.length-2]=="media"&&(b.pathname="/"+a.slice(a.length-2).join("/"),d.src=b)};document.addEventListener("DOMContentLoaded",rewriteImageUrls)</script>
 <p>What does 0.3%<a href=#fn1 class=footnote-ref id=fnref1 role=doc-noteref><sup>1</sup></a> of internet users look like?</p>
-<p>As of this writing the global population hovers around 7.7 billion according to the World Population Clock.<a href=#fn2 class=footnote-ref id=fnref2 role=doc-noteref><sup>2</sup></a></p>
+<p>As of this writing the global population hovers around 7.7 billion according to the World Population Clock <a href=#fn2 class=footnote-ref id=fnref2 role=doc-noteref><sup>2</sup></a>.</p>
 <figure>
-<img src=media/d3dd7e067e10fe6b8a2a00aa3e69d2105f8e11d9.png alt="Screenshot from census.gov showing the world population clock."><figcaption aria-hidden=true>Screenshot from census.gov showing the world population clock.</figcaption>
+<img src=images/census-gov-population-clock-2020-11-20.png alt="Screenshot from census.gov showing the world population clock."><figcaption aria-hidden=true>Screenshot from census.gov showing the world population clock.</figcaption>
 </figure>
 <p>The <a href=https://www.itu.int/>International Telecommunications Union</a> “estimates that at the end of 2019, 53.6 per cent of the global population, or 4.1 billion people, are using the internet.”<a href=#fn3 class=footnote-ref id=fnref3 role=doc-noteref><sup>3</sup></a></p>
 <figure>
-<img src=media/4dd2143926e1d4f485f09c6548f076ad900ce69c.jpg alt="Screenshot from itu.int showing historical internet usage numbers as a percentage of the world population"><figcaption aria-hidden=true>Screenshot from itu.int showing historical internet usage numbers as a percentage of the world population</figcaption>
+<img src=images/itu-internet-usage-stats-2019.jpg alt="Screenshot from itu.int showing historical internet usage numbers as a percentage of the world population"><figcaption aria-hidden=true>Screenshot from itu.int showing historical internet usage numbers as a percentage of the world population</figcaption>
 </figure>
 <p>So a 0.3% of the internet would be a roughly 12,300,000 or around 12.3 million. A nice little number.</p>
 <h2 id=from-50-to-100000>From 50 to 100,000</h2>
@@ -79,26 +76,26 @@ Asanka Herath
 <p>More than 200,000 conservative Muslims gathered in Indonesia’s capital Jakarta on Friday to protest against the city’s Christian governor, who is facing trial for blasphemy, police estimated.</p>
 </blockquote>
 <figure>
-<img src=media/c2872159e4abda533d30fe00837065c5d952b948.jpg alt="Image from dw.com of a protest in Indonesia allegedly showing 200,000 people. Image Source"><figcaption aria-hidden=true>Image from dw.com of a protest in Indonesia allegedly showing 200,000 people. <a href=https://www.dw.com/en/more-than-200000-indonesians-protest-governor-purnamas-alleged-blasphemy/a-36611145>Image Source</a></figcaption>
+<img src=images/dw-com-indonesia-protest-2020-11-20.jpg alt="Image from dw.com of a protest in Indonesia allegedly showing 200,000 people. Image Source"><figcaption aria-hidden=true>Image from dw.com of a protest in Indonesia allegedly showing 200,000 people. <a href=https://www.dw.com/en/more-than-200000-indonesians-protest-governor-purnamas-alleged-blasphemy/a-36611145>Image Source</a></figcaption>
 </figure>
 <h2 id=section-1>500,000</h2>
 <p>We are heading into shaky ground here. A 800*600 picture only contains 480,000 pixels. So we are now reduced to indicating population by inference. It is nolonger possible to capture 500,000 people in a webpage sized picture while showing each person individually.</p>
 <p><a href=https://www.reddit.com/r/philadelphia/comments/3by9g8/if_this_is_what_500k_people_look_like_xpost_from/>This Reddit post</a> claims that there are 500k people in the picture, but I couldn’t readily find any good references backing up that claim.</p>
 <p>As is tradition by now, another protest that drew 500,000 people is <a href=https://www.nbcnews.com/show-me/video/nearly-500-000-people-march-in-anti-violence-rally-in-barcelona-1033617987741>an anti-violence rally in Barcelona as reported by NBC</a>. While there’s video, the content doesn’t quite capture the massive number of people. Also it’s “nearly 500,000” people.</p>
-<p>However, the closest we’ll probably get to a somewhat believable 500,000 person crowd would be the March for Science. They posted the following picture on <a href=https://www.facebook.com/marchforscience/posts/836983043362678>Facebook</a> noting that “There are 500,000 people on strike in Montreal.”</p>
+<p>However, the closest we’ll probably get to a somewhat believable 500,000 person crowd would be the March for Science. They posted the following picture on <a href=https://www.facebook.com/marchforscience/posts/836983043362678>Facebook</a> noting that “There are 500,000 people on strike in Montreal”.</p>
 <figure>
-<img src=media/3142c4f9fd401470b3ae5c0835ce525bd689cff8.jpg alt="March for Science on Facebook: Picture of protest"><figcaption aria-hidden=true>March for Science on Facebook: Picture of protest</figcaption>
+<img src=images/march-for-science-crowd-2020-11-20.jpg alt="March for Science on Facebook: Picture of protest"><figcaption aria-hidden=true>March for Science on Facebook: Picture of protest</figcaption>
 </figure>
 <p><a href=https://www.facebook.com/marchforscience/posts/836983043362678>Image source</a></p>
 <h2 id=section-2>750,000</h2>
 <p>Off to protests again. This time we are looking at Barcelona where 750,000 Catalan independence supporters are demanding the release of their leaders according to <a href=http://www.timealem.com/750000-people-flood-barcelona-demanding-release-of-catalan-leaders_d575.html>this article</a>.</p>
 <figure>
-<img src=media/14b56326adc082b3f5abe39b1803d9f40719d4de.jpg alt="750,000 people flood Barcelona demanding release of Catalan leaders. Image source"><figcaption aria-hidden=true>750,000 people flood Barcelona demanding release of Catalan leaders. <a href=http://www.timealem.com/750000-people-flood-barcelona-demanding-release-of-catalan-leaders_d575.html>Image source</a></figcaption>
+<img src=images/barcelona-protest-2020-11-20.jpg alt="750,000 people flood Barcelona demanding release of Catalan leaders. Image source"><figcaption aria-hidden=true>750,000 people flood Barcelona demanding release of Catalan leaders. <a href=http://www.timealem.com/750000-people-flood-barcelona-demanding-release-of-catalan-leaders_d575.html>Image source</a></figcaption>
 </figure>
 <p>The crowd extends past the top of the frame and there’s no chance this is the entire crowd. But you get the general idea. If you ship a bug that affects 0.01% of the internet population, then this is a conservative lower bound of what that angry mob would look like.</p>
 <p>But wait, the <a href=https://www.guinnessworldrecords.com/news/non-corporate/2018/6/more-than-750-000-people-help-philippines-based-church-achieve-four-new-records-529029>Guinness World Record for teh largest charity walk/run</a> is 283,171 people at a single venue. Have a look at that picture:</p>
 <figure>
-<img src=media/c679bd1466b41fad6e443bba46a6d9562151d25a.jpg alt="Guinness Record for the largest charity walk or run at a single venue is for 283,171 people. Image Source"><figcaption aria-hidden=true>Guinness Record for the largest charity walk or run at a single venue is for 283,171 people. <a href=https://www.guinnessworldrecords.com/news/non-corporate/2018/6/more-than-750-000-people-help-philippines-based-church-achieve-four-new-records-529029>Image Source</a></figcaption>
+<img src=images/guinness-record-largest-walk-single-venu-2020-11-20.jpg alt="Guinness Record for the largest charity walk or run at a single venue is for 283,171 people. Image Source"><figcaption aria-hidden=true>Guinness Record for the largest charity walk or run at a single venue is for 283,171 people. <a href=https://www.guinnessworldrecords.com/news/non-corporate/2018/6/more-than-750-000-people-help-philippines-based-church-achieve-four-new-records-529029>Image Source</a></figcaption>
 </figure>
 <p>It seems that picture of 750,000 people doesn’t quite capture it because clearly there are more people in the picture that’s supposed to be 283k people. Which of course goes to show how hard it is to really capture how massive a crowd 750k makes.</p>
 <p>In an article on Wired that discusses how hard it is to estimate crowd sizes, they note<a href=#fn4 class=footnote-ref id=fnref4 role=doc-noteref><sup>4</sup></a>:</p>
@@ -107,7 +104,7 @@ Asanka Herath
 </blockquote>
 <h3 id=and-more>And More</h3>
 <p>I’m going to give up at this point. Pictures purportedly of around one million people are mostly parts of crowds that have been estimated to be that big. Forget about 12.3 million.</p>
-<section class=footnotes role=doc-endnotes>
+<section class="footnotes footnotes-end-of-document" role=doc-endnotes>
 <hr>
 <ol>
 <li id=fn1 role=doc-endnote><p>Why 0.3% of the internet population? It’s a number that came up when trying to come up with a reasonable sample size for estimating the diversity of the internet population. There’s not much special about it other than that.<a href=#fnref1 class=footnote-back role=doc-backlink>↩︎</a></p></li>
@@ -117,41 +114,33 @@ Asanka Herath
 </ol>
 </section>
 <nav class=suggested>
-<h4 class=suggested>More articles on this blog</h4>
+<h2 class=suggested>More articles from this blog</h4>
 <ul>
 <li>
-<p class="suggested link">
-<a href=/blog/notes-on-fact-checking/>Notes from Crash Course's Videos on Fact Checking Information You See On The Internet
-</a>
-</p>
-<p>Hank Green’s Crash Course YouTube channel has an excellent series about navigating digital information. It’s an excellent guide to how internet users could intelligently consume information they see on the internet. These are my (incomplete) notes from the series.</p>
+<h3 class="suggested title">
+<a href=/blog/fart-limit/>Fart Limit</a>
+</h3>
+<p>Can a fart be fatal? Let’s see what science and OSHA have to say.</p>
 </li>
 <li>
-<p class="suggested link">
-<a href=/blog/use-drop-not-edit/>Vim: Use Drop Not Edit, SBuffer Not Buffer</a>
-</p>
-<p>I’m going to assume you are a Vim user.
-Say you have a several windows open in Vim and you want to edit another file. Using :edit works if you want to open the file in the current window unconditionally.
-But that’s often not what you want. If you have the same file open in another window, then the most efficient and least disruptive thing to do is to switch to that window.</p>
-</li>
-<li>
-<p class="suggested link">
-<a href=/blog/shannon-paper/>Shannon Paper</a>
-</p>
-<p>Claude Shannon’s <em>A mathematical theory of communication</em> is an oft cited classic in information theory. Let’s dive in and try to tease apart the “why”s that are often overlooked when people build on top of the introduced theory. They are definitely things that I didn’t consider to be obvious without the benefit of reading the paper.</p>
-</li>
-<li>
-<p class="suggested link">
+<h3 class="suggested title">
 <a href=/blog/why-strong-opinions-weekly-held/>Why 'Strong Opinions Weekly Held'</a>
-</p>
+</h3>
 <p>Previously on this blog I wrote a short note on Why Strong Opinions Weakly Held.
 I’m trying to get something out every week. Hence the new blog title.</p>
 </li>
 <li>
-<p class="suggested link">
-<a href=/blog/how-this-blog-works/>How This Blog Works</a>
-</p>
-<p>How I put this site together and why.</p>
+<h3 class="suggested title">
+<a href=/blog/remarkable-first-impressions/>Note-taking on a reMarkable 2</a>
+</h3>
+<p>Sentiments after using the reMarkable 2 tablet for a month.</p>
+</li>
+<li>
+<h3 class="suggested title">
+<a href=/blog/sometimes-its-the-interviewers-who-suck/>Sometimes It's the Interviewers Who Suck</a>
+</h3>
+<p>I’ve done hundreds of interviews. I’ve also served in numerous hiring committees over the years.
+Tech companies tend to have cultures built around tech people interviewing other tech people, typically in what is not-so-affectionately known as the “Tech interview.” This is good because candidates would be evaluated based on their actual skills instead of keywords in their resume. Interviewers are in effect choosing their future coworkers which makes in interview serve the interest of both the interviewer and the interviewee.</p>
 </li>
 </ul>
 </nav>
