@@ -35,15 +35,15 @@
 </nav>
 <main>
 <div class=post>
+<h1 class=post-title>Vim: Use Drop Not Edit, SBuffer Not Buffer</h1>
 <div class=post-info>
 <span>Written by</span>
 Asanka Herath
 <span>on&nbsp;</span><time datetime="2020-07-07 12:02:20 -0400 EDT">July 7, 2020</time>
-<br>
+|
 <a href=/tags/vim>#Vim</a>
 <a href=/tags/commandline>#Commandline</a>
 </div>
-<h1 class=post-title>Vim: Use Drop Not Edit, SBuffer Not Buffer</h1>
 <div class="social share">
 <a href="https://twitter.com/intent/tweet?text=Vim%3A+Use+Drop+Not+Edit%2C+SBuffer+Not+Buffer&url=https%3A%2F%2Fxn--izc.com%2Fblog%2Fuse-drop-not-edit%2F&via=asankah" aria-label="Share on Twitter" target=_blank rel=noopener>
 <img src=/images/twitter.svg alt="Share on Twitter">
@@ -65,51 +65,53 @@ Asanka Herath
 <li>Switch the buffer in the current window to <code>{file}</code> otherwise.</li>
 </ul>
 <p>The <code>:drop</code> command is intended to be used as the “open buffer” command for automated tooling like source browsers. For example, you can configure <code>coc-nvim</code> <a href=https://github.com/neoclide/coc.nvim>GitHub</a> to use <code>:drop</code> as the command used for opening a source file by setting <code>coc.preferences.jumpCommand</code> to <code>drop</code>. See <code>:help coc-configuration</code> for details on how to set this, but basically it’s as simple as opening up the configuration using <code>:CocConfig</code> and then adding a <code>"coc.preferences.jumpCommand": "drop",</code> mapping to the configuration JSON file.</p>
-<h2 id=switchbuf-or-swb>switchbuf or swb</h2>
-<p>Or perhaps configuring each plugin is too much work. Enter <code>switchbuf</code>. This is a global setting in Vim that controls how Vim switches between buffers.</p>
-<p>Setting <code>set switchbuf=useopen</code> has the same effect when invoking <code>buffer</code>. Note that using <code>sbuffer</code>, <code>sbnext</code>, or <code>sbrewind</code> automatically behaves as if this is the case. I.e. they will use an existing window if one already has the buffer open.</p>
-<p>Setting <code>set switchbuf=usetab</code> is similar to the effect of <code>useopen</code> except that it will look through windows in other tabs.</p>
-<p>See <code>:help switchbuf</code> or <a href="http://vimdoc.sourceforge.net/htmldoc/options.html#'switchbuf'">here on the web</a> for full details.</p>
-<section class="footnotes footnotes-end-of-document" role=doc-endnotes>
+<section class="footnotes footnotes-end-of-section" role=doc-endnotes>
 <hr>
 <ol>
 <li id=fn1 role=doc-endnote><p>Assuming you have <code>set hidden</code> that is. See <code>:help drop</code> for more details on what happens when the current buffer cannot be unloaded.<a href=#fnref1 class=footnote-back role=doc-backlink>↩︎</a></p></li>
 </ol>
 </section>
+<h2 id=switchbuf-or-swb>switchbuf or swb</h2>
+<p>Or perhaps configuring each plugin is too much work. Enter <code>switchbuf</code>. This is a global setting in Vim that controls how Vim switches between buffers.</p>
+<p>Setting <code>set switchbuf=useopen</code> has the same effect when invoking <code>buffer</code>. Note that using <code>sbuffer</code>, <code>sbnext</code>, or <code>sbrewind</code> automatically behaves as if this is the case. I.e. they will use an existing window if one already has the buffer open.</p>
+<p>Setting <code>set switchbuf=usetab</code> is similar to the effect of <code>useopen</code> except that it will look through windows in other tabs.</p>
+<p>See <code>:help switchbuf</code> or <a href="http://vimdoc.sourceforge.net/htmldoc/options.html#'switchbuf'">here on the web</a> for full details.</p>
 <nav class=suggested>
 <h2 class=suggested>More articles from this blog</h4>
 <ul>
 <li>
 <h3 class="suggested title">
-<a href=/blog/visualizing-people/>Visualizing Internet Users</a>
+<a href=/blog/why-strong-opinions-weekly-held/>Why 'Strong Opinions Weekly Held'</a>
 </h3>
-<p>What does 0.3%1 of internet users look like?
-As of this writing the global population hovers around 7.7 billion according to the World Population Clock 2.
-Screenshot from census.gov showing the world population clock. The International Telecommunications Union “estimates that at the end of 2019, 53.6 per cent of the global population, or 4.1 billion people, are using the internet.”3
-Screenshot from itu.int showing historical internet usage numbers as a percentage of the world population So a 0.</p>
+<p>Previously on this blog I wrote a short note on Why Strong Opinions Weakly Held.
+I’m trying to get something out every week. Hence the new blog title.</p>
 </li>
 <li>
 <h3 class="suggested title">
-<a href=/blog/ephemeral-fingerprinting/>Ephemeral Fingerprinting On The Web</a>
+<a href=/blog/remarkable-first-impressions/>Note-taking on a reMarkable 2</a>
 </h3>
-<p><p>Any ephemeral low-entropy web observable property whose changes are concurrently observable by multiple sites can lead to cross site identity joining.</p>
-<p>This method of identity joining does not require coordination between multiple first parties. A single third party embedded within multiple first parties can also use this method.</p>
-</p>
+<p>Sentiments after using the reMarkable 2 tablet for a month.</p>
 </li>
 <li>
 <h3 class="suggested title">
-<a href=/blog/poisson-distribution/>Deriving the Poisson Distribution</a>
+<a href=/blog/grab-diagram-workflow-re2/>Quickly grab a snapshot of your reMarkable tablet</a>
 </h3>
-<p>Where does the Poisson Distribution come from?
-A little bit of research1 tells us that the distribution was originally introduced by Abraham de Moivre in 1710 in an article called “On the Measurement of Chance, or, on the Probability of Events in Games Depending Upon Fortuitous Chance” 2 (not the original title).
-A few steps that will get us there is laid out below.
-Let’s start with a simple “rate” problem.</p>
+<p>How to bind a hotkey to grab a snapshot of your reMarkable display and copy it to the clipboard on a Mac.</p>
 </li>
 <li>
 <h3 class="suggested title">
-<a href=/blog/how-this-blog-works/>How This Blog Works</a>
+<a href=/blog/why-strong-opinions-weakly-held/>Why 'Strong Opinions Weakly Held'</a>
 </h3>
-<p>How I put this site together and why.</p>
+<p>Origins of the phrase The title of this blog is Strong Opinions, Weakly Held. The same concept shows up elsewhere are Strong Opinions Loosely Held. An eponymous essay by Paul Saffo in [1] introduced the world to this concept.
+In his essay – which isn’t very long if you would like to read the whole thing yourself – he lays out the concept as follows:
+I have found that the fastest way to an effective forecast is often through a sequence of lousy forecasts.</p>
+</li>
+<li>
+<h3 class="suggested title">
+<a href=/blog/sometimes-its-the-interviewers-who-suck/>Sometimes It's the Interviewers Who Suck</a>
+</h3>
+<p>I’ve done hundreds of interviews. I’ve also served in numerous hiring committees over the years.
+Tech companies tend to have cultures built around tech people interviewing other tech people, typically in what is not-so-affectionately known as the “Tech interview.” This is good because candidates would be evaluated based on their actual skills instead of keywords in their resume. Interviewers are in effect choosing their future coworkers which makes in interview serve the interest of both the interviewer and the interviewee.</p>
 </li>
 </ul>
 </nav>

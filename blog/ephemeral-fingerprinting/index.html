@@ -35,14 +35,14 @@
 </nav>
 <main>
 <div class=post>
+<h1 class=post-title>Ephemeral Fingerprinting On The Web</h1>
 <div class=post-info>
 <span>Written by</span>
 Asanka Herath
 <span>on&nbsp;</span><time datetime="2020-04-01 00:00:00 +0000 UTC">April 1, 2020</time>
-<br>
+|
 <a href=/tags/privacy>#Privacy</a>
 </div>
-<h1 class=post-title>Ephemeral Fingerprinting On The Web</h1>
 <div class="social share">
 <a href="https://twitter.com/intent/tweet?text=Ephemeral+Fingerprinting+On+The+Web&url=https%3A%2F%2Fxn--izc.com%2Fblog%2Fephemeral-fingerprinting%2F&via=asankah" aria-label="Share on Twitter" target=_blank rel=noopener>
 <img src=/images/twitter.svg alt="Share on Twitter">
@@ -76,6 +76,12 @@ Asanka Herath
 <p>who calls these “Cross-Session Events” (§ 5 of linked paper). Potential ephemeral fingerprinting surfaces also get flagged during standardization discussions ( <a href=https://github.com/w3c/mediacapture-main/issues/403>Example: Polling enumerateDevices</a>, <a href=https://lists.w3.org/Archives/Public/public-privacy/2013JanMar/0007.html>Example: Ambient light events</a>).</p>
 <h3 id=modelling-correlated-events>Modelling Correlated Events</h3>
 <p>A correlatable event can be thought of as the tuple <code>&lt;surface-sample, timestamp></code>. The addition of the timestamp strictly increases the amount of information carried by the surface sample.</p>
+<section class="footnotes footnotes-end-of-section" role=doc-endnotes>
+<hr>
+<ol>
+<li id=fn1 role=doc-endnote><p>Van Goethem, T. and Joosen, W., 2017. One side-channel to bring them all and in the darkness bind them: Associating isolated browsing sessions. In <em>11th {USENIX} Workshop on Offensive Technologies ({WOOT} 17)</em>. (<a href=https://pdfs.semanticscholar.org/5814/9610a57cb4626918bf003b8bad25e740b1f4.pdf>PDF</a>)<a href=#fnref1 class=footnote-back role=doc-backlink>↩︎</a></p></li>
+</ol>
+</section>
 <h3 id=modelling-event-streams>Modelling Event Streams</h3>
 <p>An event stream is simply a list of observed samples <code>sample₀, sample₁, ...</code>.</p>
 <p>Each additional observation strictly increases the amount of information.</p>
@@ -108,6 +114,12 @@ From §15 of <a href=https://w3c.github.io/mediacapture-main/#privacy-and-securi
 <li><p>UI for permissions don’t disclose the fact that all sites that have been granted access to the same resource can synchronize identifiers as a side-effect.</p></li>
 <li><p>Doesn’t prevent identity joining once permission is granted.</p></li>
 </ul>
+<section class="footnotes footnotes-end-of-section" role=doc-endnotes>
+<hr>
+<ol start=2>
+<li id=fn2 role=doc-endnote><p>Either via a legacy permissions prompt or explicitly requiring the use of the <a href=https://w3c.github.io/permissions/>Permissions API</a> in the spec for sensitive APIs.<a href=#fnref2 class=footnote-back role=doc-backlink>↩︎</a></p></li>
+</ol>
+</section>
 <h3 id=fuzzing-timing-of-events>Fuzzing Timing of Events</h3>
 <p><strong>Goal</strong>: Deter correlation of events by injecting timing skew.</p>
 <p>Mentioned in the snippet above from the Media Capture and Streams API and called out by Jeffrey Yasskin as a potential general mitigation in “desynchronize whole-browser events” in <a href=https://github.com/whatwg/html/issues/5215>this issue</a> filed against the WHATWG HTML specification.</p>
@@ -203,23 +215,42 @@ From §15 of <a href=https://w3c.github.io/mediacapture-main/#privacy-and-securi
 <p>When focus traverses a browsing context boundary, these events may be fired simultaneously to two different browsing contexts. Browsers mitigate this by not firing <code>blur</code> for cross site tab switches, but they still fire <code>blur</code> when the browser itself goes out of focus. Thus identity can be correlated when switching browser windows.</p>
 <h4 id=possible-mitigation>Possible Mitigation</h4>
 <p>When the <em>new chain</em> and the <em>old chain</em> <a href=#fn3 class=footnote-ref id=fnref3 role=doc-noteref><sup>3</sup></a> are in different top-level browsing contexts whose active documents are not same-origin, queue but don’t fire <code>change</code> and <code>blur</code> events until focus returns to the old top-level browsing context.</p>
-<h3 id=notes>Notes</h3>
-<section class="footnotes footnotes-end-of-document" role=doc-endnotes>
+<section class="footnotes footnotes-end-of-section" role=doc-endnotes>
 <hr>
-<ol>
-<li id=fn1 role=doc-endnote><p>Van Goethem, T. and Joosen, W., 2017. One side-channel to bring them all and in the darkness bind them: Associating isolated browsing sessions. In <em>11th {USENIX} Workshop on Offensive Technologies ({WOOT} 17)</em>. (<a href=https://pdfs.semanticscholar.org/5814/9610a57cb4626918bf003b8bad25e740b1f4.pdf>PDF</a>)<a href=#fnref1 class=footnote-back role=doc-backlink>↩︎</a></p></li>
-<li id=fn2 role=doc-endnote><p>Either via a legacy permissions prompt or explicitly requiring the use of the <a href=https://w3c.github.io/permissions/>Permissions API</a> in the spec for sensitive APIs.<a href=#fnref2 class=footnote-back role=doc-backlink>↩︎</a></p></li>
+<ol start=3>
 <li id=fn3 role=doc-endnote><p><em>New chain</em> and <em>old chain</em> are defined in <a href=https://html.spec.whatwg.org/multipage/interaction.html#focus-update-steps>focus update steps</a>.<a href=#fnref3 class=footnote-back role=doc-backlink>↩︎</a></p></li>
 </ol>
 </section>
+<h3 id=notes>Notes</h3>
 <nav class=suggested>
 <h2 class=suggested>More articles from this blog</h4>
 <ul>
 <li>
 <h3 class="suggested title">
+<a href=/blog/remarkable-first-impressions/>Note-taking on a reMarkable 2</a>
+</h3>
+<p>Sentiments after using the reMarkable 2 tablet for a month.</p>
+</li>
+<li>
+<h3 class="suggested title">
 <a href=/blog/comcast-technican-problem/>The Comcast Technician Problem</a>
 </h3>
 <p>Given a set of tasks, incentives are often aligned towards dropping a task rather than allowing for perpetual accretion of delays.</p>
+</li>
+<li>
+<h3 class="suggested title">
+<a href=/blog/visualizing-people/>Visualizing Internet Users</a>
+</h3>
+<p>What does 0.3%1 of internet users look like?
+As of this writing the global population hovers around 7.7 billion according to the World Population Clock 2.
+Screenshot from census.gov showing the world population clock. The International Telecommunications Union “estimates that at the end of 2019, 53.6 per cent of the global population, or 4.1 billion people, are using the internet.”3
+Screenshot from itu.int showing historical internet usage numbers as a percentage of the world population So a 0.</p>
+</li>
+<li>
+<h3 class="suggested title">
+<a href=/blog/shannon-paper/>Shannon Paper</a>
+</h3>
+<p>Claude Shannon’s <em>A mathematical theory of communication</em> is an oft cited classic in information theory. Let’s dive in and try to tease apart the “why”s that are often overlooked when people build on top of the introduced theory. They are definitely things that I didn’t consider to be obvious without the benefit of reading the paper.</p>
 </li>
 <li>
 <h3 class="suggested title">
@@ -229,26 +260,6 @@ From §15 of <a href=https://w3c.github.io/mediacapture-main/#privacy-and-securi
 A little bit of research1 tells us that the distribution was originally introduced by Abraham de Moivre in 1710 in an article called “On the Measurement of Chance, or, on the Probability of Events in Games Depending Upon Fortuitous Chance” 2 (not the original title).
 A few steps that will get us there is laid out below.
 Let’s start with a simple “rate” problem.</p>
-</li>
-<li>
-<h3 class="suggested title">
-<a href=/blog/sometimes-its-the-interviewers-who-suck/>Sometimes It's the Interviewers Who Suck</a>
-</h3>
-<p>I’ve done hundreds of interviews. I’ve also served in numerous hiring committees over the years.
-Tech companies tend to have cultures built around tech people interviewing other tech people, typically in what is not-so-affectionately known as the “Tech interview.” This is good because candidates would be evaluated based on their actual skills instead of keywords in their resume. Interviewers are in effect choosing their future coworkers which makes in interview serve the interest of both the interviewer and the interviewee.</p>
-</li>
-<li>
-<h3 class="suggested title">
-<a href=/blog/ansible-cli-sugar/>Easier CLI for ad-hoc Ansible tasks and playbooks</a>
-</h3>
-<p>Encode the host and group names into the name of a wrapper script for quick ad-hoc invocation of Ansible tasks and playbooks.</p>
-</li>
-<li>
-<h3 class="suggested title">
-<a href=/blog/things-you-can-do-with-nvim-and-vscode/>Things You Can Do With Neovim and Vscode That You Can't Do With Neovim Alone</a>
-</h3>
-<p>This is the third time I’ve tried in earnest to switch to VSCode from Vim (or Neovim in my case) for reasons not all of which are relevant to this post. But I love Vim style modal editing and I’ve grown accustomed to some features that aren’t present or not well emulated in VSCodeVim.
-Enter VSCode Neovim. I was intrigued by their claim to integrate Neovim instead of trying to emulate Vim.</p>
 </li>
 </ul>
 </nav>

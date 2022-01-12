@@ -35,16 +35,16 @@
 </nav>
 <main>
 <div class=post>
+<h1 class=post-title>Shannon Paper</h1>
 <div class=post-info>
 <span>Written by</span>
 Asanka Herath
 <span>on&nbsp;</span><time datetime="2021-03-26 16:14:20 -0400 EDT">March 26, 2021</time>
-<br>
+|
 <a href=/tags/privacy>#Privacy</a>
 <a href=/tags/math>#Math</a>
 <a href=/tags/programming>#Programming</a>
 </div>
-<h1 class=post-title>Shannon Paper</h1>
 <div class="social share">
 <a href="https://twitter.com/intent/tweet?text=Shannon+Paper&url=https%3A%2F%2Fxn--izc.com%2Fblog%2Fshannon-paper%2F&via=asankah" aria-label="Share on Twitter" target=_blank rel=noopener>
 <img src=/images/twitter.svg alt="Share on Twitter">
@@ -121,24 +121,9 @@ Asanka Herath
 <h3 id=graphical-representation-of-a-markoff-process>4. Graphical Representation of a Markoff process</h3>
 <p>Identifies the previous stochastic processes as Markoff processes. They are represented as a set of states. Each state can probabilistically transition to number of states with some probability distribution. Each transition emits a symbol.</p>
 <p>If the emitted symbol doesn’t depend on any prior symbol, then we only really need one state. It will have a self-edge for each possible emitted symbol.</p>
-<pre class=graphviz><code>digraph {
-  nodesep=1.5;
-  S -&gt; S [label=&quot;0.2\n\n &#39;A&#39;&quot;];
-  S -&gt; S [label=&quot;0.2\n \n&#39;B&#39;&quot;];
-  S -&gt; S [label=&quot;0.6\n \n&#39;C&#39;&quot;];
-}</code></pre>
+<p><img src=b6f391967612795771e6553cc2fd6bc273c24e54.svg></p>
 <p>If the emitted symbol depends on the previous symbol, then there will be as many states needed as there are symbols. This is the case for digrams.</p>
-<pre class=graphviz><code>digraph {
-  A -&gt; A [label=&quot;0.33, A&quot;];
-  A -&gt; B [label=&quot;0.33, B&quot;];
-  A -&gt; C [label=&quot;0.33, C&quot;];
-  B -&gt; A [label=&quot;0.33, A&quot;];
-  B -&gt; B [label=&quot;0.33, B&quot;];
-  B -&gt; C [label=&quot;0.33, C&quot;];
-  C -&gt; A [label=&quot;0.33, A&quot;];
-  C -&gt; B [label=&quot;0.33, B&quot;];
-  C -&gt; C [label=&quot;0.33, C&quot;];
-}</code></pre>
+<p><img src=48e4afca96a9d65486456d2506396f422fb5b8dd.svg></p>
 <p>For trigrams, since they depend on the previous two symbols, require <span class="math inline">n^2</span> states.</p>
 <h3 id=ergodic-and-mixed-sources>5. Ergodic and Mixed Sources</h3>
 <blockquote>
@@ -196,43 +181,39 @@ H & = \sum_i P_i H_i \\
 <ul>
 <li>
 <h3 class="suggested title">
-<a href=/blog/use-drop-not-edit/>Vim: Use Drop Not Edit, SBuffer Not Buffer</a>
+<a href=/blog/poisson-distribution/>Deriving the Poisson Distribution</a>
 </h3>
-<p>I’m going to assume you are a Vim user.
-Say you have a several windows open in Vim and you want to edit another file. Using :edit works if you want to open the file in the current window unconditionally.
-But that’s often not what you want. If you have the same file open in another window, then the most efficient and least disruptive thing to do is to switch to that window.</p>
+<p>Where does the Poisson Distribution come from?
+A little bit of research1 tells us that the distribution was originally introduced by Abraham de Moivre in 1710 in an article called “On the Measurement of Chance, or, on the Probability of Events in Games Depending Upon Fortuitous Chance” 2 (not the original title).
+A few steps that will get us there is laid out below.
+Let’s start with a simple “rate” problem.</p>
 </li>
 <li>
 <h3 class="suggested title">
-<a href=/blog/symbol-name-types/>Names for Name Conventions</a>
+<a href=/blog/why-strong-opinions-weakly-held/>Why 'Strong Opinions Weakly Held'</a>
 </h3>
-<p>Names I’ve seen used to refer to naming conventions:
-snake_case, hacker_case, unix_hacker_style : Everything is lower case, though exceptions exist. E.g. HTTP_foo_bar. SCREAMING_SNAKE_CASE : Usually reserved for macros and constants. camelCase : The first letter is lowercase. PascalCase : The first letter is uppercase. kabob-case : Like snake_case, but uses dashes instead of underscores. Common for command-line options1, CSS styles, commands (e.g. git-receive-pack). While looking idly looking for details on this, I stumbled on this Medium post which is relevant.</p>
+<p>Origins of the phrase The title of this blog is Strong Opinions, Weakly Held. The same concept shows up elsewhere are Strong Opinions Loosely Held. An eponymous essay by Paul Saffo in [1] introduced the world to this concept.
+In his essay – which isn’t very long if you would like to read the whole thing yourself – he lays out the concept as follows:
+I have found that the fastest way to an effective forecast is often through a sequence of lousy forecasts.</p>
 </li>
 <li>
 <h3 class="suggested title">
-<a href=/blog/ten-years/>Ten Years</a>
+<a href=/blog/notes-on-fact-checking/>Notes from Crash Course's Videos on Fact Checking Information You See On The Internet
+</a>
 </h3>
-<p>It’s been ten years since I started at Google. The work anniversary fell on 6th of December.
-Ten years ago my wife and I made our way to Mountain View for my orientation; all excited for a brand new chapter in our lives. After spending a week in Mountain View / Palo Alto we both decided that California was not for us. But that’s beside the point.
-I was elated. This was pretty much everything I dreamt of as a kid growing up in Sri Lanka.</p>
+<p>Hank Green’s Crash Course YouTube channel has an excellent series about navigating digital information. It’s an excellent guide to how internet users could intelligently consume information they see on the internet. These are my (incomplete) notes from the series.</p>
 </li>
 <li>
 <h3 class="suggested title">
-<a href=/blog/visualizing-people/>Visualizing Internet Users</a>
+<a href=/blog/grab-diagram-workflow-re2/>Quickly grab a snapshot of your reMarkable tablet</a>
 </h3>
-<p>What does 0.3%1 of internet users look like?
-As of this writing the global population hovers around 7.7 billion according to the World Population Clock 2.
-Screenshot from census.gov showing the world population clock. The International Telecommunications Union “estimates that at the end of 2019, 53.6 per cent of the global population, or 4.1 billion people, are using the internet.”3
-Screenshot from itu.int showing historical internet usage numbers as a percentage of the world population So a 0.</p>
+<p>How to bind a hotkey to grab a snapshot of your reMarkable display and copy it to the clipboard on a Mac.</p>
 </li>
 <li>
 <h3 class="suggested title">
-<a href=/blog/on-wontfixing-bugs/>On WontFixing Bugs</a>
+<a href=/blog/how-this-blog-works/>How This Blog Works</a>
 </h3>
-<p><p>Large projects accumulate a large number of issue reports over time. This is normal. Typically for a “successful” project the rate of new issues being reported will exceed the rate of issues being fixed. Hence the growth.</p>
-<p>But what are they to do about this ever-growing pile of bugs?</p>
-</p>
+<p>How I put this site together and why.</p>
 </li>
 </ul>
 </nav>

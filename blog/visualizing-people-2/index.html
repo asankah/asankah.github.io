@@ -35,15 +35,15 @@
 </nav>
 <main>
 <div class=post>
+<h1 class=post-title>Visualizing A Million People</h1>
 <div class=post-info>
 <span>Written by</span>
 Asanka Herath
 <span>on&nbsp;</span><time datetime="2021-09-06 00:00:00 +0000 UTC">September 6, 2021</time>
-<br>
+|
 <a href=/tags/programming>#Programming</a>
 <a href=/tags/process>#Process</a>
 </div>
-<h1 class=post-title>Visualizing A Million People</h1>
 <div class="social share">
 <a href="https://twitter.com/intent/tweet?text=Visualizing+A+Million+People&url=https%3A%2F%2Fxn--izc.com%2Fblog%2Fvisualizing-people-2%2F&via=asankah" aria-label="Share on Twitter" target=_blank rel=noopener>
 <img src=/images/twitter.svg alt="Share on Twitter">
@@ -55,27 +55,33 @@ Asanka Herath
 <img src=/images/link-2.svg alt="Permanent link to post">
 </a>
 </div>
-<div class=note>
+<aside class=note>
 <p>This article was formerly published as <a href=/blog/visualizing-people/>Visualizing Internet Users</a>. This version is more generalized and up-to-date.</p>
-</div>
+</aside>
 <p>What if you introduce a bug and/or a feature that pisses off a million people?</p>
 <p>The scenario isn’t all that hard to imagine these days if you work at a big tech company or even a small one with a considerable user base. It seems a million users aren’t all that hard to reach these days.</p>
 <p>What is harder though is to imagine what a million people looks like. What if you were being stared down by the entirety of the affected user base? Or worse you had to stand on a stage in front of them and explain yourself?</p>
 <p>If you have 1 billion users and you ship a bug that only manifests 1 in a million times, then you have yourself 1000 angry users. It’s good to know what that group looks like.</p>
 <p>We can easily imagine a single person, 10, or even 25 people. But exceed a couple of hundred and our imagination falters. It becomes just a number and stops feeling like “users” or “people.” The perceived significance of the population thus starts to diminish.</p>
-<h2 id=so-whats-the-significance-of-a-million-people-anyway>So what’s the significance of a million people anyway?</h2>
+<h1 id=so-whats-the-significance-of-a-million-people-anyway>So what’s the significance of a million people anyway?</h1>
 <p>World population is teetering on roughly 7.7 billion people (in 2019). So <strong>a million people is about 0.01% of the global population</strong>.</p>
 <figure>
-<img src=world-population-2021.png id=fig:worldpop alt="World population in 2021 is 7.7 billion approximately."><figcaption aria-hidden=true>World population in 2021 is 7.7 billion approximately.</figcaption>
+<img src=world-population-2021.png id=fig:worldpop alt="Figure 1: World population in 2021 is 7.7 billion approximately."><figcaption aria-hidden=true>Figure 1: World population in 2021 is 7.7 billion approximately.</figcaption>
 </figure>
 <p>Internet users, on the other hand, come up to something like half of the world population based World Bank figures which <em>imply</em> that roughly 50% of the population should have internet access in 2021 <a href=#fn1 class=footnote-ref id=fnref1 role=doc-noteref><sup>1</sup></a>.</p>
 <figure>
-<img src=worldbank-individuals-using-internet.webp id=fig:internetpop alt="Percentage of population who has access to the internet (World Bank 2017)"><figcaption aria-hidden=true>Percentage of population who has access to the internet (World Bank 2017)</figcaption>
+<img src=worldbank-individuals-using-internet.webp id=fig:internetpop alt="Figure 2: Percentage of population who has access to the internet (World Bank 2017)"><figcaption aria-hidden=true>Figure 2: Percentage of population who has access to the internet (World Bank 2017)</figcaption>
 </figure>
 <p>So <strong>a million users would be 0.02% of the population with some access to the internet</strong>. Still not that big.</p>
 <p>But once you focus on a smaller scale like a geographic region or a user base of some application, then suddenly the million users looks much bigger.</p>
 <h2 id=to-49>1 to 49</h2>
 <p>Let’s skip this range since this is in the range of what you’d see in a mirror, can fit on a bicycle, can fit on a sofa, your team, gathering of friends, significant annual family event, or other familiar situation.</p>
+<section class="footnotes footnotes-end-of-section" role=doc-endnotes>
+<hr>
+<ol>
+<li id=fn1 role=doc-endnote><p>Note that fig. 2 indicates that the estimate is 49% of the population would have internet access in 2017. It’s likely that by 2021 we’d at least have reached 50% based on the sharp growth curve.<a href=#fnref1 class=footnote-back role=doc-backlink>↩︎</a></p></li>
+</ol>
+</section>
 <h2 id=from-50-to-100000>From 50 to 100,000</h2>
 <p>An example of visualizing populations for small numbers can be found at <a href=https://blog.lime.link/visualizing-crowd-sizes/>Visualizing Crowd Sizes</a>. It goes from around 50 people up to 100,000 people.</p>
 <p>While 100,000 is interesting we need to go all the way to 1 million.</p>
@@ -103,9 +109,8 @@ Asanka Herath
 <p>Another event that drew 500,000 people is <a href=https://www.nbcnews.com/show-me/video/nearly-500-000-people-march-in-anti-violence-rally-in-barcelona-1033617987741>an anti-violence rally in Barcelona as reported by NBC</a>. While there’s video, the content doesn’t quite capture the massive number of people. Also it’s <em>“nearly 500,000”</em> people.</p>
 <p>However, the closest we’ll probably get to a somewhat believable 500,000 person crowd would be the March for Science. They posted the following picture on <a href=https://www.facebook.com/marchforscience/posts/836983043362678>Facebook</a> noting that “There are 500,000 people on strike in Montreal”.</p>
 <figure>
-<img src=march-for-science-crowd-2020-11-20.jpg alt="March for Science on Facebook: Picture of protest"><figcaption aria-hidden=true>March for Science on Facebook: Picture of protest</figcaption>
+<img src=march-for-science-crowd-2020-11-20.jpg alt="March for Science on Facebook: Picture of protest. Image source"><figcaption aria-hidden=true>March for Science on Facebook: Picture of protest. <a href=https://www.facebook.com/marchforscience/posts/836983043362678>Image source</a></figcaption>
 </figure>
-<p><a href=https://www.facebook.com/marchforscience/posts/836983043362678>Image source</a></p>
 <p><a href=https://en.wikipedia.org/wiki/Woodstock>Woodstock</a> or “an Aquarian Exposition: 3 Days of Peace & Music” festival held in 1969 reportedly attracted “over 400,000”, “450,000”, or “500,000” people depending on the source. Let’s assume that the real number is somewhere in-between which gets us to somewhere in the neighborhood of 500,000 people.</p>
 <p>There are numerous aerial photos of the Woodstock crowds, some of which you can find in <a href=https://www.gettyimages.com/photos/woodstock-and-aerial>this image gallery from Getty images</a>.</p>
 <h2 id=section-3>750,000</h2>
@@ -123,45 +128,22 @@ Asanka Herath
 <blockquote>
 <p>Every time a ton of people gather in one place, there are all sorts of pronouncements made about how many folks really showed. The figures rarely agree; Glenn Beck’s rally on the National Mall this summer attracted a million people, according to Beck cohort Rep. Michelle Bachman. CBS News pegged it at more like 87,000.</p>
 </blockquote>
-<h2 id=and-more>And More</h2>
-<p>I’m going to give up at this point. Pictures purportedly of around one million people are mostly parts of crowds that have been estimated to be that big.</p>
-<section class="footnotes footnotes-end-of-document" role=doc-endnotes>
+<section class="footnotes footnotes-end-of-section" role=doc-endnotes>
 <hr>
-<ol>
-<li id=fn1 role=doc-endnote><p>Note that <span class=citation data-cites=fig:internetpop>[figure @fig:internetpop]</span> indicates that the estimate is 49% of the population would have internet access in 2017. It’s likely that by 2021 we’d at least have reached 50% based on the sharp growth curve.<a href=#fnref1 class=footnote-back role=doc-backlink>↩︎</a></p></li>
+<ol start=2>
 <li id=fn2 role=doc-endnote><p><a href=https://www.wired.com/2011/02/how-many-people-are-in-tahrir-square-heres-how-to-tell/>How Many People Are in Tahrir Square? Here’s How to Tell</a><a href=#fnref2 class=footnote-back role=doc-backlink>↩︎</a></p></li>
 </ol>
 </section>
+<h2 id=and-more>And More</h2>
+<p>I’m going to give up at this point. Pictures purportedly of around one million people are mostly parts of crowds that have been estimated to be that big.</p>
 <nav class=suggested>
 <h2 class=suggested>More articles from this blog</h4>
 <ul>
 <li>
 <h3 class="suggested title">
-<a href=/blog/why-strong-opinions-weakly-held/>Why 'Strong Opinions Weakly Held'</a>
+<a href=/blog/how-this-blog-works/>How This Blog Works</a>
 </h3>
-<p>Origins of the phrase The title of this blog is Strong Opinions, Weakly Held. The same concept shows up elsewhere are Strong Opinions Loosely Held. An eponymous essay by Paul Saffo in [1] introduced the world to this concept.
-In his essay – which isn’t very long if you would like to read the whole thing yourself – he lays out the concept as follows:
-I have found that the fastest way to an effective forecast is often through a sequence of lousy forecasts.</p>
-</li>
-<li>
-<h3 class="suggested title">
-<a href=/blog/grab-diagram-workflow-re2/>Quickly grab a snapshot of your reMarkable tablet</a>
-</h3>
-<p>How to bind a hotkey to grab a snapshot of your reMarkable display and copy it to the clipboard on a Mac.</p>
-</li>
-<li>
-<h3 class="suggested title">
-<a href=/blog/notes-on-fact-checking/>Notes from Crash Course's Videos on Fact Checking Information You See On The Internet
-</a>
-</h3>
-<p>Hank Green’s Crash Course YouTube channel has an excellent series about navigating digital information. It’s an excellent guide to how internet users could intelligently consume information they see on the internet. These are my (incomplete) notes from the series.</p>
-</li>
-<li>
-<h3 class="suggested title">
-<a href=/blog/sometimes-its-the-interviewers-who-suck/>Sometimes It's the Interviewers Who Suck</a>
-</h3>
-<p>I’ve done hundreds of interviews. I’ve also served in numerous hiring committees over the years.
-Tech companies tend to have cultures built around tech people interviewing other tech people, typically in what is not-so-affectionately known as the “Tech interview.” This is good because candidates would be evaluated based on their actual skills instead of keywords in their resume. Interviewers are in effect choosing their future coworkers which makes in interview serve the interest of both the interviewer and the interviewee.</p>
+<p>How I put this site together and why.</p>
 </li>
 <li>
 <h3 class="suggested title">
@@ -171,6 +153,28 @@ Tech companies tend to have cultures built around tech people interviewing other
 As of this writing the global population hovers around 7.7 billion according to the World Population Clock 2.
 Screenshot from census.gov showing the world population clock. The International Telecommunications Union “estimates that at the end of 2019, 53.6 per cent of the global population, or 4.1 billion people, are using the internet.”3
 Screenshot from itu.int showing historical internet usage numbers as a percentage of the world population So a 0.</p>
+</li>
+<li>
+<h3 class="suggested title">
+<a href=/blog/things-you-can-do-with-nvim-and-vscode/>Things You Can Do With Neovim and Vscode That You Can't Do With Neovim Alone</a>
+</h3>
+<p>This is the third time I’ve tried in earnest to switch to VSCode from Vim (or Neovim in my case) for reasons not all of which are relevant to this post. But I love Vim style modal editing and I’ve grown accustomed to some features that aren’t present or not well emulated in VSCodeVim.
+Enter VSCode Neovim. I was intrigued by their claim to integrate Neovim instead of trying to emulate Vim.</p>
+</li>
+<li>
+<h3 class="suggested title">
+<a href=/blog/why-strong-opinions-weekly-held/>Why 'Strong Opinions Weekly Held'</a>
+</h3>
+<p>Previously on this blog I wrote a short note on Why Strong Opinions Weakly Held.
+I’m trying to get something out every week. Hence the new blog title.</p>
+</li>
+<li>
+<h3 class="suggested title">
+<a href=/blog/use-drop-not-edit/>Vim: Use Drop Not Edit, SBuffer Not Buffer</a>
+</h3>
+<p>I’m going to assume you are a Vim user.
+Say you have a several windows open in Vim and you want to edit another file. Using :edit works if you want to open the file in the current window unconditionally.
+But that’s often not what you want. If you have the same file open in another window, then the most efficient and least disruptive thing to do is to switch to that window.</p>
 </li>
 </ul>
 </nav>
@@ -184,7 +188,7 @@ Screenshot from itu.int showing historical internet usage numbers as a percentag
 </div>
 </main>
 <footer>
-<span>Last modified on September 28, 2021 </span>
+<span>Last modified on January 12, 2022 </span>
 </footer>
 <script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-169355711-2','auto'),ga('send','pageview'))</script>
 <script async src=https://www.google-analytics.com/analytics.js></script>

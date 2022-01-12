@@ -35,15 +35,15 @@
 </nav>
 <main>
 <div class=post>
+<h1 class=post-title>Things You Can Do With Neovim and Vscode That You Can't Do With Neovim Alone</h1>
 <div class=post-info>
 <span>Written by</span>
 Asanka Herath
 <span>on&nbsp;</span><time datetime="2020-09-19 00:00:00 +0000 UTC">September 19, 2020</time>
-<br>
+|
 <a href=/tags/vim>#Vim</a>
 <a href=/tags/programming>#Programming</a>
 </div>
-<h1 class=post-title>Things You Can Do With Neovim and Vscode That You Can't Do With Neovim Alone</h1>
 <div class="social share">
 <a href="https://twitter.com/intent/tweet?text=Things+You+Can+Do+With+Neovim+and+Vscode+That+You+Can%27t+Do+With+Neovim+Alone&url=https%3A%2F%2Fxn--izc.com%2Fblog%2Fthings-you-can-do-with-nvim-and-vscode%2F&via=asankah" aria-label="Share on Twitter" target=_blank rel=noopener>
 <img src=/images/twitter.svg alt="Share on Twitter">
@@ -71,38 +71,18 @@ Asanka Herath
 <p>VSCodeNeovim defers to VSCode for handling insert mode. VSCode handles autocompletion and other assistive features. You’ll have to get used to your insert mode customizations not working, or replicating that with VSCode keyboard mapping customizations. When exiting insert mode the extension asynchronously synchronizes the buffer contents – which at this point would include the changes that were introduced – with Neovim. The code for synchronizing the VSCode editor contents and the Neovim buffer is in <code>buffer_manager.ts</code> (<a href=https://github.com/asvetliakov/vscode-neovim/blob/master/src/buffer_manager.ts>linky</a>) which is also a good place to look if you want to know the details about buffer options that are being set.</p></li>
 </ol>
 <p>Of course I’m eliding lots of detail here including integrations for other areas of UI. But I think this captures the pertinent details. The extension is a pretty impressive piece of work which is well worth a gander. Now on to the good stuff.</p>
+<section class="footnotes footnotes-end-of-section" role=doc-endnotes>
+<hr>
+<ol>
+<li id=fn1 role=doc-endnote><p>Not quite the whole story because it’s possible a buffer be created inside the Neovim instance and have it be mirrored in a VSCode editor. But that’s probably not what you’ll be using on a regular basis.<a href=#fnref1 class=footnote-back role=doc-backlink>↩︎</a></p></li>
+</ol>
+</section>
 <h2 id=responsive-neovim-experience-over-a-laggy-ssh-connection>Responsive Neovim Experience Over A laggy SSH Connection</h2>
 <p>This gets to the reason why I’m trying to move to VSCode in the first place. I work on a project consisting of thousands of C++ source files. My home-office doesn’t have enough hardware to do regular builds, or in fact any build at all. The beefy machines are in a remote location accessible via SSH.</p>
 <p>I’ve been using Neovim over SSH for a while, but the latency really bothers me. And no, neither SCP nor SSHFS scratches this itch because I won’t have access to language smarts like <code>clangd</code> which require access to all the source files and some build tooling.</p>
 <p><a href=https://code.visualstudio.com/docs/remote/remote-overview>VSCode Remote Development</a> was a nearly perfect answer with the exception that VSCodeVim didn’t quite have all the functionality I needed. VSCodeNeovim addresses that last piece of the puzzle.</p>
 <p>VSCode + Remote SSH + VSCodeNeovim + Neovim gives me:</p>
-<pre class=graphviz><code>digraph G {
-  node [shape=box];
-  rankdir=LR;
-
-  subgraph &quot;cluster_local&quot; {
-    label=&quot;local machine&quot;;
-    vscode [label=&quot;VSCode&quot;];
-    vscodenvim [label=&quot;VSCodeNeovim&quot;];
-    nvim [label=&quot;Neovim instance&quot;];
-    nvim_plugs [label=&quot;Neovim plugins&quot;];
-  }
-
-  subgraph &quot;cluster_remote&quot; {
-    label=&quot;remote machine&quot;;
-    vscodeserver [label=&quot;VSCode Server&quot;];
-    sources [label=&quot;source files&quot;]
-    clangd;
-  }
-
-  vscode -&gt; vscodenvim [label=&quot;instantiates&quot;];
-  vscodenvim -&gt; nvim [label=&quot;starts (embedded)&quot;];
-  nvim -&gt; nvim_plugs [label=&quot;starts/instantiates&quot;];
-
-  vscode -&gt; vscodeserver [label=&quot;communicates via SSH&quot;];
-  vscodeserver -&gt; sources [label=&quot;reads/writes&quot;];
-  vscodeserver -&gt; clangd [label=&quot;runs&quot;];
-}</code></pre>
+<p><img src=4e46e31363fbe39799ba35a987d7a4957644d681.svg></p>
 <ul>
 <li>On the remote machine:
 <ul>
@@ -133,58 +113,49 @@ Asanka Herath
 <h3 id=monospace-code-with-proportional-comments>Monospace Code With Proportional Comments?</h3>
 <p>What I really want isn’t proportional fonts everywhere. Rather I only want proportional fonts for prose. In code, this would take the form of comments.</p>
 <p>Unfortunately, VSCode doesn’t support changing the font for specific syntactic tokens or scopes. That would’ve been ideal because it would let me configure things so that comments are in proportional font while the rest is in monospace. Also in the case of Markdown, I’d be able to make everything proportional except for inline code and fenced code blocks. Alas we are not quite there yet. Several feature requests already exist<a href=#fn2 class=footnote-ref id=fnref2 role=doc-noteref><sup>2</sup></a>, but hasn’t seen much activity.</p>
+<section class="footnotes footnotes-end-of-section" role=doc-endnotes>
+<hr>
+<ol start=2>
+<li id=fn2 role=doc-endnote><p>A quick search in the VSCode repository <a href="https://github.com/microsoft/vscode/search?q=tokenColorCustomizations+font+name">with this query</a> yields several issues that request for pretty much the same thing: Allow setting <code>fontName</code> in <code>tokenColorCustomizations</code>. There’s also <a href=https://github.com/deepanrajkumar/Italic-and-Ligature>this curious experiment</a> which patches in a different font for italics so that you can use the existing <code>fontStyle: "italic"</code> option in <code>tokenColorCustomizations</code> to switch fonts.<a href=#fnref2 class=footnote-back role=doc-backlink>↩︎</a></p></li>
+</ol>
+</section>
 <h2 id=takeaways>Takeaways</h2>
 <ol type=1>
 <li>VSCodeNeovim is a functional replacement for the avid Neovim or perhaps Vim user who wants it both ways. Lots of caveats exist including the fact that Neovim mode only really works inside editor windows.</li>
 <li>VSCodeNeovim + “Remote SSH” is an awesome combination for editing remote files using Neovim with the latency of a local Neovim instance.</li>
 <li>You can use proportional fonts with VSCodeNeovim for super double awesomeness.</li>
 </ol>
-<section class="footnotes footnotes-end-of-document" role=doc-endnotes>
-<hr>
-<ol>
-<li id=fn1 role=doc-endnote><p>Not quite the whole story because it’s possible a buffer be created inside the Neovim instance and have it be mirrored in a VSCode editor. But that’s probably not what you’ll be using on a regular basis.<a href=#fnref1 class=footnote-back role=doc-backlink>↩︎</a></p></li>
-<li id=fn2 role=doc-endnote><p>A quick search in the VSCode repository <a href="https://github.com/microsoft/vscode/search?q=tokenColorCustomizations+font+name">with this query</a> yields several issues that request for pretty much the same thing: Allow setting <code>fontName</code> in <code>tokenColorCustomizations</code>. There’s also <a href=https://github.com/deepanrajkumar/Italic-and-Ligature>this curious experiment</a> which patches in a different font for italics so that you can use the existing <code>fontStyle: "italic"</code> option in <code>tokenColorCustomizations</code> to switch fonts.<a href=#fnref2 class=footnote-back role=doc-backlink>↩︎</a></p></li>
-</ol>
-</section>
 <nav class=suggested>
 <h2 class=suggested>More articles from this blog</h4>
 <ul>
 <li>
 <h3 class="suggested title">
-<a href=/blog/poisson-distribution/>Deriving the Poisson Distribution</a>
+<a href=/blog/on-wontfixing-bugs/>On WontFixing Bugs</a>
 </h3>
-<p>Where does the Poisson Distribution come from?
-A little bit of research1 tells us that the distribution was originally introduced by Abraham de Moivre in 1710 in an article called “On the Measurement of Chance, or, on the Probability of Events in Games Depending Upon Fortuitous Chance” 2 (not the original title).
-A few steps that will get us there is laid out below.
-Let’s start with a simple “rate” problem.</p>
+<p><p>Large projects accumulate a large number of issue reports over time. This is normal. Typically for a “successful” project the rate of new issues being reported will exceed the rate of issues being fixed. Hence the growth.</p>
+<p>But what are they to do about this ever-growing pile of bugs?</p>
+</p>
 </li>
 <li>
 <h3 class="suggested title">
-<a href=/blog/ansible-cli-sugar/>Easier CLI for ad-hoc Ansible tasks and playbooks</a>
+<a href=/blog/use-drop-not-edit/>Vim: Use Drop Not Edit, SBuffer Not Buffer</a>
 </h3>
-<p>Encode the host and group names into the name of a wrapper script for quick ad-hoc invocation of Ansible tasks and playbooks.</p>
+<p>I’m going to assume you are a Vim user.
+Say you have a several windows open in Vim and you want to edit another file. Using :edit works if you want to open the file in the current window unconditionally.
+But that’s often not what you want. If you have the same file open in another window, then the most efficient and least disruptive thing to do is to switch to that window.</p>
 </li>
 <li>
 <h3 class="suggested title">
-<a href=/blog/why-strong-opinions-weakly-held/>Why 'Strong Opinions Weakly Held'</a>
+<a href=/blog/sometimes-its-the-interviewers-who-suck/>Sometimes It's the Interviewers Who Suck</a>
 </h3>
-<p>Origins of the phrase The title of this blog is Strong Opinions, Weakly Held. The same concept shows up elsewhere are Strong Opinions Loosely Held. An eponymous essay by Paul Saffo in [1] introduced the world to this concept.
-In his essay – which isn’t very long if you would like to read the whole thing yourself – he lays out the concept as follows:
-I have found that the fastest way to an effective forecast is often through a sequence of lousy forecasts.</p>
+<p>I’ve done hundreds of interviews. I’ve also served in numerous hiring committees over the years.
+Tech companies tend to have cultures built around tech people interviewing other tech people, typically in what is not-so-affectionately known as the “Tech interview.” This is good because candidates would be evaluated based on their actual skills instead of keywords in their resume. Interviewers are in effect choosing their future coworkers which makes in interview serve the interest of both the interviewer and the interviewee.</p>
 </li>
 <li>
 <h3 class="suggested title">
-<a href=/blog/symbol-name-types/>Names for Name Conventions</a>
+<a href=/blog/comcast-technican-problem/>The Comcast Technician Problem</a>
 </h3>
-<p>Names I’ve seen used to refer to naming conventions:
-snake_case, hacker_case, unix_hacker_style : Everything is lower case, though exceptions exist. E.g. HTTP_foo_bar. SCREAMING_SNAKE_CASE : Usually reserved for macros and constants. camelCase : The first letter is lowercase. PascalCase : The first letter is uppercase. kabob-case : Like snake_case, but uses dashes instead of underscores. Common for command-line options1, CSS styles, commands (e.g. git-receive-pack). While looking idly looking for details on this, I stumbled on this Medium post which is relevant.</p>
-</li>
-<li>
-<h3 class="suggested title">
-<a href=/blog/why-strong-opinions-weekly-held/>Why 'Strong Opinions Weekly Held'</a>
-</h3>
-<p>Previously on this blog I wrote a short note on Why Strong Opinions Weakly Held.
-I’m trying to get something out every week. Hence the new blog title.</p>
+<p>Given a set of tasks, incentives are often aligned towards dropping a task rather than allowing for perpetual accretion of delays.</p>
 </li>
 </ul>
 </nav>
