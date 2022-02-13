@@ -51,7 +51,7 @@ Asanka Herath
 <a href="https://twitter.com/intent/tweet?text=On+WontFixing+Bugs&url=https%3A%2F%2Fxn--izc.com%2Fblog%2Fon-wontfixing-bugs%2F&via=asankah" aria-label="Share on Twitter" target=_blank rel=noopener>
 <img src=/images/twitter.svg alt="Share on Twitter">
 </a>
-<a href="mailto:?body=Via+https%3A%2F%2Ftwitter.com%2Fasankah%0A%0A%3Cp%3ELarge+projects+accumulate+a+large+number+of+issue+reports+over+time.+This+is+normal.+Typically+for+a+%E2%80%9Csuccessful%E2%80%9D+project+the+rate+of+new+issues+being+reported+will+exceed+the+rate+of+issues+being+fixed.+Hence+the+growth.%3C%2Fp%3E%0A%3Cp%3EBut+what+are+they+to+do+about+this+ever-growing+pile+of+bugs%3F%3C%2Fp%3E%0A%0A%0ARead+more+at+https%3A%2F%2Fxn--izc.com%2Fblog%2Fon-wontfixing-bugs%2F%0A&subject=On+WontFixing+Bugs+-+Strong+Opinions%2C+Weekly+Held" aria-label="Share via Email" target=_blank rel=noopener>
+<a href="mailto:?body=Via+https%3A%2F%2Ftwitter.com%2Fasankah%0A%0A%3Cp%3ELarge+projects+accumulate+a+large+number+of+issue+reports+over+time.%0AThis+is+normal.+Typically+for+a+%E2%80%9Csuccessful%E2%80%9D+project+the+rate+of+new%0Aissues+being+reported+will+exceed+the+rate+of+issues+being+fixed.+Hence%0Athe+growth.%3C%2Fp%3E%0A%3Cp%3EBut+what+are+they+to+do+about+this+ever-growing+pile+of+bugs%3F%3C%2Fp%3E%0A%0A%0ARead+more+at+https%3A%2F%2Fxn--izc.com%2Fblog%2Fon-wontfixing-bugs%2F%0A&subject=On+WontFixing+Bugs+-+Strong+Opinions%2C+Weekly+Held" aria-label="Share via Email" target=_blank rel=noopener>
 <img src=/images/mail.svg alt="Share via Email">
 </a>
 <a href=https://xn--izc.com/blog/on-wontfixing-bugs/ aria-label="Permanent link to post">
@@ -61,66 +61,129 @@ Asanka Herath
 <p>This was partly inspired by a Tweet by a co-worker. The tweet is:</p>
 <blockquote class=twitter-tweet><p lang=en dir=ltr>wontfix-ing valid bugs (that have been triaged as such) with bots because you haven't been able to fix or prioritize them yet is kinda hostile to contributors, imho <a href=https://t.co/faxtbpoiII>pic.twitter.com/faxtbpoiII</a></p>&mdash; Mike Taylor (@miketaylr) <a href="https://twitter.com/miketaylr/status/1366762904851279877?ref_src=twsrc%5Etfw">March 2, 2021</a></blockquote>
 <script async src=https://platform.twitter.com/widgets.js></script>
-<p>For projects that are under-resourced but has heavy usage it is in fact quite normal to accumulate a large number of issue reports over time. Take Chromium for example. There are (at the time of writing) ~95,000 open bugs. Many of these are task tracking bugs rather than tracking actual product bugs. But still that’s a lot of real bugs.</p>
-<p>What’s even more interesting is the accumulation of bugs. Typically for a “successful” project the rate of new issues being reported will exceed the rate of issues being fixed. Hence the growth.</p>
+<p>For projects that are under-resourced but has heavy usage it is in
+fact quite normal to accumulate a large number of issue reports over
+time. Take Chromium for example. There are (at the time of writing)
+~95,000 open bugs. Many of these are task tracking bugs rather than
+tracking actual product bugs. But still that’s a lot of real bugs.</p>
+<p>What’s even more interesting is the accumulation of bugs. Typically
+for a “successful” project the rate of new issues being reported will
+exceed the rate of issues being fixed. Hence the growth.</p>
 <h2 id=what-matters>What Matters …</h2>
-<p>Issues are often annotated to indicate some measure of <em>severity</em> and <em>priority</em>. These are two different axes of measurement:</p>
-<p><strong>Severity</strong> refers to the degree of impact that an issue has. How many users are affected? Is the effect isolated or spread across a large user base? Severity is supposed to summarize the answer to these questions.</p>
-<p><strong>Priority</strong> refers to what the issue triagers deemed to be the relative importance of the issue. A bug that affects a large number of users – hence a high severity – might not be a high priority due to mitigating factors. Typically a project owner would tackle higher priority issues first. Under-resourced projects – which is the case for pretty much every successful project I’ve seen – will accumulate lower priority issues across time.</p>
-<p>Neither <em>severity</em> nor <em>priority</em> are static either. An issue with a low severity might be elevated to a higher severity if the affected population of users is discovered to be larger than originally assumed. Or the priority may be raised if the issue is blocking the fix for another more severe issue. It’s not uncommon for some low priority issue to be suddenly elevated to critical status once someone figures out how to exploit it.</p>
-<p>In practice <em>perceptual priority</em> is the only one that matters. It doesn’t matter what the issue tracker label or score is. What matters is that there’s a contributor who’s motivated to fix it. The decisions of a contributor are complex and subjective. So while the most important issues will <em>likely</em> get fixed, just because an issue is real or important doesn’t mean that it will be addressed.</p>
-<p>What this means is that it is important for issue reports to stick around. At worst they will accumulate more evidence of severity or clues to what the issue is. Often the desired outcome isn’t universal either. So an issue report also functions as an opinion catchment area where interested parties can hash out their differences.</p>
+<p>Issues are often annotated to indicate some measure of
+<em>severity</em> and <em>priority</em>. These are two different axes of
+measurement:</p>
+<p><strong>Severity</strong> refers to the degree of impact that an
+issue has. How many users are affected? Is the effect isolated or spread
+across a large user base? Severity is supposed to summarize the answer
+to these questions.</p>
+<p><strong>Priority</strong> refers to what the issue triagers deemed to
+be the relative importance of the issue. A bug that affects a large
+number of users – hence a high severity – might not be a high priority
+due to mitigating factors. Typically a project owner would tackle higher
+priority issues first. Under-resourced projects – which is the case for
+pretty much every successful project I’ve seen – will accumulate lower
+priority issues across time.</p>
+<p>Neither <em>severity</em> nor <em>priority</em> are static either. An
+issue with a low severity might be elevated to a higher severity if the
+affected population of users is discovered to be larger than originally
+assumed. Or the priority may be raised if the issue is blocking the fix
+for another more severe issue. It’s not uncommon for some low priority
+issue to be suddenly elevated to critical status once someone figures
+out how to exploit it.</p>
+<p>In practice <em>perceptual priority</em> is the only one that
+matters. It doesn’t matter what the issue tracker label or score is.
+What matters is that there’s a contributor who’s motivated to fix it.
+The decisions of a contributor are complex and subjective. So while the
+most important issues will <em>likely</em> get fixed, just because an
+issue is real or important doesn’t mean that it will be addressed.</p>
+<p>What this means is that it is important for issue reports to stick
+around. At worst they will accumulate more evidence of severity or clues
+to what the issue is. Often the desired outcome isn’t universal either.
+So an issue report also functions as an opinion catchment area where
+interested parties can hash out their differences.</p>
 <h2 id=and-what-doesnt>And What Doesn’t …</h2>
-<p>However, the health of the project then depends on not only handling new issues, but also in how they shepherd existing or known issues.</p>
-<p>Much like any other todo list, the effectiveness of the issue tracker decreases when there’s an overwhelming number of items to look at. The cognitive overhead of correct prioritizing increases dramatically, as does the time it takes for triaging.</p>
+<p>However, the health of the project then depends on not only handling
+new issues, but also in how they shepherd existing or known issues.</p>
+<p>Much like any other todo list, the effectiveness of the issue tracker
+decreases when there’s an overwhelming number of items to look at. The
+cognitive overhead of correct prioritizing increases dramatically, as
+does the time it takes for triaging.</p>
 <h2 id=strategies-that-dont-work>Strategies That Don’t Work …</h2>
-<p>So projects tend to use various techniques to deal with the growing pile of issues. The more overwhelming it is, the more drastic the mitigation strategy.</p>
-<p>One such strategy in action is what we see in the Tweet above where there’s a bot that automatically closes old issues that haven’t seen any activity. At first glance this seems to make sense.</p>
-<p>The assumption seems to be that if the issue was important enough then an endless stream of users would pipe up on the bug with “me too”s to keep the issue open. The issue tracker is now a battlefield where issue reporters have to continually work to keep the issue alive until a contributor takes pity and addresses it.</p>
-<p>Issue reporters themselves who are often volunteers who are electing to participate in a project can also burn out. If the issues they file are automatically closed, it’s frustrating to the reporters. Chances are that with every few issues that are closed due to inactivity, the project loses a contributor.</p>
-<p>Another strategy is to have new issues start at some sort of <em>unconfirmed</em> state. Once the issue has been acknowledged and accepted it can proceed to some other state which makes the issue become a candidate for contributor consideration. This one is a bit better in that it doesn’t discard <em>confirmed</em> issues.</p>
-<p>However, eventually the real issues will accumulate to the point where some sort of bookkeeping is needed. Along comes <code>WontFix</code> and friends. This is a state where the issue is marked as <em>“this is a real issue but we will probably never get around to fixing it.”</em></p>
-<p>Reporters nevertheless find this state to be no-less frustrating than an outright closure. <code>WontFix</code>ed bugs don’t show up by default in issue searches, so they are effectively undiscoverable to future issue reporters. All time invested in that issue is now lost.</p>
+<p>So projects tend to use various techniques to deal with the growing
+pile of issues. The more overwhelming it is, the more drastic the
+mitigation strategy.</p>
+<p>One such strategy in action is what we see in the Tweet above where
+there’s a bot that automatically closes old issues that haven’t seen any
+activity. At first glance this seems to make sense.</p>
+<p>The assumption seems to be that if the issue was important enough
+then an endless stream of users would pipe up on the bug with “me too”s
+to keep the issue open. The issue tracker is now a battlefield where
+issue reporters have to continually work to keep the issue alive until a
+contributor takes pity and addresses it.</p>
+<p>Issue reporters themselves who are often volunteers who are electing
+to participate in a project can also burn out. If the issues they file
+are automatically closed, it’s frustrating to the reporters. Chances are
+that with every few issues that are closed due to inactivity, the
+project loses a contributor.</p>
+<p>Another strategy is to have new issues start at some sort of
+<em>unconfirmed</em> state. Once the issue has been acknowledged and
+accepted it can proceed to some other state which makes the issue become
+a candidate for contributor consideration. This one is a bit better in
+that it doesn’t discard <em>confirmed</em> issues.</p>
+<p>However, eventually the real issues will accumulate to the point
+where some sort of bookkeeping is needed. Along comes
+<code>WontFix</code> and friends. This is a state where the issue is
+marked as <em>“this is a real issue but we will probably never get
+around to fixing it.”</em></p>
+<p>Reporters nevertheless find this state to be no-less frustrating than
+an outright closure. <code>WontFix</code>ed bugs don’t show up by
+default in issue searches, so they are effectively undiscoverable to
+future issue reporters. All time invested in that issue is now lost.</p>
 <h2 id=and-one-that-does>And One That Does? …</h2>
-<p>The alternative is to just leave the issue open, but lower the priority down to something that reflects the current opinion of the project maintainers.</p>
-<p>This strategy acknowledges that the issue is real. It serves as documentation that the product has a known defect, and in addition it can serve the purposes of accumulating evidence of severity along the way. If the issue becomes prominent enough then it can be retriaged.</p>
-<p>That’s it. So far I haven’t seen alternatives that are much better than this. I’m generally against mass issue closing events like declaring “bug bankruptcy.” The bugs don’t care about the state of the issue report. All you’ve accomplished is to throw away the accumulated history and evidence of a defect.</p>
+<p>The alternative is to just leave the issue open, but lower the
+priority down to something that reflects the current opinion of the
+project maintainers.</p>
+<p>This strategy acknowledges that the issue is real. It serves as
+documentation that the product has a known defect, and in addition it
+can serve the purposes of accumulating evidence of severity along the
+way. If the issue becomes prominent enough then it can be retriaged.</p>
+<p>That’s it. So far I haven’t seen alternatives that are much better
+than this. I’m generally against mass issue closing events like
+declaring “bug bankruptcy.” The bugs don’t care about the state of the
+issue report. All you’ve accomplished is to throw away the accumulated
+history and evidence of a defect.</p>
 <nav class=suggested>
 <h2 class=suggested>More articles from this blog</h4>
 <ul>
 <li>
 <h3 class="suggested title">
-<a href=/blog/ten-years/>Ten Years</a>
+<a href=/blog/inktober-stripes/>Inktober - Stripes</a>
 </h3>
-<p>It’s been ten years since I started at Google. The work anniversary fell on 6th of December.
-Ten years ago my wife and I made our way to Mountain View for my orientation; all excited for a brand new chapter in our lives. After spending a week in Mountain View / Palo Alto we both decided that California was not for us. But that’s beside the point.
-I was elated. This was pretty much everything I dreamt of as a kid growing up in Sri Lanka.</p>
+<p>“Stripes” - A bee wearing an incorrectly striped sweater For Inktober 52.</p>
 </li>
 <li>
 <h3 class="suggested title">
-<a href=/blog/symbol-name-types/>Names for Name Conventions</a>
+<a href=/blog/things-you-can-do-with-nvim-and-vscode/>Things You Can Do With Neovim and Vscode That You Can't Do With Neovim Alone</a>
 </h3>
-<p>Names I’ve seen used to refer to naming conventions:
-snake_case, hacker_case, unix_hacker_style : Everything is lower case, though exceptions exist. E.g. HTTP_foo_bar. SCREAMING_SNAKE_CASE : Usually reserved for macros and constants. camelCase : The first letter is lowercase. PascalCase : The first letter is uppercase. kabob-case : Like snake_case, but uses dashes instead of underscores. Common for command-line options1, CSS styles, commands (e.g. git-receive-pack). While looking idly looking for details on this, I stumbled on this Medium post which is relevant.</p>
+<p>This is the third time I’ve tried in earnest to switch to VSCode from Vim (or Neovim in my case) for reasons not all of which are relevant to this post. But I love Vim style modal editing and I’ve grown accustomed to some features that aren’t present or not well emulated in VSCodeVim.
+Enter VSCode Neovim. I was intrigued by their claim to integrate Neovim instead of trying to emulate Vim.</p>
 </li>
 <li>
 <h3 class="suggested title">
-<a href=/blog/why-strong-opinions-weekly-held/>Why 'Strong Opinions Weekly Held'</a>
+<a href=/blog/notes-on-fact-checking/>Notes from Crash Course's Videos on Fact Checking Information You See On The Internet
+</a>
 </h3>
-<p>Previously on this blog I wrote a short note on Why Strong Opinions Weakly Held.
-I’m trying to get something out every week. Hence the new blog title.</p>
+<p>Hank Green’s Crash Course YouTube channel has an excellent series
+about navigating digital information. It’s an excellent guide to how
+internet users could intelligently consume information they see on the
+internet. These are my (incomplete) notes from the series.</p>
 </li>
 <li>
 <h3 class="suggested title">
-<a href=/blog/shannon-paper/>Shannon Paper</a>
+<a href=/blog/inktober-decay/>Inktober - Decay</a>
 </h3>
-<p>Claude Shannon’s <em>A mathematical theory of communication</em> is an oft cited classic in information theory. Let’s dive in and try to tease apart the “why”s that are often overlooked when people build on top of the introduced theory. They are definitely things that I didn’t consider to be obvious without the benefit of reading the paper.</p>
-</li>
-<li>
-<h3 class="suggested title">
-<a href=/blog/how-this-blog-works/>How This Blog Works</a>
-</h3>
-<p>How I put this site together and why.</p>
+<p>“Decay” - I was kind of going for tooth-decay caused by tiny little gremlins. For Inktober 52.</p>
 </li>
 </ul>
 </nav>

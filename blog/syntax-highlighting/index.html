@@ -1,0 +1,184 @@
+<!doctype html><html lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>On Highlighting Syntax vs. Semantics &#183; Strong Opinions, Weekly Held</title>
+<link rel=stylesheet href=/css/style.css>
+<link rel=stylesheet href=/css/fonts.min.css>
+<link rel=stylesheet href=/css/formatting.min.css>
+<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
+<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
+<link rel=manifest href=/site.webmanifest>
+<link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5>
+<meta name=msapplication-TileColor content="#da532c">
+<meta name=theme-color content="#ffffff">
+<link href rel=alternate type=application/rss+xml title="Strong Opinions, Weekly Held">
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css integrity=sha384-zTROYFVGOfTw7JV7KUu8udsvW2fx4lWOsCEDqhBreBwlHI4ioVRtmIvEThzJHGET crossorigin=anonymous>
+<script src=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js integrity=sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb crossorigin=anonymous></script><script src=/js/render-katex.js></script>
+</head>
+<body>
+<nav class=nav>
+<div class=nav-container>
+<a href=/>
+<h2 class=nav-title>Strong Opinions, Weekly Held</h2>
+</a>
+<ul>
+<li>
+<a href=/about/me>
+<span>About Me</span>
+</a>
+</li>
+<li>
+<a href=/tags>
+<span>Tags</span>
+</a>
+</li>
+</ul>
+</div>
+</nav>
+<main>
+<div class=post>
+<h1 class=post-title>On Highlighting Syntax vs. Semantics</h1>
+<div class=post-info>
+<span>Written by</span>
+Asanka Herath
+<span>on&nbsp;</span><time datetime="2022-02-12 00:00:00 +0000 UTC">February 12, 2022</time>
+|
+<a href=/tags/engineering>#Engineering</a>
+</div>
+<div class="social share">
+<a href="https://twitter.com/intent/tweet?text=On+Highlighting+Syntax+vs.+Semantics&url=https%3A%2F%2Fxn--izc.com%2Fblog%2Fsyntax-highlighting%2F&via=asankah" aria-label="Share on Twitter" target=_blank rel=noopener>
+<img src=/images/twitter.svg alt="Share on Twitter">
+</a>
+<a href="mailto:?body=Via+https%3A%2F%2Ftwitter.com%2Fasankah%0A%0ATakes+a+look+at+an+alternate+form+of+code+highlighting+based+on+core%0Asemantics+instead+of+syntactic+role.%0A%0ARead+more+at+https%3A%2F%2Fxn--izc.com%2Fblog%2Fsyntax-highlighting%2F%0A&subject=On+Highlighting+Syntax+vs.+Semantics+-+Strong+Opinions%2C+Weekly+Held" aria-label="Share via Email" target=_blank rel=noopener>
+<img src=/images/mail.svg alt="Share via Email">
+</a>
+<a href=https://xn--izc.com/blog/syntax-highlighting/ aria-label="Permanent link to post">
+<img src=/images/link-2.svg alt="Permanent link to post">
+</a>
+</div>
+<p><span class=noun>Aesthetics</span> <span class=adverb>aside</span>, <span class=noun>syntax</span> <span class=gerund>highlighting</span> <span class=preposition>in</span>
+<span class=noun>code</span> <span class=verb>performs</span> <span class=determiner>an</span> <span class=adjective>important</span>
+<span class=noun>role</span> <span class=preposition>in</span> <span class=gerund>improving</span> the <span class=noun>readability</span> <span class=preposition>of</span>
+<span class=noun>code</span>. <span class=adjective>Most</span>
+<span class=adjective>syntax</span> <span class=gerund>highlighting</span> <span class=noun>schemes</span>
+<span class=gerund>including</span> <span class=adjective>popular</span> <span class=noun>libraries</span>
+<span class=verb>are</span> <span class=verb>limited</span> <span class=preposition>to</span> <span class=gerund>using</span> <span class=noun>colors</span> <span class=conjunction>and</span> <span class=gerund>formatting</span> <span class=noun>changes</span> <span class=preposition>to</span> <span class=verb>distinguish</span>
+<span class=preposition>between</span> <span class=adjective>different</span> <span class=adjective>syntax</span>
+<span class=noun>classes</span>. <span class=pronoun>This</span>
+<span class=verb>is</span> <span class=determiner>what</span> <span class=pronoun>it</span> <span class=verb>would look</span> <span class=conjunction>like</span> <span class=conjunction>if</span>
+<span class=pronoun>we</span> <span class=verb>apply</span> <span class=determiner>the</span> <span class=adjective>same</span> <span class=noun>logic</span> <span class=preposition>to</span> <span class=proper>English</span> <span class=noun>prose</span>. <span class=adjective>Each</span> <span class=noun>word</span> <span class=preposition>in</span> <span class=pronoun>this</span> <span class=noun>paragraph</span> <span class=verb>is</span> <span class=adverb>highlighted</span> <span class=verb>using</span> <span class=pronoun>its</span> <span class=adjective>respective</span>
+<span class=adjective>syntactic</span> <span class=noun>purpose</span>.</p>
+<p>Not very readable, is it? The colors aren’t random. They highlights
+correspond to <span class=noun>noun</span>, <span class=adverb>adverb</span>, <span class=gerund>gerund</span>, <span class=preposition>preposition</span>, <span class=adjective>adjective</span>, and <span class=verb>verb</span>.
+This is basically how people use syntax highlighting.</p>
+<p>Typographers have long known that punctuation alone can’t
+sufficiently convey emphasis and relative importance of prose. As <span class=citation data-cites=truss2004eats><a href=#ref-truss2004eats role=doc-biblioref>[1]</a></span> points out <em>italics</em> is
+<em>“the print equivalent of underlining”</em> (via <span class=citation data-cites=wiki:Italic_type><a href=#ref-wiki:Italic_type role=doc-biblioref>[2]</a></span>). A
+number of uses exist for this font variation including providing
+emphasis, stressing important points, or indicating foreign words and
+phrases. When conveying emphasis the syntactic role of a word does not
+change; the word just is <em>more</em> important to make the central
+point than others.</p>
+<p>These key important words alone can’t convey a story. Grammar and
+completeness demand accompanying words. It is the role of formatting,
+whitespace, and punctuation to guide the reader towards what is
+important. Without formatting and whitespace, prose would become an
+intimidating “wall of words”; tedious and unwelcoming.</p>
+<p>And so it goes for code; some code is more important than others. The
+central logic of a snippet of code lies somewhere in the middle
+surrounded by boilerplate, setup, and tear down logic. If syntax
+highlighting were to make the central logic stand out, then it has to go
+beyond mere syntactic purpose of the tokens comprising the code.</p>
+<p>What would such a scheme look like?</p>
+<div class=pre>
+<div class=line-block>bool ListValue::<span class="function hi">Set</span>(size_t <span class=var>index</span>,
+std::unique_ptr&lt;Value> <span class=var>in_value</span>) {<br>
+  if (!in_value)<br>
+    return false;<br>
+  if (index >= list().size())<br>
+    list().resize(index + 1);</div>
+<div class="pre highlight">
+<div class=line-block>  <span class=function>list</span>()[<span class=var>index</span>] = std::<span class=function>move</span>(*<span class=var>in_value</span>);</div>
+</div>
+<div class=line-block>  return true;<br>
+}</div>
+</div>
+<p>Perhaps not the best example, but you should get the gist of where
+I’m going with this. The highlighting quickly directs your eyes to the
+parts that need attention. You’d still need to do the legwork for the
+details. But for someone trying to figure out what some undocumented
+function is doing, this kind of highlight makes quick work of going past
+the boilerplate.</p>
+<h2 class=unnumbered id=references>References</h2>
+<div id=refs class="references csl-bib-body" role=doc-bibliography>
+<div id=ref-truss2004eats class=csl-entry role=doc-biblioentry>
+<div class=csl-left-margin>[1] </div><div class=csl-right-inline>L.
+Truss, <span>“Eats, shoots & leaves: The zero tolerance approach to
+punctuation,”</span> Penguin, 2004, p. 146. </div>
+</div>
+<div id=ref-wiki:Italic_type class=csl-entry role=doc-biblioentry>
+<div class=csl-left-margin>[2] </div><div class=csl-right-inline>Wikipedia, <span>“<span class=nocase>Italic
+type</span> — <span>W</span>ikipedia<span>,</span> the free
+encyclopedia.”</span> <a href="http://en.wikipedia.org/w/index.php?title=Italic%20type&oldid=1049142359" class=uri>http://en.wikipedia.org/w/index.php?title=Italic%20type&oldid=1049142359</a>,
+2021. </div>
+</div>
+</div>
+<nav class=suggested>
+<h2 class=suggested>More articles from this blog</h4>
+<ul>
+<li>
+<h3 class="suggested title">
+<a href=/blog/sometimes-its-the-interviewers-who-suck/>Sometimes It's the Interviewers Who Suck</a>
+</h3>
+<p>I’ve done hundreds of interviews. I’ve also served in numerous hiring committees over the years.
+Tech companies tend to have cultures built around tech people interviewing other tech people, typically in what is not-so-affectionately known as the “Tech interview.” This is good because candidates would be evaluated based on their actual skills instead of keywords in their resume. Interviewers are in effect choosing their future coworkers which makes in interview serve the interest of both the interviewer and the interviewee.</p>
+</li>
+<li>
+<h3 class="suggested title">
+<a href=/blog/inktober-decay/>Inktober - Decay</a>
+</h3>
+<p>“Decay” - I was kind of going for tooth-decay caused by tiny little gremlins. For Inktober 52.</p>
+</li>
+<li>
+<h3 class="suggested title">
+<a href=/blog/visualizing-people-2/>Visualizing A Million People</a>
+</h3>
+<p>If your feature pisses off a million people what does this angry mob
+look like? Spoiler: We only get to 750,000.</p>
+</li>
+<li>
+<h3 class="suggested title">
+<a href=/blog/why-strong-opinions-weekly-held/>Why 'Strong Opinions Weekly Held'</a>
+</h3>
+<p>Previously on this blog I wrote a short note on Why Strong Opinions Weakly Held.
+I’m trying to get something out every week. Hence the new blog title.</p>
+</li>
+<li>
+<h3 class="suggested title">
+<a href=/blog/notes-on-fact-checking/>Notes from Crash Course's Videos on Fact Checking Information You See On The Internet
+</a>
+</h3>
+<p>Hank Green’s Crash Course YouTube channel has an excellent series
+about navigating digital information. It’s an excellent guide to how
+internet users could intelligently consume information they see on the
+internet. These are my (incomplete) notes from the series.</p>
+</li>
+</ul>
+</nav>
+<h4>Comment</h4>
+<script src=https://utteranc.es/client.js repo=asankah/blog-comments issue-term=title label=PublicComment theme=github-light crossorigin=anonymous async></script>
+</div>
+<div class=pagination>
+<a href=/blog/inktober-stripes/ class="left arrow">&#8592;</a>
+<a href=# class=top>Top</a>
+</div>
+</main>
+<footer>
+<span>Last modified on February 12, 2022 </span>
+</footer>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-169355711-2','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+</body>
+</html>
