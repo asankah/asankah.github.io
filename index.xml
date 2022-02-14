@@ -1,39 +1,1273 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strong Opinions, Weekly Held</title><link>https://xn--izc.com/</link><description>Recent content on Strong Opinions, Weekly Held</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Asanka Herath</copyright><lastBuildDate>Sat, 12 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://xn--izc.com/index.xml" rel="self" type="application/rss+xml"/><item><title>On Highlighting Syntax vs. Semantics</title><link>https://xn--izc.com/blog/syntax-highlighting/</link><pubDate>Sat, 12 Feb 2022 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/syntax-highlighting/</guid><description>Takes a look at an alternate form of code highlighting based on core
-semantics instead of syntactic role.</description></item><item><title>Inktober - Stripes</title><link>https://xn--izc.com/blog/inktober-stripes/</link><pubDate>Fri, 21 Jan 2022 17:20:38 -0500</pubDate><guid>https://xn--izc.com/blog/inktober-stripes/</guid><description>“Stripes” - A bee wearing an incorrectly striped sweater For Inktober 52.</description></item><item><title>Inktober - Wild</title><link>https://xn--izc.com/blog/inktober-wild/</link><pubDate>Thu, 13 Jan 2022 15:35:39 -0500</pubDate><guid>https://xn--izc.com/blog/inktober-wild/</guid><description>“Wild” - Caught in the wild For Inktober 52.</description></item><item><title>Inktober - Decay</title><link>https://xn--izc.com/blog/inktober-decay/</link><pubDate>Thu, 13 Jan 2022 15:21:37 -0500</pubDate><guid>https://xn--izc.com/blog/inktober-decay/</guid><description>“Decay” - I was kind of going for tooth-decay caused by tiny little gremlins. For Inktober 52.</description></item><item><title>Quickly grab a snapshot of your reMarkable tablet</title><link>https://xn--izc.com/blog/grab-diagram-workflow-re2/</link><pubDate>Thu, 06 Jan 2022 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/grab-diagram-workflow-re2/</guid><description>How to bind a hotkey to grab a snapshot of your reMarkable display
-and copy it to the clipboard on a Mac.</description></item><item><title>Note-taking on a reMarkable 2</title><link>https://xn--izc.com/blog/remarkable-first-impressions/</link><pubDate>Thu, 30 Dec 2021 16:10:30 -0500</pubDate><guid>https://xn--izc.com/blog/remarkable-first-impressions/</guid><description>Sentiments after using the reMarkable 2 tablet for a month.</description></item><item><title>Why 'Strong Opinions Weekly Held'</title><link>https://xn--izc.com/blog/why-strong-opinions-weekly-held/</link><pubDate>Tue, 28 Sep 2021 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/why-strong-opinions-weekly-held/</guid><description>Previously on this blog I wrote a short note on Why Strong Opinions Weakly Held.
-I’m trying to get something out every week. Hence the new blog title.</description></item><item><title>Visualizing A Million People</title><link>https://xn--izc.com/blog/visualizing-people-2/</link><pubDate>Mon, 06 Sep 2021 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/visualizing-people-2/</guid><description>If your feature pisses off a million people what does this angry mob
-look like? Spoiler: We only get to 750,000.</description></item><item><title>Fart Limit</title><link>https://xn--izc.com/blog/fart-limit/</link><pubDate>Mon, 14 Jun 2021 11:30:18 -0400</pubDate><guid>https://xn--izc.com/blog/fart-limit/</guid><description>Can a fart be fatal? Let’s see what science and OSHA have to say.</description></item><item><title>Shannon Paper</title><link>https://xn--izc.com/blog/shannon-paper/</link><pubDate>Fri, 26 Mar 2021 16:14:20 -0400</pubDate><guid>https://xn--izc.com/blog/shannon-paper/</guid><description>Claude Shannon’s &lt;em>A mathematical theory of communication&lt;/em> is
+semantics instead of syntactic role.</description><content:encoded><p><span class="noun">Aesthetics</span><span class="adverb">aside</span>,<span class="noun">syntax</span><span class="gerund">highlighting</span><span class="preposition">in</span><span class="noun">code</span><span class="verb">performs</span><span class="determiner">an</span><span class="adjective">important</span><span class="noun">role</span><span class="preposition">in</span><span class="gerund">improving</span> the<span class="noun">readability</span><span class="preposition">of</span><span class="noun">code</span>.<span class="adjective">Most</span><span class="adjective">syntax</span><span class="gerund">highlighting</span><span class="noun">schemes</span><span class="gerund">including</span><span class="adjective">popular</span><span class="noun">libraries</span><span class="verb">are</span><span class="verb">limited</span><span class="preposition">to</span><span class="gerund">using</span><span class="noun">colors</span><span class="conjunction">and</span><span class="gerund">formatting</span><span class="noun">changes</span><span class="preposition">to</span><span class="verb">distinguish</span><span class="preposition">between</span><span class="adjective">different</span><span class="adjective">syntax</span><span class="noun">classes</span>.<span class="pronoun">This</span><span class="verb">is</span><span class="determiner">what</span><span class="pronoun">it</span><span class="verb">would look</span><span class="conjunction">like</span><span class="conjunction">if</span><span class="pronoun">we</span><span class="verb">apply</span><span class="determiner">the</span><span class="adjective">same</span><span class="noun">logic</span><span class="preposition">to</span><span class="proper">English</span><span class="noun">prose</span>.<span class="adjective">Each</span><span class="noun">word</span><span class="preposition">in</span><span class="pronoun">this</span><span class="noun">paragraph</span><span class="verb">is</span><span class="adverb">highlighted</span><span class="verb">using</span><span class="pronoun">its</span><span class="adjective">respective</span><span class="adjective">syntactic</span><span class="noun">purpose</span>.</p><p>Not very readable, is it? The colors aren’t random. They highlights
+correspond to<span class="noun">noun</span>,<span class="adverb">adverb</span>,<span class="gerund">gerund</span>,<span class="preposition">preposition</span>,<span class="adjective">adjective</span>, and<span class="verb">verb</span>.
+This is basically how people use syntax highlighting.</p><p>Typographers have long known that punctuation alone can’t
+sufficiently convey emphasis and relative importance of prose. As<span class="citation" data-cites="truss2004eats"><a href="#ref-truss2004eats" role="doc-biblioref">[1]</a></span> points out<em>italics</em> is<em>“the print equivalent of underlining”</em> (via<span class="citation" data-cites="wiki:Italic_type"><a href="#ref-wiki:Italic_type" role="doc-biblioref">[2]</a></span>). A
+number of uses exist for this font variation including providing
+emphasis, stressing important points, or indicating foreign words and
+phrases. When conveying emphasis the syntactic role of a word does not
+change; the word just is<em>more</em> important to make the central
+point than others.</p><p>These key important words alone can’t convey a story. Grammar and
+completeness demand accompanying words. It is the role of formatting,
+whitespace, and punctuation to guide the reader towards what is
+important. Without formatting and whitespace, prose would become an
+intimidating “wall of words”; tedious and unwelcoming.</p><p>And so it goes for code; some code is more important than others. The
+central logic of a snippet of code lies somewhere in the middle
+surrounded by boilerplate, setup, and tear down logic. If syntax
+highlighting were to make the central logic stand out, then it has to go
+beyond mere syntactic purpose of the tokens comprising the code.</p><p>What would such a scheme look like?</p><div class="pre"><div class="line-block">bool ListValue::<span class="function hi">Set</span>(size_t<span class="var">index</span>,
+std::unique_ptr&lt;Value><span class="var">in_value</span>) {<br/>
+  if (!in_value)<br/>
+    return false;<br/>
+  if (index >= list().size())<br/>
+    list().resize(index + 1);</div><div class="pre highlight"><div class="line-block">  <span class="function">list</span>()[<span class="var">index</span>] = std::<span class="function">move</span>(*<span class="var">in_value</span>);</div></div><div class="line-block">  return true;<br/>
+}</div></div><p>Perhaps not the best example, but you should get the gist of where
+I’m going with this. The highlighting quickly directs your eyes to the
+parts that need attention. You’d still need to do the legwork for the
+details. But for someone trying to figure out what some undocumented
+function is doing, this kind of highlight makes quick work of going past
+the boilerplate.</p><h2 class="unnumbered" id="references">References</h2><div id="refs" class="references csl-bib-body" role="doc-bibliography"><div id="ref-truss2004eats" class="csl-entry" role="doc-biblioentry"><div class="csl-left-margin">[1]</div><div class="csl-right-inline">L.
+Truss,<span>“Eats, shoots &amp; leaves: The zero tolerance approach to
+punctuation,”</span> Penguin, 2004, p. 146.</div></div><div id="ref-wiki:Italic_type" class="csl-entry" role="doc-biblioentry"><div class="csl-left-margin">[2]</div><div class="csl-right-inline">Wikipedia,<span>“<span class="nocase">Italic
+type</span> —<span>W</span>ikipedia<span>,</span> the free
+encyclopedia.”</span><a href="http://en.wikipedia.org/w/index.php?title=Italic%20type&amp;oldid=1049142359" class="uri">http://en.wikipedia.org/w/index.php?title=Italic%20type&amp;oldid=1049142359</a>,
+2021.</div></div></div></content:encoded></item><item><title>Inktober - Stripes</title><link>https://xn--izc.com/blog/inktober-stripes/</link><pubDate>Fri, 21 Jan 2022 17:20:38 -0500</pubDate><guid>https://xn--izc.com/blog/inktober-stripes/</guid><description>“Stripes” - A bee wearing an incorrectly striped sweater For Inktober 52.</description><content:encoded><figure><img src="./inktober-stripes.png" alt="“Stripes” - A bee wearing an incorrectly striped sweater"/><figcaption aria-hidden="true">“Stripes” - A bee wearing an incorrectly
+striped sweater</figcaption></figure><p>For<a href="https://inktober.com/inktober52">Inktober 52</a>.</p></content:encoded></item><item><title>Inktober - Wild</title><link>https://xn--izc.com/blog/inktober-wild/</link><pubDate>Thu, 13 Jan 2022 15:35:39 -0500</pubDate><guid>https://xn--izc.com/blog/inktober-wild/</guid><description>“Wild” - Caught in the wild For Inktober 52.</description><content:encoded><figure><img src="./inktober-wild.png" alt="“Wild” - Caught in the wild"/><figcaption aria-hidden="true">“Wild” - Caught in the wild</figcaption></figure><p>For<a href="https://inktober.com/inktober52">Inktober 52</a>.</p></content:encoded></item><item><title>Inktober - Decay</title><link>https://xn--izc.com/blog/inktober-decay/</link><pubDate>Thu, 13 Jan 2022 15:21:37 -0500</pubDate><guid>https://xn--izc.com/blog/inktober-decay/</guid><description>“Decay” - I was kind of going for tooth-decay caused by tiny little gremlins. For Inktober 52.</description><content:encoded><figure><img src="./inktober-decay.png" alt="“Decay” - I was kind of going for tooth-decay caused by tiny little gremlins."/><figcaption aria-hidden="true">“Decay” - I was kind of going for
+tooth-decay caused by tiny little gremlins.</figcaption></figure><p>For<a href="https://inktober.com/inktober52">Inktober 52</a>.</p></content:encoded></item><item><title>Quickly grab a snapshot of your reMarkable tablet</title><link>https://xn--izc.com/blog/grab-diagram-workflow-re2/</link><pubDate>Thu, 06 Jan 2022 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/grab-diagram-workflow-re2/</guid><description>How to bind a hotkey to grab a snapshot of your reMarkable display
+and copy it to the clipboard on a Mac.</description><content:encoded><p>One everyday workflow that I wanted to optimize was quickly sketching
+out a diagram on the reMarkable tablet and including it in a document I
+was writing somewhere else.</p><p>My primary computer is a Mac. Here’s my solution:</p><ol type="1"><li>Set up<a href="https://github.com/asankah/reSnap"><code>reSnap</code></a>. This
+step requires changes on both the reMarkable tablet and the local
+machine. For the former, I followed the instructions in the<a href="https://github.com/asankah/reSnap#readme"><code>README</code></a>
+file. For the latter, I only really needed to install<a href="https://www.ffmpeg.org/"><code>FFmpeg</code></a> and<a href="https://imagemagick.org/index.php"><code>ImageMagick</code></a>.</li><li>Create a Mac Quick Action to invoke reSnap.</li><li>Bind a hotkey that grabs the snapshot of the reMarkable display,
+cleans it up, and sticks it in Mac’s clipboard.</li></ol><p>Details instructions follow. I can now just hit ⌘+⌃+⇧+P to grab the
+snapshot and then hit ⌘+V to paste it into whatever application I am
+using, usually Google Docs.</p><h2 id="setting-up-resnap">Setting up<code>reSnap</code></h2><p>I have<a href="https://github.com/asankah/reSnap">my fork of<code>reSnap</code></a>, which adds a few valuable tricks like cleaning
+up the image and placing it in the system clipboard. By default, the
+upstream<code>reSnap</code> script attempts to preview the image using<code>feh</code> (an image viewer I’ve never heard of). Immediately
+viewing the picture wasn’t useful to me, so I made that optional. You
+can grab my fork of reSnap<a href="https://github.com/asankah/reSnap">here</a>.</p><p>On the reMarkable tablet side, you must follow the instructions in
+the<code>README</code> file to install<code>lz4</code> and<code>head</code> on the device.</p><p>It is important to set up SSH to use password-less logins since the
+hotkey method relies on being able to connect without prompting for a
+password. See instructions for<a href="https://remarkablewiki.com/tech/ssh#passwordless_login_with_ssh_keys">setting
+up SSH for passwordless login</a>.</p><p>On the local machine – which in my case is a Mac – you can install
+all the requirements using Homebrew as follows:</p><div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"/><span class="ex">brew</span> install ffmpeg imagemagick</span></code></pre></div><h2 id="creating-a-mac-quick-action">Creating a Mac Quick Action</h2><ol type="1"><li><p>Start “Automator.”<img src="./automator-icon.png" alt="Automator application icon."/></p></li><li><p>Create a new “Quick Action.”<img src="./quick-action-icon.png" alt="Select “Quick Action” from the “New” menu."/></p></li><li><p>Set up the workflow options to receive no input in any
+application. All the other options are up to you, or you can leave them
+as-is.<img src="./workflow-options.png" alt="Set the workflow options to recieve “no input” in “any application”."/></p></li><li><p>Drag over the “Run Shell Script” action from the actions library.<img src="./run-shell-script-action.png" alt="Drag over the “Run Shell Script” action."/></p></li><li><p>Paste something like the following (with the suggested
+modifications to suit your local environment).</p><div class="sourceCode" id="cb2"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"/><span class="ex">/usr/bin/env</span> PATH=/bin:/usr/bin:/usr/local/bin:/sbin /path/to/reSnap/reSnap.sh<span class="at">--sketch</span><span class="at">--copy</span></span></code></pre></div><p>Note that the reMarkable needs to be connected via a USB cable to
+capture a snapshot using the above command. If you want to be able to
+use WiFi you should use the<code>--host</code> option to specify either
+the local hostname (usually “remarkable”) or the IP address. In all
+cases the hotkey should only be expected to work when the reMarkable is
+not sleeping.</p></li><li><p>If you’d like, you can also add a “Display Notification” action,
+so you know when the script is done running. The<code>FFMpeg</code>
+invocation may take a few seconds.</p></li></ol><p>Try it out with the “Run” button.</p><h2 id="binding-a-hotkey">Binding a hotkey</h2><p>Once you save your quick action, you can bind a hotkey like this:</p><ol type="1"><li><p>Open “System Preferences” and navigate to “Keyboard” ->
+“Shortcuts”.</p></li><li><p>Click on “Services” and scroll to the bottom. You should see the
+new quick action you just made listed under the “General” category. It
+should have no keys assigned to it.</p><figure><img src="./keyboard-shortcuts.png" alt="Example of what you should see when you select “Services” in “Keyboard” -> “Shortcuts”"/><figcaption aria-hidden="true">Example of what you should see when you
+select “Services” in “Keyboard” -> “Shortcuts”</figcaption></figure></li><li><p>Double click on the “none” and type your hotkey.</p></li></ol><p>That’s it.</p><p>Here’s what a snapshot looks like:</p><figure><img src="./snapshot-from-remarkable.png" alt="A snapshot from my reMarkable tablet"/><figcaption aria-hidden="true">A snapshot from my reMarkable
+tablet</figcaption></figure><h2 id="a-couple-of-notes-on-the---sketch-option">A couple of notes on
+the<code>--sketch</code> option</h2><p>My fork of<code>reSnap</code> introduces a<code>--sketch</code>
+option that cleans up the picture a little bit. It currently does the
+following:</p><ol type="1"><li>Erase the little menu widget from the top-left corner of the image.
+Since<code>reSnap</code> grabs the image right off the framebuffer this
+little artifact makes its way to the resulting image.</li><li>Erase a tiny little black dot that appears in the bottom-left corner
+of the image. I don’t know where this one comes from, but it’s
+there.</li><li>Make the background transparent.</li><li>Resample the image at 50% resolution with anti-aliasing. The
+original image is a stiff monochrome image with a white background and
+black strokes. The resampling after making the background transparent
+makes the edges smoother and a bit easier on the eyes. Otherwise all the
+edges look jagged.</li><li>Trim the image to remove all the empty borders thus making the image
+size just large enough to hold the actual image.</li></ol><p>All of this is done via an invocation of<a href="https://imagemagick.org/index.php">ImageMagick</a>.</p></content:encoded></item><item><title>Note-taking on a reMarkable 2</title><link>https://xn--izc.com/blog/remarkable-first-impressions/</link><pubDate>Thu, 30 Dec 2021 16:10:30 -0500</pubDate><guid>https://xn--izc.com/blog/remarkable-first-impressions/</guid><description>Sentiments after using the reMarkable 2 tablet for a month.</description><content:encoded><p>After much dillydallying about which note-taker/ebook reader I wanted
+to get, I went ahead and got a<a href="https://remarkable.com/">reMarkable 2</a>. I’ve been using it for
+about a month now. I must say that it’s the closest thing to writing on
+paper that I have encountered.</p><p>My requirements of a note-taking tablet were:</p><ol type="1"><li>Replace my paper notebooks.</li><li>Quickly transfer diagrams and drawings to the computer/laptop.</li></ol><p>Replacing a paper notebook is a tall order. A paper notebook is …</p><ul><li>Ready as soon as I open it.</li><li>Lightweight.</li><li>Durable.</li><li>Can be used with a comfortable pen.</li><li>Doesn’t make my eyes tired.</li></ul><h2 id="an-unsuccessful-attempt-with-a-pixelbook">An Unsuccessful
+Attempt With A Pixelbook</h2><figure><img src="./picture-of-pixelbook.png" alt="A Pixelbook like this was my first attempt at using a tablet for note-taking. (Image source)"/><figcaption aria-hidden="true">A Pixelbook like this was my first
+attempt at using a tablet for note-taking.<a href="https://www.google.com/chromebookdevice/google-pixelbook/">(Image
+source)</a></figcaption></figure><aside class="note"><p>The comments below<em>only</em> apply to the Chromebook Pixel’s
+utility as a note-taking device. It is, of course, far more than a
+note-taking device and will likely be a better choice for you if you
+want to use the web, consume lots of eBooks, or otherwise need the
+functionality of a modern laptop.</p></aside><p>The<a href="https://www.google.com/chromebook/device/google-pixelbook/">Pixelbook</a><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> was my first attempt at using a
+tablet for note-taking. Unfortunately, while it had other advantages,
+the Pixelbook falls far short on convenience.</p><p>Ad-hoc note-taking is a hassle. Getting started requires logging in.
+There are good reasons for needing signing-in, and it does have an
+option to use the built-in sketch app from the lock screen using the
+Pixelbook pen. But the sketch app doesn’t suffice as a note-taking
+app.</p><p>I do like the privacy model of the Pixelbook’s lock screen sketch app
+– namely, that the note drops into a black box that only the owner can
+open. However, I wish the reMarkable could have a feature where adding a
+new note doesn’t simultaneously require viewing every note on the
+device.</p><p>Once folded over, I get paranoid about the keys underneath. Can I
+place it on a table without worrying too much? It’s anxiety-inducing.
+It’s also a laptop, which means that someone who’s easily distracted
+would be … easily distracted.</p><p>So over to the reMarkable…</p><section class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1" role="doc-endnote"><p>In case the Pixelbook site goes
+offline, here’s the Wayback Machine’s<a href="https://web.archive.org/web/20210725184512/https://www.google.com/chromebook/device/google-pixelbook/">snapshot
+from when I wrote this article</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section><h2 id="moderate-success-with-the-remarkable-2">Moderate Success With
+The Remarkable 2</h2><figure><img src="./picture-of-re2.png" alt="The reMarkable 2 was my next choice. (Image Source)"/><figcaption aria-hidden="true">The reMarkable 2 was my next choice.<a href="https://remarkable.com/">(Image Source)</a></figcaption></figure><p>First of all, this is a note-taking device. You should not expect
+much more from it. I thought it would make for a good ebook reader and
+journal article reader – it is neither. Its support for ebooks is
+limited to PDFs and EPUBs.</p><p>I’m still looking for a satisfactory method of keeping a set of
+journal articles synchronized between my laptop and the reMarkable
+tablet. The current method is to go through their proprietary cloud
+service, which I can only do for my personal usage but not for work.</p><p>Once again,<strong>this is neither a laptop nor an ebook
+reader</strong>.</p><p>There are, however, two important points to note about the reMarkable
+tablet:</p><ol type="1"><li>It’s the closest I’ve seen to writing on paper. The hardware is
+pretty much spot on.</li><li>There’s an active community of hackers who constantly push the
+tablet’s capabilities.</li></ol><p>The second point bears repeating. The biggest thing going for the
+reMarkable tablet right now is the developer community surrounding it.
+Have a gander at the<a href="https://remarkablewiki.com/">reMarkableWiki</a>’s<a href="https://remarkablewiki.com/tips/start">Tips and Tricks</a> page or
+the<a href="https://github.com/reHackable/awesome-reMarkable">Awesome
+reMarkable</a> list. Some highlights include:</p><ul><li>Ability to use third-party clouds or local storage for synchronizing
+your reMakable documents (via<a href="https://remarkablewiki.com/tips/rclone">rclone</a> or<a href="https://github.com/simonschllng/rm-sync">rm-sync</a> or many other
+options).</li><li>Setting up an email address to which you can email documents which
+will appear on your reMarkable (via<a href="https://remarkablenewsletter.com/">reMarkable
+Newsletter</a>).</li><li>Stream your reMarkable screen (via<a href="https://blog.afandian.com/2020/10/pipes-and-paper-remarkable/">pipes
+and paper</a>,<a href="https://github.com/rien/reStream">reStream</a>,<a href="https://github.com/bordaigorl/rmview">rMview</a>, or
+others).</li></ul><p>If you are into tinkering with electronics, the reMarkable will
+provide ample entertainment in addition to note-taking.</p><h2 id="workflows">Workflows</h2><p>The process of making myself at home with the reMarkable 2 involved
+coming up with good workflows for the things that I want to do with it.
+My goal here is to reduce the overhead as much as possible. Although a
+paper notebook is close to ideal for writing things down, it’s not easy
+to get that content out to an electronic format. I hope that the
+reMarkable 2 will keep the former as-is while significantly improving
+the latter.</p><p>Not all notes are equal. Some are ad-hoc sketches and doodles. Some
+need to be a bit more longevity, like daily diary entries. Some are
+drafts of design documents, diagrams, or blog posts that I’d need to
+move over to an electronic format. Then there are work-related things
+like interview notes and meeting notes. So we have three overall
+workflows:</p><ol type="1"><li>Missives that I may want to keep around only to satisfy some sort of
+hoarding instinct.</li><li>Notes that I want to transcribe into some electronic form. If the
+originals are to be kept, they must be labeled or categorized somehow.<ol type="1"><li>Pictures or diagrams.</li><li>Text.</li></ol></li><li>Notes that, regardless of whether any transcription is needed, carry
+confidential or proprietary information.</li></ol><p>Of these, the first one is trivial. Pull out the device, write stuff,
+move on with life. If necessary, I can always look at the recent notes,
+but I will likely never look at anything older than a month.</p><p>The second one is easy if you are using the<a href="https://remarkable.com/store/connect">Connect cloud</a>. There are
+multiple integrations that they already have for moving content to other
+cloud providers, including conversion to different image formats. The
+Connect cloud also handles the work of extracting text from what you’ve
+written. In my experience, the handwriting recognition results have been
+quite good though they require the occasional cleanup.</p><p>The third one is tricky. Again, sidestepping the Connect cloud
+offering, the aforementioned hacking resources really help get material
+from the device onto your machine.</p><p>I’ll leave the details for another blog post, but the gist of it is
+that we can quickly transfer the contents of the display as a picture to
+a laptop or desktop computer via Wifi or via USB. From there, you can
+use any number of tools to extract the text or clean up the drawings.
+With a little bit of automation, the process was more accessible than
+the Connect cloud.</p><h2 id="conclusions">Conclusions</h2><p><strong>Pros</strong>:</p><ul><li><p>Writing is as close to writing on a paper as one could
+get.</p></li><li><p>Tight integration with their cloud offering.</p></li><li><p>Great ecosystem of hackers who push the capabilities of the
+device far beyond the stock software.</p></li><li><p>The device lasts for days on a single charge. Their marketing
+materials mention two weeks. I haven’t pushed it that far due to
+occasionally connecting it to the laptop via USB for content transfer. I
+can, however, say that based on the battery remaining this claim seems
+to be correct in my case.</p></li><li><p>Can’t do much else other than note taking.</p></li><li><p>Relatively cheap compared to other note-taking devices.</p></li></ul><p><strong>Cons:</strong></p><ul><li><p>The nib on the pen wears out quickly.</p><p>They do include 9 additional nibs in the package, but I suspect that
+I’ll be buying more within a few months. Compare that with something
+like<a href="https://supernote.com/pages/feelwrite-self-recovery-soft-film-technology">Supernote</a>
+which boasts that their nibs provide the same level of paper-like
+friction without as much wear.</p></li><li><p>Requires a lot of hand tinkering unless you subscribe to their
+cloud offering.</p></li><li><p>Limited support for ebook formats mean that you likely can’t read
+your purchased ebooks on this device.</p></li><li><p>No support for labeling or organizing your notes – as of this
+writing.</p></li></ul></content:encoded></item><item><title>Why 'Strong Opinions Weekly Held'</title><link>https://xn--izc.com/blog/why-strong-opinions-weekly-held/</link><pubDate>Tue, 28 Sep 2021 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/why-strong-opinions-weekly-held/</guid><description>Previously on this blog I wrote a short note on Why Strong Opinions Weakly Held.
+I’m trying to get something out every week. Hence the new blog title.</description><content:encoded><p>Previously on this blog I wrote a short note on<a href="/blog/why-strong-opinions-weakly-held/">Why Strong Opinions Weakly
+Held</a>.</p><p>I’m trying to get something out every week. Hence the new blog
+title.</p></content:encoded></item><item><title>Visualizing A Million People</title><link>https://xn--izc.com/blog/visualizing-people-2/</link><pubDate>Mon, 06 Sep 2021 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/visualizing-people-2/</guid><description>If your feature pisses off a million people what does this angry mob
+look like? Spoiler: We only get to 750,000.</description><content:encoded><aside class="note"><p>This article was formerly published as<a href="/blog/visualizing-people/">Visualizing Internet Users</a>. This
+version is more generalized and up-to-date.</p></aside><p>What if you introduce a bug and/or a feature that pisses off a
+million people?</p><p>The scenario isn’t all that hard to imagine these days if you work at
+a big tech company or even a small one with a considerable user base. It
+seems a million users aren’t all that hard to reach these days.</p><p>What is harder though is to imagine what a million people looks like.
+What if you were being stared down by the entirety of the affected user
+base? Or worse you had to stand on a stage in front of them and explain
+yourself?</p><p>If you have 1 billion users and you ship a bug that only manifests 1
+in a million times, then you have yourself 1000 angry users. It’s good
+to know what that group looks like.</p><p>We can easily imagine a single person, 10, or even 25 people. But
+exceed a couple of hundred and our imagination falters. It becomes just
+a number and stops feeling like “users” or “people.” The perceived
+significance of the population thus starts to diminish.</p><h1 id="so-whats-the-significance-of-a-million-people-anyway">So what’s
+the significance of a million people anyway?</h1><p>World population is teetering on roughly 7.7 billion people (in
+2019). So<strong>a million people is about 0.01% of the global
+population</strong>.</p><figure><img src="world-population-2021.png" id="fig:worldpop" alt="Figure 1: World population in 2021 is 7.7 billion approximately."/><figcaption aria-hidden="true">Figure 1: World population in 2021 is 7.7
+billion approximately.</figcaption></figure><p>Internet users, on the other hand, come up to something like half of
+the world population based World Bank figures which<em>imply</em> that
+roughly 50% of the population should have internet access in 2021<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p><figure><img src="worldbank-individuals-using-internet.webp" id="fig:internetpop" alt="Figure 2: Percentage of population who has access to the internet (World Bank 2017)"/><figcaption aria-hidden="true">Figure 2: Percentage of population who
+has access to the internet (World Bank 2017)</figcaption></figure><p>So<strong>a million users would be 0.02% of the population with some
+access to the internet</strong>. Still not that big.</p><p>But once you focus on a smaller scale like a geographic region or a
+user base of some application, then suddenly the million users looks
+much bigger.</p><h2 id="to-49">1 to 49</h2><p>Let’s skip this range since this is in the range of what you’d see in
+a mirror, can fit on a bicycle, can fit on a sofa, your team, gathering
+of friends, significant annual family event, or other familiar
+situation.</p><section class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1" role="doc-endnote"><p>Note that fig. 2 indicates that the
+estimate is 49% of the population would have internet access in 2017.
+It’s likely that by 2021 we’d at least have reached 50% based on the
+sharp growth curve.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section><h2 id="from-50-to-100000">From 50 to 100,000</h2><p>An example of visualizing populations for small numbers can be found
+at<a href="https://blog.lime.link/visualizing-crowd-sizes/">Visualizing
+Crowd Sizes</a>. It goes from around 50 people up to 100,000 people.</p><p>While 100,000 is interesting we need to go all the way to 1
+million.</p><h2 id="section">200,000</h2><p>200,000 was the estimated number of people who attended the<a href="https://marchforourlives.com/">March for Our Lives</a> in D.C..
+There aren’t any photos capturing<em>all</em> attendees in one shot,
+but there are numerous pictures in<a href="https://www.cbsnews.com/news/march-for-our-lives-crowd-size-estimated-200000-people-attended-d-c-march/">this
+CBS News article</a> to give you a good idea.</p><p>In more terrible examples,<a href="https://www.dw.com/en/more-than-200000-indonesians-protest-governor-purnamas-alleged-blasphemy/a-36611145">this
+article on dw.com</a> suggests that the crowd size pictured is roughly
+around 200,000 people.</p><blockquote><p>More than 200,000 conservative Muslims gathered in Indonesia’s
+capital Jakarta on Friday to protest against the city’s Christian
+governor, who is facing trial for blasphemy, police estimated.</p></blockquote><figure><img src="dw-com-indonesia-protest-2020-11-20.jpg" alt="Image from dw.com of a protest in Indonesia allegedly showing 200,000 people. Image Source"/><figcaption aria-hidden="true">Image from dw.com of a protest in
+Indonesia allegedly showing 200,000 people.<a href="https://www.dw.com/en/more-than-200000-indonesians-protest-governor-purnamas-alleged-blasphemy/a-36611145">Image
+Source</a></figcaption></figure><h2 id="section-1">250,000</h2><p>The March on Washington in 1963– an<em>“event focused on employment
+discrimination, civil rights abuses against African Americans, Latinos,
+and other disenfranchised groups, and support for the Civil Rights Act
+that the Kennedy Administration was attempting to pass through
+Congress”</em> – drew an estimated 250,000 people according to the
+National Park Service.</p><blockquote><p>Rustin coordinated a staff of over 200 civil rights activists and
+organizers to assist in publicizing the march and recruiting marchers,
+organizing churches to raise money, coordinating buses and trains, and
+administering all of the other logistical details. In many ways, the
+March defied expectations. The number of people that attended exceeded
+the initial estimates made by the organizers. Rustin had indicated that
+they expected over 100,000 people to attend - the final estimate was
+250,000, 190,000 blacks and 60,000 whites.</p></blockquote><p>(From<a href="https://www.nps.gov/articles/march-on-washington.htm">March on
+Washington for Jobs and Freedom – National Parks Service</a>)</p><figure><img src="march-on-washington-1963.jpg" alt="Image from nps.gov showing the crowd estimated to be around 250,000 people at the March on Washington on August 28, 1963. See Image Source for full resolution image."/><figcaption aria-hidden="true">Image from nps.gov showing the crowd
+estimated to be around 250,000 people at the March on Washington on
+August 28, 1963. See<a href="https://www.loc.gov/resource/ppmsca.37248/">Image Source for full
+resolution image.</a></figcaption></figure><h2 id="section-2">500,000</h2><p>We are heading into shaky ground here. A 800*600 picture only
+contains 480,000 pixels. So we are now reduced to indicating population
+by inference. It is no longer possible to capture 500,000 people in a
+webpage sized picture while showing each person individually.</p><p><a href="https://www.reddit.com/r/philadelphia/comments/3by9g8/if_this_is_what_500k_people_look_like_xpost_from/">This
+Reddit post</a> claims that there are 500k people in the picture, but I
+couldn’t readily find any good references backing up that claim.</p><p>Another event that drew 500,000 people is<a href="https://www.nbcnews.com/show-me/video/nearly-500-000-people-march-in-anti-violence-rally-in-barcelona-1033617987741">an
+anti-violence rally in Barcelona as reported by NBC</a>. While there’s
+video, the content doesn’t quite capture the massive number of people.
+Also it’s<em>“nearly 500,000”</em> people.</p><p>However, the closest we’ll probably get to a somewhat believable
+500,000 person crowd would be the March for Science. They posted the
+following picture on<a href="https://www.facebook.com/marchforscience/posts/836983043362678">Facebook</a>
+noting that “There are 500,000 people on strike in Montreal”.</p><figure><img src="march-for-science-crowd-2020-11-20.jpg" alt="March for Science on Facebook: Picture of protest. Image source"/><figcaption aria-hidden="true">March for Science on Facebook: Picture of
+protest.<a href="https://www.facebook.com/marchforscience/posts/836983043362678">Image
+source</a></figcaption></figure><p><a href="https://en.wikipedia.org/wiki/Woodstock">Woodstock</a> or
+“an Aquarian Exposition: 3 Days of Peace &amp; Music” festival held in
+1969 reportedly attracted “over 400,000”, “450,000”, or “500,000” people
+depending on the source. Let’s assume that the real number is somewhere
+in-between which gets us to somewhere in the neighborhood of 500,000
+people.</p><p>There are numerous aerial photos of the Woodstock crowds, some of
+which you can find in<a href="https://www.gettyimages.com/photos/woodstock-and-aerial">this
+image gallery from Getty images</a>.</p><h2 id="section-3">750,000</h2><p>Off to look at protests again. This time we are looking at Barcelona
+where 750,000 Catalan independence supporters are demanding the release
+of their leaders according to<a href="http://www.timealem.com/750000-people-flood-barcelona-demanding-release-of-catalan-leaders_d575.html">this
+article</a>.</p><figure><img src="barcelona-protest-2020-11-20.jpg" alt="750,000 people flood Barcelona demanding release of Catalan leaders. Image source"/><figcaption aria-hidden="true">750,000 people flood Barcelona demanding
+release of Catalan leaders.<a href="http://www.timealem.com/750000-people-flood-barcelona-demanding-release-of-catalan-leaders_d575.html">Image
+source</a></figcaption></figure><p>The crowd extends past the top of the frame and there’s no chance
+this is the entire crowd. But you get the general idea. If you ship a
+bug that affects 0.01% of the internet population, then this is a
+conservative lower bound of what that angry mob would look like.</p><p>But wait, the<a href="https://www.guinnessworldrecords.com/news/non-corporate/2018/6/more-than-750-000-people-help-philippines-based-church-achieve-four-new-records-529029">Guinness
+World Record for the largest charity walk/run</a> is 283,171 people at a
+single venue. Have a look at that picture:</p><figure><img src="guinness-record-largest-walk-single-venu-2020-11-20.jpg" alt="Guinness Record for the largest charity walk or run at a single venue is for 283,171 people. Image Source"/><figcaption aria-hidden="true">Guinness Record for the largest charity
+walk or run at a single venue is for 283,171 people.<a href="https://www.guinnessworldrecords.com/news/non-corporate/2018/6/more-than-750-000-people-help-philippines-based-church-achieve-four-new-records-529029">Image
+Source</a></figcaption></figure><p>It seems that picture of 750,000 people doesn’t quite capture that
+many people because clearly there are more people in the picture that’s
+supposed to be 283k people. Which of course goes to show how hard it is
+to really capture how massive a crowd 750k makes.</p><p>In an article on Wired that discusses how hard it is to estimate
+crowd sizes, they note<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>:</p><blockquote><p>Every time a ton of people gather in one place, there are all sorts
+of pronouncements made about how many folks really showed. The figures
+rarely agree; Glenn Beck’s rally on the National Mall this summer
+attracted a million people, according to Beck cohort Rep. Michelle
+Bachman. CBS News pegged it at more like 87,000.</p></blockquote><section class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol start="2"><li id="fn2" role="doc-endnote"><p><a href="https://www.wired.com/2011/02/how-many-people-are-in-tahrir-square-heres-how-to-tell/">How
+Many People Are in Tahrir Square? Here’s How to Tell</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section><h2 id="and-more">And More</h2><p>I’m going to give up at this point. Pictures purportedly of around
+one million people are mostly parts of crowds that have been estimated
+to be that big.</p></content:encoded></item><item><title>Fart Limit</title><link>https://xn--izc.com/blog/fart-limit/</link><pubDate>Mon, 14 Jun 2021 11:30:18 -0400</pubDate><guid>https://xn--izc.com/blog/fart-limit/</guid><description>Can a fart be fatal? Let’s see what science and OSHA have to say.</description><content:encoded><p>Thanks to<a href="https://youtu.be/suwg7-y70FQ">Vsauce</a> for
+bringing this particular issue to our attention. The TL;DR of that video
+is:</p><ul><li>Most of the gases in your farts are odorless.</li><li>The one that usually makes things stinky is Hydrogen Sulfide.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li><li>The content of H_2_S in a fart is around 50ppm.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></li><li>One fart can travel around 10 ft/s.</li></ul><p>Enter<a href="https://www.osha.gov/hydrogen-sulfide/hazards">OSHA</a>:</p><ul><li>H_2_S at a concentration of 50ppm (roughly what you’d get if you
+inhaled a fart directly into your lungs) you’d suffer<em>Slight
+conjunctivitis (“gas eye”) and respiratory tract irritation after 1
+hour. May cause digestive upset and loss of appetite.</em><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>.</li><li>Any practical dosage would be around 3ppm. At that rate it would be<em>Odor becomes more offensive at 3-5 ppm. Above 30 ppm, odor described
+as sweet or sickeningly sweet.</em>. The key point here is that around
+10 times the usual dosage, a fart won’t stink. Instead it will smell
+“sweet.”</li><li>At 100ppm – which is around 30 times the usual dose – you won’t
+smell anything at all because you’ll lose your sense of smell
+(<em>olfactory fatigue or paralysis</em>).</li><li>At 1000ppm – 300 times the usual dose – it’s<strong>nearly instant
+death</strong>.</li></ul><p>So I guess it is in fact possible.</p><p>As an aside, I found it quite disappointing that the<strong>Listen</strong> button on the<a href="https://kidshealth.org/en/kids/fart.html">“What’s a Fart” page on
+KidsHealth.org</a> doesn’t make a fart sound. I mean, what else was that
+button supposed to do?</p><figure><img src="images/kids-health-fart.png" alt="KidsHealth: What’s a Fart?"/><figcaption aria-hidden="true">KidsHealth: What’s a Fart?</figcaption></figure><section class="footnotes footnotes-end-of-document" role="doc-endnotes"><hr/><ol><li id="fn1" role="doc-endnote"><p>https://web.archive.org/web/20210614200353/https://www.houstonmethodist.org/blog/articles/2020/oct/flatulence-everything-you-wanted-to-know-about-farting/<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn2" role="doc-endnote"><p>https://www.chemistryworld.com/news/explainer-the-chemistry-of-farts/2500168.article<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn3" role="doc-endnote"><p>https://www.osha.gov/hydrogen-sulfide/hazards<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section></content:encoded></item><item><title>Shannon Paper</title><link>https://xn--izc.com/blog/shannon-paper/</link><pubDate>Fri, 26 Mar 2021 16:14:20 -0400</pubDate><guid>https://xn--izc.com/blog/shannon-paper/</guid><description>Claude Shannon’s &lt;em>A mathematical theory of communication&lt;/em> is
 an oft cited classic in information theory. Let’s dive in and try to
 tease apart the “why”s that are often overlooked when people build on
 top of the introduced theory. They are definitely things that I didn’t
-consider to be obvious without the benefit of reading the paper.</description></item><item><title>Sometimes It's the Interviewers Who Suck</title><link>https://xn--izc.com/blog/sometimes-its-the-interviewers-who-suck/</link><pubDate>Sat, 20 Mar 2021 19:09:49 -0400</pubDate><guid>https://xn--izc.com/blog/sometimes-its-the-interviewers-who-suck/</guid><description>I’ve done hundreds of interviews. I’ve also served in numerous hiring committees over the years.
-Tech companies tend to have cultures built around tech people interviewing other tech people, typically in what is not-so-affectionately known as the “Tech interview.” This is good because candidates would be evaluated based on their actual skills instead of keywords in their resume. Interviewers are in effect choosing their future coworkers which makes in interview serve the interest of both the interviewer and the interviewee.</description></item><item><title>On WontFixing Bugs</title><link>https://xn--izc.com/blog/on-wontfixing-bugs/</link><pubDate>Tue, 02 Mar 2021 17:15:06 -0500</pubDate><guid>https://xn--izc.com/blog/on-wontfixing-bugs/</guid><description>&lt;p>Large projects accumulate a large number of issue reports over time.
+consider to be obvious without the benefit of reading the paper.</description><content:encoded><p>Claude Shannon’s<em>A mathematical theory of communication</em> is
+an oft cited classic in information theory. In fact, as of this writing
+there are 84’411 citations and 139 versions of the article on Google
+Scholar.</p><figure><img src="images/google-scholar-shannon-citations.png" alt="Screenshot of Google Scholar showing citation count for Shannon’s paper"/><figcaption aria-hidden="true">Screenshot of Google Scholar showing
+citation count for Shannon’s paper</figcaption></figure><p>Let’s dive in and try to tease apart the “why”s that are often
+overlooked when people build on top of the introduced theory. They are
+definitely things that I didn’t consider to be obvious without the
+benefit of reading the paper.</p><p>The section headings below correspond to the sections in Shannon’s
+paper.</p><h2 id="introduction">Introduction</h2><p>The paper’s introduction states the purpose as:</p><blockquote><p>… [To] extend [the general theory of communication] to include a
+number of new factors, in particular the effect of noise in the channel,
+and the savings possible due to the statistical structure of the
+original message and due to the nature of the final destination of
+information.</p></blockquote><p>The two most salient points from this section are</p><ol type="1"><li>the arguments for a logarithmic measure of information, and</li><li>what a measure of information actually measures.</li></ol><p>Logarithmic measures are well suited for measuring information,
+Shannon states, because it’s<em>“nearer to our intuitive feeling as to
+the proper measure.”</em> Additional rationalization exists in the
+paper, but I found this to be the most convincing.</p><p>To intuit, adding a channel that’s equal in capacity to an existing
+channel increases the space of transferrable messages quadratically.
+However our intuition finds it easier to think of this as doubling the
+capacity. The latter is more in line with a logarithmic measure.</p><p>Information is what’s ultimately useful for the recipient. Hence a
+measure of information must be based on the ability gained by the
+recipient upon receipt of the message. Receiving a signal means that the
+recipient can now uniquely identify a message among a large number of
+possible messages, or to reduce the space of possible messages.</p><p><strong>If the destination receives 10 bits of information, that
+means that the recipient is now able to uniquely select a message from<span class="math inline">2^{10}</span> possible messages.</strong> Or
+equivalently, the recipient can choose one out of<span class="math inline">2^{10}</span> outcomes.</p><p>Hence the measure of information is based on the ratio of the space
+of possible messages before and after receipt of the information.</p><p>The following sections focus on defining and measuring the space of
+messages.</p><h2 id="part-i-discrete-noiseless-systems">Part I: Discrete Noiseless
+Systems</h2><p>A discrete noiseless channel is one in which a selection of symbols
+from a finite alphabet can be transmitted from a source to a destination
+without loss. It’s not necessarily the case that each symbol consumes an
+equal amount of resources to send. Since the paper pertains to
+electronic communication Shannon states the cost in terms of time.</p><h3 id="discrete-noiseless-channel">1. Discrete Noiseless Channel</h3><p>Capacity of a channel is defined to be the maximum amount of
+information that can be transferred over that channel.</p><p>The capacity<span class="math inline">C</span> of a discrete
+noiseless channel is defined to be:</p><p><span class="math display">C = \lim_{T \to \infty} \frac{\log
+N(T)}{T}</span></p><p>Here<span class="math inline">N(T)</span> is the number of allowed
+messages that take a duration of<span class="math inline">T</span> to
+transmit. Let’s see how this comes about.</p><p>From the prior definition of information, if the recipient receives<span class="math inline">C</span> bits of information that means that
+they were able to distinguish between<span class="math inline">2^C</span> possible messages.</p><p>So we start with counting the number of possible messages that
+could’ve been transmitted over<span class="math inline">T</span> time.
+If we denote this count as<span class="math inline">N(T)</span>, then
+we know that there were<span class="math inline">\log{N(T)}</span> bits
+of information transferred during<span class="math inline">T</span>
+time. Hence the rate is:</p><p><span class="math display">R(T) = \frac{\log{N(T)}}{T}</span></p><p>To generalize, we find the limit of<span class="math inline">R(T)</span> as<span class="math inline">T</span>
+tends to<span class="math inline">\infty</span>.</p><p>Suppose the channel can transmit<span class="math inline">n</span>
+symbols<span class="math inline">{S_1, S_2, ..., S_n}</span> each of
+which consume<span class="math inline">{t_1, t_2, ..., t_n}</span>
+units of time. How many possible messages can there be in<span class="math inline">T</span> units of time? I.e. what’s<span class="math inline">N(T)</span>?</p><p>To break this down a bit further, we can ask<em>“how many possible
+messages could there be that end in<span class="math inline">S_i</span>
+during time period<span class="math inline">T</span>?”</em></p><p>Any message that ends in<span class="math inline">S_i</span> can be
+written as a message consisting of arbitrary symbols<span class="math inline">s_1 s_2 ... s_k</span> (where each<span class="math inline">s_i \in S</span>) and ending with the symbol<span class="math inline">S_i</span>. I.e.:</p><p><span class="math display">\underbrace{\underbrace{s_1 s_2 s_3 ...
+s_k}_{T - t_i \text{ seconds}} S_i}_{T \text{ seconds}}</span></p><p>As shown, the length of the<span class="math inline">s_1..s_k</span>
+portion in time must be<span class="math inline">T - t_i</span> since
+the remaining<span class="math inline">t_i</span> time is consumed by<span class="math inline">S_i</span>.</p><p>Hence there can be<span class="math inline">N(T - t_i)</span>
+possibilities for the<span class="math inline">s_1 ... s_k</span>
+prefix.</p><p>Thus we can state this problem recursively as follows:</p><p><span class="math display">N(T) = N(T - t_1) + N(T - t_2) + ... + N(T
+- t_n)</span></p><p>… where<span class="math inline">N(T) = 0</span> for all<span class="math inline">T \lt \min(t_1, t_2, ... t_n)</span>.</p><p>Solving this equation involves recognizing that this is a<a href="https://en.wikipedia.org/wiki/Linear_difference_equation">linear
+difference equation</a> (not to be confused with a linear<em>differential</em> equation).</p><p><strong>If all<span class="math inline">t_i</span> are
+distinct</strong>, then the characteristic polynomial corresponding to
+this recurrence is:</p><p><span class="math display">X^{-t_1} + X^{-t_2} + ... + X^{-t_n} =
+1</span></p><p>If<span class="math inline">X_0</span> is the largest real solution
+to the characteristic equation, then<span class="math inline">N(T)</span> approaches<span class="math inline">X_0^T</span> for large<span class="math inline">T</span>.</p><p>(I need to check the math here since Shannon just says this is a well
+known result and moves on.)</p><p>So now we have:</p><p><span class="math display">C = \lim_{T \to \infty} \frac{\log
+N(T)}{T} = \log X_0</span></p><h3 id="the-discrete-source-of-information">2. The Discrete Source of
+information</h3><p>This section of the paper focuses on defining what at discrete source
+of information is. For our purposes it can be thought of as a stochastic
+process which produces a stream of symbols.</p><h3 id="discrete-approximations-to-english">3. Discrete Approximations
+to English</h3><p>Here we come to word and sentence generation using stochastic
+processes. In particular Shannon takes us through the progression of
+constructing messages via:</p><ol type="1"><li>Zero-order approximation. Symbols are individual letters with the
+addition of a space. Each symbol is selected with equal
+probability.</li><li>First-order approximation. As above, but the relative frequencies
+correspond to actual letter frequencies in English.</li><li>Second-order approximation. As above, but selection of a symbol
+depends on the previous symbol. I.e. follows a digram structure.
+Probabilities correspond to English.</li><li>Third-order approximation. As above, but using trigrams instead of
+digrams.</li><li>First-order word approximation. Start with a list of words and pick
+them at random with probability corresponding to their usage in
+English.</li><li>Second-order word approximation. As above, but selection frequencies
+depend on the previous word. I.e. follows digrams.</li></ol><p>By the time we arrive at second-order word approximations, the
+generated messages start to resemble natural English albeit
+nonsensical.</p><h3 id="graphical-representation-of-a-markoff-process">4. Graphical
+Representation of a Markoff process</h3><p>Identifies the previous stochastic processes as Markoff processes.
+They are represented as a set of states. Each state can
+probabilistically transition to number of states with some probability
+distribution. Each transition emits a symbol.</p><p>If the emitted symbol doesn’t depend on any prior symbol, then we
+only really need one state. It will have a self-edge for each possible
+emitted symbol.</p><p><img src="b6f391967612795771e6553cc2fd6bc273c24e54.svg"/></p><p>If the emitted symbol depends on the previous symbol, then there will
+be as many states needed as there are symbols. This is the case for
+digrams.</p><p><img src="48e4afca96a9d65486456d2506396f422fb5b8dd.svg"/></p><p>For trigrams, since they depend on the previous two symbols, require<span class="math inline">n^2</span> states.</p><h3 id="ergodic-and-mixed-sources">5. Ergodic and Mixed Sources</h3><blockquote><p>In an ergodic process every sequence produced by the process is the
+same in statistical properties. […] Roughly the ergodic property means
+statistical homogeneity.</p></blockquote><h3 id="choice-uncertainty-and-entropy">6. Choice Uncertainty and
+Entropy</h3><p>Here we come to the part that is most often cited. The definition of
+entropy.</p><p>Shannon lays out three requirements for a measure of information<span class="math inline">H(p_1, p_2, .. p_n)</span> which measures the
+information content of a set of outcomes each of whose probability is<span class="math inline">p_i</span>:</p><ol type="1"><li><span class="math inline">H</span> should be continuous in the<span class="math inline">p_i</span>.</li><li>If all<span class="math inline">p_i</span> are equal, i.e. <span class="math inline">p_i = \frac{1}{n}</span> then<span class="math inline">H</span> should be a monotonic increasing function
+of<span class="math inline">n</span>.</li><li>If a choice be broken down into two choices, then the original<span class="math inline">H</span> should be the weighted sum of the
+individual values of<span class="math inline">H</span>.</li></ol><blockquote><p>The only<span class="math inline">H</span> satisfying the above
+three requirements is of the form:<span class="math display">H = -K
+\sum_{i=1}^n p_i \log p_i</span></p></blockquote><p>The constant<span class="math inline">K</span> is merely a unit of
+measure and can be set to 1.</p><p>Some interesting properties of<span class="math inline">H</span>:</p><ol type="1"><li><span class="math inline">H = 0</span> only when all but one<span class="math inline">p_i = 0</span>, and the remaining<span class="math inline">p_j = 1</span>.</li><li>For a given<span class="math inline">n</span>, the maximum<span class="math inline">H</span> is reached when all<span class="math inline">p_i = \frac{1}{n}</span>.</li><li>The joint entropy of two random variables follow the relation:<span class="math display">H(x,y) \le H(x) + H(y)</span> The condition of
+equality implies that<span class="math inline">x</span> and<span class="math inline">y</span> are independent.</li><li>Any change towards equalization of probabilities<span class="math inline">p_i</span> increases<span class="math inline">H</span>. I.e. if<span class="math inline">p_1 \lt
+p_2</span> and<span class="math inline">\delta \lt |p_1 - p_2|</span>,
+then the entropy of<span class="math inline">p_1, p_2, ... p_n</span>
+is lower than the entropy of<span class="math inline">(p_1 + \delta),
+(p_2 - \delta), p_3, ... p_n</span>.</li><li>For two variables<span class="math inline">x,y</span>,there’s
+conditional probability<span class="math inline">p_i(j)</span> of<span class="math inline">y</span> having value<span class="math inline">j</span> assuming<span class="math inline">x</span>
+has value<span class="math inline">i</span>. This is given by:<span class="math display">p_i(j) = \frac{p(i,j)}{\sum_j p(i,j)}</span> The
+corresponding conditional entropy<span class="math inline">H_x(y)</span> is given by:<span class="math display">H_x(y) = - \sum_{i,j} p(i,j) \log p_i(j)</span>
+This conditional entropy then holds the relation:<span class="math display">H(x,y) = H(x) + H_x(y)</span></li><li>From 3 and 5, we have:<span class="math display">H(y) \le
+H_x(y)</span></li></ol><h3 id="the-entropy-of-an-information-source">7. The Entropy of an
+Information Source</h3><p>Let<span class="math inline">S_i</span> be a set of states each of
+which produce some set of outputs<span class="math inline">s_j</span>
+with probability<span class="math inline">p_{i,j}</span>.</p><p>Each state<span class="math inline">S_i</span> has an associated
+entropy<span class="math inline">H_i</span> representing the entropy of
+all possible outputs from that state. I.e.:</p><p><span class="math display">H_i = - \sum_j p_{i,j} \log
+p_{i,j}</span></p><p>Each such state also has a probability of occurrence<span class="math inline">P_i</span>.</p><p>The entropy of the entire information source is the weighted sum of
+the state-wise entropies. The weight being the probability of
+occurrence. Thus:</p><p><span class="math display">\begin{align*}
+H &amp; = \sum_i P_i H_i \\
+&amp; = - \sum_{i,j} P_i p_{i,j} \log p_{i,j}
+\end{align*}</span></p><p>If the source is operating at some definite time rate, then the<strong>entropy per second</strong>, or<strong>entropy rate</strong> is<em>defined</em> to be:</p><p><span class="math display">H' = \sum_i f_i H_i</span></p><p>where<span class="math inline">f_i</span> is the average frequency
+of state<span class="math inline">i</span>.</p><p>Shannon says “Clearly<span class="math inline">H' = mH</span>
+where<span class="math inline">m</span> is the average number of
+symbols produced per second.” But in order to make the connection you
+need to observe that<span class="math inline">f_i = m \cdot
+P_i</span>.</p><p>This is followed by a derivation that takes some work to follow.
+Let’s go through it step by step:</p><ol type="1"><li><p>Suppose that the information source consists of a single state
+and<span class="math inline">n</span> symbols each of which is emitted
+with a probability of<span class="math inline">p_i</span>.</p></li><li><p>Now take a string of length<span class="math inline">N</span>
+emitted by this source. The expected number of occurrences for symbol<span class="math inline">s_i</span> is<span class="math inline">N
+p_i</span>.</p></li><li><p>A message of sufficient length where all symbols appear at their
+expected occurrence count would have a probability of occurring of:</p><p><span class="math display">p = \prod_i p_i^{N p_i}</span></p></li></ol><p>From there we see that:</p><p><span class="math display">\begin{align*}
+\log p &amp; = \sum_i N p_i \log p_i \\
+&amp; = N H
+\end{align*}</span></p></content:encoded></item><item><title>Sometimes It's the Interviewers Who Suck</title><link>https://xn--izc.com/blog/sometimes-its-the-interviewers-who-suck/</link><pubDate>Sat, 20 Mar 2021 19:09:49 -0400</pubDate><guid>https://xn--izc.com/blog/sometimes-its-the-interviewers-who-suck/</guid><description>I’ve done hundreds of interviews. I’ve also served in numerous hiring committees over the years.
+Tech companies tend to have cultures built around tech people interviewing other tech people, typically in what is not-so-affectionately known as the “Tech interview.” This is good because candidates would be evaluated based on their actual skills instead of keywords in their resume. Interviewers are in effect choosing their future coworkers which makes in interview serve the interest of both the interviewer and the interviewee.</description><content:encoded><p>I’ve done hundreds of interviews. I’ve also served in numerous hiring
+committees over the years.</p><p>Tech companies tend to have cultures built around tech people
+interviewing other tech people, typically in what is
+not-so-affectionately known as the “Tech interview.” This is good
+because candidates would be evaluated based on their actual skills
+instead of keywords in their resume. Interviewers are in effect choosing
+their future coworkers which makes in interview serve the interest of
+both the interviewer and the interviewee. However candidates – at least
+the one who didn’t get accepted according to exit polls – tend to hate
+these.</p><p>The goal of the tech interview is to assess how well the candidate
+will be able to perform in the role as a tech worker. Unfortunately the
+typical problems that one would encounter during the course of a career
+in tech aren’t easy to replicate within a 40-60 minute interview. So
+partly the criticism is around the fact that such interviews bear little
+resemblance to what the actual job would entail. Deciphering what
+happens during an interview and distilling it into a prediction of
+future success is quite difficult in the best of times.</p><p>Making this much worse is the undeniable fact that many if not most<em>tech workers are just not good interviewers</em>.</p><p>This is as true as a claim that most tech workers aren’t good
+managers – whether it’s managing projects or people. Interview follow-up
+don’t take this factor into consideration quite as much as they
+should.</p><p>My anecdotal evidence is that when presented with the artifacts from
+a bad interview, hiring committees will disproportionately blame the
+candidate for it. After all if the candidate was really good, they
+would’ve potentially salvaged the interview. The problem
+disproportionately affects candidates who are near the middle of the
+skill curve where things can probably go one way or the other depending
+on the combination of question asked, and caliber of the interview.</p><p>Interviews at Google famously involve a bunch of paperwork where each
+interviewer is expected to produce some verbose artifacts detailing what
+happened. Since these artifacts come from the interviewer, hiring
+committees need to exercise some due diligence to discern what actually
+happened based on the writeup. So how do we go about spotting bad
+interviews?</p><h2 id="the-writeup-is-terse.">The writeup is terse.</h2><p>Not in and of itself a conclusive sign, but if the writeup doesn’t
+have any details that a committee could use to form a decision, it’s
+likely a sign that the interview didn’t really gather much information
+about the candidate in the first place. Typically these kinds of
+writeups are from novice interviewers who don’t know what to write
+about.</p><h2 id="the-writeup-uses-adversarial-framing.">The writeup uses
+adversarial framing.</h2><p>A very frequent problem specially with novice interviewers is that
+they go into the interview thinking that it is some sort of competition
+between the interviewer and the interviewee. The interviewer might
+consider it a<em>bad</em> thing if a candidate were to hit their
+question out of the park. Some of this comes from a certain level of
+imposter syndrome where they don’t want to come across as less smart
+than the candidate. Either way this mentality comes across during the
+interview as hostile or condescending.</p><h2 id="the-interviewer-takes-too-much-pleasure-in-the-interviewees-misery.">The
+interviewer takes too much pleasure in the interviewee’s misery.</h2><p>Each mistake is gloated on while points at which the interviewee
+obviously shone are muted.</p><h2 id="the-question-is-unnecessarily-hard.">The question is
+unnecessarily hard.</h2><p>Solving a hard question that requires a great deal of time and
+thought is very satisfying. But it isn’t what you do on a day-to-day
+basis.</p><h2 id="the-interviewer-allows-the-interviewee-to-march-into-the-weeds-without-helping-them-back.">The
+interviewer allows the interviewee to march into the weeds without
+helping them back.</h2><p>The interviewer has the luxury of having seen the question beforehand
+and also having studied possible solutions to it. They should be
+familiar enough with the question that they could spot
+misunderstandings, misconceptions, and common mistakes. How a candidate
+notices a misstep and how they dig themselves out is important to note.
+However, letting the candidate languish in a dead-end while the clock
+ticks away the remaining minutes of an interview does not help
+anyone.</p><h2 id="obvious-misunderstandings-are-not-corrected.">Obvious
+misunderstandings are not corrected.</h2><p>It is the interviewer’s responsibility to explain the problem
+clearly. The problem itself doesn’t need to be fully explained since
+there’s much value in seeing how a candidate explores and understands
+the problem area. However if it is obvious that the candidate has
+fundamentally misunderstood some critical aspect of the question, the
+interviewer should step in and intervene<strong>early</strong>. We all
+misunderstand things, specially when they aren’t clearly explained. It’s
+not useful to knowingly send a candidate down the wrong path.</p><h2 id="the-interviewer-seemed-annoyed-or-angry.">The interviewer seemed
+annoyed or angry.</h2><p>This one should be self explanatory. The candidate is anxious enough
+as it is. The interviewer should not frustrate the interviewee’s
+attempts at asking questions and seeking clarity around the question.
+It’s likely that while the problem is obvious to one, the problem area
+may be unfamiliar to others who may need extra help figuring their way
+around. In fact the ability to resolve such ambiguities and seek clarity
+are<em>good</em>. If the interviewer actively discourages such inquiry
+that’s on the interviewer – not the candidate.</p><h2 id="one-interview-diverges-significantly-from-others.">One interview
+diverges significantly from others.</h2><p>There’s more than one interview for a reason. If one interview
+highlights an area as being weak while another interview highlights the
+same area as being strong, then there’s something going on that needs
+scrutiny. There can be many reasons why a candidate bombs an interview.
+Not all of them say anything bad about their ability to function well in
+their job. The causes should be teased out.</p><hr/><p>What happens when an interview is pretty much unsalvageable? It might
+be that the writeup is inconclusive due to issues such as those
+highlighted above. A committee could ignore that specific interview and
+base their decision on the other interviews, or failing that schedule
+another interview to account for the lack of decisive information.</p><p>From a candidate’s point of view, it is<strong>really</strong>
+important that they report any unpleasant interactions to one’s
+recruiter immediately after the interview. This allows a recruiter to go
+to bat for you and perhaps get you another interview if appropriate.</p></content:encoded></item><item><title>On WontFixing Bugs</title><link>https://xn--izc.com/blog/on-wontfixing-bugs/</link><pubDate>Tue, 02 Mar 2021 17:15:06 -0500</pubDate><guid>https://xn--izc.com/blog/on-wontfixing-bugs/</guid><description>&lt;p>Large projects accumulate a large number of issue reports over time.
 This is normal. Typically for a “successful” project the rate of new
 issues being reported will exceed the rate of issues being fixed. Hence
 the growth.&lt;/p>
-&lt;p>But what are they to do about this ever-growing pile of bugs?&lt;/p></description></item><item><title>Deriving the Poisson Distribution</title><link>https://xn--izc.com/blog/poisson-distribution/</link><pubDate>Fri, 11 Dec 2020 11:13:39 -0500</pubDate><guid>https://xn--izc.com/blog/poisson-distribution/</guid><description>Where does the Poisson Distribution come from?
+&lt;p>But what are they to do about this ever-growing pile of bugs?&lt;/p></description><content:encoded><p>This was partly inspired by a Tweet by a co-worker. The tweet is:</p><blockquote class="twitter-tweet"><p lang="en" dir="ltr">wontfix-ing valid bugs (that have been triaged as such) with bots because you haven't been able to fix or prioritize them yet is kinda hostile to contributors, imho<a href="https://t.co/faxtbpoiII">pic.twitter.com/faxtbpoiII</a></p>&mdash; Mike Taylor (@miketaylr)<a href="https://twitter.com/miketaylr/status/1366762904851279877?ref_src=twsrc%5Etfw">March 2, 2021</a></blockquote><script async= src="https://platform.twitter.com/widgets.js" charset="utf-8"/><p>For projects that are under-resourced but has heavy usage it is in
+fact quite normal to accumulate a large number of issue reports over
+time. Take Chromium for example. There are (at the time of writing)
+~95,000 open bugs. Many of these are task tracking bugs rather than
+tracking actual product bugs. But still that’s a lot of real bugs.</p><p>What’s even more interesting is the accumulation of bugs. Typically
+for a “successful” project the rate of new issues being reported will
+exceed the rate of issues being fixed. Hence the growth.</p><h2 id="what-matters">What Matters …</h2><p>Issues are often annotated to indicate some measure of<em>severity</em> and<em>priority</em>. These are two different axes of
+measurement:</p><p><strong>Severity</strong> refers to the degree of impact that an
+issue has. How many users are affected? Is the effect isolated or spread
+across a large user base? Severity is supposed to summarize the answer
+to these questions.</p><p><strong>Priority</strong> refers to what the issue triagers deemed to
+be the relative importance of the issue. A bug that affects a large
+number of users – hence a high severity – might not be a high priority
+due to mitigating factors. Typically a project owner would tackle higher
+priority issues first. Under-resourced projects – which is the case for
+pretty much every successful project I’ve seen – will accumulate lower
+priority issues across time.</p><p>Neither<em>severity</em> nor<em>priority</em> are static either. An
+issue with a low severity might be elevated to a higher severity if the
+affected population of users is discovered to be larger than originally
+assumed. Or the priority may be raised if the issue is blocking the fix
+for another more severe issue. It’s not uncommon for some low priority
+issue to be suddenly elevated to critical status once someone figures
+out how to exploit it.</p><p>In practice<em>perceptual priority</em> is the only one that
+matters. It doesn’t matter what the issue tracker label or score is.
+What matters is that there’s a contributor who’s motivated to fix it.
+The decisions of a contributor are complex and subjective. So while the
+most important issues will<em>likely</em> get fixed, just because an
+issue is real or important doesn’t mean that it will be addressed.</p><p>What this means is that it is important for issue reports to stick
+around. At worst they will accumulate more evidence of severity or clues
+to what the issue is. Often the desired outcome isn’t universal either.
+So an issue report also functions as an opinion catchment area where
+interested parties can hash out their differences.</p><h2 id="and-what-doesnt">And What Doesn’t …</h2><p>However, the health of the project then depends on not only handling
+new issues, but also in how they shepherd existing or known issues.</p><p>Much like any other todo list, the effectiveness of the issue tracker
+decreases when there’s an overwhelming number of items to look at. The
+cognitive overhead of correct prioritizing increases dramatically, as
+does the time it takes for triaging.</p><h2 id="strategies-that-dont-work">Strategies That Don’t Work …</h2><p>So projects tend to use various techniques to deal with the growing
+pile of issues. The more overwhelming it is, the more drastic the
+mitigation strategy.</p><p>One such strategy in action is what we see in the Tweet above where
+there’s a bot that automatically closes old issues that haven’t seen any
+activity. At first glance this seems to make sense.</p><p>The assumption seems to be that if the issue was important enough
+then an endless stream of users would pipe up on the bug with “me too”s
+to keep the issue open. The issue tracker is now a battlefield where
+issue reporters have to continually work to keep the issue alive until a
+contributor takes pity and addresses it.</p><p>Issue reporters themselves who are often volunteers who are electing
+to participate in a project can also burn out. If the issues they file
+are automatically closed, it’s frustrating to the reporters. Chances are
+that with every few issues that are closed due to inactivity, the
+project loses a contributor.</p><p>Another strategy is to have new issues start at some sort of<em>unconfirmed</em> state. Once the issue has been acknowledged and
+accepted it can proceed to some other state which makes the issue become
+a candidate for contributor consideration. This one is a bit better in
+that it doesn’t discard<em>confirmed</em> issues.</p><p>However, eventually the real issues will accumulate to the point
+where some sort of bookkeeping is needed. Along comes<code>WontFix</code> and friends. This is a state where the issue is
+marked as<em>“this is a real issue but we will probably never get
+around to fixing it.”</em></p><p>Reporters nevertheless find this state to be no-less frustrating than
+an outright closure.<code>WontFix</code>ed bugs don’t show up by
+default in issue searches, so they are effectively undiscoverable to
+future issue reporters. All time invested in that issue is now lost.</p><h2 id="and-one-that-does">And One That Does? …</h2><p>The alternative is to just leave the issue open, but lower the
+priority down to something that reflects the current opinion of the
+project maintainers.</p><p>This strategy acknowledges that the issue is real. It serves as
+documentation that the product has a known defect, and in addition it
+can serve the purposes of accumulating evidence of severity along the
+way. If the issue becomes prominent enough then it can be retriaged.</p><p>That’s it. So far I haven’t seen alternatives that are much better
+than this. I’m generally against mass issue closing events like
+declaring “bug bankruptcy.” The bugs don’t care about the state of the
+issue report. All you’ve accomplished is to throw away the accumulated
+history and evidence of a defect.</p></content:encoded></item><item><title>Deriving the Poisson Distribution</title><link>https://xn--izc.com/blog/poisson-distribution/</link><pubDate>Fri, 11 Dec 2020 11:13:39 -0500</pubDate><guid>https://xn--izc.com/blog/poisson-distribution/</guid><description>Where does the Poisson Distribution come from?
 A little bit of research1 tells us that the distribution was originally introduced by Abraham de Moivre in 1710 in an article called “On the Measurement of Chance, or, on the Probability of Events in Games Depending Upon Fortuitous Chance” 2 (not the original title).
 A few steps that will get us there is laid out below.
-Let’s start with a simple “rate” problem.</description></item><item><title>Ten Years</title><link>https://xn--izc.com/blog/ten-years/</link><pubDate>Tue, 08 Dec 2020 21:41:50 -0500</pubDate><guid>https://xn--izc.com/blog/ten-years/</guid><description>It’s been ten years since I started at Google. The work anniversary fell on 6th of December.
+Let’s start with a simple “rate” problem.</description><content:encoded><p>Where does the Poisson Distribution come from?</p><p>A little bit of research<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> tells us that the
+distribution was originally introduced by<a href="https://en.wikipedia.org/wiki/Abraham_de_Moivre">Abraham de
+Moivre</a> in 1710 in an article called<em>“On the Measurement of
+Chance, or, on the Probability of Events in Games Depending Upon
+Fortuitous Chance”</em><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> (not the original title).</p><p>A few steps that will get us there is laid out below.</p><p>Let’s start with a simple “rate” problem.</p><blockquote><p>How likely is it that you’ll receive 12 visits next week given that
+you had 10 visitors this week?</p></blockquote><p>This is clearly not a question to be answered based on a lot of
+information. However when the assumption is that<em>on average</em> you
+get 10 visitors a week, then the question sounds a bit more
+reasonable.</p><p>While we say the<em>rate</em> is 10 visitors per week, that’s
+obviously not going to be uniformly distributed. Maybe given the nature
+of your site, people are more likely to visit over the week-end rather
+than during the week. However for the purpose of this analysis we are
+going to assume that the rate is uniform.</p><p>Simplifying things a bit more, we can ask the question in a different
+way:</p><blockquote><p>How likely is that that the rate of visitors for your site will be<span class="math inline">\frac{12}{7}</span> per day next week given
+that the usual rate is<span class="math inline">\frac{10}{7}</span> per
+day?</p></blockquote><p>Or in another way:</p><blockquote><p>How likely is that that the rate of visitors for your site will be<span class="math inline">\frac{12}{7 * 24}</span> per hour next week
+given that the usual rate is<span class="math inline">\frac{10}{7 *
+24}</span> per hour?</p></blockquote><p>Why do this? Without much explanation this reformulation gets us to a
+rate that’s less than one per unit of time being considered. This way we
+can now look at each time unit and assume that we’ll either get 1
+visitor or none any given hour.</p><p>So each hour, there’s a probability of<span class="math inline">\lambda</span> that there will be a user, and<span class="math inline">1 - \lambda</span> that there won’t. Here we are
+using<span class="math inline">\lambda = \frac{10}{7 * 24}</span> for
+convenience. The latter is also the “rate” of events or arrivals. The
+term<em>arrivals</em> or<em>occurrences</em> is common in
+literature.</p><p>The probability that there will be 12 visitors is the probability
+that there will be 12 hour slots where there’s an arrival and the rest
+will be slots without an arrival.</p><p>Treating this as a list of one-hour “slots”, the outcome would look
+like:</p><table style="width:100%;"><colgroup><col style="width: 5%"/><col style="width: 5%"/><col style="width: 5%"/><col style="width: 5%"/><col style="width: 5%"/><col style="width: 5%"/><col style="width: 5%"/><col style="width: 5%"/><col style="width: 5%"/><col style="width: 5%"/><col style="width: 5%"/><col style="width: 5%"/><col style="width: 5%"/><col style="width: 5%"/><col style="width: 5%"/><col style="width: 8%"/><col style="width: 8%"/></colgroup><tbody><tr class="odd"><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>…</td><td>0</td></tr></tbody></table><p>The number in each box is the number of arrivals during that slot
+which is either 1 or 0. So there are<span class="math inline">2^n</span> possible outcomes where<span class="math inline">n = 7 * 24</span>. Each 1 has a probability of<span class="math inline">\lambda</span> and 0 has a probability of<span class="math inline">1 - \lambda</span>.</p><p>So for there to be exactly<span class="math inline">k</span>
+arrivals – where<span class="math inline">k = 12</span> which is the
+target – there needs to be<span class="math inline">k</span> ones and<span class="math inline">n - k</span> zeros.</p><p>So the probability of one of those events happening is<span class="math inline">\lambda^k (1 - \lambda)^{n-k}</span>.</p><p>But there are lots of ways of choosing<span class="math inline">k</span> boxes out of<span class="math inline">n</span>. In fact there is exactly<span class="math inline">\binom{n}{k}</span> ways.</p><p>So the probability of getting exactly<span class="math inline">k</span> arrivals is:</p><p><span class="math display">\Pr(k) = \binom{n}{k} \lambda^k
+(1-\lambda)^{n - k}</span></p><p>With me so far?</p><p>Astute readers will note that we did some hand-waving up there.
+Specifically we assumed that the possibilities for any 1-hour block is
+either there being an arrival or there not being one. This isn’t always
+the case since there could be more than 1 arrival in any given hour.</p><p>One way to address this is to consider increasingly smaller units of
+time. For example, if we divide the one-hour block into<span class="math inline">m</span> equal sized pieces then it’ll be a bit more
+likely – assuming<span class="math inline">m \gt 1</span> – that there
+will be at most 1 arrival during that time period. In fact if<span class="math inline">m</span> is very large, then it is increasingly
+likely that the choices are either 1 or 0.</p><p>So the number of boxes is now<span class="math inline">n*m</span>,
+and the probability of an arrival during any single timeslot is now<span class="math inline">\frac{λ}{m}</span>. Substituting these, our
+new probability is:</p><p><span class="math display">\Pr(k) = \binom{nm}{k} \left(
+\frac{\lambda}{m} \right)^k \left(1 - \frac{\lambda}{m}\right)^{nm -
+k}</span></p><p>Alright. We are getting somewhere now. The next step is to increase<span class="math inline">m</span> all the way to<span class="math inline">\infty</span>.</p><p><span class="math display">\begin{align*}
+\lim_{m \to \infty} \Pr(k) &amp; = \lim_{m \to \infty} \binom{n*m}{k} (
+\frac{λ}{m} )^k (1 - \frac{λ}{m})^{nm - k} \\
+&amp; = \lim_{m → \infty} \frac{(nm)!}{k! (nm - k)!} ( \frac{λ}{m} )^k
+(1 - \frac{λ}{m})^{nm - k}
+\end{align*}</span></p><p>The right side looks a bit daunting, the we can simplify things quite
+a bit by looking at each part separately.</p><p>For example:</p><p><span class="math display">\begin{align*}
+\binom{nm}{k}\left( \frac{\lambda}{m} \right)^k &amp; = \frac{(nm)!}{k!
+(nm - k)!}\left( \frac{\lambda}{m} \right)^k \\
+&amp; = \frac{nm \cdot (nm - 1) \cdot (nm - 2) \cdot ... (nm - k +
+1)}{k!}\left( \frac{\lambda}{m} \right)^k \\
+&amp; = \left( \frac{nm}{m} \right) \left( \frac{nm - 1}{m}\right) ...
+\left( \frac{nm - k + 1}{m}\right) \frac{\lambda^k}{k!}
+\end{align*}</span></p><p>Furthermore:</p><p><span class="math display">\left( \frac{nm}{m} \right) \left(
+\frac{nm - 1}{m}\right) ... \left( \frac{nm - k + 1}{m}\right)
+\frac{\lambda^k}{k!} = \frac{\lambda^k}{k!}\prod_{i=0}^{k-1} \left(n -
+\frac{k - i}{m}\right)</span></p><p>As<span class="math inline">\lim_{m → \infty}</span> we see that<span class="math inline">\frac{k-i}{m}</span> tends to<span class="math inline">0</span>. This makes our lives a bit easier.</p><p>Now we have:</p><p><span class="math display">\begin{align*}
+\Pr(k) &amp;= \lim_{m \to \infty}\frac{(n \lambda)^k}{k!} \left(1 -
+\frac{\lambda}{m} \right)^{nm - k} \\
+&amp;= \lim_{m \to \infty}\frac{(n \lambda)^k}{k!} \left(1 -
+\frac{\lambda}{m} \right)^{nm(1 - \frac{k}{nm})}\end{align*}</span></p><p>Remember that:</p><p><span class="math display">\lim_{n \to \infty} \left( 1 + \frac{x}{n}
+\right)^n = e^x</span></p><p>So substituting<span class="math inline">n \to nm</span> and<span class="math inline">x \to - \lambda n</span> gets us:</p><p><span class="math display">\lim_{nm \to \infty} \left( 1 -
+\frac{\lambda}{m} \right)^{nm} = e^{- \lambda n}</span></p><p>Now going back to<span class="math inline">\Pr(k)</span>:</p><p><span class="math display">\Pr(k) = \frac{(n \lambda)^k e^{- \lambda
+n}}{k!}</span></p><p>Let’s do another substitution. Remember that<span class="math inline">\lambda</span> is the number of arrivals during<span class="math inline">n</span> time periods. If we consider<span class="math inline">n</span> time periods (originally hours) to be a
+single unit of time, then our rate of arrivals is<span class="math inline">\lambda n</span>. So without loss of generality
+let’s substitute<span class="math inline">\lambda n \to
+\lambda</span>.</p><p>This gives us:</p><p><span class="math display">\Pr(k) = \frac{\lambda^k e^{-
+\lambda}}{k!}</span></p><p>… which is the PDF of the Poisson distribution.</p><p>n.b.: In retrospect it would’ve been easier to consider the unit of
+time to be<span class="math inline">n</span> hours in the first place,
+but I’m too lazy to go back and rewrite everything.</p><p>…</p><p>…</p><section class="footnotes footnotes-end-of-document" role="doc-endnotes"><hr/><ol><li id="fn1" role="doc-endnote"><p>Also known as reading the relevant
+Wikipedia article. In this case that’s the<a href="https://en.wikipedia.org/wiki/Poisson_distribution#History"><em>History</em>
+section of the article on the Poisson distribution</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn2" role="doc-endnote"><p><a href="https://royalsocietypublishing.org/doi/10.1098/rstl.1710.0018">The
+original article in Latin</a> is available via<a href="https://royalsociety.org/journals/">The Royal Society
+Publishing</a>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section></content:encoded></item><item><title>Ten Years</title><link>https://xn--izc.com/blog/ten-years/</link><pubDate>Tue, 08 Dec 2020 21:41:50 -0500</pubDate><guid>https://xn--izc.com/blog/ten-years/</guid><description>It’s been ten years since I started at Google. The work anniversary fell on 6th of December.
 Ten years ago my wife and I made our way to Mountain View for my orientation; all excited for a brand new chapter in our lives. After spending a week in Mountain View / Palo Alto we both decided that California was not for us. But that’s beside the point.
-I was elated. This was pretty much everything I dreamt of as a kid growing up in Sri Lanka.</description></item><item><title>Visualizing Internet Users</title><link>https://xn--izc.com/blog/visualizing-people/</link><pubDate>Sat, 21 Nov 2020 11:37:53 -0500</pubDate><guid>https://xn--izc.com/blog/visualizing-people/</guid><description>What does 0.3%1 of internet users look like?
+I was elated. This was pretty much everything I dreamt of as a kid growing up in Sri Lanka.</description><content:encoded><p>It’s been ten years since I started at Google. The work anniversary
+fell on 6th of December.</p><p>Ten years ago my wife and I made our way to Mountain View for my
+orientation; all excited for a brand new chapter in our lives. After
+spending a week in Mountain View / Palo Alto we both decided that
+California was not for us. But that’s beside the point.</p><p>I was elated. This was pretty much everything I dreamt of as a kid
+growing up in Sri Lanka. Except those days we dreamt of someday working
+for Microsoft or starting our own software company.</p><p>One afternoon during orientation – maybe it was the evening, I don’t
+remember – I was walking by a bunch of outdoor tables next to one of the
+larger café’s at the Google HQ. As I walked by I overheard a Googler on
+the phone telling someone how they just had a really shitty day. I
+remember being confused. How could someone have a bad day at Google?
+Inconceivable.</p><p>Obviously this feeling didn’t last. People normalize things quickly.
+The problem with achieving your dreams is that now you have to make
+more; an eternal treadmill. It’s nice to periodically look back though.
+The novelty isn’t there anymore, but it’s humbling to recall how much we
+dreamt for the things that we now take for granted.</p><p>Looking back at the last years, the things that I’m really proud of
+aren’t my code contributions. If any aren’t already obsolete then by now
+it’s become some legacy crap that some engineer has to maintain.</p><p>But the things that I really remember are the three times I talked
+hiring committees into hiring someone they had decided not to hire.
+Those were good candidates whom I thought didn’t get a fair shake.</p><p>Also I clearly remember the smart people who acknowledged and
+appreciated my work. I also remember the ones that took credit for my
+work or didn’t treat me with dignity, but I don’t think about them that
+often.</p><p>I remember the big projects that I initiated, the big ideas I sold,
+and the ones I managed to pull off.</p><p>Then there are the low points. Moments when I let people down or
+burned a bridge or two for the wrong reasons.</p><p>But overall, looking back there isn’t much there. It’s surprising how
+little really matters in the long run.</p><p>I should remember that the next time I feel like staying up late
+trying to get something done because I feel some sort of obligation or
+bigger purpose in doing it. Often there is none.</p></content:encoded></item><item><title>Visualizing Internet Users</title><link>https://xn--izc.com/blog/visualizing-people/</link><pubDate>Sat, 21 Nov 2020 11:37:53 -0500</pubDate><guid>https://xn--izc.com/blog/visualizing-people/</guid><description>What does 0.3%1 of internet users look like?
 As of this writing the global population hovers around 7.7 billion according to the World Population Clock 2.
 Screenshot from census.gov showing the world population clock. The International Telecommunications Union “estimates that at the end of 2019, 53.6 per cent of the global population, or 4.1 billion people, are using the internet.”3
-Screenshot from itu.int showing historical internet usage numbers as a percentage of the world population So a 0.</description></item><item><title>Things You Can Do With Neovim and Vscode That You Can't Do With Neovim Alone</title><link>https://xn--izc.com/blog/things-you-can-do-with-nvim-and-vscode/</link><pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/things-you-can-do-with-nvim-and-vscode/</guid><description>This is the third time I’ve tried in earnest to switch to VSCode from Vim (or Neovim in my case) for reasons not all of which are relevant to this post. But I love Vim style modal editing and I’ve grown accustomed to some features that aren’t present or not well emulated in VSCodeVim.
-Enter VSCode Neovim. I was intrigued by their claim to integrate Neovim instead of trying to emulate Vim.</description></item><item><title>Why 'Strong Opinions Weakly Held'</title><link>https://xn--izc.com/blog/why-strong-opinions-weakly-held/</link><pubDate>Fri, 28 Aug 2020 15:17:16 -0400</pubDate><guid>https://xn--izc.com/blog/why-strong-opinions-weakly-held/</guid><description>Origins of the phrase The title of this blog is Strong Opinions, Weakly Held. The same concept shows up elsewhere are Strong Opinions Loosely Held. An eponymous essay by Paul Saffo in [1] introduced the world to this concept.
+Screenshot from itu.int showing historical internet usage numbers as a percentage of the world population So a 0.</description><content:encoded><p>What does 0.3%<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> of internet users look like?</p><p>As of this writing the global population hovers around 7.7 billion
+according to the World Population Clock<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p><figure><img src="images/census-gov-population-clock-2020-11-20.png" alt="Screenshot from census.gov showing the world population clock."/><figcaption aria-hidden="true">Screenshot from census.gov showing the
+world population clock.</figcaption></figure><p>The<a href="https://www.itu.int/">International Telecommunications
+Union</a> “estimates that at the end of 2019, 53.6 per cent of the
+global population, or 4.1 billion people, are using the internet.”<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p><figure><img src="images/itu-internet-usage-stats-2019.jpg" alt="Screenshot from itu.int showing historical internet usage numbers as a percentage of the world population"/><figcaption aria-hidden="true">Screenshot from itu.int showing
+historical internet usage numbers as a percentage of the world
+population</figcaption></figure><p>So a 0.3% of the internet would be a roughly 12,300,000 or around
+12.3 million. A nice little number.</p><h2 id="from-50-to-100000">From 50 to 100,000</h2><p>It’s interesting to try and visualize this. An example of visualizing
+populations for small numbers can be found at<a href="https://blog.lime.link/visualizing-crowd-sizes/">Visualizing Crowd
+Sizes</a>. It goes from around 50 people up to 100,000 people.</p><p>While 100,000 is interesting we need to go all the way to 12.3
+million.</p><section class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1" role="doc-endnote"><p>Why 0.3% of the internet population?
+It’s a number that came up when trying to come up with a reasonable
+sample size for estimating the diversity of the internet population.
+There’s not much special about it other than that.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn2" role="doc-endnote"><p>The<a href="https://www.census.gov/popclock/">world population clock</a>. This
+link is for the current number at whatever time you clicked on the link
+assuming the site is still there. As of November 20, 2021, the number
+was 7.7 billion. I’d link you to an archived page but that doesn’t seem
+to work.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn3" role="doc-endnote"><p><a href="https://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx">Statistics
+pages on itu.int</a> project even higher numbers than 53.6% by the end
+of 2020, but it’s possible numbers won’t behave according to historical
+trends due to the effects of COVID.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section><h2 id="section">200,000</h2><p>A particularly macabre topic these days since the United States
+surpassed 200,000 deaths due to COVID-19 around September of 2020.<a href="https://www.ctpost.com/">ctpost</a> ran an article online title<a href="https://www.ctpost.com/news/coronavirus/slideshow/Analysis-What-200-000-COVID-deaths-actually-209169.php">“What
+does 200,000 deaths actually look like”</a>. There are some interesting
+comparisons there, but none make for a good visual. It’s just an
+interesting number right now.</p><p>As for crowd sizes, 200,000 was the estimated number of people who
+attended the<a href="https://marchforourlives.com/">March for Our
+Lives</a> in D.C.. There aren’t any photos capturing<em>all</em>
+attendees in one shot, but there are numerous pictures in<a href="https://www.cbsnews.com/news/march-for-our-lives-crowd-size-estimated-200000-people-attended-d-c-march/">this
+CBS News article</a> to give you a good idea.</p><p>In more terrible examples,<a href="https://www.dw.com/en/more-than-200000-indonesians-protest-governor-purnamas-alleged-blasphemy/a-36611145">this
+article on dw.com</a> suggests that the crowd size pictured is roughly
+around 200,000 people.</p><blockquote><p>More than 200,000 conservative Muslims gathered in Indonesia’s
+capital Jakarta on Friday to protest against the city’s Christian
+governor, who is facing trial for blasphemy, police estimated.</p></blockquote><figure><img src="images/dw-com-indonesia-protest-2020-11-20.jpg" alt="Image from dw.com of a protest in Indonesia allegedly showing 200,000 people. Image Source"/><figcaption aria-hidden="true">Image from dw.com of a protest in
+Indonesia allegedly showing 200,000 people.<a href="https://www.dw.com/en/more-than-200000-indonesians-protest-governor-purnamas-alleged-blasphemy/a-36611145">Image
+Source</a></figcaption></figure><h2 id="section-1">500,000</h2><p>We are heading into shaky ground here. A 800*600 picture only
+contains 480,000 pixels. So we are now reduced to indicating population
+by inference. It is nolonger possible to capture 500,000 people in a
+webpage sized picture while showing each person individually.</p><p><a href="https://www.reddit.com/r/philadelphia/comments/3by9g8/if_this_is_what_500k_people_look_like_xpost_from/">This
+Reddit post</a> claims that there are 500k people in the picture, but I
+couldn’t readily find any good references backing up that claim.</p><p>As is tradition by now, another protest that drew 500,000 people is<a href="https://www.nbcnews.com/show-me/video/nearly-500-000-people-march-in-anti-violence-rally-in-barcelona-1033617987741">an
+anti-violence rally in Barcelona as reported by NBC</a>. While there’s
+video, the content doesn’t quite capture the massive number of people.
+Also it’s “nearly 500,000” people.</p><p>However, the closest we’ll probably get to a somewhat believable
+500,000 person crowd would be the March for Science. They posted the
+following picture on<a href="https://www.facebook.com/marchforscience/posts/836983043362678">Facebook</a>
+noting that “There are 500,000 people on strike in Montreal”.</p><figure><img src="images/march-for-science-crowd-2020-11-20.jpg" alt="March for Science on Facebook: Picture of protest"/><figcaption aria-hidden="true">March for Science on Facebook: Picture of
+protest</figcaption></figure><p><a href="https://www.facebook.com/marchforscience/posts/836983043362678">Image
+source</a></p><h2 id="section-2">750,000</h2><p>Off to protests again. This time we are looking at Barcelona where
+750,000 Catalan independence supporters are demanding the release of
+their leaders according to<a href="http://www.timealem.com/750000-people-flood-barcelona-demanding-release-of-catalan-leaders_d575.html">this
+article</a>.</p><figure><img src="images/barcelona-protest-2020-11-20.jpg" alt="750,000 people flood Barcelona demanding release of Catalan leaders. Image source"/><figcaption aria-hidden="true">750,000 people flood Barcelona demanding
+release of Catalan leaders.<a href="http://www.timealem.com/750000-people-flood-barcelona-demanding-release-of-catalan-leaders_d575.html">Image
+source</a></figcaption></figure><p>The crowd extends past the top of the frame and there’s no chance
+this is the entire crowd. But you get the general idea. If you ship a
+bug that affects 0.01% of the internet population, then this is a
+conservative lower bound of what that angry mob would look like.</p><p>But wait, the<a href="https://www.guinnessworldrecords.com/news/non-corporate/2018/6/more-than-750-000-people-help-philippines-based-church-achieve-four-new-records-529029">Guinness
+World Record for teh largest charity walk/run</a> is 283,171 people at a
+single venue. Have a look at that picture:</p><figure><img src="images/guinness-record-largest-walk-single-venu-2020-11-20.jpg" alt="Guinness Record for the largest charity walk or run at a single venue is for 283,171 people. Image Source"/><figcaption aria-hidden="true">Guinness Record for the largest charity
+walk or run at a single venue is for 283,171 people.<a href="https://www.guinnessworldrecords.com/news/non-corporate/2018/6/more-than-750-000-people-help-philippines-based-church-achieve-four-new-records-529029">Image
+Source</a></figcaption></figure><p>It seems that picture of 750,000 people doesn’t quite capture it
+because clearly there are more people in the picture that’s supposed to
+be 283k people. Which of course goes to show how hard it is to really
+capture how massive a crowd 750k makes.</p><p>In an article on Wired that discusses how hard it is to estimate
+crowd sizes, they note<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>:</p><blockquote><p>Every time a ton of people gather in one place, there are all sorts
+of pronouncements made about how many folks really showed. The figures
+rarely agree; Glenn Beck’s rally on the National Mall this summer
+attracted a million people, according to Beck cohort Rep. Michelle
+Bachman. CBS News pegged it at more like 87,000.</p></blockquote><h3 id="and-more">And More</h3><p>I’m going to give up at this point. Pictures purportedly of around
+one million people are mostly parts of crowds that have been estimated
+to be that big. Forget about 12.3 million.</p><section class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol start="4"><li id="fn4" role="doc-endnote"><p><a href="https://www.wired.com/2011/02/how-many-people-are-in-tahrir-square-heres-how-to-tell/">How
+Many People Are in Tahrir Square? Here’s How to Tell</a><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section></content:encoded></item><item><title>Things You Can Do With Neovim and Vscode That You Can't Do With Neovim Alone</title><link>https://xn--izc.com/blog/things-you-can-do-with-nvim-and-vscode/</link><pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/things-you-can-do-with-nvim-and-vscode/</guid><description>This is the third time I’ve tried in earnest to switch to VSCode from Vim (or Neovim in my case) for reasons not all of which are relevant to this post. But I love Vim style modal editing and I’ve grown accustomed to some features that aren’t present or not well emulated in VSCodeVim.
+Enter VSCode Neovim. I was intrigued by their claim to integrate Neovim instead of trying to emulate Vim.</description><content:encoded><p>This is the third time I’ve tried in earnest to switch to VSCode from
+Vim (or Neovim in my case) for reasons not all of which are relevant to
+this post. But I love Vim style modal editing and I’ve grown accustomed
+to some features that aren’t present or not well emulated in<a href="https://github.com/VSCodeVim/Vim">VSCodeVim</a>.</p><p>Enter<a href="https://github.com/asvetliakov/vscode-neovim">VSCode
+Neovim</a>. I was intrigued by their claim to integrate Neovim instead
+of trying to emulate Vim. After going through the code a bit I thought
+this extension alone warranted a new attempt at switching to VSCode. So
+far it’s going great.</p><h2 id="how-vscode-neovim-works">How VSCode Neovim Works</h2><p>Here’s the gist of how this extension works. Feel free to skip to the
+good stuff below but this section is good background information for
+understanding<em>why</em> it works the way it does.</p><ol type="1"><li><p><strong>Invokes an embedded Neovim instance.</strong></p><p>Code for this is in the<code>main_controller.ts</code> (<a href="https://github.com/asvetliakov/vscode-neovim/blob/master/src/main_controller.ts">linky</a>)
+if you are curious about how exactly it’s implemented and the
+commandline options that are passed in.</p><p>You’ll also notice that the code invokes<code>--cmd source
+${neovimSupportScriptPath}</code> which runs<code>vim/vscode-neovim.vim</code> (<a href="https://github.com/asvetliakov/vscode-neovim/blob/master/vim/vscode-neovim.vim">linky</a>)
+before running your<code>init.vim</code> file. This script is what sets
+up the<code>g:vscode</code> flag and sources all the other<code>vscode-*.vim</code> scripts except<code>vscode-options.vim</code>. The latter runs<em>after</em> your<code>init.vim</code> in order to force some settings that would
+otherwise break the extension or cause Neovim to be confused.</p></li></ol><p>So far this is pretty standard fare for how Neovim would be embedded
+for a custom UI. But things get a bit interesting from the next
+step.</p><ol start="2" type="1"><li><p><strong>Creates a new Neovim buffer and window corresponding to a
+VSCode editor.</strong></p><p>The buffer thus created is a plain text buffer without any bells or
+whistles. Contents of the buffer comes from VSCode<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.
+VSCodeNeovim synchronizes the content between the Neovim buffer and the
+VSCode editor. Thus the relationship between the contents and the
+corresponding file on disk is mediated through VSCode. This is a key
+difference between other custom UIs and this one and one that opens many
+possibilities.</p><p>VSCodeNeovim defers to VSCode for handling insert mode. VSCode
+handles autocompletion and other assistive features. You’ll have to get
+used to your insert mode customizations not working, or replicating that
+with VSCode keyboard mapping customizations. When exiting insert mode
+the extension asynchronously synchronizes the buffer contents – which at
+this point would include the changes that were introduced – with Neovim.
+The code for synchronizing the VSCode editor contents and the Neovim
+buffer is in<code>buffer_manager.ts</code> (<a href="https://github.com/asvetliakov/vscode-neovim/blob/master/src/buffer_manager.ts">linky</a>)
+which is also a good place to look if you want to know the details about
+buffer options that are being set.</p></li></ol><p>Of course I’m eliding lots of detail here including integrations for
+other areas of UI. But I think this captures the pertinent details. The
+extension is a pretty impressive piece of work which is well worth a
+gander. Now on to the good stuff.</p><section class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1" role="doc-endnote"><p>Not quite the whole story because
+it’s possible a buffer be created inside the Neovim instance and have it
+be mirrored in a VSCode editor. But that’s probably not what you’ll be
+using on a regular basis.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section><h2 id="responsive-neovim-experience-over-a-laggy-ssh-connection">Responsive
+Neovim Experience Over A laggy SSH Connection</h2><p>This gets to the reason why I’m trying to move to VSCode in the first
+place. I work on a project consisting of thousands of C++ source files.
+My home-office doesn’t have enough hardware to do regular builds, or in
+fact any build at all. The beefy machines are in a remote location
+accessible via SSH.</p><p>I’ve been using Neovim over SSH for a while, but the latency really
+bothers me. And no, neither SCP nor SSHFS scratches this itch because I
+won’t have access to language smarts like<code>clangd</code> which
+require access to all the source files and some build tooling.</p><p><a href="https://code.visualstudio.com/docs/remote/remote-overview">VSCode
+Remote Development</a> was a nearly perfect answer with the exception
+that VSCodeVim didn’t quite have all the functionality I needed.
+VSCodeNeovim addresses that last piece of the puzzle.</p><p>VSCode + Remote SSH + VSCodeNeovim + Neovim gives me:</p><p><img src="4e46e31363fbe39799ba35a987d7a4957644d681.svg"/></p><ul><li>On the remote machine:<ul><li>Source files.</li><li>Build tooling.</li><li><code>clangd</code> process invoked via<code>vscode-remote</code>.</li></ul></li><li>On the local machine:<ul><li>VSCode.</li><li>VSCodeNeovim.<ul><li>Neovim instance embedded by VSCodeNeovim.<ul><li>Neovim plug-ins and normal mode keybindings.</li></ul></li></ul></li></ul></li></ul><p>Since the embedded Neovim instance is local the editors are super
+responsive. Completions via<code>clangd</code> is still laggy as one
+might expect. But that’s something I’m willing to live with.</p><h2 id="proportional-fonts-with-neovim">Proportional Fonts With
+Neovim</h2><p>Okay, so why would anyone actually want this? Turns out<a href="https://www.google.com/search?q=proportional+fonts+for+coding">I’m
+not the only one</a>. In my case I prefer monospace for regular code,
+but I’d much much rather read comments and prose in proportional font.
+Also, I now spend a lot of my time writing Markdown with LatexMath.
+Staring at monospaced prose all day is not my cup of tea.</p><p>This is what it looks like when I’m editing this post in VSCode (in
+Markdown).</p><figure><img src="images/proportional-font-markdown.png" alt="Screenshot of VSCode editing Markdown in proportional font"/><figcaption aria-hidden="true">Screenshot of VSCode editing Markdown in
+proportional font</figcaption></figure><p>The best part is that I can use my familiar Vim/Neovim keybindings
+and modal editing. I had to make a couple of customizations and I only
+have this set up for Markdown. But it works fairly well. One gotcha is
+that the cursor jumps horizontally when moving the cursor up or down
+since the columns are no longer neatly aligned.</p><h3 id="monospace-code-with-proportional-comments">Monospace Code With
+Proportional Comments?</h3><p>What I really want isn’t proportional fonts everywhere. Rather I only
+want proportional fonts for prose. In code, this would take the form of
+comments.</p><p>Unfortunately, VSCode doesn’t support changing the font for specific
+syntactic tokens or scopes. That would’ve been ideal because it would
+let me configure things so that comments are in proportional font while
+the rest is in monospace. Also in the case of Markdown, I’d be able to
+make everything proportional except for inline code and fenced code
+blocks. Alas we are not quite there yet. Several feature requests
+already exist<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>, but hasn’t seen much activity.</p><section class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol start="2"><li id="fn2" role="doc-endnote"><p>A quick search in the VSCode
+repository<a href="https://github.com/microsoft/vscode/search?q=tokenColorCustomizations+font+name">with
+this query</a> yields several issues that request for pretty much the
+same thing: Allow setting<code>fontName</code> in<code>tokenColorCustomizations</code>. There’s also<a href="https://github.com/deepanrajkumar/Italic-and-Ligature">this
+curious experiment</a> which patches in a different font for italics so
+that you can use the existing<code>fontStyle: "italic"</code> option in<code>tokenColorCustomizations</code> to switch fonts.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section><h2 id="takeaways">Takeaways</h2><ol type="1"><li>VSCodeNeovim is a functional replacement for the avid Neovim or
+perhaps Vim user who wants it both ways. Lots of caveats exist including
+the fact that Neovim mode only really works inside editor windows.</li><li>VSCodeNeovim + “Remote SSH” is an awesome combination for editing
+remote files using Neovim with the latency of a local Neovim
+instance.</li><li>You can use proportional fonts with VSCodeNeovim for super double
+awesomeness.</li></ol></content:encoded></item><item><title>Why 'Strong Opinions Weakly Held'</title><link>https://xn--izc.com/blog/why-strong-opinions-weakly-held/</link><pubDate>Fri, 28 Aug 2020 15:17:16 -0400</pubDate><guid>https://xn--izc.com/blog/why-strong-opinions-weakly-held/</guid><description>Origins of the phrase The title of this blog is Strong Opinions, Weakly Held. The same concept shows up elsewhere are Strong Opinions Loosely Held. An eponymous essay by Paul Saffo in [1] introduced the world to this concept.
 In his essay – which isn’t very long if you would like to read the whole thing yourself – he lays out the concept as follows:
-I have found that the fastest way to an effective forecast is often through a sequence of lousy forecasts.</description></item><item><title>Names for Name Conventions</title><link>https://xn--izc.com/blog/symbol-name-types/</link><pubDate>Mon, 24 Aug 2020 12:32:45 -0400</pubDate><guid>https://xn--izc.com/blog/symbol-name-types/</guid><description>Names I’ve seen used to refer to naming conventions:
-snake_case, hacker_case, unix_hacker_style : Everything is lower case, though exceptions exist. E.g. HTTP_foo_bar. SCREAMING_SNAKE_CASE : Usually reserved for macros and constants. camelCase : The first letter is lowercase. PascalCase : The first letter is uppercase. kabob-case : Like snake_case, but uses dashes instead of underscores. Common for command-line options1, CSS styles, commands (e.g. git-receive-pack). While looking idly looking for details on this, I stumbled on this Medium post which is relevant.</description></item><item><title>How This Blog Works</title><link>https://xn--izc.com/blog/how-this-blog-works/</link><pubDate>Mon, 27 Jul 2020 00:57:17 -0400</pubDate><guid>https://xn--izc.com/blog/how-this-blog-works/</guid><description>How I put this site together and why.</description></item><item><title>The Comcast Technician Problem</title><link>https://xn--izc.com/blog/comcast-technican-problem/</link><pubDate>Mon, 13 Jul 2020 13:21:51 -0400</pubDate><guid>https://xn--izc.com/blog/comcast-technican-problem/</guid><description>Given a set of tasks, incentives are often aligned towards dropping a
-task rather than allowing for perpetual accretion of delays.</description></item><item><title>Vim: Use Drop Not Edit, SBuffer Not Buffer</title><link>https://xn--izc.com/blog/use-drop-not-edit/</link><pubDate>Tue, 07 Jul 2020 12:02:20 -0400</pubDate><guid>https://xn--izc.com/blog/use-drop-not-edit/</guid><description>I’m going to assume you are a Vim user.
+I have found that the fastest way to an effective forecast is often through a sequence of lousy forecasts.</description><content:encoded><h2 id="origins-of-the-phrase">Origins of the phrase</h2><p>The title of this blog is<strong>Strong Opinions, Weakly
+Held</strong>. The same concept shows up elsewhere are<em>Strong
+Opinions Loosely Held</em>. An eponymous essay by Paul Saffo in<span class="citation" data-cites="Saffo">[1]</span> introduced the world to
+this concept.</p><p>In his essay – which isn’t very long if you would like to<a href="https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/">read
+the whole thing yourself</a> – he lays out the concept as follows:</p><blockquote><p>I have found that the fastest way to an effective forecast is often
+through a sequence of lousy forecasts. Instead of withholding judgment
+until an exhaustive search for data is complete, I will force myself to
+make a tentative forecast based on the information available, and then
+systematically tear it apart, using the insights gained to guide my
+search for further indicators and information.</p></blockquote><h2 id="criticism">Criticism</h2><p>Cedric Chin’s critique<span class="citation" data-cites="Cedric">[2]</span> comes down to two points that the author
+summarizes as follows:</p><blockquote><p>In my experience, ‘strong opinions, weakly held’ is difficult to put
+into practice. Most people who try will either:</p><ol type="1"><li>Use it as downside-protection to justify their strongly-held bad
+opinions, or</li><li>Struggle to shift from one strong opinion to another.</li></ol><p>The reason it is difficult is because it works against the grain of
+the human mind.</p><p>So don’t bother. The next time you find yourself making a judgment,
+don’t invoke ‘strong opinions, weakly held’. Instead, ask: “how much are
+you willing to bet on that?” Doing so will jolt people into the types of
+thinking you want to encourage.</p></blockquote><p>Michael Natkin on<span class="citation" data-cites="Michael">[3]</span> points out the fallacy of assuming that
+strong opinions will be reliably challenged:</p><blockquote><p>The idea of strong opinions, loosely held is that you can make
+bombastic statements, and everyone should implicitly assume that you’ll
+happily change your mind in a heartbeat if new data suggests you are
+wrong. It is supposed to lead to a collegial, competitive environment in
+which ideas get a vigorous defense, the best of them survive, and no-one
+gets their feelings hurt in the process.</p><p>[…]</p><p>What really happens? The loudest, most bombastic engineer states
+their case with certainty, and that shuts down discussion. Other people
+either assume the loudmouth knows best, or don’t want to stick out their
+neck and risk criticism and shame. This is especially true if the
+loudmouth is senior, or there is any other power differential.</p></blockquote><h2 id="reconciliation">Reconciliation</h2><p>Both cases above illustrate the damage caused by the disconnect
+between the holder of the opinion and others about the degree of
+confidence with which the opinion is held. A strongly held – and thusly
+communicated – opinion has a higher chance of being misinterpreted as
+conviction.</p><p>Saffo’s original claim still holds that having a potentially
+inaccurate position is<em>better than having none at all</em>. Such a
+position elicits arguments and opens up avenues for investigation that
+wouldn’t otherwise materialize in the absence of any other catalyst.</p><p>Cedric Chin’s essay points out a simple fix, where the holder of the
+opinion also states the degree of confidence. This is meant to dress up
+the opinion more as a target than a decree, thus inviting debate instead
+of suppressing. I believe this to be good advice.</p><p>Back in my college days, I remember a particularly engaging professor
+asking a question like “is claim<em>A</em> true or is claim<em>B</em>
+true?” After observing a lackluster show of hands he remarked that of
+the three groups of students – those that chose<em>A</em>, those that
+chose<em>B</em>, and those that chose neither – the group that will
+leave the lecture having learned the most is the group that gets the
+answer wrong. He advised all of us to “get some skin in the game,” even
+if you don’t know the answer.</p><p>There is some truth to this. Of course a corporate meeting where we
+need to elicit debate from a group of people with varying levels of
+confidence is a very different venue than a group of students answering
+a question. But a similar principle still applies. The goals might be
+different, but it’s still better to cajole everyone to get some skin in
+the game instead of not passive silence.</p><h2 id="what-strong-opinions-weakly-held-means-to-me">What ‘Strong
+Opinions Weakly Held’ Means To Me</h2><ol type="1"><li><p>Having an opinion is better than not having one. Accmulation of
+raw data is great, but it’s even better when you intentionally accrete
+them into something meaningful. Any interpretation of information beyond
+establishment of fact is probably going to be in the realm of
+opinion.</p></li><li><p>An opinion expressed is better than one that is not as long as
+it’s open for criticism. You wouldn’t find out if you were wrong if you
+didn’t tell anyone.</p></li><li><p>That it is weakly held is as important to communicate as the
+opinion itself. Doing so invites criticism and discussion instead of
+suppressing them.</p></li></ol><h2 class="unnumbered" id="references">References</h2><div id="refs" class="references csl-bib-body" role="doc-bibliography"><div id="ref-Saffo" class="csl-entry" role="doc-biblioentry"><div class="csl-left-margin">[1]</div><div class="csl-right-inline"><span>“Strong opinions weakly held : Paul
+saffo,”</span> 04-Sep-2020. [Online]. Available:<a href="https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/">https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/</a>.
+[Accessed: 04-Sep-2020]</div></div><div id="ref-Cedric" class="csl-entry" role="doc-biblioentry"><div class="csl-left-margin">[2]</div><div class="csl-right-inline"><span>“<span>‘Strong opinions, weakly
+held’</span> doesn’t work that well,”</span> 04-Sep-2020. [Online].
+Available:<a href="https://commoncog.com/blog/strong-opinions-weakly-held-is-bad/">https://commoncog.com/blog/strong-opinions-weakly-held-is-bad/</a>.
+[Accessed: 04-Sep-2020]</div></div><div id="ref-Michael" class="csl-entry" role="doc-biblioentry"><div class="csl-left-margin">[3]</div><div class="csl-right-inline"><span>“Strong opinions loosely held might be
+the worst idea in tech - the glowforge blog,”</span> 04-Sep-2020.
+[Online]. Available:<a href="https://blog.glowforge.com/strong-opinions-loosely-held-might-be-the-worst-idea-in-tech/">https://blog.glowforge.com/strong-opinions-loosely-held-might-be-the-worst-idea-in-tech/</a>.
+[Accessed: 04-Sep-2020]</div></div></div></content:encoded></item><item><title>Names for Name Conventions</title><link>https://xn--izc.com/blog/symbol-name-types/</link><pubDate>Mon, 24 Aug 2020 12:32:45 -0400</pubDate><guid>https://xn--izc.com/blog/symbol-name-types/</guid><description>Names I’ve seen used to refer to naming conventions:
+snake_case, hacker_case, unix_hacker_style : Everything is lower case, though exceptions exist. E.g. HTTP_foo_bar. SCREAMING_SNAKE_CASE : Usually reserved for macros and constants. camelCase : The first letter is lowercase. PascalCase : The first letter is uppercase. kabob-case : Like snake_case, but uses dashes instead of underscores. Common for command-line options1, CSS styles, commands (e.g. git-receive-pack). While looking idly looking for details on this, I stumbled on this Medium post which is relevant.</description><content:encoded><p>Names I’ve seen used to refer to naming conventions:</p><ul><li><code>snake_case</code>,<code>hacker_case</code>,<code>unix_hacker_style</code> : Everything is lower case, though
+exceptions exist. E.g.<code>HTTP_foo_bar</code>.</li><li><code>SCREAMING_SNAKE_CASE</code> : Usually reserved for macros and
+constants.</li><li><code>camelCase</code> : The first letter is lowercase.</li><li><code>PascalCase</code> : The first letter is uppercase.</li><li><code>kabob-case</code> : Like<code>snake_case</code>, but uses
+dashes instead of underscores. Common for command-line options<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, CSS styles, commands (e.g.<code>git-receive-pack</code>).</li></ul><p>While looking idly looking for details on this, I stumbled on<a href="https://medium.com/better-programming/string-case-styles-camel-pascal-snake-and-kebab-case-981407998841">this
+Medium post</a> which is relevant.</p><section class="footnotes footnotes-end-of-document" role="doc-endnotes"><hr/><ol><li id="fn1" role="doc-endnote"><p>Opinions vary on whether the correct
+convention for command line options is<code>snake_case</code> or<code>kabob-case</code>. Long form options are often written as<code>--long-option</code>, but can also be<code>--long_option</code>
+(where the delimiter within the option is<code>_</code>).<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section></content:encoded></item><item><title>How This Blog Works</title><link>https://xn--izc.com/blog/how-this-blog-works/</link><pubDate>Mon, 27 Jul 2020 00:57:17 -0400</pubDate><guid>https://xn--izc.com/blog/how-this-blog-works/</guid><description>How I put this site together and why.</description><content:encoded><h1 id="requirements">Requirements</h1><ul><li>Math. Preferably Latex.</li><li>Citations. I like to cite stuff.</li><li>Figures and pictures and references to thereof.</li><li>Be able to export to Github Flavored Markdown.</li></ul><h1 id="the-stack">The Stack</h1><ul><li><p>All documents are in Markdown. Specifically<a href="https://pandoc.org/MANUAL.html">Pandoc Markdown</a>. Obviously,
+the source is processed via<code>pandoc</code>.</p></li><li><p>The site itself is compiled using<a href="https://gohugo.io/">Hugo</a>.</p><p>The current version (as of this writing) doesn’t support any
+configuration when using Pandoc for markup processing. By default Hugo
+only passes the<code>--mathjax</code> option to the<code>pandoc</code>
+invocation. So I had to make some local modifications so that I can
+specify filters and some other options to support citations and
+references.</p><p>Pull request is<a href="https://github.com/gohugoio/hugo/pull/7529">here</a>.</p></li><li><p>Hugo output – which is a static HTML site – gets pushed out to a
+separate private GitHub repository.</p></li><li><p><a href="https://www.netlify.com/">Netlify</a> monitors this
+separate GitHub repository and updates this blog.</p><p>As a bonus, the generated static content is pushed out to my GitHub
+Pages site. So there’s an easier to remember URL than<a href="https://අ.com">https://අ.com</a>.</p></li><li><p>Secondary sites are fed via Pandoc which converts from Pandoc
+Markdown to Github Flavored Markdown.</p><p>Why secondary sites? For various reasons, the primary site for some
+of the articles need to be their own GitHub repository. E.g.
+https://github.com/asankah/identity-domains .</p><p>For all those sites, the primary source is the blog. That way I can
+use Pandoc, use citations, use math etc. and things will “just work”
+when publishing to another site that expects GitHub flavored
+Markdown.</p></li></ul></content:encoded></item><item><title>The Comcast Technician Problem</title><link>https://xn--izc.com/blog/comcast-technican-problem/</link><pubDate>Mon, 13 Jul 2020 13:21:51 -0400</pubDate><guid>https://xn--izc.com/blog/comcast-technican-problem/</guid><description>Given a set of tasks, incentives are often aligned towards dropping a
+task rather than allowing for perpetual accretion of delays.</description><content:encoded><h2 id="the-story">The Story</h2><p>As is a rite of passage in these parts, I waited for the Comcast<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> technician to arrive during their
+scheduled appointment window. In preparation I had scheduled a day of
+working from home.</p><p>As the appointment window unceremoniously came to a close vacillated
+over when it would be a reasonable time to call Comcast again to see
+what’s going on. That’s when I noticed the technician’s truck pull up
+beside our house. They rolled down the window and surveyed the scene for
+a brief moment, looked at something inside their truck, rolled up the
+window and promptly drove off.</p><p>“That’s it,” I thought. That was the right time to call Comcast.
+That’s what I did. After a long wait<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> the friendly service
+person on the other end of the line told me that the according to the
+technician nobody answered the door. It took some convincing on my part
+to establish that:</p><ol type="a"><li>I was there the whole time. Nobody rang the doorbell.</li><li>The doorbell works.</li><li>The technician — assuming that the person who drove by was the
+scheduled technician — did drive by, but they didn’t get out of the
+vehicle to ring any doorbell.</li><li>My phone didn’t ring, nor does it indicate any missed calls.</li><li>My phone works and has a signal.</li></ol><p>They were kind enough to ask the technician to return, but noted that
+the appointment window would now be unpredictable due to prior
+appointments. Sure.</p><p>Much later that evening, the same technician who drove by earlier
+showed up. After they were done, I thanked them for showing up and
+mentioned what happened to the original appointment slot. I didn’t
+mention anything about seeing the same technician before. After all I
+was just happy that I was done with this and didn’t want to cause any
+trouble.</p><p>He said that technicians sometimes skip slots when they are running
+behind schedule.</p><section class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1" role="doc-endnote"><p><a href="https://www.theverge.com/2014/8/19/6004131/comcast-the-worst-company-in-america"><em>The
+Verge</em>.<em>The worst company in America.</em></a> (Accessed July
+13, 2020)<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn2" role="doc-endnote"><p><a href="https://www.urbandictionary.com/define.php?term=Long%20Wait"><em>Urban
+Dictionary</em>.<em>Long Wait</em></a> (Accessed July 13, 2020)<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section><h2 id="the-problem">The Problem</h2><p>Looking at what happened from the perspective of the technician, the
+logic behind all this becomes a little clearer.</p><p>You see, had the technician had tried to honor the original
+appointment — one which they were already late for — they would’ve been
+even more late for the next one. This would continue down the line until
+by the end of the day pretty much all of his appointments that afternoon
+would’ve registered as<em>late</em>.</p><p>Had they skipped one – my appointment as the case turned out – then
+they’d potentially be on time for the rest of their appointments. The
+one they skipped could later be justified as one where the customer was
+not at home or any other reasonable excuses. Even if they were truthful
+and were penalized for missing an appointment, it’s likely that they’d
+still be better off than being late for so many more appointments.
+Either way, the outcome is both better for the technician, and more
+importantly, for their supervisor.</p><p>In the books, the two situations look like this:</p><table><colgroup><col style="width: 24%"/><col style="width: 29%"/><col style="width: 22%"/><col style="width: 23%"/></colgroup><thead><tr class="header"><th>Technician’s Choice</th><th>Successful appointments</th><th>Late appointments</th><th style="text-align: left;">“No-show”s<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></th></tr></thead><tbody><tr class="odd"><td>Honor all slots</td><td><span class="math inline">g</span></td><td><span class="math inline">l</span></td><td style="text-align: left;"><span class="math inline">n</span></td></tr><tr class="even"><td>Skip when late</td><td><span class="math inline">g + l - s</span></td><td><span class="math inline">0</span></td><td style="text-align: left;"><span class="math inline">n +
+s</span></td></tr></tbody></table><p>The outcomes depending on the technician’s decision on what to do
+with late appointments. {#table:outcomes}</p><p><span class="math inline">g</span> are the<em>good</em> slots where
+the technician is able to show up during the appointment window.<span class="math inline">l</span> are those where the technician was not
+available during the appointment window. In either case some number of
+households are not going to be home or not ready for service. Those are<span class="math inline">n</span>.</p><p>When the technician decides to skip late appointments some number –<span class="math inline">s</span> in the table above – will turn into
+additional no-shows. However, skipping these will mean that the
+technician can make it to<span class="math inline">l-s</span>
+appointments on time.</p><p>Assuming<span class="math inline">l-s > 0</span>, then the
+outcome of the<em>skip when late</em> strategy is strictly better for
+the technician’s supervisor. I can’t imagine there being any incentive
+for the supervisor to penalize this strategy. So the technician also
+gets off scott free.</p><section class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol start="3"><li id="fn3" role="doc-endnote"><p>“No-shows” are just going to be
+rescheduled. It’s not the end of the world.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section><h2 id="why-this-is-relevant">Why This Is Relevant</h2><p>It’s easy to harp on Comcast<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> and some random lowly
+technician. But this incentive pattern is everywhere. Even at Google and
+s.</p><p>Every time you measure someone’s success on<em>how well</em> they
+handled a number of issues or cases without taking into account<em>the
+cost they incurred</em> to get there, you are creating a Comcast
+Technician problem for your subordinates.</p><section class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol start="4"><li id="fn4" role="doc-endnote"><p><a href="https://www.theverge.com/2014/8/19/6004131/comcast-the-worst-company-in-america"><em>The
+Verge</em>.<em>The worst company in America.</em></a> (Accessed July
+13, 2020)<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section><h2 id="but-is-it-bad">But Is It Bad?</h2><p>Dropping tasks instead of unbounded accretion of delay is sometimes a
+better strategy.</p><p>One might even argue that this is the cost of doing business and it
+would actually makes sense. One customer’s (or user’s or client’s or
+patient’s) convenience doesn’t outweigh the convenience of many
+others.</p><p>There could be additional complicating factors involved:</p><ul><li><p>What’s the cost of skipping or rescheduling a case? Is the cost
+bourne by you? How much of the cost is bourne by the customer?</p></li><li><p>How do you choose which case to skip? It might be that the case
+to skip isn’t the one that’s late, but one later down the schedule
+that’s much cheaper to reschedule or less damaging to cancel.</p></li></ul><p>In either case, be forgiving when you inevitably find yourself as the
+one who got the short end of the stick.</p><p>It just might be that all parties involved are rational actors, and
+there’s really not a great alternative. Sometimes it’s just life.</p></content:encoded></item><item><title>Vim: Use Drop Not Edit, SBuffer Not Buffer</title><link>https://xn--izc.com/blog/use-drop-not-edit/</link><pubDate>Tue, 07 Jul 2020 12:02:20 -0400</pubDate><guid>https://xn--izc.com/blog/use-drop-not-edit/</guid><description>I’m going to assume you are a Vim user.
 Say you have a several windows open in Vim and you want to edit another file. Using :edit works if you want to open the file in the current window unconditionally.
-But that’s often not what you want. If you have the same file open in another window, then the most efficient and least disruptive thing to do is to switch to that window.</description></item><item><title>Notes from Crash Course's Videos on Fact Checking Information You See On The Internet</title><link>https://xn--izc.com/blog/notes-on-fact-checking/</link><pubDate>Sat, 04 Jul 2020 18:30:00 +0000</pubDate><guid>https://xn--izc.com/blog/notes-on-fact-checking/</guid><description>Hank Green’s Crash Course YouTube channel has an excellent series
+But that’s often not what you want. If you have the same file open in another window, then the most efficient and least disruptive thing to do is to switch to that window.</description><content:encoded><p>I’m going to assume you are a Vim user.</p><p>Say you have a several windows open in Vim and you want to edit
+another file. Using<code>:edit</code> works if you want to open the
+file in the current window unconditionally.</p><p><em>But that’s often not what you want.</em> If you have the same
+file open in another window, then the most efficient and least
+disruptive thing to do is to switch to that window.</p><h2 id="drop">drop</h2><p>That’s where<code>:drop</code> comes in. In case you aren’t familiar
+with the<code>drop</code> command, have a look at the help page in your
+favorite editor (<code>:help drop</code>) or<a href="http://vimdoc.sourceforge.net/htmldoc/windows.html#:drop">here on
+the web</a>. But the gist of it is that for most people<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a><code>:drop {file}</code> will:</p><ul><li>Switch to the window in which<code>{file}</code> is already
+open.</li><li>Switch the buffer in the current window to<code>{file}</code>
+otherwise.</li></ul><p>The<code>:drop</code> command is intended to be used as the “open
+buffer” command for automated tooling like source browsers. For example,
+you can configure<code>coc-nvim</code><a href="https://github.com/neoclide/coc.nvim">GitHub</a> to use<code>:drop</code> as the command used for opening a source file by
+setting<code>coc.preferences.jumpCommand</code> to<code>drop</code>.
+See<code>:help coc-configuration</code> for details on how to set this,
+but basically it’s as simple as opening up the configuration using<code>:CocConfig</code> and then adding a<code>"coc.preferences.jumpCommand": "drop",</code> mapping to the
+configuration JSON file.</p><section class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1" role="doc-endnote"><p>Assuming you have<code>set
+hidden</code> that is. See<code>:help drop</code> for more details on
+what happens when the current buffer cannot be unloaded.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section><h2 id="switchbuf-or-swb">switchbuf or swb</h2><p>Or perhaps configuring each plugin is too much work. Enter<code>switchbuf</code>. This is a global setting in Vim that controls
+how Vim switches between buffers.</p><p>Setting<code>set switchbuf=useopen</code> has the same effect when
+invoking<code>buffer</code>. Note that using<code>sbuffer</code>,<code>sbnext</code>, or<code>sbrewind</code> automatically behaves as
+if this is the case. I.e. they will use an existing window if one
+already has the buffer open.</p><p>Setting<code>set switchbuf=usetab</code> is similar to the effect of<code>useopen</code> except that it will look through windows in other
+tabs.</p><p>See<code>:help switchbuf</code> or<a href="http://vimdoc.sourceforge.net/htmldoc/options.html#'switchbuf'">here
+on the web</a> for full details.</p></content:encoded></item><item><title>Notes from Crash Course's Videos on Fact Checking Information You See On The Internet</title><link>https://xn--izc.com/blog/notes-on-fact-checking/</link><pubDate>Sat, 04 Jul 2020 18:30:00 +0000</pubDate><guid>https://xn--izc.com/blog/notes-on-fact-checking/</guid><description>Hank Green’s Crash Course YouTube channel has an excellent series
 about navigating digital information. It’s an excellent guide to how
 internet users could intelligently consume information they see on the
-internet. These are my (incomplete) notes from the series.</description></item><item><title>Easier CLI for ad-hoc Ansible tasks and playbooks</title><link>https://xn--izc.com/blog/ansible-cli-sugar/</link><pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/ansible-cli-sugar/</guid><description>Encode the host and group names into the name of a wrapper script for
-quick ad-hoc invocation of Ansible tasks and playbooks.</description></item><item><title>Identity Domains</title><link>https://xn--izc.com/blog/identity-domains/</link><pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/identity-domains/</guid><description>An Identity Domain is a scope within which we assume that the user’s
-identity can roam freely.</description></item><item><title>Ephemeral Fingerprinting On The Web</title><link>https://xn--izc.com/blog/ephemeral-fingerprinting/</link><pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/ephemeral-fingerprinting/</guid><description>&lt;p>Any ephemeral low-entropy web observable property whose changes are
+internet. These are my (incomplete) notes from the series.</description><content:encoded><h1 id="fact-checking">Fact Checking</h1><p>Notes from<a href="https://www.youtube.com/channel/UCX6b17PVsYBQ0ip5gyeme-Q">Crash
+Course</a>’s excellent series about fact checking information you see on
+the internet. The series starts<a href="https://www.youtube.com/watch?v=pLlv2o6UfTU">here</a>.</p><h2 id="three-questions">Three Questions</h2><ol type="1"><li>How is behind this information?</li><li>What is the evidence for their claims?</li><li>What do other sources say about the organization and its
+claims?</li></ol><p>“A question wrongly put.”</p><h2 id="lateral-reading">Lateral Reading</h2><p>All information is produced by someone, and is produced for a
+purpose. The lines between motives are unclear. There are always
+multiple motives, and they don’t always conflict.</p><p>“Who made this and why?”</p><p>We read websites like we read books. We read vertically. You are only
+seeing what the creator wanted you to see. It is often impossible to
+tell reliable information from unreliable information.</p><p>A better alternative is to leave the site and search for
+corroborating information. Look for conflicts of interest that are left
+undisclosed which is a red flag.</p><p>Newspapers can be a good start. These are now digital media
+companies. Sometimes they have their own point-of-view. Sometimes these
+are stated explicitly and/or are obvious. But that’s not necessarily
+always the case.</p><p>There is no magic arbiter of truth. All of these is created by humans
+and humans make mistakes.</p><p>“The media” doesn’t exist. It is a large and diverse industry. It is,
+however, possible to take these diverse points of view into account.</p><p>You should use Wikipedia. Not every article is perfect, but you
+should see verifiable citations.</p><p>Because no source is perfectly objective, one might conclude that no
+source is trustworthy. This is not true.</p><h2 id="deciding-whom-to-trust">Deciding Whom To Trust</h2><p>It is easy to be mislead. None of us have the time to be an expert in
+everything.</p><p>We have to trust information from outside of ourselves we have to
+find a way to accredit and trust experts, even though they will be wrong
+some of the time.</p><p>“Listen to me”bloviate””</p><p>Before we place trust in a source, we should verify the authority,
+and the validity of their evidence.</p><h3 id="investigating-a-sources-authority">Investigating A Source’s
+Authority</h3><ul><li>The author or authors’ professional background.</li><li>The process they used to produce that information.</li><li>The systems that are in place to catch mistakes and correct
+them.</li></ul><p>Everyone has a perspective influenced by their lived experience. This
+doesn’t necessarily mean that they are unfairly biased. We should take
+their perspective into consideration when examining their arguments.
+They may be presenting their information in a way that’s persuasive.</p><p>“Opinion”, “Analysis” etc. mean that the work intends to be
+persuasive rather than informative.</p><p>STOP, THINK, and LOOK AROUND.</p><p>Each bit of information we have about a source gives us a lens to
+filter out their perspective.</p><h2 id="using-wikipedia">Using Wikipedia</h2><p>When used correctly Wikipedia can be a great place to start when
+verifying the legitimacy of a source. It’s breadth can exceed any
+newspaper. It gives you the general lay of the land when exploring or
+researching a topic.</p><p>Wikipedia has become the internet’s largest general reference
+work.</p><p>Their content policies:</p><ol type="1"><li>A neutral point of view.</li><li>No original research.</li><li>Verifiable.</li></ol><p>Modern Wikipedia has rigorous and robust mechanisms to keep things in
+check.</p><p>Wikipedia is not a one-stop shop for in-depth research. Don’t cite
+Wikipedia. That’s not a good look. And encyclopedia is not a source.</p><p>Citations help bring up more information from reputable sources.</p><p>Treat Wikipedia as a launch pad.</p><p>Wikipedia is another tool in your information evaluation tool
+kit.</p><p>You go there for general overview a topic or a stepping stone to more
+references, or to use as one lateral reading source among several.</p><p>And as long as your know how and when to use it appropriately,
+Wikipedia can be a great friend.</p><h2 id="evaluating-evidence">Evaluating Evidence</h2><p>As you get older “because I said so” doesn’t cut it anymore. You need
+to provide evidence and that evidence should be convincing.</p><p>“What is the evidence?”</p><p>Often when the evidence does not support the claim, it is misleading
+or disinformation. Lack of evidence should be suspicious
+immediately.</p><p>The mere existence of evidence doesn’t support the claim either.</p><p>Not all evidence is cerated equal.</p><p>The evidence a source provides should come from another reputable
+source.</p><p>“Thousands of people never conspire to do anything secretly.”</p><p>Spurious correlation: The implied causal relationship between events
+that are coincidentally linked.</p><p>The quality of our evidence like the quality of our information,
+affects the quality of our decisions.</p><h2 id="evaluating-photos-videos">Evaluating Photos &amp; Videos</h2><p>Photographs feel real and authentic. Even when images aren’t altered,
+they are selectively framed, or have their context falsified (e.g. with
+a false explanation, or date).</p><p>We are used to thinking that “seeing is believing”.</p><p>Thanks to their power, images are a very common form of online
+evidence. But just like data or text image-based evidence can be<strong>relevant</strong> and<strong>reliable</strong>, or<strong>irrelevant</strong> and<strong>unreliable</strong>.</p><p>When you encounter a suspicious image online it is crucial to
+investigate who is behind it and whiter they are a reliable source. We
+also must verify the surrounding context and whether it supports any
+claims being made.</p><p>Use reverse image search on Google to track down sources. Turn to
+fact checking sites like Snopes and Politifact.</p><p>Videos can also be dramatically altered. It is important to know
+where a video came from, who created it, and whether it’s been altered
+before you believe what you see.</p><h2 id="data-and-infographics">Data and infographics</h2></content:encoded></item><item><title>Easier CLI for ad-hoc Ansible tasks and playbooks</title><link>https://xn--izc.com/blog/ansible-cli-sugar/</link><pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/ansible-cli-sugar/</guid><description>Encode the host and group names into the name of a wrapper script for
+quick ad-hoc invocation of Ansible tasks and playbooks.</description><content:encoded><p>This article is about using<a href="https://ansible.com">Ansible</a>
+on the command-line.</p><h2 id="problem">Problem:</h2><p>You …</p><ul><li><p>… want a convenient way to do ad-hoc tasks on a bunch of
+machines.</p></li><li><p>… already have a few playbooks and machine groups defined in your
+inventory.</p></li><li><p>… don’t want to invest too much into Ansible because you have
+other things to do and Ansible is just a tool to deal with one aspect of
+what you want to do.</p></li><li><p>… live on the command-line.</p></li><li><p>… think<code>ansible-playbook</code> and<code>ansible</code>
+commands have too many knobs and too few knobs at the same
+time.</p></li></ul><h2 id="a-possible-solution">A Possible Solution</h2><p>Taking a page from old school Posix tools, let’s make a script that
+encodes Ansible group names into the filename.</p><p>Then you can go from this:</p><div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"/><span class="ex">$</span> ansible atlanta<span class="at">-m</span> copy<span class="at">-a</span><span class="st">"src=https://xn--izc.com/etc/hosts dest=/tmp/hosts"</span></span><span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"/><span class="ex">$</span> ansible webservers<span class="at">-m</span> service<span class="at">-a</span><span class="st">"name=httpd state=started"</span></span></code></pre></div><p>To this:</p><div class="sourceCode" id="cb2"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"/><span class="ex">$</span> atlanta copy<span class="st">"src=https://xn--izc.com/etc/hosts dest=/tmp/hosts"</span></span><span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"/><span class="ex">$</span> webservers service<span class="st">"name=https state=started"</span></span></code></pre></div><p>Or from this:</p><div class="sourceCode" id="cb3"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"/><span class="ex">$</span> ansible-playbook<span class="at">-l</span> atlanta go-to-the-moon</span><span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"/><span class="ex">$</span> ansible-playbook<span class="at">-l</span> webservers do-the-other-things</span></code></pre></div><p>To this:</p><div class="sourceCode" id="cb4"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"/><span class="ex">$</span> atlanta go-to-the-moon</span><span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"/><span class="ex">$</span> webservers do-the-other-things</span></code></pre></div><h2 id="setting-up">Setting Up</h2><p>These are just examples. Please don’t spend time bikeshedding names
+because you can use whichever names you like.</p><ol type="1"><li><p>Download the contents of<code>ansible-by-proxy</code> from<a href="https://github.com/asankah/ansible-cli-sugar/blob/master/ansible-by-proxy">here</a>.
+It’s a starter script that includes a bunch of sensible settings
+expressed via environment variables. Remove or change these to match
+your needs.</p><p>Note that the script expects to find a sub-directory called<code>ansible</code> in the same directory as the script which contains
+the playbooks and the inventory file.</p></li><li><p>Store this file somewhere on the system<code>PATH</code>.</p><p>Don’t forget to mark the file as executable if it isn’t already.</p><div class="sourceCode" id="cb5"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"/><span class="ex">$</span> chmod +x ansible-by-proxy</span></code></pre></div></li><li><p>Create symlinks to the file that have the same name as hostnames
+or groups as described in the includes:</p><div class="sourceCode" id="cb6"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"/><span class="ex">$</span> ln<span class="at">-s</span> ansible-by-proxy atlanta</span><span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"/><span class="ex">$</span> ln<span class="at">-s</span> ansible-by-proxy webservers</span></code></pre></div><p>and so on.</p></li></ol><p>That’s it. Now you can invoke playbooks and tasks just by using the
+name of host or group.</p></content:encoded></item><item><title>Identity Domains</title><link>https://xn--izc.com/blog/identity-domains/</link><pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/identity-domains/</guid><description>An Identity Domain is a scope within which we assume that the user’s
+identity can roam freely.</description><content:encoded><blockquote><p>An<strong>Identity domain</strong> is a scope within which we
+consider it a given that the user has a shared or trivially joinable
+identity.</p></blockquote><p>This is a privacy boundary, not a security boundary. Hence it assumes
+that where possible all sites share information.</p><figure><img src="images/identity-domains.png" alt="Diagram of example identity domains described below"/><figcaption aria-hidden="true">Diagram of example identity domains
+described below</figcaption></figure><p>Above is a diagram showing relationships between clusters of
+documents and identity domains.</p><ul><li><code>foo.example</code> and<code>baz.example</code> belong to the
+same first party set.</li><li><code>a.example</code> has no first-party relationship with any
+other domain.</li></ul><p>The<em>Identity domain</em> has the following properties:</p><ul><li><p>All<a href="https://html.spec.whatwg.org/multipage/browsers.html#active-document">active
+documents</a> in<a href="https://html.spec.whatwg.org/multipage/browsers.html#list-of-the-descendant-browsing-contexts">descendent
+browsing contexts</a> belong to the same<strong>identity
+domain</strong> as the active document in the<a href="https://html.spec.whatwg.org/multipage/browsers.html#top-level-browsing-context">top-level
+browsing context</a>.</p><p>See each cluster of browsing contexts in the diagram above.</p></li><li><p>All active documents in top-level browsing contexts that share
+the same<a href="https://html.spec.whatwg.org/multipage/webappapis.html#site">site</a>
+also share the same<strong>identity domain</strong>.</p><p>In the diagram above,<code>foo.example</code> in cluster 1 and<code>baz.example</code> in cluster 2 belong to the same first-party
+set, hence they are considered to belong to the same identity domain.
+However<code>a.example</code> in cluster 3 does not belong to the same
+identity domain because there’s no first party relation between<code>a.example</code> and any other top level domain in the
+diagram.</p></li><li><p>All<strong>private client state</strong> including but not
+limited to open sockets, socket pools, cookies, storage, permissions /
+content settings, transient caches of credentials, cached resources,
+service workers, and shared workers accessible to any document in an
+identity domain also belong to the<strong><em>identity
+domain</em></strong>.</p></li><li><p><strong>Identity domains</strong> don’t span browser
+profiles.</p><p>See clusters 1 and 4 in the diagram above. Both share top-level
+origins, but don’t share identity domains because they are in two
+different browser profiles.</p></li><li><p><strong>Identity domains</strong> don’t span browsers.</p><p>Derived from above.</p></li><li><p><strong>Identity domains</strong> don’t survive browsing data
+erasures.</p><p>Erasing an identity domain – and thus an identity – requires
+destroying all private client state mentioned previously. Hence erasing
+an identity domain involves discarding all<code>Document</code> objects
+and workers in that identity domain.</p></li></ul><p>Note that in the existing web privacy model third-parties can
+trivially associate identities across top-level contexts. Thus the
+entire internet essentially amalgamates into a single identity
+domain.</p><p>The boundaries discussed herein require moving to a different model
+of identity on the web. The privacy threat model guiding this model is
+discussed in PING’s<a href="https://w3cping.github.io/privacy-threat-model/">Target Privacy
+Threat Model</a> document which is a work in progress as of this
+writing.</p><h2 id="additional-notes-and-observations">Additional Notes and
+Observations</h2><ul><li><p>The identity domain is a privacy boundary. The boundary is
+something that’s asserted by the user-agent and doesn’t depend on the
+cooperation of sites. I.e. assumes that sites involved are worst case
+actors.</p><ul><li>Not to be confused with security boundaries like those imposed via<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP">Content
+Security Policy</a>.</li></ul></li><li><p>The definition assumes that sites can share information
+out-of-band. The identity domain boundary does not require sites to
+cooperate.</p></li><li><p>The same site can appear in multiple identity domains. For
+example, re-identification is equivalent to a single site joining an
+identity across disjoint domains.</p><p>One can also imagine a user-agent that maintains multiple identity
+boundaries for the same top-level site for the purpose of allowing
+multiple sets of cookies to be used from the same device.</p></li><li><p>Two identity domains can be joined by sharing a unique identifier
+between the two domains.</p><ul><li><p>WRT federated identity (as detailed in<a href="https://github.com/samuelgoto/WebID">WebID</a>) multiple relying
+parties join identity domains by virtue of shared unique identifiers
+like email address. Similarly identity providers can also generate and
+use unique identifiers linking domains.</p><p>We likely need another term for describing externally joined identity
+domains. In such cases the UA doesn’t necessarily know or can prevent
+joining of identity domains.</p></li></ul></li><li><p>Concepts like “logging out” can be defined in terms of destroying
+an identity domain on the User Agent.</p></li></ul></content:encoded></item><item><title>Ephemeral Fingerprinting On The Web</title><link>https://xn--izc.com/blog/ephemeral-fingerprinting/</link><pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/ephemeral-fingerprinting/</guid><description>&lt;p>Any ephemeral low-entropy web observable property whose changes are
 concurrently observable by multiple sites can lead to cross site
 identity joining.&lt;/p>
 &lt;p>This method of identity joining does not require coordination between
 multiple first parties. A single third party embedded within multiple
-first parties can also use this method.&lt;/p></description></item></channel></rss>
+first parties can also use this method.&lt;/p></description><content:encoded><p>TL;DR:</p><ul><li><p>Any web observable property whose changes are concurrently
+observable by multiple top-level sites can lead to cross site identity
+joining.</p></li><li><p>This method of identity joining does not require additional
+coordination between multiple first parties. A single third party
+embedded within multiple first parties can also use this
+method.</p></li></ul><h2 id="background">Background</h2><figure><img src="images/isolation-boundaries.png" alt="diagram of site isolation boundaries with overlap"/><figcaption aria-hidden="true">diagram of site isolation boundaries with
+overlap</figcaption></figure><p><strong>Figure 1</strong>: Two sites observe a sequence of device
+orientation changes at times 𝒕₀, 𝒕₁,𝒕₂ .</p><p>All sites on the same UA instance share a clock and therefore can
+agree on the timestamps with a small margin of error. The triplet 𝒕₀,
+𝒕₁,𝒕₂ has a high probability of uniquely identifying the user. The two
+sites can thus use these observations to conclude that the observations
+originate from the same user.</p><p>As illustrated above, one or more low entropy signals observed
+concurrently can be used to identify a user with a high degree of
+confidence. Let’s call these<strong>ephemeral fingerprints</strong>.
+This document discusses two types:</p><ol type="1"><li><p><em>The sequence of timestamps corresponding to observed changes
+of a volatile surface can be used for identification</em>. Let’s call
+these<strong>correlated events</strong>.</p></li><li><p><em>A stream of observations of a volatile surface can be
+identifying</em>. Let’s call these<strong>unique event
+streams</strong>.</p></li></ol><p>Signals considered for ephemeral fingerprinting don’t need to be
+highly identifying by themselves. The<a href="https://github.com/bslassey/privacy-budget">privacy budget
+proposal</a> does not adequately account for fingerprinting based on
+concurrent observations of low entropy signals.</p><p>Device orientation, from our earlier example, can take one of two
+values (portrait or landscape) and is unstable. Thus a single sample of
+device orientation carries almost no information. I.e. A recorded
+observation of device orientation doesn’t help at all with identifying
+the user at a later time. However the timestamps corresponding to
+orientation changes could have identifying levels of entropy.</p><p>These are not new. For example, this is discussed by Van Goethem et.
+al.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p><p>who calls these “Cross-Session Events” (§ 5 of linked paper).
+Potential ephemeral fingerprinting surfaces also get flagged during
+standardization discussions (<a href="https://github.com/w3c/mediacapture-main/issues/403">Example:
+Polling enumerateDevices</a>,<a href="https://lists.w3.org/Archives/Public/public-privacy/2013JanMar/0007.html">Example:
+Ambient light events</a>).</p><h3 id="modelling-correlated-events">Modelling Correlated Events</h3><p>A correlatable event can be thought of as the tuple<code>&lt;surface-sample, timestamp></code>. The addition of the
+timestamp strictly increases the amount of information carried by the
+surface sample.</p><section class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1" role="doc-endnote"><p>Van Goethem, T. and Joosen, W., 2017.
+One side-channel to bring them all and in the darkness bind them:
+Associating isolated browsing sessions. In<em>11th {USENIX} Workshop on
+Offensive Technologies ({WOOT} 17)</em>. (<a href="https://pdfs.semanticscholar.org/5814/9610a57cb4626918bf003b8bad25e740b1f4.pdf">PDF</a>)<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section><h3 id="modelling-event-streams">Modelling Event Streams</h3><p>An event stream is simply a list of observed samples<code>sample₀,
+sample₁, ...</code>.</p><p>Each additional observation strictly increases the amount of
+information.</p><h3 id="other-examples">Other Examples:</h3><ul><li><code>Accelerometer</code> properties.</li><li><code>Sensor</code>,<code>onreading</code> event.</li><li><code>BatteryManager.onlevelchange</code> : Deprecated but still
+shipping.</li><li><code>Bluetooth.onadvertisementreceived</code></li><li><code>BroadcastChannel</code>, all events.</li><li><code>MediaDevices.devicechange</code> event.</li><li><code>GlobalEventHandlers.onfocus</code> and<code>onblur</code>
+events can fire simultaneously when switching between two browser
+windows.</li></ul><h2 id="mitigation">Mitigation</h2><h3 id="permissions">Permissions</h3><p><strong>Goal:</strong> Require informed consent from users.</p><p>There’s precedent for considering permissions<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> to
+be sufficient mitigation for similar issues. For example, the Media
+Capture API specification includes the following:</p><blockquote><p>For origins to which permission has been granted, the devicechange
+event will be emitted across browsing contexts and origins each time a
+new media device is added or removed; user agents can mitigate the risk
+of correlation of browsing activity across origins by fuzzing the timing
+of these events.</p></blockquote><p style="text-align: right">
+From §15 of<a href="https://w3c.github.io/mediacapture-main/#privacy-and-security-considerations">Media
+Capture and Streams API</a> specification.</p><p><strong>Pros</strong></p><ul><li>Prevents drive-by fingerprinting.</li></ul><p><strong>Cons</strong></p><ul><li><p>UI for permissions don’t disclose the fact that all sites that
+have been granted access to the same resource can synchronize
+identifiers as a side-effect.</p></li><li><p>Doesn’t prevent identity joining once permission is
+granted.</p></li></ul><section class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol start="2"><li id="fn2" role="doc-endnote"><p>Either via a legacy permissions
+prompt or explicitly requiring the use of the<a href="https://w3c.github.io/permissions/">Permissions API</a> in the
+spec for sensitive APIs.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section><h3 id="fuzzing-timing-of-events">Fuzzing Timing of Events</h3><p><strong>Goal</strong>: Deter correlation of events by injecting
+timing skew.</p><p>Mentioned in the snippet above from the Media Capture and Streams API
+and called out by Jeffrey Yasskin as a potential general mitigation in
+“desynchronize whole-browser events” in<a href="https://github.com/whatwg/html/issues/5215">this issue</a> filed
+against the WHATWG HTML specification.</p><p><strong>Pros</strong></p><ul><li>Lowers confidence of identity equivalence.</li></ul><p><strong>Cons</strong></p><ul><li><p>Precise timing may not be required. I.e. the lowered level of
+confidence could still be sufficient for most uses.</p></li><li><p>Doesn’t address unique event streams.</p></li></ul><h3 id="first-party-restriction-for-apis">First-Party Restriction for
+APIs</h3><p><strong>Goal</strong>: Deter identity correlation by third-party
+sites.</p><p>Restrict APIs to the origin of the<a href="https://html.spec.whatwg.org/multipage/browsers.html#top-level-browsing-context">top-level
+browsing context</a>.</p><p>The latter may choose to explicitly delegate access to the APIs via<a href="https://w3c.github.io/webappsec-feature-policy/">feature
+policies</a>. But third-party contexts can’t “reach across” browsing
+contexts via correlation of cross context events or attributes that may
+be made available by the API.</p><p><strong>Pros</strong></p><ul><li>Makes it a requirement that first-parties actively cooperate with
+other first-parties or third-parties. I.e. Good first-party + bad
+third-party = safe.</li></ul><p><strong>Cons</strong></p><ul><li><p>Difficult to retrofit into existing APIs.</p></li><li><p>Browser-wide events and attributes are still visible to distinct
+top-level browsing contexts.</p></li><li><p>In practice top-level browsing contexts contain a fair amount of
+third party scripts which may access the same APIs. Furthermore there
+are financial incentives for first-parties to delegate API access to
+third-parties.</p></li></ul><h3 id="limit-api-access-to-visible-browsing-contexts">Limit API Access
+To Visible Browsing Contexts</h3><p><strong>Goal:</strong> Prevent background browsing contexts from
+skimming identifiable events.</p><p>The Page Visibility API defines the<a href="https://w3c.github.io/page-visibility/#visibility-states">visibility
+state of a document</a> as<code>visible</code> if the document is<em>“at least partially visible on at least one screen”</em>.</p><p>Restrict APIs to — possibly top-level — browsing context’s active
+document.</p><p><strong>Pros</strong></p><ul><li>Is a convincing mitigation on mobile devices where only one
+top-level document can be visible at the same time.</li></ul><p><strong>Cons</strong></p><ul><li><p>There could be multiple visible browsing contexts which still
+leaves the door open for identity correlation across site
+boundaries.</p></li><li><p>The fact that having more than one browsing context open at the
+same time is a privacy risk is quite surprising for users.</p></li></ul><h3 id="limit-events-to-focused-top-level-browsing-context">Limit Events
+To Focused Top-Level Browsing Context</h3><p><strong>Goal</strong>: Limit firing correlatable events to a single<a href="https://html.spec.whatwg.org/multipage/browsers.html#top-level-browsing-context">top-level
+browsing context</a>.</p><p>The HTML spec defines a concept of a<em><a href="https://html.spec.whatwg.org/multipage/interaction.html#currently-focused-area-of-a-top-level-browsing-context">currently
+focused area of a top-level browsing context</a></em>. As defined, every
+top level<a href="https://html.spec.whatwg.org/multipage/browsers.html#browsing-context">browsing
+context</a> has one regardless of visibility. A similar narrow concept
+could be introduced that recognizes the top level browsing context that
+has system input focus. There should be only one of these on a single
+device.</p><p><em>Let’s call the top-level browsing context that has system input
+focus as the</em><strong>focused top-level browsing
+context</strong>.</p><p>New specifications could restrict browser-wide events to the focused
+top-level browsing context.</p><p><strong>Pros</strong></p><ul><li>Likely fits in well with the intended usage model for most
+APIs.</li></ul><p><strong>Cons</strong></p><ul><li>Does not address event stream fingerprinting via polling.</li></ul><h3 id="limit-api-access-to-focused-top-level-browsing-context">Limit
+API Access To Focused Top-Level Browsing Context</h3><p><strong>Goal</strong>: Limit access to sensitive APIs to a single<a href="https://html.spec.whatwg.org/multipage/browsers.html#top-level-browsing-context">top-level
+browsing context</a>.</p><p>Similar to the above, but addresses issues around polling by
+disallowing access to the entire API or sensitive attributes by
+restricting the entire API instead of just events.</p><p><strong>Pros</strong></p><ul><li>Resilient to event stream fingerprinting via polling.</li></ul><p><strong>Cons</strong></p><ul><li><p>Can’t be easily retrofitted to existing APIs since it requires
+defining behavior for “disabled” APIs.</p></li><li><p>May break critical use cases.</p></li></ul><h3 id="secure-context-restriction-and-control-via-feature-policy">Secure-Context
+Restriction and Control via Feature-Policy</h3><p>These should be pretty standard at this point.</p><p><strong>Pros</strong></p><ul><li>Just makes sense.</li></ul><p><strong>Cons</strong></p><ul><li>Not sufficient by itself.</li></ul><h2 id="spotting-ephemeral-fingerprinting-surfaces-in-web-specs">Spotting
+Ephemeral Fingerprinting Surfaces In Web Specs</h2><p><strong>Ephemeral fingerprints:</strong></p><ul><li><p>Require that multiple browsing contexts observe the same events
+or access the same volatile attribute.</p></li><li><p>These browsing contexts could involve a single third party in
+multiple first party contexts.</p></li><li><p>Does not require precise clocks nor agreement on the exact
+timestamps of the observed events. Depending on the fingerprintable
+surfaces involved the sequence of events could be identifiable by
+itself. Servers can roughly bucket observations by time periods,
+eliminating the need for client-side clocks.</p></li><li><p>Does not require an API to fire an event. A property with a
+volatile value that can be polled periodically is sufficient.</p></li></ul><h3 id="what-to-look-for">What to look for:</h3><ul><li><p>Events with external triggers. E.g. hardware based
+events.</p></li><li><p>Multiple distinct events that are fired in tandem to distinct
+browsing contexts. E.g. any processing model where multiple events are
+fired.</p></li><li><p>Volatile attributes that are visible across browsing
+contexts.</p></li><li><p>Volatile attributes that don’t share values across browsing
+contexts, but change simultaneously. E.g. Salting a volatile attribute
+is insufficient if its mutations can be correlated.</p></li></ul><h3 id="example">Example</h3><p>Consider<code>onfocus</code> and<code>onblur</code> events.</p><p>The<a href="https://html.spec.whatwg.org/multipage/interaction.html#focus-update-steps">focus
+update steps</a> involve firing up to three distinct events:<code>change</code> if the node losing focus is an<code>input</code>
+element,<code>focus</code>, and<code>blur</code>.</p><p>When focus traverses a browsing context boundary, these events may be
+fired simultaneously to two different browsing contexts. Browsers
+mitigate this by not firing<code>blur</code> for cross site tab
+switches, but they still fire<code>blur</code> when the browser itself
+goes out of focus. Thus identity can be correlated when switching
+browser windows.</p><h4 id="possible-mitigation">Possible Mitigation</h4><p>When the<em>new chain</em> and the<em>old chain</em><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> are
+in different top-level browsing contexts whose active documents are not
+same-origin, queue but don’t fire<code>change</code> and<code>blur</code> events until focus returns to the old top-level
+browsing context.</p><section class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol start="3"><li id="fn3" role="doc-endnote"><p><em>New chain</em> and<em>old
+chain</em> are defined in<a href="https://html.spec.whatwg.org/multipage/interaction.html#focus-update-steps">focus
+update steps</a>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section><h3 id="notes">Notes</h3></content:encoded></item></channel></rss>
