@@ -2,8 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<title>How This Blog Works &#183; Strong Opinions, Weekly Held</title>
-<link rel=stylesheet href=/css/style.css>
+<title>How This Blog Works &#183; Strong Opinions, Weekly Held</title><link rel=stylesheet href=/css/style.css>
 <link rel=stylesheet href=/css/fonts.min.css>
 <link rel=stylesheet href=/css/formatting.min.css>
 <link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
@@ -16,38 +15,29 @@
 <link href rel=alternate type=application/rss+xml title="Strong Opinions, Weekly Held">
 <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css integrity=sha384-zTROYFVGOfTw7JV7KUu8udsvW2fx4lWOsCEDqhBreBwlHI4ioVRtmIvEThzJHGET crossorigin=anonymous>
 <script src=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js integrity=sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb crossorigin=anonymous></script><script src=/js/render-katex.js></script>
-</head>
-<body>
+</head><body>
 <nav class=nav>
 <div class=nav-container>
 <a href=/>
-<h2 class=nav-title>Strong Opinions, Weekly Held</h2>
-</a>
+<h2 class=nav-title>Strong Opinions, Weekly Held</h2></a>
 <ul>
 <li>
 <a href=/about/me>
 <span>About Me</span>
 </a>
-</li>
-<li>
+</li><li>
 <a href=/tags>
 <span>Tags</span>
 </a>
-</li>
-</ul>
-</div>
-</nav>
-<main>
+</li></ul></div></nav><main>
 <div class=post>
-<h1 class=post-title>How This Blog Works</h1>
-<div class=post-info>
+<h1 class=post-title>How This Blog Works</h1><div class=post-info>
 <span>Written by</span>
 Asanka Herath
 <span>on&nbsp;</span><time datetime="2020-07-27 00:57:17 -0400 EDT">July 27, 2020</time>
 |
 <a href=/tags/meta>#Meta</a>
-</div>
-<div class="social share">
+</div><div class="social share">
 <a href="https://twitter.com/intent/tweet?text=How+This+Blog+Works&url=https%3A%2F%2Fxn--izc.com%2Fblog%2Fhow-this-blog-works%2F&via=asankah" aria-label="Share on Twitter" target=_blank rel=noopener>
 <img src=/images/twitter.svg alt="Share on Twitter">
 </a>
@@ -57,101 +47,56 @@ Asanka Herath
 <a href=https://xn--izc.com/blog/how-this-blog-works/ aria-label="Permanent link to post">
 <img src=/images/link-2.svg alt="Permanent link to post">
 </a>
-</div>
-<h1 id=requirements>Requirements</h1>
-<ul>
-<li>Math. Preferably Latex.</li>
-<li>Citations. I like to cite stuff.</li>
-<li>Figures and pictures and references to thereof.</li>
-<li>Be able to export to Github Flavored Markdown.</li>
-</ul>
-<h1 id=the-stack>The Stack</h1>
-<ul>
+</div><h1 id=requirements>Requirements</h1><ul>
+<li>Math. Preferably Latex.</li><li>Citations. I like to cite stuff.</li><li>Figures and pictures and references to thereof.</li><li>Be able to export to Github Flavored Markdown.</li></ul><h1 id=the-stack>The Stack</h1><ul>
 <li><p>All documents are in Markdown. Specifically <a href=https://pandoc.org/MANUAL.html>Pandoc Markdown</a>. Obviously,
-the source is processed via <code>pandoc</code>.</p></li>
-<li><p>The site itself is compiled using <a href=https://gohugo.io/>Hugo</a>.</p>
-<p>The current version (as of this writing) doesn’t support any
+the source is processed via <code>pandoc</code>.</p></li><li><p>The site itself is compiled using <a href=https://gohugo.io/>Hugo</a>.</p><p>The current version (as of this writing) doesn’t support any
 configuration when using Pandoc for markup processing. By default Hugo
 only passes the <code>--mathjax</code> option to the <code>pandoc</code>
 invocation. So I had to make some local modifications so that I can
 specify filters and some other options to support citations and
-references.</p>
-<p>Pull request is <a href=https://github.com/gohugoio/hugo/pull/7529>here</a>.</p></li>
-<li><p>Hugo output – which is a static HTML site – gets pushed out to a
-separate private GitHub repository.</p></li>
-<li><p><a href=https://www.netlify.com/>Netlify</a> monitors this
-separate GitHub repository and updates this blog.</p>
-<p>As a bonus, the generated static content is pushed out to my GitHub
-Pages site. So there’s an easier to remember URL than <a href=https://අ.com>https://අ.com</a>.</p></li>
-<li><p>Secondary sites are fed via Pandoc which converts from Pandoc
-Markdown to Github Flavored Markdown.</p>
-<p>Why secondary sites? For various reasons, the primary site for some
+references.</p><p>Pull request is <a href=https://github.com/gohugoio/hugo/pull/7529>here</a>.</p></li><li><p>Hugo output – which is a static HTML site – gets pushed out to a
+separate private GitHub repository.</p></li><li><p><a href=https://www.netlify.com/>Netlify</a> monitors this
+separate GitHub repository and updates this blog.</p><p>As a bonus, the generated static content is pushed out to my GitHub
+Pages site. So there’s an easier to remember URL than <a href=https://අ.com>https://අ.com</a>.</p></li><li><p>Secondary sites are fed via Pandoc which converts from Pandoc
+Markdown to Github Flavored Markdown.</p><p>Why secondary sites? For various reasons, the primary site for some
 of the articles need to be their own GitHub repository. E.g.
-https://github.com/asankah/identity-domains .</p>
-<p>For all those sites, the primary source is the blog. That way I can
+https://github.com/asankah/identity-domains .</p><p>For all those sites, the primary source is the blog. That way I can
 use Pandoc, use citations, use math etc. and things will “just work”
 when publishing to another site that expects GitHub flavored
-Markdown.</p></li>
-</ul>
-<nav class=suggested>
-<h2 class=suggested>More articles from this blog</h4>
-<ul>
+Markdown.</p></li></ul><nav class=suggested>
+<h2 class=suggested>More articles from this blog</h4><ul>
 <li>
 <h3 class="suggested title">
 <a href=/blog/visualizing-people-2/>Visualizing A Million People</a>
-</h3>
-<p>If your feature pisses off a million people what does this angry mob
-look like? Spoiler: We only get to 750,000.</p>
-</li>
-<li>
-<h3 class="suggested title">
-<a href=/blog/grab-diagram-workflow-re2/>Quickly grab a snapshot of your reMarkable tablet</a>
-</h3>
-<p>How to bind a hotkey to grab a snapshot of your reMarkable display
-and copy it to the clipboard on a Mac.</p>
-</li>
-<li>
+</h3><p>If your feature pisses off a million people what does this angry mob
+look like? Spoiler: We only get to 750,000.</p></li><li>
 <h3 class="suggested title">
 <a href=/blog/shannon-paper/>Shannon Paper</a>
-</h3>
-<p>Claude Shannon’s <em>A mathematical theory of communication</em> is
+</h3><p>Claude Shannon’s <em>A mathematical theory of communication</em> is
 an oft cited classic in information theory. Let’s dive in and try to
 tease apart the “why”s that are often overlooked when people build on
 top of the introduced theory. They are definitely things that I didn’t
-consider to be obvious without the benefit of reading the paper.</p>
-</li>
-<li>
+consider to be obvious without the benefit of reading the paper.</p></li><li>
 <h3 class="suggested title">
-<a href=/blog/ansible-cli-sugar/>Easier CLI for ad-hoc Ansible tasks and playbooks</a>
-</h3>
-<p>Encode the host and group names into the name of a wrapper script for
-quick ad-hoc invocation of Ansible tasks and playbooks.</p>
-</li>
-<li>
+<a href=/blog/identity-domains/>Identity Domains</a>
+</h3><p>An Identity Domain is a scope within which we assume that the user’s
+identity can roam freely.</p></li><li>
 <h3 class="suggested title">
-<a href=/blog/notes-on-fact-checking/>Notes from Crash Course's Videos on Fact Checking Information You See On The Internet
-</a>
-</h3>
-<p>Hank Green’s Crash Course YouTube channel has an excellent series
-about navigating digital information. It’s an excellent guide to how
-internet users could intelligently consume information they see on the
-internet. These are my (incomplete) notes from the series.</p>
-</li>
-</ul>
-</nav>
-<h4>Comment</h4>
-<script src=https://utteranc.es/client.js repo=asankah/blog-comments issue-term=title label=PublicComment theme=github-light crossorigin=anonymous async></script>
-</div>
-<div class=pagination>
+<a href=/blog/why-strong-opinions-weakly-held/>Why 'Strong Opinions Weakly Held'</a>
+</h3><p>Origins of the phrase The title of this blog is Strong Opinions, Weakly Held. The same concept shows up elsewhere are Strong Opinions Loosely Held. An eponymous essay by Paul Saffo in [1] introduced the world to this concept.
+In his essay – which isn’t very long if you would like to read the whole thing yourself – he lays out the concept as follows:
+I have found that the fastest way to an effective forecast is often through a sequence of lousy forecasts.</p></li><li>
+<h3 class="suggested title">
+<a href=/blog/sometimes-its-the-interviewers-who-suck/>Sometimes It's the Interviewers Who Suck</a>
+</h3><p>I’ve done hundreds of interviews. I’ve also served in numerous hiring committees over the years.
+Tech companies tend to have cultures built around tech people interviewing other tech people, typically in what is not-so-affectionately known as the “Tech interview.” This is good because candidates would be evaluated based on their actual skills instead of keywords in their resume. Interviewers are in effect choosing their future coworkers which makes in interview serve the interest of both the interviewer and the interviewee.</p></li></ul></nav><h4>Comment</h4><script src=https://utteranc.es/client.js repo=asankah/blog-comments issue-term=title label=PublicComment theme=github-light crossorigin=anonymous async></script>
+</div><div class=pagination>
 <a href=/blog/comcast-technican-problem/ class="left arrow">&#8592;</a>
 <a href=/blog/symbol-name-types/ class="right arrow">&#8594;</a>
 <a href=# class=top>Top</a>
-</div>
-</main>
-<footer>
+</div></main><footer>
 <span>Last modified on January 13, 2022 </span>
-</footer>
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-169355711-2','auto'),ga('send','pageview'))</script>
+</footer><script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-169355711-2","auto"),ga("send","pageview"))</script>
 <script async src=https://www.google-analytics.com/analytics.js></script>
-</body>
-</html>
+</body></html>

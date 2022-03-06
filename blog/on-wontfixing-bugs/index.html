@@ -2,8 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<title>On WontFixing Bugs &#183; Strong Opinions, Weekly Held</title>
-<link rel=stylesheet href=/css/style.css>
+<title>On WontFixing Bugs &#183; Strong Opinions, Weekly Held</title><link rel=stylesheet href=/css/style.css>
 <link rel=stylesheet href=/css/fonts.min.css>
 <link rel=stylesheet href=/css/formatting.min.css>
 <link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
@@ -16,38 +15,29 @@
 <link href rel=alternate type=application/rss+xml title="Strong Opinions, Weekly Held">
 <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css integrity=sha384-zTROYFVGOfTw7JV7KUu8udsvW2fx4lWOsCEDqhBreBwlHI4ioVRtmIvEThzJHGET crossorigin=anonymous>
 <script src=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js integrity=sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb crossorigin=anonymous></script><script src=/js/render-katex.js></script>
-</head>
-<body>
+</head><body>
 <nav class=nav>
 <div class=nav-container>
 <a href=/>
-<h2 class=nav-title>Strong Opinions, Weekly Held</h2>
-</a>
+<h2 class=nav-title>Strong Opinions, Weekly Held</h2></a>
 <ul>
 <li>
 <a href=/about/me>
 <span>About Me</span>
 </a>
-</li>
-<li>
+</li><li>
 <a href=/tags>
 <span>Tags</span>
 </a>
-</li>
-</ul>
-</div>
-</nav>
-<main>
+</li></ul></div></nav><main>
 <div class=post>
-<h1 class=post-title>On WontFixing Bugs</h1>
-<div class=post-info>
+<h1 class=post-title>On WontFixing Bugs</h1><div class=post-info>
 <span>Written by</span>
 Asanka Herath
 <span>on&nbsp;</span><time datetime="2021-03-02 17:15:06 -0500 EST">March 2, 2021</time>
 |
 <a href=/tags/engineering>#Engineering</a>
-</div>
-<div class="social share">
+</div><div class="social share">
 <a href="https://twitter.com/intent/tweet?text=On+WontFixing+Bugs&url=https%3A%2F%2Fxn--izc.com%2Fblog%2Fon-wontfixing-bugs%2F&via=asankah" aria-label="Share on Twitter" target=_blank rel=noopener>
 <img src=/images/twitter.svg alt="Share on Twitter">
 </a>
@@ -57,159 +47,107 @@ Asanka Herath
 <a href=https://xn--izc.com/blog/on-wontfixing-bugs/ aria-label="Permanent link to post">
 <img src=/images/link-2.svg alt="Permanent link to post">
 </a>
-</div>
-<p>This was partly inspired by a Tweet by a co-worker. The tweet is:</p>
-<blockquote class=twitter-tweet><p lang=en dir=ltr>wontfix-ing valid bugs (that have been triaged as such) with bots because you haven't been able to fix or prioritize them yet is kinda hostile to contributors, imho <a href=https://t.co/faxtbpoiII>pic.twitter.com/faxtbpoiII</a></p>&mdash; Mike Taylor (@miketaylr) <a href="https://twitter.com/miketaylr/status/1366762904851279877?ref_src=twsrc%5Etfw">March 2, 2021</a></blockquote>
-<script async src=https://platform.twitter.com/widgets.js></script>
+</div><p>This was partly inspired by a Tweet by a co-worker. The tweet is:</p><blockquote class=twitter-tweet><p lang=en dir=ltr>wontfix-ing valid bugs (that have been triaged as such) with bots because you haven't been able to fix or prioritize them yet is kinda hostile to contributors, imho <a href=https://t.co/faxtbpoiII>pic.twitter.com/faxtbpoiII</a></p>&mdash; Mike Taylor (@miketaylr) <a href="https://twitter.com/miketaylr/status/1366762904851279877?ref_src=twsrc%5Etfw">March 2, 2021</a></blockquote><script async src=https://platform.twitter.com/widgets.js></script>
 <p>For projects that are under-resourced but has heavy usage it is in
 fact quite normal to accumulate a large number of issue reports over
 time. Take Chromium for example. There are (at the time of writing)
 ~95,000 open bugs. Many of these are task tracking bugs rather than
-tracking actual product bugs. But still that’s a lot of real bugs.</p>
-<p>What’s even more interesting is the accumulation of bugs. Typically
+tracking actual product bugs. But still that’s a lot of real bugs.</p><p>What’s even more interesting is the accumulation of bugs. Typically
 for a “successful” project the rate of new issues being reported will
-exceed the rate of issues being fixed. Hence the growth.</p>
-<h2 id=what-matters>What Matters …</h2>
-<p>Issues are often annotated to indicate some measure of
+exceed the rate of issues being fixed. Hence the growth.</p><h2 id=what-matters>What Matters …</h2><p>Issues are often annotated to indicate some measure of
 <em>severity</em> and <em>priority</em>. These are two different axes of
-measurement:</p>
-<p><strong>Severity</strong> refers to the degree of impact that an
+measurement:</p><p><strong>Severity</strong> refers to the degree of impact that an
 issue has. How many users are affected? Is the effect isolated or spread
 across a large user base? Severity is supposed to summarize the answer
-to these questions.</p>
-<p><strong>Priority</strong> refers to what the issue triagers deemed to
+to these questions.</p><p><strong>Priority</strong> refers to what the issue triagers deemed to
 be the relative importance of the issue. A bug that affects a large
 number of users – hence a high severity – might not be a high priority
 due to mitigating factors. Typically a project owner would tackle higher
 priority issues first. Under-resourced projects – which is the case for
 pretty much every successful project I’ve seen – will accumulate lower
-priority issues across time.</p>
-<p>Neither <em>severity</em> nor <em>priority</em> are static either. An
+priority issues across time.</p><p>Neither <em>severity</em> nor <em>priority</em> are static either. An
 issue with a low severity might be elevated to a higher severity if the
 affected population of users is discovered to be larger than originally
 assumed. Or the priority may be raised if the issue is blocking the fix
 for another more severe issue. It’s not uncommon for some low priority
 issue to be suddenly elevated to critical status once someone figures
-out how to exploit it.</p>
-<p>In practice <em>perceptual priority</em> is the only one that
+out how to exploit it.</p><p>In practice <em>perceptual priority</em> is the only one that
 matters. It doesn’t matter what the issue tracker label or score is.
 What matters is that there’s a contributor who’s motivated to fix it.
 The decisions of a contributor are complex and subjective. So while the
 most important issues will <em>likely</em> get fixed, just because an
-issue is real or important doesn’t mean that it will be addressed.</p>
-<p>What this means is that it is important for issue reports to stick
+issue is real or important doesn’t mean that it will be addressed.</p><p>What this means is that it is important for issue reports to stick
 around. At worst they will accumulate more evidence of severity or clues
 to what the issue is. Often the desired outcome isn’t universal either.
 So an issue report also functions as an opinion catchment area where
-interested parties can hash out their differences.</p>
-<h2 id=and-what-doesnt>And What Doesn’t …</h2>
-<p>However, the health of the project then depends on not only handling
-new issues, but also in how they shepherd existing or known issues.</p>
-<p>Much like any other todo list, the effectiveness of the issue tracker
+interested parties can hash out their differences.</p><h2 id=and-what-doesnt>And What Doesn’t …</h2><p>However, the health of the project then depends on not only handling
+new issues, but also in how they shepherd existing or known issues.</p><p>Much like any other todo list, the effectiveness of the issue tracker
 decreases when there’s an overwhelming number of items to look at. The
 cognitive overhead of correct prioritizing increases dramatically, as
-does the time it takes for triaging.</p>
-<h2 id=strategies-that-dont-work>Strategies That Don’t Work …</h2>
-<p>So projects tend to use various techniques to deal with the growing
+does the time it takes for triaging.</p><h2 id=strategies-that-dont-work>Strategies That Don’t Work …</h2><p>So projects tend to use various techniques to deal with the growing
 pile of issues. The more overwhelming it is, the more drastic the
-mitigation strategy.</p>
-<p>One such strategy in action is what we see in the Tweet above where
+mitigation strategy.</p><p>One such strategy in action is what we see in the Tweet above where
 there’s a bot that automatically closes old issues that haven’t seen any
-activity. At first glance this seems to make sense.</p>
-<p>The assumption seems to be that if the issue was important enough
+activity. At first glance this seems to make sense.</p><p>The assumption seems to be that if the issue was important enough
 then an endless stream of users would pipe up on the bug with “me too”s
 to keep the issue open. The issue tracker is now a battlefield where
 issue reporters have to continually work to keep the issue alive until a
-contributor takes pity and addresses it.</p>
-<p>Issue reporters themselves who are often volunteers who are electing
+contributor takes pity and addresses it.</p><p>Issue reporters themselves who are often volunteers who are electing
 to participate in a project can also burn out. If the issues they file
 are automatically closed, it’s frustrating to the reporters. Chances are
 that with every few issues that are closed due to inactivity, the
-project loses a contributor.</p>
-<p>Another strategy is to have new issues start at some sort of
+project loses a contributor.</p><p>Another strategy is to have new issues start at some sort of
 <em>unconfirmed</em> state. Once the issue has been acknowledged and
 accepted it can proceed to some other state which makes the issue become
 a candidate for contributor consideration. This one is a bit better in
-that it doesn’t discard <em>confirmed</em> issues.</p>
-<p>However, eventually the real issues will accumulate to the point
+that it doesn’t discard <em>confirmed</em> issues.</p><p>However, eventually the real issues will accumulate to the point
 where some sort of bookkeeping is needed. Along comes
 <code>WontFix</code> and friends. This is a state where the issue is
 marked as <em>“this is a real issue but we will probably never get
-around to fixing it.”</em></p>
-<p>Reporters nevertheless find this state to be no-less frustrating than
+around to fixing it.”</em></p><p>Reporters nevertheless find this state to be no-less frustrating than
 an outright closure. <code>WontFix</code>ed bugs don’t show up by
 default in issue searches, so they are effectively undiscoverable to
-future issue reporters. All time invested in that issue is now lost.</p>
-<h2 id=and-one-that-does>And One That Does? …</h2>
-<p>The alternative is to just leave the issue open, but lower the
+future issue reporters. All time invested in that issue is now lost.</p><h2 id=and-one-that-does>And One That Does? …</h2><p>The alternative is to just leave the issue open, but lower the
 priority down to something that reflects the current opinion of the
-project maintainers.</p>
-<p>This strategy acknowledges that the issue is real. It serves as
+project maintainers.</p><p>This strategy acknowledges that the issue is real. It serves as
 documentation that the product has a known defect, and in addition it
 can serve the purposes of accumulating evidence of severity along the
-way. If the issue becomes prominent enough then it can be retriaged.</p>
-<p>That’s it. So far I haven’t seen alternatives that are much better
+way. If the issue becomes prominent enough then it can be retriaged.</p><p>That’s it. So far I haven’t seen alternatives that are much better
 than this. I’m generally against mass issue closing events like
 declaring “bug bankruptcy.” The bugs don’t care about the state of the
 issue report. All you’ve accomplished is to throw away the accumulated
-history and evidence of a defect.</p>
-<nav class=suggested>
-<h2 class=suggested>More articles from this blog</h4>
-<ul>
+history and evidence of a defect.</p><nav class=suggested>
+<h2 class=suggested>More articles from this blog</h4><ul>
 <li>
 <h3 class="suggested title">
 <a href=/blog/identity-domains/>Identity Domains</a>
-</h3>
-<p>An Identity Domain is a scope within which we assume that the user’s
-identity can roam freely.</p>
-</li>
-<li>
+</h3><p>An Identity Domain is a scope within which we assume that the user’s
+identity can roam freely.</p></li><li>
 <h3 class="suggested title">
-<a href=/blog/visualizing-people-2/>Visualizing A Million People</a>
-</h3>
-<p>If your feature pisses off a million people what does this angry mob
-look like? Spoiler: We only get to 750,000.</p>
-</li>
-<li>
+<a href=/blog/fart-limit/>Fart Limit</a>
+</h3><p>Can a fart be fatal? Let’s see what science and OSHA have to say.</p></li><li>
 <h3 class="suggested title">
-<a href=/blog/ephemeral-fingerprinting/>Ephemeral Fingerprinting On The Web</a>
-</h3>
-<p><p>Any ephemeral low-entropy web observable property whose changes are
-concurrently observable by multiple sites can lead to cross site
-identity joining.</p>
-<p>This method of identity joining does not require coordination between
-multiple first parties. A single third party embedded within multiple
-first parties can also use this method.</p>
-</p>
-</li>
-<li>
+<a href=/blog/why-strong-opinions-weakly-held/>Why 'Strong Opinions Weakly Held'</a>
+</h3><p>Origins of the phrase The title of this blog is Strong Opinions, Weakly Held. The same concept shows up elsewhere are Strong Opinions Loosely Held. An eponymous essay by Paul Saffo in [1] introduced the world to this concept.
+In his essay – which isn’t very long if you would like to read the whole thing yourself – he lays out the concept as follows:
+I have found that the fastest way to an effective forecast is often through a sequence of lousy forecasts.</p></li><li>
 <h3 class="suggested title">
-<a href=/blog/grab-diagram-workflow-re2/>Quickly grab a snapshot of your reMarkable tablet</a>
-</h3>
-<p>How to bind a hotkey to grab a snapshot of your reMarkable display
-and copy it to the clipboard on a Mac.</p>
-</li>
-<li>
+<a href=/blog/notes-on-fact-checking/>Notes from Crash Course's Videos on Fact Checking Information You See On The Internet
+</a>
+</h3><p>Hank Green’s Crash Course YouTube channel has an excellent series
+about navigating digital information. It’s an excellent guide to how
+internet users could intelligently consume information they see on the
+internet. These are my (incomplete) notes from the series.</p></li><li>
 <h3 class="suggested title">
-<a href=/blog/how-this-blog-works/>How This Blog Works</a>
-</h3>
-<p>How I put this site together and why.</p>
-</li>
-</ul>
-</nav>
-<h4>Comment</h4>
-<script src=https://utteranc.es/client.js repo=asankah/blog-comments issue-term=title label=PublicComment theme=github-light crossorigin=anonymous async></script>
-</div>
-<div class=pagination>
+<a href=/blog/sometimes-its-the-interviewers-who-suck/>Sometimes It's the Interviewers Who Suck</a>
+</h3><p>I’ve done hundreds of interviews. I’ve also served in numerous hiring committees over the years.
+Tech companies tend to have cultures built around tech people interviewing other tech people, typically in what is not-so-affectionately known as the “Tech interview.” This is good because candidates would be evaluated based on their actual skills instead of keywords in their resume. Interviewers are in effect choosing their future coworkers which makes in interview serve the interest of both the interviewer and the interviewee.</p></li></ul></nav><h4>Comment</h4><script src=https://utteranc.es/client.js repo=asankah/blog-comments issue-term=title label=PublicComment theme=github-light crossorigin=anonymous async></script>
+</div><div class=pagination>
 <a href=/blog/poisson-distribution/ class="left arrow">&#8592;</a>
 <a href=/blog/sometimes-its-the-interviewers-who-suck/ class="right arrow">&#8594;</a>
 <a href=# class=top>Top</a>
-</div>
-</main>
-<footer>
+</div></main><footer>
 <span>Last modified on January 13, 2022 </span>
-</footer>
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-169355711-2','auto'),ga('send','pageview'))</script>
+</footer><script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-169355711-2","auto"),ga("send","pageview"))</script>
 <script async src=https://www.google-analytics.com/analytics.js></script>
-</body>
-</html>
+</body></html>

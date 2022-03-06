@@ -2,8 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<title>Vim: Use Drop Not Edit, SBuffer Not Buffer &#183; Strong Opinions, Weekly Held</title>
-<link rel=stylesheet href=/css/style.css>
+<title>Vim: Use Drop Not Edit, SBuffer Not Buffer &#183; Strong Opinions, Weekly Held</title><link rel=stylesheet href=/css/style.css>
 <link rel=stylesheet href=/css/fonts.min.css>
 <link rel=stylesheet href=/css/formatting.min.css>
 <link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
@@ -16,39 +15,30 @@
 <link href rel=alternate type=application/rss+xml title="Strong Opinions, Weekly Held">
 <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css integrity=sha384-zTROYFVGOfTw7JV7KUu8udsvW2fx4lWOsCEDqhBreBwlHI4ioVRtmIvEThzJHGET crossorigin=anonymous>
 <script src=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js integrity=sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb crossorigin=anonymous></script><script src=/js/render-katex.js></script>
-</head>
-<body>
+</head><body>
 <nav class=nav>
 <div class=nav-container>
 <a href=/>
-<h2 class=nav-title>Strong Opinions, Weekly Held</h2>
-</a>
+<h2 class=nav-title>Strong Opinions, Weekly Held</h2></a>
 <ul>
 <li>
 <a href=/about/me>
 <span>About Me</span>
 </a>
-</li>
-<li>
+</li><li>
 <a href=/tags>
 <span>Tags</span>
 </a>
-</li>
-</ul>
-</div>
-</nav>
-<main>
+</li></ul></div></nav><main>
 <div class=post>
-<h1 class=post-title>Vim: Use Drop Not Edit, SBuffer Not Buffer</h1>
-<div class=post-info>
+<h1 class=post-title>Vim: Use Drop Not Edit, SBuffer Not Buffer</h1><div class=post-info>
 <span>Written by</span>
 Asanka Herath
 <span>on&nbsp;</span><time datetime="2020-07-07 12:02:20 -0400 EDT">July 7, 2020</time>
 |
 <a href=/tags/tools>#Tools</a>
 <a href=/tags/vim>#Vim</a>
-</div>
-<div class="social share">
+</div><div class="social share">
 <a href="https://twitter.com/intent/tweet?text=Vim%3A+Use+Drop+Not+Edit%2C+SBuffer+Not+Buffer&url=https%3A%2F%2Fxn--izc.com%2Fblog%2Fuse-drop-not-edit%2F&via=asankah" aria-label="Share on Twitter" target=_blank rel=noopener>
 <img src=/images/twitter.svg alt="Share on Twitter">
 </a>
@@ -58,27 +48,18 @@ Asanka Herath
 <a href=https://xn--izc.com/blog/use-drop-not-edit/ aria-label="Permanent link to post">
 <img src=/images/link-2.svg alt="Permanent link to post">
 </a>
-</div>
-<p>I’m going to assume you are a Vim user.</p>
-<p>Say you have a several windows open in Vim and you want to edit
+</div><p>I’m going to assume you are a Vim user.</p><p>Say you have a several windows open in Vim and you want to edit
 another file. Using <code>:edit</code> works if you want to open the
-file in the current window unconditionally.</p>
-<p><em>But that’s often not what you want.</em> If you have the same
+file in the current window unconditionally.</p><p><em>But that’s often not what you want.</em> If you have the same
 file open in another window, then the most efficient and least
-disruptive thing to do is to switch to that window.</p>
-<h2 id=drop>drop</h2>
-<p>That’s where <code>:drop</code> comes in. In case you aren’t familiar
+disruptive thing to do is to switch to that window.</p><h2 id=drop>drop</h2><p>That’s where <code>:drop</code> comes in. In case you aren’t familiar
 with the <code>drop</code> command, have a look at the help page in your
 favorite editor (<code>:help drop</code>) or <a href=http://vimdoc.sourceforge.net/htmldoc/windows.html#:drop>here on
 the web</a>. But the gist of it is that for most people<a href=#fn1 class=footnote-ref id=fnref1 role=doc-noteref><sup>1</sup></a>
-<code>:drop {file}</code> will:</p>
-<ul>
+<code>:drop {file}</code> will:</p><ul>
 <li>Switch to the window in which <code>{file}</code> is already
-open.</li>
-<li>Switch the buffer in the current window to <code>{file}</code>
-otherwise.</li>
-</ul>
-<p>The <code>:drop</code> command is intended to be used as the “open
+open.</li><li>Switch the buffer in the current window to <code>{file}</code>
+otherwise.</li></ul><p>The <code>:drop</code> command is intended to be used as the “open
 buffer” command for automated tooling like source browsers. For example,
 you can configure <code>coc-nvim</code> <a href=https://github.com/neoclide/coc.nvim>GitHub</a> to use
 <code>:drop</code> as the command used for opening a source file by
@@ -87,72 +68,51 @@ See <code>:help coc-configuration</code> for details on how to set this,
 but basically it’s as simple as opening up the configuration using
 <code>:CocConfig</code> and then adding a
 <code>"coc.preferences.jumpCommand": "drop",</code> mapping to the
-configuration JSON file.</p>
-<section class="footnotes footnotes-end-of-section" role=doc-endnotes>
+configuration JSON file.</p><section class="footnotes footnotes-end-of-section" role=doc-endnotes>
 <hr>
 <ol>
 <li id=fn1 role=doc-endnote><p>Assuming you have <code>set
 hidden</code> that is. See <code>:help drop</code> for more details on
-what happens when the current buffer cannot be unloaded.<a href=#fnref1 class=footnote-back role=doc-backlink>↩︎</a></p></li>
-</ol>
-</section>
-<h2 id=switchbuf-or-swb>switchbuf or swb</h2>
-<p>Or perhaps configuring each plugin is too much work. Enter
+what happens when the current buffer cannot be unloaded.<a href=#fnref1 class=footnote-back role=doc-backlink>↩︎</a></p></li></ol></section><h2 id=switchbuf-or-swb>switchbuf or swb</h2><p>Or perhaps configuring each plugin is too much work. Enter
 <code>switchbuf</code>. This is a global setting in Vim that controls
-how Vim switches between buffers.</p>
-<p>Setting <code>set switchbuf=useopen</code> has the same effect when
+how Vim switches between buffers.</p><p>Setting <code>set switchbuf=useopen</code> has the same effect when
 invoking <code>buffer</code>. Note that using <code>sbuffer</code>,
 <code>sbnext</code>, or <code>sbrewind</code> automatically behaves as
 if this is the case. I.e. they will use an existing window if one
-already has the buffer open.</p>
-<p>Setting <code>set switchbuf=usetab</code> is similar to the effect of
+already has the buffer open.</p><p>Setting <code>set switchbuf=usetab</code> is similar to the effect of
 <code>useopen</code> except that it will look through windows in other
-tabs.</p>
-<p>See <code>:help switchbuf</code> or <a href="http://vimdoc.sourceforge.net/htmldoc/options.html#'switchbuf'">here
-on the web</a> for full details.</p>
-<nav class=suggested>
-<h2 class=suggested>More articles from this blog</h4>
-<ul>
+tabs.</p><p>See <code>:help switchbuf</code> or <a href="http://vimdoc.sourceforge.net/htmldoc/options.html#'switchbuf'">here
+on the web</a> for full details.</p><nav class=suggested>
+<h2 class=suggested>More articles from this blog</h4><ul>
 <li>
+<h3 class="suggested title">
+<a href=/blog/grab-diagram-workflow-re2/>Quickly grab a snapshot of your reMarkable tablet</a>
+</h3><p>How to bind a hotkey to grab a snapshot of your reMarkable display
+and copy it to the clipboard on a Mac.</p></li><li>
+<h3 class="suggested title">
+<a href=/blog/inktober-wild/>Inktober - Wild</a>
+</h3><p>“Wild” - Caught in the wild For Inktober 52.</p></li><li>
+<h3 class="suggested title">
+<a href=/blog/visualizing-people/>Visualizing Internet Users</a>
+</h3><p>What does 0.3%1 of internet users look like?
+As of this writing the global population hovers around 7.7 billion according to the World Population Clock 2.
+Screenshot from census.gov showing the world population clock. The International Telecommunications Union “estimates that at the end of 2019, 53.6 per cent of the global population, or 4.1 billion people, are using the internet.”3
+Screenshot from itu.int showing historical internet usage numbers as a percentage of the world population So a 0.</p></li><li>
 <h3 class="suggested title">
 <a href=/blog/inktober-stripes/>Inktober - Stripes</a>
-</h3>
-<p>“Stripes” - A bee wearing an incorrectly striped sweater For Inktober 52.</p>
-</li>
-<li>
+</h3><p>“Stripes” - A bee wearing an incorrectly striped sweater For Inktober 52.</p></li><li>
 <h3 class="suggested title">
-<a href=/blog/remarkable-first-impressions/>Note-taking on a reMarkable 2</a>
-</h3>
-<p>Sentiments after using the reMarkable 2 tablet for a month.</p>
-</li>
-<li>
-<h3 class="suggested title">
-<a href=/blog/syntax-highlighting/>On Highlighting Syntax vs. Semantics</a>
-</h3>
-<p>Takes a look at an alternate form of code highlighting based on core
-semantics instead of syntactic role.</p>
-</li>
-<li>
-<h3 class="suggested title">
-<a href=/blog/fart-limit/>Fart Limit</a>
-</h3>
-<p>Can a fart be fatal? Let’s see what science and OSHA have to say.</p>
-</li>
-</ul>
-</nav>
-<h4>Comment</h4>
-<script src=https://utteranc.es/client.js repo=asankah/blog-comments issue-term=title label=PublicComment theme=github-light crossorigin=anonymous async></script>
-</div>
-<div class=pagination>
+<a href=/blog/poisson-distribution/>Deriving the Poisson Distribution</a>
+</h3><p>Where does the Poisson Distribution come from?
+A little bit of research1 tells us that the distribution was originally introduced by Abraham de Moivre in 1710 in an article called “On the Measurement of Chance, or, on the Probability of Events in Games Depending Upon Fortuitous Chance” 2 (not the original title).
+A few steps that will get us there is laid out below.
+Let’s start with a simple “rate” problem.</p></li></ul></nav><h4>Comment</h4><script src=https://utteranc.es/client.js repo=asankah/blog-comments issue-term=title label=PublicComment theme=github-light crossorigin=anonymous async></script>
+</div><div class=pagination>
 <a href=/blog/notes-on-fact-checking/ class="left arrow">&#8592;</a>
 <a href=/blog/comcast-technican-problem/ class="right arrow">&#8594;</a>
 <a href=# class=top>Top</a>
-</div>
-</main>
-<footer>
+</div></main><footer>
 <span>Last modified on January 13, 2022 </span>
-</footer>
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-169355711-2','auto'),ga('send','pageview'))</script>
+</footer><script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-169355711-2","auto"),ga("send","pageview"))</script>
 <script async src=https://www.google-analytics.com/analytics.js></script>
-</body>
-</html>
+</body></html>

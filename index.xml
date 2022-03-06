@@ -1,4 +1,67 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strong Opinions, Weekly Held</title><link>https://xn--izc.com/</link><description>Recent content on Strong Opinions, Weekly Held</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Asanka Herath</copyright><lastBuildDate>Sat, 12 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://xn--izc.com/index.xml" rel="self" type="application/rss+xml"/><item><title>On Highlighting Syntax vs. Semantics</title><link>https://xn--izc.com/blog/syntax-highlighting/</link><pubDate>Sat, 12 Feb 2022 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/syntax-highlighting/</guid><description>Takes a look at an alternate form of code highlighting based on core
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strong Opinions, Weekly Held</title><link>https://xn--izc.com/</link><description>Recent content on Strong Opinions, Weekly Held</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Asanka Herath</copyright><lastBuildDate>Tue, 01 Mar 2022 14:51:34 -0500</lastBuildDate><atom:link href="https://xn--izc.com/index.xml" rel="self" type="application/rss+xml"/><item><title>On Gender Gap in Adolescent Mental Health</title><link>https://xn--izc.com/blog/gender-gap-in-adolescent-mental-health/</link><pubDate>Tue, 01 Mar 2022 14:51:34 -0500</pubDate><guid>https://xn--izc.com/blog/gender-gap-in-adolescent-mental-health/</guid><description>A recent study found that more gender-equal countries have larger
+gender gaps in mental health. I look at the data that seems to have
+yielded this counter-intuitive results and find it lacking.</description><content:encoded><p>Today is the first day of<a href="https://www.nationalgeographic.com/history/article/why-the-us-celebrates-womens-history-month-every-march">Women’s
+History Month</a>.</p><p>Coincidentally there’s a paper making the rounds titled<em>“The
+gender gap in adolescent mental health: A cross-national investigation
+of 566,829 adolescents across 73 countries”</em><span class="citation" data-cites="campbell2021gender">[1]</span>, which makes some interesting
+claims:</p><ul><li>Girls have worse average mental health than boys across 4 mental
+health measures.</li><li>There is significant heterogeneity in the mental health gender gap
+size across countries.</li><li>The gap is most pronounced for psychological distress and life
+satisfaction.</li><li>More gender-equal countries have more gender gaps in mental
+health.</li></ul><p>The last point, in particular, is a bit of an eyebrow-raiser. So
+let’s have a closer look.</p><p>The study uses the<a href="https://www.oecd.org/pisa/data/2018database/">PISA 2018
+dataset</a>, introducing a couple of caveats. Namely:</p><ol type="1"><li>All survey respondents were 15 years old; thus, the dataset doesn’t
+consider higher education and employment effects.</li><li>The data is from 2018; thus excludes the effects of the pandemic. It
+would be interesting to see how the responses change now that people are
+coming out of a lengthy lock down.</li><li>Gender was binary. There was no non-binary option.</li></ol><p>The study<span class="citation" data-cites="campbell2021gender">[1]</span> derives five measures based
+on the PISA 2018 dataset as follows:</p><ol type="1"><li><p><em>“Life satisfaction”</em> measures responses to the question<em>“on a scale of 0-10, overall, how satisfied are you with your life
+as a whole these days?”</em></p></li><li><p><em>“Psychological distress”</em> measures responses to the
+question on how often they felt<em>“sad”</em>,<em>“miserable”</em>,<em>“scared”</em>, and<em>“afraid”</em> on a scale of<em>“never”</em>,<em>“rarely”</em>,<em>“sometimes”</em>, and<em>“always”</em>. Each
+response yields points ranging from 1 through 4, respectively. Summing
+the points for each question results in a score of 4-16.</p><p>The survey doesn’t appear to have clarified the difference between<em>“sad”</em>/<em>“miserable”</em> and<em>“scared”</em>/<em>“afraid”</em>. PISA 2018 mentions that:</p><blockquote><p>All questions were translated into the languages of participating
+countries by two independent linguists and then reconciled by a third to
+ensure consistent meaning in all countries.</p></blockquote></li><li><p><em>“Hedonia”</em> measures the responses to the question on how
+often they felt<em>“happy”</em>,<em>“lively”</em>,<em>“proud”</em>,<em>“joyful”</em>, and<em>“cheerful”</em> on the same scale. This
+yields a combined scale of 5-20.</p></li><li><p><em>“Eudaemonic wellbeing”</em> measures the degree of agreement
+with the below statements. The scale was<em>“strongly disagree”</em>,<em>“disagree”</em>,<em>“agree”</em>, and<em>“strongly agree”</em>
+with a combined score in the range 3-12:</p><ol type="1"><li><em>“My life has clear meaning or purpose”</em>.</li><li><em>“I have discovered a satisfactory meaning in life.”</em></li><li><em>“I have a clear sense of what gives meaning to my
+life”</em>.</li></ol></li></ol><p>Details of the analysis are in<a href="https://ars.els-cdn.com/content/image/1-s2.0-S2352827321000173-mmc1.pdf">the
+companion document (PDF link)</a>.</p><p>In figure S2 of<span class="citation" data-cites="campbell2021gender">[1]</span> shows the distribution of<em>life satisfaction</em>. Again, developed nations are not doing well
+compared with countries like Saudi Arabia.</p><figure><img src="./life-satisfaction-eu.png" alt="Distribution of life satisfaction scores for France, Germany, Greece, and Iceland. The range of responses were from 0 through 10. Red is male, and blue is female."/><figcaption aria-hidden="true">Distribution of life satisfaction scores
+for France, Germany, Greece, and Iceland. The range of responses were
+from 0 through 10. Red is male, and blue is female.</figcaption></figure><p>Compare with:</p><figure><img src="./life-satisfaction-sa-uae.png" alt="Distribution of life satisfaction scores for Saudi Arabia and United Arab Emirates. Note that most respondents gave a score of 10."/><figcaption aria-hidden="true">Distribution of life satisfaction scores
+for Saudi Arabia and United Arab Emirates. Note that most respondents
+gave a score of 10.</figcaption></figure><p>I’m skeptical that these numbers represent reality. Unless there’s a
+part of Saudi Arabia where adolescents are consistently happy all the
+time, these numbers don’t make sense. My skepticism is also extended to
+the data from the UAE.<a href="https://www.hrw.org/world-report/2021/country-chapters/united-arab-emirates">Human
+Rights Watch’s report on the UAE</a> indicates that the UAE is far from
+having any semblance of gender equality. Approximately 80% of the
+population consists of migrant workers<a href="https://www.aljazeera.com/news/2022/2/21/thousands-of-children-in-uae-has-no-access-to-schooling-report">who’s
+children don’t have access to formal education</a>. It’s unlikely that
+these children of migrants participated in the study.</p><p>The curve fitting for the resulting graphs is what’s telling the
+stories that are summarized at the start of this post. The indices are
+arranged so that moving towards the right and moving upwards indicate
+better conditions. Hence it’s apparent from the curves for GII<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> that male life satisfaction is
+pretty consistent and not affected all that much by GII. Meanwhile,
+female life satisfaction trends<em>downward</em>. Hence the conclusion
+that more gender equality implies less happiness.</p><p>GSNI (Gender Social Norms Index) is also negatively correlated with
+quality-of-life measures (where we put “good” on the high end and “bad”
+on the low end).</p><figure><img src="./life-satisfaction-vs-other-indicators.png" alt="Life satisfaction plotted against per-capita GDP, Gini index, GII, GSNI, GGGI. The curves don’t quite fit very well."/><figcaption aria-hidden="true">Life satisfaction plotted against
+per-capita GDP, Gini index, GII, GSNI, GGGI. The curves don’t quite fit
+very well.</figcaption></figure><p>All the graphs show a high variance. Only a small number of countries
+are present in the study. And whether the subjects of the study are
+representative of the population is in doubt. Overall I find the study
+unconvincing.</p><h2 class="unnumbered" id="references">References</h2><div id="refs" class="references csl-bib-body" role="doc-bibliography"><div id="ref-campbell2021gender" class="csl-entry" role="doc-biblioentry"><div class="csl-left-margin">[1]</div><div class="csl-right-inline">O.
+L. Campbell, D. Bann, and P. Patalay,<span>“The gender gap in
+adolescent mental health: A cross-national investigation of 566,829
+adolescents across 73 countries,”</span><em>SSM-population health</em>,
+vol. 13, p. 100742, 2021.</div></div></div><section class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1" role="doc-endnote"><p>GII is the Gender Inequality Index.
+It’s based on such factors like<em>female and male shares of
+parliamentary seats</em>,<em>female and male population with at least
+secondary education</em>,<em>female and male labour force participation
+rates</em>,<em>maternal mortality ratio</em>, and<em>adolescent birth
+rate</em>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section></content:encoded></item><item><title>On Highlighting Syntax vs. Semantics</title><link>https://xn--izc.com/blog/syntax-highlighting/</link><pubDate>Sat, 12 Feb 2022 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/syntax-highlighting/</guid><description>Takes a look at an alternate form of code highlighting based on core
 semantics instead of syntactic role.</description><content:encoded><p><span class="noun">Aesthetics</span><span class="adverb">aside</span>,<span class="noun">syntax</span><span class="gerund">highlighting</span><span class="preposition">in</span><span class="noun">code</span><span class="verb">performs</span><span class="determiner">an</span><span class="adjective">important</span><span class="noun">role</span><span class="preposition">in</span><span class="gerund">improving</span> the<span class="noun">readability</span><span class="preposition">of</span><span class="noun">code</span>.<span class="adjective">Most</span><span class="adjective">syntax</span><span class="gerund">highlighting</span><span class="noun">schemes</span><span class="gerund">including</span><span class="adjective">popular</span><span class="noun">libraries</span><span class="verb">are</span><span class="verb">limited</span><span class="preposition">to</span><span class="gerund">using</span><span class="noun">colors</span><span class="conjunction">and</span><span class="gerund">formatting</span><span class="noun">changes</span><span class="preposition">to</span><span class="verb">distinguish</span><span class="preposition">between</span><span class="adjective">different</span><span class="adjective">syntax</span><span class="noun">classes</span>.<span class="pronoun">This</span><span class="verb">is</span><span class="determiner">what</span><span class="pronoun">it</span><span class="verb">would look</span><span class="conjunction">like</span><span class="conjunction">if</span><span class="pronoun">we</span><span class="verb">apply</span><span class="determiner">the</span><span class="adjective">same</span><span class="noun">logic</span><span class="preposition">to</span><span class="proper">English</span><span class="noun">prose</span>.<span class="adjective">Each</span><span class="noun">word</span><span class="preposition">in</span><span class="pronoun">this</span><span class="noun">paragraph</span><span class="verb">is</span><span class="adverb">highlighted</span><span class="verb">using</span><span class="pronoun">its</span><span class="adjective">respective</span><span class="adjective">syntactic</span><span class="noun">purpose</span>.</p><p>Not very readable, is it? The colors aren’t random. They highlights
 correspond to<span class="noun">noun</span>,<span class="adverb">adverb</span>,<span class="gerund">gerund</span>,<span class="preposition">preposition</span>,<span class="adjective">adjective</span>, and<span class="verb">verb</span>.
 This is basically how people use syntax highlighting.</p><p>Typographers have long known that punctuation alone can’t
@@ -805,7 +868,7 @@ won’t have access to language smarts like<code>clangd</code> which
 require access to all the source files and some build tooling.</p><p><a href="https://code.visualstudio.com/docs/remote/remote-overview">VSCode
 Remote Development</a> was a nearly perfect answer with the exception
 that VSCodeVim didn’t quite have all the functionality I needed.
-VSCodeNeovim addresses that last piece of the puzzle.</p><p>VSCode + Remote SSH + VSCodeNeovim + Neovim gives me:</p><p><img src="4e46e31363fbe39799ba35a987d7a4957644d681.svg"/></p><ul><li>On the remote machine:<ul><li>Source files.</li><li>Build tooling.</li><li><code>clangd</code> process invoked via<code>vscode-remote</code>.</li></ul></li><li>On the local machine:<ul><li>VSCode.</li><li>VSCodeNeovim.<ul><li>Neovim instance embedded by VSCodeNeovim.<ul><li>Neovim plug-ins and normal mode keybindings.</li></ul></li></ul></li></ul></li></ul><p>Since the embedded Neovim instance is local the editors are super
+VSCodeNeovim addresses that last piece of the puzzle.</p><p>VSCode + Remote SSH + VSCodeNeovim + Neovim gives me:</p><p><img src="0f320db109454dcf4af9ef4a1dbb40812d61d0a5.svg"/></p><ul><li>On the remote machine:<ul><li>Source files.</li><li>Build tooling.</li><li><code>clangd</code> process invoked via<code>vscode-remote</code>.</li></ul></li><li>On the local machine:<ul><li>VSCode.</li><li>VSCodeNeovim.<ul><li>Neovim instance embedded by VSCodeNeovim.<ul><li>Neovim plug-ins and normal mode keybindings.</li></ul></li></ul></li></ul></li></ul><p>Since the embedded Neovim instance is local the editors are super
 responsive. Completions via<code>clangd</code> is still laggy as one
 might expect. But that’s something I’m willing to live with.</p><h2 id="proportional-fonts-with-neovim">Proportional Fonts With
 Neovim</h2><p>Okay, so why would anyone actually want this? Turns out<a href="https://www.google.com/search?q=proportional+fonts+for+coding">I’m
@@ -841,22 +904,23 @@ awesomeness.</li></ol></content:encoded></item><item><title>Why 'Strong Opinions
 In his essay – which isn’t very long if you would like to read the whole thing yourself – he lays out the concept as follows:
 I have found that the fastest way to an effective forecast is often through a sequence of lousy forecasts.</description><content:encoded><h2 id="origins-of-the-phrase">Origins of the phrase</h2><p>The title of this blog is<strong>Strong Opinions, Weakly
 Held</strong>. The same concept shows up elsewhere are<em>Strong
-Opinions Loosely Held</em>. An eponymous essay by Paul Saffo in<span class="citation" data-cites="Saffo">[1]</span> introduced the world to
-this concept.</p><p>In his essay – which isn’t very long if you would like to<a href="https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/">read
+Opinions Loosely Held</em>. An eponymous essay by Paul Saffo in<span class="citation" data-cites="Saffo"><a href="#ref-Saffo" role="doc-biblioref">[1]</a></span> introduced the world to this
+concept.</p><p>In his essay – which isn’t very long if you would like to<a href="https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/">read
 the whole thing yourself</a> – he lays out the concept as follows:</p><blockquote><p>I have found that the fastest way to an effective forecast is often
 through a sequence of lousy forecasts. Instead of withholding judgment
 until an exhaustive search for data is complete, I will force myself to
 make a tentative forecast based on the information available, and then
 systematically tear it apart, using the insights gained to guide my
-search for further indicators and information.</p></blockquote><h2 id="criticism">Criticism</h2><p>Cedric Chin’s critique<span class="citation" data-cites="Cedric">[2]</span> comes down to two points that the author
-summarizes as follows:</p><blockquote><p>In my experience, ‘strong opinions, weakly held’ is difficult to put
+search for further indicators and information.</p></blockquote><h2 id="criticism">Criticism</h2><p>Cedric Chin’s critique<span class="citation" data-cites="Cedric"><a href="#ref-Cedric" role="doc-biblioref">[2]</a></span> comes down to two
+points that the author summarizes as follows:</p><blockquote><p>In my experience, ‘strong opinions, weakly held’ is difficult to put
 into practice. Most people who try will either:</p><ol type="1"><li>Use it as downside-protection to justify their strongly-held bad
 opinions, or</li><li>Struggle to shift from one strong opinion to another.</li></ol><p>The reason it is difficult is because it works against the grain of
 the human mind.</p><p>So don’t bother. The next time you find yourself making a judgment,
 don’t invoke ‘strong opinions, weakly held’. Instead, ask: “how much are
 you willing to bet on that?” Doing so will jolt people into the types of
-thinking you want to encourage.</p></blockquote><p>Michael Natkin on<span class="citation" data-cites="Michael">[3]</span> points out the fallacy of assuming that
-strong opinions will be reliably challenged:</p><blockquote><p>The idea of strong opinions, loosely held is that you can make
+thinking you want to encourage.</p></blockquote><p>Michael Natkin on<span class="citation" data-cites="Michael"><a href="#ref-Michael" role="doc-biblioref">[3]</a></span> points out the
+fallacy of assuming that strong opinions will be reliably
+challenged:</p><blockquote><p>The idea of strong opinions, loosely held is that you can make
 bombastic statements, and everyone should implicitly assume that you’ll
 happily change your mind in a heartbeat if new data suggests you are
 wrong. It is supposed to lead to a collegial, competitive environment in
@@ -1152,7 +1216,7 @@ observable by multiple top-level sites can lead to cross site identity
 joining.</p></li><li><p>This method of identity joining does not require additional
 coordination between multiple first parties. A single third party
 embedded within multiple first parties can also use this
-method.</p></li></ul><h2 id="background">Background</h2><figure><img src="images/isolation-boundaries.png" alt="diagram of site isolation boundaries with overlap"/><figcaption aria-hidden="true">diagram of site isolation boundaries with
+method.</p></li></ul><h2 id="background">Background</h2><figure><img src="./isolation-boundaries.png" alt="diagram of site isolation boundaries with overlap"/><figcaption aria-hidden="true">diagram of site isolation boundaries with
 overlap</figcaption></figure><p><strong>Figure 1</strong>: Two sites observe a sequence of device
 orientation changes at times 𝒕₀, 𝒕₁,𝒕₂ .</p><p>All sites on the same UA instance share a clock and therefore can
 agree on the timestamps with a small margin of error. The triplet 𝒕₀,

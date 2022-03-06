@@ -2,8 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<title>Visualizing A Million People &#183; Strong Opinions, Weekly Held</title>
-<link rel=stylesheet href=/css/style.css>
+<title>Visualizing A Million People &#183; Strong Opinions, Weekly Held</title><link rel=stylesheet href=/css/style.css>
 <link rel=stylesheet href=/css/fonts.min.css>
 <link rel=stylesheet href=/css/formatting.min.css>
 <link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
@@ -16,38 +15,29 @@
 <link href rel=alternate type=application/rss+xml title="Strong Opinions, Weekly Held">
 <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css integrity=sha384-zTROYFVGOfTw7JV7KUu8udsvW2fx4lWOsCEDqhBreBwlHI4ioVRtmIvEThzJHGET crossorigin=anonymous>
 <script src=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js integrity=sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb crossorigin=anonymous></script><script src=/js/render-katex.js></script>
-</head>
-<body>
+</head><body>
 <nav class=nav>
 <div class=nav-container>
 <a href=/>
-<h2 class=nav-title>Strong Opinions, Weekly Held</h2>
-</a>
+<h2 class=nav-title>Strong Opinions, Weekly Held</h2></a>
 <ul>
 <li>
 <a href=/about/me>
 <span>About Me</span>
 </a>
-</li>
-<li>
+</li><li>
 <a href=/tags>
 <span>Tags</span>
 </a>
-</li>
-</ul>
-</div>
-</nav>
-<main>
+</li></ul></div></nav><main>
 <div class=post>
-<h1 class=post-title>Visualizing A Million People</h1>
-<div class=post-info>
+<h1 class=post-title>Visualizing A Million People</h1><div class=post-info>
 <span>Written by</span>
 Asanka Herath
 <span>on&nbsp;</span><time datetime="2021-09-06 00:00:00 +0000 UTC">September 6, 2021</time>
 |
 <a href=/tags/curiosity>#Curiosity</a>
-</div>
-<div class="social share">
+</div><div class="social share">
 <a href="https://twitter.com/intent/tweet?text=Visualizing+A+Million+People&url=https%3A%2F%2Fxn--izc.com%2Fblog%2Fvisualizing-people-2%2F&via=asankah" aria-label="Share on Twitter" target=_blank rel=noopener>
 <img src=/images/twitter.svg alt="Share on Twitter">
 </a>
@@ -57,97 +47,63 @@ Asanka Herath
 <a href=https://xn--izc.com/blog/visualizing-people-2/ aria-label="Permanent link to post">
 <img src=/images/link-2.svg alt="Permanent link to post">
 </a>
-</div>
-<aside class=note>
+</div><aside class=note>
 <p>This article was formerly published as <a href=/blog/visualizing-people/>Visualizing Internet Users</a>. This
-version is more generalized and up-to-date.</p>
-</aside>
-<p>What if you introduce a bug and/or a feature that pisses off a
-million people?</p>
-<p>The scenario isn’t all that hard to imagine these days if you work at
+version is more generalized and up-to-date.</p></aside><p>What if you introduce a bug and/or a feature that pisses off a
+million people?</p><p>The scenario isn’t all that hard to imagine these days if you work at
 a big tech company or even a small one with a considerable user base. It
-seems a million users aren’t all that hard to reach these days.</p>
-<p>What is harder though is to imagine what a million people looks like.
+seems a million users aren’t all that hard to reach these days.</p><p>What is harder though is to imagine what a million people looks like.
 What if you were being stared down by the entirety of the affected user
 base? Or worse you had to stand on a stage in front of them and explain
-yourself?</p>
-<p>If you have 1 billion users and you ship a bug that only manifests 1
+yourself?</p><p>If you have 1 billion users and you ship a bug that only manifests 1
 in a million times, then you have yourself 1000 angry users. It’s good
-to know what that group looks like.</p>
-<p>We can easily imagine a single person, 10, or even 25 people. But
+to know what that group looks like.</p><p>We can easily imagine a single person, 10, or even 25 people. But
 exceed a couple of hundred and our imagination falters. It becomes just
 a number and stops feeling like “users” or “people.” The perceived
-significance of the population thus starts to diminish.</p>
-<h1 id=so-whats-the-significance-of-a-million-people-anyway>So what’s
-the significance of a million people anyway?</h1>
-<p>World population is teetering on roughly 7.7 billion people (in
+significance of the population thus starts to diminish.</p><h1 id=so-whats-the-significance-of-a-million-people-anyway>So what’s
+the significance of a million people anyway?</h1><p>World population is teetering on roughly 7.7 billion people (in
 2019). So <strong>a million people is about 0.01% of the global
-population</strong>.</p>
-<figure>
+population</strong>.</p><figure>
 <img src=world-population-2021.png id=fig:worldpop alt="Figure 1: World population in 2021 is 7.7 billion approximately.">
 <figcaption aria-hidden=true>Figure 1: World population in 2021 is 7.7
-billion approximately.</figcaption>
-</figure>
-<p>Internet users, on the other hand, come up to something like half of
+billion approximately.</figcaption></figure><p>Internet users, on the other hand, come up to something like half of
 the world population based World Bank figures which <em>imply</em> that
-roughly 50% of the population should have internet access in 2021 <a href=#fn1 class=footnote-ref id=fnref1 role=doc-noteref><sup>1</sup></a>.</p>
-<figure>
+roughly 50% of the population should have internet access in 2021 <a href=#fn1 class=footnote-ref id=fnref1 role=doc-noteref><sup>1</sup></a>.</p><figure>
 <img src=worldbank-individuals-using-internet.webp id=fig:internetpop alt="Figure 2: Percentage of population who has access to the internet (World Bank 2017)">
 <figcaption aria-hidden=true>Figure 2: Percentage of population who
-has access to the internet (World Bank 2017)</figcaption>
-</figure>
-<p>So <strong>a million users would be 0.02% of the population with some
-access to the internet</strong>. Still not that big.</p>
-<p>But once you focus on a smaller scale like a geographic region or a
+has access to the internet (World Bank 2017)</figcaption></figure><p>So <strong>a million users would be 0.02% of the population with some
+access to the internet</strong>. Still not that big.</p><p>But once you focus on a smaller scale like a geographic region or a
 user base of some application, then suddenly the million users looks
-much bigger.</p>
-<h2 id=to-49>1 to 49</h2>
-<p>Let’s skip this range since this is in the range of what you’d see in
+much bigger.</p><h2 id=to-49>1 to 49</h2><p>Let’s skip this range since this is in the range of what you’d see in
 a mirror, can fit on a bicycle, can fit on a sofa, your team, gathering
 of friends, significant annual family event, or other familiar
-situation.</p>
-<section class="footnotes footnotes-end-of-section" role=doc-endnotes>
+situation.</p><section class="footnotes footnotes-end-of-section" role=doc-endnotes>
 <hr>
 <ol>
 <li id=fn1 role=doc-endnote><p>Note that fig. 2 indicates that the
 estimate is 49% of the population would have internet access in 2017.
 It’s likely that by 2021 we’d at least have reached 50% based on the
-sharp growth curve.<a href=#fnref1 class=footnote-back role=doc-backlink>↩︎</a></p></li>
-</ol>
-</section>
-<h2 id=from-50-to-100000>From 50 to 100,000</h2>
-<p>An example of visualizing populations for small numbers can be found
+sharp growth curve.<a href=#fnref1 class=footnote-back role=doc-backlink>↩︎</a></p></li></ol></section><h2 id=from-50-to-100000>From 50 to 100,000</h2><p>An example of visualizing populations for small numbers can be found
 at <a href=https://blog.lime.link/visualizing-crowd-sizes/>Visualizing
-Crowd Sizes</a>. It goes from around 50 people up to 100,000 people.</p>
-<p>While 100,000 is interesting we need to go all the way to 1
-million.</p>
-<h2 id=section>200,000</h2>
-<p>200,000 was the estimated number of people who attended the <a href=https://marchforourlives.com/>March for Our Lives</a> in D.C..
+Crowd Sizes</a>. It goes from around 50 people up to 100,000 people.</p><p>While 100,000 is interesting we need to go all the way to 1
+million.</p><h2 id=section>200,000</h2><p>200,000 was the estimated number of people who attended the <a href=https://marchforourlives.com/>March for Our Lives</a> in D.C..
 There aren’t any photos capturing <em>all</em> attendees in one shot,
 but there are numerous pictures in <a href=https://www.cbsnews.com/news/march-for-our-lives-crowd-size-estimated-200000-people-attended-d-c-march/>this
-CBS News article</a> to give you a good idea.</p>
-<p>In more terrible examples, <a href=https://www.dw.com/en/more-than-200000-indonesians-protest-governor-purnamas-alleged-blasphemy/a-36611145>this
+CBS News article</a> to give you a good idea.</p><p>In more terrible examples, <a href=https://www.dw.com/en/more-than-200000-indonesians-protest-governor-purnamas-alleged-blasphemy/a-36611145>this
 article on dw.com</a> suggests that the crowd size pictured is roughly
-around 200,000 people.</p>
-<blockquote>
+around 200,000 people.</p><blockquote>
 <p>More than 200,000 conservative Muslims gathered in Indonesia’s
 capital Jakarta on Friday to protest against the city’s Christian
-governor, who is facing trial for blasphemy, police estimated.</p>
-</blockquote>
-<figure>
+governor, who is facing trial for blasphemy, police estimated.</p></blockquote><figure>
 <img src=dw-com-indonesia-protest-2020-11-20.jpg alt="Image from dw.com of a protest in Indonesia allegedly showing 200,000 people. Image Source">
 <figcaption aria-hidden=true>Image from dw.com of a protest in
 Indonesia allegedly showing 200,000 people. <a href=https://www.dw.com/en/more-than-200000-indonesians-protest-governor-purnamas-alleged-blasphemy/a-36611145>Image
-Source</a></figcaption>
-</figure>
-<h2 id=section-1>250,000</h2>
-<p>The March on Washington in 1963– an <em>“event focused on employment
+Source</a></figcaption></figure><h2 id=section-1>250,000</h2><p>The March on Washington in 1963– an <em>“event focused on employment
 discrimination, civil rights abuses against African Americans, Latinos,
 and other disenfranchised groups, and support for the Civil Rights Act
 that the Kennedy Administration was attempting to pass through
 Congress”</em> – drew an estimated 250,000 people according to the
-National Park Service.</p>
-<blockquote>
+National Park Service.</p><blockquote>
 <p>Rustin coordinated a staff of over 200 civil rights activists and
 organizers to assist in publicizing the march and recruiting marchers,
 organizing churches to raise money, coordinating buses and trains, and
@@ -155,154 +111,93 @@ administering all of the other logistical details. In many ways, the
 March defied expectations. The number of people that attended exceeded
 the initial estimates made by the organizers. Rustin had indicated that
 they expected over 100,000 people to attend - the final estimate was
-250,000, 190,000 blacks and 60,000 whites.</p>
-</blockquote>
-<p>(From <a href=https://www.nps.gov/articles/march-on-washington.htm>March on
-Washington for Jobs and Freedom – National Parks Service</a>)</p>
-<figure>
+250,000, 190,000 blacks and 60,000 whites.</p></blockquote><p>(From <a href=https://www.nps.gov/articles/march-on-washington.htm>March on
+Washington for Jobs and Freedom – National Parks Service</a>)</p><figure>
 <img src=march-on-washington-1963.jpg alt="Image from nps.gov showing the crowd estimated to be around 250,000 people at the March on Washington on August 28, 1963. See Image Source for full resolution image.">
 <figcaption aria-hidden=true>Image from nps.gov showing the crowd
 estimated to be around 250,000 people at the March on Washington on
 August 28, 1963. See <a href=https://www.loc.gov/resource/ppmsca.37248/>Image Source for full
-resolution image.</a></figcaption>
-</figure>
-<h2 id=section-2>500,000</h2>
-<p>We are heading into shaky ground here. A 800*600 picture only
+resolution image.</a></figcaption></figure><h2 id=section-2>500,000</h2><p>We are heading into shaky ground here. A 800*600 picture only
 contains 480,000 pixels. So we are now reduced to indicating population
 by inference. It is no longer possible to capture 500,000 people in a
-webpage sized picture while showing each person individually.</p>
-<p><a href=https://www.reddit.com/r/philadelphia/comments/3by9g8/if_this_is_what_500k_people_look_like_xpost_from/>This
+webpage sized picture while showing each person individually.</p><p><a href=https://www.reddit.com/r/philadelphia/comments/3by9g8/if_this_is_what_500k_people_look_like_xpost_from/>This
 Reddit post</a> claims that there are 500k people in the picture, but I
-couldn’t readily find any good references backing up that claim.</p>
-<p>Another event that drew 500,000 people is <a href=https://www.nbcnews.com/show-me/video/nearly-500-000-people-march-in-anti-violence-rally-in-barcelona-1033617987741>an
+couldn’t readily find any good references backing up that claim.</p><p>Another event that drew 500,000 people is <a href=https://www.nbcnews.com/show-me/video/nearly-500-000-people-march-in-anti-violence-rally-in-barcelona-1033617987741>an
 anti-violence rally in Barcelona as reported by NBC</a>. While there’s
 video, the content doesn’t quite capture the massive number of people.
-Also it’s <em>“nearly 500,000”</em> people.</p>
-<p>However, the closest we’ll probably get to a somewhat believable
+Also it’s <em>“nearly 500,000”</em> people.</p><p>However, the closest we’ll probably get to a somewhat believable
 500,000 person crowd would be the March for Science. They posted the
 following picture on <a href=https://www.facebook.com/marchforscience/posts/836983043362678>Facebook</a>
-noting that “There are 500,000 people on strike in Montreal”.</p>
-<figure>
+noting that “There are 500,000 people on strike in Montreal”.</p><figure>
 <img src=march-for-science-crowd-2020-11-20.jpg alt="March for Science on Facebook: Picture of protest. Image source">
 <figcaption aria-hidden=true>March for Science on Facebook: Picture of
 protest. <a href=https://www.facebook.com/marchforscience/posts/836983043362678>Image
-source</a></figcaption>
-</figure>
-<p><a href=https://en.wikipedia.org/wiki/Woodstock>Woodstock</a> or
+source</a></figcaption></figure><p><a href=https://en.wikipedia.org/wiki/Woodstock>Woodstock</a> or
 “an Aquarian Exposition: 3 Days of Peace & Music” festival held in
 1969 reportedly attracted “over 400,000”, “450,000”, or “500,000” people
 depending on the source. Let’s assume that the real number is somewhere
 in-between which gets us to somewhere in the neighborhood of 500,000
-people.</p>
-<p>There are numerous aerial photos of the Woodstock crowds, some of
+people.</p><p>There are numerous aerial photos of the Woodstock crowds, some of
 which you can find in <a href=https://www.gettyimages.com/photos/woodstock-and-aerial>this
-image gallery from Getty images</a>.</p>
-<h2 id=section-3>750,000</h2>
-<p>Off to look at protests again. This time we are looking at Barcelona
+image gallery from Getty images</a>.</p><h2 id=section-3>750,000</h2><p>Off to look at protests again. This time we are looking at Barcelona
 where 750,000 Catalan independence supporters are demanding the release
 of their leaders according to <a href=http://www.timealem.com/750000-people-flood-barcelona-demanding-release-of-catalan-leaders_d575.html>this
-article</a>.</p>
-<figure>
+article</a>.</p><figure>
 <img src=barcelona-protest-2020-11-20.jpg alt="750,000 people flood Barcelona demanding release of Catalan leaders. Image source">
 <figcaption aria-hidden=true>750,000 people flood Barcelona demanding
 release of Catalan leaders. <a href=http://www.timealem.com/750000-people-flood-barcelona-demanding-release-of-catalan-leaders_d575.html>Image
-source</a></figcaption>
-</figure>
-<p>The crowd extends past the top of the frame and there’s no chance
+source</a></figcaption></figure><p>The crowd extends past the top of the frame and there’s no chance
 this is the entire crowd. But you get the general idea. If you ship a
 bug that affects 0.01% of the internet population, then this is a
-conservative lower bound of what that angry mob would look like.</p>
-<p>But wait, the <a href=https://www.guinnessworldrecords.com/news/non-corporate/2018/6/more-than-750-000-people-help-philippines-based-church-achieve-four-new-records-529029>Guinness
+conservative lower bound of what that angry mob would look like.</p><p>But wait, the <a href=https://www.guinnessworldrecords.com/news/non-corporate/2018/6/more-than-750-000-people-help-philippines-based-church-achieve-four-new-records-529029>Guinness
 World Record for the largest charity walk/run</a> is 283,171 people at a
-single venue. Have a look at that picture:</p>
-<figure>
+single venue. Have a look at that picture:</p><figure>
 <img src=guinness-record-largest-walk-single-venu-2020-11-20.jpg alt="Guinness Record for the largest charity walk or run at a single venue is for 283,171 people. Image Source">
 <figcaption aria-hidden=true>Guinness Record for the largest charity
 walk or run at a single venue is for 283,171 people. <a href=https://www.guinnessworldrecords.com/news/non-corporate/2018/6/more-than-750-000-people-help-philippines-based-church-achieve-four-new-records-529029>Image
-Source</a></figcaption>
-</figure>
-<p>It seems that picture of 750,000 people doesn’t quite capture that
+Source</a></figcaption></figure><p>It seems that picture of 750,000 people doesn’t quite capture that
 many people because clearly there are more people in the picture that’s
 supposed to be 283k people. Which of course goes to show how hard it is
-to really capture how massive a crowd 750k makes.</p>
-<p>In an article on Wired that discusses how hard it is to estimate
-crowd sizes, they note<a href=#fn2 class=footnote-ref id=fnref2 role=doc-noteref><sup>2</sup></a>:</p>
-<blockquote>
+to really capture how massive a crowd 750k makes.</p><p>In an article on Wired that discusses how hard it is to estimate
+crowd sizes, they note<a href=#fn2 class=footnote-ref id=fnref2 role=doc-noteref><sup>2</sup></a>:</p><blockquote>
 <p>Every time a ton of people gather in one place, there are all sorts
 of pronouncements made about how many folks really showed. The figures
 rarely agree; Glenn Beck’s rally on the National Mall this summer
 attracted a million people, according to Beck cohort Rep. Michelle
-Bachman. CBS News pegged it at more like 87,000.</p>
-</blockquote>
-<section class="footnotes footnotes-end-of-section" role=doc-endnotes>
+Bachman. CBS News pegged it at more like 87,000.</p></blockquote><section class="footnotes footnotes-end-of-section" role=doc-endnotes>
 <hr>
 <ol start=2>
 <li id=fn2 role=doc-endnote><p><a href=https://www.wired.com/2011/02/how-many-people-are-in-tahrir-square-heres-how-to-tell/>How
-Many People Are in Tahrir Square? Here’s How to Tell</a><a href=#fnref2 class=footnote-back role=doc-backlink>↩︎</a></p></li>
-</ol>
-</section>
-<h2 id=and-more>And More</h2>
-<p>I’m going to give up at this point. Pictures purportedly of around
+Many People Are in Tahrir Square? Here’s How to Tell</a><a href=#fnref2 class=footnote-back role=doc-backlink>↩︎</a></p></li></ol></section><h2 id=and-more>And More</h2><p>I’m going to give up at this point. Pictures purportedly of around
 one million people are mostly parts of crowds that have been estimated
-to be that big.</p>
-<nav class=suggested>
-<h2 class=suggested>More articles from this blog</h4>
-<ul>
+to be that big.</p><nav class=suggested>
+<h2 class=suggested>More articles from this blog</h4><ul>
 <li>
 <h3 class="suggested title">
-<a href=/blog/shannon-paper/>Shannon Paper</a>
-</h3>
-<p>Claude Shannon’s <em>A mathematical theory of communication</em> is
-an oft cited classic in information theory. Let’s dive in and try to
-tease apart the “why”s that are often overlooked when people build on
-top of the introduced theory. They are definitely things that I didn’t
-consider to be obvious without the benefit of reading the paper.</p>
-</li>
-<li>
+<a href=/blog/comcast-technican-problem/>The Comcast Technician Problem</a>
+</h3><p>Given a set of tasks, incentives are often aligned towards dropping a
+task rather than allowing for perpetual accretion of delays.</p></li><li>
 <h3 class="suggested title">
 <a href=/blog/syntax-highlighting/>On Highlighting Syntax vs. Semantics</a>
-</h3>
-<p>Takes a look at an alternate form of code highlighting based on core
-semantics instead of syntactic role.</p>
-</li>
-<li>
+</h3><p>Takes a look at an alternate form of code highlighting based on core
+semantics instead of syntactic role.</p></li><li>
 <h3 class="suggested title">
-<a href=/blog/visualizing-people/>Visualizing Internet Users</a>
-</h3>
-<p>What does 0.3%1 of internet users look like?
-As of this writing the global population hovers around 7.7 billion according to the World Population Clock 2.
-Screenshot from census.gov showing the world population clock. The International Telecommunications Union “estimates that at the end of 2019, 53.6 per cent of the global population, or 4.1 billion people, are using the internet.”3
-Screenshot from itu.int showing historical internet usage numbers as a percentage of the world population So a 0.</p>
-</li>
-<li>
+<a href=/blog/how-this-blog-works/>How This Blog Works</a>
+</h3><p>How I put this site together and why.</p></li><li>
+<h3 class="suggested title">
+<a href=/blog/fart-limit/>Fart Limit</a>
+</h3><p>Can a fart be fatal? Let’s see what science and OSHA have to say.</p></li><li>
 <h3 class="suggested title">
 <a href=/blog/ten-years/>Ten Years</a>
-</h3>
-<p>It’s been ten years since I started at Google. The work anniversary fell on 6th of December.
+</h3><p>It’s been ten years since I started at Google. The work anniversary fell on 6th of December.
 Ten years ago my wife and I made our way to Mountain View for my orientation; all excited for a brand new chapter in our lives. After spending a week in Mountain View / Palo Alto we both decided that California was not for us. But that’s beside the point.
-I was elated. This was pretty much everything I dreamt of as a kid growing up in Sri Lanka.</p>
-</li>
-<li>
-<h3 class="suggested title">
-<a href=/blog/inktober-wild/>Inktober - Wild</a>
-</h3>
-<p>“Wild” - Caught in the wild For Inktober 52.</p>
-</li>
-</ul>
-</nav>
-<h4>Comment</h4>
-<script src=https://utteranc.es/client.js repo=asankah/blog-comments issue-term=title label=PublicComment theme=github-light crossorigin=anonymous async></script>
-</div>
-<div class=pagination>
+I was elated. This was pretty much everything I dreamt of as a kid growing up in Sri Lanka.</p></li></ul></nav><h4>Comment</h4><script src=https://utteranc.es/client.js repo=asankah/blog-comments issue-term=title label=PublicComment theme=github-light crossorigin=anonymous async></script>
+</div><div class=pagination>
 <a href=/blog/fart-limit/ class="left arrow">&#8592;</a>
 <a href=/blog/why-strong-opinions-weekly-held/ class="right arrow">&#8594;</a>
 <a href=# class=top>Top</a>
-</div>
-</main>
-<footer>
+</div></main><footer>
 <span>Last modified on January 13, 2022 </span>
-</footer>
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-169355711-2','auto'),ga('send','pageview'))</script>
+</footer><script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-169355711-2","auto"),ga("send","pageview"))</script>
 <script async src=https://www.google-analytics.com/analytics.js></script>
-</body>
-</html>
+</body></html>
