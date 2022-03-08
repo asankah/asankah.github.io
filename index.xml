@@ -3,8 +3,8 @@ gender gaps in mental health. I look at the data that seems to have
 yielded this counter-intuitive results and find it lacking.</description><content:encoded><p>Today is the first day of<a href="https://www.nationalgeographic.com/history/article/why-the-us-celebrates-womens-history-month-every-march">Women’s
 History Month</a>.</p><p>Coincidentally there’s a paper making the rounds titled<em>“The
 gender gap in adolescent mental health: A cross-national investigation
-of 566,829 adolescents across 73 countries”</em><span class="citation" data-cites="campbell2021gender">[1]</span>, which makes some interesting
-claims:</p><ul><li>Girls have worse average mental health than boys across 4 mental
+of 566,829 adolescents across 73 countries”</em><span class="citation" data-cites="campbell2021gender">[1]</span>, which makes some these
+interesting claims:</p><ul><li>Girls have worse average mental health than boys across 4 mental
 health measures.</li><li>There is significant heterogeneity in the mental health gender gap
 size across countries.</li><li>The gap is most pronounced for psychological distress and life
 satisfaction.</li><li>More gender-equal countries have more gender gaps in mental
@@ -13,8 +13,8 @@ let’s have a closer look.</p><p>The study uses the<a href="https://www.oecd.or
 dataset</a>, introducing a couple of caveats. Namely:</p><ol type="1"><li>All survey respondents were 15 years old; thus, the dataset doesn’t
 consider higher education and employment effects.</li><li>The data is from 2018; thus excludes the effects of the pandemic. It
 would be interesting to see how the responses change now that people are
-coming out of a lengthy lock down.</li><li>Gender was binary. There was no non-binary option.</li></ol><p>The study<span class="citation" data-cites="campbell2021gender">[1]</span> derives five measures based
-on the PISA 2018 dataset as follows:</p><ol type="1"><li><p><em>“Life satisfaction”</em> measures responses to the question<em>“on a scale of 0-10, overall, how satisfied are you with your life
+coming out of a lengthy lock down.</li><li>Gender was binary. There was no non-binary option.</li></ol><p>The study<span class="citation" data-cites="campbell2021gender">[1]</span> derives five measures of
+mental health based on the PISA 2018 dataset as follows:</p><ol type="1"><li><p><em>“Life satisfaction”</em> measures responses to the question<em>“on a scale of 0-10, overall, how satisfied are you with your life
 as a whole these days?”</em></p></li><li><p><em>“Psychological distress”</em> measures responses to the
 question on how often they felt<em>“sad”</em>,<em>“miserable”</em>,<em>“scared”</em>, and<em>“afraid”</em> on a scale of<em>“never”</em>,<em>“rarely”</em>,<em>“sometimes”</em>, and<em>“always”</em>. Each
 response yields points ranging from 1 through 4, respectively. Summing
@@ -39,13 +39,14 @@ Rights Watch’s report on the UAE</a> indicates that the UAE is far from
 having any semblance of gender equality. Approximately 80% of the
 population consists of migrant workers<a href="https://www.aljazeera.com/news/2022/2/21/thousands-of-children-in-uae-has-no-access-to-schooling-report">who’s
 children don’t have access to formal education</a>. It’s unlikely that
-these children of migrants participated in the study.</p><p>The curve fitting for the resulting graphs is what’s telling the
-stories that are summarized at the start of this post. The indices are
-arranged so that moving towards the right and moving upwards indicate
-better conditions. Hence it’s apparent from the curves for GII<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> that male life satisfaction is
-pretty consistent and not affected all that much by GII. Meanwhile,
-female life satisfaction trends<em>downward</em>. Hence the conclusion
-that more gender equality implies less happiness.</p><p>GSNI (Gender Social Norms Index) is also negatively correlated with
+these children of migrants participated in the study.</p><p>The curve fitting for the resulting graphs is what tells the stories
+that are summarized at the start of this post. The axes are arranged so
+that moving towards the right and moving upwards indicate better
+conditions. Hence it’s apparent from the curves that male life
+satisfaction is pretty consistent and not affected all that much by
+GII<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Meanwhile, female life satisfaction
+trends<em>downward</em> as GII improves; hence the conclusion that more
+gender equality implies less happiness.</p><p>GSNI (Gender Social Norms Index) is also negatively correlated with
 quality-of-life measures (where we put “good” on the high end and “bad”
 on the low end).</p><figure><img src="./life-satisfaction-vs-other-indicators.png" alt="Life satisfaction plotted against per-capita GDP, Gini index, GII, GSNI, GGGI. The curves don’t quite fit very well."/><figcaption aria-hidden="true">Life satisfaction plotted against
 per-capita GDP, Gini index, GII, GSNI, GGGI. The curves don’t quite fit
@@ -868,7 +869,7 @@ won’t have access to language smarts like<code>clangd</code> which
 require access to all the source files and some build tooling.</p><p><a href="https://code.visualstudio.com/docs/remote/remote-overview">VSCode
 Remote Development</a> was a nearly perfect answer with the exception
 that VSCodeVim didn’t quite have all the functionality I needed.
-VSCodeNeovim addresses that last piece of the puzzle.</p><p>VSCode + Remote SSH + VSCodeNeovim + Neovim gives me:</p><p><img src="0f320db109454dcf4af9ef4a1dbb40812d61d0a5.svg"/></p><ul><li>On the remote machine:<ul><li>Source files.</li><li>Build tooling.</li><li><code>clangd</code> process invoked via<code>vscode-remote</code>.</li></ul></li><li>On the local machine:<ul><li>VSCode.</li><li>VSCodeNeovim.<ul><li>Neovim instance embedded by VSCodeNeovim.<ul><li>Neovim plug-ins and normal mode keybindings.</li></ul></li></ul></li></ul></li></ul><p>Since the embedded Neovim instance is local the editors are super
+VSCodeNeovim addresses that last piece of the puzzle.</p><p>VSCode + Remote SSH + VSCodeNeovim + Neovim gives me:</p><p><img src="4e46e31363fbe39799ba35a987d7a4957644d681.svg"/></p><ul><li>On the remote machine:<ul><li>Source files.</li><li>Build tooling.</li><li><code>clangd</code> process invoked via<code>vscode-remote</code>.</li></ul></li><li>On the local machine:<ul><li>VSCode.</li><li>VSCodeNeovim.<ul><li>Neovim instance embedded by VSCodeNeovim.<ul><li>Neovim plug-ins and normal mode keybindings.</li></ul></li></ul></li></ul></li></ul><p>Since the embedded Neovim instance is local the editors are super
 responsive. Completions via<code>clangd</code> is still laggy as one
 might expect. But that’s something I’m willing to live with.</p><h2 id="proportional-fonts-with-neovim">Proportional Fonts With
 Neovim</h2><p>Okay, so why would anyone actually want this? Turns out<a href="https://www.google.com/search?q=proportional+fonts+for+coding">I’m
@@ -904,23 +905,22 @@ awesomeness.</li></ol></content:encoded></item><item><title>Why 'Strong Opinions
 In his essay – which isn’t very long if you would like to read the whole thing yourself – he lays out the concept as follows:
 I have found that the fastest way to an effective forecast is often through a sequence of lousy forecasts.</description><content:encoded><h2 id="origins-of-the-phrase">Origins of the phrase</h2><p>The title of this blog is<strong>Strong Opinions, Weakly
 Held</strong>. The same concept shows up elsewhere are<em>Strong
-Opinions Loosely Held</em>. An eponymous essay by Paul Saffo in<span class="citation" data-cites="Saffo"><a href="#ref-Saffo" role="doc-biblioref">[1]</a></span> introduced the world to this
-concept.</p><p>In his essay – which isn’t very long if you would like to<a href="https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/">read
+Opinions Loosely Held</em>. An eponymous essay by Paul Saffo in<span class="citation" data-cites="Saffo">[1]</span> introduced the world to
+this concept.</p><p>In his essay – which isn’t very long if you would like to<a href="https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/">read
 the whole thing yourself</a> – he lays out the concept as follows:</p><blockquote><p>I have found that the fastest way to an effective forecast is often
 through a sequence of lousy forecasts. Instead of withholding judgment
 until an exhaustive search for data is complete, I will force myself to
 make a tentative forecast based on the information available, and then
 systematically tear it apart, using the insights gained to guide my
-search for further indicators and information.</p></blockquote><h2 id="criticism">Criticism</h2><p>Cedric Chin’s critique<span class="citation" data-cites="Cedric"><a href="#ref-Cedric" role="doc-biblioref">[2]</a></span> comes down to two
-points that the author summarizes as follows:</p><blockquote><p>In my experience, ‘strong opinions, weakly held’ is difficult to put
+search for further indicators and information.</p></blockquote><h2 id="criticism">Criticism</h2><p>Cedric Chin’s critique<span class="citation" data-cites="Cedric">[2]</span> comes down to two points that the author
+summarizes as follows:</p><blockquote><p>In my experience, ‘strong opinions, weakly held’ is difficult to put
 into practice. Most people who try will either:</p><ol type="1"><li>Use it as downside-protection to justify their strongly-held bad
 opinions, or</li><li>Struggle to shift from one strong opinion to another.</li></ol><p>The reason it is difficult is because it works against the grain of
 the human mind.</p><p>So don’t bother. The next time you find yourself making a judgment,
 don’t invoke ‘strong opinions, weakly held’. Instead, ask: “how much are
 you willing to bet on that?” Doing so will jolt people into the types of
-thinking you want to encourage.</p></blockquote><p>Michael Natkin on<span class="citation" data-cites="Michael"><a href="#ref-Michael" role="doc-biblioref">[3]</a></span> points out the
-fallacy of assuming that strong opinions will be reliably
-challenged:</p><blockquote><p>The idea of strong opinions, loosely held is that you can make
+thinking you want to encourage.</p></blockquote><p>Michael Natkin on<span class="citation" data-cites="Michael">[3]</span> points out the fallacy of assuming that
+strong opinions will be reliably challenged:</p><blockquote><p>The idea of strong opinions, loosely held is that you can make
 bombastic statements, and everyone should implicitly assume that you’ll
 happily change your mind in a heartbeat if new data suggests you are
 wrong. It is supposed to lead to a collegial, competitive environment in
