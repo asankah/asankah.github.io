@@ -1,55 +1,11 @@
-<!doctype html><html lang=en-us>
-<head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<title>Easier CLI for ad-hoc Ansible tasks and playbooks &#183; Strong Opinions, Weekly Held</title><link rel=stylesheet href=/css/style.css>
-<link rel=stylesheet href=/css/fonts.min.css>
-<link rel=stylesheet href=/css/formatting.min.css>
-<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
-<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
-<link rel=manifest href=/site.webmanifest>
-<link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5>
-<meta name=msapplication-TileColor content="#da532c">
-<meta name=theme-color content="#ffffff">
-<link href rel=alternate type=application/rss+xml title="Strong Opinions, Weekly Held">
-<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css integrity=sha384-zTROYFVGOfTw7JV7KUu8udsvW2fx4lWOsCEDqhBreBwlHI4ioVRtmIvEThzJHGET crossorigin=anonymous>
-<script src=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js integrity=sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb crossorigin=anonymous></script><script src=/js/render-katex.js></script>
-</head><body>
-<nav class=nav>
-<div class=nav-container>
-<a href=/>
-<h2 class=nav-title>Strong Opinions, Weekly Held</h2></a>
-<ul>
-<li>
-<a href=/about/me>
-<span>About Me</span>
-</a>
-</li><li>
-<a href=/tags>
-<span>Tags</span>
-</a>
-</li></ul></div></nav><main>
-<div class=post>
-<h1 class=post-title>Easier CLI for ad-hoc Ansible tasks and playbooks</h1><div class=post-info>
-<span>Written by</span>
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Easier CLI for ad-hoc Ansible tasks and playbooks &#183; Strong Opinions, Weekly Held</title><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/fonts.min.css><link rel=stylesheet href=/css/formatting.min.css><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><meta name=msapplication-TileColor content="#da532c"><meta name=theme-color content="#ffffff"><link href rel=alternate type=application/rss+xml title="Strong Opinions, Weekly Held"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css integrity=sha384-zTROYFVGOfTw7JV7KUu8udsvW2fx4lWOsCEDqhBreBwlHI4ioVRtmIvEThzJHGET crossorigin=anonymous><script src=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js integrity=sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb crossorigin=anonymous></script><script src=/js/render-katex.js></script></head><body><nav class=nav><div class=nav-container><a href=/><h2 class=nav-title>Strong Opinions, Weekly Held</h2></a><ul><li><a href=/about/me><span>About Me</span></a></li><li><a href=/tags><span>Tags</span></a></li></ul></div></nav><main><div class=post><h1 class=post-title>Easier CLI for ad-hoc Ansible tasks and playbooks</h1><div class=post-info><span>Written by</span>
 Asanka Herath
 <span>on&nbsp;</span><time datetime="2020-06-01 00:00:00 +0000 UTC">June 1, 2020</time>
 |
-<a href=/tags/tools>#Tools</a>
-</div><div class="social share">
-<a href="https://twitter.com/intent/tweet?text=Easier+CLI+for+ad-hoc+Ansible+tasks+and+playbooks&url=https%3A%2F%2Fxn--izc.com%2Fblog%2Fansible-cli-sugar%2F&via=asankah" aria-label="Share on Twitter" target=_blank rel=noopener>
-<img src=/images/twitter.svg alt="Share on Twitter">
-</a>
-<a href="mailto:?body=Via+https%3A%2F%2Ftwitter.com%2Fasankah%0A%0AEncode+the+host+and+group+names+into+the+name+of+a+wrapper+script+for%0Aquick+ad-hoc+invocation+of+Ansible+tasks+and+playbooks.%0A%0ARead+more+at+https%3A%2F%2Fxn--izc.com%2Fblog%2Fansible-cli-sugar%2F%0A&subject=Easier+CLI+for+ad-hoc+Ansible+tasks+and+playbooks+-+Strong+Opinions%2C+Weekly+Held" aria-label="Share via Email" target=_blank rel=noopener>
-<img src=/images/mail.svg alt="Share via Email">
-</a>
-<a href=https://xn--izc.com/blog/ansible-cli-sugar/ aria-label="Permanent link to post">
-<img src=/images/link-2.svg alt="Permanent link to post">
-</a>
-</div><p>This article is about using <a href=https://ansible.com>Ansible</a>
-on the command-line.</p><h2 id=problem>Problem:</h2><p>You …</p><ul>
-<li><p>… want a convenient way to do ad-hoc tasks on a bunch of
+<a href=/tags/tools>#Tools</a></div><div class="social share"><a href="https://twitter.com/intent/tweet?text=Easier+CLI+for+ad-hoc+Ansible+tasks+and+playbooks&url=https%3A%2F%2Fxn--izc.com%2Fblog%2Fansible-cli-sugar%2F&via=asankah" aria-label="Share on Twitter" target=_blank rel=noopener><img src=/images/twitter.svg alt="Share on Twitter"></a>
+<a href="mailto:?body=Via+https%3A%2F%2Ftwitter.com%2Fasankah%0A%0AEncode+the+host+and+group+names+into+the+name+of+a+wrapper+script+for%0Aquick+ad-hoc+invocation+of+Ansible+tasks+and+playbooks.%0A%0ARead+more+at+https%3A%2F%2Fxn--izc.com%2Fblog%2Fansible-cli-sugar%2F%0A&subject=Easier+CLI+for+ad-hoc+Ansible+tasks+and+playbooks+-+Strong+Opinions%2C+Weekly+Held" aria-label="Share via Email" target=_blank rel=noopener><img src=/images/mail.svg alt="Share via Email"></a>
+<a href=https://xn--izc.com/blog/ansible-cli-sugar/ aria-label="Permanent link to post"><img src=/images/link-2.svg alt="Permanent link to post"></a></div><p>This article is about using <a href=https://ansible.com>Ansible</a>
+on the command-line.</p><h2 id=problem>Problem:</h2><p>You …</p><ul><li><p>… want a convenient way to do ad-hoc tasks on a bunch of
 machines.</p></li><li><p>… already have a few playbooks and machine groups defined in your
 inventory.</p></li><li><p>… don’t want to invest too much into Ansible because you have
 other things to do and Ansible is just a tool to deal with one aspect of
@@ -61,8 +17,7 @@ encodes Ansible group names into the filename.</p><p>Then you can go from this:<
 <span id=cb2-2><a href=#cb2-2 aria-hidden=true tabindex=-1></a><span class=ex>$</span> webservers service <span class=st>&quot;name=https state=started&quot;</span></span></code></pre></div><p>Or from this:</p><div class=sourceCode id=cb3><pre class="sourceCode sh"><code class="sourceCode bash"><span id=cb3-1><a href=#cb3-1 aria-hidden=true tabindex=-1></a><span class=ex>$</span> ansible-playbook <span class=at>-l</span> atlanta go-to-the-moon</span>
 <span id=cb3-2><a href=#cb3-2 aria-hidden=true tabindex=-1></a><span class=ex>$</span> ansible-playbook <span class=at>-l</span> webservers do-the-other-things</span></code></pre></div><p>To this:</p><div class=sourceCode id=cb4><pre class="sourceCode sh"><code class="sourceCode bash"><span id=cb4-1><a href=#cb4-1 aria-hidden=true tabindex=-1></a><span class=ex>$</span> atlanta go-to-the-moon</span>
 <span id=cb4-2><a href=#cb4-2 aria-hidden=true tabindex=-1></a><span class=ex>$</span> webservers do-the-other-things</span></code></pre></div><h2 id=setting-up>Setting Up</h2><p>These are just examples. Please don’t spend time bikeshedding names
-because you can use whichever names you like.</p><ol type=1>
-<li><p>Download the contents of <code>ansible-by-proxy</code> from <a href=https://github.com/asankah/ansible-cli-sugar/blob/master/ansible-by-proxy>here</a>.
+because you can use whichever names you like.</p><ol type=1><li><p>Download the contents of <code>ansible-by-proxy</code> from <a href=https://github.com/asankah/ansible-cli-sugar/blob/master/ansible-by-proxy>here</a>.
 It’s a starter script that includes a bunch of sensible settings
 expressed via environment variables. Remove or change these to match
 your needs.</p><p>Note that the script expects to find a sub-directory called
@@ -70,32 +25,13 @@ your needs.</p><p>Note that the script expects to find a sub-directory called
 the playbooks and the inventory file.</p></li><li><p>Store this file somewhere on the system <code>PATH</code>.</p><p>Don’t forget to mark the file as executable if it isn’t already.</p><div class=sourceCode id=cb5><pre class="sourceCode sh"><code class="sourceCode bash"><span id=cb5-1><a href=#cb5-1 aria-hidden=true tabindex=-1></a><span class=ex>$</span> chmod +x ansible-by-proxy</span></code></pre></div></li><li><p>Create symlinks to the file that have the same name as hostnames
 or groups as described in the includes:</p><div class=sourceCode id=cb6><pre class="sourceCode sh"><code class="sourceCode bash"><span id=cb6-1><a href=#cb6-1 aria-hidden=true tabindex=-1></a><span class=ex>$</span> ln <span class=at>-s</span> ansible-by-proxy atlanta</span>
 <span id=cb6-2><a href=#cb6-2 aria-hidden=true tabindex=-1></a><span class=ex>$</span> ln <span class=at>-s</span> ansible-by-proxy webservers</span></code></pre></div><p>and so on.</p></li></ol><p>That’s it. Now you can invoke playbooks and tasks just by using the
-name of host or group.</p><nav class=suggested>
-<h2 class=suggested>More articles from this blog</h4><ul>
-<li>
-<h3 class="suggested title">
-<a href=/blog/remarkable-first-impressions/>Note-taking on a reMarkable 2</a>
-</h3><p>Sentiments after using the reMarkable 2 tablet for a month.</p></li><li>
-<h3 class="suggested title">
-<a href=/blog/grab-diagram-workflow-re2/>Quickly grab a snapshot of your reMarkable tablet</a>
-</h3><p>How to bind a hotkey to grab a snapshot of your reMarkable display
-and copy it to the clipboard on a Mac.</p></li><li>
-<h3 class="suggested title">
-<a href=/blog/ten-years/>Ten Years</a>
-</h3><p>It’s been ten years since I started at Google. The work anniversary fell on 6th of December.
-Ten years ago my wife and I made our way to Mountain View for my orientation; all excited for a brand new chapter in our lives. After spending a week in Mountain View / Palo Alto we both decided that California was not for us. But that’s beside the point.
-I was elated. This was pretty much everything I dreamt of as a kid growing up in Sri Lanka.</p></li><li>
-<h3 class="suggested title">
-<a href=/blog/use-drop-not-edit/>Vim: Use Drop Not Edit, SBuffer Not Buffer</a>
-</h3><p>I’m going to assume you are a Vim user.
-Say you have a several windows open in Vim and you want to edit another file. Using :edit works if you want to open the file in the current window unconditionally.
-But that’s often not what you want. If you have the same file open in another window, then the most efficient and least disruptive thing to do is to switch to that window.</p></li></ul></nav><h4>Comment</h4><script src=https://utteranc.es/client.js repo=asankah/blog-comments issue-term=title label=PublicComment theme=github-light crossorigin=anonymous async></script>
-</div><div class=pagination>
-<a href=/blog/identity-domains/ class="left arrow">&#8592;</a>
+name of host or group.</p><nav class=suggested><h2 class=suggested>More articles from this blog</h4><ul><li><h3 class="suggested title"><a href=/blog/notes-on-fact-checking/>Notes from Crash Course's Videos on Fact Checking Information You See On The Internet</a></h3><p>Hank Green’s Crash Course YouTube channel has an excellent series
+about navigating digital information. It’s an excellent guide to how
+internet users could intelligently consume information they see on the
+internet. These are my (incomplete) notes from the series.</p></li><li><h3 class="suggested title"><a href=/blog/visualizing-people-2/>Visualizing A Million People</a></h3><p>If your feature pisses off a million people what does this angry mob
+look like? Spoiler: We only get to 750,000.</p></li><li><h3 class="suggested title"><a href=/blog/fart-limit/>Fart Limit</a></h3><p>Can a fart be fatal? Let’s see what science and OSHA have to say.</p></li><li><h3 class="suggested title"><a href=/blog/poisson-distribution/>Deriving the Poisson Distribution</a></h3><p>Where does the Poisson Distribution come from?
+A little bit of research1 tells us that the distribution was originally introduced by Abraham de Moivre in 1710 in an article called “On the Measurement of Chance, or, on the Probability of Events in Games Depending Upon Fortuitous Chance” 2 (not the original title).
+A few steps that will get us there is laid out below.
+Let’s start with a simple “rate” problem.</p></li><li><h3 class="suggested title"><a href=/blog/inktober-wild/>Inktober - Wild</a></h3><p>“Wild” - Caught in the wild For Inktober 52.</p></li></ul></nav><h4>Comment</h4><script src=https://utteranc.es/client.js repo=asankah/blog-comments issue-term=title label=PublicComment theme=github-light crossorigin=anonymous async></script></div><div class=pagination><a href=/blog/identity-domains/ class="left arrow">&#8592;</a>
 <a href=/blog/notes-on-fact-checking/ class="right arrow">&#8594;</a>
-<a href=# class=top>Top</a>
-</div></main><footer>
-<span>Last modified on January 13, 2022 </span>
-</footer><script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-169355711-2","auto"),ga("send","pageview"))</script>
-<script async src=https://www.google-analytics.com/analytics.js></script>
-</body></html>
+<a href=# class=top>Top</a></div></main><footer><span>Last modified on January 13, 2022</span></footer><script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-169355711-2','auto'),ga('send','pageview'))</script><script async src=https://www.google-analytics.com/analytics.js></script></body></html>

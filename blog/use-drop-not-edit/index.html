@@ -1,54 +1,11 @@
-<!doctype html><html lang=en-us>
-<head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<title>Vim: Use Drop Not Edit, SBuffer Not Buffer &#183; Strong Opinions, Weekly Held</title><link rel=stylesheet href=/css/style.css>
-<link rel=stylesheet href=/css/fonts.min.css>
-<link rel=stylesheet href=/css/formatting.min.css>
-<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
-<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
-<link rel=manifest href=/site.webmanifest>
-<link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5>
-<meta name=msapplication-TileColor content="#da532c">
-<meta name=theme-color content="#ffffff">
-<link href rel=alternate type=application/rss+xml title="Strong Opinions, Weekly Held">
-<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css integrity=sha384-zTROYFVGOfTw7JV7KUu8udsvW2fx4lWOsCEDqhBreBwlHI4ioVRtmIvEThzJHGET crossorigin=anonymous>
-<script src=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js integrity=sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb crossorigin=anonymous></script><script src=/js/render-katex.js></script>
-</head><body>
-<nav class=nav>
-<div class=nav-container>
-<a href=/>
-<h2 class=nav-title>Strong Opinions, Weekly Held</h2></a>
-<ul>
-<li>
-<a href=/about/me>
-<span>About Me</span>
-</a>
-</li><li>
-<a href=/tags>
-<span>Tags</span>
-</a>
-</li></ul></div></nav><main>
-<div class=post>
-<h1 class=post-title>Vim: Use Drop Not Edit, SBuffer Not Buffer</h1><div class=post-info>
-<span>Written by</span>
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Vim: Use Drop Not Edit, SBuffer Not Buffer &#183; Strong Opinions, Weekly Held</title><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/fonts.min.css><link rel=stylesheet href=/css/formatting.min.css><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><meta name=msapplication-TileColor content="#da532c"><meta name=theme-color content="#ffffff"><link href rel=alternate type=application/rss+xml title="Strong Opinions, Weekly Held"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css integrity=sha384-zTROYFVGOfTw7JV7KUu8udsvW2fx4lWOsCEDqhBreBwlHI4ioVRtmIvEThzJHGET crossorigin=anonymous><script src=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js integrity=sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb crossorigin=anonymous></script><script src=/js/render-katex.js></script></head><body><nav class=nav><div class=nav-container><a href=/><h2 class=nav-title>Strong Opinions, Weekly Held</h2></a><ul><li><a href=/about/me><span>About Me</span></a></li><li><a href=/tags><span>Tags</span></a></li></ul></div></nav><main><div class=post><h1 class=post-title>Vim: Use Drop Not Edit, SBuffer Not Buffer</h1><div class=post-info><span>Written by</span>
 Asanka Herath
 <span>on&nbsp;</span><time datetime="2020-07-07 12:02:20 -0400 EDT">July 7, 2020</time>
 |
 <a href=/tags/tools>#Tools</a>
-<a href=/tags/vim>#Vim</a>
-</div><div class="social share">
-<a href="https://twitter.com/intent/tweet?text=Vim%3A+Use+Drop+Not+Edit%2C+SBuffer+Not+Buffer&url=https%3A%2F%2Fxn--izc.com%2Fblog%2Fuse-drop-not-edit%2F&via=asankah" aria-label="Share on Twitter" target=_blank rel=noopener>
-<img src=/images/twitter.svg alt="Share on Twitter">
-</a>
-<a href="mailto:?body=Via+https%3A%2F%2Ftwitter.com%2Fasankah%0A%0AI%E2%80%99m+going+to+assume+you+are+a+Vim+user.%0ASay+you+have+a+several+windows+open+in+Vim+and+you+want+to+edit+another+file.+Using+%3Aedit+works+if+you+want+to+open+the+file+in+the+current+window+unconditionally.%0ABut+that%E2%80%99s+often+not+what+you+want.+If+you+have+the+same+file+open+in+another+window%2C+then+the+most+efficient+and+least+disruptive+thing+to+do+is+to+switch+to+that+window.%0A%0ARead+more+at+https%3A%2F%2Fxn--izc.com%2Fblog%2Fuse-drop-not-edit%2F%0A&subject=Vim%3A+Use+Drop+Not+Edit%2C+SBuffer+Not+Buffer+-+Strong+Opinions%2C+Weekly+Held" aria-label="Share via Email" target=_blank rel=noopener>
-<img src=/images/mail.svg alt="Share via Email">
-</a>
-<a href=https://xn--izc.com/blog/use-drop-not-edit/ aria-label="Permanent link to post">
-<img src=/images/link-2.svg alt="Permanent link to post">
-</a>
-</div><p>I’m going to assume you are a Vim user.</p><p>Say you have a several windows open in Vim and you want to edit
+<a href=/tags/vim>#Vim</a></div><div class="social share"><a href="https://twitter.com/intent/tweet?text=Vim%3A+Use+Drop+Not+Edit%2C+SBuffer+Not+Buffer&url=https%3A%2F%2Fxn--izc.com%2Fblog%2Fuse-drop-not-edit%2F&via=asankah" aria-label="Share on Twitter" target=_blank rel=noopener><img src=/images/twitter.svg alt="Share on Twitter"></a>
+<a href="mailto:?body=Via+https%3A%2F%2Ftwitter.com%2Fasankah%0A%0AI%E2%80%99m+going+to+assume+you+are+a+Vim+user.%0ASay+you+have+a+several+windows+open+in+Vim+and+you+want+to+edit+another+file.+Using+%3Aedit+works+if+you+want+to+open+the+file+in+the+current+window+unconditionally.%0ABut+that%E2%80%99s+often+not+what+you+want.+If+you+have+the+same+file+open+in+another+window%2C+then+the+most+efficient+and+least+disruptive+thing+to+do+is+to+switch+to+that+window.%0A%0ARead+more+at+https%3A%2F%2Fxn--izc.com%2Fblog%2Fuse-drop-not-edit%2F%0A&subject=Vim%3A+Use+Drop+Not+Edit%2C+SBuffer+Not+Buffer+-+Strong+Opinions%2C+Weekly+Held" aria-label="Share via Email" target=_blank rel=noopener><img src=/images/mail.svg alt="Share via Email"></a>
+<a href=https://xn--izc.com/blog/use-drop-not-edit/ aria-label="Permanent link to post"><img src=/images/link-2.svg alt="Permanent link to post"></a></div><p>I’m going to assume you are a Vim user.</p><p>Say you have a several windows open in Vim and you want to edit
 another file. Using <code>:edit</code> works if you want to open the
 file in the current window unconditionally.</p><p><em>But that’s often not what you want.</em> If you have the same
 file open in another window, then the most efficient and least
@@ -56,8 +13,7 @@ disruptive thing to do is to switch to that window.</p><h2 id=drop>drop</h2><p>T
 with the <code>drop</code> command, have a look at the help page in your
 favorite editor (<code>:help drop</code>) or <a href=http://vimdoc.sourceforge.net/htmldoc/windows.html#:drop>here on
 the web</a>. But the gist of it is that for most people<a href=#fn1 class=footnote-ref id=fnref1 role=doc-noteref><sup>1</sup></a>
-<code>:drop {file}</code> will:</p><ul>
-<li>Switch to the window in which <code>{file}</code> is already
+<code>:drop {file}</code> will:</p><ul><li>Switch to the window in which <code>{file}</code> is already
 open.</li><li>Switch the buffer in the current window to <code>{file}</code>
 otherwise.</li></ul><p>The <code>:drop</code> command is intended to be used as the “open
 buffer” command for automated tooling like source browsers. For example,
@@ -68,12 +24,9 @@ See <code>:help coc-configuration</code> for details on how to set this,
 but basically it’s as simple as opening up the configuration using
 <code>:CocConfig</code> and then adding a
 <code>"coc.preferences.jumpCommand": "drop",</code> mapping to the
-configuration JSON file.</p><section class="footnotes footnotes-end-of-section" role=doc-endnotes>
-<hr>
-<ol>
-<li id=fn1 role=doc-endnote><p>Assuming you have <code>set
-hidden</code> that is. See <code>:help drop</code> for more details on
-what happens when the current buffer cannot be unloaded.<a href=#fnref1 class=footnote-back role=doc-backlink>↩︎</a></p></li></ol></section><h2 id=switchbuf-or-swb>switchbuf or swb</h2><p>Or perhaps configuring each plugin is too much work. Enter
+configuration JSON file.</p><section class="footnotes footnotes-end-of-section" role=doc-endnotes><hr><ol><li id=fn1 role=doc-endnote><p>Assuming you have
+<code>set hidden</code> that is. See <code>:help drop</code> for more
+details on what happens when the current buffer cannot be unloaded.<a href=#fnref1 class=footnote-back role=doc-backlink>↩︎</a></p></li></ol></section><h2 id=switchbuf-or-swb>switchbuf or swb</h2><p>Or perhaps configuring each plugin is too much work. Enter
 <code>switchbuf</code>. This is a global setting in Vim that controls
 how Vim switches between buffers.</p><p>Setting <code>set switchbuf=useopen</code> has the same effect when
 invoking <code>buffer</code>. Note that using <code>sbuffer</code>,
@@ -82,39 +35,13 @@ if this is the case. I.e. they will use an existing window if one
 already has the buffer open.</p><p>Setting <code>set switchbuf=usetab</code> is similar to the effect of
 <code>useopen</code> except that it will look through windows in other
 tabs.</p><p>See <code>:help switchbuf</code> or <a href="http://vimdoc.sourceforge.net/htmldoc/options.html#'switchbuf'">here
-on the web</a> for full details.</p><nav class=suggested>
-<h2 class=suggested>More articles from this blog</h4><ul>
-<li>
-<h3 class="suggested title">
-<a href=/blog/shannon-paper/>Shannon Paper</a>
-</h3><p>Claude Shannon’s <em>A mathematical theory of communication</em> is
-an oft cited classic in information theory. Let’s dive in and try to
-tease apart the “why”s that are often overlooked when people build on
-top of the introduced theory. They are definitely things that I didn’t
-consider to be obvious without the benefit of reading the paper.</p></li><li>
-<h3 class="suggested title">
-<a href=/blog/poisson-distribution/>Deriving the Poisson Distribution</a>
-</h3><p>Where does the Poisson Distribution come from?
-A little bit of research1 tells us that the distribution was originally introduced by Abraham de Moivre in 1710 in an article called “On the Measurement of Chance, or, on the Probability of Events in Games Depending Upon Fortuitous Chance” 2 (not the original title).
-A few steps that will get us there is laid out below.
-Let’s start with a simple “rate” problem.</p></li><li>
-<h3 class="suggested title">
-<a href=/blog/inktober-decay/>Inktober - Decay</a>
-</h3><p>“Decay” - I was kind of going for tooth-decay caused by tiny little gremlins. For Inktober 52.</p></li><li>
-<h3 class="suggested title">
-<a href=/blog/grab-diagram-workflow-re2/>Quickly grab a snapshot of your reMarkable tablet</a>
-</h3><p>How to bind a hotkey to grab a snapshot of your reMarkable display
-and copy it to the clipboard on a Mac.</p></li><li>
-<h3 class="suggested title">
-<a href=/blog/things-you-can-do-with-nvim-and-vscode/>Things You Can Do With Neovim and Vscode That You Can't Do With Neovim Alone</a>
-</h3><p>This is the third time I’ve tried in earnest to switch to VSCode from Vim (or Neovim in my case) for reasons not all of which are relevant to this post. But I love Vim style modal editing and I’ve grown accustomed to some features that aren’t present or not well emulated in VSCodeVim.
-Enter VSCode Neovim. I was intrigued by their claim to integrate Neovim instead of trying to emulate Vim.</p></li></ul></nav><h4>Comment</h4><script src=https://utteranc.es/client.js repo=asankah/blog-comments issue-term=title label=PublicComment theme=github-light crossorigin=anonymous async></script>
-</div><div class=pagination>
-<a href=/blog/notes-on-fact-checking/ class="left arrow">&#8592;</a>
+on the web</a> for full details.</p><nav class=suggested><h2 class=suggested>More articles from this blog</h4><ul><li><h3 class="suggested title"><a href=/blog/inktober-decay/>Inktober - Decay</a></h3><p>“Decay” - I was kind of going for tooth-decay caused by tiny little gremlins. For Inktober 52.</p></li><li><h3 class="suggested title"><a href=/blog/on-wontfixing-bugs/>On WontFixing Bugs</a></h3><p><p>Large projects accumulate a large number of issue reports over time.
+This is normal. Typically for a “successful” project the rate of new
+issues being reported will exceed the rate of issues being fixed. Hence
+the growth.</p><p>But what are they to do about this ever-growing pile of bugs?</p></p></li><li><h3 class="suggested title"><a href=/blog/darpa-heilmeier-catechism/>DARPA's Heilmeier Catechism</a></h3><p>A set of questions help you think through and evaluate proposed
+projects and research programs.</p></li><li><h3 class="suggested title"><a href=/blog/gender-gap-in-adolescent-mental-health/>On Gender Gap in Adolescent Mental Health</a></h3><p>A recent study found that more gender-equal countries have larger
+gender gaps in mental health. I look at the data that seems to have
+yielded this counter-intuitive results and find it lacking.</p></li><li><h3 class="suggested title"><a href=/blog/visualizing-people-2/>Visualizing A Million People</a></h3><p>If your feature pisses off a million people what does this angry mob
+look like? Spoiler: We only get to 750,000.</p></li></ul></nav><h4>Comment</h4><script src=https://utteranc.es/client.js repo=asankah/blog-comments issue-term=title label=PublicComment theme=github-light crossorigin=anonymous async></script></div><div class=pagination><a href=/blog/notes-on-fact-checking/ class="left arrow">&#8592;</a>
 <a href=/blog/comcast-technican-problem/ class="right arrow">&#8594;</a>
-<a href=# class=top>Top</a>
-</div></main><footer>
-<span>Last modified on January 13, 2022 </span>
-</footer><script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-169355711-2","auto"),ga("send","pageview"))</script>
-<script async src=https://www.google-analytics.com/analytics.js></script>
-</body></html>
+<a href=# class=top>Top</a></div></main><footer><span>Last modified on January 13, 2022</span></footer><script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-169355711-2','auto'),ga('send','pageview'))</script><script async src=https://www.google-analytics.com/analytics.js></script></body></html>

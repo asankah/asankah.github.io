@@ -1,61 +1,15 @@
-<!doctype html><html lang=en-us>
-<head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<title>Ephemeral Fingerprinting On The Web &#183; Strong Opinions, Weekly Held</title><link rel=stylesheet href=/css/style.css>
-<link rel=stylesheet href=/css/fonts.min.css>
-<link rel=stylesheet href=/css/formatting.min.css>
-<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
-<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
-<link rel=manifest href=/site.webmanifest>
-<link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5>
-<meta name=msapplication-TileColor content="#da532c">
-<meta name=theme-color content="#ffffff">
-<link href rel=alternate type=application/rss+xml title="Strong Opinions, Weekly Held">
-<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css integrity=sha384-zTROYFVGOfTw7JV7KUu8udsvW2fx4lWOsCEDqhBreBwlHI4ioVRtmIvEThzJHGET crossorigin=anonymous>
-<script src=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js integrity=sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb crossorigin=anonymous></script><script src=/js/render-katex.js></script>
-</head><body>
-<nav class=nav>
-<div class=nav-container>
-<a href=/>
-<h2 class=nav-title>Strong Opinions, Weekly Held</h2></a>
-<ul>
-<li>
-<a href=/about/me>
-<span>About Me</span>
-</a>
-</li><li>
-<a href=/tags>
-<span>Tags</span>
-</a>
-</li></ul></div></nav><main>
-<div class=post>
-<h1 class=post-title>Ephemeral Fingerprinting On The Web</h1><div class=post-info>
-<span>Written by</span>
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Ephemeral Fingerprinting On The Web &#183; Strong Opinions, Weekly Held</title><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/fonts.min.css><link rel=stylesheet href=/css/formatting.min.css><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><meta name=msapplication-TileColor content="#da532c"><meta name=theme-color content="#ffffff"><link href rel=alternate type=application/rss+xml title="Strong Opinions, Weekly Held"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css integrity=sha384-zTROYFVGOfTw7JV7KUu8udsvW2fx4lWOsCEDqhBreBwlHI4ioVRtmIvEThzJHGET crossorigin=anonymous><script src=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js integrity=sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb crossorigin=anonymous></script><script src=/js/render-katex.js></script></head><body><nav class=nav><div class=nav-container><a href=/><h2 class=nav-title>Strong Opinions, Weekly Held</h2></a><ul><li><a href=/about/me><span>About Me</span></a></li><li><a href=/tags><span>Tags</span></a></li></ul></div></nav><main><div class=post><h1 class=post-title>Ephemeral Fingerprinting On The Web</h1><div class=post-info><span>Written by</span>
 Asanka Herath
 <span>on&nbsp;</span><time datetime="2020-04-01 00:00:00 +0000 UTC">April 1, 2020</time>
 |
-<a href=/tags/privacy>#Privacy</a>
-</div><div class="social share">
-<a href="https://twitter.com/intent/tweet?text=Ephemeral+Fingerprinting+On+The+Web&url=https%3A%2F%2Fxn--izc.com%2Fblog%2Fephemeral-fingerprinting%2F&via=asankah" aria-label="Share on Twitter" target=_blank rel=noopener>
-<img src=/images/twitter.svg alt="Share on Twitter">
-</a>
-<a href="mailto:?body=Via+https%3A%2F%2Ftwitter.com%2Fasankah%0A%0A%3Cp%3EAny+ephemeral+low-entropy+web+observable+property+whose+changes+are%0Aconcurrently+observable+by+multiple+sites+can+lead+to+cross+site%0Aidentity+joining.%3C%2Fp%3E%0A%3Cp%3EThis+method+of+identity+joining+does+not+require+coordination+between%0Amultiple+first+parties.+A+single+third+party+embedded+within+multiple%0Afirst+parties+can+also+use+this+method.%3C%2Fp%3E%0A%0A%0ARead+more+at+https%3A%2F%2Fxn--izc.com%2Fblog%2Fephemeral-fingerprinting%2F%0A&subject=Ephemeral+Fingerprinting+On+The+Web+-+Strong+Opinions%2C+Weekly+Held" aria-label="Share via Email" target=_blank rel=noopener>
-<img src=/images/mail.svg alt="Share via Email">
-</a>
-<a href=https://xn--izc.com/blog/ephemeral-fingerprinting/ aria-label="Permanent link to post">
-<img src=/images/link-2.svg alt="Permanent link to post">
-</a>
-</div><p>TL;DR:</p><ul>
-<li><p>Any web observable property whose changes are concurrently
+<a href=/tags/privacy>#Privacy</a></div><div class="social share"><a href="https://twitter.com/intent/tweet?text=Ephemeral+Fingerprinting+On+The+Web&url=https%3A%2F%2Fxn--izc.com%2Fblog%2Fephemeral-fingerprinting%2F&via=asankah" aria-label="Share on Twitter" target=_blank rel=noopener><img src=/images/twitter.svg alt="Share on Twitter"></a>
+<a href="mailto:?body=Via+https%3A%2F%2Ftwitter.com%2Fasankah%0A%0A%3Cp%3EAny+ephemeral+low-entropy+web+observable+property+whose+changes+are%0Aconcurrently+observable+by+multiple+sites+can+lead+to+cross+site%0Aidentity+joining.%3C%2Fp%3E%0A%3Cp%3EThis+method+of+identity+joining+does+not+require+coordination+between%0Amultiple+first+parties.+A+single+third+party+embedded+within+multiple%0Afirst+parties+can+also+use+this+method.%3C%2Fp%3E%0A%0A%0ARead+more+at+https%3A%2F%2Fxn--izc.com%2Fblog%2Fephemeral-fingerprinting%2F%0A&subject=Ephemeral+Fingerprinting+On+The+Web+-+Strong+Opinions%2C+Weekly+Held" aria-label="Share via Email" target=_blank rel=noopener><img src=/images/mail.svg alt="Share via Email"></a>
+<a href=https://xn--izc.com/blog/ephemeral-fingerprinting/ aria-label="Permanent link to post"><img src=/images/link-2.svg alt="Permanent link to post"></a></div><p>TL;DR:</p><ul><li><p>Any web observable property whose changes are concurrently
 observable by multiple top-level sites can lead to cross site identity
 joining.</p></li><li><p>This method of identity joining does not require additional
 coordination between multiple first parties. A single third party
 embedded within multiple first parties can also use this
-method.</p></li></ul><h2 id=background>Background</h2><figure>
-<img src=./isolation-boundaries.png alt="diagram of site isolation boundaries with overlap">
-<figcaption aria-hidden=true>diagram of site isolation boundaries with
+method.</p></li></ul><h2 id=background>Background</h2><figure><img src=./isolation-boundaries.png alt="diagram of site isolation boundaries with overlap"><figcaption aria-hidden=true>diagram of site isolation boundaries with
 overlap</figcaption></figure><p><strong>Figure 1</strong>: Two sites observe a sequence of device
 orientation changes at times 𝒕₀, 𝒕₁,𝒕₂ .</p><p>All sites on the same UA instance share a clock and therefore can
 agree on the timestamps with a small margin of error. The triplet 𝒕₀,
@@ -64,8 +18,7 @@ sites can thus use these observations to conclude that the observations
 originate from the same user.</p><p>As illustrated above, one or more low entropy signals observed
 concurrently can be used to identify a user with a high degree of
 confidence. Let’s call these <strong>ephemeral fingerprints</strong>.
-This document discusses two types:</p><ol type=1>
-<li><p><em>The sequence of timestamps corresponding to observed changes
+This document discusses two types:</p><ol type=1><li><p><em>The sequence of timestamps corresponding to observed changes
 of a volatile surface can be used for identification</em>. Let’s call
 these <strong>correlated events</strong>.</p></li><li><p><em>A stream of observations of a volatile surface can be
 identifying</em>. Let’s call these <strong>unique event
@@ -85,45 +38,31 @@ Polling enumerateDevices</a>, <a href=https://lists.w3.org/Archives/Public/publi
 Ambient light events</a>).</p><h3 id=modelling-correlated-events>Modelling Correlated Events</h3><p>A correlatable event can be thought of as the tuple
 <code>&lt;surface-sample, timestamp></code>. The addition of the
 timestamp strictly increases the amount of information carried by the
-surface sample.</p><section class="footnotes footnotes-end-of-section" role=doc-endnotes>
-<hr>
-<ol>
-<li id=fn1 role=doc-endnote><p>Van Goethem, T. and Joosen, W., 2017.
+surface sample.</p><section class="footnotes footnotes-end-of-section" role=doc-endnotes><hr><ol><li id=fn1 role=doc-endnote><p>Van Goethem, T. and Joosen, W., 2017.
 One side-channel to bring them all and in the darkness bind them:
 Associating isolated browsing sessions. In <em>11th {USENIX} Workshop on
-Offensive Technologies ({WOOT} 17)</em>. (<a href=https://pdfs.semanticscholar.org/5814/9610a57cb4626918bf003b8bad25e740b1f4.pdf>PDF</a>)<a href=#fnref1 class=footnote-back role=doc-backlink>↩︎</a></p></li></ol></section><h3 id=modelling-event-streams>Modelling Event Streams</h3><p>An event stream is simply a list of observed samples <code>sample₀,
-sample₁, ...</code>.</p><p>Each additional observation strictly increases the amount of
-information.</p><h3 id=other-examples>Other Examples:</h3><ul>
-<li><code>Accelerometer</code> properties.</li><li><code>Sensor</code>, <code>onreading</code> event.</li><li><code>BatteryManager.onlevelchange</code> : Deprecated but still
+Offensive Technologies ({WOOT} 17)</em>. (<a href=https://pdfs.semanticscholar.org/5814/9610a57cb4626918bf003b8bad25e740b1f4.pdf>PDF</a>)<a href=#fnref1 class=footnote-back role=doc-backlink>↩︎</a></p></li></ol></section><h3 id=modelling-event-streams>Modelling Event Streams</h3><p>An event stream is simply a list of observed samples
+<code>sample₀, sample₁, ...</code>.</p><p>Each additional observation strictly increases the amount of
+information.</p><h3 id=other-examples>Other Examples:</h3><ul><li><code>Accelerometer</code> properties.</li><li><code>Sensor</code>, <code>onreading</code> event.</li><li><code>BatteryManager.onlevelchange</code> : Deprecated but still
 shipping.</li><li><code>Bluetooth.onadvertisementreceived</code></li><li><code>BroadcastChannel</code>, all events.</li><li><code>MediaDevices.devicechange</code> event.</li><li><code>GlobalEventHandlers.onfocus</code> and <code>onblur</code>
 events can fire simultaneously when switching between two browser
 windows.</li></ul><h2 id=mitigation>Mitigation</h2><h3 id=permissions>Permissions</h3><p><strong>Goal:</strong> Require informed consent from users.</p><p>There’s precedent for considering permissions <a href=#fn2 class=footnote-ref id=fnref2 role=doc-noteref><sup>2</sup></a> to
 be sufficient mitigation for similar issues. For example, the Media
-Capture API specification includes the following:</p><blockquote>
-<p>For origins to which permission has been granted, the devicechange
+Capture API specification includes the following:</p><blockquote><p>For origins to which permission has been granted, the devicechange
 event will be emitted across browsing contexts and origins each time a
 new media device is added or removed; user agents can mitigate the risk
 of correlation of browsing activity across origins by fuzzing the timing
-of these events.</p></blockquote><p style=text-align:right>
-From §15 of <a href=https://w3c.github.io/mediacapture-main/#privacy-and-security-considerations>Media
-Capture and Streams API</a> specification.
-</p><p><strong>Pros</strong></p><ul>
-<li>Prevents drive-by fingerprinting.</li></ul><p><strong>Cons</strong></p><ul>
-<li><p>UI for permissions don’t disclose the fact that all sites that
+of these events.</p></blockquote><p style=text-align:right>From §15 of <a href=https://w3c.github.io/mediacapture-main/#privacy-and-security-considerations>Media
+Capture and Streams API</a> specification.</p><p><strong>Pros</strong></p><ul><li>Prevents drive-by fingerprinting.</li></ul><p><strong>Cons</strong></p><ul><li><p>UI for permissions don’t disclose the fact that all sites that
 have been granted access to the same resource can synchronize
 identifiers as a side-effect.</p></li><li><p>Doesn’t prevent identity joining once permission is
-granted.</p></li></ul><section class="footnotes footnotes-end-of-section" role=doc-endnotes>
-<hr>
-<ol start=2>
-<li id=fn2 role=doc-endnote><p>Either via a legacy permissions
+granted.</p></li></ul><section class="footnotes footnotes-end-of-section" role=doc-endnotes><hr><ol start=2><li id=fn2 role=doc-endnote><p>Either via a legacy permissions
 prompt or explicitly requiring the use of the <a href=https://w3c.github.io/permissions/>Permissions API</a> in the
 spec for sensitive APIs.<a href=#fnref2 class=footnote-back role=doc-backlink>↩︎</a></p></li></ol></section><h3 id=fuzzing-timing-of-events>Fuzzing Timing of Events</h3><p><strong>Goal</strong>: Deter correlation of events by injecting
 timing skew.</p><p>Mentioned in the snippet above from the Media Capture and Streams API
 and called out by Jeffrey Yasskin as a potential general mitigation in
 “desynchronize whole-browser events” in <a href=https://github.com/whatwg/html/issues/5215>this issue</a> filed
-against the WHATWG HTML specification.</p><p><strong>Pros</strong></p><ul>
-<li>Lowers confidence of identity equivalence.</li></ul><p><strong>Cons</strong></p><ul>
-<li><p>Precise timing may not be required. I.e. the lowered level of
+against the WHATWG HTML specification.</p><p><strong>Pros</strong></p><ul><li>Lowers confidence of identity equivalence.</li></ul><p><strong>Cons</strong></p><ul><li><p>Precise timing may not be required. I.e. the lowered level of
 confidence could still be sufficient for most uses.</p></li><li><p>Doesn’t address unique event streams.</p></li></ul><h3 id=first-party-restriction-for-apis>First-Party Restriction for
 APIs</h3><p><strong>Goal</strong>: Deter identity correlation by third-party
 sites.</p><p>Restrict APIs to the origin of the <a href=https://html.spec.whatwg.org/multipage/browsers.html#top-level-browsing-context>top-level
@@ -131,11 +70,9 @@ browsing context</a>.</p><p>The latter may choose to explicitly delegate access 
 <a href=https://w3c.github.io/webappsec-feature-policy/>feature
 policies</a>. But third-party contexts can’t “reach across” browsing
 contexts via correlation of cross context events or attributes that may
-be made available by the API.</p><p><strong>Pros</strong></p><ul>
-<li>Makes it a requirement that first-parties actively cooperate with
+be made available by the API.</p><p><strong>Pros</strong></p><ul><li>Makes it a requirement that first-parties actively cooperate with
 other first-parties or third-parties. I.e. Good first-party + bad
-third-party = safe.</li></ul><p><strong>Cons</strong></p><ul>
-<li><p>Difficult to retrofit into existing APIs.</p></li><li><p>Browser-wide events and attributes are still visible to distinct
+third-party = safe.</li></ul><p><strong>Cons</strong></p><ul><li><p>Difficult to retrofit into existing APIs.</p></li><li><p>Browser-wide events and attributes are still visible to distinct
 top-level browsing contexts.</p></li><li><p>In practice top-level browsing contexts contain a fair amount of
 third party scripts which may access the same APIs. Furthermore there
 are financial incentives for first-parties to delegate API access to
@@ -144,10 +81,8 @@ To Visible Browsing Contexts</h3><p><strong>Goal:</strong> Prevent background br
 skimming identifiable events.</p><p>The Page Visibility API defines the <a href=https://w3c.github.io/page-visibility/#visibility-states>visibility
 state of a document</a> as <code>visible</code> if the document is
 <em>“at least partially visible on at least one screen”</em>.</p><p>Restrict APIs to — possibly top-level — browsing context’s active
-document.</p><p><strong>Pros</strong></p><ul>
-<li>Is a convincing mitigation on mobile devices where only one
-top-level document can be visible at the same time.</li></ul><p><strong>Cons</strong></p><ul>
-<li><p>There could be multiple visible browsing contexts which still
+document.</p><p><strong>Pros</strong></p><ul><li>Is a convincing mitigation on mobile devices where only one
+top-level document can be visible at the same time.</li></ul><p><strong>Cons</strong></p><ul><li><p>There could be multiple visible browsing contexts which still
 leaves the door open for identity correlation across site
 boundaries.</p></li><li><p>The fact that having more than one browsing context open at the
 same time is a privacy risk is quite surprising for users.</p></li></ul><h3 id=limit-events-to-focused-top-level-browsing-context>Limit Events
@@ -162,30 +97,22 @@ has system input focus. There should be only one of these on a single
 device.</p><p><em>Let’s call the top-level browsing context that has system input
 focus as the</em> <strong>focused top-level browsing
 context</strong>.</p><p>New specifications could restrict browser-wide events to the focused
-top-level browsing context.</p><p><strong>Pros</strong></p><ul>
-<li>Likely fits in well with the intended usage model for most
-APIs.</li></ul><p><strong>Cons</strong></p><ul>
-<li>Does not address event stream fingerprinting via polling.</li></ul><h3 id=limit-api-access-to-focused-top-level-browsing-context>Limit
+top-level browsing context.</p><p><strong>Pros</strong></p><ul><li>Likely fits in well with the intended usage model for most
+APIs.</li></ul><p><strong>Cons</strong></p><ul><li>Does not address event stream fingerprinting via polling.</li></ul><h3 id=limit-api-access-to-focused-top-level-browsing-context>Limit
 API Access To Focused Top-Level Browsing Context</h3><p><strong>Goal</strong>: Limit access to sensitive APIs to a single <a href=https://html.spec.whatwg.org/multipage/browsers.html#top-level-browsing-context>top-level
 browsing context</a>.</p><p>Similar to the above, but addresses issues around polling by
 disallowing access to the entire API or sensitive attributes by
-restricting the entire API instead of just events.</p><p><strong>Pros</strong></p><ul>
-<li>Resilient to event stream fingerprinting via polling.</li></ul><p><strong>Cons</strong></p><ul>
-<li><p>Can’t be easily retrofitted to existing APIs since it requires
+restricting the entire API instead of just events.</p><p><strong>Pros</strong></p><ul><li>Resilient to event stream fingerprinting via polling.</li></ul><p><strong>Cons</strong></p><ul><li><p>Can’t be easily retrofitted to existing APIs since it requires
 defining behavior for “disabled” APIs.</p></li><li><p>May break critical use cases.</p></li></ul><h3 id=secure-context-restriction-and-control-via-feature-policy>Secure-Context
-Restriction and Control via Feature-Policy</h3><p>These should be pretty standard at this point.</p><p><strong>Pros</strong></p><ul>
-<li>Just makes sense.</li></ul><p><strong>Cons</strong></p><ul>
-<li>Not sufficient by itself.</li></ul><h2 id=spotting-ephemeral-fingerprinting-surfaces-in-web-specs>Spotting
-Ephemeral Fingerprinting Surfaces In Web Specs</h2><p><strong>Ephemeral fingerprints:</strong></p><ul>
-<li><p>Require that multiple browsing contexts observe the same events
+Restriction and Control via Feature-Policy</h3><p>These should be pretty standard at this point.</p><p><strong>Pros</strong></p><ul><li>Just makes sense.</li></ul><p><strong>Cons</strong></p><ul><li>Not sufficient by itself.</li></ul><h2 id=spotting-ephemeral-fingerprinting-surfaces-in-web-specs>Spotting
+Ephemeral Fingerprinting Surfaces In Web Specs</h2><p><strong>Ephemeral fingerprints:</strong></p><ul><li><p>Require that multiple browsing contexts observe the same events
 or access the same volatile attribute.</p></li><li><p>These browsing contexts could involve a single third party in
 multiple first party contexts.</p></li><li><p>Does not require precise clocks nor agreement on the exact
 timestamps of the observed events. Depending on the fingerprintable
 surfaces involved the sequence of events could be identifiable by
 itself. Servers can roughly bucket observations by time periods,
 eliminating the need for client-side clocks.</p></li><li><p>Does not require an API to fire an event. A property with a
-volatile value that can be polled periodically is sufficient.</p></li></ul><h3 id=what-to-look-for>What to look for:</h3><ul>
-<li><p>Events with external triggers. E.g. hardware based
+volatile value that can be polled periodically is sufficient.</p></li></ul><h3 id=what-to-look-for>What to look for:</h3><ul><li><p>Events with external triggers. E.g. hardware based
 events.</p></li><li><p>Multiple distinct events that are fired in tandem to distinct
 browsing contexts. E.g. any processing model where multiple events are
 fired.</p></li><li><p>Volatile attributes that are visible across browsing
@@ -203,44 +130,14 @@ browser windows.</p><h4 id=possible-mitigation>Possible Mitigation</h4><p>When t
 in different top-level browsing contexts whose active documents are not
 same-origin, queue but don’t fire <code>change</code> and
 <code>blur</code> events until focus returns to the old top-level
-browsing context.</p><section class="footnotes footnotes-end-of-section" role=doc-endnotes>
-<hr>
-<ol start=3>
-<li id=fn3 role=doc-endnote><p><em>New chain</em> and <em>old
+browsing context.</p><section class="footnotes footnotes-end-of-section" role=doc-endnotes><hr><ol start=3><li id=fn3 role=doc-endnote><p><em>New chain</em> and <em>old
 chain</em> are defined in <a href=https://html.spec.whatwg.org/multipage/interaction.html#focus-update-steps>focus
-update steps</a>.<a href=#fnref3 class=footnote-back role=doc-backlink>↩︎</a></p></li></ol></section><h3 id=notes>Notes</h3><nav class=suggested>
-<h2 class=suggested>More articles from this blog</h4><ul>
-<li>
-<h3 class="suggested title">
-<a href=/blog/gender-gap-in-adolescent-mental-health/>On Gender Gap in Adolescent Mental Health</a>
-</h3><p>A recent study found that more gender-equal countries have larger
+update steps</a>.<a href=#fnref3 class=footnote-back role=doc-backlink>↩︎</a></p></li></ol></section><h3 id=notes>Notes</h3><nav class=suggested><h2 class=suggested>More articles from this blog</h4><ul><li><h3 class="suggested title"><a href=/blog/things-you-can-do-with-nvim-and-vscode/>Things You Can Do With Neovim and Vscode That You Can't Do With Neovim Alone</a></h3><p>This is the third time I’ve tried in earnest to switch to VSCode from Vim (or Neovim in my case) for reasons not all of which are relevant to this post. But I love Vim style modal editing and I’ve grown accustomed to some features that aren’t present or not well emulated in VSCodeVim.
+Enter VSCode Neovim. I was intrigued by their claim to integrate Neovim instead of trying to emulate Vim.</p></li><li><h3 class="suggested title"><a href=/blog/gender-gap-in-adolescent-mental-health/>On Gender Gap in Adolescent Mental Health</a></h3><p>A recent study found that more gender-equal countries have larger
 gender gaps in mental health. I look at the data that seems to have
-yielded this counter-intuitive results and find it lacking.</p></li><li>
-<h3 class="suggested title">
-<a href=/blog/notes-on-fact-checking/>Notes from Crash Course's Videos on Fact Checking Information You See On The Internet
-</a>
-</h3><p>Hank Green’s Crash Course YouTube channel has an excellent series
-about navigating digital information. It’s an excellent guide to how
-internet users could intelligently consume information they see on the
-internet. These are my (incomplete) notes from the series.</p></li><li>
-<h3 class="suggested title">
-<a href=/blog/remarkable-first-impressions/>Note-taking on a reMarkable 2</a>
-</h3><p>Sentiments after using the reMarkable 2 tablet for a month.</p></li><li>
-<h3 class="suggested title">
-<a href=/blog/on-wontfixing-bugs/>On WontFixing Bugs</a>
-</h3><p><p>Large projects accumulate a large number of issue reports over time.
-This is normal. Typically for a “successful” project the rate of new
-issues being reported will exceed the rate of issues being fixed. Hence
-the growth.</p><p>But what are they to do about this ever-growing pile of bugs?</p></p></li><li>
-<h3 class="suggested title">
-<a href=/blog/ansible-cli-sugar/>Easier CLI for ad-hoc Ansible tasks and playbooks</a>
-</h3><p>Encode the host and group names into the name of a wrapper script for
-quick ad-hoc invocation of Ansible tasks and playbooks.</p></li></ul></nav><h4>Comment</h4><script src=https://utteranc.es/client.js repo=asankah/blog-comments issue-term=title label=PublicComment theme=github-light crossorigin=anonymous async></script>
-</div><div class=pagination>
-<a href=/blog/identity-domains/ class="right arrow">&#8594;</a>
-<a href=# class=top>Top</a>
-</div></main><footer>
-<span>Last modified on February 28, 2022 </span>
-</footer><script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-169355711-2","auto"),ga("send","pageview"))</script>
-<script async src=https://www.google-analytics.com/analytics.js></script>
-</body></html>
+yielded this counter-intuitive results and find it lacking.</p></li><li><h3 class="suggested title"><a href=/blog/visualizing-people/>Visualizing Internet Users</a></h3><p>What does 0.3%1 of internet users look like?
+As of this writing the global population hovers around 7.7 billion according to the World Population Clock 2.
+Screenshot from census.gov showing the world population clock. The International Telecommunications Union “estimates that at the end of 2019, 53.6 per cent of the global population, or 4.1 billion people, are using the internet.”3
+Screenshot from itu.int showing historical internet usage numbers as a percentage of the world population So a 0.</p></li><li><h3 class="suggested title"><a href=/blog/identity-domains/>Identity Domains</a></h3><p>An Identity Domain is a scope within which we assume that the user’s
+identity can roam freely.</p></li></ul></nav><h4>Comment</h4><script src=https://utteranc.es/client.js repo=asankah/blog-comments issue-term=title label=PublicComment theme=github-light crossorigin=anonymous async></script></div><div class=pagination><a href=/blog/identity-domains/ class="right arrow">&#8594;</a>
+<a href=# class=top>Top</a></div></main><footer><span>Last modified on February 28, 2022</span></footer><script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-169355711-2','auto'),ga('send','pageview'))</script><script async src=https://www.google-analytics.com/analytics.js></script></body></html>
