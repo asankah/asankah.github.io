@@ -1,38 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strong Opinions, Weekly Held</title><link>https://xn--izc.com/</link><description>Recent content on Strong Opinions, Weekly Held</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Asanka Herath</copyright><lastBuildDate>Tue, 05 Jul 2022 16:15:23 -0400</lastBuildDate><atom:link href="https://xn--izc.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Use Git hooks to automatically push after every commit</title><link>https://xn--izc.com/blog/git-autopush/</link><pubDate>Tue, 05 Jul 2022 16:15:23 -0400</pubDate><guid>https://xn--izc.com/blog/git-autopush/</guid><description>During before and after various Git operations, Git invokes special
-hooks that can be used execute custom scripts. This article explains how
-to use them to automatically push to an upstream repository every time
-you make a commit to a local repo.</description><content:encoded><p>A Git hook is a shell script that is invoked at specific points
-during some Git operations. They are documented in<a href="https://www.git-scm.com/docs/githooks#_post_commit">the Git
-book</a>.</p><p>The hook we are interested in is<code>post-commit</code> (<a href="https://www.git-scm.com/docs/githooks#_post_commit">documented
-here</a>). It gets run after a new commit is made. This is exactly when
-we want to try and update our remote.</p><p>Our hook will:</p><ul><li>Execute each time you commit something into your repository.</li><li>Avoid doing anything if the commit is made during a rebase or
-merge.</li><li>Push to a remote named<code>origin</code> (or whichever one you
-change the<code>UPSTREAM</code> shell variable to point).</li><li>Create or update a remote reference that matches the branch name
-that’s currently checked out.</li></ul><p>Copy and paste the following script into a file named<code>.git/hooks/post-commit</code> in your repository directory.</p><p><strong>IMPORTANT</strong>: Afterwards run the following to make the
-script executable.:</p><pre class="shell"><code>chmod +x .git/hooks/post-commit</code></pre><script type="application/javascript" src="https://gist.github.com/asankah/a6263bbd6081bffd031ca066e5177df2.js"/></content:encoded></item><item><title>DARPA's Heilmeier Catechism</title><link>https://xn--izc.com/blog/darpa-heilmeier-catechism/</link><pubDate>Tue, 28 Jun 2022 10:11:17 -0400</pubDate><guid>https://xn--izc.com/blog/darpa-heilmeier-catechism/</guid><description>A set of questions help you think through and evaluate proposed
-projects and research programs.</description><content:encoded><p>It seems the hardest part of engineering is the part where you are
-staring at a blank page with a vague notion of a problem statement in
-your head.</p><p>First you seek structure. After all your attention span can only hold
-so much at the same time. In order to tackle larger problems, you need
-to reduce large parts of the problem area into intuition. And in turn,
-to reduce parts of the problem into intuition, you need to break those
-pieces into smaller simpler pieces that you can chew on
-individually.</p><p>Losing sight of the forest for the trees is easy during this
-process.</p><p>Why were you trying to solve this problem in the first place? Would
-you have started if you knew then what you know now about the real scope
-of the problem?</p><p>Such concerns are also part of the problem statement; parts that help
-your prioritize and select the best solution amongst many. Throughout
-all, it’s always good to keep and eye on the prize. That being the end
-goal of the exercise. The goal must justify the effort involved. Once
-again, for that you need to reduce your motives into intuition.</p><p>The<a href="https://www.darpa.mil/work-with-us/heilmeier-catechism">“The
-Heilmeier Catechism”</a> is “a set of questions […] to help Agency
-officials think through and evaluate proposed research programs”. The
-list of questions is duplicated here for your convenience. It’s a short
-and terse list. Much like what your design sketch should be.</p><ul><li>What are you trying to do? Articulate your objectives using
-absolutely no jargon.</li><li>How is it done today, and what are the limits of current
-practice?</li><li>What is new in your approach and why do you think it will be
-successful?</li><li>Who cares? If you are successful, what difference will it make?</li><li>What are the risks?</li><li>How much will it cost?</li><li>How long will it take?</li><li>What are the mid-term and final “exams” to check for success?</li></ul><p>(Source<a href="https://www.darpa.mil/work-with-us/heilmeier-catechism">The
-Heilmeier Catechism - DARPA</a>).</p></content:encoded></item><item><title>Markdown should be readble without knowing Markdown</title><link>https://xn--izc.com/blog/mark-goes-up-and-down/</link><pubDate>Tue, 05 Apr 2022 13:02:12 -0400</pubDate><guid>https://xn--izc.com/blog/mark-goes-up-and-down/</guid><description>Markdown started out as a way to write text files that could also be machine parsed and rendered into a higher fidelity format.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strong Opinions, Weekly Held</title><link>https://xn--izc.com/</link><description>Recent content on Strong Opinions, Weekly Held</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Asanka Herath</copyright><lastBuildDate>Tue, 05 Apr 2022 13:02:12 -0400</lastBuildDate><atom:link href="https://xn--izc.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Markdown should be readble without knowing Markdown</title><link>https://xn--izc.com/blog/mark-goes-up-and-down/</link><pubDate>Tue, 05 Apr 2022 13:02:12 -0400</pubDate><guid>https://xn--izc.com/blog/mark-goes-up-and-down/</guid><description>Markdown started out as a way to write text files that could also be machine parsed and rendered into a higher fidelity format.
 To quote from the Philosophy:
 Readability, however, is emphasized above all else. A Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been marked up with tags or formatting instructions.
 This particular aspect of the format wasn’t maintained very well. Immediately following the “Philosophy” section is “Inline HTML” which contradicts the “without looking like it’s been marked up” requirement.</description><content:encoded><p><a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a>
@@ -80,8 +46,8 @@ gender gaps in mental health. I look at the data that seems to have
 yielded this counter-intuitive results and find it lacking.</description><content:encoded><p>Today is the first day of<a href="https://www.nationalgeographic.com/history/article/why-the-us-celebrates-womens-history-month-every-march">Women’s
 History Month</a>.</p><p>Coincidentally there’s a paper making the rounds titled<em>“The
 gender gap in adolescent mental health: A cross-national investigation
-of 566,829 adolescents across 73 countries”</em><span class="citation" data-cites="campbell2021gender">[1]</span>, which makes some these
-interesting claims:</p><ul><li>Girls have worse average mental health than boys across 4 mental
+of 566,829 adolescents across 73 countries”</em><span class="citation" data-cites="campbell2021gender"><a href="#ref-campbell2021gender" role="doc-biblioref">[1]</a></span>, which makes some these interesting
+claims:</p><ul><li>Girls have worse average mental health than boys across 4 mental
 health measures.</li><li>There is significant heterogeneity in the mental health gender gap
 size across countries.</li><li>The gap is most pronounced for psychological distress and life
 satisfaction.</li><li>More gender-equal countries have more gender gaps in mental
@@ -90,8 +56,9 @@ let’s have a closer look.</p><p>The study uses the<a href="https://www.oecd.or
 dataset</a>, introducing a couple of caveats. Namely:</p><ol type="1"><li>All survey respondents were 15 years old; thus, the dataset doesn’t
 consider higher education and employment effects.</li><li>The data is from 2018; thus excludes the effects of the pandemic. It
 would be interesting to see how the responses change now that people are
-coming out of a lengthy lock down.</li><li>Gender was binary. There was no non-binary option.</li></ol><p>The study<span class="citation" data-cites="campbell2021gender">[1]</span> derives five measures of
-mental health based on the PISA 2018 dataset as follows:</p><ol type="1"><li><p><em>“Life satisfaction”</em> measures responses to the question<em>“on a scale of 0-10, overall, how satisfied are you with your life
+coming out of a lengthy lock down.</li><li>Gender was binary. There was no non-binary option.</li></ol><p>The study<span class="citation" data-cites="campbell2021gender"><a href="#ref-campbell2021gender" role="doc-biblioref">[1]</a></span>
+derives five measures of mental health based on the PISA 2018 dataset as
+follows:</p><ol type="1"><li><p><em>“Life satisfaction”</em> measures responses to the question<em>“on a scale of 0-10, overall, how satisfied are you with your life
 as a whole these days?”</em></p></li><li><p><em>“Psychological distress”</em> measures responses to the
 question on how often they felt<em>“sad”</em>,<em>“miserable”</em>,<em>“scared”</em>, and<em>“afraid”</em> on a scale of<em>“never”</em>,<em>“rarely”</em>,<em>“sometimes”</em>, and<em>“always”</em>. Each
 response yields points ranging from 1 through 4, respectively. Summing
@@ -103,8 +70,9 @@ yields a combined scale of 5-20.</p></li><li><p><em>“Eudaemonic wellbeing”</
 with the below statements. The scale was<em>“strongly disagree”</em>,<em>“disagree”</em>,<em>“agree”</em>, and<em>“strongly agree”</em>
 with a combined score in the range 3-12:</p><ol type="1"><li><em>“My life has clear meaning or purpose”</em>.</li><li><em>“I have discovered a satisfactory meaning in life.”</em></li><li><em>“I have a clear sense of what gives meaning to my
 life”</em>.</li></ol></li></ol><p>Details of the analysis are in<a href="https://ars.els-cdn.com/content/image/1-s2.0-S2352827321000173-mmc1.pdf">the
-companion document (PDF link)</a>.</p><p>In figure S2 of<span class="citation" data-cites="campbell2021gender">[1]</span> shows the distribution of<em>life satisfaction</em>. Again, developed nations are not doing well
-compared with countries like Saudi Arabia.</p><figure><img src="./life-satisfaction-eu.png" alt="Distribution of life satisfaction scores for France, Germany, Greece, and Iceland. The range of responses were from 0 through 10. Red is male, and blue is female."/><figcaption aria-hidden="true">Distribution of life satisfaction scores
+companion document (PDF link)</a>.</p><p>In figure S2 of<span class="citation" data-cites="campbell2021gender"><a href="#ref-campbell2021gender" role="doc-biblioref">[1]</a></span> shows the distribution of<em>life
+satisfaction</em>. Again, developed nations are not doing well compared
+with countries like Saudi Arabia.</p><figure><img src="./life-satisfaction-eu.png" alt="Distribution of life satisfaction scores for France, Germany, Greece, and Iceland. The range of responses were from 0 through 10. Red is male, and blue is female."/><figcaption aria-hidden="true">Distribution of life satisfaction scores
 for France, Germany, Greece, and Iceland. The range of responses were
 from 0 through 10. Red is male, and blue is female.</figcaption></figure><p>Compare with:</p><figure><img src="./life-satisfaction-sa-uae.png" alt="Distribution of life satisfaction scores for Saudi Arabia and United Arab Emirates. Note that most respondents gave a score of 10."/><figcaption aria-hidden="true">Distribution of life satisfaction scores
 for Saudi Arabia and United Arab Emirates. Note that most respondents
@@ -134,12 +102,9 @@ unconvincing.</p><h2 class="unnumbered" id="references">References</h2><div id="
 L. Campbell, D. Bann, and P. Patalay,<span>“The gender gap in
 adolescent mental health: A cross-national investigation of 566,829
 adolescents across 73 countries,”</span><em>SSM-population health</em>,
-vol. 13, p. 100742, 2021.</div></div></div><section class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1" role="doc-endnote"><p>GII is the Gender Inequality Index.
-It’s based on such factors like<em>female and male shares of
-parliamentary seats</em>,<em>female and male population with at least
-secondary education</em>,<em>female and male labour force participation
-rates</em>,<em>maternal mortality ratio</em>, and<em>adolescent birth
-rate</em>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section></content:encoded></item><item><title>On Highlighting Syntax vs. Semantics</title><link>https://xn--izc.com/blog/syntax-highlighting/</link><pubDate>Sat, 12 Feb 2022 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/syntax-highlighting/</guid><description>Takes a look at an alternate form of code highlighting based on core
+vol. 13, p. 100742, 2021.</div></div></div><section id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1"><p>GII is the Gender Inequality Index. It’s based on such
+factors like<em>female and male shares of parliamentary seats</em>,<em>female and male population with at least secondary education</em>,<em>female and male labour force participation rates</em>,<em>maternal
+mortality ratio</em>, and<em>adolescent birth rate</em>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section></content:encoded></item><item><title>On Highlighting Syntax vs. Semantics</title><link>https://xn--izc.com/blog/syntax-highlighting/</link><pubDate>Sat, 12 Feb 2022 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/syntax-highlighting/</guid><description>Takes a look at an alternate form of code highlighting based on core
 semantics instead of syntactic role.</description><content:encoded><p><span class="noun">Aesthetics</span><span class="adverb">aside</span>,<span class="noun">syntax</span><span class="gerund">highlighting</span><span class="preposition">in</span><span class="noun">code</span><span class="verb">performs</span><span class="determiner">an</span><span class="adjective">important</span><span class="noun">role</span><span class="preposition">in</span><span class="gerund">improving</span> the<span class="noun">readability</span><span class="preposition">of</span><span class="noun">code</span>.<span class="adjective">Most</span><span class="adjective">syntax</span><span class="gerund">highlighting</span><span class="noun">schemes</span><span class="gerund">including</span><span class="adjective">popular</span><span class="noun">libraries</span><span class="verb">are</span><span class="verb">limited</span><span class="preposition">to</span><span class="gerund">using</span><span class="noun">colors</span><span class="conjunction">and</span><span class="gerund">formatting</span><span class="noun">changes</span><span class="preposition">to</span><span class="verb">distinguish</span><span class="preposition">between</span><span class="adjective">different</span><span class="adjective">syntax</span><span class="noun">classes</span>.<span class="pronoun">This</span><span class="verb">is</span><span class="determiner">what</span><span class="pronoun">it</span><span class="verb">would look</span><span class="conjunction">like</span><span class="conjunction">if</span><span class="pronoun">we</span><span class="verb">apply</span><span class="determiner">the</span><span class="adjective">same</span><span class="noun">logic</span><span class="preposition">to</span><span class="proper">English</span><span class="noun">prose</span>.<span class="adjective">Each</span><span class="noun">word</span><span class="preposition">in</span><span class="pronoun">this</span><span class="noun">paragraph</span><span class="verb">is</span><span class="adverb">highlighted</span><span class="verb">using</span><span class="pronoun">its</span><span class="adjective">respective</span><span class="adjective">syntactic</span><span class="noun">purpose</span>.</p><p>Not very readable, is it? The colors aren’t random. They highlights
 correspond to<span class="noun">noun</span>,<span class="adverb">adverb</span>,<span class="gerund">gerund</span>,<span class="preposition">preposition</span>,<span class="adjective">adjective</span>, and<span class="verb">verb</span>.
 This is basically how people use syntax highlighting.</p><p>Typographers have long known that punctuation alone can’t
@@ -242,8 +207,8 @@ new note doesn’t simultaneously require viewing every note on the
 device.</p><p>Once folded over, I get paranoid about the keys underneath. Can I
 place it on a table without worrying too much? It’s anxiety-inducing.
 It’s also a laptop, which means that someone who’s easily distracted
-would be … easily distracted.</p><p>So over to the reMarkable…</p><section class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1" role="doc-endnote"><p>In case the Pixelbook site goes
-offline, here’s the Wayback Machine’s<a href="https://web.archive.org/web/20210725184512/https://www.google.com/chromebook/device/google-pixelbook/">snapshot
+would be … easily distracted.</p><p>So over to the reMarkable…</p><section id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1"><p>In case the Pixelbook site goes offline, here’s the
+Wayback Machine’s<a href="https://web.archive.org/web/20210725184512/https://www.google.com/chromebook/device/google-pixelbook/">snapshot
 from when I wrote this article</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section><h2 id="moderate-success-with-the-remarkable-2">Moderate Success With
 The Remarkable 2</h2><figure><img src="./picture-of-re2.png" alt="The reMarkable 2 was my next choice. (Image Source)"/><figcaption aria-hidden="true">The reMarkable 2 was my next choice.<a href="https://remarkable.com/">(Image Source)</a></figcaption></figure><p>First of all, this is a note-taking device. You should not expect
 much more from it. I thought it would make for a good ebook reader and
@@ -336,10 +301,9 @@ user base of some application, then suddenly the million users looks
 much bigger.</p><h2 id="to-49">1 to 49</h2><p>Let’s skip this range since this is in the range of what you’d see in
 a mirror, can fit on a bicycle, can fit on a sofa, your team, gathering
 of friends, significant annual family event, or other familiar
-situation.</p><section class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1" role="doc-endnote"><p>Note that fig. 2 indicates that the
-estimate is 49% of the population would have internet access in 2017.
-It’s likely that by 2021 we’d at least have reached 50% based on the
-sharp growth curve.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section><h2 id="from-50-to-100000">From 50 to 100,000</h2><p>An example of visualizing populations for small numbers can be found
+situation.</p><section id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1"><p>Note that fig. 2 indicates that the estimate is 49% of
+the population would have internet access in 2017. It’s likely that by
+2021 we’d at least have reached 50% based on the sharp growth curve.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section><h2 id="from-50-to-100000">From 50 to 100,000</h2><p>An example of visualizing populations for small numbers can be found
 at<a href="https://blog.lime.link/visualizing-crowd-sizes/">Visualizing
 Crowd Sizes</a>. It goes from around 50 people up to 100,000 people.</p><p>While 100,000 is interesting we need to go all the way to 1
 million.</p><h2 id="section">200,000</h2><p>200,000 was the estimated number of people who attended the<a href="https://marchforourlives.com/">March for Our Lives</a> in D.C..
@@ -407,7 +371,7 @@ crowd sizes, they note<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-
 of pronouncements made about how many folks really showed. The figures
 rarely agree; Glenn Beck’s rally on the National Mall this summer
 attracted a million people, according to Beck cohort Rep. Michelle
-Bachman. CBS News pegged it at more like 87,000.</p></blockquote><section class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol start="2"><li id="fn2" role="doc-endnote"><p><a href="https://www.wired.com/2011/02/how-many-people-are-in-tahrir-square-heres-how-to-tell/">How
+Bachman. CBS News pegged it at more like 87,000.</p></blockquote><section id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol start="2"><li id="fn2"><p><a href="https://www.wired.com/2011/02/how-many-people-are-in-tahrir-square-heres-how-to-tell/">How
 Many People Are in Tahrir Square? Here’s How to Tell</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section><h2 id="and-more">And More</h2><p>I’m going to give up at this point. Pictures purportedly of around
 one million people are mostly parts of crowds that have been estimated
 to be that big.</p></content:encoded></item><item><title>Fart Limit</title><link>https://xn--izc.com/blog/fart-limit/</link><pubDate>Mon, 14 Jun 2021 11:30:18 -0400</pubDate><guid>https://xn--izc.com/blog/fart-limit/</guid><description>Can a fart be fatal? Let’s see what science and OSHA have to say.</description><content:encoded><p>Thanks to<a href="https://youtu.be/suwg7-y70FQ">Vsauce</a> for
@@ -423,7 +387,7 @@ smell anything at all because you’ll lose your sense of smell
 (<em>olfactory fatigue or paralysis</em>).</li><li>At 1000ppm – 300 times the usual dose – it’s<strong>nearly instant
 death</strong>.</li></ul><p>So I guess it is in fact possible.</p><p>As an aside, I found it quite disappointing that the<strong>Listen</strong> button on the<a href="https://kidshealth.org/en/kids/fart.html">“What’s a Fart” page on
 KidsHealth.org</a> doesn’t make a fart sound. I mean, what else was that
-button supposed to do?</p><figure><img src="images/kids-health-fart.png" alt="KidsHealth: What’s a Fart?"/><figcaption aria-hidden="true">KidsHealth: What’s a Fart?</figcaption></figure><section class="footnotes footnotes-end-of-document" role="doc-endnotes"><hr/><ol><li id="fn1" role="doc-endnote"><p>https://web.archive.org/web/20210614200353/https://www.houstonmethodist.org/blog/articles/2020/oct/flatulence-everything-you-wanted-to-know-about-farting/<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn2" role="doc-endnote"><p>https://www.chemistryworld.com/news/explainer-the-chemistry-of-farts/2500168.article<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn3" role="doc-endnote"><p>https://www.osha.gov/hydrogen-sulfide/hazards<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section></content:encoded></item><item><title>Shannon Paper</title><link>https://xn--izc.com/blog/shannon-paper/</link><pubDate>Fri, 26 Mar 2021 16:14:20 -0400</pubDate><guid>https://xn--izc.com/blog/shannon-paper/</guid><description>Claude Shannon’s &lt;em>A mathematical theory of communication&lt;/em> is
+button supposed to do?</p><figure><img src="images/kids-health-fart.png" alt="KidsHealth: What’s a Fart?"/><figcaption aria-hidden="true">KidsHealth: What’s a Fart?</figcaption></figure><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><hr/><ol><li id="fn1"><p>https://web.archive.org/web/20210614200353/https://www.houstonmethodist.org/blog/articles/2020/oct/flatulence-everything-you-wanted-to-know-about-farting/<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn2"><p>https://www.chemistryworld.com/news/explainer-the-chemistry-of-farts/2500168.article<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn3"><p>https://www.osha.gov/hydrogen-sulfide/hazards<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section></content:encoded></item><item><title>Shannon Paper</title><link>https://xn--izc.com/blog/shannon-paper/</link><pubDate>Fri, 26 Mar 2021 16:14:20 -0400</pubDate><guid>https://xn--izc.com/blog/shannon-paper/</guid><description>Claude Shannon’s &lt;em>A mathematical theory of communication&lt;/em> is
 an oft cited classic in information theory. Let’s dive in and try to
 tease apart the “why”s that are often overlooked when people build on
 top of the introduced theory. They are definitely things that I didn’t
@@ -512,9 +476,9 @@ They are represented as a set of states. Each state can
 probabilistically transition to number of states with some probability
 distribution. Each transition emits a symbol.</p><p>If the emitted symbol doesn’t depend on any prior symbol, then we
 only really need one state. It will have a self-edge for each possible
-emitted symbol.</p><p><img src="bfaf0c67ef0b4dc58451e4766d1c69f969a46ad1.svg"/></p><p>If the emitted symbol depends on the previous symbol, then there will
+emitted symbol.</p><p><img src="0bb14c90267645735e94241f5c0c55ec653c00a0.svg"/></p><p>If the emitted symbol depends on the previous symbol, then there will
 be as many states needed as there are symbols. This is the case for
-digrams.</p><p><img src="d4817df128a2d8c85c7174bce7faac58e6fd7049.svg"/></p><p>For trigrams, since they depend on the previous two symbols, require<span class="math inline">n^2</span> states.</p><h3 id="ergodic-and-mixed-sources">5. Ergodic and Mixed Sources</h3><blockquote><p>In an ergodic process every sequence produced by the process is the
+digrams.</p><p><img src="96b71c26be95aea12076869760028d324a162f5e.svg"/></p><p>For trigrams, since they depend on the previous two symbols, require<span class="math inline">n^2</span> states.</p><h3 id="ergodic-and-mixed-sources">5. Ergodic and Mixed Sources</h3><blockquote><p>In an ergodic process every sequence produced by the process is the
 same in statistical properties. […] Roughly the ergodic property means
 statistical homogeneity.</p></blockquote><h3 id="choice-uncertainty-and-entropy">6. Choice Uncertainty and
 Entropy</h3><p>Here we come to the part that is most often cited. The definition of
@@ -789,9 +753,9 @@ let’s substitute<span class="math inline">\lambda n \to
 \lambda</span>.</p><p>This gives us:</p><p><span class="math display">\Pr(k) = \frac{\lambda^k e^{-
 \lambda}}{k!}</span></p><p>… which is the PDF of the Poisson distribution.</p><p>n.b.: In retrospect it would’ve been easier to consider the unit of
 time to be<span class="math inline">n</span> hours in the first place,
-but I’m too lazy to go back and rewrite everything.</p><p>…</p><p>…</p><section class="footnotes footnotes-end-of-document" role="doc-endnotes"><hr/><ol><li id="fn1" role="doc-endnote"><p>Also known as reading the relevant
-Wikipedia article. In this case that’s the<a href="https://en.wikipedia.org/wiki/Poisson_distribution#History"><em>History</em>
-section of the article on the Poisson distribution</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn2" role="doc-endnote"><p><a href="https://royalsocietypublishing.org/doi/10.1098/rstl.1710.0018">The
+but I’m too lazy to go back and rewrite everything.</p><p>…</p><p>…</p><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><hr/><ol><li id="fn1"><p>Also known as reading the relevant Wikipedia article. In
+this case that’s the<a href="https://en.wikipedia.org/wiki/Poisson_distribution#History"><em>History</em>
+section of the article on the Poisson distribution</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn2"><p><a href="https://royalsocietypublishing.org/doi/10.1098/rstl.1710.0018">The
 original article in Latin</a> is available via<a href="https://royalsociety.org/journals/">The Royal Society
 Publishing</a>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section></content:encoded></item><item><title>Ten Years</title><link>https://xn--izc.com/blog/ten-years/</link><pubDate>Tue, 08 Dec 2020 21:41:50 -0500</pubDate><guid>https://xn--izc.com/blog/ten-years/</guid><description>It’s been ten years since I started at Google. The work anniversary fell on 6th of December.
 Ten years ago my wife and I made our way to Mountain View for my orientation; all excited for a brand new chapter in our lives. After spending a week in Mountain View / Palo Alto we both decided that California was not for us. But that’s beside the point.
@@ -835,14 +799,14 @@ population</figcaption></figure><p>So a 0.3% of the internet would be a roughly 
 12.3 million. A nice little number.</p><h2 id="from-50-to-100000">From 50 to 100,000</h2><p>It’s interesting to try and visualize this. An example of visualizing
 populations for small numbers can be found at<a href="https://blog.lime.link/visualizing-crowd-sizes/">Visualizing Crowd
 Sizes</a>. It goes from around 50 people up to 100,000 people.</p><p>While 100,000 is interesting we need to go all the way to 12.3
-million.</p><section class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1" role="doc-endnote"><p>Why 0.3% of the internet population?
-It’s a number that came up when trying to come up with a reasonable
-sample size for estimating the diversity of the internet population.
-There’s not much special about it other than that.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn2" role="doc-endnote"><p>The<a href="https://www.census.gov/popclock/">world population clock</a>. This
-link is for the current number at whatever time you clicked on the link
-assuming the site is still there. As of November 20, 2021, the number
-was 7.7 billion. I’d link you to an archived page but that doesn’t seem
-to work.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn3" role="doc-endnote"><p><a href="https://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx">Statistics
+million.</p><section id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1"><p>Why 0.3% of the internet population? It’s a number that
+came up when trying to come up with a reasonable sample size for
+estimating the diversity of the internet population. There’s not much
+special about it other than that.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn2"><p>The<a href="https://www.census.gov/popclock/">world
+population clock</a>. This link is for the current number at whatever
+time you clicked on the link assuming the site is still there. As of
+November 20, 2021, the number was 7.7 billion. I’d link you to an
+archived page but that doesn’t seem to work.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn3"><p><a href="https://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx">Statistics
 pages on itu.int</a> project even higher numbers than 53.6% by the end
 of 2020, but it’s possible numbers won’t behave according to historical
 trends due to the effects of COVID.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section><h2 id="section">200,000</h2><p>A particularly macabre topic these days since the United States
@@ -894,7 +858,7 @@ rarely agree; Glenn Beck’s rally on the National Mall this summer
 attracted a million people, according to Beck cohort Rep. Michelle
 Bachman. CBS News pegged it at more like 87,000.</p></blockquote><h3 id="and-more">And More</h3><p>I’m going to give up at this point. Pictures purportedly of around
 one million people are mostly parts of crowds that have been estimated
-to be that big. Forget about 12.3 million.</p><section class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol start="4"><li id="fn4" role="doc-endnote"><p><a href="https://www.wired.com/2011/02/how-many-people-are-in-tahrir-square-heres-how-to-tell/">How
+to be that big. Forget about 12.3 million.</p><section id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol start="4"><li id="fn4"><p><a href="https://www.wired.com/2011/02/how-many-people-are-in-tahrir-square-heres-how-to-tell/">How
 Many People Are in Tahrir Square? Here’s How to Tell</a><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section></content:encoded></item><item><title>Things You Can Do With Neovim and Vscode That You Can't Do With Neovim Alone</title><link>https://xn--izc.com/blog/things-you-can-do-with-nvim-and-vscode/</link><pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/things-you-can-do-with-nvim-and-vscode/</guid><description>This is the third time I’ve tried in earnest to switch to VSCode from Vim (or Neovim in my case) for reasons not all of which are relevant to this post. But I love Vim style modal editing and I’ve grown accustomed to some features that aren’t present or not well emulated in VSCodeVim.
 Enter VSCode Neovim. I was intrigued by their claim to integrate Neovim instead of trying to emulate Vim.</description><content:encoded><p>This is the third time I’ve tried in earnest to switch to VSCode from
 Vim (or Neovim in my case) for reasons not all of which are relevant to
@@ -931,10 +895,10 @@ which is also a good place to look if you want to know the details about
 buffer options that are being set.</p></li></ol><p>Of course I’m eliding lots of detail here including integrations for
 other areas of UI. But I think this captures the pertinent details. The
 extension is a pretty impressive piece of work which is well worth a
-gander. Now on to the good stuff.</p><section class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1" role="doc-endnote"><p>Not quite the whole story because
-it’s possible a buffer be created inside the Neovim instance and have it
-be mirrored in a VSCode editor. But that’s probably not what you’ll be
-using on a regular basis.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section><h2 id="responsive-neovim-experience-over-a-laggy-ssh-connection">Responsive
+gander. Now on to the good stuff.</p><section id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1"><p>Not quite the whole story because it’s possible a buffer
+be created inside the Neovim instance and have it be mirrored in a
+VSCode editor. But that’s probably not what you’ll be using on a regular
+basis.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section><h2 id="responsive-neovim-experience-over-a-laggy-ssh-connection">Responsive
 Neovim Experience Over A laggy SSH Connection</h2><p>This gets to the reason why I’m trying to move to VSCode in the first
 place. I work on a project consisting of thousands of C++ source files.
 My home-office doesn’t have enough hardware to do regular builds, or in
@@ -945,7 +909,7 @@ won’t have access to language smarts like<code>clangd</code> which
 require access to all the source files and some build tooling.</p><p><a href="https://code.visualstudio.com/docs/remote/remote-overview">VSCode
 Remote Development</a> was a nearly perfect answer with the exception
 that VSCodeVim didn’t quite have all the functionality I needed.
-VSCodeNeovim addresses that last piece of the puzzle.</p><p>VSCode + Remote SSH + VSCodeNeovim + Neovim gives me:</p><p><img src="69b0806d988547f655ca30ec4aab03858c16f6e7.svg"/></p><ul><li>On the remote machine:<ul><li>Source files.</li><li>Build tooling.</li><li><code>clangd</code> process invoked via<code>vscode-remote</code>.</li></ul></li><li>On the local machine:<ul><li>VSCode.</li><li>VSCodeNeovim.<ul><li>Neovim instance embedded by VSCodeNeovim.<ul><li>Neovim plug-ins and normal mode keybindings.</li></ul></li></ul></li></ul></li></ul><p>Since the embedded Neovim instance is local the editors are super
+VSCodeNeovim addresses that last piece of the puzzle.</p><p>VSCode + Remote SSH + VSCodeNeovim + Neovim gives me:</p><p><img src="90c91a589556c6d954dd57da43a309fbf0c8dee8.svg"/></p><ul><li>On the remote machine:<ul><li>Source files.</li><li>Build tooling.</li><li><code>clangd</code> process invoked via<code>vscode-remote</code>.</li></ul></li><li>On the local machine:<ul><li>VSCode.</li><li>VSCodeNeovim.<ul><li>Neovim instance embedded by VSCodeNeovim.<ul><li>Neovim plug-ins and normal mode keybindings.</li></ul></li></ul></li></ul></li></ul><p>Since the embedded Neovim instance is local the editors are super
 responsive. Completions via<code>clangd</code> is still laggy as one
 might expect. But that’s something I’m willing to live with.</p><h2 id="proportional-fonts-with-neovim">Proportional Fonts With
 Neovim</h2><p>Okay, so why would anyone actually want this? Turns out<a href="https://www.google.com/search?q=proportional+fonts+for+coding">I’m
@@ -967,8 +931,7 @@ let me configure things so that comments are in proportional font while
 the rest is in monospace. Also in the case of Markdown, I’d be able to
 make everything proportional except for inline code and fenced code
 blocks. Alas we are not quite there yet. Several feature requests
-already exist<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>, but hasn’t seen much activity.</p><section class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol start="2"><li id="fn2" role="doc-endnote"><p>A quick search in the VSCode
-repository<a href="https://github.com/microsoft/vscode/search?q=tokenColorCustomizations+font+name">with
+already exist<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>, but hasn’t seen much activity.</p><section id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol start="2"><li id="fn2"><p>A quick search in the VSCode repository<a href="https://github.com/microsoft/vscode/search?q=tokenColorCustomizations+font+name">with
 this query</a> yields several issues that request for pretty much the
 same thing: Allow setting<code>fontName</code> in<code>tokenColorCustomizations</code>. There’s also<a href="https://github.com/deepanrajkumar/Italic-and-Ligature">this
 curious experiment</a> which patches in a different font for italics so
@@ -981,22 +944,23 @@ awesomeness.</li></ol></content:encoded></item><item><title>Why 'Strong Opinions
 In his essay – which isn’t very long if you would like to read the whole thing yourself – he lays out the concept as follows:
 I have found that the fastest way to an effective forecast is often through a sequence of lousy forecasts.</description><content:encoded><h2 id="origins-of-the-phrase">Origins of the phrase</h2><p>The title of this blog is<strong>Strong Opinions, Weakly
 Held</strong>. The same concept shows up elsewhere are<em>Strong
-Opinions Loosely Held</em>. An eponymous essay by Paul Saffo in<span class="citation" data-cites="Saffo">[1]</span> introduced the world to
-this concept.</p><p>In his essay – which isn’t very long if you would like to<a href="https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/">read
+Opinions Loosely Held</em>. An eponymous essay by Paul Saffo in<span class="citation" data-cites="Saffo"><a href="#ref-Saffo" role="doc-biblioref">[1]</a></span> introduced the world to this
+concept.</p><p>In his essay – which isn’t very long if you would like to<a href="https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/">read
 the whole thing yourself</a> – he lays out the concept as follows:</p><blockquote><p>I have found that the fastest way to an effective forecast is often
 through a sequence of lousy forecasts. Instead of withholding judgment
 until an exhaustive search for data is complete, I will force myself to
 make a tentative forecast based on the information available, and then
 systematically tear it apart, using the insights gained to guide my
-search for further indicators and information.</p></blockquote><h2 id="criticism">Criticism</h2><p>Cedric Chin’s critique<span class="citation" data-cites="Cedric">[2]</span> comes down to two points that the author
-summarizes as follows:</p><blockquote><p>In my experience, ‘strong opinions, weakly held’ is difficult to put
+search for further indicators and information.</p></blockquote><h2 id="criticism">Criticism</h2><p>Cedric Chin’s critique<span class="citation" data-cites="Cedric"><a href="#ref-Cedric" role="doc-biblioref">[2]</a></span> comes down to two
+points that the author summarizes as follows:</p><blockquote><p>In my experience, ‘strong opinions, weakly held’ is difficult to put
 into practice. Most people who try will either:</p><ol type="1"><li>Use it as downside-protection to justify their strongly-held bad
 opinions, or</li><li>Struggle to shift from one strong opinion to another.</li></ol><p>The reason it is difficult is because it works against the grain of
 the human mind.</p><p>So don’t bother. The next time you find yourself making a judgment,
 don’t invoke ‘strong opinions, weakly held’. Instead, ask: “how much are
 you willing to bet on that?” Doing so will jolt people into the types of
-thinking you want to encourage.</p></blockquote><p>Michael Natkin on<span class="citation" data-cites="Michael">[3]</span> points out the fallacy of assuming that
-strong opinions will be reliably challenged:</p><blockquote><p>The idea of strong opinions, loosely held is that you can make
+thinking you want to encourage.</p></blockquote><p>Michael Natkin on<span class="citation" data-cites="Michael"><a href="#ref-Michael" role="doc-biblioref">[3]</a></span> points out the
+fallacy of assuming that strong opinions will be reliably
+challenged:</p><blockquote><p>The idea of strong opinions, loosely held is that you can make
 bombastic statements, and everyone should implicitly assume that you’ll
 happily change your mind in a heartbeat if new data suggests you are
 wrong. It is supposed to lead to a collegial, competitive environment in
@@ -1049,8 +1013,8 @@ snake_case, hacker_case, unix_hacker_style : Everything is lower case, though ex
 exceptions exist. E.g.<code>HTTP_foo_bar</code>.</li><li><code>SCREAMING_SNAKE_CASE</code> : Usually reserved for macros and
 constants.</li><li><code>camelCase</code> : The first letter is lowercase.</li><li><code>PascalCase</code> : The first letter is uppercase.</li><li><code>kabob-case</code> : Like<code>snake_case</code>, but uses
 dashes instead of underscores. Common for command-line options<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, CSS styles, commands (e.g.<code>git-receive-pack</code>).</li></ul><p>While looking idly looking for details on this, I stumbled on<a href="https://medium.com/better-programming/string-case-styles-camel-pascal-snake-and-kebab-case-981407998841">this
-Medium post</a> which is relevant.</p><section class="footnotes footnotes-end-of-document" role="doc-endnotes"><hr/><ol><li id="fn1" role="doc-endnote"><p>Opinions vary on whether the correct
-convention for command line options is<code>snake_case</code> or<code>kabob-case</code>. Long form options are often written as<code>--long-option</code>, but can also be<code>--long_option</code>
+Medium post</a> which is relevant.</p><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><hr/><ol><li id="fn1"><p>Opinions vary on whether the correct convention for
+command line options is<code>snake_case</code> or<code>kabob-case</code>. Long form options are often written as<code>--long-option</code>, but can also be<code>--long_option</code>
 (where the delimiter within the option is<code>_</code>).<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section></content:encoded></item><item><title>How This Blog Works</title><link>https://xn--izc.com/blog/how-this-blog-works/</link><pubDate>Mon, 27 Jul 2020 00:57:17 -0400</pubDate><guid>https://xn--izc.com/blog/how-this-blog-works/</guid><description>How I put this site together and why.</description><content:encoded><h1 id="requirements">Requirements</h1><ul><li>Math. Preferably Latex.</li><li>Citations. I like to cite stuff.</li><li>Figures and pictures and references to thereof.</li><li>Be able to export to Github Flavored Markdown.</li></ul><h1 id="the-stack">The Stack</h1><ul><li><p>All documents are in Markdown. Specifically<a href="https://pandoc.org/MANUAL.html">Pandoc Markdown</a>. Obviously,
 the source is processed via<code>pandoc</code>.</p></li><li><p>The site itself is compiled using<a href="https://gohugo.io/">Hugo</a>.</p><p>The current version (as of this writing) doesn’t support any
 configuration when using Pandoc for markup processing. By default Hugo
@@ -1088,9 +1052,9 @@ mentioned what happened to the original appointment slot. I didn’t
 mention anything about seeing the same technician before. After all I
 was just happy that I was done with this and didn’t want to cause any
 trouble.</p><p>He said that technicians sometimes skip slots when they are running
-behind schedule.</p><section class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1" role="doc-endnote"><p><a href="https://www.theverge.com/2014/8/19/6004131/comcast-the-worst-company-in-america"><em>The
+behind schedule.</p><section id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1"><p><a href="https://www.theverge.com/2014/8/19/6004131/comcast-the-worst-company-in-america"><em>The
 Verge</em>.<em>The worst company in America.</em></a> (Accessed July
-13, 2020)<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn2" role="doc-endnote"><p><a href="https://www.urbandictionary.com/define.php?term=Long%20Wait"><em>Urban
+13, 2020)<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn2"><p><a href="https://www.urbandictionary.com/define.php?term=Long%20Wait"><em>Urban
 Dictionary</em>.<em>Long Wait</em></a> (Accessed July 13, 2020)<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section><h2 id="the-problem">The Problem</h2><p>Looking at what happened from the perspective of the technician, the
 logic behind all this becomes a little clearer.</p><p>You see, had the technician had tried to honor the original
 appointment — one which they were already late for — they would’ve been
@@ -1115,13 +1079,13 @@ appointments on time.</p><p>Assuming<span class="math inline">l-s > 0</span>, th
 outcome of the<em>skip when late</em> strategy is strictly better for
 the technician’s supervisor. I can’t imagine there being any incentive
 for the supervisor to penalize this strategy. So the technician also
-gets off scott free.</p><section class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol start="3"><li id="fn3" role="doc-endnote"><p>“No-shows” are just going to be
-rescheduled. It’s not the end of the world.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section><h2 id="why-this-is-relevant">Why This Is Relevant</h2><p>It’s easy to harp on Comcast<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> and some random lowly
+gets off scott free.</p><section id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol start="3"><li id="fn3"><p>“No-shows” are just going to be rescheduled. It’s not
+the end of the world.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section><h2 id="why-this-is-relevant">Why This Is Relevant</h2><p>It’s easy to harp on Comcast<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> and some random lowly
 technician. But this incentive pattern is everywhere. Even at Google and
 s.</p><p>Every time you measure someone’s success on<em>how well</em> they
 handled a number of issues or cases without taking into account<em>the
 cost they incurred</em> to get there, you are creating a Comcast
-Technician problem for your subordinates.</p><section class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol start="4"><li id="fn4" role="doc-endnote"><p><a href="https://www.theverge.com/2014/8/19/6004131/comcast-the-worst-company-in-america"><em>The
+Technician problem for your subordinates.</p><section id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol start="4"><li id="fn4"><p><a href="https://www.theverge.com/2014/8/19/6004131/comcast-the-worst-company-in-america"><em>The
 Verge</em>.<em>The worst company in America.</em></a> (Accessed July
 13, 2020)<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section><h2 id="but-is-it-bad">But Is It Bad?</h2><p>Dropping tasks instead of unbounded accretion of delay is sometimes a
 better strategy.</p><p>One might even argue that this is the cost of doing business and it
@@ -1149,8 +1113,8 @@ you can configure<code>coc-nvim</code><a href="https://github.com/neoclide/coc.n
 setting<code>coc.preferences.jumpCommand</code> to<code>drop</code>.
 See<code>:help coc-configuration</code> for details on how to set this,
 but basically it’s as simple as opening up the configuration using<code>:CocConfig</code> and then adding a<code>"coc.preferences.jumpCommand": "drop",</code> mapping to the
-configuration JSON file.</p><section class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1" role="doc-endnote"><p>Assuming you have<code>set hidden</code> that is. See<code>:help drop</code> for more
-details on what happens when the current buffer cannot be unloaded.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section><h2 id="switchbuf-or-swb">switchbuf or swb</h2><p>Or perhaps configuring each plugin is too much work. Enter<code>switchbuf</code>. This is a global setting in Vim that controls
+configuration JSON file.</p><section id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1"><p>Assuming you have<code>set hidden</code> that is. See<code>:help drop</code> for more details on what happens when the
+current buffer cannot be unloaded.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section><h2 id="switchbuf-or-swb">switchbuf or swb</h2><p>Or perhaps configuring each plugin is too much work. Enter<code>switchbuf</code>. This is a global setting in Vim that controls
 how Vim switches between buffers.</p><p>Setting<code>set switchbuf=useopen</code> has the same effect when
 invoking<code>buffer</code>. Note that using<code>sbuffer</code>,<code>sbnext</code>, or<code>sbrewind</code> automatically behaves as
 if this is the case. I.e. they will use an existing window if one
@@ -1319,10 +1283,10 @@ standardization discussions (<a href="https://github.com/w3c/mediacapture-main/i
 Polling enumerateDevices</a>,<a href="https://lists.w3.org/Archives/Public/public-privacy/2013JanMar/0007.html">Example:
 Ambient light events</a>).</p><h3 id="modelling-correlated-events">Modelling Correlated Events</h3><p>A correlatable event can be thought of as the tuple<code>&lt;surface-sample, timestamp></code>. The addition of the
 timestamp strictly increases the amount of information carried by the
-surface sample.</p><section class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1" role="doc-endnote"><p>Van Goethem, T. and Joosen, W., 2017.
-One side-channel to bring them all and in the darkness bind them:
-Associating isolated browsing sessions. In<em>11th {USENIX} Workshop on
-Offensive Technologies ({WOOT} 17)</em>. (<a href="https://pdfs.semanticscholar.org/5814/9610a57cb4626918bf003b8bad25e740b1f4.pdf">PDF</a>)<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section><h3 id="modelling-event-streams">Modelling Event Streams</h3><p>An event stream is simply a list of observed samples<code>sample₀, sample₁, ...</code>.</p><p>Each additional observation strictly increases the amount of
+surface sample.</p><section id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1"><p>Van Goethem, T. and Joosen, W., 2017. One side-channel
+to bring them all and in the darkness bind them: Associating isolated
+browsing sessions. In<em>11th {USENIX} Workshop on Offensive
+Technologies ({WOOT} 17)</em>. (<a href="https://pdfs.semanticscholar.org/5814/9610a57cb4626918bf003b8bad25e740b1f4.pdf">PDF</a>)<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section><h3 id="modelling-event-streams">Modelling Event Streams</h3><p>An event stream is simply a list of observed samples<code>sample₀, sample₁, ...</code>.</p><p>Each additional observation strictly increases the amount of
 information.</p><h3 id="other-examples">Other Examples:</h3><ul><li><code>Accelerometer</code> properties.</li><li><code>Sensor</code>,<code>onreading</code> event.</li><li><code>BatteryManager.onlevelchange</code> : Deprecated but still
 shipping.</li><li><code>Bluetooth.onadvertisementreceived</code></li><li><code>BroadcastChannel</code>, all events.</li><li><code>MediaDevices.devicechange</code> event.</li><li><code>GlobalEventHandlers.onfocus</code> and<code>onblur</code>
 events can fire simultaneously when switching between two browser
@@ -1337,8 +1301,8 @@ From §15 of<a href="https://w3c.github.io/mediacapture-main/#privacy-and-securi
 Capture and Streams API</a> specification.</p><p><strong>Pros</strong></p><ul><li>Prevents drive-by fingerprinting.</li></ul><p><strong>Cons</strong></p><ul><li><p>UI for permissions don’t disclose the fact that all sites that
 have been granted access to the same resource can synchronize
 identifiers as a side-effect.</p></li><li><p>Doesn’t prevent identity joining once permission is
-granted.</p></li></ul><section class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol start="2"><li id="fn2" role="doc-endnote"><p>Either via a legacy permissions
-prompt or explicitly requiring the use of the<a href="https://w3c.github.io/permissions/">Permissions API</a> in the
+granted.</p></li></ul><section id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol start="2"><li id="fn2"><p>Either via a legacy permissions prompt or explicitly
+requiring the use of the<a href="https://w3c.github.io/permissions/">Permissions API</a> in the
 spec for sensitive APIs.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section><h3 id="fuzzing-timing-of-events">Fuzzing Timing of Events</h3><p><strong>Goal</strong>: Deter correlation of events by injecting
 timing skew.</p><p>Mentioned in the snippet above from the Media Capture and Streams API
 and called out by Jeffrey Yasskin as a potential general mitigation in
@@ -1406,6 +1370,5 @@ goes out of focus. Thus identity can be correlated when switching
 browser windows.</p><h4 id="possible-mitigation">Possible Mitigation</h4><p>When the<em>new chain</em> and the<em>old chain</em><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> are
 in different top-level browsing contexts whose active documents are not
 same-origin, queue but don’t fire<code>change</code> and<code>blur</code> events until focus returns to the old top-level
-browsing context.</p><section class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol start="3"><li id="fn3" role="doc-endnote"><p><em>New chain</em> and<em>old
-chain</em> are defined in<a href="https://html.spec.whatwg.org/multipage/interaction.html#focus-update-steps">focus
+browsing context.</p><section id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol start="3"><li id="fn3"><p><em>New chain</em> and<em>old chain</em> are defined in<a href="https://html.spec.whatwg.org/multipage/interaction.html#focus-update-steps">focus
 update steps</a>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section><h3 id="notes">Notes</h3></content:encoded></item></channel></rss>

@@ -93,9 +93,9 @@ They are represented as a set of states. Each state can
 probabilistically transition to number of states with some probability
 distribution. Each transition emits a symbol.</p><p>If the emitted symbol doesn’t depend on any prior symbol, then we
 only really need one state. It will have a self-edge for each possible
-emitted symbol.</p><p><img src=bfaf0c67ef0b4dc58451e4766d1c69f969a46ad1.svg></p><p>If the emitted symbol depends on the previous symbol, then there will
+emitted symbol.</p><p><img src=0bb14c90267645735e94241f5c0c55ec653c00a0.svg></p><p>If the emitted symbol depends on the previous symbol, then there will
 be as many states needed as there are symbols. This is the case for
-digrams.</p><p><img src=d4817df128a2d8c85c7174bce7faac58e6fd7049.svg></p><p>For trigrams, since they depend on the previous two symbols, require
+digrams.</p><p><img src=96b71c26be95aea12076869760028d324a162f5e.svg></p><p>For trigrams, since they depend on the previous two symbols, require
 <span class="math inline">n^2</span> states.</p><h3 id=ergodic-and-mixed-sources>5. Ergodic and Mixed Sources</h3><blockquote><p>In an ergodic process every sequence produced by the process is the
 same in statistical properties. […] Roughly the ergodic property means
 statistical homogeneity.</p></blockquote><h3 id=choice-uncertainty-and-entropy>6. Choice Uncertainty and
@@ -146,11 +146,16 @@ p_i</span>.</p></li><li><p>A message of sufficient length where all symbols appe
 expected occurrence count would have a probability of occurring of:</p><p><span class="math display">p = \prod_i p_i^{N p_i}</span></p></li></ol><p>From there we see that:</p><p><span class="math display">\begin{align*}
 \log p & = \sum_i N p_i \log p_i \\
 & = N H
-\end{align*}</span></p><nav class=suggested><h2 class=suggested>More articles from this blog</h4><ul><li><h3 class="suggested title"><a href=/blog/things-you-can-do-with-nvim-and-vscode/>Things You Can Do With Neovim and Vscode That You Can't Do With Neovim Alone</a></h3><p>This is the third time I’ve tried in earnest to switch to VSCode from Vim (or Neovim in my case) for reasons not all of which are relevant to this post. But I love Vim style modal editing and I’ve grown accustomed to some features that aren’t present or not well emulated in VSCodeVim.
-Enter VSCode Neovim. I was intrigued by their claim to integrate Neovim instead of trying to emulate Vim.</p></li><li><h3 class="suggested title"><a href=/blog/identity-domains/>Identity Domains</a></h3><p>An Identity Domain is a scope within which we assume that the user’s
-identity can roam freely.</p></li><li><h3 class="suggested title"><a href=/blog/ten-years/>Ten Years</a></h3><p>It’s been ten years since I started at Google. The work anniversary fell on 6th of December.
+\end{align*}</span></p><nav class=suggested><h2 class=suggested>More articles from this blog</h4><ul><li><h3 class="suggested title"><a href=/blog/inktober-decay/>Inktober - Decay</a></h3><p>“Decay” - I was kind of going for tooth-decay caused by tiny little gremlins. For Inktober 52.</p></li><li><h3 class="suggested title"><a href=/blog/fart-limit/>Fart Limit</a></h3><p>Can a fart be fatal? Let’s see what science and OSHA have to say.</p></li><li><h3 class="suggested title"><a href=/blog/ephemeral-fingerprinting/>Ephemeral Fingerprinting On The Web</a></h3><p><p>Any ephemeral low-entropy web observable property whose changes are
+concurrently observable by multiple sites can lead to cross site
+identity joining.</p><p>This method of identity joining does not require coordination between
+multiple first parties. A single third party embedded within multiple
+first parties can also use this method.</p></p></li><li><h3 class="suggested title"><a href=/blog/mark-goes-up-and-down/>Markdown should be readble without knowing Markdown</a></h3><p>Markdown started out as a way to write text files that could also be machine parsed and rendered into a higher fidelity format.
+To quote from the Philosophy:
+Readability, however, is emphasized above all else. A Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been marked up with tags or formatting instructions.
+This particular aspect of the format wasn’t maintained very well. Immediately following the “Philosophy” section is “Inline HTML” which contradicts the “without looking like it’s been marked up” requirement.</p></li><li><h3 class="suggested title"><a href=/blog/ten-years/>Ten Years</a></h3><p>It’s been ten years since I started at Google. The work anniversary fell on 6th of December.
 Ten years ago my wife and I made our way to Mountain View for my orientation; all excited for a brand new chapter in our lives. After spending a week in Mountain View / Palo Alto we both decided that California was not for us. But that’s beside the point.
-I was elated. This was pretty much everything I dreamt of as a kid growing up in Sri Lanka.</p></li><li><h3 class="suggested title"><a href=/blog/inktober-decay/>Inktober - Decay</a></h3><p>“Decay” - I was kind of going for tooth-decay caused by tiny little gremlins. For Inktober 52.</p></li><li><h3 class="suggested title"><a href=/blog/visualizing-people-2/>Visualizing A Million People</a></h3><p>If your feature pisses off a million people what does this angry mob
-look like? Spoiler: We only get to 750,000.</p></li></ul></nav><h4>Comment</h4><script src=https://utteranc.es/client.js repo=asankah/blog-comments issue-term=title label=PublicComment theme=github-light crossorigin=anonymous async></script></div><div class=pagination><a href=/blog/sometimes-its-the-interviewers-who-suck/ class="left arrow">&#8592;</a>
+I was elated. This was pretty much everything I dreamt of as a kid growing up in Sri Lanka.</p></li></ul></nav><h4>Comment</h4><script src=https://utteranc.es/client.js repo=asankah/blog-comments issue-term=title label=PublicComment theme=github-light crossorigin=anonymous async></script></div><div class=pagination><a href=/blog/sometimes-its-the-interviewers-who-suck/ class="left arrow">&#8592;</a>
 <a href=/blog/fart-limit/ class="right arrow">&#8594;</a>
-<a href=# class=top>Top</a></div></main><footer><span>Last modified on January 13, 2022</span></footer><script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-169355711-2','auto'),ga('send','pageview'))</script><script async src=https://www.google-analytics.com/analytics.js></script></body></html>
+<a href=# class=top>Top</a></div></main><footer><span>Last modified on January 13, 2022</span></footer><script async src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-GSREL2EZ4Y',{anonymize_ip:!1})}</script></body></html>

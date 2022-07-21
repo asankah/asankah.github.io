@@ -24,9 +24,9 @@ See <code>:help coc-configuration</code> for details on how to set this,
 but basically it’s as simple as opening up the configuration using
 <code>:CocConfig</code> and then adding a
 <code>"coc.preferences.jumpCommand": "drop",</code> mapping to the
-configuration JSON file.</p><section class="footnotes footnotes-end-of-section" role=doc-endnotes><hr><ol><li id=fn1 role=doc-endnote><p>Assuming you have
-<code>set hidden</code> that is. See <code>:help drop</code> for more
-details on what happens when the current buffer cannot be unloaded.<a href=#fnref1 class=footnote-back role=doc-backlink>↩︎</a></p></li></ol></section><h2 id=switchbuf-or-swb>switchbuf or swb</h2><p>Or perhaps configuring each plugin is too much work. Enter
+configuration JSON file.</p><section id=footnotes class="footnotes footnotes-end-of-section" role=doc-endnotes><hr><ol><li id=fn1><p>Assuming you have <code>set hidden</code> that is. See
+<code>:help drop</code> for more details on what happens when the
+current buffer cannot be unloaded.<a href=#fnref1 class=footnote-back role=doc-backlink>↩︎</a></p></li></ol></section><h2 id=switchbuf-or-swb>switchbuf or swb</h2><p>Or perhaps configuring each plugin is too much work. Enter
 <code>switchbuf</code>. This is a global setting in Vim that controls
 how Vim switches between buffers.</p><p>Setting <code>set switchbuf=useopen</code> has the same effect when
 invoking <code>buffer</code>. Note that using <code>sbuffer</code>,
@@ -35,13 +35,16 @@ if this is the case. I.e. they will use an existing window if one
 already has the buffer open.</p><p>Setting <code>set switchbuf=usetab</code> is similar to the effect of
 <code>useopen</code> except that it will look through windows in other
 tabs.</p><p>See <code>:help switchbuf</code> or <a href="http://vimdoc.sourceforge.net/htmldoc/options.html#'switchbuf'">here
-on the web</a> for full details.</p><nav class=suggested><h2 class=suggested>More articles from this blog</h4><ul><li><h3 class="suggested title"><a href=/blog/identity-domains/>Identity Domains</a></h3><p>An Identity Domain is a scope within which we assume that the user’s
-identity can roam freely.</p></li><li><h3 class="suggested title"><a href=/blog/inktober-decay/>Inktober - Decay</a></h3><p>“Decay” - I was kind of going for tooth-decay caused by tiny little gremlins. For Inktober 52.</p></li><li><h3 class="suggested title"><a href=/blog/ten-years/>Ten Years</a></h3><p>It’s been ten years since I started at Google. The work anniversary fell on 6th of December.
-Ten years ago my wife and I made our way to Mountain View for my orientation; all excited for a brand new chapter in our lives. After spending a week in Mountain View / Palo Alto we both decided that California was not for us. But that’s beside the point.
-I was elated. This was pretty much everything I dreamt of as a kid growing up in Sri Lanka.</p></li><li><h3 class="suggested title"><a href=/blog/sometimes-its-the-interviewers-who-suck/>Sometimes It's the Interviewers Who Suck</a></h3><p>I’ve done hundreds of interviews. I’ve also served in numerous hiring committees over the years.
-Tech companies tend to have cultures built around tech people interviewing other tech people, typically in what is not-so-affectionately known as the “Tech interview.” This is good because candidates would be evaluated based on their actual skills instead of keywords in their resume. Interviewers are in effect choosing their future coworkers which makes in interview serve the interest of both the interviewer and the interviewee.</p></li><li><h3 class="suggested title"><a href=/blog/git-autopush/>Use Git hooks to automatically push after every commit</a></h3><p>During before and after various Git operations, Git invokes special
-hooks that can be used execute custom scripts. This article explains how
-to use them to automatically push to an upstream repository every time
-you make a commit to a local repo.</p></li></ul></nav><h4>Comment</h4><script src=https://utteranc.es/client.js repo=asankah/blog-comments issue-term=title label=PublicComment theme=github-light crossorigin=anonymous async></script></div><div class=pagination><a href=/blog/notes-on-fact-checking/ class="left arrow">&#8592;</a>
+on the web</a> for full details.</p><nav class=suggested><h2 class=suggested>More articles from this blog</h4><ul><li><h3 class="suggested title"><a href=/blog/syntax-highlighting/>On Highlighting Syntax vs. Semantics</a></h3><p>Takes a look at an alternate form of code highlighting based on core
+semantics instead of syntactic role.</p></li><li><h3 class="suggested title"><a href=/blog/remarkable-first-impressions/>Note-taking on a reMarkable 2</a></h3><p>Sentiments after using the reMarkable 2 tablet for a month.</p></li><li><h3 class="suggested title"><a href=/blog/poisson-distribution/>Deriving the Poisson Distribution</a></h3><p>Where does the Poisson Distribution come from?
+A little bit of research1 tells us that the distribution was originally introduced by Abraham de Moivre in 1710 in an article called “On the Measurement of Chance, or, on the Probability of Events in Games Depending Upon Fortuitous Chance” 2 (not the original title).
+A few steps that will get us there is laid out below.
+Let’s start with a simple “rate” problem.</p></li><li><h3 class="suggested title"><a href=/blog/ephemeral-fingerprinting/>Ephemeral Fingerprinting On The Web</a></h3><p><p>Any ephemeral low-entropy web observable property whose changes are
+concurrently observable by multiple sites can lead to cross site
+identity joining.</p><p>This method of identity joining does not require coordination between
+multiple first parties. A single third party embedded within multiple
+first parties can also use this method.</p></p></li><li><h3 class="suggested title"><a href=/blog/grab-diagram-workflow-re2/>Quickly grab a snapshot of your reMarkable tablet</a></h3><p>How to bind a hotkey to grab a snapshot of your reMarkable display
+and copy it to the clipboard on a Mac.</p></li></ul></nav><h4>Comment</h4><script src=https://utteranc.es/client.js repo=asankah/blog-comments issue-term=title label=PublicComment theme=github-light crossorigin=anonymous async></script></div><div class=pagination><a href=/blog/notes-on-fact-checking/ class="left arrow">&#8592;</a>
 <a href=/blog/comcast-technican-problem/ class="right arrow">&#8594;</a>
-<a href=# class=top>Top</a></div></main><footer><span>Last modified on January 13, 2022</span></footer><script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-169355711-2','auto'),ga('send','pageview'))</script><script async src=https://www.google-analytics.com/analytics.js></script></body></html>
+<a href=# class=top>Top</a></div></main><footer><span>Last modified on January 13, 2022</span></footer><script async src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-GSREL2EZ4Y',{anonymize_ip:!1})}</script></body></html>
