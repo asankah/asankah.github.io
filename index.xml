@@ -1,4 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strong Opinions, Weekly Held</title><link>https://xn--izc.com/</link><description>Recent content on Strong Opinions, Weekly Held</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Asanka Herath</copyright><lastBuildDate>Tue, 05 Apr 2022 13:02:12 -0400</lastBuildDate><atom:link href="https://xn--izc.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Markdown should be readble without knowing Markdown</title><link>https://xn--izc.com/blog/mark-goes-up-and-down/</link><pubDate>Tue, 05 Apr 2022 13:02:12 -0400</pubDate><guid>https://xn--izc.com/blog/mark-goes-up-and-down/</guid><description>Markdown started out as a way to write text files that could also be machine parsed and rendered into a higher fidelity format.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strong Opinions, Weekly Held</title><link>https://xn--izc.com/</link><description>Recent content on Strong Opinions, Weekly Held</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Asanka Herath</copyright><lastBuildDate>Tue, 05 Jul 2022 16:15:23 -0400</lastBuildDate><atom:link href="https://xn--izc.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Use Git hooks to automatically push after every commit</title><link>https://xn--izc.com/blog/git-autopush/</link><pubDate>Tue, 05 Jul 2022 16:15:23 -0400</pubDate><guid>https://xn--izc.com/blog/git-autopush/</guid><description>During before and after various Git operations, Git invokes special
+hooks that can be used execute custom scripts. This article explains how
+to use them to automatically push to an upstream repository every time
+you make a commit to a local repo.</description><content:encoded><p>A Git hook is a shell script that is invoked at specific points
+during some Git operations. They are documented in<a href="https://www.git-scm.com/docs/githooks#_post_commit">the Git
+book</a>.</p><p>The hook we are interested in is<code>post-commit</code> (<a href="https://www.git-scm.com/docs/githooks#_post_commit">documented
+here</a>). It gets run after a new commit is made. This is exactly when
+we want to try and update our remote.</p><p>Our hook will:</p><ul><li>Execute each time you commit something into your repository.</li><li>Avoid doing anything if the commit is made during a rebase or
+merge.</li><li>Push to a remote named<code>origin</code> (or whichever one you
+change the<code>UPSTREAM</code> shell variable to point).</li><li>Create or update a remote reference that matches the branch name
+that’s currently checked out.</li></ul><p>Copy and paste the following script into a file named<code>.git/hooks/post-commit</code> in your repository directory.</p><p><strong>IMPORTANT</strong>: Afterwards run the following to make the
+script executable.:</p><pre class="shell"><code>chmod +x .git/hooks/post-commit</code></pre><script type="application/javascript" src="https://gist.github.com/asankah/a6263bbd6081bffd031ca066e5177df2.js"/></content:encoded></item><item><title>DARPA's Heilmeier Catechism</title><link>https://xn--izc.com/blog/darpa-heilmeier-catechism/</link><pubDate>Tue, 28 Jun 2022 10:11:17 -0400</pubDate><guid>https://xn--izc.com/blog/darpa-heilmeier-catechism/</guid><description>A set of questions help you think through and evaluate proposed
+projects and research programs.</description><content:encoded><p>It seems the hardest part of engineering is the part where you are
+staring at a blank page with a vague notion of a problem statement in
+your head.</p><p>First you seek structure. After all your attention span can only hold
+so much at the same time. In order to tackle larger problems, you need
+to reduce large parts of the problem area into intuition. And in turn,
+to reduce parts of the problem into intuition, you need to break those
+pieces into smaller simpler pieces that you can chew on
+individually.</p><p>Losing sight of the forest for the trees is easy during this
+process.</p><p>Why were you trying to solve this problem in the first place? Would
+you have started if you knew then what you know now about the real scope
+of the problem?</p><p>Such concerns are also part of the problem statement; parts that help
+your prioritize and select the best solution amongst many. Throughout
+all, it’s always good to keep and eye on the prize. That being the end
+goal of the exercise. The goal must justify the effort involved. Once
+again, for that you need to reduce your motives into intuition.</p><p>The<a href="https://www.darpa.mil/work-with-us/heilmeier-catechism">“The
+Heilmeier Catechism”</a> is “a set of questions […] to help Agency
+officials think through and evaluate proposed research programs”. The
+list of questions is duplicated here for your convenience. It’s a short
+and terse list. Much like what your design sketch should be.</p><ul><li>What are you trying to do? Articulate your objectives using
+absolutely no jargon.</li><li>How is it done today, and what are the limits of current
+practice?</li><li>What is new in your approach and why do you think it will be
+successful?</li><li>Who cares? If you are successful, what difference will it make?</li><li>What are the risks?</li><li>How much will it cost?</li><li>How long will it take?</li><li>What are the mid-term and final “exams” to check for success?</li></ul><p>(Source<a href="https://www.darpa.mil/work-with-us/heilmeier-catechism">The
+Heilmeier Catechism - DARPA</a>).</p></content:encoded></item><item><title>Markdown should be readble without knowing Markdown</title><link>https://xn--izc.com/blog/mark-goes-up-and-down/</link><pubDate>Tue, 05 Apr 2022 13:02:12 -0400</pubDate><guid>https://xn--izc.com/blog/mark-goes-up-and-down/</guid><description>Markdown started out as a way to write text files that could also be machine parsed and rendered into a higher fidelity format.
 To quote from the Philosophy:
 Readability, however, is emphasized above all else. A Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been marked up with tags or formatting instructions.
 This particular aspect of the format wasn’t maintained very well. Immediately following the “Philosophy” section is “Inline HTML” which contradicts the “without looking like it’s been marked up” requirement.</description><content:encoded><p><a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a>
@@ -46,8 +80,8 @@ gender gaps in mental health. I look at the data that seems to have
 yielded this counter-intuitive results and find it lacking.</description><content:encoded><p>Today is the first day of<a href="https://www.nationalgeographic.com/history/article/why-the-us-celebrates-womens-history-month-every-march">Women’s
 History Month</a>.</p><p>Coincidentally there’s a paper making the rounds titled<em>“The
 gender gap in adolescent mental health: A cross-national investigation
-of 566,829 adolescents across 73 countries”</em><span class="citation" data-cites="campbell2021gender"><a href="#ref-campbell2021gender" role="doc-biblioref">[1]</a></span>, which makes some these interesting
-claims:</p><ul><li>Girls have worse average mental health than boys across 4 mental
+of 566,829 adolescents across 73 countries”</em><span class="citation" data-cites="campbell2021gender">[1]</span>, which makes some these
+interesting claims:</p><ul><li>Girls have worse average mental health than boys across 4 mental
 health measures.</li><li>There is significant heterogeneity in the mental health gender gap
 size across countries.</li><li>The gap is most pronounced for psychological distress and life
 satisfaction.</li><li>More gender-equal countries have more gender gaps in mental
@@ -56,9 +90,8 @@ let’s have a closer look.</p><p>The study uses the<a href="https://www.oecd.or
 dataset</a>, introducing a couple of caveats. Namely:</p><ol type="1"><li>All survey respondents were 15 years old; thus, the dataset doesn’t
 consider higher education and employment effects.</li><li>The data is from 2018; thus excludes the effects of the pandemic. It
 would be interesting to see how the responses change now that people are
-coming out of a lengthy lock down.</li><li>Gender was binary. There was no non-binary option.</li></ol><p>The study<span class="citation" data-cites="campbell2021gender"><a href="#ref-campbell2021gender" role="doc-biblioref">[1]</a></span>
-derives five measures of mental health based on the PISA 2018 dataset as
-follows:</p><ol type="1"><li><p><em>“Life satisfaction”</em> measures responses to the question<em>“on a scale of 0-10, overall, how satisfied are you with your life
+coming out of a lengthy lock down.</li><li>Gender was binary. There was no non-binary option.</li></ol><p>The study<span class="citation" data-cites="campbell2021gender">[1]</span> derives five measures of
+mental health based on the PISA 2018 dataset as follows:</p><ol type="1"><li><p><em>“Life satisfaction”</em> measures responses to the question<em>“on a scale of 0-10, overall, how satisfied are you with your life
 as a whole these days?”</em></p></li><li><p><em>“Psychological distress”</em> measures responses to the
 question on how often they felt<em>“sad”</em>,<em>“miserable”</em>,<em>“scared”</em>, and<em>“afraid”</em> on a scale of<em>“never”</em>,<em>“rarely”</em>,<em>“sometimes”</em>, and<em>“always”</em>. Each
 response yields points ranging from 1 through 4, respectively. Summing
@@ -70,9 +103,8 @@ yields a combined scale of 5-20.</p></li><li><p><em>“Eudaemonic wellbeing”</
 with the below statements. The scale was<em>“strongly disagree”</em>,<em>“disagree”</em>,<em>“agree”</em>, and<em>“strongly agree”</em>
 with a combined score in the range 3-12:</p><ol type="1"><li><em>“My life has clear meaning or purpose”</em>.</li><li><em>“I have discovered a satisfactory meaning in life.”</em></li><li><em>“I have a clear sense of what gives meaning to my
 life”</em>.</li></ol></li></ol><p>Details of the analysis are in<a href="https://ars.els-cdn.com/content/image/1-s2.0-S2352827321000173-mmc1.pdf">the
-companion document (PDF link)</a>.</p><p>In figure S2 of<span class="citation" data-cites="campbell2021gender"><a href="#ref-campbell2021gender" role="doc-biblioref">[1]</a></span> shows the distribution of<em>life
-satisfaction</em>. Again, developed nations are not doing well compared
-with countries like Saudi Arabia.</p><figure><img src="./life-satisfaction-eu.png" alt="Distribution of life satisfaction scores for France, Germany, Greece, and Iceland. The range of responses were from 0 through 10. Red is male, and blue is female."/><figcaption aria-hidden="true">Distribution of life satisfaction scores
+companion document (PDF link)</a>.</p><p>In figure S2 of<span class="citation" data-cites="campbell2021gender">[1]</span> shows the distribution of<em>life satisfaction</em>. Again, developed nations are not doing well
+compared with countries like Saudi Arabia.</p><figure><img src="./life-satisfaction-eu.png" alt="Distribution of life satisfaction scores for France, Germany, Greece, and Iceland. The range of responses were from 0 through 10. Red is male, and blue is female."/><figcaption aria-hidden="true">Distribution of life satisfaction scores
 for France, Germany, Greece, and Iceland. The range of responses were
 from 0 through 10. Red is male, and blue is female.</figcaption></figure><p>Compare with:</p><figure><img src="./life-satisfaction-sa-uae.png" alt="Distribution of life satisfaction scores for Saudi Arabia and United Arab Emirates. Note that most respondents gave a score of 10."/><figcaption aria-hidden="true">Distribution of life satisfaction scores
 for Saudi Arabia and United Arab Emirates. Note that most respondents
@@ -944,23 +976,22 @@ awesomeness.</li></ol></content:encoded></item><item><title>Why 'Strong Opinions
 In his essay – which isn’t very long if you would like to read the whole thing yourself – he lays out the concept as follows:
 I have found that the fastest way to an effective forecast is often through a sequence of lousy forecasts.</description><content:encoded><h2 id="origins-of-the-phrase">Origins of the phrase</h2><p>The title of this blog is<strong>Strong Opinions, Weakly
 Held</strong>. The same concept shows up elsewhere are<em>Strong
-Opinions Loosely Held</em>. An eponymous essay by Paul Saffo in<span class="citation" data-cites="Saffo"><a href="#ref-Saffo" role="doc-biblioref">[1]</a></span> introduced the world to this
-concept.</p><p>In his essay – which isn’t very long if you would like to<a href="https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/">read
+Opinions Loosely Held</em>. An eponymous essay by Paul Saffo in<span class="citation" data-cites="Saffo">[1]</span> introduced the world to
+this concept.</p><p>In his essay – which isn’t very long if you would like to<a href="https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/">read
 the whole thing yourself</a> – he lays out the concept as follows:</p><blockquote><p>I have found that the fastest way to an effective forecast is often
 through a sequence of lousy forecasts. Instead of withholding judgment
 until an exhaustive search for data is complete, I will force myself to
 make a tentative forecast based on the information available, and then
 systematically tear it apart, using the insights gained to guide my
-search for further indicators and information.</p></blockquote><h2 id="criticism">Criticism</h2><p>Cedric Chin’s critique<span class="citation" data-cites="Cedric"><a href="#ref-Cedric" role="doc-biblioref">[2]</a></span> comes down to two
-points that the author summarizes as follows:</p><blockquote><p>In my experience, ‘strong opinions, weakly held’ is difficult to put
+search for further indicators and information.</p></blockquote><h2 id="criticism">Criticism</h2><p>Cedric Chin’s critique<span class="citation" data-cites="Cedric">[2]</span> comes down to two points that the author
+summarizes as follows:</p><blockquote><p>In my experience, ‘strong opinions, weakly held’ is difficult to put
 into practice. Most people who try will either:</p><ol type="1"><li>Use it as downside-protection to justify their strongly-held bad
 opinions, or</li><li>Struggle to shift from one strong opinion to another.</li></ol><p>The reason it is difficult is because it works against the grain of
 the human mind.</p><p>So don’t bother. The next time you find yourself making a judgment,
 don’t invoke ‘strong opinions, weakly held’. Instead, ask: “how much are
 you willing to bet on that?” Doing so will jolt people into the types of
-thinking you want to encourage.</p></blockquote><p>Michael Natkin on<span class="citation" data-cites="Michael"><a href="#ref-Michael" role="doc-biblioref">[3]</a></span> points out the
-fallacy of assuming that strong opinions will be reliably
-challenged:</p><blockquote><p>The idea of strong opinions, loosely held is that you can make
+thinking you want to encourage.</p></blockquote><p>Michael Natkin on<span class="citation" data-cites="Michael">[3]</span> points out the fallacy of assuming that
+strong opinions will be reliably challenged:</p><blockquote><p>The idea of strong opinions, loosely held is that you can make
 bombastic statements, and everyone should implicitly assume that you’ll
 happily change your mind in a heartbeat if new data suggests you are
 wrong. It is supposed to lead to a collegial, competitive environment in
