@@ -93,9 +93,9 @@ They are represented as a set of states. Each state can
 probabilistically transition to number of states with some probability
 distribution. Each transition emits a symbol.</p><p>If the emitted symbol doesn’t depend on any prior symbol, then we
 only really need one state. It will have a self-edge for each possible
-emitted symbol.</p><p><img src=0bb14c90267645735e94241f5c0c55ec653c00a0.svg></p><p>If the emitted symbol depends on the previous symbol, then there will
+emitted symbol.</p><p><img src=bfaf0c67ef0b4dc58451e4766d1c69f969a46ad1.svg></p><p>If the emitted symbol depends on the previous symbol, then there will
 be as many states needed as there are symbols. This is the case for
-digrams.</p><p><img src=96b71c26be95aea12076869760028d324a162f5e.svg></p><p>For trigrams, since they depend on the previous two symbols, require
+digrams.</p><p><img src=d4817df128a2d8c85c7174bce7faac58e6fd7049.svg></p><p>For trigrams, since they depend on the previous two symbols, require
 <span class="math inline">n^2</span> states.</p><h3 id=ergodic-and-mixed-sources>5. Ergodic and Mixed Sources</h3><blockquote><p>In an ergodic process every sequence produced by the process is the
 same in statistical properties. […] Roughly the ergodic property means
 statistical homogeneity.</p></blockquote><h3 id=choice-uncertainty-and-entropy>6. Choice Uncertainty and
@@ -146,14 +146,20 @@ p_i</span>.</p></li><li><p>A message of sufficient length where all symbols appe
 expected occurrence count would have a probability of occurring of:</p><p><span class="math display">p = \prod_i p_i^{N p_i}</span></p></li></ol><p>From there we see that:</p><p><span class="math display">\begin{align*}
 \log p & = \sum_i N p_i \log p_i \\
 & = N H
-\end{align*}</span></p><nav class=suggested><h2 class=suggested>More articles from this blog</h4><ul><li><h3 class="suggested title"><a href=/blog/grab-diagram-workflow-re2/>Quickly grab a snapshot of your reMarkable tablet</a></h3><p>How to bind a hotkey to grab a snapshot of your reMarkable display
-and copy it to the clipboard on a Mac.</p></li><li><h3 class="suggested title"><a href=/blog/use-drop-not-edit/>Vim: Use Drop Not Edit, SBuffer Not Buffer</a></h3><p>I’m going to assume you are a Vim user.
+\end{align*}</span></p><nav class=suggested><h2 class=suggested>More articles from this blog</h4><ul><li><h3 class="suggested title"><a href=/blog/identity-domains/>Identity Domains</a></h3><p>An Identity Domain is a scope within which we assume that the user’s
+identity can roam freely.</p></li><li><h3 class="suggested title"><a href=/blog/ephemeral-fingerprinting/>Ephemeral Fingerprinting On The Web</a></h3><p><p>Any ephemeral low-entropy web observable property whose changes are
+concurrently observable by multiple sites can lead to cross site
+identity joining.</p><p>This method of identity joining does not require coordination between
+multiple first parties. A single third party embedded within multiple
+first parties can also use this method.</p></p></li><li><h3 class="suggested title"><a href=/blog/on-wontfixing-bugs/>On WontFixing Bugs</a></h3><p><p>Large projects accumulate a large number of issue reports over time.
+This is normal. Typically for a “successful” project the rate of new
+issues being reported will exceed the rate of issues being fixed. Hence
+the growth.</p><p>But what are they to do about this ever-growing pile of bugs?</p></p></li><li><h3 class="suggested title"><a href=/blog/poisson-distribution/>Deriving the Poisson Distribution</a></h3><p>Where does the Poisson Distribution come from?
+A little bit of research1 tells us that the distribution was originally introduced by Abraham de Moivre in 1710 in an article called “On the Measurement of Chance, or, on the Probability of Events in Games Depending Upon Fortuitous Chance” 2 (not the original title).
+A few steps that will get us there is laid out below.
+Let’s start with a simple “rate” problem.</p></li><li><h3 class="suggested title"><a href=/blog/use-drop-not-edit/>Vim: Use Drop Not Edit, SBuffer Not Buffer</a></h3><p>I’m going to assume you are a Vim user.
 Say you have a several windows open in Vim and you want to edit another file. Using :edit works if you want to open the file in the current window unconditionally.
-But that’s often not what you want. If you have the same file open in another window, then the most efficient and least disruptive thing to do is to switch to that window.</p></li><li><h3 class="suggested title"><a href=/blog/remarkable-first-impressions/>Note-taking on a reMarkable 2</a></h3><p>Sentiments after using the reMarkable 2 tablet for a month.</p></li><li><h3 class="suggested title"><a href=/blog/ten-years/>Ten Years</a></h3><p>It’s been ten years since I started at Google. The work anniversary fell on 6th of December.
-Ten years ago my wife and I made our way to Mountain View for my orientation; all excited for a brand new chapter in our lives. After spending a week in Mountain View / Palo Alto we both decided that California was not for us. But that’s beside the point.
-I was elated. This was pretty much everything I dreamt of as a kid growing up in Sri Lanka.</p></li><li><h3 class="suggested title"><a href=/blog/why-strong-opinions-weakly-held/>Why 'Strong Opinions Weakly Held'</a></h3><p>Origins of the phrase The title of this blog is Strong Opinions, Weakly Held. The same concept shows up elsewhere are Strong Opinions Loosely Held. An eponymous essay by Paul Saffo in [1] introduced the world to this concept.
-In his essay – which isn’t very long if you would like to read the whole thing yourself – he lays out the concept as follows:
-I have found that the fastest way to an effective forecast is often through a sequence of lousy forecasts.</p></li></ul></nav><h4>Comment</h4><script src=https://utteranc.es/client.js repo=asankah/blog-comments issue-term=title label=PublicComment theme=github-light crossorigin=anonymous async></script></div><div class=pagination><a href=/blog/sometimes-its-the-interviewers-who-suck/ class="left arrow">&#8592;</a>
+But that’s often not what you want. If you have the same file open in another window, then the most efficient and least disruptive thing to do is to switch to that window.</p></li></ul></nav><h4>Comment</h4><script src=https://utteranc.es/client.js repo=asankah/blog-comments issue-term=title label=PublicComment theme=github-light crossorigin=anonymous async></script></div><div class=pagination><a href=/blog/sometimes-its-the-interviewers-who-suck/ class="left arrow">&#8592;</a>
 <a href=/blog/fart-limit/ class="right arrow">&#8594;</a>
 <a href=# class=top>Top</a></div></main><footer><span>Last modified on January 13, 2022</span></footer><script async src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-GSREL2EZ4Y',{anonymize_ip:!1})}</script></body></html>
