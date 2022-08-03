@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strong Opinions, Weekly Held</title><link>https://xn--izc.com/</link><description>Recent content on Strong Opinions, Weekly Held</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Asanka Herath</copyright><lastBuildDate>Tue, 05 Jul 2022 16:15:23 -0400</lastBuildDate><atom:link href="https://xn--izc.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Use Git hooks to automatically push after every commit</title><link>https://xn--izc.com/blog/git-autopush/</link><pubDate>Tue, 05 Jul 2022 16:15:23 -0400</pubDate><guid>https://xn--izc.com/blog/git-autopush/</guid><description>During before and after various Git operations, Git invokes special
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strong Opinions, Weekly Held</title><link>https://xn--izc.com/</link><description>Recent content on Strong Opinions, Weekly Held</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Asanka Herath</copyright><lastBuildDate>Wed, 03 Aug 2022 11:50:46 -0400</lastBuildDate><atom:link href="https://xn--izc.com/index.xml" rel="self" type="application/rss+xml"/><item><title>All numbers are interesting</title><link>https://xn--izc.com/blog/interesting-numbers/</link><pubDate>Wed, 03 Aug 2022 11:50:46 -0400</pubDate><guid>https://xn--izc.com/blog/interesting-numbers/</guid><description>A proof.</description><content:encoded><p><strong>Theorem</strong>: All numbers are interesting.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p><p>Proof by contradiction.</p><p>Assume the theorem is false. Then there must be at least one number
+that is boring.</p><p><strong>Let</strong><span class="math inline">\mathbb{B} \subset
+\Z</span> be the set of boring numbers.</p><p>By the assumption, we have:</p><p><span id="eq:e"><span class="math display">\mathbb{B} \ne
+\phi\qquad{(1)}</span></span></p><p>Thus, because<span class="math inline">\mathbb{B}</span> is both
+non-empty and well ordered with respect to<span class="math inline">\lt</span> (due to<span class="math inline">\mathbb{B} \subset \Z</span>), we have:</p><p><span id="eq:b"><span class="math display">\exists b \in \mathbb{B}
+\| \mathrm{inf}(\mathbb{B})\qquad{(2)}</span></span></p><p>Thus this<span class="math inline">b</span> is the smallest boring
+number in existence; which makes<span class="math inline">b</span>
+interesting. A contradiction! ∎</p><p>Note that the same doesn’t trivially hold for the set of real numbers
+since you’d first have to prove that the set of boring real numbers is
+either finite or bounded, and that the infimum is a member of the
+set.</p><section class="footnotes footnotes-end-of-document" role="doc-endnotes"><hr/><ol><li id="fn1" role="doc-endnote"><p>Not actually a theorem.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></section></content:encoded></item><item><title>Use Git hooks to automatically push after every commit</title><link>https://xn--izc.com/blog/git-autopush/</link><pubDate>Tue, 05 Jul 2022 16:15:23 -0400</pubDate><guid>https://xn--izc.com/blog/git-autopush/</guid><description>During before and after various Git operations, Git invokes special
 hooks that can be used execute custom scripts. This article explains how
 to use them to automatically push to an upstream repository every time
 you make a commit to a local repo.</description><content:encoded><p>A Git hook is a shell script that is invoked at specific points
@@ -511,9 +521,9 @@ They are represented as a set of states. Each state can
 probabilistically transition to number of states with some probability
 distribution. Each transition emits a symbol.</p><p>If the emitted symbol doesn’t depend on any prior symbol, then we
 only really need one state. It will have a self-edge for each possible
-emitted symbol.</p><p><img src="bfaf0c67ef0b4dc58451e4766d1c69f969a46ad1.svg"/></p><p>If the emitted symbol depends on the previous symbol, then there will
+emitted symbol.</p><p><img src="fefcbe920ef4ff06b94fea43af5ff39185309871.svg"/></p><p>If the emitted symbol depends on the previous symbol, then there will
 be as many states needed as there are symbols. This is the case for
-digrams.</p><p><img src="d4817df128a2d8c85c7174bce7faac58e6fd7049.svg"/></p><p>For trigrams, since they depend on the previous two symbols, require<span class="math inline">n^2</span> states.</p><h3 id="ergodic-and-mixed-sources">5. Ergodic and Mixed Sources</h3><blockquote><p>In an ergodic process every sequence produced by the process is the
+digrams.</p><p><img src="e1c3f42707bc51ef3fbcc055995a157f39889c3b.svg"/></p><p>For trigrams, since they depend on the previous two symbols, require<span class="math inline">n^2</span> states.</p><h3 id="ergodic-and-mixed-sources">5. Ergodic and Mixed Sources</h3><blockquote><p>In an ergodic process every sequence produced by the process is the
 same in statistical properties. […] Roughly the ergodic property means
 statistical homogeneity.</p></blockquote><h3 id="choice-uncertainty-and-entropy">6. Choice Uncertainty and
 Entropy</h3><p>Here we come to the part that is most often cited. The definition of
@@ -944,7 +954,7 @@ won’t have access to language smarts like<code>clangd</code> which
 require access to all the source files and some build tooling.</p><p><a href="https://code.visualstudio.com/docs/remote/remote-overview">VSCode
 Remote Development</a> was a nearly perfect answer with the exception
 that VSCodeVim didn’t quite have all the functionality I needed.
-VSCodeNeovim addresses that last piece of the puzzle.</p><p>VSCode + Remote SSH + VSCodeNeovim + Neovim gives me:</p><p><img src="69b0806d988547f655ca30ec4aab03858c16f6e7.svg"/></p><ul><li>On the remote machine:<ul><li>Source files.</li><li>Build tooling.</li><li><code>clangd</code> process invoked via<code>vscode-remote</code>.</li></ul></li><li>On the local machine:<ul><li>VSCode.</li><li>VSCodeNeovim.<ul><li>Neovim instance embedded by VSCodeNeovim.<ul><li>Neovim plug-ins and normal mode keybindings.</li></ul></li></ul></li></ul></li></ul><p>Since the embedded Neovim instance is local the editors are super
+VSCodeNeovim addresses that last piece of the puzzle.</p><p>VSCode + Remote SSH + VSCodeNeovim + Neovim gives me:</p><p><img src="a9ee27717c694c4cc1483533fbf290002cda7daa.svg"/></p><ul><li>On the remote machine:<ul><li>Source files.</li><li>Build tooling.</li><li><code>clangd</code> process invoked via<code>vscode-remote</code>.</li></ul></li><li>On the local machine:<ul><li>VSCode.</li><li>VSCodeNeovim.<ul><li>Neovim instance embedded by VSCodeNeovim.<ul><li>Neovim plug-ins and normal mode keybindings.</li></ul></li></ul></li></ul></li></ul><p>Since the embedded Neovim instance is local the editors are super
 responsive. Completions via<code>clangd</code> is still laggy as one
 might expect. But that’s something I’m willing to live with.</p><h2 id="proportional-fonts-with-neovim">Proportional Fonts With
 Neovim</h2><p>Okay, so why would anyone actually want this? Turns out<a href="https://www.google.com/search?q=proportional+fonts+for+coding">I’m
