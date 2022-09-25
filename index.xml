@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strong Opinions, Weekly Held</title><link>https://xn--izc.com/</link><description>Recent content on Strong Opinions, Weekly Held</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Asanka Herath</copyright><lastBuildDate>Wed, 03 Aug 2022 11:50:46 -0400</lastBuildDate><atom:link href="https://xn--izc.com/index.xml" rel="self" type="application/rss+xml"/><item><title>All natural numbers are interesting</title><link>https://xn--izc.com/blog/interesting-numbers/</link><pubDate>Wed, 03 Aug 2022 11:50:46 -0400</pubDate><guid>https://xn--izc.com/blog/interesting-numbers/</guid><description>A proof.</description><content:encoded><p><strong>Theorem</strong>: All natural numbers are interesting.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p><p>Proof by contradiction.</p><p>Assume the theorem is false. Then there must be at least one number<span class="math inline">\in \N</span> that is boring.</p><p><strong>Let</strong><span class="math inline">\mathbb{B} \subset
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strong Opinions, Weekly Held</title><link>https://xn--izc.com/</link><description>Recent content on Strong Opinions, Weekly Held</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Asanka Herath</copyright><lastBuildDate>Thu, 15 Sep 2022 20:27:57 -0400</lastBuildDate><atom:link href="https://xn--izc.com/index.xml" rel="self" type="application/rss+xml"/><item><title>The Lettergrade Rule</title><link>https://xn--izc.com/blog/the-lettergrade-rule/</link><pubDate>Thu, 15 Sep 2022 20:27:57 -0400</pubDate><guid>https://xn--izc.com/blog/the-lettergrade-rule/</guid><description>Don’t block a code review because of minor issues that are best left
+to the discretion of the author.</description><content:encoded><p>How do you know when a code review is “done”?</p><p>Let’s say you are the reviewer and see many small changes you’d like
+the author to make. At some point, you’ll agree that the introduced
+behavior changes are correct or at least harmless. The remaining
+comments are largely stylistic or involve misalignments in minor
+architectural choices.</p><p>The letter grade rule is a lens for determining if any remaining
+comments justify blocking the change. It goes something like this:</p><blockquote><p>Does addressing your comment or doing what you suggest improve the
+reviewed code by at least half a letter grade?</p></blockquote><p>Your comments are not worth blocking the review if the answer is no.
+Instead, leave them as suggestions that the author can take and do with
+it what they will. Then, move on with your life.</p><p>This route is respectful of the author’s time and yours. It also
+implicitly places some amount of trust and responsibility on the author,
+which is empowering.</p><p>You might now wonder what constitutes a half-a-letter-grade
+improvement.</p><p>Here’s a non-exhaustive list of things it is not:</p><ul><li>Stylistic choices that don’t violate the project’s style guide.
+Please choose a coding style and enforce it via a code formatting tool
+if this is a common cause of disagreement. Use a code formatting tool
+even if it isn’t a common cause of dispute. There should be no reason to
+format text with a spacebar in 2022.</li><li>Choice of identifier name; unless the name diverges from the
+project’s domain model and naming convention or objectively hurts
+readability.</li><li>“This isn’t how I would have done it.”</li><li>There are minor grammar issues or word choices in comments that
+don’t decrease the readability of the code. You should be able to trust
+the author to make those fixes and submit the change without you having
+to do another pass.</li></ul></content:encoded></item><item><title>All natural numbers are interesting</title><link>https://xn--izc.com/blog/interesting-numbers/</link><pubDate>Wed, 03 Aug 2022 11:50:46 -0400</pubDate><guid>https://xn--izc.com/blog/interesting-numbers/</guid><description>A proof.</description><content:encoded><p><strong>Theorem</strong>: All natural numbers are interesting.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p><p>Proof by contradiction.</p><p>Assume the theorem is false. Then there must be at least one number<span class="math inline">\in \N</span> that is boring.</p><p><strong>Let</strong><span class="math inline">\mathbb{B} \subset
 \N</span> be the set of boring numbers.</p><p>By the assumption, we have:</p><p><span id="eq:e"><span class="math display">\mathbb{B} \ne
 \phi\qquad{(1)}</span></span></p><p>Thus, because<span class="math inline">\mathbb{B}</span> is
 non-empty<span class="math inline">\mathbb{B} \subset \N</span>, the<a href="https://en.wikipedia.org/wiki/Well-ordering_principle">Well

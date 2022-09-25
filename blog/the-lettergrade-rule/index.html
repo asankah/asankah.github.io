@@ -1,0 +1,37 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>The Lettergrade Rule &#183; Strong Opinions, Weekly Held</title><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/fonts.min.css><link rel=stylesheet href=/css/formatting.min.css><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><meta name=msapplication-TileColor content="#da532c"><meta name=theme-color content="#ffffff"><link href rel=alternate type=application/rss+xml title="Strong Opinions, Weekly Held"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css integrity=sha384-zTROYFVGOfTw7JV7KUu8udsvW2fx4lWOsCEDqhBreBwlHI4ioVRtmIvEThzJHGET crossorigin=anonymous><script src=https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js integrity=sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb crossorigin=anonymous></script><script src=/js/render-katex.js></script></head><body><nav class=nav><div class=nav-container><a href=/><h2 class=nav-title>Strong Opinions, Weekly Held</h2></a><ul><li><a href=/about/me><span>About Me</span></a></li><li><a href=/tags><span>Tags</span></a></li></ul></div></nav><main><div class=post><h1 class=post-title>The Lettergrade Rule</h1><div class=post-info><span>Written by</span>
+Asanka Herath
+<span>on&nbsp;</span><time datetime="2022-09-15 20:27:57 -0400 EDT">September 15, 2022</time>
+|
+<a href=/tags/engineering>#Engineering</a></div><div class="social share"><a href="https://twitter.com/intent/tweet?text=The+Lettergrade+Rule&url=https%3A%2F%2Fxn--izc.com%2Fblog%2Fthe-lettergrade-rule%2F&via=asankah" aria-label="Share on Twitter" target=_blank rel=noopener><img src=/images/twitter.svg alt="Share on Twitter"></a>
+<a href="mailto:?body=Via+https%3A%2F%2Ftwitter.com%2Fasankah%0A%0ADon%E2%80%99t+block+a+code+review+because+of+minor+issues+that+are+best+left%0Ato+the+discretion+of+the+author.%0A%0ARead+more+at+https%3A%2F%2Fxn--izc.com%2Fblog%2Fthe-lettergrade-rule%2F%0A&subject=The+Lettergrade+Rule+-+Strong+Opinions%2C+Weekly+Held" aria-label="Share via Email" target=_blank rel=noopener><img src=/images/mail.svg alt="Share via Email"></a>
+<a href=https://xn--izc.com/blog/the-lettergrade-rule/ aria-label="Permanent link to post"><img src=/images/link-2.svg alt="Permanent link to post"></a></div><p>How do you know when a code review is “done”?</p><p>Let’s say you are the reviewer and see many small changes you’d like
+the author to make. At some point, you’ll agree that the introduced
+behavior changes are correct or at least harmless. The remaining
+comments are largely stylistic or involve misalignments in minor
+architectural choices.</p><p>The letter grade rule is a lens for determining if any remaining
+comments justify blocking the change. It goes something like this:</p><blockquote><p>Does addressing your comment or doing what you suggest improve the
+reviewed code by at least half a letter grade?</p></blockquote><p>Your comments are not worth blocking the review if the answer is no.
+Instead, leave them as suggestions that the author can take and do with
+it what they will. Then, move on with your life.</p><p>This route is respectful of the author’s time and yours. It also
+implicitly places some amount of trust and responsibility on the author,
+which is empowering.</p><p>You might now wonder what constitutes a half-a-letter-grade
+improvement.</p><p>Here’s a non-exhaustive list of things it is not:</p><ul><li>Stylistic choices that don’t violate the project’s style guide.
+Please choose a coding style and enforce it via a code formatting tool
+if this is a common cause of disagreement. Use a code formatting tool
+even if it isn’t a common cause of dispute. There should be no reason to
+format text with a spacebar in 2022.</li><li>Choice of identifier name; unless the name diverges from the
+project’s domain model and naming convention or objectively hurts
+readability.</li><li>“This isn’t how I would have done it.”</li><li>There are minor grammar issues or word choices in comments that
+don’t decrease the readability of the code. You should be able to trust
+the author to make those fixes and submit the change without you having
+to do another pass.</li></ul><nav class=suggested><h2 class=suggested>More articles from this blog</h4><ul><li><h3 class="suggested title"><a href=/blog/poisson-distribution/>Deriving the Poisson Distribution</a></h3><p>Where does the Poisson Distribution come from?
+A little bit of research1 tells us that the distribution was originally introduced by Abraham de Moivre in 1710 in an article called “On the Measurement of Chance, or, on the Probability of Events in Games Depending Upon Fortuitous Chance” 2 (not the original title).
+A few steps that will get us there is laid out below.
+Let’s start with a simple “rate” problem.</p></li><li><h3 class="suggested title"><a href=/blog/ten-years/>Ten Years</a></h3><p>It’s been ten years since I started at Google. The work anniversary fell on 6th of December.
+Ten years ago my wife and I made our way to Mountain View for my orientation; all excited for a brand new chapter in our lives. After spending a week in Mountain View / Palo Alto we both decided that California was not for us. But that’s beside the point.
+I was elated. This was pretty much everything I dreamt of as a kid growing up in Sri Lanka.</p></li><li><h3 class="suggested title"><a href=/blog/syntax-highlighting/>On Highlighting Syntax vs. Semantics</a></h3><p>Takes a look at an alternate form of code highlighting based on core
+semantics instead of syntactic role.</p></li><li><h3 class="suggested title"><a href=/blog/ansible-cli-sugar/>Easier CLI for ad-hoc Ansible tasks and playbooks</a></h3><p>Encode the host and group names into the name of a wrapper script for
+quick ad-hoc invocation of Ansible tasks and playbooks.</p></li><li><h3 class="suggested title"><a href=/blog/grab-diagram-workflow-re2/>Quickly grab a snapshot of your reMarkable tablet</a></h3><p>How to bind a hotkey to grab a snapshot of your reMarkable display
+and copy it to the clipboard on a Mac.</p></li></ul></nav><h4>Comment</h4><script src=https://utteranc.es/client.js repo=asankah/blog-comments issue-term=title label=PublicComment theme=github-light crossorigin=anonymous async></script></div><div class=pagination><a href=/blog/interesting-numbers/ class="left arrow">&#8592;</a>
+<a href=# class=top>Top</a></div></main><footer><span>Last modified on September 15, 2022</span></footer><script async src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-GSREL2EZ4Y",{anonymize_ip:!1})}</script></body></html>
