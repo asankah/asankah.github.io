@@ -1,4 +1,44 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strong Opinions, Weekly Held</title><link>https://xn--izc.com/</link><description>Recent content on Strong Opinions, Weekly Held</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Asanka Herath</copyright><lastBuildDate>Thu, 15 Sep 2022 20:27:57 -0400</lastBuildDate><atom:link href="https://xn--izc.com/index.xml" rel="self" type="application/rss+xml"/><item><title>The Lettergrade Rule</title><link>https://xn--izc.com/blog/the-lettergrade-rule/</link><pubDate>Thu, 15 Sep 2022 20:27:57 -0400</pubDate><guid>https://xn--izc.com/blog/the-lettergrade-rule/</guid><description>Don’t block a code review because of minor issues that are best left
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strong Opinions, Weekly Held</title><link>https://xn--izc.com/</link><description>Recent content on Strong Opinions, Weekly Held</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Asanka Herath</copyright><lastBuildDate>Fri, 28 Oct 2022 17:13:19 -0400</lastBuildDate><atom:link href="https://xn--izc.com/index.xml" rel="self" type="application/rss+xml"/><item><title>The Loss of a Virtuous Culture</title><link>https://xn--izc.com/blog/the-loss-of-a-virtuous-culture/</link><pubDate>Fri, 28 Oct 2022 17:13:19 -0400</pubDate><guid>https://xn--izc.com/blog/the-loss-of-a-virtuous-culture/</guid><description>Luck isn’t enough. You need a culture of virtue.</description><content:encoded><p>Long ago, around 2011, we had an espresso machine in the Google micro
+kitchen – or MK as we called it – near my desk. There were no baristas
+at the time, so people made their own. Some folks thought we could use
+more sophisticated coffee beans than they had in the MK. A designated
+person would purchase these higher-quality beans using money that
+everyone collected in a jar in the MK.</p><p>This cash jar was not locked. Instead, it was in a conspicuous
+location, along with a note suggesting that people using the “good”
+beans should consider dropping some cash there so that people could
+continue purchasing premium beans.</p><p>One day, the cash in the jar went missing.</p><p>The response was swift. Donations poured from everywhere in the
+office, offering to replace the lost cash. Noone speculated on who took
+the money. Things were back to normal as soon as the incident was
+reported. The cash jar was re-instated.</p><p>The cynic in me wondered why the money didn’t get stolen sooner. But
+everything worked on the honor system at Google. And we were insistent
+on keeping it that way.</p><p>As far as I know, the money never went missing again, though the cash
+jar system went away as folks moved around inside the ever-expanding
+office.</p><p>Cash isn’t used as much anymore. However, would a similar system work
+now? We no longer place as much trust in each other as we did. We don’t
+even know most of the people we see walking around. But something is
+going on beyond that. Even if we did know the people, we are now more
+attuned to insider risk – and justifiably so. As a result, there is more
+of an air of distrust.</p><p>What would be the consequences of a breakdown in mutual trust among
+employees? In “Upside Decay,” Brian Lui argues that such a breakdown in
+virtue limits an organization’s ability to benefit from luck. The
+article itself is worth a read, but they explain why that happens.</p><figure><img src="virtuous-cycle.png" alt="A diagram showing how a culture of virtue increases the likelihood of collaboration outside of their core work."/><figcaption aria-hidden="true">A diagram showing how a culture of virtue
+increases the likelihood of collaboration outside of their core
+work.</figcaption></figure><p>As the diagram indicates, a virtuous culture cultivates
+collaboration, leading to successful extra-curricular activity beyond
+their core work, which reinforces the culture. Notably, many of Google’s
+successful billion-dollar products came about or benefited from
+unexpected collaborations that were more or less luck. In a culture of
+mistrust, such associations outside of their core work would never have
+happened.</p><p>Leadership cannot predict or plan for every possible tiny detail and
+contingency of a large system. Every large project owes its existence to
+everyone who identified and solved a problem before it took down the
+entire project. Some of these solutions may become large products in
+their own right. Any large tech company will have tons of stories of
+this happening repeatedly.</p><p>The importance of “serendipitous collaboration” isn’t lost on
+executives. It is the reason behind many pushes for bringing tech
+workers back to the office. People can collaborate virtually, but the
+degree to which relationships are formed and lead to productive outcomes
+is not there.</p></content:encoded></item><item><title>The Lettergrade Rule</title><link>https://xn--izc.com/blog/the-lettergrade-rule/</link><pubDate>Thu, 15 Sep 2022 20:27:57 -0400</pubDate><guid>https://xn--izc.com/blog/the-lettergrade-rule/</guid><description>Don’t block a code review because of minor issues that are best left
 to the discretion of the author.</description><content:encoded><p>How do you know when a code review is “done”?</p><p>Let’s say you are the reviewer and see many small changes you’d like
 the author to make. At some point, you’ll agree that the introduced
 behavior changes are correct or at least harmless. The remaining
@@ -543,9 +583,9 @@ They are represented as a set of states. Each state can
 probabilistically transition to number of states with some probability
 distribution. Each transition emits a symbol.</p><p>If the emitted symbol doesn’t depend on any prior symbol, then we
 only really need one state. It will have a self-edge for each possible
-emitted symbol.</p><p><img src="fefcbe920ef4ff06b94fea43af5ff39185309871.svg"/></p><p>If the emitted symbol depends on the previous symbol, then there will
+emitted symbol.</p><p><img src="788564626f25651e575cee8a010c3d6476d50340.svg"/></p><p>If the emitted symbol depends on the previous symbol, then there will
 be as many states needed as there are symbols. This is the case for
-digrams.</p><p><img src="e1c3f42707bc51ef3fbcc055995a157f39889c3b.svg"/></p><p>For trigrams, since they depend on the previous two symbols, require<span class="math inline">n^2</span> states.</p><h3 id="ergodic-and-mixed-sources">5. Ergodic and Mixed Sources</h3><blockquote><p>In an ergodic process every sequence produced by the process is the
+digrams.</p><p><img src="fadcb8c761970e486edb2569007a42c9495841ff.svg"/></p><p>For trigrams, since they depend on the previous two symbols, require<span class="math inline">n^2</span> states.</p><h3 id="ergodic-and-mixed-sources">5. Ergodic and Mixed Sources</h3><blockquote><p>In an ergodic process every sequence produced by the process is the
 same in statistical properties. […] Roughly the ergodic property means
 statistical homogeneity.</p></blockquote><h3 id="choice-uncertainty-and-entropy">6. Choice Uncertainty and
 Entropy</h3><p>Here we come to the part that is most often cited. The definition of
@@ -976,7 +1016,7 @@ won’t have access to language smarts like<code>clangd</code> which
 require access to all the source files and some build tooling.</p><p><a href="https://code.visualstudio.com/docs/remote/remote-overview">VSCode
 Remote Development</a> was a nearly perfect answer with the exception
 that VSCodeVim didn’t quite have all the functionality I needed.
-VSCodeNeovim addresses that last piece of the puzzle.</p><p>VSCode + Remote SSH + VSCodeNeovim + Neovim gives me:</p><p><img src="a9ee27717c694c4cc1483533fbf290002cda7daa.svg"/></p><ul><li>On the remote machine:<ul><li>Source files.</li><li>Build tooling.</li><li><code>clangd</code> process invoked via<code>vscode-remote</code>.</li></ul></li><li>On the local machine:<ul><li>VSCode.</li><li>VSCodeNeovim.<ul><li>Neovim instance embedded by VSCodeNeovim.<ul><li>Neovim plug-ins and normal mode keybindings.</li></ul></li></ul></li></ul></li></ul><p>Since the embedded Neovim instance is local the editors are super
+VSCodeNeovim addresses that last piece of the puzzle.</p><p>VSCode + Remote SSH + VSCodeNeovim + Neovim gives me:</p><p><img src="027e07d60f22d7e447a83cccdbd4a719bdde74b4.svg"/></p><ul><li>On the remote machine:<ul><li>Source files.</li><li>Build tooling.</li><li><code>clangd</code> process invoked via<code>vscode-remote</code>.</li></ul></li><li>On the local machine:<ul><li>VSCode.</li><li>VSCodeNeovim.<ul><li>Neovim instance embedded by VSCodeNeovim.<ul><li>Neovim plug-ins and normal mode keybindings.</li></ul></li></ul></li></ul></li></ul><p>Since the embedded Neovim instance is local the editors are super
 responsive. Completions via<code>clangd</code> is still laggy as one
 might expect. But that’s something I’m willing to live with.</p><h2 id="proportional-fonts-with-neovim">Proportional Fonts With
 Neovim</h2><p>Okay, so why would anyone actually want this? Turns out<a href="https://www.google.com/search?q=proportional+fonts+for+coding">I’m
