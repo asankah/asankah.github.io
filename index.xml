@@ -21,25 +21,21 @@ attuned to insider risk – and justifiably so. As a result, there is more
 of an air of distrust.</p><p>What would be the consequences of a breakdown in mutual trust among
 employees? In<a href="https://brianlui.dog/2020/10/06/upside-decay/">“Upside Decay,”</a>
 Brian Lui argues that such a breakdown in virtue limits an
-organization’s ability to benefit from luck. The article itself is worth
-a read, but they explain why that happens.</p><figure><img src="virtuous-cycle.png" alt="A diagram showing how a culture of virtue increases the likelihood of collaboration outside of their core work."/><figcaption aria-hidden="true">A diagram showing how a culture of virtue
-increases the likelihood of collaboration outside of their core
-work.</figcaption></figure><p>As the diagram indicates, a virtuous culture cultivates
+organization’s ability to benefit from luck.</p><figure><img src="virtuous-cycle.png" alt="How a culture of virtue increases the likelihood of collaboration outside of their core work."/><figcaption aria-hidden="true">How a culture of virtue increases the
+likelihood of collaboration outside of their core work.</figcaption></figure><p>As the diagram indicates, a virtuous culture cultivates
 collaboration, leading to successful extra-curricular activity beyond
 their core work, which reinforces the culture. Notably, many of Google’s
 successful billion-dollar products came about or benefited from
 unexpected collaborations that were more or less luck. In a culture of
 mistrust, such associations outside of their core work would never have
-happened.</p><p>Leadership cannot predict or plan for every possible tiny detail and
-contingency of a large system. Every large project owes its existence to
-everyone who identified and solved a problem before it took down the
-entire project. Some of these solutions may become large products in
-their own right. Any large tech company will have tons of stories of
+happened.</p><p>Leadership can identify, plan, and account for some contingencies in
+core work. Non-core work, on the other hand, relies on self organization
+within the company. That self organization needs trust. Every large
+project owes its existence to this non-core work.</p><p>And that’s not all. Some of this work may well become large products
+in their own right. Any large tech company will have tons of stories of
 this happening repeatedly.</p><p>The importance of “serendipitous collaboration” isn’t lost on
 executives. It is the reason behind many pushes for bringing tech
-workers back to the office. People can collaborate virtually, but the
-degree to which relationships are formed and lead to productive outcomes
-is not there.</p></content:encoded></item><item><title>The Lettergrade Rule</title><link>https://xn--izc.com/blog/the-lettergrade-rule/</link><pubDate>Thu, 15 Sep 2022 20:27:57 -0400</pubDate><guid>https://xn--izc.com/blog/the-lettergrade-rule/</guid><description>Don’t block a code review because of minor issues that are best left
+workers back to the office.</p></content:encoded></item><item><title>The Lettergrade Rule</title><link>https://xn--izc.com/blog/the-lettergrade-rule/</link><pubDate>Thu, 15 Sep 2022 20:27:57 -0400</pubDate><guid>https://xn--izc.com/blog/the-lettergrade-rule/</guid><description>Don’t block a code review because of minor issues that are best left
 to the discretion of the author.</description><content:encoded><p>How do you know when a code review is “done”?</p><p>Let’s say you are the reviewer and see many small changes you’d like
 the author to make. At some point, you’ll agree that the introduced
 behavior changes are correct or at least harmless. The remaining
