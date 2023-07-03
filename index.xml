@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strong Opinions, Weekly Held</title><link>https://xn--izc.com/</link><description>Recent content on Strong Opinions, Weekly Held</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Asanka Herath</copyright><lastBuildDate>Sat, 01 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://xn--izc.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Code As UI: The UX of config-as-code and everything-as-code</title><link>https://xn--izc.com/blog/code-as-ui/</link><pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/code-as-ui/</guid><description>Welcome to the UI review Your UX person comes up to you with the new mocks for the configuration UI. It looks like this:
-A UI mock where all the labels are text boxes, and the values are also text boxes. The button just says “button”. You: What is this? Is this modern?
-UX: That’s be beauty of it. The user can type in the label and type in the value.</description><content:encoded><h2 id="welcome-to-the-ui-review">Welcome to the UI review</h2><p>Your UX person comes up to you with the new mocks for the
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strong Opinions, Weekly Held</title><link>https://xn--izc.com/</link><description>Recent content on Strong Opinions, Weekly Held</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Asanka Herath</copyright><lastBuildDate>Sat, 01 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://xn--izc.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Code As UI: The UX of config-as-code and everything-as-code</title><link>https://xn--izc.com/blog/code-as-ui/</link><pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/code-as-ui/</guid><description>Configuration-as-code has the same usability issues as everything
+else as code along with the same benefits.</description><content:encoded><h2 id="welcome-to-the-ui-review">Welcome to the UI review</h2><p>Your UX person comes up to you with the new mocks for the
 configuration UI. It looks like this:</p><figure><img src="./blank-ui.png" alt="A UI mock where all the labels are text boxes, and the values are also text boxes. The button just says “button”."/><figcaption aria-hidden="true">A UI mock where all the labels are text
 boxes, and the values are also text boxes. The button just says
 “button”.</figcaption></figure><p><strong>You</strong>: What is this? Is this modern?</p><p><strong>UX</strong>: That’s be beauty of it. The user can type in the
@@ -122,19 +121,18 @@ problem of reading comfort. An increase in line length leads to a<em>decrease</e
 tracking effort. An increase in line spacing leads to an<em>increase</em> in sccadian effort, but a<em>decrease</em> in line
 tracking effort. An increase in distance to text results in a<em>decrease</em> in saccadian effort, but an<em>increase</em> in line
 tracking effort.</figcaption></figure><p>What’s the optimal line length then?</p><p><span class="citation" data-cites="bernard2003effects">Bernard et al.
-(<a href="#ref-bernard2003effects" role="doc-biblioref">2003</a>)</span>
-studied this very question. Their study looked at (get it? looked at?
-haha) three different layouts presented on what would be considered a
-regular desktop screen.</p><p>Examples of the three layouts from the<span class="citation" data-cites="bernard2003effects">(<a href="#ref-bernard2003effects" role="doc-biblioref">Bernard et al. 2003</a>)</span> paper are presented
-below and are illustrative of what the test subjects saw.</p><figure><img src="./bernard-2003-full-length-example.png" alt="Example of a full length layout. Image source (Bernard et al. 2003)"/><figcaption aria-hidden="true">Example of a full length layout. Image
-source<span class="citation" data-cites="bernard2003effects">(<a href="#ref-bernard2003effects" role="doc-biblioref">Bernard et al.
-2003</a>)</span></figcaption></figure><figure><img src="./bernard-2003-medium-length-example.png" alt="Example of a medium length layout. Image source (Bernard et al. 2003)"/><figcaption aria-hidden="true">Example of a medium length layout. Image
-source<span class="citation" data-cites="bernard2003effects">(<a href="#ref-bernard2003effects" role="doc-biblioref">Bernard et al.
-2003</a>)</span></figcaption></figure><figure><img src="./bernard-2003-narrow-length-example.png" alt="Example of a narrow length layout. Image source (Bernard et al. 2003)"/><figcaption aria-hidden="true">Example of a narrow length layout. Image
-source<span class="citation" data-cites="bernard2003effects">(<a href="#ref-bernard2003effects" role="doc-biblioref">Bernard et al.
-2003</a>)</span></figcaption></figure><p><span class="citation" data-cites="beymerRussellOrton">Beymer,
-Russell, and Orton (<a href="#ref-beymerRussellOrton" role="doc-biblioref">2005</a>)</span> performed an eye-tracking study
-along these same lines (haha “<em>lines</em>” I kill myself).</p><h1 id="references">References</h1><ul><li><p>https://www.humanfactors.com/newsletters/reading_text_online.asp</p></li><li><p>https://en.wikipedia.org/wiki/Screen_reading</p><p>Lots of references about screen-reading research. Generally point
+(2003)</span> studied this very question. Their study looked at (get it?
+looked at? haha) three different layouts presented on what would be
+considered a regular desktop screen.</p><p>Examples of the three layouts from the<span class="citation" data-cites="bernard2003effects">(Bernard et al. 2003)</span> paper are
+presented below and are illustrative of what the test subjects saw.</p><figure><img src="./bernard-2003-full-length-example.png" alt="Example of a full length layout. Image source (Bernard et al. 2003)"/><figcaption aria-hidden="true">Example of a full length layout. Image
+source<span class="citation" data-cites="bernard2003effects">(Bernard
+et al. 2003)</span></figcaption></figure><figure><img src="./bernard-2003-medium-length-example.png" alt="Example of a medium length layout. Image source (Bernard et al. 2003)"/><figcaption aria-hidden="true">Example of a medium length layout. Image
+source<span class="citation" data-cites="bernard2003effects">(Bernard
+et al. 2003)</span></figcaption></figure><figure><img src="./bernard-2003-narrow-length-example.png" alt="Example of a narrow length layout. Image source (Bernard et al. 2003)"/><figcaption aria-hidden="true">Example of a narrow length layout. Image
+source<span class="citation" data-cites="bernard2003effects">(Bernard
+et al. 2003)</span></figcaption></figure><p><span class="citation" data-cites="beymerRussellOrton">Beymer,
+Russell, and Orton (2005)</span> performed an eye-tracking study along
+these same lines (haha “<em>lines</em>” I kill myself).</p><h1 id="references">References</h1><ul><li><p>https://www.humanfactors.com/newsletters/reading_text_online.asp</p></li><li><p>https://en.wikipedia.org/wiki/Screen_reading</p><p>Lots of references about screen-reading research. Generally point
 towards the fact that people read slower on the screen rather than on
 paper. Not clear if any accounted for the different layouts that are
 possible on screens.</p></li><li><p>Eye movements during reading: a theory of saccade initiation
@@ -168,9 +166,10 @@ Vs. Narrow Paragraphs: An Eye Tracking Analysis.”</span> In<em>Human-Computer 
 Francesca Costabile and Fabio Paternò, 741–52. Berlin, Heidelberg:
 Springer Berlin Heidelberg.</div><div id="ref-mediumWhatFonts" class="csl-entry" role="listitem">
 TechMintle. 2021.<span>“What Fonts Are Used by Medium? A Deep Drive
-into Medium Fonts.”</span><a href="https://medium.com/menlo-office/what-fonts-are-used-by-medium-a-deep-drive-into-medium-fonts-a49b63c6cf66" class="uri">https://medium.com/menlo-office/what-fonts-are-used-by-medium-a-deep-drive-into-medium-fonts-a49b63c6cf66</a>.</div></div><aside id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1"><p>As mentioned in<span class="citation" data-cites="mediumWhatFonts">TechMintle (<a href="#ref-mediumWhatFonts" role="doc-biblioref">2021</a>)</span>, the Medium website has gone
-through a number of typographical changes, and would probably have gone
-through many more by the time you read this article.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside></content:encoded></item><item><title>Promise Fatigue</title><link>https://xn--izc.com/blog/promise-fatigue/</link><pubDate>Tue, 01 Nov 2022 00:03:16 -0400</pubDate><guid>https://xn--izc.com/blog/promise-fatigue/</guid><description>Setting low but realistic expectations is better than setting high
+into Medium Fonts.”</span><a href="https://medium.com/menlo-office/what-fonts-are-used-by-medium-a-deep-drive-into-medium-fonts-a49b63c6cf66" class="uri">https://medium.com/menlo-office/what-fonts-are-used-by-medium-a-deep-drive-into-medium-fonts-a49b63c6cf66</a>.</div></div><aside id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1"><p>As mentioned in<span class="citation" data-cites="mediumWhatFonts">TechMintle (2021)</span>, the Medium
+website has gone through a number of typographical changes, and would
+probably have gone through many more by the time you read this
+article.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside></content:encoded></item><item><title>Promise Fatigue</title><link>https://xn--izc.com/blog/promise-fatigue/</link><pubDate>Tue, 01 Nov 2022 00:03:16 -0400</pubDate><guid>https://xn--izc.com/blog/promise-fatigue/</guid><description>Setting low but realistic expectations is better than setting high
 but unrealistic ones.</description><content:encoded><ul><li>I’ll get it to you by the end of the day.</li><li>I’m working on it right now.</li><li>I’ll get it done today.</li></ul><p>Even though the word “promise” doesn’t appear in any of these, they
 still represent a commitment you make to someone else. If you fail to
 keep your promise, you will disappoint someone or more than one.</p><p>But if you fail to keep your promises, eventually, you’ll stop
