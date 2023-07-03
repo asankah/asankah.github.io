@@ -1,0 +1,54 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Just Enough Technical Debt &#183; Strong Opinions, Weekly Held</title><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/scss/fonts.min.css><link rel=stylesheet href=/css/formatting.min.css><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><meta name=msapplication-TileColor content="#da532c"><meta name=theme-color content="#ffffff"><link href rel=alternate type=application/rss+xml title="Strong Opinions, Weekly Held"><link rel=stylesheet href=https://xn--izc.com/_katex/katex.min.3493557c40ba8df12deb6c1031a7cb353d9e23a05a58e3576e991211502cdfef.css integrity="sha256-NJNVfEC6jfEt62wQMafLNT2eI6BaWONXbpkSEVAs3+8="><script src=https://xn--izc.com/_katex/katex.min.093945cfb872f8fdf36e3730db70625111c0cb4e643520f70eabd1703ede483f.js integrity="sha256-CTlFz7hy+P3zbjcw23BiURHAy05kNSD3DqvRcD7eSD8="></script><script src=https://xn--izc.com/js/render-katex.min.js async></script></head><body><nav class=nav><div class=nav-container><a href=/><h2 class=nav-title>Strong Opinions, Weekly Held</h2></a><ul><li><a href=/about/me><span>About Me</span></a></li><li><a href=/tags><span>Tags</span></a></li></ul></div></nav><main><div class=post><h1 class=post-title>Just Enough Technical Debt</h1><div class=post-info><span>Written by</span>
+Asanka Herath
+<span>on&nbsp;</span><time datetime="2023-06-26 00:00:00 +0000 UTC">June 26, 2023</time>
+|
+<a href=/tags/engineering>#Engineering</a></div><div class="social share"><a href="https://twitter.com/intent/tweet?text=Just+Enough+Technical+Debt&amp;url=https%3A%2F%2Fxn--izc.com%2Fblog%2Fjust-the-right-amount%2F&amp;via=asankah" aria-label="Share on Twitter" target=_blank rel=noopener><img src=/images/twitter.svg alt="Share on Twitter"></a>
+<a href="mailto:?body=Via+https%3A%2F%2Ftwitter.com%2Fasankah%0A%0AZero+technical+debt+isn%E2%80%99t+always+the+answer.+Learn+to+look+for+the%0Apoint+of+diminishing+returns.%0A%0ARead+more+at+https%3A%2F%2Fxn--izc.com%2Fblog%2Fjust-the-right-amount%2F%0A&amp;subject=Just+Enough+Technical+Debt+-+Strong+Opinions%2C+Weekly+Held" aria-label="Share via Email" target=_blank rel=noopener><img src=/images/mail.svg alt="Share via Email"></a>
+<a href=https://xn--izc.com/blog/just-the-right-amount/ aria-label="Permanent link to post"><img src=/images/link-2.svg alt="Permanent link to post"></a></div><p>Zero technical debt sounds like a great target to aim for. In my
+earlier developer days I strongly believed that all projects should go
+for this target. At a company all-hands I heard from a senior engineer
+that having zero technical debt is often not what we want. I felt
+betrayed.</p><p>Why is it that zero technical debt isn’t what we want?</p><h2 id=memory-allocation-strategy-leak-all-allocations>Memory
+Allocation Strategy: Leak All Allocations</h2><p>Let’s take a moment and think of a hypothetical program. If you knew
+that your program ran once and terminated, would you go through the
+effort of deallocating each individual memory allocation at the end? You
+are about to end the process and drop the entire heap anyway. Cleaning
+the heap at this point is a waste. For short-lived programs who’s memory
+consumption is bounded and less than the available memory the more
+efficient strategy is to just leak all memory.</p><p>One might wonder if such a strategy would break reusability. “Leak
+all allocations” doesn’t mean that you shouldn’t call
+<code>free()</code> (or equivalent) in your code. It means that the
+memory manager would treat <code>free()</code> as a no-op. This
+principal also applies to garbage collected languages. After all, the <a href="https://devblogs.microsoft.com/oldnewthing/20100809-00/?p=13203#:~:text=Garbage%20collection%20is%20simulating%20a%20computer%20with%20an%20infinite%20amount%20of%20memory."><em>job
+of memory management is to simulate infinite memory</em></a>. If you are
+only going to use a finite amount of memory then you don’t need memory
+management.</p><h2 id=what-does-just-enough-technical-debt-look-like>What Does Just
+Enough Technical Debt Look Like?</h2><p>Some of the motivation for stopping short of perfect comes from the
+<a href=https://en.wikipedia.org/wiki/The_Mythical_Man-Month>Mythical
+Man Month</a>.</p><blockquote><p>For the human makers of things, the incompletenesses and
+inconsistencies of our ideas become clear only during implementation.
+Thus it is that writing, experimentation, “working out” are essential
+disciplines for the theoretician.</p><p>― Frederick P. Brooks Jr., The Mythical Man-Month: Essays on Software
+Engineering</p></blockquote><blockquote><p>The hardest part of the software task is arriving at a complete and
+consistent specification, and much of the essence of building a program
+is in fact the debugging of the specification.</p><p>― Frederick P. Brooks Jr., The Mythical Man-Month: Essays on Software
+Engineering</p></blockquote><p>Software projects tend to be characteristically similar. Putting too
+much effort into a project features you don’t need and polishing up code
+that nobody will reuse is wasteful. It’s just a little bit harder to
+know when you’ve crossed the point of diminishing returns where cleaning
+up the code no longer makes sense.</p><nav class=suggested><h2 class=suggested>More articles from this blog</h4><ul><li><h3 class="suggested title"><a href=/blog/ephemeral-fingerprinting/>Ephemeral Fingerprinting On The Web</a></h3><p><p>Any ephemeral low-entropy web observable property whose changes are
+concurrently observable by multiple sites can lead to cross site
+identity joining.</p><p>This method of identity joining does not require coordination between
+multiple first parties. A single third party embedded within multiple
+first parties can also use this method.</p></p></li><li><h3 class="suggested title"><a href=/blog/poisson-distribution/>Deriving the Poisson Distribution</a></h3><p>Where does the Poisson Distribution come from?
+A little bit of research1 tells us that the distribution was originally introduced by Abraham de Moivre in 1710 in an article called “On the Measurement of Chance, or, on the Probability of Events in Games Depending Upon Fortuitous Chance” 2 (not the original title).
+A few steps that will get us there is laid out below.
+Let’s start with a simple “rate” problem.</p></li><li><h3 class="suggested title"><a href=/blog/visualizing-people/>Visualizing Internet Users</a></h3><p>What does 0.3%1 of internet users look like?
+As of this writing the global population hovers around 7.7 billion according to the World Population Clock 2.
+Screenshot from census.gov showing the world population clock. The International Telecommunications Union “estimates that at the end of 2019, 53.6 per cent of the global population, or 4.1 billion people, are using the internet.”3
+Screenshot from itu.int showing historical internet usage numbers as a percentage of the world population So a 0.</p></li><li><h3 class="suggested title"><a href=/blog/why-strong-opinions-weakly-held/>Why 'Strong Opinions Weakly Held'</a></h3><p>Origins of the phrase The title of this blog is Strong Opinions, Weakly Held. The same concept shows up elsewhere are Strong Opinions Loosely Held. An eponymous essay by Paul Saffo in (2020) introduced the world to this concept.
+In his essay – which isn’t very long if you would like to read the whole thing yourself – he lays out the concept as follows:
+I have found that the fastest way to an effective forecast is often through a sequence of lousy forecasts.</p></li><li><h3 class="suggested title"><a href=/blog/how-this-blog-works/>How This Blog Works</a></h3><p>How I put this site together and why.</p></li></ul></nav><h4>Comment</h4><script src=https://utteranc.es/client.js repo=asankah/blog-comments issue-term=title label=PublicComment theme=github-light crossorigin=anonymous async></script></div><div class=pagination><a href=/blog/optimal-line-length/ class="left arrow">&#8592;</a>
+<a href=/blog/code-as-ui/ class="right arrow">&#8594;</a>
+<a href=# class=top>Top</a></div></main><footer><span>Last modified on July 1, 2023</span></footer><script async src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-GSREL2EZ4Y",{anonymize_ip:!1})}</script></body></html>
