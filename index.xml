@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strong Opinions, Weekly Held</title><link>https://xn--izc.com/</link><description>Recent content on Strong Opinions, Weekly Held</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Asanka Herath</copyright><lastBuildDate>Sat, 01 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://xn--izc.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Code As UI: The UX of config-as-code and everything-as-code</title><link>https://xn--izc.com/blog/code-as-ui/</link><pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/code-as-ui/</guid><description>Configuration-as-code has the same usability issues as everything
 else as code along with the same benefits.</description><content:encoded><h2 id="welcome-to-the-ui-review">Welcome to the UI review</h2><p>Your UX person comes up to you with the new mocks for the
-configuration UI. It looks like this:</p><figure><img src="./blank-ui.png" alt="A UI mock where all the labels are text boxes, and the values are also text boxes. The button just says “button”."/><figcaption aria-hidden="true">A UI mock where all the labels are text
-boxes, and the values are also text boxes. The button just says
-“button”.</figcaption></figure><p><strong>You</strong>: What is this? Is this modern?</p><p><strong>UX</strong>: That’s be beauty of it. The user can type in the
+configuration UI. It looks like this:</p><figure><img src="./blank-ui.png" alt="A UI mock where all the labels are text boxes, and the values are also text boxes. The button just “button”."/><br/><figcaption>
+Your new UX.</figcaption></figure><p><strong>You</strong>: What is this? Is this modern?</p><p><strong>UX</strong>: That’s be beauty of it. The user can type in the
 label<em>and</em> type in the value.</p><p><strong>You</strong>: And how would they know what the labels are and
 what valid values are?</p><p><strong>UX</strong>: We will write some documentation on what the
 labels and values should be.</p><p><strong>You</strong>: What about validation?</p><p><strong>UX</strong>: Hmm. That would be nice. But the UI doesn’t
@@ -19,10 +18,8 @@ ones, will tell you that the only way some parts can be configured is by
 editing text files; sometimes using an esoteric editor called<code>vi</code><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p><p>Then there was a glorious age of GUIs. At some point they started
 treating developers and sysadmins like real people. You might not
 believe this, but they even did user experience testing to make sure
-those sysadmins’ lives were as easy as possible. It was glorious.</p><p>Some say this is still the case in some parts. There’s nobody to
-verify those claims any more, or to verify if Windows is still an
-OS.</p><p>And now, what’s old is new again.</p><aside id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1"><p>Vim is actually quite awesome.<a href="https://neovim.io">Neovim</a> is slightly more awesome; or
-slightly less depending on who you are ask.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside><h2 id="why">Why?</h2><p>There are in fact good reasons for config-as-code. Here’s a few:</p><ol type="1"><li><p><strong>No more opaque configuration</strong>.</p><p>Fancy UIs often mean that the configuration data goes straight into
+those sysadmins’ lives were as easy as possible. It was glorious.</p><p>And now, what’s old is new again.</p><aside id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1"><p>Vim is actually quite awesome.<a href="https://neovim.io">Neovim</a> is slightly more or less awesome
+depending on who you are ask.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside><h2 id="the-pros">The Pros</h2><p>There are in fact good reasons for config-as-code. Here’s a few:</p><ol type="1"><li><p><strong>No more opaque configuration</strong>.</p><p>Fancy UIs often mean that the configuration data goes straight into
 an opaque configuration store somewhere. Sure it will come around and
 affect the behavior of whatever it was that is being configured. But
 that stuff usually doesn’t involve the user.</p><p>Usually the the platform doesn’t have much reason to keep
@@ -42,28 +39,33 @@ shoulder taking notes, none of that comes for free with a sysadmin at a
 GUI.</p></li><li><p><strong>Audits, validation, automation</strong>.</p><p>Follows from the above. Now that the configuration is inspectable and
 understandable, it is easily amenable to automation and validation.</p><p>One could argue that this was always the case. However, now the user
 is empowered to do so with the same fidelity as the authors of the
-system.</p></li></ol><h2 id="but-how-can-we-fix-it">But how can we fix it?</h2><p>The things that need<em>fixing</em> is usability.</p><p>We spent decades saying Fitt’s law this and “recognition over recall”
+system.</p></li></ol><h2 id="and-the-cons">And the cons</h2><p>The things that need<em>fixing</em> is usability.</p><p>We spent decades saying Fitt’s law this and “recognition over recall”
 that, and then threw everything away. It’s time we put all that
 experience into action.</p><p>Just because the configuration is in text files doesn’t mean that it
 has to be authored that way. Even if it did, it is still possible to
 substantially improve the UX there.</p><p>Why do people enjoy Mad Libs but wouldn’t enjoy writing the same
-content from scratch? The answer is “recognition over recall”.</p><figure><img src="./madlibs.png" alt="The original Mad Libs book gave this example: “___________! he said ________ as he jumped into his convertible ______ and drove off with his _________ wife.” exclamation adverb noun adjective. Source: Wikipedia"/><figcaption aria-hidden="true">The original Mad Libs book gave this
-example:<em>“___________! he said ________ as he jumped into his
-convertible ______ and drove off with his _________ wife.” exclamation
-adverb noun adjective</em>.<a href="https://en.wikipedia.org/wiki/Mad_Libs">Source:
-Wikipedia</a></figcaption></figure><p>We can have the format and options documented somewhere and have the
+content from scratch? The answer is “recognition over recall”.</p><figure><img src="./madlibs.png" alt="The original Mad Libs book gave this example: “___________! he said ________ as he jumped into his convertible ______ and drove off with his _________ wife.” exclamation adverb noun adjective."/><br/><figcaption>
+An example from the original Mad Libs book.<a href="https://en.wikipedia.org/wiki/Mad_Libs">Source: Wikipedia</a></figcaption></figure><p>We can have the format and options documented somewhere and have the
 user consult the document at every step of the way. This sound
 reasonable at first. So people write things like “read all the
 documentation carefully before attempting to configure the thing.”</p><p>But the amount of information that a human being can keep track of at
 a given time is limited. What it ends up being is a tiresom sequence of
-flipping back and forth between reference and implementation.</p><figure><img src="./reference-and-configuration-eyes.png" alt="Attention shifts from the reference to the configuration being edited and back; repeatedly."/><figcaption aria-hidden="true">Attention shifts from the reference to
-the configuration being edited and back; repeatedly.</figcaption></figure><h2 id="the-same-way-we-addressed-the-issue-for-code">The same way we
-addressed the issue for code …</h2><p>It turns out we already have some ideas on how to fix this, because
+flipping back and forth between reference and implementation.</p><figure><img src="./reference-and-configuration-eyes.png" alt="Attention shifts from the reference to the configuration being edited and back; repeatedly."/><br/><figcaption>
+Left to right to left to right …</figcaption></figure><h2 id="making-things-better">Making things better</h2><p>It turns out we already have some ideas on how to fix this, because
 the same problems plague software engineering. Or I should say the other
-areas of software engineering.</p><p>This is where the puzzling parts come up. Why are are we suffering
-through a poor UX for configuration when we’ve put in so much effort
-into improving the coding experience; and the same applies to
-configuration-as-code?</p></content:encoded></item><item><title>Just Enough Technical Debt</title><link>https://xn--izc.com/blog/just-the-right-amount/</link><pubDate>Mon, 26 Jun 2023 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/just-the-right-amount/</guid><description>Zero technical debt isn’t always the answer. Learn to look for the
+areas of software engineering.</p><p>Here are several approaches I’ve seen in practice that make
+config-as-code more bearable.</p><h3 id="language-serversautocomplete">Language Servers/Autocomplete</h3><p>Pretty much the only useful development in coding in the past several
+decades is autocomplete. A good schema along with documentation can make
+a huge difference. Try editing the VS Code settings file to see it in
+action.</p><h3 id="templates">Templates</h3><p>As the Mad Libs example shows, templates are much easier and more
+expedient than a blank empty document.</p><p>Other examples of templates include:</p><p>But templates in general only work the first time. So subsequent
+edits to the configuration will have to contend without the help of a
+template. This is a biggie since configurations can’t be updated when
+updating their corresponding templates.</p><h3 id="alternate-uis">Alternate UIs</h3><p>We once used to have WYSIWYG UI editors. Now we have to write our UIs
+as code in one of any number of frameworks that in turn try to reduce
+the toil of writing UIs. It doesn’t have to be this way.</p><p>At least for configuration, just because the configuration is written
+down as code doesn’t mean it has to be edited as code. The same UIs that
+we once used can still generate those text files.</p></content:encoded></item><item><title>Just Enough Technical Debt</title><link>https://xn--izc.com/blog/just-the-right-amount/</link><pubDate>Mon, 26 Jun 2023 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/just-the-right-amount/</guid><description>Zero technical debt isn’t always the answer. Learn to look for the
 point of diminishing returns.</description><content:encoded><p>Zero technical debt sounds like a great target to aim for. In my
 earlier developer days I strongly believed that all projects should go
 for this target. At a company all-hands I heard from a senior engineer
@@ -1149,22 +1151,23 @@ awesomeness.</li></ol></content:encoded></item><item><title>Why 'Strong Opinions
 In his essay – which isn’t very long if you would like to read the whole thing yourself – he lays out the concept as follows:
 I have found that the fastest way to an effective forecast is often through a sequence of lousy forecasts.</description><content:encoded><h2 id="origins-of-the-phrase">Origins of the phrase</h2><p>The title of this blog is<strong>Strong Opinions, Weakly
 Held</strong>. The same concept shows up elsewhere are<em>Strong
-Opinions Loosely Held</em>. An eponymous essay by Paul Saffo in<span class="citation" data-cites="Saffo">(2020)</span> introduced the world
-to this concept.</p><p>In his essay – which isn’t very long if you would like to<a href="https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/">read
+Opinions Loosely Held</em>. An eponymous essay by Paul Saffo in<span class="citation" data-cites="Saffo">(<a href="#ref-Saffo" role="doc-biblioref">2020</a>)</span> introduced the world to this
+concept.</p><p>In his essay – which isn’t very long if you would like to<a href="https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/">read
 the whole thing yourself</a> – he lays out the concept as follows:</p><blockquote><p>I have found that the fastest way to an effective forecast is often
 through a sequence of lousy forecasts. Instead of withholding judgment
 until an exhaustive search for data is complete, I will force myself to
 make a tentative forecast based on the information available, and then
 systematically tear it apart, using the insights gained to guide my
-search for further indicators and information.</p></blockquote><h2 id="criticism">Criticism</h2><p>Cedric Chin’s critique<span class="citation" data-cites="Cedric">(2020)</span> comes down to two points that the
-author summarizes as follows:</p><blockquote><p>In my experience, ‘strong opinions, weakly held’ is difficult to put
+search for further indicators and information.</p></blockquote><h2 id="criticism">Criticism</h2><p>Cedric Chin’s critique<span class="citation" data-cites="Cedric">(<a href="#ref-Cedric" role="doc-biblioref">2020</a>)</span> comes down to
+two points that the author summarizes as follows:</p><blockquote><p>In my experience, ‘strong opinions, weakly held’ is difficult to put
 into practice. Most people who try will either:</p><ol type="1"><li>Use it as downside-protection to justify their strongly-held bad
 opinions, or</li><li>Struggle to shift from one strong opinion to another.</li></ol><p>The reason it is difficult is because it works against the grain of
 the human mind.</p><p>So don’t bother. The next time you find yourself making a judgment,
 don’t invoke ‘strong opinions, weakly held’. Instead, ask: “how much are
 you willing to bet on that?” Doing so will jolt people into the types of
-thinking you want to encourage.</p></blockquote><p>Michael Natkin on<span class="citation" data-cites="Michael">(2020)</span> points out the fallacy of assuming
-that strong opinions will be reliably challenged:</p><blockquote><p>The idea of strong opinions, loosely held is that you can make
+thinking you want to encourage.</p></blockquote><p>Michael Natkin on<span class="citation" data-cites="Michael">(<a href="#ref-Michael" role="doc-biblioref">2020</a>)</span> points out the
+fallacy of assuming that strong opinions will be reliably
+challenged:</p><blockquote><p>The idea of strong opinions, loosely held is that you can make
 bombastic statements, and everyone should implicitly assume that you’ll
 happily change your mind in a heartbeat if new data suggests you are
 wrong. It is supposed to lead to a collegial, competitive environment in

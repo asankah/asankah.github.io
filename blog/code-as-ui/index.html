@@ -5,9 +5,7 @@ Asanka Herath
 <a href=/tags/engineering>#Engineering</a></div><div class="social share"><a href="https://twitter.com/intent/tweet?text=Code+As+UI%3A+The+UX+of+config-as-code+and+everything-as-code&amp;url=https%3A%2F%2Fxn--izc.com%2Fblog%2Fcode-as-ui%2F&amp;via=asankah" aria-label="Share on Twitter" target=_blank rel=noopener><img src=/images/twitter.svg alt="Share on Twitter"></a>
 <a href="mailto:?body=Via+https%3A%2F%2Ftwitter.com%2Fasankah%0A%0AConfiguration-as-code+has+the+same+usability+issues+as+everything%0Aelse+as+code+along+with+the+same+benefits.%0A%0ARead+more+at+https%3A%2F%2Fxn--izc.com%2Fblog%2Fcode-as-ui%2F%0A&amp;subject=Code+As+UI%3A+The+UX+of+config-as-code+and+everything-as-code+-+Strong+Opinions%2C+Weekly+Held" aria-label="Share via Email" target=_blank rel=noopener><img src=/images/mail.svg alt="Share via Email"></a>
 <a href=https://xn--izc.com/blog/code-as-ui/ aria-label="Permanent link to post"><img src=/images/link-2.svg alt="Permanent link to post"></a></div><h2 id=welcome-to-the-ui-review>Welcome to the UI review</h2><p>Your UX person comes up to you with the new mocks for the
-configuration UI. It looks like this:</p><figure><img src=./blank-ui.png alt="A UI mock where all the labels are text boxes, and the values are also text boxes. The button just says “button”."><figcaption aria-hidden=true>A UI mock where all the labels are text
-boxes, and the values are also text boxes. The button just says
-“button”.</figcaption></figure><p><strong>You</strong>: What is this? Is this modern?</p><p><strong>UX</strong>: That’s be beauty of it. The user can type in the
+configuration UI. It looks like this:</p><figure><img src=./blank-ui.png alt="A UI mock where all the labels are text boxes, and the values are also text boxes. The button just “button”."><br><figcaption>Your new UX.</figcaption></figure><p><strong>You</strong>: What is this? Is this modern?</p><p><strong>UX</strong>: That’s be beauty of it. The user can type in the
 label <em>and</em> type in the value.</p><p><strong>You</strong>: And how would they know what the labels are and
 what valid values are?</p><p><strong>UX</strong>: We will write some documentation on what the
 labels and values should be.</p><p><strong>You</strong>: What about validation?</p><p><strong>UX</strong>: Hmm. That would be nice. But the UI doesn’t
@@ -25,10 +23,8 @@ editing text files; sometimes using an esoteric editor called
 <code>vi</code><a href=#fn1 class=footnote-ref id=fnref1 role=doc-noteref><sup>1</sup></a>.</p><p>Then there was a glorious age of GUIs. At some point they started
 treating developers and sysadmins like real people. You might not
 believe this, but they even did user experience testing to make sure
-those sysadmins’ lives were as easy as possible. It was glorious.</p><p>Some say this is still the case in some parts. There’s nobody to
-verify those claims any more, or to verify if Windows is still an
-OS.</p><p>And now, what’s old is new again.</p><aside id=footnotes class="footnotes footnotes-end-of-section" role=doc-endnotes><hr><ol><li id=fn1><p>Vim is actually quite awesome. <a href=https://neovim.io>Neovim</a> is slightly more awesome; or
-slightly less depending on who you are ask.<a href=#fnref1 class=footnote-back role=doc-backlink>↩︎</a></p></li></ol></aside><h2 id=why>Why?</h2><p>There are in fact good reasons for config-as-code. Here’s a few:</p><ol type=1><li><p><strong>No more opaque configuration</strong>.</p><p>Fancy UIs often mean that the configuration data goes straight into
+those sysadmins’ lives were as easy as possible. It was glorious.</p><p>And now, what’s old is new again.</p><aside id=footnotes class="footnotes footnotes-end-of-section" role=doc-endnotes><hr><ol><li id=fn1><p>Vim is actually quite awesome. <a href=https://neovim.io>Neovim</a> is slightly more or less awesome
+depending on who you are ask.<a href=#fnref1 class=footnote-back role=doc-backlink>↩︎</a></p></li></ol></aside><h2 id=the-pros>The Pros</h2><p>There are in fact good reasons for config-as-code. Here’s a few:</p><ol type=1><li><p><strong>No more opaque configuration</strong>.</p><p>Fancy UIs often mean that the configuration data goes straight into
 an opaque configuration store somewhere. Sure it will come around and
 affect the behavior of whatever it was that is being configured. But
 that stuff usually doesn’t involve the user.</p><p>Usually the the platform doesn’t have much reason to keep
@@ -48,32 +44,33 @@ shoulder taking notes, none of that comes for free with a sysadmin at a
 GUI.</p></li><li><p><strong>Audits, validation, automation</strong>.</p><p>Follows from the above. Now that the configuration is inspectable and
 understandable, it is easily amenable to automation and validation.</p><p>One could argue that this was always the case. However, now the user
 is empowered to do so with the same fidelity as the authors of the
-system.</p></li></ol><h2 id=but-how-can-we-fix-it>But how can we fix it?</h2><p>The things that need <em>fixing</em> is usability.</p><p>We spent decades saying Fitt’s law this and “recognition over recall”
+system.</p></li></ol><h2 id=and-the-cons>And the cons</h2><p>The things that need <em>fixing</em> is usability.</p><p>We spent decades saying Fitt’s law this and “recognition over recall”
 that, and then threw everything away. It’s time we put all that
 experience into action.</p><p>Just because the configuration is in text files doesn’t mean that it
 has to be authored that way. Even if it did, it is still possible to
 substantially improve the UX there.</p><p>Why do people enjoy Mad Libs but wouldn’t enjoy writing the same
-content from scratch? The answer is “recognition over recall”.</p><figure><img src=./madlibs.png alt="The original Mad Libs book gave this example: “___________! he said ________ as he jumped into his convertible ______ and drove off with his _________ wife.” exclamation adverb noun adjective. Source: Wikipedia"><figcaption aria-hidden=true>The original Mad Libs book gave this
-example: <em>“___________! he said ________ as he jumped into his
-convertible ______ and drove off with his _________ wife.” exclamation
-adverb noun adjective</em>. <a href=https://en.wikipedia.org/wiki/Mad_Libs>Source:
-Wikipedia</a></figcaption></figure><p>We can have the format and options documented somewhere and have the
+content from scratch? The answer is “recognition over recall”.</p><figure><img src=./madlibs.png alt="The original Mad Libs book gave this example: “___________! he said ________ as he jumped into his convertible ______ and drove off with his _________ wife.” exclamation adverb noun adjective."><br><figcaption>An example from the original Mad Libs book. <a href=https://en.wikipedia.org/wiki/Mad_Libs>Source: Wikipedia</a></figcaption></figure><p>We can have the format and options documented somewhere and have the
 user consult the document at every step of the way. This sound
 reasonable at first. So people write things like “read all the
 documentation carefully before attempting to configure the thing.”</p><p>But the amount of information that a human being can keep track of at
 a given time is limited. What it ends up being is a tiresom sequence of
-flipping back and forth between reference and implementation.</p><figure><img src=./reference-and-configuration-eyes.png alt="Attention shifts from the reference to the configuration being edited and back; repeatedly."><figcaption aria-hidden=true>Attention shifts from the reference to
-the configuration being edited and back; repeatedly.</figcaption></figure><h2 id=the-same-way-we-addressed-the-issue-for-code>The same way we
-addressed the issue for code …</h2><p>It turns out we already have some ideas on how to fix this, because
+flipping back and forth between reference and implementation.</p><figure><img src=./reference-and-configuration-eyes.png alt="Attention shifts from the reference to the configuration being edited and back; repeatedly."><br><figcaption>Left to right to left to right …</figcaption></figure><h2 id=making-things-better>Making things better</h2><p>It turns out we already have some ideas on how to fix this, because
 the same problems plague software engineering. Or I should say the other
-areas of software engineering.</p><p>This is where the puzzling parts come up. Why are are we suffering
-through a poor UX for configuration when we’ve put in so much effort
-into improving the coding experience; and the same applies to
-configuration-as-code?</p><nav class=suggested><h2 class=suggested>More articles from this blog</h4><ul><li><h3 class="suggested title"><a href=/blog/identity-domains/>Identity Domains</a></h3><p>An Identity Domain is a scope within which we assume that the user’s
-identity can roam freely.</p></li><li><h3 class="suggested title"><a href=/blog/the-loss-of-a-virtuous-culture/>The Loss of a Virtuous Culture</a></h3><p>Luck isn’t enough. You need a culture of virtue.</p></li><li><h3 class="suggested title"><a href=/blog/sometimes-its-the-interviewers-who-suck/>Sometimes It's the Interviewers Who Suck</a></h3><p>I’ve done hundreds of interviews. I’ve also served in numerous hiring committees over the years.
-Tech companies tend to have cultures built around tech people interviewing other tech people, typically in what is not-so-affectionately known as the “Tech interview.” This is good because candidates would be evaluated based on their actual skills instead of keywords in their resume. Interviewers are in effect choosing their future coworkers which makes in interview serve the interest of both the interviewer and the interviewee.</p></li><li><h3 class="suggested title"><a href=/blog/ten-years/>Ten Years</a></h3><p>It’s been ten years since I started at Google. The work anniversary fell on 6th of December.
-Ten years ago my wife and I made our way to Mountain View for my orientation; all excited for a brand new chapter in our lives. After spending a week in Mountain View / Palo Alto we both decided that California was not for us. But that’s beside the point.
-I was elated. This was pretty much everything I dreamt of as a kid growing up in Sri Lanka.</p></li><li><h3 class="suggested title"><a href=/blog/darpa-heilmeier-catechism/>DARPA's Heilmeier Catechism</a></h3><p>A set of questions help you think through and evaluate proposed
+areas of software engineering.</p><p>Here are several approaches I’ve seen in practice that make
+config-as-code more bearable.</p><h3 id=language-serversautocomplete>Language Servers/Autocomplete</h3><p>Pretty much the only useful development in coding in the past several
+decades is autocomplete. A good schema along with documentation can make
+a huge difference. Try editing the VS Code settings file to see it in
+action.</p><h3 id=templates>Templates</h3><p>As the Mad Libs example shows, templates are much easier and more
+expedient than a blank empty document.</p><p>Other examples of templates include:</p><p>But templates in general only work the first time. So subsequent
+edits to the configuration will have to contend without the help of a
+template. This is a biggie since configurations can’t be updated when
+updating their corresponding templates.</p><h3 id=alternate-uis>Alternate UIs</h3><p>We once used to have WYSIWYG UI editors. Now we have to write our UIs
+as code in one of any number of frameworks that in turn try to reduce
+the toil of writing UIs. It doesn’t have to be this way.</p><p>At least for configuration, just because the configuration is written
+down as code doesn’t mean it has to be edited as code. The same UIs that
+we once used can still generate those text files.</p><nav class=suggested><h2 class=suggested>More articles from this blog</h4><ul><li><h3 class="suggested title"><a href=/blog/the-lettergrade-rule/>The Lettergrade Rule</a></h3><p>Don’t block a code review because of minor issues that are best left
+to the discretion of the author.</p></li><li><h3 class="suggested title"><a href=/blog/inktober-stripes/>Inktober - Stripes</a></h3><p>“Stripes” - A bee wearing an incorrectly striped sweater For Inktober 52.</p></li><li><h3 class="suggested title"><a href=/blog/comcast-technican-problem/>The Comcast Technician Problem</a></h3><p>Given a set of tasks, incentives are often aligned towards dropping a
+task rather than allowing for perpetual accretion of delays.</p></li><li><h3 class="suggested title"><a href=/blog/the-loss-of-a-virtuous-culture/>The Loss of a Virtuous Culture</a></h3><p>Luck isn’t enough. You need a culture of virtue.</p></li><li><h3 class="suggested title"><a href=/blog/darpa-heilmeier-catechism/>DARPA's Heilmeier Catechism</a></h3><p>A set of questions help you think through and evaluate proposed
 projects and research programs.</p></li></ul></nav><h4>Comment</h4><script src=https://utteranc.es/client.js repo=asankah/blog-comments issue-term=title label=PublicComment theme=github-light crossorigin=anonymous async></script></div><div class=pagination><a href=/blog/just-the-right-amount/ class="left arrow">&#8592;</a>
 <a href=# class=top>Top</a></div></main><footer><span>Last modified on July 2, 2023</span></footer><script async src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-GSREL2EZ4Y",{anonymize_ip:!1})}</script></body></html>
