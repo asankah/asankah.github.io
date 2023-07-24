@@ -1,4 +1,60 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strong Opinions, Weekly Held</title><link>https://xn--izc.com/</link><description>Recent content on Strong Opinions, Weekly Held</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Asanka Herath</copyright><lastBuildDate>Sat, 01 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://xn--izc.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Code As UI: The UX of config-as-code and everything-as-code</title><link>https://xn--izc.com/blog/code-as-ui/</link><pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/code-as-ui/</guid><description>Configuration-as-code has the same usability issues as everything
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strong Opinions, Weekly Held</title><link>https://xn--izc.com/</link><description>Recent content on Strong Opinions, Weekly Held</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Asanka Herath</copyright><lastBuildDate>Mon, 24 Jul 2023 11:00:12 -0400</lastBuildDate><atom:link href="https://xn--izc.com/index.xml" rel="self" type="application/rss+xml"/><item><title>The Point of a Strategy</title><link>https://xn--izc.com/blog/the-point-of-a-strategy/</link><pubDate>Mon, 24 Jul 2023 11:00:12 -0400</pubDate><guid>https://xn--izc.com/blog/the-point-of-a-strategy/</guid><description>The only useful strategy is one that reduces risks.</description><content:encoded><p><strong>Q</strong>: How do you win a soccer match?</p><p><strong>A</strong>: Score more goals than the other team.</p><p>This is a dumb strategy, right? But why?</p><p>Compared to a more<em>reasonable</em> strategy like start preparing
+with plenty of time to spare, invest in a good team, hire a good coach
+and what not,<em>why</em> is scoring more goals a dumb strategy? That’s
+because the bad strategy didn’t<strong>reduce risk</strong>.</p><p>The whole point of a strategy is to mitigate risk. One could imagine
+gathering up a bunch of random people and somehow lucking out at the
+game and winning it. You need a strategy if you don’t want to leave
+everything to chance.</p><p>That’s why the next strategy you write down needs to account for
+these:</p><ol type="1"><li><p>State your goal clearly.</p><p>A good goal should clearly articulate<strong>the outcome</strong>,
+and<strong>constraints</strong>. E.g. MVP available for limited testing
+(<em>the outcome</em>) by end of Q4 (<em>the constraint</em>).</p><p>It should be obvious to anyone when the goal has been reached. This
+is by design, since there should not be any question of what you are
+collectively trying to accomplish.</p></li><li><p>Identify the risks.</p><p>Mitigating risks begin by identifying them. Some risks are obvouls,
+but still write them down because you need to address them.</p><p>Failing to meet the goal is an obvious risk, but why would you fail
+to meet the goal?</p><p>A common reasons is simply that you need more time. E.g. you are at
+risk of not meeting the constraints due to underestimating the amount of
+work required.</p><p>Another reason could be technology you are using not performing as
+expected due to bugs. Every part of your tech stack is a gamble. A part
+that you don’t own is a specially big risk because you may not be able
+to fix it or work around a problem.</p></li><li><p>Figure out how to mitigate the risks.</p><p>At risk of schedules slipping? Have intermediate deliverables and
+milestones along the way. Instead of everything falling apart at the
+end, you’ll know when things are not going to schedule much earlier in
+the product life cycle. Knowing early means that you can address them
+before failures snowball into a giant ball of trouble.</p><p>Unreliable tech-stack? Choose stacks that have a solid user base and
+support structure. A project with bugs that are getting addressed is a
+lower risk than one that hasn’t seen any updates in a year.</p></li><li><p>Stack up your goal, risks, and mitigations.</p><p>There’s your strategy.</p></li></ol><p>It’s not a strategy is risks are not identified and mitigated.</p><p>A common mistake is to write down a list of steps that, if followed,
+achieve a stated goal. A good first step. But the unless the strategy
+can<strong>reduce</strong> risk, it is not a useful.</p></content:encoded></item><item><title>Just Enough Technical Debt</title><link>https://xn--izc.com/blog/just-the-right-amount/</link><pubDate>Sat, 08 Jul 2023 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/just-the-right-amount/</guid><description>Zero technical debt isn’t always the answer.</description><content:encoded><p>Zero technical debt sounds like a great target to aim for. In my
+earlier developer days I strongly believed that all projects should go
+for this target. At a company all-hands I heard from a senior engineer
+that having zero technical debt is often not what we want. I felt
+betrayed.</p><p>Why is it that zero technical debt isn’t what we want?</p><h2 id="memory-allocation-strategy-leak-all-allocations">Memory
+Allocation Strategy: Leak All Allocations</h2><p>Let’s take a moment and think of a hypothetical program. If you knew
+that your program ran once and terminated, would you go through the
+effort of deallocating each individual memory allocation at the end? You
+are about to end the process and drop the entire heap anyway. Cleaning
+the heap at this point is a waste. For short-lived programs who’s memory
+consumption is bounded and less than the available memory the more
+efficient strategy is to just leak all memory.</p><p>One might wonder if such a strategy would break reusability. “Leak
+all allocations” doesn’t mean that you shouldn’t call<code>free()</code> (or equivalent) in your code. It means that the
+memory manager would treat<code>free()</code> as a no-op. This
+principal also applies to garbage collected languages. After all, the<a href="https://devblogs.microsoft.com/oldnewthing/20100809-00/?p=13203#:~:text=Garbage%20collection%20is%20simulating%20a%20computer%20with%20an%20infinite%20amount%20of%20memory."><em>job
+of memory management is to simulate infinite memory</em></a>. If you are
+only going to use a finite amount of memory then you don’t need memory
+management.</p><h2 id="what-does-just-enough-technical-debt-look-like">What Does Just
+Enough Technical Debt Look Like?</h2><p>Some of the motivation for stopping short of perfect comes from the<a href="https://en.wikipedia.org/wiki/The_Mythical_Man-Month">Mythical
+Man Month</a>.</p><blockquote><p>For the human makers of things, the incompletenesses and
+inconsistencies of our ideas become clear only during implementation.
+Thus it is that writing, experimentation, “working out” are essential
+disciplines for the theoretician.</p><p>― Frederick P. Brooks Jr., The Mythical Man-Month: Essays on Software
+Engineering</p></blockquote><blockquote><p>The hardest part of the software task is arriving at a complete and
+consistent specification, and much of the essence of building a program
+is in fact the debugging of the specification.</p><p>― Frederick P. Brooks Jr., The Mythical Man-Month: Essays on Software
+Engineering</p></blockquote><p>Software projects tend to be characteristically similar. Putting too
+much effort into a project features you don’t need and polishing up code
+that nobody will reuse is wasteful. It’s just a little bit harder to
+know when you’ve crossed the point of diminishing returns where cleaning
+up the code no longer makes sense.</p></content:encoded></item><item><title>Code As UI: The UX of config-as-code and everything-as-code</title><link>https://xn--izc.com/blog/code-as-ui/</link><pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/code-as-ui/</guid><description>Configuration-as-code has the same usability issues as everything
 else as code along with the same benefits.</description><content:encoded><h2 id="welcome-to-the-ui-review">Welcome to the UI review</h2><p>Your UX person comes up to you with the new mocks for the
 configuration UI. It looks like this:</p><figure><img src="./blank-ui.png" alt="A UI mock where all the labels are text boxes, and the values are also text boxes. The button just “button”."/><br/><figcaption>
 Your new UX.</figcaption></figure><p><strong>You</strong>: What is this? Is this modern?</p><p><strong>UX</strong>: That’s be beauty of it. The user can type in the
@@ -65,38 +121,7 @@ updating their corresponding templates.</p><h3 id="alternate-uis">Alternate UIs<
 as code in one of any number of frameworks that in turn try to reduce
 the toil of writing UIs. It doesn’t have to be this way.</p><p>At least for configuration, just because the configuration is written
 down as code doesn’t mean it has to be edited as code. The same UIs that
-we once used can still generate those text files.</p></content:encoded></item><item><title>Just Enough Technical Debt</title><link>https://xn--izc.com/blog/just-the-right-amount/</link><pubDate>Mon, 26 Jun 2023 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/just-the-right-amount/</guid><description>Zero technical debt isn’t always the answer. Learn to look for the
-point of diminishing returns.</description><content:encoded><p>Zero technical debt sounds like a great target to aim for. In my
-earlier developer days I strongly believed that all projects should go
-for this target. At a company all-hands I heard from a senior engineer
-that having zero technical debt is often not what we want. I felt
-betrayed.</p><p>Why is it that zero technical debt isn’t what we want?</p><h2 id="memory-allocation-strategy-leak-all-allocations">Memory
-Allocation Strategy: Leak All Allocations</h2><p>Let’s take a moment and think of a hypothetical program. If you knew
-that your program ran once and terminated, would you go through the
-effort of deallocating each individual memory allocation at the end? You
-are about to end the process and drop the entire heap anyway. Cleaning
-the heap at this point is a waste. For short-lived programs who’s memory
-consumption is bounded and less than the available memory the more
-efficient strategy is to just leak all memory.</p><p>One might wonder if such a strategy would break reusability. “Leak
-all allocations” doesn’t mean that you shouldn’t call<code>free()</code> (or equivalent) in your code. It means that the
-memory manager would treat<code>free()</code> as a no-op. This
-principal also applies to garbage collected languages. After all, the<a href="https://devblogs.microsoft.com/oldnewthing/20100809-00/?p=13203#:~:text=Garbage%20collection%20is%20simulating%20a%20computer%20with%20an%20infinite%20amount%20of%20memory."><em>job
-of memory management is to simulate infinite memory</em></a>. If you are
-only going to use a finite amount of memory then you don’t need memory
-management.</p><h2 id="what-does-just-enough-technical-debt-look-like">What Does Just
-Enough Technical Debt Look Like?</h2><p>Some of the motivation for stopping short of perfect comes from the<a href="https://en.wikipedia.org/wiki/The_Mythical_Man-Month">Mythical
-Man Month</a>.</p><blockquote><p>For the human makers of things, the incompletenesses and
-inconsistencies of our ideas become clear only during implementation.
-Thus it is that writing, experimentation, “working out” are essential
-disciplines for the theoretician.</p><p>― Frederick P. Brooks Jr., The Mythical Man-Month: Essays on Software
-Engineering</p></blockquote><blockquote><p>The hardest part of the software task is arriving at a complete and
-consistent specification, and much of the essence of building a program
-is in fact the debugging of the specification.</p><p>― Frederick P. Brooks Jr., The Mythical Man-Month: Essays on Software
-Engineering</p></blockquote><p>Software projects tend to be characteristically similar. Putting too
-much effort into a project features you don’t need and polishing up code
-that nobody will reuse is wasteful. It’s just a little bit harder to
-know when you’ve crossed the point of diminishing returns where cleaning
-up the code no longer makes sense.</p></content:encoded></item><item><title>Promise Fatigue</title><link>https://xn--izc.com/blog/promise-fatigue/</link><pubDate>Tue, 01 Nov 2022 00:03:16 -0400</pubDate><guid>https://xn--izc.com/blog/promise-fatigue/</guid><description>Setting low but realistic expectations is better than setting high
+we once used can still generate those text files.</p></content:encoded></item><item><title>Promise Fatigue</title><link>https://xn--izc.com/blog/promise-fatigue/</link><pubDate>Tue, 01 Nov 2022 00:03:16 -0400</pubDate><guid>https://xn--izc.com/blog/promise-fatigue/</guid><description>Setting low but realistic expectations is better than setting high
 but unrealistic ones.</description><content:encoded><ul><li>I’ll get it to you by the end of the day.</li><li>I’m working on it right now.</li><li>I’ll get it done today.</li></ul><p>Even though the word “promise” doesn’t appear in any of these, they
 still represent a commitment you make to someone else. If you fail to
 keep your promise, you will disappoint someone or more than one.</p><p>But if you fail to keep your promises, eventually, you’ll stop
