@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strong Opinions, Weekly Held</title><link>https://xn--izc.com/</link><description>Recent content on Strong Opinions, Weekly Held</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Asanka Herath</copyright><lastBuildDate>Mon, 24 Jul 2023 11:00:12 -0400</lastBuildDate><atom:link href="https://xn--izc.com/index.xml" rel="self" type="application/rss+xml"/><item><title>The Point of a Strategy</title><link>https://xn--izc.com/blog/the-point-of-a-strategy/</link><pubDate>Mon, 24 Jul 2023 11:00:12 -0400</pubDate><guid>https://xn--izc.com/blog/the-point-of-a-strategy/</guid><description>The only useful strategy is one that reduces risks.</description><content:encoded><p><strong>Q</strong>: How do you win a soccer match?</p><p><strong>A</strong>: Score more goals than the other team.</p><p>This is a dumb strategy, right? But why?</p><p>Compared to a more<em>reasonable</em> strategy like start preparing
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strong Opinions, Weekly Held</title><link>https://xn--izc.com/</link><description>Recent content on Strong Opinions, Weekly Held</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Asanka Herath</copyright><lastBuildDate>Sat, 12 Aug 2023 19:29:31 -0400</lastBuildDate><atom:link href="https://xn--izc.com/index.xml" rel="self" type="application/rss+xml"/><item><title>A Good API: g9</title><link>https://xn--izc.com/blog/a-good-api/</link><pubDate>Sat, 12 Aug 2023 19:29:31 -0400</pubDate><guid>https://xn--izc.com/blog/a-good-api/</guid><description>Adding more knobs doesn’t make your API more powerful.</description><content:encoded><p>Once in a while an API comes around that makes me stop and and look
+at what I’m doing.</p><p>Like many aspects of design, when it comes to APIs, what is not there
+matters as much as what is. Engineers like to fiddle around with things.
+So they like to add knobs and dials for fiddling around with things.</p><p>People say platitudes like good API design has to do with balancing
+flexibility and simplicity. People throw around the word “simplicity” as
+if people just need to be reminded of it and all will be well. “Simplify
+your API” isn’t the same as “put on sunscreen.” It takes work. Lots of
+work. Intentional work with the goal of simplifying because there is
+little chance you are going to arrive at the right solution by
+accident.</p><p>An example of a good API is<a href="https://github.com/bijection/g9">g9</a>.</p><p>Before you look at it, think about how you would construct an API
+that:</p><ul><li>… allows you to draw a diagram on an HTML canvas – perhaps with a
+limited set of drawing primitives.</li><li>… once the diagram is rendered, allows users to manipulate the
+diagram by dragging points around.</li></ul><p>There are millions of ways of designing this. But g9’s approach takes
+the cake. You can take a shortcut and have a look at their<a href="https://github.com/bijection/g9#docs">API documentation</a> or
+their<a href="https://omrelli.ug/g9/gallery/">examples</a>. But
+basically it is this:</p><ol type="1"><li>Tell us what your mutable parameters are.</li><li>Draw your diagram with based on the set of parameters.</li><li>…</li></ol><p>That’s it. That’s all there is.</p><p>Now, you can sit there and come up with a million knobs that you
+claim makes the API more powerful. And you might be right – you’ll be
+able to do more things with the API with the knobs you add.</p><p>But when you start treating simplicity as a feature, you’ll notice
+that adding knobs isn’t the same as making a more powerful API. All
+those additional knobs must be essentially invisible for people who
+don’t need them. Otherwise every addtional knob will waste more of your
+users’ time and energy for nothing.</p><p>The power of an API comes from letting users to express more with
+less.</p></content:encoded></item><item><title>The Point of a Strategy</title><link>https://xn--izc.com/blog/the-point-of-a-strategy/</link><pubDate>Mon, 24 Jul 2023 11:00:12 -0400</pubDate><guid>https://xn--izc.com/blog/the-point-of-a-strategy/</guid><description>The only useful strategy is one that reduces risks.</description><content:encoded><p><strong>Q</strong>: How do you win a soccer match?</p><p><strong>A</strong>: Score more goals than the other team.</p><p>This is a dumb strategy, right? But why?</p><p>Compared to a more<em>reasonable</em> strategy like start preparing
 with plenty of time to spare, invest in a good team, hire a good coach
 and what not,<em>why</em> is scoring more goals a dumb strategy? That’s
 because the bad strategy didn’t<strong>reduce risk</strong>.</p><p>The whole point of a strategy is to mitigate risk. One could imagine
@@ -1176,23 +1198,22 @@ awesomeness.</li></ol></content:encoded></item><item><title>Why 'Strong Opinions
 In his essay – which isn’t very long if you would like to read the whole thing yourself – he lays out the concept as follows:
 I have found that the fastest way to an effective forecast is often through a sequence of lousy forecasts.</description><content:encoded><h2 id="origins-of-the-phrase">Origins of the phrase</h2><p>The title of this blog is<strong>Strong Opinions, Weakly
 Held</strong>. The same concept shows up elsewhere are<em>Strong
-Opinions Loosely Held</em>. An eponymous essay by Paul Saffo in<span class="citation" data-cites="Saffo">(<a href="#ref-Saffo" role="doc-biblioref">2020</a>)</span> introduced the world to this
-concept.</p><p>In his essay – which isn’t very long if you would like to<a href="https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/">read
+Opinions Loosely Held</em>. An eponymous essay by Paul Saffo in<span class="citation" data-cites="Saffo">(2020)</span> introduced the world
+to this concept.</p><p>In his essay – which isn’t very long if you would like to<a href="https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/">read
 the whole thing yourself</a> – he lays out the concept as follows:</p><blockquote><p>I have found that the fastest way to an effective forecast is often
 through a sequence of lousy forecasts. Instead of withholding judgment
 until an exhaustive search for data is complete, I will force myself to
 make a tentative forecast based on the information available, and then
 systematically tear it apart, using the insights gained to guide my
-search for further indicators and information.</p></blockquote><h2 id="criticism">Criticism</h2><p>Cedric Chin’s critique<span class="citation" data-cites="Cedric">(<a href="#ref-Cedric" role="doc-biblioref">2020</a>)</span> comes down to
-two points that the author summarizes as follows:</p><blockquote><p>In my experience, ‘strong opinions, weakly held’ is difficult to put
+search for further indicators and information.</p></blockquote><h2 id="criticism">Criticism</h2><p>Cedric Chin’s critique<span class="citation" data-cites="Cedric">(2020)</span> comes down to two points that the
+author summarizes as follows:</p><blockquote><p>In my experience, ‘strong opinions, weakly held’ is difficult to put
 into practice. Most people who try will either:</p><ol type="1"><li>Use it as downside-protection to justify their strongly-held bad
 opinions, or</li><li>Struggle to shift from one strong opinion to another.</li></ol><p>The reason it is difficult is because it works against the grain of
 the human mind.</p><p>So don’t bother. The next time you find yourself making a judgment,
 don’t invoke ‘strong opinions, weakly held’. Instead, ask: “how much are
 you willing to bet on that?” Doing so will jolt people into the types of
-thinking you want to encourage.</p></blockquote><p>Michael Natkin on<span class="citation" data-cites="Michael">(<a href="#ref-Michael" role="doc-biblioref">2020</a>)</span> points out the
-fallacy of assuming that strong opinions will be reliably
-challenged:</p><blockquote><p>The idea of strong opinions, loosely held is that you can make
+thinking you want to encourage.</p></blockquote><p>Michael Natkin on<span class="citation" data-cites="Michael">(2020)</span> points out the fallacy of assuming
+that strong opinions will be reliably challenged:</p><blockquote><p>The idea of strong opinions, loosely held is that you can make
 bombastic statements, and everyone should implicitly assume that you’ll
 happily change your mind in a heartbeat if new data suggests you are
 wrong. It is supposed to lead to a collegial, competitive environment in
