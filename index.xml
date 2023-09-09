@@ -1,4 +1,57 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strong Opinions, Weekly Held</title><link>https://xn--izc.com/</link><description>Recent content on Strong Opinions, Weekly Held</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Asanka Herath</copyright><lastBuildDate>Sat, 12 Aug 2023 19:29:31 -0400</lastBuildDate><atom:link href="https://xn--izc.com/index.xml" rel="self" type="application/rss+xml"/><item><title>A Good API: g9</title><link>https://xn--izc.com/blog/a-good-api/</link><pubDate>Sat, 12 Aug 2023 19:29:31 -0400</pubDate><guid>https://xn--izc.com/blog/a-good-api/</guid><description>Adding more knobs doesn’t make your API more powerful.</description><content:encoded><p>Once in a while an API comes around that makes me stop and and look
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strong Opinions, Weekly Held</title><link>https://xn--izc.com/</link><description>Recent content on Strong Opinions, Weekly Held</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Asanka Herath</copyright><lastBuildDate>Fri, 08 Sep 2023 20:18:23 -0400</lastBuildDate><atom:link href="https://xn--izc.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Pillars Are Governance Structures</title><link>https://xn--izc.com/blog/pillars-are-governance-structures/</link><pubDate>Fri, 08 Sep 2023 20:18:23 -0400</pubDate><guid>https://xn--izc.com/blog/pillars-are-governance-structures/</guid><description>Re-orgs.
+It’s a fact of life for large organizations. A popular metaphor making the rounds now ,at least for me, is this concept of pillars. What was once called teams or simply referred to by their pronoun-less product names is now called pillars. The metaphor makes sense. Let’s start at the top.
+A goal at the top and a bunch of pillars at the bottom. No foundation. On the top is some kind of goal.</description><content:encoded><p>Re-orgs.</p><p>It’s a fact of life for large organizations. A popular metaphor
+making the rounds now ,at least for me, is this concept of pillars. What
+was once called teams or simply referred to by their pronoun-less
+product names is now called pillars. The metaphor makes sense. Let’s
+start at the top.</p><figure><img src="./just-pillars-and-a-goal.png" alt="A goal at the top and a bunch of pillars at the bottom. No foundation."/><figcaption aria-hidden="true">A goal at the top and a bunch of pillars
+at the bottom. No foundation.</figcaption></figure><p>On the top is some kind of goal. The pillars support the goal. There
+could be some sort of foundation in the bottom but that never seems to
+come up. The metaphor stops before we get to the bottom I guess.</p><figure><img src="./pillars-and-subpillars.png" alt="A goal at the top, a bunch of pillars holding it up, and then a bunch of subpillars. Still no foundation."/><figcaption aria-hidden="true">A goal at the top, a bunch of pillars
+holding it up, and then a bunch of subpillars. Still no
+foundation.</figcaption></figure><p>Now things get complicated. Each pillar has subpillars. (I reduced
+the number of pillars for clarity.)</p><p>The subpillars are holding up the pillars, I guess. All of them
+coming together to hold up the goal or organization. We are using
+different words, but nothing is that different from organizations /
+teams / and sub-teams.</p><p>Collectively what we are looking at is a system of organizing people.
+People can’t seem to agree about how to organize people.</p><p>Pillars or teams are organizational structures. “Leaders” of these
+pillars lay out priorities. They are also the advocates of their
+respective subpillars and teams.</p><p>Or rather they “should” be.</p><p>In<a href="https://martinfowler.com/bliki/TeamTopologies.html">TeamTopologies</a>
+Martin Fowler et. al. discusses different kinds of teams. What applies
+to teams applies to pillars – they are the same thing. What I found
+compelling was the distinction between<strong>Outcome Oriented
+teams</strong> and<strong>Activity Oriented teams</strong>.</p><p>To put it in a nutshell,</p><ul><li><p><strong>Outcome oriented teams</strong> are teams that are
+working towards a specific outcome. They hope to achieve some sort of
+goal, and once it is achieved the teams either dissolve, or delegate out
+to a<em>activity oriented team</em>.</p><p>Outcome oriented teams have specific measurable goals like build a
+thing, make specific qualitative change happen, research something, and
+achieve a sales goal.</p></li><li><p><strong>Activity oriented teams</strong> are teams that perform
+some sort of activity for the organization. They do things like keeping
+the lights on, bug fixing, and occasional feature development.</p><p>Activity oriented teams have qualitative goals like uptime,
+efficiency, user-satisfaction, and support level.</p></li></ul><p>Activity oriented teams are typically in the service of enabling an
+outcome, which would be primarily on the shoulders of an outcome
+oriented team.</p><p>There are more details and nuances and much hair-splitting. But the
+gist of it can be understood without diving too far into the weeds. What
+is important is that …</p><blockquote><p><em>You can’t run a goal oriented team as an activity oriented
+team</em> and vice versa.</p></blockquote><p>One can’t set up sensible goals if the modalities doesn’t match up.
+And by modalities I mean the type of team.</p><p>And here’s the kicker, the “subpillars” or subteams can support
+multiple upstream goals. Especially if they are activity oriented teams.
+So our picture actually looks more like this.</p><figure><img src="./pillars-subpillars-and-foundations.png" alt="Goals, pillars, sub-pillars, and this time, foundations"/><figcaption aria-hidden="true">Goals, pillars, sub-pillars, and this
+time, foundations</figcaption></figure><p>In TeamTopologies parlance, these would be – to simplify things a
+little bit – enabling teams.</p><p>Notice how the foundations aren’t under specific pillars or (vertial)
+subpillars. The problem with the pillars and subpillars model is that
+these<em>activity oriented</em> teams don’t fit inside pillars; because
+they are<strong>foundations</strong>.</p><p>So the picture actually looks more like:</p><figure><img src="./with-foundations.png" alt="Big organization, outcomes, outcome oriented teams, and foundations"/><figcaption aria-hidden="true">Big organization, outcomes, outcome
+oriented teams, and foundations</figcaption></figure><p>But this isn’t quite satisfactory yet because we can’t made things
+fit into the pillar system. Once people get stuck on pillars everything
+needs to be a pillar.</p><p>We can, however, stick teams into pillars. These teams would be
+outcome oriented if they are stuck into outcome oriented pillars. It
+follows that activity oriented pillars will need to be stuck into
+activity oriented pillars.</p><p>So it’ll kind of look like this:</p><figure><img src="./all-together-now.png" alt="Big organization, goals, outcome oriented pillars, outcome oriented teams, activity oriented pillars, and activity oriented teams"/><figcaption aria-hidden="true">Big organization, goals, outcome oriented
+pillars, outcome oriented teams, activity oriented pillars, and activity
+oriented teams</figcaption></figure><p>And there you have it.</p><p>In reality, the structure can be made much cleaner once you start
+asking each team what their goals are.</p><p>But the gist of it is you can’t plan teams or pillars until you know
+what their goals are.</p></content:encoded></item><item><title>A Good API: g9</title><link>https://xn--izc.com/blog/a-good-api/</link><pubDate>Sat, 12 Aug 2023 19:29:31 -0400</pubDate><guid>https://xn--izc.com/blog/a-good-api/</guid><description>Adding more knobs doesn’t make your API more powerful.</description><content:encoded><p>Once in a while an API comes around that makes me stop and and look
 at what I’m doing.</p><p>Like many aspects of design, when it comes to APIs, what is not there
 matters as much as what is. Engineers like to fiddle around with things.
 So they like to add knobs and dials for fiddling around with things.</p><p>People say platitudes like good API design has to do with balancing
@@ -1198,22 +1251,23 @@ awesomeness.</li></ol></content:encoded></item><item><title>Why 'Strong Opinions
 In his essay – which isn’t very long if you would like to read the whole thing yourself – he lays out the concept as follows:
 I have found that the fastest way to an effective forecast is often through a sequence of lousy forecasts.</description><content:encoded><h2 id="origins-of-the-phrase">Origins of the phrase</h2><p>The title of this blog is<strong>Strong Opinions, Weakly
 Held</strong>. The same concept shows up elsewhere are<em>Strong
-Opinions Loosely Held</em>. An eponymous essay by Paul Saffo in<span class="citation" data-cites="Saffo">(2020)</span> introduced the world
-to this concept.</p><p>In his essay – which isn’t very long if you would like to<a href="https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/">read
+Opinions Loosely Held</em>. An eponymous essay by Paul Saffo in<span class="citation" data-cites="Saffo">(<a href="#ref-Saffo" role="doc-biblioref">2020</a>)</span> introduced the world to this
+concept.</p><p>In his essay – which isn’t very long if you would like to<a href="https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/">read
 the whole thing yourself</a> – he lays out the concept as follows:</p><blockquote><p>I have found that the fastest way to an effective forecast is often
 through a sequence of lousy forecasts. Instead of withholding judgment
 until an exhaustive search for data is complete, I will force myself to
 make a tentative forecast based on the information available, and then
 systematically tear it apart, using the insights gained to guide my
-search for further indicators and information.</p></blockquote><h2 id="criticism">Criticism</h2><p>Cedric Chin’s critique<span class="citation" data-cites="Cedric">(2020)</span> comes down to two points that the
-author summarizes as follows:</p><blockquote><p>In my experience, ‘strong opinions, weakly held’ is difficult to put
+search for further indicators and information.</p></blockquote><h2 id="criticism">Criticism</h2><p>Cedric Chin’s critique<span class="citation" data-cites="Cedric">(<a href="#ref-Cedric" role="doc-biblioref">2020</a>)</span> comes down to
+two points that the author summarizes as follows:</p><blockquote><p>In my experience, ‘strong opinions, weakly held’ is difficult to put
 into practice. Most people who try will either:</p><ol type="1"><li>Use it as downside-protection to justify their strongly-held bad
 opinions, or</li><li>Struggle to shift from one strong opinion to another.</li></ol><p>The reason it is difficult is because it works against the grain of
 the human mind.</p><p>So don’t bother. The next time you find yourself making a judgment,
 don’t invoke ‘strong opinions, weakly held’. Instead, ask: “how much are
 you willing to bet on that?” Doing so will jolt people into the types of
-thinking you want to encourage.</p></blockquote><p>Michael Natkin on<span class="citation" data-cites="Michael">(2020)</span> points out the fallacy of assuming
-that strong opinions will be reliably challenged:</p><blockquote><p>The idea of strong opinions, loosely held is that you can make
+thinking you want to encourage.</p></blockquote><p>Michael Natkin on<span class="citation" data-cites="Michael">(<a href="#ref-Michael" role="doc-biblioref">2020</a>)</span> points out the
+fallacy of assuming that strong opinions will be reliably
+challenged:</p><blockquote><p>The idea of strong opinions, loosely held is that you can make
 bombastic statements, and everyone should implicitly assume that you’ll
 happily change your mind in a heartbeat if new data suggests you are
 wrong. It is supposed to lead to a collegial, competitive environment in
