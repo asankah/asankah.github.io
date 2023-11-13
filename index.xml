@@ -1,49 +1,62 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strong Opinions, Weekly Held</title><link>https://xn--izc.com/</link><description>Recent content on Strong Opinions, Weekly Held</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Asanka Herath</copyright><lastBuildDate>Fri, 08 Sep 2023 20:18:23 -0400</lastBuildDate><atom:link href="https://xn--izc.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Pillars Are Governance Structures</title><link>https://xn--izc.com/blog/pillars-are-governance-structures/</link><pubDate>Fri, 08 Sep 2023 20:18:23 -0400</pubDate><guid>https://xn--izc.com/blog/pillars-are-governance-structures/</guid><description>Re-orgs.
-It’s a fact of life for large organizations. A popular metaphor making the rounds now ,at least for me, is this concept of pillars. What was once called teams or simply referred to by their pronoun-less product names is now called pillars. The metaphor makes sense. Let’s start at the top.
-A goal at the top and a bunch of pillars at the bottom. No foundation. On the top is some kind of goal.</description><content:encoded><p>Re-orgs.</p><p>It’s a fact of life for large organizations. A popular metaphor
-making the rounds now ,at least for me, is this concept of pillars. What
-was once called teams or simply referred to by their pronoun-less
-product names is now called pillars. The metaphor makes sense. Let’s
-start at the top.</p><figure><img src="./just-pillars-and-a-goal.png" alt="A goal at the top and a bunch of pillars at the bottom. No foundation."/><figcaption aria-hidden="true">A goal at the top and a bunch of pillars
-at the bottom. No foundation.</figcaption></figure><p>On the top is some kind of goal. The pillars support the goal. There
-could be some sort of foundation in the bottom but that never seems to
-come up. The metaphor stops before we get to the bottom (for now).</p><figure><img src="./pillars-and-subpillars.png" alt="A goal at the top, a bunch of pillars holding it up, and then a bunch of subpillars. Still no foundation."/><figcaption aria-hidden="true">A goal at the top, a bunch of pillars
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strong Opinions, Weekly Held</title><link>https://xn--izc.com/</link><description>Recent content on Strong Opinions, Weekly Held</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Asanka Herath</copyright><lastBuildDate>Fri, 08 Sep 2023 20:18:23 -0400</lastBuildDate><atom:link href="https://xn--izc.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Pillars And Governance Structures</title><link>https://xn--izc.com/blog/pillars-are-governance-structures/</link><pubDate>Fri, 08 Sep 2023 20:18:23 -0400</pubDate><guid>https://xn--izc.com/blog/pillars-are-governance-structures/</guid><description>Originally published on 2023 September 8. Revised 2023 November 12 with hopefully less rambling.
+Re-orgs.
+It’s a fact of life for large organizations. A popular metaphor making the rounds now is this concept of pillars. The metaphor makes sense to some extent.
+A house without a foundation Let’s start with a picture of how a sanitized version of a pillar structure would look like.
+A goal at the top and a bunch of pillars at the bottom.</description><content:encoded><aside class="note"><p>Originally published on 2023 September 8. Revised 2023 November 12
+with hopefully less rambling.</p></aside><p>Re-orgs.</p><p>It’s a fact of life for large organizations. A popular metaphor
+making the rounds now is this concept of pillars. The metaphor makes
+sense to some extent.</p><h2 id="a-house-without-a-foundation">A house without a foundation</h2><p>Let’s start with a picture of how a sanitized version of a pillar
+structure would look like.</p><figure><img src="./just-pillars-and-a-goal.png" alt="A goal at the top and a bunch of pillars at the bottom. No foundation."/><figcaption aria-hidden="true">A goal at the top and a bunch of pillars
+at the bottom. No foundation.</figcaption></figure><p>On the top is some kind of goal or an organization. In the case of an
+organization we can think of organization’s mission as the goal. Pillars
+support the goal.</p><h2 id="stage-2-subpillars">Stage 2: Subpillars</h2><figure><img src="./pillars-and-subpillars.png" alt="A goal at the top, a bunch of pillars holding it up, and then a bunch of subpillars. Still no foundation."/><figcaption aria-hidden="true">A goal at the top, a bunch of pillars
 holding it up, and then a bunch of subpillars. Still no
-foundation.</figcaption></figure><p>Now things get complicated. Each pillar has subpillars. (I reduced
-the number of pillars for clarity.)</p><p>The subpillars are holding up the pillars. All of them coming
-together to hold up the goal or organization. We are using different
-words, but nothing is that different from organizations / teams / and
-sub-teams.</p><p>Collectively what we are looking at is a system of organizing people.
-People can’t seem to agree about how to organize people.</p><p>Pillars or teams are organizational structures. “Leaders” of these
-pillars lay out priorities. They are also the advocates of their
-respective subpillars and teams.</p><p>Or rather they “should” be.</p><p>In<a href="https://martinfowler.com/bliki/TeamTopologies.html">TeamTopologies</a>
-Martin Fowler et. al. discusses different kinds of teams. What applies
-to teams applies to pillars – they are the same thing. What I found
-compelling was the distinction between<strong>Outcome Oriented
-teams</strong> and<strong>Activity Oriented teams</strong>.</p><p>To put it in a nutshell,</p><ul><li><p><strong>Outcome oriented teams</strong> are teams that are
-working towards a specific outcome. They hope to achieve some sort of
-goal, and once it is achieved the teams either dissolve, or delegate out
-to a<em>activity oriented team</em>.</p><p>Outcome oriented teams have specific measurable goals like build a
-thing, make specific qualitative change happen, research something, and
-achieve a sales goal.</p></li><li><p><strong>Activity oriented teams</strong> are teams that perform
+foundation.</figcaption></figure><p>Massive corporations can’t be organized around a handful of pillars.
+We need more structure: subpillars.</p><p>The subpillars are holding up the pillars. Together all of them hold
+up the goal.</p><p>Collectively what we are looking at is a system for organizing
+people. One that is hierarchical and tree structured.</p><p>We all know this. Because that’s what org charts have always looked
+like.</p><h2 id="team-topologies">Team Topologies</h2><p>In<a href="https://martinfowler.com/bliki/TeamTopologies.html">TeamTopologies</a><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> Martin Fowler et. al. discusses
+different kinds of software teams.</p><p>One can think of pillars and sub-pillars as being higher level
+structures for organizing these teams. Individual teams at the
+granularity at which team topologies apply are too granular for
+pillars.</p><p>What I found compelling in “Team Topologies” were the concepts of<strong>Outcome Oriented teams</strong> and<strong>Activity Oriented
+teams</strong>. These have always had names –<strong>project
+teams</strong> and<strong>service teams</strong>.</p><p>Fowler’s article mentions</p><p>To put it in a nutshell,</p><ul><li><p><strong>Outcome oriented teams</strong> are teams that are
+working towards something. They hope to achieve some sort of goal, and
+once it is achieved the purpose of the team has been fulfilled and
+typically people move on to other things.</p><p>Outcome oriented teams have specific measurable goals like…</p><ul><li>build a thing,</li><li>make specific qualitative change happen,</li><li>research something, or</li><li>achieve a sales goal.</li></ul></li><li><p><strong>Activity oriented teams</strong> are teams that perform
 some sort of activity for the organization. They do things like keeping
-the lights on, bug fixing, and occasional feature development.</p><p>Activity oriented teams have qualitative goals like uptime,
-efficiency, user-satisfaction, and support level.</p></li></ul><p>Activity oriented teams are typically in the service of enabling an
-outcome, which would be primarily on the shoulders of an outcome
-oriented team.</p><p>There are more details and nuances and much hair-splitting. But the
+the lights on, bug fixing, and occasional feature development. Activity
+oriented teams are typically in the service of enabling an outcome.</p><p>Activity oriented teams have qualitative goals like</p><ul><li>uptime,</li><li>efficiency,</li><li>user-satisfaction, and</li><li>level of support.</li></ul></li></ul><p>There are more details and nuances and much hair-splitting. But the
 gist of it can be understood without diving too far into the weeds. What
-is important is that …</p><blockquote><p><em>You can’t run a goal oriented team as an activity oriented
-team</em> and vice versa.</p></blockquote><p>One can’t set up sensible goals if the modalities doesn’t match up.
-And by modalities I mean the type of team.</p><p>And here’s the kicker, the “subpillars” or subteams can support
-multiple upstream goals. Especially if they are activity oriented teams.
-So our picture actually looks more like this.</p><figure><img src="./pillars-subpillars-and-foundations.png" alt="Goals, pillars, sub-pillars, and this time, foundations"/><figcaption aria-hidden="true">Goals, pillars, sub-pillars, and this
-time, foundations</figcaption></figure><p>In TeamTopologies parlance, these would be – to simplify things a
-little bit – enabling teams.</p><p>Notice how the foundations aren’t under specific pillars or (vertial)
-subpillars. The problem with the pillars and subpillars model is that
-these<em>activity oriented</em> teams don’t fit inside pillars; because
-they are<strong>foundations</strong>.</p><p>So the picture actually looks more like:</p><figure><img src="./with-foundations.png" alt="Big organization, outcomes, outcome oriented teams, and foundations"/><figcaption aria-hidden="true">Big organization, outcomes, outcome
-oriented teams, and foundations</figcaption></figure><p>But this isn’t quite satisfactory yet because we can’t made things
-fit into the pillar system. Once people get stuck on pillars everything
+is important is that …</p><blockquote><p>Outcome oriented teams and activity oriented teams can mutually
+depend on each other.</p></blockquote><p>Also …</p><ul><li><p>A single outcome oriented team can depend on multime activity
+oriented teams.</p><p>For example, a team tasked with building a new service will depend on
+multiple existing services that are under the purview of multiple
+activity oriented teams.</p></li><li><p>A single activity oriented team can depend on multiple outcome
+oriented teams.</p><p>For example, a team tasked with maintaining a critical service will
+at times need to implement large changes or features, which require
+multiple outcome oriented teams.</p></li></ul><p>Uh oh. Our organization is not tree-shaped anymore.</p><aside id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1"><p>I don’t believe the concepts introduced in<a href="https://teamtopologies.com/">Team Topologies</a> don’t apply
+universally even across software companies. I work in one where it
+doesn’t.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside><h2 id="its-a-graph">It’s a Graph</h2><figure><img src="./graph-shaped-dependencies.png" alt="Interdependencies form a graph, not a tree."/><figcaption aria-hidden="true">Interdependencies form a graph, not a
+tree.</figcaption></figure><p>The problem is that the the thing we are trying to organize is not
+tree structured. Each group has relationships that stretch vertically
+along the reporting chain, and also horizontally across “enabling”
+teams, support teams, infrastructure teams, or other teams that are
+solving similar problems.</p><p>An organization especially at this level of abstraction cannot
+represent all this complexity. A large number of free-floating small
+teams interacting with each other won’t be very efficient<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.
+Nor is it conducive to goals at a large scale because that would require
+a degree of cooperation that won’t appear spontaneously.</p><p>So we need to steer this pool of teams. It needs some structure so
+that some higher level of management can coordinate a number of smaller
+groups; so that they can collectively work towards a common but larger
+goal.</p><p>With this newfound knowledge we can once again approach the pillars
+but this time with goals and activities for the higher level teams.</p><aside id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol start="2"><li id="fn2"><p>Even though in the aggregate, you can think of the open
+economy as being a very large number of small “teams” with a very dense
+network of interdependencies. Sure, it’s leaving people in poverty and
+is killing the planet; but it still kind of works.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside><h2 id="its-a-tree-again">It’s a Tree (Again)</h2><p>However, the leadership needs to figure out which of these
+relationships to organize around.</p><p>This isn’t quite satisfactory yet because we can’t made things fit
+into the pillar system. Once people get stuck on pillars everything
 needs to be a pillar.</p><p>We can, however, stick teams into pillars. These teams would be
 outcome oriented if they are stuck into outcome oriented pillars. It
 follows that activity oriented pillars will need to be stuck into
@@ -346,7 +359,7 @@ mean. But how about this?</p><div class="sourceCode" id="cb7"><pre class="source
 be; no need to go look at the documentation for your Markdown dialect to
 figure out what on earth<code>!!! title</code> is supposed to be.</p><h2 id="better-collapsed-sections">Better collapsed sections?</h2><p>Okay, so this one is specific to<a href="https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-collapsed-sections">GitHub
 Flavored Markdown</a>, and it’s terrible. It comes down to the genre of
-just writing HTML:</p><div class="sourceCode" id="cb8"><pre class="sourceCode markdown bad"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"/><span class="kw">&lt;details>&lt;summary></span>CLICK ME<span class="kw">&lt;/summary></span></span><span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"/><span class="kw">&lt;p></span></span><span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"/></span><span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"/><span class="fu">#### We can hide anything, even code!</span></span><span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"/></span><span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"/><span class="in"> ```ruby</span></span><span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"/><span class="in"> puts "Hello World"</span></span><span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"/><span class="in"> ```</span></span><span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"/></span><span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"/><span class="kw">&lt;/p></span></span><span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"/><span class="kw">&lt;/details></span></span></code></pre></div><p>WTF? You might as well write the thing in HTML and call it a day.
+just writing HTML:</p><div class="sourceCode" id="cb8"><pre class="sourceCode markdown bad"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"/><span class="dt">&lt;</span><span class="kw">details</span><span class="dt">>&lt;</span><span class="kw">summary</span><span class="dt">></span>CLICK ME<span class="dt">&lt;/</span><span class="kw">summary</span><span class="dt">></span></span><span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"/><span class="dt">&lt;</span><span class="kw">p</span><span class="dt">></span></span><span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"/></span><span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"/><span class="fu">#### We can hide anything, even code!</span></span><span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"/></span><span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"/><span class="in"> ```ruby</span></span><span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"/><span class="in"> puts "Hello World"</span></span><span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"/><span class="in"> ```</span></span><span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"/></span><span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"/><span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">></span></span><span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"/><span class="dt">&lt;/</span><span class="kw">details</span><span class="dt">></span></span></code></pre></div><p>WTF? You might as well write the thing in HTML and call it a day.
 Maybe if they could’ve gone with something like:</p><div class="sourceCode" id="cb9"><pre class="sourceCode markdown maybe"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"/></span><span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"/>Summary goes here.</span><span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"/></span><span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"/>Details:</span><span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"/> Details go here. and yes you can use fenced code blocks.</span><span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"/></span><span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"/><span class="in"> Like this.</span></span><span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"/><span class="in"/></span><span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"/> Or the ugly way:</span><span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"/></span><span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"/><span class="in">```</span></span><span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"/><span class="in"> Like this.</span></span><span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"/><span class="in"> ```</span></span></code></pre></div><p>Once again it re-uses the<code>some text:</code> syntax, and it
 could probably use either<code>details</code> or<code>Details</code>.
 Either way, you don’t need to understand the markup to see where this is
@@ -408,7 +421,7 @@ per-capita GDP, Gini index, GII, GSNI, GGGI. The curves don’t quite fit
 very well.</figcaption></figure><p>All the graphs show a high variance. Only a small number of countries
 are present in the study. And whether the subjects of the study are
 representative of the population is in doubt. Overall I find the study
-unconvincing.</p><h2 class="unnumbered" id="references">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list"><div id="ref-campbell2021gender" class="csl-entry" role="listitem">
+unconvincing.</p><h2 class="unnumbered" id="references">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list"><div id="ref-campbell2021gender" class="csl-entry" role="listitem">
 Campbell, Olympia LK, David Bann, and Praveetha Patalay. 2021.<span>“The Gender Gap in Adolescent Mental Health: A Cross-National
 Investigation of 566,829 Adolescents Across 73 Countries.”</span><em>SSM-Population Health</em> 13: 100742.</div></div><aside id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1"><p>GII is the Gender Inequality Index. It’s based on such
 factors like<em>female and male shares of parliamentary seats</em>,<em>female and male population with at least secondary education</em>,<em>female and male labour force participation rates</em>,<em>maternal
@@ -442,7 +455,7 @@ I’m going with this. The highlighting quickly directs your eyes to the
 parts that need attention. You’d still need to do the legwork for the
 details. But for someone trying to figure out what some undocumented
 function is doing, this kind of highlight makes quick work of going past
-the boilerplate.</p><h2 class="unnumbered" id="references">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list"><div id="ref-truss2004eats" class="csl-entry" role="listitem">
+the boilerplate.</p><h2 class="unnumbered" id="references">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list"><div id="ref-truss2004eats" class="csl-entry" role="listitem">
 Truss, Lynne. 2004.<span>“Eats, Shoots &amp; Leaves: The Zero Tolerance
 Approach to Punctuation.”</span> In, 146. Penguin.</div><div id="ref-wiki:Italic_type" class="csl-entry" role="listitem">
 Wikipedia. 2021.<span>“<span class="nocase">Italic type</span> —<span>W</span>ikipedia<span>,</span> the Free Encyclopedia.”</span><a href="http://en.wikipedia.org/w/index.php?title=Italic%20type&amp;oldid=1049142359" class="uri">http://en.wikipedia.org/w/index.php?title=Italic%20type&amp;oldid=1049142359</a>.</div></div></content:encoded></item><item><title>Inktober - Stripes</title><link>https://xn--izc.com/blog/inktober-stripes/</link><pubDate>Fri, 21 Jan 2022 17:20:38 -0500</pubDate><guid>https://xn--izc.com/blog/inktober-stripes/</guid><description>“Stripes” - A bee wearing an incorrectly striped sweater For Inktober 52.</description><content:encoded><figure><img src="./inktober-stripes.png" alt="“Stripes” - A bee wearing an incorrectly striped sweater"/><figcaption aria-hidden="true">“Stripes” - A bee wearing an incorrectly
@@ -783,9 +796,9 @@ They are represented as a set of states. Each state can
 probabilistically transition to number of states with some probability
 distribution. Each transition emits a symbol.</p><p>If the emitted symbol doesn’t depend on any prior symbol, then we
 only really need one state. It will have a self-edge for each possible
-emitted symbol.</p><figure><img src="0eaeb75b728f644aa2fbfb1c88bd91f0fa468a95.svg"/></figure><p>If the emitted symbol depends on the previous symbol, then there will
+emitted symbol.</p><figure><img src="4368c9538811cb3e9d78a2df8b48ab6eb4005edb.svg"/></figure><p>If the emitted symbol depends on the previous symbol, then there will
 be as many states needed as there are symbols. This is the case for
-digrams.</p><figure><img src="69d5dcc01e54f70db4a25406c95230e999637a3a.svg"/></figure><p>For trigrams, since they depend on the previous two symbols, require<span class="math inline">n^2</span> states.</p><h3 id="ergodic-and-mixed-sources">5. Ergodic and Mixed Sources</h3><blockquote><p>In an ergodic process every sequence produced by the process is the
+digrams.</p><figure><img src="b47bf0c2c14f8dc6603d6b71959bdfce8d8f6053.svg"/></figure><p>For trigrams, since they depend on the previous two symbols, require<span class="math inline">n^2</span> states.</p><h3 id="ergodic-and-mixed-sources">5. Ergodic and Mixed Sources</h3><blockquote><p>In an ergodic process every sequence produced by the process is the
 same in statistical properties. […] Roughly the ergodic property means
 statistical homogeneity.</p></blockquote><h3 id="choice-uncertainty-and-entropy">6. Choice Uncertainty and
 Entropy</h3><p>Here we come to the part that is most often cited. The definition of
@@ -1216,7 +1229,7 @@ won’t have access to language smarts like<code>clangd</code> which
 require access to all the source files and some build tooling.</p><p><a href="https://code.visualstudio.com/docs/remote/remote-overview">VSCode
 Remote Development</a> was a nearly perfect answer with the exception
 that VSCodeVim didn’t quite have all the functionality I needed.
-VSCodeNeovim addresses that last piece of the puzzle.</p><p>VSCode + Remote SSH + VSCodeNeovim + Neovim gives me:</p><figure><img src="8c44c8c56b3ea08c3a430ce73561cbc1d1cda9ab.svg"/></figure><ul><li>On the remote machine:<ul><li>Source files.</li><li>Build tooling.</li><li><code>clangd</code> process invoked via<code>vscode-remote</code>.</li></ul></li><li>On the local machine:<ul><li>VSCode.</li><li>VSCodeNeovim.<ul><li>Neovim instance embedded by VSCodeNeovim.<ul><li>Neovim plug-ins and normal mode keybindings.</li></ul></li></ul></li></ul></li></ul><p>Since the embedded Neovim instance is local the editors are super
+VSCodeNeovim addresses that last piece of the puzzle.</p><p>VSCode + Remote SSH + VSCodeNeovim + Neovim gives me:</p><figure><img src="f3c6b9d6be1c23059642869a5e4896c69003e5c8.svg"/></figure><ul><li>On the remote machine:<ul><li>Source files.</li><li>Build tooling.</li><li><code>clangd</code> process invoked via<code>vscode-remote</code>.</li></ul></li><li>On the local machine:<ul><li>VSCode.</li><li>VSCodeNeovim.<ul><li>Neovim instance embedded by VSCodeNeovim.<ul><li>Neovim plug-ins and normal mode keybindings.</li></ul></li></ul></li></ul></li></ul><p>Since the embedded Neovim instance is local the editors are super
 responsive. Completions via<code>clangd</code> is still laggy as one
 might expect. But that’s something I’m willing to live with.</p><h2 id="proportional-fonts-with-neovim">Proportional Fonts With
 Neovim</h2><p>Okay, so why would anyone actually want this? Turns out<a href="https://www.google.com/search?q=proportional+fonts+for+coding">I’m
@@ -1307,7 +1320,7 @@ opinion.</p></li><li><p>An opinion expressed is better than one that is not as l
 it’s open for criticism. You wouldn’t find out if you were wrong if you
 didn’t tell anyone.</p></li><li><p>That it is weakly held is as important to communicate as the
 opinion itself. Doing so invites criticism and discussion instead of
-suppressing them.</p></li></ol><h2 class="unnumbered" id="references">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list"><div id="ref-Michael" class="csl-entry" role="listitem"><span>“Strong Opinions Loosely Held Might Be the Worst Idea in Tech -
+suppressing them.</p></li></ol><h2 class="unnumbered" id="references">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list"><div id="ref-Michael" class="csl-entry" role="listitem"><span>“Strong Opinions Loosely Held Might Be the Worst Idea in Tech -
 the Glowforge Blog.”</span> 2020. September 4, 2020.<a href="https://blog.glowforge.com/strong-opinions-loosely-held-might-be-the-worst-idea-in-tech/">https://blog.glowforge.com/strong-opinions-loosely-held-might-be-the-worst-idea-in-tech/</a>.</div><div id="ref-Saffo" class="csl-entry" role="listitem"><span>“Strong Opinions Weakly Held : Paul Saffo.”</span> 2020. September
 4, 2020.<a href="https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/">https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/</a>.</div><div id="ref-Cedric" class="csl-entry" role="listitem"><span>“<span>‘Strong Opinions, Weakly Held’</span> Doesn’t Work That
 Well.”</span> 2020. September 4, 2020.<a href="https://commoncog.com/blog/strong-opinions-weakly-held-is-bad/">https://commoncog.com/blog/strong-opinions-weakly-held-is-bad/</a>.</div></div></content:encoded></item><item><title>Names for Name Conventions</title><link>https://xn--izc.com/blog/symbol-name-types/</link><pubDate>Mon, 24 Aug 2020 12:32:45 -0400</pubDate><guid>https://xn--izc.com/blog/symbol-name-types/</guid><description>Names I’ve seen used to refer to naming conventions:
