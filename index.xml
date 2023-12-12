@@ -32,66 +32,7 @@ same day.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a><
 decisions and arbitrating difficult decisions. But those are not
 relevant to this discussion.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn4"><p>You can, however, affect the stock price by getting
 something really really wrong. Noone wants to be in this position
-though.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside></content:encoded></item><item><title>Incentives</title><link>https://xn--izc.com/blog/incentives/</link><pubDate>Sun, 03 Dec 2023 22:07:49 -0500</pubDate><guid>https://xn--izc.com/blog/incentives/</guid><description>Let’s talk about incentives and psychological safety.
-What Matters To You Typically the actions of an employee within a company depend on their percieved effect on a number of factors. In no specific order, they could be generalized into the following:
-The self – a.k.a. self-preservation and self-enrichment. The company – a.k.a. the entity that controls the payroll. When I say “company”, I’m including the entire structure that produces and shares wealth with the employee.</description><content:encoded><p>Let’s talk about incentives and psychological safety.</p><h2 id="what-matters-to-you">What Matters To You</h2><p>Typically the actions of an employee within a company depend on their
-percieved effect on a number of factors. In no specific order, they
-could be generalized into the following:</p><ol type="1"><li><strong>The self</strong> – a.k.a.<em>self-preservation and
-self-enrichment</em>.</li><li><strong>The company</strong> – a.k.a.<em>the entity that controls
-the payroll</em>. When I say “company”, I’m including the entire
-structure that produces and shares wealth with the employee. Management
-structures, co-workers (in their professional roles<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>),
-and other stakeholders all get lumped into “company” for convenience.
-The employee – whom we are assuming is not very high up in the org-chart
-– is affected by, but typically has little effect on these entities.
-Lumping all those entities into the single “company” entity keeps things
-simple for now.</li><li><strong>The customers or users</strong> – a.k.a.<em>whom the
-employees see as they ultimately serve</em>.</li><li><strong>Society</strong> – a.k.a.<em>among whom the employee
-lives</em>.</li><li><strong>The environment and the planet</strong> – a.k.a.<em>everything and everyone else</em>.</li></ol><p>When presented with a decision like what to do when something goes
-wrong, the employee will weigh the percieved effect of their decision on
-each of these entities. Such a consideration may not happen consciously,
-especially in the heat of the moment. However over time people tend to
-build up their own intuition around what works and what doesn’t. The
-ambient culture has a lot to do with the formation of these
-intuitions.</p><p>It is this intuition that we seek to affect with the culture that we
-build around ourselves.</p><p>It’s safe to assume that in general everyone will hold themselves at
-the top of this list. That leaves us with how we organize the remainder
-relative to the self.</p><p>In an ideal world, the interests that benefit each of these will have
-no conflicts. The society in general will seek to look after each other
-and the environment. Individuals – the customers and users – in turn
-will seek sustainable goods and services that benefit society in
-addition to meeting their immediate needs. The company will seek to
-produce such goods and services; and set up incentives for their
-employees to do so.</p><h2 id="a-culture-of-mutual-respect-and-safety">A Culture of Mutual
-Respect and Safety</h2><p>One of the more successful concepts at Google is the<strong>blameless postmortem</strong>. The<a href="https://sre.google/sre-book/postmortem-culture/">SRE Book’s
-section on postmortem culture</a><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> explains it in detail.
-But the most relevant bit for this article is as follows:</p><blockquote><p>Removing blame from a postmortem gives people the confidence to
-escalate issues without fear. It is also important not to stigmatize
-frequent production of postmortems by a person or team. An atmosphere of
-blame risks creating a culture in which incidents and issues are swept
-under the rug, leading to greater risk for the organization</p></blockquote><p>A cultural cornerstone the likes of a blameless postmortem naturally
-guides people towards a way of thinking that is outward facing. Since
-there is no risk to self an employee is much more likely to act towards
-the benefit of others. This is especially true if “doing the right
-thing” is rewarded.</p><p>What happens when people feel constantly at risk is easy to see.
-Faults get swept under the rug, as the SRE book points out. Things that
-negatively affect the quality of good and services produced will remain
-unaddressed. Users lose trust in the company. Ultimately everything goes
-downhill.</p><h2 id="current-events-at-google">Current Events at Google</h2><p>A well respected engineer with a long tenure, Ian Hixie, recently
-left Google.</p><p>After he left, he wrote<a href="https://ln.hixie.ch/?start=1700627373&amp;count=1">a blistering
-reflection of where Google is heading</a>. You should read it.</p><p>One thing that he points out are the results of the recent layoffs at
-Google:</p><blockquote><p>The effects of layoffs are insidious. Whereas before people might
-focus on the user, or at least their company, trusting that doing the
-right thing will eventually be rewarded even if it’s not strictly part
-of their assigned duties, after a layoff people can no longer trust that
-their company has their back, and they dramatically dial back any
-risk-taking. Responsibilities are guarded jealously. Knowledge is
-hoarded, because making oneself irreplaceable is the only lever one has
-to protect oneself from future layoffs.</p></blockquote><h2 id="section"/><aside id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><hr/><ol><li id="fn1"><p>Co-workers in their personal roles like friends and
-community likely falls into the “society” bucket.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn2"><p>The bibliography links from that page are quite
-informative in learning about the philosophy of blameless postmortems –
-and in general a blameless culture. While interesting, that general
-topic is out of scope for this article.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside></content:encoded></item><item><title>Pillars And Governance Structures</title><link>https://xn--izc.com/blog/pillars-are-governance-structures/</link><pubDate>Fri, 08 Sep 2023 20:18:23 -0400</pubDate><guid>https://xn--izc.com/blog/pillars-are-governance-structures/</guid><description>Originally published on 2023 September 8. Revised 2023 November 12 with hopefully less rambling.
+though.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside></content:encoded></item><item><title>Pillars And Governance Structures</title><link>https://xn--izc.com/blog/pillars-are-governance-structures/</link><pubDate>Fri, 08 Sep 2023 20:18:23 -0400</pubDate><guid>https://xn--izc.com/blog/pillars-are-governance-structures/</guid><description>Originally published on 2023 September 8. Revised 2023 November 12 with hopefully less rambling.
 Re-orgs.
 It’s a fact of life for large organizations. A popular metaphor making the rounds now is this concept of pillars. The metaphor makes sense to some extent.
 A house without a foundation Let’s start with a picture of how a sanitized version of a pillar structure would look like.
