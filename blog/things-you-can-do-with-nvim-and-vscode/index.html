@@ -1,6 +1,6 @@
 <!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Things You Can Do With Neovim and Vscode That You Can't Do With Neovim Alone &#183; Strong Opinions, Weekly Held</title><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/scss/fonts.min.css><link rel=stylesheet href=/css/formatting.min.css><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><meta name=msapplication-TileColor content="#da532c"><meta name=theme-color content="#ffffff"><link href rel=alternate type=application/rss+xml title="Strong Opinions, Weekly Held"><link rel=stylesheet href=https://xn--izc.com/_katex/katex.min.3493557c40ba8df12deb6c1031a7cb353d9e23a05a58e3576e991211502cdfef.css integrity="sha256-NJNVfEC6jfEt62wQMafLNT2eI6BaWONXbpkSEVAs3+8="><script src=https://xn--izc.com/_katex/katex.min.093945cfb872f8fdf36e3730db70625111c0cb4e643520f70eabd1703ede483f.js integrity="sha256-CTlFz7hy+P3zbjcw23BiURHAy05kNSD3DqvRcD7eSD8="></script><script src=https://xn--izc.com/js/render-katex.min.js async></script></head><body><nav class=nav><div class=nav-container><a href=/><h2 class=nav-title>Strong Opinions, Weekly Held</h2></a><ul><li><a href=/about/me><span>About Me</span></a></li><li><a href=/tags><span>Tags</span></a></li></ul></div></nav><main><div class=post><h1 class=post-title>Things You Can Do With Neovim and Vscode That You Can't Do With Neovim Alone</h1><div class=post-info><span>Written by</span>
 Asanka Herath
-<span>on&nbsp;</span><time datetime="2020-09-19 00:00:00 +0000 UTC">September 19, 2020</time>
+<span>on&nbsp;</span><time datetime="2020-09-19 00:00:00 -0400 EDT">September 19, 2020</time>
 |
 <a href=/tags/tools>#Tools</a>
 <a href=/tags/vim>#Vim</a></div><div class="social share"><a href="https://twitter.com/intent/tweet?text=Things+You+Can+Do+With+Neovim+and+Vscode+That+You+Can%27t+Do+With+Neovim+Alone&amp;url=https%3A%2F%2Fxn--izc.com%2Fblog%2Fthings-you-can-do-with-nvim-and-vscode%2F&amp;via=asankah" aria-label="Share on Twitter" target=_blank rel=noopener><img src=/images/twitter.svg alt="Share on Twitter"></a>
@@ -45,10 +45,7 @@ which is also a good place to look if you want to know the details about
 buffer options that are being set.</p></li></ol><p>Of course I’m eliding lots of detail here including integrations for
 other areas of UI. But I think this captures the pertinent details. The
 extension is a pretty impressive piece of work which is well worth a
-gander. Now on to the good stuff.</p><aside id=footnotes class="footnotes footnotes-end-of-section" role=doc-endnotes><hr><ol><li id=fn1><p>Not quite the whole story because it’s possible a buffer
-be created inside the Neovim instance and have it be mirrored in a
-VSCode editor. But that’s probably not what you’ll be using on a regular
-basis.<a href=#fnref1 class=footnote-back role=doc-backlink>↩︎</a></p></li></ol></aside><h2 id=responsive-neovim-experience-over-a-laggy-ssh-connection>Responsive
+gander. Now on to the good stuff.</p><h2 id=responsive-neovim-experience-over-a-laggy-ssh-connection>Responsive
 Neovim Experience Over A laggy SSH Connection</h2><p>This gets to the reason why I’m trying to move to VSCode in the first
 place. I work on a project consisting of thousands of C++ source files.
 My home-office doesn’t have enough hardware to do regular builds, or in
@@ -82,26 +79,23 @@ let me configure things so that comments are in proportional font while
 the rest is in monospace. Also in the case of Markdown, I’d be able to
 make everything proportional except for inline code and fenced code
 blocks. Alas we are not quite there yet. Several feature requests
-already exist<a href=#fn2 class=footnote-ref id=fnref2 role=doc-noteref><sup>2</sup></a>, but hasn’t seen much activity.</p><aside id=footnotes class="footnotes footnotes-end-of-section" role=doc-endnotes><hr><ol start=2><li id=fn2><p>A quick search in the VSCode repository <a href="https://github.com/microsoft/vscode/search?q=tokenColorCustomizations+font+name">with
+already exist<a href=#fn2 class=footnote-ref id=fnref2 role=doc-noteref><sup>2</sup></a>, but hasn’t seen much activity.</p><h2 id=takeaways>Takeaways</h2><ol type=1><li>VSCodeNeovim is a functional replacement for the avid Neovim or
+perhaps Vim user who wants it both ways. Lots of caveats exist including
+the fact that Neovim mode only really works inside editor windows.</li><li>VSCodeNeovim + “Remote SSH” is an awesome combination for editing
+remote files using Neovim with the latency of a local Neovim
+instance.</li><li>You can use proportional fonts with VSCodeNeovim for super double
+awesomeness.</li></ol><aside id=footnotes class="footnotes footnotes-end-of-document" role=doc-endnotes><hr><ol><li id=fn1><p>Not quite the whole story because it’s possible a buffer
+be created inside the Neovim instance and have it be mirrored in a
+VSCode editor. But that’s probably not what you’ll be using on a regular
+basis.<a href=#fnref1 class=footnote-back role=doc-backlink>↩︎</a></p></li><li id=fn2><p>A quick search in the VSCode repository <a href="https://github.com/microsoft/vscode/search?q=tokenColorCustomizations+font+name">with
 this query</a> yields several issues that request for pretty much the
 same thing: Allow setting <code>fontName</code> in
 <code>tokenColorCustomizations</code>. There’s also <a href=https://github.com/deepanrajkumar/Italic-and-Ligature>this
 curious experiment</a> which patches in a different font for italics so
 that you can use the existing <code>fontStyle: "italic"</code> option in
-<code>tokenColorCustomizations</code> to switch fonts.<a href=#fnref2 class=footnote-back role=doc-backlink>↩︎</a></p></li></ol></aside><h2 id=takeaways>Takeaways</h2><ol type=1><li>VSCodeNeovim is a functional replacement for the avid Neovim or
-perhaps Vim user who wants it both ways. Lots of caveats exist including
-the fact that Neovim mode only really works inside editor windows.</li><li>VSCodeNeovim + “Remote SSH” is an awesome combination for editing
-remote files using Neovim with the latency of a local Neovim
-instance.</li><li>You can use proportional fonts with VSCodeNeovim for super double
-awesomeness.</li></ol><nav class=suggested><h2 class=suggested>More articles from this blog</h4><ul><li><h3 class="suggested title"><a href=/blog/on-wontfixing-bugs/>On WontFixing Bugs</a></h3><p><p>Large projects accumulate a large number of issue reports over time.
-This is normal. Typically for a “successful” project the rate of new
-issues being reported will exceed the rate of issues being fixed. Hence
-the growth.</p><p>But what are they to do about this ever-growing pile of bugs?</p></p></li><li><h3 class="suggested title"><a href=/blog/gender-gap-in-adolescent-mental-health/>On Gender Gap in Adolescent Mental Health</a></h3><p>A recent study found that more gender-equal countries have larger
-gender gaps in mental health. I look at the data that seems to have
-yielded this counter-intuitive results and find it lacking.</p></li><li><h3 class="suggested title"><a href=/blog/symbol-name-types/>Names for Name Conventions</a></h3><p>Names I’ve seen used to refer to naming conventions:
-snake_case, hacker_case, unix_hacker_style : Everything is lower case, though exceptions exist. E.g. HTTP_foo_bar. SCREAMING_SNAKE_CASE : Usually reserved for macros and constants. camelCase : The first letter is lowercase. PascalCase : The first letter is uppercase. kabob-case : Like snake_case, but uses dashes instead of underscores. Common for command-line options1, CSS styles, commands (e.g. git-receive-pack). While looking idly looking for details on this, I stumbled on this Medium post which is relevant.</p></li><li><h3 class="suggested title"><a href=/blog/the-lettergrade-rule/>The Lettergrade Rule</a></h3><p>Don’t block a code review because of minor issues that are best left
-to the discretion of the author.</p></li><li><h3 class="suggested title"><a href=/blog/why-strong-opinions-weekly-held/>Why 'Strong Opinions Weekly Held'</a></h3><p>Previously on this blog I wrote a short note on Why Strong Opinions Weakly Held.
-I’m trying to get something out every week. Hence the new blog title.</p></li></ul></nav><h4>Comment</h4><script src=https://utteranc.es/client.js repo=asankah/blog-comments issue-term=title label=PublicComment theme=github-light crossorigin=anonymous async></script></div><div class=pagination><a href=/blog/why-strong-opinions-weakly-held/ class="left arrow">&#8592;</a>
+<code>tokenColorCustomizations</code> to switch fonts.<a href=#fnref2 class=footnote-back role=doc-backlink>↩︎</a></p></li></ol></aside><hr><nav class=suggested><h2 class=suggested>More articles from this blog</h4><ul><li><h3 class="suggested title"><a href=/blog/inktober-stripes/>Inktober - Stripes</a></h3><p>“Stripes” - A bee wearing an incorrectly striped sweater For Inktober 52.</p></li><li><h3 class="suggested title"><a href=/blog/ten-years/>Ten Years</a></h3><p>It’s been ten years since I started at Google. The work anniversary fell on 6th of December.
+Ten years ago my wife and I made our way to Mountain View for my orientation; all excited for a brand new chapter in our lives. After spending a week in Mountain View / Palo Alto we both decided that California was not for us. But that’s beside the point.
+I was elated. This was pretty much everything I dreamt of as a kid growing up in Sri Lanka.</p></li><li><h3 class="suggested title"><a href=/blog/interesting-numbers/>All natural numbers are interesting</a></h3><p>A proof.</p></li><li><h3 class="suggested title"><a href=/blog/a-good-api/>A Good API: g9</a></h3><p>Adding more knobs doesn’t make your API more powerful.</p></li><li><h3 class="suggested title"><a href=/blog/inktober-decay/>Inktober - Decay</a></h3><p>“Decay” - I was kind of going for tooth-decay caused by tiny little gremlins. For Inktober 52.</p></li></ul></nav><h4>Comment</h4><script src=https://utteranc.es/client.js repo=asankah/blog-comments issue-term=title label=PublicComment theme=github-light crossorigin=anonymous async></script></div><div class=pagination><a href=/blog/why-strong-opinions-weakly-held/ class="left arrow">&#8592;</a>
 <a href=/blog/visualizing-people/ class="right arrow">&#8594;</a>
 <a href=# class=top>Top</a></div></main><footer><span>Last modified on January 13, 2022</span></footer><script async src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-GSREL2EZ4Y",{anonymize_ip:!1})}</script></body></html>

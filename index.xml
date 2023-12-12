@@ -1,4 +1,97 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strong Opinions, Weekly Held</title><link>https://xn--izc.com/</link><description>Recent content on Strong Opinions, Weekly Held</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Asanka Herath</copyright><lastBuildDate>Fri, 08 Sep 2023 20:18:23 -0400</lastBuildDate><atom:link href="https://xn--izc.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Pillars And Governance Structures</title><link>https://xn--izc.com/blog/pillars-are-governance-structures/</link><pubDate>Fri, 08 Sep 2023 20:18:23 -0400</pubDate><guid>https://xn--izc.com/blog/pillars-are-governance-structures/</guid><description>Originally published on 2023 September 8. Revised 2023 November 12 with hopefully less rambling.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strong Opinions, Weekly Held</title><link>https://xn--izc.com/</link><description>Recent content on Strong Opinions, Weekly Held</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Asanka Herath</copyright><lastBuildDate>Thu, 07 Dec 2023 16:30:52 -0500</lastBuildDate><atom:link href="https://xn--izc.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Thirteen Years</title><link>https://xn--izc.com/blog/thirteen-years/</link><pubDate>Thu, 07 Dec 2023 16:30:52 -0500</pubDate><guid>https://xn--izc.com/blog/thirteen-years/</guid><description>Some reflections from thirteen years at Google.</description><content:encoded><p>And just like that, another year sped by. It’s now been thirteen
+years since I joined Google.</p><p>Of the people who started at Google that day just a hair over 50% are
+still at Google. Glancing through the list<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> I
+see a couple of folks who have left for greener pastures or pursuing
+something on their own. Others who are still here have made their way up
+the organizational ladders.</p><p>But for everyone on that list the Google of today is not the Google
+we joined all those years ago. Someone who had been at Google much
+longer than I have<a href="https://ln.hixie.ch/?start=1700627373&amp;count=1" title="Ian Hixie's blog: Reflecting on 18 years at Google">recently
+published their thoughts</a> after they left Google. They had good
+things to say about Google, but they also had some pretty harsh things
+to say. I can’t comment about some of the specifics they mentioned but
+the general sentiment checks out.</p><p>Avery Pennarun<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> wrote a post that I think touches on
+something relevant and important. The post is called<a href="https://apenwarr.ca/log/20190926" title="What do executives do anyway?">What do executives do anyway?</a>.
+To save you a read (though you really should add it to your<a href="https://support.google.com/chrome/answer/7343019?hl=en" title="Read pages later &amp; offline">reading list</a>), the salient
+points are:</p><ul><li>An executive’s<strong><em>only</em></strong> job is to<em>“enforce<strong>culture and values</strong> for their whole
+organization.”</em><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></li><li>The executives set and enforce the values. The rest of the company
+comes up with strategies accordingly.</li><li><em>“In a large organization, executives don’t set strategy.”</em> …<em>“It’s an illusion to believe you can enforce a strategy.”</em></li><li>Useful organizational values involve real tradeoffs.</li></ul><p>People have a common misconception that all employees of big
+companies are constantly thinking of the bottom line. This is not the
+case. Precious few teams can draw a clear line from their day-to-day
+work to any measurable change in the company’s performance<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>. So
+at an individual level, decisions are influenced by concerns much closer
+to themselves: things like base pay, career, admiration of their peers,
+and their own sense of accomplishment.</p><p>There are many things that an individual can work on to satisfy their
+immediate concerns. The<em>culture and values</em> of a company help
+narrow these options down to those that benefit everyone.</p><p>The reason I brought up the topic of culture and values is because
+Google has a vacuum where an inspiring vision once was. Layoffs wreaked
+havoc with the trust that people had for each other and themselves. We
+are still<em>trying</em> to<a href="https://about.google/philosophy/" title="Ten things we know to be true">focus on the user</a>;<a href="https://blog.google/inside-google/message-ceo/january-update/#:~:text=important%20moments%20to-,sharpen%20our%20focus,-%2C%20reengineer%20our%20cost" title="A difficult decision to set us up for the future">sharply, in
+fact</a>. But it is evident that company and its people are increasingly
+acting out of self preservation,</p><aside id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><hr/><ol><li id="fn1"><p>There’s a mailing list for the folks who started on the
+same day.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn2"><p>Avery is also a Xoogler.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn3"><p>The article goes into detail about ratifying good
+decisions and arbitrating difficult decisions. But those are not
+relevant to this discussion.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn4"><p>You can, however, affect the stock price by getting
+something really really wrong. Noone wants to be in this position
+though.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside></content:encoded></item><item><title>Incentives</title><link>https://xn--izc.com/blog/incentives/</link><pubDate>Sun, 03 Dec 2023 22:07:49 -0500</pubDate><guid>https://xn--izc.com/blog/incentives/</guid><description>Let’s talk about incentives and psychological safety.
+What Matters To You Typically the actions of an employee within a company depend on their percieved effect on a number of factors. In no specific order, they could be generalized into the following:
+The self – a.k.a. self-preservation and self-enrichment. The company – a.k.a. the entity that controls the payroll. When I say “company”, I’m including the entire structure that produces and shares wealth with the employee.</description><content:encoded><p>Let’s talk about incentives and psychological safety.</p><h2 id="what-matters-to-you">What Matters To You</h2><p>Typically the actions of an employee within a company depend on their
+percieved effect on a number of factors. In no specific order, they
+could be generalized into the following:</p><ol type="1"><li><strong>The self</strong> – a.k.a.<em>self-preservation and
+self-enrichment</em>.</li><li><strong>The company</strong> – a.k.a.<em>the entity that controls
+the payroll</em>. When I say “company”, I’m including the entire
+structure that produces and shares wealth with the employee. Management
+structures, co-workers (in their professional roles<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>),
+and other stakeholders all get lumped into “company” for convenience.
+The employee – whom we are assuming is not very high up in the org-chart
+– is affected by, but typically has little effect on these entities.
+Lumping all those entities into the single “company” entity keeps things
+simple for now.</li><li><strong>The customers or users</strong> – a.k.a.<em>whom the
+employees see as they ultimately serve</em>.</li><li><strong>Society</strong> – a.k.a.<em>among whom the employee
+lives</em>.</li><li><strong>The environment and the planet</strong> – a.k.a.<em>everything and everyone else</em>.</li></ol><p>When presented with a decision like what to do when something goes
+wrong, the employee will weigh the percieved effect of their decision on
+each of these entities. Such a consideration may not happen consciously,
+especially in the heat of the moment. However over time people tend to
+build up their own intuition around what works and what doesn’t. The
+ambient culture has a lot to do with the formation of these
+intuitions.</p><p>It is this intuition that we seek to affect with the culture that we
+build around ourselves.</p><p>It’s safe to assume that in general everyone will hold themselves at
+the top of this list. That leaves us with how we organize the remainder
+relative to the self.</p><p>In an ideal world, the interests that benefit each of these will have
+no conflicts. The society in general will seek to look after each other
+and the environment. Individuals – the customers and users – in turn
+will seek sustainable goods and services that benefit society in
+addition to meeting their immediate needs. The company will seek to
+produce such goods and services; and set up incentives for their
+employees to do so.</p><h2 id="a-culture-of-mutual-respect-and-safety">A Culture of Mutual
+Respect and Safety</h2><p>One of the more successful concepts at Google is the<strong>blameless postmortem</strong>. The<a href="https://sre.google/sre-book/postmortem-culture/">SRE Book’s
+section on postmortem culture</a><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> explains it in detail.
+But the most relevant bit for this article is as follows:</p><blockquote><p>Removing blame from a postmortem gives people the confidence to
+escalate issues without fear. It is also important not to stigmatize
+frequent production of postmortems by a person or team. An atmosphere of
+blame risks creating a culture in which incidents and issues are swept
+under the rug, leading to greater risk for the organization</p></blockquote><p>A cultural cornerstone the likes of a blameless postmortem naturally
+guides people towards a way of thinking that is outward facing. Since
+there is no risk to self an employee is much more likely to act towards
+the benefit of others. This is especially true if “doing the right
+thing” is rewarded.</p><p>What happens when people feel constantly at risk is easy to see.
+Faults get swept under the rug, as the SRE book points out. Things that
+negatively affect the quality of good and services produced will remain
+unaddressed. Users lose trust in the company. Ultimately everything goes
+downhill.</p><h2 id="current-events-at-google">Current Events at Google</h2><p>A well respected engineer with a long tenure, Ian Hixie, recently
+left Google.</p><p>After he left, he wrote<a href="https://ln.hixie.ch/?start=1700627373&amp;count=1">a blistering
+reflection of where Google is heading</a>. You should read it.</p><p>One thing that he points out are the results of the recent layoffs at
+Google:</p><blockquote><p>The effects of layoffs are insidious. Whereas before people might
+focus on the user, or at least their company, trusting that doing the
+right thing will eventually be rewarded even if it’s not strictly part
+of their assigned duties, after a layoff people can no longer trust that
+their company has their back, and they dramatically dial back any
+risk-taking. Responsibilities are guarded jealously. Knowledge is
+hoarded, because making oneself irreplaceable is the only lever one has
+to protect oneself from future layoffs.</p></blockquote><h2 id="section"/><aside id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><hr/><ol><li id="fn1"><p>Co-workers in their personal roles like friends and
+community likely falls into the “society” bucket.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn2"><p>The bibliography links from that page are quite
+informative in learning about the philosophy of blameless postmortems –
+and in general a blameless culture. While interesting, that general
+topic is out of scope for this article.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside></content:encoded></item><item><title>Pillars And Governance Structures</title><link>https://xn--izc.com/blog/pillars-are-governance-structures/</link><pubDate>Fri, 08 Sep 2023 20:18:23 -0400</pubDate><guid>https://xn--izc.com/blog/pillars-are-governance-structures/</guid><description>Originally published on 2023 September 8. Revised 2023 November 12 with hopefully less rambling.
 Re-orgs.
 It’s a fact of life for large organizations. A popular metaphor making the rounds now is this concept of pillars. The metaphor makes sense to some extent.
 A house without a foundation Let’s start with a picture of how a sanitized version of a pillar structure would look like.
@@ -36,9 +129,7 @@ multiple existing services that are under the purview of multiple
 activity oriented teams.</p></li><li><p>A single activity oriented team can depend on multiple outcome
 oriented teams.</p><p>For example, a team tasked with maintaining a critical service will
 at times need to implement large changes or features, which require
-multiple outcome oriented teams.</p></li></ul><p>Uh oh. Our organization is not tree-shaped anymore.</p><aside id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1"><p>I don’t believe the concepts introduced in<a href="https://teamtopologies.com/">Team Topologies</a> don’t apply
-universally even across software companies. I work in one where it
-doesn’t.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside><h2 id="its-a-graph">It’s a Graph</h2><figure><img src="./graph-shaped-dependencies.png" alt="Interdependencies form a graph, not a tree."/><figcaption aria-hidden="true">Interdependencies form a graph, not a
+multiple outcome oriented teams.</p></li></ul><p>Uh oh. Our organization is not tree-shaped anymore.</p><h2 id="its-a-graph">It’s a Graph</h2><figure><img src="./graph-shaped-dependencies.png" alt="Interdependencies form a graph, not a tree."/><figcaption aria-hidden="true">Interdependencies form a graph, not a
 tree.</figcaption></figure><p>The problem is that the the thing we are trying to organize is not
 tree structured. Each group has relationships that stretch vertically
 along the reporting chain, and also horizontally across “enabling”
@@ -51,10 +142,7 @@ a degree of cooperation that won’t appear spontaneously.</p><p>So we need to s
 that some higher level of management can coordinate a number of smaller
 groups; so that they can collectively work towards a common but larger
 goal.</p><p>With this newfound knowledge we can once again approach the pillars
-but this time with goals and activities for the higher level teams.</p><aside id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol start="2"><li id="fn2"><p>Even though in the aggregate, you can think of the open
-economy as being a very large number of small “teams” with a very dense
-network of interdependencies. Sure, it’s leaving people in poverty and
-is killing the planet; but it still kind of works.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside><h2 id="its-a-tree-again">It’s a Tree (Again)</h2><p>However, the leadership needs to figure out which of these
+but this time with goals and activities for the higher level teams.</p><h2 id="its-a-tree-again">It’s a Tree (Again)</h2><p>However, the leadership needs to figure out which of these
 relationships to organize around.</p><p>This isn’t quite satisfactory yet because we can’t made things fit
 into the pillar system. Once people get stuck on pillars everything
 needs to be a pillar.</p><p>We can, however, stick teams into pillars. These teams would be
@@ -64,7 +152,12 @@ activity oriented pillars.</p><p>So it’ll kind of look like this:</p><figure><
 pillars, outcome oriented teams, activity oriented pillars, and activity
 oriented teams</figcaption></figure><p>And there you have it.</p><p>In reality, the structure can be made much cleaner once you start
 asking each team what their goals are.</p><p>But the gist of it is you can’t plan teams or pillars until you know
-what their goals are.</p></content:encoded></item><item><title>A Good API: g9</title><link>https://xn--izc.com/blog/a-good-api/</link><pubDate>Sat, 12 Aug 2023 19:29:31 -0400</pubDate><guid>https://xn--izc.com/blog/a-good-api/</guid><description>Adding more knobs doesn’t make your API more powerful.</description><content:encoded><p>Once in a while an API comes around that makes me stop and and look
+what their goals are.</p><aside id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><hr/><ol><li id="fn1"><p>I don’t believe the concepts introduced in<a href="https://teamtopologies.com/">Team Topologies</a> don’t apply
+universally even across software companies. I work in one where it
+doesn’t.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn2"><p>Even though in the aggregate, you can think of the open
+economy as being a very large number of small “teams” with a very dense
+network of interdependencies. Sure, it’s leaving people in poverty and
+is killing the planet; but it still kind of works.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside></content:encoded></item><item><title>A Good API: g9</title><link>https://xn--izc.com/blog/a-good-api/</link><pubDate>Sat, 12 Aug 2023 19:29:31 -0400</pubDate><guid>https://xn--izc.com/blog/a-good-api/</guid><description>Adding more knobs doesn’t make your API more powerful.</description><content:encoded><p>Once in a while an API comes around that makes me stop and and look
 at what I’m doing.</p><p>Like many aspects of design, when it comes to APIs, what is not there
 matters as much as what is. Engineers like to fiddle around with things.
 So they like to add knobs and dials for fiddling around with things.</p><p>People say platitudes like good API design has to do with balancing
@@ -112,7 +205,7 @@ before failures snowball into a giant ball of trouble.</p><p>Unreliable tech-sta
 support structure. A project with bugs that are getting addressed is a
 lower risk than one that hasn’t seen any updates in a year.</p></li><li><p>Stack up your goal, risks, and mitigations.</p><p>There’s your strategy.</p></li></ol><p>It’s not a strategy is risks are not identified and mitigated.</p><p>A common mistake is to write down a list of steps that, if followed,
 achieve a stated goal. A good first step. But the unless the strategy
-can<strong>reduce</strong> risk, it is not a useful.</p></content:encoded></item><item><title>Just Enough Technical Debt</title><link>https://xn--izc.com/blog/just-the-right-amount/</link><pubDate>Sat, 08 Jul 2023 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/just-the-right-amount/</guid><description>Zero technical debt isn’t always the answer.</description><content:encoded><p>Zero technical debt sounds like a great target to aim for. In my
+can<strong>reduce</strong> risk, it is not a useful.</p></content:encoded></item><item><title>Just Enough Technical Debt</title><link>https://xn--izc.com/blog/just-the-right-amount/</link><pubDate>Sat, 08 Jul 2023 00:00:00 -0400</pubDate><guid>https://xn--izc.com/blog/just-the-right-amount/</guid><description>Zero technical debt isn’t always the answer.</description><content:encoded><p>Zero technical debt sounds like a great target to aim for. In my
 earlier developer days I strongly believed that all projects should go
 for this target. At a company all-hands I heard from a senior engineer
 that having zero technical debt is often not what we want. I felt
@@ -142,7 +235,7 @@ Engineering</p></blockquote><p>Software projects tend to be characteristically s
 much effort into a project features you don’t need and polishing up code
 that nobody will reuse is wasteful. It’s just a little bit harder to
 know when you’ve crossed the point of diminishing returns where cleaning
-up the code no longer makes sense.</p></content:encoded></item><item><title>Code As UI: The UX of config-as-code and everything-as-code</title><link>https://xn--izc.com/blog/code-as-ui/</link><pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/code-as-ui/</guid><description>Configuration-as-code has the same usability issues as everything
+up the code no longer makes sense.</p></content:encoded></item><item><title>Code As UI: The UX of config-as-code and everything-as-code</title><link>https://xn--izc.com/blog/code-as-ui/</link><pubDate>Sat, 01 Jul 2023 00:00:00 -0400</pubDate><guid>https://xn--izc.com/blog/code-as-ui/</guid><description>Configuration-as-code has the same usability issues as everything
 else as code along with the same benefits.</description><content:encoded><h2 id="welcome-to-the-ui-review">Welcome to the UI review</h2><p>Your UX person comes up to you with the new mocks for the
 configuration UI. It looks like this:</p><figure><img src="./blank-ui.png" alt="A UI mock where all the labels are text boxes, and the values are also text boxes. The button just “button”."/><br/><figcaption>
 Your new UX.</figcaption></figure><p><strong>You</strong>: What is this? Is this modern?</p><p><strong>UX</strong>: That’s be beauty of it. The user can type in the
@@ -162,8 +255,7 @@ ones, will tell you that the only way some parts can be configured is by
 editing text files; sometimes using an esoteric editor called<code>vi</code><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p><p>Then there was a glorious age of GUIs. At some point they started
 treating developers and sysadmins like real people. You might not
 believe this, but they even did user experience testing to make sure
-those sysadmins’ lives were as easy as possible. It was glorious.</p><p>And now, what’s old is new again.</p><aside id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1"><p>Vim is actually quite awesome.<a href="https://neovim.io">Neovim</a> is slightly more or less awesome
-depending on who you are ask.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside><h2 id="the-pros">The Pros</h2><p>There are in fact good reasons for config-as-code. Here’s a few:</p><ol type="1"><li><p><strong>No more opaque configuration</strong>.</p><p>Fancy UIs often mean that the configuration data goes straight into
+those sysadmins’ lives were as easy as possible. It was glorious.</p><p>And now, what’s old is new again.</p><h2 id="the-pros">The Pros</h2><p>There are in fact good reasons for config-as-code. Here’s a few:</p><ol type="1"><li><p><strong>No more opaque configuration</strong>.</p><p>Fancy UIs often mean that the configuration data goes straight into
 an opaque configuration store somewhere. Sure it will come around and
 affect the behavior of whatever it was that is being configured. But
 that stuff usually doesn’t involve the user.</p><p>Usually the the platform doesn’t have much reason to keep
@@ -209,7 +301,8 @@ updating their corresponding templates.</p><h3 id="alternate-uis">Alternate UIs<
 as code in one of any number of frameworks that in turn try to reduce
 the toil of writing UIs. It doesn’t have to be this way.</p><p>At least for configuration, just because the configuration is written
 down as code doesn’t mean it has to be edited as code. The same UIs that
-we once used can still generate those text files.</p></content:encoded></item><item><title>Promise Fatigue</title><link>https://xn--izc.com/blog/promise-fatigue/</link><pubDate>Tue, 01 Nov 2022 00:03:16 -0400</pubDate><guid>https://xn--izc.com/blog/promise-fatigue/</guid><description>Setting low but realistic expectations is better than setting high
+we once used can still generate those text files.</p><aside id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><hr/><ol><li id="fn1"><p>Vim is actually quite awesome.<a href="https://neovim.io">Neovim</a> is slightly more or less awesome
+depending on who you are ask.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside></content:encoded></item><item><title>Promise Fatigue</title><link>https://xn--izc.com/blog/promise-fatigue/</link><pubDate>Tue, 01 Nov 2022 00:03:16 -0400</pubDate><guid>https://xn--izc.com/blog/promise-fatigue/</guid><description>Setting low but realistic expectations is better than setting high
 but unrealistic ones.</description><content:encoded><ul><li>I’ll get it to you by the end of the day.</li><li>I’m working on it right now.</li><li>I’ll get it done today.</li></ul><p>Even though the word “promise” doesn’t appear in any of these, they
 still represent a commitment you make to someone else. If you fail to
 keep your promise, you will disappoint someone or more than one.</p><p>But if you fail to keep your promises, eventually, you’ll stop
@@ -423,9 +516,9 @@ are present in the study. And whether the subjects of the study are
 representative of the population is in doubt. Overall I find the study
 unconvincing.</p><h2 class="unnumbered" id="references">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list"><div id="ref-campbell2021gender" class="csl-entry" role="listitem">
 Campbell, Olympia LK, David Bann, and Praveetha Patalay. 2021.<span>“The Gender Gap in Adolescent Mental Health: A Cross-National
-Investigation of 566,829 Adolescents Across 73 Countries.”</span><em>SSM-Population Health</em> 13: 100742.</div></div><aside id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1"><p>GII is the Gender Inequality Index. It’s based on such
+Investigation of 566,829 Adolescents Across 73 Countries.”</span><em>SSM-Population Health</em> 13: 100742.</div></div><aside id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><hr/><ol><li id="fn1"><p>GII is the Gender Inequality Index. It’s based on such
 factors like<em>female and male shares of parliamentary seats</em>,<em>female and male population with at least secondary education</em>,<em>female and male labour force participation rates</em>,<em>maternal
-mortality ratio</em>, and<em>adolescent birth rate</em>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside></content:encoded></item><item><title>On Highlighting Syntax vs. Semantics</title><link>https://xn--izc.com/blog/syntax-highlighting/</link><pubDate>Sat, 12 Feb 2022 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/syntax-highlighting/</guid><description>Takes a look at an alternate form of code highlighting based on core
+mortality ratio</em>, and<em>adolescent birth rate</em>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside></content:encoded></item><item><title>On Highlighting Syntax vs. Semantics</title><link>https://xn--izc.com/blog/syntax-highlighting/</link><pubDate>Sat, 12 Feb 2022 00:00:00 -0500</pubDate><guid>https://xn--izc.com/blog/syntax-highlighting/</guid><description>Takes a look at an alternate form of code highlighting based on core
 semantics instead of syntactic role.</description><content:encoded><p><span class="noun">Aesthetics</span><span class="adverb">aside</span>,<span class="noun">syntax</span><span class="gerund">highlighting</span><span class="preposition">in</span><span class="noun">code</span><span class="verb">performs</span><span class="determiner">an</span><span class="adjective">important</span><span class="noun">role</span><span class="preposition">in</span><span class="gerund">improving</span> the<span class="noun">readability</span><span class="preposition">of</span><span class="noun">code</span>.<span class="adjective">Most</span><span class="adjective">syntax</span><span class="gerund">highlighting</span><span class="noun">schemes</span><span class="gerund">including</span><span class="adjective">popular</span><span class="noun">libraries</span><span class="verb">are</span><span class="verb">limited</span><span class="preposition">to</span><span class="gerund">using</span><span class="noun">colors</span><span class="conjunction">and</span><span class="gerund">formatting</span><span class="noun">changes</span><span class="preposition">to</span><span class="verb">distinguish</span><span class="preposition">between</span><span class="adjective">different</span><span class="adjective">syntax</span><span class="noun">classes</span>.<span class="pronoun">This</span><span class="verb">is</span><span class="determiner">what</span><span class="pronoun">it</span><span class="verb">would look</span><span class="conjunction">like</span><span class="conjunction">if</span><span class="pronoun">we</span><span class="verb">apply</span><span class="determiner">the</span><span class="adjective">same</span><span class="noun">logic</span><span class="preposition">to</span><span class="proper">English</span><span class="noun">prose</span>.<span class="adjective">Each</span><span class="noun">word</span><span class="preposition">in</span><span class="pronoun">this</span><span class="noun">paragraph</span><span class="verb">is</span><span class="adverb">highlighted</span><span class="verb">using</span><span class="pronoun">its</span><span class="adjective">respective</span><span class="adjective">syntactic</span><span class="noun">purpose</span>.</p><p>Not very readable, is it? The colors aren’t random. They highlights
 correspond to<span class="noun">noun</span>,<span class="adverb">adverb</span>,<span class="gerund">gerund</span>,<span class="preposition">preposition</span>,<span class="adjective">adjective</span>, and<span class="verb">verb</span>.
 This is basically how people use syntax highlighting.</p><p>Typographers have long known that punctuation alone can’t
@@ -460,7 +553,7 @@ Truss, Lynne. 2004.<span>“Eats, Shoots &amp; Leaves: The Zero Tolerance
 Approach to Punctuation.”</span> In, 146. Penguin.</div><div id="ref-wiki:Italic_type" class="csl-entry" role="listitem">
 Wikipedia. 2021.<span>“<span class="nocase">Italic type</span> —<span>W</span>ikipedia<span>,</span> the Free Encyclopedia.”</span><a href="http://en.wikipedia.org/w/index.php?title=Italic%20type&amp;oldid=1049142359" class="uri">http://en.wikipedia.org/w/index.php?title=Italic%20type&amp;oldid=1049142359</a>.</div></div></content:encoded></item><item><title>Inktober - Stripes</title><link>https://xn--izc.com/blog/inktober-stripes/</link><pubDate>Fri, 21 Jan 2022 17:20:38 -0500</pubDate><guid>https://xn--izc.com/blog/inktober-stripes/</guid><description>“Stripes” - A bee wearing an incorrectly striped sweater For Inktober 52.</description><content:encoded><figure><img src="./inktober-stripes.png" alt="“Stripes” - A bee wearing an incorrectly striped sweater"/><figcaption aria-hidden="true">“Stripes” - A bee wearing an incorrectly
 striped sweater</figcaption></figure><p>For<a href="https://inktober.com/inktober52">Inktober 52</a>.</p></content:encoded></item><item><title>Inktober - Wild</title><link>https://xn--izc.com/blog/inktober-wild/</link><pubDate>Thu, 13 Jan 2022 15:35:39 -0500</pubDate><guid>https://xn--izc.com/blog/inktober-wild/</guid><description>“Wild” - Caught in the wild For Inktober 52.</description><content:encoded><figure><img src="./inktober-wild.png" alt="“Wild” - Caught in the wild"/><figcaption aria-hidden="true">“Wild” - Caught in the wild</figcaption></figure><p>For<a href="https://inktober.com/inktober52">Inktober 52</a>.</p></content:encoded></item><item><title>Inktober - Decay</title><link>https://xn--izc.com/blog/inktober-decay/</link><pubDate>Thu, 13 Jan 2022 15:21:37 -0500</pubDate><guid>https://xn--izc.com/blog/inktober-decay/</guid><description>“Decay” - I was kind of going for tooth-decay caused by tiny little gremlins. For Inktober 52.</description><content:encoded><figure><img src="./inktober-decay.png" alt="“Decay” - I was kind of going for tooth-decay caused by tiny little gremlins."/><figcaption aria-hidden="true">“Decay” - I was kind of going for
-tooth-decay caused by tiny little gremlins.</figcaption></figure><p>For<a href="https://inktober.com/inktober52">Inktober 52</a>.</p></content:encoded></item><item><title>Quickly grab a snapshot of your reMarkable tablet</title><link>https://xn--izc.com/blog/grab-diagram-workflow-re2/</link><pubDate>Thu, 06 Jan 2022 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/grab-diagram-workflow-re2/</guid><description>How to bind a hotkey to grab a snapshot of your reMarkable display
+tooth-decay caused by tiny little gremlins.</figcaption></figure><p>For<a href="https://inktober.com/inktober52">Inktober 52</a>.</p></content:encoded></item><item><title>Quickly grab a snapshot of your reMarkable tablet</title><link>https://xn--izc.com/blog/grab-diagram-workflow-re2/</link><pubDate>Thu, 06 Jan 2022 00:00:00 -0500</pubDate><guid>https://xn--izc.com/blog/grab-diagram-workflow-re2/</guid><description>How to bind a hotkey to grab a snapshot of your reMarkable display
 and copy it to the clipboard on a Mac.</description><content:encoded><p>One everyday workflow that I wanted to optimize was quickly sketching
 out a diagram on the reMarkable tablet and including it in a document I
 was writing somewhere else.</p><p>My primary computer is a Mac. Here’s my solution:</p><ol type="1"><li>Set up<a href="https://github.com/asankah/reSnap"><code>reSnap</code></a>. This
@@ -528,9 +621,7 @@ new note doesn’t simultaneously require viewing every note on the
 device.</p><p>Once folded over, I get paranoid about the keys underneath. Can I
 place it on a table without worrying too much? It’s anxiety-inducing.
 It’s also a laptop, which means that someone who’s easily distracted
-would be … easily distracted.</p><p>So over to the reMarkable…</p><aside id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1"><p>In case the Pixelbook site goes offline, here’s the
-Wayback Machine’s<a href="https://web.archive.org/web/20210725184512/https://www.google.com/chromebook/device/google-pixelbook/">snapshot
-from when I wrote this article</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside><h2 id="moderate-success-with-the-remarkable-2">Moderate Success With
+would be … easily distracted.</p><p>So over to the reMarkable…</p><h2 id="moderate-success-with-the-remarkable-2">Moderate Success With
 The Remarkable 2</h2><figure><img src="./picture-of-re2.png" alt="The reMarkable 2 was my next choice. (Image Source)"/><figcaption aria-hidden="true">The reMarkable 2 was my next choice.<a href="https://remarkable.com/">(Image Source)</a></figcaption></figure><p>First of all, this is a note-taking device. You should not expect
 much more from it. I thought it would make for a good ebook reader and
 journal article reader – it is neither. Its support for ebooks is
@@ -593,9 +684,11 @@ which boasts that their nibs provide the same level of paper-like
 friction without as much wear.</p></li><li><p>Requires a lot of hand tinkering unless you subscribe to their
 cloud offering.</p></li><li><p>Limited support for ebook formats mean that you likely can’t read
 your purchased ebooks on this device.</p></li><li><p>No support for labeling or organizing your notes – as of this
-writing.</p></li></ul></content:encoded></item><item><title>Why 'Strong Opinions Weekly Held'</title><link>https://xn--izc.com/blog/why-strong-opinions-weekly-held/</link><pubDate>Tue, 28 Sep 2021 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/why-strong-opinions-weekly-held/</guid><description>Previously on this blog I wrote a short note on Why Strong Opinions Weakly Held.
+writing.</p></li></ul><aside id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><hr/><ol><li id="fn1"><p>In case the Pixelbook site goes offline, here’s the
+Wayback Machine’s<a href="https://web.archive.org/web/20210725184512/https://www.google.com/chromebook/device/google-pixelbook/">snapshot
+from when I wrote this article</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside></content:encoded></item><item><title>Why 'Strong Opinions Weekly Held'</title><link>https://xn--izc.com/blog/why-strong-opinions-weekly-held/</link><pubDate>Tue, 28 Sep 2021 00:00:00 -0400</pubDate><guid>https://xn--izc.com/blog/why-strong-opinions-weekly-held/</guid><description>Previously on this blog I wrote a short note on Why Strong Opinions Weakly Held.
 I’m trying to get something out every week. Hence the new blog title.</description><content:encoded><p>Previously on this blog I wrote a short note on<a href="/blog/why-strong-opinions-weakly-held/">Why Strong Opinions Weakly Held</a>.</p><p>I’m trying to get something out every week. Hence the new blog
-title.</p></content:encoded></item><item><title>Visualizing A Million People</title><link>https://xn--izc.com/blog/visualizing-people-2/</link><pubDate>Mon, 06 Sep 2021 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/visualizing-people-2/</guid><description>If your feature pisses off a million people what does this angry mob
+title.</p></content:encoded></item><item><title>Visualizing A Million People</title><link>https://xn--izc.com/blog/visualizing-people-2/</link><pubDate>Mon, 06 Sep 2021 00:00:00 -0400</pubDate><guid>https://xn--izc.com/blog/visualizing-people-2/</guid><description>If your feature pisses off a million people what does this angry mob
 look like? Spoiler: We only get to 750,000.</description><content:encoded><aside class="note"><p>This article was formerly published as<a href="/blog/visualizing-people/">Visualizing Internet Users</a>. This
 version is more generalized and up-to-date.</p></aside><p>What if you introduce a bug and/or a feature that pisses off a
 million people?</p><p>The scenario isn’t all that hard to imagine these days if you work at
@@ -621,9 +714,7 @@ user base of some application, then suddenly the million users looks
 much bigger.</p><h2 id="to-49">1 to 49</h2><p>Let’s skip this range since this is in the range of what you’d see in
 a mirror, can fit on a bicycle, can fit on a sofa, your team, gathering
 of friends, significant annual family event, or other familiar
-situation.</p><aside id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1"><p>Note that fig. 2 indicates that the estimate is 49% of
-the population would have internet access in 2017. It’s likely that by
-2021 we’d at least have reached 50% based on the sharp growth curve.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside><h2 id="from-50-to-100000">From 50 to 100,000</h2><p>An example of visualizing populations for small numbers can be found
+situation.</p><h2 id="from-50-to-100000">From 50 to 100,000</h2><p>An example of visualizing populations for small numbers can be found
 at<a href="https://blog.lime.link/visualizing-crowd-sizes/">Visualizing
 Crowd Sizes</a>. It goes from around 50 people up to 100,000 people.</p><p>While 100,000 is interesting we need to go all the way to 1
 million.</p><h2 id="section">200,000</h2><p>200,000 was the estimated number of people who attended the<a href="https://marchforourlives.com/">March for Our Lives</a> in D.C..
@@ -691,10 +782,12 @@ crowd sizes, they note<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-
 of pronouncements made about how many folks really showed. The figures
 rarely agree; Glenn Beck’s rally on the National Mall this summer
 attracted a million people, according to Beck cohort Rep. Michelle
-Bachman. CBS News pegged it at more like 87,000.</p></blockquote><aside id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol start="2"><li id="fn2"><p><a href="https://www.wired.com/2011/02/how-many-people-are-in-tahrir-square-heres-how-to-tell/">How
-Many People Are in Tahrir Square? Here’s How to Tell</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside><h2 id="and-more">And More</h2><p>I’m going to give up at this point. Pictures purportedly of around
+Bachman. CBS News pegged it at more like 87,000.</p></blockquote><h2 id="and-more">And More</h2><p>I’m going to give up at this point. Pictures purportedly of around
 one million people are mostly parts of crowds that have been estimated
-to be that big.</p></content:encoded></item><item><title>Fart Limit</title><link>https://xn--izc.com/blog/fart-limit/</link><pubDate>Mon, 14 Jun 2021 11:30:18 -0400</pubDate><guid>https://xn--izc.com/blog/fart-limit/</guid><description>Can a fart be fatal? Let’s see what science and OSHA have to say.</description><content:encoded><p>Thanks to<a href="https://youtu.be/suwg7-y70FQ">Vsauce</a> for
+to be that big.</p><aside id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><hr/><ol><li id="fn1"><p>Note that fig. 2 indicates that the estimate is 49% of
+the population would have internet access in 2017. It’s likely that by
+2021 we’d at least have reached 50% based on the sharp growth curve.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn2"><p><a href="https://www.wired.com/2011/02/how-many-people-are-in-tahrir-square-heres-how-to-tell/">How
+Many People Are in Tahrir Square? Here’s How to Tell</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside></content:encoded></item><item><title>Fart Limit</title><link>https://xn--izc.com/blog/fart-limit/</link><pubDate>Mon, 14 Jun 2021 11:30:18 -0400</pubDate><guid>https://xn--izc.com/blog/fart-limit/</guid><description>Can a fart be fatal? Let’s see what science and OSHA have to say.</description><content:encoded><p>Thanks to<a href="https://youtu.be/suwg7-y70FQ">Vsauce</a> for
 bringing this particular issue to our attention. The TL;DR of that video
 is:</p><ul><li>Most of the gases in your farts are odorless.</li><li>The one that usually makes things stinky is Hydrogen Sulfide.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li><li>The content of H_2_S in a fart is around 50ppm.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></li><li>One fart can travel around 10 ft/s.</li></ul><p>Enter<a href="https://www.osha.gov/hydrogen-sulfide/hazards">OSHA</a>:</p><ul><li>H_2_S at a concentration of 50ppm (roughly what you’d get if you
 inhaled a fart directly into your lungs) you’d suffer<em>Slight
@@ -1119,17 +1212,7 @@ population</figcaption></figure><p>So a 0.3% of the internet would be a roughly 
 12.3 million. A nice little number.</p><h2 id="from-50-to-100000">From 50 to 100,000</h2><p>It’s interesting to try and visualize this. An example of visualizing
 populations for small numbers can be found at<a href="https://blog.lime.link/visualizing-crowd-sizes/">Visualizing Crowd
 Sizes</a>. It goes from around 50 people up to 100,000 people.</p><p>While 100,000 is interesting we need to go all the way to 12.3
-million.</p><aside id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1"><p>Why 0.3% of the internet population? It’s a number that
-came up when trying to come up with a reasonable sample size for
-estimating the diversity of the internet population. There’s not much
-special about it other than that.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn2"><p>The<a href="https://www.census.gov/popclock/">world
-population clock</a>. This link is for the current number at whatever
-time you clicked on the link assuming the site is still there. As of
-November 20, 2021, the number was 7.7 billion. I’d link you to an
-archived page but that doesn’t seem to work.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn3"><p><a href="https://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx">Statistics
-pages on itu.int</a> project even higher numbers than 53.6% by the end
-of 2020, but it’s possible numbers won’t behave according to historical
-trends due to the effects of COVID.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside><h2 id="section">200,000</h2><p>A particularly macabre topic these days since the United States
+million.</p><h2 id="section">200,000</h2><p>A particularly macabre topic these days since the United States
 surpassed 200,000 deaths due to COVID-19 around September of 2020.<a href="https://www.ctpost.com/">ctpost</a> ran an article online title<a href="https://www.ctpost.com/news/coronavirus/slideshow/Analysis-What-200-000-COVID-deaths-actually-209169.php">“What
 does 200,000 deaths actually look like”</a>. There are some interesting
 comparisons there, but none make for a good visual. It’s just an
@@ -1178,8 +1261,18 @@ rarely agree; Glenn Beck’s rally on the National Mall this summer
 attracted a million people, according to Beck cohort Rep. Michelle
 Bachman. CBS News pegged it at more like 87,000.</p></blockquote><h3 id="and-more">And More</h3><p>I’m going to give up at this point. Pictures purportedly of around
 one million people are mostly parts of crowds that have been estimated
-to be that big. Forget about 12.3 million.</p><aside id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol start="4"><li id="fn4"><p><a href="https://www.wired.com/2011/02/how-many-people-are-in-tahrir-square-heres-how-to-tell/">How
-Many People Are in Tahrir Square? Here’s How to Tell</a><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside></content:encoded></item><item><title>Things You Can Do With Neovim and Vscode That You Can't Do With Neovim Alone</title><link>https://xn--izc.com/blog/things-you-can-do-with-nvim-and-vscode/</link><pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/things-you-can-do-with-nvim-and-vscode/</guid><description>This is the third time I’ve tried in earnest to switch to VSCode from Vim (or Neovim in my case) for reasons not all of which are relevant to this post. But I love Vim style modal editing and I’ve grown accustomed to some features that aren’t present or not well emulated in VSCodeVim.
+to be that big. Forget about 12.3 million.</p><aside id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><hr/><ol><li id="fn1"><p>Why 0.3% of the internet population? It’s a number that
+came up when trying to come up with a reasonable sample size for
+estimating the diversity of the internet population. There’s not much
+special about it other than that.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn2"><p>The<a href="https://www.census.gov/popclock/">world
+population clock</a>. This link is for the current number at whatever
+time you clicked on the link assuming the site is still there. As of
+November 20, 2021, the number was 7.7 billion. I’d link you to an
+archived page but that doesn’t seem to work.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn3"><p><a href="https://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx">Statistics
+pages on itu.int</a> project even higher numbers than 53.6% by the end
+of 2020, but it’s possible numbers won’t behave according to historical
+trends due to the effects of COVID.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn4"><p><a href="https://www.wired.com/2011/02/how-many-people-are-in-tahrir-square-heres-how-to-tell/">How
+Many People Are in Tahrir Square? Here’s How to Tell</a><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside></content:encoded></item><item><title>Things You Can Do With Neovim and Vscode That You Can't Do With Neovim Alone</title><link>https://xn--izc.com/blog/things-you-can-do-with-nvim-and-vscode/</link><pubDate>Sat, 19 Sep 2020 00:00:00 -0400</pubDate><guid>https://xn--izc.com/blog/things-you-can-do-with-nvim-and-vscode/</guid><description>This is the third time I’ve tried in earnest to switch to VSCode from Vim (or Neovim in my case) for reasons not all of which are relevant to this post. But I love Vim style modal editing and I’ve grown accustomed to some features that aren’t present or not well emulated in VSCodeVim.
 Enter VSCode Neovim. I was intrigued by their claim to integrate Neovim instead of trying to emulate Vim.</description><content:encoded><p>This is the third time I’ve tried in earnest to switch to VSCode from
 Vim (or Neovim in my case) for reasons not all of which are relevant to
 this post. But I love Vim style modal editing and I’ve grown accustomed
@@ -1215,10 +1308,7 @@ which is also a good place to look if you want to know the details about
 buffer options that are being set.</p></li></ol><p>Of course I’m eliding lots of detail here including integrations for
 other areas of UI. But I think this captures the pertinent details. The
 extension is a pretty impressive piece of work which is well worth a
-gander. Now on to the good stuff.</p><aside id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1"><p>Not quite the whole story because it’s possible a buffer
-be created inside the Neovim instance and have it be mirrored in a
-VSCode editor. But that’s probably not what you’ll be using on a regular
-basis.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside><h2 id="responsive-neovim-experience-over-a-laggy-ssh-connection">Responsive
+gander. Now on to the good stuff.</p><h2 id="responsive-neovim-experience-over-a-laggy-ssh-connection">Responsive
 Neovim Experience Over A laggy SSH Connection</h2><p>This gets to the reason why I’m trying to move to VSCode in the first
 place. I work on a project consisting of thousands of C++ source files.
 My home-office doesn’t have enough hardware to do regular builds, or in
@@ -1251,36 +1341,38 @@ let me configure things so that comments are in proportional font while
 the rest is in monospace. Also in the case of Markdown, I’d be able to
 make everything proportional except for inline code and fenced code
 blocks. Alas we are not quite there yet. Several feature requests
-already exist<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>, but hasn’t seen much activity.</p><aside id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol start="2"><li id="fn2"><p>A quick search in the VSCode repository<a href="https://github.com/microsoft/vscode/search?q=tokenColorCustomizations+font+name">with
-this query</a> yields several issues that request for pretty much the
-same thing: Allow setting<code>fontName</code> in<code>tokenColorCustomizations</code>. There’s also<a href="https://github.com/deepanrajkumar/Italic-and-Ligature">this
-curious experiment</a> which patches in a different font for italics so
-that you can use the existing<code>fontStyle: "italic"</code> option in<code>tokenColorCustomizations</code> to switch fonts.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside><h2 id="takeaways">Takeaways</h2><ol type="1"><li>VSCodeNeovim is a functional replacement for the avid Neovim or
+already exist<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>, but hasn’t seen much activity.</p><h2 id="takeaways">Takeaways</h2><ol type="1"><li>VSCodeNeovim is a functional replacement for the avid Neovim or
 perhaps Vim user who wants it both ways. Lots of caveats exist including
 the fact that Neovim mode only really works inside editor windows.</li><li>VSCodeNeovim + “Remote SSH” is an awesome combination for editing
 remote files using Neovim with the latency of a local Neovim
 instance.</li><li>You can use proportional fonts with VSCodeNeovim for super double
-awesomeness.</li></ol></content:encoded></item><item><title>Why 'Strong Opinions Weakly Held'</title><link>https://xn--izc.com/blog/why-strong-opinions-weakly-held/</link><pubDate>Fri, 28 Aug 2020 15:17:16 -0400</pubDate><guid>https://xn--izc.com/blog/why-strong-opinions-weakly-held/</guid><description>Origins of the phrase The title of this blog is Strong Opinions, Weakly Held. The same concept shows up elsewhere are Strong Opinions Loosely Held. An eponymous essay by Paul Saffo in (2020) introduced the world to this concept.
+awesomeness.</li></ol><aside id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><hr/><ol><li id="fn1"><p>Not quite the whole story because it’s possible a buffer
+be created inside the Neovim instance and have it be mirrored in a
+VSCode editor. But that’s probably not what you’ll be using on a regular
+basis.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn2"><p>A quick search in the VSCode repository<a href="https://github.com/microsoft/vscode/search?q=tokenColorCustomizations+font+name">with
+this query</a> yields several issues that request for pretty much the
+same thing: Allow setting<code>fontName</code> in<code>tokenColorCustomizations</code>. There’s also<a href="https://github.com/deepanrajkumar/Italic-and-Ligature">this
+curious experiment</a> which patches in a different font for italics so
+that you can use the existing<code>fontStyle: "italic"</code> option in<code>tokenColorCustomizations</code> to switch fonts.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside></content:encoded></item><item><title>Why 'Strong Opinions Weakly Held'</title><link>https://xn--izc.com/blog/why-strong-opinions-weakly-held/</link><pubDate>Fri, 28 Aug 2020 15:17:16 -0400</pubDate><guid>https://xn--izc.com/blog/why-strong-opinions-weakly-held/</guid><description>Origins of the phrase The title of this blog is Strong Opinions, Weakly Held. The same concept shows up elsewhere are Strong Opinions Loosely Held. An eponymous essay by Paul Saffo in (2020) introduced the world to this concept.
 In his essay – which isn’t very long if you would like to read the whole thing yourself – he lays out the concept as follows:
 I have found that the fastest way to an effective forecast is often through a sequence of lousy forecasts.</description><content:encoded><h2 id="origins-of-the-phrase">Origins of the phrase</h2><p>The title of this blog is<strong>Strong Opinions, Weakly
 Held</strong>. The same concept shows up elsewhere are<em>Strong
-Opinions Loosely Held</em>. An eponymous essay by Paul Saffo in<span class="citation" data-cites="Saffo">(<a href="#ref-Saffo" role="doc-biblioref">2020</a>)</span> introduced the world to this
-concept.</p><p>In his essay – which isn’t very long if you would like to<a href="https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/">read
+Opinions Loosely Held</em>. An eponymous essay by Paul Saffo in<span class="citation" data-cites="Saffo">(2020)</span> introduced the world
+to this concept.</p><p>In his essay – which isn’t very long if you would like to<a href="https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/">read
 the whole thing yourself</a> – he lays out the concept as follows:</p><blockquote><p>I have found that the fastest way to an effective forecast is often
 through a sequence of lousy forecasts. Instead of withholding judgment
 until an exhaustive search for data is complete, I will force myself to
 make a tentative forecast based on the information available, and then
 systematically tear it apart, using the insights gained to guide my
-search for further indicators and information.</p></blockquote><h2 id="criticism">Criticism</h2><p>Cedric Chin’s critique<span class="citation" data-cites="Cedric">(<a href="#ref-Cedric" role="doc-biblioref">2020</a>)</span> comes down to
-two points that the author summarizes as follows:</p><blockquote><p>In my experience, ‘strong opinions, weakly held’ is difficult to put
+search for further indicators and information.</p></blockquote><h2 id="criticism">Criticism</h2><p>Cedric Chin’s critique<span class="citation" data-cites="Cedric">(2020)</span> comes down to two points that the
+author summarizes as follows:</p><blockquote><p>In my experience, ‘strong opinions, weakly held’ is difficult to put
 into practice. Most people who try will either:</p><ol type="1"><li>Use it as downside-protection to justify their strongly-held bad
 opinions, or</li><li>Struggle to shift from one strong opinion to another.</li></ol><p>The reason it is difficult is because it works against the grain of
 the human mind.</p><p>So don’t bother. The next time you find yourself making a judgment,
 don’t invoke ‘strong opinions, weakly held’. Instead, ask: “how much are
 you willing to bet on that?” Doing so will jolt people into the types of
-thinking you want to encourage.</p></blockquote><p>Michael Natkin on<span class="citation" data-cites="Michael">(<a href="#ref-Michael" role="doc-biblioref">2020</a>)</span> points out the
-fallacy of assuming that strong opinions will be reliably
-challenged:</p><blockquote><p>The idea of strong opinions, loosely held is that you can make
+thinking you want to encourage.</p></blockquote><p>Michael Natkin on<span class="citation" data-cites="Michael">(2020)</span> points out the fallacy of assuming
+that strong opinions will be reliably challenged:</p><blockquote><p>The idea of strong opinions, loosely held is that you can make
 bombastic statements, and everyone should implicitly assume that you’ll
 happily change your mind in a heartbeat if new data suggests you are
 wrong. It is supposed to lead to a collegial, competitive environment in
@@ -1367,10 +1459,7 @@ mentioned what happened to the original appointment slot. I didn’t
 mention anything about seeing the same technician before. After all I
 was just happy that I was done with this and didn’t want to cause any
 trouble.</p><p>He said that technicians sometimes skip slots when they are running
-behind schedule.</p><aside id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1"><p><a href="https://www.theverge.com/2014/8/19/6004131/comcast-the-worst-company-in-america"><em>The
-Verge</em>.<em>The worst company in America.</em></a> (Accessed July
-13, 2020)<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn2"><p><a href="https://www.urbandictionary.com/define.php?term=Long%20Wait"><em>Urban
-Dictionary</em>.<em>Long Wait</em></a> (Accessed July 13, 2020)<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside><h2 id="the-problem">The Problem</h2><p>Looking at what happened from the perspective of the technician, the
+behind schedule.</p><h2 id="the-problem">The Problem</h2><p>Looking at what happened from the perspective of the technician, the
 logic behind all this becomes a little clearer.</p><p>You see, had the technician had tried to honor the original
 appointment — one which they were already late for — they would’ve been
 even more late for the next one. This would continue down the line until
@@ -1394,15 +1483,12 @@ appointments on time.</p><p>Assuming<span class="math inline">l-s > 0</span>, th
 outcome of the<em>skip when late</em> strategy is strictly better for
 the technician’s supervisor. I can’t imagine there being any incentive
 for the supervisor to penalize this strategy. So the technician also
-gets off scott free.</p><aside id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol start="3"><li id="fn3"><p>“No-shows” are just going to be rescheduled. It’s not
-the end of the world.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside><h2 id="why-this-is-relevant">Why This Is Relevant</h2><p>It’s easy to harp on Comcast<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> and some random lowly
+gets off scott free.</p><h2 id="why-this-is-relevant">Why This Is Relevant</h2><p>It’s easy to harp on Comcast<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> and some random lowly
 technician. But this incentive pattern is everywhere. Even at Google and
 s.</p><p>Every time you measure someone’s success on<em>how well</em> they
 handled a number of issues or cases without taking into account<em>the
 cost they incurred</em> to get there, you are creating a Comcast
-Technician problem for your subordinates.</p><aside id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol start="4"><li id="fn4"><p><a href="https://www.theverge.com/2014/8/19/6004131/comcast-the-worst-company-in-america"><em>The
-Verge</em>.<em>The worst company in America.</em></a> (Accessed July
-13, 2020)<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside><h2 id="but-is-it-bad">But Is It Bad?</h2><p>Dropping tasks instead of unbounded accretion of delay is sometimes a
+Technician problem for your subordinates.</p><h2 id="but-is-it-bad">But Is It Bad?</h2><p>Dropping tasks instead of unbounded accretion of delay is sometimes a
 better strategy.</p><p>One might even argue that this is the cost of doing business and it
 would actually makes sense. One customer’s (or user’s or client’s or
 patient’s) convenience doesn’t outweigh the convenience of many
@@ -1411,7 +1497,13 @@ bourne by you? How much of the cost is bourne by the customer?</p></li><li><p>Ho
 to skip isn’t the one that’s late, but one later down the schedule
 that’s much cheaper to reschedule or less damaging to cancel.</p></li></ul><p>In either case, be forgiving when you inevitably find yourself as the
 one who got the short end of the stick.</p><p>It just might be that all parties involved are rational actors, and
-there’s really not a great alternative. Sometimes it’s just life.</p></content:encoded></item><item><title>Vim: Use Drop Not Edit, SBuffer Not Buffer</title><link>https://xn--izc.com/blog/use-drop-not-edit/</link><pubDate>Tue, 07 Jul 2020 12:02:20 -0400</pubDate><guid>https://xn--izc.com/blog/use-drop-not-edit/</guid><description>I’m going to assume you are a Vim user.
+there’s really not a great alternative. Sometimes it’s just life.</p><aside id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><hr/><ol><li id="fn1"><p><a href="https://www.theverge.com/2014/8/19/6004131/comcast-the-worst-company-in-america"><em>The
+Verge</em>.<em>The worst company in America.</em></a> (Accessed July
+13, 2020)<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn2"><p><a href="https://www.urbandictionary.com/define.php?term=Long%20Wait"><em>Urban
+Dictionary</em>.<em>Long Wait</em></a> (Accessed July 13, 2020)<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn3"><p>“No-shows” are just going to be rescheduled. It’s not
+the end of the world.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn4"><p><a href="https://www.theverge.com/2014/8/19/6004131/comcast-the-worst-company-in-america"><em>The
+Verge</em>.<em>The worst company in America.</em></a> (Accessed July
+13, 2020)<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside></content:encoded></item><item><title>Vim: Use Drop Not Edit, SBuffer Not Buffer</title><link>https://xn--izc.com/blog/use-drop-not-edit/</link><pubDate>Tue, 07 Jul 2020 12:02:20 -0400</pubDate><guid>https://xn--izc.com/blog/use-drop-not-edit/</guid><description>I’m going to assume you are a Vim user.
 Say you have a several windows open in Vim and you want to edit another file. Using :edit works if you want to open the file in the current window unconditionally.
 But that’s often not what you want. If you have the same file open in another window, then the most efficient and least disruptive thing to do is to switch to that window.</description><content:encoded><p>I’m going to assume you are a Vim user.</p><p>Say you have a several windows open in Vim and you want to edit
 another file. Using<code>:edit</code> works if you want to open the
@@ -1428,14 +1520,14 @@ you can configure<code>coc-nvim</code><a href="https://github.com/neoclide/coc.n
 setting<code>coc.preferences.jumpCommand</code> to<code>drop</code>.
 See<code>:help coc-configuration</code> for details on how to set this,
 but basically it’s as simple as opening up the configuration using<code>:CocConfig</code> and then adding a<code>"coc.preferences.jumpCommand": "drop",</code> mapping to the
-configuration JSON file.</p><aside id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1"><p>Assuming you have<code>set hidden</code> that is. See<code>:help drop</code> for more details on what happens when the
-current buffer cannot be unloaded.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside><h2 id="switchbuf-or-swb">switchbuf or swb</h2><p>Or perhaps configuring each plugin is too much work. Enter<code>switchbuf</code>. This is a global setting in Vim that controls
+configuration JSON file.</p><h2 id="switchbuf-or-swb">switchbuf or swb</h2><p>Or perhaps configuring each plugin is too much work. Enter<code>switchbuf</code>. This is a global setting in Vim that controls
 how Vim switches between buffers.</p><p>Setting<code>set switchbuf=useopen</code> has the same effect when
 invoking<code>buffer</code>. Note that using<code>sbuffer</code>,<code>sbnext</code>, or<code>sbrewind</code> automatically behaves as
 if this is the case. I.e. they will use an existing window if one
 already has the buffer open.</p><p>Setting<code>set switchbuf=usetab</code> is similar to the effect of<code>useopen</code> except that it will look through windows in other
 tabs.</p><p>See<code>:help switchbuf</code> or<a href="http://vimdoc.sourceforge.net/htmldoc/options.html#'switchbuf'">here
-on the web</a> for full details.</p></content:encoded></item><item><title>Notes from Crash Course's Videos on Fact Checking Information You See On The Internet</title><link>https://xn--izc.com/blog/notes-on-fact-checking/</link><pubDate>Sat, 04 Jul 2020 18:30:00 +0000</pubDate><guid>https://xn--izc.com/blog/notes-on-fact-checking/</guid><description>Hank Green’s Crash Course YouTube channel has an excellent series
+on the web</a> for full details.</p><aside id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><hr/><ol><li id="fn1"><p>Assuming you have<code>set hidden</code> that is. See<code>:help drop</code> for more details on what happens when the
+current buffer cannot be unloaded.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside></content:encoded></item><item><title>Notes from Crash Course's Videos on Fact Checking Information You See On The Internet</title><link>https://xn--izc.com/blog/notes-on-fact-checking/</link><pubDate>Sat, 04 Jul 2020 18:30:00 -0400</pubDate><guid>https://xn--izc.com/blog/notes-on-fact-checking/</guid><description>Hank Green’s Crash Course YouTube channel has an excellent series
 about navigating digital information. It’s an excellent guide to how
 internet users could intelligently consume information they see on the
 internet. These are my (incomplete) notes from the series.</description><content:encoded><h1 id="fact-checking">Fact Checking</h1><p>Notes from<a href="https://www.youtube.com/channel/UCX6b17PVsYBQ0ip5gyeme-Q">Crash
@@ -1489,7 +1581,7 @@ also must verify the surrounding context and whether it supports any
 claims being made.</p><p>Use reverse image search on Google to track down sources. Turn to
 fact checking sites like Snopes and Politifact.</p><p>Videos can also be dramatically altered. It is important to know
 where a video came from, who created it, and whether it’s been altered
-before you believe what you see.</p><h2 id="data-and-infographics">Data and infographics</h2></content:encoded></item><item><title>Easier CLI for ad-hoc Ansible tasks and playbooks</title><link>https://xn--izc.com/blog/ansible-cli-sugar/</link><pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/ansible-cli-sugar/</guid><description>Encode the host and group names into the name of a wrapper script for
+before you believe what you see.</p><h2 id="data-and-infographics">Data and infographics</h2></content:encoded></item><item><title>Easier CLI for ad-hoc Ansible tasks and playbooks</title><link>https://xn--izc.com/blog/ansible-cli-sugar/</link><pubDate>Mon, 01 Jun 2020 00:00:00 -0400</pubDate><guid>https://xn--izc.com/blog/ansible-cli-sugar/</guid><description>Encode the host and group names into the name of a wrapper script for
 quick ad-hoc invocation of Ansible tasks and playbooks.</description><content:encoded><p>This article is about using<a href="https://ansible.com">Ansible</a>
 on the command-line.</p><h2 id="problem">Problem:</h2><p>You …</p><ul><li><p>… want a convenient way to do ad-hoc tasks on a bunch of
 machines.</p></li><li><p>… already have a few playbooks and machine groups defined in your
@@ -1505,7 +1597,7 @@ expressed via environment variables. Remove or change these to match
 your needs.</p><p>Note that the script expects to find a sub-directory called<code>ansible</code> in the same directory as the script which contains
 the playbooks and the inventory file.</p></li><li><p>Store this file somewhere on the system<code>PATH</code>.</p><p>Don’t forget to mark the file as executable if it isn’t already.</p><div class="sourceCode" id="cb5"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"/><span class="ex">$</span> chmod +x ansible-by-proxy</span></code></pre></div></li><li><p>Create symlinks to the file that have the same name as hostnames
 or groups as described in the includes:</p><div class="sourceCode" id="cb6"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"/><span class="ex">$</span> ln<span class="at">-s</span> ansible-by-proxy atlanta</span><span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"/><span class="ex">$</span> ln<span class="at">-s</span> ansible-by-proxy webservers</span></code></pre></div><p>and so on.</p></li></ol><p>That’s it. Now you can invoke playbooks and tasks just by using the
-name of host or group.</p></content:encoded></item><item><title>Identity Domains</title><link>https://xn--izc.com/blog/identity-domains/</link><pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/identity-domains/</guid><description>An Identity Domain is a scope within which we assume that the user’s
+name of host or group.</p></content:encoded></item><item><title>Identity Domains</title><link>https://xn--izc.com/blog/identity-domains/</link><pubDate>Fri, 01 May 2020 00:00:00 -0400</pubDate><guid>https://xn--izc.com/blog/identity-domains/</guid><description>An Identity Domain is a scope within which we assume that the user’s
 identity can roam freely.</description><content:encoded><blockquote><p>An<strong>Identity domain</strong> is a scope within which we
 consider it a given that the user has a shared or trivially joinable
 identity.</p></blockquote><p>This is a privacy boundary, not a security boundary. Hence it assumes
@@ -1560,7 +1652,7 @@ like email address. Similarly identity providers can also generate and
 use unique identifiers linking domains.</p><p>We likely need another term for describing externally joined identity
 domains. In such cases the UA doesn’t necessarily know or can prevent
 joining of identity domains.</p></li></ul></li><li><p>Concepts like “logging out” can be defined in terms of destroying
-an identity domain on the User Agent.</p></li></ul></content:encoded></item><item><title>Ephemeral Fingerprinting On The Web</title><link>https://xn--izc.com/blog/ephemeral-fingerprinting/</link><pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate><guid>https://xn--izc.com/blog/ephemeral-fingerprinting/</guid><description>&lt;p>Any ephemeral low-entropy web observable property whose changes are
+an identity domain on the User Agent.</p></li></ul></content:encoded></item><item><title>Ephemeral Fingerprinting On The Web</title><link>https://xn--izc.com/blog/ephemeral-fingerprinting/</link><pubDate>Wed, 01 Apr 2020 00:00:00 -0400</pubDate><guid>https://xn--izc.com/blog/ephemeral-fingerprinting/</guid><description>&lt;p>Any ephemeral low-entropy web observable property whose changes are
 concurrently observable by multiple sites can lead to cross site
 identity joining.&lt;/p>
 &lt;p>This method of identity joining does not require coordination between
@@ -1598,10 +1690,7 @@ standardization discussions (<a href="https://github.com/w3c/mediacapture-main/i
 Polling enumerateDevices</a>,<a href="https://lists.w3.org/Archives/Public/public-privacy/2013JanMar/0007.html">Example:
 Ambient light events</a>).</p><h3 id="modelling-correlated-events">Modelling Correlated Events</h3><p>A correlatable event can be thought of as the tuple<code>&lt;surface-sample, timestamp></code>. The addition of the
 timestamp strictly increases the amount of information carried by the
-surface sample.</p><aside id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol><li id="fn1"><p>Van Goethem, T. and Joosen, W., 2017. One side-channel
-to bring them all and in the darkness bind them: Associating isolated
-browsing sessions. In<em>11th {USENIX} Workshop on Offensive
-Technologies ({WOOT} 17)</em>. (<a href="https://pdfs.semanticscholar.org/5814/9610a57cb4626918bf003b8bad25e740b1f4.pdf">PDF</a>)<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside><h3 id="modelling-event-streams">Modelling Event Streams</h3><p>An event stream is simply a list of observed samples<code>sample₀, sample₁, ...</code>.</p><p>Each additional observation strictly increases the amount of
+surface sample.</p><h3 id="modelling-event-streams">Modelling Event Streams</h3><p>An event stream is simply a list of observed samples<code>sample₀, sample₁, ...</code>.</p><p>Each additional observation strictly increases the amount of
 information.</p><h3 id="other-examples">Other Examples:</h3><ul><li><code>Accelerometer</code> properties.</li><li><code>Sensor</code>,<code>onreading</code> event.</li><li><code>BatteryManager.onlevelchange</code> : Deprecated but still
 shipping.</li><li><code>Bluetooth.onadvertisementreceived</code></li><li><code>BroadcastChannel</code>, all events.</li><li><code>MediaDevices.devicechange</code> event.</li><li><code>GlobalEventHandlers.onfocus</code> and<code>onblur</code>
 events can fire simultaneously when switching between two browser
@@ -1616,9 +1705,7 @@ From §15 of<a href="https://w3c.github.io/mediacapture-main/#privacy-and-securi
 Capture and Streams API</a> specification.</p><p><strong>Pros</strong></p><ul><li>Prevents drive-by fingerprinting.</li></ul><p><strong>Cons</strong></p><ul><li><p>UI for permissions don’t disclose the fact that all sites that
 have been granted access to the same resource can synchronize
 identifiers as a side-effect.</p></li><li><p>Doesn’t prevent identity joining once permission is
-granted.</p></li></ul><aside id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol start="2"><li id="fn2"><p>Either via a legacy permissions prompt or explicitly
-requiring the use of the<a href="https://w3c.github.io/permissions/">Permissions API</a> in the
-spec for sensitive APIs.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside><h3 id="fuzzing-timing-of-events">Fuzzing Timing of Events</h3><p><strong>Goal</strong>: Deter correlation of events by injecting
+granted.</p></li></ul><h3 id="fuzzing-timing-of-events">Fuzzing Timing of Events</h3><p><strong>Goal</strong>: Deter correlation of events by injecting
 timing skew.</p><p>Mentioned in the snippet above from the Media Capture and Streams API
 and called out by Jeffrey Yasskin as a potential general mitigation in
 “desynchronize whole-browser events” in<a href="https://github.com/whatwg/html/issues/5215">this issue</a> filed
@@ -1685,5 +1772,10 @@ goes out of focus. Thus identity can be correlated when switching
 browser windows.</p><h4 id="possible-mitigation">Possible Mitigation</h4><p>When the<em>new chain</em> and the<em>old chain</em><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> are
 in different top-level browsing contexts whose active documents are not
 same-origin, queue but don’t fire<code>change</code> and<code>blur</code> events until focus returns to the old top-level
-browsing context.</p><aside id="footnotes" class="footnotes footnotes-end-of-section" role="doc-endnotes"><hr/><ol start="3"><li id="fn3"><p><em>New chain</em> and<em>old chain</em> are defined in<a href="https://html.spec.whatwg.org/multipage/interaction.html#focus-update-steps">focus
-update steps</a>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside><h3 id="notes">Notes</h3></content:encoded></item></channel></rss>
+browsing context.</p><h3 id="notes">Notes</h3><aside id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><hr/><ol><li id="fn1"><p>Van Goethem, T. and Joosen, W., 2017. One side-channel
+to bring them all and in the darkness bind them: Associating isolated
+browsing sessions. In<em>11th {USENIX} Workshop on Offensive
+Technologies ({WOOT} 17)</em>. (<a href="https://pdfs.semanticscholar.org/5814/9610a57cb4626918bf003b8bad25e740b1f4.pdf">PDF</a>)<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn2"><p>Either via a legacy permissions prompt or explicitly
+requiring the use of the<a href="https://w3c.github.io/permissions/">Permissions API</a> in the
+spec for sensitive APIs.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li><li id="fn3"><p><em>New chain</em> and<em>old chain</em> are defined in<a href="https://html.spec.whatwg.org/multipage/interaction.html#focus-update-steps">focus
+update steps</a>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside></content:encoded></item></channel></rss>
