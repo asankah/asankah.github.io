@@ -1,4 +1,92 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strong Opinions, Weekly Held</title><link>https://xn--izc.com/</link><description>Recent content on Strong Opinions, Weekly Held</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Asanka Herath</copyright><lastBuildDate>Mon, 01 Jan 2024 14:12:21 -0500</lastBuildDate><atom:link href="https://xn--izc.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Happy New Year 2024 and Year in Review 2023</title><link>https://xn--izc.com/blog/happy-new-year-2024-and-year-in-review-2023/</link><pubDate>Mon, 01 Jan 2024 14:12:21 -0500</pubDate><guid>https://xn--izc.com/blog/happy-new-year-2024-and-year-in-review-2023/</guid><description>Happy New Year Everyone! I hope everyone has a great year in 2024!
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strong Opinions, Weekly Held</title><link>https://xn--izc.com/</link><description>Recent content on Strong Opinions, Weekly Held</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Asanka Herath</copyright><lastBuildDate>Tue, 09 Jan 2024 21:58:34 -0500</lastBuildDate><atom:link href="https://xn--izc.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Inclusion/Equity and Evaluating Negatives</title><link>https://xn--izc.com/blog/evluating-negatives/</link><pubDate>Tue, 09 Jan 2024 21:58:34 -0500</pubDate><guid>https://xn--izc.com/blog/evluating-negatives/</guid><description>Evaluating properties like inclusion and equity of products can’t be
+done through exhaustive enumeration of product outcomes. Instead we will
+need to increasingly rely on the controls that we place how we construct
+the products.</description><content:encoded><p>Privacy, security, inclusion, equity, accessibility, … all of these
+have an interesting property in common. When evaluation products against
+such questions you are usually trying to establish a negative.</p><h3 id="to-prove-a-negative">To Prove A Negative</h3><p>Proving a negative requires providing<a href="https://en.wikipedia.org/wiki/Evidence_of_absence">evidence of
+absence</a>.</p><p>If one wanted to<em>disprove</em> the claim<em>“all primes are
+odd”</em> one only needs to prove<em>“some primes are even”</em>. The
+latter can be accomplished by finding a single counterexample – the
+number 2. On the other hand if one wanted to<em>prove</em> the claim,
+they would need establish that all primes are odd. Another example is
+the claim<em>“there are no vermin in this house,”</em> proving which
+requires an exahustive search of the premises. Once again, disproving
+the claim only requires a single piece of evidence – a mouse.</p><p>Going back to the beginning, asking someone whether a product is<em>secure</em>,<em>private</em>,<em>inclusive</em>,<em>accessible</em> etc… fall into the same category. Answering these
+questions require proving that there is nothing<em>insecure</em>,<em>privacy violating</em>,<em>non-inclusive</em>, or<em>inaccessible</em> about this product. These questions are even worse
+than the one about vermin from before because it’s not even clear where
+to start looking. People who have spent their entire careers studying
+the subject would find the criteria difficult or downright impossible to
+evaluate.</p><p>Despite this apparent futility, there is hope.<strong>Knowing that
+the criteria holds under a limited set of circumstances is sometimes
+enough</strong>. Often it is the best that we can do.</p><h3 id="proof-by-enumeration">Proof By Enumeration</h3><p>In security and privacy parlance this limited scope is called the<a href="https://en.wikipedia.org/wiki/Threat_model"><em>threat
+model</em></a>.</p><p>Absolute security is impossible, so one would start by establishing
+the specific threats that they would like to deal with. For example when
+considering the security of a networked application one could start by
+drawing out a<a href="https://www.lucidchart.com/pages/data-flow-diagram">data flow
+diagram</a> and then going over the different points at which data would
+be at risk of being compromised. Enumeration of vulnerabilities and
+threats in this way opens up the possibility of thoroughly examining the<a href="https://www.ibm.com/topics/attack-surface">attack surface</a>.
+Thus the previously intractable problem becomes finite.</p><p>As our understanding of threats improve, so does the effectiveness of
+the threat model. Historically, understanding this kind of problem space
+takes time and many – often costly – mistakes. The boundaries sometimes
+only become known when someone exploits it.</p><p>Similarly, when evaluating a squishy concept like inclusion and
+equity one would also start with a well defined scope that lends itself
+to examination. Just like before, often we only learn where to look for
+problems the hard way. So we come up with methodologies like carefully
+curated<strong>dimensions of identity</strong>. Enumerations like that
+give us a finite set of things to consider with our finite resources.
+Additionally these methodologies also grant us a taxonomy with which we
+can organize our hard earned knowledge on the topic.</p><h3 id="proof-by-enumerating-product-outcomes">Proof by Enumerating
+Product Outcomes</h3><p>Enumeration based approaches establish clusters of<em>possible
+product outcomes</em> which we can then evaluate individually.</p><p>As an example, a product that processes pictures of people can be
+evaluated based on the outcome of handling pictures of people with
+different skin tokes, gender expressions, body types, ages, hair and
+accesories, visible disabilities, and lighting conditions. Coming up
+with these outcomes can be laborious and expensive, but it is tractable.
+Costs of curating suitably detailed test cases and data sets should
+amortize across their potentially broad applicability.</p><h3 id="proof-by-construction">Proof By Construction</h3><p>But sometimes the set of outcomes do not cluster effectively or are
+too numerous to exhaustively evaluate. In security this would be similar
+to asking whether some software system is free from<a href="https://en.wikipedia.org/wiki/Buffer_overflow">buffer overruns</a>
+– a question that is theoretically impossible to answer in general if
+the method of construction is not amenable to analysis. The best we
+could do is for suitably skilled persons to go through the code with a
+fine toothed comb looking for potential problems; a task that is both
+impractical as it is prone to error.</p><h3 id="proof-by-process-of-construction">Proof by Process of
+Construction</h3><p>Instead we could try using programming languages that provide certain
+safety guarantees:<a href="https://spectrum.ieee.org/memory-safe-programming-languages">memory-safe
+languages</a>. These safety guarantees establish the memory safety of
+the resulting behavior as a consequence of the method by which the
+underlying software is constructed. Another method we can use is to
+continue using an unsafe language<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, but invest in
+development practices like<a href="https://en.wikipedia.org/wiki/Fuzzing">fuzz testing</a> which give
+us sufficient<a href="https://www.georgefairbanks.com/ieee-software-v37-n3-may-2020-testing-numbs-us-to-our-loss-of-intellectual-control">statistical
+control</a> over the behavior of our software.</p><p><em>Inclusion and equity</em> can follow a similar paradigm where we
+establish certain process requirements that also yield a favorable
+outcome with a high likelihood. Google’s<a href="https://design.google/library/building-for-everyone">Building for
+Everyone</a> outlines some of these processes criteria such as involving
+a diverse group of people during the ideation and design phases of a
+product, and involving a diverse group of people during testing. Once
+again, these approaches don’t guarantee success, but have a much higher
+likelihood of delivering a favorable outcome.</p><h3 id="amalgam-engineering">Amalgam Engineering</h3><p>Increasingly software systems are built as amalgamations of systems
+that are themselves complex. The behavior of each constituent is
+difficult to reason about let alone the behavior of the
+amalgamation.</p><p>To establish some desirable property of the amalgamation, it becomes
+necessary to progressively establish the same or minor properties of the
+constituents.<strong>The point of establishing these properties is to
+yield a simpler more tractable model of a system</strong> that we can
+readily reason about. We can then infer or at least approximate the
+behavior of the amalgamation based on the simplified models that we
+derive of the contituents.</p><p>We don’t expect this situation to get better given that many of these
+contituent parts will be ML models that are too complex for us to
+understand. As enumerating product outcomes becomes less effective, we
+will need to rely ever more on process criteria and governance of
+construction to curb the product outcomes.</p><p>The accuracy of the resulting simplified models is all that we will
+have to grasp in order to have some say how technology will govern us in
+turn.</p><aside id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><hr/><ol><li id="fn1"><p>Continuing to use an unsafe language isn’t as dumb as it
+sounds. Large tech companies with massive software estates are often in
+the unenviable position of being unable to move enmasse to better
+platforms due to the cost. Thus less than perfect interim measures are
+not that silly.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside></content:encoded></item><item><title>Happy New Year 2024 and Year in Review 2023</title><link>https://xn--izc.com/blog/happy-new-year-2024-and-year-in-review-2023/</link><pubDate>Mon, 01 Jan 2024 14:12:21 -0500</pubDate><guid>https://xn--izc.com/blog/happy-new-year-2024-and-year-in-review-2023/</guid><description>Happy New Year Everyone! I hope everyone has a great year in 2024!
 What We Are Leaving Behind I’m acknowledging but not going into details of the cruelty we are inflicting on ourselves in Ukrain, the Gaza strip, Myanmar, Niger, Burkina Faso, Azawad, Tunisia, Sudan, Columbia, Afganistan, Pakistan, Somalia, Democratic Republic of Congo, Nigeria, Iraq, Rwanda, Burundi, Mexico, Camaroon, Chad, Syria, Yemen, Saudi Arabia, United Arab Emirates, Ethiopia, Haiti, and pretty much everwhere.</description><content:encoded><h2 id="happy-new-year-everyone">Happy New Year Everyone!</h2><p>I hope everyone has a great year in 2024!</p><h2 id="what-we-are-leaving-behind">What We Are Leaving Behind</h2><p>I’m acknowledging but not going into details of the cruelty we are
 inflicting on ourselves in Ukrain, the Gaza strip, Myanmar, Niger,
 Burkina Faso, Azawad, Tunisia, Sudan, Columbia, Afganistan, Pakistan,
@@ -1342,22 +1430,23 @@ that you can use the existing<code>fontStyle: "italic"</code> option in<code>tok
 In his essay – which isn’t very long if you would like to read the whole thing yourself – he lays out the concept as follows:
 I have found that the fastest way to an effective forecast is often through a sequence of lousy forecasts.</description><content:encoded><h2 id="origins-of-the-phrase">Origins of the phrase</h2><p>The title of this blog is<strong>Strong Opinions, Weakly
 Held</strong>. The same concept shows up elsewhere are<em>Strong
-Opinions Loosely Held</em>. An eponymous essay by Paul Saffo in<span class="citation" data-cites="Saffo">(2020)</span> introduced the world
-to this concept.</p><p>In his essay – which isn’t very long if you would like to<a href="https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/">read
+Opinions Loosely Held</em>. An eponymous essay by Paul Saffo in<span class="citation" data-cites="Saffo">(<a href="#ref-Saffo" role="doc-biblioref">2020</a>)</span> introduced the world to this
+concept.</p><p>In his essay – which isn’t very long if you would like to<a href="https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/">read
 the whole thing yourself</a> – he lays out the concept as follows:</p><blockquote><p>I have found that the fastest way to an effective forecast is often
 through a sequence of lousy forecasts. Instead of withholding judgment
 until an exhaustive search for data is complete, I will force myself to
 make a tentative forecast based on the information available, and then
 systematically tear it apart, using the insights gained to guide my
-search for further indicators and information.</p></blockquote><h2 id="criticism">Criticism</h2><p>Cedric Chin’s critique<span class="citation" data-cites="Cedric">(2020)</span> comes down to two points that the
-author summarizes as follows:</p><blockquote><p>In my experience, ‘strong opinions, weakly held’ is difficult to put
+search for further indicators and information.</p></blockquote><h2 id="criticism">Criticism</h2><p>Cedric Chin’s critique<span class="citation" data-cites="Cedric">(<a href="#ref-Cedric" role="doc-biblioref">2020</a>)</span> comes down to
+two points that the author summarizes as follows:</p><blockquote><p>In my experience, ‘strong opinions, weakly held’ is difficult to put
 into practice. Most people who try will either:</p><ol type="1"><li>Use it as downside-protection to justify their strongly-held bad
 opinions, or</li><li>Struggle to shift from one strong opinion to another.</li></ol><p>The reason it is difficult is because it works against the grain of
 the human mind.</p><p>So don’t bother. The next time you find yourself making a judgment,
 don’t invoke ‘strong opinions, weakly held’. Instead, ask: “how much are
 you willing to bet on that?” Doing so will jolt people into the types of
-thinking you want to encourage.</p></blockquote><p>Michael Natkin on<span class="citation" data-cites="Michael">(2020)</span> points out the fallacy of assuming
-that strong opinions will be reliably challenged:</p><blockquote><p>The idea of strong opinions, loosely held is that you can make
+thinking you want to encourage.</p></blockquote><p>Michael Natkin on<span class="citation" data-cites="Michael">(<a href="#ref-Michael" role="doc-biblioref">2020</a>)</span> points out the
+fallacy of assuming that strong opinions will be reliably
+challenged:</p><blockquote><p>The idea of strong opinions, loosely held is that you can make
 bombastic statements, and everyone should implicitly assume that you’ll
 happily change your mind in a heartbeat if new data suggests you are
 wrong. It is supposed to lead to a collegial, competitive environment in
