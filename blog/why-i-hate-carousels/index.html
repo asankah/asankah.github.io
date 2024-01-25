@@ -1,0 +1,76 @@
+<!doctype html><html lang=en-us><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Why I Hate Carousels &#183; Strong Opinions, Weekly Held</title>
+<link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/scss/fonts.min.css><link rel=stylesheet href=/css/formatting.min.css><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><meta name=msapplication-TileColor content="#da532c"><meta name=theme-color content="#ffffff"><link href rel=alternate type=application/rss+xml title="Strong Opinions, Weekly Held"><link rel=stylesheet href=https://xn--izc.com/_katex/katex.min.3493557c40ba8df12deb6c1031a7cb353d9e23a05a58e3576e991211502cdfef.css integrity="sha256-NJNVfEC6jfEt62wQMafLNT2eI6BaWONXbpkSEVAs3+8="><script src=https://xn--izc.com/_katex/katex.min.093945cfb872f8fdf36e3730db70625111c0cb4e643520f70eabd1703ede483f.js integrity="sha256-CTlFz7hy+P3zbjcw23BiURHAy05kNSD3DqvRcD7eSD8="></script><script src=https://xn--izc.com/js/render-katex.min.js async></script></head><body><nav class=nav><div class=nav-container><a href=/><h2 class=nav-title>Strong Opinions, Weekly Held</h2></a><ul><li><a href=/about/me><span>About Me</span></a></li><li><a href=/tags><span>Tags</span></a></li></ul></div></nav><main><div class=post><h1 class=post-title>Why I Hate Carousels</h1><div class=post-info><span>Written by</span>
+Asanka Herath
+<span>on&nbsp;</span><time datetime="2024-01-25 12:54:46 -0500 EST">January 25, 2024</time>
+|
+<a href=/tags/usability>#Usability</a>
+<a href=/tags/engineering>#Engineering</a></div><div class="social share"><a href="https://twitter.com/intent/tweet?text=Why+I+Hate+Carousels&amp;url=https%3A%2F%2Fxn--izc.com%2Fblog%2Fwhy-i-hate-carousels%2F&amp;via=asankah" aria-label="Share on Twitter" target=_blank rel=noopener><img src=/images/twitter.svg alt="Share on Twitter">
+</a><a href="mailto:?body=Via+https%3A%2F%2Ftwitter.com%2Fasankah%0A%0A%3Cul%3E%0A%3Cli%3EDon%E2%80%99t+use+carousels+in+your+UI.%3C%2Fli%3E%0A%3Cli%3EInstead%2C+if+you+must+stick+content+into+little+cards%2C+let+the%0Ahorionztal+layout+wrap+to+additional+lines.%3C%2Fli%3E%0A%3Cli%3EIf+you+end+up+with+too+many+horizontal+lines+of+content%2C+then+you%0Adefinitely+have+too+many+items+that+can+be+accessed+via+a+horizontally%0Apanning+UI.+You+need+a+different+UI+altogether.%3C%2Fli%3E%0A%3C%2Ful%3E%0A%0A%0ARead+more+at+https%3A%2F%2Fxn--izc.com%2Fblog%2Fwhy-i-hate-carousels%2F%0A&amp;subject=Why+I+Hate+Carousels+-+Strong+Opinions%2C+Weekly+Held" aria-label="Share via Email" target=_blank rel=noopener><img src=/images/mail.svg alt="Share via Email">
+</a><a href=https://xn--izc.com/blog/why-i-hate-carousels/ aria-label="Permanent link to post"><img src=/images/link-2.svg alt="Permanent link to post"></a></div><p>A carousel interaction pattern looks like this:</p><figure><img src=./dell.png alt="A screenshot of dell.com from Nielsen Norman Group’s article on effective design of carousels."><figcaption aria-hidden=true>A screenshot of dell.com from <a href=https://www.nngroup.com/articles/designing-effective-carousels/>Nielsen
+Norman Group’s article on effective design of
+carousels</a>.</figcaption></figure><p>Basically it’s a layout pattern where one starts out positioning
+content in vertical blocks. Some of those blocks are going to have
+content arranged in horizontal blocks.</p><p>So far so good. You might think this will result in a layout that
+roughly looks like this:</p><figure><img src=./vertical-and-horizontal-layout.png alt="A layout consisting of vertically arranged blocks. One of the blocks contains a set of horizontally arranged blocks."><figcaption aria-hidden=true>A layout consisting of vertically
+arranged blocks. One of the blocks contains a set of horizontally
+arranged blocks.</figcaption></figure><p>This is a pretty common block structured layout. So common in fact
+that most block structured layouts will flip orientation by nesting
+level. If you nest a layout block inside a block that has vertical
+layout then the inner block will automatically switch to doing
+horizontal layout.</p><p>Notice that the entire layout fits snugly within the viewport.</p><h3 id=layout-runneth-over>Layout Runneth Over</h3><p>Interesting stuff happen when the layout doesn’t fit inside the
+viewport. When it doesn’t fit vertically, obviously you’ll have to
+scroll up and down to see the whole thing.</p><p>However, if <em>only the horizontal block doesn’t fit</em>, that’s
+when the carousel pattern kicks in. So now things start looking like
+this:</p><figure><img src=./layout-with-overflow.png alt="The layout no longer fits within the cofines of the viewport."><figcaption aria-hidden=true>The layout no longer fits within the
+cofines of the viewport.</figcaption></figure><p>How do you construct a UI affordance that lets people pan around
+this? Of course you use … wait I already mentioned it ..
+<strong>pan</strong>. Maybe use scroll bars or just about any other
+scrolling affordance.</p><p>So would it look like this if you scroll both horizontally and
+vertically a little bit?</p><figure><img src=./shifted-viewport-position.png alt="A viewport shifted a little bit both horizontally and vertically. The relative position of the blocks are still the same as before. Large portions of the viewport are now blank."><figcaption aria-hidden=true>A viewport shifted a little bit both
+horizontally and vertically. The relative position of the blocks are
+still the same as before. Large portions of the viewport are now
+blank.</figcaption></figure><h3 id=sliiiiiide-to-the-right>Sliiiiiide To The Right</h3><p>To address all the blankness, the carousel pattern posits that the
+the overflowing horizontal bits should be moved around independently of
+the vertical bits. Like this:</p><figure><img src=./sliding-around-horizontally.png alt="Vertically arranged bits move vertically. Horizontally arranged bits move horizontally."><figcaption aria-hidden=true>Vertically arranged bits move vertically.
+Horizontally arranged bits move horizontally.</figcaption></figure><p>We once again have the problem of affordances. There are many ways of
+doing this. Most devices have some way of panning around both
+horizontally and vertically. So the solution is obvious. Right?</p><p>If people stop here and implement that, then that would’ve been
+over.</p><h3 id=uh-oh.-here-come-the-dots-of-stupidity>Uh oh. Here come the
+dots of stupidity…</h3><p>Instead, they went with this:</p><figure><img src=./dots-of-stupidity.png alt="Dots of stupidity. Little circles and left and right arrows. When you click/tap on the left arrow button, the carousal slides to the left. When you click/tap on the right arrow button, the carousel moves to the right."><figcaption aria-hidden=true>Dots of stupidity. Little circles and
+left and right arrows. When you click/tap on the left arrow button, the
+carousal slides to the left. When you click/tap on the right arrow
+button, the carousel moves to the right.</figcaption></figure><p>Let me summarize this interaction pattern.</p><ol type=1><li>Use scroll bars, or whatever scrolling afforance to scroll up and
+down to access bits that are above and below the viewport.</li><li>Click/tap on little circles with arrows to access bits that are on
+either side of the viewport but only within the single sliding carousel
+block containing the arrows.</li></ol><p>There’s a couple of problems with this:</p><ul><li>The obvious wonkiness of having two different methods of scrolling
+horizontally and vertically.</li><li>Too easy to tap on the underlying “tile” instead of the
+dot-of-stupidity.</li></ul><p>Carousel sympathizers explain the reasoning for this as follows:</p><ol type=1><li><p><em>What if there was more than one horizontally sliding
+thingies? How would one know which horizontally sliding thingy to apply
+the horizontal scroll operation to?</em></p><p>This is a purely hypothetical problem that often doesn’t exist. But I
+understand that UX designers have to account for the
+possibility.</p></li><li><p><em>It’s okay because the user doesn’t always need to or want to
+see everything in the carousal. Why bother them with details they don’t
+need?</em></p><p>That’s nice, but how would the user know they don’t need to see the
+thing without seeing the thing? It might be possible if all the visible
+things in the carousel were irrelevant to the user then they’ll just
+ignore the whole carousel.</p><p>But what about the very users who <em>are</em> interested? They need
+to jump through hoops to look at the things that <em>are</em>
+relevant.</p></li><li><p><em>What if there’s sooo many things in the horizontal slidey bit
+that we can’t possibly accommodate all of it?</em></p><p><strong>Someone has to click on the little dot with the arrow enough
+times to see each one incrementally. The number of items for which such
+a UI works is far smaller than a UI where one scrolls past them using a
+much more ergonomic interface.</strong></p></li></ol><h3 id=whats-better>What’s Better?</h3><p>I’m no UXD. While I’m an expert on what sucks, I can’t always come up
+with the best solutions. I’ll throw one out there just as food for
+thought:</p><figure><img src=./vertical-overflow-only.png alt="Wrap the horizontal blocks so there’s only vertical overflow."><figcaption aria-hidden=true>Wrap the horizontal blocks so there’s
+only vertical overflow.</figcaption></figure><h3 id=in-summary>In Summary</h3><ul><li><strong>Don’t use carousels in your UI.</strong></li><li><strong>Instead, if you must stick content into little cards, let
+the horionztal layout wrap to additional lines.</strong></li><li><strong>If you end up with too many horizontal lines of content,
+then you definitely have too many items that can be accessed via a
+horizontally panning UI. You need a different UI
+altogether.</strong></li></ul><hr><nav class=suggested><h2 class=suggested>More articles from this blog</h4><ul><li><h3 class="suggested title"><a href=/blog/shannon-paper/>Shannon Paper</a></h3><p>Claude Shannon’s <em>A mathematical theory of communication</em> is
+an oft cited classic in information theory. Let’s dive in and try to
+tease apart the “why”s that are often overlooked when people build on
+top of the introduced theory. They are definitely things that I didn’t
+consider to be obvious without the benefit of reading the paper.</p></li><li><h3 class="suggested title"><a href=/blog/the-lettergrade-rule/>The Lettergrade Rule</a></h3><p>Don’t block a code review because of minor issues that are best left
+to the discretion of the author.</p></li><li><h3 class="suggested title"><a href=/blog/thirteen-years/>Thirteen Years</a></h3><p>Some reflections from thirteen years at Google.</p></li><li><h3 class="suggested title"><a href=/blog/sometimes-its-the-interviewers-who-suck/>Sometimes It's the Interviewers Who Suck</a></h3><p>I’ve done hundreds of interviews. I’ve also served in numerous hiring committees over the years.
+Tech companies tend to have cultures built around tech people interviewing other tech people, typically in what is not-so-affectionately known as the “Tech interview.” This is good because candidates would be evaluated based on their actual skills instead of keywords in their resume. Interviewers are in effect choosing their future coworkers which makes in interview serve the interest of both the interviewer and the interviewee.</p></li><li><h3 class="suggested title"><a href=/blog/how-this-blog-works/>How This Blog Works</a></h3><p>How I put this site together and why.</p></li></ul></nav><h4>Comment</h4><script src=https://utteranc.es/client.js repo=asankah/blog-comments issue-term=title label=PublicComment theme=github-light crossorigin=anonymous async></script></div><div class=pagination><a href=/blog/evluating-negatives/ class="left arrow">&#8592;</a>
+<a href=# class=top>Top</a></div></main><footer><span>Last modified on January 25, 2024</span></footer><script async src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"></script><script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-GSREL2EZ4Y",{anonymize_ip:!1})}</script></body></html>

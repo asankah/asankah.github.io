@@ -1,4 +1,70 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strong Opinions, Weekly Held</title><link>https://xn--izc.com/</link><description>Recent content on Strong Opinions, Weekly Held</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Asanka Herath</copyright><lastBuildDate>Tue, 09 Jan 2024 21:58:34 -0500</lastBuildDate><atom:link href="https://xn--izc.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Inclusion/Equity and Evaluating Negatives</title><link>https://xn--izc.com/blog/evluating-negatives/</link><pubDate>Tue, 09 Jan 2024 21:58:34 -0500</pubDate><guid>https://xn--izc.com/blog/evluating-negatives/</guid><description>Evaluating properties like inclusion and equity of products can’t be
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strong Opinions, Weekly Held</title><link>https://xn--izc.com/</link><description>Recent content on Strong Opinions, Weekly Held</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Asanka Herath</copyright><lastBuildDate>Thu, 25 Jan 2024 12:54:46 -0500</lastBuildDate><atom:link href="https://xn--izc.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Why I Hate Carousels</title><link>https://xn--izc.com/blog/why-i-hate-carousels/</link><pubDate>Thu, 25 Jan 2024 12:54:46 -0500</pubDate><guid>https://xn--izc.com/blog/why-i-hate-carousels/</guid><description>&lt;ul>
+&lt;li>Don’t use carousels in your UI.&lt;/li>
+&lt;li>Instead, if you must stick content into little cards, let the
+horionztal layout wrap to additional lines.&lt;/li>
+&lt;li>If you end up with too many horizontal lines of content, then you
+definitely have too many items that can be accessed via a horizontally
+panning UI. You need a different UI altogether.&lt;/li>
+&lt;/ul></description><content:encoded><p>A carousel interaction pattern looks like this:</p><figure><img src="./dell.png" alt="A screenshot of dell.com from Nielsen Norman Group’s article on effective design of carousels."/><figcaption aria-hidden="true">A screenshot of dell.com from<a href="https://www.nngroup.com/articles/designing-effective-carousels/">Nielsen
+Norman Group’s article on effective design of
+carousels</a>.</figcaption></figure><p>Basically it’s a layout pattern where one starts out positioning
+content in vertical blocks. Some of those blocks are going to have
+content arranged in horizontal blocks.</p><p>So far so good. You might think this will result in a layout that
+roughly looks like this:</p><figure><img src="./vertical-and-horizontal-layout.png" alt="A layout consisting of vertically arranged blocks. One of the blocks contains a set of horizontally arranged blocks."/><figcaption aria-hidden="true">A layout consisting of vertically
+arranged blocks. One of the blocks contains a set of horizontally
+arranged blocks.</figcaption></figure><p>This is a pretty common block structured layout. So common in fact
+that most block structured layouts will flip orientation by nesting
+level. If you nest a layout block inside a block that has vertical
+layout then the inner block will automatically switch to doing
+horizontal layout.</p><p>Notice that the entire layout fits snugly within the viewport.</p><h3 id="layout-runneth-over">Layout Runneth Over</h3><p>Interesting stuff happen when the layout doesn’t fit inside the
+viewport. When it doesn’t fit vertically, obviously you’ll have to
+scroll up and down to see the whole thing.</p><p>However, if<em>only the horizontal block doesn’t fit</em>, that’s
+when the carousel pattern kicks in. So now things start looking like
+this:</p><figure><img src="./layout-with-overflow.png" alt="The layout no longer fits within the cofines of the viewport."/><figcaption aria-hidden="true">The layout no longer fits within the
+cofines of the viewport.</figcaption></figure><p>How do you construct a UI affordance that lets people pan around
+this? Of course you use … wait I already mentioned it ..<strong>pan</strong>. Maybe use scroll bars or just about any other
+scrolling affordance.</p><p>So would it look like this if you scroll both horizontally and
+vertically a little bit?</p><figure><img src="./shifted-viewport-position.png" alt="A viewport shifted a little bit both horizontally and vertically. The relative position of the blocks are still the same as before. Large portions of the viewport are now blank."/><figcaption aria-hidden="true">A viewport shifted a little bit both
+horizontally and vertically. The relative position of the blocks are
+still the same as before. Large portions of the viewport are now
+blank.</figcaption></figure><h3 id="sliiiiiide-to-the-right">Sliiiiiide To The Right</h3><p>To address all the blankness, the carousel pattern posits that the
+the overflowing horizontal bits should be moved around independently of
+the vertical bits. Like this:</p><figure><img src="./sliding-around-horizontally.png" alt="Vertically arranged bits move vertically. Horizontally arranged bits move horizontally."/><figcaption aria-hidden="true">Vertically arranged bits move vertically.
+Horizontally arranged bits move horizontally.</figcaption></figure><p>We once again have the problem of affordances. There are many ways of
+doing this. Most devices have some way of panning around both
+horizontally and vertically. So the solution is obvious. Right?</p><p>If people stop here and implement that, then that would’ve been
+over.</p><h3 id="uh-oh.-here-come-the-dots-of-stupidity">Uh oh. Here come the
+dots of stupidity…</h3><p>Instead, they went with this:</p><figure><img src="./dots-of-stupidity.png" alt="Dots of stupidity. Little circles and left and right arrows. When you click/tap on the left arrow button, the carousal slides to the left. When you click/tap on the right arrow button, the carousel moves to the right."/><figcaption aria-hidden="true">Dots of stupidity. Little circles and
+left and right arrows. When you click/tap on the left arrow button, the
+carousal slides to the left. When you click/tap on the right arrow
+button, the carousel moves to the right.</figcaption></figure><p>Let me summarize this interaction pattern.</p><ol type="1"><li>Use scroll bars, or whatever scrolling afforance to scroll up and
+down to access bits that are above and below the viewport.</li><li>Click/tap on little circles with arrows to access bits that are on
+either side of the viewport but only within the single sliding carousel
+block containing the arrows.</li></ol><p>There’s a couple of problems with this:</p><ul><li>The obvious wonkiness of having two different methods of scrolling
+horizontally and vertically.</li><li>Too easy to tap on the underlying “tile” instead of the
+dot-of-stupidity.</li></ul><p>Carousel sympathizers explain the reasoning for this as follows:</p><ol type="1"><li><p><em>What if there was more than one horizontally sliding
+thingies? How would one know which horizontally sliding thingy to apply
+the horizontal scroll operation to?</em></p><p>This is a purely hypothetical problem that often doesn’t exist. But I
+understand that UX designers have to account for the
+possibility.</p></li><li><p><em>It’s okay because the user doesn’t always need to or want to
+see everything in the carousal. Why bother them with details they don’t
+need?</em></p><p>That’s nice, but how would the user know they don’t need to see the
+thing without seeing the thing? It might be possible if all the visible
+things in the carousel were irrelevant to the user then they’ll just
+ignore the whole carousel.</p><p>But what about the very users who<em>are</em> interested? They need
+to jump through hoops to look at the things that<em>are</em>
+relevant.</p></li><li><p><em>What if there’s sooo many things in the horizontal slidey bit
+that we can’t possibly accommodate all of it?</em></p><p><strong>Someone has to click on the little dot with the arrow enough
+times to see each one incrementally. The number of items for which such
+a UI works is far smaller than a UI where one scrolls past them using a
+much more ergonomic interface.</strong></p></li></ol><h3 id="whats-better">What’s Better?</h3><p>I’m no UXD. While I’m an expert on what sucks, I can’t always come up
+with the best solutions. I’ll throw one out there just as food for
+thought:</p><figure><img src="./vertical-overflow-only.png" alt="Wrap the horizontal blocks so there’s only vertical overflow."/><figcaption aria-hidden="true">Wrap the horizontal blocks so there’s
+only vertical overflow.</figcaption></figure><h3 id="in-summary">In Summary</h3><ul><li><strong>Don’t use carousels in your UI.</strong></li><li><strong>Instead, if you must stick content into little cards, let
+the horionztal layout wrap to additional lines.</strong></li><li><strong>If you end up with too many horizontal lines of content,
+then you definitely have too many items that can be accessed via a
+horizontally panning UI. You need a different UI
+altogether.</strong></li></ul></content:encoded></item><item><title>Inclusion/Equity and Evaluating Negatives</title><link>https://xn--izc.com/blog/evluating-negatives/</link><pubDate>Tue, 09 Jan 2024 21:58:34 -0500</pubDate><guid>https://xn--izc.com/blog/evluating-negatives/</guid><description>Evaluating properties like inclusion and equity of products can’t be
 done through exhaustive enumeration of product outcomes. Instead we will
 need to increasingly rely on the controls that we place how we construct
 the products.</description><content:encoded><p>Privacy, security, inclusion, equity, accessibility, … all of these
@@ -463,7 +529,7 @@ here</a>). It gets run after a new commit is made. This is exactly when
 we want to try and update our remote.</p><p>Our hook will:</p><ul><li>Execute each time you commit something into your repository.</li><li>Avoid doing anything if the commit is made during a rebase or
 merge.</li><li>Push to a remote named<code>origin</code> (or whichever one you
 change the<code>UPSTREAM</code> shell variable to point).</li><li>Create or update a remote reference that matches the branch name
-that’s currently checked out.</li></ul><p>Copy and paste the following script into a file named<code>.git/hooks/post-commit</code> in your repository directory.</p><aside class="important"><p>Afterwards make the script runnable via<code>chmod +x .git/hooks/post-commit</code>.</p></aside><script type="application/javascript" src="https://gist.github.com/asankah/a6263bbd6081bffd031ca066e5177df2.js"/></content:encoded></item><item><title>DARPA's Heilmeier Catechism</title><link>https://xn--izc.com/blog/darpa-heilmeier-catechism/</link><pubDate>Tue, 28 Jun 2022 10:11:17 -0400</pubDate><guid>https://xn--izc.com/blog/darpa-heilmeier-catechism/</guid><description>A set of questions help you think through and evaluate proposed
+that’s currently checked out.</li></ul><p>Copy and paste the following script into a file named<code>.git/hooks/post-commit</code> in your repository directory.</p><aside class="important"><p>Afterwards make the script runnable via<code>chmod +x .git/hooks/post-commit</code>.</p></aside><script src="https://gist.github.com/asankah/a6263bbd6081bffd031ca066e5177df2.js"/></content:encoded></item><item><title>DARPA's Heilmeier Catechism</title><link>https://xn--izc.com/blog/darpa-heilmeier-catechism/</link><pubDate>Tue, 28 Jun 2022 10:11:17 -0400</pubDate><guid>https://xn--izc.com/blog/darpa-heilmeier-catechism/</guid><description>A set of questions help you think through and evaluate proposed
 projects and research programs.</description><content:encoded><p>It seems the hardest part of engineering is the part where you are
 staring at a blank page with a vague notion of a problem statement in
 your head.</p><p>First you seek structure. After all your attention span can only hold
@@ -760,7 +826,8 @@ your purchased ebooks on this device.</p></li><li><p>No support for labeling or 
 writing.</p></li></ul><aside id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><hr/><ol><li id="fn1"><p>In case the Pixelbook site goes offline, here’s the
 Wayback Machine’s<a href="https://web.archive.org/web/20210725184512/https://www.google.com/chromebook/device/google-pixelbook/">snapshot
 from when I wrote this article</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside></content:encoded></item><item><title>Why 'Strong Opinions Weekly Held'</title><link>https://xn--izc.com/blog/why-strong-opinions-weekly-held/</link><pubDate>Tue, 28 Sep 2021 00:00:00 -0400</pubDate><guid>https://xn--izc.com/blog/why-strong-opinions-weekly-held/</guid><description>Previously on this blog I wrote a short note on Why Strong Opinions Weakly Held.
-I’m trying to get something out every week. Hence the new blog title.</description><content:encoded><p>Previously on this blog I wrote a short note on<a href="/blog/why-strong-opinions-weakly-held/">Why Strong Opinions Weakly Held</a>.</p><p>I’m trying to get something out every week. Hence the new blog
+I’m trying to get something out every week. Hence the new blog title.</description><content:encoded><p>Previously on this blog I wrote a short note on<a href="/blog/why-strong-opinions-weakly-held/">Why Strong Opinions Weakly
+Held</a>.</p><p>I’m trying to get something out every week. Hence the new blog
 title.</p></content:encoded></item><item><title>Visualizing A Million People</title><link>https://xn--izc.com/blog/visualizing-people-2/</link><pubDate>Mon, 06 Sep 2021 00:00:00 -0400</pubDate><guid>https://xn--izc.com/blog/visualizing-people-2/</guid><description>If your feature pisses off a million people what does this angry mob
 look like? Spoiler: We only get to 750,000.</description><content:encoded><aside class="note"><p>This article was formerly published as<a href="/blog/visualizing-people/">Visualizing Internet Users</a>. This
 version is more generalized and up-to-date.</p></aside><p>What if you introduce a bug and/or a feature that pisses off a
