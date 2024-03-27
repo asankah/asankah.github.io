@@ -1,0 +1,152 @@
+<!doctype html><html lang=en-us><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Shannon Paper &#183; Strong Opinions, Weekly Held</title>
+<link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/scss/fonts.min.css><link rel=stylesheet href=/css/formatting.min.css><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><meta name=msapplication-TileColor content="#da532c"><meta name=theme-color content="#ffffff"><link href rel=alternate type=application/rss+xml title="Strong Opinions, Weekly Held"><link rel=stylesheet href=https://xn--izc.com/_katex/katex.min.505d5f829022bb7b4f24dfee0aa1141cd7bba67afe411d1240335f820960b5c3.css integrity="sha256-UF1fgpAiu3tPJN/uCqEUHNe7pnr+QR0SQDNfgglgtcM="><script src=https://xn--izc.com/_katex/katex.min.dc84b296ec3e884de093158f760fd9d45b6c7abe58b5381557f4e138f46a58ae.js integrity="sha256-3ISyluw+iE3gkxWPdg/Z1Ftser5YtTgVV/ThOPRqWK4="></script><script src=https://xn--izc.com/js/render-katex.min.js async></script></head><body><nav class=nav><div class=nav-container><a href=/><h2 class=nav-title>Strong Opinions, Weekly Held</h2></a><ul><li><a href=/about/me><span>About Me</span></a></li><li><a href=/posts><span>Posts</span></a></li><li><a href=/tags><span>Tags</span></a></li></ul></div></nav><main><div class=post><h1 class=post-title>Shannon Paper</h1><div class=post-info><span>Written by</span>
+Asanka Herath
+<span>on&nbsp;</span><time datetime="2021-03-26 16:14:20 -0400 EDT">March 26, 2021</time>
+|
+<a href=/tags/math>#Math</a></div><div class="social share"><a href="https://twitter.com/intent/tweet?text=Shannon+Paper&amp;url=https%3A%2F%2Fxn--izc.com%2Fposts%2Fshannon-paper%2F&amp;via=asankah" aria-label="Share on Twitter" target=_blank rel=noopener><img src=/images/twitter.svg alt="Share on Twitter">
+</a><a href="mailto:?body=Via+https%3A%2F%2Ftwitter.com%2Fasankah%0A%0AClaude+Shannon%E2%80%99s+%3Cem%3EA+mathematical+theory+of+communication%3C%2Fem%3E+is%0Aan+oft+cited+classic+in+information+theory.+Let%E2%80%99s+dive+in+and+try+to%0Atease+apart+the+%E2%80%9Cwhy%E2%80%9Ds+that+are+often+overlooked+when+people+build+on%0Atop+of+the+introduced+theory.+They+are+definitely+things+that+I+didn%E2%80%99t%0Aconsider+to+be+obvious+without+the+benefit+of+reading+the+paper.%0A%0ARead+more+at+https%3A%2F%2Fxn--izc.com%2Fposts%2Fshannon-paper%2F%0A&amp;subject=Shannon+Paper+-+Strong+Opinions%2C+Weekly+Held" aria-label="Share via Email" target=_blank rel=noopener><img src=/images/mail.svg alt="Share via Email">
+</a><a href=https://xn--izc.com/posts/shannon-paper/ aria-label="Permanent link to post"><img src=/images/link-2.svg alt="Permanent link to post"></a></div><p>Claude Shannon’s <em>A mathematical theory of communication</em> is
+an oft cited classic in information theory. In fact, as of this writing
+there are 84’411 citations and 139 versions of the article on Google
+Scholar.</p><figure><img src=images/google-scholar-shannon-citations.png alt="Screenshot of Google Scholar showing citation count for Shannon’s paper"><figcaption aria-hidden=true>Screenshot of Google Scholar showing
+citation count for Shannon’s paper</figcaption></figure><p>Let’s dive in and try to tease apart the “why”s that are often
+overlooked when people build on top of the introduced theory. They are
+definitely things that I didn’t consider to be obvious without the
+benefit of reading the paper.</p><p>The section headings below correspond to the sections in Shannon’s
+paper.</p><h2 id=introduction>Introduction</h2><p>The paper’s introduction states the purpose as:</p><blockquote><p>… [To] extend [the general theory of communication] to include a
+number of new factors, in particular the effect of noise in the channel,
+and the savings possible due to the statistical structure of the
+original message and due to the nature of the final destination of
+information.</p></blockquote><p>The two most salient points from this section are</p><ol type=1><li>the arguments for a logarithmic measure of information, and</li><li>what a measure of information actually measures.</li></ol><p>Logarithmic measures are well suited for measuring information,
+Shannon states, because it’s <em>“nearer to our intuitive feeling as to
+the proper measure.”</em> Additional rationalization exists in the
+paper, but I found this to be the most convincing.</p><p>To intuit, adding a channel that’s equal in capacity to an existing
+channel increases the space of transferrable messages quadratically.
+However our intuition finds it easier to think of this as doubling the
+capacity. The latter is more in line with a logarithmic measure.</p><p>Information is what’s ultimately useful for the recipient. Hence a
+measure of information must be based on the ability gained by the
+recipient upon receipt of the message. Receiving a signal means that the
+recipient can now uniquely identify a message among a large number of
+possible messages, or to reduce the space of possible messages.</p><p><strong>If the destination receives 10 bits of information, that
+means that the recipient is now able to uniquely select a message from
+<span class="math inline">2^{10}</span> possible messages.</strong> Or
+equivalently, the recipient can choose one out of <span class="math inline">2^{10}</span> outcomes.</p><p>Hence the measure of information is based on the ratio of the space
+of possible messages before and after receipt of the information.</p><p>The following sections focus on defining and measuring the space of
+messages.</p><h2 id=part-i-discrete-noiseless-systems>Part I: Discrete Noiseless
+Systems</h2><p>A discrete noiseless channel is one in which a selection of symbols
+from a finite alphabet can be transmitted from a source to a destination
+without loss. It’s not necessarily the case that each symbol consumes an
+equal amount of resources to send. Since the paper pertains to
+electronic communication Shannon states the cost in terms of time.</p><h3 id=discrete-noiseless-channel>1. Discrete Noiseless Channel</h3><p>Capacity of a channel is defined to be the maximum amount of
+information that can be transferred over that channel.</p><p>The capacity <span class="math inline">C</span> of a discrete
+noiseless channel is defined to be:</p><p><span class="math display">C = \lim_{T \to \infty} \frac{\log
+N(T)}{T}</span></p><p>Here <span class="math inline">N(T)</span> is the number of allowed
+messages that take a duration of <span class="math inline">T</span> to
+transmit. Let’s see how this comes about.</p><p>From the prior definition of information, if the recipient receives
+<span class="math inline">C</span> bits of information that means that
+they were able to distinguish between <span class="math inline">2^C</span> possible messages.</p><p>So we start with counting the number of possible messages that
+could’ve been transmitted over <span class="math inline">T</span> time.
+If we denote this count as <span class="math inline">N(T)</span>, then
+we know that there were <span class="math inline">\log{N(T)}</span> bits
+of information transferred during <span class="math inline">T</span>
+time. Hence the rate is:</p><p><span class="math display">R(T) = \frac{\log{N(T)}}{T}</span></p><p>To generalize, we find the limit of <span class="math inline">R(T)</span> as <span class="math inline">T</span>
+tends to <span class="math inline">\infty</span>.</p><p>Suppose the channel can transmit <span class="math inline">n</span>
+symbols <span class="math inline">{S_1, S_2, ..., S_n}</span> each of
+which consume <span class="math inline">{t_1, t_2, ..., t_n}</span>
+units of time. How many possible messages can there be in <span class="math inline">T</span> units of time? I.e. what’s <span class="math inline">N(T)</span>?</p><p>To break this down a bit further, we can ask <em>“how many possible
+messages could there be that end in <span class="math inline">S_i</span>
+during time period <span class="math inline">T</span>?”</em></p><p>Any message that ends in <span class="math inline">S_i</span> can be
+written as a message consisting of arbitrary symbols <span class="math inline">s_1 s_2 ... s_k</span> (where each <span class="math inline">s_i \in S</span>) and ending with the symbol <span class="math inline">S_i</span>. I.e.:</p><p><span class="math display">\underbrace{\underbrace{s_1 s_2 s_3 ...
+s_k}_{T - t_i \text{ seconds}} S_i}_{T \text{ seconds}}</span></p><p>As shown, the length of the <span class="math inline">s_1..s_k</span>
+portion in time must be <span class="math inline">T - t_i</span> since
+the remaining <span class="math inline">t_i</span> time is consumed by
+<span class="math inline">S_i</span>.</p><p>Hence there can be <span class="math inline">N(T - t_i)</span>
+possibilities for the <span class="math inline">s_1 ... s_k</span>
+prefix.</p><p>Thus we can state this problem recursively as follows:</p><p><span class="math display">N(T) = N(T - t_1) + N(T - t_2) + ... + N(T
+- t_n)</span></p><p>… where <span class="math inline">N(T) = 0</span> for all <span class="math inline">T \lt \min(t_1, t_2, ... t_n)</span>.</p><p>Solving this equation involves recognizing that this is a <a href=https://en.wikipedia.org/wiki/Linear_difference_equation>linear
+difference equation</a> (not to be confused with a linear
+<em>differential</em> equation).</p><p><strong>If all <span class="math inline">t_i</span> are
+distinct</strong>, then the characteristic polynomial corresponding to
+this recurrence is:</p><p><span class="math display">X^{-t_1} + X^{-t_2} + ... + X^{-t_n} =
+1</span></p><p>If <span class="math inline">X_0</span> is the largest real solution
+to the characteristic equation, then <span class="math inline">N(T)</span> approaches <span class="math inline">X_0^T</span> for large <span class="math inline">T</span>.</p><p>(I need to check the math here since Shannon just says this is a well
+known result and moves on.)</p><p>So now we have:</p><p><span class="math display">C = \lim_{T \to \infty} \frac{\log
+N(T)}{T} = \log X_0</span></p><h3 id=the-discrete-source-of-information>2. The Discrete Source of
+information</h3><p>This section of the paper focuses on defining what at discrete source
+of information is. For our purposes it can be thought of as a stochastic
+process which produces a stream of symbols.</p><h3 id=discrete-approximations-to-english>3. Discrete Approximations
+to English</h3><p>Here we come to word and sentence generation using stochastic
+processes. In particular Shannon takes us through the progression of
+constructing messages via:</p><ol type=1><li>Zero-order approximation. Symbols are individual letters with the
+addition of a space. Each symbol is selected with equal
+probability.</li><li>First-order approximation. As above, but the relative frequencies
+correspond to actual letter frequencies in English.</li><li>Second-order approximation. As above, but selection of a symbol
+depends on the previous symbol. I.e. follows a digram structure.
+Probabilities correspond to English.</li><li>Third-order approximation. As above, but using trigrams instead of
+digrams.</li><li>First-order word approximation. Start with a list of words and pick
+them at random with probability corresponding to their usage in
+English.</li><li>Second-order word approximation. As above, but selection frequencies
+depend on the previous word. I.e. follows digrams.</li></ol><p>By the time we arrive at second-order word approximations, the
+generated messages start to resemble natural English albeit
+nonsensical.</p><h3 id=graphical-representation-of-a-markoff-process>4. Graphical
+Representation of a Markoff process</h3><p>Identifies the previous stochastic processes as Markoff processes.
+They are represented as a set of states. Each state can
+probabilistically transition to number of states with some probability
+distribution. Each transition emits a symbol.</p><p>If the emitted symbol doesn’t depend on any prior symbol, then we
+only really need one state. It will have a self-edge for each possible
+emitted symbol.</p><figure><img src=bd8dee1827299ffe57cd28ba5ce0c692e6d6b9ac.svg></figure><p>If the emitted symbol depends on the previous symbol, then there will
+be as many states needed as there are symbols. This is the case for
+digrams.</p><figure><img src=f9fa7c718ef9a3a8831a3d06ef1ddfe65a1b342e.svg></figure><p>For trigrams, since they depend on the previous two symbols, require
+<span class="math inline">n^2</span> states.</p><h3 id=ergodic-and-mixed-sources>5. Ergodic and Mixed Sources</h3><blockquote><p>In an ergodic process every sequence produced by the process is the
+same in statistical properties. […] Roughly the ergodic property means
+statistical homogeneity.</p></blockquote><h3 id=choice-uncertainty-and-entropy>6. Choice Uncertainty and
+Entropy</h3><p>Here we come to the part that is most often cited. The definition of
+entropy.</p><p>Shannon lays out three requirements for a measure of information
+<span class="math inline">H(p_1, p_2, .. p_n)</span> which measures the
+information content of a set of outcomes each of whose probability is
+<span class="math inline">p_i</span>:</p><ol type=1><li><span class="math inline">H</span> should be continuous in the <span class="math inline">p_i</span>.</li><li>If all <span class="math inline">p_i</span> are equal, i.e. <span class="math inline">p_i = \frac{1}{n}</span> then <span class="math inline">H</span> should be a monotonic increasing function
+of <span class="math inline">n</span>.</li><li>If a choice be broken down into two choices, then the original <span class="math inline">H</span> should be the weighted sum of the
+individual values of <span class="math inline">H</span>.</li></ol><blockquote><p>The only <span class="math inline">H</span> satisfying the above
+three requirements is of the form: <span class="math display">H = -K
+\sum_{i=1}^n p_i \log p_i</span></p></blockquote><p>The constant <span class="math inline">K</span> is merely a unit of
+measure and can be set to 1.</p><p>Some interesting properties of <span class="math inline">H</span>:</p><ol type=1><li><span class="math inline">H = 0</span> only when all but one <span class="math inline">p_i = 0</span>, and the remaining <span class="math inline">p_j = 1</span>.</li><li>For a given <span class="math inline">n</span>, the maximum <span class="math inline">H</span> is reached when all <span class="math inline">p_i = \frac{1}{n}</span>.</li><li>The joint entropy of two random variables follow the relation: <span class="math display">H(x,y) \le H(x) + H(y)</span> The condition of
+equality implies that <span class="math inline">x</span> and <span class="math inline">y</span> are independent.</li><li>Any change towards equalization of probabilities <span class="math inline">p_i</span> increases <span class="math inline">H</span>. I.e. if <span class="math inline">p_1 \lt
+p_2</span> and <span class="math inline">\delta \lt |p_1 - p_2|</span>,
+then the entropy of <span class="math inline">p_1, p_2, ... p_n</span>
+is lower than the entropy of <span class="math inline">(p_1 + \delta),
+(p_2 - \delta), p_3, ... p_n</span>.</li><li>For two variables <span class="math inline">x,y</span>,there’s
+conditional probability <span class="math inline">p_i(j)</span> of <span class="math inline">y</span> having value <span class="math inline">j</span> assuming <span class="math inline">x</span>
+has value <span class="math inline">i</span>. This is given by: <span class="math display">p_i(j) = \frac{p(i,j)}{\sum_j p(i,j)}</span> The
+corresponding conditional entropy <span class="math inline">H_x(y)</span> is given by: <span class="math display">H_x(y) = - \sum_{i,j} p(i,j) \log p_i(j)</span>
+This conditional entropy then holds the relation: <span class="math display">H(x,y) = H(x) + H_x(y)</span></li><li>From 3 and 5, we have: <span class="math display">H(y) \le
+H_x(y)</span></li></ol><h3 id=the-entropy-of-an-information-source>7. The Entropy of an
+Information Source</h3><p>Let <span class="math inline">S_i</span> be a set of states each of
+which produce some set of outputs <span class="math inline">s_j</span>
+with probability <span class="math inline">p_{i,j}</span>.</p><p>Each state <span class="math inline">S_i</span> has an associated
+entropy <span class="math inline">H_i</span> representing the entropy of
+all possible outputs from that state. I.e.:</p><p><span class="math display">H_i = - \sum_j p_{i,j} \log
+p_{i,j}</span></p><p>Each such state also has a probability of occurrence <span class="math inline">P_i</span>.</p><p>The entropy of the entire information source is the weighted sum of
+the state-wise entropies. The weight being the probability of
+occurrence. Thus:</p><p><span class="math display">\begin{align*}
+H & = \sum_i P_i H_i \\
+& = - \sum_{i,j} P_i p_{i,j} \log p_{i,j}
+\end{align*}</span></p><p>If the source is operating at some definite time rate, then the
+<strong>entropy per second</strong>, or <strong>entropy rate</strong> is
+<em>defined</em> to be:</p><p><span class="math display">H' = \sum_i f_i H_i</span></p><p>where <span class="math inline">f_i</span> is the average frequency
+of state <span class="math inline">i</span>.</p><p>Shannon says “Clearly <span class="math inline">H' = mH</span>
+where <span class="math inline">m</span> is the average number of
+symbols produced per second.” But in order to make the connection you
+need to observe that <span class="math inline">f_i = m \cdot
+P_i</span>.</p><p>This is followed by a derivation that takes some work to follow.
+Let’s go through it step by step:</p><ol type=1><li><p>Suppose that the information source consists of a single state
+and <span class="math inline">n</span> symbols each of which is emitted
+with a probability of <span class="math inline">p_i</span>.</p></li><li><p>Now take a string of length <span class="math inline">N</span>
+emitted by this source. The expected number of occurrences for symbol
+<span class="math inline">s_i</span> is <span class="math inline">N
+p_i</span>.</p></li><li><p>A message of sufficient length where all symbols appear at their
+expected occurrence count would have a probability of occurring of:</p><p><span class="math display">p = \prod_i p_i^{N p_i}</span></p></li></ol><p>From there we see that:</p><p><span class="math display">\begin{align*}
+\log p & = \sum_i N p_i \log p_i \\
+& = N H
+\end{align*}</span></p></div><div class=pagination><a href=/posts/sometimes-its-the-interviewers-who-suck/ class="left arrow">&#8592;</a>
+<a href=/posts/fart-limit/ class="right arrow">&#8594;</a>
+<a href=# class=top>Top</a></div></main><footer><span>Last modified on February 3, 2024</span></footer><script async src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"></script><script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-GSREL2EZ4Y",{anonymize_ip:!1})}</script></body></html>

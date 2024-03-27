@@ -1,0 +1,32 @@
+<!doctype html><html lang=en-us><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>A Good API: g9 &#183; Strong Opinions, Weekly Held</title>
+<link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/scss/fonts.min.css><link rel=stylesheet href=/css/formatting.min.css><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><meta name=msapplication-TileColor content="#da532c"><meta name=theme-color content="#ffffff"><link href rel=alternate type=application/rss+xml title="Strong Opinions, Weekly Held"><link rel=stylesheet href=https://xn--izc.com/_katex/katex.min.505d5f829022bb7b4f24dfee0aa1141cd7bba67afe411d1240335f820960b5c3.css integrity="sha256-UF1fgpAiu3tPJN/uCqEUHNe7pnr+QR0SQDNfgglgtcM="><script src=https://xn--izc.com/_katex/katex.min.dc84b296ec3e884de093158f760fd9d45b6c7abe58b5381557f4e138f46a58ae.js integrity="sha256-3ISyluw+iE3gkxWPdg/Z1Ftser5YtTgVV/ThOPRqWK4="></script><script src=https://xn--izc.com/js/render-katex.min.js async></script></head><body><nav class=nav><div class=nav-container><a href=/><h2 class=nav-title>Strong Opinions, Weekly Held</h2></a><ul><li><a href=/about/me><span>About Me</span></a></li><li><a href=/posts><span>Posts</span></a></li><li><a href=/tags><span>Tags</span></a></li></ul></div></nav><main><div class=post><h1 class=post-title>A Good API: g9</h1><div class=post-info><span>Written by</span>
+Asanka Herath
+<span>on&nbsp;</span><time datetime="2023-08-12 19:29:31 -0400 EDT">August 12, 2023</time>
+|
+<a href=/tags/engineering>#Engineering</a></div><div class="social share"><a href="https://twitter.com/intent/tweet?text=A+Good+API%3A+g9&amp;url=https%3A%2F%2Fxn--izc.com%2Fposts%2Fa-good-api%2F&amp;via=asankah" aria-label="Share on Twitter" target=_blank rel=noopener><img src=/images/twitter.svg alt="Share on Twitter">
+</a><a href="mailto:?body=Via+https%3A%2F%2Ftwitter.com%2Fasankah%0A%0AAdding+more+knobs+doesn%E2%80%99t+make+your+API+more+powerful.%0A%0ARead+more+at+https%3A%2F%2Fxn--izc.com%2Fposts%2Fa-good-api%2F%0A&amp;subject=A+Good+API%3A+g9+-+Strong+Opinions%2C+Weekly+Held" aria-label="Share via Email" target=_blank rel=noopener><img src=/images/mail.svg alt="Share via Email">
+</a><a href=https://xn--izc.com/posts/a-good-api/ aria-label="Permanent link to post"><img src=/images/link-2.svg alt="Permanent link to post"></a></div><p>Once in a while an API comes around that makes me stop and and look
+at what I’m doing.</p><p>Like many aspects of design, when it comes to APIs, what is not there
+matters as much as what is. Engineers like to fiddle around with things.
+So they like to add knobs and dials for fiddling around with things.</p><p>People say platitudes like good API design has to do with balancing
+flexibility and simplicity. People throw around the word “simplicity” as
+if people just need to be reminded of it and all will be well. “Simplify
+your API” isn’t the same as “put on sunscreen.” It takes work. Lots of
+work. Intentional work with the goal of simplifying because there is
+little chance you are going to arrive at the right solution by
+accident.</p><p>An example of a good API is <a href=https://github.com/bijection/g9>g9</a>.</p><p>Before you look at it, think about how you would construct an API
+that:</p><ul><li>… allows you to draw a diagram on an HTML canvas – perhaps with a
+limited set of drawing primitives.</li><li>… once the diagram is rendered, allows users to manipulate the
+diagram by dragging points around.</li></ul><p>There are millions of ways of designing this. But g9’s approach takes
+the cake. You can take a shortcut and have a look at their <a href=https://github.com/bijection/g9#docs>API documentation</a> or
+their <a href=https://omrelli.ug/g9/gallery/>examples</a>. But
+basically it is this:</p><ol type=1><li>Tell us what your mutable parameters are.</li><li>Draw your diagram with based on the set of parameters.</li><li>…</li></ol><p>That’s it. That’s all there is.</p><p>Now, you can sit there and come up with a million knobs that you
+claim makes the API more powerful. And you might be right – you’ll be
+able to do more things with the API with the knobs you add.</p><p>But when you start treating simplicity as a feature, you’ll notice
+that adding knobs isn’t the same as making a more powerful API. All
+those additional knobs must be essentially invisible for people who
+don’t need them. Otherwise every addtional knob will waste more of your
+users’ time and energy for nothing.</p><p>The power of an API comes from letting users to express more with
+less.</p></div><div class=pagination><a href=/posts/the-point-of-a-strategy/ class="left arrow">&#8592;</a>
+<a href=/posts/pillars-are-governance-structures/ class="right arrow">&#8594;</a>
+<a href=# class=top>Top</a></div></main><footer><span>Last modified on February 3, 2024</span></footer><script async src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"></script><script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-GSREL2EZ4Y",{anonymize_ip:!1})}</script></body></html>
