@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strong Opinions, Weekly Held</title><link>https://xn--izc.com/</link><description>Recent content on Strong Opinions, Weekly Held</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Asanka Herath</copyright><lastBuildDate>Sat, 23 Mar 2024 17:59:29 -0400</lastBuildDate><atom:link href="https://xn--izc.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Secret Life of Systems</title><link>https://xn--izc.com/posts/secret-life-of-systems/</link><pubDate>Sat, 23 Mar 2024 17:59:29 -0400</pubDate><guid>https://xn--izc.com/posts/secret-life-of-systems/</guid><description>&lt;p>Lifecycles of software systems that solve real world problems can be
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strong Opinions, Weekly Held</title><link>https://xn--izc.com/</link><description>Recent content on Strong Opinions, Weekly Held</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Asanka Herath</copyright><lastBuildDate>Wed, 22 May 2024 00:00:00 -0400</lastBuildDate><atom:link href="https://xn--izc.com/index.xml" rel="self" type="application/rss+xml"/><item><title>When Your Feature Gets Someone Hurt</title><link>https://xn--izc.com/posts/when-your-feature-gets-someone-hurt/</link><pubDate>Wed, 22 May 2024 00:00:00 -0400</pubDate><guid>https://xn--izc.com/posts/when-your-feature-gets-someone-hurt/</guid><description>If Google Photos incorrectly tags a photo, what’s the worst that
+could happen?</description><content:encoded><figure><img src="./album-of-ruins.jpeg" alt="An old photo album containing pictures of ruins. (Generated with Gemini)"/><figcaption aria-hidden="true">An old photo album containing pictures of
+ruins. (Generated with Gemini)</figcaption></figure><p>A story making the rounds recently opened some disturbing
+implications. The New York Times ran the story as<a href="https://www.nytimes.com/2024/03/27/technology/israel-facial-recognition-gaza.html">Israel
+Deploys Expansive Facial Recognition Program in Gaza</a> which says in
+part:</p><blockquote><p>To supplement Corsight’s technology, Israeli officers used Google
+Photos, the free photo sharing and storage service from Google, three
+intelligence officers said. By uploading a database of known persons to
+Google Photos, Israeli officers could use the service’s photo search
+function to identify people.</p></blockquote><p>Whether this particular use of Google Photos is compliant with the
+usage policy is irrelevant. Those are concerns for PR firms and lawyers.
+Google Photos is a consumer product. People use it for tagging their
+family and friends in their vacation photos. The product works pretty
+well for this purpose.</p><p>The humanity behind the product developers and those who are
+unexpectedly and unwittingly blindfolded and led away to some unkonwn
+prison somewhere is an entirely different matter.</p><p>The intended usage of a product – especially software products –
+matters greatly. People responsible for these features decide its fit
+for purpose based on this intended usage. From their point of view, a
+mislabelled photo is an inconvenience; possibly a funny one. The error
+thresholds were never decided based on whether someone could lose their
+life for it.</p><p>Some developer wrote a conditional branch without giving it a second
+thought. And now it decides the fate of a human life. That’s quite the
+turn of events.</p><p>There’s no moral here. People are going to use your products in ways
+that you never intended. I bet the people who designed coins have no
+idea the extents to which those coins were flipped for. And so it
+goes.</p></content:encoded></item><item><title>Secret Life of Systems</title><link>https://xn--izc.com/posts/secret-life-of-systems/</link><pubDate>Sat, 23 Mar 2024 17:59:29 -0400</pubDate><guid>https://xn--izc.com/posts/secret-life-of-systems/</guid><description>&lt;p>Lifecycles of software systems that solve real world problems can be
 broken down into distinct phases based on where it is with respect to
 the problem and the eventual solution.&lt;/p>
 &lt;p>This article presents a taxonomy of these phases that should help you
