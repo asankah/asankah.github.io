@@ -1,15 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strong Opinions, Weekly Held</title><link>https://xn--izc.com/</link><description>Recent content on Strong Opinions, Weekly Held</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Asanka Herath</copyright><lastBuildDate>Fri, 12 Jul 2024 10:56:15 -0400</lastBuildDate><atom:link href="https://xn--izc.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Proof of Work</title><link>https://xn--izc.com/posts/proof-of-work/</link><pubDate>Fri, 12 Jul 2024 10:56:15 -0400</pubDate><guid>https://xn--izc.com/posts/proof-of-work/</guid><description>Proof-of-work refers to a set of methods by which some entity (a person or a computational system) offers proof that the entity performed a substantial amount of work. Hereafter, I’ll assume that you—dear reader—are somewhat familiar with the concept.
-Measures like proof-of-work (PoW) are a necessity in intentionally slowing down otherwise free and uncontrolled operations. PoW’s most extensive critique is the resulting high resource consumption that lacks a corresponding commensurate positive contribution.</description><content:encoded><div class="smaller"><p><a href="https://en.wikipedia.org/wiki/Proof_of_work">Proof-of-work</a>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strong Opinions, Weekly Held</title><link>https://xn--izc.com/</link><description>Recent content on Strong Opinions, Weekly Held</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Asanka Herath</copyright><lastBuildDate>Fri, 12 Jul 2024 10:56:15 -0400</lastBuildDate><atom:link href="https://xn--izc.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Proof of Work</title><link>https://xn--izc.com/posts/proof-of-work/</link><pubDate>Fri, 12 Jul 2024 10:56:15 -0400</pubDate><guid>https://xn--izc.com/posts/proof-of-work/</guid><description>Working with a poorly thought-out, or overengineered technology
+stack, or an overly bureaucratic organization is &lt;em>also a form of
+proof-of-work&lt;/em>.</description><content:encoded><div class="smaller"><p><a href="https://en.wikipedia.org/wiki/Proof_of_work">Proof-of-work</a>
 refers to a set of methods by which some entity (a person or a
 computational system) offers proof that the entity performed a
 substantial amount of work. Hereafter, I’ll assume that you—dear
 reader—are somewhat familiar with the concept.</p></div><p>Measures like proof-of-work (PoW) are a necessity in<strong>intentionally slowing down</strong> otherwise free and
 uncontrolled operations. PoW’s most extensive critique is the resulting
 high resource consumption that lacks a corresponding commensurate
-positive contribution.</p><p>Working with a poorly thought-out, or overengineered technology
+positive contribution.</p><div class="quotable"><p>Working with a poorly thought-out, or overengineered technology
 stack, or an overly bureaucratic organization is<em>also a form of
-proof-of-work</em>. This claim seems harsh, but even the intentionality
-of PoW can be observed in organizations.</p><p>The first tool people reach for wherever some form of mismatched
+proof-of-work</em>.</p></div><p>This claim seems harsh, but even the intentionality of PoW can be
+observed in organizations.</p><p>The first tool people reach for wherever some form of mismatched
 trust exists is to introduce bureaucracy. This approach makes sense
 because what better way to prevent abuse of authority than to make the
 person at a lower trust level ask for permission from someone with a
@@ -21,9 +22,8 @@ activity now involves debilitating bureaucratic overhead. Proliferation
 of approvals also have the effect of piling on the responsibility of
 approving upon people who are either unqualified to sufficiently assess
 the request or simply have no time to go through each in detail.</p><p>Unless each approval gate adds substantial value or prevents harm,
-each such approval decays into proof-of-work – the only point of getting
-the approval is to show that you have gone through the work of getting
-the approval.</p><p>Bad frameworks and tech stacks have the same effect. Onboarding onto
+each such approval decays into proof-of-work –</p><div class="quotable"><p>the only point of getting the approval is to show that you have gone
+through the work of getting the approval.</p></div><p>Bad frameworks and tech stacks have the same effect. Onboarding onto
 such a stack is a time-wasting nightmare where people learn
 non-transferrable skills that they will most likely only use once. Each
 step in getting something done involves putting together poorly
