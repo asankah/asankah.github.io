@@ -1,32 +1,221 @@
-<!doctype html><html lang=en-us><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>A Good API: g9 &#183; Strong Opinions, Weekly Held</title>
-<link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/scss/fonts.min.css><link rel=stylesheet href=/css/formatting.min.css><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><meta name=msapplication-TileColor content="#da532c"><meta name=theme-color content="#ffffff"><link href rel=alternate type=application/rss+xml title="Strong Opinions, Weekly Held"><link rel=stylesheet href=https://xn--izc.com/_katex/katex.min.505d5f829022bb7b4f24dfee0aa1141cd7bba67afe411d1240335f820960b5c3.css integrity="sha256-UF1fgpAiu3tPJN/uCqEUHNe7pnr+QR0SQDNfgglgtcM="><script src=https://xn--izc.com/_katex/katex.min.dc84b296ec3e884de093158f760fd9d45b6c7abe58b5381557f4e138f46a58ae.js integrity="sha256-3ISyluw+iE3gkxWPdg/Z1Ftser5YtTgVV/ThOPRqWK4="></script><script src=https://xn--izc.com/js/render-katex.min.js async></script></head><body><nav class=nav><div class=nav-container><a href=/><h2 class=nav-title>Strong Opinions, Weekly Held</h2></a><ul><li><a href=/about/me><span>About Me</span></a></li><li><a href=/posts><span>Posts</span></a></li><li><a href=/tags><span>Tags</span></a></li></ul></div></nav><main><div class=post><h1 class=post-title>A Good API: g9</h1><div class=post-info><span>Written by</span>
-Asanka Herath
-<span>on&nbsp;</span><time datetime="2023-08-12 19:29:31 -0400 EDT">August 12, 2023</time>
-|
-<a href=/tags/engineering>#Engineering</a></div><div class="social share"><a href="https://twitter.com/intent/tweet?text=A+Good+API%3A+g9&amp;url=https%3A%2F%2Fxn--izc.com%2Fposts%2Fa-good-api%2F&amp;via=asankah" aria-label="Share on Twitter" target=_blank rel=noopener><img src=/images/twitter.svg alt="Share on Twitter">
-</a><a href="mailto:?body=Via+https%3A%2F%2Ftwitter.com%2Fasankah%0A%0AAdding+more+knobs+doesn%E2%80%99t+make+your+API+more+powerful.%0A%0ARead+more+at+https%3A%2F%2Fxn--izc.com%2Fposts%2Fa-good-api%2F%0A&amp;subject=A+Good+API%3A+g9+-+Strong+Opinions%2C+Weekly+Held" aria-label="Share via Email" target=_blank rel=noopener><img src=/images/mail.svg alt="Share via Email">
-</a><a href=https://xn--izc.com/posts/a-good-api/ aria-label="Permanent link to post"><img src=/images/link-2.svg alt="Permanent link to post"></a></div><p>Once in a while an API comes around that makes me stop and and look
-at what I’m doing.</p><p>Like many aspects of design, when it comes to APIs, what is not there
-matters as much as what is. Engineers like to fiddle around with things.
-So they like to add knobs and dials for fiddling around with things.</p><p>People say platitudes like good API design has to do with balancing
-flexibility and simplicity. People throw around the word “simplicity” as
-if people just need to be reminded of it and all will be well. “Simplify
-your API” isn’t the same as “put on sunscreen.” It takes work. Lots of
-work. Intentional work with the goal of simplifying because there is
-little chance you are going to arrive at the right solution by
-accident.</p><p>An example of a good API is <a href=https://github.com/bijection/g9>g9</a>.</p><p>Before you look at it, think about how you would construct an API
-that:</p><ul><li>… allows you to draw a diagram on an HTML canvas – perhaps with a
-limited set of drawing primitives.</li><li>… once the diagram is rendered, allows users to manipulate the
-diagram by dragging points around.</li></ul><p>There are millions of ways of designing this. But g9’s approach takes
-the cake. You can take a shortcut and have a look at their <a href=https://github.com/bijection/g9#docs>API documentation</a> or
-their <a href=https://omrelli.ug/g9/gallery/>examples</a>. But
-basically it is this:</p><ol type=1><li>Tell us what your mutable parameters are.</li><li>Draw your diagram with based on the set of parameters.</li><li>…</li></ol><p>That’s it. That’s all there is.</p><p>Now, you can sit there and come up with a million knobs that you
-claim makes the API more powerful. And you might be right – you’ll be
-able to do more things with the API with the knobs you add.</p><p>But when you start treating simplicity as a feature, you’ll notice
-that adding knobs isn’t the same as making a more powerful API. All
-those additional knobs must be essentially invisible for people who
-don’t need them. Otherwise every addtional knob will waste more of your
-users’ time and energy for nothing.</p><p>The power of an API comes from letting users to express more with
-less.</p></div><div class=pagination><a href=/posts/the-point-of-a-strategy/ class="left arrow">&#8592;</a>
-<a href=/posts/pillars-are-governance-structures/ class="right arrow">&#8594;</a>
-<a href=# class=top>Top</a></div></main><footer><span>Last modified on February 3, 2024</span></footer><script async src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-GSREL2EZ4Y")}</script></body></html>
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>A Good API: g9</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet" href="/styles/katex.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link rel="stylesheet" href="/styles/rz5WVeD2De.css">
+    <meta name="generator" content="Pandoc + Eleventy">
+  </head>
+  <body>
+    <header class="container">
+      <style>
+        @scope {
+          nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            column-gap: 1em;
+            color: #333;
+            a {
+              color: #333;
+            }
+            h1 {
+              font-size: 16pt;
+              font-weight: 600;
+            }
+            h2 {
+              font-size: 12pt;
+            }
+            * {
+              padding: 0;
+              flex-basis: max-content;
+              align-self: center;
+              margin-top: 1em;
+              margin-bottom: 1em;
+            }
+            .fill {
+              flex-grow: 1;
+            }
+          }
+          :scope {
+            box-shadow: 0 0 6px #555;
+          }
+        }
+      </style>
+      <nav class="navlike">
+        <h1><a href="/">Strong Opinions Weekly Held</a></h1>
+        <span class="fill"></span>
+        <h2><a href="/">Home</a></h2>
+        <h2><a href="/about/me">About</a></h2>
+        <h2><a href="/tags">Tags</a></h2>
+      </nav>
+    </header>
+    <main>
+      <article class="container">
+        <header>
+          <h1>A Good API: g9</h1>
+          <div class="navlike">
+            <span class="post-date">
+          Posted on August 12, 2023</span>
+            <span class="fill"></span>
+            <span class="tag-link">
+    <a href="/tags/engineering/">#Engineering</a>
+</span>
+          </div>
+        </header>
+        <p>Once in a while an API comes around that makes me stop and and look
+          at what I’m doing.</p>
+        <p>Like many aspects of design, when it comes to APIs, what is not there
+          matters as much as what is. Engineers like to fiddle around with things.
+          So they like to add knobs and dials for fiddling around with things.</p>
+        <p>People say platitudes like good API design has to do with balancing
+          flexibility and simplicity. People throw around the word “simplicity” as
+          if people just need to be reminded of it and all will be well. “Simplify
+          your API” isn’t the same as “put on sunscreen.” It takes work. Lots of
+          work. Intentional work with the goal of simplifying because there is
+          little chance you are going to arrive at the right solution by
+          accident.</p>
+        <p>An example of a good API is <a href="https://github.com/bijection/g9">g9</a>.</p>
+        <p>Before you look at it, think about how you would construct an API
+          that:</p>
+        <ul>
+          <li>… allows you to draw a diagram on an HTML canvas – perhaps with a
+            limited set of drawing primitives.</li>
+          <li>… once the diagram is rendered, allows users to manipulate the
+            diagram by dragging points around.</li>
+        </ul>
+        <p>There are millions of ways of designing this. But g9’s approach takes
+          the cake. You can take a shortcut and have a look at their <a href="https://github.com/bijection/g9#docs">API documentation</a> or
+          their <a href="https://omrelli.ug/g9/gallery/">examples</a>. But
+          basically it is this:</p>
+        <ol type="1">
+          <li>Tell us what your mutable parameters are.</li>
+          <li>Draw your diagram with based on the set of parameters.</li>
+          <li>…</li>
+        </ol>
+        <p>That’s it. That’s all there is.</p>
+        <p>Now, you can sit there and come up with a million knobs that you
+          claim makes the API more powerful. And you might be right – you’ll be
+          able to do more things with the API with the knobs you add.</p>
+        <p>But when you start treating simplicity as a feature, you’ll notice
+          that adding knobs isn’t the same as making a more powerful API. All
+          those additional knobs must be essentially invisible for people who
+          don’t need them. Otherwise every addtional knob will waste more of your
+          users’ time and energy for nothing.</p>
+        <p>The power of an API comes from letting users to express more with
+          less.</p>
+        <div class="lastmodified">
+          <p>Last modified: August 12, 2023</p>
+        </div>
+      </article>
+    </main>
+    <footer class="container">
+      <style>
+        @scope {
+          :scope {
+            box-shadow: 0 0 6px #555;
+          }
+        }
+      </style>
+      <h2>More posts from this blog ...</h2>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/ephemeral-fingerprinting/">Ephemeral Fingerprinting On The Web</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on April 1, 2020</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/privacy/">#Privacy</a>
+</span>
+        </div>
+        <div>
+          <div class="post-summary">
+            <p>Any ephemeral low-entropy web observable property whose changes are
+              concurrently observable by multiple sites can lead to cross site identity
+              joining.</p>
+            <p>This method of identity joining does not require coordination between
+              multiple first parties. A single third party embedded within multiple first
+              parties can also use this method.</p>
+          </div>
+          <p class="post-more"><a href="/posts/ephemeral-fingerprinting/">Read more …</a></p>
+        </div>
+      </div>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/shannon-paper/">Shannon Paper</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on March 26, 2021</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/math/">#Math</a>
+</span>
+        </div>
+        <div>
+          <div class="post-summary">
+            <p>Claude Shannon's <em>A mathematical theory of communication</em> is an oft cited
+              classic in information theory. Let's dive in and try to tease apart the
+              &quot;why&quot;s that are often overlooked when people build on top of the introduced
+              theory. They are definitely things that I didn't consider to be obvious
+              without the benefit of reading the paper.</p>
+          </div>
+          <p class="post-more"><a href="/posts/shannon-paper/">Read more …</a></p>
+        </div>
+      </div>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/inktober-wild/">Inktober - Wild</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on January 13, 2022</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/inktober/">#Inktober</a>
+</span>
+        </div>
+      </div>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/when-your-feature-gets-someone-hurt/">When Your Feature Gets Someone Hurt</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on May 22, 2024</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/culture/">#Culture</a>
+</span>
+        </div>
+        <div>
+          <div class="post-summary">
+            <p>If Google Photos incorrectly tags a photo, what's the worst that could happen?</p>
+          </div>
+          <p class="post-more"><a href="/posts/when-your-feature-gets-someone-hurt/">Read more …</a></p>
+        </div>
+      </div>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/things-you-can-do-with-nvim-and-vscode/">Things You Can Do With Neovim and Vscode That You Can&#39;t Do With Neovim Alone</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on September 19, 2020</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/tools/">#Tools</a>
+</span>
+          <span class="tag-link">
+    <a href="/tags/vim/">#Vim</a>
+</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

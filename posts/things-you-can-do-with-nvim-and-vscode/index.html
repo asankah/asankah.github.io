@@ -1,99 +1,361 @@
-<!doctype html><html lang=en-us><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Things You Can Do With Neovim and Vscode That You Can't Do With Neovim Alone &#183; Strong Opinions, Weekly Held</title>
-<link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/scss/fonts.min.css><link rel=stylesheet href=/css/formatting.min.css><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><meta name=msapplication-TileColor content="#da532c"><meta name=theme-color content="#ffffff"><link href rel=alternate type=application/rss+xml title="Strong Opinions, Weekly Held"><link rel=stylesheet href=https://xn--izc.com/_katex/katex.min.505d5f829022bb7b4f24dfee0aa1141cd7bba67afe411d1240335f820960b5c3.css integrity="sha256-UF1fgpAiu3tPJN/uCqEUHNe7pnr+QR0SQDNfgglgtcM="><script src=https://xn--izc.com/_katex/katex.min.dc84b296ec3e884de093158f760fd9d45b6c7abe58b5381557f4e138f46a58ae.js integrity="sha256-3ISyluw+iE3gkxWPdg/Z1Ftser5YtTgVV/ThOPRqWK4="></script><script src=https://xn--izc.com/js/render-katex.min.js async></script></head><body><nav class=nav><div class=nav-container><a href=/><h2 class=nav-title>Strong Opinions, Weekly Held</h2></a><ul><li><a href=/about/me><span>About Me</span></a></li><li><a href=/posts><span>Posts</span></a></li><li><a href=/tags><span>Tags</span></a></li></ul></div></nav><main><div class=post><h1 class=post-title>Things You Can Do With Neovim and Vscode That You Can't Do With Neovim Alone</h1><div class=post-info><span>Written by</span>
-Asanka Herath
-<span>on&nbsp;</span><time datetime="2020-09-19 00:00:00 -0400 EDT">September 19, 2020</time>
-|
-<a href=/tags/tools>#Tools</a>
-<a href=/tags/vim>#Vim</a></div><div class="social share"><a href="https://twitter.com/intent/tweet?text=Things+You+Can+Do+With+Neovim+and+Vscode+That+You+Can%27t+Do+With+Neovim+Alone&amp;url=https%3A%2F%2Fxn--izc.com%2Fposts%2Fthings-you-can-do-with-nvim-and-vscode%2F&amp;via=asankah" aria-label="Share on Twitter" target=_blank rel=noopener><img src=/images/twitter.svg alt="Share on Twitter">
-</a><a href="mailto:?body=Via+https%3A%2F%2Ftwitter.com%2Fasankah%0A%0AThis+is+the+third+time+I%E2%80%99ve+tried+in+earnest+to+switch+to+VSCode+from+Vim+%28or+Neovim+in+my+case%29+for+reasons+not+all+of+which+are+relevant+to+this+post.+But+I+love+Vim+style+modal+editing+and+I%E2%80%99ve+grown+accustomed+to+some+features+that+aren%E2%80%99t+present+or+not+well+emulated+in+VSCodeVim.%0AEnter+VSCode+Neovim.+I+was+intrigued+by+their+claim+to+integrate+Neovim+instead+of+trying+to+emulate+Vim.%0A%0ARead+more+at+https%3A%2F%2Fxn--izc.com%2Fposts%2Fthings-you-can-do-with-nvim-and-vscode%2F%0A&amp;subject=Things+You+Can+Do+With+Neovim+and+Vscode+That+You+Can%27t+Do+With+Neovim+Alone+-+Strong+Opinions%2C+Weekly+Held" aria-label="Share via Email" target=_blank rel=noopener><img src=/images/mail.svg alt="Share via Email">
-</a><a href=https://xn--izc.com/posts/things-you-can-do-with-nvim-and-vscode/ aria-label="Permanent link to post"><img src=/images/link-2.svg alt="Permanent link to post"></a></div><p>This is the third time I’ve tried in earnest to switch to VSCode from
-Vim (or Neovim in my case) for reasons not all of which are relevant to
-this post. But I love Vim style modal editing and I’ve grown accustomed
-to some features that aren’t present or not well emulated in <a href=https://github.com/VSCodeVim/Vim>VSCodeVim</a>.</p><p>Enter <a href=https://github.com/asvetliakov/vscode-neovim>VSCode
-Neovim</a>. I was intrigued by their claim to integrate Neovim instead
-of trying to emulate Vim. After going through the code a bit I thought
-this extension alone warranted a new attempt at switching to VSCode. So
-far it’s going great.</p><h2 id=how-vscode-neovim-works>How VSCode Neovim Works</h2><p>Here’s the gist of how this extension works. Feel free to skip to the
-good stuff below but this section is good background information for
-understanding <em>why</em> it works the way it does.</p><ol type=1><li><p><strong>Invokes an embedded Neovim instance.</strong></p><p>Code for this is in the <code>main_controller.ts</code> (<a href=https://github.com/asvetliakov/vscode-neovim/blob/master/src/main_controller.ts>linky</a>)
-if you are curious about how exactly it’s implemented and the
-commandline options that are passed in.</p><p>You’ll also notice that the code invokes
-<code>--cmd source ${neovimSupportScriptPath}</code> which runs
-<code>vim/vscode-neovim.vim</code> (<a href=https://github.com/asvetliakov/vscode-neovim/blob/master/vim/vscode-neovim.vim>linky</a>)
-before running your <code>init.vim</code> file. This script is what sets
-up the <code>g:vscode</code> flag and sources all the other
-<code>vscode-*.vim</code> scripts except
-<code>vscode-options.vim</code>. The latter runs <em>after</em> your
-<code>init.vim</code> in order to force some settings that would
-otherwise break the extension or cause Neovim to be confused.</p></li></ol><p>So far this is pretty standard fare for how Neovim would be embedded
-for a custom UI. But things get a bit interesting from the next
-step.</p><ol start=2 type=1><li><p><strong>Creates a new Neovim buffer and window corresponding to a
-VSCode editor.</strong></p><p>The buffer thus created is a plain text buffer without any bells or
-whistles. Contents of the buffer comes from VSCode<a href=#fn1 class=footnote-ref id=fnref1 role=doc-noteref><sup>1</sup></a>.
-VSCodeNeovim synchronizes the content between the Neovim buffer and the
-VSCode editor. Thus the relationship between the contents and the
-corresponding file on disk is mediated through VSCode. This is a key
-difference between other custom UIs and this one and one that opens many
-possibilities.</p><p>VSCodeNeovim defers to VSCode for handling insert mode. VSCode
-handles autocompletion and other assistive features. You’ll have to get
-used to your insert mode customizations not working, or replicating that
-with VSCode keyboard mapping customizations. When exiting insert mode
-the extension asynchronously synchronizes the buffer contents – which at
-this point would include the changes that were introduced – with Neovim.
-The code for synchronizing the VSCode editor contents and the Neovim
-buffer is in <code>buffer_manager.ts</code> (<a href=https://github.com/asvetliakov/vscode-neovim/blob/master/src/buffer_manager.ts>linky</a>)
-which is also a good place to look if you want to know the details about
-buffer options that are being set.</p></li></ol><p>Of course I’m eliding lots of detail here including integrations for
-other areas of UI. But I think this captures the pertinent details. The
-extension is a pretty impressive piece of work which is well worth a
-gander. Now on to the good stuff.</p><h2 id=responsive-neovim-experience-over-a-laggy-ssh-connection>Responsive
-Neovim Experience Over A laggy SSH Connection</h2><p>This gets to the reason why I’m trying to move to VSCode in the first
-place. I work on a project consisting of thousands of C++ source files.
-My home-office doesn’t have enough hardware to do regular builds, or in
-fact any build at all. The beefy machines are in a remote location
-accessible via SSH.</p><p>I’ve been using Neovim over SSH for a while, but the latency really
-bothers me. And no, neither SCP nor SSHFS scratches this itch because I
-won’t have access to language smarts like <code>clangd</code> which
-require access to all the source files and some build tooling.</p><p><a href=https://code.visualstudio.com/docs/remote/remote-overview>VSCode
-Remote Development</a> was a nearly perfect answer with the exception
-that VSCodeVim didn’t quite have all the functionality I needed.
-VSCodeNeovim addresses that last piece of the puzzle.</p><p>VSCode + Remote SSH + VSCodeNeovim + Neovim gives me:</p><figure><img src=8e18f57c165b71ad9bc1db511f5a219309015a0d.svg></figure><ul><li>On the remote machine:<ul><li>Source files.</li><li>Build tooling.</li><li><code>clangd</code> process invoked via
-<code>vscode-remote</code>.</li></ul></li><li>On the local machine:<ul><li>VSCode.</li><li>VSCodeNeovim.<ul><li>Neovim instance embedded by VSCodeNeovim.<ul><li>Neovim plug-ins and normal mode keybindings.</li></ul></li></ul></li></ul></li></ul><p>Since the embedded Neovim instance is local the editors are super
-responsive. Completions via <code>clangd</code> is still laggy as one
-might expect. But that’s something I’m willing to live with.</p><h2 id=proportional-fonts-with-neovim>Proportional Fonts With
-Neovim</h2><p>Okay, so why would anyone actually want this? Turns out <a href="https://www.google.com/search?q=proportional+fonts+for+coding">I’m
-not the only one</a>. In my case I prefer monospace for regular code,
-but I’d much much rather read comments and prose in proportional font.
-Also, I now spend a lot of my time writing Markdown with LatexMath.
-Staring at monospaced prose all day is not my cup of tea.</p><p>This is what it looks like when I’m editing this post in VSCode (in
-Markdown).</p><figure><img src=images/proportional-font-markdown.png alt="Screenshot of VSCode editing Markdown in proportional font"><figcaption aria-hidden=true>Screenshot of VSCode editing Markdown in
-proportional font</figcaption></figure><p>The best part is that I can use my familiar Vim/Neovim keybindings
-and modal editing. I had to make a couple of customizations and I only
-have this set up for Markdown. But it works fairly well. One gotcha is
-that the cursor jumps horizontally when moving the cursor up or down
-since the columns are no longer neatly aligned.</p><h3 id=monospace-code-with-proportional-comments>Monospace Code With
-Proportional Comments?</h3><p>What I really want isn’t proportional fonts everywhere. Rather I only
-want proportional fonts for prose. In code, this would take the form of
-comments.</p><p>Unfortunately, VSCode doesn’t support changing the font for specific
-syntactic tokens or scopes. That would’ve been ideal because it would
-let me configure things so that comments are in proportional font while
-the rest is in monospace. Also in the case of Markdown, I’d be able to
-make everything proportional except for inline code and fenced code
-blocks. Alas we are not quite there yet. Several feature requests
-already exist<a href=#fn2 class=footnote-ref id=fnref2 role=doc-noteref><sup>2</sup></a>, but hasn’t seen much activity.</p><h2 id=takeaways>Takeaways</h2><ol type=1><li>VSCodeNeovim is a functional replacement for the avid Neovim or
-perhaps Vim user who wants it both ways. Lots of caveats exist including
-the fact that Neovim mode only really works inside editor windows.</li><li>VSCodeNeovim + “Remote SSH” is an awesome combination for editing
-remote files using Neovim with the latency of a local Neovim
-instance.</li><li>You can use proportional fonts with VSCodeNeovim for super double
-awesomeness.</li></ol><aside id=footnotes class="footnotes footnotes-end-of-document" role=doc-endnotes><hr><ol><li id=fn1><p>Not quite the whole story because it’s possible a buffer
-be created inside the Neovim instance and have it be mirrored in a
-VSCode editor. But that’s probably not what you’ll be using on a regular
-basis.<a href=#fnref1 class=footnote-back role=doc-backlink>↩︎</a></p></li><li id=fn2><p>A quick search in the VSCode repository <a href="https://github.com/microsoft/vscode/search?q=tokenColorCustomizations+font+name">with
-this query</a> yields several issues that request for pretty much the
-same thing: Allow setting <code>fontName</code> in
-<code>tokenColorCustomizations</code>. There’s also <a href=https://github.com/deepanrajkumar/Italic-and-Ligature>this
-curious experiment</a> which patches in a different font for italics so
-that you can use the existing <code>fontStyle: "italic"</code> option in
-<code>tokenColorCustomizations</code> to switch fonts.<a href=#fnref2 class=footnote-back role=doc-backlink>↩︎</a></p></li></ol></aside></div><div class=pagination><a href=/posts/why-strong-opinions-weakly-held/ class="left arrow">&#8592;</a>
-<a href=/posts/visualizing-people/ class="right arrow">&#8594;</a>
-<a href=# class=top>Top</a></div></main><footer><span>Last modified on February 3, 2024</span></footer><script async src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-GSREL2EZ4Y")}</script></body></html>
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Things You Can Do With Neovim and Vscode That You Can&#39;t Do With Neovim Alone</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet" href="/styles/katex.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link rel="stylesheet" href="/styles/rz5WVeD2De.css">
+    <meta name="generator" content="Pandoc + Eleventy">
+  </head>
+  <body>
+    <header class="container">
+      <style>
+        @scope {
+          nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            column-gap: 1em;
+            color: #333;
+            a {
+              color: #333;
+            }
+            h1 {
+              font-size: 16pt;
+              font-weight: 600;
+            }
+            h2 {
+              font-size: 12pt;
+            }
+            * {
+              padding: 0;
+              flex-basis: max-content;
+              align-self: center;
+              margin-top: 1em;
+              margin-bottom: 1em;
+            }
+            .fill {
+              flex-grow: 1;
+            }
+          }
+          :scope {
+            box-shadow: 0 0 6px #555;
+          }
+        }
+      </style>
+      <nav class="navlike">
+        <h1><a href="/">Strong Opinions Weekly Held</a></h1>
+        <span class="fill"></span>
+        <h2><a href="/">Home</a></h2>
+        <h2><a href="/about/me">About</a></h2>
+        <h2><a href="/tags">Tags</a></h2>
+      </nav>
+    </header>
+    <main>
+      <article class="container">
+        <header>
+          <h1>Things You Can Do With Neovim and Vscode That You Can&#39;t Do With Neovim Alone</h1>
+          <div class="navlike">
+            <span class="post-date">
+          Posted on September 19, 2020</span>
+            <span class="fill"></span>
+            <span class="tag-link">
+    <a href="/tags/tools/">#Tools</a>
+</span>
+            <span class="tag-link">
+    <a href="/tags/vim/">#Vim</a>
+</span>
+          </div>
+        </header>
+        <p>This is the third time I’ve tried in earnest to switch to VSCode from
+          Vim (or Neovim in my case) for reasons not all of which are relevant to
+          this post. But I love Vim style modal editing and I’ve grown accustomed
+          to some features that aren’t present or not well emulated in <a href="https://github.com/VSCodeVim/Vim">VSCodeVim</a>.</p>
+        <p>Enter <a href="https://github.com/asvetliakov/vscode-neovim">VSCode
+            Neovim</a>. I was intrigued by their claim to integrate Neovim instead
+          of trying to emulate Vim. After going through the code a bit I thought
+          this extension alone warranted a new attempt at switching to VSCode. So
+          far it’s going great.</p>
+        <h2 id="how-vscode-neovim-works">How VSCode Neovim Works</h2>
+        <p>Here’s the gist of how this extension works. Feel free to skip to the
+          good stuff below but this section is good background information for
+          understanding <em>why</em> it works the way it does.</p>
+        <ol type="1">
+          <li>
+            <p><strong>Invokes an embedded Neovim instance.</strong></p>
+            <p>Code for this is in the <code>main_controller.ts</code> (<a href="https://github.com/asvetliakov/vscode-neovim/blob/master/src/main_controller.ts">linky</a>)
+              if you are curious about how exactly it’s implemented and the
+              commandline options that are passed in.</p>
+            <p>You’ll also notice that the code invokes
+              <code>--cmd source ${neovimSupportScriptPath}</code> which runs
+              <code>vim/vscode-neovim.vim</code> (<a href="https://github.com/asvetliakov/vscode-neovim/blob/master/vim/vscode-neovim.vim">linky</a>)
+              before running your <code>init.vim</code> file. This script is what sets
+              up the <code>g:vscode</code> flag and sources all the other
+              <code>vscode-*.vim</code> scripts except
+              <code>vscode-options.vim</code>. The latter runs <em>after</em> your
+              <code>init.vim</code> in order to force some settings that would
+              otherwise break the extension or cause Neovim to be confused.
+            </p>
+          </li>
+        </ol>
+        <p>So far this is pretty standard fare for how Neovim would be embedded
+          for a custom UI. But things get a bit interesting from the next
+          step.</p>
+        <ol start="2" type="1">
+          <li>
+            <p><strong>Creates a new Neovim buffer and window corresponding to a
+VSCode editor.</strong></p>
+            <p>The buffer thus created is a plain text buffer without any bells or
+              whistles. Contents of the buffer comes from VSCode<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.
+              VSCodeNeovim synchronizes the content between the Neovim buffer and the
+              VSCode editor. Thus the relationship between the contents and the
+              corresponding file on disk is mediated through VSCode. This is a key
+              difference between other custom UIs and this one and one that opens many
+              possibilities.</p>
+            <p>VSCodeNeovim defers to VSCode for handling insert mode. VSCode
+              handles autocompletion and other assistive features. You’ll have to get
+              used to your insert mode customizations not working, or replicating that
+              with VSCode keyboard mapping customizations. When exiting insert mode
+              the extension asynchronously synchronizes the buffer contents – which at
+              this point would include the changes that were introduced – with Neovim.
+              The code for synchronizing the VSCode editor contents and the Neovim
+              buffer is in <code>buffer_manager.ts</code> (<a href="https://github.com/asvetliakov/vscode-neovim/blob/master/src/buffer_manager.ts">linky</a>)
+              which is also a good place to look if you want to know the details about
+              buffer options that are being set.</p>
+          </li>
+        </ol>
+        <p>Of course I’m eliding lots of detail here including integrations for
+          other areas of UI. But I think this captures the pertinent details. The
+          extension is a pretty impressive piece of work which is well worth a
+          gander. Now on to the good stuff.</p>
+        <h2 id="responsive-neovim-experience-over-a-laggy-ssh-connection">Responsive
+          Neovim Experience Over A laggy SSH Connection</h2>
+        <p>This gets to the reason why I’m trying to move to VSCode in the first
+          place. I work on a project consisting of thousands of C++ source files.
+          My home-office doesn’t have enough hardware to do regular builds, or in
+          fact any build at all. The beefy machines are in a remote location
+          accessible via SSH.</p>
+        <p>I’ve been using Neovim over SSH for a while, but the latency really
+          bothers me. And no, neither SCP nor SSHFS scratches this itch because I
+          won’t have access to language smarts like <code>clangd</code> which
+          require access to all the source files and some build tooling.</p>
+        <p><a href="https://code.visualstudio.com/docs/remote/remote-overview">VSCode
+            Remote Development</a> was a nearly perfect answer with the exception
+          that VSCodeVim didn’t quite have all the functionality I needed.
+          VSCodeNeovim addresses that last piece of the puzzle.</p>
+        <p>VSCode + Remote SSH + VSCodeNeovim + Neovim gives me:</p>
+        <figure>
+          <img src="./architecture.png" alt="Architecture of VSCode + Remote SSH + VSCodeNeovim + Neovim">
+          <figcaption aria-hidden="true">Architecture of VSCode + Remote SSH +
+            VSCodeNeovim + Neovim</figcaption>
+        </figure>
+        <ul>
+          <li>On the remote machine:
+            <ul>
+              <li>Source files.</li>
+              <li>Build tooling.</li>
+              <li><code>clangd</code> process invoked via
+                <code>vscode-remote</code>.
+              </li>
+            </ul>
+          </li>
+          <li>On the local machine:
+            <ul>
+              <li>VSCode.</li>
+              <li>VSCodeNeovim.
+                <ul>
+                  <li>Neovim instance embedded by VSCodeNeovim.
+                    <ul>
+                      <li>Neovim plug-ins and normal mode keybindings.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <p>Since the embedded Neovim instance is local the editors are super
+          responsive. Completions via <code>clangd</code> is still laggy as one
+          might expect. But that’s something I’m willing to live with.</p>
+        <h2 id="proportional-fonts-with-neovim">Proportional Fonts With
+          Neovim</h2>
+        <p>Okay, so why would anyone actually want this? Turns out <a href="https://www.google.com/search?q=proportional+fonts+for+coding">I’m
+            not the only one</a>. In my case I prefer monospace for regular code,
+          but I’d much much rather read comments and prose in proportional font.
+          Also, I now spend a lot of my time writing Markdown with LatexMath.
+          Staring at monospaced prose all day is not my cup of tea.</p>
+        <p>This is what it looks like when I’m editing this post in VSCode (in
+          Markdown).</p>
+        <figure>
+          <img src="./proportional-font-markdown.png" alt="Screenshot of VSCode editing Markdown in proportional font">
+          <figcaption aria-hidden="true">Screenshot of VSCode editing Markdown in
+            proportional font</figcaption>
+        </figure>
+        <p>The best part is that I can use my familiar Vim/Neovim keybindings
+          and modal editing. I had to make a couple of customizations and I only
+          have this set up for Markdown. But it works fairly well. One gotcha is
+          that the cursor jumps horizontally when moving the cursor up or down
+          since the columns are no longer neatly aligned.</p>
+        <h3 id="monospace-code-with-proportional-comments">Monospace Code With
+          Proportional Comments?</h3>
+        <p>What I really want isn’t proportional fonts everywhere. Rather I only
+          want proportional fonts for prose. In code, this would take the form of
+          comments.</p>
+        <p>Unfortunately, VSCode doesn’t support changing the font for specific
+          syntactic tokens or scopes. That would’ve been ideal because it would
+          let me configure things so that comments are in proportional font while
+          the rest is in monospace. Also in the case of Markdown, I’d be able to
+          make everything proportional except for inline code and fenced code
+          blocks. Alas we are not quite there yet. Several feature requests
+          already exist<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>, but hasn’t seen much activity.</p>
+        <h2 id="takeaways">Takeaways</h2>
+        <ol type="1">
+          <li>VSCodeNeovim is a functional replacement for the avid Neovim or
+            perhaps Vim user who wants it both ways. Lots of caveats exist including
+            the fact that Neovim mode only really works inside editor windows.</li>
+          <li>VSCodeNeovim + “Remote SSH” is an awesome combination for editing
+            remote files using Neovim with the latency of a local Neovim
+            instance.</li>
+          <li>You can use proportional fonts with VSCodeNeovim for super double
+            awesomeness.</li>
+        </ol>
+        <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+          <hr>
+          <ol>
+            <li id="fn1">
+              <p>Not quite the whole story because it’s possible a buffer
+                be created inside the Neovim instance and have it be mirrored in a
+                VSCode editor. But that’s probably not what you’ll be using on a regular
+                basis.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p>
+            </li>
+            <li id="fn2">
+              <p>A quick search in the VSCode repository <a href="https://github.com/microsoft/vscode/search?q=tokenColorCustomizations+font+name">with
+                  this query</a> yields several issues that request for pretty much the
+                same thing: Allow setting <code>fontName</code> in
+                <code>tokenColorCustomizations</code>. There’s also <a href="https://github.com/deepanrajkumar/Italic-and-Ligature">this
+                  curious experiment</a> which patches in a different font for italics so
+                that you can use the existing <code>fontStyle: "italic"</code> option in
+                <code>tokenColorCustomizations</code> to switch fonts.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a>
+              </p>
+            </li>
+          </ol>
+        </section>
+        <div class="lastmodified">
+          <p>Last modified: September 19, 2020</p>
+        </div>
+      </article>
+    </main>
+    <footer class="container">
+      <style>
+        @scope {
+          :scope {
+            box-shadow: 0 0 6px #555;
+          }
+        }
+      </style>
+      <h2>More posts from this blog ...</h2>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/fart-limit/">Fart Limit</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on June 14, 2021</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/curiosity/">#Curiosity</a>
+</span>
+        </div>
+        <div>
+          <div class="post-summary">
+            <p>Can a fart be fatal? Let's see what science and OSHA have to say.</p>
+          </div>
+          <p class="post-more"><a href="/posts/fart-limit/">Read more …</a></p>
+        </div>
+      </div>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/visualizing-people-2/">Visualizing A Million People</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on September 6, 2021</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/curiosity/">#Curiosity</a>
+</span>
+        </div>
+        <div>
+          <div class="post-summary">
+            <p>If your feature pisses off a million people what does this angry mob look like?
+              Spoiler: We only get to 750,000.</p>
+          </div>
+          <p class="post-more"><a href="/posts/visualizing-people-2/">Read more …</a></p>
+        </div>
+      </div>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/syntax-highlighting/">On Highlighting Syntax vs. Semantics</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on February 12, 2022</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/engineering/">#Engineering</a>
+</span>
+        </div>
+        <div>
+          <div class="post-summary">
+            <p>Takes a look at an alternate form of code highlighting based on core semantics instead of syntactic role.</p>
+          </div>
+          <p class="post-more"><a href="/posts/syntax-highlighting/">Read more …</a></p>
+        </div>
+      </div>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/the-point-of-a-strategy/">The Point of a Strategy</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on July 24, 2023</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/career/">#Career</a>
+</span>
+          <span class="tag-link">
+    <a href="/tags/engineering/">#Engineering</a>
+</span>
+        </div>
+        <div>
+          <div class="post-summary">
+            <p>The only useful strategy is one that reduces risks.</p>
+          </div>
+          <p class="post-more"><a href="/posts/the-point-of-a-strategy/">Read more …</a></p>
+        </div>
+      </div>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/comcast-technican-problem/">The Comcast Technician Problem</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on July 13, 2020</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/math/">#Math</a>
+</span>
+        </div>
+        <div>
+          <div class="post-summary">
+            <p>Given a set of tasks, incentives are often aligned towards dropping a task
+              rather than allowing for perpetual accretion of delays.</p>
+          </div>
+          <p class="post-more"><a href="/posts/comcast-technican-problem/">Read more …</a></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

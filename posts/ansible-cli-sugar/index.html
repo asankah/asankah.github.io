@@ -1,31 +1,264 @@
-<!doctype html><html lang=en-us><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Easier CLI for ad-hoc Ansible tasks and playbooks &#183; Strong Opinions, Weekly Held</title>
-<link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/scss/fonts.min.css><link rel=stylesheet href=/css/formatting.min.css><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><meta name=msapplication-TileColor content="#da532c"><meta name=theme-color content="#ffffff"><link href rel=alternate type=application/rss+xml title="Strong Opinions, Weekly Held"><link rel=stylesheet href=https://xn--izc.com/_katex/katex.min.505d5f829022bb7b4f24dfee0aa1141cd7bba67afe411d1240335f820960b5c3.css integrity="sha256-UF1fgpAiu3tPJN/uCqEUHNe7pnr+QR0SQDNfgglgtcM="><script src=https://xn--izc.com/_katex/katex.min.dc84b296ec3e884de093158f760fd9d45b6c7abe58b5381557f4e138f46a58ae.js integrity="sha256-3ISyluw+iE3gkxWPdg/Z1Ftser5YtTgVV/ThOPRqWK4="></script><script src=https://xn--izc.com/js/render-katex.min.js async></script></head><body><nav class=nav><div class=nav-container><a href=/><h2 class=nav-title>Strong Opinions, Weekly Held</h2></a><ul><li><a href=/about/me><span>About Me</span></a></li><li><a href=/posts><span>Posts</span></a></li><li><a href=/tags><span>Tags</span></a></li></ul></div></nav><main><div class=post><h1 class=post-title>Easier CLI for ad-hoc Ansible tasks and playbooks</h1><div class=post-info><span>Written by</span>
-Asanka Herath
-<span>on&nbsp;</span><time datetime="2020-06-01 00:00:00 -0400 EDT">June 1, 2020</time>
-|
-<a href=/tags/tools>#Tools</a></div><div class="social share"><a href="https://twitter.com/intent/tweet?text=Easier+CLI+for+ad-hoc+Ansible+tasks+and+playbooks&amp;url=https%3A%2F%2Fxn--izc.com%2Fposts%2Fansible-cli-sugar%2F&amp;via=asankah" aria-label="Share on Twitter" target=_blank rel=noopener><img src=/images/twitter.svg alt="Share on Twitter">
-</a><a href="mailto:?body=Via+https%3A%2F%2Ftwitter.com%2Fasankah%0A%0AEncode+the+host+and+group+names+into+the+name+of+a+wrapper+script+for%0Aquick+ad-hoc+invocation+of+Ansible+tasks+and+playbooks.%0A%0ARead+more+at+https%3A%2F%2Fxn--izc.com%2Fposts%2Fansible-cli-sugar%2F%0A&amp;subject=Easier+CLI+for+ad-hoc+Ansible+tasks+and+playbooks+-+Strong+Opinions%2C+Weekly+Held" aria-label="Share via Email" target=_blank rel=noopener><img src=/images/mail.svg alt="Share via Email">
-</a><a href=https://xn--izc.com/posts/ansible-cli-sugar/ aria-label="Permanent link to post"><img src=/images/link-2.svg alt="Permanent link to post"></a></div><p>This article is about using <a href=https://ansible.com>Ansible</a>
-on the command-line.</p><h2 id=problem>Problem:</h2><p>You …</p><ul><li><p>… want a convenient way to do ad-hoc tasks on a bunch of
-machines.</p></li><li><p>… already have a few playbooks and machine groups defined in your
-inventory.</p></li><li><p>… don’t want to invest too much into Ansible because you have
-other things to do and Ansible is just a tool to deal with one aspect of
-what you want to do.</p></li><li><p>… live on the command-line.</p></li><li><p>… think <code>ansible-playbook</code> and <code>ansible</code>
-commands have too many knobs and too few knobs at the same
-time.</p></li></ul><h2 id=a-possible-solution>A Possible Solution</h2><p>Taking a page from old school Posix tools, let’s make a script that
-encodes Ansible group names into the filename.</p><p>Then you can go from this:</p><div class=sourceCode id=cb1><pre class="sourceCode sh"><code class="sourceCode bash"><span id=cb1-1><a href=#cb1-1 aria-hidden=true tabindex=-1></a><span class=ex>$</span> ansible atlanta <span class=at>-m</span> copy <span class=at>-a</span> <span class=st>&quot;src=/etc/hosts dest=/tmp/hosts&quot;</span></span>
-<span id=cb1-2><a href=#cb1-2 aria-hidden=true tabindex=-1></a><span class=ex>$</span> ansible webservers <span class=at>-m</span> service <span class=at>-a</span> <span class=st>&quot;name=httpd state=started&quot;</span></span></code></pre></div><p>To this:</p><div class=sourceCode id=cb2><pre class="sourceCode sh"><code class="sourceCode bash"><span id=cb2-1><a href=#cb2-1 aria-hidden=true tabindex=-1></a><span class=ex>$</span> atlanta copy <span class=st>&quot;src=/etc/hosts dest=/tmp/hosts&quot;</span></span>
-<span id=cb2-2><a href=#cb2-2 aria-hidden=true tabindex=-1></a><span class=ex>$</span> webservers service <span class=st>&quot;name=https state=started&quot;</span></span></code></pre></div><p>Or from this:</p><div class=sourceCode id=cb3><pre class="sourceCode sh"><code class="sourceCode bash"><span id=cb3-1><a href=#cb3-1 aria-hidden=true tabindex=-1></a><span class=ex>$</span> ansible-playbook <span class=at>-l</span> atlanta go-to-the-moon</span>
-<span id=cb3-2><a href=#cb3-2 aria-hidden=true tabindex=-1></a><span class=ex>$</span> ansible-playbook <span class=at>-l</span> webservers do-the-other-things</span></code></pre></div><p>To this:</p><div class=sourceCode id=cb4><pre class="sourceCode sh"><code class="sourceCode bash"><span id=cb4-1><a href=#cb4-1 aria-hidden=true tabindex=-1></a><span class=ex>$</span> atlanta go-to-the-moon</span>
-<span id=cb4-2><a href=#cb4-2 aria-hidden=true tabindex=-1></a><span class=ex>$</span> webservers do-the-other-things</span></code></pre></div><h2 id=setting-up>Setting Up</h2><p>These are just examples. Please don’t spend time bikeshedding names
-because you can use whichever names you like.</p><ol type=1><li><p>Download the contents of <code>ansible-by-proxy</code> from <a href=https://github.com/asankah/ansible-cli-sugar/blob/master/ansible-by-proxy>here</a>.
-It’s a starter script that includes a bunch of sensible settings
-expressed via environment variables. Remove or change these to match
-your needs.</p><p>Note that the script expects to find a sub-directory called
-<code>ansible</code> in the same directory as the script which contains
-the playbooks and the inventory file.</p></li><li><p>Store this file somewhere on the system <code>PATH</code>.</p><p>Don’t forget to mark the file as executable if it isn’t already.</p><div class=sourceCode id=cb5><pre class="sourceCode sh"><code class="sourceCode bash"><span id=cb5-1><a href=#cb5-1 aria-hidden=true tabindex=-1></a><span class=ex>$</span> chmod +x ansible-by-proxy</span></code></pre></div></li><li><p>Create symlinks to the file that have the same name as hostnames
-or groups as described in the includes:</p><div class=sourceCode id=cb6><pre class="sourceCode sh"><code class="sourceCode bash"><span id=cb6-1><a href=#cb6-1 aria-hidden=true tabindex=-1></a><span class=ex>$</span> ln <span class=at>-s</span> ansible-by-proxy atlanta</span>
-<span id=cb6-2><a href=#cb6-2 aria-hidden=true tabindex=-1></a><span class=ex>$</span> ln <span class=at>-s</span> ansible-by-proxy webservers</span></code></pre></div><p>and so on.</p></li></ol><p>That’s it. Now you can invoke playbooks and tasks just by using the
-name of host or group.</p></div><div class=pagination><a href=/posts/identity-domains/ class="left arrow">&#8592;</a>
-<a href=/posts/notes-on-fact-checking/ class="right arrow">&#8594;</a>
-<a href=# class=top>Top</a></div></main><footer><span>Last modified on February 3, 2024</span></footer><script async src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-GSREL2EZ4Y")}</script></body></html>
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Easier CLI for ad-hoc Ansible tasks and playbooks</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet" href="/styles/katex.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link rel="stylesheet" href="/styles/rz5WVeD2De.css">
+    <meta name="generator" content="Pandoc + Eleventy">
+  </head>
+  <body>
+    <header class="container">
+      <style>
+        @scope {
+          nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            column-gap: 1em;
+            color: #333;
+            a {
+              color: #333;
+            }
+            h1 {
+              font-size: 16pt;
+              font-weight: 600;
+            }
+            h2 {
+              font-size: 12pt;
+            }
+            * {
+              padding: 0;
+              flex-basis: max-content;
+              align-self: center;
+              margin-top: 1em;
+              margin-bottom: 1em;
+            }
+            .fill {
+              flex-grow: 1;
+            }
+          }
+          :scope {
+            box-shadow: 0 0 6px #555;
+          }
+        }
+      </style>
+      <nav class="navlike">
+        <h1><a href="/">Strong Opinions Weekly Held</a></h1>
+        <span class="fill"></span>
+        <h2><a href="/">Home</a></h2>
+        <h2><a href="/about/me">About</a></h2>
+        <h2><a href="/tags">Tags</a></h2>
+      </nav>
+    </header>
+    <main>
+      <article class="container">
+        <header>
+          <h1>Easier CLI for ad-hoc Ansible tasks and playbooks</h1>
+          <div class="navlike">
+            <span class="post-date">
+          Posted on June 1, 2020</span>
+            <span class="fill"></span>
+            <span class="tag-link">
+    <a href="/tags/tools/">#Tools</a>
+</span>
+          </div>
+        </header>
+        <p>This article is about using <a href="https://ansible.com">Ansible</a>
+          on the command-line.</p>
+        <h2 id="problem">Problem:</h2>
+        <p>You …</p>
+        <ul>
+          <li>
+            <p>… want a convenient way to do ad-hoc tasks on a bunch of
+              machines.</p>
+          </li>
+          <li>
+            <p>… already have a few playbooks and machine groups defined in your
+              inventory.</p>
+          </li>
+          <li>
+            <p>… don’t want to invest too much into Ansible because you have
+              other things to do and Ansible is just a tool to deal with one aspect of
+              what you want to do.</p>
+          </li>
+          <li>
+            <p>… live on the command-line.</p>
+          </li>
+          <li>
+            <p>… think <code>ansible-playbook</code> and <code>ansible</code>
+              commands have too many knobs and too few knobs at the same
+              time.</p>
+          </li>
+        </ul>
+        <h2 id="a-possible-solution">A Possible Solution</h2>
+        <p>Taking a page from old school Posix tools, let’s make a script that
+          encodes Ansible group names into the filename.</p>
+        <p>Then you can go from this:</p>
+        <div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ansible atlanta <span class="at">-m</span> copy <span class="at">-a</span> <span class="st">&quot;src=/etc/hosts dest=/tmp/hosts&quot;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ansible webservers <span class="at">-m</span> service <span class="at">-a</span> <span class="st">&quot;name=httpd state=started&quot;</span></span></code></pre>
+        </div>
+        <p>To this:</p>
+        <div class="sourceCode" id="cb2"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> atlanta copy <span class="st">&quot;src=/etc/hosts dest=/tmp/hosts&quot;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> webservers service <span class="st">&quot;name=https state=started&quot;</span></span></code></pre>
+        </div>
+        <p>Or from this:</p>
+        <div class="sourceCode" id="cb3"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ansible-playbook <span class="at">-l</span> atlanta go-to-the-moon</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ansible-playbook <span class="at">-l</span> webservers do-the-other-things</span></code></pre>
+        </div>
+        <p>To this:</p>
+        <div class="sourceCode" id="cb4"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> atlanta go-to-the-moon</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> webservers do-the-other-things</span></code></pre>
+        </div>
+        <h2 id="setting-up">Setting Up</h2>
+        <p>These are just examples. Please don’t spend time bikeshedding names
+          because you can use whichever names you like.</p>
+        <ol type="1">
+          <li>
+            <p>Download the contents of <code>ansible-by-proxy</code> from <a href="https://github.com/asankah/ansible-cli-sugar/blob/master/ansible-by-proxy">here</a>.
+              It’s a starter script that includes a bunch of sensible settings
+              expressed via environment variables. Remove or change these to match
+              your needs.</p>
+            <p>Note that the script expects to find a sub-directory called
+              <code>ansible</code> in the same directory as the script which contains
+              the playbooks and the inventory file.
+            </p>
+          </li>
+          <li>
+            <p>Store this file somewhere on the system <code>PATH</code>.</p>
+            <p>Don’t forget to mark the file as executable if it isn’t already.</p>
+            <div class="sourceCode" id="cb5"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> chmod +x ansible-by-proxy</span></code></pre>
+            </div>
+          </li>
+          <li>
+            <p>Create symlinks to the file that have the same name as hostnames
+              or groups as described in the includes:</p>
+            <div class="sourceCode" id="cb6"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ln <span class="at">-s</span> ansible-by-proxy atlanta</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ln <span class="at">-s</span> ansible-by-proxy webservers</span></code></pre>
+            </div>
+            <p>and so on.</p>
+          </li>
+        </ol>
+        <p>That’s it. Now you can invoke playbooks and tasks just by using the
+          name of host or group.</p>
+        <div class="lastmodified">
+          <p>Last modified: June 1, 2020</p>
+        </div>
+      </article>
+    </main>
+    <footer class="container">
+      <style>
+        @scope {
+          :scope {
+            box-shadow: 0 0 6px #555;
+          }
+        }
+      </style>
+      <h2>More posts from this blog ...</h2>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/visualizing-people/">Visualizing Internet Users</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on November 21, 2020</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/engineering/">#Engineering</a>
+</span>
+          <span class="tag-link">
+    <a href="/tags/curiosity/">#Curiosity</a>
+</span>
+        </div>
+      </div>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/grab-diagram-workflow-re2/">Quickly grab a snapshot of your reMarkable tablet</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on January 6, 2022</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/remarkable-2/">#Remarkable 2</a>
+</span>
+          <span class="tag-link">
+    <a href="/tags/tools/">#Tools</a>
+</span>
+        </div>
+        <div>
+          <div class="post-summary">
+            <p>How to bind a hotkey to grab a snapshot of your reMarkable display and copy it to the clipboard on a Mac.</p>
+          </div>
+          <p class="post-more"><a href="/posts/grab-diagram-workflow-re2/">Read more …</a></p>
+        </div>
+      </div>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/mark-goes-up-and-down/">Markdown should be readble without knowing Markdown</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on April 5, 2022</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/tools/">#Tools</a>
+</span>
+          <span class="tag-link">
+    <a href="/tags/engineering/">#Engineering</a>
+</span>
+        </div>
+      </div>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/the-point-of-a-strategy/">The Point of a Strategy</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on July 24, 2023</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/career/">#Career</a>
+</span>
+          <span class="tag-link">
+    <a href="/tags/engineering/">#Engineering</a>
+</span>
+        </div>
+        <div>
+          <div class="post-summary">
+            <p>The only useful strategy is one that reduces risks.</p>
+          </div>
+          <p class="post-more"><a href="/posts/the-point-of-a-strategy/">Read more …</a></p>
+        </div>
+      </div>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/secret-life-of-systems/">Secret Life of Systems</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on March 23, 2024</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/engineering/">#Engineering</a>
+</span>
+          <span class="tag-link">
+    <a href="/tags/curiosity/">#Curiosity</a>
+</span>
+        </div>
+        <div>
+          <div class="post-summary">
+            <p>Lifecycles of software systems that solve real world problems can be
+              broken down into distinct phases based on where it is with respect
+              to the problem and the eventual solution.</p>
+            <p>This article presents a taxonomy of these phases that should help
+              you understand how each part of the lifecycle fits together.</p>
+          </div>
+          <p class="post-more"><a href="/posts/secret-life-of-systems/">Read more …</a></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

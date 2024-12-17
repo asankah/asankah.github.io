@@ -1,101 +1,310 @@
-<!doctype html><html lang=en-us><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Inclusion/Equity and Evaluating Negatives &#183; Strong Opinions, Weekly Held</title>
-<link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/scss/fonts.min.css><link rel=stylesheet href=/css/formatting.min.css><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><meta name=msapplication-TileColor content="#da532c"><meta name=theme-color content="#ffffff"><link href rel=alternate type=application/rss+xml title="Strong Opinions, Weekly Held"><link rel=stylesheet href=https://xn--izc.com/_katex/katex.min.505d5f829022bb7b4f24dfee0aa1141cd7bba67afe411d1240335f820960b5c3.css integrity="sha256-UF1fgpAiu3tPJN/uCqEUHNe7pnr+QR0SQDNfgglgtcM="><script src=https://xn--izc.com/_katex/katex.min.dc84b296ec3e884de093158f760fd9d45b6c7abe58b5381557f4e138f46a58ae.js integrity="sha256-3ISyluw+iE3gkxWPdg/Z1Ftser5YtTgVV/ThOPRqWK4="></script><script src=https://xn--izc.com/js/render-katex.min.js async></script></head><body><nav class=nav><div class=nav-container><a href=/><h2 class=nav-title>Strong Opinions, Weekly Held</h2></a><ul><li><a href=/about/me><span>About Me</span></a></li><li><a href=/posts><span>Posts</span></a></li><li><a href=/tags><span>Tags</span></a></li></ul></div></nav><main><div class=post><h1 class=post-title>Inclusion/Equity and Evaluating Negatives</h1><div class=post-info><span>Written by</span>
-Asanka Herath
-<span>on&nbsp;</span><time datetime="2024-01-09 21:58:34 -0500 EST">January 9, 2024</time>
-|
-<a href=/tags/engineering>#Engineering</a>
-<a href=/tags/inclusion%20and%20equity>#Inclusion and equity</a></div><div class="social share"><a href="https://twitter.com/intent/tweet?text=Inclusion%2FEquity+and+Evaluating+Negatives&amp;url=https%3A%2F%2Fxn--izc.com%2Fposts%2Fevluating-negatives%2F&amp;via=asankah" aria-label="Share on Twitter" target=_blank rel=noopener><img src=/images/twitter.svg alt="Share on Twitter">
-</a><a href="mailto:?body=Via+https%3A%2F%2Ftwitter.com%2Fasankah%0A%0AEvaluating+properties+like+inclusion+and+equity+of+products+can%E2%80%99t+be%0Adone+through+exhaustive+enumeration+of+product+outcomes.+Instead+we+will%0Aneed+to+increasingly+rely+on+the+controls+that+we+place+how+we+construct%0Athe+products.%0A%0ARead+more+at+https%3A%2F%2Fxn--izc.com%2Fposts%2Fevluating-negatives%2F%0A&amp;subject=Inclusion%2FEquity+and+Evaluating+Negatives+-+Strong+Opinions%2C+Weekly+Held" aria-label="Share via Email" target=_blank rel=noopener><img src=/images/mail.svg alt="Share via Email">
-</a><a href=https://xn--izc.com/posts/evluating-negatives/ aria-label="Permanent link to post"><img src=/images/link-2.svg alt="Permanent link to post"></a></div><p>Privacy, security, inclusion, equity, accessibility, … all of these
-have an interesting property in common. When evaluation products against
-such questions you are usually trying to establish a negative.</p><h3 id=to-prove-a-negative>To Prove A Negative</h3><p>Proving a negative requires providing <a href=https://en.wikipedia.org/wiki/Evidence_of_absence>evidence of
-absence</a>.</p><p>If one wanted to <em>disprove</em> the claim <em>“all primes are
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Inclusion/Equity and Evaluating Negatives</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet" href="/styles/katex.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link rel="stylesheet" href="/styles/rz5WVeD2De.css">
+    <meta name="generator" content="Pandoc + Eleventy">
+  </head>
+  <body>
+    <header class="container">
+      <style>
+        @scope {
+          nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            column-gap: 1em;
+            color: #333;
+            a {
+              color: #333;
+            }
+            h1 {
+              font-size: 16pt;
+              font-weight: 600;
+            }
+            h2 {
+              font-size: 12pt;
+            }
+            * {
+              padding: 0;
+              flex-basis: max-content;
+              align-self: center;
+              margin-top: 1em;
+              margin-bottom: 1em;
+            }
+            .fill {
+              flex-grow: 1;
+            }
+          }
+          :scope {
+            box-shadow: 0 0 6px #555;
+          }
+        }
+      </style>
+      <nav class="navlike">
+        <h1><a href="/">Strong Opinions Weekly Held</a></h1>
+        <span class="fill"></span>
+        <h2><a href="/">Home</a></h2>
+        <h2><a href="/about/me">About</a></h2>
+        <h2><a href="/tags">Tags</a></h2>
+      </nav>
+    </header>
+    <main>
+      <article class="container">
+        <header>
+          <h1>Inclusion/Equity and Evaluating Negatives</h1>
+          <div class="navlike">
+            <span class="post-date">
+          Posted on January 10, 2024</span>
+            <span class="fill"></span>
+            <span class="tag-link">
+    <a href="/tags/engineering/">#Engineering</a>
+</span>
+            <span class="tag-link">
+    <a href="/tags/inclusion-and-equity/">#Inclusion and Equity</a>
+</span>
+          </div>
+        </header>
+        <p>Privacy, security, inclusion, equity, accessibility, … all of these
+          have an interesting property in common. When evaluation products against
+          such questions you are usually trying to establish a negative.</p>
+        <h3 id="to-prove-a-negative">To Prove A Negative</h3>
+        <p>Proving a negative requires providing <a href="https://en.wikipedia.org/wiki/Evidence_of_absence">evidence of
+            absence</a>.</p>
+        <p>If one wanted to <em>disprove</em> the claim <em>“all primes are
 odd”</em> one only needs to prove <em>“some primes are even”</em>. The
-latter can be accomplished by finding a single counterexample – the
-number 2. On the other hand if one wanted to <em>prove</em> the claim,
-they would need establish that all primes are odd. Another example is
-the claim <em>“there are no vermin in this house,”</em> proving which
-requires an exahustive search of the premises. Once again, disproving
-the claim only requires a single piece of evidence – a mouse.</p><p>Going back to the beginning, asking someone whether a product is
-<em>secure</em>, <em>private</em>, <em>inclusive</em>,
-<em>accessible</em> etc… fall into the same category. Answering these
-questions require proving that there is nothing <em>insecure</em>,
-<em>privacy violating</em>, <em>non-inclusive</em>, or
-<em>inaccessible</em> about this product. These questions are even worse
-than the one about vermin from before because it’s not even clear where
-to start looking. People who have spent their entire careers studying
-the subject would find the criteria difficult or downright impossible to
-evaluate.</p><p>Despite this apparent futility, there is hope. <strong>Knowing that
+          latter can be accomplished by finding a single counterexample – the
+          number 2. On the other hand if one wanted to <em>prove</em> the claim,
+          they would need establish that all primes are odd. Another example is
+          the claim <em>“there are no vermin in this house,”</em> proving which
+          requires an exahustive search of the premises. Once again, disproving
+          the claim only requires a single piece of evidence – a mouse.</p>
+        <p>Going back to the beginning, asking someone whether a product is
+          <em>secure</em>, <em>private</em>, <em>inclusive</em>,
+          <em>accessible</em> etc… fall into the same category. Answering these
+          questions require proving that there is nothing <em>insecure</em>,
+          <em>privacy violating</em>, <em>non-inclusive</em>, or
+          <em>inaccessible</em> about this product. These questions are even worse
+          than the one about vermin from before because it’s not even clear where
+          to start looking. People who have spent their entire careers studying
+          the subject would find the criteria difficult or downright impossible to
+          evaluate.
+        </p>
+        <p>Despite this apparent futility, there is hope. <strong>Knowing that
 the criteria holds under a limited set of circumstances is sometimes
-enough</strong>. Often it is the best that we can do.</p><h3 id=proof-by-enumeration>Proof By Enumeration</h3><p>In security and privacy parlance this limited scope is called the <a href=https://en.wikipedia.org/wiki/Threat_model><em>threat
-model</em></a>.</p><p>Absolute security is impossible, so one would start by establishing
-the specific threats that they would like to deal with. For example when
-considering the security of a networked application one could start by
-drawing out a <a href=https://www.lucidchart.com/pages/data-flow-diagram>data flow
-diagram</a> and then going over the different points at which data would
-be at risk of being compromised. Enumeration of vulnerabilities and
-threats in this way opens up the possibility of thoroughly examining the
-<a href=https://www.ibm.com/topics/attack-surface>attack surface</a>.
-Thus the previously intractable problem becomes finite.</p><p>As our understanding of threats improve, so does the effectiveness of
-the threat model. Historically, understanding this kind of problem space
-takes time and many – often costly – mistakes. The boundaries sometimes
-only become known when someone exploits it.</p><p>Similarly, when evaluating a squishy concept like inclusion and
-equity one would also start with a well defined scope that lends itself
-to examination. Just like before, often we only learn where to look for
-problems the hard way. So we come up with methodologies like carefully
-curated <strong>dimensions of identity</strong>. Enumerations like that
-give us a finite set of things to consider with our finite resources.
-Additionally these methodologies also grant us a taxonomy with which we
-can organize our hard earned knowledge on the topic.</p><h3 id=proof-by-enumerating-product-outcomes>Proof by Enumerating
-Product Outcomes</h3><p>Enumeration based approaches establish clusters of <em>possible
-product outcomes</em> which we can then evaluate individually.</p><p>As an example, a product that processes pictures of people can be
-evaluated based on the outcome of handling pictures of people with
-different skin tokes, gender expressions, body types, ages, hair and
-accesories, visible disabilities, and lighting conditions. Coming up
-with these outcomes can be laborious and expensive, but it is tractable.
-Costs of curating suitably detailed test cases and data sets should
-amortize across their potentially broad applicability.</p><h3 id=proof-by-construction>Proof By Construction</h3><p>But sometimes the set of outcomes do not cluster effectively or are
-too numerous to exhaustively evaluate. In security this would be similar
-to asking whether some software system is free from <a href=https://en.wikipedia.org/wiki/Buffer_overflow>buffer overruns</a>
-– a question that is theoretically impossible to answer in general if
-the method of construction is not amenable to analysis. The best we
-could do is for suitably skilled persons to go through the code with a
-fine toothed comb looking for potential problems; a task that is both
-impractical as it is prone to error.</p><h3 id=proof-by-process-of-construction>Proof by Process of
-Construction</h3><p>Instead we could try using programming languages that provide certain
-safety guarantees: <a href=https://spectrum.ieee.org/memory-safe-programming-languages>memory-safe
-languages</a>. These safety guarantees establish the memory safety of
-the resulting behavior as a consequence of the method by which the
-underlying software is constructed. Another method we can use is to
-continue using an unsafe language<a href=#fn1 class=footnote-ref id=fnref1 role=doc-noteref><sup>1</sup></a>, but invest in
-development practices like <a href=https://en.wikipedia.org/wiki/Fuzzing>fuzz testing</a> which give
-us sufficient <a href=https://www.georgefairbanks.com/ieee-software-v37-n3-may-2020-testing-numbs-us-to-our-loss-of-intellectual-control>statistical
-control</a> over the behavior of our software.</p><p><em>Inclusion and equity</em> can follow a similar paradigm where we
-establish certain process requirements that also yield a favorable
-outcome with a high likelihood. Google’s <a href=https://design.google/library/building-for-everyone>Building for
-Everyone</a> outlines some of these processes criteria such as involving
-a diverse group of people during the ideation and design phases of a
-product, and involving a diverse group of people during testing. Once
-again, these approaches don’t guarantee success, but have a much higher
-likelihood of delivering a favorable outcome.</p><h3 id=amalgam-engineering>Amalgam Engineering</h3><p>Increasingly software systems are built as amalgamations of systems
-that are themselves complex. The behavior of each constituent is
-difficult to reason about let alone the behavior of the
-amalgamation.</p><p>To establish some desirable property of the amalgamation, it becomes
-necessary to progressively establish the same or minor properties of the
-constituents. <strong>The point of establishing these properties is to
+enough</strong>. Often it is the best that we can do.</p>
+        <h3 id="proof-by-enumeration">Proof By Enumeration</h3>
+        <p>In security and privacy parlance this limited scope is called the <a href="https://en.wikipedia.org/wiki/Threat_model"><em>threat
+model</em></a>.</p>
+        <p>Absolute security is impossible, so one would start by establishing
+          the specific threats that they would like to deal with. For example when
+          considering the security of a networked application one could start by
+          drawing out a <a href="https://www.lucidchart.com/pages/data-flow-diagram">data flow
+            diagram</a> and then going over the different points at which data would
+          be at risk of being compromised. Enumeration of vulnerabilities and
+          threats in this way opens up the possibility of thoroughly examining the
+          <a href="https://www.ibm.com/topics/attack-surface">attack surface</a>.
+          Thus the previously intractable problem becomes finite.
+        </p>
+        <p>As our understanding of threats improve, so does the effectiveness of
+          the threat model. Historically, understanding this kind of problem space
+          takes time and many – often costly – mistakes. The boundaries sometimes
+          only become known when someone exploits it.</p>
+        <p>Similarly, when evaluating a squishy concept like inclusion and
+          equity one would also start with a well defined scope that lends itself
+          to examination. Just like before, often we only learn where to look for
+          problems the hard way. So we come up with methodologies like carefully
+          curated <strong>dimensions of identity</strong>. Enumerations like that
+          give us a finite set of things to consider with our finite resources.
+          Additionally these methodologies also grant us a taxonomy with which we
+          can organize our hard earned knowledge on the topic.</p>
+        <h3 id="proof-by-enumerating-product-outcomes">Proof by Enumerating
+          Product Outcomes</h3>
+        <p>Enumeration based approaches establish clusters of <em>possible
+product outcomes</em> which we can then evaluate individually.</p>
+        <p>As an example, a product that processes pictures of people can be
+          evaluated based on the outcome of handling pictures of people with
+          different skin tokes, gender expressions, body types, ages, hair and
+          accesories, visible disabilities, and lighting conditions. Coming up
+          with these outcomes can be laborious and expensive, but it is tractable.
+          Costs of curating suitably detailed test cases and data sets should
+          amortize across their potentially broad applicability.</p>
+        <h3 id="proof-by-construction">Proof By Construction</h3>
+        <p>But sometimes the set of outcomes do not cluster effectively or are
+          too numerous to exhaustively evaluate. In security this would be similar
+          to asking whether some software system is free from <a href="https://en.wikipedia.org/wiki/Buffer_overflow">buffer overruns</a>
+          – a question that is theoretically impossible to answer in general if
+          the method of construction is not amenable to analysis. The best we
+          could do is for suitably skilled persons to go through the code with a
+          fine toothed comb looking for potential problems; a task that is both
+          impractical as it is prone to error.</p>
+        <h3 id="proof-by-process-of-construction">Proof by Process of
+          Construction</h3>
+        <p>Instead we could try using programming languages that provide certain
+          safety guarantees: <a href="https://spectrum.ieee.org/memory-safe-programming-languages">memory-safe
+            languages</a>. These safety guarantees establish the memory safety of
+          the resulting behavior as a consequence of the method by which the
+          underlying software is constructed. Another method we can use is to
+          continue using an unsafe language<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, but invest in
+          development practices like <a href="https://en.wikipedia.org/wiki/Fuzzing">fuzz testing</a> which give
+          us sufficient <a href="https://www.georgefairbanks.com/ieee-software-v37-n3-may-2020-testing-numbs-us-to-our-loss-of-intellectual-control">statistical
+            control</a> over the behavior of our software.</p>
+        <p><em>Inclusion and equity</em> can follow a similar paradigm where we
+          establish certain process requirements that also yield a favorable
+          outcome with a high likelihood. Google’s <a href="https://design.google/library/building-for-everyone">Building for
+            Everyone</a> outlines some of these processes criteria such as involving
+          a diverse group of people during the ideation and design phases of a
+          product, and involving a diverse group of people during testing. Once
+          again, these approaches don’t guarantee success, but have a much higher
+          likelihood of delivering a favorable outcome.</p>
+        <h3 id="amalgam-engineering">Amalgam Engineering</h3>
+        <p>Increasingly software systems are built as amalgamations of systems
+          that are themselves complex. The behavior of each constituent is
+          difficult to reason about let alone the behavior of the
+          amalgamation.</p>
+        <p>To establish some desirable property of the amalgamation, it becomes
+          necessary to progressively establish the same or minor properties of the
+          constituents. <strong>The point of establishing these properties is to
 yield a simpler more tractable model of a system</strong> that we can
-readily reason about. We can then infer or at least approximate the
-behavior of the amalgamation based on the simplified models that we
-derive of the contituents.</p><p>We don’t expect this situation to get better given that many of these
-contituent parts will be ML models that are too complex for us to
-understand. As enumerating product outcomes becomes less effective, we
-will need to rely ever more on process criteria and governance of
-construction to curb the product outcomes.</p><p>The accuracy of the resulting simplified models is all that we will
-have to grasp in order to have some say how technology will govern us in
-turn.</p><aside id=footnotes class="footnotes footnotes-end-of-document" role=doc-endnotes><hr><ol><li id=fn1><p>Continuing to use an unsafe language isn’t as dumb as it
-sounds. Large tech companies with massive software estates are often in
-the unenviable position of being unable to move enmasse to better
-platforms due to the cost. Thus less than perfect interim measures are
-not that silly.<a href=#fnref1 class=footnote-back role=doc-backlink>↩︎</a></p></li></ol></aside></div><div class=pagination><a href=/posts/happy-new-year-2024-and-year-in-review-2023/ class="left arrow">&#8592;</a>
-<a href=/posts/why-i-hate-carousels/ class="right arrow">&#8594;</a>
-<a href=# class=top>Top</a></div></main><footer><span>Last modified on February 3, 2024</span></footer><script async src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-GSREL2EZ4Y")}</script></body></html>
+          readily reason about. We can then infer or at least approximate the
+          behavior of the amalgamation based on the simplified models that we
+          derive of the contituents.</p>
+        <p>We don’t expect this situation to get better given that many of these
+          contituent parts will be ML models that are too complex for us to
+          understand. As enumerating product outcomes becomes less effective, we
+          will need to rely ever more on process criteria and governance of
+          construction to curb the product outcomes.</p>
+        <p>The accuracy of the resulting simplified models is all that we will
+          have to grasp in order to have some say how technology will govern us in
+          turn.</p>
+        <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+          <hr>
+          <ol>
+            <li id="fn1">
+              <p>Continuing to use an unsafe language isn’t as dumb as it
+                sounds. Large tech companies with massive software estates are often in
+                the unenviable position of being unable to move enmasse to better
+                platforms due to the cost. Thus less than perfect interim measures are
+                not that silly.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p>
+            </li>
+          </ol>
+        </section>
+        <div class="lastmodified">
+          <p>Last modified: January 10, 2024</p>
+        </div>
+      </article>
+    </main>
+    <footer class="container">
+      <style>
+        @scope {
+          :scope {
+            box-shadow: 0 0 6px #555;
+          }
+        }
+      </style>
+      <h2>More posts from this blog ...</h2>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/visualizing-people-2/">Visualizing A Million People</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on September 6, 2021</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/curiosity/">#Curiosity</a>
+</span>
+        </div>
+        <div>
+          <div class="post-summary">
+            <p>If your feature pisses off a million people what does this angry mob look like?
+              Spoiler: We only get to 750,000.</p>
+          </div>
+          <p class="post-more"><a href="/posts/visualizing-people-2/">Read more …</a></p>
+        </div>
+      </div>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/inktober-wild/">Inktober - Wild</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on January 13, 2022</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/inktober/">#Inktober</a>
+</span>
+        </div>
+      </div>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/pillars-are-governance-structures/">Pillars And Governance Structures</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on September 9, 2023</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/culture/">#Culture</a>
+</span>
+          <span class="tag-link">
+    <a href="/tags/career/">#Career</a>
+</span>
+          <span class="tag-link">
+    <a href="/tags/organizations/">#Organizations</a>
+</span>
+        </div>
+      </div>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/secret-life-of-systems/">Secret Life of Systems</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on March 23, 2024</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/engineering/">#Engineering</a>
+</span>
+          <span class="tag-link">
+    <a href="/tags/curiosity/">#Curiosity</a>
+</span>
+        </div>
+        <div>
+          <div class="post-summary">
+            <p>Lifecycles of software systems that solve real world problems can be
+              broken down into distinct phases based on where it is with respect
+              to the problem and the eventual solution.</p>
+            <p>This article presents a taxonomy of these phases that should help
+              you understand how each part of the lifecycle fits together.</p>
+          </div>
+          <p class="post-more"><a href="/posts/secret-life-of-systems/">Read more …</a></p>
+        </div>
+      </div>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/have-loop/">The Have-Loop</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on June 24, 2024</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/culture/">#Culture</a>
+</span>
+        </div>
+        <div>
+          <div class="post-summary">
+            <p>Have-loops are positive feedback loops which cause unsustainable concentration of limited resources.
+              Once you learn to recognize them, you will see them everywhere.</p>
+          </div>
+          <p class="post-more"><a href="/posts/have-loop/">Read more …</a></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,75 +1,288 @@
-<!doctype html><html lang=en-us><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Secret Life of Systems &#183; Strong Opinions, Weekly Held</title>
-<link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/scss/fonts.min.css><link rel=stylesheet href=/css/formatting.min.css><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><meta name=msapplication-TileColor content="#da532c"><meta name=theme-color content="#ffffff"><link href rel=alternate type=application/rss+xml title="Strong Opinions, Weekly Held"><link rel=stylesheet href=https://xn--izc.com/_katex/katex.min.505d5f829022bb7b4f24dfee0aa1141cd7bba67afe411d1240335f820960b5c3.css integrity="sha256-UF1fgpAiu3tPJN/uCqEUHNe7pnr+QR0SQDNfgglgtcM="><script src=https://xn--izc.com/_katex/katex.min.dc84b296ec3e884de093158f760fd9d45b6c7abe58b5381557f4e138f46a58ae.js integrity="sha256-3ISyluw+iE3gkxWPdg/Z1Ftser5YtTgVV/ThOPRqWK4="></script><script src=https://xn--izc.com/js/render-katex.min.js async></script></head><body><nav class=nav><div class=nav-container><a href=/><h2 class=nav-title>Strong Opinions, Weekly Held</h2></a><ul><li><a href=/about/me><span>About Me</span></a></li><li><a href=/posts><span>Posts</span></a></li><li><a href=/tags><span>Tags</span></a></li></ul></div></nav><main><div class=post><h1 class=post-title>Secret Life of Systems</h1><div class=post-info><span>Written by</span>
-Asanka Herath
-<span>on&nbsp;</span><time datetime="2024-03-23 17:59:29 -0400 EDT">March 23, 2024</time>
-|
-<a href=/tags/engineering>#Engineering</a>
-<a href=/tags/curiosity>#Curiosity</a></div><div class="social share"><a href="https://twitter.com/intent/tweet?text=Secret+Life+of+Systems&amp;url=https%3A%2F%2Fxn--izc.com%2Fposts%2Fsecret-life-of-systems%2F&amp;via=asankah" aria-label="Share on Twitter" target=_blank rel=noopener><img src=/images/twitter.svg alt="Share on Twitter">
-</a><a href="mailto:?body=Via+https%3A%2F%2Ftwitter.com%2Fasankah%0A%0A%3Cp%3ELifecycles+of+software+systems+that+solve+real+world+problems+can+be%0Abroken+down+into+distinct+phases+based+on+where+it+is+with+respect+to%0Athe+problem+and+the+eventual+solution.%3C%2Fp%3E%0A%3Cp%3EThis+article+presents+a+taxonomy+of+these+phases+that+should+help+you%0Aunderstand+how+each+part+of+the+lifecycle+fits+together.%3C%2Fp%3E%0A%0A%0ARead+more+at+https%3A%2F%2Fxn--izc.com%2Fposts%2Fsecret-life-of-systems%2F%0A&amp;subject=Secret+Life+of+Systems+-+Strong+Opinions%2C+Weekly+Held" aria-label="Share via Email" target=_blank rel=noopener><img src=/images/mail.svg alt="Share via Email">
-</a><a href=https://xn--izc.com/posts/secret-life-of-systems/ aria-label="Permanent link to post"><img src=/images/link-2.svg alt="Permanent link to post"></a></div><p>Software systems aim to solve real world problems. They implement
-some behavior that the authors of the system believe would address the
-problem.</p><p>For non-trivial systems the coupling is imperfect between the real
-world problem, the problem as understood by some group of people, the
-perceived solution, the solution as it is actually implemented, and the
-solution as received by the users.</p><p>The diagram below illustrates this phenomenon.</p><figure><img src=./lifecycle.png alt="Software systems lifecycle. (Described in prose below)"><figcaption aria-hidden=true>Software systems lifecycle. (Described in
-prose below)</figcaption></figure><p>The software<a href=#fn1 class=footnote-ref id=fnref1 role=doc-noteref><sup>1</sup></a> system life-cycle begins – as most
-things do – in the real world.</p><h4 id=the-problem-p>The Problem (P)</h4><p>There is a problem that affects some group of people<a href=#fn2 class=footnote-ref id=fnref2 role=doc-noteref><sup>2</sup></a>.
-Let’s call it <strong>P</strong>.</p><p>We know these problems exist by their symptoms. For example people
-might just feel something isn’t pretty great or that things could be
-better if only we could figure out how.</p><p>Beyond that a precise and comprehensive definition of the problem
-doesn’t exist. This might seem like a strong claim, but it comes down to
-the fact that everything involving people is complicated.</p><h4 id=the-model-m>The Model (M)</h4><p>So people set out to understand the problem deeper. Experimentation,
-user studies, interviews, observations, are all things that we do to
-conjure these invisible problems into existence. We go probing for
-symptoms to understand what might be causing them.</p><p>Based on these we develop and a model of the problem. The model may
-be laid out for everone to see or it could be in someone’s head.</p><p>Let’s call this <strong>M</strong> for <em>model</em>. The model is
-the entirety of our <em>understanding</em> of the problem. It is a
-prerequisite before we can theorize about …</p><h4 id=the-solution-s>The Solution (S)</h4><p>At first the solutions are themselves models – things that work
-<em>in theory</em> when evaluated against the model <strong>M</strong>,
-but yet to be verified against the real world problem
-<strong>P</strong></p><p>The models of solutions – let’s call them <strong>S</strong> – are
-what we think will address what we assume is the problem. Depending on
-the level of rigor, we will draw little diagrams, write design
-documents, shop our ideas around, discuss alternatives, collaborate and
-refine these solutions.</p><p>Eventually or during this process we will put something together that
-works somewhat.</p><h4 id=the-implementation-i>The Implementation (I)</h4><p>So an implementation comes together – let’s call it
-<strong>I</strong>. The difference between <strong>S</strong> and
-<strong>I</strong> stems from practical matters. Time, resources,
-technical limitations, all affect how much of our model solution
-<strong>S</strong> we can implement. The result is often different from
-what we thought we would eventually have.</p><h3 id=deployment-d>Deployment (D)</h3><p>Whatever solution we put together is useless unless we take our
-masterpiece to those who are experiencing the problem – the users.</p><p>The likelihood of a non-trivial solution reaching its entire intended
-audience is low. The implementation may not be received in the same
-spirit in which it was built.</p><p>And often, this is the point at which we will find out how much our
-solution matches the needs of the real world.</p><p>They way in which our implementation <strong>I</strong> interacts
-with the real world is – the deployment <strong>D</strong>.</p><hr><p>Much like the subject at hand, systems lifecycles don’t follow neatly
-delineated phases as described. Real systems typically exist in all
-phases simultaneously. Understanding the question is a continuous
-process. Plans change all the time. As any engineer will tell you, what
-tools and resources are available are <em>also</em> part of the problem
-statement.</p><p>But there are a few key observations that you can make from this
-model:</p><ul><li><p><strong>We lose information at every phase</strong>. Our model of
-the real world problem is guaranteed to be of much lower fidelity than
-the real thing<a href=#fn3 class=footnote-ref id=fnref3 role=doc-noteref><sup>3</sup></a>. Our model solution is going to fall
-short of addressing our model solution. Our implementation will not
-match our aspirational solution. And whatever we manage to get in users
-hands isn’t quite working the way we thought it would.</p></li><li><p><strong>Understanding the problem is a continuous
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Secret Life of Systems</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet" href="/styles/katex.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link rel="stylesheet" href="/styles/rz5WVeD2De.css">
+    <meta name="generator" content="Pandoc + Eleventy">
+  </head>
+  <body>
+    <header class="container">
+      <style>
+        @scope {
+          nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            column-gap: 1em;
+            color: #333;
+            a {
+              color: #333;
+            }
+            h1 {
+              font-size: 16pt;
+              font-weight: 600;
+            }
+            h2 {
+              font-size: 12pt;
+            }
+            * {
+              padding: 0;
+              flex-basis: max-content;
+              align-self: center;
+              margin-top: 1em;
+              margin-bottom: 1em;
+            }
+            .fill {
+              flex-grow: 1;
+            }
+          }
+          :scope {
+            box-shadow: 0 0 6px #555;
+          }
+        }
+      </style>
+      <nav class="navlike">
+        <h1><a href="/">Strong Opinions Weekly Held</a></h1>
+        <span class="fill"></span>
+        <h2><a href="/">Home</a></h2>
+        <h2><a href="/about/me">About</a></h2>
+        <h2><a href="/tags">Tags</a></h2>
+      </nav>
+    </header>
+    <main>
+      <article class="container">
+        <header>
+          <h1>Secret Life of Systems</h1>
+          <div class="navlike">
+            <span class="post-date">
+          Posted on March 23, 2024</span>
+            <span class="fill"></span>
+            <span class="tag-link">
+    <a href="/tags/engineering/">#Engineering</a>
+</span>
+            <span class="tag-link">
+    <a href="/tags/curiosity/">#Curiosity</a>
+</span>
+          </div>
+        </header>
+        <p>Software systems aim to solve real world problems. They implement
+          some behavior that the authors of the system believe would address the
+          problem.</p>
+        <p>For non-trivial systems the coupling is imperfect between the real
+          world problem, the problem as understood by some group of people, the
+          perceived solution, the solution as it is actually implemented, and the
+          solution as received by the users.</p>
+        <p>The diagram below illustrates this phenomenon.</p>
+        <p><img src="./lifecycle.png" alt="Software systems lifecycle. (Described in prose below)">
+          {.full-bleed}</p>
+        <p>The software<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> system life-cycle begins – as most
+          things do – in the real world.</p>
+        <h4 id="the-problem-p">The Problem (P)</h4>
+        <p>There is a problem that affects some group of people<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.
+          Let’s call it <strong>P</strong>.</p>
+        <p>We know these problems exist by their symptoms. For example people
+          might just feel something isn’t pretty great or that things could be
+          better if only we could figure out how.</p>
+        <p>Beyond that a precise and comprehensive definition of the problem
+          doesn’t exist. This might seem like a strong claim, but it comes down to
+          the fact that everything involving people is complicated.</p>
+        <h4 id="the-model-m">The Model (M)</h4>
+        <p>So people set out to understand the problem deeper. Experimentation,
+          user studies, interviews, observations, are all things that we do to
+          conjure these invisible problems into existence. We go probing for
+          symptoms to understand what might be causing them.</p>
+        <p>Based on these we develop and a model of the problem. The model may
+          be laid out for everone to see or it could be in someone’s head.</p>
+        <p>Let’s call this <strong>M</strong> for <em>model</em>. The model is
+          the entirety of our <em>understanding</em> of the problem. It is a
+          prerequisite before we can theorize about …</p>
+        <h4 id="the-solution-s">The Solution (S)</h4>
+        <p>At first the solutions are themselves models – things that work
+          <em>in theory</em> when evaluated against the model <strong>M</strong>,
+          but yet to be verified against the real world problem
+          <strong>P</strong>
+        </p>
+        <p>The models of solutions – let’s call them <strong>S</strong> – are
+          what we think will address what we assume is the problem. Depending on
+          the level of rigor, we will draw little diagrams, write design
+          documents, shop our ideas around, discuss alternatives, collaborate and
+          refine these solutions.</p>
+        <p>Eventually or during this process we will put something together that
+          works somewhat.</p>
+        <h4 id="the-implementation-i">The Implementation (I)</h4>
+        <p>So an implementation comes together – let’s call it
+          <strong>I</strong>. The difference between <strong>S</strong> and
+          <strong>I</strong> stems from practical matters. Time, resources,
+          technical limitations, all affect how much of our model solution
+          <strong>S</strong> we can implement. The result is often different from
+          what we thought we would eventually have.
+        </p>
+        <h3 id="deployment-d">Deployment (D)</h3>
+        <p>Whatever solution we put together is useless unless we take our
+          masterpiece to those who are experiencing the problem – the users.</p>
+        <p>The likelihood of a non-trivial solution reaching its entire intended
+          audience is low. The implementation may not be received in the same
+          spirit in which it was built.</p>
+        <p>And often, this is the point at which we will find out how much our
+          solution matches the needs of the real world.</p>
+        <p>They way in which our implementation <strong>I</strong> interacts
+          with the real world is – the deployment <strong>D</strong>.</p>
+        <hr>
+        <p>Much like the subject at hand, systems lifecycles don’t follow neatly
+          delineated phases as described. Real systems typically exist in all
+          phases simultaneously. Understanding the question is a continuous
+          process. Plans change all the time. As any engineer will tell you, what
+          tools and resources are available are <em>also</em> part of the problem
+          statement.</p>
+        <p>But there are a few key observations that you can make from this
+          model:</p>
+        <ul>
+          <li>
+            <p><strong>We lose information at every phase</strong>. Our model of
+              the real world problem is guaranteed to be of much lower fidelity than
+              the real thing<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. Our model solution is going to fall
+              short of addressing our model solution. Our implementation will not
+              match our aspirational solution. And whatever we manage to get in users
+              hands isn’t quite working the way we thought it would.</p>
+          </li>
+          <li>
+            <p><strong>Understanding the problem is a continuous
 process</strong>. Every phase of this lifecycle brings with it new
-insights into what it is we want to achieve and what we are working
-with. Each new insight changes our problem statement, solution, and
-eventually implementation and deployment.</p></li><li><p><strong>Understanding the problem must be deliberate</strong>.
-Given that the deployed solution isn’t quite a match for the real world
-problem, we need to ensure that we have the right measurements and
-probes in place to understand this mismatch – be it telemetry, user
-satisfaction surveys, interviews, or whatever else.</p></li></ul><p>Whenever we are holding some concept, being conscious about where in
-the lifecycle that thing fits helps us get a sense for the level of
-maturity of the concept and where you need to be to solve the
-problem.</p><aside id=footnotes class="footnotes footnotes-end-of-document" role=doc-endnotes><hr><ol><li id=fn1><p>The concept applies equally to non-software systems – as
-long as they aim to solve real world problems.<a href=#fnref1 class=footnote-back role=doc-backlink>↩︎</a></p></li><li id=fn2><p>Problems that we are interested in are those that affect
-people. They tend to by squishy and ill-defined. Problems that are
-defined entirely in the theoretical relam don’t fall into the model that
-we are going to discuss. Theoretical subproblems like that are what we
-use to construct solutions for the evolving squishy problems that we are
-discussing here.<a href=#fnref2 class=footnote-back role=doc-backlink>↩︎</a></p></li><li id=fn3><p>… which is why it is called a “model”.<a href=#fnref3 class=footnote-back role=doc-backlink>↩︎</a></p></li></ol></aside></div><div class=pagination><a href=/posts/why-i-hate-carousels/ class="left arrow">&#8592;</a>
-<a href=/posts/when-your-feature-gets-someone-hurt/ class="right arrow">&#8594;</a>
-<a href=# class=top>Top</a></div></main><footer><span>Last modified on March 27, 2024</span></footer><script async src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-GSREL2EZ4Y")}</script></body></html>
+              insights into what it is we want to achieve and what we are working
+              with. Each new insight changes our problem statement, solution, and
+              eventually implementation and deployment.</p>
+          </li>
+          <li>
+            <p><strong>Understanding the problem must be deliberate</strong>.
+              Given that the deployed solution isn’t quite a match for the real world
+              problem, we need to ensure that we have the right measurements and
+              probes in place to understand this mismatch – be it telemetry, user
+              satisfaction surveys, interviews, or whatever else.</p>
+          </li>
+        </ul>
+        <p>Whenever we are holding some concept, being conscious about where in
+          the lifecycle that thing fits helps us get a sense for the level of
+          maturity of the concept and where you need to be to solve the
+          problem.</p>
+        <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+          <hr>
+          <ol>
+            <li id="fn1">
+              <p>The concept applies equally to non-software systems – as
+                long as they aim to solve real world problems.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p>
+            </li>
+            <li id="fn2">
+              <p>Problems that we are interested in are those that affect
+                people. They tend to by squishy and ill-defined. Problems that are
+                defined entirely in the theoretical relam don’t fall into the model that
+                we are going to discuss. Theoretical subproblems like that are what we
+                use to construct solutions for the evolving squishy problems that we are
+                discussing here.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p>
+            </li>
+            <li id="fn3">
+              <p>… which is why it is called a “model”.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p>
+            </li>
+          </ol>
+        </section>
+        <div class="lastmodified">
+          <p>Last modified: March 23, 2024</p>
+        </div>
+      </article>
+    </main>
+    <footer class="container">
+      <style>
+        @scope {
+          :scope {
+            box-shadow: 0 0 6px #555;
+          }
+        }
+      </style>
+      <h2>More posts from this blog ...</h2>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/visualizing-people/">Visualizing Internet Users</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on November 21, 2020</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/engineering/">#Engineering</a>
+</span>
+          <span class="tag-link">
+    <a href="/tags/curiosity/">#Curiosity</a>
+</span>
+        </div>
+      </div>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/sometimes-its-the-interviewers-who-suck/">Sometimes It&#39;s the Interviewers Who Suck</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on March 20, 2021</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/career/">#Career</a>
+</span>
+        </div>
+      </div>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/visualizing-people-2/">Visualizing A Million People</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on September 6, 2021</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/curiosity/">#Curiosity</a>
+</span>
+        </div>
+        <div>
+          <div class="post-summary">
+            <p>If your feature pisses off a million people what does this angry mob look like?
+              Spoiler: We only get to 750,000.</p>
+          </div>
+          <p class="post-more"><a href="/posts/visualizing-people-2/">Read more …</a></p>
+        </div>
+      </div>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/inktober-stripes/">Inktober - Stripes</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on January 21, 2022</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/inktober/">#Inktober</a>
+</span>
+        </div>
+      </div>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/darpa-heilmeier-catechism/">DARPA&#39;s Heilmeier Catechism</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on June 28, 2022</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/engineering/">#engineering</a>
+</span>
+        </div>
+        <div>
+          <div class="post-summary">
+            <p>A set of questions help you think through and evaluate proposed projects and research programs.</p>
+          </div>
+          <p class="post-more"><a href="/posts/darpa-heilmeier-catechism/">Read more …</a></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,47 +1,251 @@
-<!doctype html><html lang=en-us><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>On Highlighting Syntax vs. Semantics &#183; Strong Opinions, Weekly Held</title>
-<link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/scss/fonts.min.css><link rel=stylesheet href=/css/formatting.min.css><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><meta name=msapplication-TileColor content="#da532c"><meta name=theme-color content="#ffffff"><link href rel=alternate type=application/rss+xml title="Strong Opinions, Weekly Held"><link rel=stylesheet href=https://xn--izc.com/_katex/katex.min.505d5f829022bb7b4f24dfee0aa1141cd7bba67afe411d1240335f820960b5c3.css integrity="sha256-UF1fgpAiu3tPJN/uCqEUHNe7pnr+QR0SQDNfgglgtcM="><script src=https://xn--izc.com/_katex/katex.min.dc84b296ec3e884de093158f760fd9d45b6c7abe58b5381557f4e138f46a58ae.js integrity="sha256-3ISyluw+iE3gkxWPdg/Z1Ftser5YtTgVV/ThOPRqWK4="></script><script src=https://xn--izc.com/js/render-katex.min.js async></script></head><body><nav class=nav><div class=nav-container><a href=/><h2 class=nav-title>Strong Opinions, Weekly Held</h2></a><ul><li><a href=/about/me><span>About Me</span></a></li><li><a href=/posts><span>Posts</span></a></li><li><a href=/tags><span>Tags</span></a></li></ul></div></nav><main><div class=post><h1 class=post-title>On Highlighting Syntax vs. Semantics</h1><div class=post-info><span>Written by</span>
-Asanka Herath
-<span>on&nbsp;</span><time datetime="2022-02-12 00:00:00 -0500 EST">February 12, 2022</time>
-|
-<a href=/tags/engineering>#Engineering</a></div><div class="social share"><a href="https://twitter.com/intent/tweet?text=On+Highlighting+Syntax+vs.+Semantics&amp;url=https%3A%2F%2Fxn--izc.com%2Fposts%2Fsyntax-highlighting%2F&amp;via=asankah" aria-label="Share on Twitter" target=_blank rel=noopener><img src=/images/twitter.svg alt="Share on Twitter">
-</a><a href="mailto:?body=Via+https%3A%2F%2Ftwitter.com%2Fasankah%0A%0ATakes+a+look+at+an+alternate+form+of+code+highlighting+based+on+core%0Asemantics+instead+of+syntactic+role.%0A%0ARead+more+at+https%3A%2F%2Fxn--izc.com%2Fposts%2Fsyntax-highlighting%2F%0A&amp;subject=On+Highlighting+Syntax+vs.+Semantics+-+Strong+Opinions%2C+Weekly+Held" aria-label="Share via Email" target=_blank rel=noopener><img src=/images/mail.svg alt="Share via Email">
-</a><a href=https://xn--izc.com/posts/syntax-highlighting/ aria-label="Permanent link to post"><img src=/images/link-2.svg alt="Permanent link to post"></a></div><p><span class=noun>Aesthetics</span> <span class=adverb>aside</span>, <span class=noun>syntax</span> <span class=gerund>highlighting</span> <span class=preposition>in</span>
-<span class=noun>code</span> <span class=verb>performs</span> <span class=determiner>an</span> <span class=adjective>important</span>
-<span class=noun>role</span> <span class=preposition>in</span> <span class=gerund>improving</span> the <span class=noun>readability</span> <span class=preposition>of</span>
-<span class=noun>code</span>. <span class=adjective>Most</span>
-<span class=adjective>syntax</span> <span class=gerund>highlighting</span> <span class=noun>schemes</span>
-<span class=gerund>including</span> <span class=adjective>popular</span> <span class=noun>libraries</span>
-<span class=verb>are</span> <span class=verb>limited</span> <span class=preposition>to</span> <span class=gerund>using</span> <span class=noun>colors</span> <span class=conjunction>and</span> <span class=gerund>formatting</span> <span class=noun>changes</span> <span class=preposition>to</span> <span class=verb>distinguish</span>
-<span class=preposition>between</span> <span class=adjective>different</span> <span class=adjective>syntax</span>
-<span class=noun>classes</span>. <span class=pronoun>This</span>
-<span class=verb>is</span> <span class=determiner>what</span> <span class=pronoun>it</span> <span class=verb>would look</span> <span class=conjunction>like</span> <span class=conjunction>if</span>
-<span class=pronoun>we</span> <span class=verb>apply</span> <span class=determiner>the</span> <span class=adjective>same</span> <span class=noun>logic</span> <span class=preposition>to</span> <span class=proper>English</span> <span class=noun>prose</span>. <span class=adjective>Each</span> <span class=noun>word</span> <span class=preposition>in</span> <span class=pronoun>this</span> <span class=noun>paragraph</span> <span class=verb>is</span> <span class=adverb>highlighted</span> <span class=verb>using</span> <span class=pronoun>its</span> <span class=adjective>respective</span>
-<span class=adjective>syntactic</span> <span class=noun>purpose</span>.</p><p>Not very readable, is it? The colors aren’t random. They highlights
-correspond to <span class=noun>noun</span>, <span class=adverb>adverb</span>, <span class=gerund>gerund</span>, <span class=preposition>preposition</span>, <span class=adjective>adjective</span>, and <span class=verb>verb</span>.
-This is basically how people use syntax highlighting.</p><p>Typographers have long known that punctuation alone can’t
-sufficiently convey emphasis and relative importance of prose. As <span class=citation data-cites=truss2004eats>(<a href=#ref-truss2004eats role=doc-biblioref>Truss 2004</a>)</span>
-points out <em>italics</em> is <em>“the print equivalent of
-underlining”</em> (via <span class=citation data-cites=wiki:Italic_type>(<a href=#ref-wiki:Italic_type role=doc-biblioref>Wikipedia 2021</a>)</span>). A number of uses exist
-for this font variation including providing emphasis, stressing
-important points, or indicating foreign words and phrases. When
-conveying emphasis the syntactic role of a word does not change; the
-word just is <em>more</em> important to make the central point than
-others.</p><p>These key important words alone can’t convey a story. Grammar and
-completeness demand accompanying words. It is the role of formatting,
-whitespace, and punctuation to guide the reader towards what is
-important. Without formatting and whitespace, prose would become an
-intimidating “wall of words”; tedious and unwelcoming.</p><p>And so it goes for code; some code is more important than others. The
-central logic of a snippet of code lies somewhere in the middle
-surrounded by boilerplate, setup, and tear down logic. If syntax
-highlighting were to make the central logic stand out, then it has to go
-beyond mere syntactic purpose of the tokens comprising the code.</p><p>What would such a scheme look like?</p><div class=pre><div class=line-block>bool ListValue::<span class="function hi">Set</span>(size_t <span class=var>index</span>,
-std::unique_ptr&lt;Value> <span class=var>in_value</span>) {<br>  if (!in_value)<br>    return false;<br>  if (index >= list().size())<br>    list().resize(index + 1);</div><div class="pre highlight"><div class=line-block>  <span class=function>list</span>()[<span class=var>index</span>] = std::<span class=function>move</span>(*<span class=var>in_value</span>);</div></div><div class=line-block>  return true;<br>}</div></div><p>Perhaps not the best example, but you should get the gist of where
-I’m going with this. The highlighting quickly directs your eyes to the
-parts that need attention. You’d still need to do the legwork for the
-details. But for someone trying to figure out what some undocumented
-function is doing, this kind of highlight makes quick work of going past
-the boilerplate.</p><h2 class=unnumbered id=references>References</h2><div id=refs class="references csl-bib-body hanging-indent" data-entry-spacing=0 role=list><div id=ref-truss2004eats class=csl-entry role=listitem>Truss, Lynne. 2004. <span>“Eats, Shoots & Leaves: The Zero Tolerance
-Approach to Punctuation.”</span> In, 146. Penguin.</div><div id=ref-wiki:Italic_type class=csl-entry role=listitem>Wikipedia. 2021. <span>“<span class=nocase>Italic type</span> —
-<span>W</span>ikipedia<span>,</span> the Free Encyclopedia.”</span> <a href="http://en.wikipedia.org/w/index.php?title=Italic%20type&amp;oldid=1049142359" class=uri>http://en.wikipedia.org/w/index.php?title=Italic%20type&amp;oldid=1049142359</a>.</div></div></div><div class=pagination><a href=/posts/inktober-stripes/ class="left arrow">&#8592;</a>
-<a href=/posts/gender-gap-in-adolescent-mental-health/ class="right arrow">&#8594;</a>
-<a href=# class=top>Top</a></div></main><footer><span>Last modified on February 3, 2024</span></footer><script async src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-GSREL2EZ4Y")}</script></body></html>
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>On Highlighting Syntax vs. Semantics</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet" href="/styles/katex.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link rel="stylesheet" href="/styles/wrwF-lS3I-.css">
+    <meta name="generator" content="Pandoc + Eleventy">
+  </head>
+  <body>
+    <header class="container">
+      <style>
+        @scope {
+          nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            column-gap: 1em;
+            color: #333;
+            a {
+              color: #333;
+            }
+            h1 {
+              font-size: 16pt;
+              font-weight: 600;
+            }
+            h2 {
+              font-size: 12pt;
+            }
+            * {
+              padding: 0;
+              flex-basis: max-content;
+              align-self: center;
+              margin-top: 1em;
+              margin-bottom: 1em;
+            }
+            .fill {
+              flex-grow: 1;
+            }
+          }
+          :scope {
+            box-shadow: 0 0 6px #555;
+          }
+        }
+      </style>
+      <nav class="navlike">
+        <h1><a href="/">Strong Opinions Weekly Held</a></h1>
+        <span class="fill"></span>
+        <h2><a href="/">Home</a></h2>
+        <h2><a href="/about/me">About</a></h2>
+        <h2><a href="/tags">Tags</a></h2>
+      </nav>
+    </header>
+    <main>
+      <article class="container">
+        <header>
+          <h1>On Highlighting Syntax vs. Semantics</h1>
+          <div class="navlike">
+            <span class="post-date">
+          Posted on February 12, 2022</span>
+            <span class="fill"></span>
+            <span class="tag-link">
+    <a href="/tags/engineering/">#Engineering</a>
+</span>
+          </div>
+        </header>
+        <p><span class="noun">Aesthetics</span> <span class="adverb">aside</span>, <span class="noun">syntax</span> <span class="gerund">highlighting</span> <span class="preposition">in</span>
+          <span class="noun">code</span> <span class="verb">performs</span> <span class="determiner">an</span> <span class="adjective">important</span>
+          <span class="noun">role</span> <span class="preposition">in</span> <span class="gerund">improving</span> the <span class="noun">readability</span> <span class="preposition">of</span>
+          <span class="noun">code</span>. <span class="adjective">Most</span>
+          <span class="adjective">syntax</span> <span class="gerund">highlighting</span> <span class="noun">schemes</span>
+          <span class="gerund">including</span> <span class="adjective">popular</span> <span class="noun">libraries</span>
+          <span class="verb">are</span> <span class="verb">limited</span> <span class="preposition">to</span> <span class="gerund">using</span> <span class="noun">colors</span> <span class="conjunction">and</span> <span class="gerund">formatting</span> <span class="noun">changes</span> <span class="preposition">to</span> <span class="verb">distinguish</span>
+          <span class="preposition">between</span> <span class="adjective">different</span> <span class="adjective">syntax</span>
+          <span class="noun">classes</span>. <span class="pronoun">This</span>
+          <span class="verb">is</span> <span class="determiner">what</span> <span class="pronoun">it</span> <span class="verb">would look</span> <span class="conjunction">like</span> <span class="conjunction">if</span>
+          <span class="pronoun">we</span> <span class="verb">apply</span> <span class="determiner">the</span> <span class="adjective">same</span> <span class="noun">logic</span> <span class="preposition">to</span> <span class="proper">English</span> <span class="noun">prose</span>. <span class="adjective">Each</span> <span class="noun">word</span> <span class="preposition">in</span> <span class="pronoun">this</span> <span class="noun">paragraph</span> <span class="verb">is</span> <span class="adverb">highlighted</span> <span class="verb">using</span> <span class="pronoun">its</span> <span class="adjective">respective</span>
+          <span class="adjective">syntactic</span> <span class="noun">purpose</span>.
+        </p>
+        <p>Not very readable, is it? The colors aren’t random. They highlights
+          correspond to <span class="noun">noun</span>, <span class="adverb">adverb</span>, <span class="gerund">gerund</span>, <span class="preposition">preposition</span>, <span class="adjective">adjective</span>, and <span class="verb">verb</span>.
+          This is basically how people use syntax highlighting.</p>
+        <p>Typographers have long known that punctuation alone can’t
+          sufficiently convey emphasis and relative importance of prose. As <span class="citation" data-cites="truss2004eats">(<a href="#ref-truss2004eats" role="doc-biblioref">Truss 2004</a>)</span>
+          points out <em>italics</em> is <em>“the print equivalent of
+underlining”</em> (via <span class="citation" data-cites="wiki:Italic_type">(<a href="#ref-wiki:Italic_type" role="doc-biblioref">Wikipedia 2021</a>)</span>). A number of uses exist
+          for this font variation including providing emphasis, stressing
+          important points, or indicating foreign words and phrases. When
+          conveying emphasis the syntactic role of a word does not change; the
+          word just is <em>more</em> important to make the central point than
+          others.</p>
+        <p>These key important words alone can’t convey a story. Grammar and
+          completeness demand accompanying words. It is the role of formatting,
+          whitespace, and punctuation to guide the reader towards what is
+          important. Without formatting and whitespace, prose would become an
+          intimidating “wall of words”; tedious and unwelcoming.</p>
+        <p>And so it goes for code; some code is more important than others. The
+          central logic of a snippet of code lies somewhere in the middle
+          surrounded by boilerplate, setup, and tear down logic. If syntax
+          highlighting were to make the central logic stand out, then it has to go
+          beyond mere syntactic purpose of the tokens comprising the code.</p>
+        <p>What would such a scheme look like?</p>
+        <pre>
+ bool ListValue::<span class="function hi">Set</span>(size_t <span class="var-index">index</span>, std::unique_ptr&lt;Value&gt; <span class="var-value">in_value</span>) {
+   if (!in_value)
+     return false;
+   if (index >= list().size())
+     list().resize(index + 1);
+   <span class="hi"><span class="function">list</span>()[<span class="var-index">index</span>] = std::<span class="function">move</span>(*<span class="var-value">in_value</span>);</span>
+   return true;
+ }
+</pre>
+        <p>Perhaps not the best example, but you should get the gist of where
+          I’m going with this. The highlighting quickly directs your eyes to the
+          parts that need attention. You’d still need to do the legwork for the
+          details. But for someone trying to figure out what some undocumented
+          function is doing, this kind of highlight makes quick work of going past
+          the boilerplate.</p>
+        <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+          <div id="ref-truss2004eats" class="csl-entry" role="listitem">
+            Truss, Lynne. 2004. <span>“Eats, Shoots &amp; Leaves: The Zero Tolerance
+Approach to Punctuation.”</span> In, 146. Penguin.
+          </div>
+          <div id="ref-wiki:Italic_type" class="csl-entry" role="listitem">
+            Wikipedia. 2021. <span>“<span class="nocase">Italic type</span> —
+            <span>W</span>ikipedia<span>,</span> the Free Encyclopedia.”</span> <a href="http://en.wikipedia.org/w/index.php?title=Italic%20type&amp;oldid=1049142359" class="uri">http://en.wikipedia.org/w/index.php?title=Italic%20type&amp;oldid=1049142359</a>.
+          </div>
+        </div>
+        <div class="lastmodified">
+          <p>Last modified: February 12, 2022</p>
+        </div>
+      </article>
+    </main>
+    <footer class="container">
+      <style>
+        @scope {
+          :scope {
+            box-shadow: 0 0 6px #555;
+          }
+        }
+      </style>
+      <h2>More posts from this blog ...</h2>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/gender-gap-in-adolescent-mental-health/">On Gender Gap in Adolescent Mental Health</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on March 1, 2022</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/inclusion-and-equity/">#Inclusion and Equity</a>
+</span>
+        </div>
+        <div>
+          <div class="post-summary">
+            <p>A recent study found that more gender-equal countries have larger gender gaps in mental health. I look at the data that seems to have yielded this counter-intuitive results and find it lacking.</p>
+          </div>
+          <p class="post-more"><a href="/posts/gender-gap-in-adolescent-mental-health/">Read more …</a></p>
+        </div>
+      </div>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/interesting-numbers/">All natural numbers are interesting</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on August 3, 2022</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/math/">#math</a>
+</span>
+          <span class="tag-link">
+    <a href="/tags/curiosity/">#curiosity</a>
+</span>
+        </div>
+        <div>
+          <div class="post-summary">
+            <p>A proof.</p>
+          </div>
+          <p class="post-more"><a href="/posts/interesting-numbers/">Read more …</a></p>
+        </div>
+      </div>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/promise-fatigue/">Promise Fatigue</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on November 1, 2022</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/culture/">#Culture</a>
+</span>
+          <span class="tag-link">
+    <a href="/tags/career/">#Career</a>
+</span>
+        </div>
+        <div>
+          <div class="post-summary">
+            <p>Setting low but realistic expectations is better than setting high but unrealistic ones.</p>
+          </div>
+          <p class="post-more"><a href="/posts/promise-fatigue/">Read more …</a></p>
+        </div>
+      </div>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/use-drop-not-edit/">Vim: Use Drop Not Edit, SBuffer Not Buffer</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on July 7, 2020</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/tools/">#Tools</a>
+</span>
+          <span class="tag-link">
+    <a href="/tags/vim/">#Vim</a>
+</span>
+        </div>
+      </div>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/proof-of-work/">Proof of Work</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on July 12, 2024</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/engineering/">#Engineering</a>
+</span>
+          <span class="tag-link">
+    <a href="/tags/career/">#Career</a>
+</span>
+          <span class="tag-link">
+    <a href="/tags/organizations/">#Organizations</a>
+</span>
+        </div>
+        <div>
+          <div class="post-summary">
+            <p>Working with a poorly thought-out, or overengineered technology stack, or an overly bureaucratic organization is <em>also a form of proof-of-work</em>.</p>
+          </div>
+          <p class="post-more"><a href="/posts/proof-of-work/">Read more …</a></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
