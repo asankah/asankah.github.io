@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>I Moved This Blog To Eleventy</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet" href="/styles/katex.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link rel="stylesheet" href="/styles/_G0kadx4M5.css">
+    <meta name="generator" content="Pandoc + Eleventy">
+  </head>
+  <body>
+    <header class="container">
+      <nav class="navlike">
+        <h1><a href="/">Strong Opinions Weekly Held</a></h1>
+        <span class="fill"></span>
+        <h2><a href="/about/me/">About</a></h2>
+        <h2><a href="/tags/">Tags</a></h2>
+      </nav>
+    </header>
+    <main>
+      <article class="container">
+        <header>
+          <h1>I Moved This Blog To Eleventy</h1>
+          <div class="navlike">
+            <span class="post-date">
+          Posted on December 13, 2024</span>
+            <span class="fill"></span>
+            <span class="tag-link">
+    <a href="/tags/meta/">#Meta</a>
+</span>
+          </div>
+        </header>
+        <p>Astute observers of this blog may have noticed that the blog looks
+          suspiciously different lately. That’s because I changed the static site
+          generator I was using.</p>
+        <p>Previously the <a href="../how-this-blog-works/">static site
+            generator I used</a> was <a href="https://gohugo.io">Hugo</a>. This
+          arrangement worked for a while but it had some shortcomings.</p>
+        <h2 id="growing-pains">Growing Pains</h2>
+        <p>I was using <a href="https://pandoc.org/">Pandoc</a> to convert
+          Markdown to HTML. Hugo’s support for Pandoc had some limitations. For
+          example, you can’t specify options for Pandoc or use a bibliography.
+          When I moved the blog to Hugo, I lost some of these features. Attempting
+          to close the gap I authored a <a href="https://github.com/gohugoio/hugo/pull/7529">patch that added
+            support for configuring Pandoc</a>.</p>
+        <p>Pandoc is extensible via filtering the AST of a document through a
+          series of programs which can modify it. There is no restrction on the
+          kinds of programs that you can use.</p>
+        <p>If Hugo allowed configuring all this via frontmatter, that may
+          introduce some tricky security issues.</p>
+        <p>Say you download a Hugo theme from the web and try to build your
+          site. A theme could include frontmatter that causes Pandoc to run an
+          unsafe binary. That’s not great. So it is understandable that this kind
+          of feature isn’t a part of Hugo proper<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.
+          While my patch worked, it was safe only because I controlled every
+          aspect of the blog.</p>
+        <p>While tinkering on this was fun, it created an additional headache.
+          Namely, whenever and whereever I wanted to build my blog, I had to
+          maintain a custom build of Hugo. After moving my build a couple of times
+          maintaining a custom build became a painful chore.</p>
+        <h2 id="the-exodus">The Exodus</h2>
+        <p>So started the process of looking for an easy-to-use static site
+          generator (hereafter SSG). My requirements were:</p>
+        <ul>
+          <li>The SSG should support Markdown.</li>
+          <li>Markdown should support some of the Pandoc features I was using, or
+            at least have the flexibility to extend support for those features.</li>
+          <li>Making this work should not require any custom patches.</li>
+        </ul>
+        <p><a href="https://www.11ty.dev/">Eleventy</a> was <em>almost</em> a
+          no-brainer. People had high praise for it, including developer relations
+          folks at Google. So I felt like that would be an easy move.</p>
+        <p>Eleventy’s Mardown support is based on <a href="https://github.com/markdown-it/markdown-it">Mardown-It</a>. One
+          thing that I liked about Markdown-It from the start is that there
+          appeared to be people who are extending it to support various features
+          of Pandoc. In fact I found plugins for basically all Pandoc features
+          that I used in this blog. Everything was looking quite rosy.</p>
+        <h2 id="templating">Templating</h2>
+        <h3 id="webc-eleventy-is-broken">WebC + Eleventy Is Broken</h3>
+        <p>Eleventy supports a templating language called <a href="https://www.11ty.dev/docs/languages/webc/">WebC</a>. It follows
+          the web-component way of defining layouts, but can avoid much of the
+          custom element overhead by opportunistically generating plain HTML. I
+          had already accepted that switching the SSG meant rewriting layout
+          templates, and using web components to do that seemed like a good idea<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p>
+        <p>A couple of standalone WebC based templates worked fine. But the
+          moment I had nested templates, Eleventy hung and eventually crashed. I
+          didn’t want to go on a side quest to debug it, and ultimately that
+          would’ve likely led to be violating the “no local patches” rule. So that
+          was that for WebC. If WebC was more robust or just worked, it would have
+          been my choice of template engine.</p>
+        <p>One cool feature of using WebC with Eleventy is that bundling works
+          trivially. For example, if you have a <code>&lt;script&gt;</code> tag or
+          a <code>&lt;style&gt;</code> tag in a component, WebC automatically
+          pulls the content into the relevant bundles. All other templating
+          engines supported in Eleventy (save for third-party engines that I
+          didn’t try) require manual labor to get stuff into the bundles.</p>
+        <h3 id="nunjucks-eleventy-works">Nunjucks + Eleventy Works</h3>
+        <p>The next templating language I looked at was Nunjucks. I had briefly
+          looked at Liquid as well, but for my purposes Nunjucks and Liquid seemed
+          to be quite similar. Nunjucks won out because it had safer defaults<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>.</p>
+        <h2 id="handrolling">Handrolling</h2>
+        <h3 id="pandoc-again">Pandoc Again</h3>
+        <p>I tried to rely only on Markdown-It for this blog. But very soon I
+          had a big stack of extensions to support the various features I needed,
+          like supporting <code>&lt;div&gt;</code>s, bibliography, and attributes.
+          While the Markdown-It ecosystem is extensive, it also introduces a lot
+          of confusion. For example, there are multiple packages that all provide
+          the same functionality and <em>also based on the same base package</em>.
+          Keeping track of all this was starting to be a pain. Also, I had trouble
+          getting block level containers working.</p>
+        <p>After a while I decided not to waste time trying to replicate
+          features that already existed in Pandoc. So I wrote a little library
+          that invoked Pandoc within Eleventy to convert Markdown to HTML. It was
+          a little slower, but worked out great.</p>
+        <h3 id="bundling-files">Bundling Files</h3>
+        <p>While it is possible to add content to bundles (like CSS and JS),
+          curiously it was not possible to stuff files into said bundles. The
+          suggested method was to do something like this:</p>
+        <pre><code>  {% css %}
+    {% include &quot;some-file.css&quot; %}
+    body {
+        // other CSS.
+    }
+  {% endcss %}</code></pre>
+        <p>This seems like a good idea, but there is one crucial issue: <em>The
+contents of the included file (<code>some-file.css</code> in the example
+above) is also processed by the same templating engine</em>. If the file
+          doesn’t contain any sequences that look like template tokens, then we
+          are good. But this is asking for trouble.</p>
+        <p>So I wrote a custom tag called <code>bundleFile</code> that can take
+          the contents of a file and stuff it directly into a bundle. The earlier
+          example now looks like this:</p>
+        <pre><code>  {% bundleFile &quot;some-file.css&quot; %}
+  {% css %}
+    body {
+        // other CSS
+    }
+  {% endcss %}</code></pre>
+        <h3 id="sassy">SASSy</h3>
+        <p>Eleventy doesn’t support SASS out of the box, but there are examples
+          in the documentation for how you can set it up. But all of the examples
+          assume that you have SASS or SCSS files that you are going to conver to
+          CSS, and then serve without bundling. I wanted to be able to compile
+          SASS and stuff the resulting CSS into a bundle.</p>
+        <p>So alongside the <code>bundleFile</code> shortcode, I added a
+          <code>bundleScss</code> shortcode so I can do stuff like this:
+        </p>
+        <pre><code>   {% bundleScss &quot;my-styles.scss&quot; %}</code></pre>
+        <h3 id="katex">Katex</h3>
+        <p>I like Katex for my math typesetting. Pandoc supports it out of the
+          box. But the rendered HTML needs to invoke Katex in the client to render
+          the math. I wanted to avoid this step entirely and try to render Katex
+          on the server.</p>
+        <p>This was a pain to do with Hugo, but since Eleventy was alredy runing
+          in Node, server-side rendering is a breeze.</p>
+        <h2 id="conclusion">Conclusion</h2>
+        <p>Overall I found Eleventy fun to work with. My gripes are mostly with
+          the documentation which lacks a reference. It’s a pain to go through
+          tutorial-like documents to find out what exactly gets passed to a
+          shortcode or what to do when a shortcode adds a dependency. I made way
+          too many trips to the 11ty GitHub repo. The right number of required
+          visits should be zero.</p>
+        <p>In the coming weeks I’ll package Eleventy Pandoc support and some of
+          the shortcodes so others can use them.</p>
+        <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+          <hr>
+          <ol>
+            <li id="fn1">
+              <p>There are ways to mitigate this problem. For example, we
+                could restrict which flags can be inherited from themes, or require that
+                certain options can only be set from the top level
+                <code>hugo.yaml</code> file that the user controls.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a>
+              </p>
+            </li>
+            <li id="fn2">
+              <p>Not quite all the way true because use of shadow DOM and
+                custom elements was not a requirement.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p>
+            </li>
+            <li id="fn3">
+              <p>The defaults I’m referring to is what happens with a tag
+                like <code>{{ foo }}</code> where the contents of the variable
+                <code>foo</code> would be inserted into the document. Nunjucks will
+                treat the contents as unsafe and requires manually opting into unsafe
+                injection via <code>{{ foo | safe }}</code>. Liquid will insert the
+                contents with no escaping.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a>
+              </p>
+            </li>
+          </ol>
+        </section>
+        <div class="lastmodified">
+          <p>Last modified: December 13, 2024</p>
+        </div>
+      </article>
+    </main>
+    <footer class="container">
+      <h2>More posts from this blog ...</h2>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/fart-limit/">Fart Limit</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on June 14, 2021</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/curiosity/">#Curiosity</a>
+</span>
+        </div>
+        <div>
+          <div class="post-summary">
+            <p>Can a fart be fatal? Let's see what science and OSHA have to say.</p>
+          </div>
+          <p class="post-more"><a href="/posts/fart-limit/">Read more …</a></p>
+        </div>
+      </div>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/grab-diagram-workflow-re2/">Quickly grab a snapshot of your reMarkable tablet</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on January 6, 2022</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/remarkable-2/">#Remarkable 2</a>
+</span>
+          <span class="tag-link">
+    <a href="/tags/tools/">#Tools</a>
+</span>
+        </div>
+        <div>
+          <div class="post-summary">
+            <p>How to bind a hotkey to grab a snapshot of your reMarkable display and copy it to the clipboard on a Mac.</p>
+          </div>
+          <p class="post-more"><a href="/posts/grab-diagram-workflow-re2/">Read more …</a></p>
+        </div>
+      </div>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/notes-on-fact-checking/">Notes from Crash Course&#39;s Videos on Fact Checking Information You See On The Internet
+          </a></h3>
+        <div class="navlike">
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/curiosity/">#Curiosity</a>
+</span>
+        </div>
+        <div>
+          <div class="post-summary">
+            <p>Hank Green's Crash Course YouTube channel has an excellent series about
+              navigating digital information. It's an excellent guide to how internet users
+              could intelligently consume information they see on the internet. These are my
+              (incomplete) notes from the series.</p>
+          </div>
+          <p class="post-more"><a href="/posts/notes-on-fact-checking/">Read more …</a></p>
+        </div>
+      </div>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/the-point-of-a-strategy/">The Point of a Strategy</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on July 24, 2023</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/career/">#Career</a>
+</span>
+          <span class="tag-link">
+    <a href="/tags/engineering/">#Engineering</a>
+</span>
+        </div>
+        <div>
+          <div class="post-summary">
+            <p>The only useful strategy is one that reduces risks.</p>
+          </div>
+          <p class="post-more"><a href="/posts/the-point-of-a-strategy/">Read more …</a></p>
+        </div>
+      </div>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/have-loop/">The Have-Loop</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on June 24, 2024</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/culture/">#Culture</a>
+</span>
+        </div>
+        <div>
+          <div class="post-summary">
+            <p>Have-loops are positive feedback loops which cause unsustainable concentration of limited resources.
+              Once you learn to recognize them, you will see them everywhere.</p>
+          </div>
+          <p class="post-more"><a href="/posts/have-loop/">Read more …</a></p>
+        </div>
+      </div>
+    </footer>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"></script>
+    <script>
+      var dnt, doNotTrack = !1;
+      if (!1 && (dnt = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack, doNotTrack = dnt == "1" || dnt == "yes"), !doNotTrack) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments)
+        }
+        gtag("js", new Date), gtag("config", "G-GSREL2EZ4Y")
+      }
+    </script>
+  </body>
+</html>
