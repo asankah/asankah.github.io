@@ -1,18 +1,3 @@
-.noun { color: blue }
-.adverb { color: green }
-.gerund { color: purple }
-.preposition { color: brown }
-.verb { color: red }
-.determiner { color: navy }
-.conjunction { color: maroon }
-.pronoun { color: teal }
-.adjective { color: olive }
-.proper { color: coral }
-
-.function { color: teal }
-.var-index { color: blue }
-.var-value { color: green }
-.hi { font-weight: bold; }
 :root {
   color-scheme: light dark;
   --background: light-dark(rgb(239, 239, 239), rgb(30, 30, 30));
@@ -20,6 +5,7 @@
   --heading-text-color: light-dark(rgb(72, 72, 72), rgb(217, 216, 212));
   --dimmed-text-color: light-dark(rgb(49, 49, 49), rgb(175, 175, 175));
   --shadow-color: light-dark(rgb(85, 85, 85), rgb(238, 238, 238));
+  --notice-background-color: light-dark(rgb(204, 134, 134), rgb(87, 29, 29));
 }
 
 article header {
@@ -111,6 +97,7 @@ figure figcaption {
   --heading-text-color: light-dark(rgb(72, 72, 72), rgb(217, 216, 212));
   --dimmed-text-color: light-dark(rgb(49, 49, 49), rgb(175, 175, 175));
   --shadow-color: light-dark(rgb(85, 85, 85), rgb(238, 238, 238));
+  --notice-background-color: light-dark(rgb(204, 134, 134), rgb(87, 29, 29));
 }
 
 body {
@@ -182,6 +169,13 @@ pre {
 }
 .container * {
   grid-column: 2;
+}
+
+.notice-container {
+  background: radial-gradient(circle at -30% -30%, color-mix(in oklab, var(--notice-background-color) 60%, transparent), color-mix(in oklab, var(--notice-background-color) 0%, transparent) 100%);
+  border-radius: 0.2rem;
+  border: 1px solid color-mix(in oklab, var(--notice-background-color) 60%, transparent);
+  margin-bottom: 0;
 }
 
 .post-title a {
