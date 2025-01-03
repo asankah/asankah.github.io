@@ -1,15 +1,89 @@
-.socials {
-  display: flex;
-  flex-direction: horizontal;
-  justify-content: center;
-  column-gap: 2em;
+.noun { color: blue }
+.adverb { color: green }
+.gerund { color: purple }
+.preposition { color: brown }
+.verb { color: red }
+.determiner { color: navy }
+.conjunction { color: maroon }
+.pronoun { color: teal }
+.adjective { color: olive }
+.proper { color: coral }
 
-  margin-top: 2em;
+.function { color: teal }
+.var-index { color: blue }
+.var-value { color: green }
+.hi { font-weight: bold; }
+:root {
+  color-scheme: light dark;
+  --background: light-dark(rgb(239, 239, 239), rgb(30, 30, 30));
+  --text-color: light-dark(rgb(0, 0, 0), rgb(217, 216, 212));
+  --heading-text-color: light-dark(rgb(72, 72, 72), rgb(217, 216, 212));
+  --dimmed-text-color: light-dark(rgb(49, 49, 49), rgb(175, 175, 175));
+  --shadow-color: light-dark(rgb(85, 85, 85), rgb(238, 238, 238));
+  --notice-background-color: light-dark(rgb(204, 134, 134), rgb(87, 29, 29));
+}
+
+article header {
   margin-bottom: 1em;
+}
+article header h1 {
+  margin-bottom: 0;
+}
+article p,
+article ul,
+article ol,
+article figure,
+article > img {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+article .lastmodified {
+  font-size: smaller;
+  color: var(--dimmed-text-color);
+  text-align: right;
+}
+article .references {
+  padding-left: 2em;
+  display: grid;
+  grid-template-columns: 3rem auto;
+}
+article .references::before {
+  content: "References";
+  display: block;
+  font-size: larger;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 0;
+  grid-column: 2;
+}
+article .references .csl-entry {
+  display: contents;
+}
+article .references .csl-entry .csl-left-margin {
+  grid-column: 1;
+}
+article .references .csl-entry .csl-right-margin {
+  grid-column: 2;
+}
 
-  * {
-    display: block;
-  }
+.preface {
+  color: var(--dimmed-text-color);
+  margin-left: 4em;
+  margin-right: 4em;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+figure img {
+  max-width: 100%;
+}
+figure figcaption {
+  font-size: smaller;
+  color: var(--dimmed-text-color);
 }
 .glossary, .aside {
   float: right;
@@ -178,6 +252,9 @@ nav h2 {
 nav * {
   margin-top: 1em;
   margin-bottom: 1em;
+}
+nav .disabled {
+  color: var(--dimmed-text-color);
 }
 
 .tag-link a {
