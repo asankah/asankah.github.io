@@ -24,7 +24,7 @@
 }
 
 article header {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 article header h1 {
   margin-bottom: 0;
@@ -35,7 +35,7 @@ article ol,
 article figure,
 article > img {
   margin-top: 0;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 article .lastmodified {
   font-size: smaller;
@@ -68,8 +68,8 @@ article .references .csl-entry .csl-right-margin {
 
 .preface {
   color: var(--dimmed-text-color);
-  margin-left: 4em;
-  margin-right: 4em;
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
 
 figure {
@@ -82,7 +82,7 @@ figure img {
   max-width: 100%;
 }
 figure figcaption {
-  font-size: smaller;
+  font-size: 0.8rem;
   color: var(--dimmed-text-color);
 }
 .glossary, .aside {
@@ -103,6 +103,10 @@ figure figcaption {
 :root {
   --font-weight-normal: 400;
   --font-weight-bold: 600;
+  --font-size-body: 16pt;
+  --font-size-inline-code: 12pt;
+  --font-size-block-code: 10pt;
+  font-size: 16pt;
 }
 
 :root {
@@ -120,7 +124,7 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: var(--font-weight-normal);
-  font-size: 16pt;
+  font-size: var(--font-size-body);
   background: var(--background);
   color: var(--text-color);
   margin: 0;
@@ -137,7 +141,7 @@ h1 {
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: var(--font-weight-normal);
-  font-size: 2.5em;
+  font-size: 2.5rem;
 }
 
 h2 {
@@ -145,7 +149,7 @@ h2 {
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: var(--font-weight-normal);
-  font-size: 2em;
+  font-size: 2rem;
   margin-bottom: 0;
 }
 
@@ -154,7 +158,7 @@ h3 {
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: var(--font-weight-normal);
-  font-size: 1.5em;
+  font-size: 1.5rem;
   margin-bottom: 0;
 }
 
@@ -163,7 +167,7 @@ code {
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: var(--font-weight-normal);
-  font-size: 12pt;
+  font-size: var(--font-size-inline-code);
 }
 
 pre {
@@ -171,7 +175,7 @@ pre {
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: var(--font-weight-normal);
-  font-size: 10pt;
+  font-size: var(--font-size-block-code);
 }
 
 .container {
@@ -201,7 +205,7 @@ pre {
 }
 
 .post-date {
-  font-size: 14pt;
+  font-size: 0.8rem;
   font-style: italic;
   color: var(--dimmed-text-color);
 }
@@ -215,17 +219,18 @@ pre {
 }
 
 footer .post-card .post-title {
-  font-size: 16pt;
+  font-size: 1rem;
 }
 footer .post-card .post-summary {
-  font-size: 12pt;
+  font-size: 0.8rem;
 }
 
 .navlike {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  column-gap: 1em;
+  align-items: center;
+  column-gap: 1rem;
 }
 .navlike * {
   padding: 0;
@@ -243,15 +248,15 @@ nav a {
   color: var(--heading-text-color);
 }
 nav h1 {
-  font-size: 16pt;
+  font-size: 1rem;
   font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 nav h2 {
-  font-size: 12pt;
-}
-nav * {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 nav .disabled {
   color: var(--dimmed-text-color);
@@ -262,7 +267,7 @@ nav .disabled {
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: var(--font-weight-normal);
-  font-size: 12pt;
+  font-size: var(--font-size-inline-code);
   color: var(--dimmed-text-color);
 }
 .tag-link a[aria-current=page] {

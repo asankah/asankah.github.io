@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Buffer Bloat</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet" href="/styles/katex.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link rel="stylesheet" href="/styles/-2ABriowmr.css">
+    <meta name="generator" content="Pandoc + Eleventy">
+  </head>
+  <body>
+    <header class="container">
+      <nav class="navlike">
+        <h1><a href="/">Strong Opinions Weekly Held</a></h1>
+        <span class="fill"></span>
+        <h2><a href="/about/me/">About</a></h2>
+        <h2><a href="/tags/">Tags</a></h2>
+        <h2><a href="content/feed.xml"><img src="/images/rss.svg"></a></h2>
+      </nav>
+    </header>
+    <main>
+      <article class="container">
+        <header>
+          <h1>Buffer Bloat</h1>
+          <div class="navlike">
+            <span class="post-date">
+          Posted on January 3, 2025</span>
+            <span class="fill"></span>
+            <span class="tag-link">
+    <a href="/tags/engineering/">#Engineering</a>
+</span>
+          </div>
+        </header>
+        <h2 id="from-here-to-there-on-the-internet">From Here To There On The
+          Internet</h2>
+        <div class="with-aside">
+          <div class="aside">
+            <p>This article is an attempt to explain the concept of buffer bloat to
+              someone not super familiar with networking. Why would someone not super
+              familiar with networking need to know about buffer bloat? It was
+              supposed to point out the effects of trying to <em>hide</em> or
+              <em>delay</em> negative feedback loops.
+            </p>
+          </div>
+          <p>Devices on the internet including your phone, laptop, gaming console,
+            refridgerator, etc. communicate by exchanging data <em>“packets”</em>.
+            They are of course not physical packets. It’s just a useful way to
+            describe a unit of data sent over a wire or some other network
+            connection. A packet could be thought of as, say, a single frame in a
+            video or a small slice of audio, or a couple of paragraphs of text in a
+            webpage. Devices on the internet will take a big chunk of data (e.g. a
+            video clip) and break it down into smaller pieces (e.g. a single frame
+            in the video clip) and then sends each of these pieces along the
+            network. The receiving device puts the pieces back together to
+            reconstruct the original thing (e.g. the video clip again)<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
+        </div>
+        <figure>
+          <img src="./data.png" alt="A data packet has some additional information like where it came from and where it is going">
+          <figcaption aria-hidden="true">A data packet has some additional
+            information like where it came from and where it is going</figcaption>
+        </figure>
+        <p>Each packet has little pieces of extra information to help it get to
+          where it needs to go. One piece is where it comes from (a source
+          <em>“address”</em>). Another is where it is going (a target
+          <em>“address”</em>). Devices along the network (like your internet
+          provider’s networking equipment, satellites, etc.) use this extra
+          information to correctly route the packets to their intended
+          destination.
+        </p>
+        <p>The network is large and constantly changing. So each device focuses
+          only on getting the packet at least one step closer to its destination.
+          The specific journey taken by a packet is unkonwn until it is on its
+          way.</p>
+        <figure>
+          <img src="./network.png" alt="A source and a target device are connected loosely by a bunch of intermediate connections and devices. In this example the we are only looking at devices that our data packets are likely to encounter along the way. Each device (shown as boxes) and each network connection (shown as pipes between boxes) are different. They differ in how much data they can handle and how fast.">
+          <figcaption aria-hidden="true">A source and a target device are
+            connected loosely by a bunch of intermediate connections and devices. In
+            this example the we are only looking at devices that our data packets
+            are likely to encounter along the way. Each device (shown as boxes) and
+            each network connection (shown as <em>pipes</em> between boxes) are
+            different. They differ in how much data they can handle and how
+            fast.</figcaption>
+        </figure>
+        <h2 id="faster-and-faster">Faster and Faster</h2>
+        <p>So let’s say a video streaming service wants to send your mobile
+          phone a video. First the streaming service breaks up the video into
+          small packets. Then it throws all the packets into the network so that
+          the network can deliver them to your phone.</p>
+        <p>If the streaming service pushes data out at exactly the
+          <em>right</em> speed and the network doesn’t break, then everything
+          works out great. All the packets make it to the destination without
+          hassle. But neither the streaming service nor your phone know what that
+          <em>right</em> speed is due to the aforementioned unknowability of the
+          network.
+        </p>
+        <p>Sending too much data can overwhelm some devices or connections in
+          the network. If a device gets more data than it can handle, it’s likely
+          that it will start dropping packets until it can catch up.</p>
+        <figure>
+          <img src="./speedo.png" alt="Speedometer. Are we going too slow or too fast or maybe just right?">
+          <figcaption aria-hidden="true">Speedometer. Are we going too slow or too
+            fast or maybe just right?</figcaption>
+        </figure>
+        <p>Sending too little data isn’t great either. The speed might be too
+          slow for streaming video. The receiving device will underperform. Users
+          will be confused why their expensive broadband connection doesn’t let
+          them watch streaming video.</p>
+        <p>So how does the device know how much data to send out?</p>
+        <h2 id="flow-control">Flow Control</h2>
+        <p>The mechanisms we use to regulate the flow of data is called
+          <em>“flow control.”</em> We are going to look at a method based on
+          coordination between the sender and the receiver because <em>they are
+the only two actors in this scenario that we consider to be reliable and
+stable</em>.
+        </p>
+        <p>Different packets can take different paths See the network
+          connections between <code>C-D</code> and <code>C-E</code> in the diagram
+          above. Either of these paths can take a packet from <code>C</code> to
+          <code>F</code>. Packets going down different paths will arrive at
+          different times. Also, if the network gets overwhelmed or breaks, then
+          some of the packets may not make it at all.
+        </p>
+        <p>The reciever needs to know how to put the packets back in order and
+          tell if any are missing.</p>
+        <p>To keep track of which packet is which, we can add some new
+          information to the data packet: let’s call this the <em>sequence</em>.
+          As you might imagine, the sequence can start at 1 and count each packet
+          until the transmission is over. Each packet now has a unique position in
+          the list of packets.</p>
+        <figure>
+          <img src="./data-seq.png" alt="The same data packet as before, but now it has a sequence field.">
+          <figcaption aria-hidden="true">The same data packet as before, but now
+            it has a <em>sequence</em> field.</figcaption>
+        </figure>
+        <p>Great. But how do we know which packets made it to the other side?
+          The recipient will need to let us know this information in some sort of
+          reply. This reply is <em>also</em> a data packet called an
+          <em>acknowledgement</em>. It’s sent from the original recipient back to
+          the sender.
+        </p>
+        <figure>
+          <img src="./data-ack.png" alt="An example acknowledgement sent back to the sender. In this case the recipient is claiming that packets 4, 6, and 7 were missing. Note that the sender and recipient are switched since this packet is travelling “backwards”.">
+          <figcaption aria-hidden="true">An example acknowledgement sent back to
+            the sender. In this case the recipient is claiming that packets 4, 6,
+            and 7 were missing. Note that the sender and recipient are switched
+            since this packet is travelling “backwards”.</figcaption>
+        </figure>
+        <p>Ok so now we have all the information we need to perform some flow
+          control.</p>
+        <p>We can now figure out the optimal rate of data transfer
+          experimentally using some method like this:</p>
+        <ol type="1">
+          <li>Send data as fast as possible.</li>
+          <li>If the recipient claims some packets were missing, then resend those
+            packets and send packets <strong>slower</strong> than before.</li>
+          <li>If the recipient hasn’t complained of missing packets in a while,
+            try sending them <strong>faster</strong>.</li>
+        </ol>
+        <h2 id="stuck-on-the-wire">Stuck On The Wire</h2>
+        <p>Now imagine you sending data out - a rate of 100 packets per second.
+          And let’s say it takes one second for a packet to get to the other side.
+          Just before the end of the first second, the destination hasn’t received
+          the first packet yet. But the sender has sent 100 packets.</p>
+        <p>Where are the packets?</p>
+        <p>We call this <em>“data on the wire’</em>. Some data is indeed on the
+          wire literally, but that tends to be a tiny amount. Most of the data on
+          the wire is actually at each of the devices along the way either being
+          received, or waiting to be sent.</p>
+        <p>So once we factor in the equipment in the middle, your path to the
+          destination looks a little like this:</p>
+        <p>The device sees some data come in, stores it, figures out where to
+          send it next, and sends it on its way. There could be other stuff these
+          boxes could be doing, but that’s something for another post.</p>
+        <p>So from the perspective of a single box the world looks a bit like
+          this:</p>
+        <figure>
+          <img src="./network-with-data.png" alt="The source has sent a bunch of packets. For a moment in time all the packets are either being transmitted somewhere or are waiting to be transmitted out of some device on the internet.">
+          <figcaption aria-hidden="true">The source has sent a bunch of packets.
+            For a moment in time all the packets are either being transmitted
+            somewhere or are waiting to be transmitted out of some device on the
+            internet.</figcaption>
+        </figure>
+        <p>If this is the limit for the network and the sender keeps sending
+          more packets, then there’s no room for the packet. So it gets
+          <em>“dropped”</em>.
+        </p>
+        <p>It is common for a device to be at the border of a “good” network and
+          a “not”good” network. The goodness here is the amount of data that can
+          be stuffed into it.</p>
+        <p>When a burst of data comes along, not much data can be stuffed into
+          the small pipe before no more can fit.</p>
+        <p>As mentioned before, this means that the sender will need to
+          <em>re-send</em> the dropped packets and also slow down the rate of
+          data. Given enough time the rate of data transfer will approach the
+          throughput of the smallest pipe along the way.
+        </p>
+        <h2 id="buffer-bloat">Buffer Bloat</h2>
+        <p>Some folks looked at this setup and decided to improve things. There
+          are some valid reasons for doing what they did – which is why so many
+          people did this. But it didn’t quite have the intended effect.</p>
+        <p>So, what was the thing they did? They added
+          <strong>buffering</strong>. Too much of it.
+        </p>
+        <p>A <em>buffer</em> is a resevoir where excess packets can be kept
+          until the next link in the network is ready to accept more. What this
+          means is that every device along the way is trying to do flow control by
+          storing and resending packets instead of letting the sender know that
+          packets are getting dropped.</p>
+        <figure>
+          <img src="./network-with-buffer.png" alt="Device B is dropping all excess packets into a buffer.">
+          <figcaption aria-hidden="true">Device <code>B</code> is dropping all
+            excess packets into a buffer.</figcaption>
+        </figure>
+        <p>As before, let’s say the sender is sending 200 packets every second.
+          The network still can only transfer 100. The excess packets – another
+          100 of them – gets tossed into the buffer.</p>
+        <p>What happens just one second later?</p>
+        <figure>
+          <img src="./bob-1.png" alt="A very next packet – which we are calling Bob enters the network. The buffer contains 100 packets. The rest of the network also has 100 packets queued.">
+          <figcaption aria-hidden="true">A very next packet – which we are calling
+            <em>Bob</em> enters the network. The buffer contains 100 packets. The
+            rest of the network also has 100 packets queued.
+          </figcaption>
+        </figure>
+        <p>The very next packet – let’s call it <em>Bob</em> – that the sender
+          tosses into the network will end up in the buffer since <code>B</code>
+          is still waiting for some of the first 100 packets to get past
+          <code>C</code>.
+        </p>
+        <figure>
+          <img src="./bob-2.png" alt="Bob immediately gets tossed into the buffer. It is now the last packet in the buffer.">
+          <figcaption aria-hidden="true">Bob immediately gets tossed into the
+            buffer. It is now the last packet in the buffer.</figcaption>
+        </figure>
+        <p>Bob is the last packet in the buffer and must wait for all the other
+          packets in the buffer to be send before it will get queued to sent
+          out.</p>
+        <p>In another second, the first 100 packets make it to the target, and
+          now the 100 packets that were in the buffer are back on the wire.</p>
+        <figure>
+          <img src="./bob-3.png" alt="Bob is still in the buffer, but it is now the very next packet to get fished out and tossed back into the network.">
+          <figcaption aria-hidden="true">Bob is still in the buffer, but it is now
+            the very next packet to get fished out and tossed back into the
+            network.</figcaption>
+        </figure>
+        <p>Bob is still in the buffer but it’s the next one in line to get back
+          on the network.</p>
+        <figure>
+          <img src="./bob-4.png" alt="Hurray! Bob finally makes it to the destination.">
+          <figcaption aria-hidden="true">Hurray! Bob finally makes it to the
+            destination.</figcaption>
+        </figure>
+        <p>Once back on the network it will take another second for Bob to reach
+          the target.</p>
+        <p>Even under ideal conditions eventually the system settles on a new
+          equilibrium with one difference.</p>
+        <p>The length of time it takes for the data packets to make their way to
+          the destination is much larger. Packets accumulate in buffers along the
+          network. Each buffer adds an additional delay for the packet.</p>
+        <p>Overall the throughput of the network is the same. But latency – the
+          time it takes for a packet to get to the destination – is much
+          larger.</p>
+        <p>The effect is even worse in practice because this setup resists any
+          attempt at flow control. It delays the discovery of actual
+          throughput.</p>
+        <p>This phenomenon is called <strong>buffer bloat</strong>.</p>
+        <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+          <hr>
+          <ol>
+            <li id="fn1">
+              <p>This is obviously a massive oversimplification. But
+                doesn’t change the thesis presented next.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p>
+            </li>
+          </ol>
+        </section>
+        <div class="lastmodified">
+          <p>Last modified: January 3, 2025</p>
+        </div>
+      </article>
+    </main>
+    <footer class="container">
+      <h2>More posts from this blog ...</h2>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/notes-on-fact-checking/">Notes from Crash Course&#39;s Videos on Fact Checking Information You See On The Internet
+          </a></h3>
+        <div class="navlike">
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/curiosity/">#Curiosity</a>
+</span>
+        </div>
+        <div>
+          <div class="post-summary">
+            <p>Hank Green's Crash Course YouTube channel has an excellent series about
+              navigating digital information. It's an excellent guide to how internet users
+              could intelligently consume information they see on the internet. These are my
+              (incomplete) notes from the series.</p>
+          </div>
+          <p class="post-more"><a href="/posts/notes-on-fact-checking/">Read more …</a></p>
+        </div>
+      </div>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/the-lettergrade-rule/">The Lettergrade Rule</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on September 16, 2022</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/engineering/">#engineering</a>
+</span>
+        </div>
+        <div>
+          <div class="post-summary">
+            <p>Don't block a code review because of minor issues that are best left to the discretion of the author.</p>
+          </div>
+          <p class="post-more"><a href="/posts/the-lettergrade-rule/">Read more …</a></p>
+        </div>
+      </div>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/promise-fatigue/">Promise Fatigue</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on November 1, 2022</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/culture/">#Culture</a>
+</span>
+          <span class="tag-link">
+    <a href="/tags/career/">#Career</a>
+</span>
+        </div>
+        <div>
+          <div class="post-summary">
+            <p>Setting low but realistic expectations is better than setting high but unrealistic ones.</p>
+          </div>
+          <p class="post-more"><a href="/posts/promise-fatigue/">Read more …</a></p>
+        </div>
+      </div>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/proof-of-work/">Proof of Work</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on July 12, 2024</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/engineering/">#Engineering</a>
+</span>
+          <span class="tag-link">
+    <a href="/tags/career/">#Career</a>
+</span>
+          <span class="tag-link">
+    <a href="/tags/organizations/">#Organizations</a>
+</span>
+        </div>
+        <div>
+          <div class="post-summary">
+            <p>Working with a poorly thought-out, or overengineered technology stack, or an overly bureaucratic organization is <em>also a form of proof-of-work</em>.</p>
+          </div>
+          <p class="post-more"><a href="/posts/proof-of-work/">Read more …</a></p>
+        </div>
+      </div>
+      <div class="post-card">
+        <h3 class="post-title"><a href="/posts/fourteen-years/">Fourteen Years</a></h3>
+        <div class="navlike">
+          <span class="post-date navlike">
+            Posted on December 31, 2024</span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/career/">#Career</a>
+</span>
+          <span class="tag-link">
+    <a href="/tags/culture/">#Culture</a>
+</span>
+          <span class="tag-link">
+    <a href="/tags/organizations/">#Organizations</a>
+</span>
+        </div>
+        <div>
+          <div class="post-summary">
+            <p>More reflections from foureteen years at Google.</p>
+          </div>
+          <p class="post-more"><a href="/posts/fourteen-years/">Read more …</a></p>
+        </div>
+      </div>
+    </footer>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"></script>
+    <script>
+      var dnt, doNotTrack = !1;
+      if (!1 && (dnt = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack, doNotTrack = dnt == "1" || dnt == "yes"), !doNotTrack) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments)
+        }
+        gtag("js", new Date), gtag("config", "G-GSREL2EZ4Y")
+      }
+    </script>
+  </body>
+</html>

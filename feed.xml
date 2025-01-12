@@ -4,12 +4,248 @@
   <subtitle>Strong opinions weekly held</subtitle>
   <link href="https://xn--izc.com/feed.xml" rel="self"/>
   <link href="https://xn--izc.com/"/>
-  <updated>2024-12-31T00:00:00Z</updated>
+  <updated>2025-01-03T00:00:00Z</updated>
   <id>https://xn--izc.com/</id>
   <author>
     <name>Asanka Herath</name>
     <email>asanka@gmail.com</email>
   </author>
+  <entry>
+    <title>Buffer Bloat</title>
+    <link href="https://xn--izc.com/posts/buffer-bloat/"/>
+    <updated>2025-01-03T00:00:00Z</updated>
+    <id>https://xn--izc.com/posts/buffer-bloat/</id>
+    <content xml:lang="en" type="html">&lt;h2 id=&quot;from-here-to-there-on-the-internet&quot;&gt;From Here To There On The
+Internet&lt;/h2&gt;
+&lt;div class=&quot;with-aside&quot;&gt;
+&lt;div class=&quot;aside&quot;&gt;
+&lt;p&gt;This article is an attempt to explain the concept of buffer bloat to
+someone not super familiar with networking. Why would someone not super
+familiar with networking need to know about buffer bloat? It was
+supposed to point out the effects of trying to &lt;em&gt;hide&lt;/em&gt; or
+&lt;em&gt;delay&lt;/em&gt; negative feedback loops.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Devices on the internet including your phone, laptop, gaming console,
+refridgerator, etc. communicate by exchanging data &lt;em&gt;“packets”&lt;/em&gt;.
+They are of course not physical packets. It’s just a useful way to
+describe a unit of data sent over a wire or some other network
+connection. A packet could be thought of as, say, a single frame in a
+video or a small slice of audio, or a couple of paragraphs of text in a
+webpage. Devices on the internet will take a big chunk of data (e.g. a
+video clip) and break it down into smaller pieces (e.g. a single frame
+in the video clip) and then sends each of these pieces along the
+network. The receiving device puts the pieces back together to
+reconstruct the original thing (e.g. the video clip again)&lt;a href=&quot;https://xn--izc.com/posts/buffer-bloat/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/buffer-bloat/data.png&quot; alt=&quot;A data packet has some additional information like where it came from and where it is going&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;A data packet has some additional
+information like where it came from and where it is going&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Each packet has little pieces of extra information to help it get to
+where it needs to go. One piece is where it comes from (a source
+&lt;em&gt;“address”&lt;/em&gt;). Another is where it is going (a target
+&lt;em&gt;“address”&lt;/em&gt;). Devices along the network (like your internet
+provider’s networking equipment, satellites, etc.) use this extra
+information to correctly route the packets to their intended
+destination.&lt;/p&gt;
+&lt;p&gt;The network is large and constantly changing. So each device focuses
+only on getting the packet at least one step closer to its destination.
+The specific journey taken by a packet is unkonwn until it is on its
+way.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/buffer-bloat/network.png&quot; alt=&quot;A source and a target device are connected loosely by a bunch of intermediate connections and devices. In this example the we are only looking at devices that our data packets are likely to encounter along the way. Each device (shown as boxes) and each network connection (shown as pipes between boxes) are different. They differ in how much data they can handle and how fast.&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;A source and a target device are
+connected loosely by a bunch of intermediate connections and devices. In
+this example the we are only looking at devices that our data packets
+are likely to encounter along the way. Each device (shown as boxes) and
+each network connection (shown as &lt;em&gt;pipes&lt;/em&gt; between boxes) are
+different. They differ in how much data they can handle and how
+fast.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h2 id=&quot;faster-and-faster&quot;&gt;Faster and Faster&lt;/h2&gt;
+&lt;p&gt;So let’s say a video streaming service wants to send your mobile
+phone a video. First the streaming service breaks up the video into
+small packets. Then it throws all the packets into the network so that
+the network can deliver them to your phone.&lt;/p&gt;
+&lt;p&gt;If the streaming service pushes data out at exactly the
+&lt;em&gt;right&lt;/em&gt; speed and the network doesn’t break, then everything
+works out great. All the packets make it to the destination without
+hassle. But neither the streaming service nor your phone know what that
+&lt;em&gt;right&lt;/em&gt; speed is due to the aforementioned unknowability of the
+network.&lt;/p&gt;
+&lt;p&gt;Sending too much data can overwhelm some devices or connections in
+the network. If a device gets more data than it can handle, it’s likely
+that it will start dropping packets until it can catch up.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/buffer-bloat/speedo.png&quot; alt=&quot;Speedometer. Are we going too slow or too fast or maybe just right?&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Speedometer. Are we going too slow or too
+fast or maybe just right?&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Sending too little data isn’t great either. The speed might be too
+slow for streaming video. The receiving device will underperform. Users
+will be confused why their expensive broadband connection doesn’t let
+them watch streaming video.&lt;/p&gt;
+&lt;p&gt;So how does the device know how much data to send out?&lt;/p&gt;
+&lt;h2 id=&quot;flow-control&quot;&gt;Flow Control&lt;/h2&gt;
+&lt;p&gt;The mechanisms we use to regulate the flow of data is called
+&lt;em&gt;“flow control.”&lt;/em&gt; We are going to look at a method based on
+coordination between the sender and the receiver because &lt;em&gt;they are
+the only two actors in this scenario that we consider to be reliable and
+stable&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Different packets can take different paths See the network
+connections between &lt;code&gt;C-D&lt;/code&gt; and &lt;code&gt;C-E&lt;/code&gt; in the diagram
+above. Either of these paths can take a packet from &lt;code&gt;C&lt;/code&gt; to
+&lt;code&gt;F&lt;/code&gt;. Packets going down different paths will arrive at
+different times. Also, if the network gets overwhelmed or breaks, then
+some of the packets may not make it at all.&lt;/p&gt;
+&lt;p&gt;The reciever needs to know how to put the packets back in order and
+tell if any are missing.&lt;/p&gt;
+&lt;p&gt;To keep track of which packet is which, we can add some new
+information to the data packet: let’s call this the &lt;em&gt;sequence&lt;/em&gt;.
+As you might imagine, the sequence can start at 1 and count each packet
+until the transmission is over. Each packet now has a unique position in
+the list of packets.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/buffer-bloat/data-seq.png&quot; alt=&quot;The same data packet as before, but now it has a sequence field.&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;The same data packet as before, but now
+it has a &lt;em&gt;sequence&lt;/em&gt; field.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Great. But how do we know which packets made it to the other side?
+The recipient will need to let us know this information in some sort of
+reply. This reply is &lt;em&gt;also&lt;/em&gt; a data packet called an
+&lt;em&gt;acknowledgement&lt;/em&gt;. It’s sent from the original recipient back to
+the sender.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/buffer-bloat/data-ack.png&quot; alt=&quot;An example acknowledgement sent back to the sender. In this case the recipient is claiming that packets 4, 6, and 7 were missing. Note that the sender and recipient are switched since this packet is travelling “backwards”.&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;An example acknowledgement sent back to
+the sender. In this case the recipient is claiming that packets 4, 6,
+and 7 were missing. Note that the sender and recipient are switched
+since this packet is travelling “backwards”.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Ok so now we have all the information we need to perform some flow
+control.&lt;/p&gt;
+&lt;p&gt;We can now figure out the optimal rate of data transfer
+experimentally using some method like this:&lt;/p&gt;
+&lt;ol type=&quot;1&quot;&gt;
+&lt;li&gt;Send data as fast as possible.&lt;/li&gt;
+&lt;li&gt;If the recipient claims some packets were missing, then resend those
+packets and send packets &lt;strong&gt;slower&lt;/strong&gt; than before.&lt;/li&gt;
+&lt;li&gt;If the recipient hasn’t complained of missing packets in a while,
+try sending them &lt;strong&gt;faster&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;stuck-on-the-wire&quot;&gt;Stuck On The Wire&lt;/h2&gt;
+&lt;p&gt;Now imagine you sending data out - a rate of 100 packets per second.
+And let’s say it takes one second for a packet to get to the other side.
+Just before the end of the first second, the destination hasn’t received
+the first packet yet. But the sender has sent 100 packets.&lt;/p&gt;
+&lt;p&gt;Where are the packets?&lt;/p&gt;
+&lt;p&gt;We call this &lt;em&gt;“data on the wire’&lt;/em&gt;. Some data is indeed on the
+wire literally, but that tends to be a tiny amount. Most of the data on
+the wire is actually at each of the devices along the way either being
+received, or waiting to be sent.&lt;/p&gt;
+&lt;p&gt;So once we factor in the equipment in the middle, your path to the
+destination looks a little like this:&lt;/p&gt;
+&lt;p&gt;The device sees some data come in, stores it, figures out where to
+send it next, and sends it on its way. There could be other stuff these
+boxes could be doing, but that’s something for another post.&lt;/p&gt;
+&lt;p&gt;So from the perspective of a single box the world looks a bit like
+this:&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/buffer-bloat/network-with-data.png&quot; alt=&quot;The source has sent a bunch of packets. For a moment in time all the packets are either being transmitted somewhere or are waiting to be transmitted out of some device on the internet.&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;The source has sent a bunch of packets.
+For a moment in time all the packets are either being transmitted
+somewhere or are waiting to be transmitted out of some device on the
+internet.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;If this is the limit for the network and the sender keeps sending
+more packets, then there’s no room for the packet. So it gets
+&lt;em&gt;“dropped”&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;It is common for a device to be at the border of a “good” network and
+a “not”good” network. The goodness here is the amount of data that can
+be stuffed into it.&lt;/p&gt;
+&lt;p&gt;When a burst of data comes along, not much data can be stuffed into
+the small pipe before no more can fit.&lt;/p&gt;
+&lt;p&gt;As mentioned before, this means that the sender will need to
+&lt;em&gt;re-send&lt;/em&gt; the dropped packets and also slow down the rate of
+data. Given enough time the rate of data transfer will approach the
+throughput of the smallest pipe along the way.&lt;/p&gt;
+&lt;h2 id=&quot;buffer-bloat&quot;&gt;Buffer Bloat&lt;/h2&gt;
+&lt;p&gt;Some folks looked at this setup and decided to improve things. There
+are some valid reasons for doing what they did – which is why so many
+people did this. But it didn’t quite have the intended effect.&lt;/p&gt;
+&lt;p&gt;So, what was the thing they did? They added
+&lt;strong&gt;buffering&lt;/strong&gt;. Too much of it.&lt;/p&gt;
+&lt;p&gt;A &lt;em&gt;buffer&lt;/em&gt; is a resevoir where excess packets can be kept
+until the next link in the network is ready to accept more. What this
+means is that every device along the way is trying to do flow control by
+storing and resending packets instead of letting the sender know that
+packets are getting dropped.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/buffer-bloat/network-with-buffer.png&quot; alt=&quot;Device B is dropping all excess packets into a buffer.&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Device &lt;code&gt;B&lt;/code&gt; is dropping all
+excess packets into a buffer.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;As before, let’s say the sender is sending 200 packets every second.
+The network still can only transfer 100. The excess packets – another
+100 of them – gets tossed into the buffer.&lt;/p&gt;
+&lt;p&gt;What happens just one second later?&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/buffer-bloat/bob-1.png&quot; alt=&quot;A very next packet – which we are calling Bob enters the network. The buffer contains 100 packets. The rest of the network also has 100 packets queued.&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;A very next packet – which we are calling
+&lt;em&gt;Bob&lt;/em&gt; enters the network. The buffer contains 100 packets. The
+rest of the network also has 100 packets queued.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;The very next packet – let’s call it &lt;em&gt;Bob&lt;/em&gt; – that the sender
+tosses into the network will end up in the buffer since &lt;code&gt;B&lt;/code&gt;
+is still waiting for some of the first 100 packets to get past
+&lt;code&gt;C&lt;/code&gt;.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/buffer-bloat/bob-2.png&quot; alt=&quot;Bob immediately gets tossed into the buffer. It is now the last packet in the buffer.&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Bob immediately gets tossed into the
+buffer. It is now the last packet in the buffer.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Bob is the last packet in the buffer and must wait for all the other
+packets in the buffer to be send before it will get queued to sent
+out.&lt;/p&gt;
+&lt;p&gt;In another second, the first 100 packets make it to the target, and
+now the 100 packets that were in the buffer are back on the wire.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/buffer-bloat/bob-3.png&quot; alt=&quot;Bob is still in the buffer, but it is now the very next packet to get fished out and tossed back into the network.&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Bob is still in the buffer, but it is now
+the very next packet to get fished out and tossed back into the
+network.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Bob is still in the buffer but it’s the next one in line to get back
+on the network.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/buffer-bloat/bob-4.png&quot; alt=&quot;Hurray! Bob finally makes it to the destination.&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Hurray! Bob finally makes it to the
+destination.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Once back on the network it will take another second for Bob to reach
+the target.&lt;/p&gt;
+&lt;p&gt;Even under ideal conditions eventually the system settles on a new
+equilibrium with one difference.&lt;/p&gt;
+&lt;p&gt;The length of time it takes for the data packets to make their way to
+the destination is much larger. Packets accumulate in buffers along the
+network. Each buffer adds an additional delay for the packet.&lt;/p&gt;
+&lt;p&gt;Overall the throughput of the network is the same. But latency – the
+time it takes for a packet to get to the destination – is much
+larger.&lt;/p&gt;
+&lt;p&gt;The effect is even worse in practice because this setup resists any
+attempt at flow control. It delays the discovery of actual
+throughput.&lt;/p&gt;
+&lt;p&gt;This phenomenon is called &lt;strong&gt;buffer bloat&lt;/strong&gt;.&lt;/p&gt;
+&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;This is obviously a massive oversimplification. But
+doesn’t change the thesis presented next.&lt;a href=&quot;https://xn--izc.com/posts/buffer-bloat/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+  </entry>
   <entry>
     <title>Fourteen Years</title>
     <link href="https://xn--izc.com/posts/fourteen-years/"/>
