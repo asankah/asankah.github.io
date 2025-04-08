@@ -4,12 +4,455 @@
   <subtitle>Strong opinions weekly held</subtitle>
   <link href="https://xn--izc.com/feed.xml" rel="self"/>
   <link href="https://xn--izc.com/"/>
-  <updated>2025-01-03T00:00:00Z</updated>
+  <updated>2025-04-07T00:00:00Z</updated>
   <id>https://xn--izc.com/</id>
   <author>
     <name>Asanka Herath</name>
     <email>asanka@gmail.com</email>
   </author>
+  <entry>
+    <title>Intermission - Q1 of 2025</title>
+    <link href="https://xn--izc.com/posts/intermezzo-2025/"/>
+    <updated>2025-04-07T00:00:00Z</updated>
+    <id>https://xn--izc.com/posts/intermezzo-2025/</id>
+    <content xml:lang="en" type="html">&lt;p&gt;It’s been a while since I’ve published anything here. This is partly
+because every time I write, there is something much more important and
+terrible happenning in the world that I’m not qualified to write about.
+Writing about some technical topic seems like a triviality compared to
+world events.&lt;/p&gt;
+&lt;p&gt;Many years ago I’d have said that there is very little evil in the
+world and that most people you will meet are good natured. I still sort
+of believe that people are good natured, but I’m beginning to think that
+the word &lt;em&gt;“most”&lt;/em&gt; may not be so easily applied to that
+statement.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/intermezzo-2025/do-not-press.png&quot; class=&quot;noinvert&quot; alt=&quot;A big red button labelled DO NOT PRESS is attached to the top of an ominous looking device to which many wires and conduits are attached.&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;A big red button labelled &lt;strong&gt;DO NOT
+PRESS&lt;/strong&gt; is attached to the top of an ominous looking device to
+which many wires and conduits are attached.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;School children has this &lt;em&gt;would-you-rather&lt;/em&gt; question about a
+big red button. Hypothetically speaking, if there were a big red button
+that when pushed gives you a million dollars, but also kills a random
+person, would you press it?&lt;/p&gt;
+&lt;p&gt;It is safe to say that the answer to this question, in practice, is
+predominently &lt;em&gt;yes&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;More worryingly, the reward doesn’t need to be nearly that high. It
+seems, at least for some, there doesn’t need to be a reward at all as
+long as the person who would be harmed is of a specific race, sexual
+orientation, body dysmorphia, or religion. harming a person that one
+does not like is apparently reward enough.&lt;/p&gt;
+&lt;p&gt;People aren’t born this way. I think decades of being conditioned to
+cast out a group of people gradually normalizes bringing harm to them.
+With enough rhetoric and likemindedness anything can be normalized.
+Anyone disagreeing – and is not a member of the outcasts – can be easily
+disregarded as being the enemy or at least misguided. Hate becomes
+self-sustaining, and can last generations.&lt;/p&gt;
+&lt;p&gt;We can win battles or wars, but we are not going to really move
+forward as a species unless we figure this one out – how do we teach
+compassion, and how do we convince someone away from hate?&lt;/p&gt;
+&lt;p&gt;Contrary to popular opinion I think pushing the hateful away is not a
+sustainable solution in the long run. Suppressing hateful speech without
+corrective guidance has historically just made the hateful group more
+resentful and even more entrenched in their beliefs. Ultimately they
+will – as evidenced in recent events – have enough momentum and
+intensity to turn the tables.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title></title>
+    <link href="https://xn--izc.com/posts/whither-us/replicating-movement/"/>
+    <updated>2025-01-26T18:21:17Z</updated>
+    <id>https://xn--izc.com/posts/whither-us/replicating-movement/</id>
+    <content xml:lang="en" type="html">&lt;h1 id=&quot;why-replicating-movement-is-harder-than-generating-text&quot;&gt;&lt;strong&gt;Why
+Replicating Movement Is Harder Than Generating Text&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;Artificial intelligence (AI) has made incredible strides in recent
+years, achieving remarkable feats in areas like text generation and
+information processing. AI can now write stories, translate languages,
+and even compose music with impressive proficiency. However, when it
+comes to replicating mechanical motion, particularly the fluid and
+adaptable movements of humans and animals, AI still has a long way to
+go. This article delves into the reasons behind this disparity,
+exploring the unique challenges that make replicating motion a more
+complex endeavor than generating text. To gather the information for
+this article, research was conducted in five key steps:&lt;/p&gt;
+&lt;ol type=&quot;1&quot;&gt;
+&lt;li&gt;Finding articles and research papers discussing the challenges of
+replicating mechanical motion artificially.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Finding articles and research papers discussing the advancements in
+AI for text generation and information processing tasks.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Finding articles and research papers comparing the complexities of
+mechanical motion and information processing tasks from a computational
+perspective.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Finding articles and research papers discussing the limitations of
+current robotics technology in replicating complex mechanical
+motions.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Finding articles and research papers discussing the role of embodied
+cognition in mechanical motion and how it differs from information
+processing tasks.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;the-complexity-of-mechanical-motion&quot;&gt;&lt;strong&gt;The Complexity of
+Mechanical Motion&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;While generating text involves manipulating symbols and patterns
+within a defined set of rules, replicating mechanical motion requires
+navigating the complexities of the physical world. Here’s why this is so
+challenging:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;The Physical World Is Unpredictable:&lt;/strong&gt; Unlike the
+digital realm, where data is structured and predictable, the physical
+world is full of unexpected variables. A robot navigating a room must
+contend with uneven surfaces, obstacles, and even sudden changes in
+lighting or the movement of objects &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Infinite Degrees of Freedom:&lt;/strong&gt; Human movement is
+incredibly versatile. Our bodies have numerous joints and muscles that
+allow for a vast range of motion. Replicating this flexibility in a
+robot requires complex mechanics and sophisticated control systems &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn2&quot; class=&quot;footnote-ref&quot; id=&quot;fnref2&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Real-Time Adaptation:&lt;/strong&gt; Humans and animals seamlessly
+adapt their movements to changing circumstances. A robot trying to mimic
+this must be able to perceive its environment, process information, and
+adjust its actions in real-time, a task that demands significant
+computational power and advanced algorithms &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn3&quot; class=&quot;footnote-ref&quot; id=&quot;fnref3&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Embodied Cognition:&lt;/strong&gt; Our understanding of the world
+is deeply intertwined with our physical experiences. We learn to move
+and interact with our surroundings through a process of embodied
+cognition, where our bodies and senses play a crucial role. Replicating
+this in a robot requires more than just programming; it necessitates a
+deeper understanding of how the brain and body work together to generate
+and control movement &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn4&quot; class=&quot;footnote-ref&quot; id=&quot;fnref4&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;advancements-in-ai-for-text-and-information-processing&quot;&gt;&lt;strong&gt;Advancements
+in AI for Text and Information Processing&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;In contrast to the challenges of replicating motion, AI has excelled
+in text generation and information processing tasks. This success can be
+attributed to several factors:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Structured Data:&lt;/strong&gt; Text and information are typically
+represented in a structured format, making it easier for AI systems to
+analyze and manipulate &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn5&quot; class=&quot;footnote-ref&quot; id=&quot;fnref5&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;5&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Clear Rules and Patterns:&lt;/strong&gt; Languages and information
+systems follow specific rules and patterns, which AI models can learn
+and apply with increasing accuracy &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn6&quot; class=&quot;footnote-ref&quot; id=&quot;fnref6&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;6&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Abundant Training Data:&lt;/strong&gt; The availability of vast
+amounts of text and data has enabled AI models to learn and improve
+their performance significantly &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn7&quot; class=&quot;footnote-ref&quot; id=&quot;fnref7&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;7&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Advancements in Algorithms:&lt;/strong&gt; Deep learning and other
+AI techniques have proven highly effective in processing and generating
+text, leading to breakthroughs in natural language processing and
+machine translation &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn8&quot; class=&quot;footnote-ref&quot; id=&quot;fnref8&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;8&lt;/sup&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;comparing-complexities-motion-vs.-information&quot;&gt;&lt;strong&gt;Comparing
+Complexities: Motion vs. Information&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;From a computational perspective, replicating mechanical motion
+presents a different set of challenges compared to information
+processing.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Continuous vs. Discrete:&lt;/strong&gt; Motion is continuous,
+involving a smooth flow of movements and adjustments. Information
+processing, on the other hand, often deals with discrete units of data
+&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn9&quot; class=&quot;footnote-ref&quot; id=&quot;fnref9&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;9&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Physical Constraints:&lt;/strong&gt; Replicating motion requires
+dealing with the physical constraints of the real world, such as
+gravity, friction, and the limitations of robotic materials. Information
+processing operates within the more forgiving confines of the digital
+world &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn10&quot; class=&quot;footnote-ref&quot; id=&quot;fnref10&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;10&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sensorimotor Integration:&lt;/strong&gt; Motion involves the
+intricate coordination of sensory input and motor output. AI systems for
+motion must be able to process sensory data, make decisions, and send
+commands to actuators in a seamless and efficient manner &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn11&quot; class=&quot;footnote-ref&quot; id=&quot;fnref11&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;11&lt;/sup&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;limitations-of-current-robotics-technology&quot;&gt;&lt;strong&gt;Limitations
+of Current Robotics Technology&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Despite advancements in robotics, current technology still faces
+limitations in replicating complex motions. These limitations can be
+grouped into several key areas:&lt;/p&gt;
+&lt;h3 id=&quot;actuator-and-material-limitations&quot;&gt;&lt;strong&gt;Actuator and Material
+Limitations&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Artificial muscles and actuators often lack the power, efficiency,
+and flexibility of their biological counterparts. Researchers are
+exploring various electrically powered artificial muscle fiber actuation
+mechanisms, such as electrothermal, electrochemical, and dielectric
+actuation, to achieve the desired characteristics of high efficiency,
+precise control, miniaturization, and seamless integration with
+electronic components &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn12&quot; class=&quot;footnote-ref&quot; id=&quot;fnref12&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;12&lt;/sup&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;sensor-integration-and-perception&quot;&gt;&lt;strong&gt;Sensor Integration
+and Perception&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Integrating sensors into robots to provide real-time feedback and
+environmental awareness remains a challenge. To accurately replicate
+human motion, robots need to perceive and react to their surroundings
+effectively, especially in dynamic environments with limited fields of
+view &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn13&quot; class=&quot;footnote-ref&quot; id=&quot;fnref13&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;13&lt;/sup&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;motion-capture-technology&quot;&gt;&lt;strong&gt;Motion Capture
+Technology&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Accurately capturing and analyzing human motion data is crucial for
+replicating it in robots. Various motion capture technologies are used,
+each with its own advantages and disadvantages:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Optical Tracking Systems:&lt;/strong&gt; These systems use markers
+to track movement. Passive marker systems are susceptible to occlusion
+and require post-processing, while active marker systems, though more
+precise, can be cumbersome due to wires and battery packs. Markerless
+vision-based systems offer a wireless solution but are sensitive to
+lighting and noise &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn14&quot; class=&quot;footnote-ref&quot; id=&quot;fnref14&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;14&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Inertial Sensor Tracking Systems:&lt;/strong&gt; These systems are
+wireless and offer fast calibration but are sensitive to magnetic fields
+and can produce noisy data &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn15&quot; class=&quot;footnote-ref&quot; id=&quot;fnref15&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;15&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Magnetic Marker Tracking Systems:&lt;/strong&gt; These systems are
+also wireless and can be used indoors or outdoors but have a limited
+range and are sensitive to magnetic fields &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn16&quot; class=&quot;footnote-ref&quot; id=&quot;fnref16&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;16&lt;/sup&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;motion-planning-and-control&quot;&gt;&lt;strong&gt;Motion Planning and
+Control&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Replicating human-like motion requires sophisticated motion planning
+and control algorithms. Some of the key approaches and challenges
+include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Dynamic Movement Primitives (DMPs):&lt;/strong&gt; DMPs are used
+to generate and control complex movements by encoding trajectories and
+adapting them to new situations. However, challenges remain in
+replicating the planarity characteristic of human hand motion,
+especially in cluttered environments &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn17&quot; class=&quot;footnote-ref&quot; id=&quot;fnref17&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;17&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Attractive and Repulsive Vector Fields:&lt;/strong&gt; These
+fields are used in robot motion planning to guide robots towards goals
+and away from obstacles. However, replicating the smooth and efficient
+obstacle avoidance strategies of humans remains a challenge &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn18&quot; class=&quot;footnote-ref&quot; id=&quot;fnref18&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;18&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hybrid Joints/Operational-Space Approach:&lt;/strong&gt; This
+approach combines joint-level and operational-space control to enhance
+the human-likeness of robot motion. It aims to achieve both accuracy in
+task execution and natural-looking movements &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn19&quot; class=&quot;footnote-ref&quot; id=&quot;fnref19&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;19&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dynamic Models of Human Arm:&lt;/strong&gt; Researchers are using
+dynamic models that simulate the capabilities of the human arm to
+generate biologically-inspired arm movements &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn20&quot; class=&quot;footnote-ref&quot; id=&quot;fnref20&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;20&lt;/sup&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;anatomical-and-kinematic-differences&quot;&gt;&lt;strong&gt;Anatomical and
+Kinematic Differences&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Retargeting human motions to robots is complex due to fundamental
+differences in their anatomies, kinematics, and motion dynamics. Robots
+have rigid bodies, different form factors, and distinct physical
+limitations compared to humans. Directly mapping human motion to robot
+actuators often leads to unnatural and suboptimal robot behavior. For
+example, replicating the motion of a human touching their head requires
+careful consideration of the robot’s kinematics to ensure the robot hand
+reaches the intended target &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn21&quot; class=&quot;footnote-ref&quot; id=&quot;fnref21&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;21&lt;/sup&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;robotics-in-co-packing-operations&quot;&gt;&lt;strong&gt;Robotics in
+Co-packing Operations&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;The use of robots in co-packing operations provides a practical
+example of the challenges and advancements in robotics technology.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Types of Robots:&lt;/strong&gt; Various types of robots are used
+in co-packing, including collaborative robots (cobots), articulated
+robots, SCARA robots, and Delta robots. Each type has its own strengths
+and limitations in terms of flexibility, speed, precision, and reach &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn22&quot; class=&quot;footnote-ref&quot; id=&quot;fnref22&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;22&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Role of AI:&lt;/strong&gt; AI is playing a crucial role in
+improving the efficiency and intelligence of robotic systems in
+co-packing. AI enables robots to learn from their environment and make
+autonomous decisions, further streamlining the process &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn23&quot; class=&quot;footnote-ref&quot; id=&quot;fnref23&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;23&lt;/sup&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;challenges-in-unstructured-environments&quot;&gt;&lt;strong&gt;Challenges in
+Unstructured Environments&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Developing robots that can operate effectively in unstructured
+environments, such as homes, presents significant challenges.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Dexterity and Accuracy:&lt;/strong&gt; Robots need to possess high
+levels of dexterity and accuracy to perform complex tasks in these
+environments &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn24&quot; class=&quot;footnote-ref&quot; id=&quot;fnref24&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;24&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Physical Dimensions and Mobility:&lt;/strong&gt; The physical
+dimensions and mobility of robots can be obstructive in a home setting
+&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn25&quot; class=&quot;footnote-ref&quot; id=&quot;fnref25&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;25&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Personality and Aesthetics:&lt;/strong&gt; The personality and
+aesthetics of robots are important for human interaction and acceptance
+in a home environment &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn26&quot; class=&quot;footnote-ref&quot; id=&quot;fnref26&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;26&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Communication and Functionality:&lt;/strong&gt; Robots need to be
+able to communicate effectively and perform a wide range of functions to
+be useful in a home setting &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn27&quot; class=&quot;footnote-ref&quot; id=&quot;fnref27&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;27&lt;/sup&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;energy-and-resource-management&quot;&gt;&lt;strong&gt;Energy and Resource
+Management&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Robots require significant power to operate, and current battery
+technology often limits their endurance and range of motion. For robots
+to be truly autonomous, they need to be self-sufficient in terms of
+energy and resource management. This may involve developing robots that
+can operate in different gravitational environments, adapt to different
+terrains, and even generate their own energy from the environment &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn28&quot; class=&quot;footnote-ref&quot; id=&quot;fnref28&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;28&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;focus-of-current-research&quot;&gt;&lt;strong&gt;Focus of Current
+Research&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Current research on human-like arm motion generation has primarily
+focused on single-arm reaching movements and biomimetic-based methods,
+with less attention given to manipulation, obstacle avoidance
+mechanisms, and dual-arm motion generation. This limited focus restricts
+the ability of current approaches to fully respect human behavioral and
+neurological key features and limits their generalizability to a wider
+range of tasks &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn29&quot; class=&quot;footnote-ref&quot; id=&quot;fnref29&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;29&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;embodied-cognition-and-the-difference-it-makes&quot;&gt;&lt;strong&gt;Embodied
+Cognition and the Difference It Makes&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Embodied cognition plays a crucial role in how humans learn and
+perform movements. This concept suggests that our understanding of the
+world is shaped by our physical experiences and interactions with our
+environment &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn30&quot; class=&quot;footnote-ref&quot; id=&quot;fnref30&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;30&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Learning Through Interaction:&lt;/strong&gt; We learn to move by
+interacting with the world, experimenting with different actions, and
+receiving feedback from our senses &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn31&quot; class=&quot;footnote-ref&quot; id=&quot;fnref31&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;31&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dynamic Systems:&lt;/strong&gt; Our bodies are complex dynamic
+systems, constantly adapting and adjusting to maintain balance and
+achieve our goals &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn32&quot; class=&quot;footnote-ref&quot; id=&quot;fnref32&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;32&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The Role of Perception:&lt;/strong&gt; Perception is not just
+about passively receiving information; it’s an active process that
+guides our actions and shapes our understanding of the world &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn33&quot; class=&quot;footnote-ref&quot; id=&quot;fnref33&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;33&lt;/sup&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Replicating embodied cognition in robots is a significant challenge.
+It requires developing AI systems that can learn from physical
+interactions, adapt to changing environments, and integrate sensory
+information with motor control in a way that mirrors human intelligence.
+This differs significantly from information processing tasks, where the
+focus is on manipulating symbols and data within a defined system.
+Embodied cognition emphasizes the interconnectedness of the body, mind,
+and environment in shaping cognitive processes &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn34&quot; class=&quot;footnote-ref&quot; id=&quot;fnref34&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;34&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;While AI has made remarkable progress in text generation and
+information processing, replicating mechanical motion remains a more
+formidable challenge. The complexities of the physical world, the
+infinite degrees of freedom in human movement, and the role of embodied
+cognition all contribute to this difficulty. However, ongoing research
+in robotics, AI, and embodied cognitive science promises to bring us
+closer to creating robots that can move with the fluidity, adaptability,
+and intelligence of humans and animals.&lt;/p&gt;
+&lt;p&gt;This research highlights the need for continued exploration in areas
+such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Developing more advanced actuators and artificial muscles that can
+better mimic the capabilities of biological systems &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn35&quot; class=&quot;footnote-ref&quot; id=&quot;fnref35&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;35&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Improving sensor technology and integration to provide robots with
+more comprehensive and accurate environmental awareness &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn36&quot; class=&quot;footnote-ref&quot; id=&quot;fnref36&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;36&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Designing AI algorithms that can learn from physical interactions
+and adapt to dynamic environments &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn37&quot; class=&quot;footnote-ref&quot; id=&quot;fnref37&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;37&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Furthering our understanding of embodied cognition and how it can be
+applied to robotics &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn38&quot; class=&quot;footnote-ref&quot; id=&quot;fnref38&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;38&lt;/sup&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;By addressing these challenges, we can pave the way for a future
+where robots can seamlessly integrate into our world, assisting us in a
+wide range of tasks and enhancing our lives in countless ways.&lt;/p&gt;
+&lt;h4 id=&quot;works-cited&quot;&gt;&lt;strong&gt;Works cited&lt;/strong&gt;&lt;/h4&gt;
+&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;Generative AI that imitates human motion - ScienceDaily,
+accessed January 20, 2025, &lt;a href=&quot;https://www.sciencedaily.com/releases/2024/05/240509110822.htm&quot;&gt;https://www.sciencedaily.com/releases/2024/05/240509110822.htm&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn2&quot;&gt;&lt;p&gt;Generative AI that imitates human motion - ScienceDaily,
+accessed January 20, 2025, &lt;a href=&quot;https://www.sciencedaily.com/releases/2024/05/240509110822.htm&quot;&gt;https://www.sciencedaily.com/releases/2024/05/240509110822.htm&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn3&quot;&gt;&lt;p&gt;Generative AI that imitates human motion - ScienceDaily,
+accessed January 20, 2025, &lt;a href=&quot;https://www.sciencedaily.com/releases/2024/05/240509110822.htm&quot;&gt;https://www.sciencedaily.com/releases/2024/05/240509110822.htm&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn4&quot;&gt;&lt;p&gt;Embodied cognitive science - Wikipedia, accessed January
+20, 2025, &lt;a href=&quot;https://en.wikipedia.org/wiki/Embodied_cognitive_science&quot;&gt;https://en.wikipedia.org/wiki/Embodied_cognitive_science&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref4&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn5&quot;&gt;&lt;p&gt;The Future of Text Generation: Unleashing the Power of
+AI - AIContentfy, accessed January 20, 2025, &lt;a href=&quot;https://aicontentfy.com/en/blog/future-of-text-generation-unleashing-power-of-ai&quot;&gt;https://aicontentfy.com/en/blog/future-of-text-generation-unleashing-power-of-ai&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref5&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn6&quot;&gt;&lt;p&gt;The Future of Text Generation: Unleashing the Power of
+AI - AIContentfy, accessed January 20, 2025, &lt;a href=&quot;https://aicontentfy.com/en/blog/future-of-text-generation-unleashing-power-of-ai&quot;&gt;https://aicontentfy.com/en/blog/future-of-text-generation-unleashing-power-of-ai&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref6&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn7&quot;&gt;&lt;p&gt;The Future of Text Generation: Unleashing the Power of
+AI - AIContentfy, accessed January 20, 2025, &lt;a href=&quot;https://aicontentfy.com/en/blog/future-of-text-generation-unleashing-power-of-ai&quot;&gt;https://aicontentfy.com/en/blog/future-of-text-generation-unleashing-power-of-ai&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref7&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn8&quot;&gt;&lt;p&gt;The Evolution of Text-to-Text Generation Models: A
+Comprehensive Overview - Medium, accessed January 20, 2025, &lt;a href=&quot;https://medium.com/the-it-bros-newsletter/the-evolution-of-text-to-text-generation-models-a-comprehensive-overview-592e7f7dfad9&quot;&gt;https://medium.com/the-it-bros-newsletter/the-evolution-of-text-to-text-generation-models-a-comprehensive-overview-592e7f7dfad9&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref8&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn9&quot;&gt;&lt;p&gt;Computational complexity theory - Wikipedia, accessed
+January 20, 2025, &lt;a href=&quot;https://en.wikipedia.org/wiki/Computational_complexity_theory&quot;&gt;https://en.wikipedia.org/wiki/Computational_complexity_theory&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref9&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn10&quot;&gt;&lt;p&gt;Mechanical Computing: The Computational Complexity of
+Physical Devices, accessed January 20, 2025, &lt;a href=&quot;https://users.cs.duke.edu/~reif/paper/MechComp/MechComp.pub.no.permission.pdf&quot;&gt;https://users.cs.duke.edu/~reif/paper/MechComp/MechComp.pub.no.permission.pdf&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref10&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn11&quot;&gt;&lt;p&gt;Mechanical Computing: The Computational Complexity of
+Physical Devices, accessed January 20, 2025, &lt;a href=&quot;https://users.cs.duke.edu/~reif/paper/MechComp/MechComp.pub.no.permission.pdf&quot;&gt;https://users.cs.duke.edu/~reif/paper/MechComp/MechComp.pub.no.permission.pdf&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref11&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn12&quot;&gt;&lt;p&gt;Emerging innovations in electrically powered artificial
+muscle fibers - Oxford Academic, accessed January 20, 2025, &lt;a href=&quot;https://academic.oup.com/nsr/article/11/10/nwae232/7708368&quot;&gt;https://academic.oup.com/nsr/article/11/10/nwae232/7708368&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref12&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn13&quot;&gt;&lt;p&gt;What are the challenges in the way of mass adoption of
+robotics? - Reddit, accessed January 20, 2025, &lt;a href=&quot;https://www.reddit.com/r/robotics/comments/195k0lt/what_are_the_challenges_in_the_way_of_mass/&quot;&gt;https://www.reddit.com/r/robotics/comments/195k0lt/what_are_the_challenges_in_the_way_of_mass/&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref13&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn14&quot;&gt;&lt;p&gt;Biomimetic Approaches for Human Arm Motion Generation:
+Literature Review and Future Directions - PubMed Central, accessed
+January 20, 2025, &lt;a href=&quot;https://pmc.ncbi.nlm.nih.gov/articles/PMC10143908/&quot;&gt;https://pmc.ncbi.nlm.nih.gov/articles/PMC10143908/&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref14&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn15&quot;&gt;&lt;p&gt;Biomimetic Approaches for Human Arm Motion Generation:
+Literature Review and Future Directions - PubMed Central, accessed
+January 20, 2025, &lt;a href=&quot;https://pmc.ncbi.nlm.nih.gov/articles/PMC10143908/&quot;&gt;https://pmc.ncbi.nlm.nih.gov/articles/PMC10143908/&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref15&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn16&quot;&gt;&lt;p&gt;Biomimetic Approaches for Human Arm Motion Generation:
+Literature Review and Future Directions - PubMed Central, accessed
+January 20, 2025, &lt;a href=&quot;https://pmc.ncbi.nlm.nih.gov/articles/PMC10143908/&quot;&gt;https://pmc.ncbi.nlm.nih.gov/articles/PMC10143908/&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref16&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn17&quot;&gt;&lt;p&gt;Human-Like Arm Motion Generation: A Review - MDPI,
+accessed January 20, 2025, &lt;a href=&quot;https://www.mdpi.com/2218-6581/9/4/102&quot;&gt;https://www.mdpi.com/2218-6581/9/4/102&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref17&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn18&quot;&gt;&lt;p&gt;Human-Like Arm Motion Generation: A Review - MDPI,
+accessed January 20, 2025, &lt;a href=&quot;https://www.mdpi.com/2218-6581/9/4/102&quot;&gt;https://www.mdpi.com/2218-6581/9/4/102&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref18&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn19&quot;&gt;&lt;p&gt;Human-Like Arm Motion Generation: A Review - MDPI,
+accessed January 20, 2025, &lt;a href=&quot;https://www.mdpi.com/2218-6581/9/4/102&quot;&gt;https://www.mdpi.com/2218-6581/9/4/102&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref19&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn20&quot;&gt;&lt;p&gt;Human-Like Arm Motion Generation: A Review - MDPI,
+accessed January 20, 2025, &lt;a href=&quot;https://www.mdpi.com/2218-6581/9/4/102&quot;&gt;https://www.mdpi.com/2218-6581/9/4/102&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref20&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn21&quot;&gt;&lt;p&gt;ImitationNet: Unsupervised Human-to-Robot Motion
+Retargeting via Shared Latent Space, accessed January 20, 2025, &lt;a href=&quot;https://arxiv.org/html/2309.05310v3&quot;&gt;https://arxiv.org/html/2309.05310v3&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref21&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn22&quot;&gt;&lt;p&gt;Repeatability and Accuracy Myth - Southie Autonomy,
+accessed January 20, 2025, &lt;a href=&quot;https://www.southie.ai/robotics-myth-1-repeatability-and-accuracy&quot;&gt;https://www.southie.ai/robotics-myth-1-repeatability-and-accuracy&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref22&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn23&quot;&gt;&lt;p&gt;Repeatability and Accuracy Myth - Southie Autonomy,
+accessed January 20, 2025, &lt;a href=&quot;https://www.southie.ai/robotics-myth-1-repeatability-and-accuracy&quot;&gt;https://www.southie.ai/robotics-myth-1-repeatability-and-accuracy&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref23&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn24&quot;&gt;&lt;p&gt;Motion Replication | Request PDF - ResearchGate,
+accessed January 20, 2025, &lt;a href=&quot;https://www.researchgate.net/publication/312861701_Motion_Replication&quot;&gt;https://www.researchgate.net/publication/312861701_Motion_Replication&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref24&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn25&quot;&gt;&lt;p&gt;What are the challenges in the way of mass adoption of
+robotics? - Reddit, accessed January 20, 2025, &lt;a href=&quot;https://www.reddit.com/r/robotics/comments/195k0lt/what_are_the_challenges_in_the_way_of_mass/&quot;&gt;https://www.reddit.com/r/robotics/comments/195k0lt/what_are_the_challenges_in_the_way_of_mass/&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref25&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn26&quot;&gt;&lt;p&gt;What are the challenges in the way of mass adoption of
+robotics? - Reddit, accessed January 20, 2025, &lt;a href=&quot;https://www.reddit.com/r/robotics/comments/195k0lt/what_are_the_challenges_in_the_way_of_mass/&quot;&gt;https://www.reddit.com/r/robotics/comments/195k0lt/what_are_the_challenges_in_the_way_of_mass/&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref26&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn27&quot;&gt;&lt;p&gt;What are the challenges in the way of mass adoption of
+robotics? - Reddit, accessed January 20, 2025, &lt;a href=&quot;https://www.reddit.com/r/robotics/comments/195k0lt/what_are_the_challenges_in_the_way_of_mass/&quot;&gt;https://www.reddit.com/r/robotics/comments/195k0lt/what_are_the_challenges_in_the_way_of_mass/&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref27&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn28&quot;&gt;&lt;p&gt;What are the biggest challenges to a self-replicating
+robot? - Reddit, accessed January 20, 2025, &lt;a href=&quot;https://www.reddit.com/r/robotics/comments/299adl/what_are_the_biggest_challenges_to_a/&quot;&gt;https://www.reddit.com/r/robotics/comments/299adl/what_are_the_biggest_challenges_to_a/&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref28&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn29&quot;&gt;&lt;p&gt;Human-Like Arm Motion Generation: A Review - MDPI,
+accessed January 20, 2025, &lt;a href=&quot;https://www.mdpi.com/2218-6581/9/4/102&quot;&gt;https://www.mdpi.com/2218-6581/9/4/102&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref29&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn30&quot;&gt;&lt;p&gt;The Mechanics of Embodiment: A Dialog on Embodiment and
+Computational Modeling - PMC - PubMed Central, accessed January 20,
+2025, &lt;a href=&quot;https://pmc.ncbi.nlm.nih.gov/articles/PMC3111422/&quot;&gt;https://pmc.ncbi.nlm.nih.gov/articles/PMC3111422/&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref30&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn31&quot;&gt;&lt;p&gt;Embodied cognition: Enhancing thinking through movement
+and gesture - My College, accessed January 20, 2025, &lt;a href=&quot;https://my.chartered.college/impact_article/embodied-cognition-enhancing-thinking-through-movement-and-gesture/&quot;&gt;https://my.chartered.college/impact_article/embodied-cognition-enhancing-thinking-through-movement-and-gesture/&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref31&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn32&quot;&gt;&lt;p&gt;The Burden of Embodied Cognition - PMC - PubMed
+Central, accessed January 20, 2025, &lt;a href=&quot;https://pmc.ncbi.nlm.nih.gov/articles/PMC4701031/&quot;&gt;https://pmc.ncbi.nlm.nih.gov/articles/PMC4701031/&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref32&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn33&quot;&gt;&lt;p&gt;Embodied Cognition and the Simulation of Action to
+Understand Others, accessed January 20, 2025, &lt;a href=&quot;https://labs.psych.ucsb.edu/grafton/scott/Papers/Grafton2009Annals%20of%20the%20New%20York%20Academy%20of%20Sciences.pdf&quot;&gt;https://labs.psych.ucsb.edu/grafton/scott/Papers/Grafton2009Annals%20of%20the%20New%20York%20Academy%20of%20Sciences.pdf&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref33&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn34&quot;&gt;&lt;p&gt;Integrating Embodied Cognition and Information
+Processing: A Combined Model of the Role of Gesture in Children’s
+Mathematical Environments - PubMed Central, accessed January 20, 2025,
+&lt;a href=&quot;https://pmc.ncbi.nlm.nih.gov/articles/PMC8062855/&quot;&gt;https://pmc.ncbi.nlm.nih.gov/articles/PMC8062855/&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref34&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn35&quot;&gt;&lt;p&gt;Emerging innovations in electrically powered artificial
+muscle fibers - Oxford Academic, accessed January 20, 2025, &lt;a href=&quot;https://academic.oup.com/nsr/article/11/10/nwae232/7708368&quot;&gt;https://academic.oup.com/nsr/article/11/10/nwae232/7708368&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref35&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn36&quot;&gt;&lt;p&gt;What are the challenges in the way of mass adoption of
+robotics? - Reddit, accessed January 20, 2025, &lt;a href=&quot;https://www.reddit.com/r/robotics/comments/195k0lt/what_are_the_challenges_in_the_way_of_mass/&quot;&gt;https://www.reddit.com/r/robotics/comments/195k0lt/what_are_the_challenges_in_the_way_of_mass/&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref36&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn37&quot;&gt;&lt;p&gt;Generative AI that imitates human motion -
+ScienceDaily, accessed January 20, 2025, &lt;a href=&quot;https://www.sciencedaily.com/releases/2024/05/240509110822.htm&quot;&gt;https://www.sciencedaily.com/releases/2024/05/240509110822.htm&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref37&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn38&quot;&gt;&lt;p&gt;Embodied cognitive science - Wikipedia, accessed
+January 20, 2025, &lt;a href=&quot;https://en.wikipedia.org/wiki/Embodied_cognitive_science&quot;&gt;https://en.wikipedia.org/wiki/Embodied_cognitive_science&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref38&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+  </entry>
   <entry>
     <title>Buffer Bloat</title>
     <link href="https://xn--izc.com/posts/buffer-bloat/"/>
@@ -263,7 +706,7 @@ reasons for the exit and the aftermath&lt;/a&gt; are many. The high level
 reason was due to non-capitulance to the Chinese government’s demands
 for censorship and compromising user data.&lt;/p&gt;
 &lt;figure&gt;
-&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/9/9c/IllegalFlowerTribute1.jpg&quot; alt=&quot;Illegal flower tribute on Wikipedia (CC-By-SA 3.0)&quot; /&gt;
+&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/9/9c/IllegalFlowerTribute1.jpg&quot; class=&quot;noinvert&quot; alt=&quot;Illegal flower tribute on Wikipedia (CC-By-SA 3.0)&quot; /&gt;
 &lt;figcaption aria-hidden=&quot;true&quot;&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Illegal_flower_tribute&quot;&gt;Illegal
 flower tribute on Wikipedia&lt;/a&gt; (&lt;a href=&quot;https://creativecommons.org/licenses/by-sa/3.0/&quot;&gt;CC-By-SA
 3.0&lt;/a&gt;)&lt;/figcaption&gt;
@@ -827,7 +1270,7 @@ perceived solution, the solution as it is actually implemented, and the
 solution as received by the users.&lt;/p&gt;
 &lt;p&gt;The diagram below illustrates this phenomenon.&lt;/p&gt;
 &lt;figure&gt;
-&lt;img src=&quot;https://xn--izc.com/posts/secret-life-of-systems/lifecycle.png&quot; class=&quot;full-bleed&quot; alt=&quot;Software systems lifecycle. (Described in prose below)&quot; /&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/secret-life-of-systems/lifecycle.png&quot; class=&quot;fullbleed&quot; alt=&quot;Software systems lifecycle. (Described in prose below)&quot; /&gt;
 &lt;figcaption aria-hidden=&quot;true&quot;&gt;Software systems lifecycle. (Described in
 prose below)&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -4033,7 +4476,7 @@ search for further indicators and information.&lt;/p&gt;
 &lt;h2 id=&quot;criticism&quot;&gt;Criticism&lt;/h2&gt;
 &lt;p&gt;Cedric Chin’s critique &lt;span class=&quot;citation&quot; data-cites=&quot;Cedric&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/why-strong-opinions-weakly-held/#ref-Cedric&quot; role=&quot;doc-biblioref&quot;&gt;[2]&lt;/a&gt;&lt;/span&gt; comes down to two
 points that the author summarizes as follows:&lt;/p&gt;
-&lt;blockquote&gt;
+&lt;figure&gt;
 &lt;p&gt;In my experience, ‘strong opinions, weakly held’ is difficult to put
 into practice. Most people who try will either:&lt;/p&gt;
 &lt;ol type=&quot;1&quot;&gt;
@@ -4043,15 +4486,17 @@ opinions, or&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;The reason it is difficult is because it works against the grain of
 the human mind.&lt;/p&gt;
+&lt;figcaption&gt;
 &lt;p&gt;So don’t bother. The next time you find yourself making a judgment,
 don’t invoke ‘strong opinions, weakly held’. Instead, ask: “how much are
 you willing to bet on that?” Doing so will jolt people into the types of
 thinking you want to encourage.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
 &lt;p&gt;Michael Natkin on &lt;span class=&quot;citation&quot; data-cites=&quot;Michael&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/why-strong-opinions-weakly-held/#ref-Michael&quot; role=&quot;doc-biblioref&quot;&gt;[3]&lt;/a&gt;&lt;/span&gt; points out the
 fallacy of assuming that strong opinions will be reliably
 challenged:&lt;/p&gt;
-&lt;blockquote&gt;
+&lt;figure&gt;
 &lt;p&gt;The idea of strong opinions, loosely held is that you can make
 bombastic statements, and everyone should implicitly assume that you’ll
 happily change your mind in a heartbeat if new data suggests you are
@@ -4059,12 +4504,14 @@ wrong. It is supposed to lead to a collegial, competitive environment in
 which ideas get a vigorous defense, the best of them survive, and no-one
 gets their feelings hurt in the process.&lt;/p&gt;
 &lt;p&gt;[…]&lt;/p&gt;
+&lt;figcaption&gt;
 &lt;p&gt;What really happens? The loudest, most bombastic engineer states
 their case with certainty, and that shuts down discussion. Other people
 either assume the loudmouth knows best, or don’t want to stick out their
 neck and risk criticism and shame. This is especially true if the
 loudmouth is senior, or there is any other power differential.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
 &lt;h2 id=&quot;reconciliation&quot;&gt;Reconciliation&lt;/h2&gt;
 &lt;p&gt;Both cases above illustrate the damage caused by the disconnect
 between the holder of the opinion and others about the degree of

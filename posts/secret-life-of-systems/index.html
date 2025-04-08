@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="/styles/katex.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
-    <link rel="stylesheet" href="/styles/-2ABriowmr.css">
+    <link rel="stylesheet" href="/styles/6CH3souzFa.css">
     <meta name="generator" content="Pandoc + Eleventy">
   </head>
   <body>
@@ -34,7 +34,7 @@
         <header>
           <h1>Secret Life of Systems</h1>
           <div class="navlike">
-            <span class="post-date">
+            <span class="date">
           Posted on March 23, 2024</span>
             <span class="fill"></span>
             <span class="tag-link">
@@ -54,7 +54,7 @@
           solution as received by the users.</p>
         <p>The diagram below illustrates this phenomenon.</p>
         <figure>
-          <img src="./lifecycle.png" class="full-bleed" alt="Software systems lifecycle. (Described in prose below)">
+          <img src="./lifecycle.png" class="fullbleed" alt="Software systems lifecycle. (Described in prose below)">
           <figcaption aria-hidden="true">Software systems lifecycle. (Described in
             prose below)</figcaption>
         </figure>
@@ -175,88 +175,85 @@ process</strong>. Every phase of this lifecycle brings with it new
     <footer class="container">
       <h2>More posts from this blog ...</h2>
       <div class="post-card">
-        <h3 class="post-title"><a href="/posts/the-lettergrade-rule/">The Lettergrade Rule</a></h3>
+        <h3 class="title"><a href="/posts/shannon-paper/">Shannon Paper</a></h3>
         <div class="navlike">
-          <span class="post-date navlike">
-            Posted on September 16, 2022</span>
+          <span class="date navlike">
+            Posted on March 26, 2021</span>
           <span class="fill"></span>
           <span class="tag-link">
-    <a href="/tags/engineering/">#engineering</a>
+    <a href="/tags/math/">#Math</a>
 </span>
         </div>
         <div>
-          <div class="post-summary">
-            <p>Don't block a code review because of minor issues that are best left to the discretion of the author.</p>
+          <div class="summary">
+            <p>Claude Shannon's <em>A mathematical theory of communication</em> is an oft cited
+              classic in information theory. Let's dive in and try to tease apart the
+              &quot;why&quot;s that are often overlooked when people build on top of the introduced
+              theory. They are definitely things that I didn't consider to be obvious
+              without the benefit of reading the paper.</p>
           </div>
-          <p class="post-more"><a href="/posts/the-lettergrade-rule/">Read more …</a></p>
+          <p class="more"><a href="/posts/shannon-paper/">Read more …</a></p>
         </div>
       </div>
       <div class="post-card">
-        <h3 class="post-title"><a href="/posts/code-as-ui/">Code As UI: The UX of config-as-code and everything-as-code</a></h3>
+        <h3 class="title"><a href="/posts/inktober-decay/">Inktober - Decay</a></h3>
         <div class="navlike">
-          <span class="post-date navlike">
-            Posted on July 1, 2023</span>
+          <span class="date navlike">
+            Posted on January 13, 2022</span>
           <span class="fill"></span>
           <span class="tag-link">
-    <a href="/tags/engineering/">#engineering</a>
+    <a href="/tags/inktober/">#Inktober</a>
 </span>
-        </div>
-        <div>
-          <div class="post-summary">
-            <p>Configuration-as-code has the same usability issues as everything else as code along with the same benefits.</p>
-          </div>
-          <p class="post-more"><a href="/posts/code-as-ui/">Read more …</a></p>
         </div>
       </div>
       <div class="post-card">
-        <h3 class="post-title"><a href="/posts/use-drop-not-edit/">Vim: Use Drop Not Edit, SBuffer Not Buffer</a></h3>
+        <h3 class="title"><a href="/posts/inktober-stripes/">Inktober - Stripes</a></h3>
         <div class="navlike">
-          <span class="post-date navlike">
-            Posted on July 7, 2020</span>
+          <span class="date navlike">
+            Posted on January 21, 2022</span>
           <span class="fill"></span>
           <span class="tag-link">
-    <a href="/tags/tools/">#Tools</a>
+    <a href="/tags/inktober/">#Inktober</a>
 </span>
-          <span class="tag-link">
-    <a href="/tags/vim/">#Vim</a>
-</span>
-        </div>
-        <div>
-          <div class="post-summary">
-            <p>Use the <code>:drop</code> command instead of <code>:edit</code> in Vim. It will reuse an existing
-              window instead of creating a new one.</p>
-          </div>
-          <p class="post-more"><a href="/posts/use-drop-not-edit/">Read more …</a></p>
         </div>
       </div>
       <div class="post-card">
-        <h3 class="post-title"><a href="/posts/buffer-bloat/">Buffer Bloat</a></h3>
+        <h3 class="title"><a href="/posts/why-i-hate-carousels/">Why I Hate Carousels</a></h3>
         <div class="navlike">
-          <span class="post-date navlike">
-            Posted on January 3, 2025</span>
+          <span class="date navlike">
+            Posted on January 25, 2024</span>
           <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/usability/">#Usability</a>
+</span>
           <span class="tag-link">
     <a href="/tags/engineering/">#Engineering</a>
 </span>
         </div>
         <div>
-          <div class="post-summary">
-            <p>In networking, adding too much buffering to intermediate network devices introduce
-              unnecessary delays. The trade-off is that <em>bursty</em> traffic will have the appearance
-              of getting through faster. But in reality, the speed of the network is still the same.
-              Data just takes longer to get through.</p>
+          <div class="summary">
+            <ul>
+              <li>Don't use carousels in your UI.</li>
+              <li>Instead,
+                if you must stick content into little cards,
+                let the horionztal layout wrap to additional lines.</li>
+              <li>If you end up with too many horizontal lines of content,
+                then you definitely have too many items that can be accessed
+                via a horizontally panning UI.
+                You need a different UI altogether.</li>
+            </ul>
           </div>
-          <p class="post-more"><a href="/posts/buffer-bloat/">Read more …</a></p>
+          <p class="more"><a href="/posts/why-i-hate-carousels/">Read more …</a></p>
         </div>
       </div>
       <div class="post-card">
-        <h3 class="post-title"><a href="/posts/symbol-name-types/">Names for Name Conventions</a></h3>
+        <h3 class="title"><a href="/posts/why-strong-opinions-weakly-held/">Why &#39;Strong Opinions Weakly Held&#39;</a></h3>
         <div class="navlike">
-          <span class="post-date navlike">
-            Posted on August 24, 2020</span>
+          <span class="date navlike">
+            Posted on August 28, 2020</span>
           <span class="fill"></span>
           <span class="tag-link">
-    <a href="/tags/engineering/">#Engineering</a>
+    <a href="/tags/meta/">#Meta</a>
 </span>
         </div>
       </div>
