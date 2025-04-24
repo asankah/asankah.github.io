@@ -12,9 +12,9 @@
   </author>
   <entry>
     <title>Cultures of Cooperation</title>
-    <link href="https://xn--izc.com/posts/incentives/"/>
+    <link href="https://xn--izc.com/posts/cultures-of-cooperation/"/>
     <updated>2025-04-12T00:00:00Z</updated>
-    <id>https://xn--izc.com/posts/incentives/</id>
+    <id>https://xn--izc.com/posts/cultures-of-cooperation/</id>
     <content xml:lang="en" type="html">&lt;p&gt;Typically the actions of an employee within a company depend on their
 percieved effect on a number of factors. In no specific order, they
 could be generalized into the following:&lt;/p&gt;
@@ -24,7 +24,7 @@ self-enrichment&lt;/em&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;The company&lt;/strong&gt; – &lt;em&gt;whomever controls the
 payroll&lt;/em&gt;. When I say “company”, I’m including the entire structure
 that produces and shares wealth with the employee. Management
-structures, co-workers (in their professional roles &lt;a href=&quot;https://xn--izc.com/posts/incentives/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;),
+structures, co-workers (in their professional roles &lt;a href=&quot;https://xn--izc.com/posts/cultures-of-cooperation/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;),
 and other stakeholders all get lumped into “company” for convenience.
 The employee – whom we are assuming is not very high up in the org-chart
 – is affected by, but typically has little effect on these entities.
@@ -62,7 +62,7 @@ build around ourselves.&lt;/p&gt;
 &lt;h2 id=&quot;a-culture-of-cooperation&quot;&gt;A Culture of Cooperation&lt;/h2&gt;
 &lt;p&gt;One of the more successful concepts at Google is the
 &lt;strong&gt;blameless postmortem&lt;/strong&gt;. The &lt;a href=&quot;https://sre.google/sre-book/postmortem-culture/&quot;&gt;SRE Book’s
-section on postmortem culture&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/incentives/#fn2&quot; class=&quot;footnote-ref&quot; id=&quot;fnref2&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; explains it in detail.
+section on postmortem culture&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/cultures-of-cooperation/#fn2&quot; class=&quot;footnote-ref&quot; id=&quot;fnref2&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; explains it in detail.
 But the most relevant bit for this article is as follows:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Removing blame from a postmortem gives people the confidence to
@@ -105,19 +105,19 @@ to protect oneself from future layoffs.&lt;/p&gt;
 &lt;p&gt;While at an individual level people may not alter their behaviors
 that much, on aggregate the results will be obvious. Ironically, a
 company that understood how strongly people reacted to a few seconds
-difference in response speed&lt;a href=&quot;https://xn--izc.com/posts/incentives/#fn3&quot; class=&quot;footnote-ref&quot; id=&quot;fnref3&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt; somehow thought it would
+difference in response speed&lt;a href=&quot;https://xn--izc.com/posts/cultures-of-cooperation/#fn3&quot; class=&quot;footnote-ref&quot; id=&quot;fnref3&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt; somehow thought it would
 be business as usual after laying off thousands of people.&lt;/p&gt;
 &lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;Co-workers in their personal roles like friends and
-community likely falls into the “society” bucket.&lt;a href=&quot;https://xn--izc.com/posts/incentives/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+community likely falls into the “society” bucket.&lt;a href=&quot;https://xn--izc.com/posts/cultures-of-cooperation/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li id=&quot;fn2&quot;&gt;&lt;p&gt;The bibliography links from that page are quite
 informative in learning about the philosophy of blameless postmortems –
 and in general a blameless culture. While interesting, that general
-topic is out of scope for this article.&lt;a href=&quot;https://xn--izc.com/posts/incentives/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+topic is out of scope for this article.&lt;a href=&quot;https://xn--izc.com/posts/cultures-of-cooperation/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li id=&quot;fn3&quot;&gt;&lt;p&gt;&lt;em&gt;User Preference and Search Engine Latency&lt;/em&gt; &lt;a href=&quot;https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/34439.pdf&quot;&gt;Google
-Research (PDF)&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/incentives/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+Research (PDF)&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/cultures-of-cooperation/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
 </content>
