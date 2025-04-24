@@ -4,12 +4,124 @@
   <subtitle>Strong opinions weekly held</subtitle>
   <link href="https://xn--izc.com/feed.xml" rel="self"/>
   <link href="https://xn--izc.com/"/>
-  <updated>2025-04-07T00:00:00Z</updated>
+  <updated>2025-04-12T00:00:00Z</updated>
   <id>https://xn--izc.com/</id>
   <author>
     <name>Asanka Herath</name>
     <email>asanka@gmail.com</email>
   </author>
+  <entry>
+    <title>Cultures of Cooperation</title>
+    <link href="https://xn--izc.com/posts/incentives/"/>
+    <updated>2025-04-12T00:00:00Z</updated>
+    <id>https://xn--izc.com/posts/incentives/</id>
+    <content xml:lang="en" type="html">&lt;p&gt;Typically the actions of an employee within a company depend on their
+percieved effect on a number of factors. In no specific order, they
+could be generalized into the following:&lt;/p&gt;
+&lt;ol type=&quot;1&quot;&gt;
+&lt;li&gt;&lt;strong&gt;The self&lt;/strong&gt; – &lt;em&gt;self-preservation and
+self-enrichment&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The company&lt;/strong&gt; – &lt;em&gt;whomever controls the
+payroll&lt;/em&gt;. When I say “company”, I’m including the entire structure
+that produces and shares wealth with the employee. Management
+structures, co-workers (in their professional roles &lt;a href=&quot;https://xn--izc.com/posts/incentives/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;),
+and other stakeholders all get lumped into “company” for convenience.
+The employee – whom we are assuming is not very high up in the org-chart
+– is affected by, but typically has little effect on these entities.
+Lumping all those entities into the single “company” entity keeps things
+simple for now.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The customers or users&lt;/strong&gt; – &lt;em&gt;whose needs and
+purchase decisions drive the company&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Society&lt;/strong&gt; – &lt;em&gt;among whom the employee
+lives&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The environment and the planet&lt;/strong&gt; – &lt;em&gt;everything and
+everyone else&lt;/em&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;When presented with a decision like what to do when something goes
+wrong, the employee will weigh the percieved effect of their decision on
+each of these entities. Such considerations may not happen consciously,
+especially in the heat of the moment.&lt;/p&gt;
+&lt;p&gt;Over time people tend to build up their own intuition around what’s
+good and what isn’t. Often a decision forces a compromise between
+serving oneself and serving the needs of the customers, company, or
+society.&lt;/p&gt;
+&lt;p&gt;In an ideal world, the interests that benefit each of these classes
+will have no conflicts. The society in general will seek to look after
+each other and the environment. Individuals – the customers and users –
+in turn will seek sustainable goods and services that benefit society in
+addition to meeting their immediate needs. The customers’ values will
+guide company policies, which in turn form incentive structures around
+the employees.&lt;/p&gt;
+&lt;p&gt;People who are innately concerned for the greater good are more
+likely to decide in favor of others and their environment. However,
+those who aren’t strongly guided by their moral compass will hone their
+intuitions around what is accepted around them and what is explictly
+incentivized.&lt;/p&gt;
+&lt;p&gt;It is this intuition that we seek to affect with the culture that we
+build around ourselves.&lt;/p&gt;
+&lt;h2 id=&quot;a-culture-of-cooperation&quot;&gt;A Culture of Cooperation&lt;/h2&gt;
+&lt;p&gt;One of the more successful concepts at Google is the
+&lt;strong&gt;blameless postmortem&lt;/strong&gt;. The &lt;a href=&quot;https://sre.google/sre-book/postmortem-culture/&quot;&gt;SRE Book’s
+section on postmortem culture&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/incentives/#fn2&quot; class=&quot;footnote-ref&quot; id=&quot;fnref2&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; explains it in detail.
+But the most relevant bit for this article is as follows:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Removing blame from a postmortem gives people the confidence to
+escalate issues without fear. It is also important not to stigmatize
+frequent production of postmortems by a person or team. An atmosphere of
+blame risks creating a culture in which incidents and issues are swept
+under the rug, leading to greater risk for the organization&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;A cultural cornerstone the likes of a blameless postmortem naturally
+guides people towards a way of thinking that is outward facing. In the
+absence of a risk to self, an employee is much more likely to act
+towards the benefit of others. This is especially true if &lt;em&gt;doing the
+right thing&lt;/em&gt; is rewarded.&lt;/p&gt;
+&lt;h2 id=&quot;a-culture-of-punishment-and-domination&quot;&gt;A Culture of Punishment
+and Domination&lt;/h2&gt;
+&lt;p&gt;What happens when people feel constantly at risk is easy to see.
+Faults get swept under the rug, as the SRE book points out. Things that
+negatively affect the quality of good and services produced will remain
+unaddressed. Decisions will be made that are beneficial to a small
+number of people over a short period of time, at the expense of everyone
+else. Users lose trust in the company. Ultimately everything goes
+downhill.&lt;/p&gt;
+&lt;h2 id=&quot;current-events-at-google&quot;&gt;Current Events at Google&lt;/h2&gt;
+&lt;p&gt;A well respected engineer with a long tenure, Ian Hixie, recently
+left Google.&lt;/p&gt;
+&lt;p&gt;After he left, he wrote &lt;a href=&quot;https://ln.hixie.ch/?start=1700627373&amp;amp;count=1&quot;&gt;a blistering
+reflection of where Google is heading&lt;/a&gt;. You should read it.&lt;/p&gt;
+&lt;p&gt;One thing that he points out are the results of the recent layoffs at
+Google:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The effects of layoffs are insidious. Whereas before people might
+focus on the user, or at least their company, trusting that doing the
+right thing will eventually be rewarded even if it’s not strictly part
+of their assigned duties, after a layoff people can no longer trust that
+their company has their back, and they dramatically dial back any
+risk-taking. Responsibilities are guarded jealously. Knowledge is
+hoarded, because making oneself irreplaceable is the only lever one has
+to protect oneself from future layoffs.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;While at an individual level people may not alter their behaviors
+that much, on aggregate the results will be obvious. Ironically, a
+company that understood how strongly people reacted to a few seconds
+difference in response speed&lt;a href=&quot;https://xn--izc.com/posts/incentives/#fn3&quot; class=&quot;footnote-ref&quot; id=&quot;fnref3&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt; somehow thought it would
+be business as usual after laying off thousands of people.&lt;/p&gt;
+&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;Co-workers in their personal roles like friends and
+community likely falls into the “society” bucket.&lt;a href=&quot;https://xn--izc.com/posts/incentives/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn2&quot;&gt;&lt;p&gt;The bibliography links from that page are quite
+informative in learning about the philosophy of blameless postmortems –
+and in general a blameless culture. While interesting, that general
+topic is out of scope for this article.&lt;a href=&quot;https://xn--izc.com/posts/incentives/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn3&quot;&gt;&lt;p&gt;&lt;em&gt;User Preference and Search Engine Latency&lt;/em&gt; &lt;a href=&quot;https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/34439.pdf&quot;&gt;Google
+Research (PDF)&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/incentives/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+  </entry>
   <entry>
     <title>Intermission - Q1 of 2025</title>
     <link href="https://xn--izc.com/posts/intermezzo-2025/"/>
@@ -57,6 +169,69 @@ corrective guidance has historically just made the hateful group more
 resentful and even more entrenched in their beliefs. Ultimately they
 will – as evidenced in recent events – have enough momentum and
 intensity to turn the tables.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Intrinsic and Extrinsic Motivation: An anecdote</title>
+    <link href="https://xn--izc.com/posts/intrinsic-motivation-an-anecdote/"/>
+    <updated>2025-03-22T00:00:00Z</updated>
+    <id>https://xn--izc.com/posts/intrinsic-motivation-an-anecdote/</id>
+    <content xml:lang="en" type="html">&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/intrinsic-motivation-an-anecdote/intrinsic-vs-extrinsic.png&quot; alt=&quot;Intrinsic vs. extrinsic&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Intrinsic vs. extrinsic&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;A long long time ago in a totally hypothetical company that still
+exists but only in name, there was a little bit of discontent&lt;a href=&quot;https://xn--izc.com/posts/intrinsic-motivation-an-anecdote/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;. You see, one of the core values of
+the company was its commitment to diversity and inclusion. Rather than
+lowering the bar, like how some people think inclusion works, they had
+many outreach programs that encouraged women and minorities to take up
+STEM. These outreach programs almost necessarily fell on the shoulders
+of the women and minorities who were already employed at the company –
+after all representation matters. Those who worked on these did so out
+of their own passion. They wanted to help others like them.&lt;/p&gt;
+&lt;p&gt;Anyone who has worked in tech will tell you it’s a lot of work. This
+company’s performance review system attempted to measure the amount and
+quality of said work so that they can reward the right people for the
+right reasons. Since the company deemed that having a diverse workforce
+was in their best interest, ideally they would reward people working
+towards that goal. However, the performance review system didn’t measure
+anything about volunteer work like what the people doing outreach were
+doing.&lt;/p&gt;
+&lt;p&gt;So those volunteers were unhappy. All that extra work, often done at
+the expense of work that &lt;em&gt;is&lt;/em&gt; measured in the performance review
+system, didn’t count for anything when career progress was concerned.
+They wanted change.&lt;/p&gt;
+&lt;p&gt;The company listened.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;“Community contributions”&lt;/em&gt; got added to the job descriptions
+for people at all levels. Naturally the higher the level, the broader in
+scope those contributions were required to be. It was now part of
+everyone’s job to make contributions that made the company’s culture
+better – be it recruitment, outreach, or whatever.&lt;/p&gt;
+&lt;p&gt;The changes to the performance review system was an improvement. But
+unintentionally it had other side-effects. Notably, those higher up the
+organizational ladder found that their community contributions need to
+be commesurate with their status. But starting up an effort that is at
+the company or region level was a lot of work. Lucky for them, those
+volunteers who were passionate about helping others had already
+established programs that were of the right scale.&lt;/p&gt;
+&lt;p&gt;So as career focused people are wont to do, they threw their weight
+around and effectively took over these outreach programs. The volunteers
+were upset. Some left. Others kept working but at a smaller capacity
+than what they were before. The career focused people were happy, but
+the volunteers were not.&lt;/p&gt;
+&lt;p&gt;The outreach programs still existed&lt;a href=&quot;https://xn--izc.com/posts/intrinsic-motivation-an-anecdote/#fn2&quot; class=&quot;footnote-ref&quot; id=&quot;fnref2&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; but
+were run by people who were no longer doing it just to help other
+people. They were run by people who were trying to help themselves. The
+programs faltered; quality went down; the effectiveness of the programs
+went downhill. It wasn’t fun or rewarding as it was before.&lt;/p&gt;
+&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;There’s a lot of discontent now, but at the time there
+was only a little.&lt;a href=&quot;https://xn--izc.com/posts/intrinsic-motivation-an-anecdote/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn2&quot;&gt;&lt;p&gt;As of this writing (February of 2025), not any more.&lt;a href=&quot;https://xn--izc.com/posts/intrinsic-motivation-an-anecdote/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
 </content>
   </entry>
   <entry>
