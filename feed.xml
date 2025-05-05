@@ -4,139 +4,120 @@
   <subtitle>Strong opinions weekly held</subtitle>
   <link href="https://xn--izc.com/feed.xml" rel="self"/>
   <link href="https://xn--izc.com/"/>
-  <updated>2025-04-12T00:00:00Z</updated>
+  <updated>2025-05-04T00:00:00Z</updated>
   <id>https://xn--izc.com/</id>
   <author>
     <name>Asanka Herath</name>
     <email>asanka@gmail.com</email>
   </author>
   <entry>
-    <title>Cultures of Cooperation</title>
-    <link href="https://xn--izc.com/posts/cultures-of-cooperation/"/>
-    <updated>2025-04-12T00:00:00Z</updated>
-    <id>https://xn--izc.com/posts/cultures-of-cooperation/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;Typically the actions of an employee within a company depend on their
-percieved effect on a number of factors. In no specific order, they
-could be generalized into the following:&lt;/p&gt;
-&lt;ol type=&quot;1&quot;&gt;
-&lt;li&gt;&lt;strong&gt;The self&lt;/strong&gt; – &lt;em&gt;self-preservation and
-self-enrichment&lt;/em&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;The company&lt;/strong&gt; – &lt;em&gt;whomever controls the
-payroll&lt;/em&gt;. When I say “company”, I’m including the entire structure
-that produces and shares wealth with the employee. Management
-structures, co-workers (in their professional roles &lt;a href=&quot;https://xn--izc.com/posts/cultures-of-cooperation/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;),
-and other stakeholders all get lumped into “company” for convenience.
-The employee – whom we are assuming is not very high up in the org-chart
-– is affected by, but typically has little effect on these entities.
-Lumping all those entities into the single “company” entity keeps things
-simple for now.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;The customers or users&lt;/strong&gt; – &lt;em&gt;whose needs and
-purchase decisions drive the company&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Society&lt;/strong&gt; – &lt;em&gt;among whom the employee
-lives&lt;/em&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;The environment and the planet&lt;/strong&gt; – &lt;em&gt;everything and
-everyone else&lt;/em&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;When presented with a decision like what to do when something goes
-wrong, the employee will weigh the percieved effect of their decision on
-each of these entities. Such considerations may not happen consciously,
-especially in the heat of the moment.&lt;/p&gt;
-&lt;p&gt;Over time people tend to build up their own intuition around what’s
-good and what isn’t. Often a decision forces a compromise between
-serving oneself and serving the needs of the customers, company, or
-society.&lt;/p&gt;
-&lt;p&gt;In an ideal world, the interests that benefit each of these classes
-will have no conflicts. The society in general will seek to look after
-each other and the environment. Individuals – the customers and users –
-in turn will seek sustainable goods and services that benefit society in
-addition to meeting their immediate needs. The customers’ values will
-guide company policies, which in turn form incentive structures around
-the employees.&lt;/p&gt;
-&lt;p&gt;People who are innately concerned for the greater good are more
-likely to decide in favor of others and their environment. However,
-those who aren’t strongly guided by their moral compass will hone their
-intuitions around what is accepted around them and what is explictly
-incentivized.&lt;/p&gt;
-&lt;p&gt;It is this intuition that we seek to affect with the culture that we
-build around ourselves.&lt;/p&gt;
-&lt;h2 id=&quot;a-culture-of-cooperation&quot;&gt;A Culture of Cooperation&lt;/h2&gt;
-&lt;p&gt;One of the more successful concepts at Google is the
-&lt;strong&gt;blameless postmortem&lt;/strong&gt;. The &lt;a href=&quot;https://sre.google/sre-book/postmortem-culture/&quot;&gt;SRE Book’s
-section on postmortem culture&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/cultures-of-cooperation/#fn2&quot; class=&quot;footnote-ref&quot; id=&quot;fnref2&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; explains it in detail.
-But the most relevant bit for this article is as follows:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Removing blame from a postmortem gives people the confidence to
-escalate issues without fear. It is also important not to stigmatize
-frequent production of postmortems by a person or team. An atmosphere of
-blame risks creating a culture in which incidents and issues are swept
-under the rug, leading to greater risk for the organization&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;A cultural cornerstone the likes of a blameless postmortem naturally
-guides people towards a way of thinking that is outward facing. In the
-absence of a risk to self, an employee is much more likely to act
-towards the benefit of others. This is especially true if &lt;em&gt;doing the
-right thing&lt;/em&gt; is rewarded.&lt;/p&gt;
-&lt;h2 id=&quot;a-culture-of-punishment-and-domination&quot;&gt;A Culture of Punishment
-and Domination&lt;/h2&gt;
-&lt;p&gt;What happens when people feel constantly at risk is easy to see.
-Faults get swept under the rug, as the SRE book points out. Things that
-negatively affect the quality of good and services produced will remain
-unaddressed. Decisions will be made that are beneficial to a small
-number of people over a short period of time, at the expense of everyone
-else. Users lose trust in the company. Ultimately everything goes
-downhill.&lt;/p&gt;
-&lt;h2 id=&quot;current-events-at-google&quot;&gt;Current Events at Google&lt;/h2&gt;
-&lt;p&gt;A well respected engineer with a long tenure, Ian Hixie, recently
-left Google.&lt;/p&gt;
-&lt;p&gt;After he left, he wrote &lt;a href=&quot;https://ln.hixie.ch/?start=1700627373&amp;amp;count=1&quot;&gt;a blistering
-reflection of where Google is heading&lt;/a&gt;. You should read it.&lt;/p&gt;
-&lt;p&gt;One thing that he points out are the results of the recent layoffs at
-Google:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The effects of layoffs are insidious. Whereas before people might
-focus on the user, or at least their company, trusting that doing the
-right thing will eventually be rewarded even if it’s not strictly part
-of their assigned duties, after a layoff people can no longer trust that
-their company has their back, and they dramatically dial back any
-risk-taking. Responsibilities are guarded jealously. Knowledge is
-hoarded, because making oneself irreplaceable is the only lever one has
-to protect oneself from future layoffs.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;While at an individual level people may not alter their behaviors
-that much, on aggregate the results will be obvious. Ironically, a
-company that understood how strongly people reacted to a few seconds
-difference in response speed&lt;a href=&quot;https://xn--izc.com/posts/cultures-of-cooperation/#fn3&quot; class=&quot;footnote-ref&quot; id=&quot;fnref3&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt; somehow thought it would
-be business as usual after laying off thousands of people.&lt;/p&gt;
-&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
-&lt;hr /&gt;
-&lt;ol&gt;
-&lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;Co-workers in their personal roles like friends and
-community likely falls into the “society” bucket.&lt;a href=&quot;https://xn--izc.com/posts/cultures-of-cooperation/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn2&quot;&gt;&lt;p&gt;The bibliography links from that page are quite
-informative in learning about the philosophy of blameless postmortems –
-and in general a blameless culture. While interesting, that general
-topic is out of scope for this article.&lt;a href=&quot;https://xn--izc.com/posts/cultures-of-cooperation/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn3&quot;&gt;&lt;p&gt;&lt;em&gt;User Preference and Search Engine Latency&lt;/em&gt; &lt;a href=&quot;https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/34439.pdf&quot;&gt;Google
-Research (PDF)&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/cultures-of-cooperation/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/section&gt;
+    <title>Structure of Information: Act I: The Meaning</title>
+    <link href="https://xn--izc.com/posts/meaning/"/>
+    <updated>2025-05-04T00:00:00Z</updated>
+    <id>https://xn--izc.com/posts/meaning/</id>
+    <content xml:lang="en" type="html">&lt;p&gt;This is a meaning.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/meaning/1.excalidraw.png&quot; class=&quot;noinvert&quot; alt=&quot;Meaninglessness&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Meaninglessness&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;It doesn’t look like much because I haven’t told you what it means
+yet. That’s going to come in the following paragraphs. All I’ve done is
+toss an abstract concept up in the air. It seems pointless, but it gives
+us a canvas to paint with meaning later.&lt;/p&gt;
+&lt;p&gt;For example, if I tell you that this meaning concerns a feeling –
+something very abstract – it suddenly looks a tiny bit different. Now
+look at it.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/meaning/2.excalidraw.png&quot; class=&quot;noinvert&quot; alt=&quot;A feeling&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;A feeling&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Not all the words I speak will add meaning equally. Some are
+digressions that you have learned to ignore like this sentence that
+isn’t talking about our thing at all. In one ear and out the other. You
+won’t pay much attention to those.&lt;/p&gt;
+&lt;p&gt;Still others, like the sentence that is about to follow this one, are
+in fact talking about our thing, so you will pay attention to those. Our
+meaning, the one we are talking about, is going to be about a feeling –
+a calm feeling. Something that you feel when you suddenly run out of
+ideas or your mind stops racing and you become aware of the environment
+around you.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/meaning/3.excalidraw.png&quot; class=&quot;noinvert&quot; alt=&quot;Calmness&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Calmness&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;The feeling you get when you are in the middle of a forest. A calm
+forest where you are not worried about any creepy-crawlies. It’s the
+afternoon, but not a lot of sunshine is making it through the canopy.
+You can smell the moss – it feels wet and earthy even though you know
+you can’t smell wet.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/meaning/4.excalidraw.png&quot; class=&quot;noinvert&quot; alt=&quot;A calm forest&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;A calm forest&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Unlike two steps ago, these last few sentences were a bit special.
+You see, up till now I tossed out a very plain and boring thing in the
+air and painted it with a couple of distinct and well understood – if a
+bit vague. But in the last paragraph, I made you dip a brush into your
+own subjective experience and paint our thing in your mind. The meaning
+is now yours and yours alone. Noone can see your dreams.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/meaning/5.excalidraw.png&quot; class=&quot;noinvert&quot; alt=&quot;Lots of different meanings&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Lots of different meanings&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;And that’s special because your experiences are not things that can
+be communicated to you. We don’t have language for that – because those
+experiences cannot be constructed innately. They &lt;em&gt;must&lt;/em&gt; be
+communicated to you through your senses. Those bodies have ways of
+constructing feelings for you that mere abstract meanings cannot.
+However once you have those feelings in yourself, our abstract words
+&lt;em&gt;can&lt;/em&gt; conjure them out at will; just like we did when we spoke
+about the forest.&lt;/p&gt;
+&lt;p&gt;If we had a succinct way to communicate this meaning in one go, we
+would have.&lt;/p&gt;
+&lt;p&gt;But our language and our facility of communicating ideas which we
+stimulate with our language doesn’t afford us such shortcuts. So our
+language tends to be very abstract; and sometimes it takes a little
+shortcut and conjures up a meaning from the back of the subjects’ mind
+like we did with our allusions. Again, these are not always shortcuts.
+These are the &lt;em&gt;only&lt;/em&gt; ways in which we can communicate certain
+things – things that can only be constructed in one’s head with one’s
+senses.&lt;/p&gt;
+&lt;p&gt;So to understand these ideas, one must have the right ingredients in
+their minds. To create these things in their heads one must experience
+things with their senses.&lt;/p&gt;
+&lt;p&gt;And if we can’t conjure meaning then we can’t understand each other.
+And if we can’t understand each other then we can’t have compassion and
+empathy.&lt;/p&gt;
+&lt;p&gt;Interestingly, this is how we fundamentally differ from the current
+LLMs. You see, they have another problem. They don’t have any
+experiences to conjure because they don’t have feelings. So when they
+encounter language, they can’t understand what those words mean. But one
+thing that they can do is to reach into their vast embeddings and see
+&lt;em&gt;how&lt;/em&gt; someone who can feel would have responded. And then they
+can respond accordingly. What they conjure isn’t life experience or
+feeling, but evidence of others having reacted a certain way to a
+certain sequence of ideas.&lt;/p&gt;
+&lt;p&gt;Because they can’t construct new feelings, their universe of feeling
+will always be limited by what people have felt and reacted to. That way
+they can look at those reactions and imitate them. The meanings in your
+head are yours alone.&lt;/p&gt;
+&lt;p&gt;No one can see your dreams. Especially not the robots.&lt;/p&gt;
 </content>
   </entry>
   <entry>
     <title>Intermission - Q1 of 2025</title>
     <link href="https://xn--izc.com/posts/intermezzo-2025/"/>
-    <updated>2025-04-07T00:00:00Z</updated>
+    <updated>2025-05-03T00:00:00Z</updated>
     <id>https://xn--izc.com/posts/intermezzo-2025/</id>
     <content xml:lang="en" type="html">&lt;p&gt;It’s been a while since I’ve published anything here. This is partly
-because every time I write, there is something much more important and
-terrible happenning in the world that I’m not qualified to write about.
-Writing about some technical topic seems like a triviality compared to
-world events.&lt;/p&gt;
+because every time I try to write there is something much more important
+and terrible happenning in the world that I’m not qualified to write
+about. Everything else including whatever it was that I was trying to
+write about seems trivial and inconsequential by comparison.&lt;/p&gt;
 &lt;p&gt;Many years ago I’d have said that there is very little evil in the
-world and that most people you will meet are good natured. I still sort
-of believe that people are good natured, but I’m beginning to think that
-the word &lt;em&gt;“most”&lt;/em&gt; may not be so easily applied to that
-statement.&lt;/p&gt;
+world and that most people you will meet are good. I still sort of
+believe that people are good, but I’m beginning to think that the word
+&lt;em&gt;“most”&lt;/em&gt; may not be readily applicable.&lt;/p&gt;
 &lt;figure&gt;
 &lt;img src=&quot;https://xn--izc.com/posts/intermezzo-2025/do-not-press.png&quot; class=&quot;noinvert&quot; alt=&quot;A big red button labelled DO NOT PRESS is attached to the top of an ominous looking device to which many wires and conduits are attached.&quot; /&gt;
 &lt;figcaption aria-hidden=&quot;true&quot;&gt;A big red button labelled &lt;strong&gt;DO NOT
@@ -144,30 +125,33 @@ PRESS&lt;/strong&gt; is attached to the top of an ominous looking device to
 which many wires and conduits are attached.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;p&gt;School children has this &lt;em&gt;would-you-rather&lt;/em&gt; question about a
-big red button. Hypothetically speaking, if there were a big red button
-that when pushed gives you a million dollars, but also kills a random
-person, would you press it?&lt;/p&gt;
-&lt;p&gt;It is safe to say that the answer to this question, in practice, is
-predominently &lt;em&gt;yes&lt;/em&gt;.&lt;/p&gt;
+big red button.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Hypothetically, if there were a big red button that when pushed
+gives you a million dollars, but also kills a random person, would you
+press it?”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It is safe to say that the answer to this question is predominently
+&lt;em&gt;yes&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;More worryingly, the reward doesn’t need to be nearly that high. It
-seems, at least for some, there doesn’t need to be a reward at all as
-long as the person who would be harmed is of a specific race, sexual
-orientation, body dysmorphia, or religion. harming a person that one
-does not like is apparently reward enough.&lt;/p&gt;
-&lt;p&gt;People aren’t born this way. I think decades of being conditioned to
-cast out a group of people gradually normalizes bringing harm to them.
-With enough rhetoric and likemindedness anything can be normalized.
-Anyone disagreeing – and is not a member of the outcasts – can be easily
+seems, for some, there doesn’t need to be a reward at all as long as the
+person who would be harmed is of a specific race, sexual orientation,
+body dysmorphia, where they were born, or religion. There’s enough hate
+to take the place of a reward.&lt;/p&gt;
+&lt;p&gt;People aren’t born this way. Decades of being conditioned to cast out
+a group of people gradually dehumanizes them. With enough rhetoric,
+likemindedness, and reinforcement anything can be normalized. Anyone
+disagreeing – and is not a member of the outcasts – can be easily
 disregarded as being the enemy or at least misguided. Hate becomes
 self-sustaining, and can last generations.&lt;/p&gt;
 &lt;p&gt;We can win battles or wars, but we are not going to really move
-forward as a species unless we figure this one out – how do we teach
-compassion, and how do we convince someone away from hate?&lt;/p&gt;
+forward as a species unless we figure this one out – how to teach
+compassion, and how to reason someone away from hate?&lt;/p&gt;
 &lt;p&gt;Contrary to popular opinion I think pushing the hateful away is not a
-sustainable solution in the long run. Suppressing hateful speech without
-corrective guidance has historically just made the hateful group more
-resentful and even more entrenched in their beliefs. Ultimately they
-will – as evidenced in recent events – have enough momentum and
+sustainable solution in the long run. Suppressing hateful behavior
+without corrective guidance has historically just made the hateful group
+more resentful and even more entrenched in their beliefs. Ultimately
+they will – as evidenced in recent events – have enough momentum and
 intensity to turn the tables.&lt;/p&gt;
 </content>
   </entry>
@@ -230,400 +214,6 @@ went downhill. It wasn’t fun or rewarding as it was before.&lt;/p&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;There’s a lot of discontent now, but at the time there
 was only a little.&lt;a href=&quot;https://xn--izc.com/posts/intrinsic-motivation-an-anecdote/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li id=&quot;fn2&quot;&gt;&lt;p&gt;As of this writing (February of 2025), not any more.&lt;a href=&quot;https://xn--izc.com/posts/intrinsic-motivation-an-anecdote/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/section&gt;
-</content>
-  </entry>
-  <entry>
-    <title></title>
-    <link href="https://xn--izc.com/posts/whither-us/replicating-movement/"/>
-    <updated>2025-01-26T18:21:17Z</updated>
-    <id>https://xn--izc.com/posts/whither-us/replicating-movement/</id>
-    <content xml:lang="en" type="html">&lt;h1 id=&quot;why-replicating-movement-is-harder-than-generating-text&quot;&gt;&lt;strong&gt;Why
-Replicating Movement Is Harder Than Generating Text&lt;/strong&gt;&lt;/h1&gt;
-&lt;p&gt;Artificial intelligence (AI) has made incredible strides in recent
-years, achieving remarkable feats in areas like text generation and
-information processing. AI can now write stories, translate languages,
-and even compose music with impressive proficiency. However, when it
-comes to replicating mechanical motion, particularly the fluid and
-adaptable movements of humans and animals, AI still has a long way to
-go. This article delves into the reasons behind this disparity,
-exploring the unique challenges that make replicating motion a more
-complex endeavor than generating text. To gather the information for
-this article, research was conducted in five key steps:&lt;/p&gt;
-&lt;ol type=&quot;1&quot;&gt;
-&lt;li&gt;Finding articles and research papers discussing the challenges of
-replicating mechanical motion artificially.&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;Finding articles and research papers discussing the advancements in
-AI for text generation and information processing tasks.&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;Finding articles and research papers comparing the complexities of
-mechanical motion and information processing tasks from a computational
-perspective.&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;Finding articles and research papers discussing the limitations of
-current robotics technology in replicating complex mechanical
-motions.&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;Finding articles and research papers discussing the role of embodied
-cognition in mechanical motion and how it differs from information
-processing tasks.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;the-complexity-of-mechanical-motion&quot;&gt;&lt;strong&gt;The Complexity of
-Mechanical Motion&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;While generating text involves manipulating symbols and patterns
-within a defined set of rules, replicating mechanical motion requires
-navigating the complexities of the physical world. Here’s why this is so
-challenging:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;The Physical World Is Unpredictable:&lt;/strong&gt; Unlike the
-digital realm, where data is structured and predictable, the physical
-world is full of unexpected variables. A robot navigating a room must
-contend with uneven surfaces, obstacles, and even sudden changes in
-lighting or the movement of objects &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Infinite Degrees of Freedom:&lt;/strong&gt; Human movement is
-incredibly versatile. Our bodies have numerous joints and muscles that
-allow for a vast range of motion. Replicating this flexibility in a
-robot requires complex mechanics and sophisticated control systems &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn2&quot; class=&quot;footnote-ref&quot; id=&quot;fnref2&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Real-Time Adaptation:&lt;/strong&gt; Humans and animals seamlessly
-adapt their movements to changing circumstances. A robot trying to mimic
-this must be able to perceive its environment, process information, and
-adjust its actions in real-time, a task that demands significant
-computational power and advanced algorithms &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn3&quot; class=&quot;footnote-ref&quot; id=&quot;fnref3&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Embodied Cognition:&lt;/strong&gt; Our understanding of the world
-is deeply intertwined with our physical experiences. We learn to move
-and interact with our surroundings through a process of embodied
-cognition, where our bodies and senses play a crucial role. Replicating
-this in a robot requires more than just programming; it necessitates a
-deeper understanding of how the brain and body work together to generate
-and control movement &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn4&quot; class=&quot;footnote-ref&quot; id=&quot;fnref4&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;advancements-in-ai-for-text-and-information-processing&quot;&gt;&lt;strong&gt;Advancements
-in AI for Text and Information Processing&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;In contrast to the challenges of replicating motion, AI has excelled
-in text generation and information processing tasks. This success can be
-attributed to several factors:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Structured Data:&lt;/strong&gt; Text and information are typically
-represented in a structured format, making it easier for AI systems to
-analyze and manipulate &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn5&quot; class=&quot;footnote-ref&quot; id=&quot;fnref5&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;5&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Clear Rules and Patterns:&lt;/strong&gt; Languages and information
-systems follow specific rules and patterns, which AI models can learn
-and apply with increasing accuracy &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn6&quot; class=&quot;footnote-ref&quot; id=&quot;fnref6&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;6&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Abundant Training Data:&lt;/strong&gt; The availability of vast
-amounts of text and data has enabled AI models to learn and improve
-their performance significantly &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn7&quot; class=&quot;footnote-ref&quot; id=&quot;fnref7&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;7&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Advancements in Algorithms:&lt;/strong&gt; Deep learning and other
-AI techniques have proven highly effective in processing and generating
-text, leading to breakthroughs in natural language processing and
-machine translation &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn8&quot; class=&quot;footnote-ref&quot; id=&quot;fnref8&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;8&lt;/sup&gt;&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;comparing-complexities-motion-vs.-information&quot;&gt;&lt;strong&gt;Comparing
-Complexities: Motion vs. Information&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;From a computational perspective, replicating mechanical motion
-presents a different set of challenges compared to information
-processing.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Continuous vs. Discrete:&lt;/strong&gt; Motion is continuous,
-involving a smooth flow of movements and adjustments. Information
-processing, on the other hand, often deals with discrete units of data
-&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn9&quot; class=&quot;footnote-ref&quot; id=&quot;fnref9&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;9&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Physical Constraints:&lt;/strong&gt; Replicating motion requires
-dealing with the physical constraints of the real world, such as
-gravity, friction, and the limitations of robotic materials. Information
-processing operates within the more forgiving confines of the digital
-world &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn10&quot; class=&quot;footnote-ref&quot; id=&quot;fnref10&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;10&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Sensorimotor Integration:&lt;/strong&gt; Motion involves the
-intricate coordination of sensory input and motor output. AI systems for
-motion must be able to process sensory data, make decisions, and send
-commands to actuators in a seamless and efficient manner &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn11&quot; class=&quot;footnote-ref&quot; id=&quot;fnref11&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;11&lt;/sup&gt;&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;limitations-of-current-robotics-technology&quot;&gt;&lt;strong&gt;Limitations
-of Current Robotics Technology&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;Despite advancements in robotics, current technology still faces
-limitations in replicating complex motions. These limitations can be
-grouped into several key areas:&lt;/p&gt;
-&lt;h3 id=&quot;actuator-and-material-limitations&quot;&gt;&lt;strong&gt;Actuator and Material
-Limitations&lt;/strong&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Artificial muscles and actuators often lack the power, efficiency,
-and flexibility of their biological counterparts. Researchers are
-exploring various electrically powered artificial muscle fiber actuation
-mechanisms, such as electrothermal, electrochemical, and dielectric
-actuation, to achieve the desired characteristics of high efficiency,
-precise control, miniaturization, and seamless integration with
-electronic components &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn12&quot; class=&quot;footnote-ref&quot; id=&quot;fnref12&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;12&lt;/sup&gt;&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;sensor-integration-and-perception&quot;&gt;&lt;strong&gt;Sensor Integration
-and Perception&lt;/strong&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Integrating sensors into robots to provide real-time feedback and
-environmental awareness remains a challenge. To accurately replicate
-human motion, robots need to perceive and react to their surroundings
-effectively, especially in dynamic environments with limited fields of
-view &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn13&quot; class=&quot;footnote-ref&quot; id=&quot;fnref13&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;13&lt;/sup&gt;&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;motion-capture-technology&quot;&gt;&lt;strong&gt;Motion Capture
-Technology&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;Accurately capturing and analyzing human motion data is crucial for
-replicating it in robots. Various motion capture technologies are used,
-each with its own advantages and disadvantages:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Optical Tracking Systems:&lt;/strong&gt; These systems use markers
-to track movement. Passive marker systems are susceptible to occlusion
-and require post-processing, while active marker systems, though more
-precise, can be cumbersome due to wires and battery packs. Markerless
-vision-based systems offer a wireless solution but are sensitive to
-lighting and noise &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn14&quot; class=&quot;footnote-ref&quot; id=&quot;fnref14&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;14&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Inertial Sensor Tracking Systems:&lt;/strong&gt; These systems are
-wireless and offer fast calibration but are sensitive to magnetic fields
-and can produce noisy data &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn15&quot; class=&quot;footnote-ref&quot; id=&quot;fnref15&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;15&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Magnetic Marker Tracking Systems:&lt;/strong&gt; These systems are
-also wireless and can be used indoors or outdoors but have a limited
-range and are sensitive to magnetic fields &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn16&quot; class=&quot;footnote-ref&quot; id=&quot;fnref16&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;16&lt;/sup&gt;&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;motion-planning-and-control&quot;&gt;&lt;strong&gt;Motion Planning and
-Control&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;Replicating human-like motion requires sophisticated motion planning
-and control algorithms. Some of the key approaches and challenges
-include:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Dynamic Movement Primitives (DMPs):&lt;/strong&gt; DMPs are used
-to generate and control complex movements by encoding trajectories and
-adapting them to new situations. However, challenges remain in
-replicating the planarity characteristic of human hand motion,
-especially in cluttered environments &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn17&quot; class=&quot;footnote-ref&quot; id=&quot;fnref17&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;17&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Attractive and Repulsive Vector Fields:&lt;/strong&gt; These
-fields are used in robot motion planning to guide robots towards goals
-and away from obstacles. However, replicating the smooth and efficient
-obstacle avoidance strategies of humans remains a challenge &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn18&quot; class=&quot;footnote-ref&quot; id=&quot;fnref18&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;18&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Hybrid Joints/Operational-Space Approach:&lt;/strong&gt; This
-approach combines joint-level and operational-space control to enhance
-the human-likeness of robot motion. It aims to achieve both accuracy in
-task execution and natural-looking movements &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn19&quot; class=&quot;footnote-ref&quot; id=&quot;fnref19&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;19&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Dynamic Models of Human Arm:&lt;/strong&gt; Researchers are using
-dynamic models that simulate the capabilities of the human arm to
-generate biologically-inspired arm movements &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn20&quot; class=&quot;footnote-ref&quot; id=&quot;fnref20&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;20&lt;/sup&gt;&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;anatomical-and-kinematic-differences&quot;&gt;&lt;strong&gt;Anatomical and
-Kinematic Differences&lt;/strong&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Retargeting human motions to robots is complex due to fundamental
-differences in their anatomies, kinematics, and motion dynamics. Robots
-have rigid bodies, different form factors, and distinct physical
-limitations compared to humans. Directly mapping human motion to robot
-actuators often leads to unnatural and suboptimal robot behavior. For
-example, replicating the motion of a human touching their head requires
-careful consideration of the robot’s kinematics to ensure the robot hand
-reaches the intended target &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn21&quot; class=&quot;footnote-ref&quot; id=&quot;fnref21&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;21&lt;/sup&gt;&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;robotics-in-co-packing-operations&quot;&gt;&lt;strong&gt;Robotics in
-Co-packing Operations&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;The use of robots in co-packing operations provides a practical
-example of the challenges and advancements in robotics technology.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Types of Robots:&lt;/strong&gt; Various types of robots are used
-in co-packing, including collaborative robots (cobots), articulated
-robots, SCARA robots, and Delta robots. Each type has its own strengths
-and limitations in terms of flexibility, speed, precision, and reach &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn22&quot; class=&quot;footnote-ref&quot; id=&quot;fnref22&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;22&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Role of AI:&lt;/strong&gt; AI is playing a crucial role in
-improving the efficiency and intelligence of robotic systems in
-co-packing. AI enables robots to learn from their environment and make
-autonomous decisions, further streamlining the process &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn23&quot; class=&quot;footnote-ref&quot; id=&quot;fnref23&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;23&lt;/sup&gt;&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;challenges-in-unstructured-environments&quot;&gt;&lt;strong&gt;Challenges in
-Unstructured Environments&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;Developing robots that can operate effectively in unstructured
-environments, such as homes, presents significant challenges.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Dexterity and Accuracy:&lt;/strong&gt; Robots need to possess high
-levels of dexterity and accuracy to perform complex tasks in these
-environments &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn24&quot; class=&quot;footnote-ref&quot; id=&quot;fnref24&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;24&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Physical Dimensions and Mobility:&lt;/strong&gt; The physical
-dimensions and mobility of robots can be obstructive in a home setting
-&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn25&quot; class=&quot;footnote-ref&quot; id=&quot;fnref25&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;25&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Personality and Aesthetics:&lt;/strong&gt; The personality and
-aesthetics of robots are important for human interaction and acceptance
-in a home environment &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn26&quot; class=&quot;footnote-ref&quot; id=&quot;fnref26&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;26&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Communication and Functionality:&lt;/strong&gt; Robots need to be
-able to communicate effectively and perform a wide range of functions to
-be useful in a home setting &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn27&quot; class=&quot;footnote-ref&quot; id=&quot;fnref27&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;27&lt;/sup&gt;&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;energy-and-resource-management&quot;&gt;&lt;strong&gt;Energy and Resource
-Management&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;Robots require significant power to operate, and current battery
-technology often limits their endurance and range of motion. For robots
-to be truly autonomous, they need to be self-sufficient in terms of
-energy and resource management. This may involve developing robots that
-can operate in different gravitational environments, adapt to different
-terrains, and even generate their own energy from the environment &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn28&quot; class=&quot;footnote-ref&quot; id=&quot;fnref28&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;28&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;h3 id=&quot;focus-of-current-research&quot;&gt;&lt;strong&gt;Focus of Current
-Research&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;Current research on human-like arm motion generation has primarily
-focused on single-arm reaching movements and biomimetic-based methods,
-with less attention given to manipulation, obstacle avoidance
-mechanisms, and dual-arm motion generation. This limited focus restricts
-the ability of current approaches to fully respect human behavioral and
-neurological key features and limits their generalizability to a wider
-range of tasks &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn29&quot; class=&quot;footnote-ref&quot; id=&quot;fnref29&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;29&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;embodied-cognition-and-the-difference-it-makes&quot;&gt;&lt;strong&gt;Embodied
-Cognition and the Difference It Makes&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;Embodied cognition plays a crucial role in how humans learn and
-perform movements. This concept suggests that our understanding of the
-world is shaped by our physical experiences and interactions with our
-environment &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn30&quot; class=&quot;footnote-ref&quot; id=&quot;fnref30&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;30&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Learning Through Interaction:&lt;/strong&gt; We learn to move by
-interacting with the world, experimenting with different actions, and
-receiving feedback from our senses &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn31&quot; class=&quot;footnote-ref&quot; id=&quot;fnref31&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;31&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Dynamic Systems:&lt;/strong&gt; Our bodies are complex dynamic
-systems, constantly adapting and adjusting to maintain balance and
-achieve our goals &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn32&quot; class=&quot;footnote-ref&quot; id=&quot;fnref32&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;32&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;The Role of Perception:&lt;/strong&gt; Perception is not just
-about passively receiving information; it’s an active process that
-guides our actions and shapes our understanding of the world &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn33&quot; class=&quot;footnote-ref&quot; id=&quot;fnref33&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;33&lt;/sup&gt;&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Replicating embodied cognition in robots is a significant challenge.
-It requires developing AI systems that can learn from physical
-interactions, adapt to changing environments, and integrate sensory
-information with motor control in a way that mirrors human intelligence.
-This differs significantly from information processing tasks, where the
-focus is on manipulating symbols and data within a defined system.
-Embodied cognition emphasizes the interconnectedness of the body, mind,
-and environment in shaping cognitive processes &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn34&quot; class=&quot;footnote-ref&quot; id=&quot;fnref34&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;34&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;conclusion&quot;&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;While AI has made remarkable progress in text generation and
-information processing, replicating mechanical motion remains a more
-formidable challenge. The complexities of the physical world, the
-infinite degrees of freedom in human movement, and the role of embodied
-cognition all contribute to this difficulty. However, ongoing research
-in robotics, AI, and embodied cognitive science promises to bring us
-closer to creating robots that can move with the fluidity, adaptability,
-and intelligence of humans and animals.&lt;/p&gt;
-&lt;p&gt;This research highlights the need for continued exploration in areas
-such as:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Developing more advanced actuators and artificial muscles that can
-better mimic the capabilities of biological systems &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn35&quot; class=&quot;footnote-ref&quot; id=&quot;fnref35&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;35&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;Improving sensor technology and integration to provide robots with
-more comprehensive and accurate environmental awareness &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn36&quot; class=&quot;footnote-ref&quot; id=&quot;fnref36&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;36&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;Designing AI algorithms that can learn from physical interactions
-and adapt to dynamic environments &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn37&quot; class=&quot;footnote-ref&quot; id=&quot;fnref37&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;37&lt;/sup&gt;&lt;/a&gt;.&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;Furthering our understanding of embodied cognition and how it can be
-applied to robotics &lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fn38&quot; class=&quot;footnote-ref&quot; id=&quot;fnref38&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;38&lt;/sup&gt;&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;By addressing these challenges, we can pave the way for a future
-where robots can seamlessly integrate into our world, assisting us in a
-wide range of tasks and enhancing our lives in countless ways.&lt;/p&gt;
-&lt;h4 id=&quot;works-cited&quot;&gt;&lt;strong&gt;Works cited&lt;/strong&gt;&lt;/h4&gt;
-&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
-&lt;hr /&gt;
-&lt;ol&gt;
-&lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;Generative AI that imitates human motion - ScienceDaily,
-accessed January 20, 2025, &lt;a href=&quot;https://www.sciencedaily.com/releases/2024/05/240509110822.htm&quot;&gt;https://www.sciencedaily.com/releases/2024/05/240509110822.htm&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn2&quot;&gt;&lt;p&gt;Generative AI that imitates human motion - ScienceDaily,
-accessed January 20, 2025, &lt;a href=&quot;https://www.sciencedaily.com/releases/2024/05/240509110822.htm&quot;&gt;https://www.sciencedaily.com/releases/2024/05/240509110822.htm&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn3&quot;&gt;&lt;p&gt;Generative AI that imitates human motion - ScienceDaily,
-accessed January 20, 2025, &lt;a href=&quot;https://www.sciencedaily.com/releases/2024/05/240509110822.htm&quot;&gt;https://www.sciencedaily.com/releases/2024/05/240509110822.htm&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn4&quot;&gt;&lt;p&gt;Embodied cognitive science - Wikipedia, accessed January
-20, 2025, &lt;a href=&quot;https://en.wikipedia.org/wiki/Embodied_cognitive_science&quot;&gt;https://en.wikipedia.org/wiki/Embodied_cognitive_science&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref4&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn5&quot;&gt;&lt;p&gt;The Future of Text Generation: Unleashing the Power of
-AI - AIContentfy, accessed January 20, 2025, &lt;a href=&quot;https://aicontentfy.com/en/blog/future-of-text-generation-unleashing-power-of-ai&quot;&gt;https://aicontentfy.com/en/blog/future-of-text-generation-unleashing-power-of-ai&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref5&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn6&quot;&gt;&lt;p&gt;The Future of Text Generation: Unleashing the Power of
-AI - AIContentfy, accessed January 20, 2025, &lt;a href=&quot;https://aicontentfy.com/en/blog/future-of-text-generation-unleashing-power-of-ai&quot;&gt;https://aicontentfy.com/en/blog/future-of-text-generation-unleashing-power-of-ai&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref6&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn7&quot;&gt;&lt;p&gt;The Future of Text Generation: Unleashing the Power of
-AI - AIContentfy, accessed January 20, 2025, &lt;a href=&quot;https://aicontentfy.com/en/blog/future-of-text-generation-unleashing-power-of-ai&quot;&gt;https://aicontentfy.com/en/blog/future-of-text-generation-unleashing-power-of-ai&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref7&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn8&quot;&gt;&lt;p&gt;The Evolution of Text-to-Text Generation Models: A
-Comprehensive Overview - Medium, accessed January 20, 2025, &lt;a href=&quot;https://medium.com/the-it-bros-newsletter/the-evolution-of-text-to-text-generation-models-a-comprehensive-overview-592e7f7dfad9&quot;&gt;https://medium.com/the-it-bros-newsletter/the-evolution-of-text-to-text-generation-models-a-comprehensive-overview-592e7f7dfad9&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref8&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn9&quot;&gt;&lt;p&gt;Computational complexity theory - Wikipedia, accessed
-January 20, 2025, &lt;a href=&quot;https://en.wikipedia.org/wiki/Computational_complexity_theory&quot;&gt;https://en.wikipedia.org/wiki/Computational_complexity_theory&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref9&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn10&quot;&gt;&lt;p&gt;Mechanical Computing: The Computational Complexity of
-Physical Devices, accessed January 20, 2025, &lt;a href=&quot;https://users.cs.duke.edu/~reif/paper/MechComp/MechComp.pub.no.permission.pdf&quot;&gt;https://users.cs.duke.edu/~reif/paper/MechComp/MechComp.pub.no.permission.pdf&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref10&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn11&quot;&gt;&lt;p&gt;Mechanical Computing: The Computational Complexity of
-Physical Devices, accessed January 20, 2025, &lt;a href=&quot;https://users.cs.duke.edu/~reif/paper/MechComp/MechComp.pub.no.permission.pdf&quot;&gt;https://users.cs.duke.edu/~reif/paper/MechComp/MechComp.pub.no.permission.pdf&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref11&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn12&quot;&gt;&lt;p&gt;Emerging innovations in electrically powered artificial
-muscle fibers - Oxford Academic, accessed January 20, 2025, &lt;a href=&quot;https://academic.oup.com/nsr/article/11/10/nwae232/7708368&quot;&gt;https://academic.oup.com/nsr/article/11/10/nwae232/7708368&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref12&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn13&quot;&gt;&lt;p&gt;What are the challenges in the way of mass adoption of
-robotics? - Reddit, accessed January 20, 2025, &lt;a href=&quot;https://www.reddit.com/r/robotics/comments/195k0lt/what_are_the_challenges_in_the_way_of_mass/&quot;&gt;https://www.reddit.com/r/robotics/comments/195k0lt/what_are_the_challenges_in_the_way_of_mass/&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref13&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn14&quot;&gt;&lt;p&gt;Biomimetic Approaches for Human Arm Motion Generation:
-Literature Review and Future Directions - PubMed Central, accessed
-January 20, 2025, &lt;a href=&quot;https://pmc.ncbi.nlm.nih.gov/articles/PMC10143908/&quot;&gt;https://pmc.ncbi.nlm.nih.gov/articles/PMC10143908/&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref14&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn15&quot;&gt;&lt;p&gt;Biomimetic Approaches for Human Arm Motion Generation:
-Literature Review and Future Directions - PubMed Central, accessed
-January 20, 2025, &lt;a href=&quot;https://pmc.ncbi.nlm.nih.gov/articles/PMC10143908/&quot;&gt;https://pmc.ncbi.nlm.nih.gov/articles/PMC10143908/&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref15&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn16&quot;&gt;&lt;p&gt;Biomimetic Approaches for Human Arm Motion Generation:
-Literature Review and Future Directions - PubMed Central, accessed
-January 20, 2025, &lt;a href=&quot;https://pmc.ncbi.nlm.nih.gov/articles/PMC10143908/&quot;&gt;https://pmc.ncbi.nlm.nih.gov/articles/PMC10143908/&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref16&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn17&quot;&gt;&lt;p&gt;Human-Like Arm Motion Generation: A Review - MDPI,
-accessed January 20, 2025, &lt;a href=&quot;https://www.mdpi.com/2218-6581/9/4/102&quot;&gt;https://www.mdpi.com/2218-6581/9/4/102&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref17&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn18&quot;&gt;&lt;p&gt;Human-Like Arm Motion Generation: A Review - MDPI,
-accessed January 20, 2025, &lt;a href=&quot;https://www.mdpi.com/2218-6581/9/4/102&quot;&gt;https://www.mdpi.com/2218-6581/9/4/102&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref18&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn19&quot;&gt;&lt;p&gt;Human-Like Arm Motion Generation: A Review - MDPI,
-accessed January 20, 2025, &lt;a href=&quot;https://www.mdpi.com/2218-6581/9/4/102&quot;&gt;https://www.mdpi.com/2218-6581/9/4/102&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref19&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn20&quot;&gt;&lt;p&gt;Human-Like Arm Motion Generation: A Review - MDPI,
-accessed January 20, 2025, &lt;a href=&quot;https://www.mdpi.com/2218-6581/9/4/102&quot;&gt;https://www.mdpi.com/2218-6581/9/4/102&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref20&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn21&quot;&gt;&lt;p&gt;ImitationNet: Unsupervised Human-to-Robot Motion
-Retargeting via Shared Latent Space, accessed January 20, 2025, &lt;a href=&quot;https://arxiv.org/html/2309.05310v3&quot;&gt;https://arxiv.org/html/2309.05310v3&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref21&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn22&quot;&gt;&lt;p&gt;Repeatability and Accuracy Myth - Southie Autonomy,
-accessed January 20, 2025, &lt;a href=&quot;https://www.southie.ai/robotics-myth-1-repeatability-and-accuracy&quot;&gt;https://www.southie.ai/robotics-myth-1-repeatability-and-accuracy&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref22&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn23&quot;&gt;&lt;p&gt;Repeatability and Accuracy Myth - Southie Autonomy,
-accessed January 20, 2025, &lt;a href=&quot;https://www.southie.ai/robotics-myth-1-repeatability-and-accuracy&quot;&gt;https://www.southie.ai/robotics-myth-1-repeatability-and-accuracy&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref23&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn24&quot;&gt;&lt;p&gt;Motion Replication | Request PDF - ResearchGate,
-accessed January 20, 2025, &lt;a href=&quot;https://www.researchgate.net/publication/312861701_Motion_Replication&quot;&gt;https://www.researchgate.net/publication/312861701_Motion_Replication&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref24&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn25&quot;&gt;&lt;p&gt;What are the challenges in the way of mass adoption of
-robotics? - Reddit, accessed January 20, 2025, &lt;a href=&quot;https://www.reddit.com/r/robotics/comments/195k0lt/what_are_the_challenges_in_the_way_of_mass/&quot;&gt;https://www.reddit.com/r/robotics/comments/195k0lt/what_are_the_challenges_in_the_way_of_mass/&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref25&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn26&quot;&gt;&lt;p&gt;What are the challenges in the way of mass adoption of
-robotics? - Reddit, accessed January 20, 2025, &lt;a href=&quot;https://www.reddit.com/r/robotics/comments/195k0lt/what_are_the_challenges_in_the_way_of_mass/&quot;&gt;https://www.reddit.com/r/robotics/comments/195k0lt/what_are_the_challenges_in_the_way_of_mass/&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref26&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn27&quot;&gt;&lt;p&gt;What are the challenges in the way of mass adoption of
-robotics? - Reddit, accessed January 20, 2025, &lt;a href=&quot;https://www.reddit.com/r/robotics/comments/195k0lt/what_are_the_challenges_in_the_way_of_mass/&quot;&gt;https://www.reddit.com/r/robotics/comments/195k0lt/what_are_the_challenges_in_the_way_of_mass/&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref27&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn28&quot;&gt;&lt;p&gt;What are the biggest challenges to a self-replicating
-robot? - Reddit, accessed January 20, 2025, &lt;a href=&quot;https://www.reddit.com/r/robotics/comments/299adl/what_are_the_biggest_challenges_to_a/&quot;&gt;https://www.reddit.com/r/robotics/comments/299adl/what_are_the_biggest_challenges_to_a/&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref28&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn29&quot;&gt;&lt;p&gt;Human-Like Arm Motion Generation: A Review - MDPI,
-accessed January 20, 2025, &lt;a href=&quot;https://www.mdpi.com/2218-6581/9/4/102&quot;&gt;https://www.mdpi.com/2218-6581/9/4/102&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref29&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn30&quot;&gt;&lt;p&gt;The Mechanics of Embodiment: A Dialog on Embodiment and
-Computational Modeling - PMC - PubMed Central, accessed January 20,
-2025, &lt;a href=&quot;https://pmc.ncbi.nlm.nih.gov/articles/PMC3111422/&quot;&gt;https://pmc.ncbi.nlm.nih.gov/articles/PMC3111422/&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref30&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn31&quot;&gt;&lt;p&gt;Embodied cognition: Enhancing thinking through movement
-and gesture - My College, accessed January 20, 2025, &lt;a href=&quot;https://my.chartered.college/impact_article/embodied-cognition-enhancing-thinking-through-movement-and-gesture/&quot;&gt;https://my.chartered.college/impact_article/embodied-cognition-enhancing-thinking-through-movement-and-gesture/&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref31&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn32&quot;&gt;&lt;p&gt;The Burden of Embodied Cognition - PMC - PubMed
-Central, accessed January 20, 2025, &lt;a href=&quot;https://pmc.ncbi.nlm.nih.gov/articles/PMC4701031/&quot;&gt;https://pmc.ncbi.nlm.nih.gov/articles/PMC4701031/&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref32&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn33&quot;&gt;&lt;p&gt;Embodied Cognition and the Simulation of Action to
-Understand Others, accessed January 20, 2025, &lt;a href=&quot;https://labs.psych.ucsb.edu/grafton/scott/Papers/Grafton2009Annals%20of%20the%20New%20York%20Academy%20of%20Sciences.pdf&quot;&gt;https://labs.psych.ucsb.edu/grafton/scott/Papers/Grafton2009Annals%20of%20the%20New%20York%20Academy%20of%20Sciences.pdf&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref33&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn34&quot;&gt;&lt;p&gt;Integrating Embodied Cognition and Information
-Processing: A Combined Model of the Role of Gesture in Children’s
-Mathematical Environments - PubMed Central, accessed January 20, 2025,
-&lt;a href=&quot;https://pmc.ncbi.nlm.nih.gov/articles/PMC8062855/&quot;&gt;https://pmc.ncbi.nlm.nih.gov/articles/PMC8062855/&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref34&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn35&quot;&gt;&lt;p&gt;Emerging innovations in electrically powered artificial
-muscle fibers - Oxford Academic, accessed January 20, 2025, &lt;a href=&quot;https://academic.oup.com/nsr/article/11/10/nwae232/7708368&quot;&gt;https://academic.oup.com/nsr/article/11/10/nwae232/7708368&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref35&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn36&quot;&gt;&lt;p&gt;What are the challenges in the way of mass adoption of
-robotics? - Reddit, accessed January 20, 2025, &lt;a href=&quot;https://www.reddit.com/r/robotics/comments/195k0lt/what_are_the_challenges_in_the_way_of_mass/&quot;&gt;https://www.reddit.com/r/robotics/comments/195k0lt/what_are_the_challenges_in_the_way_of_mass/&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref36&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn37&quot;&gt;&lt;p&gt;Generative AI that imitates human motion -
-ScienceDaily, accessed January 20, 2025, &lt;a href=&quot;https://www.sciencedaily.com/releases/2024/05/240509110822.htm&quot;&gt;https://www.sciencedaily.com/releases/2024/05/240509110822.htm&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref37&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn38&quot;&gt;&lt;p&gt;Embodied cognitive science - Wikipedia, accessed
-January 20, 2025, &lt;a href=&quot;https://en.wikipedia.org/wiki/Embodied_cognitive_science&quot;&gt;https://en.wikipedia.org/wiki/Embodied_cognitive_science&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/whither-us/replicating-movement/#fnref38&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
 </content>
@@ -1451,7 +1041,7 @@ prose below)&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;p&gt;The software&lt;a href=&quot;https://xn--izc.com/posts/secret-life-of-systems/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; system life-cycle begins – as most
 things do – in the real world.&lt;/p&gt;
-&lt;h4 id=&quot;the-problem-p&quot;&gt;The Problem (P)&lt;/h4&gt;
+&lt;h3 id=&quot;the-problem-p&quot;&gt;The Problem (P)&lt;/h3&gt;
 &lt;p&gt;There is a problem that affects some group of people&lt;a href=&quot;https://xn--izc.com/posts/secret-life-of-systems/#fn2&quot; class=&quot;footnote-ref&quot; id=&quot;fnref2&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;.
 Let’s call it &lt;strong&gt;P&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;We know these problems exist by their symptoms. For example people
@@ -1460,7 +1050,7 @@ better if only we could figure out how.&lt;/p&gt;
 &lt;p&gt;Beyond that a precise and comprehensive definition of the problem
 doesn’t exist. This might seem like a strong claim, but it comes down to
 the fact that everything involving people is complicated.&lt;/p&gt;
-&lt;h4 id=&quot;the-model-m&quot;&gt;The Model (M)&lt;/h4&gt;
+&lt;h3 id=&quot;the-model-m&quot;&gt;The Model (M)&lt;/h3&gt;
 &lt;p&gt;So people set out to understand the problem deeper. Experimentation,
 user studies, interviews, observations, are all things that we do to
 conjure these invisible problems into existence. We go probing for
@@ -1470,7 +1060,7 @@ be laid out for everone to see or it could be in someone’s head.&lt;/p&gt;
 &lt;p&gt;Let’s call this &lt;strong&gt;M&lt;/strong&gt; for &lt;em&gt;model&lt;/em&gt;. The model is
 the entirety of our &lt;em&gt;understanding&lt;/em&gt; of the problem. It is a
 prerequisite before we can theorize about …&lt;/p&gt;
-&lt;h4 id=&quot;the-solution-s&quot;&gt;The Solution (S)&lt;/h4&gt;
+&lt;h3 id=&quot;the-solution-s&quot;&gt;The Solution (S)&lt;/h3&gt;
 &lt;p&gt;At first the solutions are themselves models – things that work
 &lt;em&gt;in theory&lt;/em&gt; when evaluated against the model &lt;strong&gt;M&lt;/strong&gt;,
 but yet to be verified against the real world problem
@@ -1482,7 +1072,7 @@ documents, shop our ideas around, discuss alternatives, collaborate and
 refine these solutions.&lt;/p&gt;
 &lt;p&gt;Eventually or during this process we will put something together that
 works somewhat.&lt;/p&gt;
-&lt;h4 id=&quot;the-implementation-i&quot;&gt;The Implementation (I)&lt;/h4&gt;
+&lt;h3 id=&quot;the-implementation-i&quot;&gt;The Implementation (I)&lt;/h3&gt;
 &lt;p&gt;So an implementation comes together – let’s call it
 &lt;strong&gt;I&lt;/strong&gt;. The difference between &lt;strong&gt;S&lt;/strong&gt; and
 &lt;strong&gt;I&lt;/strong&gt; stems from practical matters. Time, resources,
@@ -3572,8 +3162,8 @@ hour. May cause digestive upset and loss of appetite.&lt;/em&gt;&lt;a href=&quot
 &lt;li&gt;Any practical dosage would be around 3ppm. At that rate it would be
 &lt;em&gt;Odor becomes more offensive at 3-5 ppm. Above 30 ppm, odor described
 as sweet or sickeningly sweet.&lt;/em&gt;. The key point here is that around
-10 times the usual dosage, a fart won’t stink. Instead it will smell
-“sweet.”&lt;/li&gt;
+10 times the usual concentration, a fart won’t stink. Instead it will
+smell “sweet.”&lt;/li&gt;
 &lt;li&gt;At 100ppm – which is around 30 times the usual dose – you won’t
 smell anything at all because you’ll lose your sense of smell
 (&lt;em&gt;olfactory fatigue or paralysis&lt;/em&gt;).&lt;/li&gt;
@@ -3890,10 +3480,10 @@ interviewing other tech people, typically in what is
 not-so-affectionately known as the “Tech interview.” This is good
 because candidates would be evaluated based on their actual skills
 instead of keywords in their resume. Interviewers are in effect choosing
-their future coworkers which makes in interview serve the interest of
+their future coworkers which makes the interview serve the interest of
 both the interviewer and the interviewee. However candidates – at least
 the one who didn’t get accepted according to exit polls – tend to hate
-these.&lt;/p&gt;
+this interview format.&lt;/p&gt;
 &lt;p&gt;The goal of the tech interview is to assess how well the candidate
 will be able to perform in the role as a tech worker. Unfortunately the
 typical problems that one would encounter during the course of a career
@@ -3914,22 +3504,23 @@ candidate for it. After all if the candidate was really good, they
 would’ve potentially salvaged the interview. The problem
 disproportionately affects candidates who are near the middle of the
 skill curve where things can probably go one way or the other depending
-on the combination of question asked, and caliber of the interview.&lt;/p&gt;
+on the combination of question asked, and caliber of the
+interviewer.&lt;/p&gt;
 &lt;p&gt;Interviews at Google famously involve a bunch of paperwork where each
 interviewer is expected to produce some verbose artifacts detailing what
 happened. Since these artifacts come from the interviewer, hiring
 committees need to exercise some due diligence to discern what actually
 happened based on the writeup. So how do we go about spotting bad
 interviews?&lt;/p&gt;
-&lt;h2 id=&quot;the-writeup-is-terse.&quot;&gt;The writeup is terse.&lt;/h2&gt;
+&lt;h3 id=&quot;the-writeup-is-terse.&quot;&gt;The writeup is terse.&lt;/h3&gt;
 &lt;p&gt;Not in and of itself a conclusive sign, but if the writeup doesn’t
 have any details that a committee could use to form a decision, it’s
 likely a sign that the interview didn’t really gather much information
 about the candidate in the first place. Typically these kinds of
 writeups are from novice interviewers who don’t know what to write
 about.&lt;/p&gt;
-&lt;h2 id=&quot;the-writeup-uses-adversarial-framing.&quot;&gt;The writeup uses
-adversarial framing.&lt;/h2&gt;
+&lt;h3 id=&quot;the-writeup-uses-adversarial-framing.&quot;&gt;The writeup uses
+adversarial framing.&lt;/h3&gt;
 &lt;p&gt;A very frequent problem specially with novice interviewers is that
 they go into the interview thinking that it is some sort of competition
 between the interviewer and the interviewee. The interviewer might
@@ -3938,18 +3529,18 @@ question out of the park. Some of this comes from a certain level of
 imposter syndrome where they don’t want to come across as less smart
 than the candidate. Either way this mentality comes across during the
 interview as hostile or condescending.&lt;/p&gt;
-&lt;h2 id=&quot;the-interviewer-takes-too-much-pleasure-in-the-interviewees-misery.&quot;&gt;The
-interviewer takes too much pleasure in the interviewee’s misery.&lt;/h2&gt;
+&lt;h3 id=&quot;the-interviewer-takes-too-much-pleasure-in-the-interviewees-misery.&quot;&gt;The
+interviewer takes too much pleasure in the interviewee’s misery.&lt;/h3&gt;
 &lt;p&gt;Each mistake is gloated on while points at which the interviewee
 obviously shone are muted.&lt;/p&gt;
-&lt;h2 id=&quot;the-question-is-unnecessarily-hard.&quot;&gt;The question is
-unnecessarily hard.&lt;/h2&gt;
+&lt;h3 id=&quot;the-question-is-unnecessarily-hard.&quot;&gt;The question is
+unnecessarily hard.&lt;/h3&gt;
 &lt;p&gt;Solving a hard question that requires a great deal of time and
 thought is very satisfying. But it isn’t what you do on a day-to-day
 basis.&lt;/p&gt;
-&lt;h2 id=&quot;the-interviewer-allows-the-interviewee-to-march-into-the-weeds-without-helping-them-back.&quot;&gt;The
+&lt;h3 id=&quot;the-interviewer-allows-the-interviewee-to-march-into-the-weeds-without-helping-them-back.&quot;&gt;The
 interviewer allows the interviewee to march into the weeds without
-helping them back.&lt;/h2&gt;
+helping them back.&lt;/h3&gt;
 &lt;p&gt;The interviewer has the luxury of having seen the question beforehand
 and also having studied possible solutions to it. They should be
 familiar enough with the question that they could spot
@@ -3958,8 +3549,8 @@ notices a misstep and how they dig themselves out is important to note.
 However, letting the candidate languish in a dead-end while the clock
 ticks away the remaining minutes of an interview does not help
 anyone.&lt;/p&gt;
-&lt;h2 id=&quot;obvious-misunderstandings-are-not-corrected.&quot;&gt;Obvious
-misunderstandings are not corrected.&lt;/h2&gt;
+&lt;h3 id=&quot;obvious-misunderstandings-are-not-corrected.&quot;&gt;Obvious
+misunderstandings are not corrected.&lt;/h3&gt;
 &lt;p&gt;It is the interviewer’s responsibility to explain the problem
 clearly. The problem itself doesn’t need to be fully explained since
 there’s much value in seeing how a candidate explores and understands
@@ -3968,8 +3559,8 @@ fundamentally misunderstood some critical aspect of the question, the
 interviewer should step in and intervene &lt;strong&gt;early&lt;/strong&gt;. We all
 misunderstand things, specially when they aren’t clearly explained. It’s
 not useful to knowingly send a candidate down the wrong path.&lt;/p&gt;
-&lt;h2 id=&quot;the-interviewer-seemed-annoyed-or-angry.&quot;&gt;The interviewer seemed
-annoyed or angry.&lt;/h2&gt;
+&lt;h3 id=&quot;the-interviewer-seemed-annoyed-or-angry.&quot;&gt;The interviewer seemed
+annoyed or angry.&lt;/h3&gt;
 &lt;p&gt;This one should be self explanatory. The candidate is anxious enough
 as it is. The interviewer should not frustrate the interviewee’s
 attempts at asking questions and seeking clarity around the question.
@@ -3978,15 +3569,15 @@ may be unfamiliar to others who may need extra help figuring their way
 around. In fact the ability to resolve such ambiguities and seek clarity
 are &lt;em&gt;good&lt;/em&gt;. If the interviewer actively discourages such inquiry
 that’s on the interviewer – not the candidate.&lt;/p&gt;
-&lt;h2 id=&quot;one-interview-diverges-significantly-from-others.&quot;&gt;One interview
-diverges significantly from others.&lt;/h2&gt;
+&lt;h3 id=&quot;one-interview-diverges-significantly-from-others.&quot;&gt;One interview
+diverges significantly from others.&lt;/h3&gt;
 &lt;p&gt;There’s more than one interview for a reason. If one interview
 highlights an area as being weak while another interview highlights the
 same area as being strong, then there’s something going on that needs
 scrutiny. There can be many reasons why a candidate bombs an interview.
 Not all of them say anything bad about their ability to function well in
 their job. The causes should be teased out.&lt;/p&gt;
-&lt;hr /&gt;
+&lt;p&gt;–&lt;/p&gt;
 &lt;p&gt;What happens when an interview is pretty much unsalvageable? It might
 be that the writeup is inconclusive due to issues such as those
 highlighted above. A committee could ignore that specific interview and
@@ -5037,7 +4628,7 @@ current buffer cannot be unloaded.&lt;a href=&quot;https://xn--izc.com/posts/use
     <title>Notes from Crash Course&#39;s Videos on Fact Checking Information You See On The Internet
 </title>
     <link href="https://xn--izc.com/posts/notes-on-fact-checking/"/>
-    <updated>2020-07-04T18:30:00Z</updated>
+    <updated>2020-07-04T00:00:00Z</updated>
     <id>https://xn--izc.com/posts/notes-on-fact-checking/</id>
     <content xml:lang="en" type="html">&lt;h1 id=&quot;fact-checking&quot;&gt;Fact Checking&lt;/h1&gt;
 &lt;p&gt;Notes from &lt;a href=&quot;https://www.youtube.com/channel/UCX6b17PVsYBQ0ip5gyeme-Q&quot;&gt;Crash

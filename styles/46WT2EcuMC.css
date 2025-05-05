@@ -16,6 +16,7 @@
   --background: light-dark(rgb(239, 239, 239), rgb(30, 30, 30));
   --border-color: light-dark(rgb(0, 0, 0), rgb(217, 216, 212));
   --text-color: light-dark(rgb(0, 0, 0), rgb(217, 216, 212));
+  --blockquote-color: light-dar(rgb(49, 49, 49), rgb(175, 175, 175));
   --heading-text-color: light-dark(rgb(72, 72, 72), rgb(217, 216, 212));
   --dimmed-text-color: light-dark(rgb(49, 49, 49), rgb(175, 175, 175));
   --shadow-color: light-dark(rgb(85, 85, 85), rgb(238, 238, 238));
@@ -27,6 +28,7 @@
   --font-weight-normal: 400;
   --font-weight-bold: 600;
   --font-size-body: 16pt;
+  --font-size-blockquote: 18pt;
   --font-size-aside: 14pt;
   --font-size-caption: 10pt;
   --font-size-inline-code: 12pt;
@@ -223,6 +225,13 @@ article ol > img,
 article figure > img {
   margin-top: 0;
   margin-bottom: 1rem;
+}
+article > blockquote {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-style: italic;
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-blockquote);
 }
 article figure:has(> p:first-child) {
   margin-top: 0;
