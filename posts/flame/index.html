@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="/styles/katex.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
-    <link rel="stylesheet" href="/styles/PKVmkMKY9z.css">
+    <link rel="stylesheet" href="/styles/7Dzm7fSmUN.css">
     <meta name="generator" content="Pandoc + Eleventy">
   </head>
   <body>
@@ -26,7 +26,7 @@
         <span class="fill"></span>
         <h2><a href="/about/me/">About</a></h2>
         <h2><a href="/tags/">Tags</a></h2>
-        <h2><a href="content/feed.xml"><img src="/images/rss.svg"></a></h2>
+        <h2><a href="/feed.xml"><img src="/images/rss.svg"></a></h2>
       </nav>
     </header>
     <main>
@@ -39,20 +39,19 @@
             <span class="tag-link">
     <a href="/tags/ai/">#AI</a>
 </span>
-            <span class="tag-link">
-    <a href="/tags/structure-of-experience/">#Structure of Experience</a>
-</span>
           </div>
           <div class="series-container">
-            <div class="series-name">Structure of Experience</div>
+            <div>Part of a series on The <span class="series-title">Structure of Experience</span></div>
             <ol>
               <li>
-                <a href="/posts/structure-of-experience/">Preface</a>
+                <a href="/posts/structure-of-experience/"><span class="title">Preface</span></a>
               </li>
               <li>
-                <a href="/posts/meaning/">Act I: Meaning</a>
+                <a href="/posts/meaning/"><span class="title">Act I: Meaning</span></a>
               </li>
-              <li aria-current="post">Act III: Flame <span class="you-are-here">(You are here)</span></li>
+              <li aria-current="page">
+                <span class="title">Act III: Flame</span> <span class="you-are-here">(You are here)</span>
+              </li>
             </ol>
           </div>
         </header>
@@ -87,7 +86,7 @@
           that nothing along the path we are traversing really reaches any
           meaningful self-awareness.</p>
         <figure>
-          <img src="./flame.jpg" alt="The flame of an imaginary candle. Generated using Gemini.">
+          <img src="./flame.jpg" class="noinvert" alt="The flame of an imaginary candle. Generated using Gemini.">
           <figcaption aria-hidden="true">The flame of an imaginary candle.
             Generated using Gemini.</figcaption>
         </figure>
@@ -160,7 +159,6 @@
       </article>
       <div class="container">
         <nav class="navlike">
-          <a href="/posts/meaning/"><i class="material-symbols-outlined">chevron_left</i> Act I: Meaning</a>
           <div class="fill">&nbsp;</div>
         </nav>
       </div>
@@ -185,46 +183,27 @@
       </div>
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/fart-limit/">
-            Fart Limit
+          <a href="/posts/git-autopush/">
+            Use Git hooks to automatically push after every commit
           </a>
         </h3>
         <div class="navlike">
           <span class="date navlike">
-            Last updated on June 14, 2021
+            Last updated on July 5, 2022
         </span>
           <span class="fill"></span>
           <span class="tag-link">
-    <a href="/tags/curiosity/">#Curiosity</a>
+    <a href="/tags/tools/">#tools</a>
 </span>
         </div>
         <div>
           <div class="summary">
-            <p>Can a fart be fatal? Let's see what science and OSHA have to say.</p>
+            <p>During before and after various Git operations, Git invokes special hooks
+              that can be used execute custom scripts. This article explains how to use
+              them to automatically push to an upstream repository every time you make
+              a commit to a local repo.</p>
           </div>
-          <p class="more"><a href="/posts/fart-limit/">Read more …</a></p>
-        </div>
-      </div>
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/a-good-api/">
-            A Good API: g9
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike">
-            Last updated on August 12, 2023
-        </span>
-          <span class="fill"></span>
-          <span class="tag-link">
-    <a href="/tags/engineering/">#Engineering</a>
-</span>
-        </div>
-        <div>
-          <div class="summary">
-            <p>Adding more knobs doesn't make your API more powerful.</p>
-          </div>
-          <p class="more"><a href="/posts/a-good-api/">Read more …</a></p>
+          <p class="more"><a href="/posts/git-autopush/">Read more …</a></p>
         </div>
       </div>
       <div class="post-card">
@@ -257,30 +236,49 @@
       </div>
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/fourteen-years/">
-            Fourteen Years
+          <a href="/posts/buffer-bloat/">
+            Buffer Bloat
           </a>
         </h3>
         <div class="navlike">
           <span class="date navlike">
-            Last updated on December 31, 2024
+            Last updated on January 3, 2025
         </span>
           <span class="fill"></span>
           <span class="tag-link">
-    <a href="/tags/career/">#Career</a>
-</span>
-          <span class="tag-link">
-    <a href="/tags/culture/">#Culture</a>
-</span>
-          <span class="tag-link">
-    <a href="/tags/organizations/">#Organizations</a>
+    <a href="/tags/engineering/">#Engineering</a>
 </span>
         </div>
         <div>
           <div class="summary">
-            <p>More reflections from foureteen years at Google.</p>
+            <p>In networking, adding too much buffering to intermediate network devices introduce
+              unnecessary delays. The trade-off is that <em>bursty</em> traffic will have the appearance
+              of getting through faster. But in reality, the speed of the network is still the same.
+              Data just takes longer to get through.</p>
           </div>
-          <p class="more"><a href="/posts/fourteen-years/">Read more …</a></p>
+          <p class="more"><a href="/posts/buffer-bloat/">Read more …</a></p>
+        </div>
+      </div>
+      <div class="post-card">
+        <h3 class="title">
+          <a href="/posts/meaning/">
+            Act I: Meaning
+          </a>
+        </h3>
+        <div class="navlike">
+          <span class="date navlike">
+            Last updated on May 4, 2025
+        </span>
+          <span class="fill"></span>
+          <span class="tag-link">
+    <a href="/tags/ai/">#AI</a>
+</span>
+        </div>
+        <div>
+          <div class="summary">
+            <p>Language builds meaning by combining your inner experiences.</p>
+          </div>
+          <p class="more"><a href="/posts/meaning/">Read more …</a></p>
         </div>
       </div>
     </footer>
