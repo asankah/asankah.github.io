@@ -4,423 +4,98 @@
   <subtitle>Strong opinions weekly held</subtitle>
   <link href="https://xn--izc.com/feed.xml" rel="self"/>
   <link href="https://xn--izc.com/"/>
-  <updated>2025-07-04T00:00:00Z</updated>
+  <updated>2025-07-08T00:00:00Z</updated>
   <id>https://xn--izc.com/</id>
   <author>
     <name>Asanka Herath</name>
     <email>asanka@gmail.com</email>
   </author>
   <entry>
-    <title>Draining Our Intellectual Catchment Areas</title>
-    <link href="https://xn--izc.com/posts/catchment/"/>
-    <updated>2025-07-04T00:00:00Z</updated>
-    <id>https://xn--izc.com/posts/catchment/</id>
-    <content xml:lang="en" type="html">&lt;h2 id=&quot;backdrop&quot;&gt;Backdrop&lt;/h2&gt;
-&lt;p&gt;It is July 4, 2025, and many major universities &lt;span class=&quot;citation&quot; data-cites=&quot;affectedUniversities&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-affectedUniversities&quot; role=&quot;doc-biblioref&quot;&gt;[1]&lt;/a&gt;&lt;/span&gt; in
-the US are struggling to deal with threats and funding cuts from the
-Trump administration.&lt;/p&gt;
-&lt;p&gt;A major impact of such government activity is the loss of enrollments
-from promising students. International students now face an even more
-uncertain future where they may not be able to enroll at all despite
-being accepted &lt;span class=&quot;citation&quot; data-cites=&quot;harvardGazette1&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-harvardGazette1&quot; role=&quot;doc-biblioref&quot;&gt;[2]&lt;/a&gt;&lt;/span&gt;, their
-student status may be invalidated without notice&lt;span class=&quot;citation&quot; data-cites=&quot;bigImmigrationBlog1&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-bigImmigrationBlog1&quot; role=&quot;doc-biblioref&quot;&gt;[3]&lt;/a&gt;&lt;/span&gt;, they are detained without recourse
-for exercising their rights&lt;span class=&quot;citation&quot; data-cites=&quot;time1&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-time1&quot; role=&quot;doc-biblioref&quot;&gt;[4]&lt;/a&gt;&lt;/span&gt;, or they are
-detained and denied entry to the US&lt;span class=&quot;citation&quot; data-cites=&quot;massLive1&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-massLive1&quot; role=&quot;doc-biblioref&quot;&gt;[5]&lt;/a&gt;&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;In addition, funding cuts have resulted in universities having to
-freeze admissions or reneg on accepted students &lt;span class=&quot;citation&quot; data-cites=&quot;bestColleges1&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-bestColleges1&quot; role=&quot;doc-biblioref&quot;&gt;[6]&lt;/a&gt;&lt;/span&gt; jeopardizing ongoing research
-programs. Also as a side-effect, promising academics both in the US and
-abroad are looking towareds universities outside of the US &lt;span class=&quot;citation&quot; data-cites=&quot;npr1&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-npr1&quot; role=&quot;doc-biblioref&quot;&gt;[7]&lt;/a&gt;&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;What role were these academic institutions playing in USs’ industrial
-dominance? What are the long term effects of hampering their progress?
-Let’s have a look.&lt;/p&gt;
-&lt;h2 id=&quot;migrations-of-intellectual-capital&quot;&gt;Migrations of Intellectual
-Capital&lt;/h2&gt;
-&lt;p&gt;Throughout history a number of events have contributed to the present
-distribution of intellectual capital (IC). As of this writing (July of
-2025) the IC –especially when it comes to information technology and
-biotech– is heavily concentrated in the east and west coasts of the
-United States.&lt;/p&gt;
-&lt;div class=&quot;preface&quot;&gt;
-&lt;p&gt;Use the interactive timeline below to explore important events in the
-migration of intellectual capital to and within the United States.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;fullbleed&quot;&gt;
-&lt;div class=&quot;fullbleed&quot;&gt;
-    &lt;style&gt;
-        /* Custom styles for the timeline */
-        .timeline-container {
-            position: relative;
-            width: 100%;
-            margin: 1rem 0 4rem;
-        }
-        .timeline-line {
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 100%;
-            height: 4px;
-            background-color: var(--border-color);
-        }
-        .timeline-events {
-            position: relative;
-            display: flex;
-            justify-content: space-between;
-        }
-        .timeline-event {
-            position: relative;
-            cursor: pointer;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            width: 12rem; /* Fixed width for each event container */
-        }
-        .timeline-dot {
-            width: 20px;
-            height: 20px;
-            background-color: #9ca3af; /* gray-400 */
-            border-radius: 50%;
-            border: 3px solid var(--border-color); /* gray-50 */
-            transition: all 0.3s ease;
-            z-index: 10;
-        }
-        .timeline-event:hover .timeline-dot {
-            transform: scale(1.2);
-            background-color: #3b82f6; /* blue-500 */
-        }
-        .timeline-event.active .timeline-dot {
-            background-color: #2377ff; /* blue-500 */
-            transform: scale(1.3);
-            border-color: var(--border-color); /* gray-200 */
-        }
-        .timeline-year {
-            position: absolute;
-            top: 1.5rem;
-            font-weight: 600;
-            font-size: 0.875rem;
-            color: var(--blockquote-color);
-        }
-        .timeline-event.active .timeline-year {
-            color: var(--text-color);
-            font-weight: 800;
-        }
-        
-        /* Smooth transition for the details panel */
-        #timeline-details {
-            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-            &gt;p {
-              &gt;span:first-child {
-                display: inline-block;
-                font-weight: 800;
-                width: 3rem;
-              }
-            }
-        }
-
-        #details-locations {
-          span::before {
-            content: &quot;, &quot;;
-          }
-          span:first-child::before {
-            content: &quot;&quot;;
-          }
-        }
-
-.label {
-    display: inline-block;
-    width: 3.5rem;
-}
-.oneline {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-.event-description {
-    margin-top: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-    &lt;/style&gt;
-            &lt;!-- Timeline Visualization --&gt;
-            &lt;div class=&quot;timeline-container&quot;&gt;
-                &lt;div class=&quot;timeline-line&quot;&gt;&lt;/div&gt;
-                &lt;div id=&quot;timeline-events&quot; class=&quot;timeline-events&quot;&gt;
-                  &lt;template id=&quot;event-template&quot;&gt;
-                    &lt;div class=&quot;timeline-event&quot;&gt;
-                      &lt;div class=&quot;timeline-year label&quot;&gt;&lt;/div&gt;
-                      &lt;div class=&quot;timeline-dot&quot;&gt;&lt;/div&gt;
-                    &lt;/div&gt;
-                  &lt;/template&gt;
-                    &lt;!-- Events will be dynamically inserted here by JavaScript --&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-
-            &lt;!-- Event Details Display --&gt;
-            &lt;div id=&quot;timeline-details-container&quot; class=&quot;container&quot;&gt;
-                 &lt;div id=&quot;timeline-details&quot; class=&quot;preface&quot;&gt;
-                    &lt;h3 id=&quot;details-title&quot;&gt;&lt;/h3&gt;
-                    &lt;p class=&quot;oneline&quot;&gt;&lt;span class=&quot;label&quot;&gt;When: &lt;/span&gt;&lt;span id=&quot;details-year&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-                    &lt;p class=&quot;oneline&quot;&gt;&lt;span class=&quot;label&quot;&gt;Where: &lt;/span&gt;&lt;span id=&quot;details-locations&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-                    &lt;p id=&quot;details-description&quot;&gt;&lt;/p&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-    &lt;script&gt;
-        document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
-            const timelineData = [
-  {
-    timePeriod: &quot;17th - Early 19th Century&quot;,
-    title: &quot;The American Enlightenment and Colonial Colleges&quot;,
-    locations: [
-      &quot;Europe&quot;,
-      &quot;Boston MA&quot;,
-      &quot;Philadelphia PA&quot;,
-      &quot;New Haven CT&quot;,
-      &quot;Newport RI&quot;,
-      &quot;Charleston SC&quot;
-    ],
-    description: &quot;European Enlightenment ideas, particularly from thinkers like John Locke, migrated to the American colonies, influencing a distinct American intellectual identity focused on reason, self-governance, and scientific progress. This intellectual capital was concentrated in East Coast port cities, which served as nexuses for transatlantic trade and communication. The founding of the nine colonial colleges, such as Harvard, Yale, and the College of Philadelphia, solidified these urban centers as the primary hubs of early American intellect, attracting scholars and students and creating an environment for the dissemination of new ideas.&quot;
-  },
-  {
-    timePeriod: &quot;1862 &amp; 1890&quot;,
-    title: &quot;The Morrill Land-Grant Acts&quot;,
-    locations: [
-      &quot;United States&quot;,
-      &quot;Midwest&quot;,
-      &quot;West&quot;,
-      &quot;South&quot;
-    ],
-    description: &quot;The Morrill Acts were a pivotal federal policy that drove the westward and southern migration of intellectual capital. By granting federal lands to states to establish public colleges focused on &#39;agriculture and the Mechanic arts,&#39; the acts spurred the creation of new intellectual centers across the country, particularly in the Midwest and West. This deliberately shifted the focus from the classical education of the East Coast to a more practical, democratized form of knowledge. The Second Morrill Act of 1890 furthered this distribution by mandating the creation of separate institutions for Black students in former Confederate states, leading to the establishment of numerous Historically Black Colleges and Universities (HBCUs) and fostering intellectual capital within African American communities in the South.&quot;
-  },
-  {
-    timePeriod: &quot;Mid-19th - Early 20th Century&quot;,
-    title: &quot;Rise of Midwestern Hubs and Early Immigration&quot;,
-    locations: [
-      &quot;Chicago IL&quot;,
-      &quot;Midwest USA&quot;,
-      &quot;Europe&quot;
-    ],
-    description: &quot;The economic and industrial boom of the Midwest, exemplified by Chicago&#39;s rapid growth as a railroad and manufacturing hub, created a new center of intellectual gravity. The founding of institutions like the University of Chicago, with its German-style research focus, attracted scholars and established a high-level intellectual center away from the East Coast. Simultaneously, waves of European immigrants, including a significant number of inventors and scientists like Nikola Tesla, brought their intellectual capital to the U.S., contributing to burgeoning sectors like electricity and chemicals. This represented a significant &#39;brain gain&#39; from Europe, distributing specialized skills across the industrializing nation.&quot;
-  },
-  {
-    timePeriod: &quot;1930s - 1940s&quot;,
-    title: &quot;European Intellectual Migration&quot;,
-    locations: [
-      &quot;Europe&quot;,
-      &quot;United States&quot;
-    ],
-    description: &quot;The rise of Nazism and fascism in Europe triggered a mass exodus of scholars, scientists, and artists who sought refuge in the United States. This &#39;intellectual migration&#39; included luminaries from the Frankfurt School and logical empiricists like Rudolf Carnap. These émigrés, many of whom secured positions at elite American universities, caused a significant &#39;brain drain&#39; from Europe and shifted the global academic center of gravity towards the U.S., profoundly enriching American academia, philosophy, and science.&quot;
-  },
-  {
-    timePeriod: &quot;1944&quot;,
-    title: &quot;The G.I. Bill of Rights&quot;,
-    locations: [
-      &quot;United States&quot;
-    ],
-    description: &quot;The G.I. Bill dramatically democratized higher education by providing funding for millions of World War II veterans to attend college. This massive influx of students spurred the expansion of universities and educational facilities across the entire nation, not just in established centers. By creating one of the most educated generations in U.S. history, the bill substantially increased the nation&#39;s overall stock of human capital and helped distribute it more widely across the country, fueling the post-war economic boom and the growth of the middle class.&quot;
-  },
-  {
-    timePeriod: &quot;1945 - 1959&quot;,
-    title: &quot;Operation Paperclip&quot;,
-    locations: [
-      &quot;Germany&quot;,
-      &quot;United States&quot;
-    ],
-    description: &quot;Operation Paperclip was a clandestine U.S. program that recruited over 1,600 German scientists and engineers after World War II. This was a direct, strategic acquisition of foreign intellectual capital, primarily to bolster U.S. military and aerospace research and to prevent this talent from aiding the Soviet Union. Scientists like Wernher von Braun were pivotal to the U.S. space program. This event represents a highly targeted &#39;brain gain&#39; that transferred specialized technological expertise from Germany directly into U.S. government and defense sectors, accelerating American capabilities during the Cold War.&quot;
-  },
-  {
-    timePeriod: &quot;Mid-20th Century - Present&quot;,
-    title: &quot;The West Coast Ascendant: Universities, Silicon Valley, and Aerospace&quot;,
-    locations: [
-      &quot;California&quot;,
-      &quot;Silicon Valley CA&quot;,
-      &quot;Southern California&quot;
-    ],
-    description: &quot;A major westward migration of intellectual capital occurred, fueled by massive federal R&amp;D investment, the growth of the University of California system, and elite private universities like Stanford and Caltech. The synergy between these research institutions, venture capital, and federal defense spending gave rise to new, dominant intellectual-industrial centers. This included the aerospace boom in Southern California and the birth of Silicon Valley in Northern California, which became the global epicenter for electronics, semiconductors, and computing. This shift established the West Coast as a leader in a new form of technology-driven intellectual capital.&quot;
-  },
-  {
-    timePeriod: &quot;1965&quot;,
-    title: &quot;The Immigration and Nationality Act of 1965&quot;,
-    locations: [
-      &quot;Global&quot;,
-      &quot;United States&quot;
-    ],
-    description: &quot;This act fundamentally reshaped the flow of global intellectual capital into the United States. By abolishing the national origins quota system and creating a preference system for immigrants with specific skills and professions, the law opened the door to highly educated individuals from Asia, Africa, and Latin America. This policy deliberately targeted skilled labor and professionals, resulting in a significant and sustained &#39;brain gain&#39; that enhanced U.S. competitiveness in science and technology. It diversified the sources of intellectual talent and reinforced the U.S.&#39;s position as a magnet for global expertise.&quot;
-  },
-  {
-    timePeriod: &quot;Late 20th - Early 21st Century&quot;,
-    title: &quot;The Rise of Dispersed Tech Hubs&quot;,
-    locations: [
-      &quot;Seattle WA&quot;,
-      &quot;Austin TX&quot;,
-      &quot;Research Triangle Park NC&quot;
-    ],
-    description: &quot;Following the Silicon Valley model, new intellectual and tech hubs emerged in geographically diverse locations. This demonstrates a polycentric distribution of intellectual capital rather than a simple westward shift. Seattle became a center for software and e-commerce (Microsoft, Amazon), Austin (&#39;Silicon Hills&#39;) for semiconductors and IT (Dell, Sematech), and North Carolina&#39;s Research Triangle Park for biotech and IT, driven by a collaboration between three major research universities. The success of these hubs illustrates a pattern of regional specialization, often built around the &#39;triple helix&#39; of universities, industry, and government.&quot;
-  }
-];
-
-            const eventsContainer = document.getElementById(&#39;timeline-events&#39;);
-            const eventTemplate = document.getElementById(&#39;event-template&#39;);
-            const detailsPanel = document.getElementById(&#39;timeline-details&#39;);
-            const detailsTitle = document.getElementById(&#39;details-title&#39;);
-            const detailsYear = document.getElementById(&#39;details-year&#39;);
-            const detailsLocations = document.getElementById(&#39;details-locations&#39;);
-            const detailsDescription = document.getElementById(&#39;details-description&#39;);
-
-            let activeEvent = null;
-
-            // --- Function to create and display the timeline ---
-            function buildTimeline() {
-                timelineData.forEach((eventData, index) =&gt; {
-                    const eventContainer = eventTemplate.content.cloneNode(true);
-                    eventContainer.querySelector(&quot;.timeline-event&quot;).dataset.index = index;
-                    eventContainer.querySelector(&quot;.timeline-year&quot;).textContent = eventData.timePeriod;
-                    eventsContainer.appendChild(eventContainer);
-                });
-            }
-
-            // --- Function to update the details panel ---
-            function showEventDetails(index) {
-                const eventData = timelineData[index];
-
-                // Fade out the old content
-                detailsPanel.style.opacity = &#39;0&#39;;
-                detailsPanel.style.transform = &#39;translateY(1rem)&#39;;
-
-                setTimeout(() =&gt; {
-                    // Update content
-                    detailsTitle.textContent = eventData.title;
-                    detailsYear.textContent = eventData.timePeriod;
-                    detailsLocations.replaceChildren(...eventData.locations.map(s =&gt; {
-                        const span = document.createElement(&#39;span&#39;);
-                        span.textContent = s;
-                        return span;
-                    }));
-                    detailsDescription.textContent = eventData.description;
-
-                    // Fade in the new content
-                    detailsPanel.style.opacity = &#39;1&#39;;
-                    detailsPanel.style.transform = &#39;translateY(0)&#39;;
-                }, 300); // Wait for fade-out to complete
-            }
-            
-            // --- Event listener for clicks on the timeline ---
-            eventsContainer.addEventListener(&#39;click&#39;, function(e) {
-                const clickedEvent = e.target.closest(&#39;.timeline-event&#39;);
-                if (!clickedEvent) return;
-
-                const index = clickedEvent.dataset.index;
-
-                // If it&#39;s already active, do nothing
-                if (activeEvent === clickedEvent) return;
-
-                // Remove active class from the previous event
-                if (activeEvent) {
-                    activeEvent.classList.remove(&#39;active&#39;);
-                }
-
-                // Add active class to the new event
-                clickedEvent.classList.add(&#39;active&#39;);
-                activeEvent = clickedEvent;
-
-                showEventDetails(index);
-            });
-
-            // --- Initial setup ---
-            buildTimeline();
-            
-            // Automatically select and show the first event on load
-            const firstEvent = eventsContainer.querySelector(&#39;.timeline-event&#39;);
-            if(firstEvent) {
-                firstEvent.classList.add(&#39;active&#39;);
-                activeEvent = firstEvent;
-                showEventDetails(0);
-            }
-        });
-    &lt;/script&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;section id=&quot;hydro-catchment-area&quot; class=&quot;sidenote-1&quot;&gt;
-&lt;h4&gt;Hydro-Catchment Area&lt;/h4&gt;
-&lt;figure&gt;
-&lt;img src=&quot;https://xn--izc.com/posts/catchment/reservoir.png&quot; alt=&quot;A hydro-catchement area and its adjacent reservoir&quot; /&gt;
-&lt;figcaption aria-hidden=&quot;true&quot;&gt;A hydro-catchement area and its adjacent
-reservoir&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;A hydro-catchment area is some geographic region that collects
-rainwater and funnels it into the reservoir. These are natural
-formations.&lt;/p&gt;
-&lt;p&gt;Without the hydro-catchment area, he reservoir will starve. The
-health, robustness, and vitality of the hydro-catchment area directly
-impacts the long-term viability of its reservoir.&lt;/p&gt;
-&lt;/section&gt;
-&lt;h2 id=&quot;consequences&quot;&gt;Consequences&lt;/h2&gt;
+    <title>Ode to Glue People</title>
+    <link href="https://xn--izc.com/posts/glue-people/"/>
+    <updated>2025-07-08T00:00:00Z</updated>
+    <id>https://xn--izc.com/posts/glue-people/</id>
+    <content xml:lang="en" type="html">&lt;h2 id=&quot;embrace-imperfection&quot;&gt;Embrace Imperfection&lt;/h2&gt;
+&lt;p&gt;A factor that led to Google’s early success was the use of commodity
+hardware instead of purpose built super computers as was the custom at
+the time. What they realized was that instead of demanding perfection
+from complex systems it is far more effective to accept the
+imperfections and design with it or around it&lt;span class=&quot;citation&quot; data-cites=&quot;srebookChap2&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/glue-people/#ref-srebookChap2&quot; role=&quot;doc-biblioref&quot;&gt;[1]&lt;/a&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;because-we-are-imperfect&quot;&gt;Because We Are Imperfect&lt;/h2&gt;
+&lt;p&gt;We are good at some things but not at others. Any team under the
+right set of incentives wll gradually anneal into an amalgamation where
+people will expand or contract their “official” roles until the they can
+get work done efficiently. This means that in general:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The role that one inhabits in a team will be different from their
+official job description.&lt;/li&gt;
+&lt;li&gt;Roles will overlap in ways that will run counter to the intents of
+the official role allocations.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Roles will emerge that are not mentioned in anyone’s job
+description.&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div class=&quot;sidenote-host-1&quot;&gt;
-&lt;p&gt;Just as a physical reservoir relies on its hydro-catchment area to
-replenish their water supply, intellectual endeavors are similarly
-dependent on “intellectual catchment areas” —-regions, either physical
-or conceptual, that gather and channel information, ideas, and
-talent.&lt;/p&gt;
-&lt;p&gt;As a hydro-catchment area’s health dictates the long-term viability
-of its reservoir; so does the richness and connectivity of an
-intellectual catchment area directly influence the sustained vitality
-and growth of intellectual pursuits.&lt;/p&gt;
-&lt;p&gt;Without these intellectual catchment areas, the wellspring of
-creativity and innovation for a particular field or project risks drying
-up.&lt;/p&gt;
+&lt;p&gt;If people ridigly perform just their roles and let things fail around
+them (&lt;em&gt;“it’s not my job”&lt;/em&gt;), that’s not a problem with the
+individual themselves. It’s a problem with management; either because
+they don’t understand or appreciate the necessary work that people are
+doing, or the incentives are just poorly arranged.&lt;/p&gt;
+&lt;p&gt;The right incentives can only be put in place by leadership that is
+aware of their own limitations and acknowledge their own imperfections.
+That’s because those incentives need to leave enough room for others to
+compensate. In other words, the only system that can reasonably create
+the right incentives is one where the at least some authority of
+deciding compensation is laid in the hands of those who observe work
+directly.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&quot;https://xn--izc.com/posts/intrinsic-motivation-an-anecdote/&quot;&gt;Intrinsic and
+Extrinsic Motivation: An Anecdote&lt;/a&gt; for an example of what happens
+when people try to force this process purely by creating extrinsic
+incentives and assigned roles.&lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;Over many decades, particularly starting towards the end of the
-second world war, the United States has decidedly become a reservoir of
-intellectual capital. While the rise of fascism in Europe drove some
-precipitation of knowledge into the US in the 1930s and 1940s, the
-intellectual dominance that followed in the decades since the world wars
-was driven by a positive feedback loop which made the US increasingly
-attractive to the best minds of the world.&lt;/p&gt;
-&lt;p&gt;The groundswells of industry established around major universities as
-well as billions of dollars of research funding c/o the NSF, NIH, and
-DARPA created prolific centers of intellectual activity. The Immigration
-and Nationality Act of 1965 opened the floodgates that were arguably
-already open to international students and skilled labor from all over
-the world. Out of all this emerged ecosystems of collaboration with
-regional specializations.&lt;/p&gt;
-&lt;p&gt;These ecosystems built between industry and academia are the US’s
-intellectual catchment areas.&lt;/p&gt;
-&lt;p&gt;The ongoing threats against these elite universities at the centers
-of intellectual catchment areas and the ongoing threats against
-immigration will undo what took a century to build.&lt;/p&gt;
+&lt;section id=&quot;no-heros&quot; class=&quot;sidenote-1&quot;&gt;
+&lt;h4&gt;No Heros&lt;/h4&gt;
+&lt;p&gt;Any organization whose success depends on their employees working
+&lt;em&gt;against&lt;/em&gt; their own self interests will eventually fail.&lt;/p&gt;
+&lt;p&gt;Unfortunately incentives are seldom arranged by people who understand
+what organizational cross beams are necessary to keep the
+&lt;em&gt;“official”&lt;/em&gt; role hierarchy from collapsing. Leadership rarely
+hear you work till 2am, but they will hear the failure of their
+leadership eventually … and until then they will neither understand nor
+act.&lt;/p&gt;
+&lt;/section&gt;
+&lt;h2 id=&quot;organizational-cross-beams&quot;&gt;Organizational Cross Beams&lt;/h2&gt;
+&lt;p&gt;So assuming there is some alignment of incentives, a number of roles
+will emerge in an organization that are seldom officially recognized in
+any role profile.&lt;/p&gt;
+&lt;p&gt;Broadly speaking there are two types:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Glue-people&lt;/strong&gt; who are necessary to tie teams
+together, build cohesion, connect the dots between silos that are not
+effectively communicating with each other, and establish an unofficial
+foundation of trust that prevent teams from collapsing when the trust
+between leadership and workers inevitably crumble occasionally.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Immune Systems&lt;/strong&gt; are the people necessary to stop
+the company from shooting themselves in their corporate feet. These are
+the people who internally oppose measures that would cause widespread
+collapse of crucial user-trust, violate privacy policies, open up the
+organization to litigation, irreversibly misuse customer data,
+unnecessarily jeopardize the operational stability or security of
+critical systems, or commit war crimes and human rights
+violations.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;With the remaining few paragraphs, I’d like to focus on the first
+one. The second demands its own article.&lt;/p&gt;
+&lt;h2 id=&quot;glue-people&quot;&gt;Glue People&lt;/h2&gt;
+&lt;p&gt;Glue people are intrinsically motivated unassigned organizational
+roles. They perform a valuable function by being social hubs (sometimes
+also referred to as &lt;em&gt;human indexers&lt;/em&gt;) where both work and
+non-work related information flow freely in a manner that is usually at
+odds with upper management.&lt;/p&gt;
 &lt;div id=&quot;refs&quot; class=&quot;references csl-bib-body&quot; data-entry-spacing=&quot;0&quot; role=&quot;list&quot;&gt;
-&lt;div id=&quot;ref-affectedUniversities&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
-&lt;div class=&quot;csl-left-margin&quot;&gt;[1] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;Alan Blinder, &lt;span&gt;“Trump Has Targeted These
-Universities. Why?”&lt;/span&gt; [Online]. Available: &lt;a href=&quot;https://www.nytimes.com/article/trump-university-college.html&quot;&gt;https://www.nytimes.com/article/trump-university-college.html&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&quot;ref-harvardGazette1&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
-&lt;div class=&quot;csl-left-margin&quot;&gt;[2] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;&lt;span&gt;“Federal judge blocks Trump plan to ban
-international students at Harvard.”&lt;/span&gt; [Online]. Available: &lt;a href=&quot;https://news.harvard.edu/gazette/story/2025/06/federal-judge-blocks-trump-plan-to-ban-international-students-at-harvard/&quot;&gt;https://news.harvard.edu/gazette/story/2025/06/federal-judge-blocks-trump-plan-to-ban-international-students-at-harvard/&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&quot;ref-bigImmigrationBlog1&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
-&lt;div class=&quot;csl-left-margin&quot;&gt;[3] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;&lt;span&gt;“The New Risk for Global Talent: F-1
-SEVIS Terminations and Student Visa Revocations.”&lt;/span&gt; [Online].
-Available: &lt;a href=&quot;https://www.bigimmigrationlawblog.com/2025/04/the-new-risk-for-global-talent-f-1-sevis-terminations-and-student-visa-revocations/&quot;&gt;https://www.bigimmigrationlawblog.com/2025/04/the-new-risk-for-global-talent-f-1-sevis-terminations-and-student-visa-revocations/&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&quot;ref-time1&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
-&lt;div class=&quot;csl-left-margin&quot;&gt;[4] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;&lt;span&gt;“These Are the Students Targeted by
-Trump’s Immigration Enforcement Over Campus Activism.”&lt;/span&gt; [Online].
-Available: &lt;a href=&quot;https://time.com/7272060/international-students-targeted-trump-ice-detention-deport-campus-palestinian-activism/&quot;&gt;https://time.com/7272060/international-students-targeted-trump-ice-detention-deport-campus-palestinian-activism/&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&quot;ref-massLive1&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
-&lt;div class=&quot;csl-left-margin&quot;&gt;[5] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;&lt;span&gt;“Foreign Harvard students were detained
-at Logan Airport, denied visas after Trump proclamation.”&lt;/span&gt;
-[Online]. Available: &lt;a href=&quot;https://www.masslive.com/news/2025/06/foreign-harvard-students-were-detained-at-logan-airport-denied-visas-after-trump-proclamation.html&quot;&gt;https://www.masslive.com/news/2025/06/foreign-harvard-students-were-detained-at-logan-airport-denied-visas-after-trump-proclamation.html&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&quot;ref-bestColleges1&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
-&lt;div class=&quot;csl-left-margin&quot;&gt;[6] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;&lt;span&gt;“These Colleges and Universities Are
-Cutting Costs Over Federal Funding Freezes.”&lt;/span&gt; [Online]. Available:
-&lt;a href=&quot;https://www.bestcolleges.com/news/colleges-university-cut-costs-federal-funding-freeze/&quot;&gt;https://www.bestcolleges.com/news/colleges-university-cut-costs-federal-funding-freeze/&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&quot;ref-npr1&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
-&lt;div class=&quot;csl-left-margin&quot;&gt;[7] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;&lt;span&gt;“International students look to the U.K.
-instead of the U.S., as Trump squeezes visas.”&lt;/span&gt; [Online].
-Available: &lt;a href=&quot;https://www.npr.org/2025/06/05/nx-s1-5415740/trump-international-student-visas-uk-universities&quot;&gt;https://www.npr.org/2025/06/05/nx-s1-5415740/trump-international-student-visas-uk-universities&lt;/a&gt;&lt;/div&gt;
+&lt;div id=&quot;ref-srebookChap2&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+&lt;div class=&quot;csl-left-margin&quot;&gt;[1] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;JC
+van Winkel, &lt;span&gt;“Site Reliability Engineering: How Google Runs
+Production Systems.”&lt;/span&gt; O’Reilly Media. Available: &lt;a href=&quot;https://sre.google/sre-book/embracing-risk/&quot;&gt;https://sre.google/sre-book/embracing-risk/&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </content>
@@ -3067,7 +2742,7 @@ unconvincing.&lt;/p&gt;
 L. Campbell, D. Bann, and P. Patalay, &lt;span&gt;“The gender gap in
 adolescent mental health: A cross-national investigation of 566,829
 adolescents across 73 countries,”&lt;/span&gt; &lt;em&gt;SSM-population health&lt;/em&gt;,
-vol. 13, p. 100742, 2021. &lt;/div&gt;
+vol. 13, p. 100742, 2021.&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
@@ -3143,13 +2818,13 @@ the boilerplate.&lt;/p&gt;
 &lt;div id=&quot;ref-truss2004eats&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
 &lt;div class=&quot;csl-left-margin&quot;&gt;[1] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;L.
 Truss, &lt;span&gt;“Eats, shoots &amp;amp; leaves: The zero tolerance approach to
-punctuation,”&lt;/span&gt; Penguin, 2004, p. 146. &lt;/div&gt;
+punctuation,”&lt;/span&gt; Penguin, 2004, p. 146.&lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&quot;ref-wiki:Italic_type&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
 &lt;div class=&quot;csl-left-margin&quot;&gt;[2] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;Wikipedia, &lt;span&gt;“&lt;span class=&quot;nocase&quot;&gt;Italic
 type&lt;/span&gt; — &lt;span&gt;W&lt;/span&gt;ikipedia&lt;span&gt;,&lt;/span&gt; the free
 encyclopedia.”&lt;/span&gt; &lt;a href=&quot;http://en.wikipedia.org/w/index.php?title=Italic%20type&amp;amp;oldid=1049142359&quot; class=&quot;uri&quot;&gt;http://en.wikipedia.org/w/index.php?title=Italic%20type&amp;amp;oldid=1049142359&lt;/a&gt;,
-2021. &lt;/div&gt;
+2021.&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </content>
@@ -4866,20 +4541,17 @@ suppressing them.&lt;/p&gt;&lt;/li&gt;
 &lt;div id=&quot;refs&quot; class=&quot;references csl-bib-body&quot; data-entry-spacing=&quot;0&quot; role=&quot;list&quot;&gt;
 &lt;div id=&quot;ref-Saffo&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
 &lt;div class=&quot;csl-left-margin&quot;&gt;[1] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;&lt;span&gt;“Strong opinions weakly held : Paul
-saffo,”&lt;/span&gt; 04-Sep-2020. [Online]. Available: &lt;a href=&quot;https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/&quot;&gt;https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/&lt;/a&gt;.
-[Accessed: 04-Sep-2020]&lt;/div&gt;
+saffo.”&lt;/span&gt; Accessed: Sep. 04, 2020. [Online]. Available: &lt;a href=&quot;https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/&quot;&gt;https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&quot;ref-Cedric&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
 &lt;div class=&quot;csl-left-margin&quot;&gt;[2] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;&lt;span&gt;“&lt;span&gt;‘Strong opinions, weakly
-held’&lt;/span&gt; doesn’t work that well,”&lt;/span&gt; 04-Sep-2020. [Online].
-Available: &lt;a href=&quot;https://commoncog.com/blog/strong-opinions-weakly-held-is-bad/&quot;&gt;https://commoncog.com/blog/strong-opinions-weakly-held-is-bad/&lt;/a&gt;.
-[Accessed: 04-Sep-2020]&lt;/div&gt;
+held’&lt;/span&gt; doesn’t work that well.”&lt;/span&gt; Accessed: Sep. 04, 2020.
+[Online]. Available: &lt;a href=&quot;https://commoncog.com/blog/strong-opinions-weakly-held-is-bad/&quot;&gt;https://commoncog.com/blog/strong-opinions-weakly-held-is-bad/&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&quot;ref-Michael&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
 &lt;div class=&quot;csl-left-margin&quot;&gt;[3] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;&lt;span&gt;“Strong opinions loosely held might be
-the worst idea in tech - the glowforge blog,”&lt;/span&gt; 04-Sep-2020.
-[Online]. Available: &lt;a href=&quot;https://blog.glowforge.com/strong-opinions-loosely-held-might-be-the-worst-idea-in-tech/&quot;&gt;https://blog.glowforge.com/strong-opinions-loosely-held-might-be-the-worst-idea-in-tech/&lt;/a&gt;.
-[Accessed: 04-Sep-2020]&lt;/div&gt;
+the worst idea in tech - the glowforge blog.”&lt;/span&gt; Accessed: Sep. 04,
+2020. [Online]. Available: &lt;a href=&quot;https://blog.glowforge.com/strong-opinions-loosely-held-might-be-the-worst-idea-in-tech/&quot;&gt;https://blog.glowforge.com/strong-opinions-loosely-held-might-be-the-worst-idea-in-tech/&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </content>
