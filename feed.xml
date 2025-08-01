@@ -2,110 +2,469 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://xn--izc.com/">
   <title>The Letter අ</title>
   <subtitle>Strong opinions weekly held</subtitle>
-  <link href="https://xn--izc.com/feed.xml" rel="self"/>
-  <link href="https://xn--izc.com/"/>
-  <updated>2025-07-08T00:00:00Z</updated>
+  <link href="https://xn--izc.com/feed.xml" rel="self" />
+  <link href="https://xn--izc.com/" />
+  <updated>2025-07-04T00:00:00Z</updated>
   <id>https://xn--izc.com/</id>
   <author>
     <name>Asanka Herath</name>
     <email>asanka@gmail.com</email>
   </author>
   <entry>
-    <title>Ode to Glue People</title>
-    <link href="https://xn--izc.com/posts/glue-people/"/>
-    <updated>2025-07-08T00:00:00Z</updated>
-    <id>https://xn--izc.com/posts/glue-people/</id>
-    <content xml:lang="en" type="html">&lt;h2 id=&quot;embrace-imperfection&quot;&gt;Embrace Imperfection&lt;/h2&gt;
-&lt;p&gt;A factor that led to Google’s early success was the use of commodity
-hardware instead of purpose built super computers as was the custom at
-the time. What they realized was that instead of demanding perfection
-from complex systems it is far more effective to accept the
-imperfections and design with it or around it&lt;span class=&quot;citation&quot; data-cites=&quot;srebookChap2&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/glue-people/#ref-srebookChap2&quot; role=&quot;doc-biblioref&quot;&gt;[1]&lt;/a&gt;&lt;/span&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;because-we-are-imperfect&quot;&gt;Because We Are Imperfect&lt;/h2&gt;
-&lt;p&gt;We are good at some things but not at others. Any team under the
-right set of incentives wll gradually anneal into an amalgamation where
-people will expand or contract their “official” roles until the they can
-get work done efficiently. This means that in general:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The role that one inhabits in a team will be different from their
-official job description.&lt;/li&gt;
-&lt;li&gt;Roles will overlap in ways that will run counter to the intents of
-the official role allocations.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Roles will emerge that are not mentioned in anyone’s job
-description.&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;sidenote-host-1&quot;&gt;
-&lt;p&gt;If people ridigly perform just their roles and let things fail around
-them (&lt;em&gt;“it’s not my job”&lt;/em&gt;), that’s not a problem with the
-individual themselves. It’s a problem with management; either because
-they don’t understand or appreciate the necessary work that people are
-doing, or the incentives are just poorly arranged.&lt;/p&gt;
-&lt;p&gt;The right incentives can only be put in place by leadership that is
-aware of their own limitations and acknowledge their own imperfections.
-That’s because those incentives need to leave enough room for others to
-compensate. In other words, the only system that can reasonably create
-the right incentives is one where the at least some authority of
-deciding compensation is laid in the hands of those who observe work
-directly.&lt;/p&gt;
-&lt;p&gt;See &lt;a href=&quot;https://xn--izc.com/posts/intrinsic-motivation-an-anecdote/&quot;&gt;Intrinsic and
-Extrinsic Motivation: An Anecdote&lt;/a&gt; for an example of what happens
-when people try to force this process purely by creating extrinsic
-incentives and assigned roles.&lt;/p&gt;
-&lt;/div&gt;
-&lt;section id=&quot;no-heros&quot; class=&quot;sidenote-1&quot;&gt;
-&lt;h4&gt;No Heros&lt;/h4&gt;
-&lt;p&gt;Any organization whose success depends on their employees working
-&lt;em&gt;against&lt;/em&gt; their own self interests will eventually fail.&lt;/p&gt;
-&lt;p&gt;Unfortunately incentives are seldom arranged by people who understand
-what organizational cross beams are necessary to keep the
-&lt;em&gt;“official”&lt;/em&gt; role hierarchy from collapsing. Leadership rarely
-hear you work till 2am, but they will hear the failure of their
-leadership eventually … and until then they will neither understand nor
-act.&lt;/p&gt;
+    <title>Draining Our Intellectual Catchment Areas</title>
+    <link href="https://xn--izc.com/posts/catchment/" />
+    <updated>2025-07-04T00:00:00Z</updated>
+    <id>https://xn--izc.com/posts/catchment/</id>
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;It is July 4, 2025, and many major universities &lt;span class=&quot;citation&quot; data-cites=&quot;affectedUniversities&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-affectedUniversities&quot; role=&quot;doc-biblioref&quot;&gt;[1]&lt;/a&gt;&lt;/span&gt; in
+the US are struggling to deal with threats and funding cuts from the
+Trump administration.&lt;/p&gt;
+&lt;p&gt;A major impact of funding cuts is the loss of enrollments of
+promising students due to fewer programs. International students now
+face an even more uncertain future where they may not be able to enroll
+at all despite being accepted &lt;span class=&quot;citation&quot; data-cites=&quot;harvardGazette1&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-harvardGazette1&quot; role=&quot;doc-biblioref&quot;&gt;[2]&lt;/a&gt;&lt;/span&gt;, their student status may be
+invalidated without notice &lt;span class=&quot;citation&quot; data-cites=&quot;bigImmigrationBlog1&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-bigImmigrationBlog1&quot; role=&quot;doc-biblioref&quot;&gt;[3]&lt;/a&gt;&lt;/span&gt;, they are detained without recourse
+for exercising their rights &lt;span class=&quot;citation&quot; data-cites=&quot;time1&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-time1&quot; role=&quot;doc-biblioref&quot;&gt;[4]&lt;/a&gt;&lt;/span&gt;, or they are
+detained and denied entry to the US &lt;span class=&quot;citation&quot; data-cites=&quot;massLive1&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-massLive1&quot; role=&quot;doc-biblioref&quot;&gt;[5]&lt;/a&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;In addition, funding cuts have resulted in universities having to
+freeze academic programs or renege on accepted students &lt;span class=&quot;citation&quot; data-cites=&quot;bestColleges1&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-bestColleges1&quot; role=&quot;doc-biblioref&quot;&gt;[6]&lt;/a&gt;&lt;/span&gt;, jeopardizing ongoing research
+programs. Also as a side-effect, promising academics both in the US and
+abroad are looking towards universities outside of the US &lt;span class=&quot;citation&quot; data-cites=&quot;npr1&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-npr1&quot; role=&quot;doc-biblioref&quot;&gt;[7]&lt;/a&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Let’s have a look at the role these academic institutions are playing
+in the US’s industrial dominance, and the long-term effects of hampering
+their progress.&lt;/p&gt;
+&lt;section id=&quot;migrations-of-intellectual-capital&quot; class=&quot;preface&quot;&gt;
+&lt;h3&gt;Migrations of Intellectual Capital&lt;/h3&gt;
+&lt;p&gt;Throughout history a number of events have contributed to the present
+distribution of intellectual capital. As of this writing (July of 2025)
+the intellectual capital – especially when it comes to information
+technology and biotech – is heavily concentrated in the east and west
+coasts of the United States.&lt;/p&gt;
+&lt;p&gt;Use the interactive timeline below to explore important events in the
+migration of intellectual capital to and within the United States.&lt;/p&gt;
+&lt;p&gt;For a more detailed treatement, see &lt;a href=&quot;https://xn--izc.com/posts/catchment/us-intellectual-capital-migration&quot;&gt;The Accumulation and
+Migration of Intellectual Human Capital in the United States: A
+Historical Analysis&lt;/a&gt;.&lt;/p&gt;
 &lt;/section&gt;
-&lt;h2 id=&quot;organizational-cross-beams&quot;&gt;Organizational Cross Beams&lt;/h2&gt;
-&lt;p&gt;So assuming there is some alignment of incentives, a number of roles
-will emerge in an organization that are seldom officially recognized in
-any role profile.&lt;/p&gt;
-&lt;p&gt;Broadly speaking there are two types:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Glue-people&lt;/strong&gt; who are necessary to tie teams
-together, build cohesion, connect the dots between silos that are not
-effectively communicating with each other, and establish an unofficial
-foundation of trust that prevent teams from collapsing when the trust
-between leadership and workers inevitably crumble occasionally.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Immune Systems&lt;/strong&gt; are the people necessary to stop
-the company from shooting themselves in their corporate feet. These are
-the people who internally oppose measures that would cause widespread
-collapse of crucial user-trust, violate privacy policies, open up the
-organization to litigation, irreversibly misuse customer data,
-unnecessarily jeopardize the operational stability or security of
-critical systems, or commit war crimes and human rights
-violations.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;With the remaining few paragraphs, I’d like to focus on the first
-one. The second demands its own article.&lt;/p&gt;
-&lt;h2 id=&quot;glue-people&quot;&gt;Glue People&lt;/h2&gt;
-&lt;p&gt;Glue people are intrinsically motivated unassigned organizational
-roles. They perform a valuable function by being social hubs (sometimes
-also referred to as &lt;em&gt;human indexers&lt;/em&gt;) where both work and
-non-work related information flow freely in a manner that is usually at
-odds with upper management.&lt;/p&gt;
+&lt;div class=&quot;fullbleed&quot;&gt;
+&lt;div class=&quot;fullbleed&quot;&gt;
+  &lt;style&gt;
+    /* Custom styles for the timeline */
+    .timeline-container {
+      position: relative;
+      width: 100%;
+      margin: 1rem 0 4rem;
+    }
+    .timeline-line {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      height: 4px;
+      background-color: var(--border-color);
+    }
+    .timeline-events {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+    }
+    .timeline-event {
+      position: relative;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 12rem; /* Fixed width for each event container */
+    }
+    .timeline-dot {
+      width: 20px;
+      height: 20px;
+      background-color: #9ca3af; /* gray-400 */
+      border-radius: 50%;
+      border: 3px solid var(--border-color); /* gray-50 */
+      transition: all 0.3s ease;
+      z-index: 10;
+    }
+    .timeline-event:hover .timeline-dot {
+      transform: scale(1.2);
+      background-color: #3b82f6; /* blue-500 */
+    }
+    .timeline-event.active .timeline-dot {
+      background-color: #2377ff; /* blue-500 */
+      transform: scale(1.3);
+      border-color: var(--border-color); /* gray-200 */
+    }
+    .timeline-year {
+      position: absolute;
+      top: 1.5rem;
+      font-weight: 600;
+      font-size: 0.875rem;
+      color: var(--blockquote-color);
+    }
+    .timeline-event.active .timeline-year {
+      color: var(--text-color);
+      font-weight: 800;
+    }
+
+    /* Smooth transition for the details panel */
+    #timeline-details {
+      transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+      &gt; p {
+        &gt; span:first-child {
+          display: inline-block;
+          font-weight: 800;
+          width: 3rem;
+        }
+      }
+    }
+
+    #details-locations {
+      span::before {
+        content: &quot;, &quot;;
+      }
+      span:first-child::before {
+        content: &quot;&quot;;
+      }
+    }
+
+    .label {
+      display: inline-block;
+      width: 3.5rem;
+    }
+    .oneline {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .event-description {
+      margin-top: 1rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  &lt;/style&gt;
+  &lt;!-- Timeline Visualization --&gt;
+  &lt;div class=&quot;timeline-container&quot;&gt;
+    &lt;div class=&quot;timeline-line&quot;&gt;&lt;/div&gt;
+    &lt;div id=&quot;timeline-events&quot; class=&quot;timeline-events&quot;&gt;
+      &lt;template id=&quot;event-template&quot;&gt;
+        &lt;div class=&quot;timeline-event&quot;&gt;
+          &lt;div class=&quot;timeline-year label&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;timeline-dot&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/template&gt;
+      &lt;!-- Events will be dynamically inserted here by JavaScript --&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Event Details Display --&gt;
+  &lt;div id=&quot;timeline-details-container&quot; class=&quot;container&quot;&gt;
+    &lt;div id=&quot;timeline-details&quot; class=&quot;preface&quot;&gt;
+      &lt;h3 id=&quot;details-title&quot;&gt;&lt;/h3&gt;
+      &lt;p class=&quot;oneline&quot;&gt;
+        &lt;span class=&quot;label&quot;&gt;When: &lt;/span&gt;&lt;span id=&quot;details-year&quot;&gt;&lt;/span&gt;
+      &lt;/p&gt;
+      &lt;p class=&quot;oneline&quot;&gt;
+        &lt;span class=&quot;label&quot;&gt;Where: &lt;/span&gt;&lt;span id=&quot;details-locations&quot;&gt;&lt;/span&gt;
+      &lt;/p&gt;
+      &lt;p id=&quot;details-description&quot;&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;script&gt;
+    document.addEventListener(&quot;DOMContentLoaded&quot;, function () {
+      const timelineData = [
+        {
+          timePeriod: &quot;17th - Early 19th Century&quot;,
+          title: &quot;The American Enlightenment and Colonial Colleges&quot;,
+          locations: [
+            &quot;Europe&quot;,
+            &quot;Boston MA&quot;,
+            &quot;Philadelphia PA&quot;,
+            &quot;New Haven CT&quot;,
+            &quot;Newport RI&quot;,
+            &quot;Charleston SC&quot;,
+          ],
+          description:
+            &quot;European Enlightenment ideas, particularly from thinkers like John Locke, migrated to the American colonies, influencing a distinct American intellectual identity focused on reason, self-governance, and scientific progress. This intellectual capital was concentrated in East Coast port cities, which served as nexuses for transatlantic trade and communication. The founding of the nine colonial colleges, such as Harvard, Yale, and the College of Philadelphia, solidified these urban centers as the primary hubs of early American intellect, attracting scholars and students and creating an environment for the dissemination of new ideas.&quot;,
+        },
+        {
+          timePeriod: &quot;1862 &amp; 1890&quot;,
+          title: &quot;The Morrill Land-Grant Acts&quot;,
+          locations: [&quot;United States&quot;, &quot;Midwest&quot;, &quot;West&quot;, &quot;South&quot;],
+          description:
+            &quot;The Morrill Acts were a pivotal federal policy that drove the westward and southern migration of intellectual capital. By granting federal lands to states to establish public colleges focused on &#39;agriculture and the Mechanic arts,&#39; the acts spurred the creation of new intellectual centers across the country, particularly in the Midwest and West. This deliberately shifted the focus from the classical education of the East Coast to a more practical, democratized form of knowledge. The Second Morrill Act of 1890 furthered this distribution by mandating the creation of separate institutions for Black students in former Confederate states, leading to the establishment of numerous Historically Black Colleges and Universities (HBCUs) and fostering intellectual capital within African American communities in the South.&quot;,
+        },
+        {
+          timePeriod: &quot;Mid-19th - Early 20th Century&quot;,
+          title: &quot;Rise of Midwestern Hubs and Early Immigration&quot;,
+          locations: [&quot;Chicago IL&quot;, &quot;Midwest USA&quot;, &quot;Europe&quot;],
+          description:
+            &quot;The economic and industrial boom of the Midwest, exemplified by Chicago&#39;s rapid growth as a railroad and manufacturing hub, created a new center of intellectual gravity. The founding of institutions like the University of Chicago, with its German-style research focus, attracted scholars and established a high-level intellectual center away from the East Coast. Simultaneously, waves of European immigrants, including a significant number of inventors and scientists like Nikola Tesla, brought their intellectual capital to the U.S., contributing to burgeoning sectors like electricity and chemicals. This represented a significant &#39;brain gain&#39; from Europe, distributing specialized skills across the industrializing nation.&quot;,
+        },
+        {
+          timePeriod: &quot;1930s - 1940s&quot;,
+          title: &quot;European Intellectual Migration&quot;,
+          locations: [&quot;Europe&quot;, &quot;United States&quot;],
+          description:
+            &quot;The rise of Nazism and fascism in Europe triggered a mass exodus of scholars, scientists, and artists who sought refuge in the United States. This &#39;intellectual migration&#39; included luminaries from the Frankfurt School and logical empiricists like Rudolf Carnap. These émigrés, many of whom secured positions at elite American universities, caused a significant &#39;brain drain&#39; from Europe and shifted the global academic center of gravity towards the U.S., profoundly enriching American academia, philosophy, and science.&quot;,
+        },
+        {
+          timePeriod: &quot;1944&quot;,
+          title: &quot;The G.I. Bill of Rights&quot;,
+          locations: [&quot;United States&quot;],
+          description:
+            &quot;The G.I. Bill dramatically democratized higher education by providing funding for millions of World War II veterans to attend college. This massive influx of students spurred the expansion of universities and educational facilities across the entire nation, not just in established centers. By creating one of the most educated generations in U.S. history, the bill substantially increased the nation&#39;s overall stock of human capital and helped distribute it more widely across the country, fueling the post-war economic boom and the growth of the middle class.&quot;,
+        },
+        {
+          timePeriod: &quot;1945 - 1959&quot;,
+          title: &quot;Operation Paperclip&quot;,
+          locations: [&quot;Germany&quot;, &quot;United States&quot;],
+          description:
+            &quot;Operation Paperclip was a clandestine U.S. program that recruited over 1,600 German scientists and engineers after World War II. This was a direct, strategic acquisition of foreign intellectual capital, primarily to bolster U.S. military and aerospace research and to prevent this talent from aiding the Soviet Union. Scientists like Wernher von Braun were pivotal to the U.S. space program. This event represents a highly targeted &#39;brain gain&#39; that transferred specialized technological expertise from Germany directly into U.S. government and defense sectors, accelerating American capabilities during the Cold War.&quot;,
+        },
+        {
+          timePeriod: &quot;Mid-20th Century - Present&quot;,
+          title:
+            &quot;The West Coast Ascendant: Universities, Silicon Valley, and Aerospace&quot;,
+          locations: [&quot;California&quot;, &quot;Silicon Valley CA&quot;, &quot;Southern California&quot;],
+          description:
+            &quot;A major westward migration of intellectual capital occurred, fueled by massive federal R&amp;D investment, the growth of the University of California system, and elite private universities like Stanford and Caltech. The synergy between these research institutions, venture capital, and federal defense spending gave rise to new, dominant intellectual-industrial centers. This included the aerospace boom in Southern California and the birth of Silicon Valley in Northern California, which became the global epicenter for electronics, semiconductors, and computing. This shift established the West Coast as a leader in a new form of technology-driven intellectual capital.&quot;,
+        },
+        {
+          timePeriod: &quot;1965&quot;,
+          title: &quot;The Immigration and Nationality Act of 1965&quot;,
+          locations: [&quot;Global&quot;, &quot;United States&quot;],
+          description:
+            &quot;This act fundamentally reshaped the flow of global intellectual capital into the United States. By abolishing the national origins quota system and creating a preference system for immigrants with specific skills and professions, the law opened the door to highly educated individuals from Asia, Africa, and Latin America. This policy deliberately targeted skilled labor and professionals, resulting in a significant and sustained &#39;brain gain&#39; that enhanced U.S. competitiveness in science and technology. It diversified the sources of intellectual talent and reinforced the U.S.&#39;s position as a magnet for global expertise.&quot;,
+        },
+        {
+          timePeriod: &quot;Late 20th - Early 21st Century&quot;,
+          title: &quot;The Rise of Dispersed Tech Hubs&quot;,
+          locations: [&quot;Seattle WA&quot;, &quot;Austin TX&quot;, &quot;Research Triangle Park NC&quot;],
+          description:
+            &quot;Following the Silicon Valley model, new intellectual and tech hubs emerged in geographically diverse locations. This demonstrates a polycentric distribution of intellectual capital rather than a simple westward shift. Seattle became a center for software and e-commerce (Microsoft, Amazon), Austin (&#39;Silicon Hills&#39;) for semiconductors and IT (Dell, Sematech), and North Carolina&#39;s Research Triangle Park for biotech and IT, driven by a collaboration between three major research universities. The success of these hubs illustrates a pattern of regional specialization, often built around the &#39;triple helix&#39; of universities, industry, and government.&quot;,
+        },
+      ];
+
+      const eventsContainer = document.getElementById(&quot;timeline-events&quot;);
+      const eventTemplate = document.getElementById(&quot;event-template&quot;);
+      const detailsPanel = document.getElementById(&quot;timeline-details&quot;);
+      const detailsTitle = document.getElementById(&quot;details-title&quot;);
+      const detailsYear = document.getElementById(&quot;details-year&quot;);
+      const detailsLocations = document.getElementById(&quot;details-locations&quot;);
+      const detailsDescription = document.getElementById(&quot;details-description&quot;);
+
+      let activeEvent = null;
+
+      // --- Function to create and display the timeline ---
+      function buildTimeline() {
+        timelineData.forEach((eventData, index) =&gt; {
+          const eventContainer = eventTemplate.content.cloneNode(true);
+          eventContainer.querySelector(&quot;.timeline-event&quot;).dataset.index = index;
+          eventContainer.querySelector(&quot;.timeline-year&quot;).textContent =
+            eventData.timePeriod;
+          eventsContainer.appendChild(eventContainer);
+        });
+      }
+
+      // --- Function to update the details panel ---
+      function showEventDetails(index) {
+        const eventData = timelineData[index];
+
+        // Fade out the old content
+        detailsPanel.style.opacity = &quot;0&quot;;
+        detailsPanel.style.transform = &quot;translateY(1rem)&quot;;
+
+        setTimeout(() =&gt; {
+          // Update content
+          detailsTitle.textContent = eventData.title;
+          detailsYear.textContent = eventData.timePeriod;
+          detailsLocations.replaceChildren(
+            ...eventData.locations.map((s) =&gt; {
+              const span = document.createElement(&quot;span&quot;);
+              span.textContent = s;
+              return span;
+            })
+          );
+          detailsDescription.textContent = eventData.description;
+
+          // Fade in the new content
+          detailsPanel.style.opacity = &quot;1&quot;;
+          detailsPanel.style.transform = &quot;translateY(0)&quot;;
+        }, 300); // Wait for fade-out to complete
+      }
+
+      // --- Event listener for clicks on the timeline ---
+      eventsContainer.addEventListener(&quot;click&quot;, function (e) {
+        const clickedEvent = e.target.closest(&quot;.timeline-event&quot;);
+        if (!clickedEvent) return;
+
+        const index = clickedEvent.dataset.index;
+
+        // If it&#39;s already active, do nothing
+        if (activeEvent === clickedEvent) return;
+
+        // Remove active class from the previous event
+        if (activeEvent) {
+          activeEvent.classList.remove(&quot;active&quot;);
+        }
+
+        // Add active class to the new event
+        clickedEvent.classList.add(&quot;active&quot;);
+        activeEvent = clickedEvent;
+
+        showEventDetails(index);
+      });
+
+      // --- Initial setup ---
+      buildTimeline();
+
+      // Automatically select and show the first event on load
+      const firstEvent = eventsContainer.querySelector(&quot;.timeline-event&quot;);
+      if (firstEvent) {
+        firstEvent.classList.add(&quot;active&quot;);
+        activeEvent = firstEvent;
+        showEventDetails(0);
+      }
+    });
+  &lt;/script&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;section id=&quot;hydro-catchment-area&quot; class=&quot;sidenote-1&quot;&gt;
+&lt;h4&gt;Hydro-Catchment Area&lt;/h4&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/catchment/reservoir.png&quot; width=&quot;300&quot; alt=&quot;A hydro-catchement area and its adjacent reservoir&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;A hydro-catchement area and its adjacent
+reservoir&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;A hydro-catchment area is a geographic region that collects rainwater
+and funnels it into the reservoir. These are natural formations.&lt;/p&gt;
+&lt;p&gt;Without the hydro-catchment area the reservoir will starve. The
+health, robustness, and vitality of the hydro-catchment area directly
+impact the long-term viability of its reservoir.&lt;/p&gt;
+&lt;/section&gt;
+&lt;h2 id=&quot;decline&quot;&gt;Decline&lt;/h2&gt;
+&lt;div class=&quot;sidenote-host-1&quot;&gt;
+&lt;p&gt;Just as a reservoir relies on its hydro-catchment area to replenish
+their water supply, intellectual endeavors are similarly dependent on
+“intellectual catchment areas” —-regions that gather and channel
+information, ideas, and people.&lt;/p&gt;
+&lt;p&gt;As a hydro-catchment area’s health dictates the long-term viability
+of its reservoir; so does the richness and connectivity of an
+intellectual catchment area directly influence the vitality of
+intellectual pursuits.&lt;/p&gt;
+&lt;p&gt;Without these intellectual catchment areas, the wellspring of
+creativity and innovation for a particular field risks drying up.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Over many decades, particularly starting towards the end of the
+second world war, the United States has became one of the largest
+reservoirs of intellectual capital&lt;a href=&quot;https://xn--izc.com/posts/catchment/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;. While the rise of
+fascism in Europe drove some precipitation of knowledge into the US in
+the 1930s and 1940s &lt;span class=&quot;citation&quot; data-cites=&quot;lassig&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-lassig&quot; role=&quot;doc-biblioref&quot;&gt;[8]&lt;/a&gt;&lt;/span&gt;, the intellectual
+dominance that followed in the decades since the world wars was driven
+by a positive feedback loop which made the US increasingly attractive to
+the best minds of the world.&lt;/p&gt;
+&lt;p&gt;The groundswells of industry established around major universities as
+well as billions of dollars of research funding from the NSF, NIH, and
+DARPA created prolific centers of intellectual activity. The Immigration
+and Nationality Act of 1965 opened the floodgates that were arguably
+already partially open to international students and skilled labor from
+all over the world. Out of all this emerged ecosystems of collaboration
+with regional specializations.&lt;/p&gt;
+&lt;p&gt;These ecosystems built between industry, government, and academia are
+collectively the US’s intellectual catchment areas. It took centuries to
+build what we have now.&lt;/p&gt;
+&lt;p&gt;What’s more important than what it is, is how the system sustains
+itself.&lt;/p&gt;
+&lt;p&gt;And the short answer is that it works because it was working before.
+We were in a positive feedback loop.&lt;/p&gt;
+&lt;p&gt;Specifically, the fact that the whole world thinks of the United
+States as the leader in technology means that all the best minds want to
+live and work in the United States. The fact that the conditions were
+favorable for skilled immigrants to study, live, and work in the United
+States so far means that this dream becomes a reality to millions of
+people.&lt;/p&gt;
+&lt;p&gt;It’s not just skilled immigration.&lt;/p&gt;
+&lt;p&gt;The universities need to continue fostering the thought and
+collaboration that breeds innovation. Until this year, this positive
+feedback loop has remained stable. But positive feedback loops can break
+– especially if one were to violate several of the reasons why the loop
+exists in the first place.&lt;/p&gt;
+&lt;p&gt;The ongoing threats against these elite universities at the centers
+of intellectual catchment areas and the ongoing threats against
+immigration will undo what took a century to build.&lt;/p&gt;
 &lt;div id=&quot;refs&quot; class=&quot;references csl-bib-body&quot; data-entry-spacing=&quot;0&quot; role=&quot;list&quot;&gt;
-&lt;div id=&quot;ref-srebookChap2&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
-&lt;div class=&quot;csl-left-margin&quot;&gt;[1] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;JC
-van Winkel, &lt;span&gt;“Site Reliability Engineering: How Google Runs
-Production Systems.”&lt;/span&gt; O’Reilly Media. Available: &lt;a href=&quot;https://sre.google/sre-book/embracing-risk/&quot;&gt;https://sre.google/sre-book/embracing-risk/&lt;/a&gt;&lt;/div&gt;
+&lt;div id=&quot;ref-affectedUniversities&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+&lt;div class=&quot;csl-left-margin&quot;&gt;[1] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;Alan Blinder, &lt;span&gt;“Trump Has Targeted These
+Universities. Why?”&lt;/span&gt; [Online]. Available: &lt;a href=&quot;https://www.nytimes.com/article/trump-university-college.html&quot;&gt;https://www.nytimes.com/article/trump-university-college.html&lt;/a&gt;.
+[Accessed: 04-Jul-2025]&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-harvardGazette1&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+&lt;div class=&quot;csl-left-margin&quot;&gt;[2] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;Harvard Staff, &lt;span&gt;“Federal judge blocks
+Trump plan to ban international students at Harvard,”&lt;/span&gt;
+12-Jun-2025. [Online]. Available: &lt;a href=&quot;https://news.harvard.edu/gazette/story/2025/06/federal-judge-blocks-trump-plan-to-ban-international-students-at-harvard/&quot;&gt;https://news.harvard.edu/gazette/story/2025/06/federal-judge-blocks-trump-plan-to-ban-international-students-at-harvard/&lt;/a&gt;.
+[Accessed: 04-Jul-2025]&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-bigImmigrationBlog1&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+&lt;div class=&quot;csl-left-margin&quot;&gt;[3] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;Big
+Immigration Law Blog, &lt;span&gt;“The New Risk for Global Talent: F-1 SEVIS
+Terminations and Student Visa Revocations,”&lt;/span&gt; 10-Apr-2025.
+[Online]. Available: &lt;a href=&quot;https://www.bigimmigrationlawblog.com/2025/04/the-new-risk-for-global-talent-f-1-sevis-terminations-and-student-visa-revocations/&quot;&gt;https://www.bigimmigrationlawblog.com/2025/04/the-new-risk-for-global-talent-f-1-sevis-terminations-and-student-visa-revocations/&lt;/a&gt;.
+[Accessed: 04-Jul-2025]&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-time1&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+&lt;div class=&quot;csl-left-margin&quot;&gt;[4] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;Charlotte Alter, &lt;span&gt;“These Are the Students
+Targeted by Trump’s Immigration Enforcement Over Campus
+Activism,”&lt;/span&gt; 02-Apr-2024. [Online]. Available: &lt;a href=&quot;https://time.com/7272060/international-students-targeted-trump-ice-detention-deport-campus-palestinian-activism/&quot;&gt;https://time.com/7272060/international-students-targeted-trump-ice-detention-deport-campus-palestinian-activism/&lt;/a&gt;.
+[Accessed: 04-Jul-2025]&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-massLive1&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+&lt;div class=&quot;csl-left-margin&quot;&gt;[5] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;Melissa Hanson, &lt;span&gt;“Foreign Harvard students
+were detained at Logan Airport, denied visas after Trump
+proclamation,”&lt;/span&gt; 25-Jun-2025. [Online]. Available: &lt;a href=&quot;https://www.masslive.com/news/2025/06/foreign-harvard-students-were-detained-at-logan-airport-denied-visas-after-trump-proclamation.html&quot;&gt;https://www.masslive.com/news/2025/06/foreign-harvard-students-were-detained-at-logan-airport-denied-visas-after-trump-proclamation.html&lt;/a&gt;.
+[Accessed: 04-Jul-2025]&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-bestColleges1&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+&lt;div class=&quot;csl-left-margin&quot;&gt;[6] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;BestColleges Staff, &lt;span&gt;“These Colleges and
+Universities Are Cutting Costs Over Federal Funding Freezes,”&lt;/span&gt;
+10-Jun-2025. [Online]. Available: &lt;a href=&quot;https://www.bestcolleges.com/news/colleges-university-cut-costs-federal-funding-freeze/&quot;&gt;https://www.bestcolleges.com/news/colleges-university-cut-costs-federal-funding-freeze/&lt;/a&gt;.
+[Accessed: 04-Jul-2025]&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-npr1&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+&lt;div class=&quot;csl-left-margin&quot;&gt;[7] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;Sequoia Carrillo, &lt;span&gt;“International students
+look to the U.K. instead of the U.S., as Trump squeezes visas,”&lt;/span&gt;
+05-Jun-2025. [Online]. Available: &lt;a href=&quot;https://www.npr.org/2025/06/05/nx-s1-5415740/trump-international-student-visas-uk-universities&quot;&gt;https://www.npr.org/2025/06/05/nx-s1-5415740/trump-international-student-visas-uk-universities&lt;/a&gt;.
+[Accessed: 04-Jul-2025]&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-lassig&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+&lt;div class=&quot;csl-left-margin&quot;&gt;[8] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;L{“a}ssig, Simone, &lt;span&gt;“Strategies and
+Mechanisms of Scholar Rescue: The Intellectual Migration of the 1930s
+Reconsidered,”&lt;/span&gt; vol. 84, 4 vols., pp. 769–807, 2017. &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content>
+&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;The US is not the &lt;em&gt;largest&lt;/em&gt; reservoir of
+intellectual capital. That honor likely goes to China. However in a
+number of fields, the US is –or was until recently– the most prolific.&lt;a href=&quot;https://xn--izc.com/posts/catchment/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content
+    >
   </entry>
   <entry>
     <title>Act III: Flame</title>
-    <link href="https://xn--izc.com/posts/flame/"/>
+    <link href="https://xn--izc.com/posts/flame/" />
     <updated>2025-05-07T00:00:00Z</updated>
     <id>https://xn--izc.com/posts/flame/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;We are prone to anthropomorphizing anything that looks or acts
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;We are prone to anthropomorphizing anything that looks or acts
 vaguely lifelike. All the way back in the 1960s, when people were
 confronted with a rudimentary chatbot, they were convinced that it
 embodied empathy and understanding (&lt;a href=&quot;https://en.wikipedia.org/wiki/ELIZA_effect&quot;&gt;ELIZA effect&lt;/a&gt;)&lt;a href=&quot;https://xn--izc.com/posts/flame/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
@@ -136,7 +495,7 @@ to eliminate situations where consciousness is absent and to point out
 that nothing along the path we are traversing really reaches any
 meaningful self-awareness.&lt;/p&gt;
 &lt;figure&gt;
-&lt;img src=&quot;https://xn--izc.com/posts/flame/flame.jpg&quot; class=&quot;noinvert&quot; alt=&quot;The flame of an imaginary candle. Generated using Gemini.&quot; /&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/flame/flame.jpg&quot; class=&quot;noinvert&quot; width=&quot;800&quot; alt=&quot;The flame of an imaginary candle. Generated using Gemini.&quot; /&gt;
 &lt;figcaption aria-hidden=&quot;true&quot;&gt;The flame of an imaginary candle.
 Generated using Gemini.&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -195,14 +554,18 @@ as well happen while trying to &lt;a href=&quot;https://web.math.princeton.edu/m
 a large prime&lt;/a&gt;.&lt;a href=&quot;https://xn--izc.com/posts/flame/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Act I: Meaning</title>
-    <link href="https://xn--izc.com/posts/meaning/"/>
+    <link href="https://xn--izc.com/posts/meaning/" />
     <updated>2025-05-04T00:00:00Z</updated>
     <id>https://xn--izc.com/posts/meaning/</id>
-    <content xml:lang="en" type="html">&lt;div class=&quot;center&quot;&gt;
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;div class=&quot;center&quot;&gt;
 &lt;p&gt;This is a meaning.&lt;/p&gt;
 &lt;/div&gt;
 &lt;figure&gt;
@@ -291,14 +654,18 @@ will always be limited by what people have felt and reacted to. That way
 they can look at those reactions and imitate them. The meanings in your
 head are yours alone.&lt;/p&gt;
 &lt;p&gt;No one can see your dreams. Especially not the robots.&lt;/p&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Intermission - Q1 of 2025</title>
-    <link href="https://xn--izc.com/posts/intermezzo-2025/"/>
+    <link href="https://xn--izc.com/posts/intermezzo-2025/" />
     <updated>2025-05-03T00:00:00Z</updated>
     <id>https://xn--izc.com/posts/intermezzo-2025/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;It’s been a while since I’ve published anything here. This is partly
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;It’s been a while since I’ve published anything here. This is partly
 because every time I try to write there is something much more important
 and terrible happenning in the world that I’m not qualified to write
 about. Everything else including whatever it was that I was trying to
@@ -342,14 +709,18 @@ without corrective guidance has historically just made the hateful group
 more resentful and even more entrenched in their beliefs. Ultimately
 they will – as evidenced in recent events – have enough momentum and
 intensity to turn the tables.&lt;/p&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Preface</title>
-    <link href="https://xn--izc.com/posts/structure-of-experience/"/>
+    <link href="https://xn--izc.com/posts/structure-of-experience/" />
     <updated>2025-05-01T00:00:00Z</updated>
     <id>https://xn--izc.com/posts/structure-of-experience/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;Large language models’ ability to mimic human language and show signs
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;Large language models’ ability to mimic human language and show signs
 of intelligence is quite strange yet makes sense at the same time. This
 series is a very gentle introduction to how they &lt;em&gt;almost&lt;/em&gt; capture
 human experience through language and how language is perhaps the
@@ -359,14 +730,18 @@ it I haven’t quite finished the whole series. So you’ll see what looks
 like an abrupt ending or missing episodes. They are coming. Just
 slowly.&lt;/p&gt;
 &lt;p&gt;Onwards …&lt;/p&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Intrinsic and Extrinsic Motivation: An anecdote</title>
-    <link href="https://xn--izc.com/posts/intrinsic-motivation-an-anecdote/"/>
+    <link href="https://xn--izc.com/posts/intrinsic-motivation-an-anecdote/" />
     <updated>2025-03-22T00:00:00Z</updated>
     <id>https://xn--izc.com/posts/intrinsic-motivation-an-anecdote/</id>
-    <content xml:lang="en" type="html">&lt;figure&gt;
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;figure&gt;
 &lt;img src=&quot;https://xn--izc.com/posts/intrinsic-motivation-an-anecdote/intrinsic-vs-extrinsic.png&quot; class=&quot;noinvert&quot; alt=&quot;Intrinsic vs. extrinsic&quot; /&gt;
 &lt;figcaption aria-hidden=&quot;true&quot;&gt;Intrinsic vs. extrinsic&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -422,14 +797,18 @@ was only a little.&lt;a href=&quot;https://xn--izc.com/posts/intrinsic-motivatio
 &lt;li id=&quot;fn2&quot;&gt;&lt;p&gt;As of this writing (February of 2025), not any more.&lt;a href=&quot;https://xn--izc.com/posts/intrinsic-motivation-an-anecdote/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Buffer Bloat</title>
-    <link href="https://xn--izc.com/posts/buffer-bloat/"/>
+    <link href="https://xn--izc.com/posts/buffer-bloat/" />
     <updated>2025-01-03T00:00:00Z</updated>
     <id>https://xn--izc.com/posts/buffer-bloat/</id>
-    <content xml:lang="en" type="html">&lt;h2 id=&quot;from-here-to-there-on-the-internet&quot;&gt;From Here To There On The
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;h2 id=&quot;from-here-to-there-on-the-internet&quot;&gt;From Here To There On The
 Internet&lt;/h2&gt;
 &lt;div class=&quot;with-aside&quot;&gt;
 &lt;div class=&quot;aside&quot;&gt;
@@ -658,14 +1037,18 @@ throughput.&lt;/p&gt;
 doesn’t change the thesis presented next.&lt;a href=&quot;https://xn--izc.com/posts/buffer-bloat/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Fourteen Years</title>
-    <link href="https://xn--izc.com/posts/fourteen-years/"/>
+    <link href="https://xn--izc.com/posts/fourteen-years/" />
     <updated>2024-12-31T00:00:00Z</updated>
     <id>https://xn--izc.com/posts/fourteen-years/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;It’s been fourteen years since I joined Google. Much has happened
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;It’s been fourteen years since I joined Google. Much has happened
 since then, and people think the old Google is dead. This is somewhat
 correct.&lt;/p&gt;
 &lt;p&gt;One way to understand what is happening is to compare and contrast
@@ -729,14 +1112,18 @@ who are tasked with maintaining internal tooling and not much else.&lt;/p&gt;
 &lt;p&gt;Google is no longer the giant benefactor of technology for everyone.
 However it’s still better than the other big tech companies. I keep
 telling myself that.&lt;/p&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>I Moved This Blog To Eleventy</title>
-    <link href="https://xn--izc.com/posts/moved-to-eleventy/"/>
+    <link href="https://xn--izc.com/posts/moved-to-eleventy/" />
     <updated>2024-12-13T00:00:00Z</updated>
     <id>https://xn--izc.com/posts/moved-to-eleventy/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;Astute observers of this blog may have noticed that the blog looks
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;Astute observers of this blog may have noticed that the blog looks
 suspiciously different lately. That’s because I changed the static site
 generator I was using.&lt;/p&gt;
 &lt;p&gt;Previously the &lt;a href=&quot;https://xn--izc.com/posts/how-this-blog-works/&quot;&gt;static site
@@ -886,14 +1273,18 @@ injection via &lt;code&gt;{{ foo | safe }}&lt;/code&gt;. Liquid will insert the
 contents with no escaping.&lt;a href=&quot;https://xn--izc.com/posts/moved-to-eleventy/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Proof of Work</title>
-    <link href="https://xn--izc.com/posts/proof-of-work/"/>
+    <link href="https://xn--izc.com/posts/proof-of-work/" />
     <updated>2024-07-12T14:56:15Z</updated>
     <id>https://xn--izc.com/posts/proof-of-work/</id>
-    <content xml:lang="en" type="html">&lt;div class=&quot;preface&quot;&gt;
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;div class=&quot;preface&quot;&gt;
 &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Proof_of_work&quot;&gt;Proof-of-work&lt;/a&gt;
 refers to a set of methods by which some entity (a person or a
 computational system) offers proof that the entity performed a
@@ -943,14 +1334,18 @@ top, and you have our modern large tech company.&lt;/p&gt;
 within a matter of hours with a better tech stack. You haven’t produced
 work; you’ve only produced proof of work. The outcome isn’t commensurate
 with the effort.&lt;/p&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>How to Solve a Problem in Three Steps</title>
-    <link href="https://xn--izc.com/posts/how-to-solve-a-problem-in-three-steps/"/>
+    <link href="https://xn--izc.com/posts/how-to-solve-a-problem-in-three-steps/" />
     <updated>2024-07-08T01:09:29Z</updated>
     <id>https://xn--izc.com/posts/how-to-solve-a-problem-in-three-steps/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;One fun thing with having kids is that you get to repeat all the old
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;One fun thing with having kids is that you get to repeat all the old
 stupid jokes to a brand new audience.&lt;/p&gt;
 &lt;p&gt;Here’s one:&lt;/p&gt;
 &lt;figure&gt;
@@ -1056,14 +1451,18 @@ the fat for what it is.&lt;/p&gt;
 have the &lt;em&gt;authority&lt;/em&gt; attribute. It is a thing.&lt;a href=&quot;https://xn--izc.com/posts/how-to-solve-a-problem-in-three-steps/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Asian Is Not a Useful Category</title>
-    <link href="https://xn--izc.com/posts/asians-is-not-a-useful-category/"/>
+    <link href="https://xn--izc.com/posts/asians-is-not-a-useful-category/" />
     <updated>2024-07-04T16:34:41Z</updated>
     <id>https://xn--izc.com/posts/asians-is-not-a-useful-category/</id>
-    <content xml:lang="en" type="html">&lt;div class=&quot;preface&quot;&gt;
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;div class=&quot;preface&quot;&gt;
 &lt;p&gt;Asking if someone is &lt;em&gt;“Asian”&lt;/em&gt; in a question of ethnicity or
 demographics or pretty much any context is bad. There is no reasonable
 conclusion you can arrive at about a person based on the fact that they
@@ -1140,14 +1539,18 @@ area codes for statistical use (M49)&lt;/a&gt; for a list of geographic
 regions and various groupings of countries.&lt;a href=&quot;https://xn--izc.com/posts/asians-is-not-a-useful-category/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>The Have-Loop</title>
-    <link href="https://xn--izc.com/posts/have-loop/"/>
+    <link href="https://xn--izc.com/posts/have-loop/" />
     <updated>2024-06-24T01:45:28Z</updated>
     <id>https://xn--izc.com/posts/have-loop/</id>
-    <content xml:lang="en" type="html">&lt;figure&gt;
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;figure&gt;
 &lt;img src=&quot;https://xn--izc.com/posts/have-loop/have.png&quot; alt=&quot;The have loop is a positive feedback self-loop showing the effects of possessing something of limited supply.&quot; /&gt;
 &lt;figcaption aria-hidden=&quot;true&quot;&gt;The have loop is a positive feedback
 self-loop showing the effects of possessing something of limited
@@ -1187,14 +1590,18 @@ entire demographies. Measures of income equality will eventually fall
 against another’s ability to enact hyper-extraction.&lt;a href=&quot;https://xn--izc.com/posts/have-loop/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>When Your Feature Gets Someone Hurt</title>
-    <link href="https://xn--izc.com/posts/when-your-feature-gets-someone-hurt/"/>
+    <link href="https://xn--izc.com/posts/when-your-feature-gets-someone-hurt/" />
     <updated>2024-05-22T00:00:00Z</updated>
     <id>https://xn--izc.com/posts/when-your-feature-gets-someone-hurt/</id>
-    <content xml:lang="en" type="html">&lt;figure&gt;
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;figure&gt;
 &lt;img src=&quot;https://xn--izc.com/posts/when-your-feature-gets-someone-hurt/album-of-ruins.jpeg&quot; class=&quot;noinvert&quot; alt=&quot;An old photo album containing pictures of ruins. (Generated with Gemini)&quot; /&gt;
 &lt;figcaption aria-hidden=&quot;true&quot;&gt;An old photo album containing pictures of
 ruins. (Generated with Gemini)&lt;/figcaption&gt;
@@ -1231,14 +1638,18 @@ turn of events.&lt;/p&gt;
 that you never intended. I bet the people who designed coins have no
 idea the extents to which those coins were flipped for. And so it
 goes.&lt;/p&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Secret Life of Systems</title>
-    <link href="https://xn--izc.com/posts/secret-life-of-systems/"/>
+    <link href="https://xn--izc.com/posts/secret-life-of-systems/" />
     <updated>2024-03-23T21:59:29Z</updated>
     <id>https://xn--izc.com/posts/secret-life-of-systems/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;Software systems aim to solve real world problems. They implement
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;Software systems aim to solve real world problems. They implement
 some behavior that the authors of the system believe would address the
 problem.&lt;/p&gt;
 &lt;p&gt;For non-trivial systems the coupling is imperfect between the real
@@ -1346,14 +1757,18 @@ discussing here.&lt;a href=&quot;https://xn--izc.com/posts/secret-life-of-system
 &lt;li id=&quot;fn3&quot;&gt;&lt;p&gt;… which is why it is called a “model”.&lt;a href=&quot;https://xn--izc.com/posts/secret-life-of-systems/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Why I Hate Carousels</title>
-    <link href="https://xn--izc.com/posts/why-i-hate-carousels/"/>
+    <link href="https://xn--izc.com/posts/why-i-hate-carousels/" />
     <updated>2024-01-25T17:54:46Z</updated>
     <id>https://xn--izc.com/posts/why-i-hate-carousels/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;A carousel interaction pattern looks like this:&lt;/p&gt;
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;A carousel interaction pattern looks like this:&lt;/p&gt;
 &lt;figure&gt;
 &lt;img src=&quot;https://xn--izc.com/posts/why-i-hate-carousels/dell.png&quot; class=&quot;noinvert&quot; alt=&quot;A screenshot of dell.com from Nielsen Norman Group’s article on effective design of carousels.&quot; /&gt;
 &lt;figcaption aria-hidden=&quot;true&quot;&gt;A screenshot of dell.com from &lt;a href=&quot;https://www.nngroup.com/articles/designing-effective-carousels/&quot;&gt;Nielsen
@@ -1489,14 +1904,18 @@ then you definitely have too many items that can be accessed via a
 horizontally panning UI. You need a different UI
 altogether.&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Inclusion/Equity and Evaluating Negatives</title>
-    <link href="https://xn--izc.com/posts/evluating-negatives/"/>
+    <link href="https://xn--izc.com/posts/evluating-negatives/" />
     <updated>2024-01-10T02:58:34Z</updated>
     <id>https://xn--izc.com/posts/evluating-negatives/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;Privacy, security, inclusion, equity, accessibility, … all of these
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;Privacy, security, inclusion, equity, accessibility, … all of these
 have an interesting property in common. When evaluation products against
 such questions you are usually trying to establish a negative.&lt;/p&gt;
 &lt;h3 id=&quot;to-prove-a-negative&quot;&gt;To Prove A Negative&lt;/h3&gt;
@@ -1616,14 +2035,18 @@ platforms due to the cost. Thus less than perfect interim measures are
 not that silly.&lt;a href=&quot;https://xn--izc.com/posts/evluating-negatives/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Happy New Year 2024 and Year in Review 2023</title>
-    <link href="https://xn--izc.com/posts/happy-new-year-2024-and-year-in-review-2023/"/>
+    <link href="https://xn--izc.com/posts/happy-new-year-2024-and-year-in-review-2023/" />
     <updated>2024-01-01T19:12:21Z</updated>
     <id>https://xn--izc.com/posts/happy-new-year-2024-and-year-in-review-2023/</id>
-    <content xml:lang="en" type="html">&lt;h2 id=&quot;happy-new-year-everyone&quot;&gt;Happy New Year Everyone!&lt;/h2&gt;
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;h2 id=&quot;happy-new-year-everyone&quot;&gt;Happy New Year Everyone!&lt;/h2&gt;
 &lt;p&gt;I hope everyone has a great year in 2024!&lt;/p&gt;
 &lt;h2 id=&quot;what-we-are-leaving-behind&quot;&gt;What We Are Leaving Behind&lt;/h2&gt;
 &lt;p&gt;I’m acknowledging but not going into details of the cruelty we are
@@ -1702,14 +2125,18 @@ states and Puerto Rico adopted resolutions or enacted
 legislation.”&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/happy-new-year-2024-and-year-in-review-2023/#fnref7&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Thirteen Years</title>
-    <link href="https://xn--izc.com/posts/thirteen-years/"/>
+    <link href="https://xn--izc.com/posts/thirteen-years/" />
     <updated>2023-12-07T21:30:52Z</updated>
     <id>https://xn--izc.com/posts/thirteen-years/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;And just like that, another year sped by. It’s now been thirteen
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;And just like that, another year sped by. It’s now been thirteen
 years since I joined Google.&lt;/p&gt;
 &lt;p&gt;Of the people who started at Google that day just a hair over 50% are
 still at Google. Glancing through the list&lt;a href=&quot;https://xn--izc.com/posts/thirteen-years/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; I
@@ -1767,14 +2194,18 @@ something really really wrong. Noone wants to be in this position
 though.&lt;a href=&quot;https://xn--izc.com/posts/thirteen-years/#fnref4&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Pillars And Governance Structures</title>
-    <link href="https://xn--izc.com/posts/pillars-are-governance-structures/"/>
+    <link href="https://xn--izc.com/posts/pillars-are-governance-structures/" />
     <updated>2023-09-09T00:18:23Z</updated>
     <id>https://xn--izc.com/posts/pillars-are-governance-structures/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;Note: Originally published on 2023 September 8. Revised 2023 November
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;Note: Originally published on 2023 September 8. Revised 2023 November
 12 with hopefully less rambling.&lt;/p&gt;
 &lt;p&gt;Re-orgs.&lt;/p&gt;
 &lt;p&gt;It’s a fact of life for large organizations. A popular metaphor
@@ -1920,14 +2351,18 @@ network of interdependencies. Sure, it’s leaving people in poverty and
 is killing the planet; but it still kind of works.&lt;a href=&quot;https://xn--izc.com/posts/pillars-are-governance-structures/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>A Good API: g9</title>
-    <link href="https://xn--izc.com/posts/a-good-api/"/>
+    <link href="https://xn--izc.com/posts/a-good-api/" />
     <updated>2023-08-12T23:29:31Z</updated>
     <id>https://xn--izc.com/posts/a-good-api/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;Once in a while an API comes around that makes me stop and and look
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;Once in a while an API comes around that makes me stop and and look
 at what I’m doing.&lt;/p&gt;
 &lt;p&gt;Like many aspects of design, when it comes to APIs, what is not there
 matters as much as what is. Engineers like to fiddle around with things.
@@ -1968,14 +2403,18 @@ don’t need them. Otherwise every addtional knob will waste more of your
 users’ time and energy for nothing.&lt;/p&gt;
 &lt;p&gt;The power of an API comes from letting users to express more with
 less.&lt;/p&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>The Point of a Strategy</title>
-    <link href="https://xn--izc.com/posts/the-point-of-a-strategy/"/>
+    <link href="https://xn--izc.com/posts/the-point-of-a-strategy/" />
     <updated>2023-07-24T15:00:12Z</updated>
     <id>https://xn--izc.com/posts/the-point-of-a-strategy/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: How do you win a soccer match?&lt;/p&gt;
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: How do you win a soccer match?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;A&lt;/strong&gt;: Score more goals than the other team.&lt;/p&gt;
 &lt;p&gt;This is a dumb strategy, right? But why?&lt;/p&gt;
 &lt;p&gt;Compared to a more &lt;em&gt;reasonable&lt;/em&gt; strategy like start preparing
@@ -2024,14 +2463,18 @@ lower risk than one that hasn’t seen any updates in a year.&lt;/p&gt;&lt;/li&g
 &lt;p&gt;A common mistake is to write down a list of steps that, if followed,
 achieve a stated goal. A good first step. But the unless the strategy
 can &lt;strong&gt;reduce&lt;/strong&gt; risk, it is not a useful.&lt;/p&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Just Enough Technical Debt</title>
-    <link href="https://xn--izc.com/posts/just-the-right-amount/"/>
+    <link href="https://xn--izc.com/posts/just-the-right-amount/" />
     <updated>2023-07-08T00:00:00Z</updated>
     <id>https://xn--izc.com/posts/just-the-right-amount/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;Zero technical debt sounds like a great target to aim for. In my
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;Zero technical debt sounds like a great target to aim for. In my
 earlier developer days I strongly believed that all projects should go
 for this target. At a company all-hands I heard from a senior engineer
 that having zero technical debt is often not what we want. I felt
@@ -2083,14 +2526,18 @@ much effort into a project features you don’t need and polishing up code
 that nobody will reuse is wasteful. It’s just a little bit harder to
 know when you’ve crossed the point of diminishing returns where cleaning
 up the code no longer makes sense.&lt;/p&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Code As UI: The UX of config-as-code and everything-as-code</title>
-    <link href="https://xn--izc.com/posts/code-as-ui/"/>
+    <link href="https://xn--izc.com/posts/code-as-ui/" />
     <updated>2023-07-01T00:00:00Z</updated>
     <id>https://xn--izc.com/posts/code-as-ui/</id>
-    <content xml:lang="en" type="html">&lt;h2 id=&quot;welcome-to-the-ui-review&quot;&gt;Welcome to the UI review&lt;/h2&gt;
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;h2 id=&quot;welcome-to-the-ui-review&quot;&gt;Welcome to the UI review&lt;/h2&gt;
 &lt;p&gt;Your UX person comes up to you with the new mocks for the
 configuration UI. It looks like this:&lt;/p&gt;
 &lt;figure&gt;
@@ -2242,14 +2689,18 @@ we once used can still generate those text files.&lt;/p&gt;
 depending on who you are ask.&lt;a href=&quot;https://xn--izc.com/posts/code-as-ui/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Promise Fatigue</title>
-    <link href="https://xn--izc.com/posts/promise-fatigue/"/>
+    <link href="https://xn--izc.com/posts/promise-fatigue/" />
     <updated>2022-11-01T04:03:16Z</updated>
     <id>https://xn--izc.com/posts/promise-fatigue/</id>
-    <content xml:lang="en" type="html">&lt;ul&gt;
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;ul&gt;
 &lt;li&gt;I’ll get it to you by the end of the day.&lt;/li&gt;
 &lt;li&gt;I’m working on it right now.&lt;/li&gt;
 &lt;li&gt;I’ll get it done today.&lt;/li&gt;
@@ -2265,14 +2716,18 @@ reliable.&lt;/p&gt;
 &lt;p&gt;Before making a commitment, always think about &lt;strong&gt;promise
 fatigue&lt;/strong&gt;. Setting low but realistic expectations is better than
 setting high but unrealistic ones.&lt;/p&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>The Loss of a Virtuous Culture</title>
-    <link href="https://xn--izc.com/posts/the-loss-of-a-virtuous-culture/"/>
+    <link href="https://xn--izc.com/posts/the-loss-of-a-virtuous-culture/" />
     <updated>2022-10-28T21:13:19Z</updated>
     <id>https://xn--izc.com/posts/the-loss-of-a-virtuous-culture/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;Long ago, around 2011, we had an espresso machine in the Google micro
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;Long ago, around 2011, we had an espresso machine in the Google micro
 kitchen – or MK as we called it – near my desk. There were no baristas
 at the time, so people made their own. Some folks thought we could use
 more sophisticated coffee beans than they had in the MK. A designated
@@ -2325,14 +2780,18 @@ this happening repeatedly.&lt;/p&gt;
 &lt;p&gt;The importance of “serendipitous collaboration” isn’t lost on
 executives. It is the reason behind many pushes for bringing tech
 workers back to the office.&lt;/p&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>The Lettergrade Rule</title>
-    <link href="https://xn--izc.com/posts/the-lettergrade-rule/"/>
+    <link href="https://xn--izc.com/posts/the-lettergrade-rule/" />
     <updated>2022-09-16T00:27:57Z</updated>
     <id>https://xn--izc.com/posts/the-lettergrade-rule/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;How do you know when a code review is “done”?&lt;/p&gt;
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;How do you know when a code review is “done”?&lt;/p&gt;
 &lt;p&gt;Let’s say you are the reviewer and see many small changes you’d like
 the author to make. At some point, you’ll agree that the introduced
 behavior changes are correct or at least harmless. The remaining
@@ -2368,14 +2827,18 @@ don’t decrease the readability of the code. You should be able to trust
 the author to make those fixes and submit the change without you having
 to do another pass.&lt;/li&gt;
 &lt;/ul&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>All natural numbers are interesting</title>
-    <link href="https://xn--izc.com/posts/interesting-numbers/"/>
+    <link href="https://xn--izc.com/posts/interesting-numbers/" />
     <updated>2022-08-03T15:50:46Z</updated>
     <id>https://xn--izc.com/posts/interesting-numbers/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;&lt;strong&gt;Theorem&lt;/strong&gt;: All natural numbers are interesting.&lt;a href=&quot;https://xn--izc.com/posts/interesting-numbers/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;&lt;strong&gt;Theorem&lt;/strong&gt;: All natural numbers are interesting.&lt;a href=&quot;https://xn--izc.com/posts/interesting-numbers/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Proof by contradiction.&lt;/p&gt;
 &lt;p&gt;Assume the theorem is false. Then there must be at least one number
 &lt;span class=&quot;math inline&quot;&gt;&#92;in &#92;N&lt;/span&gt; that is boring.&lt;/p&gt;
@@ -2402,14 +2865,18 @@ necessarily have a minimum.&lt;/p&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;Not actually a theorem.&lt;a href=&quot;https://xn--izc.com/posts/interesting-numbers/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Use Git hooks to automatically push after every commit</title>
-    <link href="https://xn--izc.com/posts/git-autopush/"/>
+    <link href="https://xn--izc.com/posts/git-autopush/" />
     <updated>2022-07-05T20:15:23Z</updated>
     <id>https://xn--izc.com/posts/git-autopush/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;A Git hook is a shell script that is invoked at specific points
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;A Git hook is a shell script that is invoked at specific points
 during some Git operations. They are documented in &lt;a href=&quot;https://www.git-scm.com/docs/githooks#_post_commit&quot;&gt;the Git
 book&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The hook we are interested in is &lt;code&gt;post-commit&lt;/code&gt; (&lt;a href=&quot;https://www.git-scm.com/docs/githooks#_post_commit&quot;&gt;documented
@@ -2430,14 +2897,18 @@ that’s currently checked out.&lt;/li&gt;
 &lt;p&gt;IMPORTANT: Afterwards make the script runnable via
 &lt;code&gt;chmod +x .git/hooks/post-commit&lt;/code&gt;.&lt;/p&gt;
 &lt;script src=&quot;https://gist.github.com/asankah/a6263bbd6081bffd031ca066e5177df2.js&quot;&gt;&lt;/script&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>DARPA&#39;s Heilmeier Catechism</title>
-    <link href="https://xn--izc.com/posts/darpa-heilmeier-catechism/"/>
+    <link href="https://xn--izc.com/posts/darpa-heilmeier-catechism/" />
     <updated>2022-06-28T14:11:17Z</updated>
     <id>https://xn--izc.com/posts/darpa-heilmeier-catechism/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;It seems the hardest part of engineering is the part where you are
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;It seems the hardest part of engineering is the part where you are
 staring at a blank page with a vague notion of a problem statement in
 your head.&lt;/p&gt;
 &lt;p&gt;First you seek structure. After all your attention span can only hold
@@ -2476,14 +2947,18 @@ successful?&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;(Source &lt;a href=&quot;https://www.darpa.mil/work-with-us/heilmeier-catechism&quot;&gt;The
 Heilmeier Catechism - DARPA&lt;/a&gt;).&lt;/p&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Markdown should be readble without knowing Markdown</title>
-    <link href="https://xn--izc.com/posts/mark-goes-up-and-down/"/>
+    <link href="https://xn--izc.com/posts/mark-goes-up-and-down/" />
     <updated>2022-04-05T17:02:12Z</updated>
     <id>https://xn--izc.com/posts/mark-goes-up-and-down/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;&lt;a href=&quot;https://daringfireball.net/projects/markdown/syntax&quot;&gt;Markdown&lt;/a&gt;
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;&lt;a href=&quot;https://daringfireball.net/projects/markdown/syntax&quot;&gt;Markdown&lt;/a&gt;
 started out as a way to write text files that could also be machine
 parsed and rendered into a higher fidelity format.&lt;/p&gt;
 &lt;p&gt;To quote from the Philosophy:&lt;/p&gt;
@@ -2617,14 +3092,18 @@ Maybe if they could’ve gone with something like:&lt;/p&gt;
 could probably use either &lt;code&gt;details&lt;/code&gt; or &lt;code&gt;Details&lt;/code&gt;.
 Either way, you don’t need to understand the markup to see where this is
 going.&lt;/p&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>On Gender Gap in Adolescent Mental Health</title>
-    <link href="https://xn--izc.com/posts/gender-gap-in-adolescent-mental-health/"/>
+    <link href="https://xn--izc.com/posts/gender-gap-in-adolescent-mental-health/" />
     <updated>2022-03-01T19:51:34Z</updated>
     <id>https://xn--izc.com/posts/gender-gap-in-adolescent-mental-health/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;Today is the first day of &lt;a href=&quot;https://www.nationalgeographic.com/history/article/why-the-us-celebrates-womens-history-month-every-march&quot;&gt;Women’s
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;Today is the first day of &lt;a href=&quot;https://www.nationalgeographic.com/history/article/why-the-us-celebrates-womens-history-month-every-march&quot;&gt;Women’s
 History Month&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Coincidentally there’s a paper making the rounds titled &lt;em&gt;“The
 gender gap in adolescent mental health: A cross-national investigation
@@ -2742,7 +3221,7 @@ unconvincing.&lt;/p&gt;
 L. Campbell, D. Bann, and P. Patalay, &lt;span&gt;“The gender gap in
 adolescent mental health: A cross-national investigation of 566,829
 adolescents across 73 countries,”&lt;/span&gt; &lt;em&gt;SSM-population health&lt;/em&gt;,
-vol. 13, p. 100742, 2021.&lt;/div&gt;
+vol. 13, p. 100742, 2021. &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
@@ -2755,14 +3234,18 @@ factors like &lt;em&gt;female and male shares of parliamentary seats&lt;/em&gt;,
 mortality ratio&lt;/em&gt;, and &lt;em&gt;adolescent birth rate&lt;/em&gt;.&lt;a href=&quot;https://xn--izc.com/posts/gender-gap-in-adolescent-mental-health/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>On Highlighting Syntax vs. Semantics</title>
-    <link href="https://xn--izc.com/posts/syntax-highlighting/"/>
+    <link href="https://xn--izc.com/posts/syntax-highlighting/" />
     <updated>2022-02-12T00:00:00Z</updated>
     <id>https://xn--izc.com/posts/syntax-highlighting/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;&lt;span class=&quot;noun&quot;&gt;Aesthetics&lt;/span&gt; &lt;span class=&quot;adverb&quot;&gt;aside&lt;/span&gt;, &lt;span class=&quot;noun&quot;&gt;syntax&lt;/span&gt; &lt;span class=&quot;gerund&quot;&gt;highlighting&lt;/span&gt; &lt;span class=&quot;preposition&quot;&gt;in&lt;/span&gt;
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;&lt;span class=&quot;noun&quot;&gt;Aesthetics&lt;/span&gt; &lt;span class=&quot;adverb&quot;&gt;aside&lt;/span&gt;, &lt;span class=&quot;noun&quot;&gt;syntax&lt;/span&gt; &lt;span class=&quot;gerund&quot;&gt;highlighting&lt;/span&gt; &lt;span class=&quot;preposition&quot;&gt;in&lt;/span&gt;
 &lt;span class=&quot;noun&quot;&gt;code&lt;/span&gt; &lt;span class=&quot;verb&quot;&gt;performs&lt;/span&gt; &lt;span class=&quot;determiner&quot;&gt;an&lt;/span&gt; &lt;span class=&quot;adjective&quot;&gt;important&lt;/span&gt;
 &lt;span class=&quot;noun&quot;&gt;role&lt;/span&gt; &lt;span class=&quot;preposition&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;gerund&quot;&gt;improving&lt;/span&gt; the &lt;span class=&quot;noun&quot;&gt;readability&lt;/span&gt; &lt;span class=&quot;preposition&quot;&gt;of&lt;/span&gt;
 &lt;span class=&quot;noun&quot;&gt;code&lt;/span&gt;. &lt;span class=&quot;adjective&quot;&gt;Most&lt;/span&gt;
@@ -2818,61 +3301,77 @@ the boilerplate.&lt;/p&gt;
 &lt;div id=&quot;ref-truss2004eats&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
 &lt;div class=&quot;csl-left-margin&quot;&gt;[1] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;L.
 Truss, &lt;span&gt;“Eats, shoots &amp;amp; leaves: The zero tolerance approach to
-punctuation,”&lt;/span&gt; Penguin, 2004, p. 146.&lt;/div&gt;
+punctuation,”&lt;/span&gt; Penguin, 2004, p. 146. &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&quot;ref-wiki:Italic_type&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
 &lt;div class=&quot;csl-left-margin&quot;&gt;[2] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;Wikipedia, &lt;span&gt;“&lt;span class=&quot;nocase&quot;&gt;Italic
 type&lt;/span&gt; — &lt;span&gt;W&lt;/span&gt;ikipedia&lt;span&gt;,&lt;/span&gt; the free
 encyclopedia.”&lt;/span&gt; &lt;a href=&quot;http://en.wikipedia.org/w/index.php?title=Italic%20type&amp;amp;oldid=1049142359&quot; class=&quot;uri&quot;&gt;http://en.wikipedia.org/w/index.php?title=Italic%20type&amp;amp;oldid=1049142359&lt;/a&gt;,
-2021.&lt;/div&gt;
+2021. &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Inktober - Stripes</title>
-    <link href="https://xn--izc.com/posts/inktober-stripes/"/>
+    <link href="https://xn--izc.com/posts/inktober-stripes/" />
     <updated>2022-01-21T22:20:38Z</updated>
     <id>https://xn--izc.com/posts/inktober-stripes/</id>
-    <content xml:lang="en" type="html">&lt;figure&gt;
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;figure&gt;
 &lt;img src=&quot;https://xn--izc.com/posts/inktober-stripes/inktober-stripes.png&quot; alt=&quot;“Stripes” - A bee wearing an incorrectly striped sweater&quot; /&gt;
 &lt;figcaption aria-hidden=&quot;true&quot;&gt;“Stripes” - A bee wearing an incorrectly
 striped sweater&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;p&gt;For &lt;a href=&quot;https://inktober.com/inktober52&quot;&gt;Inktober 52&lt;/a&gt;.&lt;/p&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Inktober - Wild</title>
-    <link href="https://xn--izc.com/posts/inktober-wild/"/>
+    <link href="https://xn--izc.com/posts/inktober-wild/" />
     <updated>2022-01-13T20:35:39Z</updated>
     <id>https://xn--izc.com/posts/inktober-wild/</id>
-    <content xml:lang="en" type="html">&lt;figure&gt;
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;figure&gt;
 &lt;img src=&quot;https://xn--izc.com/posts/inktober-wild/inktober-wild.png&quot; alt=&quot;“Wild” - Caught in the wild&quot; /&gt;
 &lt;figcaption aria-hidden=&quot;true&quot;&gt;“Wild” - Caught in the wild&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;p&gt;For &lt;a href=&quot;https://inktober.com/inktober52&quot;&gt;Inktober 52&lt;/a&gt;.&lt;/p&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Inktober - Decay</title>
-    <link href="https://xn--izc.com/posts/inktober-decay/"/>
+    <link href="https://xn--izc.com/posts/inktober-decay/" />
     <updated>2022-01-13T20:21:37Z</updated>
     <id>https://xn--izc.com/posts/inktober-decay/</id>
-    <content xml:lang="en" type="html">&lt;figure&gt;
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;figure&gt;
 &lt;img src=&quot;https://xn--izc.com/posts/inktober-decay/inktober-decay.png&quot; alt=&quot;“Decay” - I was kind of going for tooth-decay caused by tiny little gremlins.&quot; /&gt;
 &lt;figcaption aria-hidden=&quot;true&quot;&gt;“Decay” - I was kind of going for
 tooth-decay caused by tiny little gremlins.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;p&gt;For &lt;a href=&quot;https://inktober.com/inktober52&quot;&gt;Inktober 52&lt;/a&gt;.&lt;/p&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Quickly grab a snapshot of your reMarkable tablet</title>
-    <link href="https://xn--izc.com/posts/grab-diagram-workflow-re2/"/>
+    <link href="https://xn--izc.com/posts/grab-diagram-workflow-re2/" />
     <updated>2022-01-06T00:00:00Z</updated>
     <id>https://xn--izc.com/posts/grab-diagram-workflow-re2/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;One everyday workflow that I wanted to optimize was quickly sketching
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;One everyday workflow that I wanted to optimize was quickly sketching
 out a diagram on the reMarkable tablet and including it in a document I
 was writing somewhere else.&lt;/p&gt;
 &lt;p&gt;My primary computer is a Mac. Here’s my solution:&lt;/p&gt;
@@ -2973,14 +3472,18 @@ edges look jagged.&lt;/li&gt;
 size just large enough to hold the actual image.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;All of this is done via an invocation of &lt;a href=&quot;https://imagemagick.org/index.php&quot;&gt;ImageMagick&lt;/a&gt;.&lt;/p&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Note-taking on a reMarkable 2</title>
-    <link href="https://xn--izc.com/posts/remarkable-first-impressions/"/>
+    <link href="https://xn--izc.com/posts/remarkable-first-impressions/" />
     <updated>2021-12-30T21:10:30Z</updated>
     <id>https://xn--izc.com/posts/remarkable-first-impressions/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;After much dillydallying about which note-taker/ebook reader I wanted
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;After much dillydallying about which note-taker/ebook reader I wanted
 to get, I went ahead and got a &lt;a href=&quot;https://remarkable.com/&quot;&gt;reMarkable 2&lt;/a&gt;. I’ve been using it for
 about a month now. I must say that it’s the closest thing to writing on
 paper that I have encountered.&lt;/p&gt;
@@ -3154,25 +3657,33 @@ Wayback Machine’s &lt;a href=&quot;https://web.archive.org/web/20210725184512/
 from when I wrote this article&lt;/a&gt;.&lt;a href=&quot;https://xn--izc.com/posts/remarkable-first-impressions/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Why &#39;Strong Opinions Weekly Held&#39;</title>
-    <link href="https://xn--izc.com/posts/why-strong-opinions-weekly-held/"/>
+    <link href="https://xn--izc.com/posts/why-strong-opinions-weekly-held/" />
     <updated>2021-09-28T00:00:00Z</updated>
     <id>https://xn--izc.com/posts/why-strong-opinions-weekly-held/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;Previously on this blog I wrote a short note on &lt;a href=&quot;https://xn--izc.com/posts/why-strong-opinions-weekly-held/posts/why-strong-opinions-weakly-held/&quot;&gt;Why Strong Opinions Weakly
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;Previously on this blog I wrote a short note on &lt;a href=&quot;https://xn--izc.com/posts/why-strong-opinions-weekly-held/posts/why-strong-opinions-weakly-held/&quot;&gt;Why Strong Opinions Weakly
 Held&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I’m trying to get something out every week. Hence the new blog
 title.&lt;/p&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Visualizing A Million People</title>
-    <link href="https://xn--izc.com/posts/visualizing-people-2/"/>
+    <link href="https://xn--izc.com/posts/visualizing-people-2/" />
     <updated>2021-09-06T00:00:00Z</updated>
     <id>https://xn--izc.com/posts/visualizing-people-2/</id>
-    <content xml:lang="en" type="html">&lt;div class=&quot;preface&quot;&gt;
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;div class=&quot;preface&quot;&gt;
 &lt;p&gt;This article was formerly published as &lt;a href=&quot;https://xn--izc.com/posts/visualizing-people/&quot;&gt;Visualizing Internet Users&lt;/a&gt;. This
 version is more generalized and up-to-date.&lt;/p&gt;
 &lt;/div&gt;
@@ -3353,14 +3864,18 @@ the population would have internet access in 2017. It’s likely that by
 Many People Are in Tahrir Square? Here’s How to Tell&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/visualizing-people-2/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Fart Limit</title>
-    <link href="https://xn--izc.com/posts/fart-limit/"/>
+    <link href="https://xn--izc.com/posts/fart-limit/" />
     <updated>2021-06-14T15:30:18Z</updated>
     <id>https://xn--izc.com/posts/fart-limit/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;Thanks to &lt;a href=&quot;https://youtu.be/suwg7-y70FQ&quot;&gt;Vsauce&lt;/a&gt; for
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;Thanks to &lt;a href=&quot;https://youtu.be/suwg7-y70FQ&quot;&gt;Vsauce&lt;/a&gt; for
 bringing this particular issue to our attention. The TL;DR of that video
 is:&lt;/p&gt;
 &lt;ul&gt;
@@ -3403,14 +3918,18 @@ button supposed to do?&lt;/p&gt;
 &lt;li id=&quot;fn3&quot;&gt;&lt;p&gt;https://www.osha.gov/hydrogen-sulfide/hazards&lt;a href=&quot;https://xn--izc.com/posts/fart-limit/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Shannon Paper</title>
-    <link href="https://xn--izc.com/posts/shannon-paper/"/>
+    <link href="https://xn--izc.com/posts/shannon-paper/" />
     <updated>2021-03-26T20:14:20Z</updated>
     <id>https://xn--izc.com/posts/shannon-paper/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;Claude Shannon’s &lt;em&gt;A mathematical theory of communication&lt;/em&gt; is
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;Claude Shannon’s &lt;em&gt;A mathematical theory of communication&lt;/em&gt; is
 an oft cited classic in information theory. In fact, as of this writing
 there are 84’411 citations and 139 versions of the article on Google
 Scholar.&lt;/p&gt;
@@ -3682,14 +4201,18 @@ expected occurrence count would have a probability of occurring of:&lt;/p&gt;
 &#92;log p &amp;amp; = &#92;sum_i N p_i &#92;log p_i &#92;&#92;
        &amp;amp; = N H
 &#92;end{align*}&lt;/span&gt;&lt;/p&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Sometimes It&#39;s the Interviewers Who Suck</title>
-    <link href="https://xn--izc.com/posts/sometimes-its-the-interviewers-who-suck/"/>
+    <link href="https://xn--izc.com/posts/sometimes-its-the-interviewers-who-suck/" />
     <updated>2021-03-20T23:09:49Z</updated>
     <id>https://xn--izc.com/posts/sometimes-its-the-interviewers-who-suck/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;I’ve done hundreds of interviews. I’ve also served in numerous hiring
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;I’ve done hundreds of interviews. I’ve also served in numerous hiring
 committees over the years.&lt;/p&gt;
 &lt;p&gt;Tech companies tend to have cultures built around tech people
 interviewing other tech people, typically in what is
@@ -3803,14 +4326,18 @@ another interview to account for the lack of decisive information.&lt;/p&gt;
 important that they report any unpleasant interactions to one’s
 recruiter immediately after the interview. This allows a recruiter to go
 to bat for you and perhaps get you another interview if appropriate.&lt;/p&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>On WontFixing Bugs</title>
-    <link href="https://xn--izc.com/posts/on-wontfixing-bugs/"/>
+    <link href="https://xn--izc.com/posts/on-wontfixing-bugs/" />
     <updated>2021-03-02T22:15:06Z</updated>
     <id>https://xn--izc.com/posts/on-wontfixing-bugs/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;This was partly inspired by a Tweet by a co-worker. The tweet is:&lt;/p&gt;
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;This was partly inspired by a Tweet by a co-worker. The tweet is:&lt;/p&gt;
 &lt;p&gt;https://twitter.com/miketaylr/status/1366762904851279877”&lt;/p&gt;
 &lt;p&gt;For projects that are under-resourced but has heavy usage it is in
 fact quite normal to accumulate a large number of issue reports over
@@ -3904,14 +4431,18 @@ than this. I’m generally against mass issue closing events like
 declaring “bug bankruptcy.” The bugs don’t care about the state of the
 issue report. All you’ve accomplished is to throw away the accumulated
 history and evidence of a defect.&lt;/p&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Deriving the Poisson Distribution</title>
-    <link href="https://xn--izc.com/posts/poisson-distribution/"/>
+    <link href="https://xn--izc.com/posts/poisson-distribution/" />
     <updated>2020-12-11T16:13:39Z</updated>
     <id>https://xn--izc.com/posts/poisson-distribution/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;Where does the Poisson Distribution come from?&lt;/p&gt;
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;Where does the Poisson Distribution come from?&lt;/p&gt;
 &lt;p&gt;A little bit of research&lt;a href=&quot;https://xn--izc.com/posts/poisson-distribution/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; tells us that the
 distribution was originally introduced by &lt;a href=&quot;https://en.wikipedia.org/wiki/Abraham_de_Moivre&quot;&gt;Abraham de
 Moivre&lt;/a&gt; in 1710 in an article called &lt;em&gt;“On the Measurement of
@@ -4080,14 +4611,18 @@ original article in Latin&lt;/a&gt; is available via &lt;a href=&quot;https://ro
 Publishing&lt;/a&gt;.&lt;a href=&quot;https://xn--izc.com/posts/poisson-distribution/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Ten Years</title>
-    <link href="https://xn--izc.com/posts/ten-years/"/>
+    <link href="https://xn--izc.com/posts/ten-years/" />
     <updated>2020-12-09T02:41:50Z</updated>
     <id>https://xn--izc.com/posts/ten-years/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;It’s been ten years since I started at Google. The work anniversary
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;It’s been ten years since I started at Google. The work anniversary
 fell on 6th of December.&lt;/p&gt;
 &lt;p&gt;Ten years ago my wife and I made our way to Mountain View for my
 orientation; all excited for a brand new chapter in our lives. After
@@ -4126,14 +4661,18 @@ little really matters in the long run.&lt;/p&gt;
 &lt;p&gt;I should remember that the next time I feel like staying up late
 trying to get something done because I feel some sort of obligation or
 bigger purpose in doing it. Often there is none.&lt;/p&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Visualizing Internet Users</title>
-    <link href="https://xn--izc.com/posts/visualizing-people/"/>
+    <link href="https://xn--izc.com/posts/visualizing-people/" />
     <updated>2020-11-21T16:37:53Z</updated>
     <id>https://xn--izc.com/posts/visualizing-people/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;What does 0.3%&lt;a href=&quot;https://xn--izc.com/posts/visualizing-people/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; of internet users look like?&lt;/p&gt;
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;What does 0.3%&lt;a href=&quot;https://xn--izc.com/posts/visualizing-people/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; of internet users look like?&lt;/p&gt;
 &lt;p&gt;As of this writing the global population hovers around 7.7 billion
 according to the World Population Clock &lt;a href=&quot;https://xn--izc.com/posts/visualizing-people/#fn2&quot; class=&quot;footnote-ref&quot; id=&quot;fnref2&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;figure&gt;
@@ -4268,14 +4807,18 @@ trends due to the effects of COVID.&lt;a href=&quot;https://xn--izc.com/posts/vi
 Many People Are in Tahrir Square? Here’s How to Tell&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/visualizing-people/#fnref4&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Things You Can Do With Neovim and Vscode That You Can&#39;t Do With Neovim Alone</title>
-    <link href="https://xn--izc.com/posts/things-you-can-do-with-nvim-and-vscode/"/>
+    <link href="https://xn--izc.com/posts/things-you-can-do-with-nvim-and-vscode/" />
     <updated>2020-09-19T00:00:00Z</updated>
     <id>https://xn--izc.com/posts/things-you-can-do-with-nvim-and-vscode/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;This is the third time I’ve tried in earnest to switch to VSCode from
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;This is the third time I’ve tried in earnest to switch to VSCode from
 Vim (or Neovim in my case) for reasons not all of which are relevant to
 this post. But I love Vim style modal editing and I’ve grown accustomed
 to some features that aren’t present or not well emulated in &lt;a href=&quot;https://github.com/VSCodeVim/Vim&quot;&gt;VSCodeVim&lt;/a&gt;.&lt;/p&gt;
@@ -4433,14 +4976,18 @@ that you can use the existing &lt;code&gt;fontStyle: &quot;italic&quot;&lt;/code
 &lt;code&gt;tokenColorCustomizations&lt;/code&gt; to switch fonts.&lt;a href=&quot;https://xn--izc.com/posts/things-you-can-do-with-nvim-and-vscode/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Why &#39;Strong Opinions Weakly Held&#39;</title>
-    <link href="https://xn--izc.com/posts/why-strong-opinions-weakly-held/"/>
+    <link href="https://xn--izc.com/posts/why-strong-opinions-weakly-held/" />
     <updated>2020-08-28T19:17:16Z</updated>
     <id>https://xn--izc.com/posts/why-strong-opinions-weakly-held/</id>
-    <content xml:lang="en" type="html">&lt;h2 id=&quot;origins-of-the-phrase&quot;&gt;Origins of the phrase&lt;/h2&gt;
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;h2 id=&quot;origins-of-the-phrase&quot;&gt;Origins of the phrase&lt;/h2&gt;
 &lt;p&gt;The title of this blog is &lt;strong&gt;Strong Opinions, Weakly
 Held&lt;/strong&gt;. The same concept shows up elsewhere are &lt;em&gt;Strong
 Opinions Loosely Held&lt;/em&gt;. An eponymous essay by Paul Saffo in &lt;span class=&quot;citation&quot; data-cites=&quot;Saffo&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/why-strong-opinions-weakly-held/#ref-Saffo&quot; role=&quot;doc-biblioref&quot;&gt;[1]&lt;/a&gt;&lt;/span&gt; introduced the world to this
@@ -4541,27 +5088,34 @@ suppressing them.&lt;/p&gt;&lt;/li&gt;
 &lt;div id=&quot;refs&quot; class=&quot;references csl-bib-body&quot; data-entry-spacing=&quot;0&quot; role=&quot;list&quot;&gt;
 &lt;div id=&quot;ref-Saffo&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
 &lt;div class=&quot;csl-left-margin&quot;&gt;[1] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;&lt;span&gt;“Strong opinions weakly held : Paul
-saffo.”&lt;/span&gt; Accessed: Sep. 04, 2020. [Online]. Available: &lt;a href=&quot;https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/&quot;&gt;https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/&lt;/a&gt;&lt;/div&gt;
+saffo,”&lt;/span&gt; 04-Sep-2020. [Online]. Available: &lt;a href=&quot;https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/&quot;&gt;https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/&lt;/a&gt;.
+[Accessed: 04-Sep-2020]&lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&quot;ref-Cedric&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
 &lt;div class=&quot;csl-left-margin&quot;&gt;[2] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;&lt;span&gt;“&lt;span&gt;‘Strong opinions, weakly
-held’&lt;/span&gt; doesn’t work that well.”&lt;/span&gt; Accessed: Sep. 04, 2020.
-[Online]. Available: &lt;a href=&quot;https://commoncog.com/blog/strong-opinions-weakly-held-is-bad/&quot;&gt;https://commoncog.com/blog/strong-opinions-weakly-held-is-bad/&lt;/a&gt;&lt;/div&gt;
+held’&lt;/span&gt; doesn’t work that well,”&lt;/span&gt; 04-Sep-2020. [Online].
+Available: &lt;a href=&quot;https://commoncog.com/blog/strong-opinions-weakly-held-is-bad/&quot;&gt;https://commoncog.com/blog/strong-opinions-weakly-held-is-bad/&lt;/a&gt;.
+[Accessed: 04-Sep-2020]&lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&quot;ref-Michael&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
 &lt;div class=&quot;csl-left-margin&quot;&gt;[3] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;&lt;span&gt;“Strong opinions loosely held might be
-the worst idea in tech - the glowforge blog.”&lt;/span&gt; Accessed: Sep. 04,
-2020. [Online]. Available: &lt;a href=&quot;https://blog.glowforge.com/strong-opinions-loosely-held-might-be-the-worst-idea-in-tech/&quot;&gt;https://blog.glowforge.com/strong-opinions-loosely-held-might-be-the-worst-idea-in-tech/&lt;/a&gt;&lt;/div&gt;
+the worst idea in tech - the glowforge blog,”&lt;/span&gt; 04-Sep-2020.
+[Online]. Available: &lt;a href=&quot;https://blog.glowforge.com/strong-opinions-loosely-held-might-be-the-worst-idea-in-tech/&quot;&gt;https://blog.glowforge.com/strong-opinions-loosely-held-might-be-the-worst-idea-in-tech/&lt;/a&gt;.
+[Accessed: 04-Sep-2020]&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Names for Name Conventions</title>
-    <link href="https://xn--izc.com/posts/symbol-name-types/"/>
+    <link href="https://xn--izc.com/posts/symbol-name-types/" />
     <updated>2020-08-24T16:32:45Z</updated>
     <id>https://xn--izc.com/posts/symbol-name-types/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;Names I’ve seen used to refer to naming conventions:&lt;/p&gt;
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;Names I’ve seen used to refer to naming conventions:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;snake_case&lt;/code&gt;, &lt;code&gt;hacker_case&lt;/code&gt;,
 &lt;code&gt;unix_hacker_style&lt;/code&gt; : Everything is lower case, though
@@ -4586,14 +5140,18 @@ command line options is &lt;code&gt;snake_case&lt;/code&gt; or
 (where the delimiter within the option is &lt;code&gt;_&lt;/code&gt;).&lt;a href=&quot;https://xn--izc.com/posts/symbol-name-types/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>How This Blog Works</title>
-    <link href="https://xn--izc.com/posts/how-this-blog-works/"/>
+    <link href="https://xn--izc.com/posts/how-this-blog-works/" />
     <updated>2020-07-27T04:57:17Z</updated>
     <id>https://xn--izc.com/posts/how-this-blog-works/</id>
-    <content xml:lang="en" type="html">&lt;h1 id=&quot;requirements&quot;&gt;Requirements&lt;/h1&gt;
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;h1 id=&quot;requirements&quot;&gt;Requirements&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Math. Preferably Latex.&lt;/li&gt;
 &lt;li&gt;Citations. I like to cite stuff.&lt;/li&gt;
@@ -4628,14 +5186,18 @@ use Pandoc, use citations, use math etc. and things will “just work”
 when publishing to another site that expects GitHub flavored
 Markdown.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>The Comcast Technician Problem</title>
-    <link href="https://xn--izc.com/posts/comcast-technican-problem/"/>
+    <link href="https://xn--izc.com/posts/comcast-technican-problem/" />
     <updated>2020-07-13T17:21:51Z</updated>
     <id>https://xn--izc.com/posts/comcast-technican-problem/</id>
-    <content xml:lang="en" type="html">&lt;h2 id=&quot;the-story&quot;&gt;The Story&lt;/h2&gt;
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;h2 id=&quot;the-story&quot;&gt;The Story&lt;/h2&gt;
 &lt;p&gt;As is a rite of passage in these parts, I waited for the Comcast&lt;a href=&quot;https://xn--izc.com/posts/comcast-technican-problem/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; technician to arrive during their
 scheduled appointment window. In preparation I had scheduled a day of
 working from home.&lt;/p&gt;
@@ -4777,14 +5339,18 @@ Verge&lt;/em&gt;. &lt;em&gt;The worst company in America.&lt;/em&gt;&lt;/a&gt; (
 13, 2020)&lt;a href=&quot;https://xn--izc.com/posts/comcast-technican-problem/#fnref4&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Vim: Use Drop Not Edit, SBuffer Not Buffer</title>
-    <link href="https://xn--izc.com/posts/use-drop-not-edit/"/>
+    <link href="https://xn--izc.com/posts/use-drop-not-edit/" />
     <updated>2020-07-07T16:02:20Z</updated>
     <id>https://xn--izc.com/posts/use-drop-not-edit/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;I’m going to assume you are a Vim user.&lt;/p&gt;
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;I’m going to assume you are a Vim user.&lt;/p&gt;
 &lt;p&gt;Say you have a several windows open in Vim and you want to edit
 another file. Using &lt;code&gt;:edit&lt;/code&gt; works if you want to open the
 file in the current window unconditionally.&lt;/p&gt;
@@ -4835,15 +5401,19 @@ on the web&lt;/a&gt; for full details.&lt;/p&gt;
 current buffer cannot be unloaded.&lt;a href=&quot;https://xn--izc.com/posts/use-drop-not-edit/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Notes from Crash Course&#39;s Videos on Fact Checking Information You See On The Internet
 </title>
-    <link href="https://xn--izc.com/posts/notes-on-fact-checking/"/>
+    <link href="https://xn--izc.com/posts/notes-on-fact-checking/" />
     <updated>2020-07-04T00:00:00Z</updated>
     <id>https://xn--izc.com/posts/notes-on-fact-checking/</id>
-    <content xml:lang="en" type="html">&lt;h1 id=&quot;fact-checking&quot;&gt;Fact Checking&lt;/h1&gt;
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;h1 id=&quot;fact-checking&quot;&gt;Fact Checking&lt;/h1&gt;
 &lt;p&gt;Notes from &lt;a href=&quot;https://www.youtube.com/channel/UCX6b17PVsYBQ0ip5gyeme-Q&quot;&gt;Crash
 Course&lt;/a&gt;’s excellent series about fact checking information you see on
 the internet. The series starts &lt;a href=&quot;https://www.youtube.com/watch?v=pLlv2o6UfTU&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
@@ -4964,14 +5534,18 @@ fact checking sites like Snopes and Politifact.&lt;/p&gt;
 where a video came from, who created it, and whether it’s been altered
 before you believe what you see.&lt;/p&gt;
 &lt;h2 id=&quot;data-and-infographics&quot;&gt;Data and infographics&lt;/h2&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Easier CLI for ad-hoc Ansible tasks and playbooks</title>
-    <link href="https://xn--izc.com/posts/ansible-cli-sugar/"/>
+    <link href="https://xn--izc.com/posts/ansible-cli-sugar/" />
     <updated>2020-06-01T00:00:00Z</updated>
     <id>https://xn--izc.com/posts/ansible-cli-sugar/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;This article is about using &lt;a href=&quot;https://ansible.com/&quot;&gt;Ansible&lt;/a&gt;
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;This article is about using &lt;a href=&quot;https://ansible.com/&quot;&gt;Ansible&lt;/a&gt;
 on the command-line.&lt;/p&gt;
 &lt;h2 id=&quot;problem&quot;&gt;Problem:&lt;/h2&gt;
 &lt;p&gt;You …&lt;/p&gt;
@@ -5025,14 +5599,18 @@ or groups as described in the includes:&lt;/p&gt;
 &lt;/ol&gt;
 &lt;p&gt;That’s it. Now you can invoke playbooks and tasks just by using the
 name of host or group.&lt;/p&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Identity Domains</title>
-    <link href="https://xn--izc.com/posts/identity-domains/"/>
+    <link href="https://xn--izc.com/posts/identity-domains/" />
     <updated>2020-05-01T00:00:00Z</updated>
     <id>https://xn--izc.com/posts/identity-domains/</id>
-    <content xml:lang="en" type="html">&lt;blockquote&gt;
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;blockquote&gt;
 &lt;p&gt;An &lt;strong&gt;Identity domain&lt;/strong&gt; is a scope within which we
 consider it a given that the user has a shared or trivially joinable
 identity.&lt;/p&gt;
@@ -5040,7 +5618,7 @@ identity.&lt;/p&gt;
 &lt;p&gt;This is a privacy boundary, not a security boundary. Hence it assumes
 that where possible all sites share information.&lt;/p&gt;
 &lt;figure&gt;
-&lt;img src=&quot;https://xn--izc.com/posts/identity-domains/images/identity-domains.png&quot; alt=&quot;Diagram of example identity domains described below&quot; /&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/identity-domains/identity-domains.png&quot; class=&quot;noinvert&quot; alt=&quot;Diagram of example identity domains described below&quot; /&gt;
 &lt;figcaption aria-hidden=&quot;true&quot;&gt;Diagram of example identity domains
 described below&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -5134,14 +5712,18 @@ joining of identity domains.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Concepts like “logging out” can be defined in terms of destroying
 an identity domain on the User Agent.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content>
+</content
+    >
   </entry>
   <entry>
     <title>Ephemeral Fingerprinting On The Web</title>
-    <link href="https://xn--izc.com/posts/ephemeral-fingerprinting/"/>
+    <link href="https://xn--izc.com/posts/ephemeral-fingerprinting/" />
     <updated>2020-04-01T00:00:00Z</updated>
     <id>https://xn--izc.com/posts/ephemeral-fingerprinting/</id>
-    <content xml:lang="en" type="html">&lt;p&gt;TL;DR:&lt;/p&gt;
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;p&gt;TL;DR:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Any web observable property whose changes are concurrently
 observable by multiple top-level sites can lead to cross site identity
@@ -5428,6 +6010,7 @@ spec for sensitive APIs.&lt;a href=&quot;https://xn--izc.com/posts/ephemeral-fin
 update steps&lt;/a&gt;.&lt;a href=&quot;https://xn--izc.com/posts/ephemeral-fingerprinting/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content>
+</content
+    >
   </entry>
 </feed>
