@@ -4,12 +4,120 @@
   <subtitle>Strong opinions weekly held</subtitle>
   <link href="https://xn--izc.com/feed.xml" rel="self" />
   <link href="https://xn--izc.com/" />
-  <updated>2025-07-04T00:00:00Z</updated>
+  <updated>2025-08-02T00:00:00Z</updated>
   <id>https://xn--izc.com/</id>
   <author>
     <name>Asanka Herath</name>
     <email>asanka@gmail.com</email>
   </author>
+  <entry>
+    <title>Unsung Team Roles</title>
+    <link href="https://xn--izc.com/posts/emergent-roles/" />
+    <updated>2025-08-02T00:00:00Z</updated>
+    <id>https://xn--izc.com/posts/emergent-roles/</id>
+    <content
+      xml:lang="en"
+      type="html"
+      >&lt;h3 id=&quot;emergence-of-soft-roles&quot;&gt;Emergence of Soft Roles&lt;/h3&gt;
+&lt;p&gt;Google’s early success is partly attributed to the use of commodity
+hardware instead of purpose built “super” computers as was the custom at
+the time. Rather than demanding perfection from complex systems it is
+far more effective to accept the imperfections and design with it &lt;span class=&quot;citation&quot; data-cites=&quot;srebookChap2&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/emergent-roles/#ref-srebookChap2&quot; role=&quot;doc-biblioref&quot;&gt;[1]&lt;/a&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Team roles are neither comprehensive nor precise; because nobody
+understands human roles so perfectly. In any given team structure,
+people are expected to adapt to a broad range of situations that are
+unpredictable, and frankly unknown. Some (most?) of those situations are
+directly due to other team members.&lt;/p&gt;
+&lt;p&gt;As teams mature, the &lt;em&gt;actual&lt;/em&gt; role each person takes on will
+gradually anneal around individual strengths and weaknesses. So in
+reality, what is intended to be a neat and well circumscribed role
+profile becomes irregular, undefined, and dynamic.&lt;/p&gt;
+&lt;p&gt;Following the spirit of designing with imperfections, team
+organization must always account for this fluidity of roles.&lt;/p&gt;
+&lt;div class=&quot;horizontal&quot;&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/emergent-roles/hierarchical.svg&quot; title=&quot;A neat organization chart.&quot; class=&quot;noinvert&quot; width=&quot;300&quot; alt=&quot;Expectation: Neatly circumscribed hierarchichal roles.&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Expectation: Neatly circumscribed
+hierarchichal roles.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/emergent-roles/chaotic.svg&quot; title=&quot;A bunch of soft irregular shapes are squished together.&quot; class=&quot;noinvert&quot; width=&quot;300&quot; alt=&quot;Reality: Smeared, lopsided, and chaotic roles.&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Reality: Smeared, lopsided, and chaotic
+roles.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/div&gt;
+&lt;p&gt;In short:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Roles in a team will rarely be circumscribed by the corresponding
+job description. You will wind up doing work outside your scope.&lt;/li&gt;
+&lt;li&gt;Roles will overlap in ways that will run counter to the intents of
+the official role allocations. You will do other people’s work
+occasionally and vice versa.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Roles will emerge that are not mentioned in anyone’s job
+description.&lt;/em&gt;. Sometimes called &lt;em&gt;&lt;em&gt;soft&lt;/em&gt;&lt;/em&gt; roles.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;section id=&quot;incentivizing-soft-roles&quot; class=&quot;sidenote-host-1&quot;&gt;
+&lt;h3&gt;Incentivizing Soft Roles&lt;/h3&gt;
+&lt;p&gt;Leaders must set in place the right set of incentives for people to
+fill these soft roles when necessary. If people ridigly perform just
+their roles and let things fail around them (&lt;em&gt;“it’s not my job”&lt;/em&gt;)
+that’s a sign of a bad incentive structure.&lt;/p&gt;
+&lt;p&gt;The right incentives can only be put in place by leadership that is
+aware of their own limitations and acknowledge their own imperfections.
+That’s because those incentives need to leave enough room for others to
+compensate. In other words, the only system that can reasonably create
+the right incentives is one where the at least some authority of
+deciding compensation is laid in the hands of those who observe work
+directly.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&quot;https://xn--izc.com/posts/intrinsic-motivation-an-anecdote/&quot;&gt;Intrinsic and
+Extrinsic Motivation: An Anecdote&lt;/a&gt; for an example of what happens
+when people try to force this process purely by creating extrinsic
+incentives and assigned roles.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id=&quot;no-heros&quot; class=&quot;sidenote-1&quot;&gt;
+&lt;h4&gt;No Heros&lt;/h4&gt;
+&lt;p&gt;Any organization whose success depends on their employees working
+&lt;em&gt;against&lt;/em&gt; their own self interests will eventually fail.&lt;/p&gt;
+&lt;p&gt;Unfortunately incentives are seldom constructed by people who
+understand what organizational cross beams are necessary to keep the
+&lt;em&gt;“official”&lt;/em&gt; role hierarchy from collapsing. Leadership rarely
+hear you work till 2am, but they will hear the failure of their
+leadership eventually … and until then they will neither understand nor
+act.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&quot;https://sre.google/resources/practices-and-processes/no-heroes/&quot;&gt;Why
+Heroism Is Bad&lt;/a&gt; in the Google SRE site.&lt;/p&gt;
+&lt;/section&gt;
+&lt;h3 id=&quot;soft-roles-as-organizational-cross-beams&quot;&gt;Soft Roles as
+Organizational Cross Beams&lt;/h3&gt;
+&lt;p&gt;Beyond the obvious team scoped function of soft roles, they also
+perform important functions at the organizational level. Of these two
+common types are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Glue-people&lt;/strong&gt; who are necessary to tie teams
+together, build cohesion, connect the dots between silos that are not
+effectively communicating with each other, and establish an unofficial
+foundation of trust that prevent teams from collapsing when the trust
+between leadership and workers inevitably crumbles.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Immune Systems&lt;/strong&gt; are the people necessary to stop
+the company from shooting themselves in their corporate feet. These are
+the people who internally oppose measures that would cause widespread
+collapse of user-trust, violate privacy policies, open up the
+organization to litigation, irreversibly misuse customer data,
+unnecessarily jeopardize the operational stability or security of
+critical systems, or commit war crimes and human rights
+violations.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Each of these categories deserve its own post. Stay tuned!&lt;/p&gt;
+&lt;div id=&quot;refs&quot; class=&quot;references csl-bib-body&quot; data-entry-spacing=&quot;0&quot; role=&quot;list&quot;&gt;
+&lt;div id=&quot;ref-srebookChap2&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+&lt;div class=&quot;csl-left-margin&quot;&gt;[1] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;JC
+van Winkel, &lt;em&gt;Site Reliability Engineering: How Google Runs Production
+Systems&lt;/em&gt;. O’Reilly Media, 2016 [Online]. Available: &lt;a href=&quot;https://sre.google/sre-book/embracing-risk/&quot;&gt;https://sre.google/sre-book/embracing-risk/&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content
+    >
+  </entry>
   <entry>
     <title>Draining Our Intellectual Catchment Areas</title>
     <link href="https://xn--izc.com/posts/catchment/" />

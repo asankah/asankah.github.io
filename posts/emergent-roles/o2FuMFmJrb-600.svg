@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<svg width="600" height="600"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg">
+    <g class="layer">
+        <title>Layer 1</title>
+        <g id="svg_g_bezier_cells">
+            <rect fill="#70d6ff" height="100" id="svg_27" width="580" x="10" y="10"/>
+            <rect fill="#ff70a6" height="100" id="svg_28" width="190" x="10" y="130"/>
+            <rect fill="#ffd680" height="100" id="svg_29" width="170" x="220" y="130"/>
+            <rect fill="#70d6ff" height="100" id="svg_30" width="180" x="410" y="130"/>
+            <rect fill="#ff9770" height="100" id="svg_31" width="100" x="10" y="250"/>
+            <rect fill="#70d6ff" height="100" id="svg_32" width="100" x="130" y="250"/>
+            <rect fill="#ffd670" height="100" id="svg_33" width="100" x="250" y="250"/>
+            <rect fill="#ff70a6" height="100" id="svg_34" width="100" x="370" y="250"/>
+            <rect fill="#70d6ff" height="100" id="svg_35" width="100" x="490" y="250"/>
+            <rect fill="#ff9770" height="100" id="svg_40" width="100" x="10" y="370"/>
+            <rect fill="#70d6ff" height="100" id="svg_39" width="100" x="130" y="370"/>
+            <rect fill="#ffd670" height="100" id="svg_38" width="100" x="250" y="370"/>
+            <rect fill="#ff70a6" height="100" id="svg_37" width="100" x="370" y="370"/>
+            <rect fill="#70d6ff" height="100" id="svg_36" width="100" x="490" y="370"/>
+            <rect fill="#ff9770" height="100" id="svg_45" width="100" x="10" y="490"/>
+            <rect fill="#70d6ff" height="100" id="svg_44" width="100" x="130" y="490"/>
+            <rect fill="#ffd670" height="100" id="svg_43" width="100" x="250" y="490"/>
+            <rect fill="#ff70a6" height="100" id="svg_42" width="100" x="370" y="490"/>
+            <rect fill="#70d6ff" height="100" id="svg_41" width="100" x="490" y="490"/>
+        </g>
+    </g>
+</svg>
