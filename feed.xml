@@ -4,91 +4,146 @@
   <subtitle>Strong opinions weekly held</subtitle>
   <link href="https://xn--izc.com/feed.xml" rel="self" />
   <link href="https://xn--izc.com/" />
-  <updated>2025-08-02T00:00:00Z</updated>
+  <updated>
+    2025-08-12T00:00:00Z
+  </updated>
   <id>https://xn--izc.com/</id>
   <author>
     <name>Asanka Herath</name>
     <email>asanka@gmail.com</email>
   </author>
-  <entry>
-    <title>Unsung Team Roles</title>
-    <link href="https://xn--izc.com/posts/emergent-roles/" />
-    <updated>2025-08-02T00:00:00Z</updated>
-    <id>https://xn--izc.com/posts/emergent-roles/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;h3 id=&quot;emergence-of-soft-roles&quot;&gt;Emergence of Soft Roles&lt;/h3&gt;
-&lt;p&gt;Google’s early success is partly attributed to the use of commodity
-hardware instead of purpose built “super” computers as was the custom at
-the time. Rather than demanding perfection from complex systems it is
-far more effective to accept the imperfections and design with it &lt;span class=&quot;citation&quot; data-cites=&quot;srebookChap2&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/emergent-roles/#ref-srebookChap2&quot; role=&quot;doc-biblioref&quot;&gt;[1]&lt;/a&gt;&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;Team roles are neither comprehensive nor precise; because nobody
-understands human roles so perfectly. In any given team structure,
-people are expected to adapt to a broad range of situations that are
-unpredictable, and frankly unknown. Some (most?) of those situations are
-directly due to other team members.&lt;/p&gt;
-&lt;p&gt;As teams mature, the &lt;em&gt;actual&lt;/em&gt; role each person takes on will
-gradually anneal around individual strengths and weaknesses. So in
-reality, what is intended to be a neat and well circumscribed role
-profile becomes irregular, undefined, and dynamic.&lt;/p&gt;
-&lt;p&gt;Following the spirit of designing with imperfections, team
-organization must always account for this fluidity of roles.&lt;/p&gt;
-&lt;div class=&quot;horizontal&quot;&gt;
-&lt;figure&gt;
-&lt;img src=&quot;https://xn--izc.com/posts/emergent-roles/hierarchical.svg&quot; title=&quot;A neat organization chart.&quot; class=&quot;noinvert&quot; width=&quot;300&quot; alt=&quot;Expectation: Neatly circumscribed hierarchichal roles.&quot; /&gt;
-&lt;figcaption aria-hidden=&quot;true&quot;&gt;Expectation: Neatly circumscribed
-hierarchichal roles.&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;figure&gt;
-&lt;img src=&quot;https://xn--izc.com/posts/emergent-roles/chaotic.svg&quot; title=&quot;A bunch of soft irregular shapes are squished together.&quot; class=&quot;noinvert&quot; width=&quot;300&quot; alt=&quot;Reality: Smeared, lopsided, and chaotic roles.&quot; /&gt;
-&lt;figcaption aria-hidden=&quot;true&quot;&gt;Reality: Smeared, lopsided, and chaotic
-roles.&lt;/figcaption&gt;
-&lt;/figure&gt;
+    <entry>
+      <title>Incentives</title>
+      <link href="https://xn--izc.com/series/unsung-team-roles/incentives/" />
+      <updated>2025-08-12T00:00:00Z</updated>
+      <id>https://xn--izc.com/series/unsung-team-roles/incentives/</id>
+      <content xml:lang="en" type="html">
+        &lt;div class=&quot;sidenote-host-1&quot;&gt;
+&lt;p&gt;Teams can fail in many ways&lt;a href=&quot;https://xn--izc.com/series/unsung-team-roles/incentives/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;. But when they succeed,
+the most critical roles are those that form the communication structures
+within and across teams. Forming these structures require teammates to
+have some level of autonomy. In turn this requires a team stucture that
+allows the team the freedom of movement to reconfigure itself to serve
+the teams’ goals.&lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;In short:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Roles in a team will rarely be circumscribed by the corresponding
-job description. You will wind up doing work outside your scope.&lt;/li&gt;
-&lt;li&gt;Roles will overlap in ways that will run counter to the intents of
-the official role allocations. You will do other people’s work
-occasionally and vice versa.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Roles will emerge that are not mentioned in anyone’s job
-description.&lt;/em&gt;. Sometimes called &lt;em&gt;&lt;em&gt;soft&lt;/em&gt;&lt;/em&gt; roles.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;section id=&quot;incentivizing-soft-roles&quot; class=&quot;sidenote-host-1&quot;&gt;
-&lt;h3&gt;Incentivizing Soft Roles&lt;/h3&gt;
-&lt;p&gt;Leaders must set in place the right set of incentives for people to
-fill these soft roles when necessary. If people ridigly perform just
-their roles and let things fail around them (&lt;em&gt;“it’s not my job”&lt;/em&gt;)
-that’s a sign of a bad incentive structure.&lt;/p&gt;
-&lt;p&gt;The right incentives can only be put in place by leadership that is
-aware of their own limitations and acknowledge their own imperfections.
-That’s because those incentives need to leave enough room for others to
-compensate. In other words, the only system that can reasonably create
-the right incentives is one where the at least some authority of
-deciding compensation is laid in the hands of those who observe work
-directly.&lt;/p&gt;
-&lt;p&gt;See &lt;a href=&quot;https://xn--izc.com/posts/intrinsic-motivation-an-anecdote/&quot;&gt;Intrinsic and
-Extrinsic Motivation: An Anecdote&lt;/a&gt; for an example of what happens
-when people try to force this process purely by creating extrinsic
-incentives and assigned roles.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id=&quot;no-heros&quot; class=&quot;sidenote-1&quot;&gt;
-&lt;h4&gt;No Heros&lt;/h4&gt;
+&lt;aside class=&quot;sidenote-1&quot;&gt;
+&lt;h4 id=&quot;no-heros&quot;&gt;No Heros&lt;/h4&gt;
 &lt;p&gt;Any organization whose success depends on their employees working
 &lt;em&gt;against&lt;/em&gt; their own self interests will eventually fail.&lt;/p&gt;
-&lt;p&gt;Unfortunately incentives are seldom constructed by people who
+&lt;p&gt;Unfortunately incentives are seldom constructed by those who
 understand what organizational cross beams are necessary to keep the
-&lt;em&gt;“official”&lt;/em&gt; role hierarchy from collapsing. Leadership rarely
-hear you work till 2am, but they will hear the failure of their
-leadership eventually … and until then they will neither understand nor
-act.&lt;/p&gt;
+&lt;em&gt;“official”&lt;/em&gt; organizational structure from collapsing.&lt;/p&gt;
 &lt;p&gt;See &lt;a href=&quot;https://sre.google/resources/practices-and-processes/no-heroes/&quot;&gt;Why
 Heroism Is Bad&lt;/a&gt; in the Google SRE site.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;p&gt;If the conditions are right, a healthy team will fill in the gaps by
+rebalancing their responsibilities. Such a rebalancing will inevitably
+lead to an uneven distribution of burden. With time the burden will
+become increasingly visceral, which will lead to burnout, resentment,
+and attrition. For an uneven burden to be sustained, that burden must be
+commesurately rewarded.&lt;/p&gt;
+&lt;p&gt;Accurately measuring the contributions of each team member is a
+hitherto unsolved problem. Managers are often left with gut instincts to
+fall back on, which comes with a laundry list of shortcomings like bias
+and favoritism. Those who come up with the right formula against all
+odds are celebrated as &lt;em&gt;good managers&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;People write books and give speeches about their favorite &lt;em&gt;good
+manager&lt;/em&gt;. But often the actual skills involved aren’t articulated.
+The list of skills isn’t long. Primarily these skills revolve around the
+ability to understand what each person is &lt;em&gt;doing&lt;/em&gt;. Secondairly
+they revolve around the ability to understand how those actions
+&lt;em&gt;affect the rest of the team&lt;/em&gt;. Both require a manager to have
+visibility into how the team interacts – either by direct observation or
+by frequent and extensive communication with each team member.&lt;/p&gt;
+&lt;p&gt;All of this still won’t do much if the team desn’t have psychological
+safety. Without this, team members may not be willing to recognize and
+reward their peers. Nor would they be liklely to disclose bad news in a
+timely manner.&lt;/p&gt;
+&lt;p&gt;Bad incentive structures lead to people ridigly performing just their
+roles and letting things fail around them (&lt;em&gt;“it’s not my
+job”&lt;/em&gt;).&lt;a href=&quot;https://xn--izc.com/series/unsung-team-roles/incentives/#fn2&quot; class=&quot;footnote-ref&quot; id=&quot;fnref2&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To summarize, good things happen when the incentives for a team:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Never pit employees against each other. One person’s success cannot
+be another’s downfall.&lt;/li&gt;
+&lt;li&gt;Assume that the leadership hasn’t figured out exactly what needs to
+be done. The team should be empowered to course-correct as they
+learn.&lt;/li&gt;
+&lt;li&gt;Reward those who pull the team together and help the team
+communicate internally and externally.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;I recommend &lt;a href=&quot;https://en.wikipedia.org/wiki/The_Five_Dysfunctions_of_a_Team&quot;&gt;The
+Five Dysfunctions of a Team&lt;/a&gt; for a nice run through of different ways
+in which teams fail to function.&lt;a href=&quot;https://xn--izc.com/series/unsung-team-roles/incentives/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn2&quot;&gt;&lt;p&gt;See &lt;a href=&quot;https://xn--izc.com/posts/intrinsic-motivation-an-anecdote/&quot;&gt;Intrinsic and Extrinsic
+Motivation: An Anecdote&lt;/a&gt; for an example of what happens when people
+try to force this process purely by creating extrinsic incentives and
+assigned roles.&lt;a href=&quot;https://xn--izc.com/series/unsung-team-roles/incentives/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
 &lt;/section&gt;
-&lt;h3 id=&quot;soft-roles-as-organizational-cross-beams&quot;&gt;Soft Roles as
-Organizational Cross Beams&lt;/h3&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>Ode to Glue People</title>
+      <link href="https://xn--izc.com/series/unsung-team-roles/glue-people/" />
+      <updated>2025-08-12T00:00:00Z</updated>
+      <id>https://xn--izc.com/series/unsung-team-roles/glue-people/</id>
+      <content xml:lang="en" type="html">
+        &lt;div class=&quot;sidenote-host-1&quot;&gt;
+&lt;p&gt;The concept of glue work isn’t new. Team building, mentoring, running
+meetings, and many other mundane tasks fall under this category of often
+uncompensated work. How glue work establishes unofficial communication
+structures within and across teams is, however, discussed less
+often.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Not every manager is a great communicator; and that’s okay. This is
+specially true in large tech companies where the people management
+ladders are the natural next step for individual contributors who are
+seeking career growth. When important information that affects people’s
+careers isn’t communicated in a fair and timely manner, trust collapses
+taking down the team with it.&lt;/p&gt;
+&lt;p&gt;Bound by needs for confidentiality and mandatory reporting, managers
+are often not the best people to confide in or trust. Meanwhile peers
+with the right set of social skills become speakeasies: people with whom
+others feel psychologically safe. The level of trust between a speakeasy
+and other team members can be much higher than with managers.&lt;/p&gt;
+&lt;p&gt;Consequently, these speakeasies become social hubs where both work
+and non-work related information flow freely. Some might call it gossip.
+But when the information is factual and timely, it can help teammates
+made better decisions, at least for themselves if not for the company.
+In times of turmoil – like the increasingly frequent
+&lt;em&gt;“once-in-a-lifetime”&lt;/em&gt; recessions that keep happening in the US –
+the glue people take on a dual role: as a pressure release valve for
+individuals, and as a vehicle for breaking their sense of isolation.&lt;/p&gt;
+&lt;p&gt;No surprise that such roles cannot be written down in a normal job
+description. Also of no surprise that such roles aren’t recognized nor
+compensated.&lt;/p&gt;
+&lt;aside class=&quot;sidenote-1&quot;&gt;
+&lt;h4 id=&quot;losing-a-glue-person&quot;&gt;Losing a Glue Person&lt;/h4&gt;
+&lt;p&gt;I was tempted to write about this after the departure of a coworker.
+The extent to which they were holding the team together was not apparent
+until they left.&lt;/p&gt;
+&lt;p&gt;Our team is spread out across many geographic regions, so pretty much
+all of our interactions are online. Our team chats are more than just
+sources of work information, they are also where most of the
+socialization happens. So the tone and spirit of communication is
+critical for engagement. Once the keeper of the spirit left, the chats
+fell silent. And suddenly, it seemed, we became strangers.&lt;/p&gt;
+&lt;/aside&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>Soft Roles as Organizational Cross Beams</title>
+      <link href="https://xn--izc.com/series/unsung-team-roles/crossbeams/" />
+      <updated>2025-08-12T00:00:00Z</updated>
+      <id>https://xn--izc.com/series/unsung-team-roles/crossbeams/</id>
+      <content xml:lang="en" type="html">
+        &lt;div class=&quot;sidenote-host-1&quot;&gt;
 &lt;p&gt;Beyond the obvious team scoped function of soft roles, they also
 perform important functions at the organizational level. Of these two
 common types are:&lt;/p&gt;
@@ -97,7 +152,7 @@ common types are:&lt;/p&gt;
 together, build cohesion, connect the dots between silos that are not
 effectively communicating with each other, and establish an unofficial
 foundation of trust that prevent teams from collapsing when the trust
-between leadership and workers inevitably crumbles.&lt;/p&gt;&lt;/li&gt;
+between leadership and their underlings inevitably crumbles.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;Immune Systems&lt;/strong&gt; are the people necessary to stop
 the company from shooting themselves in their corporate feet. These are
 the people who internally oppose measures that would cause widespread
@@ -107,26 +162,141 @@ unnecessarily jeopardize the operational stability or security of
 critical systems, or commit war crimes and human rights
 violations.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Each of these categories deserve its own post. Stay tuned!&lt;/p&gt;
-&lt;div id=&quot;refs&quot; class=&quot;references csl-bib-body&quot; data-entry-spacing=&quot;0&quot; role=&quot;list&quot;&gt;
-&lt;div id=&quot;ref-srebookChap2&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
-&lt;div class=&quot;csl-left-margin&quot;&gt;[1] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;JC
-van Winkel, &lt;em&gt;Site Reliability Engineering: How Google Runs Production
-Systems&lt;/em&gt;. O’Reilly Media, 2016 [Online]. Available: &lt;a href=&quot;https://sre.google/sre-book/embracing-risk/&quot;&gt;https://sre.google/sre-book/embracing-risk/&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;aside class=&quot;sidenote-1&quot;&gt;
+&lt;h4 id=&quot;individual-failure-vs.-organizational-failures&quot;&gt;Individual
+Failure vs. Organizational Failures&lt;/h4&gt;
+&lt;p&gt;Unfortunately all the lessons we learn about human fallibility tend
+to be forgotten the higher up the reporting chain we go. So even though
+we expect and build in mechanisms to deal with individual failures, we
+tend not to build mechanisms to deal with organizational failures. We
+assume that organizations fail less often than individuals. The opposite
+is true. Organizations are made up of people. The more people you have
+the more likely it is that one of them will fail. The more people you
+have the more likely it is that they will fail in a way that is
+catastrophic to the organization.&lt;/p&gt;
+&lt;/aside&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>Emergence of Soft Roles</title>
+      <link href="https://xn--izc.com/series/unsung-team-roles/emergence/" />
+      <updated>2025-08-02T00:00:00Z</updated>
+      <id>https://xn--izc.com/series/unsung-team-roles/emergence/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;Google’s early success is partly attributed to the use of commodity
+hardware that were expected to break occasionally. Rather than demanding
+perfection from complex systems it is far more effective to expect and
+design around imperfections&lt;a href=&quot;https://xn--izc.com/series/unsung-team-roles/emergence/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/series/unsung-team-roles/emergence/google-servers.jpg&quot; class=&quot;noinvert&quot; alt=&quot;By Erik Pitti from San Diego, CA, USA - Google’s First ServerUploaded by Mewtu, CC BY 2.0, Link&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;By
+&lt;a rel=&quot;nofollow&quot; class=&quot;external text&quot; href=&quot;https://www.flickr.com/people/24205142@N00&quot;&gt;Erik
+Pitti&lt;/a&gt; from San Diego, CA, USA -
+&lt;a rel=&quot;nofollow&quot; class=&quot;external text&quot; href=&quot;https://www.flickr.com/photos/24205142@N00/2370851677/&quot;&gt;Google’s
+First Server&lt;/a&gt;Uploaded by
+&lt;a href=&quot;https://commons.wikimedia.org/w/index.php?title=User:Mewtu&amp;action=edit&amp;redlink=1&quot; class=&quot;new&quot; title=&quot;User:Mewtu (page does not exist)&quot;&gt;Mewtu&lt;/a&gt;,
+&lt;a href=&quot;https://creativecommons.org/licenses/by/2.0&quot; title=&quot;Creative Commons Attribution 2.0&quot;&gt;CC
+BY 2.0&lt;/a&gt;,
+&lt;a href=&quot;https://commons.wikimedia.org/w/index.php?curid=8724999&quot;&gt;Link&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;div class=&quot;sidenote-host-1&quot;&gt;
+&lt;p&gt;Similarly when we design products, we design them for fallible users
+who are prone to making occasional mistakes, and beholden to some number
+of misconceptions.&lt;/p&gt;
 &lt;/div&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Draining Our Intellectual Catchment Areas</title>
-    <link href="https://xn--izc.com/posts/catchment/" />
-    <updated>2025-07-04T00:00:00Z</updated>
-    <id>https://xn--izc.com/posts/catchment/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;It is July 4, 2025, and many major universities &lt;span class=&quot;citation&quot; data-cites=&quot;affectedUniversities&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-affectedUniversities&quot; role=&quot;doc-biblioref&quot;&gt;[1]&lt;/a&gt;&lt;/span&gt; in
+&lt;aside class=&quot;sidenote-1&quot;&gt;
+&lt;h4 id=&quot;misconceptions&quot;&gt;Misconceptions&lt;/h4&gt;
+&lt;p&gt;The &lt;em&gt;misconceptions&lt;/em&gt; referred to here are misunderstandings of
+how the product or process works. It could be situational
+misunderstandings (e.g. confusion about how to accomplish an immediate
+goal), or it could be a more persistent fundamental misunderstanding
+about how something works (e.g. misunderstanding &lt;a href=&quot;https://support.mozilla.org/en-US/kb/common-myths-about-private-browsing&quot;&gt;how
+private browsing works&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;With real world problems, information flow is never perfect. Loss of
+precision at each stage of discovery, analysis, prototyping, and
+implementation leads to potential for misconceptions. See &lt;a href=&quot;https://xn--izc.com/posts/secret-life-of-systems/&quot;&gt;The Secret Life of Systems&lt;/a&gt; for
+an illustration of how real world problems and the implementation of a
+solution may not align.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;p&gt;As we design products, so we must design our internal processes. We
+once again assume that our teammates are fallible, prone to making
+occasional mistakes, and operating under some number of misconceptions&lt;a href=&quot;https://xn--izc.com/series/unsung-team-roles/emergence/#fn2&quot; class=&quot;footnote-ref&quot; id=&quot;fnref2&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Fallibility runs both ways up and down the org chart. Leaders operate
+under vague, incomplete, and sometimes wildly inaccurate information&lt;a href=&quot;https://xn--izc.com/series/unsung-team-roles/emergence/#fn3&quot; class=&quot;footnote-ref&quot; id=&quot;fnref3&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;. Further complicating matters, it is
+impossible to understand the capabilities and shortcomings of each
+individual person or understand every nuance of what must constitute a
+role.&lt;/p&gt;
+&lt;p&gt;The result is that team roles are neither comprehensive nor precise.
+In any given team structure people are expected to adapt to a broad
+range of situations that are unpredictable, and frankly unknowable. Some
+(most?) of those situations are directly due to other team members.&lt;/p&gt;
+&lt;p&gt;As teams mature, the &lt;em&gt;actual&lt;/em&gt; role each person takes on will
+gradually anneal around individual strengths and weaknesses forged by
+need and cemented through consistency.&lt;/p&gt;
+&lt;p&gt;So in reality, what is intended to be a neat and well circumscribed
+role profile becomes irregular, illdefined, and dynamic.&lt;/p&gt;
+&lt;div class=&quot;horizontal&quot;&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/series/unsung-team-roles/emergence/hierarchical.svg&quot; title=&quot;A neat organization chart.&quot; class=&quot;noinvert&quot; alt=&quot;Expectation: Neatly circumscribed hierarchichal roles.&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Expectation: Neatly circumscribed
+hierarchichal roles.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/series/unsung-team-roles/emergence/chaotic.svg&quot; title=&quot;A bunch of soft irregular shapes are squished together.&quot; class=&quot;noinvert&quot; alt=&quot;Reality: Smeared, lopsided, and chaotic roles.&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Reality: Smeared, lopsided, and chaotic
+roles.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/div&gt;
+&lt;p&gt;In short: Following the spirit of designing with imperfections, team
+organization must always account for this fluidity of roles.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Roles in a team will rarely be circumscribed by the corresponding
+job description. People will always do work outside their scope.&lt;/li&gt;
+&lt;li&gt;Roles will overlap in ways that will run counter to the intents of
+the official role allocations. People will do other’s work
+occasionally.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Roles will emerge that are not mentioned in anyone’s job
+description.&lt;/em&gt; Sometimes called &lt;em&gt;soft&lt;/em&gt; roles.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In this series we will look at a few of these soft roles that emerge
+often and look into the critical work that these roles perform.&lt;/p&gt;
+&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;A former Googler, Avery Penwarr wrote an influential
+document while they were at Google called &lt;em&gt;View from Above&lt;/em&gt; about
+the perspective of executives. Fortunately he also wrote a public
+version called &lt;a href=&quot;https://apenwarr.ca/log/?m=201909&quot;&gt;What do
+executives do anyway?&lt;/a&gt;. The basic premise is that when it comes to
+any big decision, the executive highest up the ladder is the least
+informed about the pertinent details – but that’s okay because knowing
+the details isn’t their job.&lt;a href=&quot;https://xn--izc.com/series/unsung-team-roles/emergence/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn2&quot;&gt;&lt;p&gt;See &lt;a href=&quot;https://sre.google/sre-book/postmortem-culture/&quot;&gt;Postmortem
+Culture: Learning from Failure&lt;/a&gt; for how anticipating mistakes lends
+itself to a healthy culture where people proactively report and learn
+from mistakes.&lt;a href=&quot;https://xn--izc.com/series/unsung-team-roles/emergence/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn3&quot;&gt;&lt;p&gt;A former Googler, Avery Penwarr wrote an influential
+document while they were at Google called &lt;em&gt;View from Above&lt;/em&gt; about
+the perspective of executives. Fortunately he also wrote a public
+version called &lt;a href=&quot;https://apenwarr.ca/log/?m=201909&quot;&gt;What do
+executives do anyway?&lt;/a&gt;. The basic premise is that when it comes to
+any big decision, the executive highest up the ladder is the least
+informed about the pertinent details – but that’s okay because knowing
+the details isn’t their job.&lt;a href=&quot;https://xn--izc.com/series/unsung-team-roles/emergence/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>Draining Our Intellectual Catchment Areas</title>
+      <link href="https://xn--izc.com/posts/catchment/" />
+      <updated>2025-07-04T00:00:00Z</updated>
+      <id>https://xn--izc.com/posts/catchment/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;It is July 4, 2025, and many major universities &lt;span class=&quot;citation&quot; data-cites=&quot;affectedUniversities&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-affectedUniversities&quot; role=&quot;doc-biblioref&quot;&gt;[1]&lt;/a&gt;&lt;/span&gt; in
 the US are struggling to deal with threats and funding cuts from the
 Trump administration.&lt;/p&gt;
 &lt;p&gt;A major impact of funding cuts is the loss of enrollments of
@@ -561,21 +731,19 @@ intellectual capital. That honor likely goes to China. However in a
 number of fields, the US is –or was until recently– the most prolific.&lt;a href=&quot;https://xn--izc.com/posts/catchment/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Act III: Flame</title>
-    <link href="https://xn--izc.com/posts/flame/" />
-    <updated>2025-05-07T00:00:00Z</updated>
-    <id>https://xn--izc.com/posts/flame/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;We are prone to anthropomorphizing anything that looks or acts
+
+      </content>
+    </entry>
+    <entry>
+      <title>Act III: Flame</title>
+      <link href="https://xn--izc.com/series/structure-of-experience/flame/" />
+      <updated>2025-05-07T00:00:00Z</updated>
+      <id>https://xn--izc.com/series/structure-of-experience/flame/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;We are prone to anthropomorphizing anything that looks or acts
 vaguely lifelike. All the way back in the 1960s, when people were
 confronted with a rudimentary chatbot, they were convinced that it
-embodied empathy and understanding (&lt;a href=&quot;https://en.wikipedia.org/wiki/ELIZA_effect&quot;&gt;ELIZA effect&lt;/a&gt;)&lt;a href=&quot;https://xn--izc.com/posts/flame/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+embodied empathy and understanding (&lt;a href=&quot;https://en.wikipedia.org/wiki/ELIZA_effect&quot;&gt;ELIZA effect&lt;/a&gt;)&lt;a href=&quot;https://xn--izc.com/series/structure-of-experience/flame/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Roll forward to the 2020’s and chatbots are substantially more
 complicated. Unsurprisingly, people attribute more and more human
 qualities to bots. We saw &lt;a href=&quot;https://www.washingtonpost.com/technology/2022/06/11/google-ai-lamda-blake-lemoine/&quot;&gt;people
@@ -603,7 +771,7 @@ to eliminate situations where consciousness is absent and to point out
 that nothing along the path we are traversing really reaches any
 meaningful self-awareness.&lt;/p&gt;
 &lt;figure&gt;
-&lt;img src=&quot;https://xn--izc.com/posts/flame/flame.jpg&quot; class=&quot;noinvert&quot; width=&quot;800&quot; alt=&quot;The flame of an imaginary candle. Generated using Gemini.&quot; /&gt;
+&lt;img src=&quot;https://xn--izc.com/series/structure-of-experience/flame/flame.jpg&quot; class=&quot;noinvert&quot; width=&quot;800&quot; alt=&quot;The flame of an imaginary candle. Generated using Gemini.&quot; /&gt;
 &lt;figcaption aria-hidden=&quot;true&quot;&gt;The flame of an imaginary candle.
 Generated using Gemini.&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -613,11 +781,11 @@ seen pictures of many real candles, but it has never felt the warmth of
 a candle. It is therefore safe to assume that the sense of heat played
 no role in this picture.&lt;/p&gt;
 &lt;p&gt;What if we start with a more realistic looking model of a flame. Then
-we can calculate how the flame should behave&lt;a href=&quot;https://xn--izc.com/posts/flame/#fn2&quot; class=&quot;footnote-ref&quot; id=&quot;fnref2&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;
+we can calculate how the flame should behave&lt;a href=&quot;https://xn--izc.com/series/structure-of-experience/flame/#fn2&quot; class=&quot;footnote-ref&quot; id=&quot;fnref2&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;
 with time. No matter how detailed this model is, the model does not
 constitute a flame. We can crank up the fidelity and accuracy of our
 calculations as far up as technology allows, but it will still not burst
-into flame&lt;a href=&quot;https://xn--izc.com/posts/flame/#fn3&quot; class=&quot;footnote-ref&quot; id=&quot;fnref3&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+into flame&lt;a href=&quot;https://xn--izc.com/series/structure-of-experience/flame/#fn3&quot; class=&quot;footnote-ref&quot; id=&quot;fnref3&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;This is where we are with AI and consciousness. We have descriptions
 of how to determine the next word in a sequence of words. These
 descriptions are extremely detailed and based on unfathomable amounts of
@@ -651,33 +819,31 @@ develops.”&lt;/p&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;ELIZA is fascinating in how simple the whole system is
 while being seemingly complex. You can play around with some modern &lt;a href=&quot;https://www.masswerk.at/elizabot/&quot;&gt;web-based simulations like this
 one&lt;/a&gt;. See if you can figure out how it might be calculating its
-responses.&lt;a href=&quot;https://xn--izc.com/posts/flame/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+responses.&lt;a href=&quot;https://xn--izc.com/series/structure-of-experience/flame/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li id=&quot;fn2&quot;&gt;&lt;p&gt;This is a very broad area of research. Search for
 &lt;em&gt;flame dynamics&lt;/em&gt;. E.g. &lt;a href=&quot;https://www.sciencedirect.com/science/article/abs/pii/S001046551830403X&quot;&gt;Flame
-simulations with an open-source code - ScienceDirect&lt;/a&gt;.&lt;a href=&quot;https://xn--izc.com/posts/flame/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+simulations with an open-source code - ScienceDirect&lt;/a&gt;.&lt;a href=&quot;https://xn--izc.com/series/structure-of-experience/flame/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li id=&quot;fn3&quot;&gt;&lt;p&gt;Technically if the equipment heats up enough, then it
 &lt;em&gt;might&lt;/em&gt; actually burst into flame. But that has nothing to do
 with the specifics of the flame we are trying to simulate. It can just
 as well happen while trying to &lt;a href=&quot;https://web.math.princeton.edu/math_alive/Crypto/Lab2/Factorization.html&quot;&gt;factor
-a large prime&lt;/a&gt;.&lt;a href=&quot;https://xn--izc.com/posts/flame/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+a large prime&lt;/a&gt;.&lt;a href=&quot;https://xn--izc.com/series/structure-of-experience/flame/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Act I: Meaning</title>
-    <link href="https://xn--izc.com/posts/meaning/" />
-    <updated>2025-05-04T00:00:00Z</updated>
-    <id>https://xn--izc.com/posts/meaning/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;div class=&quot;center&quot;&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>Act I: Meaning</title>
+      <link href="https://xn--izc.com/series/structure-of-experience/meaning/" />
+      <updated>2025-05-04T00:00:00Z</updated>
+      <id>https://xn--izc.com/series/structure-of-experience/meaning/</id>
+      <content xml:lang="en" type="html">
+        &lt;div class=&quot;center&quot;&gt;
 &lt;p&gt;This is a meaning.&lt;/p&gt;
 &lt;/div&gt;
 &lt;figure&gt;
-&lt;img src=&quot;https://xn--izc.com/posts/meaning/1.excalidraw.png&quot; class=&quot;noinvert&quot; alt=&quot;Meaninglessness&quot; /&gt;
+&lt;img src=&quot;https://xn--izc.com/series/structure-of-experience/meaning/1.excalidraw.png&quot; class=&quot;noinvert&quot; alt=&quot;Meaninglessness&quot; /&gt;
 &lt;figcaption aria-hidden=&quot;true&quot;&gt;Meaninglessness&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;p&gt;It doesn’t look like much because I haven’t told you what it means
@@ -688,7 +854,7 @@ us a canvas to paint with meaning later.&lt;/p&gt;
 something very abstract – it suddenly looks a tiny bit different. Now
 look at it.&lt;/p&gt;
 &lt;figure&gt;
-&lt;img src=&quot;https://xn--izc.com/posts/meaning/2.excalidraw.png&quot; class=&quot;noinvert&quot; alt=&quot;A feeling&quot; /&gt;
+&lt;img src=&quot;https://xn--izc.com/series/structure-of-experience/meaning/2.excalidraw.png&quot; class=&quot;noinvert&quot; alt=&quot;A feeling&quot; /&gt;
 &lt;figcaption aria-hidden=&quot;true&quot;&gt;A feeling&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;p&gt;Not all the words I speak will add meaning equally. Some are
@@ -702,7 +868,7 @@ a calm feeling. Something that you feel when you suddenly run out of
 ideas or your mind stops racing and you become aware of the environment
 around you.&lt;/p&gt;
 &lt;figure&gt;
-&lt;img src=&quot;https://xn--izc.com/posts/meaning/3.excalidraw.png&quot; class=&quot;noinvert&quot; alt=&quot;Calmness&quot; /&gt;
+&lt;img src=&quot;https://xn--izc.com/series/structure-of-experience/meaning/3.excalidraw.png&quot; class=&quot;noinvert&quot; alt=&quot;Calmness&quot; /&gt;
 &lt;figcaption aria-hidden=&quot;true&quot;&gt;Calmness&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;p&gt;The feeling you get when you are in the middle of a forest. A calm
@@ -711,7 +877,7 @@ afternoon, but not a lot of sunshine is making it through the canopy.
 You can smell the moss – it feels wet and earthy even though you know
 you can’t smell wet.&lt;/p&gt;
 &lt;figure&gt;
-&lt;img src=&quot;https://xn--izc.com/posts/meaning/4.excalidraw.png&quot; class=&quot;noinvert&quot; alt=&quot;A calm forest&quot; /&gt;
+&lt;img src=&quot;https://xn--izc.com/series/structure-of-experience/meaning/4.excalidraw.png&quot; class=&quot;noinvert&quot; alt=&quot;A calm forest&quot; /&gt;
 &lt;figcaption aria-hidden=&quot;true&quot;&gt;A calm forest&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;p&gt;Unlike two steps ago, these last few sentences were a bit special.
@@ -721,7 +887,7 @@ bit vague. But in the last paragraph, I made you dip a brush into your
 own subjective experience and paint our thing in your mind. The meaning
 is now yours and yours alone.&lt;/p&gt;
 &lt;figure&gt;
-&lt;img src=&quot;https://xn--izc.com/posts/meaning/5.excalidraw.png&quot; class=&quot;noinvert&quot; alt=&quot;Lots of different meanings&quot; /&gt;
+&lt;img src=&quot;https://xn--izc.com/series/structure-of-experience/meaning/5.excalidraw.png&quot; class=&quot;noinvert&quot; alt=&quot;Lots of different meanings&quot; /&gt;
 &lt;figcaption aria-hidden=&quot;true&quot;&gt;Lots of different meanings&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;p&gt;And that’s special because your experiences are not things that can
@@ -762,18 +928,16 @@ will always be limited by what people have felt and reacted to. That way
 they can look at those reactions and imitate them. The meanings in your
 head are yours alone.&lt;/p&gt;
 &lt;p&gt;No one can see your dreams. Especially not the robots.&lt;/p&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Intermission - Q1 of 2025</title>
-    <link href="https://xn--izc.com/posts/intermezzo-2025/" />
-    <updated>2025-05-03T00:00:00Z</updated>
-    <id>https://xn--izc.com/posts/intermezzo-2025/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;It’s been a while since I’ve published anything here. This is partly
+
+      </content>
+    </entry>
+    <entry>
+      <title>Intermission - Q1 of 2025</title>
+      <link href="https://xn--izc.com/posts/intermezzo-2025/" />
+      <updated>2025-05-03T00:00:00Z</updated>
+      <id>https://xn--izc.com/posts/intermezzo-2025/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;It’s been a while since I’ve published anything here. This is partly
 because every time I try to write there is something much more important
 and terrible happenning in the world that I’m not qualified to write
 about. Everything else including whatever it was that I was trying to
@@ -817,18 +981,16 @@ without corrective guidance has historically just made the hateful group
 more resentful and even more entrenched in their beliefs. Ultimately
 they will – as evidenced in recent events – have enough momentum and
 intensity to turn the tables.&lt;/p&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Preface</title>
-    <link href="https://xn--izc.com/posts/structure-of-experience/" />
-    <updated>2025-05-01T00:00:00Z</updated>
-    <id>https://xn--izc.com/posts/structure-of-experience/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;Large language models’ ability to mimic human language and show signs
+
+      </content>
+    </entry>
+    <entry>
+      <title>Preface</title>
+      <link href="https://xn--izc.com/series/structure-of-experience/preface/" />
+      <updated>2025-05-01T00:00:00Z</updated>
+      <id>https://xn--izc.com/series/structure-of-experience/preface/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;Large language models’ ability to mimic human language and show signs
 of intelligence is quite strange yet makes sense at the same time. This
 series is a very gentle introduction to how they &lt;em&gt;almost&lt;/em&gt; capture
 human experience through language and how language is perhaps the
@@ -838,18 +1000,16 @@ it I haven’t quite finished the whole series. So you’ll see what looks
 like an abrupt ending or missing episodes. They are coming. Just
 slowly.&lt;/p&gt;
 &lt;p&gt;Onwards …&lt;/p&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Intrinsic and Extrinsic Motivation: An anecdote</title>
-    <link href="https://xn--izc.com/posts/intrinsic-motivation-an-anecdote/" />
-    <updated>2025-03-22T00:00:00Z</updated>
-    <id>https://xn--izc.com/posts/intrinsic-motivation-an-anecdote/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;figure&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>Intrinsic and Extrinsic Motivation: An anecdote</title>
+      <link href="https://xn--izc.com/posts/intrinsic-motivation-an-anecdote/" />
+      <updated>2025-03-22T00:00:00Z</updated>
+      <id>https://xn--izc.com/posts/intrinsic-motivation-an-anecdote/</id>
+      <content xml:lang="en" type="html">
+        &lt;figure&gt;
 &lt;img src=&quot;https://xn--izc.com/posts/intrinsic-motivation-an-anecdote/intrinsic-vs-extrinsic.png&quot; class=&quot;noinvert&quot; alt=&quot;Intrinsic vs. extrinsic&quot; /&gt;
 &lt;figcaption aria-hidden=&quot;true&quot;&gt;Intrinsic vs. extrinsic&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -905,27 +1065,25 @@ was only a little.&lt;a href=&quot;https://xn--izc.com/posts/intrinsic-motivatio
 &lt;li id=&quot;fn2&quot;&gt;&lt;p&gt;As of this writing (February of 2025), not any more.&lt;a href=&quot;https://xn--izc.com/posts/intrinsic-motivation-an-anecdote/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Buffer Bloat</title>
-    <link href="https://xn--izc.com/posts/buffer-bloat/" />
-    <updated>2025-01-03T00:00:00Z</updated>
-    <id>https://xn--izc.com/posts/buffer-bloat/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;h2 id=&quot;from-here-to-there-on-the-internet&quot;&gt;From Here To There On The
+
+      </content>
+    </entry>
+    <entry>
+      <title>Buffer Bloat</title>
+      <link href="https://xn--izc.com/posts/buffer-bloat/" />
+      <updated>2025-01-03T00:00:00Z</updated>
+      <id>https://xn--izc.com/posts/buffer-bloat/</id>
+      <content xml:lang="en" type="html">
+        &lt;h2 id=&quot;from-here-to-there-on-the-internet&quot;&gt;From Here To There On The
 Internet&lt;/h2&gt;
-&lt;div class=&quot;with-aside&quot;&gt;
-&lt;div class=&quot;aside&quot;&gt;
+&lt;aside class=&quot;sidenote-1&quot;&gt;
 &lt;p&gt;This article is an attempt to explain the concept of buffer bloat to
 someone not super familiar with networking. Why would someone not super
 familiar with networking need to know about buffer bloat? It was
 supposed to point out the effects of trying to &lt;em&gt;hide&lt;/em&gt; or
 &lt;em&gt;delay&lt;/em&gt; negative feedback loops.&lt;/p&gt;
-&lt;/div&gt;
+&lt;/aside&gt;
+&lt;div class=&quot;sidenote-host-1&quot;&gt;
 &lt;p&gt;Devices on the internet including your phone, laptop, gaming console,
 refridgerator, etc. communicate by exchanging data &lt;em&gt;“packets”&lt;/em&gt;.
 They are of course not physical packets. It’s just a useful way to
@@ -1145,18 +1303,16 @@ throughput.&lt;/p&gt;
 doesn’t change the thesis presented next.&lt;a href=&quot;https://xn--izc.com/posts/buffer-bloat/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Fourteen Years</title>
-    <link href="https://xn--izc.com/posts/fourteen-years/" />
-    <updated>2024-12-31T00:00:00Z</updated>
-    <id>https://xn--izc.com/posts/fourteen-years/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;It’s been fourteen years since I joined Google. Much has happened
+
+      </content>
+    </entry>
+    <entry>
+      <title>Fourteen Years</title>
+      <link href="https://xn--izc.com/posts/fourteen-years/" />
+      <updated>2024-12-31T00:00:00Z</updated>
+      <id>https://xn--izc.com/posts/fourteen-years/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;It’s been fourteen years since I joined Google. Much has happened
 since then, and people think the old Google is dead. This is somewhat
 correct.&lt;/p&gt;
 &lt;p&gt;One way to understand what is happening is to compare and contrast
@@ -1220,18 +1376,16 @@ who are tasked with maintaining internal tooling and not much else.&lt;/p&gt;
 &lt;p&gt;Google is no longer the giant benefactor of technology for everyone.
 However it’s still better than the other big tech companies. I keep
 telling myself that.&lt;/p&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>I Moved This Blog To Eleventy</title>
-    <link href="https://xn--izc.com/posts/moved-to-eleventy/" />
-    <updated>2024-12-13T00:00:00Z</updated>
-    <id>https://xn--izc.com/posts/moved-to-eleventy/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;Astute observers of this blog may have noticed that the blog looks
+
+      </content>
+    </entry>
+    <entry>
+      <title>I Moved This Blog To Eleventy</title>
+      <link href="https://xn--izc.com/posts/moved-to-eleventy/" />
+      <updated>2024-12-13T00:00:00Z</updated>
+      <id>https://xn--izc.com/posts/moved-to-eleventy/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;Astute observers of this blog may have noticed that the blog looks
 suspiciously different lately. That’s because I changed the static site
 generator I was using.&lt;/p&gt;
 &lt;p&gt;Previously the &lt;a href=&quot;https://xn--izc.com/posts/how-this-blog-works/&quot;&gt;static site
@@ -1381,18 +1535,16 @@ injection via &lt;code&gt;{{ foo | safe }}&lt;/code&gt;. Liquid will insert the
 contents with no escaping.&lt;a href=&quot;https://xn--izc.com/posts/moved-to-eleventy/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Proof of Work</title>
-    <link href="https://xn--izc.com/posts/proof-of-work/" />
-    <updated>2024-07-12T14:56:15Z</updated>
-    <id>https://xn--izc.com/posts/proof-of-work/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;div class=&quot;preface&quot;&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>Proof of Work</title>
+      <link href="https://xn--izc.com/posts/proof-of-work/" />
+      <updated>2024-07-12T14:56:15Z</updated>
+      <id>https://xn--izc.com/posts/proof-of-work/</id>
+      <content xml:lang="en" type="html">
+        &lt;div class=&quot;preface&quot;&gt;
 &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Proof_of_work&quot;&gt;Proof-of-work&lt;/a&gt;
 refers to a set of methods by which some entity (a person or a
 computational system) offers proof that the entity performed a
@@ -1442,18 +1594,16 @@ top, and you have our modern large tech company.&lt;/p&gt;
 within a matter of hours with a better tech stack. You haven’t produced
 work; you’ve only produced proof of work. The outcome isn’t commensurate
 with the effort.&lt;/p&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>How to Solve a Problem in Three Steps</title>
-    <link href="https://xn--izc.com/posts/how-to-solve-a-problem-in-three-steps/" />
-    <updated>2024-07-08T01:09:29Z</updated>
-    <id>https://xn--izc.com/posts/how-to-solve-a-problem-in-three-steps/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;One fun thing with having kids is that you get to repeat all the old
+
+      </content>
+    </entry>
+    <entry>
+      <title>How to Solve a Problem in Three Steps</title>
+      <link href="https://xn--izc.com/posts/how-to-solve-a-problem-in-three-steps/" />
+      <updated>2024-07-08T01:09:29Z</updated>
+      <id>https://xn--izc.com/posts/how-to-solve-a-problem-in-three-steps/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;One fun thing with having kids is that you get to repeat all the old
 stupid jokes to a brand new audience.&lt;/p&gt;
 &lt;p&gt;Here’s one:&lt;/p&gt;
 &lt;figure&gt;
@@ -1559,18 +1709,16 @@ the fat for what it is.&lt;/p&gt;
 have the &lt;em&gt;authority&lt;/em&gt; attribute. It is a thing.&lt;a href=&quot;https://xn--izc.com/posts/how-to-solve-a-problem-in-three-steps/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Asian Is Not a Useful Category</title>
-    <link href="https://xn--izc.com/posts/asians-is-not-a-useful-category/" />
-    <updated>2024-07-04T16:34:41Z</updated>
-    <id>https://xn--izc.com/posts/asians-is-not-a-useful-category/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;div class=&quot;preface&quot;&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>Asian Is Not a Useful Category</title>
+      <link href="https://xn--izc.com/posts/asians-is-not-a-useful-category/" />
+      <updated>2024-07-04T16:34:41Z</updated>
+      <id>https://xn--izc.com/posts/asians-is-not-a-useful-category/</id>
+      <content xml:lang="en" type="html">
+        &lt;div class=&quot;preface&quot;&gt;
 &lt;p&gt;Asking if someone is &lt;em&gt;“Asian”&lt;/em&gt; in a question of ethnicity or
 demographics or pretty much any context is bad. There is no reasonable
 conclusion you can arrive at about a person based on the fact that they
@@ -1647,18 +1795,16 @@ area codes for statistical use (M49)&lt;/a&gt; for a list of geographic
 regions and various groupings of countries.&lt;a href=&quot;https://xn--izc.com/posts/asians-is-not-a-useful-category/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>The Have-Loop</title>
-    <link href="https://xn--izc.com/posts/have-loop/" />
-    <updated>2024-06-24T01:45:28Z</updated>
-    <id>https://xn--izc.com/posts/have-loop/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;figure&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>The Have-Loop</title>
+      <link href="https://xn--izc.com/posts/have-loop/" />
+      <updated>2024-06-24T01:45:28Z</updated>
+      <id>https://xn--izc.com/posts/have-loop/</id>
+      <content xml:lang="en" type="html">
+        &lt;figure&gt;
 &lt;img src=&quot;https://xn--izc.com/posts/have-loop/have.png&quot; alt=&quot;The have loop is a positive feedback self-loop showing the effects of possessing something of limited supply.&quot; /&gt;
 &lt;figcaption aria-hidden=&quot;true&quot;&gt;The have loop is a positive feedback
 self-loop showing the effects of possessing something of limited
@@ -1698,18 +1844,16 @@ entire demographies. Measures of income equality will eventually fall
 against another’s ability to enact hyper-extraction.&lt;a href=&quot;https://xn--izc.com/posts/have-loop/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>When Your Feature Gets Someone Hurt</title>
-    <link href="https://xn--izc.com/posts/when-your-feature-gets-someone-hurt/" />
-    <updated>2024-05-22T00:00:00Z</updated>
-    <id>https://xn--izc.com/posts/when-your-feature-gets-someone-hurt/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;figure&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>When Your Feature Gets Someone Hurt</title>
+      <link href="https://xn--izc.com/posts/when-your-feature-gets-someone-hurt/" />
+      <updated>2024-05-22T00:00:00Z</updated>
+      <id>https://xn--izc.com/posts/when-your-feature-gets-someone-hurt/</id>
+      <content xml:lang="en" type="html">
+        &lt;figure&gt;
 &lt;img src=&quot;https://xn--izc.com/posts/when-your-feature-gets-someone-hurt/album-of-ruins.jpeg&quot; class=&quot;noinvert&quot; alt=&quot;An old photo album containing pictures of ruins. (Generated with Gemini)&quot; /&gt;
 &lt;figcaption aria-hidden=&quot;true&quot;&gt;An old photo album containing pictures of
 ruins. (Generated with Gemini)&lt;/figcaption&gt;
@@ -1746,18 +1890,16 @@ turn of events.&lt;/p&gt;
 that you never intended. I bet the people who designed coins have no
 idea the extents to which those coins were flipped for. And so it
 goes.&lt;/p&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Secret Life of Systems</title>
-    <link href="https://xn--izc.com/posts/secret-life-of-systems/" />
-    <updated>2024-03-23T21:59:29Z</updated>
-    <id>https://xn--izc.com/posts/secret-life-of-systems/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;Software systems aim to solve real world problems. They implement
+
+      </content>
+    </entry>
+    <entry>
+      <title>Secret Life of Systems</title>
+      <link href="https://xn--izc.com/posts/secret-life-of-systems/" />
+      <updated>2024-03-23T21:59:29Z</updated>
+      <id>https://xn--izc.com/posts/secret-life-of-systems/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;Software systems aim to solve real world problems. They implement
 some behavior that the authors of the system believe would address the
 problem.&lt;/p&gt;
 &lt;p&gt;For non-trivial systems the coupling is imperfect between the real
@@ -1865,18 +2007,16 @@ discussing here.&lt;a href=&quot;https://xn--izc.com/posts/secret-life-of-system
 &lt;li id=&quot;fn3&quot;&gt;&lt;p&gt;… which is why it is called a “model”.&lt;a href=&quot;https://xn--izc.com/posts/secret-life-of-systems/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Why I Hate Carousels</title>
-    <link href="https://xn--izc.com/posts/why-i-hate-carousels/" />
-    <updated>2024-01-25T17:54:46Z</updated>
-    <id>https://xn--izc.com/posts/why-i-hate-carousels/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;A carousel interaction pattern looks like this:&lt;/p&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>Why I Hate Carousels</title>
+      <link href="https://xn--izc.com/posts/why-i-hate-carousels/" />
+      <updated>2024-01-25T17:54:46Z</updated>
+      <id>https://xn--izc.com/posts/why-i-hate-carousels/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;A carousel interaction pattern looks like this:&lt;/p&gt;
 &lt;figure&gt;
 &lt;img src=&quot;https://xn--izc.com/posts/why-i-hate-carousels/dell.png&quot; class=&quot;noinvert&quot; alt=&quot;A screenshot of dell.com from Nielsen Norman Group’s article on effective design of carousels.&quot; /&gt;
 &lt;figcaption aria-hidden=&quot;true&quot;&gt;A screenshot of dell.com from &lt;a href=&quot;https://www.nngroup.com/articles/designing-effective-carousels/&quot;&gt;Nielsen
@@ -2012,18 +2152,16 @@ then you definitely have too many items that can be accessed via a
 horizontally panning UI. You need a different UI
 altogether.&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Inclusion/Equity and Evaluating Negatives</title>
-    <link href="https://xn--izc.com/posts/evluating-negatives/" />
-    <updated>2024-01-10T02:58:34Z</updated>
-    <id>https://xn--izc.com/posts/evluating-negatives/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;Privacy, security, inclusion, equity, accessibility, … all of these
+
+      </content>
+    </entry>
+    <entry>
+      <title>Inclusion/Equity and Evaluating Negatives</title>
+      <link href="https://xn--izc.com/posts/evluating-negatives/" />
+      <updated>2024-01-10T02:58:34Z</updated>
+      <id>https://xn--izc.com/posts/evluating-negatives/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;Privacy, security, inclusion, equity, accessibility, … all of these
 have an interesting property in common. When evaluation products against
 such questions you are usually trying to establish a negative.&lt;/p&gt;
 &lt;h3 id=&quot;to-prove-a-negative&quot;&gt;To Prove A Negative&lt;/h3&gt;
@@ -2143,18 +2281,16 @@ platforms due to the cost. Thus less than perfect interim measures are
 not that silly.&lt;a href=&quot;https://xn--izc.com/posts/evluating-negatives/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Happy New Year 2024 and Year in Review 2023</title>
-    <link href="https://xn--izc.com/posts/happy-new-year-2024-and-year-in-review-2023/" />
-    <updated>2024-01-01T19:12:21Z</updated>
-    <id>https://xn--izc.com/posts/happy-new-year-2024-and-year-in-review-2023/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;h2 id=&quot;happy-new-year-everyone&quot;&gt;Happy New Year Everyone!&lt;/h2&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>Happy New Year 2024 and Year in Review 2023</title>
+      <link href="https://xn--izc.com/posts/happy-new-year-2024-and-year-in-review-2023/" />
+      <updated>2024-01-01T19:12:21Z</updated>
+      <id>https://xn--izc.com/posts/happy-new-year-2024-and-year-in-review-2023/</id>
+      <content xml:lang="en" type="html">
+        &lt;h2 id=&quot;happy-new-year-everyone&quot;&gt;Happy New Year Everyone!&lt;/h2&gt;
 &lt;p&gt;I hope everyone has a great year in 2024!&lt;/p&gt;
 &lt;h2 id=&quot;what-we-are-leaving-behind&quot;&gt;What We Are Leaving Behind&lt;/h2&gt;
 &lt;p&gt;I’m acknowledging but not going into details of the cruelty we are
@@ -2233,18 +2369,16 @@ states and Puerto Rico adopted resolutions or enacted
 legislation.”&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/happy-new-year-2024-and-year-in-review-2023/#fnref7&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Thirteen Years</title>
-    <link href="https://xn--izc.com/posts/thirteen-years/" />
-    <updated>2023-12-07T21:30:52Z</updated>
-    <id>https://xn--izc.com/posts/thirteen-years/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;And just like that, another year sped by. It’s now been thirteen
+
+      </content>
+    </entry>
+    <entry>
+      <title>Thirteen Years</title>
+      <link href="https://xn--izc.com/posts/thirteen-years/" />
+      <updated>2023-12-07T21:30:52Z</updated>
+      <id>https://xn--izc.com/posts/thirteen-years/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;And just like that, another year sped by. It’s now been thirteen
 years since I joined Google.&lt;/p&gt;
 &lt;p&gt;Of the people who started at Google that day just a hair over 50% are
 still at Google. Glancing through the list&lt;a href=&quot;https://xn--izc.com/posts/thirteen-years/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; I
@@ -2302,18 +2436,16 @@ something really really wrong. Noone wants to be in this position
 though.&lt;a href=&quot;https://xn--izc.com/posts/thirteen-years/#fnref4&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Pillars And Governance Structures</title>
-    <link href="https://xn--izc.com/posts/pillars-are-governance-structures/" />
-    <updated>2023-09-09T00:18:23Z</updated>
-    <id>https://xn--izc.com/posts/pillars-are-governance-structures/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;Note: Originally published on 2023 September 8. Revised 2023 November
+
+      </content>
+    </entry>
+    <entry>
+      <title>Pillars And Governance Structures</title>
+      <link href="https://xn--izc.com/posts/pillars-are-governance-structures/" />
+      <updated>2023-09-09T00:18:23Z</updated>
+      <id>https://xn--izc.com/posts/pillars-are-governance-structures/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;Note: Originally published on 2023 September 8. Revised 2023 November
 12 with hopefully less rambling.&lt;/p&gt;
 &lt;p&gt;Re-orgs.&lt;/p&gt;
 &lt;p&gt;It’s a fact of life for large organizations. A popular metaphor
@@ -2459,18 +2591,16 @@ network of interdependencies. Sure, it’s leaving people in poverty and
 is killing the planet; but it still kind of works.&lt;a href=&quot;https://xn--izc.com/posts/pillars-are-governance-structures/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>A Good API: g9</title>
-    <link href="https://xn--izc.com/posts/a-good-api/" />
-    <updated>2023-08-12T23:29:31Z</updated>
-    <id>https://xn--izc.com/posts/a-good-api/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;Once in a while an API comes around that makes me stop and and look
+
+      </content>
+    </entry>
+    <entry>
+      <title>A Good API: g9</title>
+      <link href="https://xn--izc.com/posts/a-good-api/" />
+      <updated>2023-08-12T23:29:31Z</updated>
+      <id>https://xn--izc.com/posts/a-good-api/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;Once in a while an API comes around that makes me stop and and look
 at what I’m doing.&lt;/p&gt;
 &lt;p&gt;Like many aspects of design, when it comes to APIs, what is not there
 matters as much as what is. Engineers like to fiddle around with things.
@@ -2511,18 +2641,16 @@ don’t need them. Otherwise every addtional knob will waste more of your
 users’ time and energy for nothing.&lt;/p&gt;
 &lt;p&gt;The power of an API comes from letting users to express more with
 less.&lt;/p&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>The Point of a Strategy</title>
-    <link href="https://xn--izc.com/posts/the-point-of-a-strategy/" />
-    <updated>2023-07-24T15:00:12Z</updated>
-    <id>https://xn--izc.com/posts/the-point-of-a-strategy/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: How do you win a soccer match?&lt;/p&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>The Point of a Strategy</title>
+      <link href="https://xn--izc.com/posts/the-point-of-a-strategy/" />
+      <updated>2023-07-24T15:00:12Z</updated>
+      <id>https://xn--izc.com/posts/the-point-of-a-strategy/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: How do you win a soccer match?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;A&lt;/strong&gt;: Score more goals than the other team.&lt;/p&gt;
 &lt;p&gt;This is a dumb strategy, right? But why?&lt;/p&gt;
 &lt;p&gt;Compared to a more &lt;em&gt;reasonable&lt;/em&gt; strategy like start preparing
@@ -2571,18 +2699,16 @@ lower risk than one that hasn’t seen any updates in a year.&lt;/p&gt;&lt;/li&g
 &lt;p&gt;A common mistake is to write down a list of steps that, if followed,
 achieve a stated goal. A good first step. But the unless the strategy
 can &lt;strong&gt;reduce&lt;/strong&gt; risk, it is not a useful.&lt;/p&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Just Enough Technical Debt</title>
-    <link href="https://xn--izc.com/posts/just-the-right-amount/" />
-    <updated>2023-07-08T00:00:00Z</updated>
-    <id>https://xn--izc.com/posts/just-the-right-amount/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;Zero technical debt sounds like a great target to aim for. In my
+
+      </content>
+    </entry>
+    <entry>
+      <title>Just Enough Technical Debt</title>
+      <link href="https://xn--izc.com/posts/just-the-right-amount/" />
+      <updated>2023-07-08T00:00:00Z</updated>
+      <id>https://xn--izc.com/posts/just-the-right-amount/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;Zero technical debt sounds like a great target to aim for. In my
 earlier developer days I strongly believed that all projects should go
 for this target. At a company all-hands I heard from a senior engineer
 that having zero technical debt is often not what we want. I felt
@@ -2634,18 +2760,16 @@ much effort into a project features you don’t need and polishing up code
 that nobody will reuse is wasteful. It’s just a little bit harder to
 know when you’ve crossed the point of diminishing returns where cleaning
 up the code no longer makes sense.&lt;/p&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Code As UI: The UX of config-as-code and everything-as-code</title>
-    <link href="https://xn--izc.com/posts/code-as-ui/" />
-    <updated>2023-07-01T00:00:00Z</updated>
-    <id>https://xn--izc.com/posts/code-as-ui/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;h2 id=&quot;welcome-to-the-ui-review&quot;&gt;Welcome to the UI review&lt;/h2&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>Code As UI: The UX of config-as-code and everything-as-code</title>
+      <link href="https://xn--izc.com/posts/code-as-ui/" />
+      <updated>2023-07-01T00:00:00Z</updated>
+      <id>https://xn--izc.com/posts/code-as-ui/</id>
+      <content xml:lang="en" type="html">
+        &lt;h2 id=&quot;welcome-to-the-ui-review&quot;&gt;Welcome to the UI review&lt;/h2&gt;
 &lt;p&gt;Your UX person comes up to you with the new mocks for the
 configuration UI. It looks like this:&lt;/p&gt;
 &lt;figure&gt;
@@ -2797,18 +2921,16 @@ we once used can still generate those text files.&lt;/p&gt;
 depending on who you are ask.&lt;a href=&quot;https://xn--izc.com/posts/code-as-ui/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Promise Fatigue</title>
-    <link href="https://xn--izc.com/posts/promise-fatigue/" />
-    <updated>2022-11-01T04:03:16Z</updated>
-    <id>https://xn--izc.com/posts/promise-fatigue/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;ul&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>Promise Fatigue</title>
+      <link href="https://xn--izc.com/posts/promise-fatigue/" />
+      <updated>2022-11-01T04:03:16Z</updated>
+      <id>https://xn--izc.com/posts/promise-fatigue/</id>
+      <content xml:lang="en" type="html">
+        &lt;ul&gt;
 &lt;li&gt;I’ll get it to you by the end of the day.&lt;/li&gt;
 &lt;li&gt;I’m working on it right now.&lt;/li&gt;
 &lt;li&gt;I’ll get it done today.&lt;/li&gt;
@@ -2824,18 +2946,16 @@ reliable.&lt;/p&gt;
 &lt;p&gt;Before making a commitment, always think about &lt;strong&gt;promise
 fatigue&lt;/strong&gt;. Setting low but realistic expectations is better than
 setting high but unrealistic ones.&lt;/p&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>The Loss of a Virtuous Culture</title>
-    <link href="https://xn--izc.com/posts/the-loss-of-a-virtuous-culture/" />
-    <updated>2022-10-28T21:13:19Z</updated>
-    <id>https://xn--izc.com/posts/the-loss-of-a-virtuous-culture/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;Long ago, around 2011, we had an espresso machine in the Google micro
+
+      </content>
+    </entry>
+    <entry>
+      <title>The Loss of a Virtuous Culture</title>
+      <link href="https://xn--izc.com/posts/the-loss-of-a-virtuous-culture/" />
+      <updated>2022-10-28T21:13:19Z</updated>
+      <id>https://xn--izc.com/posts/the-loss-of-a-virtuous-culture/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;Long ago, around 2011, we had an espresso machine in the Google micro
 kitchen – or MK as we called it – near my desk. There were no baristas
 at the time, so people made their own. Some folks thought we could use
 more sophisticated coffee beans than they had in the MK. A designated
@@ -2888,18 +3008,16 @@ this happening repeatedly.&lt;/p&gt;
 &lt;p&gt;The importance of “serendipitous collaboration” isn’t lost on
 executives. It is the reason behind many pushes for bringing tech
 workers back to the office.&lt;/p&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>The Lettergrade Rule</title>
-    <link href="https://xn--izc.com/posts/the-lettergrade-rule/" />
-    <updated>2022-09-16T00:27:57Z</updated>
-    <id>https://xn--izc.com/posts/the-lettergrade-rule/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;How do you know when a code review is “done”?&lt;/p&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>The Lettergrade Rule</title>
+      <link href="https://xn--izc.com/posts/the-lettergrade-rule/" />
+      <updated>2022-09-16T00:27:57Z</updated>
+      <id>https://xn--izc.com/posts/the-lettergrade-rule/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;How do you know when a code review is “done”?&lt;/p&gt;
 &lt;p&gt;Let’s say you are the reviewer and see many small changes you’d like
 the author to make. At some point, you’ll agree that the introduced
 behavior changes are correct or at least harmless. The remaining
@@ -2935,18 +3053,16 @@ don’t decrease the readability of the code. You should be able to trust
 the author to make those fixes and submit the change without you having
 to do another pass.&lt;/li&gt;
 &lt;/ul&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>All natural numbers are interesting</title>
-    <link href="https://xn--izc.com/posts/interesting-numbers/" />
-    <updated>2022-08-03T15:50:46Z</updated>
-    <id>https://xn--izc.com/posts/interesting-numbers/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;&lt;strong&gt;Theorem&lt;/strong&gt;: All natural numbers are interesting.&lt;a href=&quot;https://xn--izc.com/posts/interesting-numbers/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>All natural numbers are interesting</title>
+      <link href="https://xn--izc.com/posts/interesting-numbers/" />
+      <updated>2022-08-03T15:50:46Z</updated>
+      <id>https://xn--izc.com/posts/interesting-numbers/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;&lt;strong&gt;Theorem&lt;/strong&gt;: All natural numbers are interesting.&lt;a href=&quot;https://xn--izc.com/posts/interesting-numbers/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Proof by contradiction.&lt;/p&gt;
 &lt;p&gt;Assume the theorem is false. Then there must be at least one number
 &lt;span class=&quot;math inline&quot;&gt;&#92;in &#92;N&lt;/span&gt; that is boring.&lt;/p&gt;
@@ -2973,18 +3089,16 @@ necessarily have a minimum.&lt;/p&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;Not actually a theorem.&lt;a href=&quot;https://xn--izc.com/posts/interesting-numbers/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Use Git hooks to automatically push after every commit</title>
-    <link href="https://xn--izc.com/posts/git-autopush/" />
-    <updated>2022-07-05T20:15:23Z</updated>
-    <id>https://xn--izc.com/posts/git-autopush/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;A Git hook is a shell script that is invoked at specific points
+
+      </content>
+    </entry>
+    <entry>
+      <title>Use Git hooks to automatically push after every commit</title>
+      <link href="https://xn--izc.com/posts/git-autopush/" />
+      <updated>2022-07-05T20:15:23Z</updated>
+      <id>https://xn--izc.com/posts/git-autopush/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;A Git hook is a shell script that is invoked at specific points
 during some Git operations. They are documented in &lt;a href=&quot;https://www.git-scm.com/docs/githooks#_post_commit&quot;&gt;the Git
 book&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The hook we are interested in is &lt;code&gt;post-commit&lt;/code&gt; (&lt;a href=&quot;https://www.git-scm.com/docs/githooks#_post_commit&quot;&gt;documented
@@ -3005,18 +3119,16 @@ that’s currently checked out.&lt;/li&gt;
 &lt;p&gt;IMPORTANT: Afterwards make the script runnable via
 &lt;code&gt;chmod +x .git/hooks/post-commit&lt;/code&gt;.&lt;/p&gt;
 &lt;script src=&quot;https://gist.github.com/asankah/a6263bbd6081bffd031ca066e5177df2.js&quot;&gt;&lt;/script&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>DARPA&#39;s Heilmeier Catechism</title>
-    <link href="https://xn--izc.com/posts/darpa-heilmeier-catechism/" />
-    <updated>2022-06-28T14:11:17Z</updated>
-    <id>https://xn--izc.com/posts/darpa-heilmeier-catechism/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;It seems the hardest part of engineering is the part where you are
+
+      </content>
+    </entry>
+    <entry>
+      <title>DARPA&#39;s Heilmeier Catechism</title>
+      <link href="https://xn--izc.com/posts/darpa-heilmeier-catechism/" />
+      <updated>2022-06-28T14:11:17Z</updated>
+      <id>https://xn--izc.com/posts/darpa-heilmeier-catechism/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;It seems the hardest part of engineering is the part where you are
 staring at a blank page with a vague notion of a problem statement in
 your head.&lt;/p&gt;
 &lt;p&gt;First you seek structure. After all your attention span can only hold
@@ -3055,18 +3167,16 @@ successful?&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;(Source &lt;a href=&quot;https://www.darpa.mil/work-with-us/heilmeier-catechism&quot;&gt;The
 Heilmeier Catechism - DARPA&lt;/a&gt;).&lt;/p&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Markdown should be readble without knowing Markdown</title>
-    <link href="https://xn--izc.com/posts/mark-goes-up-and-down/" />
-    <updated>2022-04-05T17:02:12Z</updated>
-    <id>https://xn--izc.com/posts/mark-goes-up-and-down/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;&lt;a href=&quot;https://daringfireball.net/projects/markdown/syntax&quot;&gt;Markdown&lt;/a&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>Markdown should be readble without knowing Markdown</title>
+      <link href="https://xn--izc.com/posts/mark-goes-up-and-down/" />
+      <updated>2022-04-05T17:02:12Z</updated>
+      <id>https://xn--izc.com/posts/mark-goes-up-and-down/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;&lt;a href=&quot;https://daringfireball.net/projects/markdown/syntax&quot;&gt;Markdown&lt;/a&gt;
 started out as a way to write text files that could also be machine
 parsed and rendered into a higher fidelity format.&lt;/p&gt;
 &lt;p&gt;To quote from the Philosophy:&lt;/p&gt;
@@ -3200,18 +3310,16 @@ Maybe if they could’ve gone with something like:&lt;/p&gt;
 could probably use either &lt;code&gt;details&lt;/code&gt; or &lt;code&gt;Details&lt;/code&gt;.
 Either way, you don’t need to understand the markup to see where this is
 going.&lt;/p&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>On Gender Gap in Adolescent Mental Health</title>
-    <link href="https://xn--izc.com/posts/gender-gap-in-adolescent-mental-health/" />
-    <updated>2022-03-01T19:51:34Z</updated>
-    <id>https://xn--izc.com/posts/gender-gap-in-adolescent-mental-health/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;Today is the first day of &lt;a href=&quot;https://www.nationalgeographic.com/history/article/why-the-us-celebrates-womens-history-month-every-march&quot;&gt;Women’s
+
+      </content>
+    </entry>
+    <entry>
+      <title>On Gender Gap in Adolescent Mental Health</title>
+      <link href="https://xn--izc.com/posts/gender-gap-in-adolescent-mental-health/" />
+      <updated>2022-03-01T19:51:34Z</updated>
+      <id>https://xn--izc.com/posts/gender-gap-in-adolescent-mental-health/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;Today is the first day of &lt;a href=&quot;https://www.nationalgeographic.com/history/article/why-the-us-celebrates-womens-history-month-every-march&quot;&gt;Women’s
 History Month&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Coincidentally there’s a paper making the rounds titled &lt;em&gt;“The
 gender gap in adolescent mental health: A cross-national investigation
@@ -3342,18 +3450,16 @@ factors like &lt;em&gt;female and male shares of parliamentary seats&lt;/em&gt;,
 mortality ratio&lt;/em&gt;, and &lt;em&gt;adolescent birth rate&lt;/em&gt;.&lt;a href=&quot;https://xn--izc.com/posts/gender-gap-in-adolescent-mental-health/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>On Highlighting Syntax vs. Semantics</title>
-    <link href="https://xn--izc.com/posts/syntax-highlighting/" />
-    <updated>2022-02-12T00:00:00Z</updated>
-    <id>https://xn--izc.com/posts/syntax-highlighting/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;&lt;span class=&quot;noun&quot;&gt;Aesthetics&lt;/span&gt; &lt;span class=&quot;adverb&quot;&gt;aside&lt;/span&gt;, &lt;span class=&quot;noun&quot;&gt;syntax&lt;/span&gt; &lt;span class=&quot;gerund&quot;&gt;highlighting&lt;/span&gt; &lt;span class=&quot;preposition&quot;&gt;in&lt;/span&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>On Highlighting Syntax vs. Semantics</title>
+      <link href="https://xn--izc.com/posts/syntax-highlighting/" />
+      <updated>2022-02-12T00:00:00Z</updated>
+      <id>https://xn--izc.com/posts/syntax-highlighting/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;&lt;span class=&quot;noun&quot;&gt;Aesthetics&lt;/span&gt; &lt;span class=&quot;adverb&quot;&gt;aside&lt;/span&gt;, &lt;span class=&quot;noun&quot;&gt;syntax&lt;/span&gt; &lt;span class=&quot;gerund&quot;&gt;highlighting&lt;/span&gt; &lt;span class=&quot;preposition&quot;&gt;in&lt;/span&gt;
 &lt;span class=&quot;noun&quot;&gt;code&lt;/span&gt; &lt;span class=&quot;verb&quot;&gt;performs&lt;/span&gt; &lt;span class=&quot;determiner&quot;&gt;an&lt;/span&gt; &lt;span class=&quot;adjective&quot;&gt;important&lt;/span&gt;
 &lt;span class=&quot;noun&quot;&gt;role&lt;/span&gt; &lt;span class=&quot;preposition&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;gerund&quot;&gt;improving&lt;/span&gt; the &lt;span class=&quot;noun&quot;&gt;readability&lt;/span&gt; &lt;span class=&quot;preposition&quot;&gt;of&lt;/span&gt;
 &lt;span class=&quot;noun&quot;&gt;code&lt;/span&gt;. &lt;span class=&quot;adjective&quot;&gt;Most&lt;/span&gt;
@@ -3418,68 +3524,60 @@ encyclopedia.”&lt;/span&gt; &lt;a href=&quot;http://en.wikipedia.org/w/index.p
 2021. &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Inktober - Stripes</title>
-    <link href="https://xn--izc.com/posts/inktober-stripes/" />
-    <updated>2022-01-21T22:20:38Z</updated>
-    <id>https://xn--izc.com/posts/inktober-stripes/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;figure&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>Inktober - Stripes</title>
+      <link href="https://xn--izc.com/posts/inktober-stripes/" />
+      <updated>2022-01-21T22:20:38Z</updated>
+      <id>https://xn--izc.com/posts/inktober-stripes/</id>
+      <content xml:lang="en" type="html">
+        &lt;figure&gt;
 &lt;img src=&quot;https://xn--izc.com/posts/inktober-stripes/inktober-stripes.png&quot; alt=&quot;“Stripes” - A bee wearing an incorrectly striped sweater&quot; /&gt;
 &lt;figcaption aria-hidden=&quot;true&quot;&gt;“Stripes” - A bee wearing an incorrectly
 striped sweater&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;p&gt;For &lt;a href=&quot;https://inktober.com/inktober52&quot;&gt;Inktober 52&lt;/a&gt;.&lt;/p&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Inktober - Wild</title>
-    <link href="https://xn--izc.com/posts/inktober-wild/" />
-    <updated>2022-01-13T20:35:39Z</updated>
-    <id>https://xn--izc.com/posts/inktober-wild/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;figure&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>Inktober - Wild</title>
+      <link href="https://xn--izc.com/posts/inktober-wild/" />
+      <updated>2022-01-13T20:35:39Z</updated>
+      <id>https://xn--izc.com/posts/inktober-wild/</id>
+      <content xml:lang="en" type="html">
+        &lt;figure&gt;
 &lt;img src=&quot;https://xn--izc.com/posts/inktober-wild/inktober-wild.png&quot; alt=&quot;“Wild” - Caught in the wild&quot; /&gt;
 &lt;figcaption aria-hidden=&quot;true&quot;&gt;“Wild” - Caught in the wild&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;p&gt;For &lt;a href=&quot;https://inktober.com/inktober52&quot;&gt;Inktober 52&lt;/a&gt;.&lt;/p&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Inktober - Decay</title>
-    <link href="https://xn--izc.com/posts/inktober-decay/" />
-    <updated>2022-01-13T20:21:37Z</updated>
-    <id>https://xn--izc.com/posts/inktober-decay/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;figure&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>Inktober - Decay</title>
+      <link href="https://xn--izc.com/posts/inktober-decay/" />
+      <updated>2022-01-13T20:21:37Z</updated>
+      <id>https://xn--izc.com/posts/inktober-decay/</id>
+      <content xml:lang="en" type="html">
+        &lt;figure&gt;
 &lt;img src=&quot;https://xn--izc.com/posts/inktober-decay/inktober-decay.png&quot; alt=&quot;“Decay” - I was kind of going for tooth-decay caused by tiny little gremlins.&quot; /&gt;
 &lt;figcaption aria-hidden=&quot;true&quot;&gt;“Decay” - I was kind of going for
 tooth-decay caused by tiny little gremlins.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;p&gt;For &lt;a href=&quot;https://inktober.com/inktober52&quot;&gt;Inktober 52&lt;/a&gt;.&lt;/p&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Quickly grab a snapshot of your reMarkable tablet</title>
-    <link href="https://xn--izc.com/posts/grab-diagram-workflow-re2/" />
-    <updated>2022-01-06T00:00:00Z</updated>
-    <id>https://xn--izc.com/posts/grab-diagram-workflow-re2/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;One everyday workflow that I wanted to optimize was quickly sketching
+
+      </content>
+    </entry>
+    <entry>
+      <title>Quickly grab a snapshot of your reMarkable tablet</title>
+      <link href="https://xn--izc.com/posts/grab-diagram-workflow-re2/" />
+      <updated>2022-01-06T00:00:00Z</updated>
+      <id>https://xn--izc.com/posts/grab-diagram-workflow-re2/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;One everyday workflow that I wanted to optimize was quickly sketching
 out a diagram on the reMarkable tablet and including it in a document I
 was writing somewhere else.&lt;/p&gt;
 &lt;p&gt;My primary computer is a Mac. Here’s my solution:&lt;/p&gt;
@@ -3580,18 +3678,16 @@ edges look jagged.&lt;/li&gt;
 size just large enough to hold the actual image.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;All of this is done via an invocation of &lt;a href=&quot;https://imagemagick.org/index.php&quot;&gt;ImageMagick&lt;/a&gt;.&lt;/p&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Note-taking on a reMarkable 2</title>
-    <link href="https://xn--izc.com/posts/remarkable-first-impressions/" />
-    <updated>2021-12-30T21:10:30Z</updated>
-    <id>https://xn--izc.com/posts/remarkable-first-impressions/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;After much dillydallying about which note-taker/ebook reader I wanted
+
+      </content>
+    </entry>
+    <entry>
+      <title>Note-taking on a reMarkable 2</title>
+      <link href="https://xn--izc.com/posts/remarkable-first-impressions/" />
+      <updated>2021-12-30T21:10:30Z</updated>
+      <id>https://xn--izc.com/posts/remarkable-first-impressions/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;After much dillydallying about which note-taker/ebook reader I wanted
 to get, I went ahead and got a &lt;a href=&quot;https://remarkable.com/&quot;&gt;reMarkable 2&lt;/a&gt;. I’ve been using it for
 about a month now. I must say that it’s the closest thing to writing on
 paper that I have encountered.&lt;/p&gt;
@@ -3765,33 +3861,29 @@ Wayback Machine’s &lt;a href=&quot;https://web.archive.org/web/20210725184512/
 from when I wrote this article&lt;/a&gt;.&lt;a href=&quot;https://xn--izc.com/posts/remarkable-first-impressions/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Why &#39;Strong Opinions Weekly Held&#39;</title>
-    <link href="https://xn--izc.com/posts/why-strong-opinions-weekly-held/" />
-    <updated>2021-09-28T00:00:00Z</updated>
-    <id>https://xn--izc.com/posts/why-strong-opinions-weekly-held/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;Previously on this blog I wrote a short note on &lt;a href=&quot;https://xn--izc.com/posts/why-strong-opinions-weekly-held/posts/why-strong-opinions-weakly-held/&quot;&gt;Why Strong Opinions Weakly
+
+      </content>
+    </entry>
+    <entry>
+      <title>Why &#39;Strong Opinions Weekly Held&#39;</title>
+      <link href="https://xn--izc.com/posts/why-strong-opinions-weekly-held/" />
+      <updated>2021-09-28T00:00:00Z</updated>
+      <id>https://xn--izc.com/posts/why-strong-opinions-weekly-held/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;Previously on this blog I wrote a short note on &lt;a href=&quot;https://xn--izc.com/posts/why-strong-opinions-weekly-held/posts/why-strong-opinions-weakly-held/&quot;&gt;Why Strong Opinions Weakly
 Held&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I’m trying to get something out every week. Hence the new blog
 title.&lt;/p&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Visualizing A Million People</title>
-    <link href="https://xn--izc.com/posts/visualizing-people-2/" />
-    <updated>2021-09-06T00:00:00Z</updated>
-    <id>https://xn--izc.com/posts/visualizing-people-2/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;div class=&quot;preface&quot;&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>Visualizing A Million People</title>
+      <link href="https://xn--izc.com/posts/visualizing-people-2/" />
+      <updated>2021-09-06T00:00:00Z</updated>
+      <id>https://xn--izc.com/posts/visualizing-people-2/</id>
+      <content xml:lang="en" type="html">
+        &lt;div class=&quot;preface&quot;&gt;
 &lt;p&gt;This article was formerly published as &lt;a href=&quot;https://xn--izc.com/posts/visualizing-people/&quot;&gt;Visualizing Internet Users&lt;/a&gt;. This
 version is more generalized and up-to-date.&lt;/p&gt;
 &lt;/div&gt;
@@ -3972,18 +4064,16 @@ the population would have internet access in 2017. It’s likely that by
 Many People Are in Tahrir Square? Here’s How to Tell&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/visualizing-people-2/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Fart Limit</title>
-    <link href="https://xn--izc.com/posts/fart-limit/" />
-    <updated>2021-06-14T15:30:18Z</updated>
-    <id>https://xn--izc.com/posts/fart-limit/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;Thanks to &lt;a href=&quot;https://youtu.be/suwg7-y70FQ&quot;&gt;Vsauce&lt;/a&gt; for
+
+      </content>
+    </entry>
+    <entry>
+      <title>Fart Limit</title>
+      <link href="https://xn--izc.com/posts/fart-limit/" />
+      <updated>2021-06-14T15:30:18Z</updated>
+      <id>https://xn--izc.com/posts/fart-limit/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;Thanks to &lt;a href=&quot;https://youtu.be/suwg7-y70FQ&quot;&gt;Vsauce&lt;/a&gt; for
 bringing this particular issue to our attention. The TL;DR of that video
 is:&lt;/p&gt;
 &lt;ul&gt;
@@ -4026,18 +4116,16 @@ button supposed to do?&lt;/p&gt;
 &lt;li id=&quot;fn3&quot;&gt;&lt;p&gt;https://www.osha.gov/hydrogen-sulfide/hazards&lt;a href=&quot;https://xn--izc.com/posts/fart-limit/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Shannon Paper</title>
-    <link href="https://xn--izc.com/posts/shannon-paper/" />
-    <updated>2021-03-26T20:14:20Z</updated>
-    <id>https://xn--izc.com/posts/shannon-paper/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;Claude Shannon’s &lt;em&gt;A mathematical theory of communication&lt;/em&gt; is
+
+      </content>
+    </entry>
+    <entry>
+      <title>Shannon Paper</title>
+      <link href="https://xn--izc.com/posts/shannon-paper/" />
+      <updated>2021-03-26T20:14:20Z</updated>
+      <id>https://xn--izc.com/posts/shannon-paper/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;Claude Shannon’s &lt;em&gt;A mathematical theory of communication&lt;/em&gt; is
 an oft cited classic in information theory. In fact, as of this writing
 there are 84’411 citations and 139 versions of the article on Google
 Scholar.&lt;/p&gt;
@@ -4309,18 +4397,16 @@ expected occurrence count would have a probability of occurring of:&lt;/p&gt;
 &#92;log p &amp;amp; = &#92;sum_i N p_i &#92;log p_i &#92;&#92;
        &amp;amp; = N H
 &#92;end{align*}&lt;/span&gt;&lt;/p&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Sometimes It&#39;s the Interviewers Who Suck</title>
-    <link href="https://xn--izc.com/posts/sometimes-its-the-interviewers-who-suck/" />
-    <updated>2021-03-20T23:09:49Z</updated>
-    <id>https://xn--izc.com/posts/sometimes-its-the-interviewers-who-suck/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;I’ve done hundreds of interviews. I’ve also served in numerous hiring
+
+      </content>
+    </entry>
+    <entry>
+      <title>Sometimes It&#39;s the Interviewers Who Suck</title>
+      <link href="https://xn--izc.com/posts/sometimes-its-the-interviewers-who-suck/" />
+      <updated>2021-03-20T23:09:49Z</updated>
+      <id>https://xn--izc.com/posts/sometimes-its-the-interviewers-who-suck/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;I’ve done hundreds of interviews. I’ve also served in numerous hiring
 committees over the years.&lt;/p&gt;
 &lt;p&gt;Tech companies tend to have cultures built around tech people
 interviewing other tech people, typically in what is
@@ -4434,18 +4520,16 @@ another interview to account for the lack of decisive information.&lt;/p&gt;
 important that they report any unpleasant interactions to one’s
 recruiter immediately after the interview. This allows a recruiter to go
 to bat for you and perhaps get you another interview if appropriate.&lt;/p&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>On WontFixing Bugs</title>
-    <link href="https://xn--izc.com/posts/on-wontfixing-bugs/" />
-    <updated>2021-03-02T22:15:06Z</updated>
-    <id>https://xn--izc.com/posts/on-wontfixing-bugs/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;This was partly inspired by a Tweet by a co-worker. The tweet is:&lt;/p&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>On WontFixing Bugs</title>
+      <link href="https://xn--izc.com/posts/on-wontfixing-bugs/" />
+      <updated>2021-03-02T22:15:06Z</updated>
+      <id>https://xn--izc.com/posts/on-wontfixing-bugs/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;This was partly inspired by a Tweet by a co-worker. The tweet is:&lt;/p&gt;
 &lt;p&gt;https://twitter.com/miketaylr/status/1366762904851279877”&lt;/p&gt;
 &lt;p&gt;For projects that are under-resourced but has heavy usage it is in
 fact quite normal to accumulate a large number of issue reports over
@@ -4539,18 +4623,16 @@ than this. I’m generally against mass issue closing events like
 declaring “bug bankruptcy.” The bugs don’t care about the state of the
 issue report. All you’ve accomplished is to throw away the accumulated
 history and evidence of a defect.&lt;/p&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Deriving the Poisson Distribution</title>
-    <link href="https://xn--izc.com/posts/poisson-distribution/" />
-    <updated>2020-12-11T16:13:39Z</updated>
-    <id>https://xn--izc.com/posts/poisson-distribution/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;Where does the Poisson Distribution come from?&lt;/p&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>Deriving the Poisson Distribution</title>
+      <link href="https://xn--izc.com/posts/poisson-distribution/" />
+      <updated>2020-12-11T16:13:39Z</updated>
+      <id>https://xn--izc.com/posts/poisson-distribution/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;Where does the Poisson Distribution come from?&lt;/p&gt;
 &lt;p&gt;A little bit of research&lt;a href=&quot;https://xn--izc.com/posts/poisson-distribution/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; tells us that the
 distribution was originally introduced by &lt;a href=&quot;https://en.wikipedia.org/wiki/Abraham_de_Moivre&quot;&gt;Abraham de
 Moivre&lt;/a&gt; in 1710 in an article called &lt;em&gt;“On the Measurement of
@@ -4719,18 +4801,16 @@ original article in Latin&lt;/a&gt; is available via &lt;a href=&quot;https://ro
 Publishing&lt;/a&gt;.&lt;a href=&quot;https://xn--izc.com/posts/poisson-distribution/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Ten Years</title>
-    <link href="https://xn--izc.com/posts/ten-years/" />
-    <updated>2020-12-09T02:41:50Z</updated>
-    <id>https://xn--izc.com/posts/ten-years/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;It’s been ten years since I started at Google. The work anniversary
+
+      </content>
+    </entry>
+    <entry>
+      <title>Ten Years</title>
+      <link href="https://xn--izc.com/posts/ten-years/" />
+      <updated>2020-12-09T02:41:50Z</updated>
+      <id>https://xn--izc.com/posts/ten-years/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;It’s been ten years since I started at Google. The work anniversary
 fell on 6th of December.&lt;/p&gt;
 &lt;p&gt;Ten years ago my wife and I made our way to Mountain View for my
 orientation; all excited for a brand new chapter in our lives. After
@@ -4769,18 +4849,16 @@ little really matters in the long run.&lt;/p&gt;
 &lt;p&gt;I should remember that the next time I feel like staying up late
 trying to get something done because I feel some sort of obligation or
 bigger purpose in doing it. Often there is none.&lt;/p&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Visualizing Internet Users</title>
-    <link href="https://xn--izc.com/posts/visualizing-people/" />
-    <updated>2020-11-21T16:37:53Z</updated>
-    <id>https://xn--izc.com/posts/visualizing-people/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;What does 0.3%&lt;a href=&quot;https://xn--izc.com/posts/visualizing-people/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; of internet users look like?&lt;/p&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>Visualizing Internet Users</title>
+      <link href="https://xn--izc.com/posts/visualizing-people/" />
+      <updated>2020-11-21T16:37:53Z</updated>
+      <id>https://xn--izc.com/posts/visualizing-people/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;What does 0.3%&lt;a href=&quot;https://xn--izc.com/posts/visualizing-people/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; of internet users look like?&lt;/p&gt;
 &lt;p&gt;As of this writing the global population hovers around 7.7 billion
 according to the World Population Clock &lt;a href=&quot;https://xn--izc.com/posts/visualizing-people/#fn2&quot; class=&quot;footnote-ref&quot; id=&quot;fnref2&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;figure&gt;
@@ -4915,18 +4993,16 @@ trends due to the effects of COVID.&lt;a href=&quot;https://xn--izc.com/posts/vi
 Many People Are in Tahrir Square? Here’s How to Tell&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/visualizing-people/#fnref4&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Things You Can Do With Neovim and Vscode That You Can&#39;t Do With Neovim Alone</title>
-    <link href="https://xn--izc.com/posts/things-you-can-do-with-nvim-and-vscode/" />
-    <updated>2020-09-19T00:00:00Z</updated>
-    <id>https://xn--izc.com/posts/things-you-can-do-with-nvim-and-vscode/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;This is the third time I’ve tried in earnest to switch to VSCode from
+
+      </content>
+    </entry>
+    <entry>
+      <title>Things You Can Do With Neovim and Vscode That You Can&#39;t Do With Neovim Alone</title>
+      <link href="https://xn--izc.com/posts/things-you-can-do-with-nvim-and-vscode/" />
+      <updated>2020-09-19T00:00:00Z</updated>
+      <id>https://xn--izc.com/posts/things-you-can-do-with-nvim-and-vscode/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;This is the third time I’ve tried in earnest to switch to VSCode from
 Vim (or Neovim in my case) for reasons not all of which are relevant to
 this post. But I love Vim style modal editing and I’ve grown accustomed
 to some features that aren’t present or not well emulated in &lt;a href=&quot;https://github.com/VSCodeVim/Vim&quot;&gt;VSCodeVim&lt;/a&gt;.&lt;/p&gt;
@@ -5084,18 +5160,16 @@ that you can use the existing &lt;code&gt;fontStyle: &quot;italic&quot;&lt;/code
 &lt;code&gt;tokenColorCustomizations&lt;/code&gt; to switch fonts.&lt;a href=&quot;https://xn--izc.com/posts/things-you-can-do-with-nvim-and-vscode/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Why &#39;Strong Opinions Weakly Held&#39;</title>
-    <link href="https://xn--izc.com/posts/why-strong-opinions-weakly-held/" />
-    <updated>2020-08-28T19:17:16Z</updated>
-    <id>https://xn--izc.com/posts/why-strong-opinions-weakly-held/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;h2 id=&quot;origins-of-the-phrase&quot;&gt;Origins of the phrase&lt;/h2&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>Why &#39;Strong Opinions Weakly Held&#39;</title>
+      <link href="https://xn--izc.com/posts/why-strong-opinions-weakly-held/" />
+      <updated>2020-08-28T19:17:16Z</updated>
+      <id>https://xn--izc.com/posts/why-strong-opinions-weakly-held/</id>
+      <content xml:lang="en" type="html">
+        &lt;h2 id=&quot;origins-of-the-phrase&quot;&gt;Origins of the phrase&lt;/h2&gt;
 &lt;p&gt;The title of this blog is &lt;strong&gt;Strong Opinions, Weakly
 Held&lt;/strong&gt;. The same concept shows up elsewhere are &lt;em&gt;Strong
 Opinions Loosely Held&lt;/em&gt;. An eponymous essay by Paul Saffo in &lt;span class=&quot;citation&quot; data-cites=&quot;Saffo&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/why-strong-opinions-weakly-held/#ref-Saffo&quot; role=&quot;doc-biblioref&quot;&gt;[1]&lt;/a&gt;&lt;/span&gt; introduced the world to this
@@ -5212,18 +5286,16 @@ the worst idea in tech - the glowforge blog,”&lt;/span&gt; 04-Sep-2020.
 [Accessed: 04-Sep-2020]&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Names for Name Conventions</title>
-    <link href="https://xn--izc.com/posts/symbol-name-types/" />
-    <updated>2020-08-24T16:32:45Z</updated>
-    <id>https://xn--izc.com/posts/symbol-name-types/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;Names I’ve seen used to refer to naming conventions:&lt;/p&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>Names for Name Conventions</title>
+      <link href="https://xn--izc.com/posts/symbol-name-types/" />
+      <updated>2020-08-24T16:32:45Z</updated>
+      <id>https://xn--izc.com/posts/symbol-name-types/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;Names I’ve seen used to refer to naming conventions:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;snake_case&lt;/code&gt;, &lt;code&gt;hacker_case&lt;/code&gt;,
 &lt;code&gt;unix_hacker_style&lt;/code&gt; : Everything is lower case, though
@@ -5248,18 +5320,16 @@ command line options is &lt;code&gt;snake_case&lt;/code&gt; or
 (where the delimiter within the option is &lt;code&gt;_&lt;/code&gt;).&lt;a href=&quot;https://xn--izc.com/posts/symbol-name-types/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>How This Blog Works</title>
-    <link href="https://xn--izc.com/posts/how-this-blog-works/" />
-    <updated>2020-07-27T04:57:17Z</updated>
-    <id>https://xn--izc.com/posts/how-this-blog-works/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;h1 id=&quot;requirements&quot;&gt;Requirements&lt;/h1&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>How This Blog Works</title>
+      <link href="https://xn--izc.com/posts/how-this-blog-works/" />
+      <updated>2020-07-27T04:57:17Z</updated>
+      <id>https://xn--izc.com/posts/how-this-blog-works/</id>
+      <content xml:lang="en" type="html">
+        &lt;h1 id=&quot;requirements&quot;&gt;Requirements&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Math. Preferably Latex.&lt;/li&gt;
 &lt;li&gt;Citations. I like to cite stuff.&lt;/li&gt;
@@ -5294,18 +5364,16 @@ use Pandoc, use citations, use math etc. and things will “just work”
 when publishing to another site that expects GitHub flavored
 Markdown.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>The Comcast Technician Problem</title>
-    <link href="https://xn--izc.com/posts/comcast-technican-problem/" />
-    <updated>2020-07-13T17:21:51Z</updated>
-    <id>https://xn--izc.com/posts/comcast-technican-problem/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;h2 id=&quot;the-story&quot;&gt;The Story&lt;/h2&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>The Comcast Technician Problem</title>
+      <link href="https://xn--izc.com/posts/comcast-technican-problem/" />
+      <updated>2020-07-13T17:21:51Z</updated>
+      <id>https://xn--izc.com/posts/comcast-technican-problem/</id>
+      <content xml:lang="en" type="html">
+        &lt;h2 id=&quot;the-story&quot;&gt;The Story&lt;/h2&gt;
 &lt;p&gt;As is a rite of passage in these parts, I waited for the Comcast&lt;a href=&quot;https://xn--izc.com/posts/comcast-technican-problem/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; technician to arrive during their
 scheduled appointment window. In preparation I had scheduled a day of
 working from home.&lt;/p&gt;
@@ -5447,18 +5515,16 @@ Verge&lt;/em&gt;. &lt;em&gt;The worst company in America.&lt;/em&gt;&lt;/a&gt; (
 13, 2020)&lt;a href=&quot;https://xn--izc.com/posts/comcast-technican-problem/#fnref4&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Vim: Use Drop Not Edit, SBuffer Not Buffer</title>
-    <link href="https://xn--izc.com/posts/use-drop-not-edit/" />
-    <updated>2020-07-07T16:02:20Z</updated>
-    <id>https://xn--izc.com/posts/use-drop-not-edit/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;I’m going to assume you are a Vim user.&lt;/p&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>Vim: Use Drop Not Edit, SBuffer Not Buffer</title>
+      <link href="https://xn--izc.com/posts/use-drop-not-edit/" />
+      <updated>2020-07-07T16:02:20Z</updated>
+      <id>https://xn--izc.com/posts/use-drop-not-edit/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;I’m going to assume you are a Vim user.&lt;/p&gt;
 &lt;p&gt;Say you have a several windows open in Vim and you want to edit
 another file. Using &lt;code&gt;:edit&lt;/code&gt; works if you want to open the
 file in the current window unconditionally.&lt;/p&gt;
@@ -5509,19 +5575,17 @@ on the web&lt;/a&gt; for full details.&lt;/p&gt;
 current buffer cannot be unloaded.&lt;a href=&quot;https://xn--izc.com/posts/use-drop-not-edit/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Notes from Crash Course&#39;s Videos on Fact Checking Information You See On The Internet
+
+      </content>
+    </entry>
+    <entry>
+      <title>Notes from Crash Course&#39;s Videos on Fact Checking Information You See On The Internet
 </title>
-    <link href="https://xn--izc.com/posts/notes-on-fact-checking/" />
-    <updated>2020-07-04T00:00:00Z</updated>
-    <id>https://xn--izc.com/posts/notes-on-fact-checking/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;h1 id=&quot;fact-checking&quot;&gt;Fact Checking&lt;/h1&gt;
+      <link href="https://xn--izc.com/posts/notes-on-fact-checking/" />
+      <updated>2020-07-04T00:00:00Z</updated>
+      <id>https://xn--izc.com/posts/notes-on-fact-checking/</id>
+      <content xml:lang="en" type="html">
+        &lt;h1 id=&quot;fact-checking&quot;&gt;Fact Checking&lt;/h1&gt;
 &lt;p&gt;Notes from &lt;a href=&quot;https://www.youtube.com/channel/UCX6b17PVsYBQ0ip5gyeme-Q&quot;&gt;Crash
 Course&lt;/a&gt;’s excellent series about fact checking information you see on
 the internet. The series starts &lt;a href=&quot;https://www.youtube.com/watch?v=pLlv2o6UfTU&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
@@ -5642,18 +5706,16 @@ fact checking sites like Snopes and Politifact.&lt;/p&gt;
 where a video came from, who created it, and whether it’s been altered
 before you believe what you see.&lt;/p&gt;
 &lt;h2 id=&quot;data-and-infographics&quot;&gt;Data and infographics&lt;/h2&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Easier CLI for ad-hoc Ansible tasks and playbooks</title>
-    <link href="https://xn--izc.com/posts/ansible-cli-sugar/" />
-    <updated>2020-06-01T00:00:00Z</updated>
-    <id>https://xn--izc.com/posts/ansible-cli-sugar/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;This article is about using &lt;a href=&quot;https://ansible.com/&quot;&gt;Ansible&lt;/a&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>Easier CLI for ad-hoc Ansible tasks and playbooks</title>
+      <link href="https://xn--izc.com/posts/ansible-cli-sugar/" />
+      <updated>2020-06-01T00:00:00Z</updated>
+      <id>https://xn--izc.com/posts/ansible-cli-sugar/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;This article is about using &lt;a href=&quot;https://ansible.com/&quot;&gt;Ansible&lt;/a&gt;
 on the command-line.&lt;/p&gt;
 &lt;h2 id=&quot;problem&quot;&gt;Problem:&lt;/h2&gt;
 &lt;p&gt;You …&lt;/p&gt;
@@ -5707,18 +5769,16 @@ or groups as described in the includes:&lt;/p&gt;
 &lt;/ol&gt;
 &lt;p&gt;That’s it. Now you can invoke playbooks and tasks just by using the
 name of host or group.&lt;/p&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Identity Domains</title>
-    <link href="https://xn--izc.com/posts/identity-domains/" />
-    <updated>2020-05-01T00:00:00Z</updated>
-    <id>https://xn--izc.com/posts/identity-domains/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;blockquote&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>Identity Domains</title>
+      <link href="https://xn--izc.com/posts/identity-domains/" />
+      <updated>2020-05-01T00:00:00Z</updated>
+      <id>https://xn--izc.com/posts/identity-domains/</id>
+      <content xml:lang="en" type="html">
+        &lt;blockquote&gt;
 &lt;p&gt;An &lt;strong&gt;Identity domain&lt;/strong&gt; is a scope within which we
 consider it a given that the user has a shared or trivially joinable
 identity.&lt;/p&gt;
@@ -5820,18 +5880,16 @@ joining of identity domains.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Concepts like “logging out” can be defined in terms of destroying
 an identity domain on the User Agent.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Ephemeral Fingerprinting On The Web</title>
-    <link href="https://xn--izc.com/posts/ephemeral-fingerprinting/" />
-    <updated>2020-04-01T00:00:00Z</updated>
-    <id>https://xn--izc.com/posts/ephemeral-fingerprinting/</id>
-    <content
-      xml:lang="en"
-      type="html"
-      >&lt;p&gt;TL;DR:&lt;/p&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>Ephemeral Fingerprinting On The Web</title>
+      <link href="https://xn--izc.com/posts/ephemeral-fingerprinting/" />
+      <updated>2020-04-01T00:00:00Z</updated>
+      <id>https://xn--izc.com/posts/ephemeral-fingerprinting/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;TL;DR:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Any web observable property whose changes are concurrently
 observable by multiple top-level sites can lead to cross site identity
@@ -6118,7 +6176,7 @@ spec for sensitive APIs.&lt;a href=&quot;https://xn--izc.com/posts/ephemeral-fin
 update steps&lt;/a&gt;.&lt;a href=&quot;https://xn--izc.com/posts/ephemeral-fingerprinting/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content
-    >
-  </entry>
+
+      </content>
+    </entry>
 </feed>

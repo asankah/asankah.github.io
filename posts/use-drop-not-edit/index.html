@@ -1,26 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-us">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Vim: Use Drop Not Edit, SBuffer Not Buffer</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-    <link rel="icon" href="/images/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link rel="stylesheet" href="/styles/katex.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
-    <link rel="stylesheet" href="/styles/kCLLP63cz-.css">
-    <link rel="me" href="mailto:asanka@gmail.com">
-    <link rel="me" href="https://github.com/asankah">
-    <meta name="generator" content="Pandoc + Eleventy">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/apple-touch-icon.png"
+    />
+    <link rel="icon" href="/images/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon-32x32.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/images/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link rel="stylesheet" href="/styles/katex.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link rel="stylesheet" href="/styles/C_Z__E83wh.css" />
+    <link rel="me" href="mailto:asanka@gmail.com" />
+    <link rel="me" href="https://github.com/asankah" />
+
+    <meta name="generator" content="Pandoc + Eleventy" />
   </head>
+
   <body>
     <header class="container">
       <nav class="navlike">
@@ -28,217 +55,321 @@
         <span class="fill"></span>
         <h2><a href="/about/me/">About</a></h2>
         <h2><a href="/tags/">Tags</a></h2>
-        <h2><a href="/feed.xml"><img src="/images/rss.svg"></a></h2>
+        <h2>
+          <a href="/feed.xml"><img src="/images/rss.svg" /></a>
+        </h2>
       </nav>
     </header>
+
     <main>
       <article class="container">
         <header>
           <h1>Vim: Use Drop Not Edit, SBuffer Not Buffer</h1>
           <div class="navlike">
             <span>
-          <span class="date">Posted on July 7, 2020</span><span class="author">&nbsp;by Asanka Herath</span></span>
+              <span class="date">Posted on July 7, 2020</span
+              ><span class="author">&nbsp;by Asanka Herath</span></span
+            >
             <span class="fill"></span>
+
             <span class="tag-link">
-    <a href="/tags/tools/">#Tools</a>
-</span>
+              <a href="/tags/tools/">#Tools</a>
+            </span>
+
             <span class="tag-link">
-    <a href="/tags/vim/">#Vim</a>
-</span>
+              <a href="/tags/vim/">#Vim</a>
+            </span>
           </div>
           <div class="navlike">
-            <span class="readingtime">Estimated reading time is 4 minutes.</span>
+            <span class="readingtime">
+              Estimated reading time is 4 minutes.
+            </span>
             <span class="fill"></span>
           </div>
         </header>
+
         <p>I’m going to assume you are a Vim user.</p>
-        <p>Say you have a several windows open in Vim and you want to edit
+        <p>
+          Say you have a several windows open in Vim and you want to edit
           another file. Using <code>:edit</code> works if you want to open the
-          file in the current window unconditionally.</p>
-        <p><em>But that’s often not what you want.</em> If you have the same
-          file open in another window, then the most efficient and least
-          disruptive thing to do is to switch to that window.</p>
+          file in the current window unconditionally.
+        </p>
+        <p>
+          <em>But that’s often not what you want.</em> If you have the same file
+          open in another window, then the most efficient and least disruptive
+          thing to do is to switch to that window.
+        </p>
         <h2 id="drop">drop</h2>
-        <p>That’s where <code>:drop</code> comes in. In case you aren’t familiar
-          with the <code>drop</code> command, have a look at the help page in your
-          favorite editor (<code>:help drop</code>) or <a href="http://vimdoc.sourceforge.net/htmldoc/windows.html#:drop">here on
-            the web</a>. But the gist of it is that for most people<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>
+        <p>
+          That’s where <code>:drop</code> comes in. In case you aren’t familiar
+          with the <code>drop</code> command, have a look at the help page in
+          your favorite editor (<code>:help drop</code>) or
+          <a href="http://vimdoc.sourceforge.net/htmldoc/windows.html#:drop"
+            >here on the web</a
+          >. But the gist of it is that for most people<a
+            href="#fn1"
+            class="footnote-ref"
+            id="fnref1"
+            role="doc-noteref"
+            ><sup>1</sup></a
+          >
           <code>:drop {file}</code> will:
         </p>
         <ul>
-          <li>Switch to the window in which <code>{file}</code> is already
-            open.</li>
-          <li>Switch the buffer in the current window to <code>{file}</code>
-            otherwise.</li>
+          <li>
+            Switch to the window in which <code>{file}</code> is already open.
+          </li>
+          <li>
+            Switch the buffer in the current window to
+            <code>{file}</code> otherwise.
+          </li>
         </ul>
-        <p>The <code>:drop</code> command is intended to be used as the “open
-          buffer” command for automated tooling like source browsers. For example,
-          you can configure <code>coc-nvim</code> <a href="https://github.com/neoclide/coc.nvim">GitHub</a> to use
+        <p>
+          The <code>:drop</code> command is intended to be used as the “open
+          buffer” command for automated tooling like source browsers. For
+          example, you can configure <code>coc-nvim</code>
+          <a href="https://github.com/neoclide/coc.nvim">GitHub</a> to use
           <code>:drop</code> as the command used for opening a source file by
           setting <code>coc.preferences.jumpCommand</code> to <code>drop</code>.
-          See <code>:help coc-configuration</code> for details on how to set this,
-          but basically it’s as simple as opening up the configuration using
-          <code>:CocConfig</code> and then adding a
+          See <code>:help coc-configuration</code> for details on how to set
+          this, but basically it’s as simple as opening up the configuration
+          using <code>:CocConfig</code> and then adding a
           <code>"coc.preferences.jumpCommand": "drop",</code> mapping to the
           configuration JSON file.
         </p>
         <h2 id="switchbuf-or-swb">switchbuf or swb</h2>
-        <p>Or perhaps configuring each plugin is too much work. Enter
+        <p>
+          Or perhaps configuring each plugin is too much work. Enter
           <code>switchbuf</code>. This is a global setting in Vim that controls
           how Vim switches between buffers.
         </p>
-        <p>Setting <code>set switchbuf=useopen</code> has the same effect when
+        <p>
+          Setting <code>set switchbuf=useopen</code> has the same effect when
           invoking <code>buffer</code>. Note that using <code>sbuffer</code>,
           <code>sbnext</code>, or <code>sbrewind</code> automatically behaves as
           if this is the case. I.e. they will use an existing window if one
           already has the buffer open.
         </p>
-        <p>Setting <code>set switchbuf=usetab</code> is similar to the effect of
+        <p>
+          Setting <code>set switchbuf=usetab</code> is similar to the effect of
           <code>useopen</code> except that it will look through windows in other
           tabs.
         </p>
-        <p>See <code>:help switchbuf</code> or <a href="http://vimdoc.sourceforge.net/htmldoc/options.html#&#39;switchbuf&#39;">here
-            on the web</a> for full details.</p>
-        <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
-          <hr>
+        <p>
+          See <code>:help switchbuf</code> or
+          <a
+            href="http://vimdoc.sourceforge.net/htmldoc/options.html#&#39;switchbuf&#39;"
+            >here on the web</a
+          >
+          for full details.
+        </p>
+        <section
+          id="footnotes"
+          class="footnotes footnotes-end-of-document"
+          role="doc-endnotes"
+        >
+          <hr />
           <ol>
             <li id="fn1">
-              <p>Assuming you have <code>set hidden</code> that is. See
-                <code>:help drop</code> for more details on what happens when the
-                current buffer cannot be unloaded.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a>
+              <p>
+                Assuming you have <code>set hidden</code> that is. See
+                <code>:help drop</code> for more details on what happens when
+                the current buffer cannot be unloaded.<a
+                  href="#fnref1"
+                  class="footnote-back"
+                  role="doc-backlink"
+                  >↩︎</a
+                >
               </p>
             </li>
           </ol>
         </section>
-        <div class="lastmodified">
-          <p>Last modified: July 7, 2020</p>
-        </div>
+
+        <footer>
+          <div class="lastmodified">
+            <p>Last modified: July 7, 2020</p>
+          </div>
+        </footer>
       </article>
-      <div class="container">
-        <nav class="navlike">
-          <a href="/posts/notes-on-fact-checking/">
-            <i class="material-symbols-outlined">chevron_left</i>
-            Notes from Crash Course&#39;s Videos on Fact Checking Information You See On The Internet
-          </a>
-          <div class="fill">&nbsp;</div>
-          <a href="/posts/comcast-technican-problem/">
-            The Comcast Technician Problem
-            <i class="material-symbols-outlined">chevron_right</i>
-          </a>
-        </nav>
-      </div>
+
+      <div class="container"></div>
     </main>
+
     <footer class="container">
       <h2>More posts from this blog ...</h2>
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/poisson-distribution/">
-            Deriving the Poisson Distribution
+          <a href="/posts/syntax-highlighting/">
+            On Highlighting Syntax vs. Semantics
           </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on December 11, 2020
-        </span>
+          <span class="date navlike"> Last updated on February 12, 2022 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/math/">#Math</a>
-</span>
-        </div>
-      </div>
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/why-strong-opinions-weekly-held/">
-            Why &#39;Strong Opinions Weekly Held&#39;
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike">
-            Last updated on September 28, 2021
-        </span>
-          <span class="fill"></span>
-          <span class="tag-link">
-    <a href="/tags/meta/">#Meta</a>
-</span>
-        </div>
-      </div>
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/pillars-are-governance-structures/">
-            Pillars And Governance Structures
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike">
-            Last updated on September 9, 2023
-        </span>
-          <span class="fill"></span>
-          <span class="tag-link">
-    <a href="/tags/culture/">#Culture</a>
-</span>
-          <span class="tag-link">
-    <a href="/tags/career/">#Career</a>
-</span>
-          <span class="tag-link">
-    <a href="/tags/organizations/">#Organizations</a>
-</span>
-        </div>
-      </div>
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/comcast-technican-problem/">
-            The Comcast Technician Problem
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike">
-            Last updated on July 13, 2020
-        </span>
-          <span class="fill"></span>
-          <span class="tag-link">
-    <a href="/tags/math/">#Math</a>
-</span>
+            <a href="/tags/engineering/">#Engineering</a>
+          </span>
         </div>
         <div>
           <div class="summary">
-            <p>Given a set of tasks, incentives are often aligned towards dropping a task
-              rather than allowing for perpetual accretion of delays.</p>
+            <p>
+              Takes a look at an alternate form of code highlighting based on
+              core semantics instead of syntactic role.
+            </p>
           </div>
-          <p class="more"><a href="/posts/comcast-technican-problem/">Read more …</a></p>
+          <p class="more">
+            <a href="/posts/syntax-highlighting/">Read more …</a>
+          </p>
         </div>
       </div>
+
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/meaning/"><span class="series-name">Structure of Experience</span>:
-            Act I: Meaning
+          <a href="/posts/code-as-ui/">
+            Code As UI: The UX of config-as-code and everything-as-code
           </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on May 4, 2025
-        </span>
+          <span class="date navlike"> Last updated on July 1, 2023 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/ai/">#AI</a>
-</span>
+            <a href="/tags/engineering/">#engineering</a>
+          </span>
         </div>
         <div>
           <div class="summary">
-            <p>Language builds meaning by combining your inner experiences.</p>
+            <p>
+              Configuration-as-code has the same usability issues as everything
+              else as code along with the same benefits.
+            </p>
           </div>
-          <p class="more"><a href="/posts/meaning/">Read more …</a></p>
+          <p class="more"><a href="/posts/code-as-ui/">Read more …</a></p>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <h3 class="title">
+          <a href="/posts/the-point-of-a-strategy/">
+            The Point of a Strategy
+          </a>
+        </h3>
+        <div class="navlike">
+          <span class="date navlike"> Last updated on July 24, 2023 </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/career/">#Career</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/engineering/">#Engineering</a>
+          </span>
+        </div>
+        <div>
+          <div class="summary">
+            <p>The only useful strategy is one that reduces risks.</p>
+          </div>
+          <p class="more">
+            <a href="/posts/the-point-of-a-strategy/">Read more …</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <h3 class="title">
+          <a href="/posts/why-i-hate-carousels/"> Why I Hate Carousels </a>
+        </h3>
+        <div class="navlike">
+          <span class="date navlike"> Last updated on January 25, 2024 </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/usability/">#Usability</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/engineering/">#Engineering</a>
+          </span>
+        </div>
+        <div>
+          <div class="summary">
+            <ul>
+              <li>Don't use carousels in your UI.</li>
+              <li>
+                Instead, if you must stick content into little cards, let the
+                horionztal layout wrap to additional lines.
+              </li>
+              <li>
+                If you end up with too many horizontal lines of content, then
+                you definitely have too many items that can be accessed via a
+                horizontally panning UI. You need a different UI altogether.
+              </li>
+            </ul>
+          </div>
+          <p class="more">
+            <a href="/posts/why-i-hate-carousels/">Read more …</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <h3 class="title">
+          <a href="/posts/when-your-feature-gets-someone-hurt/">
+            When Your Feature Gets Someone Hurt
+          </a>
+        </h3>
+        <div class="navlike">
+          <span class="date navlike"> Last updated on May 22, 2024 </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/culture/">#Culture</a>
+          </span>
+        </div>
+        <div>
+          <div class="summary">
+            <p>
+              If Google Photos incorrectly tags a photo, what's the worst that
+              could happen?
+            </p>
+          </div>
+          <p class="more">
+            <a href="/posts/when-your-feature-gets-someone-hurt/"
+              >Read more …</a
+            >
+          </p>
         </div>
       </div>
     </footer>
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"></script>
+
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"
+    ></script>
     <script>
-      var dnt, doNotTrack = !1;
-      if (!1 && (dnt = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack, doNotTrack = dnt == "1" || dnt == "yes"), !doNotTrack) {
+      var dnt,
+        doNotTrack = !1;
+      if (
+        (!1 &&
+          ((dnt =
+            navigator.doNotTrack ||
+            window.doNotTrack ||
+            navigator.msDoNotTrack),
+          (doNotTrack = dnt == "1" || dnt == "yes")),
+        !doNotTrack)
+      ) {
         window.dataLayer = window.dataLayer || [];
         function gtag() {
-          dataLayer.push(arguments)
+          dataLayer.push(arguments);
         }
-        gtag("js", new Date), gtag("config", "G-GSREL2EZ4Y")
+        (gtag("js", new Date()), gtag("config", "G-GSREL2EZ4Y"));
       }
     </script>
   </body>

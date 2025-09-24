@@ -1,26 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-us">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Easier CLI for ad-hoc Ansible tasks and playbooks</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-    <link rel="icon" href="/images/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link rel="stylesheet" href="/styles/katex.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
-    <link rel="stylesheet" href="/styles/kCLLP63cz-.css">
-    <link rel="me" href="mailto:asanka@gmail.com">
-    <link rel="me" href="https://github.com/asankah">
-    <meta name="generator" content="Pandoc + Eleventy">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/apple-touch-icon.png"
+    />
+    <link rel="icon" href="/images/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon-32x32.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/images/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link rel="stylesheet" href="/styles/katex.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link rel="stylesheet" href="/styles/C_Z__E83wh.css" />
+    <link rel="me" href="mailto:asanka@gmail.com" />
+    <link rel="me" href="https://github.com/asankah" />
+
+    <meta name="generator" content="Pandoc + Eleventy" />
   </head>
+
   <body>
     <header class="container">
       <nav class="navlike">
@@ -28,248 +55,327 @@
         <span class="fill"></span>
         <h2><a href="/about/me/">About</a></h2>
         <h2><a href="/tags/">Tags</a></h2>
-        <h2><a href="/feed.xml"><img src="/images/rss.svg"></a></h2>
+        <h2>
+          <a href="/feed.xml"><img src="/images/rss.svg" /></a>
+        </h2>
       </nav>
     </header>
+
     <main>
       <article class="container">
         <header>
           <h1>Easier CLI for ad-hoc Ansible tasks and playbooks</h1>
           <div class="navlike">
             <span>
-          <span class="date">Posted on June 1, 2020</span><span class="author">&nbsp;by Asanka Herath</span></span>
+              <span class="date">Posted on June 1, 2020</span
+              ><span class="author">&nbsp;by Asanka Herath</span></span
+            >
             <span class="fill"></span>
+
             <span class="tag-link">
-    <a href="/tags/tools/">#Tools</a>
-</span>
+              <a href="/tags/tools/">#Tools</a>
+            </span>
           </div>
           <div class="navlike">
-            <span class="readingtime">Estimated reading time is 6 minutes.</span>
+            <span class="readingtime">
+              Estimated reading time is 6 minutes.
+            </span>
             <span class="fill"></span>
           </div>
         </header>
-        <p>This article is about using <a href="https://ansible.com">Ansible</a>
-          on the command-line.</p>
+
+        <p>
+          This article is about using
+          <a href="https://ansible.com">Ansible</a> on the command-line.
+        </p>
         <h2 id="problem">Problem:</h2>
         <p>You …</p>
         <ul>
           <li>
-            <p>… want a convenient way to do ad-hoc tasks on a bunch of
-              machines.</p>
+            <p>
+              … want a convenient way to do ad-hoc tasks on a bunch of machines.
+            </p>
           </li>
           <li>
-            <p>… already have a few playbooks and machine groups defined in your
-              inventory.</p>
+            <p>
+              … already have a few playbooks and machine groups defined in your
+              inventory.
+            </p>
           </li>
           <li>
-            <p>… don’t want to invest too much into Ansible because you have
-              other things to do and Ansible is just a tool to deal with one aspect of
-              what you want to do.</p>
+            <p>
+              … don’t want to invest too much into Ansible because you have
+              other things to do and Ansible is just a tool to deal with one
+              aspect of what you want to do.
+            </p>
           </li>
+          <li><p>… live on the command-line.</p></li>
           <li>
-            <p>… live on the command-line.</p>
-          </li>
-          <li>
-            <p>… think <code>ansible-playbook</code> and <code>ansible</code>
-              commands have too many knobs and too few knobs at the same
-              time.</p>
+            <p>
+              … think <code>ansible-playbook</code> and
+              <code>ansible</code> commands have too many knobs and too few
+              knobs at the same time.
+            </p>
           </li>
         </ul>
         <h2 id="a-possible-solution">A Possible Solution</h2>
-        <p>Taking a page from old school Posix tools, let’s make a script that
-          encodes Ansible group names into the filename.</p>
+        <p>
+          Taking a page from old school Posix tools, let’s make a script that
+          encodes Ansible group names into the filename.
+        </p>
         <p>Then you can go from this:</p>
-        <div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ansible atlanta <span class="at">-m</span> copy <span class="at">-a</span> <span class="st">&quot;src=/etc/hosts dest=/tmp/hosts&quot;</span></span>
+        <div class="sourceCode" id="cb1">
+          <pre
+            class="sourceCode sh"
+          ><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ansible atlanta <span class="at">-m</span> copy <span class="at">-a</span> <span class="st">&quot;src=/etc/hosts dest=/tmp/hosts&quot;</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ansible webservers <span class="at">-m</span> service <span class="at">-a</span> <span class="st">&quot;name=httpd state=started&quot;</span></span></code></pre>
         </div>
         <p>To this:</p>
-        <div class="sourceCode" id="cb2"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> atlanta copy <span class="st">&quot;src=/etc/hosts dest=/tmp/hosts&quot;</span></span>
+        <div class="sourceCode" id="cb2">
+          <pre
+            class="sourceCode sh"
+          ><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> atlanta copy <span class="st">&quot;src=/etc/hosts dest=/tmp/hosts&quot;</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> webservers service <span class="st">&quot;name=https state=started&quot;</span></span></code></pre>
         </div>
         <p>Or from this:</p>
-        <div class="sourceCode" id="cb3"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ansible-playbook <span class="at">-l</span> atlanta go-to-the-moon</span>
+        <div class="sourceCode" id="cb3">
+          <pre
+            class="sourceCode sh"
+          ><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ansible-playbook <span class="at">-l</span> atlanta go-to-the-moon</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ansible-playbook <span class="at">-l</span> webservers do-the-other-things</span></code></pre>
         </div>
         <p>To this:</p>
-        <div class="sourceCode" id="cb4"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> atlanta go-to-the-moon</span>
+        <div class="sourceCode" id="cb4">
+          <pre
+            class="sourceCode sh"
+          ><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> atlanta go-to-the-moon</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> webservers do-the-other-things</span></code></pre>
         </div>
         <h2 id="setting-up">Setting Up</h2>
-        <p>These are just examples. Please don’t spend time bikeshedding names
-          because you can use whichever names you like.</p>
+        <p>
+          These are just examples. Please don’t spend time bikeshedding names
+          because you can use whichever names you like.
+        </p>
         <ol type="1">
           <li>
-            <p>Download the contents of <code>ansible-by-proxy</code> from <a href="https://github.com/asankah/ansible-cli-sugar/blob/master/ansible-by-proxy">here</a>.
-              It’s a starter script that includes a bunch of sensible settings
-              expressed via environment variables. Remove or change these to match
-              your needs.</p>
-            <p>Note that the script expects to find a sub-directory called
-              <code>ansible</code> in the same directory as the script which contains
-              the playbooks and the inventory file.
+            <p>
+              Download the contents of <code>ansible-by-proxy</code> from
+              <a
+                href="https://github.com/asankah/ansible-cli-sugar/blob/master/ansible-by-proxy"
+                >here</a
+              >. It’s a starter script that includes a bunch of sensible
+              settings expressed via environment variables. Remove or change
+              these to match your needs.
+            </p>
+            <p>
+              Note that the script expects to find a sub-directory called
+              <code>ansible</code> in the same directory as the script which
+              contains the playbooks and the inventory file.
             </p>
           </li>
           <li>
             <p>Store this file somewhere on the system <code>PATH</code>.</p>
-            <p>Don’t forget to mark the file as executable if it isn’t already.</p>
-            <div class="sourceCode" id="cb5"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> chmod +x ansible-by-proxy</span></code></pre>
+            <p>
+              Don’t forget to mark the file as executable if it isn’t already.
+            </p>
+            <div class="sourceCode" id="cb5">
+              <pre
+                class="sourceCode sh"
+              ><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> chmod +x ansible-by-proxy</span></code></pre>
             </div>
           </li>
           <li>
-            <p>Create symlinks to the file that have the same name as hostnames
-              or groups as described in the includes:</p>
-            <div class="sourceCode" id="cb6"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ln <span class="at">-s</span> ansible-by-proxy atlanta</span>
+            <p>
+              Create symlinks to the file that have the same name as hostnames
+              or groups as described in the includes:
+            </p>
+            <div class="sourceCode" id="cb6">
+              <pre
+                class="sourceCode sh"
+              ><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ln <span class="at">-s</span> ansible-by-proxy atlanta</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ln <span class="at">-s</span> ansible-by-proxy webservers</span></code></pre>
             </div>
             <p>and so on.</p>
           </li>
         </ol>
-        <p>That’s it. Now you can invoke playbooks and tasks just by using the
-          name of host or group.</p>
-        <div class="lastmodified">
-          <p>Last modified: June 1, 2020</p>
-        </div>
+        <p>
+          That’s it. Now you can invoke playbooks and tasks just by using the
+          name of host or group.
+        </p>
+
+        <footer>
+          <div class="lastmodified">
+            <p>Last modified: June 1, 2020</p>
+          </div>
+        </footer>
       </article>
-      <div class="container">
-        <nav class="navlike">
-          <a href="/posts/identity-domains/">
-            <i class="material-symbols-outlined">chevron_left</i>
-            Identity Domains
-          </a>
-          <div class="fill">&nbsp;</div>
-          <a href="/posts/notes-on-fact-checking/">
-            Notes from Crash Course&#39;s Videos on Fact Checking Information You See On The Internet
-            <i class="material-symbols-outlined">chevron_right</i>
-          </a>
-        </nav>
-      </div>
+
+      <div class="container"></div>
     </main>
+
     <footer class="container">
       <h2>More posts from this blog ...</h2>
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/sometimes-its-the-interviewers-who-suck/">
-            Sometimes It&#39;s the Interviewers Who Suck
+          <a href="/posts/why-strong-opinions-weekly-held/">
+            Why &#39;Strong Opinions Weekly Held&#39;
           </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on March 20, 2021
-        </span>
+          <span class="date navlike"> Last updated on September 28, 2021 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/career/">#Career</a>
-</span>
+            <a href="/tags/meta/">#Meta</a>
+          </span>
         </div>
       </div>
+
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/shannon-paper/">
-            Shannon Paper
+          <a href="/posts/ansible-cli-sugar/">
+            Easier CLI for ad-hoc Ansible tasks and playbooks
           </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on March 26, 2021
-        </span>
+          <span class="date navlike"> Last updated on June 1, 2020 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/math/">#Math</a>
-</span>
+            <a href="/tags/tools/">#Tools</a>
+          </span>
         </div>
         <div>
           <div class="summary">
-            <p>Claude Shannon's <em>A mathematical theory of communication</em> is an oft cited
-              classic in information theory. Let's dive in and try to tease apart the
-              &quot;why&quot;s that are often overlooked when people build on top of the introduced
-              theory. They are definitely things that I didn't consider to be obvious
-              without the benefit of reading the paper.</p>
+            <p>
+              Encode the host and group names into the name of a wrapper script
+              for quick ad-hoc invocation of Ansible tasks and playbooks.
+            </p>
           </div>
-          <p class="more"><a href="/posts/shannon-paper/">Read more …</a></p>
+          <p class="more">
+            <a href="/posts/ansible-cli-sugar/">Read more …</a>
+          </p>
         </div>
       </div>
+
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/evluating-negatives/">
-            Inclusion/Equity and Evaluating Negatives
-          </a>
+          <a href="/posts/the-lettergrade-rule/"> The Lettergrade Rule </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on January 10, 2024
-        </span>
+          <span class="date navlike"> Last updated on September 16, 2022 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/engineering/">#Engineering</a>
-</span>
-          <span class="tag-link">
-    <a href="/tags/inclusion-and-equity/">#Inclusion and Equity</a>
-</span>
+            <a href="/tags/engineering/">#engineering</a>
+          </span>
         </div>
         <div>
           <div class="summary">
-            <p>Evaluating properties like inclusion and equity of products can't be done through
-              exhaustive enumeration of product outcomes. Instead we will need to increasingly
-              rely on the controls that we place how we construct the products.</p>
+            <p>
+              Don't block a code review because of minor issues that are best
+              left to the discretion of the author.
+            </p>
           </div>
-          <p class="more"><a href="/posts/evluating-negatives/">Read more …</a></p>
+          <p class="more">
+            <a href="/posts/the-lettergrade-rule/">Read more …</a>
+          </p>
         </div>
       </div>
+
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/catchment/">
-            Draining Our Intellectual Catchment Areas
+          <a href="/posts/pillars-are-governance-structures/">
+            Pillars And Governance Structures
           </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on July 4, 2025
-        </span>
+          <span class="date navlike"> Last updated on September 9, 2023 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/culture/">#Culture</a>
-</span>
+            <a href="/tags/culture/">#Culture</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/career/">#Career</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/organizations/">#Organizations</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <h3 class="title">
+          <a href="/posts/moved-to-eleventy/">
+            I Moved This Blog To Eleventy
+          </a>
+        </h3>
+        <div class="navlike">
+          <span class="date navlike"> Last updated on December 13, 2024 </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/meta/">#Meta</a>
+          </span>
         </div>
         <div>
           <div class="summary">
-            <p>Intellectual catchment areas are collaborative ecosystems between
-              universities and industries that attract talent and ideas. The
-              United States became a hub of intellectual capital after World War II,
-              thanks to a combination of industrial growth around universities,
-              significant research funding, and favorable immigration policies.</p>
-            <p>The current political climate is jeopardizing these ecosystems.
-              Continued threats against universities and immigration could undo a century
-              of progress, ultimately depleting the nation's source of creativity and
-              innovation.</p>
+            <p>
+              At long last, this blog &quot;outgrew&quot;<sup
+                class="footnote-ref"
+                ><a href="#fn1" id="fnref1">[1]</a></sup
+              >
+              Hugo and I had to go looking for a new static site generator.
+            </p>
+            <hr class="footnotes-sep" />
+            <section class="footnotes">
+              <ol class="footnotes-list">
+                <li id="fn1" class="footnote-item">
+                  <p>
+                    Of course, by outgrew I mean I got bored and wanted to play
+                    with a new static site generator.
+                    <a href="#fnref1" class="footnote-backref">↩︎</a>
+                  </p>
+                </li>
+              </ol>
+            </section>
           </div>
-          <p class="more"><a href="/posts/catchment/">Read more …</a></p>
-        </div>
-      </div>
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/why-strong-opinions-weakly-held/">
-            Why &#39;Strong Opinions Weakly Held&#39;
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike">
-            Last updated on August 28, 2020
-        </span>
-          <span class="fill"></span>
-          <span class="tag-link">
-    <a href="/tags/meta/">#Meta</a>
-</span>
+          <p class="more">
+            <a href="/posts/moved-to-eleventy/">Read more …</a>
+          </p>
         </div>
       </div>
     </footer>
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"></script>
+
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"
+    ></script>
     <script>
-      var dnt, doNotTrack = !1;
-      if (!1 && (dnt = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack, doNotTrack = dnt == "1" || dnt == "yes"), !doNotTrack) {
+      var dnt,
+        doNotTrack = !1;
+      if (
+        (!1 &&
+          ((dnt =
+            navigator.doNotTrack ||
+            window.doNotTrack ||
+            navigator.msDoNotTrack),
+          (doNotTrack = dnt == "1" || dnt == "yes")),
+        !doNotTrack)
+      ) {
         window.dataLayer = window.dataLayer || [];
         function gtag() {
-          dataLayer.push(arguments)
+          dataLayer.push(arguments);
         }
-        gtag("js", new Date), gtag("config", "G-GSREL2EZ4Y")
+        (gtag("js", new Date()), gtag("config", "G-GSREL2EZ4Y"));
       }
     </script>
   </body>

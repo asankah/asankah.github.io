@@ -1,26 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-us">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Just Enough Technical Debt</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-    <link rel="icon" href="/images/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link rel="stylesheet" href="/styles/katex.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
-    <link rel="stylesheet" href="/styles/kCLLP63cz-.css">
-    <link rel="me" href="mailto:asanka@gmail.com">
-    <link rel="me" href="https://github.com/asankah">
-    <meta name="generator" content="Pandoc + Eleventy">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/apple-touch-icon.png"
+    />
+    <link rel="icon" href="/images/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon-32x32.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/images/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link rel="stylesheet" href="/styles/katex.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link rel="stylesheet" href="/styles/C_Z__E83wh.css" />
+    <link rel="me" href="mailto:asanka@gmail.com" />
+    <link rel="me" href="https://github.com/asankah" />
+
+    <meta name="generator" content="Pandoc + Eleventy" />
   </head>
+
   <body>
     <header class="container">
       <nav class="navlike">
@@ -28,138 +55,184 @@
         <span class="fill"></span>
         <h2><a href="/about/me/">About</a></h2>
         <h2><a href="/tags/">Tags</a></h2>
-        <h2><a href="/feed.xml"><img src="/images/rss.svg"></a></h2>
+        <h2>
+          <a href="/feed.xml"><img src="/images/rss.svg" /></a>
+        </h2>
       </nav>
     </header>
+
     <main>
       <article class="container">
         <header>
           <h1>Just Enough Technical Debt</h1>
           <div class="navlike">
             <span>
-          <span class="date">Posted on July 8, 2023</span><span class="author">&nbsp;by Asanka Herath</span></span>
+              <span class="date">Posted on July 8, 2023</span
+              ><span class="author">&nbsp;by Asanka Herath</span></span
+            >
             <span class="fill"></span>
+
             <span class="tag-link">
-    <a href="/tags/engineering/">#Engineering</a>
-</span>
+              <a href="/tags/engineering/">#Engineering</a>
+            </span>
           </div>
           <div class="navlike">
-            <span class="readingtime">Estimated reading time is 4 minutes.</span>
+            <span class="readingtime">
+              Estimated reading time is 4 minutes.
+            </span>
             <span class="fill"></span>
           </div>
         </header>
-        <p>Zero technical debt sounds like a great target to aim for. In my
+
+        <p>
+          Zero technical debt sounds like a great target to aim for. In my
           earlier developer days I strongly believed that all projects should go
           for this target. At a company all-hands I heard from a senior engineer
           that having zero technical debt is often not what we want. I felt
-          betrayed.</p>
+          betrayed.
+        </p>
         <p>Why is it that zero technical debt isn’t what we want?</p>
-        <h2 id="memory-allocation-strategy-leak-all-allocations">Memory
-          Allocation Strategy: Leak All Allocations</h2>
-        <p>Let’s take a moment and think of a hypothetical program. If you knew
+        <h2 id="memory-allocation-strategy-leak-all-allocations">
+          Memory Allocation Strategy: Leak All Allocations
+        </h2>
+        <p>
+          Let’s take a moment and think of a hypothetical program. If you knew
           that your program ran once and terminated, would you go through the
-          effort of deallocating each individual memory allocation at the end? You
-          are about to end the process and drop the entire heap anyway. Cleaning
-          the heap at this point is a waste. For short-lived programs who’s memory
-          consumption is bounded and less than the available memory the more
-          efficient strategy is to just leak all memory.</p>
-        <p>One might wonder if such a strategy would break reusability. “Leak
-          all allocations” doesn’t mean that you shouldn’t call
+          effort of deallocating each individual memory allocation at the end?
+          You are about to end the process and drop the entire heap anyway.
+          Cleaning the heap at this point is a waste. For short-lived programs
+          who’s memory consumption is bounded and less than the available memory
+          the more efficient strategy is to just leak all memory.
+        </p>
+        <p>
+          One might wonder if such a strategy would break reusability. “Leak all
+          allocations” doesn’t mean that you shouldn’t call
           <code>free()</code> (or equivalent) in your code. It means that the
           memory manager would treat <code>free()</code> as a no-op. This
-          principal also applies to garbage collected languages. After all, the <a href="https://devblogs.microsoft.com/oldnewthing/20100809-00/?p=13203#:~:text=Garbage%20collection%20is%20simulating%20a%20computer%20with%20an%20infinite%20amount%20of%20memory."><em>job
-of memory management is to simulate infinite memory</em></a>. If you are
-          only going to use a finite amount of memory then you don’t need memory
-          management.
+          principal also applies to garbage collected languages. After all, the
+          <a
+            href="https://devblogs.microsoft.com/oldnewthing/20100809-00/?p=13203#:~:text=Garbage%20collection%20is%20simulating%20a%20computer%20with%20an%20infinite%20amount%20of%20memory."
+            ><em>job of memory management is to simulate infinite memory</em></a
+          >. If you are only going to use a finite amount of memory then you
+          don’t need memory management.
         </p>
-        <h2 id="what-does-just-enough-technical-debt-look-like">What Does Just
-          Enough Technical Debt Look Like?</h2>
-        <p>Some of the motivation for stopping short of perfect comes from the
-          <a href="https://en.wikipedia.org/wiki/The_Mythical_Man-Month">Mythical
-            Man Month</a>.
+        <h2 id="what-does-just-enough-technical-debt-look-like">
+          What Does Just Enough Technical Debt Look Like?
+        </h2>
+        <p>
+          Some of the motivation for stopping short of perfect comes from the
+          <a href="https://en.wikipedia.org/wiki/The_Mythical_Man-Month"
+            >Mythical Man Month</a
+          >.
         </p>
         <figure>
-          <p>For the human makers of things, the incompletenesses and
-            inconsistencies of our ideas become clear only during implementation.
-            Thus it is that writing, experimentation, “working out” are essential
-            disciplines for the theoretician.</p>
+          <p>
+            For the human makers of things, the incompletenesses and
+            inconsistencies of our ideas become clear only during
+            implementation. Thus it is that writing, experimentation, “working
+            out” are essential disciplines for the theoretician.
+          </p>
           <figcaption>
-            <p>― Frederick P. Brooks Jr., The Mythical Man-Month: Essays on Software
-              Engineering</p>
+            <p>
+              ― Frederick P. Brooks Jr., The Mythical Man-Month: Essays on
+              Software Engineering
+            </p>
           </figcaption>
         </figure>
         <figure>
-          <p>The hardest part of the software task is arriving at a complete and
-            consistent specification, and much of the essence of building a program
-            is in fact the debugging of the specification.</p>
+          <p>
+            The hardest part of the software task is arriving at a complete and
+            consistent specification, and much of the essence of building a
+            program is in fact the debugging of the specification.
+          </p>
           <figcaption>
-            <p>― Frederick P. Brooks Jr., The Mythical Man-Month: Essays on Software
-              Engineering</p>
+            <p>
+              ― Frederick P. Brooks Jr., The Mythical Man-Month: Essays on
+              Software Engineering
+            </p>
           </figcaption>
         </figure>
-        <p>Software projects tend to be characteristically similar. Putting too
-          much effort into a project features you don’t need and polishing up code
-          that nobody will reuse is wasteful. It’s just a little bit harder to
-          know when you’ve crossed the point of diminishing returns where cleaning
-          up the code no longer makes sense.</p>
-        <div class="lastmodified">
-          <p>Last modified: July 8, 2023</p>
-        </div>
+        <p>
+          Software projects tend to be characteristically similar. Putting too
+          much effort into a project features you don’t need and polishing up
+          code that nobody will reuse is wasteful. It’s just a little bit harder
+          to know when you’ve crossed the point of diminishing returns where
+          cleaning up the code no longer makes sense.
+        </p>
+
+        <footer>
+          <div class="lastmodified">
+            <p>Last modified: July 8, 2023</p>
+          </div>
+        </footer>
       </article>
-      <div class="container">
-        <nav class="navlike">
-          <a href="/posts/code-as-ui/">
-            <i class="material-symbols-outlined">chevron_left</i>
-            Code As UI: The UX of config-as-code and everything-as-code
-          </a>
-          <div class="fill">&nbsp;</div>
-          <a href="/posts/the-point-of-a-strategy/">
-            The Point of a Strategy
-            <i class="material-symbols-outlined">chevron_right</i>
-          </a>
-        </nav>
-      </div>
+
+      <div class="container"></div>
     </main>
+
     <footer class="container">
       <h2>More posts from this blog ...</h2>
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/fart-limit/">
-            Fart Limit
-          </a>
+          <a href="/posts/shannon-paper/"> Shannon Paper </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on June 14, 2021
-        </span>
+          <span class="date navlike"> Last updated on March 26, 2021 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/curiosity/">#Curiosity</a>
-</span>
+            <a href="/tags/math/">#Math</a>
+          </span>
         </div>
         <div>
           <div class="summary">
-            <p>Can a fart be fatal? Let's see what science and OSHA have to say.</p>
+            <p>
+              Claude Shannon's
+              <em>A mathematical theory of communication</em> is an oft cited
+              classic in information theory. Let's dive in and try to tease
+              apart the &quot;why&quot;s that are often overlooked when people
+              build on top of the introduced theory. They are definitely things
+              that I didn't consider to be obvious without the benefit of
+              reading the paper.
+            </p>
           </div>
-          <p class="more"><a href="/posts/fart-limit/">Read more …</a></p>
+          <p class="more"><a href="/posts/shannon-paper/">Read more …</a></p>
         </div>
       </div>
+
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/inktober-wild/">
-            Inktober - Wild
+          <a href="/posts/grab-diagram-workflow-re2/">
+            Quickly grab a snapshot of your reMarkable tablet
           </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on January 13, 2022
-        </span>
+          <span class="date navlike"> Last updated on January 6, 2022 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/inktober/">#Inktober</a>
-</span>
+            <a href="/tags/remarkable-2/">#Remarkable 2</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/tools/">#Tools</a>
+          </span>
+        </div>
+        <div>
+          <div class="summary">
+            <p>
+              How to bind a hotkey to grab a snapshot of your reMarkable display
+              and copy it to the clipboard on a Mac.
+            </p>
+          </div>
+          <p class="more">
+            <a href="/posts/grab-diagram-workflow-re2/">Read more …</a>
+          </p>
         </div>
       </div>
+
       <div class="post-card">
         <h3 class="title">
           <a href="/posts/pillars-are-governance-structures/">
@@ -167,87 +240,102 @@ of memory management is to simulate infinite memory</em></a>. If you are
           </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on September 9, 2023
-        </span>
+          <span class="date navlike"> Last updated on September 9, 2023 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/culture/">#Culture</a>
-</span>
+            <a href="/tags/culture/">#Culture</a>
+          </span>
+
           <span class="tag-link">
-    <a href="/tags/career/">#Career</a>
-</span>
+            <a href="/tags/career/">#Career</a>
+          </span>
+
           <span class="tag-link">
-    <a href="/tags/organizations/">#Organizations</a>
-</span>
+            <a href="/tags/organizations/">#Organizations</a>
+          </span>
         </div>
       </div>
+
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/why-i-hate-carousels/">
-            Why I Hate Carousels
+          <a href="/posts/comcast-technican-problem/">
+            The Comcast Technician Problem
           </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on January 25, 2024
-        </span>
+          <span class="date navlike"> Last updated on July 13, 2020 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/usability/">#Usability</a>
-</span>
-          <span class="tag-link">
-    <a href="/tags/engineering/">#Engineering</a>
-</span>
+            <a href="/tags/math/">#Math</a>
+          </span>
         </div>
         <div>
           <div class="summary">
-            <ul>
-              <li>Don't use carousels in your UI.</li>
-              <li>Instead,
-                if you must stick content into little cards,
-                let the horionztal layout wrap to additional lines.</li>
-              <li>If you end up with too many horizontal lines of content,
-                then you definitely have too many items that can be accessed
-                via a horizontally panning UI.
-                You need a different UI altogether.</li>
-            </ul>
+            <p>
+              Given a set of tasks, incentives are often aligned towards
+              dropping a task rather than allowing for perpetual accretion of
+              delays.
+            </p>
           </div>
-          <p class="more"><a href="/posts/why-i-hate-carousels/">Read more …</a></p>
+          <p class="more">
+            <a href="/posts/comcast-technican-problem/">Read more …</a>
+          </p>
         </div>
       </div>
+
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/how-this-blog-works/">
-            How This Blog Works
-          </a>
+          <a href="/posts/buffer-bloat/"> Buffer Bloat </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on July 27, 2020
-        </span>
+          <span class="date navlike"> Last updated on January 3, 2025 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/meta/">#Meta</a>
-</span>
+            <a href="/tags/engineering/">#Engineering</a>
+          </span>
         </div>
         <div>
           <div class="summary">
-            <p>How I put this site together and why.</p>
+            <p>
+              In networking, adding too much buffering to intermediate network
+              devices introduce unnecessary delays. The trade-off is that
+              <em>bursty</em> traffic will have the appearance of getting
+              through faster. But in reality, the speed of the network is still
+              the same. Data just takes longer to get through.
+            </p>
           </div>
-          <p class="more"><a href="/posts/how-this-blog-works/">Read more …</a></p>
+          <p class="more"><a href="/posts/buffer-bloat/">Read more …</a></p>
         </div>
       </div>
     </footer>
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"></script>
+
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"
+    ></script>
     <script>
-      var dnt, doNotTrack = !1;
-      if (!1 && (dnt = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack, doNotTrack = dnt == "1" || dnt == "yes"), !doNotTrack) {
+      var dnt,
+        doNotTrack = !1;
+      if (
+        (!1 &&
+          ((dnt =
+            navigator.doNotTrack ||
+            window.doNotTrack ||
+            navigator.msDoNotTrack),
+          (doNotTrack = dnt == "1" || dnt == "yes")),
+        !doNotTrack)
+      ) {
         window.dataLayer = window.dataLayer || [];
         function gtag() {
-          dataLayer.push(arguments)
+          dataLayer.push(arguments);
         }
-        gtag("js", new Date), gtag("config", "G-GSREL2EZ4Y")
+        (gtag("js", new Date()), gtag("config", "G-GSREL2EZ4Y"));
       }
     </script>
   </body>

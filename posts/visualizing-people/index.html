@@ -1,26 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-us">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Visualizing Internet Users</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-    <link rel="icon" href="/images/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link rel="stylesheet" href="/styles/katex.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
-    <link rel="stylesheet" href="/styles/kCLLP63cz-.css">
-    <link rel="me" href="mailto:asanka@gmail.com">
-    <link rel="me" href="https://github.com/asankah">
-    <meta name="generator" content="Pandoc + Eleventy">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/apple-touch-icon.png"
+    />
+    <link rel="icon" href="/images/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon-32x32.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/images/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link rel="stylesheet" href="/styles/katex.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link rel="stylesheet" href="/styles/C_Z__E83wh.css" />
+    <link rel="me" href="mailto:asanka@gmail.com" />
+    <link rel="me" href="https://github.com/asankah" />
+
+    <meta name="generator" content="Pandoc + Eleventy" />
   </head>
+
   <body>
     <header class="container">
       <nav class="navlike">
@@ -28,318 +55,543 @@
         <span class="fill"></span>
         <h2><a href="/about/me/">About</a></h2>
         <h2><a href="/tags/">Tags</a></h2>
-        <h2><a href="/feed.xml"><img src="/images/rss.svg"></a></h2>
+        <h2>
+          <a href="/feed.xml"><img src="/images/rss.svg" /></a>
+        </h2>
       </nav>
     </header>
+
     <main>
       <article class="container">
         <header>
           <h1>Visualizing Internet Users</h1>
           <div class="navlike">
             <span>
-          <span class="date">Posted on November 21, 2020</span><span class="author">&nbsp;by Asanka Herath</span></span>
+              <span class="date">Posted on November 21, 2020</span
+              ><span class="author">&nbsp;by Asanka Herath</span></span
+            >
             <span class="fill"></span>
+
             <span class="tag-link">
-    <a href="/tags/engineering/">#Engineering</a>
-</span>
+              <a href="/tags/engineering/">#Engineering</a>
+            </span>
+
             <span class="tag-link">
-    <a href="/tags/curiosity/">#Curiosity</a>
-</span>
+              <a href="/tags/curiosity/">#Curiosity</a>
+            </span>
           </div>
           <div class="navlike">
-            <span class="readingtime">Estimated reading time is 12 minutes.</span>
+            <span class="readingtime">
+              Estimated reading time is 12 minutes.
+            </span>
             <span class="fill"></span>
           </div>
         </header>
-        <p>What does 0.3%<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> of internet users look like?</p>
-        <p>As of this writing the global population hovers around 7.7 billion
-          according to the World Population Clock <a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p>
+
+        <p>
+          What does 0.3%<a
+            href="#fn1"
+            class="footnote-ref"
+            id="fnref1"
+            role="doc-noteref"
+            ><sup>1</sup></a
+          >
+          of internet users look like?
+        </p>
+        <p>
+          As of this writing the global population hovers around 7.7 billion
+          according to the World Population Clock
+          <a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"
+            ><sup>2</sup></a
+          >.
+        </p>
         <figure>
-          <img src="/posts/visualizing-people/XbRiHutKq4-1126.png" alt="Screenshot from census.gov showing the world population clock." width="1126" height="773">
-          <figcaption aria-hidden="true">Screenshot from census.gov showing the
-            world population clock.</figcaption>
+          <img
+            src="/posts/visualizing-people/XbRiHutKq4-1126.png"
+            alt="Screenshot from census.gov showing the world population clock."
+            width="1126"
+            height="773"
+          />
+          <figcaption aria-hidden="true">
+            Screenshot from census.gov showing the world population clock.
+          </figcaption>
         </figure>
-        <p>The <a href="https://www.itu.int/">International Telecommunications
-            Union</a> “estimates that at the end of 2019, 53.6 per cent of the
-          global population, or 4.1 billion people, are using the internet.”<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+        <p>
+          The
+          <a href="https://www.itu.int/"
+            >International Telecommunications Union</a
+          >
+          “estimates that at the end of 2019, 53.6 per cent of the global
+          population, or 4.1 billion people, are using the internet.”<a
+            href="#fn3"
+            class="footnote-ref"
+            id="fnref3"
+            role="doc-noteref"
+            ><sup>3</sup></a
+          >
+        </p>
         <figure>
-          <img src="/posts/visualizing-people/1dcJVktl_l-670.png" alt="Screenshot from itu.int showing historical internet usage numbers as a percentage of the world population" width="670" height="570">
-          <figcaption aria-hidden="true">Screenshot from itu.int showing
-            historical internet usage numbers as a percentage of the world
-            population</figcaption>
+          <img
+            src="/posts/visualizing-people/1dcJVktl_l-670.png"
+            alt="Screenshot from itu.int showing historical internet usage numbers as a percentage of the world population"
+            width="670"
+            height="570"
+          />
+          <figcaption aria-hidden="true">
+            Screenshot from itu.int showing historical internet usage numbers as
+            a percentage of the world population
+          </figcaption>
         </figure>
-        <p>So a 0.3% of the internet would be a roughly 12,300,000 or around
-          12.3 million. A nice little number.</p>
+        <p>
+          So a 0.3% of the internet would be a roughly 12,300,000 or around 12.3
+          million. A nice little number.
+        </p>
         <h2 id="from-50-to-100000">From 50 to 100,000</h2>
-        <p>It’s interesting to try and visualize this. An example of visualizing
-          populations for small numbers can be found at <a href="https://blog.lime.link/visualizing-crowd-sizes/">Visualizing Crowd
-            Sizes</a>. It goes from around 50 people up to 100,000 people.</p>
-        <p>While 100,000 is interesting we need to go all the way to 12.3
-          million.</p>
+        <p>
+          It’s interesting to try and visualize this. An example of visualizing
+          populations for small numbers can be found at
+          <a href="https://blog.lime.link/visualizing-crowd-sizes/"
+            >Visualizing Crowd Sizes</a
+          >. It goes from around 50 people up to 100,000 people.
+        </p>
+        <p>
+          While 100,000 is interesting we need to go all the way to 12.3
+          million.
+        </p>
         <h2 id="section">200,000</h2>
-        <p>A particularly macabre topic these days since the United States
-          surpassed 200,000 deaths due to COVID-19 around September of 2020. <a href="https://www.ctpost.com/">ctpost</a> ran an article online title <a href="https://www.ctpost.com/news/coronavirus/slideshow/Analysis-What-200-000-COVID-deaths-actually-209169.php">“What
-            does 200,000 deaths actually look like”</a>. There are some interesting
-          comparisons there, but none make for a good visual. It’s just an
-          interesting number right now.</p>
-        <p>As for crowd sizes, 200,000 was the estimated number of people who
-          attended the <a href="https://marchforourlives.com/">March for Our
-            Lives</a> in D.C.. There aren’t any photos capturing <em>all</em>
-          attendees in one shot, but there are numerous pictures in <a href="https://www.cbsnews.com/news/march-for-our-lives-crowd-size-estimated-200000-people-attended-d-c-march/">this
-            CBS News article</a> to give you a good idea.</p>
-        <p>In more terrible examples, <a href="https://www.dw.com/en/more-than-200000-indonesians-protest-governor-purnamas-alleged-blasphemy/a-36611145">this
-            article on dw.com</a> suggests that the crowd size pictured is roughly
-          around 200,000 people.</p>
+        <p>
+          A particularly macabre topic these days since the United States
+          surpassed 200,000 deaths due to COVID-19 around September of 2020.
+          <a href="https://www.ctpost.com/">ctpost</a> ran an article online
+          title
+          <a
+            href="https://www.ctpost.com/news/coronavirus/slideshow/Analysis-What-200-000-COVID-deaths-actually-209169.php"
+            >“What does 200,000 deaths actually look like”</a
+          >. There are some interesting comparisons there, but none make for a
+          good visual. It’s just an interesting number right now.
+        </p>
+        <p>
+          As for crowd sizes, 200,000 was the estimated number of people who
+          attended the
+          <a href="https://marchforourlives.com/">March for Our Lives</a> in
+          D.C.. There aren’t any photos capturing <em>all</em> attendees in one
+          shot, but there are numerous pictures in
+          <a
+            href="https://www.cbsnews.com/news/march-for-our-lives-crowd-size-estimated-200000-people-attended-d-c-march/"
+            >this CBS News article</a
+          >
+          to give you a good idea.
+        </p>
+        <p>
+          In more terrible examples,
+          <a
+            href="https://www.dw.com/en/more-than-200000-indonesians-protest-governor-purnamas-alleged-blasphemy/a-36611145"
+            >this article on dw.com</a
+          >
+          suggests that the crowd size pictured is roughly around 200,000
+          people.
+        </p>
         <blockquote>
-          <p>More than 200,000 conservative Muslims gathered in Indonesia’s
+          <p>
+            More than 200,000 conservative Muslims gathered in Indonesia’s
             capital Jakarta on Friday to protest against the city’s Christian
-            governor, who is facing trial for blasphemy, police estimated.</p>
+            governor, who is facing trial for blasphemy, police estimated.
+          </p>
         </blockquote>
         <figure>
-          <img src="/posts/visualizing-people/ellX1zCTFs-745.png" alt="Image from dw.com of a protest in Indonesia allegedly showing 200,000 people. Image Source" width="745" height="807">
-          <figcaption aria-hidden="true">Image from dw.com of a protest in
-            Indonesia allegedly showing 200,000 people. <a href="https://www.dw.com/en/more-than-200000-indonesians-protest-governor-purnamas-alleged-blasphemy/a-36611145">Image
-              Source</a></figcaption>
+          <img
+            src="/posts/visualizing-people/ellX1zCTFs-745.png"
+            alt="Image from dw.com of a protest in Indonesia allegedly showing 200,000 people. Image Source"
+            width="745"
+            height="807"
+          />
+          <figcaption aria-hidden="true">
+            Image from dw.com of a protest in Indonesia allegedly showing
+            200,000 people.
+            <a
+              href="https://www.dw.com/en/more-than-200000-indonesians-protest-governor-purnamas-alleged-blasphemy/a-36611145"
+              >Image Source</a
+            >
+          </figcaption>
         </figure>
         <h2 id="section-1">500,000</h2>
-        <p>We are heading into shaky ground here. A 800*600 picture only
-          contains 480,000 pixels. So we are now reduced to indicating population
-          by inference. It is nolonger possible to capture 500,000 people in a
-          webpage sized picture while showing each person individually.</p>
-        <p><a href="https://www.reddit.com/r/philadelphia/comments/3by9g8/if_this_is_what_500k_people_look_like_xpost_from/">This
-            Reddit post</a> claims that there are 500k people in the picture, but I
-          couldn’t readily find any good references backing up that claim.</p>
-        <p>As is tradition by now, another protest that drew 500,000 people is
-          <a href="https://www.nbcnews.com/show-me/video/nearly-500-000-people-march-in-anti-violence-rally-in-barcelona-1033617987741">an
-            anti-violence rally in Barcelona as reported by NBC</a>. While there’s
-          video, the content doesn’t quite capture the massive number of people.
-          Also it’s “nearly 500,000” people.
+        <p>
+          We are heading into shaky ground here. A 800*600 picture only contains
+          480,000 pixels. So we are now reduced to indicating population by
+          inference. It is nolonger possible to capture 500,000 people in a
+          webpage sized picture while showing each person individually.
         </p>
-        <p>However, the closest we’ll probably get to a somewhat believable
+        <p>
+          <a
+            href="https://www.reddit.com/r/philadelphia/comments/3by9g8/if_this_is_what_500k_people_look_like_xpost_from/"
+            >This Reddit post</a
+          >
+          claims that there are 500k people in the picture, but I couldn’t
+          readily find any good references backing up that claim.
+        </p>
+        <p>
+          As is tradition by now, another protest that drew 500,000 people is
+          <a
+            href="https://www.nbcnews.com/show-me/video/nearly-500-000-people-march-in-anti-violence-rally-in-barcelona-1033617987741"
+            >an anti-violence rally in Barcelona as reported by NBC</a
+          >. While there’s video, the content doesn’t quite capture the massive
+          number of people. Also it’s “nearly 500,000” people.
+        </p>
+        <p>
+          However, the closest we’ll probably get to a somewhat believable
           500,000 person crowd would be the March for Science. They posted the
-          following picture on <a href="https://www.facebook.com/marchforscience/posts/836983043362678">Facebook</a>
-          noting that “There are 500,000 people on strike in Montreal”.</p>
+          following picture on
+          <a
+            href="https://www.facebook.com/marchforscience/posts/836983043362678"
+            >Facebook</a
+          >
+          noting that “There are 500,000 people on strike in Montreal”.
+        </p>
         <figure>
-          <img src="/posts/visualizing-people/_X4o_8tT3n-511.png" alt="March for Science on Facebook: Picture of protest" width="511" height="951">
-          <figcaption aria-hidden="true">March for Science on Facebook: Picture of
-            protest</figcaption>
+          <img
+            src="/posts/visualizing-people/_X4o_8tT3n-511.png"
+            alt="March for Science on Facebook: Picture of protest"
+            width="511"
+            height="951"
+          />
+          <figcaption aria-hidden="true">
+            March for Science on Facebook: Picture of protest
+          </figcaption>
         </figure>
-        <p><a href="https://www.facebook.com/marchforscience/posts/836983043362678">Image
-            source</a></p>
+        <p>
+          <a
+            href="https://www.facebook.com/marchforscience/posts/836983043362678"
+            >Image source</a
+          >
+        </p>
         <h2 id="section-2">750,000</h2>
-        <p>Off to protests again. This time we are looking at Barcelona where
+        <p>
+          Off to protests again. This time we are looking at Barcelona where
           750,000 Catalan independence supporters are demanding the release of
-          their leaders according to <a href="http://www.timealem.com/750000-people-flood-barcelona-demanding-release-of-catalan-leaders_d575.html">this
-            article</a>.</p>
+          their leaders according to
+          <a
+            href="http://www.timealem.com/750000-people-flood-barcelona-demanding-release-of-catalan-leaders_d575.html"
+            >this article</a
+          >.
+        </p>
         <figure>
-          <img src="/posts/visualizing-people/Od67VniUj9-696.png" alt="750,000 people flood Barcelona demanding release of Catalan leaders. Image source" width="696" height="736">
-          <figcaption aria-hidden="true">750,000 people flood Barcelona demanding
-            release of Catalan leaders. <a href="http://www.timealem.com/750000-people-flood-barcelona-demanding-release-of-catalan-leaders_d575.html">Image
-              source</a></figcaption>
+          <img
+            src="/posts/visualizing-people/Od67VniUj9-696.png"
+            alt="750,000 people flood Barcelona demanding release of Catalan leaders. Image source"
+            width="696"
+            height="736"
+          />
+          <figcaption aria-hidden="true">
+            750,000 people flood Barcelona demanding release of Catalan leaders.
+            <a
+              href="http://www.timealem.com/750000-people-flood-barcelona-demanding-release-of-catalan-leaders_d575.html"
+              >Image source</a
+            >
+          </figcaption>
         </figure>
-        <p>The crowd extends past the top of the frame and there’s no chance
-          this is the entire crowd. But you get the general idea. If you ship a
-          bug that affects 0.01% of the internet population, then this is a
-          conservative lower bound of what that angry mob would look like.</p>
-        <p>But wait, the <a href="https://www.guinnessworldrecords.com/news/non-corporate/2018/6/more-than-750-000-people-help-philippines-based-church-achieve-four-new-records-529029">Guinness
-            World Record for teh largest charity walk/run</a> is 283,171 people at a
-          single venue. Have a look at that picture:</p>
+        <p>
+          The crowd extends past the top of the frame and there’s no chance this
+          is the entire crowd. But you get the general idea. If you ship a bug
+          that affects 0.01% of the internet population, then this is a
+          conservative lower bound of what that angry mob would look like.
+        </p>
+        <p>
+          But wait, the
+          <a
+            href="https://www.guinnessworldrecords.com/news/non-corporate/2018/6/more-than-750-000-people-help-philippines-based-church-achieve-four-new-records-529029"
+            >Guinness World Record for teh largest charity walk/run</a
+          >
+          is 283,171 people at a single venue. Have a look at that picture:
+        </p>
         <figure>
-          <img src="/posts/visualizing-people/BXnyRjHkoM-674.png" alt="Guinness Record for the largest charity walk or run at a single venue is for 283,171 people. Image Source" width="674" height="598">
-          <figcaption aria-hidden="true">Guinness Record for the largest charity
-            walk or run at a single venue is for 283,171 people. <a href="https://www.guinnessworldrecords.com/news/non-corporate/2018/6/more-than-750-000-people-help-philippines-based-church-achieve-four-new-records-529029">Image
-              Source</a></figcaption>
+          <img
+            src="/posts/visualizing-people/BXnyRjHkoM-674.png"
+            alt="Guinness Record for the largest charity walk or run at a single venue is for 283,171 people. Image Source"
+            width="674"
+            height="598"
+          />
+          <figcaption aria-hidden="true">
+            Guinness Record for the largest charity walk or run at a single
+            venue is for 283,171 people.
+            <a
+              href="https://www.guinnessworldrecords.com/news/non-corporate/2018/6/more-than-750-000-people-help-philippines-based-church-achieve-four-new-records-529029"
+              >Image Source</a
+            >
+          </figcaption>
         </figure>
-        <p>It seems that picture of 750,000 people doesn’t quite capture it
-          because clearly there are more people in the picture that’s supposed to
-          be 283k people. Which of course goes to show how hard it is to really
-          capture how massive a crowd 750k makes.</p>
-        <p>In an article on Wired that discusses how hard it is to estimate
-          crowd sizes, they note<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>:</p>
+        <p>
+          It seems that picture of 750,000 people doesn’t quite capture it
+          because clearly there are more people in the picture that’s supposed
+          to be 283k people. Which of course goes to show how hard it is to
+          really capture how massive a crowd 750k makes.
+        </p>
+        <p>
+          In an article on Wired that discusses how hard it is to estimate crowd
+          sizes, they note<a
+            href="#fn4"
+            class="footnote-ref"
+            id="fnref4"
+            role="doc-noteref"
+            ><sup>4</sup></a
+          >:
+        </p>
         <blockquote>
-          <p>Every time a ton of people gather in one place, there are all sorts
-            of pronouncements made about how many folks really showed. The figures
-            rarely agree; Glenn Beck’s rally on the National Mall this summer
-            attracted a million people, according to Beck cohort Rep. Michelle
-            Bachman. CBS News pegged it at more like 87,000.</p>
+          <p>
+            Every time a ton of people gather in one place, there are all sorts
+            of pronouncements made about how many folks really showed. The
+            figures rarely agree; Glenn Beck’s rally on the National Mall this
+            summer attracted a million people, according to Beck cohort
+            Rep. Michelle Bachman. CBS News pegged it at more like 87,000.
+          </p>
         </blockquote>
         <h3 id="and-more">And More</h3>
-        <p>I’m going to give up at this point. Pictures purportedly of around
-          one million people are mostly parts of crowds that have been estimated
-          to be that big. Forget about 12.3 million.</p>
-        <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
-          <hr>
+        <p>
+          I’m going to give up at this point. Pictures purportedly of around one
+          million people are mostly parts of crowds that have been estimated to
+          be that big. Forget about 12.3 million.
+        </p>
+        <section
+          id="footnotes"
+          class="footnotes footnotes-end-of-document"
+          role="doc-endnotes"
+        >
+          <hr />
           <ol>
             <li id="fn1">
-              <p>Why 0.3% of the internet population? It’s a number that
-                came up when trying to come up with a reasonable sample size for
-                estimating the diversity of the internet population. There’s not much
-                special about it other than that.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p>
+              <p>
+                Why 0.3% of the internet population? It’s a number that came up
+                when trying to come up with a reasonable sample size for
+                estimating the diversity of the internet population. There’s not
+                much special about it other than that.<a
+                  href="#fnref1"
+                  class="footnote-back"
+                  role="doc-backlink"
+                  >↩︎</a
+                >
+              </p>
             </li>
             <li id="fn2">
-              <p>The <a href="https://www.census.gov/popclock/">world
-                  population clock</a>. This link is for the current number at whatever
-                time you clicked on the link assuming the site is still there. As of
-                November 20, 2021, the number was 7.7 billion. I’d link you to an
-                archived page but that doesn’t seem to work.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p>
+              <p>
+                The
+                <a href="https://www.census.gov/popclock/"
+                  >world population clock</a
+                >. This link is for the current number at whatever time you
+                clicked on the link assuming the site is still there. As of
+                November 20, 2021, the number was 7.7 billion. I’d link you to
+                an archived page but that doesn’t seem to work.<a
+                  href="#fnref2"
+                  class="footnote-back"
+                  role="doc-backlink"
+                  >↩︎</a
+                >
+              </p>
             </li>
             <li id="fn3">
-              <p><a href="https://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx">Statistics
-                  pages on itu.int</a> project even higher numbers than 53.6% by the end
-                of 2020, but it’s possible numbers won’t behave according to historical
-                trends due to the effects of COVID.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p>
+              <p>
+                <a
+                  href="https://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx"
+                  >Statistics pages on itu.int</a
+                >
+                project even higher numbers than 53.6% by the end of 2020, but
+                it’s possible numbers won’t behave according to historical
+                trends due to the effects of COVID.<a
+                  href="#fnref3"
+                  class="footnote-back"
+                  role="doc-backlink"
+                  >↩︎</a
+                >
+              </p>
             </li>
             <li id="fn4">
-              <p><a href="https://www.wired.com/2011/02/how-many-people-are-in-tahrir-square-heres-how-to-tell/">How
-                  Many People Are in Tahrir Square? Here’s How to Tell</a><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p>
+              <p>
+                <a
+                  href="https://www.wired.com/2011/02/how-many-people-are-in-tahrir-square-heres-how-to-tell/"
+                  >How Many People Are in Tahrir Square? Here’s How to Tell</a
+                ><a href="#fnref4" class="footnote-back" role="doc-backlink"
+                  >↩︎</a
+                >
+              </p>
             </li>
           </ol>
         </section>
-        <div class="lastmodified">
-          <p>Last modified: November 21, 2020</p>
-        </div>
+
+        <footer>
+          <div class="lastmodified">
+            <p>Last modified: November 21, 2020</p>
+          </div>
+        </footer>
       </article>
-      <div class="container">
-        <nav class="navlike">
-          <a href="/posts/things-you-can-do-with-nvim-and-vscode/">
-            <i class="material-symbols-outlined">chevron_left</i>
-            Things You Can Do With Neovim and Vscode That You Can&#39;t Do With Neovim Alone
-          </a>
-          <div class="fill">&nbsp;</div>
-          <a href="/posts/ten-years/">
-            Ten Years
-            <i class="material-symbols-outlined">chevron_right</i>
-          </a>
-        </nav>
-      </div>
+
+      <div class="container"></div>
     </main>
+
     <footer class="container">
       <h2>More posts from this blog ...</h2>
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/identity-domains/">
-            Identity Domains
+          <a href="/posts/code-as-ui/">
+            Code As UI: The UX of config-as-code and everything-as-code
           </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on May 1, 2020
-        </span>
+          <span class="date navlike"> Last updated on July 1, 2023 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/privacy/">#Privacy</a>
-</span>
+            <a href="/tags/engineering/">#engineering</a>
+          </span>
         </div>
         <div>
           <div class="summary">
-            <p>An Identity Domain is a scope within which we assume that the user's identity
-              can roam freely.</p>
+            <p>
+              Configuration-as-code has the same usability issues as everything
+              else as code along with the same benefits.
+            </p>
           </div>
-          <p class="more"><a href="/posts/identity-domains/">Read more …</a></p>
+          <p class="more"><a href="/posts/code-as-ui/">Read more …</a></p>
         </div>
       </div>
+
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/syntax-highlighting/">
-            On Highlighting Syntax vs. Semantics
+          <a href="/posts/just-the-right-amount/">
+            Just Enough Technical Debt
           </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on February 12, 2022
-        </span>
+          <span class="date navlike"> Last updated on July 8, 2023 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/engineering/">#Engineering</a>
-</span>
+            <a href="/tags/engineering/">#Engineering</a>
+          </span>
         </div>
         <div>
           <div class="summary">
-            <p>Takes a look at an alternate form of code highlighting based on core semantics instead of syntactic role.</p>
+            <p>Zero technical debt isn't always the answer.</p>
           </div>
-          <p class="more"><a href="/posts/syntax-highlighting/">Read more …</a></p>
+          <p class="more">
+            <a href="/posts/just-the-right-amount/">Read more …</a>
+          </p>
         </div>
       </div>
+
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/the-loss-of-a-virtuous-culture/">
-            The Loss of a Virtuous Culture
+          <a href="/posts/use-drop-not-edit/">
+            Vim: Use Drop Not Edit, SBuffer Not Buffer
           </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on October 28, 2022
-        </span>
+          <span class="date navlike"> Last updated on July 7, 2020 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/culture/">#Culture</a>
-</span>
+            <a href="/tags/tools/">#Tools</a>
+          </span>
+
           <span class="tag-link">
-    <a href="/tags/engineering/">#Engineering</a>
-</span>
+            <a href="/tags/vim/">#Vim</a>
+          </span>
         </div>
         <div>
           <div class="summary">
-            <p>Luck isn't enough. You need a culture of virtue.</p>
+            <p>
+              Use the <code>:drop</code> command instead of
+              <code>:edit</code> in Vim. It will reuse an existing window
+              instead of creating a new one.
+            </p>
           </div>
-          <p class="more"><a href="/posts/the-loss-of-a-virtuous-culture/">Read more …</a></p>
+          <p class="more">
+            <a href="/posts/use-drop-not-edit/">Read more …</a>
+          </p>
         </div>
       </div>
+
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/intermezzo-2025/">
-            Intermission - Q1 of 2025
-          </a>
+          <a href="/posts/buffer-bloat/"> Buffer Bloat </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on May 3, 2025
-            , Originally posted on April 7, 2025
-        </span>
+          <span class="date navlike"> Last updated on January 3, 2025 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/culture/">#Culture</a>
-</span>
+            <a href="/tags/engineering/">#Engineering</a>
+          </span>
         </div>
         <div>
           <div class="summary">
-            <p>Hate can be suppressed temporarily, but cannot be contained for too long.</p>
+            <p>
+              In networking, adding too much buffering to intermediate network
+              devices introduce unnecessary delays. The trade-off is that
+              <em>bursty</em> traffic will have the appearance of getting
+              through faster. But in reality, the speed of the network is still
+              the same. Data just takes longer to get through.
+            </p>
           </div>
-          <p class="more"><a href="/posts/intermezzo-2025/">Read more …</a></p>
+          <p class="more"><a href="/posts/buffer-bloat/">Read more …</a></p>
         </div>
       </div>
+
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/how-this-blog-works/">
-            How This Blog Works
+          <a href="/series/unsung-team-roles/emergence/"
+            ><span class="series-name">Unsung Team Roles</span>: Emergence of
+            Soft Roles
           </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on July 27, 2020
-        </span>
+          <span class="date navlike"> Last updated on August 2, 2025 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/meta/">#Meta</a>
-</span>
+            <a href="/tags/organizations/">#Organizations</a>
+          </span>
         </div>
         <div>
           <div class="summary">
-            <p>How I put this site together and why.</p>
+            <p>
+              In any team, the roles people play are not as rigid as they seem.
+              Over time, people naturally settle into &quot;soft roles&quot;
+              that are not explicitly defined but are crucial for a team's
+              success. This is a look at the organic, and often unsung, ways
+              that successful teams actually work.
+            </p>
           </div>
-          <p class="more"><a href="/posts/how-this-blog-works/">Read more …</a></p>
+          <p class="more">
+            <a href="/series/unsung-team-roles/emergence/">Read more …</a>
+          </p>
         </div>
       </div>
     </footer>
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"></script>
+
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"
+    ></script>
     <script>
-      var dnt, doNotTrack = !1;
-      if (!1 && (dnt = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack, doNotTrack = dnt == "1" || dnt == "yes"), !doNotTrack) {
+      var dnt,
+        doNotTrack = !1;
+      if (
+        (!1 &&
+          ((dnt =
+            navigator.doNotTrack ||
+            window.doNotTrack ||
+            navigator.msDoNotTrack),
+          (doNotTrack = dnt == "1" || dnt == "yes")),
+        !doNotTrack)
+      ) {
         window.dataLayer = window.dataLayer || [];
         function gtag() {
-          dataLayer.push(arguments)
+          dataLayer.push(arguments);
         }
-        gtag("js", new Date), gtag("config", "G-GSREL2EZ4Y")
+        (gtag("js", new Date()), gtag("config", "G-GSREL2EZ4Y"));
       }
     </script>
   </body>

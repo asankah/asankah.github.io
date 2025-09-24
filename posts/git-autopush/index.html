@@ -1,26 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-us">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Use Git hooks to automatically push after every commit</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-    <link rel="icon" href="/images/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link rel="stylesheet" href="/styles/katex.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
-    <link rel="stylesheet" href="/styles/kCLLP63cz-.css">
-    <link rel="me" href="mailto:asanka@gmail.com">
-    <link rel="me" href="https://github.com/asankah">
-    <meta name="generator" content="Pandoc + Eleventy">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/apple-touch-icon.png"
+    />
+    <link rel="icon" href="/images/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon-32x32.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/images/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link rel="stylesheet" href="/styles/katex.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link rel="stylesheet" href="/styles/C_Z__E83wh.css" />
+    <link rel="me" href="mailto:asanka@gmail.com" />
+    <link rel="me" href="https://github.com/asankah" />
+
+    <meta name="generator" content="Pandoc + Eleventy" />
   </head>
+
   <body>
     <header class="container">
       <nav class="navlike">
@@ -28,203 +55,243 @@
         <span class="fill"></span>
         <h2><a href="/about/me/">About</a></h2>
         <h2><a href="/tags/">Tags</a></h2>
-        <h2><a href="/feed.xml"><img src="/images/rss.svg"></a></h2>
+        <h2>
+          <a href="/feed.xml"><img src="/images/rss.svg" /></a>
+        </h2>
       </nav>
     </header>
+
     <main>
       <article class="container">
         <header>
           <h1>Use Git hooks to automatically push after every commit</h1>
           <div class="navlike">
             <span>
-          <span class="date">Posted on July 5, 2022</span><span class="author">&nbsp;by Asanka Herath</span></span>
+              <span class="date">Posted on July 5, 2022</span
+              ><span class="author">&nbsp;by Asanka Herath</span></span
+            >
             <span class="fill"></span>
+
             <span class="tag-link">
-    <a href="/tags/tools/">#tools</a>
-</span>
+              <a href="/tags/tools/">#tools</a>
+            </span>
           </div>
           <div class="navlike">
-            <span class="readingtime">Estimated reading time is 2 minutes.</span>
+            <span class="readingtime">
+              Estimated reading time is 2 minutes.
+            </span>
             <span class="fill"></span>
           </div>
         </header>
-        <p>A Git hook is a shell script that is invoked at specific points
-          during some Git operations. They are documented in <a href="https://www.git-scm.com/docs/githooks#_post_commit">the Git
-            book</a>.</p>
-        <p>The hook we are interested in is <code>post-commit</code> (<a href="https://www.git-scm.com/docs/githooks#_post_commit">documented
-            here</a>). It gets run after a new commit is made. This is exactly when
-          we want to try and update our remote.</p>
+
+        <p>
+          A Git hook is a shell script that is invoked at specific points during
+          some Git operations. They are documented in
+          <a href="https://www.git-scm.com/docs/githooks#_post_commit"
+            >the Git book</a
+          >.
+        </p>
+        <p>
+          The hook we are interested in is <code>post-commit</code> (<a
+            href="https://www.git-scm.com/docs/githooks#_post_commit"
+            >documented here</a
+          >). It gets run after a new commit is made. This is exactly when we
+          want to try and update our remote.
+        </p>
         <p>Our hook will:</p>
         <ul>
           <li>Execute each time you commit something into your repository.</li>
-          <li>Avoid doing anything if the commit is made during a rebase or
-            merge.</li>
-          <li>Push to a remote named <code>origin</code> (or whichever one you
-            change the <code>UPSTREAM</code> shell variable to point).</li>
-          <li>Create or update a remote reference that matches the branch name
-            that’s currently checked out.</li>
+          <li>
+            Avoid doing anything if the commit is made during a rebase or merge.
+          </li>
+          <li>
+            Push to a remote named <code>origin</code> (or whichever one you
+            change the <code>UPSTREAM</code> shell variable to point).
+          </li>
+          <li>
+            Create or update a remote reference that matches the branch name
+            that’s currently checked out.
+          </li>
         </ul>
-        <p>Copy and paste the following script into a file named
+        <p>
+          Copy and paste the following script into a file named
           <code>.git/hooks/post-commit</code> in your repository directory.
         </p>
-        <p>IMPORTANT: Afterwards make the script runnable via
+        <p>
+          IMPORTANT: Afterwards make the script runnable via
           <code>chmod +x .git/hooks/post-commit</code>.
         </p>
         <script src="https://gist.github.com/asankah/a6263bbd6081bffd031ca066e5177df2.js"></script>
-        <div class="lastmodified">
-          <p>Last modified: July 5, 2022</p>
-        </div>
+
+        <footer>
+          <div class="lastmodified">
+            <p>Last modified: July 5, 2022</p>
+          </div>
+        </footer>
       </article>
-      <div class="container">
-        <nav class="navlike">
-          <a href="/posts/darpa-heilmeier-catechism/">
-            <i class="material-symbols-outlined">chevron_left</i>
-            DARPA&#39;s Heilmeier Catechism
-          </a>
-          <div class="fill">&nbsp;</div>
-          <a href="/posts/interesting-numbers/">
-            All natural numbers are interesting
-            <i class="material-symbols-outlined">chevron_right</i>
-          </a>
-        </nav>
-      </div>
+
+      <div class="container"></div>
     </main>
+
     <footer class="container">
       <h2>More posts from this blog ...</h2>
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/ten-years/">
-            Ten Years
+          <a href="/posts/remarkable-first-impressions/">
+            Note-taking on a reMarkable 2
           </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on December 9, 2020
-        </span>
+          <span class="date navlike"> Last updated on December 30, 2021 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/career/">#Career</a>
-</span>
-        </div>
-      </div>
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/syntax-highlighting/">
-            On Highlighting Syntax vs. Semantics
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike">
-            Last updated on February 12, 2022
-        </span>
-          <span class="fill"></span>
+            <a href="/tags/remarkable-2/">#Remarkable 2</a>
+          </span>
+
           <span class="tag-link">
-    <a href="/tags/engineering/">#Engineering</a>
-</span>
+            <a href="/tags/reviews/">#Reviews</a>
+          </span>
         </div>
         <div>
           <div class="summary">
-            <p>Takes a look at an alternate form of code highlighting based on core semantics instead of syntactic role.</p>
+            <p>Sentiments after using the reMarkable 2 tablet for a month.</p>
           </div>
-          <p class="more"><a href="/posts/syntax-highlighting/">Read more …</a></p>
+          <p class="more">
+            <a href="/posts/remarkable-first-impressions/">Read more …</a>
+          </p>
         </div>
       </div>
+
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/promise-fatigue/">
-            Promise Fatigue
+          <a href="/posts/pillars-are-governance-structures/">
+            Pillars And Governance Structures
           </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on November 1, 2022
-        </span>
+          <span class="date navlike"> Last updated on September 9, 2023 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/culture/">#Culture</a>
-</span>
+            <a href="/tags/culture/">#Culture</a>
+          </span>
+
           <span class="tag-link">
-    <a href="/tags/career/">#Career</a>
-</span>
+            <a href="/tags/career/">#Career</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/organizations/">#Organizations</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <h3 class="title">
+          <a href="/posts/fourteen-years/"> Fourteen Years </a>
+        </h3>
+        <div class="navlike">
+          <span class="date navlike"> Last updated on December 31, 2024 </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/career/">#Career</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/culture/">#Culture</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/organizations/">#Organizations</a>
+          </span>
         </div>
         <div>
           <div class="summary">
-            <p>Setting low but realistic expectations is better than setting high but unrealistic ones.</p>
+            <p>More reflections from foureteen years at Google.</p>
           </div>
-          <p class="more"><a href="/posts/promise-fatigue/">Read more …</a></p>
+          <p class="more"><a href="/posts/fourteen-years/">Read more …</a></p>
         </div>
       </div>
+
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/catchment/">
-            Draining Our Intellectual Catchment Areas
+          <a href="/posts/intrinsic-motivation-an-anecdote/">
+            Intrinsic and Extrinsic Motivation: An anecdote
           </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on July 4, 2025
-        </span>
+          <span class="date navlike"> Last updated on March 22, 2025 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/culture/">#Culture</a>
-</span>
+            <a href="/tags/culture/">#Culture</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/career/">#Career</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/inclusion-and-equity/">#Inclusion and Equity</a>
+          </span>
         </div>
         <div>
           <div class="summary">
-            <p>Intellectual catchment areas are collaborative ecosystems between
-              universities and industries that attract talent and ideas. The
-              United States became a hub of intellectual capital after World War II,
-              thanks to a combination of industrial growth around universities,
-              significant research funding, and favorable immigration policies.</p>
-            <p>The current political climate is jeopardizing these ecosystems.
-              Continued threats against universities and immigration could undo a century
-              of progress, ultimately depleting the nation's source of creativity and
-              innovation.</p>
+            <p>
+              Intrinsic motivation is always better than extrinsic motivation.
+              But not as good as it is when one is motivated both intrinsically
+              and extrinsically.
+            </p>
           </div>
-          <p class="more"><a href="/posts/catchment/">Read more …</a></p>
+          <p class="more">
+            <a href="/posts/intrinsic-motivation-an-anecdote/">Read more …</a>
+          </p>
         </div>
       </div>
+
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/emergent-roles/">
-            Unsung Team Roles
-          </a>
+          <a href="/posts/symbol-name-types/"> Names for Name Conventions </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on August 2, 2025
-        </span>
+          <span class="date navlike"> Last updated on August 24, 2020 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/culture/">#Culture</a>
-</span>
-          <span class="tag-link">
-    <a href="/tags/career/">#Career</a>
-</span>
-          <span class="tag-link">
-    <a href="/tags/organizations/">#Organizations</a>
-</span>
-        </div>
-        <div>
-          <div class="summary">
-            <p>In any team, the roles people play are not as rigid as they seem.
-              Over time, people naturally settle into &quot;soft roles&quot; that are not explicitly
-              defined but are crucial for a team's success. This is a look at the organic,
-              and often unsung, ways that successful teams actually work.</p>
-          </div>
-          <p class="more"><a href="/posts/emergent-roles/">Read more …</a></p>
+            <a href="/tags/engineering/">#Engineering</a>
+          </span>
         </div>
       </div>
     </footer>
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"></script>
+
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"
+    ></script>
     <script>
-      var dnt, doNotTrack = !1;
-      if (!1 && (dnt = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack, doNotTrack = dnt == "1" || dnt == "yes"), !doNotTrack) {
+      var dnt,
+        doNotTrack = !1;
+      if (
+        (!1 &&
+          ((dnt =
+            navigator.doNotTrack ||
+            window.doNotTrack ||
+            navigator.msDoNotTrack),
+          (doNotTrack = dnt == "1" || dnt == "yes")),
+        !doNotTrack)
+      ) {
         window.dataLayer = window.dataLayer || [];
         function gtag() {
-          dataLayer.push(arguments)
+          dataLayer.push(arguments);
         }
-        gtag("js", new Date), gtag("config", "G-GSREL2EZ4Y")
+        (gtag("js", new Date()), gtag("config", "G-GSREL2EZ4Y"));
       }
     </script>
   </body>

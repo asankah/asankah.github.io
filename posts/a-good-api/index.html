@@ -1,26 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-us">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>A Good API: g9</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-    <link rel="icon" href="/images/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link rel="stylesheet" href="/styles/katex.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
-    <link rel="stylesheet" href="/styles/kCLLP63cz-.css">
-    <link rel="me" href="mailto:asanka@gmail.com">
-    <link rel="me" href="https://github.com/asankah">
-    <meta name="generator" content="Pandoc + Eleventy">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/apple-touch-icon.png"
+    />
+    <link rel="icon" href="/images/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon-32x32.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/images/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link rel="stylesheet" href="/styles/katex.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link rel="stylesheet" href="/styles/C_Z__E83wh.css" />
+    <link rel="me" href="mailto:asanka@gmail.com" />
+    <link rel="me" href="https://github.com/asankah" />
+
+    <meta name="generator" content="Pandoc + Eleventy" />
   </head>
+
   <body>
     <header class="container">
       <nav class="navlike">
@@ -28,219 +55,282 @@
         <span class="fill"></span>
         <h2><a href="/about/me/">About</a></h2>
         <h2><a href="/tags/">Tags</a></h2>
-        <h2><a href="/feed.xml"><img src="/images/rss.svg"></a></h2>
+        <h2>
+          <a href="/feed.xml"><img src="/images/rss.svg" /></a>
+        </h2>
       </nav>
     </header>
+
     <main>
       <article class="container">
         <header>
           <h1>A Good API: g9</h1>
           <div class="navlike">
             <span>
-          <span class="date">Posted on August 12, 2023</span><span class="author">&nbsp;by Asanka Herath</span></span>
+              <span class="date">Posted on August 12, 2023</span
+              ><span class="author">&nbsp;by Asanka Herath</span></span
+            >
             <span class="fill"></span>
+
             <span class="tag-link">
-    <a href="/tags/engineering/">#Engineering</a>
-</span>
+              <a href="/tags/engineering/">#Engineering</a>
+            </span>
           </div>
           <div class="navlike">
-            <span class="readingtime">Estimated reading time is 4 minutes.</span>
+            <span class="readingtime">
+              Estimated reading time is 4 minutes.
+            </span>
             <span class="fill"></span>
           </div>
         </header>
-        <p>Once in a while an API comes around that makes me stop and and look
-          at what I’m doing.</p>
-        <p>Like many aspects of design, when it comes to APIs, what is not there
-          matters as much as what is. Engineers like to fiddle around with things.
-          So they like to add knobs and dials for fiddling around with things.</p>
-        <p>People say platitudes like good API design has to do with balancing
-          flexibility and simplicity. People throw around the word “simplicity” as
-          if people just need to be reminded of it and all will be well. “Simplify
-          your API” isn’t the same as “put on sunscreen.” It takes work. Lots of
-          work. Intentional work with the goal of simplifying because there is
-          little chance you are going to arrive at the right solution by
-          accident.</p>
-        <p>An example of a good API is <a href="https://github.com/bijection/g9">g9</a>.</p>
-        <p>Before you look at it, think about how you would construct an API
-          that:</p>
+
+        <p>
+          Once in a while an API comes around that makes me stop and and look at
+          what I’m doing.
+        </p>
+        <p>
+          Like many aspects of design, when it comes to APIs, what is not there
+          matters as much as what is. Engineers like to fiddle around with
+          things. So they like to add knobs and dials for fiddling around with
+          things.
+        </p>
+        <p>
+          People say platitudes like good API design has to do with balancing
+          flexibility and simplicity. People throw around the word “simplicity”
+          as if people just need to be reminded of it and all will be well.
+          “Simplify your API” isn’t the same as “put on sunscreen.” It takes
+          work. Lots of work. Intentional work with the goal of simplifying
+          because there is little chance you are going to arrive at the right
+          solution by accident.
+        </p>
+        <p>
+          An example of a good API is
+          <a href="https://github.com/bijection/g9">g9</a>.
+        </p>
+        <p>
+          Before you look at it, think about how you would construct an API
+          that:
+        </p>
         <ul>
-          <li>… allows you to draw a diagram on an HTML canvas – perhaps with a
-            limited set of drawing primitives.</li>
-          <li>… once the diagram is rendered, allows users to manipulate the
-            diagram by dragging points around.</li>
+          <li>
+            … allows you to draw a diagram on an HTML canvas – perhaps with a
+            limited set of drawing primitives.
+          </li>
+          <li>
+            … once the diagram is rendered, allows users to manipulate the
+            diagram by dragging points around.
+          </li>
         </ul>
-        <p>There are millions of ways of designing this. But g9’s approach takes
-          the cake. You can take a shortcut and have a look at their <a href="https://github.com/bijection/g9#docs">API documentation</a> or
-          their <a href="https://omrelli.ug/g9/gallery/">examples</a>. But
-          basically it is this:</p>
+        <p>
+          There are millions of ways of designing this. But g9’s approach takes
+          the cake. You can take a shortcut and have a look at their
+          <a href="https://github.com/bijection/g9#docs">API documentation</a>
+          or their <a href="https://omrelli.ug/g9/gallery/">examples</a>. But
+          basically it is this:
+        </p>
         <ol type="1">
           <li>Tell us what your mutable parameters are.</li>
           <li>Draw your diagram with based on the set of parameters.</li>
           <li>…</li>
         </ol>
         <p>That’s it. That’s all there is.</p>
-        <p>Now, you can sit there and come up with a million knobs that you
-          claim makes the API more powerful. And you might be right – you’ll be
-          able to do more things with the API with the knobs you add.</p>
-        <p>But when you start treating simplicity as a feature, you’ll notice
+        <p>
+          Now, you can sit there and come up with a million knobs that you claim
+          makes the API more powerful. And you might be right – you’ll be able
+          to do more things with the API with the knobs you add.
+        </p>
+        <p>
+          But when you start treating simplicity as a feature, you’ll notice
           that adding knobs isn’t the same as making a more powerful API. All
           those additional knobs must be essentially invisible for people who
-          don’t need them. Otherwise every addtional knob will waste more of your
-          users’ time and energy for nothing.</p>
-        <p>The power of an API comes from letting users to express more with
-          less.</p>
-        <div class="lastmodified">
-          <p>Last modified: August 12, 2023</p>
-        </div>
+          don’t need them. Otherwise every addtional knob will waste more of
+          your users’ time and energy for nothing.
+        </p>
+        <p>
+          The power of an API comes from letting users to express more with
+          less.
+        </p>
+
+        <footer>
+          <div class="lastmodified">
+            <p>Last modified: August 12, 2023</p>
+          </div>
+        </footer>
       </article>
-      <div class="container">
-        <nav class="navlike">
-          <a href="/posts/the-point-of-a-strategy/">
-            <i class="material-symbols-outlined">chevron_left</i>
-            The Point of a Strategy
-          </a>
-          <div class="fill">&nbsp;</div>
-          <a href="/posts/pillars-are-governance-structures/">
-            Pillars And Governance Structures
-            <i class="material-symbols-outlined">chevron_right</i>
-          </a>
-        </nav>
-      </div>
+
+      <div class="container"></div>
     </main>
+
     <footer class="container">
       <h2>More posts from this blog ...</h2>
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/ten-years/">
-            Ten Years
+          <a href="/posts/visualizing-people-2/">
+            Visualizing A Million People
           </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on December 9, 2020
-        </span>
+          <span class="date navlike"> Last updated on September 6, 2021 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/career/">#Career</a>
-</span>
-        </div>
-      </div>
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/darpa-heilmeier-catechism/">
-            DARPA&#39;s Heilmeier Catechism
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike">
-            Last updated on June 28, 2022
-        </span>
-          <span class="fill"></span>
-          <span class="tag-link">
-    <a href="/tags/engineering/">#engineering</a>
-</span>
+            <a href="/tags/curiosity/">#Curiosity</a>
+          </span>
         </div>
         <div>
           <div class="summary">
-            <p>A set of questions help you think through and evaluate proposed projects and research programs.</p>
+            <p>
+              If your feature pisses off a million people what does this angry
+              mob look like? Spoiler: We only get to 750,000.
+            </p>
           </div>
-          <p class="more"><a href="/posts/darpa-heilmeier-catechism/">Read more …</a></p>
+          <p class="more">
+            <a href="/posts/visualizing-people-2/">Read more …</a>
+          </p>
         </div>
       </div>
+
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/have-loop/">
-            The Have-Loop
+          <a href="/posts/grab-diagram-workflow-re2/">
+            Quickly grab a snapshot of your reMarkable tablet
           </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on June 24, 2024
-        </span>
+          <span class="date navlike"> Last updated on January 6, 2022 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/culture/">#Culture</a>
-</span>
+            <a href="/tags/remarkable-2/">#Remarkable 2</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/tools/">#Tools</a>
+          </span>
         </div>
         <div>
           <div class="summary">
-            <p>Have-loops are positive feedback loops which cause unsustainable concentration of limited resources.
-              Once you learn to recognize them, you will see them everywhere.</p>
+            <p>
+              How to bind a hotkey to grab a snapshot of your reMarkable display
+              and copy it to the clipboard on a Mac.
+            </p>
           </div>
-          <p class="more"><a href="/posts/have-loop/">Read more …</a></p>
+          <p class="more">
+            <a href="/posts/grab-diagram-workflow-re2/">Read more …</a>
+          </p>
         </div>
       </div>
+
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/asians-is-not-a-useful-category/">
-            Asian Is Not a Useful Category
+          <a href="/posts/happy-new-year-2024-and-year-in-review-2023/">
+            Happy New Year 2024 and Year in Review 2023
           </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on July 4, 2024
-        </span>
+          <span class="date navlike"> Last updated on January 1, 2024 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/culture/">#Culture</a>
-</span>
-          <span class="tag-link">
-    <a href="/tags/organizations/">#Organizations</a>
-</span>
-          <span class="tag-link">
-    <a href="/tags/inclusion-and-equity/">#Inclusion and Equity</a>
-</span>
-        </div>
-        <div>
-          <div class="summary">
-            <p>Asking if someone is <em>&quot;Asian&quot;</em> in a question of ethnicity or demographics or pretty much any context is bad.
-              There is no reasonable conclusion you can arrive at about a person based on the fact that they are <em>&quot;Asian&quot;</em>.</p>
-          </div>
-          <p class="more"><a href="/posts/asians-is-not-a-useful-category/">Read more …</a></p>
+            <a href="/tags/culture/">#Culture</a>
+          </span>
         </div>
       </div>
+
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/moved-to-eleventy/">
-            I Moved This Blog To Eleventy
+          <a href="/posts/intrinsic-motivation-an-anecdote/">
+            Intrinsic and Extrinsic Motivation: An anecdote
           </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on December 13, 2024
-        </span>
+          <span class="date navlike"> Last updated on March 22, 2025 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/meta/">#Meta</a>
-</span>
+            <a href="/tags/culture/">#Culture</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/career/">#Career</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/inclusion-and-equity/">#Inclusion and Equity</a>
+          </span>
         </div>
         <div>
           <div class="summary">
-            <p>At long last, this blog &quot;outgrew&quot;<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> Hugo and I had to go looking for a new
-              static site generator.</p>
-            <hr class="footnotes-sep">
-            <section class="footnotes">
-              <ol class="footnotes-list">
-                <li id="fn1" class="footnote-item">
-                  <p>Of course, by outgrew I mean I got bored and wanted to play with a new
-                    static site generator. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
-                </li>
-              </ol>
-            </section>
+            <p>
+              Intrinsic motivation is always better than extrinsic motivation.
+              But not as good as it is when one is motivated both intrinsically
+              and extrinsically.
+            </p>
           </div>
-          <p class="more"><a href="/posts/moved-to-eleventy/">Read more …</a></p>
+          <p class="more">
+            <a href="/posts/intrinsic-motivation-an-anecdote/">Read more …</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <h3 class="title">
+          <a href="/series/unsung-team-roles/emergence/"
+            ><span class="series-name">Unsung Team Roles</span>: Emergence of
+            Soft Roles
+          </a>
+        </h3>
+        <div class="navlike">
+          <span class="date navlike"> Last updated on August 2, 2025 </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/organizations/">#Organizations</a>
+          </span>
+        </div>
+        <div>
+          <div class="summary">
+            <p>
+              In any team, the roles people play are not as rigid as they seem.
+              Over time, people naturally settle into &quot;soft roles&quot;
+              that are not explicitly defined but are crucial for a team's
+              success. This is a look at the organic, and often unsung, ways
+              that successful teams actually work.
+            </p>
+          </div>
+          <p class="more">
+            <a href="/series/unsung-team-roles/emergence/">Read more …</a>
+          </p>
         </div>
       </div>
     </footer>
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"></script>
+
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"
+    ></script>
     <script>
-      var dnt, doNotTrack = !1;
-      if (!1 && (dnt = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack, doNotTrack = dnt == "1" || dnt == "yes"), !doNotTrack) {
+      var dnt,
+        doNotTrack = !1;
+      if (
+        (!1 &&
+          ((dnt =
+            navigator.doNotTrack ||
+            window.doNotTrack ||
+            navigator.msDoNotTrack),
+          (doNotTrack = dnt == "1" || dnt == "yes")),
+        !doNotTrack)
+      ) {
         window.dataLayer = window.dataLayer || [];
         function gtag() {
-          dataLayer.push(arguments)
+          dataLayer.push(arguments);
         }
-        gtag("js", new Date), gtag("config", "G-GSREL2EZ4Y")
+        (gtag("js", new Date()), gtag("config", "G-GSREL2EZ4Y"));
       }
     </script>
   </body>

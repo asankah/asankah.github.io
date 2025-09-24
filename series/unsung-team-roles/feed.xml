@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://xn--izc.com/">
+  <title>The Letter අ</title>
+  <subtitle>Strong opinions weekly held</subtitle>
+  <link href="https://xn--izc.com/series/unsung-team-roles/feed.xml" rel="self" />
+  <link href="https://xn--izc.com/" />
+  <updated>
+    2025-08-12T00:00:00Z
+  </updated>
+  <id>https://xn--izc.com/</id>
+  <author>
+    <name>Asanka Herath</name>
+    <email>asanka@gmail.com</email>
+  </author>
+    <entry>
+      <title>Incentives</title>
+      <link href="https://xn--izc.com/series/unsung-team-roles/incentives/" />
+      <updated>2025-08-12T00:00:00Z</updated>
+      <id>https://xn--izc.com/series/unsung-team-roles/incentives/</id>
+      <content xml:lang="en" type="html">
+        &lt;div class=&quot;sidenote-host-1&quot;&gt;
+&lt;p&gt;Teams can fail in many ways&lt;a href=&quot;https://xn--izc.com/series/unsung-team-roles/incentives/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;. But when they succeed,
+the most critical roles are those that form the communication structures
+within and across teams. Forming these structures require teammates to
+have some level of autonomy. In turn this requires a team stucture that
+allows the team the freedom of movement to reconfigure itself to serve
+the teams’ goals.&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&quot;sidenote-1&quot;&gt;
+&lt;h4 id=&quot;no-heros&quot;&gt;No Heros&lt;/h4&gt;
+&lt;p&gt;Any organization whose success depends on their employees working
+&lt;em&gt;against&lt;/em&gt; their own self interests will eventually fail.&lt;/p&gt;
+&lt;p&gt;Unfortunately incentives are seldom constructed by those who
+understand what organizational cross beams are necessary to keep the
+&lt;em&gt;“official”&lt;/em&gt; organizational structure from collapsing.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&quot;https://sre.google/resources/practices-and-processes/no-heroes/&quot;&gt;Why
+Heroism Is Bad&lt;/a&gt; in the Google SRE site.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;p&gt;If the conditions are right, a healthy team will fill in the gaps by
+rebalancing their responsibilities. Such a rebalancing will inevitably
+lead to an uneven distribution of burden. With time the burden will
+become increasingly visceral, which will lead to burnout, resentment,
+and attrition. For an uneven burden to be sustained, that burden must be
+commesurately rewarded.&lt;/p&gt;
+&lt;p&gt;Accurately measuring the contributions of each team member is a
+hitherto unsolved problem. Managers are often left with gut instincts to
+fall back on, which comes with a laundry list of shortcomings like bias
+and favoritism. Those who come up with the right formula against all
+odds are celebrated as &lt;em&gt;good managers&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;People write books and give speeches about their favorite &lt;em&gt;good
+manager&lt;/em&gt;. But often the actual skills involved aren’t articulated.
+The list of skills isn’t long. Primarily these skills revolve around the
+ability to understand what each person is &lt;em&gt;doing&lt;/em&gt;. Secondairly
+they revolve around the ability to understand how those actions
+&lt;em&gt;affect the rest of the team&lt;/em&gt;. Both require a manager to have
+visibility into how the team interacts – either by direct observation or
+by frequent and extensive communication with each team member.&lt;/p&gt;
+&lt;p&gt;All of this still won’t do much if the team desn’t have psychological
+safety. Without this, team members may not be willing to recognize and
+reward their peers. Nor would they be liklely to disclose bad news in a
+timely manner.&lt;/p&gt;
+&lt;p&gt;Bad incentive structures lead to people ridigly performing just their
+roles and letting things fail around them (&lt;em&gt;“it’s not my
+job”&lt;/em&gt;).&lt;a href=&quot;https://xn--izc.com/series/unsung-team-roles/incentives/#fn2&quot; class=&quot;footnote-ref&quot; id=&quot;fnref2&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To summarize, good things happen when the incentives for a team:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Never pit employees against each other. One person’s success cannot
+be another’s downfall.&lt;/li&gt;
+&lt;li&gt;Assume that the leadership hasn’t figured out exactly what needs to
+be done. The team should be empowered to course-correct as they
+learn.&lt;/li&gt;
+&lt;li&gt;Reward those who pull the team together and help the team
+communicate internally and externally.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;I recommend &lt;a href=&quot;https://en.wikipedia.org/wiki/The_Five_Dysfunctions_of_a_Team&quot;&gt;The
+Five Dysfunctions of a Team&lt;/a&gt; for a nice run through of different ways
+in which teams fail to function.&lt;a href=&quot;https://xn--izc.com/series/unsung-team-roles/incentives/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn2&quot;&gt;&lt;p&gt;See &lt;a href=&quot;https://xn--izc.com/posts/intrinsic-motivation-an-anecdote/&quot;&gt;Intrinsic and Extrinsic
+Motivation: An Anecdote&lt;/a&gt; for an example of what happens when people
+try to force this process purely by creating extrinsic incentives and
+assigned roles.&lt;a href=&quot;https://xn--izc.com/series/unsung-team-roles/incentives/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>Ode to Glue People</title>
+      <link href="https://xn--izc.com/series/unsung-team-roles/glue-people/" />
+      <updated>2025-08-12T00:00:00Z</updated>
+      <id>https://xn--izc.com/series/unsung-team-roles/glue-people/</id>
+      <content xml:lang="en" type="html">
+        &lt;div class=&quot;sidenote-host-1&quot;&gt;
+&lt;p&gt;The concept of glue work isn’t new. Team building, mentoring, running
+meetings, and many other mundane tasks fall under this category of often
+uncompensated work. How glue work establishes unofficial communication
+structures within and across teams is, however, discussed less
+often.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Not every manager is a great communicator; and that’s okay. This is
+specially true in large tech companies where the people management
+ladders are the natural next step for individual contributors who are
+seeking career growth. When important information that affects people’s
+careers isn’t communicated in a fair and timely manner, trust collapses
+taking down the team with it.&lt;/p&gt;
+&lt;p&gt;Bound by needs for confidentiality and mandatory reporting, managers
+are often not the best people to confide in or trust. Meanwhile peers
+with the right set of social skills become speakeasies: people with whom
+others feel psychologically safe. The level of trust between a speakeasy
+and other team members can be much higher than with managers.&lt;/p&gt;
+&lt;p&gt;Consequently, these speakeasies become social hubs where both work
+and non-work related information flow freely. Some might call it gossip.
+But when the information is factual and timely, it can help teammates
+made better decisions, at least for themselves if not for the company.
+In times of turmoil – like the increasingly frequent
+&lt;em&gt;“once-in-a-lifetime”&lt;/em&gt; recessions that keep happening in the US –
+the glue people take on a dual role: as a pressure release valve for
+individuals, and as a vehicle for breaking their sense of isolation.&lt;/p&gt;
+&lt;p&gt;No surprise that such roles cannot be written down in a normal job
+description. Also of no surprise that such roles aren’t recognized nor
+compensated.&lt;/p&gt;
+&lt;aside class=&quot;sidenote-1&quot;&gt;
+&lt;h4 id=&quot;losing-a-glue-person&quot;&gt;Losing a Glue Person&lt;/h4&gt;
+&lt;p&gt;I was tempted to write about this after the departure of a coworker.
+The extent to which they were holding the team together was not apparent
+until they left.&lt;/p&gt;
+&lt;p&gt;Our team is spread out across many geographic regions, so pretty much
+all of our interactions are online. Our team chats are more than just
+sources of work information, they are also where most of the
+socialization happens. So the tone and spirit of communication is
+critical for engagement. Once the keeper of the spirit left, the chats
+fell silent. And suddenly, it seemed, we became strangers.&lt;/p&gt;
+&lt;/aside&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>Soft Roles as Organizational Cross Beams</title>
+      <link href="https://xn--izc.com/series/unsung-team-roles/crossbeams/" />
+      <updated>2025-08-12T00:00:00Z</updated>
+      <id>https://xn--izc.com/series/unsung-team-roles/crossbeams/</id>
+      <content xml:lang="en" type="html">
+        &lt;div class=&quot;sidenote-host-1&quot;&gt;
+&lt;p&gt;Beyond the obvious team scoped function of soft roles, they also
+perform important functions at the organizational level. Of these two
+common types are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Glue-people&lt;/strong&gt; who are necessary to tie teams
+together, build cohesion, connect the dots between silos that are not
+effectively communicating with each other, and establish an unofficial
+foundation of trust that prevent teams from collapsing when the trust
+between leadership and their underlings inevitably crumbles.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Immune Systems&lt;/strong&gt; are the people necessary to stop
+the company from shooting themselves in their corporate feet. These are
+the people who internally oppose measures that would cause widespread
+collapse of user-trust, violate privacy policies, open up the
+organization to litigation, irreversibly misuse customer data,
+unnecessarily jeopardize the operational stability or security of
+critical systems, or commit war crimes and human rights
+violations.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;aside class=&quot;sidenote-1&quot;&gt;
+&lt;h4 id=&quot;individual-failure-vs.-organizational-failures&quot;&gt;Individual
+Failure vs. Organizational Failures&lt;/h4&gt;
+&lt;p&gt;Unfortunately all the lessons we learn about human fallibility tend
+to be forgotten the higher up the reporting chain we go. So even though
+we expect and build in mechanisms to deal with individual failures, we
+tend not to build mechanisms to deal with organizational failures. We
+assume that organizations fail less often than individuals. The opposite
+is true. Organizations are made up of people. The more people you have
+the more likely it is that one of them will fail. The more people you
+have the more likely it is that they will fail in a way that is
+catastrophic to the organization.&lt;/p&gt;
+&lt;/aside&gt;
+
+      </content>
+    </entry>
+    <entry>
+      <title>Emergence of Soft Roles</title>
+      <link href="https://xn--izc.com/series/unsung-team-roles/emergence/" />
+      <updated>2025-08-02T00:00:00Z</updated>
+      <id>https://xn--izc.com/series/unsung-team-roles/emergence/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;Google’s early success is partly attributed to the use of commodity
+hardware that were expected to break occasionally. Rather than demanding
+perfection from complex systems it is far more effective to expect and
+design around imperfections&lt;a href=&quot;https://xn--izc.com/series/unsung-team-roles/emergence/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/series/unsung-team-roles/emergence/google-servers.jpg&quot; class=&quot;noinvert&quot; alt=&quot;By Erik Pitti from San Diego, CA, USA - Google’s First ServerUploaded by Mewtu, CC BY 2.0, Link&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;By
+&lt;a rel=&quot;nofollow&quot; class=&quot;external text&quot; href=&quot;https://www.flickr.com/people/24205142@N00&quot;&gt;Erik
+Pitti&lt;/a&gt; from San Diego, CA, USA -
+&lt;a rel=&quot;nofollow&quot; class=&quot;external text&quot; href=&quot;https://www.flickr.com/photos/24205142@N00/2370851677/&quot;&gt;Google’s
+First Server&lt;/a&gt;Uploaded by
+&lt;a href=&quot;https://commons.wikimedia.org/w/index.php?title=User:Mewtu&amp;action=edit&amp;redlink=1&quot; class=&quot;new&quot; title=&quot;User:Mewtu (page does not exist)&quot;&gt;Mewtu&lt;/a&gt;,
+&lt;a href=&quot;https://creativecommons.org/licenses/by/2.0&quot; title=&quot;Creative Commons Attribution 2.0&quot;&gt;CC
+BY 2.0&lt;/a&gt;,
+&lt;a href=&quot;https://commons.wikimedia.org/w/index.php?curid=8724999&quot;&gt;Link&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;div class=&quot;sidenote-host-1&quot;&gt;
+&lt;p&gt;Similarly when we design products, we design them for fallible users
+who are prone to making occasional mistakes, and beholden to some number
+of misconceptions.&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&quot;sidenote-1&quot;&gt;
+&lt;h4 id=&quot;misconceptions&quot;&gt;Misconceptions&lt;/h4&gt;
+&lt;p&gt;The &lt;em&gt;misconceptions&lt;/em&gt; referred to here are misunderstandings of
+how the product or process works. It could be situational
+misunderstandings (e.g. confusion about how to accomplish an immediate
+goal), or it could be a more persistent fundamental misunderstanding
+about how something works (e.g. misunderstanding &lt;a href=&quot;https://support.mozilla.org/en-US/kb/common-myths-about-private-browsing&quot;&gt;how
+private browsing works&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;With real world problems, information flow is never perfect. Loss of
+precision at each stage of discovery, analysis, prototyping, and
+implementation leads to potential for misconceptions. See &lt;a href=&quot;https://xn--izc.com/posts/secret-life-of-systems/&quot;&gt;The Secret Life of Systems&lt;/a&gt; for
+an illustration of how real world problems and the implementation of a
+solution may not align.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;p&gt;As we design products, so we must design our internal processes. We
+once again assume that our teammates are fallible, prone to making
+occasional mistakes, and operating under some number of misconceptions&lt;a href=&quot;https://xn--izc.com/series/unsung-team-roles/emergence/#fn2&quot; class=&quot;footnote-ref&quot; id=&quot;fnref2&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Fallibility runs both ways up and down the org chart. Leaders operate
+under vague, incomplete, and sometimes wildly inaccurate information&lt;a href=&quot;https://xn--izc.com/series/unsung-team-roles/emergence/#fn3&quot; class=&quot;footnote-ref&quot; id=&quot;fnref3&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;. Further complicating matters, it is
+impossible to understand the capabilities and shortcomings of each
+individual person or understand every nuance of what must constitute a
+role.&lt;/p&gt;
+&lt;p&gt;The result is that team roles are neither comprehensive nor precise.
+In any given team structure people are expected to adapt to a broad
+range of situations that are unpredictable, and frankly unknowable. Some
+(most?) of those situations are directly due to other team members.&lt;/p&gt;
+&lt;p&gt;As teams mature, the &lt;em&gt;actual&lt;/em&gt; role each person takes on will
+gradually anneal around individual strengths and weaknesses forged by
+need and cemented through consistency.&lt;/p&gt;
+&lt;p&gt;So in reality, what is intended to be a neat and well circumscribed
+role profile becomes irregular, illdefined, and dynamic.&lt;/p&gt;
+&lt;div class=&quot;horizontal&quot;&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/series/unsung-team-roles/emergence/hierarchical.svg&quot; title=&quot;A neat organization chart.&quot; class=&quot;noinvert&quot; alt=&quot;Expectation: Neatly circumscribed hierarchichal roles.&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Expectation: Neatly circumscribed
+hierarchichal roles.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/series/unsung-team-roles/emergence/chaotic.svg&quot; title=&quot;A bunch of soft irregular shapes are squished together.&quot; class=&quot;noinvert&quot; alt=&quot;Reality: Smeared, lopsided, and chaotic roles.&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Reality: Smeared, lopsided, and chaotic
+roles.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/div&gt;
+&lt;p&gt;In short: Following the spirit of designing with imperfections, team
+organization must always account for this fluidity of roles.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Roles in a team will rarely be circumscribed by the corresponding
+job description. People will always do work outside their scope.&lt;/li&gt;
+&lt;li&gt;Roles will overlap in ways that will run counter to the intents of
+the official role allocations. People will do other’s work
+occasionally.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Roles will emerge that are not mentioned in anyone’s job
+description.&lt;/em&gt; Sometimes called &lt;em&gt;soft&lt;/em&gt; roles.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In this series we will look at a few of these soft roles that emerge
+often and look into the critical work that these roles perform.&lt;/p&gt;
+&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;A former Googler, Avery Penwarr wrote an influential
+document while they were at Google called &lt;em&gt;View from Above&lt;/em&gt; about
+the perspective of executives. Fortunately he also wrote a public
+version called &lt;a href=&quot;https://apenwarr.ca/log/?m=201909&quot;&gt;What do
+executives do anyway?&lt;/a&gt;. The basic premise is that when it comes to
+any big decision, the executive highest up the ladder is the least
+informed about the pertinent details – but that’s okay because knowing
+the details isn’t their job.&lt;a href=&quot;https://xn--izc.com/series/unsung-team-roles/emergence/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn2&quot;&gt;&lt;p&gt;See &lt;a href=&quot;https://sre.google/sre-book/postmortem-culture/&quot;&gt;Postmortem
+Culture: Learning from Failure&lt;/a&gt; for how anticipating mistakes lends
+itself to a healthy culture where people proactively report and learn
+from mistakes.&lt;a href=&quot;https://xn--izc.com/series/unsung-team-roles/emergence/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn3&quot;&gt;&lt;p&gt;A former Googler, Avery Penwarr wrote an influential
+document while they were at Google called &lt;em&gt;View from Above&lt;/em&gt; about
+the perspective of executives. Fortunately he also wrote a public
+version called &lt;a href=&quot;https://apenwarr.ca/log/?m=201909&quot;&gt;What do
+executives do anyway?&lt;/a&gt;. The basic premise is that when it comes to
+any big decision, the executive highest up the ladder is the least
+informed about the pertinent details – but that’s okay because knowing
+the details isn’t their job.&lt;a href=&quot;https://xn--izc.com/series/unsung-team-roles/emergence/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+
+      </content>
+    </entry>
+</feed>

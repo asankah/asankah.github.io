@@ -1,26 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-us">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Visualizing A Million People</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-    <link rel="icon" href="/images/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link rel="stylesheet" href="/styles/katex.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
-    <link rel="stylesheet" href="/styles/kCLLP63cz-.css">
-    <link rel="me" href="mailto:asanka@gmail.com">
-    <link rel="me" href="https://github.com/asankah">
-    <meta name="generator" content="Pandoc + Eleventy">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/apple-touch-icon.png"
+    />
+    <link rel="icon" href="/images/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon-32x32.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/images/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link rel="stylesheet" href="/styles/katex.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link rel="stylesheet" href="/styles/C_Z__E83wh.css" />
+    <link rel="me" href="mailto:asanka@gmail.com" />
+    <link rel="me" href="https://github.com/asankah" />
+
+    <meta name="generator" content="Pandoc + Eleventy" />
   </head>
+
   <body>
     <header class="container">
       <nav class="navlike">
@@ -28,341 +55,581 @@
         <span class="fill"></span>
         <h2><a href="/about/me/">About</a></h2>
         <h2><a href="/tags/">Tags</a></h2>
-        <h2><a href="/feed.xml"><img src="/images/rss.svg"></a></h2>
+        <h2>
+          <a href="/feed.xml"><img src="/images/rss.svg" /></a>
+        </h2>
       </nav>
     </header>
+
     <main>
       <article class="container">
         <header>
           <h1>Visualizing A Million People</h1>
           <div class="navlike">
             <span>
-          <span class="date">Posted on September 6, 2021</span><span class="author">&nbsp;by Asanka Herath</span></span>
+              <span class="date">Posted on September 6, 2021</span
+              ><span class="author">&nbsp;by Asanka Herath</span></span
+            >
             <span class="fill"></span>
+
             <span class="tag-link">
-    <a href="/tags/curiosity/">#Curiosity</a>
-</span>
+              <a href="/tags/curiosity/">#Curiosity</a>
+            </span>
           </div>
           <div class="navlike">
-            <span class="readingtime">Estimated reading time is 15 minutes.</span>
+            <span class="readingtime">
+              Estimated reading time is 15 minutes.
+            </span>
             <span class="fill"></span>
           </div>
         </header>
+
         <div class="preface">
-          <p>This article was formerly published as <a href="../visualizing-people/">Visualizing Internet Users</a>. This
-            version is more generalized and up-to-date.</p>
+          <p>
+            This article was formerly published as
+            <a href="../visualizing-people/">Visualizing Internet Users</a>.
+            This version is more generalized and up-to-date.
+          </p>
         </div>
-        <p>What if you introduce a bug and/or a feature that pisses off a
-          million people?</p>
-        <p>The scenario isn’t all that hard to imagine these days if you work at
-          a big tech company or even a small one with a considerable user base. It
-          seems a million users aren’t all that hard to reach these days.</p>
-        <p>What is harder though is to imagine what a million people looks like.
-          What if you were being stared down by the entirety of the affected user
-          base? Or worse you had to stand on a stage in front of them and explain
-          yourself?</p>
-        <p>If you have 1 billion users and you ship a bug that only manifests 1
+        <p>
+          What if you introduce a bug and/or a feature that pisses off a million
+          people?
+        </p>
+        <p>
+          The scenario isn’t all that hard to imagine these days if you work at
+          a big tech company or even a small one with a considerable user base.
+          It seems a million users aren’t all that hard to reach these days.
+        </p>
+        <p>
+          What is harder though is to imagine what a million people looks like.
+          What if you were being stared down by the entirety of the affected
+          user base? Or worse you had to stand on a stage in front of them and
+          explain yourself?
+        </p>
+        <p>
+          If you have 1 billion users and you ship a bug that only manifests 1
           in a million times, then you have yourself 1000 angry users. It’s good
-          to know what that group looks like.</p>
-        <p>We can easily imagine a single person, 10, or even 25 people. But
-          exceed a couple of hundred and our imagination falters. It becomes just
-          a number and stops feeling like “users” or “people.” The perceived
-          significance of the population thus starts to diminish.</p>
-        <h1 id="so-whats-the-significance-of-a-million-people-anyway">So what’s
-          the significance of a million people anyway?</h1>
-        <p>World population is teetering on roughly 7.7 billion people (in
-          2019). So <strong>a million people is about 0.01% of the global
-population</strong>.</p>
+          to know what that group looks like.
+        </p>
+        <p>
+          We can easily imagine a single person, 10, or even 25 people. But
+          exceed a couple of hundred and our imagination falters. It becomes
+          just a number and stops feeling like “users” or “people.” The
+          perceived significance of the population thus starts to diminish.
+        </p>
+        <h1 id="so-whats-the-significance-of-a-million-people-anyway">
+          So what’s the significance of a million people anyway?
+        </h1>
+        <p>
+          World population is teetering on roughly 7.7 billion people (in 2019).
+          So
+          <strong
+            >a million people is about 0.01% of the global population</strong
+          >.
+        </p>
         <figure>
-          <img src="/posts/visualizing-people-2/sCJj_l54CJ-695.png" alt="Figure 1: World population in 2021 is 7.7 billion approximately." width="695" height="391">
-          <figcaption aria-hidden="true">Figure 1: World population in 2021 is 7.7
-            billion approximately.</figcaption>
+          <img
+            src="/posts/visualizing-people-2/sCJj_l54CJ-695.png"
+            alt="Figure 1: World population in 2021 is 7.7 billion approximately."
+            width="695"
+            height="391"
+          />
+          <figcaption aria-hidden="true">
+            Figure 1: World population in 2021 is 7.7 billion approximately.
+          </figcaption>
         </figure>
-        <p>Internet users, on the other hand, come up to something like half of
-          the world population based World Bank figures which <em>imply</em> that
-          roughly 50% of the population should have internet access in 2021 <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
+        <p>
+          Internet users, on the other hand, come up to something like half of
+          the world population based World Bank figures which
+          <em>imply</em> that roughly 50% of the population should have internet
+          access in 2021
+          <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"
+            ><sup>1</sup></a
+          >.
+        </p>
         <figure>
-          <img src="/posts/visualizing-people-2/YfiKxx8CWU-722.png" alt="Figure 2: Percentage of population who has access to the internet (World Bank 2017)" width="722" height="790">
-          <figcaption aria-hidden="true">Figure 2: Percentage of population who
-            has access to the internet (World Bank 2017)</figcaption>
+          <img
+            src="/posts/visualizing-people-2/YfiKxx8CWU-722.png"
+            alt="Figure 2: Percentage of population who has access to the internet (World Bank 2017)"
+            width="722"
+            height="790"
+          />
+          <figcaption aria-hidden="true">
+            Figure 2: Percentage of population who has access to the internet
+            (World Bank 2017)
+          </figcaption>
         </figure>
-        <p>So <strong>a million users would be 0.02% of the population with some
-access to the internet</strong>. Still not that big.</p>
-        <p>But once you focus on a smaller scale like a geographic region or a
+        <p>
+          So
+          <strong
+            >a million users would be 0.02% of the population with some access
+            to the internet</strong
+          >. Still not that big.
+        </p>
+        <p>
+          But once you focus on a smaller scale like a geographic region or a
           user base of some application, then suddenly the million users looks
-          much bigger.</p>
+          much bigger.
+        </p>
         <h2 id="to-49">1 to 49</h2>
-        <p>Let’s skip this range since this is in the range of what you’d see in
-          a mirror, can fit on a bicycle, can fit on a sofa, your team, gathering
-          of friends, significant annual family event, or other familiar
-          situation.</p>
+        <p>
+          Let’s skip this range since this is in the range of what you’d see in
+          a mirror, can fit on a bicycle, can fit on a sofa, your team,
+          gathering of friends, significant annual family event, or other
+          familiar situation.
+        </p>
         <h2 id="from-50-to-100000">From 50 to 100,000</h2>
-        <p>An example of visualizing populations for small numbers can be found
-          at <a href="https://blog.lime.link/visualizing-crowd-sizes/">Visualizing
-            Crowd Sizes</a>. It goes from around 50 people up to 100,000 people.</p>
-        <p>While 100,000 is interesting we need to go all the way to 1
-          million.</p>
+        <p>
+          An example of visualizing populations for small numbers can be found
+          at
+          <a href="https://blog.lime.link/visualizing-crowd-sizes/"
+            >Visualizing Crowd Sizes</a
+          >. It goes from around 50 people up to 100,000 people.
+        </p>
+        <p>
+          While 100,000 is interesting we need to go all the way to 1 million.
+        </p>
         <h2 id="section">200,000</h2>
-        <p>200,000 was the estimated number of people who attended the <a href="https://marchforourlives.com/">March for Our Lives</a> in D.C..
-          There aren’t any photos capturing <em>all</em> attendees in one shot,
-          but there are numerous pictures in <a href="https://www.cbsnews.com/news/march-for-our-lives-crowd-size-estimated-200000-people-attended-d-c-march/">this
-            CBS News article</a> to give you a good idea.</p>
-        <p>In more terrible examples, <a href="https://www.dw.com/en/more-than-200000-indonesians-protest-governor-purnamas-alleged-blasphemy/a-36611145">this
-            article on dw.com</a> suggests that the crowd size pictured is roughly
-          around 200,000 people.</p>
+        <p>
+          200,000 was the estimated number of people who attended the
+          <a href="https://marchforourlives.com/">March for Our Lives</a> in
+          D.C.. There aren’t any photos capturing <em>all</em> attendees in one
+          shot, but there are numerous pictures in
+          <a
+            href="https://www.cbsnews.com/news/march-for-our-lives-crowd-size-estimated-200000-people-attended-d-c-march/"
+            >this CBS News article</a
+          >
+          to give you a good idea.
+        </p>
+        <p>
+          In more terrible examples,
+          <a
+            href="https://www.dw.com/en/more-than-200000-indonesians-protest-governor-purnamas-alleged-blasphemy/a-36611145"
+            >this article on dw.com</a
+          >
+          suggests that the crowd size pictured is roughly around 200,000
+          people.
+        </p>
         <blockquote>
-          <p>More than 200,000 conservative Muslims gathered in Indonesia’s
+          <p>
+            More than 200,000 conservative Muslims gathered in Indonesia’s
             capital Jakarta on Friday to protest against the city’s Christian
-            governor, who is facing trial for blasphemy, police estimated.</p>
+            governor, who is facing trial for blasphemy, police estimated.
+          </p>
         </blockquote>
         <figure>
-          <img src="/posts/visualizing-people-2/ellX1zCTFs-745.png" alt="Image from dw.com of a protest in Indonesia allegedly showing 200,000 people. Image Source" width="745" height="807">
-          <figcaption aria-hidden="true">Image from dw.com of a protest in
-            Indonesia allegedly showing 200,000 people. <a href="https://www.dw.com/en/more-than-200000-indonesians-protest-governor-purnamas-alleged-blasphemy/a-36611145">Image
-              Source</a></figcaption>
+          <img
+            src="/posts/visualizing-people-2/ellX1zCTFs-745.png"
+            alt="Image from dw.com of a protest in Indonesia allegedly showing 200,000 people. Image Source"
+            width="745"
+            height="807"
+          />
+          <figcaption aria-hidden="true">
+            Image from dw.com of a protest in Indonesia allegedly showing
+            200,000 people.
+            <a
+              href="https://www.dw.com/en/more-than-200000-indonesians-protest-governor-purnamas-alleged-blasphemy/a-36611145"
+              >Image Source</a
+            >
+          </figcaption>
         </figure>
         <h2 id="section-1">250,000</h2>
-        <p>The March on Washington in 1963– an <em>“event focused on employment
-discrimination, civil rights abuses against African Americans, Latinos,
-and other disenfranchised groups, and support for the Civil Rights Act
-that the Kennedy Administration was attempting to pass through
-Congress”</em> – drew an estimated 250,000 people according to the
-          National Park Service.</p>
+        <p>
+          The March on Washington in 1963– an
+          <em
+            >“event focused on employment discrimination, civil rights abuses
+            against African Americans, Latinos, and other disenfranchised
+            groups, and support for the Civil Rights Act that the Kennedy
+            Administration was attempting to pass through Congress”</em
+          >
+          – drew an estimated 250,000 people according to the National Park
+          Service.
+        </p>
         <blockquote>
-          <p>Rustin coordinated a staff of over 200 civil rights activists and
-            organizers to assist in publicizing the march and recruiting marchers,
-            organizing churches to raise money, coordinating buses and trains, and
-            administering all of the other logistical details. In many ways, the
-            March defied expectations. The number of people that attended exceeded
-            the initial estimates made by the organizers. Rustin had indicated that
-            they expected over 100,000 people to attend - the final estimate was
-            250,000, 190,000 blacks and 60,000 whites.</p>
+          <p>
+            Rustin coordinated a staff of over 200 civil rights activists and
+            organizers to assist in publicizing the march and recruiting
+            marchers, organizing churches to raise money, coordinating buses and
+            trains, and administering all of the other logistical details. In
+            many ways, the March defied expectations. The number of people that
+            attended exceeded the initial estimates made by the organizers.
+            Rustin had indicated that they expected over 100,000 people to
+            attend - the final estimate was 250,000, 190,000 blacks and 60,000
+            whites.
+          </p>
         </blockquote>
-        <p>(From <a href="https://www.nps.gov/articles/march-on-washington.htm">March on
-            Washington for Jobs and Freedom – National Parks Service</a>)</p>
+        <p>
+          (From
+          <a href="https://www.nps.gov/articles/march-on-washington.htm"
+            >March on Washington for Jobs and Freedom – National Parks
+            Service</a
+          >)
+        </p>
         <figure>
-          <img src="/posts/visualizing-people-2/BWNX-9WOut-973.png" alt="Image from nps.gov showing the crowd estimated to be around 250,000 people at the March on Washington on August 28, 1963. See Image Source for full resolution image." width="973" height="651">
-          <figcaption aria-hidden="true">Image from nps.gov showing the crowd
-            estimated to be around 250,000 people at the March on Washington on
-            August 28, 1963. See <a href="https://www.loc.gov/resource/ppmsca.37248/">Image Source for full
-              resolution image.</a></figcaption>
+          <img
+            src="/posts/visualizing-people-2/BWNX-9WOut-973.png"
+            alt="Image from nps.gov showing the crowd estimated to be around 250,000 people at the March on Washington on August 28, 1963. See Image Source for full resolution image."
+            width="973"
+            height="651"
+          />
+          <figcaption aria-hidden="true">
+            Image from nps.gov showing the crowd estimated to be around 250,000
+            people at the March on Washington on August 28, 1963. See
+            <a href="https://www.loc.gov/resource/ppmsca.37248/"
+              >Image Source for full resolution image.</a
+            >
+          </figcaption>
         </figure>
         <h2 id="section-2">500,000</h2>
-        <p>We are heading into shaky ground here. A 800*600 picture only
-          contains 480,000 pixels. So we are now reduced to indicating population
-          by inference. It is no longer possible to capture 500,000 people in a
-          webpage sized picture while showing each person individually.</p>
-        <p><a href="https://www.reddit.com/r/philadelphia/comments/3by9g8/if_this_is_what_500k_people_look_like_xpost_from/">This
-            Reddit post</a> claims that there are 500k people in the picture, but I
-          couldn’t readily find any good references backing up that claim.</p>
-        <p>Another event that drew 500,000 people is <a href="https://www.nbcnews.com/show-me/video/nearly-500-000-people-march-in-anti-violence-rally-in-barcelona-1033617987741">an
-            anti-violence rally in Barcelona as reported by NBC</a>. While there’s
-          video, the content doesn’t quite capture the massive number of people.
-          Also it’s <em>“nearly 500,000”</em> people.</p>
-        <p>However, the closest we’ll probably get to a somewhat believable
+        <p>
+          We are heading into shaky ground here. A 800*600 picture only contains
+          480,000 pixels. So we are now reduced to indicating population by
+          inference. It is no longer possible to capture 500,000 people in a
+          webpage sized picture while showing each person individually.
+        </p>
+        <p>
+          <a
+            href="https://www.reddit.com/r/philadelphia/comments/3by9g8/if_this_is_what_500k_people_look_like_xpost_from/"
+            >This Reddit post</a
+          >
+          claims that there are 500k people in the picture, but I couldn’t
+          readily find any good references backing up that claim.
+        </p>
+        <p>
+          Another event that drew 500,000 people is
+          <a
+            href="https://www.nbcnews.com/show-me/video/nearly-500-000-people-march-in-anti-violence-rally-in-barcelona-1033617987741"
+            >an anti-violence rally in Barcelona as reported by NBC</a
+          >. While there’s video, the content doesn’t quite capture the massive
+          number of people. Also it’s <em>“nearly 500,000”</em> people.
+        </p>
+        <p>
+          However, the closest we’ll probably get to a somewhat believable
           500,000 person crowd would be the March for Science. They posted the
-          following picture on <a href="https://www.facebook.com/marchforscience/posts/836983043362678">Facebook</a>
-          noting that “There are 500,000 people on strike in Montreal”.</p>
+          following picture on
+          <a
+            href="https://www.facebook.com/marchforscience/posts/836983043362678"
+            >Facebook</a
+          >
+          noting that “There are 500,000 people on strike in Montreal”.
+        </p>
         <figure>
-          <img src="/posts/visualizing-people-2/_X4o_8tT3n-511.png" alt="March for Science on Facebook: Picture of protest. Image source" width="511" height="951">
-          <figcaption aria-hidden="true">March for Science on Facebook: Picture of
-            protest. <a href="https://www.facebook.com/marchforscience/posts/836983043362678">Image
-              source</a></figcaption>
+          <img
+            src="/posts/visualizing-people-2/_X4o_8tT3n-511.png"
+            alt="March for Science on Facebook: Picture of protest. Image source"
+            width="511"
+            height="951"
+          />
+          <figcaption aria-hidden="true">
+            March for Science on Facebook: Picture of protest.
+            <a
+              href="https://www.facebook.com/marchforscience/posts/836983043362678"
+              >Image source</a
+            >
+          </figcaption>
         </figure>
-        <p><a href="https://en.wikipedia.org/wiki/Woodstock">Woodstock</a> or
-          “an Aquarian Exposition: 3 Days of Peace &amp; Music” festival held in
-          1969 reportedly attracted “over 400,000”, “450,000”, or “500,000” people
-          depending on the source. Let’s assume that the real number is somewhere
-          in-between which gets us to somewhere in the neighborhood of 500,000
-          people.</p>
-        <p>There are numerous aerial photos of the Woodstock crowds, some of
-          which you can find in <a href="https://www.gettyimages.com/photos/woodstock-and-aerial">this
-            image gallery from Getty images</a>.</p>
+        <p>
+          <a href="https://en.wikipedia.org/wiki/Woodstock">Woodstock</a> or “an
+          Aquarian Exposition: 3 Days of Peace &amp; Music” festival held in
+          1969 reportedly attracted “over 400,000”, “450,000”, or “500,000”
+          people depending on the source. Let’s assume that the real number is
+          somewhere in-between which gets us to somewhere in the neighborhood of
+          500,000 people.
+        </p>
+        <p>
+          There are numerous aerial photos of the Woodstock crowds, some of
+          which you can find in
+          <a href="https://www.gettyimages.com/photos/woodstock-and-aerial"
+            >this image gallery from Getty images</a
+          >.
+        </p>
         <h2 id="section-3">750,000</h2>
-        <p>Off to look at protests again. This time we are looking at Barcelona
-          where 750,000 Catalan independence supporters are demanding the release
-          of their leaders according to <a href="http://www.timealem.com/750000-people-flood-barcelona-demanding-release-of-catalan-leaders_d575.html">this
-            article</a>.</p>
+        <p>
+          Off to look at protests again. This time we are looking at Barcelona
+          where 750,000 Catalan independence supporters are demanding the
+          release of their leaders according to
+          <a
+            href="http://www.timealem.com/750000-people-flood-barcelona-demanding-release-of-catalan-leaders_d575.html"
+            >this article</a
+          >.
+        </p>
         <figure>
-          <img src="/posts/visualizing-people-2/Od67VniUj9-696.png" alt="750,000 people flood Barcelona demanding release of Catalan leaders. Image source" width="696" height="736">
-          <figcaption aria-hidden="true">750,000 people flood Barcelona demanding
-            release of Catalan leaders. <a href="http://www.timealem.com/750000-people-flood-barcelona-demanding-release-of-catalan-leaders_d575.html">Image
-              source</a></figcaption>
+          <img
+            src="/posts/visualizing-people-2/Od67VniUj9-696.png"
+            alt="750,000 people flood Barcelona demanding release of Catalan leaders. Image source"
+            width="696"
+            height="736"
+          />
+          <figcaption aria-hidden="true">
+            750,000 people flood Barcelona demanding release of Catalan leaders.
+            <a
+              href="http://www.timealem.com/750000-people-flood-barcelona-demanding-release-of-catalan-leaders_d575.html"
+              >Image source</a
+            >
+          </figcaption>
         </figure>
-        <p>The crowd extends past the top of the frame and there’s no chance
-          this is the entire crowd. But you get the general idea. If you ship a
-          bug that affects 0.01% of the internet population, then this is a
-          conservative lower bound of what that angry mob would look like.</p>
-        <p>But wait, the <a href="https://www.guinnessworldrecords.com/news/non-corporate/2018/6/more-than-750-000-people-help-philippines-based-church-achieve-four-new-records-529029">Guinness
-            World Record for the largest charity walk/run</a> is 283,171 people at a
-          single venue. Have a look at that picture:</p>
+        <p>
+          The crowd extends past the top of the frame and there’s no chance this
+          is the entire crowd. But you get the general idea. If you ship a bug
+          that affects 0.01% of the internet population, then this is a
+          conservative lower bound of what that angry mob would look like.
+        </p>
+        <p>
+          But wait, the
+          <a
+            href="https://www.guinnessworldrecords.com/news/non-corporate/2018/6/more-than-750-000-people-help-philippines-based-church-achieve-four-new-records-529029"
+            >Guinness World Record for the largest charity walk/run</a
+          >
+          is 283,171 people at a single venue. Have a look at that picture:
+        </p>
         <figure>
-          <img src="/posts/visualizing-people-2/BXnyRjHkoM-674.png" alt="Guinness Record for the largest charity walk or run at a single venue is for 283,171 people. Image Source" width="674" height="598">
-          <figcaption aria-hidden="true">Guinness Record for the largest charity
-            walk or run at a single venue is for 283,171 people. <a href="https://www.guinnessworldrecords.com/news/non-corporate/2018/6/more-than-750-000-people-help-philippines-based-church-achieve-four-new-records-529029">Image
-              Source</a></figcaption>
+          <img
+            src="/posts/visualizing-people-2/BXnyRjHkoM-674.png"
+            alt="Guinness Record for the largest charity walk or run at a single venue is for 283,171 people. Image Source"
+            width="674"
+            height="598"
+          />
+          <figcaption aria-hidden="true">
+            Guinness Record for the largest charity walk or run at a single
+            venue is for 283,171 people.
+            <a
+              href="https://www.guinnessworldrecords.com/news/non-corporate/2018/6/more-than-750-000-people-help-philippines-based-church-achieve-four-new-records-529029"
+              >Image Source</a
+            >
+          </figcaption>
         </figure>
-        <p>It seems that picture of 750,000 people doesn’t quite capture that
-          many people because clearly there are more people in the picture that’s
-          supposed to be 283k people. Which of course goes to show how hard it is
-          to really capture how massive a crowd 750k makes.</p>
-        <p>In an article on Wired that discusses how hard it is to estimate
-          crowd sizes, they note<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>:</p>
+        <p>
+          It seems that picture of 750,000 people doesn’t quite capture that
+          many people because clearly there are more people in the picture
+          that’s supposed to be 283k people. Which of course goes to show how
+          hard it is to really capture how massive a crowd 750k makes.
+        </p>
+        <p>
+          In an article on Wired that discusses how hard it is to estimate crowd
+          sizes, they note<a
+            href="#fn2"
+            class="footnote-ref"
+            id="fnref2"
+            role="doc-noteref"
+            ><sup>2</sup></a
+          >:
+        </p>
         <blockquote>
-          <p>Every time a ton of people gather in one place, there are all sorts
-            of pronouncements made about how many folks really showed. The figures
-            rarely agree; Glenn Beck’s rally on the National Mall this summer
-            attracted a million people, according to Beck cohort Rep. Michelle
-            Bachman. CBS News pegged it at more like 87,000.</p>
+          <p>
+            Every time a ton of people gather in one place, there are all sorts
+            of pronouncements made about how many folks really showed. The
+            figures rarely agree; Glenn Beck’s rally on the National Mall this
+            summer attracted a million people, according to Beck cohort
+            Rep. Michelle Bachman. CBS News pegged it at more like 87,000.
+          </p>
         </blockquote>
         <h2 id="and-more">And More</h2>
-        <p>I’m going to give up at this point. Pictures purportedly of around
-          one million people are mostly parts of crowds that have been estimated
-          to be that big.</p>
-        <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
-          <hr>
+        <p>
+          I’m going to give up at this point. Pictures purportedly of around one
+          million people are mostly parts of crowds that have been estimated to
+          be that big.
+        </p>
+        <section
+          id="footnotes"
+          class="footnotes footnotes-end-of-document"
+          role="doc-endnotes"
+        >
+          <hr />
           <ol>
             <li id="fn1">
-              <p>Note that figure 2 indicates that the estimate is 49% of
-                the population would have internet access in 2017. It’s likely that by
-                2021 we’d at least have reached 50% based on the sharp growth curve.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p>
+              <p>
+                Note that figure 2 indicates that the estimate is 49% of the
+                population would have internet access in 2017. It’s likely that
+                by 2021 we’d at least have reached 50% based on the sharp growth
+                curve.<a
+                  href="#fnref1"
+                  class="footnote-back"
+                  role="doc-backlink"
+                  >↩︎</a
+                >
+              </p>
             </li>
             <li id="fn2">
-              <p><a href="https://www.wired.com/2011/02/how-many-people-are-in-tahrir-square-heres-how-to-tell/">How
-                  Many People Are in Tahrir Square? Here’s How to Tell</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p>
+              <p>
+                <a
+                  href="https://www.wired.com/2011/02/how-many-people-are-in-tahrir-square-heres-how-to-tell/"
+                  >How Many People Are in Tahrir Square? Here’s How to Tell</a
+                ><a href="#fnref2" class="footnote-back" role="doc-backlink"
+                  >↩︎</a
+                >
+              </p>
             </li>
           </ol>
         </section>
-        <div class="lastmodified">
-          <p>Last modified: September 6, 2021</p>
-        </div>
+
+        <footer>
+          <div class="lastmodified">
+            <p>Last modified: September 6, 2021</p>
+          </div>
+        </footer>
       </article>
-      <div class="container">
-        <nav class="navlike">
-          <a href="/posts/fart-limit/">
-            <i class="material-symbols-outlined">chevron_left</i>
-            Fart Limit
-          </a>
-          <div class="fill">&nbsp;</div>
-          <a href="/posts/why-strong-opinions-weekly-held/">
-            Why &#39;Strong Opinions Weekly Held&#39;
-            <i class="material-symbols-outlined">chevron_right</i>
-          </a>
-        </nav>
-      </div>
+
+      <div class="container"></div>
     </main>
+
     <footer class="container">
       <h2>More posts from this blog ...</h2>
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/inktober-decay/">
-            Inktober - Decay
+          <a href="/posts/ephemeral-fingerprinting/">
+            Ephemeral Fingerprinting On The Web
           </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on January 13, 2022
-        </span>
+          <span class="date navlike"> Last updated on April 1, 2020 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/inktober/">#Inktober</a>
-</span>
-        </div>
-      </div>
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/inktober-stripes/">
-            Inktober - Stripes
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike">
-            Last updated on January 21, 2022
-        </span>
-          <span class="fill"></span>
-          <span class="tag-link">
-    <a href="/tags/inktober/">#Inktober</a>
-</span>
-        </div>
-      </div>
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/proof-of-work/">
-            Proof of Work
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike">
-            Last updated on July 12, 2024
-            , Originally posted on July 11, 2024
-        </span>
-          <span class="fill"></span>
-          <span class="tag-link">
-    <a href="/tags/engineering/">#Engineering</a>
-</span>
-          <span class="tag-link">
-    <a href="/tags/career/">#Career</a>
-</span>
-          <span class="tag-link">
-    <a href="/tags/organizations/">#Organizations</a>
-</span>
+            <a href="/tags/privacy/">#Privacy</a>
+          </span>
         </div>
         <div>
           <div class="summary">
-            <p>Working with a poorly thought-out, or overengineered technology stack, or an overly bureaucratic organization is <em>also a form of proof-of-work</em>.</p>
+            <p>
+              Any ephemeral low-entropy web observable property whose changes
+              are concurrently observable by multiple sites can lead to cross
+              site identity joining.
+            </p>
+            <p>
+              This method of identity joining does not require coordination
+              between multiple first parties. A single third party embedded
+              within multiple first parties can also use this method.
+            </p>
           </div>
-          <p class="more"><a href="/posts/proof-of-work/">Read more …</a></p>
+          <p class="more">
+            <a href="/posts/ephemeral-fingerprinting/">Read more …</a>
+          </p>
         </div>
       </div>
+
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/comcast-technican-problem/">
-            The Comcast Technician Problem
+          <a href="/posts/visualizing-people-2/">
+            Visualizing A Million People
           </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on July 13, 2020
-        </span>
+          <span class="date navlike"> Last updated on September 6, 2021 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/math/">#Math</a>
-</span>
+            <a href="/tags/curiosity/">#Curiosity</a>
+          </span>
         </div>
         <div>
           <div class="summary">
-            <p>Given a set of tasks, incentives are often aligned towards dropping a task
-              rather than allowing for perpetual accretion of delays.</p>
+            <p>
+              If your feature pisses off a million people what does this angry
+              mob look like? Spoiler: We only get to 750,000.
+            </p>
           </div>
-          <p class="more"><a href="/posts/comcast-technican-problem/">Read more …</a></p>
+          <p class="more">
+            <a href="/posts/visualizing-people-2/">Read more …</a>
+          </p>
         </div>
       </div>
+
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/symbol-name-types/">
-            Names for Name Conventions
+          <a href="/posts/the-lettergrade-rule/"> The Lettergrade Rule </a>
+        </h3>
+        <div class="navlike">
+          <span class="date navlike"> Last updated on September 16, 2022 </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/engineering/">#engineering</a>
+          </span>
+        </div>
+        <div>
+          <div class="summary">
+            <p>
+              Don't block a code review because of minor issues that are best
+              left to the discretion of the author.
+            </p>
+          </div>
+          <p class="more">
+            <a href="/posts/the-lettergrade-rule/">Read more …</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <h3 class="title">
+          <a href="/posts/a-good-api/"> A Good API: g9 </a>
+        </h3>
+        <div class="navlike">
+          <span class="date navlike"> Last updated on August 12, 2023 </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/engineering/">#Engineering</a>
+          </span>
+        </div>
+        <div>
+          <div class="summary">
+            <p>Adding more knobs doesn't make your API more powerful.</p>
+          </div>
+          <p class="more"><a href="/posts/a-good-api/">Read more …</a></p>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <h3 class="title">
+          <a href="/posts/pillars-are-governance-structures/">
+            Pillars And Governance Structures
           </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on August 24, 2020
-        </span>
+          <span class="date navlike"> Last updated on September 9, 2023 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/engineering/">#Engineering</a>
-</span>
+            <a href="/tags/culture/">#Culture</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/career/">#Career</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/organizations/">#Organizations</a>
+          </span>
         </div>
       </div>
     </footer>
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"></script>
+
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"
+    ></script>
     <script>
-      var dnt, doNotTrack = !1;
-      if (!1 && (dnt = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack, doNotTrack = dnt == "1" || dnt == "yes"), !doNotTrack) {
+      var dnt,
+        doNotTrack = !1;
+      if (
+        (!1 &&
+          ((dnt =
+            navigator.doNotTrack ||
+            window.doNotTrack ||
+            navigator.msDoNotTrack),
+          (doNotTrack = dnt == "1" || dnt == "yes")),
+        !doNotTrack)
+      ) {
         window.dataLayer = window.dataLayer || [];
         function gtag() {
-          dataLayer.push(arguments)
+          dataLayer.push(arguments);
         }
-        gtag("js", new Date), gtag("config", "G-GSREL2EZ4Y")
+        (gtag("js", new Date()), gtag("config", "G-GSREL2EZ4Y"));
       }
     </script>
   </body>

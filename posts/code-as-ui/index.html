@@ -1,26 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-us">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Code As UI: The UX of config-as-code and everything-as-code</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-    <link rel="icon" href="/images/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link rel="stylesheet" href="/styles/katex.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
-    <link rel="stylesheet" href="/styles/kCLLP63cz-.css">
-    <link rel="me" href="mailto:asanka@gmail.com">
-    <link rel="me" href="https://github.com/asankah">
-    <meta name="generator" content="Pandoc + Eleventy">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/apple-touch-icon.png"
+    />
+    <link rel="icon" href="/images/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon-32x32.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/images/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link rel="stylesheet" href="/styles/katex.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link rel="stylesheet" href="/styles/C_Z__E83wh.css" />
+    <link rel="me" href="mailto:asanka@gmail.com" />
+    <link rel="me" href="https://github.com/asankah" />
+
+    <meta name="generator" content="Pandoc + Eleventy" />
   </head>
+
   <body>
     <header class="container">
       <nav class="navlike">
@@ -28,211 +55,320 @@
         <span class="fill"></span>
         <h2><a href="/about/me/">About</a></h2>
         <h2><a href="/tags/">Tags</a></h2>
-        <h2><a href="/feed.xml"><img src="/images/rss.svg"></a></h2>
+        <h2>
+          <a href="/feed.xml"><img src="/images/rss.svg" /></a>
+        </h2>
       </nav>
     </header>
+
     <main>
       <article class="container">
         <header>
           <h1>Code As UI: The UX of config-as-code and everything-as-code</h1>
           <div class="navlike">
             <span>
-          <span class="date">Posted on July 1, 2023</span><span class="author">&nbsp;by Asanka Herath</span></span>
+              <span class="date">Posted on July 1, 2023</span
+              ><span class="author">&nbsp;by Asanka Herath</span></span
+            >
             <span class="fill"></span>
+
             <span class="tag-link">
-    <a href="/tags/engineering/">#engineering</a>
-</span>
+              <a href="/tags/engineering/">#engineering</a>
+            </span>
           </div>
           <div class="navlike">
-            <span class="readingtime">Estimated reading time is 11 minutes.</span>
+            <span class="readingtime">
+              Estimated reading time is 11 minutes.
+            </span>
             <span class="fill"></span>
           </div>
         </header>
+
         <h2 id="welcome-to-the-ui-review">Welcome to the UI review</h2>
-        <p>Your UX person comes up to you with the new mocks for the
-          configuration UI. It looks like this:</p>
+        <p>
+          Your UX person comes up to you with the new mocks for the
+          configuration UI. It looks like this:
+        </p>
         <figure>
-          <img src="/posts/code-as-ui/ktRaziYXSc-324.png" alt="A UI mock where all the labels are text boxes, and the values are also text boxes. The button just “button”." width="324" height="287">
-          <figcaption aria-hidden="true">A UI mock where all the labels are text
-            boxes, and the values are also text boxes. The button just
-            “button”.</figcaption>
+          <img
+            src="/posts/code-as-ui/ktRaziYXSc-324.png"
+            alt="A UI mock where all the labels are text boxes, and the values are also text boxes. The button just “button”."
+            width="324"
+            height="287"
+          />
+          <figcaption aria-hidden="true">
+            A UI mock where all the labels are text boxes, and the values are
+            also text boxes. The button just “button”.
+          </figcaption>
         </figure>
         <p><strong>You</strong>: What is this? Is this modern?</p>
-        <p><strong>UX</strong>: That’s be beauty of it. The user can type in the
-          label <em>and</em> type in the value.</p>
-        <p><strong>You</strong>: And how would they know what the labels are and
-          what valid values are?</p>
-        <p><strong>UX</strong>: We will write some documentation on what the
-          labels and values should be.</p>
+        <p>
+          <strong>UX</strong>: That’s be beauty of it. The user can type in the
+          label <em>and</em> type in the value.
+        </p>
+        <p>
+          <strong>You</strong>: And how would they know what the labels are and
+          what valid values are?
+        </p>
+        <p>
+          <strong>UX</strong>: We will write some documentation on what the
+          labels and values should be.
+        </p>
         <p><strong>You</strong>: What about validation?</p>
-        <p><strong>UX</strong>: Hmm. That would be nice. But the UI doesn’t
-          really know what the valid values are.</p>
+        <p>
+          <strong>UX</strong>: Hmm. That would be nice. But the UI doesn’t
+          really know what the valid values are.
+        </p>
         <p><strong>You</strong>: Come again?</p>
-        <p><strong>UX</strong>: The UI is neutral. Again, the valid labels and
-          values are documented.</p>
+        <p>
+          <strong>UX</strong>: The UI is neutral. Again, the valid labels and
+          values are documented.
+        </p>
         <p><strong>You</strong>: Is it a good document?</p>
         <p><strong>UX</strong>: Let’s not get ahead of ourselves.</p>
         <p><strong>You</strong>: Is it a single document?</p>
-        <p><strong>UX</strong>: We are thinking more along the line of leaning
+        <p>
+          <strong>UX</strong>: We are thinking more along the line of leaning
           into crowd sourcing. Like there will be some documentation, but really
-          the labels and values are consumed by the backend. We don’t really have
-          much control of that.</p>
-        <p><strong>You</strong>: So, the backend is responsible for keeping the
-          documentation up to date? How has that worked out before?</p>
-        <p><strong>UX</strong>: Not great.</p>
-        <p><strong>You</strong>: So, any good news here? Why are we doing
-          this?</p>
-        <p><strong>UX</strong>: Because it’s config-as-code. It’s the new
-          hotness.</p>
-        <p><strong>You</strong>: Say no more fam.</p>
-        <p>So here’s the thing. Config-as-code isn’t new. That’s how it was
-          before any GUIs existed. Anyone hows configured an old OS, and some new
-          ones, will tell you that the only way some parts can be configured is by
-          editing text files; sometimes using an esoteric editor called
-          <code>vi</code><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.
+          the labels and values are consumed by the backend. We don’t really
+          have much control of that.
         </p>
-        <p>Then there was a glorious age of GUIs. At some point they started
+        <p>
+          <strong>You</strong>: So, the backend is responsible for keeping the
+          documentation up to date? How has that worked out before?
+        </p>
+        <p><strong>UX</strong>: Not great.</p>
+        <p>
+          <strong>You</strong>: So, any good news here? Why are we doing this?
+        </p>
+        <p>
+          <strong>UX</strong>: Because it’s config-as-code. It’s the new
+          hotness.
+        </p>
+        <p><strong>You</strong>: Say no more fam.</p>
+        <p>
+          So here’s the thing. Config-as-code isn’t new. That’s how it was
+          before any GUIs existed. Anyone hows configured an old OS, and some
+          new ones, will tell you that the only way some parts can be configured
+          is by editing text files; sometimes using an esoteric editor called
+          <code>vi</code
+          ><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"
+            ><sup>1</sup></a
+          >.
+        </p>
+        <p>
+          Then there was a glorious age of GUIs. At some point they started
           treating developers and sysadmins like real people. You might not
           believe this, but they even did user experience testing to make sure
-          those sysadmins’ lives were as easy as possible. It was glorious.</p>
+          those sysadmins’ lives were as easy as possible. It was glorious.
+        </p>
         <p>And now, what’s old is new again.</p>
         <h2 id="the-pros">The Pros</h2>
         <p>There are in fact good reasons for config-as-code. Here’s a few:</p>
         <ol type="1">
           <li>
             <p><strong>No more opaque configuration</strong>.</p>
-            <p>Fancy UIs often mean that the configuration data goes straight into
-              an opaque configuration store somewhere. Sure it will come around and
-              affect the behavior of whatever it was that is being configured. But
-              that stuff usually doesn’t involve the user.</p>
-            <p>Usually the the platform doesn’t have much reason to keep
-              configuration a secret. So there will be some schema and some method to
-              storing and querying the configuration.</p>
-            <p>However when it comes to third-party or hosted services, this is not
-              always the case. The how the configuration is stored and how it is
-              reified into behavior is opaque.</p>
-            <p>With configuration-as-code (Can I call this CaC? That’ll be more
-              convenient.) the user is in control of storage. How else would they
-              write it down? The schema must necessarily also be made available to the
-              user.</p>
+            <p>
+              Fancy UIs often mean that the configuration data goes straight
+              into an opaque configuration store somewhere. Sure it will come
+              around and affect the behavior of whatever it was that is being
+              configured. But that stuff usually doesn’t involve the user.
+            </p>
+            <p>
+              Usually the the platform doesn’t have much reason to keep
+              configuration a secret. So there will be some schema and some
+              method to storing and querying the configuration.
+            </p>
+            <p>
+              However when it comes to third-party or hosted services, this is
+              not always the case. The how the configuration is stored and how
+              it is reified into behavior is opaque.
+            </p>
+            <p>
+              With configuration-as-code (Can I call this CaC? That’ll be more
+              convenient.) the user is in control of storage. How else would
+              they write it down? The schema must necessarily also be made
+              available to the user.
+            </p>
           </li>
           <li>
             <p><strong>All the controls of source code</strong>.</p>
-            <p>Anyone who’s written some source code and used some source control
-              tool will tell you how useful source control can be.</p>
+            <p>
+              Anyone who’s written some source code and used some source control
+              tool will tell you how useful source control can be.
+            </p>
             <p>Almost trivially you get:</p>
             <ol type="1">
               <li>
-                <p><strong>History</strong> and all that comes with it like the
-                  ability to revert back to known good states.</p>
+                <p>
+                  <strong>History</strong> and all that comes with it like the
+                  ability to revert back to known good states.
+                </p>
               </li>
               <li>
-                <p><strong>Blame/Praise</strong> and attribution of changes to
-                  specific authors – assuming there’s sufficient authentication and
-                  authorization in place.</p>
+                <p>
+                  <strong>Blame/Praise</strong> and attribution of changes to
+                  specific authors – assuming there’s sufficient authentication
+                  and authorization in place.
+                </p>
               </li>
               <li>
-                <p><strong>Reviews/Approvals</strong> that verify that the changes
-                  were correct and appropriate.</p>
+                <p>
+                  <strong>Reviews/Approvals</strong> that verify that the
+                  changes were correct and appropriate.
+                </p>
               </li>
             </ol>
-            <p>Unless someone can be mandated to stand behind you and look over your
-              shoulder taking notes, none of that comes for free with a sysadmin at a
-              GUI.</p>
+            <p>
+              Unless someone can be mandated to stand behind you and look over
+              your shoulder taking notes, none of that comes for free with a
+              sysadmin at a GUI.
+            </p>
           </li>
           <li>
             <p><strong>Audits, validation, automation</strong>.</p>
-            <p>Follows from the above. Now that the configuration is inspectable and
-              understandable, it is easily amenable to automation and validation.</p>
-            <p>One could argue that this was always the case. However, now the user
-              is empowered to do so with the same fidelity as the authors of the
-              system.</p>
+            <p>
+              Follows from the above. Now that the configuration is inspectable
+              and understandable, it is easily amenable to automation and
+              validation.
+            </p>
+            <p>
+              One could argue that this was always the case. However, now the
+              user is empowered to do so with the same fidelity as the authors
+              of the system.
+            </p>
           </li>
         </ol>
         <h2 id="and-the-cons">And the cons</h2>
         <p>The things that need <em>fixing</em> is usability.</p>
-        <p>We spent decades saying Fitt’s law this and “recognition over recall”
+        <p>
+          We spent decades saying Fitt’s law this and “recognition over recall”
           that, and then threw everything away. It’s time we put all that
-          experience into action.</p>
-        <p>Just because the configuration is in text files doesn’t mean that it
+          experience into action.
+        </p>
+        <p>
+          Just because the configuration is in text files doesn’t mean that it
           has to be authored that way. Even if it did, it is still possible to
-          substantially improve the UX there.</p>
-        <p>Why do people enjoy Mad Libs but wouldn’t enjoy writing the same
-          content from scratch? The answer is “recognition over recall”.</p>
+          substantially improve the UX there.
+        </p>
+        <p>
+          Why do people enjoy Mad Libs but wouldn’t enjoy writing the same
+          content from scratch? The answer is “recognition over recall”.
+        </p>
         <figure>
-          <p><img src="/posts/code-as-ui/l5uFNoODJm-820.png" alt="The original Mad Libs book gave this example: “___________! he said ________ as he jumped into his convertible ______ and drove off with his _________ wife.” exclamation adverb noun adjective." width="820" height="233">
-             </p>
+          <p>
+            <img
+              src="/posts/code-as-ui/l5uFNoODJm-820.png"
+              alt="The original Mad Libs book gave this example: “___________! he said ________ as he jumped into his convertible ______ and drove off with his _________ wife.” exclamation adverb noun adjective."
+              width="820"
+              height="233"
+            />
+             
+          </p>
           <figcaption>
-            <p>An example from the original Mad Libs book. <a href="https://en.wikipedia.org/wiki/Mad_Libs">Source: Wikipedia</a></p>
+            <p>
+              An example from the original Mad Libs book.
+              <a href="https://en.wikipedia.org/wiki/Mad_Libs"
+                >Source: Wikipedia</a
+              >
+            </p>
           </figcaption>
         </figure>
-        <p>We can have the format and options documented somewhere and have the
+        <p>
+          We can have the format and options documented somewhere and have the
           user consult the document at every step of the way. This sound
           reasonable at first. So people write things like “read all the
-          documentation carefully before attempting to configure the thing.”</p>
-        <p>But the amount of information that a human being can keep track of at
-          a given time is limited. What it ends up being is a tiresom sequence of
-          flipping back and forth between reference and implementation.</p>
+          documentation carefully before attempting to configure the thing.”
+        </p>
+        <p>
+          But the amount of information that a human being can keep track of at
+          a given time is limited. What it ends up being is a tiresom sequence
+          of flipping back and forth between reference and implementation.
+        </p>
         <figure>
-          <p><img src="/posts/code-as-ui/vNyunj5zpi-354.png" alt="Attention shifts from the reference to the configuration being edited and back; repeatedly." width="354" height="238">
-             </p>
-          <figcaption>
-            Left to right to left to right …
-          </figcaption>
+          <p>
+            <img
+              src="/posts/code-as-ui/vNyunj5zpi-354.png"
+              alt="Attention shifts from the reference to the configuration being edited and back; repeatedly."
+              width="354"
+              height="238"
+            />
+             
+          </p>
+          <figcaption>Left to right to left to right …</figcaption>
         </figure>
         <h2 id="making-things-better">Making things better</h2>
-        <p>It turns out we already have some ideas on how to fix this, because
-          the same problems plague software engineering. Or I should say the other
-          areas of software engineering.</p>
-        <p>Here are several approaches I’ve seen in practice that make
-          config-as-code more bearable.</p>
+        <p>
+          It turns out we already have some ideas on how to fix this, because
+          the same problems plague software engineering. Or I should say the
+          other areas of software engineering.
+        </p>
+        <p>
+          Here are several approaches I’ve seen in practice that make
+          config-as-code more bearable.
+        </p>
         <h3 id="language-serversautocomplete">Language Servers/Autocomplete</h3>
-        <p>Pretty much the only useful development in coding in the past several
-          decades is autocomplete. A good schema along with documentation can make
-          a huge difference. Try editing the VS Code settings file to see it in
-          action.</p>
+        <p>
+          Pretty much the only useful development in coding in the past several
+          decades is autocomplete. A good schema along with documentation can
+          make a huge difference. Try editing the VS Code settings file to see
+          it in action.
+        </p>
         <h3 id="templates">Templates</h3>
-        <p>As the Mad Libs example shows, templates are much easier and more
-          expedient than a blank empty document.</p>
+        <p>
+          As the Mad Libs example shows, templates are much easier and more
+          expedient than a blank empty document.
+        </p>
         <p>Other examples of templates include:</p>
-        <p>But templates in general only work the first time. So subsequent
-          edits to the configuration will have to contend without the help of a
+        <p>
+          But templates in general only work the first time. So subsequent edits
+          to the configuration will have to contend without the help of a
           template. This is a biggie since configurations can’t be updated when
-          updating their corresponding templates.</p>
+          updating their corresponding templates.
+        </p>
         <h3 id="alternate-uis">Alternate UIs</h3>
-        <p>We once used to have WYSIWYG UI editors. Now we have to write our UIs
+        <p>
+          We once used to have WYSIWYG UI editors. Now we have to write our UIs
           as code in one of any number of frameworks that in turn try to reduce
-          the toil of writing UIs. It doesn’t have to be this way.</p>
-        <p>At least for configuration, just because the configuration is written
-          down as code doesn’t mean it has to be edited as code. The same UIs that
-          we once used can still generate those text files.</p>
-        <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
-          <hr>
+          the toil of writing UIs. It doesn’t have to be this way.
+        </p>
+        <p>
+          At least for configuration, just because the configuration is written
+          down as code doesn’t mean it has to be edited as code. The same UIs
+          that we once used can still generate those text files.
+        </p>
+        <section
+          id="footnotes"
+          class="footnotes footnotes-end-of-document"
+          role="doc-endnotes"
+        >
+          <hr />
           <ol>
             <li id="fn1">
-              <p>Vim is actually quite awesome. <a href="https://neovim.io">Neovim</a> is slightly more or less awesome
-                depending on who you are ask.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p>
+              <p>
+                Vim is actually quite awesome.
+                <a href="https://neovim.io">Neovim</a> is slightly more or less
+                awesome depending on who you are ask.<a
+                  href="#fnref1"
+                  class="footnote-back"
+                  role="doc-backlink"
+                  >↩︎</a
+                >
+              </p>
             </li>
           </ol>
         </section>
-        <div class="lastmodified">
-          <p>Last modified: July 1, 2023</p>
-        </div>
+
+        <footer>
+          <div class="lastmodified">
+            <p>Last modified: July 1, 2023</p>
+          </div>
+        </footer>
       </article>
-      <div class="container">
-        <nav class="navlike">
-          <a href="/posts/promise-fatigue/">
-            <i class="material-symbols-outlined">chevron_left</i>
-            Promise Fatigue
-          </a>
-          <div class="fill">&nbsp;</div>
-          <a href="/posts/just-the-right-amount/">
-            Just Enough Technical Debt
-            <i class="material-symbols-outlined">chevron_right</i>
-          </a>
-        </nav>
-      </div>
+
+      <div class="container"></div>
     </main>
+
     <footer class="container">
       <h2>More posts from this blog ...</h2>
       <div class="post-card">
@@ -242,127 +378,182 @@
           </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on January 6, 2022
-        </span>
+          <span class="date navlike"> Last updated on January 6, 2022 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/remarkable-2/">#Remarkable 2</a>
-</span>
+            <a href="/tags/remarkable-2/">#Remarkable 2</a>
+          </span>
+
           <span class="tag-link">
-    <a href="/tags/tools/">#Tools</a>
-</span>
+            <a href="/tags/tools/">#Tools</a>
+          </span>
         </div>
         <div>
           <div class="summary">
-            <p>How to bind a hotkey to grab a snapshot of your reMarkable display and copy it to the clipboard on a Mac.</p>
+            <p>
+              How to bind a hotkey to grab a snapshot of your reMarkable display
+              and copy it to the clipboard on a Mac.
+            </p>
           </div>
-          <p class="more"><a href="/posts/grab-diagram-workflow-re2/">Read more …</a></p>
+          <p class="more">
+            <a href="/posts/grab-diagram-workflow-re2/">Read more …</a>
+          </p>
         </div>
       </div>
+
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/inktober-wild/">
-            Inktober - Wild
+          <a href="/posts/git-autopush/">
+            Use Git hooks to automatically push after every commit
           </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on January 13, 2022
-        </span>
+          <span class="date navlike"> Last updated on July 5, 2022 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/inktober/">#Inktober</a>
-</span>
-        </div>
-      </div>
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/syntax-highlighting/">
-            On Highlighting Syntax vs. Semantics
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike">
-            Last updated on February 12, 2022
-        </span>
-          <span class="fill"></span>
-          <span class="tag-link">
-    <a href="/tags/engineering/">#Engineering</a>
-</span>
+            <a href="/tags/tools/">#tools</a>
+          </span>
         </div>
         <div>
           <div class="summary">
-            <p>Takes a look at an alternate form of code highlighting based on core semantics instead of syntactic role.</p>
+            <p>
+              During before and after various Git operations, Git invokes
+              special hooks that can be used execute custom scripts. This
+              article explains how to use them to automatically push to an
+              upstream repository every time you make a commit to a local repo.
+            </p>
           </div>
-          <p class="more"><a href="/posts/syntax-highlighting/">Read more …</a></p>
+          <p class="more"><a href="/posts/git-autopush/">Read more …</a></p>
         </div>
       </div>
+
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/interesting-numbers/">
-            All natural numbers are interesting
+          <a href="/posts/the-loss-of-a-virtuous-culture/">
+            The Loss of a Virtuous Culture
           </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on August 3, 2022
-        </span>
+          <span class="date navlike"> Last updated on October 28, 2022 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/math/">#math</a>
-</span>
+            <a href="/tags/culture/">#Culture</a>
+          </span>
+
           <span class="tag-link">
-    <a href="/tags/curiosity/">#curiosity</a>
-</span>
+            <a href="/tags/engineering/">#Engineering</a>
+          </span>
         </div>
         <div>
           <div class="summary">
-            <p>A proof.</p>
+            <p>Luck isn't enough. You need a culture of virtue.</p>
           </div>
-          <p class="more"><a href="/posts/interesting-numbers/">Read more …</a></p>
+          <p class="more">
+            <a href="/posts/the-loss-of-a-virtuous-culture/">Read more …</a>
+          </p>
         </div>
       </div>
+
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/catchment/">
-            Draining Our Intellectual Catchment Areas
-          </a>
+          <a href="/posts/proof-of-work/"> Proof of Work </a>
         </h3>
         <div class="navlike">
           <span class="date navlike">
-            Last updated on July 4, 2025
-        </span>
+            Last updated on July 12, 2024 , Originally posted on July 11, 2024
+          </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/culture/">#Culture</a>
-</span>
+            <a href="/tags/engineering/">#Engineering</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/career/">#Career</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/organizations/">#Organizations</a>
+          </span>
         </div>
         <div>
           <div class="summary">
-            <p>Intellectual catchment areas are collaborative ecosystems between
-              universities and industries that attract talent and ideas. The
-              United States became a hub of intellectual capital after World War II,
-              thanks to a combination of industrial growth around universities,
-              significant research funding, and favorable immigration policies.</p>
-            <p>The current political climate is jeopardizing these ecosystems.
-              Continued threats against universities and immigration could undo a century
-              of progress, ultimately depleting the nation's source of creativity and
-              innovation.</p>
+            <p>
+              Working with a poorly thought-out, or overengineered technology
+              stack, or an overly bureaucratic organization is
+              <em>also a form of proof-of-work</em>.
+            </p>
           </div>
-          <p class="more"><a href="/posts/catchment/">Read more …</a></p>
+          <p class="more"><a href="/posts/proof-of-work/">Read more …</a></p>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <h3 class="title">
+          <a href="/posts/intrinsic-motivation-an-anecdote/">
+            Intrinsic and Extrinsic Motivation: An anecdote
+          </a>
+        </h3>
+        <div class="navlike">
+          <span class="date navlike"> Last updated on March 22, 2025 </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/culture/">#Culture</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/career/">#Career</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/inclusion-and-equity/">#Inclusion and Equity</a>
+          </span>
+        </div>
+        <div>
+          <div class="summary">
+            <p>
+              Intrinsic motivation is always better than extrinsic motivation.
+              But not as good as it is when one is motivated both intrinsically
+              and extrinsically.
+            </p>
+          </div>
+          <p class="more">
+            <a href="/posts/intrinsic-motivation-an-anecdote/">Read more …</a>
+          </p>
         </div>
       </div>
     </footer>
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"></script>
+
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"
+    ></script>
     <script>
-      var dnt, doNotTrack = !1;
-      if (!1 && (dnt = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack, doNotTrack = dnt == "1" || dnt == "yes"), !doNotTrack) {
+      var dnt,
+        doNotTrack = !1;
+      if (
+        (!1 &&
+          ((dnt =
+            navigator.doNotTrack ||
+            window.doNotTrack ||
+            navigator.msDoNotTrack),
+          (doNotTrack = dnt == "1" || dnt == "yes")),
+        !doNotTrack)
+      ) {
         window.dataLayer = window.dataLayer || [];
         function gtag() {
-          dataLayer.push(arguments)
+          dataLayer.push(arguments);
         }
-        gtag("js", new Date), gtag("config", "G-GSREL2EZ4Y")
+        (gtag("js", new Date()), gtag("config", "G-GSREL2EZ4Y"));
       }
     </script>
   </body>

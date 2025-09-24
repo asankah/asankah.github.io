@@ -1,26 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-us">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>How This Blog Works</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-    <link rel="icon" href="/images/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link rel="stylesheet" href="/styles/katex.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
-    <link rel="stylesheet" href="/styles/kCLLP63cz-.css">
-    <link rel="me" href="mailto:asanka@gmail.com">
-    <link rel="me" href="https://github.com/asankah">
-    <meta name="generator" content="Pandoc + Eleventy">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/apple-touch-icon.png"
+    />
+    <link rel="icon" href="/images/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon-32x32.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/images/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link rel="stylesheet" href="/styles/katex.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link rel="stylesheet" href="/styles/C_Z__E83wh.css" />
+    <link rel="me" href="mailto:asanka@gmail.com" />
+    <link rel="me" href="https://github.com/asankah" />
+
+    <meta name="generator" content="Pandoc + Eleventy" />
   </head>
+
   <body>
     <header class="container">
       <nav class="navlike">
@@ -28,32 +55,48 @@
         <span class="fill"></span>
         <h2><a href="/about/me/">About</a></h2>
         <h2><a href="/tags/">Tags</a></h2>
-        <h2><a href="/feed.xml"><img src="/images/rss.svg"></a></h2>
+        <h2>
+          <a href="/feed.xml"><img src="/images/rss.svg" /></a>
+        </h2>
       </nav>
     </header>
+
     <div class="container notice-container">
       <aside class="notice">
-        <p>In early December of 2024 <a href="/posts/moved-to-eleventy" title="I moved this blog to Eleventy">I migrated this blog to Eleventy</a>.
-          It no longer uses Hugo.</p>
+        <p>
+          In early December of 2024
+          <a
+            href="/posts/moved-to-eleventy"
+            title="I moved this blog to Eleventy"
+            >I migrated this blog to Eleventy</a
+          >. It no longer uses Hugo.
+        </p>
       </aside>
     </div>
+
     <main>
       <article class="container">
         <header>
           <h1>How This Blog Works</h1>
           <div class="navlike">
             <span>
-          <span class="date">Posted on July 27, 2020</span><span class="author">&nbsp;by Asanka Herath</span></span>
+              <span class="date">Posted on July 27, 2020</span
+              ><span class="author">&nbsp;by Asanka Herath</span></span
+            >
             <span class="fill"></span>
+
             <span class="tag-link">
-    <a href="/tags/meta/">#Meta</a>
-</span>
+              <a href="/tags/meta/">#Meta</a>
+            </span>
           </div>
           <div class="navlike">
-            <span class="readingtime">Estimated reading time is 3 minutes.</span>
+            <span class="readingtime">
+              Estimated reading time is 3 minutes.
+            </span>
             <span class="fill"></span>
           </div>
         </header>
+
         <h1 id="requirements">Requirements</h1>
         <ul>
           <li>Math. Preferably Latex.</li>
@@ -64,187 +107,244 @@
         <h1 id="the-stack">The Stack</h1>
         <ul>
           <li>
-            <p>All documents are in Markdown. Specifically <a href="https://pandoc.org/MANUAL.html">Pandoc Markdown</a>. Obviously,
-              the source is processed via <code>pandoc</code>.</p>
+            <p>
+              All documents are in Markdown. Specifically
+              <a href="https://pandoc.org/MANUAL.html">Pandoc Markdown</a>.
+              Obviously, the source is processed via <code>pandoc</code>.
+            </p>
           </li>
           <li>
-            <p>The site itself is compiled using <a href="https://gohugo.io/">Hugo</a>.</p>
-            <p>The current version (as of this writing) doesn’t support any
-              configuration when using Pandoc for markup processing. By default Hugo
-              only passes the <code>--mathjax</code> option to the <code>pandoc</code>
-              invocation. So I had to make some local modifications so that I can
-              specify filters and some other options to support citations and
-              references.</p>
-            <p>Pull request is <a href="https://github.com/gohugoio/hugo/pull/7529">here</a>.</p>
+            <p>
+              The site itself is compiled using
+              <a href="https://gohugo.io/">Hugo</a>.
+            </p>
+            <p>
+              The current version (as of this writing) doesn’t support any
+              configuration when using Pandoc for markup processing. By default
+              Hugo only passes the <code>--mathjax</code> option to the
+              <code>pandoc</code> invocation. So I had to make some local
+              modifications so that I can specify filters and some other options
+              to support citations and references.
+            </p>
+            <p>
+              Pull request is
+              <a href="https://github.com/gohugoio/hugo/pull/7529">here</a>.
+            </p>
           </li>
           <li>
-            <p>Hugo output – which is a static HTML site – gets pushed out to a
-              separate private GitHub repository.</p>
+            <p>
+              Hugo output – which is a static HTML site – gets pushed out to a
+              separate private GitHub repository.
+            </p>
           </li>
           <li>
-            <p><a href="https://www.netlify.com/">Netlify</a> monitors this
-              separate GitHub repository and updates this blog.</p>
-            <p>As a bonus, the generated static content is pushed out to my GitHub
-              Pages site. So there’s an easier to remember URL than <a href="https://අ.com">https://අ.com</a>.</p>
+            <p>
+              <a href="https://www.netlify.com/">Netlify</a> monitors this
+              separate GitHub repository and updates this blog.
+            </p>
+            <p>
+              As a bonus, the generated static content is pushed out to my
+              GitHub Pages site. So there’s an easier to remember URL than
+              <a href="https://අ.com">https://අ.com</a>.
+            </p>
           </li>
           <li>
-            <p>Secondary sites are fed via Pandoc which converts from Pandoc
-              Markdown to Github Flavored Markdown.</p>
-            <p>Why secondary sites? For various reasons, the primary site for some
-              of the articles need to be their own GitHub repository. E.g.
-              https://github.com/asankah/identity-domains .</p>
-            <p>For all those sites, the primary source is the blog. That way I can
-              use Pandoc, use citations, use math etc. and things will “just work”
-              when publishing to another site that expects GitHub flavored
-              Markdown.</p>
+            <p>
+              Secondary sites are fed via Pandoc which converts from Pandoc
+              Markdown to Github Flavored Markdown.
+            </p>
+            <p>
+              Why secondary sites? For various reasons, the primary site for
+              some of the articles need to be their own GitHub repository. E.g.
+              https://github.com/asankah/identity-domains .
+            </p>
+            <p>
+              For all those sites, the primary source is the blog. That way I
+              can use Pandoc, use citations, use math etc. and things will “just
+              work” when publishing to another site that expects GitHub flavored
+              Markdown.
+            </p>
           </li>
         </ul>
-        <div class="lastmodified">
-          <p>Last modified: July 27, 2020</p>
-        </div>
+
+        <footer>
+          <div class="lastmodified">
+            <p>Last modified: July 27, 2020</p>
+          </div>
+        </footer>
       </article>
-      <div class="container">
-        <nav class="navlike">
-          <a href="/posts/comcast-technican-problem/">
-            <i class="material-symbols-outlined">chevron_left</i>
-            The Comcast Technician Problem
-          </a>
-          <div class="fill">&nbsp;</div>
-          <a href="/posts/symbol-name-types/">
-            Names for Name Conventions
-            <i class="material-symbols-outlined">chevron_right</i>
-          </a>
-        </nav>
-      </div>
+
+      <div class="container"></div>
     </main>
+
     <footer class="container">
       <h2>More posts from this blog ...</h2>
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/ephemeral-fingerprinting/">
-            Ephemeral Fingerprinting On The Web
+          <a href="/posts/inktober-wild/"> Inktober - Wild </a>
+        </h3>
+        <div class="navlike">
+          <span class="date navlike"> Last updated on January 13, 2022 </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/inktober/">#Inktober</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <h3 class="title">
+          <a href="/posts/mark-goes-up-and-down/">
+            Markdown should be readble without knowing Markdown
           </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on April 1, 2020
-        </span>
+          <span class="date navlike"> Last updated on April 5, 2022 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/privacy/">#Privacy</a>
-</span>
+            <a href="/tags/tools/">#Tools</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/engineering/">#Engineering</a>
+          </span>
         </div>
         <div>
           <div class="summary">
-            <p>Any ephemeral low-entropy web observable property whose changes are
-              concurrently observable by multiple sites can lead to cross site identity
-              joining.</p>
-            <p>This method of identity joining does not require coordination between
-              multiple first parties. A single third party embedded within multiple first
-              parties can also use this method.</p>
+            <p>
+              Markdown documents should be readble without understanding complex
+              mark-up. A growing number of Markdown syntax extensions take the
+              form of HTML or HTML-like tags and boilerplate that hinder
+              readability. Instead we should focus on how some construct should
+              be presented in plain-text for human consumption and then add
+              minimal structure to it for machine consumption.
+            </p>
           </div>
-          <p class="more"><a href="/posts/ephemeral-fingerprinting/">Read more …</a></p>
+          <p class="more">
+            <a href="/posts/mark-goes-up-and-down/">Read more …</a>
+          </p>
         </div>
       </div>
+
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/inktober-stripes/">
-            Inktober - Stripes
-          </a>
+          <a href="/posts/the-lettergrade-rule/"> The Lettergrade Rule </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on January 21, 2022
-        </span>
+          <span class="date navlike"> Last updated on September 16, 2022 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/inktober/">#Inktober</a>
-</span>
-        </div>
-      </div>
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/have-loop/">
-            The Have-Loop
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike">
-            Last updated on June 24, 2024
-        </span>
-          <span class="fill"></span>
-          <span class="tag-link">
-    <a href="/tags/culture/">#Culture</a>
-</span>
+            <a href="/tags/engineering/">#engineering</a>
+          </span>
         </div>
         <div>
           <div class="summary">
-            <p>Have-loops are positive feedback loops which cause unsustainable concentration of limited resources.
-              Once you learn to recognize them, you will see them everywhere.</p>
+            <p>
+              Don't block a code review because of minor issues that are best
+              left to the discretion of the author.
+            </p>
           </div>
-          <p class="more"><a href="/posts/have-loop/">Read more …</a></p>
+          <p class="more">
+            <a href="/posts/the-lettergrade-rule/">Read more …</a>
+          </p>
         </div>
       </div>
+
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/fourteen-years/">
-            Fourteen Years
-          </a>
+          <a href="/posts/secret-life-of-systems/"> Secret Life of Systems </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on December 31, 2024
-        </span>
+          <span class="date navlike"> Last updated on March 23, 2024 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/career/">#Career</a>
-</span>
+            <a href="/tags/engineering/">#Engineering</a>
+          </span>
+
           <span class="tag-link">
-    <a href="/tags/culture/">#Culture</a>
-</span>
-          <span class="tag-link">
-    <a href="/tags/organizations/">#Organizations</a>
-</span>
+            <a href="/tags/curiosity/">#Curiosity</a>
+          </span>
         </div>
         <div>
           <div class="summary">
-            <p>More reflections from foureteen years at Google.</p>
+            <p>
+              Lifecycles of software systems that solve real world problems can
+              be broken down into distinct phases based on where it is with
+              respect to the problem and the eventual solution.
+            </p>
+            <p>
+              This article presents a taxonomy of these phases that should help
+              you understand how each part of the lifecycle fits together.
+            </p>
           </div>
-          <p class="more"><a href="/posts/fourteen-years/">Read more …</a></p>
+          <p class="more">
+            <a href="/posts/secret-life-of-systems/">Read more …</a>
+          </p>
         </div>
       </div>
+
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/structure-of-experience/"><span class="series-name">Structure of Experience</span>:
-            Preface
+          <a href="/series/unsung-team-roles/crossbeams/"
+            ><span class="series-name">Unsung Team Roles</span>: Soft Roles as
+            Organizational Cross Beams
           </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on May 1, 2025
-        </span>
+          <span class="date navlike"> Last updated on August 12, 2025 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/ai/">#AI</a>
-</span>
+            <a href="/tags/organizations/">#Organizations</a>
+          </span>
         </div>
         <div>
           <div class="summary">
-            <p>A very gentle introduction to how large language models <em>almost</em> capture human experience through language.</p>
+            <p>
+              Leadership is fallible and imperfect. Soft roles emerge as they
+              are needed to account for various team roles that are needed but
+              not formally defined. Some of these roles help teams function, and
+              some others act as crossbeams that hold an entire organization
+              together.
+            </p>
           </div>
-          <p class="more"><a href="/posts/structure-of-experience/">Read more …</a></p>
+          <p class="more">
+            <a href="/series/unsung-team-roles/crossbeams/">Read more …</a>
+          </p>
         </div>
       </div>
     </footer>
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"></script>
+
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"
+    ></script>
     <script>
-      var dnt, doNotTrack = !1;
-      if (!1 && (dnt = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack, doNotTrack = dnt == "1" || dnt == "yes"), !doNotTrack) {
+      var dnt,
+        doNotTrack = !1;
+      if (
+        (!1 &&
+          ((dnt =
+            navigator.doNotTrack ||
+            window.doNotTrack ||
+            navigator.msDoNotTrack),
+          (doNotTrack = dnt == "1" || dnt == "yes")),
+        !doNotTrack)
+      ) {
         window.dataLayer = window.dataLayer || [];
         function gtag() {
-          dataLayer.push(arguments)
+          dataLayer.push(arguments);
         }
-        gtag("js", new Date), gtag("config", "G-GSREL2EZ4Y")
+        (gtag("js", new Date()), gtag("config", "G-GSREL2EZ4Y"));
       }
     </script>
   </body>

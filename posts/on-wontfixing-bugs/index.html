@@ -1,26 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-us">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>On WontFixing Bugs</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-    <link rel="icon" href="/images/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link rel="stylesheet" href="/styles/katex.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
-    <link rel="stylesheet" href="/styles/kCLLP63cz-.css">
-    <link rel="me" href="mailto:asanka@gmail.com">
-    <link rel="me" href="https://github.com/asankah">
-    <meta name="generator" content="Pandoc + Eleventy">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/apple-touch-icon.png"
+    />
+    <link rel="icon" href="/images/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon-32x32.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/images/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link rel="stylesheet" href="/styles/katex.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link rel="stylesheet" href="/styles/C_Z__E83wh.css" />
+    <link rel="me" href="mailto:asanka@gmail.com" />
+    <link rel="me" href="https://github.com/asankah" />
+
+    <meta name="generator" content="Pandoc + Eleventy" />
   </head>
+
   <body>
     <header class="container">
       <nav class="navlike">
@@ -28,260 +55,327 @@
         <span class="fill"></span>
         <h2><a href="/about/me/">About</a></h2>
         <h2><a href="/tags/">Tags</a></h2>
-        <h2><a href="/feed.xml"><img src="/images/rss.svg"></a></h2>
+        <h2>
+          <a href="/feed.xml"><img src="/images/rss.svg" /></a>
+        </h2>
       </nav>
     </header>
+
     <main>
       <article class="container">
         <header>
           <h1>On WontFixing Bugs</h1>
           <div class="navlike">
             <span>
-          <span class="date">Posted on March 2, 2021</span><span class="author">&nbsp;by Asanka Herath</span></span>
+              <span class="date">Posted on March 2, 2021</span
+              ><span class="author">&nbsp;by Asanka Herath</span></span
+            >
             <span class="fill"></span>
+
             <span class="tag-link">
-    <a href="/tags/engineering/">#Engineering</a>
-</span>
+              <a href="/tags/engineering/">#Engineering</a>
+            </span>
           </div>
           <div class="navlike">
-            <span class="readingtime">Estimated reading time is 8 minutes.</span>
+            <span class="readingtime">
+              Estimated reading time is 8 minutes.
+            </span>
             <span class="fill"></span>
           </div>
         </header>
+
         <p>This was partly inspired by a Tweet by a co-worker. The tweet is:</p>
         <div class="eleventy-plugin-embed-twitter"><blockquote id="tweet-1366762904851279877" class="twitter-tweet"><a href="https://twitter.com/miketaylr/status/1366762904851279877"></a></blockquote></div><script src="https://platform.twitter.com/widgets.js" charset="utf-8" async></script>
-        <p>For projects that are under-resourced but has heavy usage it is in
+        <p>
+          For projects that are under-resourced but has heavy usage it is in
           fact quite normal to accumulate a large number of issue reports over
           time. Take Chromium for example. There are (at the time of writing)
           ~95,000 open bugs. Many of these are task tracking bugs rather than
-          tracking actual product bugs. But still that’s a lot of real bugs.</p>
-        <p>What’s even more interesting is the accumulation of bugs. Typically
-          for a “successful” project the rate of new issues being reported will
-          exceed the rate of issues being fixed. Hence the growth.</p>
-        <h2 id="what-matters">What Matters …</h2>
-        <p>Issues are often annotated to indicate some measure of
-          <em>severity</em> and <em>priority</em>. These are two different axes of
-          measurement:
+          tracking actual product bugs. But still that’s a lot of real bugs.
         </p>
-        <p><strong>Severity</strong> refers to the degree of impact that an
-          issue has. How many users are affected? Is the effect isolated or spread
+        <p>
+          What’s even more interesting is the accumulation of bugs. Typically
+          for a “successful” project the rate of new issues being reported will
+          exceed the rate of issues being fixed. Hence the growth.
+        </p>
+        <h2 id="what-matters">What Matters …</h2>
+        <p>
+          Issues are often annotated to indicate some measure of
+          <em>severity</em> and <em>priority</em>. These are two different axes
+          of measurement:
+        </p>
+        <p>
+          <strong>Severity</strong> refers to the degree of impact that an issue
+          has. How many users are affected? Is the effect isolated or spread
           across a large user base? Severity is supposed to summarize the answer
-          to these questions.</p>
-        <p><strong>Priority</strong> refers to what the issue triagers deemed to
+          to these questions.
+        </p>
+        <p>
+          <strong>Priority</strong> refers to what the issue triagers deemed to
           be the relative importance of the issue. A bug that affects a large
           number of users – hence a high severity – might not be a high priority
-          due to mitigating factors. Typically a project owner would tackle higher
-          priority issues first. Under-resourced projects – which is the case for
-          pretty much every successful project I’ve seen – will accumulate lower
-          priority issues across time.</p>
-        <p>Neither <em>severity</em> nor <em>priority</em> are static either. An
-          issue with a low severity might be elevated to a higher severity if the
-          affected population of users is discovered to be larger than originally
-          assumed. Or the priority may be raised if the issue is blocking the fix
-          for another more severe issue. It’s not uncommon for some low priority
-          issue to be suddenly elevated to critical status once someone figures
-          out how to exploit it.</p>
-        <p>In practice <em>perceptual priority</em> is the only one that
-          matters. It doesn’t matter what the issue tracker label or score is.
-          What matters is that there’s a contributor who’s motivated to fix it.
-          The decisions of a contributor are complex and subjective. So while the
+          due to mitigating factors. Typically a project owner would tackle
+          higher priority issues first. Under-resourced projects – which is the
+          case for pretty much every successful project I’ve seen – will
+          accumulate lower priority issues across time.
+        </p>
+        <p>
+          Neither <em>severity</em> nor <em>priority</em> are static either. An
+          issue with a low severity might be elevated to a higher severity if
+          the affected population of users is discovered to be larger than
+          originally assumed. Or the priority may be raised if the issue is
+          blocking the fix for another more severe issue. It’s not uncommon for
+          some low priority issue to be suddenly elevated to critical status
+          once someone figures out how to exploit it.
+        </p>
+        <p>
+          In practice <em>perceptual priority</em> is the only one that matters.
+          It doesn’t matter what the issue tracker label or score is. What
+          matters is that there’s a contributor who’s motivated to fix it. The
+          decisions of a contributor are complex and subjective. So while the
           most important issues will <em>likely</em> get fixed, just because an
-          issue is real or important doesn’t mean that it will be addressed.</p>
-        <p>What this means is that it is important for issue reports to stick
-          around. At worst they will accumulate more evidence of severity or clues
-          to what the issue is. Often the desired outcome isn’t universal either.
-          So an issue report also functions as an opinion catchment area where
-          interested parties can hash out their differences.</p>
+          issue is real or important doesn’t mean that it will be addressed.
+        </p>
+        <p>
+          What this means is that it is important for issue reports to stick
+          around. At worst they will accumulate more evidence of severity or
+          clues to what the issue is. Often the desired outcome isn’t universal
+          either. So an issue report also functions as an opinion catchment area
+          where interested parties can hash out their differences.
+        </p>
         <h2 id="and-what-doesnt">And What Doesn’t …</h2>
-        <p>However, the health of the project then depends on not only handling
-          new issues, but also in how they shepherd existing or known issues.</p>
-        <p>Much like any other todo list, the effectiveness of the issue tracker
+        <p>
+          However, the health of the project then depends on not only handling
+          new issues, but also in how they shepherd existing or known issues.
+        </p>
+        <p>
+          Much like any other todo list, the effectiveness of the issue tracker
           decreases when there’s an overwhelming number of items to look at. The
           cognitive overhead of correct prioritizing increases dramatically, as
-          does the time it takes for triaging.</p>
+          does the time it takes for triaging.
+        </p>
         <h2 id="strategies-that-dont-work">Strategies That Don’t Work …</h2>
-        <p>So projects tend to use various techniques to deal with the growing
+        <p>
+          So projects tend to use various techniques to deal with the growing
           pile of issues. The more overwhelming it is, the more drastic the
-          mitigation strategy.</p>
-        <p>One such strategy in action is what we see in the Tweet above where
-          there’s a bot that automatically closes old issues that haven’t seen any
-          activity. At first glance this seems to make sense.</p>
-        <p>The assumption seems to be that if the issue was important enough
-          then an endless stream of users would pipe up on the bug with “me too”s
-          to keep the issue open. The issue tracker is now a battlefield where
-          issue reporters have to continually work to keep the issue alive until a
-          contributor takes pity and addresses it.</p>
-        <p>Issue reporters themselves who are often volunteers who are electing
+          mitigation strategy.
+        </p>
+        <p>
+          One such strategy in action is what we see in the Tweet above where
+          there’s a bot that automatically closes old issues that haven’t seen
+          any activity. At first glance this seems to make sense.
+        </p>
+        <p>
+          The assumption seems to be that if the issue was important enough then
+          an endless stream of users would pipe up on the bug with “me too”s to
+          keep the issue open. The issue tracker is now a battlefield where
+          issue reporters have to continually work to keep the issue alive until
+          a contributor takes pity and addresses it.
+        </p>
+        <p>
+          Issue reporters themselves who are often volunteers who are electing
           to participate in a project can also burn out. If the issues they file
-          are automatically closed, it’s frustrating to the reporters. Chances are
-          that with every few issues that are closed due to inactivity, the
-          project loses a contributor.</p>
-        <p>Another strategy is to have new issues start at some sort of
+          are automatically closed, it’s frustrating to the reporters. Chances
+          are that with every few issues that are closed due to inactivity, the
+          project loses a contributor.
+        </p>
+        <p>
+          Another strategy is to have new issues start at some sort of
           <em>unconfirmed</em> state. Once the issue has been acknowledged and
-          accepted it can proceed to some other state which makes the issue become
-          a candidate for contributor consideration. This one is a bit better in
-          that it doesn’t discard <em>confirmed</em> issues.
+          accepted it can proceed to some other state which makes the issue
+          become a candidate for contributor consideration. This one is a bit
+          better in that it doesn’t discard <em>confirmed</em> issues.
         </p>
-        <p>However, eventually the real issues will accumulate to the point
-          where some sort of bookkeeping is needed. Along comes
+        <p>
+          However, eventually the real issues will accumulate to the point where
+          some sort of bookkeeping is needed. Along comes
           <code>WontFix</code> and friends. This is a state where the issue is
-          marked as <em>“this is a real issue but we will probably never get
-around to fixing it.”</em>
+          marked as
+          <em
+            >“this is a real issue but we will probably never get around to
+            fixing it.”</em
+          >
         </p>
-        <p>Reporters nevertheless find this state to be no-less frustrating than
+        <p>
+          Reporters nevertheless find this state to be no-less frustrating than
           an outright closure. <code>WontFix</code>ed bugs don’t show up by
           default in issue searches, so they are effectively undiscoverable to
-          future issue reporters. All time invested in that issue is now lost.</p>
+          future issue reporters. All time invested in that issue is now lost.
+        </p>
         <h2 id="and-one-that-does">And One That Does? …</h2>
-        <p>The alternative is to just leave the issue open, but lower the
+        <p>
+          The alternative is to just leave the issue open, but lower the
           priority down to something that reflects the current opinion of the
-          project maintainers.</p>
-        <p>This strategy acknowledges that the issue is real. It serves as
+          project maintainers.
+        </p>
+        <p>
+          This strategy acknowledges that the issue is real. It serves as
           documentation that the product has a known defect, and in addition it
           can serve the purposes of accumulating evidence of severity along the
-          way. If the issue becomes prominent enough then it can be retriaged.</p>
-        <p>That’s it. So far I haven’t seen alternatives that are much better
+          way. If the issue becomes prominent enough then it can be retriaged.
+        </p>
+        <p>
+          That’s it. So far I haven’t seen alternatives that are much better
           than this. I’m generally against mass issue closing events like
           declaring “bug bankruptcy.” The bugs don’t care about the state of the
           issue report. All you’ve accomplished is to throw away the accumulated
-          history and evidence of a defect.</p>
-        <div class="lastmodified">
-          <p>Last modified: March 2, 2021</p>
-        </div>
+          history and evidence of a defect.
+        </p>
+
+        <footer>
+          <div class="lastmodified">
+            <p>Last modified: March 2, 2021</p>
+          </div>
+        </footer>
       </article>
-      <div class="container">
-        <nav class="navlike">
-          <a href="/posts/poisson-distribution/">
-            <i class="material-symbols-outlined">chevron_left</i>
-            Deriving the Poisson Distribution
-          </a>
-          <div class="fill">&nbsp;</div>
-          <a href="/posts/sometimes-its-the-interviewers-who-suck/">
-            Sometimes It&#39;s the Interviewers Who Suck
-            <i class="material-symbols-outlined">chevron_right</i>
-          </a>
-        </nav>
-      </div>
+
+      <div class="container"></div>
     </main>
+
     <footer class="container">
       <h2>More posts from this blog ...</h2>
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/why-strong-opinions-weekly-held/">
-            Why &#39;Strong Opinions Weekly Held&#39;
-          </a>
+          <a href="/posts/on-wontfixing-bugs/"> On WontFixing Bugs </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on September 28, 2021
-        </span>
+          <span class="date navlike"> Last updated on March 2, 2021 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/meta/">#Meta</a>
-</span>
-        </div>
-      </div>
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/inktober-decay/">
-            Inktober - Decay
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike">
-            Last updated on January 13, 2022
-        </span>
-          <span class="fill"></span>
-          <span class="tag-link">
-    <a href="/tags/inktober/">#Inktober</a>
-</span>
-        </div>
-      </div>
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/code-as-ui/">
-            Code As UI: The UX of config-as-code and everything-as-code
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike">
-            Last updated on July 1, 2023
-        </span>
-          <span class="fill"></span>
-          <span class="tag-link">
-    <a href="/tags/engineering/">#engineering</a>
-</span>
+            <a href="/tags/engineering/">#Engineering</a>
+          </span>
         </div>
         <div>
           <div class="summary">
-            <p>Configuration-as-code has the same usability issues as everything else as code along with the same benefits.</p>
+            <p>
+              Large projects accumulate a large number of issue reports over
+              time. This is normal. Typically for a &quot;successful&quot;
+              project the rate of new issues being reported will exceed the rate
+              of issues being fixed. Hence the growth.
+            </p>
+            <p>But what are they to do about this ever-growing pile of bugs?</p>
           </div>
-          <p class="more"><a href="/posts/code-as-ui/">Read more …</a></p>
+          <p class="more">
+            <a href="/posts/on-wontfixing-bugs/">Read more …</a>
+          </p>
         </div>
       </div>
+
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/comcast-technican-problem/">
-            The Comcast Technician Problem
+          <a href="/posts/sometimes-its-the-interviewers-who-suck/">
+            Sometimes It&#39;s the Interviewers Who Suck
           </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on July 13, 2020
-        </span>
+          <span class="date navlike"> Last updated on March 20, 2021 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/math/">#Math</a>
-</span>
-        </div>
-        <div>
-          <div class="summary">
-            <p>Given a set of tasks, incentives are often aligned towards dropping a task
-              rather than allowing for perpetual accretion of delays.</p>
-          </div>
-          <p class="more"><a href="/posts/comcast-technican-problem/">Read more …</a></p>
+            <a href="/tags/career/">#Career</a>
+          </span>
         </div>
       </div>
+
       <div class="post-card">
         <h3 class="title">
-          <a href="/posts/catchment/">
-            Draining Our Intellectual Catchment Areas
+          <a href="/posts/inktober-decay/"> Inktober - Decay </a>
+        </h3>
+        <div class="navlike">
+          <span class="date navlike"> Last updated on January 13, 2022 </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/inktober/">#Inktober</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <h3 class="title">
+          <a href="/posts/the-point-of-a-strategy/">
+            The Point of a Strategy
           </a>
         </h3>
         <div class="navlike">
-          <span class="date navlike">
-            Last updated on July 4, 2025
-        </span>
+          <span class="date navlike"> Last updated on July 24, 2023 </span>
+
           <span class="fill"></span>
+
           <span class="tag-link">
-    <a href="/tags/culture/">#Culture</a>
-</span>
+            <a href="/tags/career/">#Career</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/engineering/">#Engineering</a>
+          </span>
         </div>
         <div>
           <div class="summary">
-            <p>Intellectual catchment areas are collaborative ecosystems between
-              universities and industries that attract talent and ideas. The
-              United States became a hub of intellectual capital after World War II,
-              thanks to a combination of industrial growth around universities,
-              significant research funding, and favorable immigration policies.</p>
-            <p>The current political climate is jeopardizing these ecosystems.
-              Continued threats against universities and immigration could undo a century
-              of progress, ultimately depleting the nation's source of creativity and
-              innovation.</p>
+            <p>The only useful strategy is one that reduces risks.</p>
           </div>
-          <p class="more"><a href="/posts/catchment/">Read more …</a></p>
+          <p class="more">
+            <a href="/posts/the-point-of-a-strategy/">Read more …</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <h3 class="title">
+          <a href="/posts/when-your-feature-gets-someone-hurt/">
+            When Your Feature Gets Someone Hurt
+          </a>
+        </h3>
+        <div class="navlike">
+          <span class="date navlike"> Last updated on May 22, 2024 </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/culture/">#Culture</a>
+          </span>
+        </div>
+        <div>
+          <div class="summary">
+            <p>
+              If Google Photos incorrectly tags a photo, what's the worst that
+              could happen?
+            </p>
+          </div>
+          <p class="more">
+            <a href="/posts/when-your-feature-gets-someone-hurt/"
+              >Read more …</a
+            >
+          </p>
         </div>
       </div>
     </footer>
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"></script>
+
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"
+    ></script>
     <script>
-      var dnt, doNotTrack = !1;
-      if (!1 && (dnt = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack, doNotTrack = dnt == "1" || dnt == "yes"), !doNotTrack) {
+      var dnt,
+        doNotTrack = !1;
+      if (
+        (!1 &&
+          ((dnt =
+            navigator.doNotTrack ||
+            window.doNotTrack ||
+            navigator.msDoNotTrack),
+          (doNotTrack = dnt == "1" || dnt == "yes")),
+        !doNotTrack)
+      ) {
         window.dataLayer = window.dataLayer || [];
         function gtag() {
-          dataLayer.push(arguments)
+          dataLayer.push(arguments);
         }
-        gtag("js", new Date), gtag("config", "G-GSREL2EZ4Y")
+        (gtag("js", new Date()), gtag("config", "G-GSREL2EZ4Y"));
       }
     </script>
   </body>
