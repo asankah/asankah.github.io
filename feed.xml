@@ -5,13 +5,232 @@
   <link href="https://xn--izc.com/feed.xml" rel="self" />
   <link href="https://xn--izc.com/" />
   <updated>
-    2025-08-12T00:00:00Z
+    2025-09-27T00:00:00Z
   </updated>
   <id>https://xn--izc.com/</id>
   <author>
     <name>Asanka Herath</name>
     <email>asanka@gmail.com</email>
   </author>
+    <entry>
+      <title>An Intuition on Shannon Entropy</title>
+      <link href="https://xn--izc.com/posts/an-intuition-on-entropy/" />
+      <updated>2025-09-27T00:00:00Z</updated>
+      <id>https://xn--izc.com/posts/an-intuition-on-entropy/</id>
+      <content xml:lang="en" type="html">
+        &lt;div class=&quot;preface&quot;&gt;
+&lt;p&gt;This post skips over an in-depth explanation of &lt;a href=&quot;https://en.wikipedia.org/wiki/Entropy_(information_theory)&quot;&gt;Shannon
+entropy&lt;/a&gt; and only addresses the intuition surrounding it and how it
+can be misleading. Googling for “information theory” should come up with
+plenty of options for a more thorough treatment of information
+theory.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Entropy comes up in &lt;a href=&quot;https://en.wikipedia.org/wiki/Information_theory&quot;&gt;information
+theory&lt;/a&gt; as a way to measure &lt;em&gt;“information”&lt;/em&gt;. Information
+theory itself was first formalized by Claude Shannon who’s name comes up
+often in the literature.&lt;/p&gt;
+&lt;p&gt;In information theory, information is defined in terms of
+uncertainty. Conceptually &lt;em&gt;information&lt;/em&gt; and &lt;em&gt;uncertainty&lt;/em&gt;
+are opposing forces. More of one and you have less of the other.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/an-intuition-on-entropy/scale.jpg&quot; title=&quot;An allegorical pencil drawing of an ornate scale. The left pan represents &amp;#39;Information&amp;#39; with a neat pile of books and scrolls. The right pan represents &amp;#39;Uncertainty&amp;#39; with a chaotic vortex of dissolving papers, gears, and symbols. The scale is in perfect equilibrium, illustrating the conceptual balance between order and disorder.&quot; alt=&quot;The balance between Information and Uncertainty. Not ““; I don’t know what Gemini was thinking there. (Generated with Gemini.)&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;The balance between Information and
+Uncertainty. Not ““; I don’t know what Gemini was thinking there.
+(Generated with Gemini.)&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;So, lack of information leads to uncertainty. In the absence of any
+information we are in total uncertainty. Though in reality any given
+situation where we are concerned with information begins with a well
+defined foundation which lays out a set of possible outcomes.&lt;/p&gt;
+&lt;p&gt;Each piece of information we receive should narrow down the set of
+possible outcomes until we reach a state where we have what we need to
+know.&lt;/p&gt;
+&lt;h3 id=&quot;shannon-entropy-is-a-measure-of-information&quot;&gt;Shannon entropy is
+a measure of information&lt;/h3&gt;
+&lt;p&gt;A good example of this is the classic game &lt;em&gt;“Guess who”&lt;/em&gt;,
+where you have to guess a person from a set of pictures based on a few
+pieces of information.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/an-intuition-on-entropy/guess-who.jpg&quot; class=&quot;noinvert&quot; alt=&quot;The original cast of characters of the game “Guess Who”&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;The original cast of characters of the
+game “Guess Who”&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;We want to pinpoint a person of interest; which in this case
+translates to narrowing down the list of possibilities to 1. Each person
+has an equal probability of being the person of interest. At the
+beginning our uncertainty is &lt;span class=&quot;math inline&quot;&gt;&#92;frac{1}{24}&lt;/span&gt; because there are 24
+possibilities and we don’t know which one it is.&lt;/p&gt;
+&lt;p&gt;Let’s look at two possible pieces of information:&lt;/p&gt;
+&lt;ol type=&quot;1&quot;&gt;
+&lt;li&gt;wears glasses – matches 5 persons&lt;/li&gt;
+&lt;li&gt;presents as a man – matches 18 persons&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;We started with 24 persons. Once we know that the person of interest
+is wearing glasses, we can narrow down the field to 5. On the other
+hand, knowing that the person presents as a man only narrows down the
+field to 18. The first piece of information is clearly more valuable
+than the second. By &lt;em&gt;“valuable”&lt;/em&gt; we mean &lt;em&gt;“reduces
+uncertainty”&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;So, with &lt;em&gt;“wears glasses”&lt;/em&gt;, our uncertainty went from &lt;span class=&quot;math inline&quot;&gt;&#92;frac{1}{24}&lt;/span&gt; to &lt;span class=&quot;math inline&quot;&gt;&#92;frac{1}{5}&lt;/span&gt;. Whereas, &lt;em&gt;“presents as a
+man”&lt;/em&gt;, only reduces the uncertainty from &lt;span class=&quot;math inline&quot;&gt;&#92;frac{1}{24}&lt;/span&gt; to &lt;span class=&quot;math inline&quot;&gt;&#92;frac{1}{18}&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Entropy is a way to quantify –or measure– this difference.&lt;/p&gt;
+&lt;h3 id=&quot;choices-of-measure-for-a-single-outcome&quot;&gt;Choices of measure for
+a single outcome&lt;/h3&gt;
+&lt;p&gt;For the sake of discussion, let’s say the probability of a single
+outcome (call it &lt;span class=&quot;math inline&quot;&gt;A&lt;/span&gt;) is &lt;span class=&quot;math inline&quot;&gt;&#92;Pr(A)&lt;/span&gt;. And the measure of information
+learned from knowing this outcome is &lt;span class=&quot;math inline&quot;&gt;M(A)&lt;/span&gt;, where &lt;span class=&quot;math inline&quot;&gt;M&lt;/span&gt; is some function which we will figure out
+here.&lt;/p&gt;
+&lt;h4 id=&quot;adding-independent-pieces-of-information-should-correspond-to-adding-entropy&quot;&gt;Adding
+independent pieces of information should correspond to adding
+entropy&lt;/h4&gt;
+&lt;p&gt;Channeling some high school math, we know that if the probability of
+event &lt;span class=&quot;math inline&quot;&gt;A&lt;/span&gt; happenning is &lt;span class=&quot;math inline&quot;&gt;p&lt;/span&gt;, and the probability of event &lt;span class=&quot;math inline&quot;&gt;B&lt;/span&gt; happening is &lt;span class=&quot;math inline&quot;&gt;q&lt;/span&gt;, and if these two events are
+&lt;em&gt;independent&lt;/em&gt;, then the probability of both happening is going to
+be &lt;span class=&quot;math inline&quot;&gt;pq&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;For example, the event &lt;em&gt;person is in the first row&lt;/em&gt; (&lt;span class=&quot;math inline&quot;&gt;A&lt;/span&gt;) has a probability of &lt;span class=&quot;math inline&quot;&gt;p = &#92;frac{1}{3}&lt;/span&gt;, while the event &lt;em&gt;person
+is in the third column&lt;/em&gt; (&lt;span class=&quot;math inline&quot;&gt;B&lt;/span&gt;) has a
+probability of &lt;span class=&quot;math inline&quot;&gt;q = &#92;frac{1}{8}&lt;/span&gt;.
+Meanwhile, both of these happenning at the same time (&lt;span class=&quot;math inline&quot;&gt;A &#92;wedge B&lt;/span&gt; ; where you can read the &lt;span class=&quot;math inline&quot;&gt;&#92;wedge&lt;/span&gt; as &lt;em&gt;and&lt;/em&gt;) has a probability of
+&lt;span class=&quot;math inline&quot;&gt;pq = &#92;frac{1}{3} &#92;cdot &#92;frac{1}{8} =
+&#92;frac{1}{24}&lt;/span&gt;. I.e.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;
+A &#92;text{ and } B &#92;text{ are independent events} &#92;implies &#92;Pr(A &#92;wedge B)
+= &#92;Pr(A) &#92;cdot P(B) = pq
+&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;A good measure should be intuitive. Which is to say, it should behave
+in ways that we expect. So for example, if we were to take two
+&lt;em&gt;independent&lt;/em&gt; signals, adding them should yield a measure equal
+to the sum of each measured separately.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;
+&#92;begin{equation}
+A &#92;text{ and } B &#92;text{ are independent events } &#92;implies M(A &#92;wedge B)
+= M(A) + M(B)
+&#92;end{equation}
+&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The simplest way to convert a multiplication like &lt;span class=&quot;math inline&quot;&gt;pq&lt;/span&gt; to a sum is to … drumroll … take the
+&lt;em&gt;logarithm&lt;/em&gt;. So we could start with &lt;span class=&quot;math inline&quot;&gt;M(p)&lt;/span&gt; being something like &lt;span class=&quot;math inline&quot;&gt;&#92;log(p)&lt;/span&gt;.&lt;/p&gt;
+&lt;h4 id=&quot;more-uncertainty-should-correspond-to-a-larger-entropy&quot;&gt;More
+uncertainty should correspond to a larger entropy&lt;/h4&gt;
+&lt;p&gt;To further intuit, an outcome with a lower probability is more
+surprising and hence strictly more informative than an outcome with a
+higher probability, we need:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;
+&#92;begin{equation}
+&#92;Pr(A) &#92;lt &#92;Pr(B) &#92;implies M(A) &#92;gt M(B)
+&#92;end{equation}
+&lt;/span&gt;&lt;/p&gt;
+&lt;h4 id=&quot;no-uncertainty-should-correspond-to-zero-entropy&quot;&gt;No uncertainty
+should correspond to zero entropy&lt;/h4&gt;
+&lt;p&gt;In other words,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;
+&#92;begin{equation}
+&#92;Pr(A) = 1 &#92;implies M(A) = 0
+&#92;end{equation}
+&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;because the outcome &lt;span class=&quot;math inline&quot;&gt;A&lt;/span&gt; is going to
+happen with certainty.&lt;/p&gt;
+&lt;h4 id=&quot;putting-it-all-together&quot;&gt;Putting it all together&lt;/h4&gt;
+&lt;p&gt;The simplest way to make entropy larger for outcomes with lower
+probability is to negate the logarithm. Doing so has the additional
+desirable effect that probabilities –which are in the range &lt;span class=&quot;math inline&quot;&gt;[0,1]&lt;/span&gt;– will yield positive values.&lt;/p&gt;
+&lt;p&gt;So finally, we have the measure:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;
+M(A) = - &#92;log&#92;left( &#92;Pr(A) &#92;right)
+&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Since Claude Shannon was interested in measuring the information
+content of digital signals at the time, it made sense to use a more
+familiar base for the logarithm like &lt;span class=&quot;math inline&quot;&gt;2&lt;/span&gt;
+instead of &lt;span class=&quot;math inline&quot;&gt;e&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;So the final equation is:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;
+M &#92;left( p &#92;right) = - &#92;log_2&#92;left( p &#92;right)
+&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The choice of &lt;span class=&quot;math inline&quot;&gt;2&lt;/span&gt; as the base has
+another nice feature that we can now interpret the information quantity
+as a &lt;em&gt;number of bits&lt;/em&gt;. Because, for example, if we have 5 bits of
+information where each of the 32 values is equally likely, then any
+specific outcome has a probability of &lt;span class=&quot;math inline&quot;&gt;&#92;frac{1}{2^5}&lt;/span&gt; of occurring.&lt;/p&gt;
+&lt;p&gt;So knowing the outcome gets us &lt;span class=&quot;math inline&quot;&gt;M(&#92;frac{1}{2^5})&lt;/span&gt; amount of information; which
+happens to be &lt;span class=&quot;math inline&quot;&gt;5&lt;/span&gt; — the number of bits we
+started with.&lt;/p&gt;
+&lt;p&gt;This measure of information for a single event is called the
+&lt;strong&gt;pointwise entropy&lt;/strong&gt;, or &lt;strong&gt;self
+information&lt;/strong&gt;. &lt;em&gt;“Pointwise”&lt;/em&gt; because it is measuring a
+single outcome in the probability space.&lt;/p&gt;
+&lt;h3 id=&quot;choice-of-measure-for-a-probability-space&quot;&gt;Choice of measure for
+a probability space&lt;/h3&gt;
+&lt;p&gt;Now that we have a measure of the information content of a single
+outcome, how do we measure the information content of a probability
+space?&lt;/p&gt;
+&lt;p&gt;For this, we take another simple formula we already know; which is
+the &lt;em&gt;expectation&lt;/em&gt;. Hence we define the information content of a
+probability space to be the &lt;em&gt;expected&lt;/em&gt; pointwise entropy.&lt;/p&gt;
+&lt;p&gt;This entropy of a probability space is often denoted &lt;span class=&quot;math inline&quot;&gt;H(P)&lt;/span&gt; where &lt;span class=&quot;math inline&quot;&gt;P&lt;/span&gt;
+is the probability space (defined formally below). For simplicity we can
+think of &lt;span class=&quot;math inline&quot;&gt;P&lt;/span&gt; as being a function of some
+outcome to the probability of that outcome.&lt;/p&gt;
+&lt;p&gt;The expected pointwise entropy is therefore:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;
+&#92;begin{equation*}
+&#92;begin{split}
+H(P) &amp;amp;= &#92;sum_{&#92;omega &#92;in &#92;Omega} P(&#92;omega) &#92;cdot M(&#92;omega) &#92;&#92;
+     &amp;amp;= - &#92;sum_{&#92;omega &#92;in &#92;Omega} P(&#92;omega) &#92;cdot &#92;log_2&#92;left(
+P(&#92;omega) &#92;right)
+&#92;end{split}
+&#92;end{equation*}
+&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Where &lt;span class=&quot;math inline&quot;&gt;&#92;Omega&lt;/span&gt; is the set of all
+possible outcomes.&lt;/p&gt;
+&lt;h1 id=&quot;formalities&quot;&gt;Formalities&lt;/h1&gt;
+&lt;p&gt;A common critique is that Shannon entropy can be misleading. Let’s
+see why.&lt;/p&gt;
+&lt;p&gt;Let’s start with a &lt;strong&gt;probability space&lt;/strong&gt;. It consists
+of:&lt;/p&gt;
+&lt;ol type=&quot;1&quot;&gt;
+&lt;li&gt;&lt;p&gt;A set of possible outcomes. Usually designated as &lt;span class=&quot;math inline&quot;&gt;&#92;Omega&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;For example, the set of possible &lt;em&gt;person-of-interest&lt;/em&gt; consists
+of the 24 individuals who are pictured above.&lt;/p&gt;
+&lt;p&gt;Note that here we are dealing with a &lt;em&gt;discrete&lt;/em&gt; probability
+space in that we have a countable set of possible outcomes. This isn’t
+always the case.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;A set of subsets of possible outcomes. Usually designated as
+&lt;span class=&quot;math inline&quot;&gt;&#92;mathcal{F}&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;In our example, it could be &lt;em&gt;people with moustaches&lt;/em&gt;,
+&lt;em&gt;people wearing hats&lt;/em&gt;, &lt;em&gt;people with glasses&lt;/em&gt;, etc. The set
+doesn’t need to have any semantic meaning. So any group of people from
+the 24 possible people is a valid subset.&lt;/p&gt;
+&lt;p&gt;Typically there would be one element in &lt;span class=&quot;math inline&quot;&gt;&#92;mathcal{F}&lt;/span&gt; which contains all the possible
+outcomes. I.e. we say &lt;span class=&quot;math inline&quot;&gt;&#92;Omega &#92;in
+&#92;mathcal{F}&lt;/span&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;A probability function. Usually designated as &lt;span class=&quot;math inline&quot;&gt;P&lt;/span&gt;, that when applied to an element in &lt;span class=&quot;math inline&quot;&gt;&#92;mathcal{F}&lt;/span&gt; yields the probability of that
+set of outcomes occurring.&lt;/p&gt;
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;P(&#92;text{wears glasses}) =
+&#92;frac{5}{24}&lt;/span&gt; &lt;span class=&quot;math display&quot;&gt;P(&#92;text{presents as a
+man}) = &#92;frac{18}{24}&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Also, when applied to &lt;span class=&quot;math inline&quot;&gt;&#92;Omega&lt;/span&gt;
+(i.e. the set of all possible outcomes), it yields &lt;span class=&quot;math inline&quot;&gt;1&lt;/span&gt; as one would expect since otherwise it
+would not be the set of all possible outcomes. I.e.:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;P(&#92;Omega) = 1&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Let&lt;/strong&gt; &lt;span class=&quot;math inline&quot;&gt;(&#92;Omega, &#92;mathcal{F},
+P)&lt;/span&gt; be a probability space.&lt;/p&gt;
+&lt;p&gt;So, &lt;span class=&quot;math inline&quot;&gt;&#92;mathcal{F}&lt;/span&gt; is the set of all
+possible subsets of &lt;span class=&quot;math inline&quot;&gt;&#92;Omega&lt;/span&gt;, which is
+also written as &lt;span class=&quot;math inline&quot;&gt;2^{&#92;Omega}&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;&#92;mathcal{F} = 2^{&#92;Omega}&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;… and …&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math inline&quot;&gt;P&lt;/span&gt; is a function that maps from &lt;span class=&quot;math inline&quot;&gt;&#92;mathcal{F}&lt;/span&gt; to the real numbers in the range
+0 thru 1 inclusive.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;P : &#92;mathcal{F} &#92;mapsto [0,1]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The Shannon entropy of the probability function &lt;span class=&quot;math inline&quot;&gt;P&lt;/span&gt; is given by:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;
+H(P) = - &#92;sum_{&#92;omega &#92;in &#92;Omega} P(&#92;omega) &#92;cdot &#92;log_2&#92;left( P(&#92;omega)
+&#92;right)
+&lt;/span&gt;&lt;/p&gt;
+
+      </content>
+    </entry>
     <entry>
       <title>Incentives</title>
       <link href="https://xn--izc.com/series/unsung-team-roles/incentives/" />
