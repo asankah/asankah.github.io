@@ -41,7 +41,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/eC0wygYar8.css" />
+    <link rel="stylesheet" href="/styles/Bzyqb5Ytgc.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -50,10 +50,17 @@
 
   <body>
     <header class="container">
-      <nav class="navlike">
-        <h1><a href="/">Strong Opinions Weekly Held</a></h1>
+      <nav class="top" itemscope="" itemtype="https://schema.org/Blog">
+        <h1 itemprop="name">
+          <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
+        </h1>
         <span class="fill"></span>
-        <h2><a href="/about/me/">About</a></h2>
+
+        <h2><a href="/">Home</a></h2>
+
+        <h2 itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="/about/me/" itemprop="sameAs">About</a>
+        </h2>
         <h2><a href="/tags/">Tags</a></h2>
         <h2>
           <a href="/feed.xml"><img src="/images/rss.svg" /></a>
@@ -61,49 +68,55 @@
       </nav>
     </header>
 
-    <main>
-      <article class="container">
-        <header>
-          <h1>Thirteen Years</h1>
-          <div class="navlike">
-            <span>
-              <span class="date">Posted on December 7, 2023</span
-              ><span class="author">&nbsp;by Asanka Herath</span></span
-            >
-            <span class="fill"></span>
+    <article
+      class="container"
+      itemscope=""
+      itemtype="https://schema.org/BlogPosting"
+    >
+      <link itemprop="url" href="/posts/thirteen-years/" />
+      <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+      <header>
+        <h1 itemprop="name">Thirteen Years</h1>
+        <nav>
+          <span>
+            <span class="date"
+              >Posted on
+              <time datetime="2023-12-07" itemprop="datePublished"
+                >December 7, 2023</time
+              ></span
+            >&nbsp;by
+            <span class="author" itemprop="author">Asanka Herath</span></span
+          >
+          <span class="fill"></span>
 
-            <span class="tag-link">
-              <a href="/tags/career/">#Career</a>
-            </span>
+          <span class="tag-link">
+            <a href="/tags/career/">#Career</a>
+          </span>
 
-            <span class="tag-link">
-              <a href="/tags/culture/">#Culture</a>
-            </span>
+          <span class="tag-link">
+            <a href="/tags/culture/">#Culture</a>
+          </span>
 
-            <span class="tag-link">
-              <a href="/tags/organizations/">#Organizations</a>
-            </span>
-          </div>
-          <div class="navlike">
-            <span class="readingtime">
-              Estimated reading time is 6 minutes.
-            </span>
-            <span class="fill"></span>
-          </div>
-        </header>
+          <span class="tag-link">
+            <a href="/tags/organizations/">#Organizations</a>
+          </span>
+        </nav>
+        <div>
+          <span class="readingtime">
+            Estimated reading time is 6 minutes.
+          </span>
+        </div>
+      </header>
 
+      <main itemprop="articleBody">
         <p>
           And just like that, another year sped by. It’s now been thirteen years
           since I joined Google.
         </p>
         <p>
           Of the people who started at Google that day just a hair over 50% are
-          still at Google. Glancing through the list<a
-            href="#fn1"
-            class="footnote-ref"
-            id="fnref1"
-            role="doc-noteref"
-            ><sup>1</sup></a
+          still at Google. Glancing through the list<sup class="footnote-ref"
+            ><a href="#fn1" id="fnref1">[1]</a></sup
           >
           I see a couple of folks who have left for greener pastures or pursuing
           something on their own. Others who are still here have made their way
@@ -115,7 +128,7 @@
           than I have
           <a
             href="https://ln.hixie.ch/?start=1700627373&amp;count=1"
-            title="Ian Hixie&#39;s blog: Reflecting on 18 years at Google"
+            title="Ian Hixie's blog: Reflecting on 18 years at Google"
             >recently published their thoughts</a
           >
           after they left Google. They had good things to say about Google, but
@@ -124,12 +137,8 @@
           out.
         </p>
         <p>
-          Avery Pennarun<a
-            href="#fn2"
-            class="footnote-ref"
-            id="fnref2"
-            role="doc-noteref"
-            ><sup>2</sup></a
+          Avery Pennarun<sup class="footnote-ref"
+            ><a href="#fn2" id="fnref2">[2]</a></sup
           >
           wrote a post that I think touches on something relevant and important.
           The post is called
@@ -146,13 +155,11 @@
         </p>
         <ul>
           <li>
-            An executive’s <strong><em>only</em></strong> job is to
+            An executive’s <em><strong>only</strong></em> job is to
             <em
               >“enforce <strong>culture and values</strong> for their whole
               organization.”</em
-            ><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"
-              ><sup>3</sup></a
-            >
+            ><sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>
           </li>
           <li>
             The executives set and enforce the values. The rest of the company
@@ -168,12 +175,9 @@
           People have a common misconception that all employees of big companies
           are constantly thinking of the bottom line. This is not the case.
           Precious few teams can draw a clear line from their day-to-day work to
-          any measurable change in the company’s performance<a
-            href="#fn4"
+          any measurable change in the company’s performance<sup
             class="footnote-ref"
-            id="fnref4"
-            role="doc-noteref"
-            ><sup>4</sup></a
+            ><a href="#fn4" id="fnref4">[4]</a></sup
           >. So at an individual level, decisions are influenced by concerns
           much closer to themselves: things like base pay, career, admiration of
           their peers, and their own sense of accomplishment.
@@ -200,158 +204,194 @@
           >. But it is evident that company and its people are increasingly
           acting out of self preservation,
         </p>
-        <section
-          id="footnotes"
-          class="footnotes footnotes-end-of-document"
-          role="doc-endnotes"
-        >
-          <hr />
-          <ol>
-            <li id="fn1">
+        <hr class="footnotes-sep" />
+        <section class="footnotes">
+          <ol class="footnotes-list">
+            <li id="fn1" class="footnote-item">
               <p>
                 There’s a mailing list for the folks who started on the same
-                day.<a href="#fnref1" class="footnote-back" role="doc-backlink"
-                  >↩︎</a
-                >
+                day. <a href="#fnref1" class="footnote-backref">↩︎</a>
               </p>
             </li>
-            <li id="fn2">
+            <li id="fn2" class="footnote-item">
               <p>
-                Avery is also a Xoogler.<a
-                  href="#fnref2"
-                  class="footnote-back"
-                  role="doc-backlink"
-                  >↩︎</a
-                >
+                Avery is also a Xoogler.
+                <a href="#fnref2" class="footnote-backref">↩︎</a>
               </p>
             </li>
-            <li id="fn3">
+            <li id="fn3" class="footnote-item">
               <p>
                 The article goes into detail about ratifying good decisions and
                 arbitrating difficult decisions. But those are not relevant to
-                this discussion.<a
-                  href="#fnref3"
-                  class="footnote-back"
-                  role="doc-backlink"
-                  >↩︎</a
-                >
+                this discussion.
+                <a href="#fnref3" class="footnote-backref">↩︎</a>
               </p>
             </li>
-            <li id="fn4">
+            <li id="fn4" class="footnote-item">
               <p>
                 You can, however, affect the stock price by getting something
-                really really wrong. Noone wants to be in this position
-                though.<a
-                  href="#fnref4"
-                  class="footnote-back"
-                  role="doc-backlink"
-                  >↩︎</a
-                >
+                really really wrong. Noone wants to be in this position though.
+                <a href="#fnref4" class="footnote-backref">↩︎</a>
               </p>
             </li>
           </ol>
         </section>
+      </main>
 
-        <footer>
-          <div class="lastmodified">
-            <p>Last modified: December 7, 2023</p>
-          </div>
-        </footer>
-      </article>
+      <footer>
+        <div class="lastmodified">
+          <p>
+            Last modified: <time datetime="2023-12-07">December 7, 2023</time>
+          </p>
+        </div>
+      </footer>
+    </article>
 
-      <div class="container"></div>
-    </main>
+    <div class="container"></div>
 
     <footer class="container">
       <h2>More posts from this blog ...</h2>
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/remarkable-first-impressions/">
-            Note-taking on a reMarkable 2
+          <a itemprop="url" href="/posts/identity-domains/">
+            <span itemprop="name">Identity Domains</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on December 30, 2021 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-05-01" itemprop="datePublished"
+              >May 1, 2020</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/remarkable-2/">#Remarkable 2</a>
+            <a href="/tags/privacy/">#Privacy</a>
           </span>
-
-          <span class="tag-link">
-            <a href="/tags/reviews/">#Reviews</a>
-          </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
-              <p>Sentiments after using the reMarkable 2 tablet for a month.</p>
-            </div>
-          </div>
-          <p class="more">
-            <a href="/posts/remarkable-first-impressions/">Read more …</a>
-          </p>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/happy-new-year-2024-and-year-in-review-2023/">
-            Happy New Year 2024 and Year in Review 2023
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on January 1, 2024 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/culture/">#Culture</a>
-          </span>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/when-your-feature-gets-someone-hurt/">
-            When Your Feature Gets Someone Hurt
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on May 22, 2024 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/culture/">#Culture</a>
-          </span>
-        </div>
-        <div>
-          <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
-                If Google Photos incorrectly tags a photo, what's the worst that
-                could happen?
+                An Identity Domain is a scope within which we assume that the
+                user's identity can roam freely.
               </p>
             </div>
           </div>
-          <p class="more">
-            <a href="/posts/when-your-feature-gets-someone-hurt/"
-              >Read more …</a
-            >
-          </p>
+          <p class="more"><a href="/posts/identity-domains/">Read more …</a></p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/intrinsic-motivation-an-anecdote/">
-            Intrinsic and Extrinsic Motivation: An anecdote
+          <a itemprop="url" href="/posts/code-as-ui/">
+            <span itemprop="name"
+              >Code As UI: The UX of config-as-code and everything-as-code</span
+            >
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on March 22, 2025 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2023-07-01" itemprop="datePublished"
+              >July 1, 2023</time
+            >
+          </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/engineering/">#engineering</a>
+          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>
+                Configuration-as-code has the same usability issues as
+                everything else as code along with the same benefits.
+              </p>
+            </div>
+          </div>
+          <p class="more"><a href="/posts/code-as-ui/">Read more …</a></p>
+        </div>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/thirteen-years/">
+            <span itemprop="name">Thirteen Years</span>
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2023-12-07" itemprop="datePublished"
+              >December 7, 2023</time
+            >
+          </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/career/">#Career</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/culture/">#Culture</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/organizations/">#Organizations</a>
+          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>Some reflections from thirteen years at Google.</p>
+            </div>
+          </div>
+          <p class="more"><a href="/posts/thirteen-years/">Read more …</a></p>
+        </div>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/intrinsic-motivation-an-anecdote/">
+            <span itemprop="name"
+              >Intrinsic and Extrinsic Motivation: An anecdote</span
+            >
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2025-03-22" itemprop="datePublished"
+              >March 22, 2025</time
+            >
+          </span>
 
           <span class="fill"></span>
 
@@ -366,10 +406,10 @@
           <span class="tag-link">
             <a href="/tags/inclusion-and-equity/">#Inclusion and Equity</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
                 Intrinsic motivation is always better than extrinsic motivation.
                 But not as good as it is when one is motivated both
@@ -383,39 +423,49 @@
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/series/structure-of-experience/flame/"
-            ><span class="series-name">Structure Of Experience</span>: Act III:
-            Flame
+          <a itemprop="url" href="/series/structure-of-experience/preface/"
+            ><span class="series-name">Structure Of Experience</span>:
+            <span itemprop="name">Preface</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on May 7, 2025 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2025-05-01" itemprop="datePublished"
+              >May 1, 2025</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/ai/">#AI</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
-                The map is not the territory. A picture of a flame is not a
-                flame. A description of a neural network is not a brain. A
-                simulation of thought is not a consciousness.
+                A very gentle introduction to how large language models
+                <em>almost</em> capture human experience through language.
               </p>
             </div>
           </div>
           <p class="more">
-            <a href="/series/structure-of-experience/flame/">Read more …</a>
+            <a href="/series/structure-of-experience/preface/">Read more …</a>
           </p>
         </div>
       </div>
     </footer>
 
+    <!-- Google analytics -->
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"

@@ -41,7 +41,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/eC0wygYar8.css" />
+    <link rel="stylesheet" href="/styles/Bzyqb5Ytgc.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -50,10 +50,17 @@
 
   <body>
     <header class="container">
-      <nav class="navlike">
-        <h1><a href="/">Strong Opinions Weekly Held</a></h1>
+      <nav class="top" itemscope="" itemtype="https://schema.org/Blog">
+        <h1 itemprop="name">
+          <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
+        </h1>
         <span class="fill"></span>
-        <h2><a href="/about/me/">About</a></h2>
+
+        <h2><a href="/">Home</a></h2>
+
+        <h2 itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="/about/me/" itemprop="sameAs">About</a>
+        </h2>
         <h2><a href="/tags/">Tags</a></h2>
         <h2>
           <a href="/feed.xml"><img src="/images/rss.svg" /></a>
@@ -61,33 +68,45 @@
       </nav>
     </header>
 
-    <main>
-      <article class="container">
-        <header>
-          <h1>Markdown should be readble without knowing Markdown</h1>
-          <div class="navlike">
-            <span>
-              <span class="date">Posted on April 5, 2022</span
-              ><span class="author">&nbsp;by Asanka Herath</span></span
-            >
-            <span class="fill"></span>
+    <article
+      class="container"
+      itemscope=""
+      itemtype="https://schema.org/BlogPosting"
+    >
+      <link itemprop="url" href="/posts/mark-goes-up-and-down/" />
+      <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+      <header>
+        <h1 itemprop="name">
+          Markdown should be readble without knowing Markdown
+        </h1>
+        <nav>
+          <span>
+            <span class="date"
+              >Posted on
+              <time datetime="2022-04-05" itemprop="datePublished"
+                >April 5, 2022</time
+              ></span
+            >&nbsp;by
+            <span class="author" itemprop="author">Asanka Herath</span></span
+          >
+          <span class="fill"></span>
 
-            <span class="tag-link">
-              <a href="/tags/tools/">#Tools</a>
-            </span>
+          <span class="tag-link">
+            <a href="/tags/tools/">#Tools</a>
+          </span>
 
-            <span class="tag-link">
-              <a href="/tags/engineering/">#Engineering</a>
-            </span>
-          </div>
-          <div class="navlike">
-            <span class="readingtime">
-              Estimated reading time is 16 minutes.
-            </span>
-            <span class="fill"></span>
-          </div>
-        </header>
+          <span class="tag-link">
+            <a href="/tags/engineering/">#Engineering</a>
+          </span>
+        </nav>
+        <div>
+          <span class="readingtime">
+            Estimated reading time is 7 minutes.
+          </span>
+        </div>
+      </header>
 
+      <main itemprop="articleBody">
         <p>
           <a href="https://daringfireball.net/projects/markdown/syntax"
             >Markdown</a
@@ -132,7 +151,7 @@
           dialect you are using for some document – shouldn’t be thrown off by
           the additional markup.
         </p>
-        <h2 id="better-definition-lists">Better Definition Lists?</h2>
+        <h2>Better Definition Lists?</h2>
         <p>
           I really don’t like the <em>“Definition List”</em> syntax. This
           feature isn’t in the original Markdown syntax, but is a part of
@@ -141,120 +160,99 @@
             >many extended syntaxes</a
           >. It looks like this:
         </p>
-        <div class="sourceCode" id="cb1">
-          <pre
-            class="sourceCode markdown bad"
-          ><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Some term</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>: The definition of the term. Long lines can be</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  broken down while preserving the indent. But</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  the first character can&#39;t be &#39;:&#39; or it will become</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  *another* definition.</span></code></pre>
-        </div>
+        <pre><code class="markdown bad">Some term
+: The definition of the term. Long lines can be
+  broken down while preserving the indent. But
+  the first character can't be ':' or it will become
+  *another* definition.
+</code></pre>
         <p>
           See, it’s easy to see the <code>:</code> as some misplaced punctuation
           rather than markup when just reading the text. Instead how about maybe
           this?
         </p>
-        <div class="sourceCode" id="cb2">
-          <pre
-            class="sourceCode markdown maybe"
-          ><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="an">Some term:</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  The definition starts here. Long lines can be</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  broken down like this.</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  Maybe continue the definition here.</span></code></pre>
-        </div>
+        <pre><code class="markdown maybe">Some term:
+  The definition starts here. Long lines can be
+  broken down like this.
+    
+  Maybe continue the definition here.
+</code></pre>
         <p>It looks more like a definition in a regular text file.</p>
-        <h2 id="better-code-blocks">Better Code Blocks?</h2>
+        <h2>Better Code Blocks?</h2>
         <p>
           The original syntax for code blocks is to just add extra space in the
           middle, like so:
         </p>
-        <div class="sourceCode" id="cb3">
-          <pre
-            class="sourceCode markdown good"
-          ><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>This is normal text.</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="in">    function ThisIsACodeBlock() {</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="in">    }</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>More normal text.</span></code></pre>
-        </div>
+        <pre><code class="markdown good">
+This is normal text.
+
+    function ThisIsACodeBlock() {
+    }
+
+More normal text.
+</code></pre>
         <p>
           See, if you saw this in a text file, your eyes would easily follow the
           context switch. Instead, the most popular markdown formats use the
           following kind of markup:
         </p>
-        <div class="sourceCode" id="cb4">
-          <pre
-            class="sourceCode markdown bad"
-          ><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>This is normal text.</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="in">function ThisIsACodeBlock() {</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>More normal text.</span></code></pre>
-        </div>
+        <pre><code class="markdown bad">
+This is normal text.
+
+```
+function ThisIsACodeBlock() {
+}
+```
+
+More normal text.
+</code></pre>
         <p>
           See how the markup is in the way? There’s a reason for the special
           markup; it allows specification of additional attributes like the
           underlying language that the code block is in.
         </p>
         <p>Instead, how about something like this?</p>
-        <div class="sourceCode" id="cb5">
-          <pre
-            class="sourceCode markdown maybe"
-          ><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>This is normal text.</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>javascript code:</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="in">    function ThisIsACodeBlock() {</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="in">    }</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>More normal text.</span></code></pre>
-        </div>
+        <pre><code class="markdown maybe">
+This is normal text.
+
+javascript code:
+
+    function ThisIsACodeBlock() {
+    }
+
+More normal text.
+</code></pre>
         <p>
           It re-uses the <code>some text:</code> syntax that’s used for
           specifying links.
         </p>
-        <h2 id="better-admonitions">Better admonitions?</h2>
+        <h2>Better admonitions?</h2>
         <p>
           Admonitions aren’t a feature of regular Markdown. It’s available
           <a href="https://python-markdown.github.io/extensions/admonition/"
             >as an extension in select Markdown processors</a
           >. The syntax is a little horrendous:
         </p>
-        <div class="sourceCode" id="cb6">
-          <pre
-            class="sourceCode markdown bad"
-          ><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>!!! type &quot;optional explicit title within double quotes&quot;</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    Any number of other indented markdown elements.</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="in">    This is the second paragraph.</span></span></code></pre>
-        </div>
+        <pre><code class="markdown bad">!!! type &quot;optional explicit title within double quotes&quot;
+    Any number of other indented markdown elements.
+
+    This is the second paragraph.
+</code></pre>
         <p>
           Okay the exclamation points kind of hints at what this is supposed to
           mean. But how about this?
         </p>
-        <div class="sourceCode" id="cb7">
-          <pre
-            class="sourceCode markdown maybe"
-          ><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="an">NOTE:</span><span class="co"> Optional explicit title</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co">    Paragraph that contains extra details about the note.</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co">    </span></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co">    This is the second paragraph.</span></span></code></pre>
-        </div>
+        <pre><code class="markdown maybe">NOTE: Optional explicit title
+    Paragraph that contains extra details about the note.
+    
+    This is the second paragraph.
+</code></pre>
         <p>
           It’s obvious from looking at the plain text what this is supposed to
           be; no need to go look at the documentation for your Markdown dialect
           to figure out what on earth <code>!!! title</code> is supposed to be.
         </p>
-        <h2 id="better-collapsed-sections">Better collapsed sections?</h2>
+        <h2>Better collapsed sections?</h2>
         <p>
           Okay, so this one is specific to
           <a
@@ -262,119 +260,200 @@
             >GitHub Flavored Markdown</a
           >, and it’s terrible. It comes down to the genre of just writing HTML:
         </p>
-        <div class="sourceCode" id="cb8">
-          <pre
-            class="sourceCode markdown bad"
-          ><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">details</span><span class="dt">&gt;&lt;</span><span class="kw">summary</span><span class="dt">&gt;</span>CLICK ME<span class="dt">&lt;/</span><span class="kw">summary</span><span class="dt">&gt;</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="fu">#### We can hide anything, even code!</span></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="in">    ```ruby</span></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="in">    puts &quot;Hello World&quot;</span></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="in">    ```</span></span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">details</span><span class="dt">&gt;</span></span></code></pre>
-        </div>
+        <pre><code class="markdown bad">&lt;details&gt;&lt;summary&gt;CLICK ME&lt;/summary&gt;
+&lt;p&gt;
+
+#### We can hide anything, even code!
+
+    ```ruby
+    puts &quot;Hello World&quot;
+    ```
+
+&lt;/p&gt;
+&lt;/details&gt;
+</code></pre>
         <p>
           WTF? You might as well write the thing in HTML and call it a day.
           Maybe if they could’ve gone with something like:
         </p>
-        <div class="sourceCode" id="cb9">
-          <pre
-            class="sourceCode markdown maybe"
-          ><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>Summary goes here.</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>Details:</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  Details go here. and yes you can use fenced code blocks.</span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="in">      Like this.</span></span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="in">      </span></span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>  Or the ugly way:</span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>  <span class="in">```</span></span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="in">  Like this.</span></span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a><span class="in">  ```</span></span></code></pre>
-        </div>
+        <pre><code class="markdown maybe">
+Summary goes here.
+
+Details:
+  Details go here. and yes you can use fenced code blocks.
+  
+      Like this.
+      
+  Or the ugly way:
+  
+  ```
+  Like this.
+  ```
+</code></pre>
         <p>
           Once again it re-uses the <code>some text:</code> syntax, and it could
           probably use either <code>details</code> or <code>Details</code>.
           Either way, you don’t need to understand the markup to see where this
           is going.
         </p>
+      </main>
 
-        <footer>
-          <div class="lastmodified">
-            <p>Last modified: April 5, 2022</p>
-          </div>
-        </footer>
-      </article>
+      <footer>
+        <div class="lastmodified">
+          <p>Last modified: <time datetime="2022-04-05">April 5, 2022</time></p>
+        </div>
+      </footer>
+    </article>
 
-      <div class="container"></div>
-    </main>
+    <div class="container"></div>
 
     <footer class="container">
       <h2>More posts from this blog ...</h2>
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/visualizing-people/"> Visualizing Internet Users </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on November 21, 2020 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/engineering/">#Engineering</a>
-          </span>
-
-          <span class="tag-link">
-            <a href="/tags/curiosity/">#Curiosity</a>
-          </span>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/git-autopush/">
-            Use Git hooks to automatically push after every commit
+          <a itemprop="url" href="/posts/shannon-paper/">
+            <span itemprop="name">Shannon Paper</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on July 5, 2022 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2021-03-26" itemprop="datePublished"
+              >March 26, 2021</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/tools/">#tools</a>
+            <a href="/tags/math/">#Math</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
-                During before and after various Git operations, Git invokes
-                special hooks that can be used execute custom scripts. This
-                article explains how to use them to automatically push to an
-                upstream repository every time you make a commit to a local
-                repo.
+                Claude Shannon's
+                <em>A mathematical theory of communication</em> is an oft cited
+                classic in information theory. Let's dive in and try to tease
+                apart the &quot;why&quot;s that are often overlooked when people
+                build on top of the introduced theory. They are definitely
+                things that I didn't consider to be obvious without the benefit
+                of reading the paper.
               </p>
             </div>
           </div>
-          <p class="more"><a href="/posts/git-autopush/">Read more …</a></p>
+          <p class="more"><a href="/posts/shannon-paper/">Read more …</a></p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/pillars-are-governance-structures/">
-            Pillars And Governance Structures
+          <a itemprop="url" href="/posts/ansible-cli-sugar/">
+            <span itemprop="name"
+              >Easier CLI for ad-hoc Ansible tasks and playbooks</span
+            >
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on September 9, 2023 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-06-01" itemprop="datePublished"
+              >June 1, 2020</time
+            >
+          </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/tools/">#Tools</a>
+          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>
+                Encode the host and group names into the name of a wrapper
+                script for quick ad-hoc invocation of Ansible tasks and
+                playbooks.
+              </p>
+            </div>
+          </div>
+          <p class="more">
+            <a href="/posts/ansible-cli-sugar/">Read more …</a>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/interesting-numbers/">
+            <span itemprop="name">All natural numbers are interesting</span>
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2022-08-03" itemprop="datePublished"
+              >August 3, 2022</time
+            >
+          </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/math/">#math</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/curiosity/">#curiosity</a>
+          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>A proof.</p>
+            </div>
+          </div>
+          <p class="more">
+            <a href="/posts/interesting-numbers/">Read more …</a>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/pillars-are-governance-structures/">
+            <span itemprop="name">Pillars And Governance Structures</span>
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2023-09-09" itemprop="datePublished"
+              >September 9, 2023</time
+            >
+          </span>
 
           <span class="fill"></span>
 
@@ -389,44 +468,66 @@
           <span class="tag-link">
             <a href="/tags/organizations/">#Organizations</a>
           </span>
-        </div>
+        </nav>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/happy-new-year-2024-and-year-in-review-2023/">
-            Happy New Year 2024 and Year in Review 2023
+          <a itemprop="url" href="/posts/when-your-feature-gets-someone-hurt/">
+            <span itemprop="name">When Your Feature Gets Someone Hurt</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on January 1, 2024 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2024-05-22" itemprop="datePublished"
+              >May 22, 2024</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/culture/">#Culture</a>
           </span>
-        </div>
-      </div>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <a
+              href="/posts/when-your-feature-gets-someone-hurt/"
+              class="hero-link"
+            >
+              <img
+                class="hero"
+                src="/img/S51L3NURP--1536.png"
+                alt="An old photo album containing pictures of ruins. (Generated with Gemini.)"
+                width="1536"
+                height="1536"
+              />
+            </a>
 
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/why-strong-opinions-weakly-held/">
-            Why &#39;Strong Opinions Weakly Held&#39;
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on August 28, 2020 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/meta/">#Meta</a>
-          </span>
+            <div class="summary" itemprop="abstract">
+              <p>
+                If Google Photos incorrectly tags a photo, what's the worst that
+                could happen?
+              </p>
+            </div>
+          </div>
+          <p class="more">
+            <a href="/posts/when-your-feature-gets-someone-hurt/"
+              >Read more …</a
+            >
+          </p>
         </div>
       </div>
     </footer>
 
+    <!-- Google analytics -->
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"

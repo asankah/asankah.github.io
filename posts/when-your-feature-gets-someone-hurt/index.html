@@ -41,7 +41,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/eC0wygYar8.css" />
+    <link rel="stylesheet" href="/styles/Bzyqb5Ytgc.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -50,10 +50,17 @@
 
   <body>
     <header class="container">
-      <nav class="navlike">
-        <h1><a href="/">Strong Opinions Weekly Held</a></h1>
+      <nav class="top" itemscope="" itemtype="https://schema.org/Blog">
+        <h1 itemprop="name">
+          <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
+        </h1>
         <span class="fill"></span>
-        <h2><a href="/about/me/">About</a></h2>
+
+        <h2><a href="/">Home</a></h2>
+
+        <h2 itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="/about/me/" itemprop="sameAs">About</a>
+        </h2>
         <h2><a href="/tags/">Tags</a></h2>
         <h2>
           <a href="/feed.xml"><img src="/images/rss.svg" /></a>
@@ -61,38 +68,48 @@
       </nav>
     </header>
 
-    <main>
-      <article class="container">
-        <header>
-          <h1>When Your Feature Gets Someone Hurt</h1>
-          <div class="navlike">
-            <span>
-              <span class="date">Posted on May 22, 2024</span
-              ><span class="author">&nbsp;by Asanka Herath</span></span
-            >
-            <span class="fill"></span>
+    <article
+      class="container"
+      itemscope=""
+      itemtype="https://schema.org/BlogPosting"
+    >
+      <link itemprop="url" href="/posts/when-your-feature-gets-someone-hurt/" />
+      <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+      <header>
+        <h1 itemprop="name">When Your Feature Gets Someone Hurt</h1>
+        <nav>
+          <span>
+            <span class="date"
+              >Posted on
+              <time datetime="2024-05-22" itemprop="datePublished"
+                >May 22, 2024</time
+              ></span
+            >&nbsp;by
+            <span class="author" itemprop="author">Asanka Herath</span></span
+          >
+          <span class="fill"></span>
 
-            <span class="tag-link">
-              <a href="/tags/culture/">#Culture</a>
-            </span>
-          </div>
-          <div class="navlike">
-            <span class="readingtime">
-              Estimated reading time is 3 minutes.
-            </span>
-            <span class="fill"></span>
-          </div>
-        </header>
+          <span class="tag-link">
+            <a href="/tags/culture/">#Culture</a>
+          </span>
+        </nav>
+        <div>
+          <span class="readingtime">
+            Estimated reading time is 3 minutes.
+          </span>
+        </div>
+      </header>
 
+      <main itemprop="articleBody">
         <figure>
           <img
             src="/posts/when-your-feature-gets-someone-hurt/S51L3NURP--1536.png"
+            alt=""
             class="noinvert"
-            alt="An old photo album containing pictures of ruins. (Generated with Gemini)"
             width="1536"
             height="1536"
           />
-          <figcaption aria-hidden="true">
+          <figcaption>
             An old photo album containing pictures of ruins. (Generated with
             Gemini)
           </figcaption>
@@ -146,82 +163,109 @@
           idea the extents to which those coins were flipped for. And so it
           goes.
         </p>
+      </main>
 
-        <footer>
-          <div class="lastmodified">
-            <p>Last modified: May 22, 2024</p>
-          </div>
-        </footer>
-      </article>
+      <footer>
+        <div class="lastmodified">
+          <p>Last modified: <time datetime="2024-05-22">May 22, 2024</time></p>
+        </div>
+      </footer>
+    </article>
 
-      <div class="container"></div>
-    </main>
+    <div class="container"></div>
 
     <footer class="container">
       <h2>More posts from this blog ...</h2>
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/identity-domains/"> Identity Domains </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on May 1, 2020 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/privacy/">#Privacy</a>
-          </span>
-        </div>
-        <div>
-          <div class="summary-line">
-            <div class="summary">
-              <p>
-                An Identity Domain is a scope within which we assume that the
-                user's identity can roam freely.
-              </p>
-            </div>
-          </div>
-          <p class="more"><a href="/posts/identity-domains/">Read more …</a></p>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/git-autopush/">
-            Use Git hooks to automatically push after every commit
+          <a itemprop="url" href="/posts/visualizing-people/">
+            <span itemprop="name">Visualizing Internet Users</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on July 5, 2022 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-11-21" itemprop="datePublished"
+              >November 21, 2020</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/tools/">#tools</a>
+            <a href="/tags/engineering/">#Engineering</a>
           </span>
-        </div>
+
+          <span class="tag-link">
+            <a href="/tags/curiosity/">#Curiosity</a>
+          </span>
+        </nav>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/interesting-numbers/">
+            <span itemprop="name">All natural numbers are interesting</span>
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2022-08-03" itemprop="datePublished"
+              >August 3, 2022</time
+            >
+          </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/math/">#math</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/curiosity/">#curiosity</a>
+          </span>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
-              <p>
-                During before and after various Git operations, Git invokes
-                special hooks that can be used execute custom scripts. This
-                article explains how to use them to automatically push to an
-                upstream repository every time you make a commit to a local
-                repo.
-              </p>
+            <div class="summary" itemprop="abstract">
+              <p>A proof.</p>
             </div>
           </div>
-          <p class="more"><a href="/posts/git-autopush/">Read more …</a></p>
+          <p class="more">
+            <a href="/posts/interesting-numbers/">Read more …</a>
+          </p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/thirteen-years/"> Thirteen Years </a>
+          <a itemprop="url" href="/posts/the-point-of-a-strategy/">
+            <span itemprop="name">The Point of a Strategy</span>
+          </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on December 7, 2023 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2023-07-24" itemprop="datePublished"
+              >July 24, 2023</time
+            >
+          </span>
 
           <span class="fill"></span>
 
@@ -230,88 +274,114 @@
           </span>
 
           <span class="tag-link">
-            <a href="/tags/culture/">#Culture</a>
+            <a href="/tags/engineering/">#Engineering</a>
           </span>
-
-          <span class="tag-link">
-            <a href="/tags/organizations/">#Organizations</a>
-          </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
-              <p>Some reflections from thirteen years at Google.</p>
+            <div class="summary" itemprop="abstract">
+              <p>The only useful strategy is one that reduces risks.</p>
             </div>
           </div>
-          <p class="more"><a href="/posts/thirteen-years/">Read more …</a></p>
+          <p class="more">
+            <a href="/posts/the-point-of-a-strategy/">Read more …</a>
+          </p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/intermezzo-2025/"> Intermission - Q1 of 2025 </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike">
-            Last updated on May 3, 2025 , Originally posted on April 7, 2025
-          </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/culture/">#Culture</a>
-          </span>
-        </div>
-        <div>
-          <div class="summary-line">
-            <div class="summary">
-              <p>
-                Hate can be suppressed temporarily, but cannot be contained for
-                too long.
-              </p>
-            </div>
-          </div>
-          <p class="more"><a href="/posts/intermezzo-2025/">Read more …</a></p>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/series/unsung-team-roles/incentives/"
-            ><span class="series-name">Unsung Team Roles</span>: Incentives
+          <a itemprop="url" href="/posts/asians-is-not-a-useful-category/">
+            <span itemprop="name">Asian Is Not a Useful Category</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on August 12, 2025 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2024-07-04" itemprop="datePublished"
+              >July 4, 2024</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
+            <a href="/tags/culture/">#Culture</a>
+          </span>
+
+          <span class="tag-link">
             <a href="/tags/organizations/">#Organizations</a>
           </span>
-        </div>
+
+          <span class="tag-link">
+            <a href="/tags/inclusion-and-equity/">#Inclusion and Equity</a>
+          </span>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
-                For a team to succeed, it needs the flexibility to
-                self-organize, which can lead to some members taking on more
-                work. To avoid burnout, these extra contributions must be
-                rewarded. Good managers are key, as they must recognize
-                individual efforts and their team-wide impact. Well-designed
-                incentives foster collaboration and reward those who strengthen
-                the team, while poor incentives cause employees to stick rigidly
-                to their roles and let the team fail.
+                Asking if someone is <em>&quot;Asian&quot;</em> in a question of
+                ethnicity or demographics or pretty much any context is bad.
+                There is no reasonable conclusion you can arrive at about a
+                person based on the fact that they are
+                <em>&quot;Asian&quot;</em>.
               </p>
             </div>
           </div>
           <p class="more">
-            <a href="/series/unsung-team-roles/incentives/">Read more …</a>
+            <a href="/posts/asians-is-not-a-useful-category/">Read more …</a>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/series/structure-of-experience/meaning/"
+            ><span class="series-name">Structure Of Experience</span>:
+            <span itemprop="name">Act I: Meaning</span>
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2025-05-04" itemprop="datePublished"
+              >May 4, 2025</time
+            >
+          </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/ai/">#AI</a>
+          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>
+                Language builds meaning by combining your inner experiences.
+              </p>
+            </div>
+          </div>
+          <p class="more">
+            <a href="/series/structure-of-experience/meaning/">Read more …</a>
           </p>
         </div>
       </div>
     </footer>
 
+    <!-- Google analytics -->
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"

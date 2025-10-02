@@ -41,7 +41,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/eC0wygYar8.css" />
+    <link rel="stylesheet" href="/styles/Bzyqb5Ytgc.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -50,10 +50,17 @@
 
   <body>
     <header class="container">
-      <nav class="navlike">
-        <h1><a href="/">Strong Opinions Weekly Held</a></h1>
+      <nav class="top" itemscope="" itemtype="https://schema.org/Blog">
+        <h1 itemprop="name">
+          <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
+        </h1>
         <span class="fill"></span>
-        <h2><a href="/about/me/">About</a></h2>
+
+        <h2><a href="/">Home</a></h2>
+
+        <h2 itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="/about/me/" itemprop="sameAs">About</a>
+        </h2>
         <h2><a href="/tags/">Tags</a></h2>
         <h2>
           <a href="/feed.xml"><img src="/images/rss.svg" /></a>
@@ -61,29 +68,39 @@
       </nav>
     </header>
 
-    <main>
-      <article class="container">
-        <header>
-          <h1>A Good API: g9</h1>
-          <div class="navlike">
-            <span>
-              <span class="date">Posted on August 12, 2023</span
-              ><span class="author">&nbsp;by Asanka Herath</span></span
-            >
-            <span class="fill"></span>
+    <article
+      class="container"
+      itemscope=""
+      itemtype="https://schema.org/BlogPosting"
+    >
+      <link itemprop="url" href="/posts/a-good-api/" />
+      <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+      <header>
+        <h1 itemprop="name">A Good API: g9</h1>
+        <nav>
+          <span>
+            <span class="date"
+              >Posted on
+              <time datetime="2023-08-12" itemprop="datePublished"
+                >August 12, 2023</time
+              ></span
+            >&nbsp;by
+            <span class="author" itemprop="author">Asanka Herath</span></span
+          >
+          <span class="fill"></span>
 
-            <span class="tag-link">
-              <a href="/tags/engineering/">#Engineering</a>
-            </span>
-          </div>
-          <div class="navlike">
-            <span class="readingtime">
-              Estimated reading time is 4 minutes.
-            </span>
-            <span class="fill"></span>
-          </div>
-        </header>
+          <span class="tag-link">
+            <a href="/tags/engineering/">#Engineering</a>
+          </span>
+        </nav>
+        <div>
+          <span class="readingtime">
+            Estimated reading time is 4 minutes.
+          </span>
+        </div>
+      </header>
 
+      <main itemprop="articleBody">
         <p>
           Once in a while an API comes around that makes me stop and and look at
           what I’m doing.
@@ -128,7 +145,7 @@
           or their <a href="https://omrelli.ug/g9/gallery/">examples</a>. But
           basically it is this:
         </p>
-        <ol type="1">
+        <ol>
           <li>Tell us what your mutable parameters are.</li>
           <li>Draw your diagram with based on the set of parameters.</li>
           <li>…</li>
@@ -150,154 +167,233 @@
           The power of an API comes from letting users to express more with
           less.
         </p>
+      </main>
 
-        <footer>
-          <div class="lastmodified">
-            <p>Last modified: August 12, 2023</p>
-          </div>
-        </footer>
-      </article>
+      <footer>
+        <div class="lastmodified">
+          <p>
+            Last modified: <time datetime="2023-08-12">August 12, 2023</time>
+          </p>
+        </div>
+      </footer>
+    </article>
 
-      <div class="container"></div>
-    </main>
+    <div class="container"></div>
 
     <footer class="container">
       <h2>More posts from this blog ...</h2>
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/ten-years/"> Ten Years </a>
+          <a itemprop="url" href="/posts/the-point-of-a-strategy/">
+            <span itemprop="name">The Point of a Strategy</span>
+          </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on December 9, 2020 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2023-07-24" itemprop="datePublished"
+              >July 24, 2023</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/career/">#Career</a>
           </span>
+
+          <span class="tag-link">
+            <a href="/tags/engineering/">#Engineering</a>
+          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>The only useful strategy is one that reduces risks.</p>
+            </div>
+          </div>
+          <p class="more">
+            <a href="/posts/the-point-of-a-strategy/">Read more …</a>
+          </p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/visualizing-people-2/">
-            Visualizing A Million People
+          <a itemprop="url" href="/posts/evluating-negatives/">
+            <span itemprop="name"
+              >Inclusion/Equity and Evaluating Negatives</span
+            >
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on September 6, 2021 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2024-01-10" itemprop="datePublished"
+              >January 10, 2024</time
+            >
+          </span>
 
           <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/engineering/">#Engineering</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/inclusion-and-equity/">#Inclusion and Equity</a>
+          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>
+                Evaluating properties like inclusion and equity of products
+                can't be done through exhaustive enumeration of product
+                outcomes. Instead we will need to increasingly rely on the
+                controls that we place how we construct the products.
+              </p>
+            </div>
+          </div>
+          <p class="more">
+            <a href="/posts/evluating-negatives/">Read more …</a>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/secret-life-of-systems/">
+            <span itemprop="name">Secret Life of Systems</span>
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2024-03-23" itemprop="datePublished"
+              >March 23, 2024</time
+            >
+          </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/engineering/">#Engineering</a>
+          </span>
 
           <span class="tag-link">
             <a href="/tags/curiosity/">#Curiosity</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
-                If your feature pisses off a million people what does this angry
-                mob look like? Spoiler: We only get to 750,000.
+                Lifecycles of software systems that solve real world problems
+                can be broken down into distinct phases based on where it is
+                with respect to the problem and the eventual solution.
+              </p>
+              <p>
+                This article presents a taxonomy of these phases that should
+                help you understand how each part of the lifecycle fits
+                together.
               </p>
             </div>
           </div>
           <p class="more">
-            <a href="/posts/visualizing-people-2/">Read more …</a>
+            <a href="/posts/secret-life-of-systems/">Read more …</a>
           </p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/git-autopush/">
-            Use Git hooks to automatically push after every commit
+          <a itemprop="url" href="/series/structure-of-experience/flame/"
+            ><span class="series-name">Structure Of Experience</span>:
+            <span itemprop="name">Act III: Flame</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on July 5, 2022 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2025-05-07" itemprop="datePublished"
+              >May 7, 2025</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/tools/">#tools</a>
+            <a href="/tags/ai/">#AI</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
-                During before and after various Git operations, Git invokes
-                special hooks that can be used execute custom scripts. This
-                article explains how to use them to automatically push to an
-                upstream repository every time you make a commit to a local
-                repo.
+                The map is not the territory. A picture of a flame is not a
+                flame. A description of a neural network is not a brain. A
+                simulation of thought is not a consciousness.
               </p>
-            </div>
-          </div>
-          <p class="more"><a href="/posts/git-autopush/">Read more …</a></p>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/interesting-numbers/">
-            All natural numbers are interesting
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on August 3, 2022 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/math/">#math</a>
-          </span>
-
-          <span class="tag-link">
-            <a href="/tags/curiosity/">#curiosity</a>
-          </span>
-        </div>
-        <div>
-          <div class="summary-line">
-            <div class="summary">
-              <p>A proof.</p>
             </div>
           </div>
           <p class="more">
-            <a href="/posts/interesting-numbers/">Read more …</a>
+            <a href="/series/structure-of-experience/flame/">Read more …</a>
           </p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/have-loop/"> The Have-Loop </a>
+          <a itemprop="url" href="/posts/why-strong-opinions-weakly-held/">
+            <span itemprop="name"
+              >Why &#39;Strong Opinions Weakly Held&#39;</span
+            >
+          </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on June 24, 2024 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-08-28" itemprop="datePublished"
+              >August 28, 2020</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/culture/">#Culture</a>
+            <a href="/tags/meta/">#Meta</a>
           </span>
-        </div>
-        <div>
-          <div class="summary-line">
-            <div class="summary">
-              <p>
-                Have-loops are positive feedback loops which cause unsustainable
-                concentration of limited resources. Once you learn to recognize
-                them, you will see them everywhere.
-              </p>
-            </div>
-          </div>
-          <p class="more"><a href="/posts/have-loop/">Read more …</a></p>
-        </div>
+        </nav>
       </div>
     </footer>
 
+    <!-- Google analytics -->
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"

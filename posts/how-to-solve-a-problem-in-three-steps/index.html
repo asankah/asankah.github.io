@@ -41,7 +41,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/eC0wygYar8.css" />
+    <link rel="stylesheet" href="/styles/Bzyqb5Ytgc.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -50,10 +50,17 @@
 
   <body>
     <header class="container">
-      <nav class="navlike">
-        <h1><a href="/">Strong Opinions Weekly Held</a></h1>
+      <nav class="top" itemscope="" itemtype="https://schema.org/Blog">
+        <h1 itemprop="name">
+          <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
+        </h1>
         <span class="fill"></span>
-        <h2><a href="/about/me/">About</a></h2>
+
+        <h2><a href="/">Home</a></h2>
+
+        <h2 itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="/about/me/" itemprop="sameAs">About</a>
+        </h2>
         <h2><a href="/tags/">Tags</a></h2>
         <h2>
           <a href="/feed.xml"><img src="/images/rss.svg" /></a>
@@ -61,48 +68,59 @@
       </nav>
     </header>
 
-    <main>
-      <article class="container">
-        <header>
-          <h1>How to Solve a Problem in Three Steps</h1>
-          <div class="navlike">
-            <span>
-              <span class="date">Posted on July 8, 2024</span
-              ><span class="author">&nbsp;by Asanka Herath</span></span
-            >
-            <span class="fill"></span>
+    <article
+      class="container"
+      itemscope=""
+      itemtype="https://schema.org/BlogPosting"
+    >
+      <link
+        itemprop="url"
+        href="/posts/how-to-solve-a-problem-in-three-steps/"
+      />
+      <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+      <header>
+        <h1 itemprop="name">How to Solve a Problem in Three Steps</h1>
+        <nav>
+          <span>
+            <span class="date"
+              >Posted on
+              <time datetime="2024-07-08" itemprop="datePublished"
+                >July 8, 2024</time
+              ></span
+            >&nbsp;by
+            <span class="author" itemprop="author">Asanka Herath</span></span
+          >
+          <span class="fill"></span>
 
-            <span class="tag-link">
-              <a href="/tags/organizations/">#Organizations</a>
-            </span>
+          <span class="tag-link">
+            <a href="/tags/organizations/">#Organizations</a>
+          </span>
 
-            <span class="tag-link">
-              <a href="/tags/career/">#Career</a>
-            </span>
-          </div>
-          <div class="navlike">
-            <span class="readingtime">
-              Estimated reading time is 8 minutes.
-            </span>
-            <span class="fill"></span>
-          </div>
-        </header>
+          <span class="tag-link">
+            <a href="/tags/career/">#Career</a>
+          </span>
+        </nav>
+        <div>
+          <span class="readingtime">
+            Estimated reading time is 7 minutes.
+          </span>
+        </div>
+      </header>
 
+      <main itemprop="articleBody">
         <p>
           One fun thing with having kids is that you get to repeat all the old
           stupid jokes to a brand new audience.
         </p>
         <p>Here’s one:</p>
-        <figure>
+        <blockquote>
           <p>How do you put an elephant in a refridgerator in three steps?</p>
-          <figcaption>
-            <ol type="1">
-              <li>Open the door.</li>
-              <li>Put elephant in the refridgerator.</li>
-              <li>Close the door.</li>
-            </ol>
-          </figcaption>
-        </figure>
+          <ol>
+            <li>Open the door.</li>
+            <li>Put elephant in the refridgerator.</li>
+            <li>Close the door.</li>
+          </ol>
+        </blockquote>
         <p>
           It’s funny because the purported “answer” doesn’t address any of the
           important questions raised by the initial question; not the least of
@@ -141,16 +159,16 @@
         <figure>
           <img
             src="/posts/how-to-solve-a-problem-in-three-steps/Hv9IM5EEoH-447.png"
-            alt="Authority, domain expertise, and ability to plan: Choose (at most) two."
+            alt=""
             width="447"
             height="300"
           />
-          <figcaption aria-hidden="true">
+          <figcaption>
             Authority, domain expertise, and ability to plan: Choose (at most)
             two.
           </figcaption>
         </figure>
-        <ol type="1">
+        <ol>
           <li>
             <strong>Domain expertise</strong> concerns the understanding of the
             problem area that is being tackled.
@@ -173,31 +191,27 @@
           their zone of competence or by bullshitting their way up the
           management chain. Hence the distribution of the
           <em>authority</em> attribute doesn’t necessarily correlate with either
-          of the other two attributes<a
-            href="#fn1"
-            class="footnote-ref"
-            id="fnref1"
-            role="doc-noteref"
-            ><sup>1</sup></a
+          of the other two attributes<sup class="footnote-ref"
+            ><a href="#fn1" id="fnref1">[1]</a></sup
           >.
         </p>
-        <div class="sidenote-host-1">
-          <p>
-            So you end up with a layer of middle management that share the
-            <em>authority</em> attribute, but at most one of the other two.
-          </p>
-        </div>
-        <div class="sidenote-1">
-          <p>
-            Rarely someone will get to a place where they have all the
-            attributes combined. When this happens it is glorious. You can tell
-            when such people are in charge even without knowing who the people
-            are. In these organizations, you will find sensible decisions being
-            made, people working under realistic timelines, and towards goals
-            that are clearly achievable through the strategies that they are
-            executing upon. It is truly a joy to work in such an organization.
-          </p>
-        </div>
+        <p>::: sidenote-host-1</p>
+        <p>
+          So you end up with a layer of middle management that share the
+          <em>authority</em> attribute, but at most one of the other two.
+        </p>
+        <p>:::</p>
+        <p>::: sidenote-1</p>
+        <p>
+          Rarely someone will get to a place where they have all the attributes
+          combined. When this happens it is glorious. You can tell when such
+          people are in charge even without knowing who the people are. In these
+          organizations, you will find sensible decisions being made, people
+          working under realistic timelines, and towards goals that are clearly
+          achievable through the strategies that they are executing upon. It is
+          truly a joy to work in such an organization.
+        </p>
+        <p>:::</p>
         <p>
           But in most cases “planning sprint” is code for “prepare for damage
           control” for those who have <em>domain expertise</em> and
@@ -224,11 +238,9 @@
           This process is extra fun when the planners have decided to put not
           one but <strong>two</strong> things in the refridgerator without being
           specific about what they are. We know one of those things
-          <em>must</em>
-          be an elephant for the long term viability of the product, but the
-          other one could be an orange for all we care. So the workers now have
-          to frame
-          <em>“solving the elephant”</em> in terms of
+          <em>must</em> be an elephant for the long term viability of the
+          product, but the other one could be an orange for all we care. So the
+          workers now have to frame <em>“solving the elephant”</em> in terms of
           <em>“putting the elephant in the refridgerator”</em>.
         </p>
         <p>
@@ -257,155 +269,159 @@
           ensures that those looking down from the top will never see the fat
           for what it is.
         </p>
-        <section
-          id="footnotes"
-          class="footnotes footnotes-end-of-document"
-          role="doc-endnotes"
-        >
-          <hr />
-          <ol>
-            <li id="fn1">
+        <hr class="footnotes-sep" />
+        <section class="footnotes">
+          <ol class="footnotes-list">
+            <li id="fn1" class="footnote-item">
               <p>
                 I can attest to the fact that there are people who only have the
-                <em>authority</em> attribute. It is a thing.<a
-                  href="#fnref1"
-                  class="footnote-back"
-                  role="doc-backlink"
-                  >↩︎</a
-                >
+                <em>authority</em> attribute. It is a thing.
+                <a href="#fnref1" class="footnote-backref">↩︎</a>
               </p>
             </li>
           </ol>
         </section>
+      </main>
 
-        <footer>
-          <div class="lastmodified">
-            <p>Last modified: July 8, 2024</p>
-          </div>
-        </footer>
-      </article>
+      <footer>
+        <div class="lastmodified">
+          <p>Last modified: <time datetime="2024-07-08">July 8, 2024</time></p>
+        </div>
+      </footer>
+    </article>
 
-      <div class="container"></div>
-    </main>
+    <div class="container"></div>
 
     <footer class="container">
       <h2>More posts from this blog ...</h2>
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/poisson-distribution/">
-            Deriving the Poisson Distribution
+          <a itemprop="url" href="/posts/ephemeral-fingerprinting/">
+            <span itemprop="name">Ephemeral Fingerprinting On The Web</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on December 11, 2020 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-04-01" itemprop="datePublished"
+              >April 1, 2020</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/math/">#Math</a>
+            <a href="/tags/privacy/">#Privacy</a>
           </span>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/remarkable-first-impressions/">
-            Note-taking on a reMarkable 2
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on December 30, 2021 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/remarkable-2/">#Remarkable 2</a>
-          </span>
-
-          <span class="tag-link">
-            <a href="/tags/reviews/">#Reviews</a>
-          </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
-              <p>Sentiments after using the reMarkable 2 tablet for a month.</p>
-            </div>
-          </div>
-          <p class="more">
-            <a href="/posts/remarkable-first-impressions/">Read more …</a>
-          </p>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/syntax-highlighting/">
-            On Highlighting Syntax vs. Semantics
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on February 12, 2022 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/engineering/">#Engineering</a>
-          </span>
-        </div>
-        <div>
-          <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
-                Takes a look at an alternate form of code highlighting based on
-                core semantics instead of syntactic role.
+                Any ephemeral low-entropy web observable property whose changes
+                are concurrently observable by multiple sites can lead to cross
+                site identity joining.
+              </p>
+              <p>
+                This method of identity joining does not require coordination
+                between multiple first parties. A single third party embedded
+                within multiple first parties can also use this method.
               </p>
             </div>
           </div>
           <p class="more">
-            <a href="/posts/syntax-highlighting/">Read more …</a>
+            <a href="/posts/ephemeral-fingerprinting/">Read more …</a>
           </p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/git-autopush/">
-            Use Git hooks to automatically push after every commit
+          <a itemprop="url" href="/posts/ten-years/">
+            <span itemprop="name">Ten Years</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on July 5, 2022 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-12-09" itemprop="datePublished"
+              >December 9, 2020</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/tools/">#tools</a>
+            <a href="/tags/career/">#Career</a>
           </span>
-        </div>
+        </nav>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/fart-limit/">
+            <span itemprop="name">Fart Limit</span>
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2021-06-14" itemprop="datePublished"
+              >June 14, 2021</time
+            >
+          </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/curiosity/">#Curiosity</a>
+          </span>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
-                During before and after various Git operations, Git invokes
-                special hooks that can be used execute custom scripts. This
-                article explains how to use them to automatically push to an
-                upstream repository every time you make a commit to a local
-                repo.
+                Can a fart be fatal? Let's see what science and OSHA have to
+                say.
               </p>
             </div>
           </div>
-          <p class="more"><a href="/posts/git-autopush/">Read more …</a></p>
+          <p class="more"><a href="/posts/fart-limit/">Read more …</a></p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/intermezzo-2025/"> Intermission - Q1 of 2025 </a>
+          <a itemprop="url" href="/posts/the-loss-of-a-virtuous-culture/">
+            <span itemprop="name">The Loss of a Virtuous Culture</span>
+          </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike">
-            Last updated on May 3, 2025 , Originally posted on April 7, 2025
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2022-10-28" itemprop="datePublished"
+              >October 28, 2022</time
+            >
           </span>
 
           <span class="fill"></span>
@@ -413,21 +429,64 @@
           <span class="tag-link">
             <a href="/tags/culture/">#Culture</a>
           </span>
-        </div>
+
+          <span class="tag-link">
+            <a href="/tags/engineering/">#Engineering</a>
+          </span>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
+              <p>Luck isn't enough. You need a culture of virtue.</p>
+            </div>
+          </div>
+          <p class="more">
+            <a href="/posts/the-loss-of-a-virtuous-culture/">Read more …</a>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/have-loop/">
+            <span itemprop="name">The Have-Loop</span>
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2024-06-24" itemprop="datePublished"
+              >June 24, 2024</time
+            >
+          </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/culture/">#Culture</a>
+          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
               <p>
-                Hate can be suppressed temporarily, but cannot be contained for
-                too long.
+                Have-loops are positive feedback loops which cause unsustainable
+                concentration of limited resources. Once you learn to recognize
+                them, you will see them everywhere.
               </p>
             </div>
           </div>
-          <p class="more"><a href="/posts/intermezzo-2025/">Read more …</a></p>
+          <p class="more"><a href="/posts/have-loop/">Read more …</a></p>
         </div>
       </div>
     </footer>
 
+    <!-- Google analytics -->
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"

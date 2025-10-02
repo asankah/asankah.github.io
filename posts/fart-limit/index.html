@@ -41,7 +41,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/eC0wygYar8.css" />
+    <link rel="stylesheet" href="/styles/Bzyqb5Ytgc.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -50,10 +50,17 @@
 
   <body>
     <header class="container">
-      <nav class="navlike">
-        <h1><a href="/">Strong Opinions Weekly Held</a></h1>
+      <nav class="top" itemscope="" itemtype="https://schema.org/Blog">
+        <h1 itemprop="name">
+          <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
+        </h1>
         <span class="fill"></span>
-        <h2><a href="/about/me/">About</a></h2>
+
+        <h2><a href="/">Home</a></h2>
+
+        <h2 itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="/about/me/" itemprop="sameAs">About</a>
+        </h2>
         <h2><a href="/tags/">Tags</a></h2>
         <h2>
           <a href="/feed.xml"><img src="/images/rss.svg" /></a>
@@ -61,29 +68,39 @@
       </nav>
     </header>
 
-    <main>
-      <article class="container">
-        <header>
-          <h1>Fart Limit</h1>
-          <div class="navlike">
-            <span>
-              <span class="date">Posted on June 14, 2021</span
-              ><span class="author">&nbsp;by Asanka Herath</span></span
-            >
-            <span class="fill"></span>
+    <article
+      class="container"
+      itemscope=""
+      itemtype="https://schema.org/BlogPosting"
+    >
+      <link itemprop="url" href="/posts/fart-limit/" />
+      <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+      <header>
+        <h1 itemprop="name">Fart Limit</h1>
+        <nav>
+          <span>
+            <span class="date"
+              >Posted on
+              <time datetime="2021-06-14" itemprop="datePublished"
+                >June 14, 2021</time
+              ></span
+            >&nbsp;by
+            <span class="author" itemprop="author">Asanka Herath</span></span
+          >
+          <span class="fill"></span>
 
-            <span class="tag-link">
-              <a href="/tags/curiosity/">#Curiosity</a>
-            </span>
-          </div>
-          <div class="navlike">
-            <span class="readingtime">
-              Estimated reading time is 4 minutes.
-            </span>
-            <span class="fill"></span>
-          </div>
-        </header>
+          <span class="tag-link">
+            <a href="/tags/curiosity/">#Curiosity</a>
+          </span>
+        </nav>
+        <div>
+          <span class="readingtime">
+            Estimated reading time is 4 minutes.
+          </span>
+        </div>
+      </header>
 
+      <main itemprop="articleBody">
         <p>
           Thanks to <a href="https://youtu.be/suwg7-y70FQ">Vsauce</a> for
           bringing this particular issue to our attention. The TL;DR of that
@@ -92,21 +109,15 @@
         <ul>
           <li>Most of the gases in your farts are odorless.</li>
           <li>
-            The one that usually makes things stinky is Hydrogen Sulfide.<a
-              href="#fn1"
+            The one that usually makes things stinky is Hydrogen Sulfide.<sup
               class="footnote-ref"
-              id="fnref1"
-              role="doc-noteref"
-              ><sup>1</sup></a
+              ><a href="#fn1" id="fnref1">[1]</a></sup
             >
           </li>
           <li>
-            The content of H_2_S in a fart is around 50ppm.<a
-              href="#fn2"
+            The content of H_2_S in a fart is around 50ppm.<sup
               class="footnote-ref"
-              id="fnref2"
-              role="doc-noteref"
-              ><sup>2</sup></a
+              ><a href="#fn2" id="fnref2">[2]</a></sup
             >
           </li>
           <li>One fart can travel around 10 ft/s.</li>
@@ -123,8 +134,7 @@
               >Slight conjunctivitis (“gas eye”) and respiratory tract
               irritation after 1 hour. May cause digestive upset and loss of
               appetite.</em
-            ><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"
-              ><sup>3</sup></a
+            ><sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup
             >.
           </li>
           <li>
@@ -159,137 +169,146 @@
         <figure>
           <img
             src="/posts/fart-limit/rsfyjToIBI-580.png"
-            alt="KidsHealth: What’s a Fart?"
+            alt=""
             width="580"
             height="223"
           />
-          <figcaption aria-hidden="true">KidsHealth: What’s a Fart?</figcaption>
+          <figcaption>KidsHealth: What’s a Fart?</figcaption>
         </figure>
-        <section
-          id="footnotes"
-          class="footnotes footnotes-end-of-document"
-          role="doc-endnotes"
-        >
-          <hr />
-          <ol>
-            <li id="fn1">
+        <hr class="footnotes-sep" />
+        <section class="footnotes">
+          <ol class="footnotes-list">
+            <li id="fn1" class="footnote-item">
               <p>
-                https://web.archive.org/web/20210614200353/https://www.houstonmethodist.org/blog/articles/2020/oct/flatulence-everything-you-wanted-to-know-about-farting/<a
-                  href="#fnref1"
-                  class="footnote-back"
-                  role="doc-backlink"
-                  >↩︎</a
-                >
+                https://web.archive.org/web/20210614200353/https://www.houstonmethodist.org/blog/articles/2020/oct/flatulence-everything-you-wanted-to-know-about-farting/
+                <a href="#fnref1" class="footnote-backref">↩︎</a>
               </p>
             </li>
-            <li id="fn2">
+            <li id="fn2" class="footnote-item">
               <p>
-                https://www.chemistryworld.com/news/explainer-the-chemistry-of-farts/2500168.article<a
-                  href="#fnref2"
-                  class="footnote-back"
-                  role="doc-backlink"
-                  >↩︎</a
-                >
+                https://www.chemistryworld.com/news/explainer-the-chemistry-of-farts/2500168.article
+                <a href="#fnref2" class="footnote-backref">↩︎</a>
               </p>
             </li>
-            <li id="fn3">
+            <li id="fn3" class="footnote-item">
               <p>
-                https://www.osha.gov/hydrogen-sulfide/hazards<a
-                  href="#fnref3"
-                  class="footnote-back"
-                  role="doc-backlink"
-                  >↩︎</a
-                >
+                https://www.osha.gov/hydrogen-sulfide/hazards
+                <a href="#fnref3" class="footnote-backref">↩︎</a>
               </p>
             </li>
           </ol>
         </section>
+      </main>
 
-        <footer>
-          <div class="lastmodified">
-            <p>Last modified: June 14, 2021</p>
-          </div>
-        </footer>
-      </article>
+      <footer>
+        <div class="lastmodified">
+          <p>Last modified: <time datetime="2021-06-14">June 14, 2021</time></p>
+        </div>
+      </footer>
+    </article>
 
-      <div class="container"></div>
-    </main>
+    <div class="container"></div>
 
     <footer class="container">
       <h2>More posts from this blog ...</h2>
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/gender-gap-in-adolescent-mental-health/">
-            On Gender Gap in Adolescent Mental Health
+          <a itemprop="url" href="/posts/visualizing-people-2/">
+            <span itemprop="name">Visualizing A Million People</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on March 1, 2022 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2021-09-06" itemprop="datePublished"
+              >September 6, 2021</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/inclusion-and-equity/">#Inclusion and Equity</a>
+            <a href="/tags/curiosity/">#Curiosity</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
-                A recent study found that more gender-equal countries have
-                larger gender gaps in mental health. I look at the data that
-                seems to have yielded this counter-intuitive results and find it
-                lacking.
+                If your feature pisses off a million people what does this angry
+                mob look like? Spoiler: We only get to 750,000.
               </p>
             </div>
           </div>
           <p class="more">
-            <a href="/posts/gender-gap-in-adolescent-mental-health/"
-              >Read more …</a
-            >
+            <a href="/posts/visualizing-people-2/">Read more …</a>
           </p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/interesting-numbers/">
-            All natural numbers are interesting
+          <a itemprop="url" href="/posts/the-lettergrade-rule/">
+            <span itemprop="name">The Lettergrade Rule</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on August 3, 2022 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2022-09-16" itemprop="datePublished"
+              >September 16, 2022</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/math/">#math</a>
+            <a href="/tags/engineering/">#engineering</a>
           </span>
-
-          <span class="tag-link">
-            <a href="/tags/curiosity/">#curiosity</a>
-          </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
-              <p>A proof.</p>
+            <div class="summary" itemprop="abstract">
+              <p>
+                Don't block a code review because of minor issues that are best
+                left to the discretion of the author.
+              </p>
             </div>
           </div>
           <p class="more">
-            <a href="/posts/interesting-numbers/">Read more …</a>
+            <a href="/posts/the-lettergrade-rule/">Read more …</a>
           </p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/asians-is-not-a-useful-category/">
-            Asian Is Not a Useful Category
+          <a itemprop="url" href="/posts/the-loss-of-a-virtuous-culture/">
+            <span itemprop="name">The Loss of a Virtuous Culture</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on July 4, 2024 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2022-10-28" itemprop="datePublished"
+              >October 28, 2022</time
+            >
+          </span>
 
           <span class="fill"></span>
 
@@ -298,88 +317,126 @@
           </span>
 
           <span class="tag-link">
-            <a href="/tags/organizations/">#Organizations</a>
+            <a href="/tags/engineering/">#Engineering</a>
+          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>Luck isn't enough. You need a culture of virtue.</p>
+            </div>
+          </div>
+          <p class="more">
+            <a href="/posts/the-loss-of-a-virtuous-culture/">Read more …</a>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/evluating-negatives/">
+            <span itemprop="name"
+              >Inclusion/Equity and Evaluating Negatives</span
+            >
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2024-01-10" itemprop="datePublished"
+              >January 10, 2024</time
+            >
+          </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/engineering/">#Engineering</a>
           </span>
 
           <span class="tag-link">
             <a href="/tags/inclusion-and-equity/">#Inclusion and Equity</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
-                Asking if someone is <em>&quot;Asian&quot;</em> in a question of
-                ethnicity or demographics or pretty much any context is bad.
-                There is no reasonable conclusion you can arrive at about a
-                person based on the fact that they are
-                <em>&quot;Asian&quot;</em>.
+                Evaluating properties like inclusion and equity of products
+                can't be done through exhaustive enumeration of product
+                outcomes. Instead we will need to increasingly rely on the
+                controls that we place how we construct the products.
               </p>
             </div>
           </div>
           <p class="more">
-            <a href="/posts/asians-is-not-a-useful-category/">Read more …</a>
+            <a href="/posts/evluating-negatives/">Read more …</a>
           </p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/series/unsung-team-roles/emergence/"
-            ><span class="series-name">Unsung Team Roles</span>: Emergence of
-            Soft Roles
+          <a itemprop="url" href="/posts/moved-to-eleventy/">
+            <span itemprop="name">I Moved This Blog To Eleventy</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on August 2, 2025 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2024-12-13" itemprop="datePublished"
+              >December 13, 2024</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/organizations/">#Organizations</a>
+            <a href="/tags/meta/">#Meta</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
-                In any team, the roles people play are not as rigid as they
-                seem. Over time, people naturally settle into &quot;soft
-                roles&quot; that are not explicitly defined but are crucial for
-                a team's success. This is a look at the organic, and often
-                unsung, ways that successful teams actually work.
+                At long last, this blog &quot;outgrew&quot;<sup
+                  class="footnote-ref"
+                  ><a href="#fn1" id="fnref1">[1]</a></sup
+                >
+                Hugo and I had to go looking for a new static site generator.
               </p>
+              <hr class="footnotes-sep" />
+              <section class="footnotes">
+                <ol class="footnotes-list">
+                  <li id="fn1" class="footnote-item">
+                    <p>
+                      Of course, by outgrew I mean I got bored and wanted to
+                      play with a new static site generator.
+                      <a href="#fnref1" class="footnote-backref">↩︎</a>
+                    </p>
+                  </li>
+                </ol>
+              </section>
             </div>
           </div>
           <p class="more">
-            <a href="/series/unsung-team-roles/emergence/">Read more …</a>
+            <a href="/posts/moved-to-eleventy/">Read more …</a>
           </p>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/things-you-can-do-with-nvim-and-vscode/">
-            Things You Can Do With Neovim and Vscode That You Can&#39;t Do With
-            Neovim Alone
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on September 19, 2020 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/tools/">#Tools</a>
-          </span>
-
-          <span class="tag-link">
-            <a href="/tags/vim/">#Vim</a>
-          </span>
         </div>
       </div>
     </footer>
 
+    <!-- Google analytics -->
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"

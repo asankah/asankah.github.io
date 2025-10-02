@@ -41,7 +41,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/eC0wygYar8.css" />
+    <link rel="stylesheet" href="/styles/Bzyqb5Ytgc.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -50,10 +50,17 @@
 
   <body>
     <header class="container">
-      <nav class="navlike">
-        <h1><a href="/">Strong Opinions Weekly Held</a></h1>
+      <nav class="top" itemscope="" itemtype="https://schema.org/Blog">
+        <h1 itemprop="name">
+          <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
+        </h1>
         <span class="fill"></span>
-        <h2><a href="/about/me/">About</a></h2>
+
+        <h2><a href="/">Home</a></h2>
+
+        <h2 itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="/about/me/" itemprop="sameAs">About</a>
+        </h2>
         <h2><a href="/tags/">Tags</a></h2>
         <h2>
           <a href="/feed.xml"><img src="/images/rss.svg" /></a>
@@ -61,39 +68,49 @@
       </nav>
     </header>
 
-    <main>
-      <article class="container">
-        <header>
-          <h1>Inclusion/Equity and Evaluating Negatives</h1>
-          <div class="navlike">
-            <span>
-              <span class="date">Posted on January 10, 2024</span
-              ><span class="author">&nbsp;by Asanka Herath</span></span
-            >
-            <span class="fill"></span>
+    <article
+      class="container"
+      itemscope=""
+      itemtype="https://schema.org/BlogPosting"
+    >
+      <link itemprop="url" href="/posts/evluating-negatives/" />
+      <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+      <header>
+        <h1 itemprop="name">Inclusion/Equity and Evaluating Negatives</h1>
+        <nav>
+          <span>
+            <span class="date"
+              >Posted on
+              <time datetime="2024-01-10" itemprop="datePublished"
+                >January 10, 2024</time
+              ></span
+            >&nbsp;by
+            <span class="author" itemprop="author">Asanka Herath</span></span
+          >
+          <span class="fill"></span>
 
-            <span class="tag-link">
-              <a href="/tags/engineering/">#Engineering</a>
-            </span>
+          <span class="tag-link">
+            <a href="/tags/engineering/">#Engineering</a>
+          </span>
 
-            <span class="tag-link">
-              <a href="/tags/inclusion-and-equity/">#Inclusion and Equity</a>
-            </span>
-          </div>
-          <div class="navlike">
-            <span class="readingtime">
-              Estimated reading time is 10 minutes.
-            </span>
-            <span class="fill"></span>
-          </div>
-        </header>
+          <span class="tag-link">
+            <a href="/tags/inclusion-and-equity/">#Inclusion and Equity</a>
+          </span>
+        </nav>
+        <div>
+          <span class="readingtime">
+            Estimated reading time is 9 minutes.
+          </span>
+        </div>
+      </header>
 
+      <main itemprop="articleBody">
         <p>
           Privacy, security, inclusion, equity, accessibility, … all of these
           have an interesting property in common. When evaluation products
           against such questions you are usually trying to establish a negative.
         </p>
-        <h3 id="to-prove-a-negative">To Prove A Negative</h3>
+        <h3>To Prove A Negative</h3>
         <p>
           Proving a negative requires providing
           <a href="https://en.wikipedia.org/wiki/Evidence_of_absence"
@@ -130,7 +147,7 @@
             circumstances is sometimes enough</strong
           >. Often it is the best that we can do.
         </p>
-        <h3 id="proof-by-enumeration">Proof By Enumeration</h3>
+        <h3>Proof By Enumeration</h3>
         <p>
           In security and privacy parlance this limited scope is called the
           <a href="https://en.wikipedia.org/wiki/Threat_model"
@@ -167,9 +184,7 @@
           resources. Additionally these methodologies also grant us a taxonomy
           with which we can organize our hard earned knowledge on the topic.
         </p>
-        <h3 id="proof-by-enumerating-product-outcomes">
-          Proof by Enumerating Product Outcomes
-        </h3>
+        <h3>Proof by Enumerating Product Outcomes</h3>
         <p>
           Enumeration based approaches establish clusters of
           <em>possible product outcomes</em> which we can then evaluate
@@ -184,7 +199,7 @@
           tractable. Costs of curating suitably detailed test cases and data
           sets should amortize across their potentially broad applicability.
         </p>
-        <h3 id="proof-by-construction">Proof By Construction</h3>
+        <h3>Proof By Construction</h3>
         <p>
           But sometimes the set of outcomes do not cluster effectively or are
           too numerous to exhaustively evaluate. In security this would be
@@ -198,9 +213,7 @@
           fine toothed comb looking for potential problems; a task that is both
           impractical as it is prone to error.
         </p>
-        <h3 id="proof-by-process-of-construction">
-          Proof by Process of Construction
-        </h3>
+        <h3>Proof by Process of Construction</h3>
         <p>
           Instead we could try using programming languages that provide certain
           safety guarantees:
@@ -209,12 +222,8 @@
           >. These safety guarantees establish the memory safety of the
           resulting behavior as a consequence of the method by which the
           underlying software is constructed. Another method we can use is to
-          continue using an unsafe language<a
-            href="#fn1"
-            class="footnote-ref"
-            id="fnref1"
-            role="doc-noteref"
-            ><sup>1</sup></a
+          continue using an unsafe language<sup class="footnote-ref"
+            ><a href="#fn1" id="fnref1">[1]</a></sup
           >, but invest in development practices like
           <a href="https://en.wikipedia.org/wiki/Fuzzing">fuzz testing</a> which
           give us sufficient
@@ -237,7 +246,7 @@
           these approaches don’t guarantee success, but have a much higher
           likelihood of delivering a favorable outcome.
         </p>
-        <h3 id="amalgam-engineering">Amalgam Engineering</h3>
+        <h3>Amalgam Engineering</h3>
         <p>
           Increasingly software systems are built as amalgamations of systems
           that are themselves complex. The behavior of each constituent is
@@ -267,159 +276,100 @@
           have to grasp in order to have some say how technology will govern us
           in turn.
         </p>
-        <section
-          id="footnotes"
-          class="footnotes footnotes-end-of-document"
-          role="doc-endnotes"
-        >
-          <hr />
-          <ol>
-            <li id="fn1">
+        <hr class="footnotes-sep" />
+        <section class="footnotes">
+          <ol class="footnotes-list">
+            <li id="fn1" class="footnote-item">
               <p>
                 Continuing to use an unsafe language isn’t as dumb as it sounds.
                 Large tech companies with massive software estates are often in
                 the unenviable position of being unable to move enmasse to
                 better platforms due to the cost. Thus less than perfect interim
-                measures are not that silly.<a
-                  href="#fnref1"
-                  class="footnote-back"
-                  role="doc-backlink"
-                  >↩︎</a
-                >
+                measures are not that silly.
+                <a href="#fnref1" class="footnote-backref">↩︎</a>
               </p>
             </li>
           </ol>
         </section>
+      </main>
 
-        <footer>
-          <div class="lastmodified">
-            <p>Last modified: January 10, 2024</p>
-          </div>
-        </footer>
-      </article>
+      <footer>
+        <div class="lastmodified">
+          <p>
+            Last modified: <time datetime="2024-01-10">January 10, 2024</time>
+          </p>
+        </div>
+      </footer>
+    </article>
 
-      <div class="container"></div>
-    </main>
+    <div class="container"></div>
 
     <footer class="container">
       <h2>More posts from this blog ...</h2>
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/sometimes-its-the-interviewers-who-suck/">
-            Sometimes It&#39;s the Interviewers Who Suck
+          <a itemprop="url" href="/posts/ephemeral-fingerprinting/">
+            <span itemprop="name">Ephemeral Fingerprinting On The Web</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on March 20, 2021 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-04-01" itemprop="datePublished"
+              >April 1, 2020</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/career/">#Career</a>
+            <a href="/tags/privacy/">#Privacy</a>
           </span>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/remarkable-first-impressions/">
-            Note-taking on a reMarkable 2
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on December 30, 2021 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/remarkable-2/">#Remarkable 2</a>
-          </span>
-
-          <span class="tag-link">
-            <a href="/tags/reviews/">#Reviews</a>
-          </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
-              <p>Sentiments after using the reMarkable 2 tablet for a month.</p>
-            </div>
-          </div>
-          <p class="more">
-            <a href="/posts/remarkable-first-impressions/">Read more …</a>
-          </p>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/darpa-heilmeier-catechism/">
-            DARPA&#39;s Heilmeier Catechism
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on June 28, 2022 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/engineering/">#engineering</a>
-          </span>
-        </div>
-        <div>
-          <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
-                A set of questions help you think through and evaluate proposed
-                projects and research programs.
+                Any ephemeral low-entropy web observable property whose changes
+                are concurrently observable by multiple sites can lead to cross
+                site identity joining.
+              </p>
+              <p>
+                This method of identity joining does not require coordination
+                between multiple first parties. A single third party embedded
+                within multiple first parties can also use this method.
               </p>
             </div>
           </div>
           <p class="more">
-            <a href="/posts/darpa-heilmeier-catechism/">Read more …</a>
+            <a href="/posts/ephemeral-fingerprinting/">Read more …</a>
           </p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/interesting-numbers/">
-            All natural numbers are interesting
+          <a itemprop="url" href="/posts/thirteen-years/">
+            <span itemprop="name">Thirteen Years</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on August 3, 2022 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/math/">#math</a>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2023-12-07" itemprop="datePublished"
+              >December 7, 2023</time
+            >
           </span>
-
-          <span class="tag-link">
-            <a href="/tags/curiosity/">#curiosity</a>
-          </span>
-        </div>
-        <div>
-          <div class="summary-line">
-            <div class="summary">
-              <p>A proof.</p>
-            </div>
-          </div>
-          <p class="more">
-            <a href="/posts/interesting-numbers/">Read more …</a>
-          </p>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/the-point-of-a-strategy/">
-            The Point of a Strategy
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on July 24, 2023 </span>
 
           <span class="fill"></span>
 
@@ -428,22 +378,151 @@
           </span>
 
           <span class="tag-link">
-            <a href="/tags/engineering/">#Engineering</a>
+            <a href="/tags/culture/">#Culture</a>
           </span>
-        </div>
+
+          <span class="tag-link">
+            <a href="/tags/organizations/">#Organizations</a>
+          </span>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
-              <p>The only useful strategy is one that reduces risks.</p>
+            <div class="summary" itemprop="abstract">
+              <p>Some reflections from thirteen years at Google.</p>
+            </div>
+          </div>
+          <p class="more"><a href="/posts/thirteen-years/">Read more …</a></p>
+        </div>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/catchment/">
+            <span itemprop="name"
+              >Draining Our Intellectual Catchment Areas</span
+            >
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2025-07-04" itemprop="datePublished"
+              >July 4, 2025</time
+            >
+          </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/culture/">#Culture</a>
+          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <a href="/posts/catchment/" class="hero-link">
+              <img
+                class="hero"
+                src="/img/enjgX_HhHE-2048.png"
+                alt="A hydro-catchement area and its adjacent reservoir"
+                width="2048"
+                height="2048"
+              />
+            </a>
+
+            <div class="summary" itemprop="abstract">
+              <p>
+                Intellectual catchment areas are collaborative ecosystems
+                between universities and industries that attract talent and
+                ideas. The United States became a hub of intellectual capital
+                after World War II, thanks to a combination of industrial growth
+                around universities, significant research funding, and favorable
+                immigration policies.
+              </p>
+              <p>
+                The current political climate is jeopardizing these ecosystems.
+                Continued threats against universities and immigration could
+                undo a century of progress, ultimately depleting the nation's
+                source of creativity and innovation.
+              </p>
+            </div>
+          </div>
+          <p class="more"><a href="/posts/catchment/">Read more …</a></p>
+        </div>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/how-this-blog-works/">
+            <span itemprop="name">How This Blog Works</span>
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-07-27" itemprop="datePublished"
+              >July 27, 2020</time
+            >
+          </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/meta/">#Meta</a>
+          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>How I put this site together and why.</p>
             </div>
           </div>
           <p class="more">
-            <a href="/posts/the-point-of-a-strategy/">Read more …</a>
+            <a href="/posts/how-this-blog-works/">Read more …</a>
           </p>
         </div>
       </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/why-strong-opinions-weakly-held/">
+            <span itemprop="name"
+              >Why &#39;Strong Opinions Weakly Held&#39;</span
+            >
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-08-28" itemprop="datePublished"
+              >August 28, 2020</time
+            >
+          </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/meta/">#Meta</a>
+          </span>
+        </nav>
+      </div>
     </footer>
 
+    <!-- Google analytics -->
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"

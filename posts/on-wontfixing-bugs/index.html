@@ -41,7 +41,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/eC0wygYar8.css" />
+    <link rel="stylesheet" href="/styles/Bzyqb5Ytgc.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -50,10 +50,17 @@
 
   <body>
     <header class="container">
-      <nav class="navlike">
-        <h1><a href="/">Strong Opinions Weekly Held</a></h1>
+      <nav class="top" itemscope="" itemtype="https://schema.org/Blog">
+        <h1 itemprop="name">
+          <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
+        </h1>
         <span class="fill"></span>
-        <h2><a href="/about/me/">About</a></h2>
+
+        <h2><a href="/">Home</a></h2>
+
+        <h2 itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="/about/me/" itemprop="sameAs">About</a>
+        </h2>
         <h2><a href="/tags/">Tags</a></h2>
         <h2>
           <a href="/feed.xml"><img src="/images/rss.svg" /></a>
@@ -61,29 +68,39 @@
       </nav>
     </header>
 
-    <main>
-      <article class="container">
-        <header>
-          <h1>On WontFixing Bugs</h1>
-          <div class="navlike">
-            <span>
-              <span class="date">Posted on March 2, 2021</span
-              ><span class="author">&nbsp;by Asanka Herath</span></span
-            >
-            <span class="fill"></span>
+    <article
+      class="container"
+      itemscope=""
+      itemtype="https://schema.org/BlogPosting"
+    >
+      <link itemprop="url" href="/posts/on-wontfixing-bugs/" />
+      <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+      <header>
+        <h1 itemprop="name">On WontFixing Bugs</h1>
+        <nav>
+          <span>
+            <span class="date"
+              >Posted on
+              <time datetime="2021-03-02" itemprop="datePublished"
+                >March 2, 2021</time
+              ></span
+            >&nbsp;by
+            <span class="author" itemprop="author">Asanka Herath</span></span
+          >
+          <span class="fill"></span>
 
-            <span class="tag-link">
-              <a href="/tags/engineering/">#Engineering</a>
-            </span>
-          </div>
-          <div class="navlike">
-            <span class="readingtime">
-              Estimated reading time is 8 minutes.
-            </span>
-            <span class="fill"></span>
-          </div>
-        </header>
+          <span class="tag-link">
+            <a href="/tags/engineering/">#Engineering</a>
+          </span>
+        </nav>
+        <div>
+          <span class="readingtime">
+            Estimated reading time is 8 minutes.
+          </span>
+        </div>
+      </header>
 
+      <main itemprop="articleBody">
         <p>This was partly inspired by a Tweet by a co-worker. The tweet is:</p>
         <div class="eleventy-plugin-embed-twitter"><blockquote id="tweet-1366762904851279877" class="twitter-tweet"><a href="https://twitter.com/miketaylr/status/1366762904851279877"></a></blockquote></div><script src="https://platform.twitter.com/widgets.js" charset="utf-8" async></script>
         <p>
@@ -98,7 +115,7 @@
           for a “successful” project the rate of new issues being reported will
           exceed the rate of issues being fixed. Hence the growth.
         </p>
-        <h2 id="what-matters">What Matters …</h2>
+        <h2>What Matters …</h2>
         <p>
           Issues are often annotated to indicate some measure of
           <em>severity</em> and <em>priority</em>. These are two different axes
@@ -143,7 +160,7 @@
           either. So an issue report also functions as an opinion catchment area
           where interested parties can hash out their differences.
         </p>
-        <h2 id="and-what-doesnt">And What Doesn’t …</h2>
+        <h2>And What Doesn’t …</h2>
         <p>
           However, the health of the project then depends on not only handling
           new issues, but also in how they shepherd existing or known issues.
@@ -154,7 +171,7 @@
           cognitive overhead of correct prioritizing increases dramatically, as
           does the time it takes for triaging.
         </p>
-        <h2 id="strategies-that-dont-work">Strategies That Don’t Work …</h2>
+        <h2>Strategies That Don’t Work …</h2>
         <p>
           So projects tend to use various techniques to deal with the growing
           pile of issues. The more overwhelming it is, the more drastic the
@@ -167,10 +184,10 @@
         </p>
         <p>
           The assumption seems to be that if the issue was important enough then
-          an endless stream of users would pipe up on the bug with “me too”s to
-          keep the issue open. The issue tracker is now a battlefield where
-          issue reporters have to continually work to keep the issue alive until
-          a contributor takes pity and addresses it.
+          an endless stream of users would pipe up on the bug with &quot;me
+          too&quot;s to keep the issue open. The issue tracker is now a
+          battlefield where issue reporters have to continually work to keep the
+          issue alive until a contributor takes pity and addresses it.
         </p>
         <p>
           Issue reporters themselves who are often volunteers who are electing
@@ -202,7 +219,7 @@
           default in issue searches, so they are effectively undiscoverable to
           future issue reporters. All time invested in that issue is now lost.
         </p>
-        <h2 id="and-one-that-does">And One That Does? …</h2>
+        <h2>And One That Does? …</h2>
         <p>
           The alternative is to just leave the issue open, but lower the
           priority down to something that reflects the current opinion of the
@@ -221,110 +238,210 @@
           issue report. All you’ve accomplished is to throw away the accumulated
           history and evidence of a defect.
         </p>
+      </main>
 
-        <footer>
-          <div class="lastmodified">
-            <p>Last modified: March 2, 2021</p>
-          </div>
-        </footer>
-      </article>
+      <footer>
+        <div class="lastmodified">
+          <p>Last modified: <time datetime="2021-03-02">March 2, 2021</time></p>
+        </div>
+      </footer>
+    </article>
 
-      <div class="container"></div>
-    </main>
+    <div class="container"></div>
 
     <footer class="container">
       <h2>More posts from this blog ...</h2>
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/remarkable-first-impressions/">
-            Note-taking on a reMarkable 2
+          <a itemprop="url" href="/posts/ansible-cli-sugar/">
+            <span itemprop="name"
+              >Easier CLI for ad-hoc Ansible tasks and playbooks</span
+            >
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on December 30, 2021 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-06-01" itemprop="datePublished"
+              >June 1, 2020</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/remarkable-2/">#Remarkable 2</a>
+            <a href="/tags/tools/">#Tools</a>
           </span>
-
-          <span class="tag-link">
-            <a href="/tags/reviews/">#Reviews</a>
-          </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
-              <p>Sentiments after using the reMarkable 2 tablet for a month.</p>
+            <div class="summary" itemprop="abstract">
+              <p>
+                Encode the host and group names into the name of a wrapper
+                script for quick ad-hoc invocation of Ansible tasks and
+                playbooks.
+              </p>
             </div>
           </div>
           <p class="more">
-            <a href="/posts/remarkable-first-impressions/">Read more …</a>
+            <a href="/posts/ansible-cli-sugar/">Read more …</a>
           </p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/interesting-numbers/">
-            All natural numbers are interesting
+          <a
+            itemprop="url"
+            href="/posts/gender-gap-in-adolescent-mental-health/"
+          >
+            <span itemprop="name"
+              >On Gender Gap in Adolescent Mental Health</span
+            >
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on August 3, 2022 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2022-03-01" itemprop="datePublished"
+              >March 1, 2022</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/math/">#math</a>
+            <a href="/tags/inclusion-and-equity/">#Inclusion and Equity</a>
           </span>
-
-          <span class="tag-link">
-            <a href="/tags/curiosity/">#curiosity</a>
-          </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
-              <p>A proof.</p>
+            <div class="summary" itemprop="abstract">
+              <p>
+                A recent study found that more gender-equal countries have
+                larger gender gaps in mental health. I look at the data that
+                seems to have yielded this counter-intuitive results and find it
+                lacking.
+              </p>
             </div>
           </div>
           <p class="more">
-            <a href="/posts/interesting-numbers/">Read more …</a>
+            <a href="/posts/gender-gap-in-adolescent-mental-health/"
+              >Read more …</a
+            >
           </p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/a-good-api/"> A Good API: g9 </a>
+          <a itemprop="url" href="/posts/the-lettergrade-rule/">
+            <span itemprop="name">The Lettergrade Rule</span>
+          </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on August 12, 2023 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2022-09-16" itemprop="datePublished"
+              >September 16, 2022</time
+            >
+          </span>
 
           <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/engineering/">#engineering</a>
+          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>
+                Don't block a code review because of minor issues that are best
+                left to the discretion of the author.
+              </p>
+            </div>
+          </div>
+          <p class="more">
+            <a href="/posts/the-lettergrade-rule/">Read more …</a>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/the-point-of-a-strategy/">
+            <span itemprop="name">The Point of a Strategy</span>
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2023-07-24" itemprop="datePublished"
+              >July 24, 2023</time
+            >
+          </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/career/">#Career</a>
+          </span>
 
           <span class="tag-link">
             <a href="/tags/engineering/">#Engineering</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
-              <p>Adding more knobs doesn't make your API more powerful.</p>
+            <div class="summary" itemprop="abstract">
+              <p>The only useful strategy is one that reduces risks.</p>
             </div>
           </div>
-          <p class="more"><a href="/posts/a-good-api/">Read more …</a></p>
+          <p class="more">
+            <a href="/posts/the-point-of-a-strategy/">Read more …</a>
+          </p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/why-i-hate-carousels/"> Why I Hate Carousels </a>
+          <a itemprop="url" href="/posts/why-i-hate-carousels/">
+            <span itemprop="name">Why I Hate Carousels</span>
+          </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on January 25, 2024 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2024-01-25" itemprop="datePublished"
+              >January 25, 2024</time
+            >
+          </span>
 
           <span class="fill"></span>
 
@@ -335,10 +452,10 @@
           <span class="tag-link">
             <a href="/tags/engineering/">#Engineering</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <ul>
                 <li>Don't use carousels in your UI.</li>
                 <li>
@@ -358,53 +475,9 @@
           </p>
         </div>
       </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/moved-to-eleventy/">
-            I Moved This Blog To Eleventy
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on December 13, 2024 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/meta/">#Meta</a>
-          </span>
-        </div>
-        <div>
-          <div class="summary-line">
-            <div class="summary">
-              <p>
-                At long last, this blog &quot;outgrew&quot;<sup
-                  class="footnote-ref"
-                  ><a href="#fn1" id="fnref1">[1]</a></sup
-                >
-                Hugo and I had to go looking for a new static site generator.
-              </p>
-              <hr class="footnotes-sep" />
-              <section class="footnotes">
-                <ol class="footnotes-list">
-                  <li id="fn1" class="footnote-item">
-                    <p>
-                      Of course, by outgrew I mean I got bored and wanted to
-                      play with a new static site generator.
-                      <a href="#fnref1" class="footnote-backref">↩︎</a>
-                    </p>
-                  </li>
-                </ol>
-              </section>
-            </div>
-          </div>
-          <p class="more">
-            <a href="/posts/moved-to-eleventy/">Read more …</a>
-          </p>
-        </div>
-      </div>
     </footer>
 
+    <!-- Google analytics -->
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"

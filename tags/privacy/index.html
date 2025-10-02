@@ -41,7 +41,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/eC0wygYar8.css" />
+    <link rel="stylesheet" href="/styles/Bzyqb5Ytgc.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -50,10 +50,17 @@
 
   <body>
     <header class="container">
-      <nav class="navlike">
-        <h1><a href="/">Strong Opinions Weekly Held</a></h1>
+      <nav class="top" itemscope="" itemtype="https://schema.org/Blog">
+        <h1 itemprop="name">
+          <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
+        </h1>
         <span class="fill"></span>
-        <h2><a href="/about/me/">About</a></h2>
+
+        <h2><a href="/">Home</a></h2>
+
+        <h2 itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="/about/me/" itemprop="sameAs">About</a>
+        </h2>
         <h2><a href="/tags/">Tags</a></h2>
         <h2>
           <a href="/feed.xml"><img src="/images/rss.svg" /></a>
@@ -66,9 +73,7 @@
         <h1>Posts tagged #Privacy</h1>
       </heading>
 
-      <nav>
-        All tags:
-
+      <nav class="multiline">
         <span class="tag-link">
           <a href="/tags/ai/">#AI</a>
         </span>
@@ -142,14 +147,24 @@
         </span>
       </nav>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/an-intuition-on-entropy/">
-            An Intuition on Shannon Entropy
+          <a itemprop="url" href="/posts/an-intuition-on-entropy/">
+            <span itemprop="name">An Intuition on Shannon Entropy</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on September 27, 2025 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2025-09-27" itemprop="datePublished"
+              >September 27, 2025</time
+            >
+          </span>
 
           <span class="fill"></span>
 
@@ -164,7 +179,7 @@
           <span class="tag-link">
             <a href="/tags/entropy/">#Entropy</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
             <a href="/posts/an-intuition-on-entropy/" class="hero-link">
@@ -177,7 +192,7 @@
               />
             </a>
 
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
                 Develop an intuition for Shannon entropy as a measure of
                 information content. Using the game 'Guess Who' as a practical
@@ -193,22 +208,34 @@
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/identity-domains/"> Identity Domains </a>
+          <a itemprop="url" href="/posts/identity-domains/">
+            <span itemprop="name">Identity Domains</span>
+          </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on May 1, 2020 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-05-01" itemprop="datePublished"
+              >May 1, 2020</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/privacy/">#Privacy</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
                 An Identity Domain is a scope within which we assume that the
                 user's identity can roam freely.
@@ -219,24 +246,34 @@
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/ephemeral-fingerprinting/">
-            Ephemeral Fingerprinting On The Web
+          <a itemprop="url" href="/posts/ephemeral-fingerprinting/">
+            <span itemprop="name">Ephemeral Fingerprinting On The Web</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on April 1, 2020 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-04-01" itemprop="datePublished"
+              >April 1, 2020</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/privacy/">#Privacy</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
                 Any ephemeral low-entropy web observable property whose changes
                 are concurrently observable by multiple sites can lead to cross
@@ -256,6 +293,7 @@
       </div>
     </main>
 
+    <!-- Google analytics -->
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"

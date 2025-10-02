@@ -41,7 +41,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/eC0wygYar8.css" />
+    <link rel="stylesheet" href="/styles/Bzyqb5Ytgc.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -50,10 +50,17 @@
 
   <body>
     <header class="container">
-      <nav class="navlike">
-        <h1><a href="/">Strong Opinions Weekly Held</a></h1>
+      <nav class="top" itemscope="" itemtype="https://schema.org/Blog">
+        <h1 itemprop="name">
+          <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
+        </h1>
         <span class="fill"></span>
-        <h2><a href="/about/me/">About</a></h2>
+
+        <h2><a href="/">Home</a></h2>
+
+        <h2 itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="/about/me/" itemprop="sameAs">About</a>
+        </h2>
         <h2><a href="/tags/">Tags</a></h2>
         <h2>
           <a href="/feed.xml"><img src="/images/rss.svg" /></a>
@@ -61,29 +68,39 @@
       </nav>
     </header>
 
-    <main>
-      <article class="container">
-        <header>
-          <h1>Names for Name Conventions</h1>
-          <div class="navlike">
-            <span>
-              <span class="date">Posted on August 24, 2020</span
-              ><span class="author">&nbsp;by Asanka Herath</span></span
-            >
-            <span class="fill"></span>
+    <article
+      class="container"
+      itemscope=""
+      itemtype="https://schema.org/BlogPosting"
+    >
+      <link itemprop="url" href="/posts/symbol-name-types/" />
+      <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+      <header>
+        <h1 itemprop="name">Names for Name Conventions</h1>
+        <nav>
+          <span>
+            <span class="date"
+              >Posted on
+              <time datetime="2020-08-24" itemprop="datePublished"
+                >August 24, 2020</time
+              ></span
+            >&nbsp;by
+            <span class="author" itemprop="author">Asanka Herath</span></span
+          >
+          <span class="fill"></span>
 
-            <span class="tag-link">
-              <a href="/tags/engineering/">#Engineering</a>
-            </span>
-          </div>
-          <div class="navlike">
-            <span class="readingtime">
-              Estimated reading time is 3 minutes.
-            </span>
-            <span class="fill"></span>
-          </div>
-        </header>
+          <span class="tag-link">
+            <a href="/tags/engineering/">#Engineering</a>
+          </span>
+        </nav>
+        <div>
+          <span class="readingtime">
+            Estimated reading time is 2 minutes.
+          </span>
+        </div>
+      </header>
 
+      <main itemprop="articleBody">
         <p>Names I’ve seen used to refer to naming conventions:</p>
         <ul>
           <li>
@@ -99,12 +116,9 @@
           <li><code>PascalCase</code> : The first letter is uppercase.</li>
           <li>
             <code>kabob-case</code> : Like <code>snake_case</code>, but uses
-            dashes instead of underscores. Common for command-line options<a
-              href="#fn1"
+            dashes instead of underscores. Common for command-line options<sup
               class="footnote-ref"
-              id="fnref1"
-              role="doc-noteref"
-              ><sup>1</sup></a
+              ><a href="#fn1" id="fnref1">[1]</a></sup
             >, CSS styles, commands (e.g. <code>git-receive-pack</code>).
           </li>
         </ul>
@@ -116,199 +130,269 @@
           >
           which is relevant.
         </p>
-        <section
-          id="footnotes"
-          class="footnotes footnotes-end-of-document"
-          role="doc-endnotes"
-        >
-          <hr />
-          <ol>
-            <li id="fn1">
+        <hr class="footnotes-sep" />
+        <section class="footnotes">
+          <ol class="footnotes-list">
+            <li id="fn1" class="footnote-item">
               <p>
                 Opinions vary on whether the correct convention for command line
                 options is <code>snake_case</code> or <code>kabob-case</code>.
                 Long form options are often written as
                 <code>--long-option</code>, but can also be
                 <code>--long_option</code> (where the delimiter within the
-                option is <code>_</code>).<a
-                  href="#fnref1"
-                  class="footnote-back"
-                  role="doc-backlink"
-                  >↩︎</a
-                >
+                option is <code>_</code>).
+                <a href="#fnref1" class="footnote-backref">↩︎</a>
               </p>
             </li>
           </ol>
         </section>
+      </main>
 
-        <footer>
-          <div class="lastmodified">
-            <p>Last modified: August 24, 2020</p>
-          </div>
-        </footer>
-      </article>
+      <footer>
+        <div class="lastmodified">
+          <p>
+            Last modified: <time datetime="2020-08-24">August 24, 2020</time>
+          </p>
+        </div>
+      </footer>
+    </article>
 
-      <div class="container"></div>
-    </main>
+    <div class="container"></div>
 
     <footer class="container">
       <h2>More posts from this blog ...</h2>
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/promise-fatigue/"> Promise Fatigue </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on November 1, 2022 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/culture/">#Culture</a>
-          </span>
-
-          <span class="tag-link">
-            <a href="/tags/career/">#Career</a>
-          </span>
-        </div>
-        <div>
-          <div class="summary-line">
-            <div class="summary">
-              <p>
-                Setting low but realistic expectations is better than setting
-                high but unrealistic ones.
-              </p>
-            </div>
-          </div>
-          <p class="more"><a href="/posts/promise-fatigue/">Read more …</a></p>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/code-as-ui/">
-            Code As UI: The UX of config-as-code and everything-as-code
+          <a
+            itemprop="url"
+            href="/posts/gender-gap-in-adolescent-mental-health/"
+          >
+            <span itemprop="name"
+              >On Gender Gap in Adolescent Mental Health</span
+            >
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on July 1, 2023 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2022-03-01" itemprop="datePublished"
+              >March 1, 2022</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/engineering/">#engineering</a>
+            <a href="/tags/inclusion-and-equity/">#Inclusion and Equity</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
-                Configuration-as-code has the same usability issues as
-                everything else as code along with the same benefits.
-              </p>
-            </div>
-          </div>
-          <p class="more"><a href="/posts/code-as-ui/">Read more …</a></p>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/fourteen-years/"> Fourteen Years </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on December 31, 2024 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/career/">#Career</a>
-          </span>
-
-          <span class="tag-link">
-            <a href="/tags/culture/">#Culture</a>
-          </span>
-
-          <span class="tag-link">
-            <a href="/tags/organizations/">#Organizations</a>
-          </span>
-        </div>
-        <div>
-          <div class="summary-line">
-            <div class="summary">
-              <p>More reflections from foureteen years at Google.</p>
-            </div>
-          </div>
-          <p class="more"><a href="/posts/fourteen-years/">Read more …</a></p>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/intermezzo-2025/"> Intermission - Q1 of 2025 </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike">
-            Last updated on May 3, 2025 , Originally posted on April 7, 2025
-          </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/culture/">#Culture</a>
-          </span>
-        </div>
-        <div>
-          <div class="summary-line">
-            <div class="summary">
-              <p>
-                Hate can be suppressed temporarily, but cannot be contained for
-                too long.
-              </p>
-            </div>
-          </div>
-          <p class="more"><a href="/posts/intermezzo-2025/">Read more …</a></p>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/series/unsung-team-roles/glue-people/"
-            ><span class="series-name">Unsung Team Roles</span>: Ode to Glue
-            People
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on August 12, 2025 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/organizations/">#Organizations</a>
-          </span>
-        </div>
-        <div>
-          <div class="summary-line">
-            <div class="summary">
-              <p>
-                While managers may be constrained in their communication,
-                special individuals create unofficial channels where team
-                members feel safe to share information. Acting as social hubs or
-                &quot;speakeasies,&quot; they foster trust and enable the free
-                flow of timely, factual information, which helps colleagues make
-                better decisions and navigate turmoil. Despite their critical
-                function in preventing team collapse and reducing isolation,
-                this &quot;glue work&quot; is typically not formally recognized
-                or compensated.
+                A recent study found that more gender-equal countries have
+                larger gender gaps in mental health. I look at the data that
+                seems to have yielded this counter-intuitive results and find it
+                lacking.
               </p>
             </div>
           </div>
           <p class="more">
-            <a href="/series/unsung-team-roles/glue-people/">Read more …</a>
+            <a href="/posts/gender-gap-in-adolescent-mental-health/"
+              >Read more …</a
+            >
           </p>
         </div>
       </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/mark-goes-up-and-down/">
+            <span itemprop="name"
+              >Markdown should be readble without knowing Markdown</span
+            >
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2022-04-05" itemprop="datePublished"
+              >April 5, 2022</time
+            >
+          </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/tools/">#Tools</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/engineering/">#Engineering</a>
+          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>
+                Markdown documents should be readble without understanding
+                complex mark-up. A growing number of Markdown syntax extensions
+                take the form of HTML or HTML-like tags and boilerplate that
+                hinder readability. Instead we should focus on how some
+                construct should be presented in plain-text for human
+                consumption and then add minimal structure to it for machine
+                consumption.
+              </p>
+            </div>
+          </div>
+          <p class="more">
+            <a href="/posts/mark-goes-up-and-down/">Read more …</a>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/why-i-hate-carousels/">
+            <span itemprop="name">Why I Hate Carousels</span>
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2024-01-25" itemprop="datePublished"
+              >January 25, 2024</time
+            >
+          </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/usability/">#Usability</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/engineering/">#Engineering</a>
+          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <ul>
+                <li>Don't use carousels in your UI.</li>
+                <li>
+                  Instead, if you must stick content into little cards, let the
+                  horionztal layout wrap to additional lines.
+                </li>
+                <li>
+                  If you end up with too many horizontal lines of content, then
+                  you definitely have too many items that can be accessed via a
+                  horizontally panning UI. You need a different UI altogether.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p class="more">
+            <a href="/posts/why-i-hate-carousels/">Read more …</a>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/comcast-technican-problem/">
+            <span itemprop="name">The Comcast Technician Problem</span>
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-07-13" itemprop="datePublished"
+              >July 13, 2020</time
+            >
+          </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/math/">#Math</a>
+          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>
+                Given a set of tasks, incentives are often aligned towards
+                dropping a task rather than allowing for perpetual accretion of
+                delays.
+              </p>
+            </div>
+          </div>
+          <p class="more">
+            <a href="/posts/comcast-technican-problem/">Read more …</a>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a
+            itemprop="url"
+            href="/posts/things-you-can-do-with-nvim-and-vscode/"
+          >
+            <span itemprop="name"
+              >Things You Can Do With Neovim and Vscode That You Can&#39;t Do
+              With Neovim Alone</span
+            >
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-09-19" itemprop="datePublished"
+              >September 19, 2020</time
+            >
+          </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/tools/">#Tools</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/vim/">#Vim</a>
+          </span>
+        </nav>
+      </div>
     </footer>
 
+    <!-- Google analytics -->
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"

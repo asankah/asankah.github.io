@@ -41,7 +41,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/eC0wygYar8.css" />
+    <link rel="stylesheet" href="/styles/Bzyqb5Ytgc.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -50,10 +50,17 @@
 
   <body>
     <header class="container">
-      <nav class="navlike">
-        <h1><a href="/">Strong Opinions Weekly Held</a></h1>
+      <nav class="top" itemscope="" itemtype="https://schema.org/Blog">
+        <h1 itemprop="name">
+          <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
+        </h1>
         <span class="fill"></span>
-        <h2><a href="/about/me/">About</a></h2>
+
+        <h2><a href="/">Home</a></h2>
+
+        <h2 itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="/about/me/" itemprop="sameAs">About</a>
+        </h2>
         <h2><a href="/tags/">Tags</a></h2>
         <h2>
           <a href="/feed.xml"><img src="/images/rss.svg" /></a>
@@ -61,40 +68,52 @@
       </nav>
     </header>
 
-    <main>
-      <article class="container">
-        <header>
-          <h1>Quickly grab a snapshot of your reMarkable tablet</h1>
-          <div class="navlike">
-            <span>
-              <span class="date">Posted on January 6, 2022</span
-              ><span class="author">&nbsp;by Asanka Herath</span></span
-            >
-            <span class="fill"></span>
+    <article
+      class="container"
+      itemscope=""
+      itemtype="https://schema.org/BlogPosting"
+    >
+      <link itemprop="url" href="/posts/grab-diagram-workflow-re2/" />
+      <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+      <header>
+        <h1 itemprop="name">
+          Quickly grab a snapshot of your reMarkable tablet
+        </h1>
+        <nav>
+          <span>
+            <span class="date"
+              >Posted on
+              <time datetime="2022-01-06" itemprop="datePublished"
+                >January 6, 2022</time
+              ></span
+            >&nbsp;by
+            <span class="author" itemprop="author">Asanka Herath</span></span
+          >
+          <span class="fill"></span>
 
-            <span class="tag-link">
-              <a href="/tags/remarkable-2/">#Remarkable 2</a>
-            </span>
+          <span class="tag-link">
+            <a href="/tags/remarkable-2/">#Remarkable 2</a>
+          </span>
 
-            <span class="tag-link">
-              <a href="/tags/tools/">#Tools</a>
-            </span>
-          </div>
-          <div class="navlike">
-            <span class="readingtime">
-              Estimated reading time is 9 minutes.
-            </span>
-            <span class="fill"></span>
-          </div>
-        </header>
+          <span class="tag-link">
+            <a href="/tags/tools/">#Tools</a>
+          </span>
+        </nav>
+        <div>
+          <span class="readingtime">
+            Estimated reading time is 8 minutes.
+          </span>
+        </div>
+      </header>
 
+      <main itemprop="articleBody">
         <p>
           One everyday workflow that I wanted to optimize was quickly sketching
           out a diagram on the reMarkable tablet and including it in a document
           I was writing somewhere else.
         </p>
         <p>My primary computer is a Mac. Here’s my solution:</p>
-        <ol type="1">
+        <ol>
           <li>
             Set up
             <a href="https://github.com/asankah/reSnap"><code>reSnap</code></a
@@ -120,7 +139,7 @@
           snapshot and then hit ⌘+V to paste it into whatever application I am
           using, usually Google Docs.
         </p>
-        <h2 id="setting-up-resnap">Setting up <code>reSnap</code></h2>
+        <h2>Setting up <code>reSnap</code></h2>
         <p>
           I have
           <a href="https://github.com/asankah/reSnap"
@@ -151,13 +170,10 @@
           On the local machine – which in my case is a Mac – you can install all
           the requirements using Homebrew as follows:
         </p>
-        <div class="sourceCode" id="cb1">
-          <pre
-            class="sourceCode sh"
-          ><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install ffmpeg imagemagick</span></code></pre>
-        </div>
-        <h2 id="creating-a-mac-quick-action">Creating a Mac Quick Action</h2>
-        <ol type="1">
+        <pre><code class="language-sh">brew install ffmpeg imagemagick
+</code></pre>
+        <h2>Creating a Mac Quick Action</h2>
+        <ol>
           <li>
             <p>
               Start “Automator.”
@@ -174,7 +190,7 @@
               Create a new “Quick Action.”
               <img
                 src="/posts/grab-diagram-workflow-re2/S0fDTpxvx8-539.png"
-                alt="Select “Quick Action” from the “New” menu."
+                alt='Select "Quick Action" from the "New" menu.'
                 width="539"
                 height="479"
               />
@@ -187,7 +203,7 @@
               them as-is.
               <img
                 src="/posts/grab-diagram-workflow-re2/Djv2Qgjpis-597.png"
-                alt="Set the workflow options to recieve “no input” in “any application”."
+                alt='Set the workflow options to recieve "no input" in "any application".'
                 width="597"
                 height="113"
               />
@@ -198,7 +214,7 @@
               Drag over the “Run Shell Script” action from the actions library.
               <img
                 src="/posts/grab-diagram-workflow-re2/ibgOP9UpNU-396.png"
-                alt="Drag over the “Run Shell Script” action."
+                alt='Drag over the "Run Shell Script" action.'
                 width="396"
                 height="576"
               />
@@ -209,11 +225,8 @@
               Paste something like the following (with the suggested
               modifications to suit your local environment).
             </p>
-            <div class="sourceCode" id="cb2">
-              <pre
-                class="sourceCode sh"
-              ><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">/usr/bin/env</span> PATH=/bin:/usr/bin:/usr/local/bin:/sbin /path/to/reSnap/reSnap.sh <span class="at">--sketch</span> <span class="at">--copy</span></span></code></pre>
-            </div>
+            <pre><code class="language-sh">/usr/bin/env PATH=/bin:/usr/bin:/usr/local/bin:/sbin /path/to/reSnap/reSnap.sh --sketch --copy
+</code></pre>
             <p>
               Note that the reMarkable needs to be connected via a USB cable to
               capture a snapshot using the above command. If you want to be able
@@ -232,9 +245,9 @@
           </li>
         </ol>
         <p>Try it out with the “Run” button.</p>
-        <h2 id="binding-a-hotkey">Binding a hotkey</h2>
+        <h2>Binding a hotkey</h2>
         <p>Once you save your quick action, you can bind a hotkey like this:</p>
-        <ol type="1">
+        <ol>
           <li>
             <p>
               Open “System Preferences” and navigate to “Keyboard” -&gt;
@@ -250,40 +263,38 @@
             <figure>
               <img
                 src="/posts/grab-diagram-workflow-re2/ETL-OPYp5P-663.png"
-                alt="Example of what you should see when you select “Services” in “Keyboard” -&gt; “Shortcuts”"
+                alt=""
                 width="663"
                 height="549"
               />
-              <figcaption aria-hidden="true">
+              <figcaption>
                 Example of what you should see when you select “Services” in
                 “Keyboard” -&gt; “Shortcuts”
               </figcaption>
             </figure>
           </li>
-          <li><p>Double click on the “none” and type your hotkey.</p></li>
+          <li>
+            <p>Double click on the “none” and type your hotkey.</p>
+          </li>
         </ol>
         <p>That’s it.</p>
         <p>Here’s what a snapshot looks like:</p>
         <figure>
           <img
             src="/posts/grab-diagram-workflow-re2/0IUzJgM0zN-451.png"
-            alt="A snapshot from my reMarkable tablet"
+            alt=""
             width="451"
             height="485"
           />
-          <figcaption aria-hidden="true">
-            A snapshot from my reMarkable tablet
-          </figcaption>
+          <figcaption>A snapshot from my reMarkable tablet</figcaption>
         </figure>
-        <h2 id="a-couple-of-notes-on-the---sketch-option">
-          A couple of notes on the <code>--sketch</code> option
-        </h2>
+        <h2>A couple of notes on the <code>--sketch</code> option</h2>
         <p>
           My fork of <code>reSnap</code> introduces a
           <code>--sketch</code> option that cleans up the picture a little bit.
           It currently does the following:
         </p>
-        <ol type="1">
+        <ol>
           <li>
             Erase the little menu widget from the top-left corner of the image.
             Since <code>reSnap</code> grabs the image right off the framebuffer
@@ -311,89 +322,116 @@
           All of this is done via an invocation of
           <a href="https://imagemagick.org/index.php">ImageMagick</a>.
         </p>
+      </main>
 
-        <footer>
-          <div class="lastmodified">
-            <p>Last modified: January 6, 2022</p>
-          </div>
-        </footer>
-      </article>
+      <footer>
+        <div class="lastmodified">
+          <p>
+            Last modified: <time datetime="2022-01-06">January 6, 2022</time>
+          </p>
+        </div>
+      </footer>
+    </article>
 
-      <div class="container"></div>
-    </main>
+    <div class="container"></div>
 
     <footer class="container">
       <h2>More posts from this blog ...</h2>
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/on-wontfixing-bugs/"> On WontFixing Bugs </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on March 2, 2021 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/engineering/">#Engineering</a>
-          </span>
-        </div>
-        <div>
-          <div class="summary-line">
-            <div class="summary">
-              <p>
-                Large projects accumulate a large number of issue reports over
-                time. This is normal. Typically for a &quot;successful&quot;
-                project the rate of new issues being reported will exceed the
-                rate of issues being fixed. Hence the growth.
-              </p>
-              <p>
-                But what are they to do about this ever-growing pile of bugs?
-              </p>
-            </div>
-          </div>
-          <p class="more">
-            <a href="/posts/on-wontfixing-bugs/">Read more …</a>
-          </p>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/visualizing-people-2/">
-            Visualizing A Million People
+          <a itemprop="url" href="/posts/ephemeral-fingerprinting/">
+            <span itemprop="name">Ephemeral Fingerprinting On The Web</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on September 6, 2021 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-04-01" itemprop="datePublished"
+              >April 1, 2020</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/curiosity/">#Curiosity</a>
+            <a href="/tags/privacy/">#Privacy</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
-                If your feature pisses off a million people what does this angry
-                mob look like? Spoiler: We only get to 750,000.
+                Any ephemeral low-entropy web observable property whose changes
+                are concurrently observable by multiple sites can lead to cross
+                site identity joining.
+              </p>
+              <p>
+                This method of identity joining does not require coordination
+                between multiple first parties. A single third party embedded
+                within multiple first parties can also use this method.
               </p>
             </div>
           </div>
           <p class="more">
-            <a href="/posts/visualizing-people-2/">Read more …</a>
+            <a href="/posts/ephemeral-fingerprinting/">Read more …</a>
           </p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/intermezzo-2025/"> Intermission - Q1 of 2025 </a>
+          <a
+            itemprop="url"
+            href="/posts/sometimes-its-the-interviewers-who-suck/"
+          >
+            <span itemprop="name"
+              >Sometimes It&#39;s the Interviewers Who Suck</span
+            >
+          </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike">
-            Last updated on May 3, 2025 , Originally posted on April 7, 2025
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2021-03-20" itemprop="datePublished"
+              >March 20, 2021</time
+            >
+          </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/career/">#Career</a>
+          </span>
+        </nav>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/when-your-feature-gets-someone-hurt/">
+            <span itemprop="name">When Your Feature Gets Someone Hurt</span>
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2024-05-22" itemprop="datePublished"
+              >May 22, 2024</time
+            >
           </span>
 
           <span class="fill"></span>
@@ -401,85 +439,137 @@
           <span class="tag-link">
             <a href="/tags/culture/">#Culture</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <a
+              href="/posts/when-your-feature-gets-someone-hurt/"
+              class="hero-link"
+            >
+              <img
+                class="hero"
+                src="/img/S51L3NURP--1536.png"
+                alt="An old photo album containing pictures of ruins. (Generated with Gemini.)"
+                width="1536"
+                height="1536"
+              />
+            </a>
+
+            <div class="summary" itemprop="abstract">
               <p>
-                Hate can be suppressed temporarily, but cannot be contained for
-                too long.
-              </p>
-            </div>
-          </div>
-          <p class="more"><a href="/posts/intermezzo-2025/">Read more …</a></p>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/series/structure-of-experience/meaning/"
-            ><span class="series-name">Structure Of Experience</span>: Act I:
-            Meaning
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on May 4, 2025 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/ai/">#AI</a>
-          </span>
-        </div>
-        <div>
-          <div class="summary-line">
-            <div class="summary">
-              <p>
-                Language builds meaning by combining your inner experiences.
+                If Google Photos incorrectly tags a photo, what's the worst that
+                could happen?
               </p>
             </div>
           </div>
           <p class="more">
-            <a href="/series/structure-of-experience/meaning/">Read more …</a>
+            <a href="/posts/when-your-feature-gets-someone-hurt/"
+              >Read more …</a
+            >
           </p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/series/unsung-team-roles/crossbeams/"
-            ><span class="series-name">Unsung Team Roles</span>: Soft Roles as
-            Organizational Cross Beams
+          <a
+            itemprop="url"
+            href="/posts/how-to-solve-a-problem-in-three-steps/"
+          >
+            <span itemprop="name">How to Solve a Problem in Three Steps</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on August 12, 2025 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2024-07-08" itemprop="datePublished"
+              >July 8, 2024</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/organizations/">#Organizations</a>
           </span>
-        </div>
+
+          <span class="tag-link">
+            <a href="/tags/career/">#Career</a>
+          </span>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
-                Leadership is fallible and imperfect. Soft roles emerge as they
-                are needed to account for various team roles that are needed but
-                not formally defined. Some of these roles help teams function,
-                and some others act as crossbeams that hold an entire
-                organization together.
+                If you don't know what a refridgerator is nor what an elephant
+                is you are likely to think that opening the door, putting the
+                elephant in, and closing the door is a viable strategy for
+                putting an elephant in the refridgerator.
               </p>
             </div>
           </div>
           <p class="more">
-            <a href="/series/unsung-team-roles/crossbeams/">Read more …</a>
+            <a href="/posts/how-to-solve-a-problem-in-three-steps/"
+              >Read more …</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/series/unsung-team-roles/incentives/"
+            ><span class="series-name">Unsung Team Roles</span>:
+            <span itemprop="name">Incentives</span>
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2025-08-12" itemprop="datePublished"
+              >August 12, 2025</time
+            >
+          </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/organizations/">#Organizations</a>
+          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>
+                For a team to succeed, it needs the flexibility to
+                self-organize, which can lead to some members taking on more
+                work. To avoid burnout, these extra contributions must be
+                rewarded. Good managers are key, as they must recognize
+                individual efforts and their team-wide impact. Well-designed
+                incentives foster collaboration and reward those who strengthen
+                the team, while poor incentives cause employees to stick rigidly
+                to their roles and let the team fail.
+              </p>
+            </div>
+          </div>
+          <p class="more">
+            <a href="/series/unsung-team-roles/incentives/">Read more …</a>
           </p>
         </div>
       </div>
     </footer>
 
+    <!-- Google analytics -->
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"

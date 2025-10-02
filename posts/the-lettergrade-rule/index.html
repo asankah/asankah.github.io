@@ -41,7 +41,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/eC0wygYar8.css" />
+    <link rel="stylesheet" href="/styles/Bzyqb5Ytgc.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -50,10 +50,17 @@
 
   <body>
     <header class="container">
-      <nav class="navlike">
-        <h1><a href="/">Strong Opinions Weekly Held</a></h1>
+      <nav class="top" itemscope="" itemtype="https://schema.org/Blog">
+        <h1 itemprop="name">
+          <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
+        </h1>
         <span class="fill"></span>
-        <h2><a href="/about/me/">About</a></h2>
+
+        <h2><a href="/">Home</a></h2>
+
+        <h2 itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="/about/me/" itemprop="sameAs">About</a>
+        </h2>
         <h2><a href="/tags/">Tags</a></h2>
         <h2>
           <a href="/feed.xml"><img src="/images/rss.svg" /></a>
@@ -61,29 +68,39 @@
       </nav>
     </header>
 
-    <main>
-      <article class="container">
-        <header>
-          <h1>The Lettergrade Rule</h1>
-          <div class="navlike">
-            <span>
-              <span class="date">Posted on September 16, 2022</span
-              ><span class="author">&nbsp;by Asanka Herath</span></span
-            >
-            <span class="fill"></span>
+    <article
+      class="container"
+      itemscope=""
+      itemtype="https://schema.org/BlogPosting"
+    >
+      <link itemprop="url" href="/posts/the-lettergrade-rule/" />
+      <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+      <header>
+        <h1 itemprop="name">The Lettergrade Rule</h1>
+        <nav>
+          <span>
+            <span class="date"
+              >Posted on
+              <time datetime="2022-09-16" itemprop="datePublished"
+                >September 16, 2022</time
+              ></span
+            >&nbsp;by
+            <span class="author" itemprop="author">Asanka Herath</span></span
+          >
+          <span class="fill"></span>
 
-            <span class="tag-link">
-              <a href="/tags/engineering/">#engineering</a>
-            </span>
-          </div>
-          <div class="navlike">
-            <span class="readingtime">
-              Estimated reading time is 3 minutes.
-            </span>
-            <span class="fill"></span>
-          </div>
-        </header>
+          <span class="tag-link">
+            <a href="/tags/engineering/">#engineering</a>
+          </span>
+        </nav>
+        <div>
+          <span class="readingtime">
+            Estimated reading time is 3 minutes.
+          </span>
+        </div>
+      </header>
 
+      <main itemprop="articleBody">
         <p>How do you know when a code review is “done”?</p>
         <p>
           Let’s say you are the reviewer and see many small changes you’d like
@@ -138,167 +155,263 @@
             you having to do another pass.
           </li>
         </ul>
+      </main>
 
-        <footer>
-          <div class="lastmodified">
-            <p>Last modified: September 16, 2022</p>
-          </div>
-        </footer>
-      </article>
+      <footer>
+        <div class="lastmodified">
+          <p>
+            Last modified: <time datetime="2022-09-16">September 16, 2022</time>
+          </p>
+        </div>
+      </footer>
+    </article>
 
-      <div class="container"></div>
-    </main>
+    <div class="container"></div>
 
     <footer class="container">
       <h2>More posts from this blog ...</h2>
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/the-lettergrade-rule/"> The Lettergrade Rule </a>
+          <a itemprop="url" href="/posts/ephemeral-fingerprinting/">
+            <span itemprop="name">Ephemeral Fingerprinting On The Web</span>
+          </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on September 16, 2022 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-04-01" itemprop="datePublished"
+              >April 1, 2020</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/engineering/">#engineering</a>
+            <a href="/tags/privacy/">#Privacy</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
-                Don't block a code review because of minor issues that are best
-                left to the discretion of the author.
+                Any ephemeral low-entropy web observable property whose changes
+                are concurrently observable by multiple sites can lead to cross
+                site identity joining.
+              </p>
+              <p>
+                This method of identity joining does not require coordination
+                between multiple first parties. A single third party embedded
+                within multiple first parties can also use this method.
               </p>
             </div>
           </div>
           <p class="more">
-            <a href="/posts/the-lettergrade-rule/">Read more …</a>
+            <a href="/posts/ephemeral-fingerprinting/">Read more …</a>
           </p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/happy-new-year-2024-and-year-in-review-2023/">
-            Happy New Year 2024 and Year in Review 2023
+          <a itemprop="url" href="/posts/why-i-hate-carousels/">
+            <span itemprop="name">Why I Hate Carousels</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on January 1, 2024 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2024-01-25" itemprop="datePublished"
+              >January 25, 2024</time
+            >
+          </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/usability/">#Usability</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/engineering/">#Engineering</a>
+          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <ul>
+                <li>Don't use carousels in your UI.</li>
+                <li>
+                  Instead, if you must stick content into little cards, let the
+                  horionztal layout wrap to additional lines.
+                </li>
+                <li>
+                  If you end up with too many horizontal lines of content, then
+                  you definitely have too many items that can be accessed via a
+                  horizontally panning UI. You need a different UI altogether.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p class="more">
+            <a href="/posts/why-i-hate-carousels/">Read more …</a>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/secret-life-of-systems/">
+            <span itemprop="name">Secret Life of Systems</span>
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2024-03-23" itemprop="datePublished"
+              >March 23, 2024</time
+            >
+          </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/engineering/">#Engineering</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/curiosity/">#Curiosity</a>
+          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>
+                Lifecycles of software systems that solve real world problems
+                can be broken down into distinct phases based on where it is
+                with respect to the problem and the eventual solution.
+              </p>
+              <p>
+                This article presents a taxonomy of these phases that should
+                help you understand how each part of the lifecycle fits
+                together.
+              </p>
+            </div>
+          </div>
+          <p class="more">
+            <a href="/posts/secret-life-of-systems/">Read more …</a>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/intrinsic-motivation-an-anecdote/">
+            <span itemprop="name"
+              >Intrinsic and Extrinsic Motivation: An anecdote</span
+            >
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2025-03-22" itemprop="datePublished"
+              >March 22, 2025</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/culture/">#Culture</a>
           </span>
+
+          <span class="tag-link">
+            <a href="/tags/career/">#Career</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/inclusion-and-equity/">#Inclusion and Equity</a>
+          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>
+                Intrinsic motivation is always better than extrinsic motivation.
+                But not as good as it is when one is motivated both
+                intrinsically and extrinsically.
+              </p>
+            </div>
+          </div>
+          <p class="more">
+            <a href="/posts/intrinsic-motivation-an-anecdote/">Read more …</a>
+          </p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/have-loop/"> The Have-Loop </a>
+          <a itemprop="url" href="/posts/intermezzo-2025/">
+            <span itemprop="name">Intermission - Q1 of 2025</span>
+          </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on June 24, 2024 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2025-05-03" itemprop="datePublished"
+              >May 3, 2025</time
+            >. Originally posted on
+            <time datetime="2025-04-07" itemprop="dateCreated"
+              >April 7, 2025</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/culture/">#Culture</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
-                Have-loops are positive feedback loops which cause unsustainable
-                concentration of limited resources. Once you learn to recognize
-                them, you will see them everywhere.
+                Hate can be suppressed temporarily, but cannot be contained for
+                too long.
               </p>
             </div>
           </div>
-          <p class="more"><a href="/posts/have-loop/">Read more …</a></p>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/moved-to-eleventy/">
-            I Moved This Blog To Eleventy
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on December 13, 2024 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/meta/">#Meta</a>
-          </span>
-        </div>
-        <div>
-          <div class="summary-line">
-            <div class="summary">
-              <p>
-                At long last, this blog &quot;outgrew&quot;<sup
-                  class="footnote-ref"
-                  ><a href="#fn1" id="fnref1">[1]</a></sup
-                >
-                Hugo and I had to go looking for a new static site generator.
-              </p>
-              <hr class="footnotes-sep" />
-              <section class="footnotes">
-                <ol class="footnotes-list">
-                  <li id="fn1" class="footnote-item">
-                    <p>
-                      Of course, by outgrew I mean I got bored and wanted to
-                      play with a new static site generator.
-                      <a href="#fnref1" class="footnote-backref">↩︎</a>
-                    </p>
-                  </li>
-                </ol>
-              </section>
-            </div>
-          </div>
-          <p class="more">
-            <a href="/posts/moved-to-eleventy/">Read more …</a>
-          </p>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/series/structure-of-experience/meaning/"
-            ><span class="series-name">Structure Of Experience</span>: Act I:
-            Meaning
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on May 4, 2025 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/ai/">#AI</a>
-          </span>
-        </div>
-        <div>
-          <div class="summary-line">
-            <div class="summary">
-              <p>
-                Language builds meaning by combining your inner experiences.
-              </p>
-            </div>
-          </div>
-          <p class="more">
-            <a href="/series/structure-of-experience/meaning/">Read more …</a>
-          </p>
+          <p class="more"><a href="/posts/intermezzo-2025/">Read more …</a></p>
         </div>
       </div>
     </footer>
 
+    <!-- Google analytics -->
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"

@@ -41,7 +41,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/eC0wygYar8.css" />
+    <link rel="stylesheet" href="/styles/Bzyqb5Ytgc.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -50,10 +50,17 @@
 
   <body>
     <header class="container">
-      <nav class="navlike">
-        <h1><a href="/">Strong Opinions Weekly Held</a></h1>
+      <nav class="top" itemscope="" itemtype="https://schema.org/Blog">
+        <h1 itemprop="name">
+          <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
+        </h1>
         <span class="fill"></span>
-        <h2><a href="/about/me/">About</a></h2>
+
+        <h2><a href="/">Home</a></h2>
+
+        <h2 itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="/about/me/" itemprop="sameAs">About</a>
+        </h2>
         <h2><a href="/tags/">Tags</a></h2>
         <h2>
           <a href="/feed.xml"><img src="/images/rss.svg" /></a>
@@ -61,53 +68,63 @@
       </nav>
     </header>
 
-    <main>
-      <article class="container">
-        <header>
-          <h1>Act III: Flame</h1>
-          <div class="navlike">
-            <span>
-              <span class="date">Posted on May 7, 2025</span
-              ><span class="author">&nbsp;by Asanka Herath</span></span
-            >
-            <span class="fill"></span>
+    <article
+      class="container"
+      itemscope=""
+      itemtype="https://schema.org/BlogPosting"
+    >
+      <link itemprop="url" href="/series/structure-of-experience/flame/" />
+      <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+      <header>
+        <h1 itemprop="name">Act III: Flame</h1>
+        <nav>
+          <span>
+            <span class="date"
+              >Posted on
+              <time datetime="2025-05-07" itemprop="datePublished"
+                >May 7, 2025</time
+              ></span
+            >&nbsp;by
+            <span class="author" itemprop="author">Asanka Herath</span></span
+          >
+          <span class="fill"></span>
 
-            <span class="tag-link">
-              <a href="/tags/ai/">#AI</a>
-            </span>
+          <span class="tag-link">
+            <a href="/tags/ai/">#AI</a>
+          </span>
+        </nav>
+        <div>
+          <span class="readingtime">
+            Estimated reading time is 8 minutes.
+          </span>
+        </div>
+        <div class="series-container">
+          <div>
+            This post is part of a series:
+            <span class="series-title">Structure Of Experience</span>
           </div>
-          <div class="navlike">
-            <span class="readingtime">
-              Estimated reading time is 8 minutes.
-            </span>
-            <span class="fill"></span>
-          </div>
-          <div class="series-container">
-            <div>
-              This post is part of a series:
-              <span class="series-title">Structure Of Experience</span>
-            </div>
-            <ol>
-              <li>
-                <a href="/series/structure-of-experience/preface/"
-                  ><span class="title">Preface</span></a
-                >
-              </li>
+          <ol>
+            <li>
+              <a href="/series/structure-of-experience/preface/"
+                ><span class="title">Preface</span></a
+              >
+            </li>
 
-              <li>
-                <a href="/series/structure-of-experience/meaning/"
-                  ><span class="title">Act I: Meaning</span></a
-                >
-              </li>
+            <li>
+              <a href="/series/structure-of-experience/meaning/"
+                ><span class="title">Act I: Meaning</span></a
+              >
+            </li>
 
-              <li aria-current="page">
-                <span class="title">Act III: Flame</span>
-                <span class="you-are-here">(You are here)</span>
-              </li>
-            </ol>
-          </div>
-        </header>
+            <li aria-current="page">
+              <span class="title">Act III: Flame</span>
+              <span class="you-are-here">(You are here)</span>
+            </li>
+          </ol>
+        </div>
+      </header>
 
+      <main itemprop="articleBody">
         <p>
           We are prone to anthropomorphizing anything that looks or acts vaguely
           lifelike. All the way back in the 1960s, when people were confronted
@@ -115,8 +132,7 @@
           empathy and understanding (<a
             href="https://en.wikipedia.org/wiki/ELIZA_effect"
             >ELIZA effect</a
-          >)<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"
-            ><sup>1</sup></a
+          >)<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup
           >.
         </p>
         <p>
@@ -167,18 +183,14 @@
           that nothing along the path we are traversing really reaches any
           meaningful self-awareness.
         </p>
-        <figure>
+        <p>
           <img
-            src="/series/structure-of-experience/flame/p-GqcZP4a--800.png"
-            class="noinvert"
-            width="800"
+            src="/series/structure-of-experience/flame/p-GqcZP4a--1999.png"
             alt="The flame of an imaginary candle. Generated using Gemini."
-            height="800"
-          />
-          <figcaption aria-hidden="true">
-            The flame of an imaginary candle. Generated using Gemini.
-          </figcaption>
-        </figure>
+            width="1999"
+            height="1999"
+          />{.noinvert width=800}
+        </p>
         <p>
           Is this picture of a flame hot? There never was an actual flame in
           this instance because this image was generated by AI. The AI may have
@@ -188,22 +200,14 @@
         </p>
         <p>
           What if we start with a more realistic looking model of a flame. Then
-          we can calculate how the flame should behave<a
-            href="#fn2"
-            class="footnote-ref"
-            id="fnref2"
-            role="doc-noteref"
-            ><sup>2</sup></a
+          we can calculate how the flame should behave<sup class="footnote-ref"
+            ><a href="#fn2" id="fnref2">[2]</a></sup
           >
           with time. No matter how detailed this model is, the model does not
           constitute a flame. We can crank up the fidelity and accuracy of our
           calculations as far up as technology allows, but it will still not
-          burst into flame<a
-            href="#fn3"
-            class="footnote-ref"
-            id="fnref3"
-            role="doc-noteref"
-            ><sup>3</sup></a
+          burst into flame<sup class="footnote-ref"
+            ><a href="#fn3" id="fnref3">[3]</a></sup
           >.
         </p>
         <p>
@@ -228,7 +232,7 @@
           consciousness” threshold.
         </p>
         <p>So this post will also end the way Anthropic’s announcement does:</p>
-        <figure>
+        <blockquote>
           <p>
             “There’s no scientific consensus on how to even approach these
             questions or make progress on them. In light of this, we’re
@@ -236,51 +240,37 @@
             possible. We recognize that we’ll need to regularly revise our ideas
             as the field develops.”
           </p>
-          <figcaption>
-            <p>
-              —
-              <a
-                href="https://www.anthropic.com/research/exploring-model-welfare"
-                >Anthropic</a
-              >
-            </p>
-          </figcaption>
-        </figure>
-        <section
-          id="footnotes"
-          class="footnotes footnotes-end-of-document"
-          role="doc-endnotes"
-        >
-          <hr />
-          <ol>
-            <li id="fn1">
+          <p>
+            —
+            <a href="https://www.anthropic.com/research/exploring-model-welfare"
+              >Anthropic</a
+            >
+          </p>
+        </blockquote>
+        <hr class="footnotes-sep" />
+        <section class="footnotes">
+          <ol class="footnotes-list">
+            <li id="fn1" class="footnote-item">
               <p>
                 ELIZA is fascinating in how simple the whole system is while
                 being seemingly complex. You can play around with some modern
                 <a href="https://www.masswerk.at/elizabot/"
                   >web-based simulations like this one</a
                 >. See if you can figure out how it might be calculating its
-                responses.<a
-                  href="#fnref1"
-                  class="footnote-back"
-                  role="doc-backlink"
-                  >↩︎</a
-                >
+                responses. <a href="#fnref1" class="footnote-backref">↩︎</a>
               </p>
             </li>
-            <li id="fn2">
+            <li id="fn2" class="footnote-item">
               <p>
                 This is a very broad area of research. Search for
                 <em>flame dynamics</em>. E.g.
                 <a
                   href="https://www.sciencedirect.com/science/article/abs/pii/S001046551830403X"
                   >Flame simulations with an open-source code - ScienceDirect</a
-                >.<a href="#fnref2" class="footnote-back" role="doc-backlink"
-                  >↩︎</a
-                >
+                >. <a href="#fnref2" class="footnote-backref">↩︎</a>
               </p>
             </li>
-            <li id="fn3">
+            <li id="fn3" class="footnote-item">
               <p>
                 Technically if the equipment heats up enough, then it
                 <em>might</em> actually burst into flame. But that has nothing
@@ -289,196 +279,248 @@
                 <a
                   href="https://web.math.princeton.edu/math_alive/Crypto/Lab2/Factorization.html"
                   >factor a large prime</a
-                >.<a href="#fnref3" class="footnote-back" role="doc-backlink"
-                  >↩︎</a
-                >
+                >. <a href="#fnref3" class="footnote-backref">↩︎</a>
               </p>
             </li>
           </ol>
         </section>
+      </main>
 
-        <footer>
-          <div class="lastmodified">
-            <p>Last modified: May 7, 2025</p>
-          </div>
-        </footer>
-      </article>
+      <footer>
+        <div class="lastmodified">
+          <p>Last modified: <time datetime="2025-05-07">May 7, 2025</time></p>
+        </div>
+      </footer>
+    </article>
 
-      <div class="container">
-        <nav class="navlike">
-          <h2>
-            Previously on
-            <span class="series-title">Structure Of Experience</span>:
-            <a
-              href="/series/structure-of-experience/meaning/"
-              class="prev paginate"
-            >
-              <i class="material-symbols-outlined">chevron_left</i>
-              Act I: Meaning
-            </a>
-          </h2>
+    <div class="container">
+      <nav>
+        <h2>
+          Previously on
+          <span class="series-title">Structure Of Experience</span>:
+          <a
+            href="/series/structure-of-experience/meaning/"
+            class="prev paginate"
+          >
+            <i class="material-symbols-outlined">chevron_left</i>
+            Act I: Meaning
+          </a>
+        </h2>
 
-          <div class="fill">&nbsp;</div>
-        </nav>
-      </div>
-    </main>
+        <div class="fill">&nbsp;</div>
+      </nav>
+    </div>
 
     <footer class="container">
       <h2>More posts from this blog ...</h2>
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/pillars-are-governance-structures/">
-            Pillars And Governance Structures
+          <a itemprop="url" href="/posts/on-wontfixing-bugs/">
+            <span itemprop="name">On WontFixing Bugs</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on September 9, 2023 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/culture/">#Culture</a>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2021-03-02" itemprop="datePublished"
+              >March 2, 2021</time
+            >
           </span>
-
-          <span class="tag-link">
-            <a href="/tags/career/">#Career</a>
-          </span>
-
-          <span class="tag-link">
-            <a href="/tags/organizations/">#Organizations</a>
-          </span>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/happy-new-year-2024-and-year-in-review-2023/">
-            Happy New Year 2024 and Year in Review 2023
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on January 1, 2024 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/culture/">#Culture</a>
-          </span>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/evluating-negatives/">
-            Inclusion/Equity and Evaluating Negatives
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on January 10, 2024 </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/engineering/">#Engineering</a>
           </span>
-
-          <span class="tag-link">
-            <a href="/tags/inclusion-and-equity/">#Inclusion and Equity</a>
-          </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
-                Evaluating properties like inclusion and equity of products
-                can't be done through exhaustive enumeration of product
-                outcomes. Instead we will need to increasingly rely on the
-                controls that we place how we construct the products.
+                Large projects accumulate a large number of issue reports over
+                time. This is normal. Typically for a &quot;successful&quot;
+                project the rate of new issues being reported will exceed the
+                rate of issues being fixed. Hence the growth.
+              </p>
+              <p>
+                But what are they to do about this ever-growing pile of bugs?
               </p>
             </div>
           </div>
           <p class="more">
-            <a href="/posts/evluating-negatives/">Read more …</a>
+            <a href="/posts/on-wontfixing-bugs/">Read more …</a>
           </p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/asians-is-not-a-useful-category/">
-            Asian Is Not a Useful Category
+          <a itemprop="url" href="/posts/inktober-stripes/">
+            <span itemprop="name">Inktober - Stripes</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on July 4, 2024 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2022-01-21" itemprop="datePublished"
+              >January 21, 2022</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/culture/">#Culture</a>
+            <a href="/tags/inktober/">#Inktober</a>
+          </span>
+        </nav>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/code-as-ui/">
+            <span itemprop="name"
+              >Code As UI: The UX of config-as-code and everything-as-code</span
+            >
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2023-07-01" itemprop="datePublished"
+              >July 1, 2023</time
+            >
           </span>
 
-          <span class="tag-link">
-            <a href="/tags/organizations/">#Organizations</a>
-          </span>
+          <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/inclusion-and-equity/">#Inclusion and Equity</a>
+            <a href="/tags/engineering/">#engineering</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
-                Asking if someone is <em>&quot;Asian&quot;</em> in a question of
-                ethnicity or demographics or pretty much any context is bad.
-                There is no reasonable conclusion you can arrive at about a
-                person based on the fact that they are
-                <em>&quot;Asian&quot;</em>.
+                Configuration-as-code has the same usability issues as
+                everything else as code along with the same benefits.
               </p>
             </div>
           </div>
+          <p class="more"><a href="/posts/code-as-ui/">Read more …</a></p>
+        </div>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/why-i-hate-carousels/">
+            <span itemprop="name">Why I Hate Carousels</span>
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2024-01-25" itemprop="datePublished"
+              >January 25, 2024</time
+            >
+          </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/usability/">#Usability</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/engineering/">#Engineering</a>
+          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <ul>
+                <li>Don't use carousels in your UI.</li>
+                <li>
+                  Instead, if you must stick content into little cards, let the
+                  horionztal layout wrap to additional lines.
+                </li>
+                <li>
+                  If you end up with too many horizontal lines of content, then
+                  you definitely have too many items that can be accessed via a
+                  horizontally panning UI. You need a different UI altogether.
+                </li>
+              </ul>
+            </div>
+          </div>
           <p class="more">
-            <a href="/posts/asians-is-not-a-useful-category/">Read more …</a>
+            <a href="/posts/why-i-hate-carousels/">Read more …</a>
           </p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/series/unsung-team-roles/emergence/"
-            ><span class="series-name">Unsung Team Roles</span>: Emergence of
-            Soft Roles
+          <a itemprop="url" href="/series/structure-of-experience/flame/"
+            ><span class="series-name">Structure Of Experience</span>:
+            <span itemprop="name">Act III: Flame</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on August 2, 2025 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2025-05-07" itemprop="datePublished"
+              >May 7, 2025</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/organizations/">#Organizations</a>
+            <a href="/tags/ai/">#AI</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
-                In any team, the roles people play are not as rigid as they
-                seem. Over time, people naturally settle into &quot;soft
-                roles&quot; that are not explicitly defined but are crucial for
-                a team's success. This is a look at the organic, and often
-                unsung, ways that successful teams actually work.
+                The map is not the territory. A picture of a flame is not a
+                flame. A description of a neural network is not a brain. A
+                simulation of thought is not a consciousness.
               </p>
             </div>
           </div>
           <p class="more">
-            <a href="/series/unsung-team-roles/emergence/">Read more …</a>
+            <a href="/series/structure-of-experience/flame/">Read more …</a>
           </p>
         </div>
       </div>
     </footer>
 
+    <!-- Google analytics -->
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"

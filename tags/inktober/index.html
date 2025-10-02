@@ -41,7 +41,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/eC0wygYar8.css" />
+    <link rel="stylesheet" href="/styles/Bzyqb5Ytgc.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -50,10 +50,17 @@
 
   <body>
     <header class="container">
-      <nav class="navlike">
-        <h1><a href="/">Strong Opinions Weekly Held</a></h1>
+      <nav class="top" itemscope="" itemtype="https://schema.org/Blog">
+        <h1 itemprop="name">
+          <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
+        </h1>
         <span class="fill"></span>
-        <h2><a href="/about/me/">About</a></h2>
+
+        <h2><a href="/">Home</a></h2>
+
+        <h2 itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="/about/me/" itemprop="sameAs">About</a>
+        </h2>
         <h2><a href="/tags/">Tags</a></h2>
         <h2>
           <a href="/feed.xml"><img src="/images/rss.svg" /></a>
@@ -66,9 +73,7 @@
         <h1>Posts tagged #Inktober</h1>
       </heading>
 
-      <nav>
-        All tags:
-
+      <nav class="multiline">
         <span class="tag-link">
           <a href="/tags/ai/">#AI</a>
         </span>
@@ -142,52 +147,89 @@
         </span>
       </nav>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/inktober-stripes/"> Inktober - Stripes </a>
+          <a itemprop="url" href="/posts/inktober-stripes/">
+            <span itemprop="name">Inktober - Stripes</span>
+          </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on January 21, 2022 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2022-01-21" itemprop="datePublished"
+              >January 21, 2022</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/inktober/">#Inktober</a>
           </span>
-        </div>
+        </nav>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/inktober-wild/"> Inktober - Wild </a>
+          <a itemprop="url" href="/posts/inktober-wild/">
+            <span itemprop="name">Inktober - Wild</span>
+          </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on January 13, 2022 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2022-01-13" itemprop="datePublished"
+              >January 13, 2022</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/inktober/">#Inktober</a>
           </span>
-        </div>
+        </nav>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/inktober-decay/"> Inktober - Decay </a>
+          <a itemprop="url" href="/posts/inktober-decay/">
+            <span itemprop="name">Inktober - Decay</span>
+          </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on January 13, 2022 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2022-01-13" itemprop="datePublished"
+              >January 13, 2022</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/inktober/">#Inktober</a>
           </span>
-        </div>
+        </nav>
       </div>
     </main>
 
+    <!-- Google analytics -->
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"

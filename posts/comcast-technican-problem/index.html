@@ -41,7 +41,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/eC0wygYar8.css" />
+    <link rel="stylesheet" href="/styles/Bzyqb5Ytgc.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -50,10 +50,17 @@
 
   <body>
     <header class="container">
-      <nav class="navlike">
-        <h1><a href="/">Strong Opinions Weekly Held</a></h1>
+      <nav class="top" itemscope="" itemtype="https://schema.org/Blog">
+        <h1 itemprop="name">
+          <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
+        </h1>
         <span class="fill"></span>
-        <h2><a href="/about/me/">About</a></h2>
+
+        <h2><a href="/">Home</a></h2>
+
+        <h2 itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="/about/me/" itemprop="sameAs">About</a>
+        </h2>
         <h2><a href="/tags/">Tags</a></h2>
         <h2>
           <a href="/feed.xml"><img src="/images/rss.svg" /></a>
@@ -61,37 +68,44 @@
       </nav>
     </header>
 
-    <main>
-      <article class="container">
-        <header>
-          <h1>The Comcast Technician Problem</h1>
-          <div class="navlike">
-            <span>
-              <span class="date">Posted on July 13, 2020</span
-              ><span class="author">&nbsp;by Asanka Herath</span></span
-            >
-            <span class="fill"></span>
+    <article
+      class="container"
+      itemscope=""
+      itemtype="https://schema.org/BlogPosting"
+    >
+      <link itemprop="url" href="/posts/comcast-technican-problem/" />
+      <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+      <header>
+        <h1 itemprop="name">The Comcast Technician Problem</h1>
+        <nav>
+          <span>
+            <span class="date"
+              >Posted on
+              <time datetime="2020-07-13" itemprop="datePublished"
+                >July 13, 2020</time
+              ></span
+            >&nbsp;by
+            <span class="author" itemprop="author">Asanka Herath</span></span
+          >
+          <span class="fill"></span>
 
-            <span class="tag-link">
-              <a href="/tags/math/">#Math</a>
-            </span>
-          </div>
-          <div class="navlike">
-            <span class="readingtime">
-              Estimated reading time is 10 minutes.
-            </span>
-            <span class="fill"></span>
-          </div>
-        </header>
+          <span class="tag-link">
+            <a href="/tags/math/">#Math</a>
+          </span>
+        </nav>
+        <div>
+          <span class="readingtime">
+            Estimated reading time is 16 minutes.
+          </span>
+        </div>
+      </header>
 
-        <h2 id="the-story">The Story</h2>
+      <main itemprop="articleBody">
+        <h2>The Story</h2>
         <p>
-          As is a rite of passage in these parts, I waited for the Comcast<a
-            href="#fn1"
+          As is a rite of passage in these parts, I waited for the Comcast<sup
             class="footnote-ref"
-            id="fnref1"
-            role="doc-noteref"
-            ><sup>1</sup></a
+            ><a href="#fn1" id="fnref1">[1]</a></sup
           >
           technician to arrive during their scheduled appointment window. In
           preparation I had scheduled a day of working from home.
@@ -106,18 +120,14 @@
         </p>
         <p>
           “That’s it,” I thought. That was the right time to call Comcast.
-          That’s what I did. After a long wait<a
-            href="#fn2"
-            class="footnote-ref"
-            id="fnref2"
-            role="doc-noteref"
-            ><sup>2</sup></a
+          That’s what I did. After a long wait<sup class="footnote-ref"
+            ><a href="#fn2" id="fnref2">[2]</a></sup
           >
           the friendly service person on the other end of the line told me that
           the according to the technician nobody answered the door. It took some
           convincing on my part to establish that:
         </p>
-        <ol type="a">
+        <ul>
           <li>I was there the whole time. Nobody rang the doorbell.</li>
           <li>The doorbell works.</li>
           <li>
@@ -127,7 +137,7 @@
           </li>
           <li>My phone didn’t ring, nor does it indicate any missed calls.</li>
           <li>My phone works and has a signal.</li>
-        </ol>
+        </ul>
         <p>
           They were kind enough to ask the technician to return, but noted that
           the appointment window would now be unpredictable due to prior
@@ -145,7 +155,7 @@
           He said that technicians sometimes skip slots when they are running
           behind schedule.
         </p>
-        <h2 id="the-problem">The Problem</h2>
+        <h2>The Problem</h2>
         <p>
           Looking at what happened from the perspective of the technician, the
           logic behind all this becomes a little clearer.
@@ -169,31 +179,21 @@
         </p>
         <p>In the books, the two situations look like this:</p>
         <table>
-          <colgroup>
-            <col style="width: 24%" />
-            <col style="width: 29%" />
-            <col style="width: 22%" />
-            <col style="width: 23%" />
-          </colgroup>
           <thead>
-            <tr class="header">
+            <tr>
               <th>Technician’s Choice</th>
               <th>Successful appointments</th>
               <th>Late appointments</th>
-              <th style="text-align: left">
-                “No-show”s
-                <a
-                  href="#fn3"
-                  class="footnote-ref"
-                  id="fnref3"
-                  role="doc-noteref"
-                  ><sup>3</sup></a
+              <th>
+                &quot;No-show&quot;s
+                <sup class="footnote-ref"
+                  ><a href="#fn3" id="fnref3">[3]</a></sup
                 >
               </th>
             </tr>
           </thead>
           <tbody>
-            <tr class="odd">
+            <tr>
               <td>Honor all slots</td>
               <td>
                 <span class="katex"
@@ -244,7 +244,7 @@
                   ></span
                 >
               </td>
-              <td style="text-align: left">
+              <td>
                 <span class="katex"
                   ><span class="katex-mathml"
                     ><math xmlns="http://www.w3.org/1998/Math/MathML"
@@ -264,7 +264,7 @@
                 >
               </td>
             </tr>
-            <tr class="even">
+            <tr>
               <td>Skip when late</td>
               <td>
                 <span class="katex"
@@ -342,7 +342,7 @@
                   ></span
                 >
               </td>
-              <td style="text-align: left">
+              <td>
                 <span class="katex"
                   ><span class="katex-mathml"
                     ><math xmlns="http://www.w3.org/1998/Math/MathML"
@@ -550,14 +550,10 @@
           being any incentive for the supervisor to penalize this strategy. So
           the technician also gets off scott free.
         </p>
-        <h2 id="why-this-is-relevant">Why This Is Relevant</h2>
+        <h2>Why This Is Relevant</h2>
         <p>
-          It’s easy to harp on Comcast<a
-            href="#fn4"
-            class="footnote-ref"
-            id="fnref4"
-            role="doc-noteref"
-            ><sup>4</sup></a
+          It’s easy to harp on Comcast<sup class="footnote-ref"
+            ><a href="#fn1" id="fnref1:1">[1:1]</a></sup
           >
           and some random lowly technician. But this incentive pattern is
           everywhere. Even at Google and s.
@@ -568,7 +564,7 @@
           <em>the cost they incurred</em> to get there, you are creating a
           Comcast Technician problem for your subordinates.
         </p>
-        <h2 id="but-is-it-bad">But Is It Bad?</h2>
+        <h2>But Is It Bad?</h2>
         <p>
           Dropping tasks instead of unbounded accretion of delay is sometimes a
           better strategy.
@@ -603,238 +599,245 @@
           It just might be that all parties involved are rational actors, and
           there’s really not a great alternative. Sometimes it’s just life.
         </p>
-        <section
-          id="footnotes"
-          class="footnotes footnotes-end-of-document"
-          role="doc-endnotes"
-        >
-          <hr />
-          <ol>
-            <li id="fn1">
+        <hr class="footnotes-sep" />
+        <section class="footnotes">
+          <ol class="footnotes-list">
+            <li id="fn1" class="footnote-item">
               <p>
                 <a
                   href="https://www.theverge.com/2014/8/19/6004131/comcast-the-worst-company-in-america"
                   ><em>The Verge</em>. <em>The worst company in America.</em></a
                 >
-                (Accessed July 13, 2020)<a
-                  href="#fnref1"
-                  class="footnote-back"
-                  role="doc-backlink"
-                  >↩︎</a
-                >
+                (Accessed July 13, 2020)
+                <a href="#fnref1" class="footnote-backref">↩︎</a>
+                <a href="#fnref1:1" class="footnote-backref">↩︎</a>
               </p>
             </li>
-            <li id="fn2">
+            <li id="fn2" class="footnote-item">
               <p>
                 <a
                   href="https://www.urbandictionary.com/define.php?term=Long%20Wait"
                   ><em>Urban Dictionary</em>. <em>Long Wait</em></a
                 >
-                (Accessed July 13, 2020)<a
-                  href="#fnref2"
-                  class="footnote-back"
-                  role="doc-backlink"
-                  >↩︎</a
-                >
+                (Accessed July 13, 2020)
+                <a href="#fnref2" class="footnote-backref">↩︎</a>
               </p>
             </li>
-            <li id="fn3">
+            <li id="fn3" class="footnote-item">
               <p>
                 “No-shows” are just going to be rescheduled. It’s not the end of
-                the world.<a
-                  href="#fnref3"
-                  class="footnote-back"
-                  role="doc-backlink"
-                  >↩︎</a
-                >
-              </p>
-            </li>
-            <li id="fn4">
-              <p>
-                <a
-                  href="https://www.theverge.com/2014/8/19/6004131/comcast-the-worst-company-in-america"
-                  ><em>The Verge</em>. <em>The worst company in America.</em></a
-                >
-                (Accessed July 13, 2020)<a
-                  href="#fnref4"
-                  class="footnote-back"
-                  role="doc-backlink"
-                  >↩︎</a
-                >
+                the world. <a href="#fnref3" class="footnote-backref">↩︎</a>
               </p>
             </li>
           </ol>
         </section>
+      </main>
 
-        <footer>
-          <div class="lastmodified">
-            <p>Last modified: July 13, 2020</p>
-          </div>
-        </footer>
-      </article>
+      <footer>
+        <div class="lastmodified">
+          <p>Last modified: <time datetime="2020-07-13">July 13, 2020</time></p>
+        </div>
+      </footer>
+    </article>
 
-      <div class="container"></div>
-    </main>
+    <div class="container"></div>
 
     <footer class="container">
       <h2>More posts from this blog ...</h2>
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/ansible-cli-sugar/">
-            Easier CLI for ad-hoc Ansible tasks and playbooks
+          <a itemprop="url" href="/posts/inktober-decay/">
+            <span itemprop="name">Inktober - Decay</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on June 1, 2020 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2022-01-13" itemprop="datePublished"
+              >January 13, 2022</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/tools/">#Tools</a>
+            <a href="/tags/inktober/">#Inktober</a>
           </span>
-        </div>
-        <div>
-          <div class="summary-line">
-            <div class="summary">
-              <p>
-                Encode the host and group names into the name of a wrapper
-                script for quick ad-hoc invocation of Ansible tasks and
-                playbooks.
-              </p>
-            </div>
-          </div>
-          <p class="more">
-            <a href="/posts/ansible-cli-sugar/">Read more …</a>
-          </p>
-        </div>
+        </nav>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/mark-goes-up-and-down/">
-            Markdown should be readble without knowing Markdown
+          <a itemprop="url" href="/posts/inktober-wild/">
+            <span itemprop="name">Inktober - Wild</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on April 5, 2022 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2022-01-13" itemprop="datePublished"
+              >January 13, 2022</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/tools/">#Tools</a>
+            <a href="/tags/inktober/">#Inktober</a>
           </span>
-
-          <span class="tag-link">
-            <a href="/tags/engineering/">#Engineering</a>
-          </span>
-        </div>
-        <div>
-          <div class="summary-line">
-            <div class="summary">
-              <p>
-                Markdown documents should be readble without understanding
-                complex mark-up. A growing number of Markdown syntax extensions
-                take the form of HTML or HTML-like tags and boilerplate that
-                hinder readability. Instead we should focus on how some
-                construct should be presented in plain-text for human
-                consumption and then add minimal structure to it for machine
-                consumption.
-              </p>
-            </div>
-          </div>
-          <p class="more">
-            <a href="/posts/mark-goes-up-and-down/">Read more …</a>
-          </p>
-        </div>
+        </nav>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/notes-on-fact-checking/">
-            Notes from Crash Course&#39;s Videos on Fact Checking Information
-            You See On The Internet
+          <a itemprop="url" href="/posts/syntax-highlighting/">
+            <span itemprop="name">On Highlighting Syntax vs. Semantics</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on July 4, 2020 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/curiosity/">#Curiosity</a>
-          </span>
-        </div>
-        <div>
-          <div class="summary-line">
-            <div class="summary">
-              <p>
-                Hank Green's Crash Course YouTube channel has an excellent
-                series about navigating digital information. It's an excellent
-                guide to how internet users could intelligently consume
-                information they see on the internet. These are my (incomplete)
-                notes from the series.
-              </p>
-            </div>
-          </div>
-          <p class="more">
-            <a href="/posts/notes-on-fact-checking/">Read more …</a>
-          </p>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/proof-of-work/"> Proof of Work </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike">
-            Last updated on July 12, 2024 , Originally posted on July 11, 2024
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2022-02-12" itemprop="datePublished"
+              >February 12, 2022</time
+            >
           </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/engineering/">#Engineering</a>
+          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>
+                Takes a look at an alternate form of code highlighting based on
+                core semantics instead of syntactic role.
+              </p>
+            </div>
+          </div>
+          <p class="more">
+            <a href="/posts/syntax-highlighting/">Read more …</a>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a
+            itemprop="url"
+            href="/posts/how-to-solve-a-problem-in-three-steps/"
+          >
+            <span itemprop="name">How to Solve a Problem in Three Steps</span>
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2024-07-08" itemprop="datePublished"
+              >July 8, 2024</time
+            >
+          </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/organizations/">#Organizations</a>
           </span>
 
           <span class="tag-link">
             <a href="/tags/career/">#Career</a>
           </span>
-
-          <span class="tag-link">
-            <a href="/tags/organizations/">#Organizations</a>
-          </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
-                Working with a poorly thought-out, or overengineered technology
-                stack, or an overly bureaucratic organization is
-                <em>also a form of proof-of-work</em>.
+                If you don't know what a refridgerator is nor what an elephant
+                is you are likely to think that opening the door, putting the
+                elephant in, and closing the door is a viable strategy for
+                putting an elephant in the refridgerator.
               </p>
             </div>
           </div>
-          <p class="more"><a href="/posts/proof-of-work/">Read more …</a></p>
+          <p class="more">
+            <a href="/posts/how-to-solve-a-problem-in-three-steps/"
+              >Read more …</a
+            >
+          </p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/symbol-name-types/"> Names for Name Conventions </a>
+          <a itemprop="url" href="/series/unsung-team-roles/incentives/"
+            ><span class="series-name">Unsung Team Roles</span>:
+            <span itemprop="name">Incentives</span>
+          </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on August 24, 2020 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2025-08-12" itemprop="datePublished"
+              >August 12, 2025</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/engineering/">#Engineering</a>
+            <a href="/tags/organizations/">#Organizations</a>
           </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>
+                For a team to succeed, it needs the flexibility to
+                self-organize, which can lead to some members taking on more
+                work. To avoid burnout, these extra contributions must be
+                rewarded. Good managers are key, as they must recognize
+                individual efforts and their team-wide impact. Well-designed
+                incentives foster collaboration and reward those who strengthen
+                the team, while poor incentives cause employees to stick rigidly
+                to their roles and let the team fail.
+              </p>
+            </div>
+          </div>
+          <p class="more">
+            <a href="/series/unsung-team-roles/incentives/">Read more …</a>
+          </p>
         </div>
       </div>
     </footer>
 
+    <!-- Google analytics -->
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"

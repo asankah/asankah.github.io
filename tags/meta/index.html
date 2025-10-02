@@ -41,7 +41,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/eC0wygYar8.css" />
+    <link rel="stylesheet" href="/styles/Bzyqb5Ytgc.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -50,10 +50,17 @@
 
   <body>
     <header class="container">
-      <nav class="navlike">
-        <h1><a href="/">Strong Opinions Weekly Held</a></h1>
+      <nav class="top" itemscope="" itemtype="https://schema.org/Blog">
+        <h1 itemprop="name">
+          <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
+        </h1>
         <span class="fill"></span>
-        <h2><a href="/about/me/">About</a></h2>
+
+        <h2><a href="/">Home</a></h2>
+
+        <h2 itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="/about/me/" itemprop="sameAs">About</a>
+        </h2>
         <h2><a href="/tags/">Tags</a></h2>
         <h2>
           <a href="/feed.xml"><img src="/images/rss.svg" /></a>
@@ -66,9 +73,7 @@
         <h1>Posts tagged #Meta</h1>
       </heading>
 
-      <nav>
-        All tags:
-
+      <nav class="multiline">
         <span class="tag-link">
           <a href="/tags/ai/">#AI</a>
         </span>
@@ -142,24 +147,34 @@
         </span>
       </nav>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/moved-to-eleventy/">
-            I Moved This Blog To Eleventy
+          <a itemprop="url" href="/posts/moved-to-eleventy/">
+            <span itemprop="name">I Moved This Blog To Eleventy</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on December 13, 2024 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2024-12-13" itemprop="datePublished"
+              >December 13, 2024</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/meta/">#Meta</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
                 At long last, this blog &quot;outgrew&quot;<sup
                   class="footnote-ref"
@@ -187,56 +202,92 @@
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/why-strong-opinions-weekly-held/">
-            Why &#39;Strong Opinions Weekly Held&#39;
+          <a itemprop="url" href="/posts/why-strong-opinions-weekly-held/">
+            <span itemprop="name"
+              >Why &#39;Strong Opinions Weekly Held&#39;</span
+            >
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on September 28, 2021 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2021-09-28" itemprop="datePublished"
+              >September 28, 2021</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/meta/">#Meta</a>
           </span>
-        </div>
+        </nav>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/why-strong-opinions-weakly-held/">
-            Why &#39;Strong Opinions Weakly Held&#39;
+          <a itemprop="url" href="/posts/why-strong-opinions-weakly-held/">
+            <span itemprop="name"
+              >Why &#39;Strong Opinions Weakly Held&#39;</span
+            >
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on August 28, 2020 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-08-28" itemprop="datePublished"
+              >August 28, 2020</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/meta/">#Meta</a>
           </span>
-        </div>
+        </nav>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/how-this-blog-works/"> How This Blog Works </a>
+          <a itemprop="url" href="/posts/how-this-blog-works/">
+            <span itemprop="name">How This Blog Works</span>
+          </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on July 27, 2020 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-07-27" itemprop="datePublished"
+              >July 27, 2020</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/meta/">#Meta</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>How I put this site together and why.</p>
             </div>
           </div>
@@ -247,6 +298,7 @@
       </div>
     </main>
 
+    <!-- Google analytics -->
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"

@@ -41,7 +41,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/eC0wygYar8.css" />
+    <link rel="stylesheet" href="/styles/Bzyqb5Ytgc.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -50,10 +50,17 @@
 
   <body>
     <header class="container">
-      <nav class="navlike">
-        <h1><a href="/">Strong Opinions Weekly Held</a></h1>
+      <nav class="top" itemscope="" itemtype="https://schema.org/Blog">
+        <h1 itemprop="name">
+          <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
+        </h1>
         <span class="fill"></span>
-        <h2><a href="/about/me/">About</a></h2>
+
+        <h2><a href="/">Home</a></h2>
+
+        <h2 itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="/about/me/" itemprop="sameAs">About</a>
+        </h2>
         <h2><a href="/tags/">Tags</a></h2>
         <h2>
           <a href="/feed.xml"><img src="/images/rss.svg" /></a>
@@ -61,32 +68,40 @@
       </nav>
     </header>
 
-    <main>
-      <article class="container">
-        <header>
-          <h1>Buffer Bloat</h1>
-          <div class="navlike">
-            <span>
-              <span class="date">Posted on January 3, 2025</span
-              ><span class="author">&nbsp;by Asanka Herath</span></span
-            >
-            <span class="fill"></span>
+    <article
+      class="container"
+      itemscope=""
+      itemtype="https://schema.org/BlogPosting"
+    >
+      <link itemprop="url" href="/posts/buffer-bloat/" />
+      <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+      <header>
+        <h1 itemprop="name">Buffer Bloat</h1>
+        <nav>
+          <span>
+            <span class="date"
+              >Posted on
+              <time datetime="2025-01-03" itemprop="datePublished"
+                >January 3, 2025</time
+              ></span
+            >&nbsp;by
+            <span class="author" itemprop="author">Asanka Herath</span></span
+          >
+          <span class="fill"></span>
 
-            <span class="tag-link">
-              <a href="/tags/engineering/">#Engineering</a>
-            </span>
-          </div>
-          <div class="navlike">
-            <span class="readingtime">
-              Estimated reading time is 17 minutes.
-            </span>
-            <span class="fill"></span>
-          </div>
-        </header>
+          <span class="tag-link">
+            <a href="/tags/engineering/">#Engineering</a>
+          </span>
+        </nav>
+        <div>
+          <span class="readingtime">
+            Estimated reading time is 15 minutes.
+          </span>
+        </div>
+      </header>
 
-        <h2 id="from-here-to-there-on-the-internet">
-          From Here To There On The Internet
-        </h2>
+      <main itemprop="articleBody">
+        <h2>From Here To There On The Internet</h2>
         <aside class="sidenote-1">
           <p>
             This article is an attempt to explain the concept of buffer bloat to
@@ -96,36 +111,32 @@
             <em>delay</em> negative feedback loops.
           </p>
         </aside>
-        <div class="sidenote-host-1">
-          <p>
-            Devices on the internet including your phone, laptop, gaming
-            console, refridgerator, etc. communicate by exchanging data
-            <em>“packets”</em>. They are of course not physical packets. It’s
-            just a useful way to describe a unit of data sent over a wire or
-            some other network connection. A packet could be thought of as, say,
-            a single frame in a video or a small slice of audio, or a couple of
-            paragraphs of text in a webpage. Devices on the internet will take a
-            big chunk of data (e.g. a video clip) and break it down into smaller
-            pieces (e.g. a single frame in the video clip) and then sends each
-            of these pieces along the network. The receiving device puts the
-            pieces back together to reconstruct the original thing (e.g. the
-            video clip again)<a
-              href="#fn1"
-              class="footnote-ref"
-              id="fnref1"
-              role="doc-noteref"
-              ><sup>1</sup></a
-            >.
-          </p>
-        </div>
+        <p>::: sidenote-host-1</p>
+        <p>
+          Devices on the internet including your phone, laptop, gaming console,
+          refridgerator, etc. communicate by exchanging data <em>“packets”</em>.
+          They are of course not physical packets. It’s just a useful way to
+          describe a unit of data sent over a wire or some other network
+          connection. A packet could be thought of as, say, a single frame in a
+          video or a small slice of audio, or a couple of paragraphs of text in
+          a webpage. Devices on the internet will take a big chunk of data (e.g.
+          a video clip) and break it down into smaller pieces (e.g. a single
+          frame in the video clip) and then sends each of these pieces along the
+          network. The receiving device puts the pieces back together to
+          reconstruct the original thing (e.g. the video clip again)<sup
+            class="footnote-ref"
+            ><a href="#fn1" id="fnref1">[1]</a></sup
+          >.
+        </p>
+        <p>:::</p>
         <figure>
           <img
             src="/posts/buffer-bloat/GOizt_Qrgj-512.png"
-            alt="A data packet has some additional information like where it came from and where it is going"
+            alt=""
             width="512"
             height="371"
           />
-          <figcaption aria-hidden="true">
+          <figcaption>
             A data packet has some additional information like where it came
             from and where it is going
           </figcaption>
@@ -148,11 +159,11 @@
         <figure>
           <img
             src="/posts/buffer-bloat/KCPfhwdzbD-876.png"
-            alt="A source and a target device are connected loosely by a bunch of intermediate connections and devices. In this example the we are only looking at devices that our data packets are likely to encounter along the way. Each device (shown as boxes) and each network connection (shown as pipes between boxes) are different. They differ in how much data they can handle and how fast."
+            alt=""
             width="876"
             height="366"
           />
-          <figcaption aria-hidden="true">
+          <figcaption>
             A source and a target device are connected loosely by a bunch of
             intermediate connections and devices. In this example the we are
             only looking at devices that our data packets are likely to
@@ -162,7 +173,7 @@
             fast.
           </figcaption>
         </figure>
-        <h2 id="faster-and-faster">Faster and Faster</h2>
+        <h2>Faster and Faster</h2>
         <p>
           So let’s say a video streaming service wants to send your mobile phone
           a video. First the streaming service breaks up the video into small
@@ -185,11 +196,11 @@
         <figure>
           <img
             src="/posts/buffer-bloat/3ZQ9haPR4u-757.png"
-            alt="Speedometer. Are we going too slow or too fast or maybe just right?"
+            alt=""
             width="757"
             height="425"
           />
-          <figcaption aria-hidden="true">
+          <figcaption>
             Speedometer. Are we going too slow or too fast or maybe just right?
           </figcaption>
         </figure>
@@ -200,7 +211,7 @@
           doesn’t let them watch streaming video.
         </p>
         <p>So how does the device know how much data to send out?</p>
-        <h2 id="flow-control">Flow Control</h2>
+        <h2>Flow Control</h2>
         <p>
           The mechanisms we use to regulate the flow of data is called
           <em>“flow control.”</em> We are going to look at a method based on
@@ -232,11 +243,11 @@
         <figure>
           <img
             src="/posts/buffer-bloat/ONb5UqrGig-512.png"
-            alt="The same data packet as before, but now it has a sequence field."
+            alt=""
             width="512"
             height="371"
           />
-          <figcaption aria-hidden="true">
+          <figcaption>
             The same data packet as before, but now it has a
             <em>sequence</em> field.
           </figcaption>
@@ -251,11 +262,11 @@
         <figure>
           <img
             src="/posts/buffer-bloat/-_P2Ujyh_S-512.png"
-            alt="An example acknowledgement sent back to the sender. In this case the recipient is claiming that packets 4, 6, and 7 were missing. Note that the sender and recipient are switched since this packet is travelling “backwards”."
+            alt=""
             width="512"
             height="371"
           />
-          <figcaption aria-hidden="true">
+          <figcaption>
             An example acknowledgement sent back to the sender. In this case the
             recipient is claiming that packets 4, 6, and 7 were missing. Note
             that the sender and recipient are switched since this packet is
@@ -270,7 +281,7 @@
           We can now figure out the optimal rate of data transfer experimentally
           using some method like this:
         </p>
-        <ol type="1">
+        <ol>
           <li>Send data as fast as possible.</li>
           <li>
             If the recipient claims some packets were missing, then resend those
@@ -281,7 +292,7 @@
             try sending them <strong>faster</strong>.
           </li>
         </ol>
-        <h2 id="stuck-on-the-wire">Stuck On The Wire</h2>
+        <h2>Stuck On The Wire</h2>
         <p>
           Now imagine you sending data out - a rate of 100 packets per second.
           And let’s say it takes one second for a packet to get to the other
@@ -290,10 +301,10 @@
         </p>
         <p>Where are the packets?</p>
         <p>
-          We call this <em>“data on the wire’</em>. Some data is indeed on the
-          wire literally, but that tends to be a tiny amount. Most of the data
-          on the wire is actually at each of the devices along the way either
-          being received, or waiting to be sent.
+          We call this <em>&quot;data on the wire’</em>. Some data is indeed on
+          the wire literally, but that tends to be a tiny amount. Most of the
+          data on the wire is actually at each of the devices along the way
+          either being received, or waiting to be sent.
         </p>
         <p>
           So once we factor in the equipment in the middle, your path to the
@@ -311,11 +322,11 @@
         <figure>
           <img
             src="/posts/buffer-bloat/yl43sOc497-877.png"
-            alt="The source has sent a bunch of packets. For a moment in time all the packets are either being transmitted somewhere or are waiting to be transmitted out of some device on the internet."
+            alt=""
             width="877"
             height="406"
           />
-          <figcaption aria-hidden="true">
+          <figcaption>
             The source has sent a bunch of packets. For a moment in time all the
             packets are either being transmitted somewhere or are waiting to be
             transmitted out of some device on the internet.
@@ -328,8 +339,8 @@
         </p>
         <p>
           It is common for a device to be at the border of a “good” network and
-          a “not”good” network. The goodness here is the amount of data that can
-          be stuffed into it.
+          a &quot;not “good” network. The goodness here is the amount of data
+          that can be stuffed into it.
         </p>
         <p>
           When a burst of data comes along, not much data can be stuffed into
@@ -341,7 +352,7 @@
           data. Given enough time the rate of data transfer will approach the
           throughput of the smallest pipe along the way.
         </p>
-        <h2 id="buffer-bloat">Buffer Bloat</h2>
+        <h2>Buffer Bloat</h2>
         <p>
           Some folks looked at this setup and decided to improve things. There
           are some valid reasons for doing what they did – which is why so many
@@ -361,11 +372,11 @@
         <figure>
           <img
             src="/posts/buffer-bloat/69wNKhMN4Y-877.png"
-            alt="Device B is dropping all excess packets into a buffer."
+            alt=""
             width="877"
             height="448"
           />
-          <figcaption aria-hidden="true">
+          <figcaption>
             Device <code>B</code> is dropping all excess packets into a buffer.
           </figcaption>
         </figure>
@@ -378,11 +389,11 @@
         <figure>
           <img
             src="/posts/buffer-bloat/VdGyYTM64u-877.png"
-            alt="A very next packet – which we are calling Bob enters the network. The buffer contains 100 packets. The rest of the network also has 100 packets queued."
+            alt=""
             width="877"
             height="500"
           />
-          <figcaption aria-hidden="true">
+          <figcaption>
             A very next packet – which we are calling <em>Bob</em> enters the
             network. The buffer contains 100 packets. The rest of the network
             also has 100 packets queued.
@@ -390,18 +401,18 @@
         </figure>
         <p>
           The very next packet – let’s call it <em>Bob</em> – that the sender
-          tosses into the network will end up in the buffer since <code>B</code>
-          is still waiting for some of the first 100 packets to get past
-          <code>C</code>.
+          tosses into the network will end up in the buffer since
+          <code>B</code> is still waiting for some of the first 100 packets to
+          get past <code>C</code>.
         </p>
         <figure>
           <img
             src="/posts/buffer-bloat/QIB_U_3m---877.png"
-            alt="Bob immediately gets tossed into the buffer. It is now the last packet in the buffer."
+            alt=""
             width="877"
             height="448"
           />
-          <figcaption aria-hidden="true">
+          <figcaption>
             Bob immediately gets tossed into the buffer. It is now the last
             packet in the buffer.
           </figcaption>
@@ -418,11 +429,11 @@
         <figure>
           <img
             src="/posts/buffer-bloat/91j8BJiN-4-877.png"
-            alt="Bob is still in the buffer, but it is now the very next packet to get fished out and tossed back into the network."
+            alt=""
             width="877"
             height="448"
           />
-          <figcaption aria-hidden="true">
+          <figcaption>
             Bob is still in the buffer, but it is now the very next packet to
             get fished out and tossed back into the network.
           </figcaption>
@@ -434,11 +445,11 @@
         <figure>
           <img
             src="/posts/buffer-bloat/qCY_j5iY2X-877.png"
-            alt="Hurray! Bob finally makes it to the destination."
+            alt=""
             width="877"
             height="448"
           />
-          <figcaption aria-hidden="true">
+          <figcaption>
             Hurray! Bob finally makes it to the destination.
           </figcaption>
         </figure>
@@ -464,167 +475,253 @@
           attempt at flow control. It delays the discovery of actual throughput.
         </p>
         <p>This phenomenon is called <strong>buffer bloat</strong>.</p>
-        <section
-          id="footnotes"
-          class="footnotes footnotes-end-of-document"
-          role="doc-endnotes"
-        >
-          <hr />
-          <ol>
-            <li id="fn1">
+        <hr class="footnotes-sep" />
+        <section class="footnotes">
+          <ol class="footnotes-list">
+            <li id="fn1" class="footnote-item">
               <p>
                 This is obviously a massive oversimplification. But doesn’t
-                change the thesis presented next.<a
-                  href="#fnref1"
-                  class="footnote-back"
-                  role="doc-backlink"
-                  >↩︎</a
-                >
+                change the thesis presented next.
+                <a href="#fnref1" class="footnote-backref">↩︎</a>
               </p>
             </li>
           </ol>
         </section>
+      </main>
 
-        <footer>
-          <div class="lastmodified">
-            <p>Last modified: January 3, 2025</p>
-          </div>
-        </footer>
-      </article>
+      <footer>
+        <div class="lastmodified">
+          <p>
+            Last modified: <time datetime="2025-01-03">January 3, 2025</time>
+          </p>
+        </div>
+      </footer>
+    </article>
 
-      <div class="container"></div>
-    </main>
+    <div class="container"></div>
 
     <footer class="container">
       <h2>More posts from this blog ...</h2>
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/visualizing-people/"> Visualizing Internet Users </a>
+          <a itemprop="url" href="/posts/ephemeral-fingerprinting/">
+            <span itemprop="name">Ephemeral Fingerprinting On The Web</span>
+          </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on November 21, 2020 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-04-01" itemprop="datePublished"
+              >April 1, 2020</time
+            >
+          </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/privacy/">#Privacy</a>
+          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>
+                Any ephemeral low-entropy web observable property whose changes
+                are concurrently observable by multiple sites can lead to cross
+                site identity joining.
+              </p>
+              <p>
+                This method of identity joining does not require coordination
+                between multiple first parties. A single third party embedded
+                within multiple first parties can also use this method.
+              </p>
+            </div>
+          </div>
+          <p class="more">
+            <a href="/posts/ephemeral-fingerprinting/">Read more …</a>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/syntax-highlighting/">
+            <span itemprop="name">On Highlighting Syntax vs. Semantics</span>
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2022-02-12" itemprop="datePublished"
+              >February 12, 2022</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/engineering/">#Engineering</a>
           </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>
+                Takes a look at an alternate form of code highlighting based on
+                core semantics instead of syntactic role.
+              </p>
+            </div>
+          </div>
+          <p class="more">
+            <a href="/posts/syntax-highlighting/">Read more …</a>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/git-autopush/">
+            <span itemprop="name"
+              >Use Git hooks to automatically push after every commit</span
+            >
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2022-07-05" itemprop="datePublished"
+              >July 5, 2022</time
+            >
+          </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/tools/">#tools</a>
+          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>
+                During before and after various Git operations, Git invokes
+                special hooks that can be used execute custom scripts. This
+                article explains how to use them to automatically push to an
+                upstream repository every time you make a commit to a local
+                repo.
+              </p>
+            </div>
+          </div>
+          <p class="more"><a href="/posts/git-autopush/">Read more …</a></p>
+        </div>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/notes-on-fact-checking/">
+            <span itemprop="name"
+              >Notes from Crash Course&#39;s Videos on Fact Checking Information
+              You See On The Internet
+            </span>
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-07-04" itemprop="datePublished"
+              >July 4, 2020</time
+            >
+          </span>
+
+          <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/curiosity/">#Curiosity</a>
           </span>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/grab-diagram-workflow-re2/">
-            Quickly grab a snapshot of your reMarkable tablet
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on January 6, 2022 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/remarkable-2/">#Remarkable 2</a>
-          </span>
-
-          <span class="tag-link">
-            <a href="/tags/tools/">#Tools</a>
-          </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
-                How to bind a hotkey to grab a snapshot of your reMarkable
-                display and copy it to the clipboard on a Mac.
+                Hank Green's Crash Course YouTube channel has an excellent
+                series about navigating digital information. It's an excellent
+                guide to how internet users could intelligently consume
+                information they see on the internet. These are my (incomplete)
+                notes from the series.
               </p>
             </div>
           </div>
           <p class="more">
-            <a href="/posts/grab-diagram-workflow-re2/">Read more …</a>
+            <a href="/posts/notes-on-fact-checking/">Read more …</a>
           </p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/inktober-stripes/"> Inktober - Stripes </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on January 21, 2022 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/inktober/">#Inktober</a>
-          </span>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/a-good-api/"> A Good API: g9 </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on August 12, 2023 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/engineering/">#Engineering</a>
-          </span>
-        </div>
-        <div>
-          <div class="summary-line">
-            <div class="summary">
-              <p>Adding more knobs doesn't make your API more powerful.</p>
-            </div>
-          </div>
-          <p class="more"><a href="/posts/a-good-api/">Read more …</a></p>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/evluating-negatives/">
-            Inclusion/Equity and Evaluating Negatives
+          <a itemprop="url" href="/posts/fourteen-years/">
+            <span itemprop="name">Fourteen Years</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on January 10, 2024 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2024-12-31" itemprop="datePublished"
+              >December 31, 2024</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/engineering/">#Engineering</a>
+            <a href="/tags/career/">#Career</a>
           </span>
 
           <span class="tag-link">
-            <a href="/tags/inclusion-and-equity/">#Inclusion and Equity</a>
+            <a href="/tags/culture/">#Culture</a>
           </span>
-        </div>
+
+          <span class="tag-link">
+            <a href="/tags/organizations/">#Organizations</a>
+          </span>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
-              <p>
-                Evaluating properties like inclusion and equity of products
-                can't be done through exhaustive enumeration of product
-                outcomes. Instead we will need to increasingly rely on the
-                controls that we place how we construct the products.
-              </p>
+            <div class="summary" itemprop="abstract">
+              <p>More reflections from foureteen years at Google.</p>
             </div>
           </div>
-          <p class="more">
-            <a href="/posts/evluating-negatives/">Read more …</a>
-          </p>
+          <p class="more"><a href="/posts/fourteen-years/">Read more …</a></p>
         </div>
       </div>
     </footer>
 
+    <!-- Google analytics -->
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"

@@ -41,7 +41,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/eC0wygYar8.css" />
+    <link rel="stylesheet" href="/styles/Bzyqb5Ytgc.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -50,10 +50,17 @@
 
   <body>
     <header class="container">
-      <nav class="navlike">
-        <h1><a href="/">Strong Opinions Weekly Held</a></h1>
+      <nav class="top" itemscope="" itemtype="https://schema.org/Blog">
+        <h1 itemprop="name">
+          <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
+        </h1>
         <span class="fill"></span>
-        <h2><a href="/about/me/">About</a></h2>
+
+        <h2><a href="/">Home</a></h2>
+
+        <h2 itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="/about/me/" itemprop="sameAs">About</a>
+        </h2>
         <h2><a href="/tags/">Tags</a></h2>
         <h2>
           <a href="/feed.xml"><img src="/images/rss.svg" /></a>
@@ -61,37 +68,47 @@
       </nav>
     </header>
 
-    <main>
-      <article class="container">
-        <header>
-          <h1>Asian Is Not a Useful Category</h1>
-          <div class="navlike">
-            <span>
-              <span class="date">Posted on July 4, 2024</span
-              ><span class="author">&nbsp;by Asanka Herath</span></span
-            >
-            <span class="fill"></span>
+    <article
+      class="container"
+      itemscope=""
+      itemtype="https://schema.org/BlogPosting"
+    >
+      <link itemprop="url" href="/posts/asians-is-not-a-useful-category/" />
+      <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+      <header>
+        <h1 itemprop="name">Asian Is Not a Useful Category</h1>
+        <nav>
+          <span>
+            <span class="date"
+              >Posted on
+              <time datetime="2024-07-04" itemprop="datePublished"
+                >July 4, 2024</time
+              ></span
+            >&nbsp;by
+            <span class="author" itemprop="author">Asanka Herath</span></span
+          >
+          <span class="fill"></span>
 
-            <span class="tag-link">
-              <a href="/tags/culture/">#Culture</a>
-            </span>
+          <span class="tag-link">
+            <a href="/tags/culture/">#Culture</a>
+          </span>
 
-            <span class="tag-link">
-              <a href="/tags/organizations/">#Organizations</a>
-            </span>
+          <span class="tag-link">
+            <a href="/tags/organizations/">#Organizations</a>
+          </span>
 
-            <span class="tag-link">
-              <a href="/tags/inclusion-and-equity/">#Inclusion and Equity</a>
-            </span>
-          </div>
-          <div class="navlike">
-            <span class="readingtime">
-              Estimated reading time is 6 minutes.
-            </span>
-            <span class="fill"></span>
-          </div>
-        </header>
+          <span class="tag-link">
+            <a href="/tags/inclusion-and-equity/">#Inclusion and Equity</a>
+          </span>
+        </nav>
+        <div>
+          <span class="readingtime">
+            Estimated reading time is 5 minutes.
+          </span>
+        </div>
+      </header>
 
+      <main itemprop="articleBody">
         <div class="preface">
           <p>
             Asking if someone is <em>“Asian”</em> in a question of ethnicity or
@@ -110,11 +127,11 @@
         <figure>
           <img
             src="/posts/asians-is-not-a-useful-category/z1tVdZue7c-512.png"
+            alt=""
             width="512"
-            alt="Map of Asia – Cacahuate, amendments by Peter Fitzgerald, Globe-trotter, Joelf, and Texugo, CC BY-SA 4.0, via Wikimedia Commons"
             height="419"
           />
-          <figcaption aria-hidden="true">
+          <figcaption>
             Map of Asia – Cacahuate, amendments by Peter Fitzgerald,
             Globe-trotter, Joelf, and Texugo,
             <a href="https://creativecommons.org/licenses/by-sa/4.0"
@@ -130,19 +147,17 @@
           >
           and includes contested territories):
         </p>
-        <div class="smaller">
-          <p>
-            Abkhazia, Afghanistan, Armenia, Azerbaijan, Bahrain, Bangladesh,
-            Bhutan, Brunei, Cambodia, China, Cyprus, East Timor, Egypt, Georgia
-            , Hong Kong, India, Indonesia, Iran, Iraq, Israel, Japan, Jordan,
-            Kazakhstan, Kuwait, Kyrgyzstan, Laos, Lebanon, Macau, Malaysia,
-            Maldives, Mongolia, Myanmar, Nepal, North Korea, Northern Cyprus,
-            Oman, Pakistan, State of Palestine, Philippines, Qatar, Russia,
-            Saudi Arabia, Singapore, South Korea, South Ossetia, Sri Lanka,
-            Syria, Taiwan, Tajikistan, Thailand, Turkey, Turkmenistan, United
-            Arab Emirates, Uzbekistan, Vietnam, and Yemen.
-          </p>
-        </div>
+        <p class="smaller">
+          Abkhazia, Afghanistan, Armenia, Azerbaijan, Bahrain, Bangladesh,
+          Bhutan, Brunei, Cambodia, China, Cyprus, East Timor, Egypt, Georgia ,
+          Hong Kong, India, Indonesia, Iran, Iraq, Israel, Japan, Jordan,
+          Kazakhstan, Kuwait, Kyrgyzstan, Laos, Lebanon, Macau, Malaysia,
+          Maldives, Mongolia, Myanmar, Nepal, North Korea, Northern Cyprus,
+          Oman, Pakistan, State of Palestine, Philippines, Qatar, Russia, Saudi
+          Arabia, Singapore, South Korea, South Ossetia, Sri Lanka, Syria,
+          Taiwan, Tajikistan, Thailand, Turkey, Turkmenistan, United Arab
+          Emirates, Uzbekistan, Vietnam, and Yemen.
+        </p>
         <p>
           So if you pictured a room with a bunch of Palastenian, Chinese,
           Philipino, Russian, Indian, and Japanese people you would be kind-of
@@ -161,8 +176,8 @@
           </p>
         </div>
         <p>Please stop asking people if they are Asian.</p>
-        <h2 id="so-what-should-i-ask-instead">So what should I ask instead?</h2>
-        <ol type="1">
+        <h2>So what should I ask instead?</h2>
+        <ol>
           <li>
             <p>
               <strong>Don’t ask in the first place</strong> – if not absolutely
@@ -196,12 +211,9 @@
                 speak or what religions they might follow.
               </li>
               <li>
-                For geography, at worst ask for a region within Asia<a
-                  href="#fn1"
+                For geography, at worst ask for a region within Asia<sup
                   class="footnote-ref"
-                  id="fnref1"
-                  role="doc-noteref"
-                  ><sup>1</sup></a
+                  ><a href="#fn1" id="fnref1">[1]</a></sup
                 >
                 instead of just Asia. And for that matter, the same goes for
                 other continents.
@@ -217,207 +229,226 @@
             </p>
           </li>
         </ol>
-        <section
-          id="footnotes"
-          class="footnotes footnotes-end-of-document"
-          role="doc-endnotes"
-        >
-          <hr />
-          <ol>
-            <li id="fn1">
+        <hr class="footnotes-sep" />
+        <section class="footnotes">
+          <ol class="footnotes-list">
+            <li id="fn1" class="footnote-item">
               <p>
                 See the UN’s
                 <a href="https://unstats.un.org/unsd/methodology/m49/"
                   >Standard country or area codes for statistical use (M49)</a
                 >
                 for a list of geographic regions and various groupings of
-                countries.<a
-                  href="#fnref1"
-                  class="footnote-back"
-                  role="doc-backlink"
-                  >↩︎</a
-                >
+                countries. <a href="#fnref1" class="footnote-backref">↩︎</a>
               </p>
             </li>
           </ol>
         </section>
+      </main>
 
-        <footer>
-          <div class="lastmodified">
-            <p>Last modified: July 4, 2024</p>
-          </div>
-        </footer>
-      </article>
+      <footer>
+        <div class="lastmodified">
+          <p>Last modified: <time datetime="2024-07-04">July 4, 2024</time></p>
+        </div>
+      </footer>
+    </article>
 
-      <div class="container"></div>
-    </main>
+    <div class="container"></div>
 
     <footer class="container">
       <h2>More posts from this blog ...</h2>
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/ephemeral-fingerprinting/">
-            Ephemeral Fingerprinting On The Web
+          <a itemprop="url" href="/posts/poisson-distribution/">
+            <span itemprop="name">Deriving the Poisson Distribution</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on April 1, 2020 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/privacy/">#Privacy</a>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-12-11" itemprop="datePublished"
+              >December 11, 2020</time
+            >
           </span>
-        </div>
-        <div>
-          <div class="summary-line">
-            <div class="summary">
-              <p>
-                Any ephemeral low-entropy web observable property whose changes
-                are concurrently observable by multiple sites can lead to cross
-                site identity joining.
-              </p>
-              <p>
-                This method of identity joining does not require coordination
-                between multiple first parties. A single third party embedded
-                within multiple first parties can also use this method.
-              </p>
-            </div>
-          </div>
-          <p class="more">
-            <a href="/posts/ephemeral-fingerprinting/">Read more …</a>
-          </p>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/poisson-distribution/">
-            Deriving the Poisson Distribution
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on December 11, 2020 </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/math/">#Math</a>
           </span>
-        </div>
+        </nav>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/remarkable-first-impressions/">
-            Note-taking on a reMarkable 2
+          <a itemprop="url" href="/posts/shannon-paper/">
+            <span itemprop="name">Shannon Paper</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on December 30, 2021 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2021-03-26" itemprop="datePublished"
+              >March 26, 2021</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/remarkable-2/">#Remarkable 2</a>
+            <a href="/tags/math/">#Math</a>
           </span>
-
-          <span class="tag-link">
-            <a href="/tags/reviews/">#Reviews</a>
-          </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
-              <p>Sentiments after using the reMarkable 2 tablet for a month.</p>
+            <div class="summary" itemprop="abstract">
+              <p>
+                Claude Shannon's
+                <em>A mathematical theory of communication</em> is an oft cited
+                classic in information theory. Let's dive in and try to tease
+                apart the &quot;why&quot;s that are often overlooked when people
+                build on top of the introduced theory. They are definitely
+                things that I didn't consider to be obvious without the benefit
+                of reading the paper.
+              </p>
             </div>
           </div>
-          <p class="more">
-            <a href="/posts/remarkable-first-impressions/">Read more …</a>
-          </p>
+          <p class="more"><a href="/posts/shannon-paper/">Read more …</a></p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/secret-life-of-systems/"> Secret Life of Systems </a>
+          <a itemprop="url" href="/posts/fart-limit/">
+            <span itemprop="name">Fart Limit</span>
+          </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on March 23, 2024 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2021-06-14" itemprop="datePublished"
+              >June 14, 2021</time
+            >
+          </span>
 
           <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/engineering/">#Engineering</a>
-          </span>
 
           <span class="tag-link">
             <a href="/tags/curiosity/">#Curiosity</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
-                Lifecycles of software systems that solve real world problems
-                can be broken down into distinct phases based on where it is
-                with respect to the problem and the eventual solution.
-              </p>
-              <p>
-                This article presents a taxonomy of these phases that should
-                help you understand how each part of the lifecycle fits
-                together.
+                Can a fart be fatal? Let's see what science and OSHA have to
+                say.
               </p>
             </div>
           </div>
-          <p class="more">
-            <a href="/posts/secret-life-of-systems/">Read more …</a>
-          </p>
+          <p class="more"><a href="/posts/fart-limit/">Read more …</a></p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/asians-is-not-a-useful-category/">
-            Asian Is Not a Useful Category
+          <a itemprop="url" href="/posts/inktober-stripes/">
+            <span itemprop="name">Inktober - Stripes</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on July 4, 2024 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2022-01-21" itemprop="datePublished"
+              >January 21, 2022</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/culture/">#Culture</a>
+            <a href="/tags/inktober/">#Inktober</a>
+          </span>
+        </nav>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/moved-to-eleventy/">
+            <span itemprop="name">I Moved This Blog To Eleventy</span>
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2024-12-13" itemprop="datePublished"
+              >December 13, 2024</time
+            >
           </span>
 
-          <span class="tag-link">
-            <a href="/tags/organizations/">#Organizations</a>
-          </span>
+          <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/inclusion-and-equity/">#Inclusion and Equity</a>
+            <a href="/tags/meta/">#Meta</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
-                Asking if someone is <em>&quot;Asian&quot;</em> in a question of
-                ethnicity or demographics or pretty much any context is bad.
-                There is no reasonable conclusion you can arrive at about a
-                person based on the fact that they are
-                <em>&quot;Asian&quot;</em>.
+                At long last, this blog &quot;outgrew&quot;<sup
+                  class="footnote-ref"
+                  ><a href="#fn1" id="fnref1">[1]</a></sup
+                >
+                Hugo and I had to go looking for a new static site generator.
               </p>
+              <hr class="footnotes-sep" />
+              <section class="footnotes">
+                <ol class="footnotes-list">
+                  <li id="fn1" class="footnote-item">
+                    <p>
+                      Of course, by outgrew I mean I got bored and wanted to
+                      play with a new static site generator.
+                      <a href="#fnref1" class="footnote-backref">↩︎</a>
+                    </p>
+                  </li>
+                </ol>
+              </section>
             </div>
           </div>
           <p class="more">
-            <a href="/posts/asians-is-not-a-useful-category/">Read more …</a>
+            <a href="/posts/moved-to-eleventy/">Read more …</a>
           </p>
         </div>
       </div>
     </footer>
 
+    <!-- Google analytics -->
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"

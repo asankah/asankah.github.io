@@ -44,7 +44,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/eC0wygYar8.css" />
+    <link rel="stylesheet" href="/styles/Bzyqb5Ytgc.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -53,10 +53,17 @@
 
   <body>
     <header class="container">
-      <nav class="navlike">
-        <h1><a href="/">Strong Opinions Weekly Held</a></h1>
+      <nav class="top" itemscope="" itemtype="https://schema.org/Blog">
+        <h1 itemprop="name">
+          <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
+        </h1>
         <span class="fill"></span>
-        <h2><a href="/about/me/">About</a></h2>
+
+        <h2><a href="/">Home</a></h2>
+
+        <h2 itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="/about/me/" itemprop="sameAs">About</a>
+        </h2>
         <h2><a href="/tags/">Tags</a></h2>
         <h2>
           <a href="/feed.xml"><img src="/images/rss.svg" /></a>
@@ -64,36 +71,49 @@
       </nav>
     </header>
 
-    <main>
-      <article class="container">
-        <header>
-          <h1>
-            Things You Can Do With Neovim and Vscode That You Can&#39;t Do With
-            Neovim Alone
-          </h1>
-          <div class="navlike">
-            <span>
-              <span class="date">Posted on September 19, 2020</span
-              ><span class="author">&nbsp;by Asanka Herath</span></span
-            >
-            <span class="fill"></span>
+    <article
+      class="container"
+      itemscope=""
+      itemtype="https://schema.org/BlogPosting"
+    >
+      <link
+        itemprop="url"
+        href="/posts/things-you-can-do-with-nvim-and-vscode/"
+      />
+      <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+      <header>
+        <h1 itemprop="name">
+          Things You Can Do With Neovim and Vscode That You Can&#39;t Do With
+          Neovim Alone
+        </h1>
+        <nav>
+          <span>
+            <span class="date"
+              >Posted on
+              <time datetime="2020-09-19" itemprop="datePublished"
+                >September 19, 2020</time
+              ></span
+            >&nbsp;by
+            <span class="author" itemprop="author">Asanka Herath</span></span
+          >
+          <span class="fill"></span>
 
-            <span class="tag-link">
-              <a href="/tags/tools/">#Tools</a>
-            </span>
+          <span class="tag-link">
+            <a href="/tags/tools/">#Tools</a>
+          </span>
 
-            <span class="tag-link">
-              <a href="/tags/vim/">#Vim</a>
-            </span>
-          </div>
-          <div class="navlike">
-            <span class="readingtime">
-              Estimated reading time is 11 minutes.
-            </span>
-            <span class="fill"></span>
-          </div>
-        </header>
+          <span class="tag-link">
+            <a href="/tags/vim/">#Vim</a>
+          </span>
+        </nav>
+        <div>
+          <span class="readingtime">
+            Estimated reading time is 11 minutes.
+          </span>
+        </div>
+      </header>
 
+      <main itemprop="articleBody">
         <p>
           This is the third time I’ve tried in earnest to switch to VSCode from
           Vim (or Neovim in my case) for reasons not all of which are relevant
@@ -110,13 +130,13 @@
           this extension alone warranted a new attempt at switching to VSCode.
           So far it’s going great.
         </p>
-        <h2 id="how-vscode-neovim-works">How VSCode Neovim Works</h2>
+        <h2>How VSCode Neovim Works</h2>
         <p>
           Here’s the gist of how this extension works. Feel free to skip to the
           good stuff below but this section is good background information for
           understanding <em>why</em> it works the way it does.
         </p>
-        <ol type="1">
+        <ol>
           <li>
             <p><strong>Invokes an embedded Neovim instance.</strong></p>
             <p>
@@ -146,7 +166,7 @@
           So far this is pretty standard fare for how Neovim would be embedded
           for a custom UI. But things get a bit interesting from the next step.
         </p>
-        <ol start="2" type="1">
+        <ol start="2">
           <li>
             <p>
               <strong
@@ -156,12 +176,9 @@
             </p>
             <p>
               The buffer thus created is a plain text buffer without any bells
-              or whistles. Contents of the buffer comes from VSCode<a
-                href="#fn1"
+              or whistles. Contents of the buffer comes from VSCode<sup
                 class="footnote-ref"
-                id="fnref1"
-                role="doc-noteref"
-                ><sup>1</sup></a
+                ><a href="#fn1" id="fnref1">[1]</a></sup
               >. VSCodeNeovim synchronizes the content between the Neovim buffer
               and the VSCode editor. Thus the relationship between the contents
               and the corresponding file on disk is mediated through VSCode.
@@ -191,9 +208,7 @@
           The extension is a pretty impressive piece of work which is well worth
           a gander. Now on to the good stuff.
         </p>
-        <h2 id="responsive-neovim-experience-over-a-laggy-ssh-connection">
-          Responsive Neovim Experience Over A laggy SSH Connection
-        </h2>
+        <h2>Responsive Neovim Experience Over A laggy SSH Connection</h2>
         <p>
           This gets to the reason why I’m trying to move to VSCode in the first
           place. I work on a project consisting of thousands of C++ source
@@ -219,11 +234,11 @@
         <figure>
           <img
             src="/posts/things-you-can-do-with-nvim-and-vscode/4qsgTpY4ng-1266.png"
-            alt="Architecture of VSCode + Remote SSH + VSCodeNeovim + Neovim"
+            alt=""
             width="1266"
             height="352"
           />
-          <figcaption aria-hidden="true">
+          <figcaption>
             Architecture of VSCode + Remote SSH + VSCodeNeovim + Neovim
           </figcaption>
         </figure>
@@ -262,9 +277,7 @@
           responsive. Completions via <code>clangd</code> is still laggy as one
           might expect. But that’s something I’m willing to live with.
         </p>
-        <h2 id="proportional-fonts-with-neovim">
-          Proportional Fonts With Neovim
-        </h2>
+        <h2>Proportional Fonts With Neovim</h2>
         <p>
           Okay, so why would anyone actually want this? Turns out
           <a
@@ -282,11 +295,11 @@
         <figure>
           <img
             src="/posts/things-you-can-do-with-nvim-and-vscode/nwNiA_mUF4-741.png"
-            alt="Screenshot of VSCode editing Markdown in proportional font"
+            alt=""
             width="741"
             height="221"
           />
-          <figcaption aria-hidden="true">
+          <figcaption>
             Screenshot of VSCode editing Markdown in proportional font
           </figcaption>
         </figure>
@@ -297,9 +310,7 @@
           that the cursor jumps horizontally when moving the cursor up or down
           since the columns are no longer neatly aligned.
         </p>
-        <h3 id="monospace-code-with-proportional-comments">
-          Monospace Code With Proportional Comments?
-        </h3>
+        <h3>Monospace Code With Proportional Comments?</h3>
         <p>
           What I really want isn’t proportional fonts everywhere. Rather I only
           want proportional fonts for prose. In code, this would take the form
@@ -312,16 +323,12 @@
           while the rest is in monospace. Also in the case of Markdown, I’d be
           able to make everything proportional except for inline code and fenced
           code blocks. Alas we are not quite there yet. Several feature requests
-          already exist<a
-            href="#fn2"
-            class="footnote-ref"
-            id="fnref2"
-            role="doc-noteref"
-            ><sup>2</sup></a
+          already exist<sup class="footnote-ref"
+            ><a href="#fn2" id="fnref2">[2]</a></sup
           >, but hasn’t seen much activity.
         </p>
-        <h2 id="takeaways">Takeaways</h2>
-        <ol type="1">
+        <h2>Takeaways</h2>
+        <ol>
           <li>
             VSCodeNeovim is a functional replacement for the avid Neovim or
             perhaps Vim user who wants it both ways. Lots of caveats exist
@@ -338,27 +345,19 @@
             awesomeness.
           </li>
         </ol>
-        <section
-          id="footnotes"
-          class="footnotes footnotes-end-of-document"
-          role="doc-endnotes"
-        >
-          <hr />
-          <ol>
-            <li id="fn1">
+        <hr class="footnotes-sep" />
+        <section class="footnotes">
+          <ol class="footnotes-list">
+            <li id="fn1" class="footnote-item">
               <p>
                 Not quite the whole story because it’s possible a buffer be
                 created inside the Neovim instance and have it be mirrored in a
                 VSCode editor. But that’s probably not what you’ll be using on a
-                regular basis.<a
-                  href="#fnref1"
-                  class="footnote-back"
-                  role="doc-backlink"
-                  >↩︎</a
-                >
+                regular basis.
+                <a href="#fnref1" class="footnote-backref">↩︎</a>
               </p>
             </li>
-            <li id="fn2">
+            <li id="fn2" class="footnote-item">
               <p>
                 A quick search in the VSCode repository
                 <a
@@ -372,38 +371,173 @@
                   >this curious experiment</a
                 >
                 which patches in a different font for italics so that you can
-                use the existing <code>fontStyle: "italic"</code> option in
-                <code>tokenColorCustomizations</code> to switch fonts.<a
-                  href="#fnref2"
-                  class="footnote-back"
-                  role="doc-backlink"
-                  >↩︎</a
-                >
+                use the existing
+                <code>fontStyle: &quot;italic&quot;</code> option in
+                <code>tokenColorCustomizations</code> to switch fonts.
+                <a href="#fnref2" class="footnote-backref">↩︎</a>
               </p>
             </li>
           </ol>
         </section>
+      </main>
 
-        <footer>
-          <div class="lastmodified">
-            <p>Last modified: September 19, 2020</p>
-          </div>
-        </footer>
-      </article>
+      <footer>
+        <div class="lastmodified">
+          <p>
+            Last modified: <time datetime="2020-09-19">September 19, 2020</time>
+          </p>
+        </div>
+      </footer>
+    </article>
 
-      <div class="container"></div>
-    </main>
+    <div class="container"></div>
 
     <footer class="container">
       <h2>More posts from this blog ...</h2>
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/the-loss-of-a-virtuous-culture/">
-            The Loss of a Virtuous Culture
+          <a itemprop="url" href="/posts/visualizing-people/">
+            <span itemprop="name">Visualizing Internet Users</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on October 28, 2022 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-11-21" itemprop="datePublished"
+              >November 21, 2020</time
+            >
+          </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/engineering/">#Engineering</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/curiosity/">#Curiosity</a>
+          </span>
+        </nav>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/notes-on-fact-checking/">
+            <span itemprop="name"
+              >Notes from Crash Course&#39;s Videos on Fact Checking Information
+              You See On The Internet
+            </span>
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-07-04" itemprop="datePublished"
+              >July 4, 2020</time
+            >
+          </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/curiosity/">#Curiosity</a>
+          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>
+                Hank Green's Crash Course YouTube channel has an excellent
+                series about navigating digital information. It's an excellent
+                guide to how internet users could intelligently consume
+                information they see on the internet. These are my (incomplete)
+                notes from the series.
+              </p>
+            </div>
+          </div>
+          <p class="more">
+            <a href="/posts/notes-on-fact-checking/">Read more …</a>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/use-drop-not-edit/">
+            <span itemprop="name"
+              >Vim: Use Drop Not Edit, SBuffer Not Buffer</span
+            >
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-07-07" itemprop="datePublished"
+              >July 7, 2020</time
+            >
+          </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/tools/">#Tools</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/vim/">#Vim</a>
+          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>
+                Use the <code>:drop</code> command instead of
+                <code>:edit</code> in Vim. It will reuse an existing window
+                instead of creating a new one.
+              </p>
+            </div>
+          </div>
+          <p class="more">
+            <a href="/posts/use-drop-not-edit/">Read more …</a>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/intrinsic-motivation-an-anecdote/">
+            <span itemprop="name"
+              >Intrinsic and Extrinsic Motivation: An anecdote</span
+            >
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2025-03-22" itemprop="datePublished"
+              >March 22, 2025</time
+            >
+          </span>
 
           <span class="fill"></span>
 
@@ -412,149 +546,68 @@
           </span>
 
           <span class="tag-link">
-            <a href="/tags/engineering/">#Engineering</a>
-          </span>
-        </div>
-        <div>
-          <div class="summary-line">
-            <div class="summary">
-              <p>Luck isn't enough. You need a culture of virtue.</p>
-            </div>
-          </div>
-          <p class="more">
-            <a href="/posts/the-loss-of-a-virtuous-culture/">Read more …</a>
-          </p>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/code-as-ui/">
-            Code As UI: The UX of config-as-code and everything-as-code
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on July 1, 2023 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/engineering/">#engineering</a>
-          </span>
-        </div>
-        <div>
-          <div class="summary-line">
-            <div class="summary">
-              <p>
-                Configuration-as-code has the same usability issues as
-                everything else as code along with the same benefits.
-              </p>
-            </div>
-          </div>
-          <p class="more"><a href="/posts/code-as-ui/">Read more …</a></p>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/evluating-negatives/">
-            Inclusion/Equity and Evaluating Negatives
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on January 10, 2024 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/engineering/">#Engineering</a>
+            <a href="/tags/career/">#Career</a>
           </span>
 
           <span class="tag-link">
             <a href="/tags/inclusion-and-equity/">#Inclusion and Equity</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
-                Evaluating properties like inclusion and equity of products
-                can't be done through exhaustive enumeration of product
-                outcomes. Instead we will need to increasingly rely on the
-                controls that we place how we construct the products.
+                Intrinsic motivation is always better than extrinsic motivation.
+                But not as good as it is when one is motivated both
+                intrinsically and extrinsically.
               </p>
             </div>
           </div>
           <p class="more">
-            <a href="/posts/evluating-negatives/">Read more …</a>
+            <a href="/posts/intrinsic-motivation-an-anecdote/">Read more …</a>
           </p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/catchment/">
-            Draining Our Intellectual Catchment Areas
+          <a
+            itemprop="url"
+            href="/posts/things-you-can-do-with-nvim-and-vscode/"
+          >
+            <span itemprop="name"
+              >Things You Can Do With Neovim and Vscode That You Can&#39;t Do
+              With Neovim Alone</span
+            >
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on July 4, 2025 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-09-19" itemprop="datePublished"
+              >September 19, 2020</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/culture/">#Culture</a>
+            <a href="/tags/tools/">#Tools</a>
           </span>
-        </div>
-        <div>
-          <div class="summary-line">
-            <div class="summary">
-              <p>
-                Intellectual catchment areas are collaborative ecosystems
-                between universities and industries that attract talent and
-                ideas. The United States became a hub of intellectual capital
-                after World War II, thanks to a combination of industrial growth
-                around universities, significant research funding, and favorable
-                immigration policies.
-              </p>
-              <p>
-                The current political climate is jeopardizing these ecosystems.
-                Continued threats against universities and immigration could
-                undo a century of progress, ultimately depleting the nation's
-                source of creativity and innovation.
-              </p>
-            </div>
-          </div>
-          <p class="more"><a href="/posts/catchment/">Read more …</a></p>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/how-this-blog-works/"> How This Blog Works </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on July 27, 2020 </span>
-
-          <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/meta/">#Meta</a>
+            <a href="/tags/vim/">#Vim</a>
           </span>
-        </div>
-        <div>
-          <div class="summary-line">
-            <div class="summary">
-              <p>How I put this site together and why.</p>
-            </div>
-          </div>
-          <p class="more">
-            <a href="/posts/how-this-blog-works/">Read more …</a>
-          </p>
-        </div>
+        </nav>
       </div>
     </footer>
 
+    <!-- Google analytics -->
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"

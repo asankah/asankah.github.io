@@ -41,7 +41,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/eC0wygYar8.css" />
+    <link rel="stylesheet" href="/styles/Bzyqb5Ytgc.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -50,10 +50,17 @@
 
   <body>
     <header class="container">
-      <nav class="navlike">
-        <h1><a href="/">Strong Opinions Weekly Held</a></h1>
+      <nav class="top" itemscope="" itemtype="https://schema.org/Blog">
+        <h1 itemprop="name">
+          <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
+        </h1>
         <span class="fill"></span>
-        <h2><a href="/about/me/">About</a></h2>
+
+        <h2><a href="/">Home</a></h2>
+
+        <h2 itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="/about/me/" itemprop="sameAs">About</a>
+        </h2>
         <h2><a href="/tags/">Tags</a></h2>
         <h2>
           <a href="/feed.xml"><img src="/images/rss.svg" /></a>
@@ -61,29 +68,39 @@
       </nav>
     </header>
 
-    <main>
-      <article class="container">
-        <header>
-          <h1>Ephemeral Fingerprinting On The Web</h1>
-          <div class="navlike">
-            <span>
-              <span class="date">Posted on April 1, 2020</span
-              ><span class="author">&nbsp;by Asanka Herath</span></span
-            >
-            <span class="fill"></span>
+    <article
+      class="container"
+      itemscope=""
+      itemtype="https://schema.org/BlogPosting"
+    >
+      <link itemprop="url" href="/posts/ephemeral-fingerprinting/" />
+      <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+      <header>
+        <h1 itemprop="name">Ephemeral Fingerprinting On The Web</h1>
+        <nav>
+          <span>
+            <span class="date"
+              >Posted on
+              <time datetime="2020-04-01" itemprop="datePublished"
+                >April 1, 2020</time
+              ></span
+            >&nbsp;by
+            <span class="author" itemprop="author">Asanka Herath</span></span
+          >
+          <span class="fill"></span>
 
-            <span class="tag-link">
-              <a href="/tags/privacy/">#Privacy</a>
-            </span>
-          </div>
-          <div class="navlike">
-            <span class="readingtime">
-              Estimated reading time is 17 minutes.
-            </span>
-            <span class="fill"></span>
-          </div>
-        </header>
+          <span class="tag-link">
+            <a href="/tags/privacy/">#Privacy</a>
+          </span>
+        </nav>
+        <div>
+          <span class="readingtime">
+            Estimated reading time is 16 minutes.
+          </span>
+        </div>
+      </header>
 
+      <main itemprop="articleBody">
         <p>TL;DR:</p>
         <ul>
           <li>
@@ -101,15 +118,15 @@
             </p>
           </li>
         </ul>
-        <h2 id="background">Background</h2>
+        <h2>Background</h2>
         <figure>
           <img
             src="/posts/ephemeral-fingerprinting/DtzI4X4MpN-598.png"
-            alt="diagram of site isolation boundaries with overlap"
+            alt=""
             width="598"
             height="383"
           />
-          <figcaption aria-hidden="true">
+          <figcaption>
             diagram of site isolation boundaries with overlap
           </figcaption>
         </figure>
@@ -130,7 +147,7 @@
           confidence. Let’s call these <strong>ephemeral fingerprints</strong>.
           This document discusses two types:
         </p>
-        <ol type="1">
+        <ol>
           <li>
             <p>
               <em
@@ -167,10 +184,7 @@
         </p>
         <p>
           These are not new. For example, this is discussed by Van Goethem et.
-          al.
-          <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"
-            ><sup>1</sup></a
-          >
+          al. <sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>
         </p>
         <p>
           who calls these “Cross-Session Events” (§ 5 of linked paper).
@@ -184,14 +198,14 @@
             >Example: Ambient light events</a
           >).
         </p>
-        <h3 id="modelling-correlated-events">Modelling Correlated Events</h3>
+        <h3>Modelling Correlated Events</h3>
         <p>
           A correlatable event can be thought of as the tuple
           <code>&lt;surface-sample, timestamp&gt;</code>. The addition of the
           timestamp strictly increases the amount of information carried by the
           surface sample.
         </p>
-        <h3 id="modelling-event-streams">Modelling Event Streams</h3>
+        <h3>Modelling Event Streams</h3>
         <p>
           An event stream is simply a list of observed samples
           <code>sample₀, sample₁, ...</code>.
@@ -200,7 +214,7 @@
           Each additional observation strictly increases the amount of
           information.
         </p>
-        <h3 id="other-examples">Other Examples:</h3>
+        <h3>Other Examples:</h3>
         <ul>
           <li><code>Accelerometer</code> properties.</li>
           <li><code>Sensor</code>, <code>onreading</code> event.</li>
@@ -217,15 +231,13 @@
             between two browser windows.
           </li>
         </ul>
-        <h2 id="mitigation">Mitigation</h2>
-        <h3 id="permissions">Permissions</h3>
+        <h2>Mitigation</h2>
+        <h3>Permissions</h3>
         <p><strong>Goal:</strong> Require informed consent from users.</p>
         <p>
           There’s precedent for considering permissions
-          <a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"
-            ><sup>2</sup></a
-          >
-          to be sufficient mitigation for similar issues. For example, the Media
+          <sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup> to
+          be sufficient mitigation for similar issues. For example, the Media
           Capture API specification includes the following:
         </p>
         <blockquote>
@@ -238,12 +250,7 @@
           </p>
         </blockquote>
         <p style="text-align: right">
-          From §15 of
-          <a
-            href="https://w3c.github.io/mediacapture-main/#privacy-and-security-considerations"
-            >Media Capture and Streams API</a
-          >
-          specification.
+          From §15 of [Media Capture and Streams API][MCASAPI] specification.
         </p>
         <p><strong>Pros</strong></p>
         <ul>
@@ -262,7 +269,7 @@
             <p>Doesn’t prevent identity joining once permission is granted.</p>
           </li>
         </ul>
-        <h3 id="fuzzing-timing-of-events">Fuzzing Timing of Events</h3>
+        <h3>Fuzzing Timing of Events</h3>
         <p>
           <strong>Goal</strong>: Deter correlation of events by injecting timing
           skew.
@@ -286,11 +293,11 @@
               confidence could still be sufficient for most uses.
             </p>
           </li>
-          <li><p>Doesn’t address unique event streams.</p></li>
+          <li>
+            <p>Doesn’t address unique event streams.</p>
+          </li>
         </ul>
-        <h3 id="first-party-restriction-for-apis">
-          First-Party Restriction for APIs
-        </h3>
+        <h3>First-Party Restriction for APIs</h3>
         <p>
           <strong>Goal</strong>: Deter identity correlation by third-party
           sites.
@@ -320,7 +327,9 @@
         </ul>
         <p><strong>Cons</strong></p>
         <ul>
-          <li><p>Difficult to retrofit into existing APIs.</p></li>
+          <li>
+            <p>Difficult to retrofit into existing APIs.</p>
+          </li>
           <li>
             <p>
               Browser-wide events and attributes are still visible to distinct
@@ -336,9 +345,7 @@
             </p>
           </li>
         </ul>
-        <h3 id="limit-api-access-to-visible-browsing-contexts">
-          Limit API Access To Visible Browsing Contexts
-        </h3>
+        <h3>Limit API Access To Visible Browsing Contexts</h3>
         <p>
           <strong>Goal:</strong> Prevent background browsing contexts from
           skimming identifiable events.
@@ -378,9 +385,7 @@
             </p>
           </li>
         </ul>
-        <h3 id="limit-events-to-focused-top-level-browsing-context">
-          Limit Events To Focused Top-Level Browsing Context
-        </h3>
+        <h3>Limit Events To Focused Top-Level Browsing Context</h3>
         <p>
           <strong>Goal</strong>: Limit firing correlatable events to a single
           <a
@@ -426,9 +431,7 @@
         <ul>
           <li>Does not address event stream fingerprinting via polling.</li>
         </ul>
-        <h3 id="limit-api-access-to-focused-top-level-browsing-context">
-          Limit API Access To Focused Top-Level Browsing Context
-        </h3>
+        <h3>Limit API Access To Focused Top-Level Browsing Context</h3>
         <p>
           <strong>Goal</strong>: Limit access to sensitive APIs to a single
           <a
@@ -453,11 +456,11 @@
               defining behavior for “disabled” APIs.
             </p>
           </li>
-          <li><p>May break critical use cases.</p></li>
+          <li>
+            <p>May break critical use cases.</p>
+          </li>
         </ul>
-        <h3 id="secure-context-restriction-and-control-via-feature-policy">
-          Secure-Context Restriction and Control via Feature-Policy
-        </h3>
+        <h3>Secure-Context Restriction and Control via Feature-Policy</h3>
         <p>These should be pretty standard at this point.</p>
         <p><strong>Pros</strong></p>
         <ul>
@@ -467,9 +470,7 @@
         <ul>
           <li>Not sufficient by itself.</li>
         </ul>
-        <h2 id="spotting-ephemeral-fingerprinting-surfaces-in-web-specs">
-          Spotting Ephemeral Fingerprinting Surfaces In Web Specs
-        </h2>
+        <h2>Spotting Ephemeral Fingerprinting Surfaces In Web Specs</h2>
         <p><strong>Ephemeral fingerprints:</strong></p>
         <ul>
           <li>
@@ -500,7 +501,7 @@
             </p>
           </li>
         </ul>
-        <h3 id="what-to-look-for">What to look for:</h3>
+        <h3>What to look for:</h3>
         <ul>
           <li>
             <p>Events with external triggers. E.g. hardware based events.</p>
@@ -525,7 +526,7 @@
             </p>
           </li>
         </ul>
-        <h3 id="example">Example</h3>
+        <h3>Example</h3>
         <p>Consider <code>onfocus</code> and <code>onblur</code> events.</p>
         <p>
           The
@@ -545,26 +546,20 @@
           itself goes out of focus. Thus identity can be correlated when
           switching browser windows.
         </p>
-        <h4 id="possible-mitigation">Possible Mitigation</h4>
+        <h4>Possible Mitigation</h4>
         <p>
           When the <em>new chain</em> and the <em>old chain</em>
-          <a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"
-            ><sup>3</sup></a
-          >
-          are in different top-level browsing contexts whose active documents
-          are not same-origin, queue but don’t fire <code>change</code> and
+          <sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup> are
+          in different top-level browsing contexts whose active documents are
+          not same-origin, queue but don’t fire <code>change</code> and
           <code>blur</code> events until focus returns to the old top-level
           browsing context.
         </p>
-        <h3 id="notes">Notes</h3>
-        <section
-          id="footnotes"
-          class="footnotes footnotes-end-of-document"
-          role="doc-endnotes"
-        >
-          <hr />
-          <ol>
-            <li id="fn1">
+        <h3>Notes</h3>
+        <hr class="footnotes-sep" />
+        <section class="footnotes">
+          <ol class="footnotes-list">
+            <li id="fn1" class="footnote-item">
               <p>
                 Van Goethem, T. and Joosen, W., 2017. One side-channel to bring
                 them all and in the darkness bind them: Associating isolated
@@ -575,151 +570,128 @@
                 >. (<a
                   href="https://pdfs.semanticscholar.org/5814/9610a57cb4626918bf003b8bad25e740b1f4.pdf"
                   >PDF</a
-                >)<a href="#fnref1" class="footnote-back" role="doc-backlink"
-                  >↩︎</a
-                >
+                >) <a href="#fnref1" class="footnote-backref">↩︎</a>
               </p>
             </li>
-            <li id="fn2">
+            <li id="fn2" class="footnote-item">
               <p>
                 Either via a legacy permissions prompt or explicitly requiring
                 the use of the
                 <a href="https://w3c.github.io/permissions/">Permissions API</a>
-                in the spec for sensitive APIs.<a
-                  href="#fnref2"
-                  class="footnote-back"
-                  role="doc-backlink"
-                  >↩︎</a
-                >
+                in the spec for sensitive APIs.
+                <a href="#fnref2" class="footnote-backref">↩︎</a>
               </p>
             </li>
-            <li id="fn3">
+            <li id="fn3" class="footnote-item">
               <p>
                 <em>New chain</em> and <em>old chain</em> are defined in
                 <a
                   href="https://html.spec.whatwg.org/multipage/interaction.html#focus-update-steps"
                   >focus update steps</a
-                >.<a href="#fnref3" class="footnote-back" role="doc-backlink"
-                  >↩︎</a
-                >
+                >. <a href="#fnref3" class="footnote-backref">↩︎</a>
               </p>
             </li>
           </ol>
         </section>
+      </main>
 
-        <footer>
-          <div class="lastmodified">
-            <p>Last modified: April 1, 2020</p>
-          </div>
-        </footer>
-      </article>
+      <footer>
+        <div class="lastmodified">
+          <p>Last modified: <time datetime="2020-04-01">April 1, 2020</time></p>
+        </div>
+      </footer>
+    </article>
 
-      <div class="container"></div>
-    </main>
+    <div class="container"></div>
 
     <footer class="container">
       <h2>More posts from this blog ...</h2>
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/ephemeral-fingerprinting/">
-            Ephemeral Fingerprinting On The Web
+          <a itemprop="url" href="/posts/remarkable-first-impressions/">
+            <span itemprop="name">Note-taking on a reMarkable 2</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on April 1, 2020 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2021-12-30" itemprop="datePublished"
+              >December 30, 2021</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/privacy/">#Privacy</a>
+            <a href="/tags/remarkable-2/">#Remarkable 2</a>
           </span>
-        </div>
+
+          <span class="tag-link">
+            <a href="/tags/reviews/">#Reviews</a>
+          </span>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
-              <p>
-                Any ephemeral low-entropy web observable property whose changes
-                are concurrently observable by multiple sites can lead to cross
-                site identity joining.
-              </p>
-              <p>
-                This method of identity joining does not require coordination
-                between multiple first parties. A single third party embedded
-                within multiple first parties can also use this method.
-              </p>
+            <div class="summary" itemprop="abstract">
+              <p>Sentiments after using the reMarkable 2 tablet for a month.</p>
             </div>
           </div>
           <p class="more">
-            <a href="/posts/ephemeral-fingerprinting/">Read more …</a>
+            <a href="/posts/remarkable-first-impressions/">Read more …</a>
           </p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/shannon-paper/"> Shannon Paper </a>
+          <a itemprop="url" href="/posts/inktober-stripes/">
+            <span itemprop="name">Inktober - Stripes</span>
+          </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on March 26, 2021 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2022-01-21" itemprop="datePublished"
+              >January 21, 2022</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/math/">#Math</a>
+            <a href="/tags/inktober/">#Inktober</a>
           </span>
-        </div>
-        <div>
-          <div class="summary-line">
-            <div class="summary">
-              <p>
-                Claude Shannon's
-                <em>A mathematical theory of communication</em> is an oft cited
-                classic in information theory. Let's dive in and try to tease
-                apart the &quot;why&quot;s that are often overlooked when people
-                build on top of the introduced theory. They are definitely
-                things that I didn't consider to be obvious without the benefit
-                of reading the paper.
-              </p>
-            </div>
-          </div>
-          <p class="more"><a href="/posts/shannon-paper/">Read more …</a></p>
-        </div>
+        </nav>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/the-lettergrade-rule/"> The Lettergrade Rule </a>
+          <a itemprop="url" href="/posts/thirteen-years/">
+            <span itemprop="name">Thirteen Years</span>
+          </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on September 16, 2022 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/engineering/">#engineering</a>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2023-12-07" itemprop="datePublished"
+              >December 7, 2023</time
+            >
           </span>
-        </div>
-        <div>
-          <div class="summary-line">
-            <div class="summary">
-              <p>
-                Don't block a code review because of minor issues that are best
-                left to the discretion of the author.
-              </p>
-            </div>
-          </div>
-          <p class="more">
-            <a href="/posts/the-lettergrade-rule/">Read more …</a>
-          </p>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/thirteen-years/"> Thirteen Years </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on December 7, 2023 </span>
 
           <span class="fill"></span>
 
@@ -734,10 +706,10 @@
           <span class="tag-link">
             <a href="/tags/organizations/">#Organizations</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>Some reflections from thirteen years at Google.</p>
             </div>
           </div>
@@ -745,48 +717,79 @@
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/asians-is-not-a-useful-category/">
-            Asian Is Not a Useful Category
+          <a itemprop="url" href="/series/unsung-team-roles/emergence/"
+            ><span class="series-name">Unsung Team Roles</span>:
+            <span itemprop="name">Emergence of Soft Roles</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on July 4, 2024 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2025-08-02" itemprop="datePublished"
+              >August 2, 2025</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/culture/">#Culture</a>
-          </span>
-
-          <span class="tag-link">
             <a href="/tags/organizations/">#Organizations</a>
           </span>
-
-          <span class="tag-link">
-            <a href="/tags/inclusion-and-equity/">#Inclusion and Equity</a>
-          </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
-                Asking if someone is <em>&quot;Asian&quot;</em> in a question of
-                ethnicity or demographics or pretty much any context is bad.
-                There is no reasonable conclusion you can arrive at about a
-                person based on the fact that they are
-                <em>&quot;Asian&quot;</em>.
+                In any team, the roles people play are not as rigid as they
+                seem. Over time, people naturally settle into &quot;soft
+                roles&quot; that are not explicitly defined but are crucial for
+                a team's success. This is a look at the organic, and often
+                unsung, ways that successful teams actually work.
               </p>
             </div>
           </div>
           <p class="more">
-            <a href="/posts/asians-is-not-a-useful-category/">Read more …</a>
+            <a href="/series/unsung-team-roles/emergence/">Read more …</a>
           </p>
         </div>
       </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/symbol-name-types/">
+            <span itemprop="name">Names for Name Conventions</span>
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-08-24" itemprop="datePublished"
+              >August 24, 2020</time
+            >
+          </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/engineering/">#Engineering</a>
+          </span>
+        </nav>
+      </div>
     </footer>
 
+    <!-- Google analytics -->
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"

@@ -41,7 +41,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/eC0wygYar8.css" />
+    <link rel="stylesheet" href="/styles/Bzyqb5Ytgc.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -50,10 +50,17 @@
 
   <body>
     <header class="container">
-      <nav class="navlike">
-        <h1><a href="/">Strong Opinions Weekly Held</a></h1>
+      <nav class="top" itemscope="" itemtype="https://schema.org/Blog">
+        <h1 itemprop="name">
+          <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
+        </h1>
         <span class="fill"></span>
-        <h2><a href="/about/me/">About</a></h2>
+
+        <h2><a href="/">Home</a></h2>
+
+        <h2 itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="/about/me/" itemprop="sameAs">About</a>
+        </h2>
         <h2><a href="/tags/">Tags</a></h2>
         <h2>
           <a href="/feed.xml"><img src="/images/rss.svg" /></a>
@@ -66,9 +73,7 @@
         <h1>Posts tagged #AI</h1>
       </heading>
 
-      <nav>
-        All tags:
-
+      <nav class="multiline">
         <span class="tag-link">
           <span aria-current="page">#AI</span>
         </span>
@@ -142,25 +147,35 @@
         </span>
       </nav>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/series/structure-of-experience/flame/"
-            ><span class="series-name">Structure Of Experience</span>: Act III:
-            Flame
+          <a itemprop="url" href="/series/structure-of-experience/flame/"
+            ><span class="series-name">Structure Of Experience</span>:
+            <span itemprop="name">Act III: Flame</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on May 7, 2025 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2025-05-07" itemprop="datePublished"
+              >May 7, 2025</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/ai/">#AI</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
                 The map is not the territory. A picture of a flame is not a
                 flame. A description of a neural network is not a brain. A
@@ -174,25 +189,35 @@
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/series/structure-of-experience/meaning/"
-            ><span class="series-name">Structure Of Experience</span>: Act I:
-            Meaning
+          <a itemprop="url" href="/series/structure-of-experience/meaning/"
+            ><span class="series-name">Structure Of Experience</span>:
+            <span itemprop="name">Act I: Meaning</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on May 4, 2025 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2025-05-04" itemprop="datePublished"
+              >May 4, 2025</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/ai/">#AI</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
                 Language builds meaning by combining your inner experiences.
               </p>
@@ -204,24 +229,35 @@
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/series/structure-of-experience/preface/"
-            ><span class="series-name">Structure Of Experience</span>: Preface
+          <a itemprop="url" href="/series/structure-of-experience/preface/"
+            ><span class="series-name">Structure Of Experience</span>:
+            <span itemprop="name">Preface</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on May 1, 2025 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2025-05-01" itemprop="datePublished"
+              >May 1, 2025</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/ai/">#AI</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
                 A very gentle introduction to how large language models
                 <em>almost</em> capture human experience through language.
@@ -235,6 +271,7 @@
       </div>
     </main>
 
+    <!-- Google analytics -->
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"

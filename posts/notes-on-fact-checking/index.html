@@ -44,7 +44,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/eC0wygYar8.css" />
+    <link rel="stylesheet" href="/styles/Bzyqb5Ytgc.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -53,10 +53,17 @@
 
   <body>
     <header class="container">
-      <nav class="navlike">
-        <h1><a href="/">Strong Opinions Weekly Held</a></h1>
+      <nav class="top" itemscope="" itemtype="https://schema.org/Blog">
+        <h1 itemprop="name">
+          <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
+        </h1>
         <span class="fill"></span>
-        <h2><a href="/about/me/">About</a></h2>
+
+        <h2><a href="/">Home</a></h2>
+
+        <h2 itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="/about/me/" itemprop="sameAs">About</a>
+        </h2>
         <h2><a href="/tags/">Tags</a></h2>
         <h2>
           <a href="/feed.xml"><img src="/images/rss.svg" /></a>
@@ -64,33 +71,43 @@
       </nav>
     </header>
 
-    <main>
-      <article class="container">
-        <header>
-          <h1>
-            Notes from Crash Course&#39;s Videos on Fact Checking Information
-            You See On The Internet
-          </h1>
-          <div class="navlike">
-            <span>
-              <span class="date">Posted on July 4, 2020</span
-              ><span class="author">&nbsp;by Asanka Herath</span></span
-            >
-            <span class="fill"></span>
+    <article
+      class="container"
+      itemscope=""
+      itemtype="https://schema.org/BlogPosting"
+    >
+      <link itemprop="url" href="/posts/notes-on-fact-checking/" />
+      <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+      <header>
+        <h1 itemprop="name">
+          Notes from Crash Course&#39;s Videos on Fact Checking Information You
+          See On The Internet
+        </h1>
+        <nav>
+          <span>
+            <span class="date"
+              >Posted on
+              <time datetime="2020-07-04" itemprop="datePublished"
+                >July 4, 2020</time
+              ></span
+            >&nbsp;by
+            <span class="author" itemprop="author">Asanka Herath</span></span
+          >
+          <span class="fill"></span>
 
-            <span class="tag-link">
-              <a href="/tags/curiosity/">#Curiosity</a>
-            </span>
-          </div>
-          <div class="navlike">
-            <span class="readingtime">
-              Estimated reading time is 8 minutes.
-            </span>
-            <span class="fill"></span>
-          </div>
-        </header>
+          <span class="tag-link">
+            <a href="/tags/curiosity/">#Curiosity</a>
+          </span>
+        </nav>
+        <div>
+          <span class="readingtime">
+            Estimated reading time is 8 minutes.
+          </span>
+        </div>
+      </header>
 
-        <h1 id="fact-checking">Fact Checking</h1>
+      <main itemprop="articleBody">
+        <h1>Fact Checking</h1>
         <p>
           Notes from
           <a href="https://www.youtube.com/channel/UCX6b17PVsYBQ0ip5gyeme-Q"
@@ -99,8 +116,8 @@
           internet. The series starts
           <a href="https://www.youtube.com/watch?v=pLlv2o6UfTU">here</a>.
         </p>
-        <h2 id="three-questions">Three Questions</h2>
-        <ol type="1">
+        <h2>Three Questions</h2>
+        <ol>
           <li>How is behind this information?</li>
           <li>What is the evidence for their claims?</li>
           <li>
@@ -108,7 +125,7 @@
           </li>
         </ol>
         <p>“A question wrongly put.”</p>
-        <h2 id="lateral-reading">Lateral Reading</h2>
+        <h2>Lateral Reading</h2>
         <p>
           All information is produced by someone, and is produced for a purpose.
           The lines between motives are unclear. There are always multiple
@@ -147,7 +164,7 @@
           Because no source is perfectly objective, one might conclude that no
           source is trustworthy. This is not true.
         </p>
-        <h2 id="deciding-whom-to-trust">Deciding Whom To Trust</h2>
+        <h2>Deciding Whom To Trust</h2>
         <p>
           It is easy to be mislead. None of us have the time to be an expert in
           everything.
@@ -157,14 +174,12 @@
           a way to accredit and trust experts, even though they will be wrong
           some of the time.
         </p>
-        <p>“Listen to me”bloviate””</p>
+        <p>“Listen to me “bloviate””</p>
         <p>
           Before we place trust in a source, we should verify the authority, and
           the validity of their evidence.
         </p>
-        <h3 id="investigating-a-sources-authority">
-          Investigating A Source’s Authority
-        </h3>
+        <h3>Investigating A Source’s Authority</h3>
         <ul>
           <li>The author or authors’ professional background.</li>
           <li>The process they used to produce that information.</li>
@@ -187,7 +202,7 @@
           Each bit of information we have about a source gives us a lens to
           filter out their perspective.
         </p>
-        <h2 id="using-wikipedia">Using Wikipedia</h2>
+        <h2>Using Wikipedia</h2>
         <p>
           When used correctly Wikipedia can be a great place to start when
           verifying the legitimacy of a source. It’s breadth can exceed any
@@ -198,7 +213,7 @@
           Wikipedia has become the internet’s largest general reference work.
         </p>
         <p>Their content policies:</p>
-        <ol type="1">
+        <ol>
           <li>A neutral point of view.</li>
           <li>No original research.</li>
           <li>Verifiable.</li>
@@ -224,7 +239,7 @@
           And as long as your know how and when to use it appropriately,
           Wikipedia can be a great friend.
         </p>
-        <h2 id="evaluating-evidence">Evaluating Evidence</h2>
+        <h2>Evaluating Evidence</h2>
         <p>
           As you get older “because I said so” doesn’t cut it anymore. You need
           to provide evidence and that evidence should be convincing.
@@ -249,11 +264,11 @@
           The quality of our evidence like the quality of our information,
           affects the quality of our decisions.
         </p>
-        <h2 id="evaluating-photos-videos">Evaluating Photos &amp; Videos</h2>
+        <h2>Evaluating Photos &amp; Videos</h2>
         <p>
           Photographs feel real and authentic. Even when images aren’t altered,
-          they are selectively framed, or have their context falsified
-          (e.g. with a false explanation, or date).
+          they are selectively framed, or have their context falsified (e.g.
+          with a false explanation, or date).
         </p>
         <p>We are used to thinking that “seeing is believing”.</p>
         <p>
@@ -277,108 +292,83 @@
           a video came from, who created it, and whether it’s been altered
           before you believe what you see.
         </p>
-        <h2 id="data-and-infographics">Data and infographics</h2>
+        <h2>Data and infographics</h2>
+      </main>
 
-        <footer>
-          <div class="lastmodified">
-            <p>Last modified: July 4, 2020</p>
-          </div>
-        </footer>
-      </article>
+      <footer>
+        <div class="lastmodified">
+          <p>Last modified: <time datetime="2020-07-04">July 4, 2020</time></p>
+        </div>
+      </footer>
+    </article>
 
-      <div class="container"></div>
-    </main>
+    <div class="container"></div>
 
     <footer class="container">
       <h2>More posts from this blog ...</h2>
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/visualizing-people/"> Visualizing Internet Users </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on November 21, 2020 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/engineering/">#Engineering</a>
-          </span>
-
-          <span class="tag-link">
-            <a href="/tags/curiosity/">#Curiosity</a>
-          </span>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/shannon-paper/"> Shannon Paper </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on March 26, 2021 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/math/">#Math</a>
-          </span>
-        </div>
-        <div>
-          <div class="summary-line">
-            <div class="summary">
-              <p>
-                Claude Shannon's
-                <em>A mathematical theory of communication</em> is an oft cited
-                classic in information theory. Let's dive in and try to tease
-                apart the &quot;why&quot;s that are often overlooked when people
-                build on top of the introduced theory. They are definitely
-                things that I didn't consider to be obvious without the benefit
-                of reading the paper.
-              </p>
-            </div>
-          </div>
-          <p class="more"><a href="/posts/shannon-paper/">Read more …</a></p>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/ansible-cli-sugar/">
-            Easier CLI for ad-hoc Ansible tasks and playbooks
+          <a itemprop="url" href="/posts/ephemeral-fingerprinting/">
+            <span itemprop="name">Ephemeral Fingerprinting On The Web</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on June 1, 2020 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-04-01" itemprop="datePublished"
+              >April 1, 2020</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/tools/">#Tools</a>
+            <a href="/tags/privacy/">#Privacy</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
-                Encode the host and group names into the name of a wrapper
-                script for quick ad-hoc invocation of Ansible tasks and
-                playbooks.
+                Any ephemeral low-entropy web observable property whose changes
+                are concurrently observable by multiple sites can lead to cross
+                site identity joining.
+              </p>
+              <p>
+                This method of identity joining does not require coordination
+                between multiple first parties. A single third party embedded
+                within multiple first parties can also use this method.
               </p>
             </div>
           </div>
           <p class="more">
-            <a href="/posts/ansible-cli-sugar/">Read more …</a>
+            <a href="/posts/ephemeral-fingerprinting/">Read more …</a>
           </p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/proof-of-work/"> Proof of Work </a>
+          <a itemprop="url" href="/posts/just-the-right-amount/">
+            <span itemprop="name">Just Enough Technical Debt</span>
+          </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike">
-            Last updated on July 12, 2024 , Originally posted on July 11, 2024
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2023-07-08" itemprop="datePublished"
+              >July 8, 2023</time
+            >
           </span>
 
           <span class="fill"></span>
@@ -386,60 +376,167 @@
           <span class="tag-link">
             <a href="/tags/engineering/">#Engineering</a>
           </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>Zero technical debt isn't always the answer.</p>
+            </div>
+          </div>
+          <p class="more">
+            <a href="/posts/just-the-right-amount/">Read more …</a>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/thirteen-years/">
+            <span itemprop="name">Thirteen Years</span>
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2023-12-07" itemprop="datePublished"
+              >December 7, 2023</time
+            >
+          </span>
+
+          <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/career/">#Career</a>
           </span>
 
           <span class="tag-link">
+            <a href="/tags/culture/">#Culture</a>
+          </span>
+
+          <span class="tag-link">
             <a href="/tags/organizations/">#Organizations</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
-              <p>
-                Working with a poorly thought-out, or overengineered technology
-                stack, or an overly bureaucratic organization is
-                <em>also a form of proof-of-work</em>.
-              </p>
+            <div class="summary" itemprop="abstract">
+              <p>Some reflections from thirteen years at Google.</p>
             </div>
           </div>
-          <p class="more"><a href="/posts/proof-of-work/">Read more …</a></p>
+          <p class="more"><a href="/posts/thirteen-years/">Read more …</a></p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/series/structure-of-experience/meaning/"
-            ><span class="series-name">Structure Of Experience</span>: Act I:
-            Meaning
+          <a itemprop="url" href="/posts/moved-to-eleventy/">
+            <span itemprop="name">I Moved This Blog To Eleventy</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on May 4, 2025 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2024-12-13" itemprop="datePublished"
+              >December 13, 2024</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/ai/">#AI</a>
+            <a href="/tags/meta/">#Meta</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
-                Language builds meaning by combining your inner experiences.
+                At long last, this blog &quot;outgrew&quot;<sup
+                  class="footnote-ref"
+                  ><a href="#fn1" id="fnref1">[1]</a></sup
+                >
+                Hugo and I had to go looking for a new static site generator.
+              </p>
+              <hr class="footnotes-sep" />
+              <section class="footnotes">
+                <ol class="footnotes-list">
+                  <li id="fn1" class="footnote-item">
+                    <p>
+                      Of course, by outgrew I mean I got bored and wanted to
+                      play with a new static site generator.
+                      <a href="#fnref1" class="footnote-backref">↩︎</a>
+                    </p>
+                  </li>
+                </ol>
+              </section>
+            </div>
+          </div>
+          <p class="more">
+            <a href="/posts/moved-to-eleventy/">Read more …</a>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/series/unsung-team-roles/glue-people/"
+            ><span class="series-name">Unsung Team Roles</span>:
+            <span itemprop="name">Ode to Glue People</span>
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2025-08-12" itemprop="datePublished"
+              >August 12, 2025</time
+            >
+          </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/organizations/">#Organizations</a>
+          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>
+                While managers may be constrained in their communication,
+                special individuals create unofficial channels where team
+                members feel safe to share information. Acting as social hubs or
+                &quot;speakeasies,&quot; they foster trust and enable the free
+                flow of timely, factual information, which helps colleagues make
+                better decisions and navigate turmoil. Despite their critical
+                function in preventing team collapse and reducing isolation,
+                this &quot;glue work&quot; is typically not formally recognized
+                or compensated.
               </p>
             </div>
           </div>
           <p class="more">
-            <a href="/series/structure-of-experience/meaning/">Read more …</a>
+            <a href="/series/unsung-team-roles/glue-people/">Read more …</a>
           </p>
         </div>
       </div>
     </footer>
 
+    <!-- Google analytics -->
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"

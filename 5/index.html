@@ -41,7 +41,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/eC0wygYar8.css" />
+    <link rel="stylesheet" href="/styles/Bzyqb5Ytgc.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -50,10 +50,17 @@
 
   <body>
     <header class="container">
-      <nav class="navlike">
-        <h1><a href="/">Strong Opinions Weekly Held</a></h1>
+      <nav class="top" itemscope="" itemtype="https://schema.org/Blog">
+        <h1 itemprop="name">
+          <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
+        </h1>
         <span class="fill"></span>
-        <h2><a href="/about/me/">About</a></h2>
+
+        <h2><a href="/">Home</a></h2>
+
+        <h2 itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="/about/me/" itemprop="sameAs">About</a>
+        </h2>
         <h2><a href="/tags/">Tags</a></h2>
         <h2>
           <a href="/feed.xml"><img src="/images/rss.svg" /></a>
@@ -62,27 +69,51 @@
     </header>
 
     <main class="container">
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/ten-years/"> Ten Years </a>
+          <a itemprop="url" href="/posts/ten-years/">
+            <span itemprop="name">Ten Years</span>
+          </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on December 9, 2020 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-12-09" itemprop="datePublished"
+              >December 9, 2020</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/career/">#Career</a>
           </span>
-        </div>
+        </nav>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/visualizing-people/"> Visualizing Internet Users </a>
+          <a itemprop="url" href="/posts/visualizing-people/">
+            <span itemprop="name">Visualizing Internet Users</span>
+          </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on November 21, 2020 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-11-21" itemprop="datePublished"
+              >November 21, 2020</time
+            >
+          </span>
 
           <span class="fill"></span>
 
@@ -93,18 +124,33 @@
           <span class="tag-link">
             <a href="/tags/curiosity/">#Curiosity</a>
           </span>
-        </div>
+        </nav>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/things-you-can-do-with-nvim-and-vscode/">
-            Things You Can Do With Neovim and Vscode That You Can&#39;t Do With
-            Neovim Alone
+          <a
+            itemprop="url"
+            href="/posts/things-you-can-do-with-nvim-and-vscode/"
+          >
+            <span itemprop="name"
+              >Things You Can Do With Neovim and Vscode That You Can&#39;t Do
+              With Neovim Alone</span
+            >
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on September 19, 2020 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-09-19" itemprop="datePublished"
+              >September 19, 2020</time
+            >
+          </span>
 
           <span class="fill"></span>
 
@@ -115,57 +161,93 @@
           <span class="tag-link">
             <a href="/tags/vim/">#Vim</a>
           </span>
-        </div>
+        </nav>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/why-strong-opinions-weakly-held/">
-            Why &#39;Strong Opinions Weakly Held&#39;
+          <a itemprop="url" href="/posts/why-strong-opinions-weakly-held/">
+            <span itemprop="name"
+              >Why &#39;Strong Opinions Weakly Held&#39;</span
+            >
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on August 28, 2020 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-08-28" itemprop="datePublished"
+              >August 28, 2020</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/meta/">#Meta</a>
           </span>
-        </div>
+        </nav>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/symbol-name-types/"> Names for Name Conventions </a>
+          <a itemprop="url" href="/posts/symbol-name-types/">
+            <span itemprop="name">Names for Name Conventions</span>
+          </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on August 24, 2020 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-08-24" itemprop="datePublished"
+              >August 24, 2020</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/engineering/">#Engineering</a>
           </span>
-        </div>
+        </nav>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/how-this-blog-works/"> How This Blog Works </a>
+          <a itemprop="url" href="/posts/how-this-blog-works/">
+            <span itemprop="name">How This Blog Works</span>
+          </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on July 27, 2020 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-07-27" itemprop="datePublished"
+              >July 27, 2020</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/meta/">#Meta</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>How I put this site together and why.</p>
             </div>
           </div>
@@ -175,24 +257,34 @@
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/comcast-technican-problem/">
-            The Comcast Technician Problem
+          <a itemprop="url" href="/posts/comcast-technican-problem/">
+            <span itemprop="name">The Comcast Technician Problem</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on July 13, 2020 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-07-13" itemprop="datePublished"
+              >July 13, 2020</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/math/">#Math</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
                 Given a set of tasks, incentives are often aligned towards
                 dropping a task rather than allowing for perpetual accretion of
@@ -206,14 +298,26 @@
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/use-drop-not-edit/">
-            Vim: Use Drop Not Edit, SBuffer Not Buffer
+          <a itemprop="url" href="/posts/use-drop-not-edit/">
+            <span itemprop="name"
+              >Vim: Use Drop Not Edit, SBuffer Not Buffer</span
+            >
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on July 7, 2020 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-07-07" itemprop="datePublished"
+              >July 7, 2020</time
+            >
+          </span>
 
           <span class="fill"></span>
 
@@ -224,10 +328,10 @@
           <span class="tag-link">
             <a href="/tags/vim/">#Vim</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
                 Use the <code>:drop</code> command instead of
                 <code>:edit</code> in Vim. It will reuse an existing window
@@ -241,25 +345,37 @@
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/notes-on-fact-checking/">
-            Notes from Crash Course&#39;s Videos on Fact Checking Information
-            You See On The Internet
+          <a itemprop="url" href="/posts/notes-on-fact-checking/">
+            <span itemprop="name"
+              >Notes from Crash Course&#39;s Videos on Fact Checking Information
+              You See On The Internet
+            </span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on July 4, 2020 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-07-04" itemprop="datePublished"
+              >July 4, 2020</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/curiosity/">#Curiosity</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
                 Hank Green's Crash Course YouTube channel has an excellent
                 series about navigating digital information. It's an excellent
@@ -275,24 +391,36 @@
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/ansible-cli-sugar/">
-            Easier CLI for ad-hoc Ansible tasks and playbooks
+          <a itemprop="url" href="/posts/ansible-cli-sugar/">
+            <span itemprop="name"
+              >Easier CLI for ad-hoc Ansible tasks and playbooks</span
+            >
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on June 1, 2020 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-06-01" itemprop="datePublished"
+              >June 1, 2020</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/tools/">#Tools</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
                 Encode the host and group names into the name of a wrapper
                 script for quick ad-hoc invocation of Ansible tasks and
@@ -306,7 +434,7 @@
         </div>
       </div>
 
-      <nav class="navlike">
+      <nav class="bottom">
         <div class="fill"></div>
 
         <h2 class="first paginate">
@@ -337,6 +465,7 @@
       </nav>
     </main>
 
+    <!-- Google analytics -->
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"

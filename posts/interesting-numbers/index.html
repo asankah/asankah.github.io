@@ -41,7 +41,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/eC0wygYar8.css" />
+    <link rel="stylesheet" href="/styles/Bzyqb5Ytgc.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -50,10 +50,17 @@
 
   <body>
     <header class="container">
-      <nav class="navlike">
-        <h1><a href="/">Strong Opinions Weekly Held</a></h1>
+      <nav class="top" itemscope="" itemtype="https://schema.org/Blog">
+        <h1 itemprop="name">
+          <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
+        </h1>
         <span class="fill"></span>
-        <h2><a href="/about/me/">About</a></h2>
+
+        <h2><a href="/">Home</a></h2>
+
+        <h2 itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="/about/me/" itemprop="sameAs">About</a>
+        </h2>
         <h2><a href="/tags/">Tags</a></h2>
         <h2>
           <a href="/feed.xml"><img src="/images/rss.svg" /></a>
@@ -61,40 +68,47 @@
       </nav>
     </header>
 
-    <main>
-      <article class="container">
-        <header>
-          <h1>All natural numbers are interesting</h1>
-          <div class="navlike">
-            <span>
-              <span class="date">Posted on August 3, 2022</span
-              ><span class="author">&nbsp;by Asanka Herath</span></span
-            >
-            <span class="fill"></span>
+    <article
+      class="container"
+      itemscope=""
+      itemtype="https://schema.org/BlogPosting"
+    >
+      <link itemprop="url" href="/posts/interesting-numbers/" />
+      <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+      <header>
+        <h1 itemprop="name">All natural numbers are interesting</h1>
+        <nav>
+          <span>
+            <span class="date"
+              >Posted on
+              <time datetime="2022-08-03" itemprop="datePublished"
+                >August 3, 2022</time
+              ></span
+            >&nbsp;by
+            <span class="author" itemprop="author">Asanka Herath</span></span
+          >
+          <span class="fill"></span>
 
-            <span class="tag-link">
-              <a href="/tags/math/">#math</a>
-            </span>
+          <span class="tag-link">
+            <a href="/tags/math/">#math</a>
+          </span>
 
-            <span class="tag-link">
-              <a href="/tags/curiosity/">#curiosity</a>
-            </span>
-          </div>
-          <div class="navlike">
-            <span class="readingtime">
-              Estimated reading time is 3 minutes.
-            </span>
-            <span class="fill"></span>
-          </div>
-        </header>
+          <span class="tag-link">
+            <a href="/tags/curiosity/">#curiosity</a>
+          </span>
+        </nav>
+        <div>
+          <span class="readingtime">
+            Estimated reading time is 9 minutes.
+          </span>
+        </div>
+      </header>
 
+      <main itemprop="articleBody">
         <p>
-          <strong>Theorem</strong>: All natural numbers are interesting.<a
-            href="#fn1"
+          <strong>Theorem</strong>: All natural numbers are interesting.<sup
             class="footnote-ref"
-            id="fnref1"
-            role="doc-noteref"
-            ><sup>1</sup></a
+            ><a href="#fn1" id="fnref1">[1]</a></sup
           >
         </p>
         <p>Proof by contradiction.</p>
@@ -165,7 +179,7 @@
           be the set of boring numbers.
         </p>
         <p>By the assumption, we have:</p>
-        <p>
+        <p class="katex-block">
           <span class="katex-display"
             ><span class="katex"
               ><span class="katex-mathml"
@@ -177,8 +191,8 @@
                       ><mi mathvariant="double-struck">B</mi
                       ><mo mathvariant="normal">≠</mo><mi>ϕ</mi></mrow
                     ><annotation encoding="application/x-tex"
-                      >\mathbb{B} \ne \phi</annotation
-                    ></semantics
+                      >\mathbb{B} \ne \phi
+                    </annotation></semantics
                   ></math
                 ></span
               ><span class="katex-html" aria-hidden="true"
@@ -280,7 +294,7 @@
           >
           tells us that:
         </p>
-        <p>
+        <p class="katex-block">
           <span class="katex-display"
             ><span class="katex"
               ><span class="katex-mathml"
@@ -300,9 +314,8 @@
                       ><mi mathvariant="double-struck">B</mi
                       ><mo stretchy="false">)</mo></mrow
                     ><annotation encoding="application/x-tex"
-                      >\exists b \in \mathbb{B} \| b =
-                      \mathrm{inf}(\mathbb{B})</annotation
-                    ></semantics
+                      >\exists b \in \mathbb{B} \| b = \mathrm{inf}(\mathbb{B})
+                    </annotation></semantics
                   ></math
                 ></span
               ><span class="katex-html" aria-hidden="true"
@@ -429,103 +442,139 @@
           >
           doesn’t necessarily have a minimum.
         </p>
-        <section
-          id="footnotes"
-          class="footnotes footnotes-end-of-document"
-          role="doc-endnotes"
-        >
-          <hr />
-          <ol>
-            <li id="fn1">
+        <hr class="footnotes-sep" />
+        <section class="footnotes">
+          <ol class="footnotes-list">
+            <li id="fn1" class="footnote-item">
               <p>
-                Not actually a theorem.<a
-                  href="#fnref1"
-                  class="footnote-back"
-                  role="doc-backlink"
-                  >↩︎</a
-                >
+                Not actually a theorem.
+                <a href="#fnref1" class="footnote-backref">↩︎</a>
               </p>
             </li>
           </ol>
         </section>
+      </main>
 
-        <footer>
-          <div class="lastmodified">
-            <p>Last modified: August 3, 2022</p>
-          </div>
-        </footer>
-      </article>
+      <footer>
+        <div class="lastmodified">
+          <p>
+            Last modified: <time datetime="2022-08-03">August 3, 2022</time>
+          </p>
+        </div>
+      </footer>
+    </article>
 
-      <div class="container"></div>
-    </main>
+    <div class="container"></div>
 
     <footer class="container">
       <h2>More posts from this blog ...</h2>
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/fart-limit/"> Fart Limit </a>
+          <a itemprop="url" href="/posts/syntax-highlighting/">
+            <span itemprop="name">On Highlighting Syntax vs. Semantics</span>
+          </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on June 14, 2021 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2022-02-12" itemprop="datePublished"
+              >February 12, 2022</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/curiosity/">#Curiosity</a>
+            <a href="/tags/engineering/">#Engineering</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
-                Can a fart be fatal? Let's see what science and OSHA have to
-                say.
+                Takes a look at an alternate form of code highlighting based on
+                core semantics instead of syntactic role.
               </p>
             </div>
           </div>
-          <p class="more"><a href="/posts/fart-limit/">Read more …</a></p>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/remarkable-first-impressions/">
-            Note-taking on a reMarkable 2
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on December 30, 2021 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/remarkable-2/">#Remarkable 2</a>
-          </span>
-
-          <span class="tag-link">
-            <a href="/tags/reviews/">#Reviews</a>
-          </span>
-        </div>
-        <div>
-          <div class="summary-line">
-            <div class="summary">
-              <p>Sentiments after using the reMarkable 2 tablet for a month.</p>
-            </div>
-          </div>
           <p class="more">
-            <a href="/posts/remarkable-first-impressions/">Read more …</a>
+            <a href="/posts/syntax-highlighting/">Read more …</a>
           </p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/pillars-are-governance-structures/">
-            Pillars And Governance Structures
+          <a
+            itemprop="url"
+            href="/posts/gender-gap-in-adolescent-mental-health/"
+          >
+            <span itemprop="name"
+              >On Gender Gap in Adolescent Mental Health</span
+            >
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on September 9, 2023 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2022-03-01" itemprop="datePublished"
+              >March 1, 2022</time
+            >
+          </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/inclusion-and-equity/">#Inclusion and Equity</a>
+          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>
+                A recent study found that more gender-equal countries have
+                larger gender gaps in mental health. I look at the data that
+                seems to have yielded this counter-intuitive results and find it
+                lacking.
+              </p>
+            </div>
+          </div>
+          <p class="more">
+            <a href="/posts/gender-gap-in-adolescent-mental-health/"
+              >Read more …</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/promise-fatigue/">
+            <span itemprop="name">Promise Fatigue</span>
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2022-11-01" itemprop="datePublished"
+              >November 1, 2022</time
+            >
+          </span>
 
           <span class="fill"></span>
 
@@ -536,97 +585,128 @@
           <span class="tag-link">
             <a href="/tags/career/">#Career</a>
           </span>
-
-          <span class="tag-link">
-            <a href="/tags/organizations/">#Organizations</a>
-          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>
+                Setting low but realistic expectations is better than setting
+                high but unrealistic ones.
+              </p>
+            </div>
+          </div>
+          <p class="more"><a href="/posts/promise-fatigue/">Read more …</a></p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/when-your-feature-gets-someone-hurt/">
-            When Your Feature Gets Someone Hurt
+          <a itemprop="url" href="/posts/asians-is-not-a-useful-category/">
+            <span itemprop="name">Asian Is Not a Useful Category</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on May 22, 2024 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2024-07-04" itemprop="datePublished"
+              >July 4, 2024</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/culture/">#Culture</a>
           </span>
-        </div>
+
+          <span class="tag-link">
+            <a href="/tags/organizations/">#Organizations</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/inclusion-and-equity/">#Inclusion and Equity</a>
+          </span>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
-                If Google Photos incorrectly tags a photo, what's the worst that
-                could happen?
+                Asking if someone is <em>&quot;Asian&quot;</em> in a question of
+                ethnicity or demographics or pretty much any context is bad.
+                There is no reasonable conclusion you can arrive at about a
+                person based on the fact that they are
+                <em>&quot;Asian&quot;</em>.
               </p>
             </div>
           </div>
           <p class="more">
-            <a href="/posts/when-your-feature-gets-someone-hurt/"
-              >Read more …</a
-            >
+            <a href="/posts/asians-is-not-a-useful-category/">Read more …</a>
           </p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/an-intuition-on-entropy/">
-            An Intuition on Shannon Entropy
+          <a itemprop="url" href="/posts/moved-to-eleventy/">
+            <span itemprop="name">I Moved This Blog To Eleventy</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on September 27, 2025 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2024-12-13" itemprop="datePublished"
+              >December 13, 2024</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/privacy/">#Privacy</a>
+            <a href="/tags/meta/">#Meta</a>
           </span>
-
-          <span class="tag-link">
-            <a href="/tags/programming/">#Programming</a>
-          </span>
-
-          <span class="tag-link">
-            <a href="/tags/entropy/">#Entropy</a>
-          </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <a href="/posts/an-intuition-on-entropy/" class="hero-link">
-              <img
-                class="hero"
-                src="/img/4ywdW_OSoN-600.png"
-                alt="An allegorical pencil drawing of an ornate scale. The left pan represents &#39;Information&#39; with a neat pile of books and scrolls. The right pan represents &#39;Uncertainty&#39; with a chaotic vortex of dissolving papers, gears, and symbols. The scale is in perfect equilibrium, illustrating the conceptual balance between order and disorder."
-                width="600"
-                height="600"
-              />
-            </a>
-
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
-                Develop an intuition for Shannon entropy as a measure of
-                information content. Using the game 'Guess Who' as a practical
-                example, this post explains how entropy quantifies the reduction
-                in ambiguity and builds up the mathematical formulation from
-                basic principles.
+                At long last, this blog &quot;outgrew&quot;<sup
+                  class="footnote-ref"
+                  ><a href="#fn1" id="fnref1">[1]</a></sup
+                >
+                Hugo and I had to go looking for a new static site generator.
               </p>
+              <hr class="footnotes-sep" />
+              <section class="footnotes">
+                <ol class="footnotes-list">
+                  <li id="fn1" class="footnote-item">
+                    <p>
+                      Of course, by outgrew I mean I got bored and wanted to
+                      play with a new static site generator.
+                      <a href="#fnref1" class="footnote-backref">↩︎</a>
+                    </p>
+                  </li>
+                </ol>
+              </section>
             </div>
           </div>
           <p class="more">
-            <a href="/posts/an-intuition-on-entropy/">Read more …</a>
+            <a href="/posts/moved-to-eleventy/">Read more …</a>
           </p>
         </div>
       </div>
     </footer>
 
+    <!-- Google analytics -->
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"

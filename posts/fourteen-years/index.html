@@ -41,7 +41,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/eC0wygYar8.css" />
+    <link rel="stylesheet" href="/styles/Bzyqb5Ytgc.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -50,10 +50,17 @@
 
   <body>
     <header class="container">
-      <nav class="navlike">
-        <h1><a href="/">Strong Opinions Weekly Held</a></h1>
+      <nav class="top" itemscope="" itemtype="https://schema.org/Blog">
+        <h1 itemprop="name">
+          <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
+        </h1>
         <span class="fill"></span>
-        <h2><a href="/about/me/">About</a></h2>
+
+        <h2><a href="/">Home</a></h2>
+
+        <h2 itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="/about/me/" itemprop="sameAs">About</a>
+        </h2>
         <h2><a href="/tags/">Tags</a></h2>
         <h2>
           <a href="/feed.xml"><img src="/images/rss.svg" /></a>
@@ -61,37 +68,47 @@
       </nav>
     </header>
 
-    <main>
-      <article class="container">
-        <header>
-          <h1>Fourteen Years</h1>
-          <div class="navlike">
-            <span>
-              <span class="date">Posted on December 31, 2024</span
-              ><span class="author">&nbsp;by Asanka Herath</span></span
-            >
-            <span class="fill"></span>
+    <article
+      class="container"
+      itemscope=""
+      itemtype="https://schema.org/BlogPosting"
+    >
+      <link itemprop="url" href="/posts/fourteen-years/" />
+      <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+      <header>
+        <h1 itemprop="name">Fourteen Years</h1>
+        <nav>
+          <span>
+            <span class="date"
+              >Posted on
+              <time datetime="2024-12-31" itemprop="datePublished"
+                >December 31, 2024</time
+              ></span
+            >&nbsp;by
+            <span class="author" itemprop="author">Asanka Herath</span></span
+          >
+          <span class="fill"></span>
 
-            <span class="tag-link">
-              <a href="/tags/career/">#Career</a>
-            </span>
+          <span class="tag-link">
+            <a href="/tags/career/">#Career</a>
+          </span>
 
-            <span class="tag-link">
-              <a href="/tags/culture/">#Culture</a>
-            </span>
+          <span class="tag-link">
+            <a href="/tags/culture/">#Culture</a>
+          </span>
 
-            <span class="tag-link">
-              <a href="/tags/organizations/">#Organizations</a>
-            </span>
-          </div>
-          <div class="navlike">
-            <span class="readingtime">
-              Estimated reading time is 6 minutes.
-            </span>
-            <span class="fill"></span>
-          </div>
-        </header>
+          <span class="tag-link">
+            <a href="/tags/organizations/">#Organizations</a>
+          </span>
+        </nav>
+        <div>
+          <span class="readingtime">
+            Estimated reading time is 6 minutes.
+          </span>
+        </div>
+      </header>
 
+      <main itemprop="articleBody">
         <p>
           It’s been fourteen years since I joined Google. Much has happened
           since then, and people think the old Google is dead. This is somewhat
@@ -101,7 +118,7 @@
           One way to understand what is happening is to compare and contrast the
           Google of yore and the present (as of late 2024) Google.
         </p>
-        <h3 id="from-illegal-flower-tribute">From Illegal Flower Tribute</h3>
+        <h3>From Illegal Flower Tribute</h3>
         <p>
           Perhaps the most defining moment for Google around 2010 was Google
           Search’s exit from China.
@@ -116,12 +133,12 @@
         <figure>
           <img
             src="/posts/fourteen-years/vSEmv0YQs0-1600.png"
+            alt=""
             class="noinvert"
-            alt="Illegal flower tribute on Wikipedia (CC-By-SA 3.0)"
             width="1600"
             height="1200"
           />
-          <figcaption aria-hidden="true">
+          <figcaption>
             <a href="https://en.wikipedia.org/wiki/Illegal_flower_tribute"
               >Illegal flower tribute on Wikipedia</a
             >
@@ -151,8 +168,7 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen=""
-          >
-          </iframe>
+          ></iframe>
           <figcaption>Hacking Google - YouTube</figcaption>
         </figure>
         <p>
@@ -161,7 +177,7 @@
           was a palpable sense of pride that we were working for the right
           company.
         </p>
-        <h3 id="to-project-nimbus">To Project Nimbus</h3>
+        <h3>To Project Nimbus</h3>
         <p>Time changes everything.</p>
         <p>
           Eight years later Google reneged on its stance against censorship by
@@ -191,7 +207,7 @@
           intentionally changed the terms-of-use for this contract to allow uses
           that were explicitly called out as going against Google’s values.
         </p>
-        <h3 id="thats-where-we-are">That’s Where We Are</h3>
+        <h3>That’s Where We Are</h3>
         <p>And that’s where we are right now.</p>
         <p>
           Google has had some rough years during which its relationship with the
@@ -214,164 +230,229 @@
           However it’s still better than the other big tech companies. I keep
           telling myself that.
         </p>
+      </main>
 
-        <footer>
-          <div class="lastmodified">
-            <p>Last modified: December 31, 2024</p>
-          </div>
-        </footer>
-      </article>
+      <footer>
+        <div class="lastmodified">
+          <p>
+            Last modified: <time datetime="2024-12-31">December 31, 2024</time>
+          </p>
+        </div>
+      </footer>
+    </article>
 
-      <div class="container"></div>
-    </main>
+    <div class="container"></div>
 
     <footer class="container">
       <h2>More posts from this blog ...</h2>
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/visualizing-people-2/">
-            Visualizing A Million People
+          <a itemprop="url" href="/posts/grab-diagram-workflow-re2/">
+            <span itemprop="name"
+              >Quickly grab a snapshot of your reMarkable tablet</span
+            >
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on September 6, 2021 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2022-01-06" itemprop="datePublished"
+              >January 6, 2022</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/curiosity/">#Curiosity</a>
+            <a href="/tags/remarkable-2/">#Remarkable 2</a>
           </span>
-        </div>
+
+          <span class="tag-link">
+            <a href="/tags/tools/">#Tools</a>
+          </span>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
-                If your feature pisses off a million people what does this angry
-                mob look like? Spoiler: We only get to 750,000.
+                How to bind a hotkey to grab a snapshot of your reMarkable
+                display and copy it to the clipboard on a Mac.
               </p>
             </div>
           </div>
           <p class="more">
-            <a href="/posts/visualizing-people-2/">Read more …</a>
+            <a href="/posts/grab-diagram-workflow-re2/">Read more …</a>
           </p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/code-as-ui/">
-            Code As UI: The UX of config-as-code and everything-as-code
+          <a itemprop="url" href="/posts/inktober-stripes/">
+            <span itemprop="name">Inktober - Stripes</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on July 1, 2023 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2022-01-21" itemprop="datePublished"
+              >January 21, 2022</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/engineering/">#engineering</a>
+            <a href="/tags/inktober/">#Inktober</a>
           </span>
-        </div>
-        <div>
-          <div class="summary-line">
-            <div class="summary">
-              <p>
-                Configuration-as-code has the same usability issues as
-                everything else as code along with the same benefits.
-              </p>
-            </div>
-          </div>
-          <p class="more"><a href="/posts/code-as-ui/">Read more …</a></p>
-        </div>
+        </nav>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/just-the-right-amount/">
-            Just Enough Technical Debt
+          <a itemprop="url" href="/posts/syntax-highlighting/">
+            <span itemprop="name">On Highlighting Syntax vs. Semantics</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on July 8, 2023 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2022-02-12" itemprop="datePublished"
+              >February 12, 2022</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/engineering/">#Engineering</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
-              <p>Zero technical debt isn't always the answer.</p>
+            <div class="summary" itemprop="abstract">
+              <p>
+                Takes a look at an alternate form of code highlighting based on
+                core semantics instead of syntactic role.
+              </p>
             </div>
           </div>
           <p class="more">
-            <a href="/posts/just-the-right-amount/">Read more …</a>
+            <a href="/posts/syntax-highlighting/">Read more …</a>
           </p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/have-loop/"> The Have-Loop </a>
+          <a itemprop="url" href="/posts/promise-fatigue/">
+            <span itemprop="name">Promise Fatigue</span>
+          </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on June 24, 2024 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2022-11-01" itemprop="datePublished"
+              >November 1, 2022</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/culture/">#Culture</a>
           </span>
-        </div>
+
+          <span class="tag-link">
+            <a href="/tags/career/">#Career</a>
+          </span>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
-                Have-loops are positive feedback loops which cause unsustainable
-                concentration of limited resources. Once you learn to recognize
-                them, you will see them everywhere.
+                Setting low but realistic expectations is better than setting
+                high but unrealistic ones.
               </p>
             </div>
           </div>
-          <p class="more"><a href="/posts/have-loop/">Read more …</a></p>
+          <p class="more"><a href="/posts/promise-fatigue/">Read more …</a></p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/series/structure-of-experience/flame/"
-            ><span class="series-name">Structure Of Experience</span>: Act III:
-            Flame
+          <a itemprop="url" href="/posts/intrinsic-motivation-an-anecdote/">
+            <span itemprop="name"
+              >Intrinsic and Extrinsic Motivation: An anecdote</span
+            >
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on May 7, 2025 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2025-03-22" itemprop="datePublished"
+              >March 22, 2025</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/ai/">#AI</a>
+            <a href="/tags/culture/">#Culture</a>
           </span>
-        </div>
+
+          <span class="tag-link">
+            <a href="/tags/career/">#Career</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/inclusion-and-equity/">#Inclusion and Equity</a>
+          </span>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
-                The map is not the territory. A picture of a flame is not a
-                flame. A description of a neural network is not a brain. A
-                simulation of thought is not a consciousness.
+                Intrinsic motivation is always better than extrinsic motivation.
+                But not as good as it is when one is motivated both
+                intrinsically and extrinsically.
               </p>
             </div>
           </div>
           <p class="more">
-            <a href="/series/structure-of-experience/flame/">Read more …</a>
+            <a href="/posts/intrinsic-motivation-an-anecdote/">Read more …</a>
           </p>
         </div>
       </div>
     </footer>
 
+    <!-- Google analytics -->
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"

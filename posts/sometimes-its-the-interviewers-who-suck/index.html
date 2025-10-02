@@ -41,7 +41,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/eC0wygYar8.css" />
+    <link rel="stylesheet" href="/styles/Bzyqb5Ytgc.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -50,10 +50,17 @@
 
   <body>
     <header class="container">
-      <nav class="navlike">
-        <h1><a href="/">Strong Opinions Weekly Held</a></h1>
+      <nav class="top" itemscope="" itemtype="https://schema.org/Blog">
+        <h1 itemprop="name">
+          <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
+        </h1>
         <span class="fill"></span>
-        <h2><a href="/about/me/">About</a></h2>
+
+        <h2><a href="/">Home</a></h2>
+
+        <h2 itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="/about/me/" itemprop="sameAs">About</a>
+        </h2>
         <h2><a href="/tags/">Tags</a></h2>
         <h2>
           <a href="/feed.xml"><img src="/images/rss.svg" /></a>
@@ -61,29 +68,42 @@
       </nav>
     </header>
 
-    <main>
-      <article class="container">
-        <header>
-          <h1>Sometimes It&#39;s the Interviewers Who Suck</h1>
-          <div class="navlike">
-            <span>
-              <span class="date">Posted on March 20, 2021</span
-              ><span class="author">&nbsp;by Asanka Herath</span></span
-            >
-            <span class="fill"></span>
+    <article
+      class="container"
+      itemscope=""
+      itemtype="https://schema.org/BlogPosting"
+    >
+      <link
+        itemprop="url"
+        href="/posts/sometimes-its-the-interviewers-who-suck/"
+      />
+      <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+      <header>
+        <h1 itemprop="name">Sometimes It&#39;s the Interviewers Who Suck</h1>
+        <nav>
+          <span>
+            <span class="date"
+              >Posted on
+              <time datetime="2021-03-20" itemprop="datePublished"
+                >March 20, 2021</time
+              ></span
+            >&nbsp;by
+            <span class="author" itemprop="author">Asanka Herath</span></span
+          >
+          <span class="fill"></span>
 
-            <span class="tag-link">
-              <a href="/tags/career/">#Career</a>
-            </span>
-          </div>
-          <div class="navlike">
-            <span class="readingtime">
-              Estimated reading time is 9 minutes.
-            </span>
-            <span class="fill"></span>
-          </div>
-        </header>
+          <span class="tag-link">
+            <a href="/tags/career/">#Career</a>
+          </span>
+        </nav>
+        <div>
+          <span class="readingtime">
+            Estimated reading time is 8 minutes.
+          </span>
+        </div>
+      </header>
 
+      <main itemprop="articleBody">
         <p>
           I’ve done hundreds of interviews. I’ve also served in numerous hiring
           committees over the years.
@@ -137,7 +157,7 @@
           actually happened based on the writeup. So how do we go about spotting
           bad interviews?
         </p>
-        <h3 id="the-writeup-is-terse.">The writeup is terse.</h3>
+        <h3>The writeup is terse.</h3>
         <p>
           Not in and of itself a conclusive sign, but if the writeup doesn’t
           have any details that a committee could use to form a decision, it’s
@@ -146,9 +166,7 @@
           writeups are from novice interviewers who don’t know what to write
           about.
         </p>
-        <h3 id="the-writeup-uses-adversarial-framing.">
-          The writeup uses adversarial framing.
-        </h3>
+        <h3>The writeup uses adversarial framing.</h3>
         <p>
           A very frequent problem specially with novice interviewers is that
           they go into the interview thinking that it is some sort of
@@ -159,25 +177,19 @@
           across as less smart than the candidate. Either way this mentality
           comes across during the interview as hostile or condescending.
         </p>
-        <h3
-          id="the-interviewer-takes-too-much-pleasure-in-the-interviewees-misery."
-        >
+        <h3>
           The interviewer takes too much pleasure in the interviewee’s misery.
         </h3>
         <p>
           Each mistake is gloated on while points at which the interviewee
           obviously shone are muted.
         </p>
-        <h3 id="the-question-is-unnecessarily-hard.">
-          The question is unnecessarily hard.
-        </h3>
+        <h3>The question is unnecessarily hard.</h3>
         <p>
           Solving a hard question that requires a great deal of time and thought
           is very satisfying. But it isn’t what you do on a day-to-day basis.
         </p>
-        <h3
-          id="the-interviewer-allows-the-interviewee-to-march-into-the-weeds-without-helping-them-back."
-        >
+        <h3>
           The interviewer allows the interviewee to march into the weeds without
           helping them back.
         </h3>
@@ -191,9 +203,7 @@
           dead-end while the clock ticks away the remaining minutes of an
           interview does not help anyone.
         </p>
-        <h3 id="obvious-misunderstandings-are-not-corrected.">
-          Obvious misunderstandings are not corrected.
-        </h3>
+        <h3>Obvious misunderstandings are not corrected.</h3>
         <p>
           It is the interviewer’s responsibility to explain the problem clearly.
           The problem itself doesn’t need to be fully explained since there’s
@@ -205,9 +215,7 @@
           explained. It’s not useful to knowingly send a candidate down the
           wrong path.
         </p>
-        <h3 id="the-interviewer-seemed-annoyed-or-angry.">
-          The interviewer seemed annoyed or angry.
-        </h3>
+        <h3>The interviewer seemed annoyed or angry.</h3>
         <p>
           This one should be self explanatory. The candidate is anxious enough
           as it is. The interviewer should not frustrate the interviewee’s
@@ -218,9 +226,7 @@
           clarity are <em>good</em>. If the interviewer actively discourages
           such inquiry that’s on the interviewer – not the candidate.
         </p>
-        <h3 id="one-interview-diverges-significantly-from-others.">
-          One interview diverges significantly from others.
-        </h3>
+        <h3>One interview diverges significantly from others.</h3>
         <p>
           There’s more than one interview for a reason. If one interview
           highlights an area as being weak while another interview highlights
@@ -245,164 +251,219 @@
           allows a recruiter to go to bat for you and perhaps get you another
           interview if appropriate.
         </p>
+      </main>
 
-        <footer>
-          <div class="lastmodified">
-            <p>Last modified: March 20, 2021</p>
-          </div>
-        </footer>
-      </article>
+      <footer>
+        <div class="lastmodified">
+          <p>
+            Last modified: <time datetime="2021-03-20">March 20, 2021</time>
+          </p>
+        </div>
+      </footer>
+    </article>
 
-      <div class="container"></div>
-    </main>
+    <div class="container"></div>
 
     <footer class="container">
       <h2>More posts from this blog ...</h2>
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/poisson-distribution/">
-            Deriving the Poisson Distribution
+          <a itemprop="url" href="/posts/syntax-highlighting/">
+            <span itemprop="name">On Highlighting Syntax vs. Semantics</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on December 11, 2020 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2022-02-12" itemprop="datePublished"
+              >February 12, 2022</time
+            >
+          </span>
 
           <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/math/">#Math</a>
-          </span>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/shannon-paper/"> Shannon Paper </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on March 26, 2021 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/math/">#Math</a>
-          </span>
-        </div>
-        <div>
-          <div class="summary-line">
-            <div class="summary">
-              <p>
-                Claude Shannon's
-                <em>A mathematical theory of communication</em> is an oft cited
-                classic in information theory. Let's dive in and try to tease
-                apart the &quot;why&quot;s that are often overlooked when people
-                build on top of the introduced theory. They are definitely
-                things that I didn't consider to be obvious without the benefit
-                of reading the paper.
-              </p>
-            </div>
-          </div>
-          <p class="more"><a href="/posts/shannon-paper/">Read more …</a></p>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/notes-on-fact-checking/">
-            Notes from Crash Course&#39;s Videos on Fact Checking Information
-            You See On The Internet
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on July 4, 2020 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/curiosity/">#Curiosity</a>
-          </span>
-        </div>
-        <div>
-          <div class="summary-line">
-            <div class="summary">
-              <p>
-                Hank Green's Crash Course YouTube channel has an excellent
-                series about navigating digital information. It's an excellent
-                guide to how internet users could intelligently consume
-                information they see on the internet. These are my (incomplete)
-                notes from the series.
-              </p>
-            </div>
-          </div>
-          <p class="more">
-            <a href="/posts/notes-on-fact-checking/">Read more …</a>
-          </p>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/the-loss-of-a-virtuous-culture/">
-            The Loss of a Virtuous Culture
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on October 28, 2022 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/culture/">#Culture</a>
-          </span>
 
           <span class="tag-link">
             <a href="/tags/engineering/">#Engineering</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
-              <p>Luck isn't enough. You need a culture of virtue.</p>
+            <div class="summary" itemprop="abstract">
+              <p>
+                Takes a look at an alternate form of code highlighting based on
+                core semantics instead of syntactic role.
+              </p>
             </div>
           </div>
           <p class="more">
-            <a href="/posts/the-loss-of-a-virtuous-culture/">Read more …</a>
+            <a href="/posts/syntax-highlighting/">Read more …</a>
           </p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/thirteen-years/"> Thirteen Years </a>
+          <a itemprop="url" href="/posts/darpa-heilmeier-catechism/">
+            <span itemprop="name">DARPA&#39;s Heilmeier Catechism</span>
+          </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on December 7, 2023 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2022-06-28" itemprop="datePublished"
+              >June 28, 2022</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/career/">#Career</a>
+            <a href="/tags/engineering/">#engineering</a>
           </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>
+                A set of questions help you think through and evaluate proposed
+                projects and research programs.
+              </p>
+            </div>
+          </div>
+          <p class="more">
+            <a href="/posts/darpa-heilmeier-catechism/">Read more …</a>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/git-autopush/">
+            <span itemprop="name"
+              >Use Git hooks to automatically push after every commit</span
+            >
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2022-07-05" itemprop="datePublished"
+              >July 5, 2022</time
+            >
+          </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/tools/">#tools</a>
+          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>
+                During before and after various Git operations, Git invokes
+                special hooks that can be used execute custom scripts. This
+                article explains how to use them to automatically push to an
+                upstream repository every time you make a commit to a local
+                repo.
+              </p>
+            </div>
+          </div>
+          <p class="more"><a href="/posts/git-autopush/">Read more …</a></p>
+        </div>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a
+            itemprop="url"
+            href="/posts/happy-new-year-2024-and-year-in-review-2023/"
+          >
+            <span itemprop="name"
+              >Happy New Year 2024 and Year in Review 2023</span
+            >
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2024-01-01" itemprop="datePublished"
+              >January 1, 2024</time
+            >
+          </span>
+
+          <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/culture/">#Culture</a>
           </span>
+        </nav>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/series/structure-of-experience/preface/"
+            ><span class="series-name">Structure Of Experience</span>:
+            <span itemprop="name">Preface</span>
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2025-05-01" itemprop="datePublished"
+              >May 1, 2025</time
+            >
+          </span>
+
+          <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/organizations/">#Organizations</a>
+            <a href="/tags/ai/">#AI</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
-              <p>Some reflections from thirteen years at Google.</p>
+            <div class="summary" itemprop="abstract">
+              <p>
+                A very gentle introduction to how large language models
+                <em>almost</em> capture human experience through language.
+              </p>
             </div>
           </div>
-          <p class="more"><a href="/posts/thirteen-years/">Read more …</a></p>
+          <p class="more">
+            <a href="/series/structure-of-experience/preface/">Read more …</a>
+          </p>
         </div>
       </div>
     </footer>
 
+    <!-- Google analytics -->
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"

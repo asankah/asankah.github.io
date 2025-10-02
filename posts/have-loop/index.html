@@ -41,7 +41,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/eC0wygYar8.css" />
+    <link rel="stylesheet" href="/styles/Bzyqb5Ytgc.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -50,10 +50,17 @@
 
   <body>
     <header class="container">
-      <nav class="navlike">
-        <h1><a href="/">Strong Opinions Weekly Held</a></h1>
+      <nav class="top" itemscope="" itemtype="https://schema.org/Blog">
+        <h1 itemprop="name">
+          <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
+        </h1>
         <span class="fill"></span>
-        <h2><a href="/about/me/">About</a></h2>
+
+        <h2><a href="/">Home</a></h2>
+
+        <h2 itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="/about/me/" itemprop="sameAs">About</a>
+        </h2>
         <h2><a href="/tags/">Tags</a></h2>
         <h2>
           <a href="/feed.xml"><img src="/images/rss.svg" /></a>
@@ -61,37 +68,47 @@
       </nav>
     </header>
 
-    <main>
-      <article class="container">
-        <header>
-          <h1>The Have-Loop</h1>
-          <div class="navlike">
-            <span>
-              <span class="date">Posted on June 24, 2024</span
-              ><span class="author">&nbsp;by Asanka Herath</span></span
-            >
-            <span class="fill"></span>
+    <article
+      class="container"
+      itemscope=""
+      itemtype="https://schema.org/BlogPosting"
+    >
+      <link itemprop="url" href="/posts/have-loop/" />
+      <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+      <header>
+        <h1 itemprop="name">The Have-Loop</h1>
+        <nav>
+          <span>
+            <span class="date"
+              >Posted on
+              <time datetime="2024-06-24" itemprop="datePublished"
+                >June 24, 2024</time
+              ></span
+            >&nbsp;by
+            <span class="author" itemprop="author">Asanka Herath</span></span
+          >
+          <span class="fill"></span>
 
-            <span class="tag-link">
-              <a href="/tags/culture/">#Culture</a>
-            </span>
-          </div>
-          <div class="navlike">
-            <span class="readingtime">
-              Estimated reading time is 4 minutes.
-            </span>
-            <span class="fill"></span>
-          </div>
-        </header>
+          <span class="tag-link">
+            <a href="/tags/culture/">#Culture</a>
+          </span>
+        </nav>
+        <div>
+          <span class="readingtime">
+            Estimated reading time is 3 minutes.
+          </span>
+        </div>
+      </header>
 
+      <main itemprop="articleBody">
         <figure>
           <img
             src="/posts/have-loop/xdqvWvJJom-406.png"
-            alt="The have loop is a positive feedback self-loop showing the effects of possessing something of limited supply."
+            alt=""
             width="406"
             height="337"
           />
-          <figcaption aria-hidden="true">
+          <figcaption>
             The have loop is a positive feedback self-loop showing the effects
             of possessing something of limited supply.
           </figcaption>
@@ -106,12 +123,9 @@
           <em>concentration</em> of said resource.
         </p>
         <p>
-          If we consider <em>education</em> to be a profit-center<a
-            href="#fn1"
+          If we consider <em>education</em> to be a profit-center<sup
             class="footnote-ref"
-            id="fnref1"
-            role="doc-noteref"
-            ><sup>1</sup></a
+            ><a href="#fn1" id="fnref1">[1]</a></sup
           >
           as is the case in the United States, then education becomes part of a
           have-loop across generations. In other words, the passage of time will
@@ -120,12 +134,8 @@
         <p>
           One example of this is wealth – because wealth begets wealth.
           Inevitably this leads to concentration of wealth to an increasingly
-          smaller group of people<a
-            href="#fn2"
-            class="footnote-ref"
-            id="fnref2"
-            role="doc-noteref"
-            ><sup>2</sup></a
+          smaller group of people<sup class="footnote-ref"
+            ><a href="#fn2" id="fnref2">[2]</a></sup
           >. There is no natural equilibrium state absent external regulation.
         </p>
         <p>
@@ -136,28 +146,19 @@
           Wherever society allows a have-loop to exist, inequality will
           inevitably grow.
         </p>
-        <section
-          id="footnotes"
-          class="footnotes footnotes-end-of-document"
-          role="doc-endnotes"
-        >
-          <hr />
-          <ol>
-            <li id="fn1">
+        <hr class="footnotes-sep" />
+        <section class="footnotes">
+          <ol class="footnotes-list">
+            <li id="fn1" class="footnote-item">
               <p>
                 The terms “cost-center” and “profit-center” typically refer to
                 businesses. But they can also apply to societal policy where as
                 a society we decide that certain things should be done for
                 profit while certain other things should be available to
-                everyone.<a
-                  href="#fnref1"
-                  class="footnote-back"
-                  role="doc-backlink"
-                  >↩︎</a
-                >
+                everyone. <a href="#fnref1" class="footnote-backref">↩︎</a>
               </p>
             </li>
-            <li id="fn2">
+            <li id="fn2" class="footnote-item">
               <p>
                 People tend to focus on income inequality, which is an important
                 factor. But another factor that drives extreme wealth
@@ -165,54 +166,114 @@
                 natural resources, hyper-extraction can also be directed towards
                 individuals and entire demographies. Measures of income equality
                 will eventually fall against another’s ability to enact
-                hyper-extraction.<a
-                  href="#fnref2"
-                  class="footnote-back"
-                  role="doc-backlink"
-                  >↩︎</a
-                >
+                hyper-extraction.
+                <a href="#fnref2" class="footnote-backref">↩︎</a>
               </p>
             </li>
           </ol>
         </section>
+      </main>
 
-        <footer>
-          <div class="lastmodified">
-            <p>Last modified: June 24, 2024</p>
-          </div>
-        </footer>
-      </article>
+      <footer>
+        <div class="lastmodified">
+          <p>Last modified: <time datetime="2024-06-24">June 24, 2024</time></p>
+        </div>
+      </footer>
+    </article>
 
-      <div class="container"></div>
-    </main>
+    <div class="container"></div>
 
     <footer class="container">
       <h2>More posts from this blog ...</h2>
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/sometimes-its-the-interviewers-who-suck/">
-            Sometimes It&#39;s the Interviewers Who Suck
+          <a itemprop="url" href="/posts/visualizing-people/">
+            <span itemprop="name">Visualizing Internet Users</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on March 20, 2021 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-11-21" itemprop="datePublished"
+              >November 21, 2020</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/career/">#Career</a>
+            <a href="/tags/engineering/">#Engineering</a>
           </span>
+
+          <span class="tag-link">
+            <a href="/tags/curiosity/">#Curiosity</a>
+          </span>
+        </nav>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/fart-limit/">
+            <span itemprop="name">Fart Limit</span>
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2021-06-14" itemprop="datePublished"
+              >June 14, 2021</time
+            >
+          </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/curiosity/">#Curiosity</a>
+          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>
+                Can a fart be fatal? Let's see what science and OSHA have to
+                say.
+              </p>
+            </div>
+          </div>
+          <p class="more"><a href="/posts/fart-limit/">Read more …</a></p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/use-drop-not-edit/">
-            Vim: Use Drop Not Edit, SBuffer Not Buffer
+          <a itemprop="url" href="/posts/mark-goes-up-and-down/">
+            <span itemprop="name"
+              >Markdown should be readble without knowing Markdown</span
+            >
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on July 7, 2020 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2022-04-05" itemprop="datePublished"
+              >April 5, 2022</time
+            >
+          </span>
 
           <span class="fill"></span>
 
@@ -221,112 +282,118 @@
           </span>
 
           <span class="tag-link">
-            <a href="/tags/vim/">#Vim</a>
+            <a href="/tags/engineering/">#Engineering</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
               <p>
-                Use the <code>:drop</code> command instead of
-                <code>:edit</code> in Vim. It will reuse an existing window
-                instead of creating a new one.
+                Markdown documents should be readble without understanding
+                complex mark-up. A growing number of Markdown syntax extensions
+                take the form of HTML or HTML-like tags and boilerplate that
+                hinder readability. Instead we should focus on how some
+                construct should be presented in plain-text for human
+                consumption and then add minimal structure to it for machine
+                consumption.
               </p>
             </div>
           </div>
           <p class="more">
-            <a href="/posts/use-drop-not-edit/">Read more …</a>
+            <a href="/posts/mark-goes-up-and-down/">Read more …</a>
           </p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/have-loop/"> The Have-Loop </a>
+          <a itemprop="url" href="/posts/a-good-api/">
+            <span itemprop="name">A Good API: g9</span>
+          </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on June 24, 2024 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/culture/">#Culture</a>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2023-08-12" itemprop="datePublished"
+              >August 12, 2023</time
+            >
           </span>
-        </div>
-        <div>
-          <div class="summary-line">
-            <div class="summary">
-              <p>
-                Have-loops are positive feedback loops which cause unsustainable
-                concentration of limited resources. Once you learn to recognize
-                them, you will see them everywhere.
-              </p>
-            </div>
-          </div>
-          <p class="more"><a href="/posts/have-loop/">Read more …</a></p>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/buffer-bloat/"> Buffer Bloat </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on January 3, 2025 </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/engineering/">#Engineering</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
-              <p>
-                In networking, adding too much buffering to intermediate network
-                devices introduce unnecessary delays. The trade-off is that
-                <em>bursty</em> traffic will have the appearance of getting
-                through faster. But in reality, the speed of the network is
-                still the same. Data just takes longer to get through.
-              </p>
+            <div class="summary" itemprop="abstract">
+              <p>Adding more knobs doesn't make your API more powerful.</p>
             </div>
           </div>
-          <p class="more"><a href="/posts/buffer-bloat/">Read more …</a></p>
+          <p class="more"><a href="/posts/a-good-api/">Read more …</a></p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/series/structure-of-experience/meaning/"
-            ><span class="series-name">Structure Of Experience</span>: Act I:
-            Meaning
+          <a itemprop="url" href="/posts/why-i-hate-carousels/">
+            <span itemprop="name">Why I Hate Carousels</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on May 4, 2025 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2024-01-25" itemprop="datePublished"
+              >January 25, 2024</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
-            <a href="/tags/ai/">#AI</a>
+            <a href="/tags/usability/">#Usability</a>
           </span>
-        </div>
+
+          <span class="tag-link">
+            <a href="/tags/engineering/">#Engineering</a>
+          </span>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
-              <p>
-                Language builds meaning by combining your inner experiences.
-              </p>
+            <div class="summary" itemprop="abstract">
+              <ul>
+                <li>Don't use carousels in your UI.</li>
+                <li>
+                  Instead, if you must stick content into little cards, let the
+                  horionztal layout wrap to additional lines.
+                </li>
+                <li>
+                  If you end up with too many horizontal lines of content, then
+                  you definitely have too many items that can be accessed via a
+                  horizontally panning UI. You need a different UI altogether.
+                </li>
+              </ul>
             </div>
           </div>
           <p class="more">
-            <a href="/series/structure-of-experience/meaning/">Read more …</a>
+            <a href="/posts/why-i-hate-carousels/">Read more …</a>
           </p>
         </div>
       </div>
     </footer>
 
+    <!-- Google analytics -->
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"

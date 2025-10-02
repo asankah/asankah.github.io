@@ -41,7 +41,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/eC0wygYar8.css" />
+    <link rel="stylesheet" href="/styles/Bzyqb5Ytgc.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -50,10 +50,17 @@
 
   <body>
     <header class="container">
-      <nav class="navlike">
-        <h1><a href="/">Strong Opinions Weekly Held</a></h1>
+      <nav class="top" itemscope="" itemtype="https://schema.org/Blog">
+        <h1 itemprop="name">
+          <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
+        </h1>
         <span class="fill"></span>
-        <h2><a href="/about/me/">About</a></h2>
+
+        <h2><a href="/">Home</a></h2>
+
+        <h2 itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="/about/me/" itemprop="sameAs">About</a>
+        </h2>
         <h2><a href="/tags/">Tags</a></h2>
         <h2>
           <a href="/feed.xml"><img src="/images/rss.svg" /></a>
@@ -61,33 +68,43 @@
       </nav>
     </header>
 
-    <main>
-      <article class="container">
-        <header>
-          <h1>Vim: Use Drop Not Edit, SBuffer Not Buffer</h1>
-          <div class="navlike">
-            <span>
-              <span class="date">Posted on July 7, 2020</span
-              ><span class="author">&nbsp;by Asanka Herath</span></span
-            >
-            <span class="fill"></span>
+    <article
+      class="container"
+      itemscope=""
+      itemtype="https://schema.org/BlogPosting"
+    >
+      <link itemprop="url" href="/posts/use-drop-not-edit/" />
+      <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+      <header>
+        <h1 itemprop="name">Vim: Use Drop Not Edit, SBuffer Not Buffer</h1>
+        <nav>
+          <span>
+            <span class="date"
+              >Posted on
+              <time datetime="2020-07-07" itemprop="datePublished"
+                >July 7, 2020</time
+              ></span
+            >&nbsp;by
+            <span class="author" itemprop="author">Asanka Herath</span></span
+          >
+          <span class="fill"></span>
 
-            <span class="tag-link">
-              <a href="/tags/tools/">#Tools</a>
-            </span>
+          <span class="tag-link">
+            <a href="/tags/tools/">#Tools</a>
+          </span>
 
-            <span class="tag-link">
-              <a href="/tags/vim/">#Vim</a>
-            </span>
-          </div>
-          <div class="navlike">
-            <span class="readingtime">
-              Estimated reading time is 4 minutes.
-            </span>
-            <span class="fill"></span>
-          </div>
-        </header>
+          <span class="tag-link">
+            <a href="/tags/vim/">#Vim</a>
+          </span>
+        </nav>
+        <div>
+          <span class="readingtime">
+            Estimated reading time is 4 minutes.
+          </span>
+        </div>
+      </header>
 
+      <main itemprop="articleBody">
         <p>I’m going to assume you are a Vim user.</p>
         <p>
           Say you have a several windows open in Vim and you want to edit
@@ -99,19 +116,15 @@
           open in another window, then the most efficient and least disruptive
           thing to do is to switch to that window.
         </p>
-        <h2 id="drop">drop</h2>
+        <h2>drop</h2>
         <p>
           That’s where <code>:drop</code> comes in. In case you aren’t familiar
           with the <code>drop</code> command, have a look at the help page in
           your favorite editor (<code>:help drop</code>) or
           <a href="http://vimdoc.sourceforge.net/htmldoc/windows.html#:drop"
             >here on the web</a
-          >. But the gist of it is that for most people<a
-            href="#fn1"
-            class="footnote-ref"
-            id="fnref1"
-            role="doc-noteref"
-            ><sup>1</sup></a
+          >. But the gist of it is that for most people<sup class="footnote-ref"
+            ><a href="#fn1" id="fnref1">[1]</a></sup
           >
           <code>:drop {file}</code> will:
         </p>
@@ -134,10 +147,12 @@
           See <code>:help coc-configuration</code> for details on how to set
           this, but basically it’s as simple as opening up the configuration
           using <code>:CocConfig</code> and then adding a
-          <code>"coc.preferences.jumpCommand": "drop",</code> mapping to the
-          configuration JSON file.
+          <code
+            >&quot;coc.preferences.jumpCommand&quot;: &quot;drop&quot;,</code
+          >
+          mapping to the configuration JSON file.
         </p>
-        <h2 id="switchbuf-or-swb">switchbuf or swb</h2>
+        <h2>switchbuf or swb</h2>
         <p>
           Or perhaps configuring each plugin is too much work. Enter
           <code>switchbuf</code>. This is a global setting in Vim that controls
@@ -158,85 +173,133 @@
         <p>
           See <code>:help switchbuf</code> or
           <a
-            href="http://vimdoc.sourceforge.net/htmldoc/options.html#&#39;switchbuf&#39;"
+            href="http://vimdoc.sourceforge.net/htmldoc/options.html#'switchbuf'"
             >here on the web</a
           >
           for full details.
         </p>
-        <section
-          id="footnotes"
-          class="footnotes footnotes-end-of-document"
-          role="doc-endnotes"
-        >
-          <hr />
-          <ol>
-            <li id="fn1">
+        <hr class="footnotes-sep" />
+        <section class="footnotes">
+          <ol class="footnotes-list">
+            <li id="fn1" class="footnote-item">
               <p>
                 Assuming you have <code>set hidden</code> that is. See
                 <code>:help drop</code> for more details on what happens when
-                the current buffer cannot be unloaded.<a
-                  href="#fnref1"
-                  class="footnote-back"
-                  role="doc-backlink"
-                  >↩︎</a
-                >
+                the current buffer cannot be unloaded.
+                <a href="#fnref1" class="footnote-backref">↩︎</a>
               </p>
             </li>
           </ol>
         </section>
+      </main>
 
-        <footer>
-          <div class="lastmodified">
-            <p>Last modified: July 7, 2020</p>
-          </div>
-        </footer>
-      </article>
+      <footer>
+        <div class="lastmodified">
+          <p>Last modified: <time datetime="2020-07-07">July 7, 2020</time></p>
+        </div>
+      </footer>
+    </article>
 
-      <div class="container"></div>
-    </main>
+    <div class="container"></div>
 
     <footer class="container">
       <h2>More posts from this blog ...</h2>
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/visualizing-people/"> Visualizing Internet Users </a>
+          <a itemprop="url" href="/posts/inktober-wild/">
+            <span itemprop="name">Inktober - Wild</span>
+          </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on November 21, 2020 </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/engineering/">#Engineering</a>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2022-01-13" itemprop="datePublished"
+              >January 13, 2022</time
+            >
           </span>
-
-          <span class="tag-link">
-            <a href="/tags/curiosity/">#Curiosity</a>
-          </span>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/posts/inktober-decay/"> Inktober - Decay </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on January 13, 2022 </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/inktober/">#Inktober</a>
           </span>
+        </nav>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/mark-goes-up-and-down/">
+            <span itemprop="name"
+              >Markdown should be readble without knowing Markdown</span
+            >
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2022-04-05" itemprop="datePublished"
+              >April 5, 2022</time
+            >
+          </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/tools/">#Tools</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/engineering/">#Engineering</a>
+          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>
+                Markdown documents should be readble without understanding
+                complex mark-up. A growing number of Markdown syntax extensions
+                take the form of HTML or HTML-like tags and boilerplate that
+                hinder readability. Instead we should focus on how some
+                construct should be presented in plain-text for human
+                consumption and then add minimal structure to it for machine
+                consumption.
+              </p>
+            </div>
+          </div>
+          <p class="more">
+            <a href="/posts/mark-goes-up-and-down/">Read more …</a>
+          </p>
         </div>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/posts/promise-fatigue/"> Promise Fatigue </a>
+          <a itemprop="url" href="/posts/pillars-are-governance-structures/">
+            <span itemprop="name">Pillars And Governance Structures</span>
+          </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on November 1, 2022 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2023-09-09" itemprop="datePublished"
+              >September 9, 2023</time
+            >
+          </span>
 
           <span class="fill"></span>
 
@@ -247,89 +310,119 @@
           <span class="tag-link">
             <a href="/tags/career/">#Career</a>
           </span>
-        </div>
-        <div>
-          <div class="summary-line">
-            <div class="summary">
-              <p>
-                Setting low but realistic expectations is better than setting
-                high but unrealistic ones.
-              </p>
-            </div>
-          </div>
-          <p class="more"><a href="/posts/promise-fatigue/">Read more …</a></p>
-        </div>
-      </div>
-
-      <div class="post-card">
-        <h3 class="title">
-          <a href="/series/unsung-team-roles/emergence/"
-            ><span class="series-name">Unsung Team Roles</span>: Emergence of
-            Soft Roles
-          </a>
-        </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on August 2, 2025 </span>
-
-          <span class="fill"></span>
 
           <span class="tag-link">
             <a href="/tags/organizations/">#Organizations</a>
           </span>
-        </div>
-        <div>
-          <div class="summary-line">
-            <div class="summary">
-              <p>
-                In any team, the roles people play are not as rigid as they
-                seem. Over time, people naturally settle into &quot;soft
-                roles&quot; that are not explicitly defined but are crucial for
-                a team's success. This is a look at the organic, and often
-                unsung, ways that successful teams actually work.
-              </p>
-            </div>
-          </div>
-          <p class="more">
-            <a href="/series/unsung-team-roles/emergence/">Read more …</a>
-          </p>
-        </div>
+        </nav>
       </div>
 
-      <div class="post-card">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a href="/series/unsung-team-roles/crossbeams/"
-            ><span class="series-name">Unsung Team Roles</span>: Soft Roles as
-            Organizational Cross Beams
+          <a itemprop="url" href="/posts/thirteen-years/">
+            <span itemprop="name">Thirteen Years</span>
           </a>
         </h3>
-        <div class="navlike">
-          <span class="date navlike"> Last updated on August 12, 2025 </span>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2023-12-07" itemprop="datePublished"
+              >December 7, 2023</time
+            >
+          </span>
 
           <span class="fill"></span>
 
           <span class="tag-link">
+            <a href="/tags/career/">#Career</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/culture/">#Culture</a>
+          </span>
+
+          <span class="tag-link">
             <a href="/tags/organizations/">#Organizations</a>
           </span>
-        </div>
+        </nav>
         <div>
           <div class="summary-line">
-            <div class="summary">
+            <div class="summary" itemprop="abstract">
+              <p>Some reflections from thirteen years at Google.</p>
+            </div>
+          </div>
+          <p class="more"><a href="/posts/thirteen-years/">Read more …</a></p>
+        </div>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/an-intuition-on-entropy/">
+            <span itemprop="name">An Intuition on Shannon Entropy</span>
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2025-09-27" itemprop="datePublished"
+              >September 27, 2025</time
+            >
+          </span>
+
+          <span class="fill"></span>
+
+          <span class="tag-link">
+            <a href="/tags/privacy/">#Privacy</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/programming/">#Programming</a>
+          </span>
+
+          <span class="tag-link">
+            <a href="/tags/entropy/">#Entropy</a>
+          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <a href="/posts/an-intuition-on-entropy/" class="hero-link">
+              <img
+                class="hero"
+                src="/img/4ywdW_OSoN-600.png"
+                alt="An allegorical pencil drawing of an ornate scale. The left pan represents &#39;Information&#39; with a neat pile of books and scrolls. The right pan represents &#39;Uncertainty&#39; with a chaotic vortex of dissolving papers, gears, and symbols. The scale is in perfect equilibrium, illustrating the conceptual balance between order and disorder."
+                width="600"
+                height="600"
+              />
+            </a>
+
+            <div class="summary" itemprop="abstract">
               <p>
-                Leadership is fallible and imperfect. Soft roles emerge as they
-                are needed to account for various team roles that are needed but
-                not formally defined. Some of these roles help teams function,
-                and some others act as crossbeams that hold an entire
-                organization together.
+                Develop an intuition for Shannon entropy as a measure of
+                information content. Using the game 'Guess Who' as a practical
+                example, this post explains how entropy quantifies the reduction
+                in ambiguity and builds up the mathematical formulation from
+                basic principles.
               </p>
             </div>
           </div>
           <p class="more">
-            <a href="/series/unsung-team-roles/crossbeams/">Read more …</a>
+            <a href="/posts/an-intuition-on-entropy/">Read more …</a>
           </p>
         </div>
       </div>
     </footer>
 
+    <!-- Google analytics -->
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"
