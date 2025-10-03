@@ -41,7 +41,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/Bzyqb5Ytgc.css" />
+    <link rel="stylesheet" href="/styles/anExJ29O9C.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -54,7 +54,7 @@
         <h1 itemprop="name">
           <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
         </h1>
-        <span class="fill"></span>
+        <span></span>
 
         <h2><a href="/">Home</a></h2>
 
@@ -87,13 +87,11 @@
             >&nbsp;by
             <span class="author" itemprop="author">Asanka Herath</span></span
           >
-          <span class="fill"></span>
-
-          <span class="tag-link">
+          <span></span>
+          <span class="tag">
             <a href="/tags/tools/">#Tools</a>
           </span>
-
-          <span class="tag-link">
+          <span class="tag">
             <a href="/tags/vim/">#Vim</a>
           </span>
         </nav>
@@ -116,15 +114,19 @@
           open in another window, then the most efficient and least disruptive
           thing to do is to switch to that window.
         </p>
-        <h2>drop</h2>
+        <h2 id="drop">drop</h2>
         <p>
           That’s where <code>:drop</code> comes in. In case you aren’t familiar
           with the <code>drop</code> command, have a look at the help page in
           your favorite editor (<code>:help drop</code>) or
           <a href="http://vimdoc.sourceforge.net/htmldoc/windows.html#:drop"
             >here on the web</a
-          >. But the gist of it is that for most people<sup class="footnote-ref"
-            ><a href="#fn1" id="fnref1">[1]</a></sup
+          >. But the gist of it is that for most people<a
+            href="#fn1"
+            class="footnote-ref"
+            id="fnref1"
+            role="doc-noteref"
+            ><sup>1</sup></a
           >
           <code>:drop {file}</code> will:
         </p>
@@ -147,12 +149,10 @@
           See <code>:help coc-configuration</code> for details on how to set
           this, but basically it’s as simple as opening up the configuration
           using <code>:CocConfig</code> and then adding a
-          <code
-            >&quot;coc.preferences.jumpCommand&quot;: &quot;drop&quot;,</code
-          >
-          mapping to the configuration JSON file.
+          <code>"coc.preferences.jumpCommand": "drop",</code> mapping to the
+          configuration JSON file.
         </p>
-        <h2>switchbuf or swb</h2>
+        <h2 id="switchbuf-or-swb">switchbuf or swb</h2>
         <p>
           Or perhaps configuring each plugin is too much work. Enter
           <code>switchbuf</code>. This is a global setting in Vim that controls
@@ -173,20 +173,28 @@
         <p>
           See <code>:help switchbuf</code> or
           <a
-            href="http://vimdoc.sourceforge.net/htmldoc/options.html#'switchbuf'"
+            href="http://vimdoc.sourceforge.net/htmldoc/options.html#&#39;switchbuf&#39;"
             >here on the web</a
           >
           for full details.
         </p>
-        <hr class="footnotes-sep" />
-        <section class="footnotes">
-          <ol class="footnotes-list">
-            <li id="fn1" class="footnote-item">
+        <section
+          id="footnotes"
+          class="footnotes footnotes-end-of-document"
+          role="doc-endnotes"
+        >
+          <hr />
+          <ol>
+            <li id="fn1">
               <p>
                 Assuming you have <code>set hidden</code> that is. See
                 <code>:help drop</code> for more details on what happens when
-                the current buffer cannot be unloaded.
-                <a href="#fnref1" class="footnote-backref">↩︎</a>
+                the current buffer cannot be unloaded.<a
+                  href="#fnref1"
+                  class="footnote-back"
+                  role="doc-backlink"
+                  >↩︎</a
+                >
               </p>
             </li>
           </ol>
@@ -194,7 +202,7 @@
       </main>
 
       <footer>
-        <div class="lastmodified">
+        <div>
           <p>Last modified: <time datetime="2020-07-07">July 7, 2020</time></p>
         </div>
       </footer>
@@ -211,24 +219,36 @@
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/posts/inktober-wild/">
-            <span itemprop="name">Inktober - Wild</span>
+          <a itemprop="url" href="/posts/darpa-heilmeier-catechism/">
+            <span itemprop="name">DARPA&#39;s Heilmeier Catechism</span>
           </a>
         </h3>
         <nav>
           <span class="date">
             Last updated on
-            <time datetime="2022-01-13" itemprop="datePublished"
-              >January 13, 2022</time
+            <time datetime="2022-06-28" itemprop="datePublished"
+              >June 28, 2022</time
             >
           </span>
 
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/inktober/">#Inktober</a>
+          <span></span>
+          <span class="tag">
+            <a href="/tags/engineering/">#engineering</a>
           </span>
         </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>
+                A set of questions help you think through and evaluate proposed
+                projects and research programs.
+              </p>
+            </div>
+          </div>
+          <p class="more">
+            <a href="/posts/darpa-heilmeier-catechism/">Read more …</a>
+          </p>
+        </div>
       </div>
 
       <div
@@ -238,46 +258,76 @@
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/posts/mark-goes-up-and-down/">
+          <a itemprop="url" href="/posts/notes-on-fact-checking/">
             <span itemprop="name"
-              >Markdown should be readble without knowing Markdown</span
-            >
+              >Notes from Crash Course&#39;s Videos on Fact Checking Information
+              You See On The Internet
+            </span>
           </a>
         </h3>
         <nav>
           <span class="date">
             Last updated on
-            <time datetime="2022-04-05" itemprop="datePublished"
-              >April 5, 2022</time
+            <time datetime="2020-07-04" itemprop="datePublished"
+              >July 4, 2020</time
             >
           </span>
 
-          <span class="fill"></span>
+          <span></span>
+          <span class="tag">
+            <a href="/tags/curiosity/">#Curiosity</a>
+          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>
+                Hank Green's Crash Course YouTube channel has an excellent
+                series about navigating digital information. It's an excellent
+                guide to how internet users could intelligently consume
+                information they see on the internet. These are my (incomplete)
+                notes from the series.
+              </p>
+            </div>
+          </div>
+          <p class="more">
+            <a href="/posts/notes-on-fact-checking/">Read more …</a>
+          </p>
+        </div>
+      </div>
 
-          <span class="tag-link">
-            <a href="/tags/tools/">#Tools</a>
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/just-the-right-amount/">
+            <span itemprop="name">Just Enough Technical Debt</span>
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2023-07-08" itemprop="datePublished"
+              >July 8, 2023</time
+            >
           </span>
 
-          <span class="tag-link">
+          <span></span>
+          <span class="tag">
             <a href="/tags/engineering/">#Engineering</a>
           </span>
         </nav>
         <div>
           <div class="summary-line">
             <div class="summary" itemprop="abstract">
-              <p>
-                Markdown documents should be readble without understanding
-                complex mark-up. A growing number of Markdown syntax extensions
-                take the form of HTML or HTML-like tags and boilerplate that
-                hinder readability. Instead we should focus on how some
-                construct should be presented in plain-text for human
-                consumption and then add minimal structure to it for machine
-                consumption.
-              </p>
+              <p>Zero technical debt isn't always the answer.</p>
             </div>
           </div>
           <p class="more">
-            <a href="/posts/mark-goes-up-and-down/">Read more …</a>
+            <a href="/posts/just-the-right-amount/">Read more …</a>
           </p>
         </div>
       </div>
@@ -289,74 +339,46 @@
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/posts/pillars-are-governance-structures/">
-            <span itemprop="name">Pillars And Governance Structures</span>
+          <a itemprop="url" href="/posts/why-i-hate-carousels/">
+            <span itemprop="name">Why I Hate Carousels</span>
           </a>
         </h3>
         <nav>
           <span class="date">
             Last updated on
-            <time datetime="2023-09-09" itemprop="datePublished"
-              >September 9, 2023</time
+            <time datetime="2024-01-25" itemprop="datePublished"
+              >January 25, 2024</time
             >
           </span>
 
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/culture/">#Culture</a>
+          <span></span>
+          <span class="tag">
+            <a href="/tags/usability/">#Usability</a>
           </span>
-
-          <span class="tag-link">
-            <a href="/tags/career/">#Career</a>
-          </span>
-
-          <span class="tag-link">
-            <a href="/tags/organizations/">#Organizations</a>
-          </span>
-        </nav>
-      </div>
-
-      <div
-        class="post-card"
-        itemscope=""
-        itemtype="https://schema.org/BlogPosting"
-      >
-        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <h3 class="title">
-          <a itemprop="url" href="/posts/thirteen-years/">
-            <span itemprop="name">Thirteen Years</span>
-          </a>
-        </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2023-12-07" itemprop="datePublished"
-              >December 7, 2023</time
-            >
-          </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/career/">#Career</a>
-          </span>
-
-          <span class="tag-link">
-            <a href="/tags/culture/">#Culture</a>
-          </span>
-
-          <span class="tag-link">
-            <a href="/tags/organizations/">#Organizations</a>
+          <span class="tag">
+            <a href="/tags/engineering/">#Engineering</a>
           </span>
         </nav>
         <div>
           <div class="summary-line">
             <div class="summary" itemprop="abstract">
-              <p>Some reflections from thirteen years at Google.</p>
+              <ul>
+                <li>Don't use carousels in your UI.</li>
+                <li>
+                  Instead, if you must stick content into little cards, let the
+                  horionztal layout wrap to additional lines.
+                </li>
+                <li>
+                  If you end up with too many horizontal lines of content, then
+                  you definitely have too many items that can be accessed via a
+                  horizontally panning UI. You need a different UI altogether.
+                </li>
+              </ul>
             </div>
           </div>
-          <p class="more"><a href="/posts/thirteen-years/">Read more …</a></p>
+          <p class="more">
+            <a href="/posts/why-i-hate-carousels/">Read more …</a>
+          </p>
         </div>
       </div>
 
@@ -367,62 +389,47 @@
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/posts/an-intuition-on-entropy/">
-            <span itemprop="name">An Intuition on Shannon Entropy</span>
+          <a itemprop="url" href="/series/unsung-team-roles/glue-people/"
+            ><span class="series-name">Unsung Team Roles</span>:
+            <span itemprop="name">Ode to Glue People</span>
           </a>
         </h3>
         <nav>
           <span class="date">
             Last updated on
-            <time datetime="2025-09-27" itemprop="datePublished"
-              >September 27, 2025</time
+            <time datetime="2025-08-12" itemprop="datePublished"
+              >August 12, 2025</time
             >
           </span>
 
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/privacy/">#Privacy</a>
-          </span>
-
-          <span class="tag-link">
-            <a href="/tags/programming/">#Programming</a>
-          </span>
-
-          <span class="tag-link">
-            <a href="/tags/entropy/">#Entropy</a>
+          <span></span>
+          <span class="tag">
+            <a href="/tags/organizations/">#Organizations</a>
           </span>
         </nav>
         <div>
           <div class="summary-line">
-            <a href="/posts/an-intuition-on-entropy/" class="hero-link">
-              <img
-                class="hero"
-                src="/img/4ywdW_OSoN-600.png"
-                alt="An allegorical pencil drawing of an ornate scale. The left pan represents &#39;Information&#39; with a neat pile of books and scrolls. The right pan represents &#39;Uncertainty&#39; with a chaotic vortex of dissolving papers, gears, and symbols. The scale is in perfect equilibrium, illustrating the conceptual balance between order and disorder."
-                width="600"
-                height="600"
-              />
-            </a>
-
             <div class="summary" itemprop="abstract">
               <p>
-                Develop an intuition for Shannon entropy as a measure of
-                information content. Using the game 'Guess Who' as a practical
-                example, this post explains how entropy quantifies the reduction
-                in ambiguity and builds up the mathematical formulation from
-                basic principles.
+                While managers may be constrained in their communication,
+                special individuals create unofficial channels where team
+                members feel safe to share information. Acting as social hubs or
+                &quot;speakeasies,&quot; they foster trust and enable the free
+                flow of timely, factual information, which helps colleagues make
+                better decisions and navigate turmoil. Despite their critical
+                function in preventing team collapse and reducing isolation,
+                this &quot;glue work&quot; is typically not formally recognized
+                or compensated.
               </p>
             </div>
           </div>
           <p class="more">
-            <a href="/posts/an-intuition-on-entropy/">Read more …</a>
+            <a href="/series/unsung-team-roles/glue-people/">Read more …</a>
           </p>
         </div>
       </div>
     </footer>
 
-    <!-- Google analytics -->
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"

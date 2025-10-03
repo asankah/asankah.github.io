@@ -41,7 +41,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/Bzyqb5Ytgc.css" />
+    <link rel="stylesheet" href="/styles/anExJ29O9C.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -54,7 +54,7 @@
         <h1 itemprop="name">
           <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
         </h1>
-        <span class="fill"></span>
+        <span></span>
 
         <h2><a href="/">Home</a></h2>
 
@@ -89,9 +89,8 @@
             >&nbsp;by
             <span class="author" itemprop="author">Asanka Herath</span></span
           >
-          <span class="fill"></span>
-
-          <span class="tag-link">
+          <span></span>
+          <span class="tag">
             <a href="/tags/engineering/">#engineering</a>
           </span>
         </nav>
@@ -103,7 +102,7 @@
       </header>
 
       <main itemprop="articleBody">
-        <h2>Welcome to the UI review</h2>
+        <h2 id="welcome-to-the-ui-review">Welcome to the UI review</h2>
         <p>
           Your UX person comes up to you with the new mocks for the
           configuration UI. It looks like this:
@@ -111,11 +110,11 @@
         <figure>
           <img
             src="/posts/code-as-ui/ktRaziYXSc-324.png"
-            alt=""
+            alt="A UI mock where all the labels are text boxes, and the values are also text boxes. The button just “button”."
             width="324"
             height="287"
           />
-          <figcaption>
+          <figcaption aria-hidden="true">
             A UI mock where all the labels are text boxes, and the values are
             also text boxes. The button just “button”.
           </figcaption>
@@ -171,7 +170,8 @@
           new ones, will tell you that the only way some parts can be configured
           is by editing text files; sometimes using an esoteric editor called
           <code>vi</code
-          ><sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup
+          ><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"
+            ><sup>1</sup></a
           >.
         </p>
         <p>
@@ -181,9 +181,9 @@
           those sysadmins’ lives were as easy as possible. It was glorious.
         </p>
         <p>And now, what’s old is new again.</p>
-        <h2>The Pros</h2>
+        <h2 id="the-pros">The Pros</h2>
         <p>There are in fact good reasons for config-as-code. Here’s a few:</p>
-        <ol>
+        <ol type="1">
           <li>
             <p><strong>No more opaque configuration</strong>.</p>
             <p>
@@ -216,7 +216,7 @@
               tool will tell you how useful source control can be.
             </p>
             <p>Almost trivially you get:</p>
-            <ol>
+            <ol type="1">
               <li>
                 <p>
                   <strong>History</strong> and all that comes with it like the
@@ -257,7 +257,7 @@
             </p>
           </li>
         </ol>
-        <h2>And the cons</h2>
+        <h2 id="and-the-cons">And the cons</h2>
         <p>The things that need <em>fixing</em> is usability.</p>
         <p>
           We spent decades saying Fitt’s law this and “recognition over recall”
@@ -277,8 +277,7 @@
           <p>
             <img
               src="/posts/code-as-ui/l5uFNoODJm-820.png"
-              alt='The original Mad Libs book gave this example:  "___________! he said ________ as he jumped into his convertible ______ and drove off with his _________ wife."
-exclamation           adverb                                     noun                         adjective.'
+              alt="The original Mad Libs book gave this example: “___________! he said ________ as he jumped into his convertible ______ and drove off with his _________ wife.” exclamation adverb noun adjective."
               width="820"
               height="233"
             />
@@ -314,9 +313,9 @@ exclamation           adverb                                     noun           
             />
              
           </p>
-          <figcaption>Left to right to left to right ...</figcaption>
+          <figcaption>Left to right to left to right …</figcaption>
         </figure>
-        <h2>Making things better</h2>
+        <h2 id="making-things-better">Making things better</h2>
         <p>
           It turns out we already have some ideas on how to fix this, because
           the same problems plague software engineering. Or I should say the
@@ -326,14 +325,14 @@ exclamation           adverb                                     noun           
           Here are several approaches I’ve seen in practice that make
           config-as-code more bearable.
         </p>
-        <h3>Language Servers/Autocomplete</h3>
+        <h3 id="language-serversautocomplete">Language Servers/Autocomplete</h3>
         <p>
           Pretty much the only useful development in coding in the past several
           decades is autocomplete. A good schema along with documentation can
           make a huge difference. Try editing the VS Code settings file to see
           it in action.
         </p>
-        <h3>Templates</h3>
+        <h3 id="templates">Templates</h3>
         <p>
           As the Mad Libs example shows, templates are much easier and more
           expedient than a blank empty document.
@@ -345,7 +344,7 @@ exclamation           adverb                                     noun           
           template. This is a biggie since configurations can’t be updated when
           updating their corresponding templates.
         </p>
-        <h3>Alternate UIs</h3>
+        <h3 id="alternate-uis">Alternate UIs</h3>
         <p>
           We once used to have WYSIWYG UI editors. Now we have to write our UIs
           as code in one of any number of frameworks that in turn try to reduce
@@ -356,15 +355,23 @@ exclamation           adverb                                     noun           
           down as code doesn’t mean it has to be edited as code. The same UIs
           that we once used can still generate those text files.
         </p>
-        <hr class="footnotes-sep" />
-        <section class="footnotes">
-          <ol class="footnotes-list">
-            <li id="fn1" class="footnote-item">
+        <section
+          id="footnotes"
+          class="footnotes footnotes-end-of-document"
+          role="doc-endnotes"
+        >
+          <hr />
+          <ol>
+            <li id="fn1">
               <p>
                 Vim is actually quite awesome.
                 <a href="https://neovim.io">Neovim</a> is slightly more or less
-                awesome depending on who you are ask.
-                <a href="#fnref1" class="footnote-backref">↩︎</a>
+                awesome depending on who you are ask.<a
+                  href="#fnref1"
+                  class="footnote-back"
+                  role="doc-backlink"
+                  >↩︎</a
+                >
               </p>
             </li>
           </ol>
@@ -372,7 +379,7 @@ exclamation           adverb                                     noun           
       </main>
 
       <footer>
-        <div class="lastmodified">
+        <div>
           <p>Last modified: <time datetime="2023-07-01">July 1, 2023</time></p>
         </div>
       </footer>
@@ -401,9 +408,8 @@ exclamation           adverb                                     noun           
             >
           </span>
 
-          <span class="fill"></span>
-
-          <span class="tag-link">
+          <span></span>
+          <span class="tag">
             <a href="/tags/math/">#Math</a>
           </span>
         </nav>
@@ -416,41 +422,34 @@ exclamation           adverb                                     noun           
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/posts/notes-on-fact-checking/">
-            <span itemprop="name"
-              >Notes from Crash Course&#39;s Videos on Fact Checking Information
-              You See On The Internet
-            </span>
+          <a itemprop="url" href="/posts/darpa-heilmeier-catechism/">
+            <span itemprop="name">DARPA&#39;s Heilmeier Catechism</span>
           </a>
         </h3>
         <nav>
           <span class="date">
             Last updated on
-            <time datetime="2020-07-04" itemprop="datePublished"
-              >July 4, 2020</time
+            <time datetime="2022-06-28" itemprop="datePublished"
+              >June 28, 2022</time
             >
           </span>
 
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/curiosity/">#Curiosity</a>
+          <span></span>
+          <span class="tag">
+            <a href="/tags/engineering/">#engineering</a>
           </span>
         </nav>
         <div>
           <div class="summary-line">
             <div class="summary" itemprop="abstract">
               <p>
-                Hank Green's Crash Course YouTube channel has an excellent
-                series about navigating digital information. It's an excellent
-                guide to how internet users could intelligently consume
-                information they see on the internet. These are my (incomplete)
-                notes from the series.
+                A set of questions help you think through and evaluate proposed
+                projects and research programs.
               </p>
             </div>
           </div>
           <p class="more">
-            <a href="/posts/notes-on-fact-checking/">Read more …</a>
+            <a href="/posts/darpa-heilmeier-catechism/">Read more …</a>
           </p>
         </div>
       </div>
@@ -462,39 +461,35 @@ exclamation           adverb                                     noun           
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/posts/fourteen-years/">
-            <span itemprop="name">Fourteen Years</span>
+          <a itemprop="url" href="/series/structure-of-experience/meaning/"
+            ><span class="series-name">Structure Of Experience</span>:
+            <span itemprop="name">Act I: Meaning</span>
           </a>
         </h3>
         <nav>
           <span class="date">
             Last updated on
-            <time datetime="2024-12-31" itemprop="datePublished"
-              >December 31, 2024</time
+            <time datetime="2025-05-04" itemprop="datePublished"
+              >May 4, 2025</time
             >
           </span>
 
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/career/">#Career</a>
-          </span>
-
-          <span class="tag-link">
-            <a href="/tags/culture/">#Culture</a>
-          </span>
-
-          <span class="tag-link">
-            <a href="/tags/organizations/">#Organizations</a>
+          <span></span>
+          <span class="tag">
+            <a href="/tags/ai/">#AI</a>
           </span>
         </nav>
         <div>
           <div class="summary-line">
             <div class="summary" itemprop="abstract">
-              <p>More reflections from foureteen years at Google.</p>
+              <p>
+                Language builds meaning by combining your inner experiences.
+              </p>
             </div>
           </div>
-          <p class="more"><a href="/posts/fourteen-years/">Read more …</a></p>
+          <p class="more">
+            <a href="/series/structure-of-experience/meaning/">Read more …</a>
+          </p>
         </div>
       </div>
 
@@ -505,26 +500,56 @@ exclamation           adverb                                     noun           
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/posts/why-strong-opinions-weakly-held/">
+          <a itemprop="url" href="/posts/catchment/">
             <span itemprop="name"
-              >Why &#39;Strong Opinions Weakly Held&#39;</span
+              >Draining Our Intellectual Catchment Areas</span
             >
           </a>
         </h3>
         <nav>
           <span class="date">
             Last updated on
-            <time datetime="2020-08-28" itemprop="datePublished"
-              >August 28, 2020</time
+            <time datetime="2025-07-04" itemprop="datePublished"
+              >July 4, 2025</time
             >
           </span>
 
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/meta/">#Meta</a>
+          <span></span>
+          <span class="tag">
+            <a href="/tags/culture/">#Culture</a>
           </span>
         </nav>
+        <div>
+          <div class="summary-line">
+            <a href="/posts/catchment/" class="hero-link">
+              <img
+                class="hero"
+                src="/img/enjgX_HhHE-2048.png"
+                alt="A hydro-catchement area and its adjacent reservoir"
+                width="2048"
+                height="2048"
+              />
+            </a>
+
+            <div class="summary" itemprop="abstract">
+              <p>
+                Intellectual catchment areas are collaborative ecosystems
+                between universities and industries that attract talent and
+                ideas. The United States became a hub of intellectual capital
+                after World War II, thanks to a combination of industrial growth
+                around universities, significant research funding, and favorable
+                immigration policies.
+              </p>
+              <p>
+                The current political climate is jeopardizing these ecosystems.
+                Continued threats against universities and immigration could
+                undo a century of progress, ultimately depleting the nation's
+                source of creativity and innovation.
+              </p>
+            </div>
+          </div>
+          <p class="more"><a href="/posts/catchment/">Read more …</a></p>
+        </div>
       </div>
 
       <div
@@ -534,38 +559,46 @@ exclamation           adverb                                     noun           
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a
-            itemprop="url"
-            href="/posts/things-you-can-do-with-nvim-and-vscode/"
-          >
-            <span itemprop="name"
-              >Things You Can Do With Neovim and Vscode That You Can&#39;t Do
-              With Neovim Alone</span
-            >
+          <a itemprop="url" href="/series/unsung-team-roles/incentives/"
+            ><span class="series-name">Unsung Team Roles</span>:
+            <span itemprop="name">Incentives</span>
           </a>
         </h3>
         <nav>
           <span class="date">
             Last updated on
-            <time datetime="2020-09-19" itemprop="datePublished"
-              >September 19, 2020</time
+            <time datetime="2025-08-12" itemprop="datePublished"
+              >August 12, 2025</time
             >
           </span>
 
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/tools/">#Tools</a>
-          </span>
-
-          <span class="tag-link">
-            <a href="/tags/vim/">#Vim</a>
+          <span></span>
+          <span class="tag">
+            <a href="/tags/organizations/">#Organizations</a>
           </span>
         </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>
+                For a team to succeed, it needs the flexibility to
+                self-organize, which can lead to some members taking on more
+                work. To avoid burnout, these extra contributions must be
+                rewarded. Good managers are key, as they must recognize
+                individual efforts and their team-wide impact. Well-designed
+                incentives foster collaboration and reward those who strengthen
+                the team, while poor incentives cause employees to stick rigidly
+                to their roles and let the team fail.
+              </p>
+            </div>
+          </div>
+          <p class="more">
+            <a href="/series/unsung-team-roles/incentives/">Read more …</a>
+          </p>
+        </div>
       </div>
     </footer>
 
-    <!-- Google analytics -->
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"

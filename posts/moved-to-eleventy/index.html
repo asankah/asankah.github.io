@@ -41,7 +41,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/Bzyqb5Ytgc.css" />
+    <link rel="stylesheet" href="/styles/anExJ29O9C.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -54,7 +54,7 @@
         <h1 itemprop="name">
           <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
         </h1>
-        <span class="fill"></span>
+        <span></span>
 
         <h2><a href="/">Home</a></h2>
 
@@ -87,15 +87,14 @@
             >&nbsp;by
             <span class="author" itemprop="author">Asanka Herath</span></span
           >
-          <span class="fill"></span>
-
-          <span class="tag-link">
+          <span></span>
+          <span class="tag">
             <a href="/tags/meta/">#Meta</a>
           </span>
         </nav>
         <div>
           <span class="readingtime">
-            Estimated reading time is 11 minutes.
+            Estimated reading time is 12 minutes.
           </span>
         </div>
       </header>
@@ -112,7 +111,7 @@
           <a href="https://gohugo.io">Hugo</a>. This arrangement worked for a
           while but it had some shortcomings.
         </p>
-        <h2>Growing Pains</h2>
+        <h2 id="growing-pains">Growing Pains</h2>
         <p>
           I was using <a href="https://pandoc.org/">Pandoc</a> to convert
           Markdown to HTML. Hugo’s support for Pandoc had some limitations. For
@@ -136,8 +135,12 @@
           Say you download a Hugo theme from the web and try to build your site.
           A theme could include frontmatter that causes Pandoc to run an unsafe
           binary. That’s not great. So it is understandable that this kind of
-          feature isn’t a part of Hugo proper<sup class="footnote-ref"
-            ><a href="#fn1" id="fnref1">[1]</a></sup
+          feature isn’t a part of Hugo proper<a
+            href="#fn1"
+            class="footnote-ref"
+            id="fnref1"
+            role="doc-noteref"
+            ><sup>1</sup></a
           >. While my patch worked, it was safe only because I controlled every
           aspect of the blog.
         </p>
@@ -147,7 +150,7 @@
           maintain a custom build of Hugo. After moving my build a couple of
           times maintaining a custom build became a painful chore.
         </p>
-        <h2>The Exodus</h2>
+        <h2 id="the-exodus">The Exodus</h2>
         <p>
           So started the process of looking for an easy-to-use static site
           generator (hereafter SSG). My requirements were:
@@ -173,8 +176,8 @@
           of Pandoc. In fact I found plugins for basically all Pandoc features
           that I used in this blog. Everything was looking quite rosy.
         </p>
-        <h2>Templating</h2>
-        <h3>WebC + Eleventy Is Broken</h3>
+        <h2 id="templating">Templating</h2>
+        <h3 id="webc-eleventy-is-broken">WebC + Eleventy Is Broken</h3>
         <p>
           Eleventy supports a templating language called
           <a href="https://www.11ty.dev/docs/languages/webc/">WebC</a>. It
@@ -182,8 +185,12 @@
           of the custom element overhead by opportunistically generating plain
           HTML. I had already accepted that switching the SSG meant rewriting
           layout templates, and using web components to do that seemed like a
-          good idea<sup class="footnote-ref"
-            ><a href="#fn2" id="fnref2">[2]</a></sup
+          good idea<a
+            href="#fn2"
+            class="footnote-ref"
+            id="fnref2"
+            role="doc-noteref"
+            ><sup>2</sup></a
           >.
         </p>
         <p>
@@ -202,17 +209,21 @@
           engines supported in Eleventy (save for third-party engines that I
           didn’t try) require manual labor to get stuff into the bundles.
         </p>
-        <h3>Nunjucks + Eleventy Works</h3>
+        <h3 id="nunjucks-eleventy-works">Nunjucks + Eleventy Works</h3>
         <p>
           The next templating language I looked at was Nunjucks. I had briefly
           looked at Liquid as well, but for my purposes Nunjucks and Liquid
           seemed to be quite similar. Nunjucks won out because it had safer
-          defaults<sup class="footnote-ref"
-            ><a href="#fn3" id="fnref3">[3]</a></sup
+          defaults<a
+            href="#fn3"
+            class="footnote-ref"
+            id="fnref3"
+            role="doc-noteref"
+            ><sup>3</sup></a
           >.
         </p>
-        <h2>Handrolling</h2>
-        <h3>Pandoc Again</h3>
+        <h2 id="handrolling">Handrolling</h2>
+        <h3 id="pandoc-again">Pandoc Again</h3>
         <p>
           I tried to rely only on Markdown-It for this blog. But very soon I had
           a big stack of extensions to support the various features I needed,
@@ -230,7 +241,7 @@
           invoked Pandoc within Eleventy to convert Markdown to HTML. It was a
           little slower, but worked out great.
         </p>
-        <h3>Bundling Files</h3>
+        <h3 id="bundling-files">Bundling Files</h3>
         <p>
           While it is possible to add content to bundles (like CSS and JS),
           curiously it was not possible to stuff files into said bundles. The
@@ -242,8 +253,7 @@
     body {
         // other CSS.
     }
-  {% endcss %}
-</code></pre>
+  {% endcss %}</code></pre>
         <p>
           This seems like a good idea, but there is one crucial issue:
           <em
@@ -264,9 +274,8 @@
     body {
         // other CSS
     }
-  {% endcss %}
-</code></pre>
-        <h3>SASSy</h3>
+  {% endcss %}</code></pre>
+        <h3 id="sassy">SASSy</h3>
         <p>
           Eleventy doesn’t support SASS out of the box, but there are examples
           in the documentation for how you can set it up. But all of the
@@ -278,9 +287,8 @@
           So alongside the <code>bundleFile</code> shortcode, I added a
           <code>bundleScss</code> shortcode so I can do stuff like this:
         </p>
-        <pre><code>   {% bundleScss &quot;my-styles.scss&quot; %}
-</code></pre>
-        <h3>Katex</h3>
+        <pre><code>   {% bundleScss &quot;my-styles.scss&quot; %}</code></pre>
+        <h3 id="katex">Katex</h3>
         <p>
           I like Katex for my math typesetting. Pandoc supports it out of the
           box. But the rendered HTML needs to invoke Katex in the client to
@@ -291,7 +299,7 @@
           This was a pain to do with Hugo, but since Eleventy was alredy runing
           in Node, server-side rendering is a breeze.
         </p>
-        <h2>Conclusion</h2>
+        <h2 id="conclusion">Conclusion</h2>
         <p>
           Overall I found Eleventy fun to work with. My gripes are mostly with
           the documentation which lacks a reference. It’s a pain to go through
@@ -304,34 +312,50 @@
           In the coming weeks I’ll package Eleventy Pandoc support and some of
           the shortcodes so others can use them.
         </p>
-        <hr class="footnotes-sep" />
-        <section class="footnotes">
-          <ol class="footnotes-list">
-            <li id="fn1" class="footnote-item">
+        <section
+          id="footnotes"
+          class="footnotes footnotes-end-of-document"
+          role="doc-endnotes"
+        >
+          <hr />
+          <ol>
+            <li id="fn1">
               <p>
                 There are ways to mitigate this problem. For example, we could
                 restrict which flags can be inherited from themes, or require
                 that certain options can only be set from the top level
-                <code>hugo.yaml</code> file that the user controls.
-                <a href="#fnref1" class="footnote-backref">↩︎</a>
+                <code>hugo.yaml</code> file that the user controls.<a
+                  href="#fnref1"
+                  class="footnote-back"
+                  role="doc-backlink"
+                  >↩︎</a
+                >
               </p>
             </li>
-            <li id="fn2" class="footnote-item">
+            <li id="fn2">
               <p>
                 Not quite all the way true because use of shadow DOM and custom
-                elements was not a requirement.
-                <a href="#fnref2" class="footnote-backref">↩︎</a>
+                elements was not a requirement.<a
+                  href="#fnref2"
+                  class="footnote-back"
+                  role="doc-backlink"
+                  >↩︎</a
+                >
               </p>
             </li>
-            <li id="fn3" class="footnote-item">
+            <li id="fn3">
               <p>
                 The defaults I’m referring to is what happens with a tag like
                 <code>{{ foo }}</code> where the contents of the variable
                 <code>foo</code> would be inserted into the document. Nunjucks
                 will treat the contents as unsafe and requires manually opting
                 into unsafe injection via <code>{{ foo | safe }}</code>. Liquid
-                will insert the contents with no escaping.
-                <a href="#fnref3" class="footnote-backref">↩︎</a>
+                will insert the contents with no escaping.<a
+                  href="#fnref3"
+                  class="footnote-back"
+                  role="doc-backlink"
+                  >↩︎</a
+                >
               </p>
             </li>
           </ol>
@@ -339,7 +363,7 @@
       </main>
 
       <footer>
-        <div class="lastmodified">
+        <div>
           <p>
             Last modified: <time datetime="2024-12-13">December 13, 2024</time>
           </p>
@@ -358,165 +382,71 @@
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/posts/the-loss-of-a-virtuous-culture/">
-            <span itemprop="name">The Loss of a Virtuous Culture</span>
+          <a itemprop="url" href="/posts/identity-domains/">
+            <span itemprop="name">Identity Domains</span>
           </a>
         </h3>
         <nav>
           <span class="date">
             Last updated on
-            <time datetime="2022-10-28" itemprop="datePublished"
-              >October 28, 2022</time
+            <time datetime="2020-05-01" itemprop="datePublished"
+              >May 1, 2020</time
             >
           </span>
 
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/culture/">#Culture</a>
-          </span>
-
-          <span class="tag-link">
-            <a href="/tags/engineering/">#Engineering</a>
-          </span>
-        </nav>
-        <div>
-          <div class="summary-line">
-            <div class="summary" itemprop="abstract">
-              <p>Luck isn't enough. You need a culture of virtue.</p>
-            </div>
-          </div>
-          <p class="more">
-            <a href="/posts/the-loss-of-a-virtuous-culture/">Read more …</a>
-          </p>
-        </div>
-      </div>
-
-      <div
-        class="post-card"
-        itemscope=""
-        itemtype="https://schema.org/BlogPosting"
-      >
-        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <h3 class="title">
-          <a itemprop="url" href="/posts/pillars-are-governance-structures/">
-            <span itemprop="name">Pillars And Governance Structures</span>
-          </a>
-        </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2023-09-09" itemprop="datePublished"
-              >September 9, 2023</time
-            >
-          </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/culture/">#Culture</a>
-          </span>
-
-          <span class="tag-link">
-            <a href="/tags/career/">#Career</a>
-          </span>
-
-          <span class="tag-link">
-            <a href="/tags/organizations/">#Organizations</a>
-          </span>
-        </nav>
-      </div>
-
-      <div
-        class="post-card"
-        itemscope=""
-        itemtype="https://schema.org/BlogPosting"
-      >
-        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <h3 class="title">
-          <a itemprop="url" href="/posts/thirteen-years/">
-            <span itemprop="name">Thirteen Years</span>
-          </a>
-        </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2023-12-07" itemprop="datePublished"
-              >December 7, 2023</time
-            >
-          </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/career/">#Career</a>
-          </span>
-
-          <span class="tag-link">
-            <a href="/tags/culture/">#Culture</a>
-          </span>
-
-          <span class="tag-link">
-            <a href="/tags/organizations/">#Organizations</a>
-          </span>
-        </nav>
-        <div>
-          <div class="summary-line">
-            <div class="summary" itemprop="abstract">
-              <p>Some reflections from thirteen years at Google.</p>
-            </div>
-          </div>
-          <p class="more"><a href="/posts/thirteen-years/">Read more …</a></p>
-        </div>
-      </div>
-
-      <div
-        class="post-card"
-        itemscope=""
-        itemtype="https://schema.org/BlogPosting"
-      >
-        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <h3 class="title">
-          <a
-            itemprop="url"
-            href="/posts/how-to-solve-a-problem-in-three-steps/"
-          >
-            <span itemprop="name">How to Solve a Problem in Three Steps</span>
-          </a>
-        </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2024-07-08" itemprop="datePublished"
-              >July 8, 2024</time
-            >
-          </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/organizations/">#Organizations</a>
-          </span>
-
-          <span class="tag-link">
-            <a href="/tags/career/">#Career</a>
+          <span></span>
+          <span class="tag">
+            <a href="/tags/privacy/">#Privacy</a>
           </span>
         </nav>
         <div>
           <div class="summary-line">
             <div class="summary" itemprop="abstract">
               <p>
-                If you don't know what a refridgerator is nor what an elephant
-                is you are likely to think that opening the door, putting the
-                elephant in, and closing the door is a viable strategy for
-                putting an elephant in the refridgerator.
+                An Identity Domain is a scope within which we assume that the
+                user's identity can roam freely.
               </p>
             </div>
           </div>
-          <p class="more">
-            <a href="/posts/how-to-solve-a-problem-in-three-steps/"
-              >Read more …</a
+          <p class="more"><a href="/posts/identity-domains/">Read more …</a></p>
+        </div>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/remarkable-first-impressions/">
+            <span itemprop="name">Note-taking on a reMarkable 2</span>
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2021-12-30" itemprop="datePublished"
+              >December 30, 2021</time
             >
+          </span>
+
+          <span></span>
+          <span class="tag">
+            <a href="/tags/remarkable-2/">#Remarkable 2</a>
+          </span>
+          <span class="tag">
+            <a href="/tags/reviews/">#Reviews</a>
+          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>Sentiments after using the reMarkable 2 tablet for a month.</p>
+            </div>
+          </div>
+          <p class="more">
+            <a href="/posts/remarkable-first-impressions/">Read more …</a>
           </p>
         </div>
       </div>
@@ -528,44 +458,102 @@
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/posts/fourteen-years/">
-            <span itemprop="name">Fourteen Years</span>
+          <a itemprop="url" href="/series/structure-of-experience/preface/"
+            ><span class="series-name">Structure Of Experience</span>:
+            <span itemprop="name">Preface</span>
           </a>
         </h3>
         <nav>
           <span class="date">
             Last updated on
-            <time datetime="2024-12-31" itemprop="datePublished"
-              >December 31, 2024</time
+            <time datetime="2025-05-01" itemprop="datePublished"
+              >May 1, 2025</time
             >
           </span>
 
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/career/">#Career</a>
-          </span>
-
-          <span class="tag-link">
-            <a href="/tags/culture/">#Culture</a>
-          </span>
-
-          <span class="tag-link">
-            <a href="/tags/organizations/">#Organizations</a>
+          <span></span>
+          <span class="tag">
+            <a href="/tags/ai/">#AI</a>
           </span>
         </nav>
         <div>
           <div class="summary-line">
             <div class="summary" itemprop="abstract">
-              <p>More reflections from foureteen years at Google.</p>
+              <p>
+                A very gentle introduction to how large language models
+                <em>almost</em> capture human experience through language.
+              </p>
             </div>
           </div>
-          <p class="more"><a href="/posts/fourteen-years/">Read more …</a></p>
+          <p class="more">
+            <a href="/series/structure-of-experience/preface/">Read more …</a>
+          </p>
         </div>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/how-this-blog-works/">
+            <span itemprop="name">How This Blog Works</span>
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-07-27" itemprop="datePublished"
+              >July 27, 2020</time
+            >
+          </span>
+
+          <span></span>
+          <span class="tag">
+            <a href="/tags/meta/">#Meta</a>
+          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>How I put this site together and why.</p>
+            </div>
+          </div>
+          <p class="more">
+            <a href="/posts/how-this-blog-works/">Read more …</a>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/symbol-name-types/">
+            <span itemprop="name">Names for Name Conventions</span>
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-08-24" itemprop="datePublished"
+              >August 24, 2020</time
+            >
+          </span>
+
+          <span></span>
+          <span class="tag">
+            <a href="/tags/engineering/">#Engineering</a>
+          </span>
+        </nav>
       </div>
     </footer>
 
-    <!-- Google analytics -->
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"

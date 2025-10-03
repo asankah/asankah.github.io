@@ -41,7 +41,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/Bzyqb5Ytgc.css" />
+    <link rel="stylesheet" href="/styles/anExJ29O9C.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -54,7 +54,7 @@
         <h1 itemprop="name">
           <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
         </h1>
-        <span class="fill"></span>
+        <span></span>
 
         <h2><a href="/">Home</a></h2>
 
@@ -87,19 +87,17 @@
             >&nbsp;by
             <span class="author" itemprop="author">Asanka Herath</span></span
           >
-          <span class="fill"></span>
-
-          <span class="tag-link">
+          <span></span>
+          <span class="tag">
             <a href="/tags/usability/">#Usability</a>
           </span>
-
-          <span class="tag-link">
+          <span class="tag">
             <a href="/tags/engineering/">#Engineering</a>
           </span>
         </nav>
         <div>
           <span class="readingtime">
-            Estimated reading time is 8 minutes.
+            Estimated reading time is 9 minutes.
           </span>
         </div>
       </header>
@@ -109,12 +107,12 @@
         <figure>
           <img
             src="/posts/why-i-hate-carousels/MEHoYNVOnb-624.png"
-            alt=""
             class="noinvert"
+            alt="A screenshot of dell.com from Nielsen Norman Group’s article on effective design of carousels."
             width="624"
             height="335"
           />
-          <figcaption>
+          <figcaption aria-hidden="true">
             A screenshot of dell.com from
             <a
               href="https://www.nngroup.com/articles/designing-effective-carousels/"
@@ -135,11 +133,11 @@
         <figure>
           <img
             src="/posts/why-i-hate-carousels/tN-yoMQAyp-693.png"
-            alt=""
+            alt="A layout consisting of vertically arranged blocks. One of the blocks contains a set of horizontally arranged blocks."
             width="693"
             height="530"
           />
-          <figcaption>
+          <figcaption aria-hidden="true">
             A layout consisting of vertically arranged blocks. One of the blocks
             contains a set of horizontally arranged blocks.
           </figcaption>
@@ -152,7 +150,7 @@
           horizontal layout.
         </p>
         <p>Notice that the entire layout fits snugly within the viewport.</p>
-        <h3>Layout Runneth Over</h3>
+        <h3 id="layout-runneth-over">Layout Runneth Over</h3>
         <p>
           Interesting stuff happen when the layout doesn’t fit inside the
           viewport. When it doesn’t fit vertically, obviously you’ll have to
@@ -166,17 +164,17 @@
         <figure>
           <img
             src="/posts/why-i-hate-carousels/N4WxPDvmTB-738.png"
-            alt=""
+            alt="The layout no longer fits within the cofines of the viewport."
             width="738"
             height="587"
           />
-          <figcaption>
+          <figcaption aria-hidden="true">
             The layout no longer fits within the cofines of the viewport.
           </figcaption>
         </figure>
         <p>
           How do you construct a UI affordance that lets people pan around this?
-          Of course you use … wait I already mentioned it …
+          Of course you use … wait I already mentioned it ..
           <strong>pan</strong>. Maybe use scroll bars or just about any other
           scrolling affordance.
         </p>
@@ -187,17 +185,17 @@
         <figure>
           <img
             src="/posts/why-i-hate-carousels/QAsvNs3mFI-687.png"
-            alt=""
+            alt="A viewport shifted a little bit both horizontally and vertically. The relative position of the blocks are still the same as before. Large portions of the viewport are now blank."
             width="687"
             height="597"
           />
-          <figcaption>
+          <figcaption aria-hidden="true">
             A viewport shifted a little bit both horizontally and vertically.
             The relative position of the blocks are still the same as before.
             Large portions of the viewport are now blank.
           </figcaption>
         </figure>
-        <h3>Sliiiiiide To The Right</h3>
+        <h3 id="sliiiiiide-to-the-right">Sliiiiiide To The Right</h3>
         <p>
           To address all the blankness, the carousel pattern posits that the the
           overflowing horizontal bits should be moved around independently of
@@ -206,11 +204,11 @@
         <figure>
           <img
             src="/posts/why-i-hate-carousels/9dC0SyprJ1-777.png"
-            alt=""
+            alt="Vertically arranged bits move vertically. Horizontally arranged bits move horizontally."
             width="777"
             height="569"
           />
-          <figcaption>
+          <figcaption aria-hidden="true">
             Vertically arranged bits move vertically. Horizontally arranged bits
             move horizontally.
           </figcaption>
@@ -223,16 +221,18 @@
         <p>
           If people stop here and implement that, then that would’ve been over.
         </p>
-        <h3>Uh oh. Here come the dots of stupidity…</h3>
+        <h3 id="uh-oh.-here-come-the-dots-of-stupidity">
+          Uh oh. Here come the dots of stupidity…
+        </h3>
         <p>Instead, they went with this:</p>
         <figure>
           <img
             src="/posts/why-i-hate-carousels/D6Ybn_g2Uh-719.png"
-            alt=""
+            alt="Dots of stupidity. Little circles and left and right arrows. When you click/tap on the left arrow button, the carousal slides to the left. When you click/tap on the right arrow button, the carousel moves to the right."
             width="719"
             height="541"
           />
-          <figcaption>
+          <figcaption aria-hidden="true">
             Dots of stupidity. Little circles and left and right arrows. When
             you click/tap on the left arrow button, the carousal slides to the
             left. When you click/tap on the right arrow button, the carousel
@@ -240,7 +240,7 @@
           </figcaption>
         </figure>
         <p>Let me summarize this interaction pattern.</p>
-        <ol>
+        <ol type="1">
           <li>
             Use scroll bars, or whatever scrolling afforance to scroll up and
             down to access bits that are above and below the viewport.
@@ -263,7 +263,7 @@
           </li>
         </ul>
         <p>Carousel sympathizers explain the reasoning for this as follows:</p>
-        <ol>
+        <ol type="1">
           <li>
             <p>
               <em
@@ -315,7 +315,7 @@
             </p>
           </li>
         </ol>
-        <h3>What’s Better?</h3>
+        <h3 id="whats-better">What’s Better?</h3>
         <p>
           Try wrapping the horizontal blocks so the page only overflows
           vertically.
@@ -332,15 +332,15 @@
         <figure>
           <img
             src="/posts/why-i-hate-carousels/YkMk2kx5Jk-415.png"
-            alt=""
+            alt="Wrap the horizontal blocks so there’s only vertical overflow."
             width="415"
             height="498"
           />
-          <figcaption>
+          <figcaption aria-hidden="true">
             Wrap the horizontal blocks so there’s only vertical overflow.
           </figcaption>
         </figure>
-        <h3>In Summary</h3>
+        <h3 id="in-summary">In Summary</h3>
         <ul>
           <li><strong>Don’t use carousels in your UI.</strong></li>
           <li>
@@ -361,7 +361,7 @@
       </main>
 
       <footer>
-        <div class="lastmodified">
+        <div>
           <p>
             Last modified: <time datetime="2024-01-25">January 25, 2024</time>
           </p>
@@ -380,37 +380,23 @@
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/posts/darpa-heilmeier-catechism/">
-            <span itemprop="name">DARPA&#39;s Heilmeier Catechism</span>
+          <a itemprop="url" href="/posts/poisson-distribution/">
+            <span itemprop="name">Deriving the Poisson Distribution</span>
           </a>
         </h3>
         <nav>
           <span class="date">
             Last updated on
-            <time datetime="2022-06-28" itemprop="datePublished"
-              >June 28, 2022</time
+            <time datetime="2020-12-11" itemprop="datePublished"
+              >December 11, 2020</time
             >
           </span>
 
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/engineering/">#engineering</a>
+          <span></span>
+          <span class="tag">
+            <a href="/tags/math/">#Math</a>
           </span>
         </nav>
-        <div>
-          <div class="summary-line">
-            <div class="summary" itemprop="abstract">
-              <p>
-                A set of questions help you think through and evaluate proposed
-                projects and research programs.
-              </p>
-            </div>
-          </div>
-          <p class="more">
-            <a href="/posts/darpa-heilmeier-catechism/">Read more …</a>
-          </p>
-        </div>
       </div>
 
       <div
@@ -420,36 +406,39 @@
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/posts/the-loss-of-a-virtuous-culture/">
-            <span itemprop="name">The Loss of a Virtuous Culture</span>
+          <a itemprop="url" href="/posts/on-wontfixing-bugs/">
+            <span itemprop="name">On WontFixing Bugs</span>
           </a>
         </h3>
         <nav>
           <span class="date">
             Last updated on
-            <time datetime="2022-10-28" itemprop="datePublished"
-              >October 28, 2022</time
+            <time datetime="2021-03-02" itemprop="datePublished"
+              >March 2, 2021</time
             >
           </span>
 
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/culture/">#Culture</a>
-          </span>
-
-          <span class="tag-link">
+          <span></span>
+          <span class="tag">
             <a href="/tags/engineering/">#Engineering</a>
           </span>
         </nav>
         <div>
           <div class="summary-line">
             <div class="summary" itemprop="abstract">
-              <p>Luck isn't enough. You need a culture of virtue.</p>
+              <p>
+                Large projects accumulate a large number of issue reports over
+                time. This is normal. Typically for a &quot;successful&quot;
+                project the rate of new issues being reported will exceed the
+                rate of issues being fixed. Hence the growth.
+              </p>
+              <p>
+                But what are they to do about this ever-growing pile of bugs?
+              </p>
             </div>
           </div>
           <p class="more">
-            <a href="/posts/the-loss-of-a-virtuous-culture/">Read more …</a>
+            <a href="/posts/on-wontfixing-bugs/">Read more …</a>
           </p>
         </div>
       </div>
@@ -461,89 +450,41 @@
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/posts/thirteen-years/">
-            <span itemprop="name">Thirteen Years</span>
+          <a itemprop="url" href="/posts/evluating-negatives/">
+            <span itemprop="name"
+              >Inclusion/Equity and Evaluating Negatives</span
+            >
           </a>
         </h3>
         <nav>
           <span class="date">
             Last updated on
-            <time datetime="2023-12-07" itemprop="datePublished"
-              >December 7, 2023</time
+            <time datetime="2024-01-10" itemprop="datePublished"
+              >January 10, 2024</time
             >
           </span>
 
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/career/">#Career</a>
+          <span></span>
+          <span class="tag">
+            <a href="/tags/engineering/">#Engineering</a>
           </span>
-
-          <span class="tag-link">
-            <a href="/tags/culture/">#Culture</a>
-          </span>
-
-          <span class="tag-link">
-            <a href="/tags/organizations/">#Organizations</a>
-          </span>
-        </nav>
-        <div>
-          <div class="summary-line">
-            <div class="summary" itemprop="abstract">
-              <p>Some reflections from thirteen years at Google.</p>
-            </div>
-          </div>
-          <p class="more"><a href="/posts/thirteen-years/">Read more …</a></p>
-        </div>
-      </div>
-
-      <div
-        class="post-card"
-        itemscope=""
-        itemtype="https://schema.org/BlogPosting"
-      >
-        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <h3 class="title">
-          <a
-            itemprop="url"
-            href="/posts/how-to-solve-a-problem-in-three-steps/"
-          >
-            <span itemprop="name">How to Solve a Problem in Three Steps</span>
-          </a>
-        </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2024-07-08" itemprop="datePublished"
-              >July 8, 2024</time
-            >
-          </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/organizations/">#Organizations</a>
-          </span>
-
-          <span class="tag-link">
-            <a href="/tags/career/">#Career</a>
+          <span class="tag">
+            <a href="/tags/inclusion-and-equity/">#Inclusion and Equity</a>
           </span>
         </nav>
         <div>
           <div class="summary-line">
             <div class="summary" itemprop="abstract">
               <p>
-                If you don't know what a refridgerator is nor what an elephant
-                is you are likely to think that opening the door, putting the
-                elephant in, and closing the door is a viable strategy for
-                putting an elephant in the refridgerator.
+                Evaluating properties like inclusion and equity of products
+                can't be done through exhaustive enumeration of product
+                outcomes. Instead we will need to increasingly rely on the
+                controls that we place how we construct the products.
               </p>
             </div>
           </div>
           <p class="more">
-            <a href="/posts/how-to-solve-a-problem-in-three-steps/"
-              >Read more …</a
-            >
+            <a href="/posts/evluating-negatives/">Read more …</a>
           </p>
         </div>
       </div>
@@ -555,62 +496,75 @@
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/posts/an-intuition-on-entropy/">
-            <span itemprop="name">An Intuition on Shannon Entropy</span>
+          <a itemprop="url" href="/series/structure-of-experience/meaning/"
+            ><span class="series-name">Structure Of Experience</span>:
+            <span itemprop="name">Act I: Meaning</span>
           </a>
         </h3>
         <nav>
           <span class="date">
             Last updated on
-            <time datetime="2025-09-27" itemprop="datePublished"
-              >September 27, 2025</time
+            <time datetime="2025-05-04" itemprop="datePublished"
+              >May 4, 2025</time
             >
           </span>
 
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/privacy/">#Privacy</a>
-          </span>
-
-          <span class="tag-link">
-            <a href="/tags/programming/">#Programming</a>
-          </span>
-
-          <span class="tag-link">
-            <a href="/tags/entropy/">#Entropy</a>
+          <span></span>
+          <span class="tag">
+            <a href="/tags/ai/">#AI</a>
           </span>
         </nav>
         <div>
           <div class="summary-line">
-            <a href="/posts/an-intuition-on-entropy/" class="hero-link">
-              <img
-                class="hero"
-                src="/img/4ywdW_OSoN-600.png"
-                alt="An allegorical pencil drawing of an ornate scale. The left pan represents &#39;Information&#39; with a neat pile of books and scrolls. The right pan represents &#39;Uncertainty&#39; with a chaotic vortex of dissolving papers, gears, and symbols. The scale is in perfect equilibrium, illustrating the conceptual balance between order and disorder."
-                width="600"
-                height="600"
-              />
-            </a>
-
             <div class="summary" itemprop="abstract">
               <p>
-                Develop an intuition for Shannon entropy as a measure of
-                information content. Using the game 'Guess Who' as a practical
-                example, this post explains how entropy quantifies the reduction
-                in ambiguity and builds up the mathematical formulation from
-                basic principles.
+                Language builds meaning by combining your inner experiences.
               </p>
             </div>
           </div>
           <p class="more">
-            <a href="/posts/an-intuition-on-entropy/">Read more …</a>
+            <a href="/series/structure-of-experience/meaning/">Read more …</a>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/how-this-blog-works/">
+            <span itemprop="name">How This Blog Works</span>
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-07-27" itemprop="datePublished"
+              >July 27, 2020</time
+            >
+          </span>
+
+          <span></span>
+          <span class="tag">
+            <a href="/tags/meta/">#Meta</a>
+          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>How I put this site together and why.</p>
+            </div>
+          </div>
+          <p class="more">
+            <a href="/posts/how-this-blog-works/">Read more …</a>
           </p>
         </div>
       </div>
     </footer>
 
-    <!-- Google analytics -->
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"

@@ -41,7 +41,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/Bzyqb5Ytgc.css" />
+    <link rel="stylesheet" href="/styles/anExJ29O9C.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -54,7 +54,7 @@
         <h1 itemprop="name">
           <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
         </h1>
-        <span class="fill"></span>
+        <span></span>
 
         <h2><a href="/">Home</a></h2>
 
@@ -87,15 +87,14 @@
             >&nbsp;by
             <span class="author" itemprop="author">Asanka Herath</span></span
           >
-          <span class="fill"></span>
-
-          <span class="tag-link">
+          <span></span>
+          <span class="tag">
             <a href="/tags/privacy/">#Privacy</a>
           </span>
         </nav>
         <div>
           <span class="readingtime">
-            Estimated reading time is 16 minutes.
+            Estimated reading time is 17 minutes.
           </span>
         </div>
       </header>
@@ -118,15 +117,15 @@
             </p>
           </li>
         </ul>
-        <h2>Background</h2>
+        <h2 id="background">Background</h2>
         <figure>
           <img
             src="/posts/ephemeral-fingerprinting/DtzI4X4MpN-598.png"
-            alt=""
+            alt="diagram of site isolation boundaries with overlap"
             width="598"
             height="383"
           />
-          <figcaption>
+          <figcaption aria-hidden="true">
             diagram of site isolation boundaries with overlap
           </figcaption>
         </figure>
@@ -147,7 +146,7 @@
           confidence. Let’s call these <strong>ephemeral fingerprints</strong>.
           This document discusses two types:
         </p>
-        <ol>
+        <ol type="1">
           <li>
             <p>
               <em
@@ -184,7 +183,10 @@
         </p>
         <p>
           These are not new. For example, this is discussed by Van Goethem et.
-          al. <sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>
+          al.
+          <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"
+            ><sup>1</sup></a
+          >
         </p>
         <p>
           who calls these “Cross-Session Events” (§ 5 of linked paper).
@@ -198,14 +200,14 @@
             >Example: Ambient light events</a
           >).
         </p>
-        <h3>Modelling Correlated Events</h3>
+        <h3 id="modelling-correlated-events">Modelling Correlated Events</h3>
         <p>
           A correlatable event can be thought of as the tuple
           <code>&lt;surface-sample, timestamp&gt;</code>. The addition of the
           timestamp strictly increases the amount of information carried by the
           surface sample.
         </p>
-        <h3>Modelling Event Streams</h3>
+        <h3 id="modelling-event-streams">Modelling Event Streams</h3>
         <p>
           An event stream is simply a list of observed samples
           <code>sample₀, sample₁, ...</code>.
@@ -214,7 +216,7 @@
           Each additional observation strictly increases the amount of
           information.
         </p>
-        <h3>Other Examples:</h3>
+        <h3 id="other-examples">Other Examples:</h3>
         <ul>
           <li><code>Accelerometer</code> properties.</li>
           <li><code>Sensor</code>, <code>onreading</code> event.</li>
@@ -231,13 +233,15 @@
             between two browser windows.
           </li>
         </ul>
-        <h2>Mitigation</h2>
-        <h3>Permissions</h3>
+        <h2 id="mitigation">Mitigation</h2>
+        <h3 id="permissions">Permissions</h3>
         <p><strong>Goal:</strong> Require informed consent from users.</p>
         <p>
           There’s precedent for considering permissions
-          <sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup> to
-          be sufficient mitigation for similar issues. For example, the Media
+          <a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"
+            ><sup>2</sup></a
+          >
+          to be sufficient mitigation for similar issues. For example, the Media
           Capture API specification includes the following:
         </p>
         <blockquote>
@@ -250,7 +254,12 @@
           </p>
         </blockquote>
         <p style="text-align: right">
-          From §15 of [Media Capture and Streams API][MCASAPI] specification.
+          From §15 of
+          <a
+            href="https://w3c.github.io/mediacapture-main/#privacy-and-security-considerations"
+            >Media Capture and Streams API</a
+          >
+          specification.
         </p>
         <p><strong>Pros</strong></p>
         <ul>
@@ -269,7 +278,7 @@
             <p>Doesn’t prevent identity joining once permission is granted.</p>
           </li>
         </ul>
-        <h3>Fuzzing Timing of Events</h3>
+        <h3 id="fuzzing-timing-of-events">Fuzzing Timing of Events</h3>
         <p>
           <strong>Goal</strong>: Deter correlation of events by injecting timing
           skew.
@@ -293,11 +302,11 @@
               confidence could still be sufficient for most uses.
             </p>
           </li>
-          <li>
-            <p>Doesn’t address unique event streams.</p>
-          </li>
+          <li><p>Doesn’t address unique event streams.</p></li>
         </ul>
-        <h3>First-Party Restriction for APIs</h3>
+        <h3 id="first-party-restriction-for-apis">
+          First-Party Restriction for APIs
+        </h3>
         <p>
           <strong>Goal</strong>: Deter identity correlation by third-party
           sites.
@@ -327,9 +336,7 @@
         </ul>
         <p><strong>Cons</strong></p>
         <ul>
-          <li>
-            <p>Difficult to retrofit into existing APIs.</p>
-          </li>
+          <li><p>Difficult to retrofit into existing APIs.</p></li>
           <li>
             <p>
               Browser-wide events and attributes are still visible to distinct
@@ -345,7 +352,9 @@
             </p>
           </li>
         </ul>
-        <h3>Limit API Access To Visible Browsing Contexts</h3>
+        <h3 id="limit-api-access-to-visible-browsing-contexts">
+          Limit API Access To Visible Browsing Contexts
+        </h3>
         <p>
           <strong>Goal:</strong> Prevent background browsing contexts from
           skimming identifiable events.
@@ -385,7 +394,9 @@
             </p>
           </li>
         </ul>
-        <h3>Limit Events To Focused Top-Level Browsing Context</h3>
+        <h3 id="limit-events-to-focused-top-level-browsing-context">
+          Limit Events To Focused Top-Level Browsing Context
+        </h3>
         <p>
           <strong>Goal</strong>: Limit firing correlatable events to a single
           <a
@@ -431,7 +442,9 @@
         <ul>
           <li>Does not address event stream fingerprinting via polling.</li>
         </ul>
-        <h3>Limit API Access To Focused Top-Level Browsing Context</h3>
+        <h3 id="limit-api-access-to-focused-top-level-browsing-context">
+          Limit API Access To Focused Top-Level Browsing Context
+        </h3>
         <p>
           <strong>Goal</strong>: Limit access to sensitive APIs to a single
           <a
@@ -456,11 +469,11 @@
               defining behavior for “disabled” APIs.
             </p>
           </li>
-          <li>
-            <p>May break critical use cases.</p>
-          </li>
+          <li><p>May break critical use cases.</p></li>
         </ul>
-        <h3>Secure-Context Restriction and Control via Feature-Policy</h3>
+        <h3 id="secure-context-restriction-and-control-via-feature-policy">
+          Secure-Context Restriction and Control via Feature-Policy
+        </h3>
         <p>These should be pretty standard at this point.</p>
         <p><strong>Pros</strong></p>
         <ul>
@@ -470,7 +483,9 @@
         <ul>
           <li>Not sufficient by itself.</li>
         </ul>
-        <h2>Spotting Ephemeral Fingerprinting Surfaces In Web Specs</h2>
+        <h2 id="spotting-ephemeral-fingerprinting-surfaces-in-web-specs">
+          Spotting Ephemeral Fingerprinting Surfaces In Web Specs
+        </h2>
         <p><strong>Ephemeral fingerprints:</strong></p>
         <ul>
           <li>
@@ -501,7 +516,7 @@
             </p>
           </li>
         </ul>
-        <h3>What to look for:</h3>
+        <h3 id="what-to-look-for">What to look for:</h3>
         <ul>
           <li>
             <p>Events with external triggers. E.g. hardware based events.</p>
@@ -526,7 +541,7 @@
             </p>
           </li>
         </ul>
-        <h3>Example</h3>
+        <h3 id="example">Example</h3>
         <p>Consider <code>onfocus</code> and <code>onblur</code> events.</p>
         <p>
           The
@@ -546,20 +561,26 @@
           itself goes out of focus. Thus identity can be correlated when
           switching browser windows.
         </p>
-        <h4>Possible Mitigation</h4>
+        <h4 id="possible-mitigation">Possible Mitigation</h4>
         <p>
           When the <em>new chain</em> and the <em>old chain</em>
-          <sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup> are
-          in different top-level browsing contexts whose active documents are
-          not same-origin, queue but don’t fire <code>change</code> and
+          <a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"
+            ><sup>3</sup></a
+          >
+          are in different top-level browsing contexts whose active documents
+          are not same-origin, queue but don’t fire <code>change</code> and
           <code>blur</code> events until focus returns to the old top-level
           browsing context.
         </p>
-        <h3>Notes</h3>
-        <hr class="footnotes-sep" />
-        <section class="footnotes">
-          <ol class="footnotes-list">
-            <li id="fn1" class="footnote-item">
+        <h3 id="notes">Notes</h3>
+        <section
+          id="footnotes"
+          class="footnotes footnotes-end-of-document"
+          role="doc-endnotes"
+        >
+          <hr />
+          <ol>
+            <li id="fn1">
               <p>
                 Van Goethem, T. and Joosen, W., 2017. One side-channel to bring
                 them all and in the darkness bind them: Associating isolated
@@ -570,25 +591,33 @@
                 >. (<a
                   href="https://pdfs.semanticscholar.org/5814/9610a57cb4626918bf003b8bad25e740b1f4.pdf"
                   >PDF</a
-                >) <a href="#fnref1" class="footnote-backref">↩︎</a>
+                >)<a href="#fnref1" class="footnote-back" role="doc-backlink"
+                  >↩︎</a
+                >
               </p>
             </li>
-            <li id="fn2" class="footnote-item">
+            <li id="fn2">
               <p>
                 Either via a legacy permissions prompt or explicitly requiring
                 the use of the
                 <a href="https://w3c.github.io/permissions/">Permissions API</a>
-                in the spec for sensitive APIs.
-                <a href="#fnref2" class="footnote-backref">↩︎</a>
+                in the spec for sensitive APIs.<a
+                  href="#fnref2"
+                  class="footnote-back"
+                  role="doc-backlink"
+                  >↩︎</a
+                >
               </p>
             </li>
-            <li id="fn3" class="footnote-item">
+            <li id="fn3">
               <p>
                 <em>New chain</em> and <em>old chain</em> are defined in
                 <a
                   href="https://html.spec.whatwg.org/multipage/interaction.html#focus-update-steps"
                   >focus update steps</a
-                >. <a href="#fnref3" class="footnote-backref">↩︎</a>
+                >.<a href="#fnref3" class="footnote-back" role="doc-backlink"
+                  >↩︎</a
+                >
               </p>
             </li>
           </ol>
@@ -596,7 +625,7 @@
       </main>
 
       <footer>
-        <div class="lastmodified">
+        <div>
           <p>Last modified: <time datetime="2020-04-01">April 1, 2020</time></p>
         </div>
       </footer>
@@ -613,36 +642,40 @@
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/posts/remarkable-first-impressions/">
-            <span itemprop="name">Note-taking on a reMarkable 2</span>
+          <a itemprop="url" href="/posts/ephemeral-fingerprinting/">
+            <span itemprop="name">Ephemeral Fingerprinting On The Web</span>
           </a>
         </h3>
         <nav>
           <span class="date">
             Last updated on
-            <time datetime="2021-12-30" itemprop="datePublished"
-              >December 30, 2021</time
+            <time datetime="2020-04-01" itemprop="datePublished"
+              >April 1, 2020</time
             >
           </span>
 
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/remarkable-2/">#Remarkable 2</a>
-          </span>
-
-          <span class="tag-link">
-            <a href="/tags/reviews/">#Reviews</a>
+          <span></span>
+          <span class="tag">
+            <a href="/tags/privacy/">#Privacy</a>
           </span>
         </nav>
         <div>
           <div class="summary-line">
             <div class="summary" itemprop="abstract">
-              <p>Sentiments after using the reMarkable 2 tablet for a month.</p>
+              <p>
+                Any ephemeral low-entropy web observable property whose changes
+                are concurrently observable by multiple sites can lead to cross
+                site identity joining.
+              </p>
+              <p>
+                This method of identity joining does not require coordination
+                between multiple first parties. A single third party embedded
+                within multiple first parties can also use this method.
+              </p>
             </div>
           </div>
           <p class="more">
-            <a href="/posts/remarkable-first-impressions/">Read more …</a>
+            <a href="/posts/ephemeral-fingerprinting/">Read more …</a>
           </p>
         </div>
       </div>
@@ -654,66 +687,50 @@
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/posts/inktober-stripes/">
-            <span itemprop="name">Inktober - Stripes</span>
+          <a itemprop="url" href="/posts/moved-to-eleventy/">
+            <span itemprop="name">I Moved This Blog To Eleventy</span>
           </a>
         </h3>
         <nav>
           <span class="date">
             Last updated on
-            <time datetime="2022-01-21" itemprop="datePublished"
-              >January 21, 2022</time
+            <time datetime="2024-12-13" itemprop="datePublished"
+              >December 13, 2024</time
             >
           </span>
 
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/inktober/">#Inktober</a>
-          </span>
-        </nav>
-      </div>
-
-      <div
-        class="post-card"
-        itemscope=""
-        itemtype="https://schema.org/BlogPosting"
-      >
-        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <h3 class="title">
-          <a itemprop="url" href="/posts/thirteen-years/">
-            <span itemprop="name">Thirteen Years</span>
-          </a>
-        </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2023-12-07" itemprop="datePublished"
-              >December 7, 2023</time
-            >
-          </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/career/">#Career</a>
-          </span>
-
-          <span class="tag-link">
-            <a href="/tags/culture/">#Culture</a>
-          </span>
-
-          <span class="tag-link">
-            <a href="/tags/organizations/">#Organizations</a>
+          <span></span>
+          <span class="tag">
+            <a href="/tags/meta/">#Meta</a>
           </span>
         </nav>
         <div>
           <div class="summary-line">
             <div class="summary" itemprop="abstract">
-              <p>Some reflections from thirteen years at Google.</p>
+              <p>
+                At long last, this blog &quot;outgrew&quot;<sup
+                  class="footnote-ref"
+                  ><a href="#fn1" id="fnref1">[1]</a></sup
+                >
+                Hugo and I had to go looking for a new static site generator.
+              </p>
+              <hr class="footnotes-sep" />
+              <section class="footnotes">
+                <ol class="footnotes-list">
+                  <li id="fn1" class="footnote-item">
+                    <p>
+                      Of course, by outgrew I mean I got bored and wanted to
+                      play with a new static site generator.
+                      <a href="#fnref1" class="footnote-backref">↩︎</a>
+                    </p>
+                  </li>
+                </ol>
+              </section>
             </div>
           </div>
-          <p class="more"><a href="/posts/thirteen-years/">Read more …</a></p>
+          <p class="more">
+            <a href="/posts/moved-to-eleventy/">Read more …</a>
+          </p>
         </div>
       </div>
 
@@ -724,39 +741,36 @@
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/series/unsung-team-roles/emergence/"
-            ><span class="series-name">Unsung Team Roles</span>:
-            <span itemprop="name">Emergence of Soft Roles</span>
+          <a itemprop="url" href="/series/structure-of-experience/flame/"
+            ><span class="series-name">Structure Of Experience</span>:
+            <span itemprop="name">Act III: Flame</span>
           </a>
         </h3>
         <nav>
           <span class="date">
             Last updated on
-            <time datetime="2025-08-02" itemprop="datePublished"
-              >August 2, 2025</time
+            <time datetime="2025-05-07" itemprop="datePublished"
+              >May 7, 2025</time
             >
           </span>
 
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/organizations/">#Organizations</a>
+          <span></span>
+          <span class="tag">
+            <a href="/tags/ai/">#AI</a>
           </span>
         </nav>
         <div>
           <div class="summary-line">
             <div class="summary" itemprop="abstract">
               <p>
-                In any team, the roles people play are not as rigid as they
-                seem. Over time, people naturally settle into &quot;soft
-                roles&quot; that are not explicitly defined but are crucial for
-                a team's success. This is a look at the organic, and often
-                unsung, ways that successful teams actually work.
+                The map is not the territory. A picture of a flame is not a
+                flame. A description of a neural network is not a brain. A
+                simulation of thought is not a consciousness.
               </p>
             </div>
           </div>
           <p class="more">
-            <a href="/series/unsung-team-roles/emergence/">Read more …</a>
+            <a href="/series/structure-of-experience/flame/">Read more …</a>
           </p>
         </div>
       </div>
@@ -780,16 +794,49 @@
             >
           </span>
 
-          <span class="fill"></span>
-
-          <span class="tag-link">
+          <span></span>
+          <span class="tag">
             <a href="/tags/engineering/">#Engineering</a>
+          </span>
+        </nav>
+      </div>
+
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a
+            itemprop="url"
+            href="/posts/things-you-can-do-with-nvim-and-vscode/"
+          >
+            <span itemprop="name"
+              >Things You Can Do With Neovim and Vscode That You Can&#39;t Do
+              With Neovim Alone</span
+            >
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2020-09-19" itemprop="datePublished"
+              >September 19, 2020</time
+            >
+          </span>
+
+          <span></span>
+          <span class="tag">
+            <a href="/tags/tools/">#Tools</a>
+          </span>
+          <span class="tag">
+            <a href="/tags/vim/">#Vim</a>
           </span>
         </nav>
       </div>
     </footer>
 
-    <!-- Google analytics -->
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"

@@ -41,7 +41,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/Bzyqb5Ytgc.css" />
+    <link rel="stylesheet" href="/styles/anExJ29O9C.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -54,7 +54,7 @@
         <h1 itemprop="name">
           <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
         </h1>
-        <span class="fill"></span>
+        <span></span>
 
         <h2><a href="/">Home</a></h2>
 
@@ -89,15 +89,14 @@
             >&nbsp;by
             <span class="author" itemprop="author">Asanka Herath</span></span
           >
-          <span class="fill"></span>
-
-          <span class="tag-link">
+          <span></span>
+          <span class="tag">
             <a href="/tags/tools/">#Tools</a>
           </span>
         </nav>
         <div>
           <span class="readingtime">
-            Estimated reading time is 4 minutes.
+            Estimated reading time is 6 minutes.
           </span>
         </div>
       </header>
@@ -107,7 +106,7 @@
           This article is about using
           <a href="https://ansible.com">Ansible</a> on the command-line.
         </p>
-        <h2>Problem:</h2>
+        <h2 id="problem">Problem:</h2>
         <p>You …</p>
         <ul>
           <li>
@@ -128,9 +127,7 @@
               aspect of what you want to do.
             </p>
           </li>
-          <li>
-            <p>… live on the command-line.</p>
-          </li>
+          <li><p>… live on the command-line.</p></li>
           <li>
             <p>
               … think <code>ansible-playbook</code> and
@@ -139,33 +136,45 @@
             </p>
           </li>
         </ul>
-        <h2>A Possible Solution</h2>
+        <h2 id="a-possible-solution">A Possible Solution</h2>
         <p>
           Taking a page from old school Posix tools, let’s make a script that
           encodes Ansible group names into the filename.
         </p>
         <p>Then you can go from this:</p>
-        <pre><code class="language-sh">$ ansible atlanta -m copy -a &quot;src=/etc/hosts dest=/tmp/hosts&quot;
-$ ansible webservers -m service -a &quot;name=httpd state=started&quot;
-</code></pre>
+        <div class="sourceCode" id="cb1">
+          <pre
+            class="sourceCode sh"
+          ><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ansible atlanta <span class="at">-m</span> copy <span class="at">-a</span> <span class="st">&quot;src=/etc/hosts dest=/tmp/hosts&quot;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ansible webservers <span class="at">-m</span> service <span class="at">-a</span> <span class="st">&quot;name=httpd state=started&quot;</span></span></code></pre>
+        </div>
         <p>To this:</p>
-        <pre><code class="language-sh">$ atlanta copy &quot;src=/etc/hosts dest=/tmp/hosts&quot;
-$ webservers service &quot;name=https state=started&quot;
-</code></pre>
+        <div class="sourceCode" id="cb2">
+          <pre
+            class="sourceCode sh"
+          ><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> atlanta copy <span class="st">&quot;src=/etc/hosts dest=/tmp/hosts&quot;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> webservers service <span class="st">&quot;name=https state=started&quot;</span></span></code></pre>
+        </div>
         <p>Or from this:</p>
-        <pre><code class="language-sh">$ ansible-playbook -l atlanta go-to-the-moon
-$ ansible-playbook -l webservers do-the-other-things
-</code></pre>
+        <div class="sourceCode" id="cb3">
+          <pre
+            class="sourceCode sh"
+          ><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ansible-playbook <span class="at">-l</span> atlanta go-to-the-moon</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ansible-playbook <span class="at">-l</span> webservers do-the-other-things</span></code></pre>
+        </div>
         <p>To this:</p>
-        <pre><code class="language-sh">$ atlanta go-to-the-moon
-$ webservers do-the-other-things
-</code></pre>
-        <h2>Setting Up</h2>
+        <div class="sourceCode" id="cb4">
+          <pre
+            class="sourceCode sh"
+          ><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> atlanta go-to-the-moon</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> webservers do-the-other-things</span></code></pre>
+        </div>
+        <h2 id="setting-up">Setting Up</h2>
         <p>
           These are just examples. Please don’t spend time bikeshedding names
           because you can use whichever names you like.
         </p>
-        <ol>
+        <ol type="1">
           <li>
             <p>
               Download the contents of <code>ansible-by-proxy</code> from
@@ -187,17 +196,23 @@ $ webservers do-the-other-things
             <p>
               Don’t forget to mark the file as executable if it isn’t already.
             </p>
-            <pre><code class="language-sh">$ chmod +x ansible-by-proxy
-</code></pre>
+            <div class="sourceCode" id="cb5">
+              <pre
+                class="sourceCode sh"
+              ><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> chmod +x ansible-by-proxy</span></code></pre>
+            </div>
           </li>
           <li>
             <p>
               Create symlinks to the file that have the same name as hostnames
               or groups as described in the includes:
             </p>
-            <pre><code class="language-sh">$ ln -s ansible-by-proxy atlanta
-$ ln -s ansible-by-proxy webservers
-</code></pre>
+            <div class="sourceCode" id="cb6">
+              <pre
+                class="sourceCode sh"
+              ><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ln <span class="at">-s</span> ansible-by-proxy atlanta</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ln <span class="at">-s</span> ansible-by-proxy webservers</span></code></pre>
+            </div>
             <p>and so on.</p>
           </li>
         </ol>
@@ -208,7 +223,7 @@ $ ln -s ansible-by-proxy webservers
       </main>
 
       <footer>
-        <div class="lastmodified">
+        <div>
           <p>Last modified: <time datetime="2020-06-01">June 1, 2020</time></p>
         </div>
       </footer>
@@ -225,24 +240,42 @@ $ ln -s ansible-by-proxy webservers
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/posts/ten-years/">
-            <span itemprop="name">Ten Years</span>
+          <a itemprop="url" href="/posts/ephemeral-fingerprinting/">
+            <span itemprop="name">Ephemeral Fingerprinting On The Web</span>
           </a>
         </h3>
         <nav>
           <span class="date">
             Last updated on
-            <time datetime="2020-12-09" itemprop="datePublished"
-              >December 9, 2020</time
+            <time datetime="2020-04-01" itemprop="datePublished"
+              >April 1, 2020</time
             >
           </span>
 
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/career/">#Career</a>
+          <span></span>
+          <span class="tag">
+            <a href="/tags/privacy/">#Privacy</a>
           </span>
         </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>
+                Any ephemeral low-entropy web observable property whose changes
+                are concurrently observable by multiple sites can lead to cross
+                site identity joining.
+              </p>
+              <p>
+                This method of identity joining does not require coordination
+                between multiple first parties. A single third party embedded
+                within multiple first parties can also use this method.
+              </p>
+            </div>
+          </div>
+          <p class="more">
+            <a href="/posts/ephemeral-fingerprinting/">Read more …</a>
+          </p>
+        </div>
       </div>
 
       <div
@@ -252,40 +285,73 @@ $ ln -s ansible-by-proxy webservers
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/posts/on-wontfixing-bugs/">
-            <span itemprop="name">On WontFixing Bugs</span>
+          <a itemprop="url" href="/posts/remarkable-first-impressions/">
+            <span itemprop="name">Note-taking on a reMarkable 2</span>
           </a>
         </h3>
         <nav>
           <span class="date">
             Last updated on
-            <time datetime="2021-03-02" itemprop="datePublished"
-              >March 2, 2021</time
+            <time datetime="2021-12-30" itemprop="datePublished"
+              >December 30, 2021</time
             >
           </span>
 
-          <span class="fill"></span>
+          <span></span>
+          <span class="tag">
+            <a href="/tags/remarkable-2/">#Remarkable 2</a>
+          </span>
+          <span class="tag">
+            <a href="/tags/reviews/">#Reviews</a>
+          </span>
+        </nav>
+        <div>
+          <div class="summary-line">
+            <div class="summary" itemprop="abstract">
+              <p>Sentiments after using the reMarkable 2 tablet for a month.</p>
+            </div>
+          </div>
+          <p class="more">
+            <a href="/posts/remarkable-first-impressions/">Read more …</a>
+          </p>
+        </div>
+      </div>
 
-          <span class="tag-link">
+      <div
+        class="post-card"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/the-loss-of-a-virtuous-culture/">
+            <span itemprop="name">The Loss of a Virtuous Culture</span>
+          </a>
+        </h3>
+        <nav>
+          <span class="date">
+            Last updated on
+            <time datetime="2022-10-28" itemprop="datePublished"
+              >October 28, 2022</time
+            >
+          </span>
+
+          <span></span>
+          <span class="tag">
+            <a href="/tags/culture/">#Culture</a>
+          </span>
+          <span class="tag">
             <a href="/tags/engineering/">#Engineering</a>
           </span>
         </nav>
         <div>
           <div class="summary-line">
             <div class="summary" itemprop="abstract">
-              <p>
-                Large projects accumulate a large number of issue reports over
-                time. This is normal. Typically for a &quot;successful&quot;
-                project the rate of new issues being reported will exceed the
-                rate of issues being fixed. Hence the growth.
-              </p>
-              <p>
-                But what are they to do about this ever-growing pile of bugs?
-              </p>
+              <p>Luck isn't enough. You need a culture of virtue.</p>
             </div>
           </div>
           <p class="more">
-            <a href="/posts/on-wontfixing-bugs/">Read more …</a>
+            <a href="/posts/the-loss-of-a-virtuous-culture/">Read more …</a>
           </p>
         </div>
       </div>
@@ -297,64 +363,50 @@ $ ln -s ansible-by-proxy webservers
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/posts/inktober-decay/">
-            <span itemprop="name">Inktober - Decay</span>
+          <a itemprop="url" href="/posts/when-your-feature-gets-someone-hurt/">
+            <span itemprop="name">When Your Feature Gets Someone Hurt</span>
           </a>
         </h3>
         <nav>
           <span class="date">
             Last updated on
-            <time datetime="2022-01-13" itemprop="datePublished"
-              >January 13, 2022</time
+            <time datetime="2024-05-22" itemprop="datePublished"
+              >May 22, 2024</time
             >
           </span>
 
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/inktober/">#Inktober</a>
-          </span>
-        </nav>
-      </div>
-
-      <div
-        class="post-card"
-        itemscope=""
-        itemtype="https://schema.org/BlogPosting"
-      >
-        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <h3 class="title">
-          <a itemprop="url" href="/posts/intermezzo-2025/">
-            <span itemprop="name">Intermission - Q1 of 2025</span>
-          </a>
-        </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2025-05-03" itemprop="datePublished"
-              >May 3, 2025</time
-            >. Originally posted on
-            <time datetime="2025-04-07" itemprop="dateCreated"
-              >April 7, 2025</time
-            >
-          </span>
-
-          <span class="fill"></span>
-
-          <span class="tag-link">
+          <span></span>
+          <span class="tag">
             <a href="/tags/culture/">#Culture</a>
           </span>
         </nav>
         <div>
           <div class="summary-line">
+            <a
+              href="/posts/when-your-feature-gets-someone-hurt/"
+              class="hero-link"
+            >
+              <img
+                class="hero"
+                src="/img/S51L3NURP--1536.png"
+                alt="An old photo album containing pictures of ruins. (Generated with Gemini.)"
+                width="1536"
+                height="1536"
+              />
+            </a>
+
             <div class="summary" itemprop="abstract">
               <p>
-                Hate can be suppressed temporarily, but cannot be contained for
-                too long.
+                If Google Photos incorrectly tags a photo, what's the worst that
+                could happen?
               </p>
             </div>
           </div>
-          <p class="more"><a href="/posts/intermezzo-2025/">Read more …</a></p>
+          <p class="more">
+            <a href="/posts/when-your-feature-gets-someone-hurt/"
+              >Read more …</a
+            >
+          </p>
         </div>
       </div>
 
@@ -365,43 +417,47 @@ $ ln -s ansible-by-proxy webservers
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/series/structure-of-experience/flame/"
-            ><span class="series-name">Structure Of Experience</span>:
-            <span itemprop="name">Act III: Flame</span>
+          <a itemprop="url" href="/series/unsung-team-roles/glue-people/"
+            ><span class="series-name">Unsung Team Roles</span>:
+            <span itemprop="name">Ode to Glue People</span>
           </a>
         </h3>
         <nav>
           <span class="date">
             Last updated on
-            <time datetime="2025-05-07" itemprop="datePublished"
-              >May 7, 2025</time
+            <time datetime="2025-08-12" itemprop="datePublished"
+              >August 12, 2025</time
             >
           </span>
 
-          <span class="fill"></span>
-
-          <span class="tag-link">
-            <a href="/tags/ai/">#AI</a>
+          <span></span>
+          <span class="tag">
+            <a href="/tags/organizations/">#Organizations</a>
           </span>
         </nav>
         <div>
           <div class="summary-line">
             <div class="summary" itemprop="abstract">
               <p>
-                The map is not the territory. A picture of a flame is not a
-                flame. A description of a neural network is not a brain. A
-                simulation of thought is not a consciousness.
+                While managers may be constrained in their communication,
+                special individuals create unofficial channels where team
+                members feel safe to share information. Acting as social hubs or
+                &quot;speakeasies,&quot; they foster trust and enable the free
+                flow of timely, factual information, which helps colleagues make
+                better decisions and navigate turmoil. Despite their critical
+                function in preventing team collapse and reducing isolation,
+                this &quot;glue work&quot; is typically not formally recognized
+                or compensated.
               </p>
             </div>
           </div>
           <p class="more">
-            <a href="/series/structure-of-experience/flame/">Read more …</a>
+            <a href="/series/unsung-team-roles/glue-people/">Read more …</a>
           </p>
         </div>
       </div>
     </footer>
 
-    <!-- Google analytics -->
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"

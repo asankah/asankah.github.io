@@ -1,18 +1,3 @@
-.noun { color: blue }
-.adverb { color: green }
-.gerund { color: purple }
-.preposition { color: brown }
-.verb { color: red }
-.determiner { color: navy }
-.conjunction { color: maroon }
-.pronoun { color: teal }
-.adjective { color: olive }
-.proper { color: coral }
-
-.function { color: teal }
-.var-index { color: blue }
-.var-value { color: green }
-.hi { font-weight: bold; }
 :root {
   color-scheme: light dark;
   --background: light-dark(rgb(239, 239, 239), rgb(30, 30, 30));
@@ -652,10 +637,7 @@ nav {
   align-items: center;
   column-gap: 0.2rem;
 }
-nav.top {
-  column-gap: 1rem;
-}
-nav.bottom {
+nav:has(:is(h1, h2)) {
   column-gap: 1rem;
 }
 nav.multiline {
@@ -664,10 +646,13 @@ nav.multiline {
   row-gap: 0.2rem;
   justify-content: left;
 }
-nav * {
+nav > * {
   padding: 0;
   flex-basis: max-content;
   align-self: center;
+}
+nav > *:empty {
+  flex-grow: 1;
 }
 nav h1 {
   font-size: 1rem;
@@ -681,14 +666,11 @@ nav h2 {
 nav a {
   color: var(--heading-text-color);
 }
-nav .fill {
-  flex-grow: 1;
-}
 nav .disabled {
   color: var(--dimmed-text-color);
 }
 
-.tag-link * {
+.tag:not(.katex-html > .tag) * {
   font-family: "Roboto Condensed", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -697,10 +679,10 @@ nav .disabled {
   line-height: 1;
   color: var(--tag-text-color);
 }
-.tag-link *[aria-current=page] {
+.tag:not(.katex-html > .tag) *[aria-current=page] {
   font-weight: var(--font-weight-bold);
 }
-.tag-link {
+.tag:not(.katex-html > .tag) {
   padding: 0.1rem 0.5rem;
   color: var(--tag-text-color);
   border: 1px var(--border-color) solid;
@@ -732,6 +714,9 @@ article header h1 {
 }
 article header {
   margin-bottom: 1rem;
+}
+article > main {
+  display: contents;
 }
 article p > img,
 article ul > img,
@@ -779,15 +764,15 @@ article figure:has(> p:first-child) > p:first-child::after {
     filter: invert(100%) opacity(25%);
   }
 }
-article .lastmodified {
+article footer {
   font-size: smaller;
   color: var(--dimmed-text-color);
   text-align: right;
 }
-article .lastmodified p {
+article footer p {
   margin-bottom: 0;
 }
-article .lastmodified p:last-child {
+article footer p:last-child {
   margin-bottom: 1em;
 }
 article .glossary,
