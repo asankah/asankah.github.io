@@ -5,13 +5,172 @@
   <link href="https://xn--izc.com/feed.xml" rel="self" />
   <link href="https://xn--izc.com/" />
   <updated>
-    2025-09-27T00:00:00Z
+    2025-10-05T00:00:00Z
   </updated>
   <id>https://xn--izc.com/</id>
   <author>
     <name>Asanka Herath</name>
     <email>asanka@gmail.com</email>
   </author>
+    <entry>
+      <title>Optimal line-length for publishing on the web</title>
+      <link href="https://xn--izc.com/posts/optimal-line-length/" />
+      <updated>2025-10-05T00:00:00Z</updated>
+      <id>https://xn--izc.com/posts/optimal-line-length/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;Fonts should be pretty, and text layout should be easy to read as
+possible. When publishing on paper, publishers can control the physical
+format for the presentation. We can assume, for the most part, how
+someone might hold and read a book or a newspaper. Based on that we can
+predict how various layouts, typefaces, and letter sizes will affect the
+readability and aesthetics.&lt;/p&gt;
+&lt;p&gt;Publishing on the web is a bit more complicated. How exactly a web
+page will be perceived is difficult to predict. Content publishers adapt
+with responsive designs and share the responsibility for presentation
+with browser makers and device makers.&lt;/p&gt;
+&lt;div class=&quot;two-columns&quot;&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/optimal-line-length/nytimes-19150111.jpg&quot; title=&quot;An old newspaper, discolored and fuzzy. There are 8 columns of text on the front page along with some ads and articles that occasionally cross column boundaries.&quot; class=&quot;noinvert flush-right&quot; alt=&quot;New York Times print edition. 1915. (Image source: The Internet Archive)&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;New York Times print edition. 1915.
+(Image source: The Internet Archive)&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Folks old enough to remember old timey newspapers would recall how
+narrow their text columns were. Before digital layouts, newspapers were
+published using &lt;em&gt;hot metal&lt;/em&gt; methods called &lt;em&gt;linotype&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Linotype newspapers had narrow columns for practical
+reasons&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;A metal line of type (“&lt;em&gt;line-o-type&lt;/em&gt;” ⇝ &lt;em&gt;linotype&lt;/em&gt;)
+also called a &lt;em&gt;slug&lt;/em&gt; becomes difficult to work with if it is too
+long. In particular, the machines assembled text line-by-line. This
+process requires that all the lines are roughly of equal width. A small
+line width –2 inches in this case– was apparently the right
+trade-off.&lt;/p&gt;
+&lt;p&gt;There were additional reasons for the 8 column layouts of yore that
+were not just ease of arranging type. For example, the many small
+columns allowed for more flexibility for laying out ads.&lt;/p&gt;
+&lt;/div&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/optimal-line-length/linotype-slug.png&quot; class=&quot;noinvert&quot; alt=&quot;A linotype “slug” is a block of lead that has letter shaped extrusions on one side. (Image source: Wikimedia CC by-SA)&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;A linotype “slug” is a block of lead that
+has letter shaped extrusions on one side. (Image source: &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Linotype_Gusszeile_-_Type_Slug.jpg&quot;&gt;Wikimedia&lt;/a&gt;
+CC by-SA)&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;More relevant for us is that a narrow column makes it easier to find
+the start of the next line after reading one. Larger spacing between
+lines helps; double-spacing isn’t just a trick to push the page
+count.&lt;/p&gt;
+&lt;p&gt;Around 2008, New York Times changed the print layout to a wider 6
+column layout. The new column size accommodated 40–45 characters. Since
+fiddling with linotype slugs is no longer a concern, they were able to
+focus more on readability.&lt;/p&gt;
+&lt;p&gt;Newspapers – or print in general – is different from reading on the
+web in terms of distance from the eye to the text. Different reading
+distances demand different amounts of precision to follow a line of
+text.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/optimal-line-length/line-tracking.png&quot; alt=&quot;An eyeball moves from the end of one line to the next and then moves to the beginning of the next line.&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;An eyeball moves from the end of one line
+to the next and then moves to the beginning of the next
+line.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;So the goal here is to figure out a width that is short enough that
+the reader can find the next line comfortably, and long enough to not
+require excessive effort to read each line. Too long and the reader will
+break their rhythm with excessive time spent finding the start of the
+next line. Too short and the reader will break their rhythm with
+excessive time spent in saccadian movement.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/optimal-line-length/reading-effort-system.png&quot; alt=&quot;System diagram showing the optimization problem of reading comfort. An increase in line length leads to a decrease in saccadian effort, but an increase in line tracking effort. An increase in line spacing leads to an increase in sccadian effort, but a decrease in line tracking effort. An increase in distance to text results in a decrease in saccadian effort, but an increase in line tracking effort.&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;System diagram showing the optimization
+problem of reading comfort. An increase in line length leads to a
+&lt;em&gt;decrease&lt;/em&gt; in saccadian effort, but an &lt;em&gt;increase&lt;/em&gt; in line
+tracking effort. An increase in line spacing leads to an
+&lt;em&gt;increase&lt;/em&gt; in sccadian effort, but a &lt;em&gt;decrease&lt;/em&gt; in line
+tracking effort. An increase in distance to text results in a
+&lt;em&gt;decrease&lt;/em&gt; in saccadian effort, but an &lt;em&gt;increase&lt;/em&gt; in line
+tracking effort.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;What’s the optimal line length for the web then?&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;citation&quot; data-cites=&quot;bernard2003effects&quot;&gt;Bernard et al.
+(&lt;a href=&quot;https://xn--izc.com/posts/optimal-line-length/#ref-bernard2003effects&quot; role=&quot;doc-biblioref&quot;&gt;2003&lt;/a&gt;)&lt;/span&gt;
+studied this very question. Their study looked at three different
+layouts presented on what would be considered a regular desktop
+screen.&lt;/p&gt;
+&lt;p&gt;Examples of the three layouts from the &lt;span class=&quot;citation&quot; data-cites=&quot;bernard2003effects&quot;&gt;Bernard et al. (&lt;a href=&quot;https://xn--izc.com/posts/optimal-line-length/#ref-bernard2003effects&quot; role=&quot;doc-biblioref&quot;&gt;2003&lt;/a&gt;)&lt;/span&gt;
+paper are presented below and are illustrative of what the test subjects
+saw.&lt;/p&gt;
+&lt;div class=&quot;horizontal&quot;&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/optimal-line-length/bernard-2003-full-length-example.png&quot; alt=&quot;Example of a full length layout. Image source Bernard et al. (2003)&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Example of a full length layout. Image
+source &lt;span class=&quot;citation&quot; data-cites=&quot;bernard2003effects&quot;&gt;Bernard et
+al. (&lt;a href=&quot;https://xn--izc.com/posts/optimal-line-length/#ref-bernard2003effects&quot; role=&quot;doc-biblioref&quot;&gt;2003&lt;/a&gt;)&lt;/span&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/optimal-line-length/bernard-2003-medium-length-example.png&quot; alt=&quot;Example of a medium length layout. Image source Bernard et al. (2003)&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Example of a medium length layout. Image
+source &lt;span class=&quot;citation&quot; data-cites=&quot;bernard2003effects&quot;&gt;Bernard et
+al. (&lt;a href=&quot;https://xn--izc.com/posts/optimal-line-length/#ref-bernard2003effects&quot; role=&quot;doc-biblioref&quot;&gt;2003&lt;/a&gt;)&lt;/span&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/optimal-line-length/bernard-2003-narrow-length-example.png&quot; alt=&quot;Example of a narrow length layout. Image source Bernard et al. (2003)&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Example of a narrow length layout. Image
+source &lt;span class=&quot;citation&quot; data-cites=&quot;bernard2003effects&quot;&gt;Bernard et
+al. (&lt;a href=&quot;https://xn--izc.com/posts/optimal-line-length/#ref-bernard2003effects&quot; role=&quot;doc-biblioref&quot;&gt;2003&lt;/a&gt;)&lt;/span&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/div&gt;
+&lt;p&gt;From the paper (emphasis mine):&lt;/p&gt;
+&lt;figure&gt;
+&lt;p&gt;&lt;strong&gt;No differences were found for either reading time or
+efficiency for either adults or children.&lt;/strong&gt; However,
+&lt;strong&gt;adults preferred shorter line lengths&lt;/strong&gt; to full-screen
+line lengths. In examining perception of reading efficiency, the results
+were mixed. For adults, the full text lengths were perceived as
+providing the optimal amount of scrolling in comparison to the two other
+narrower line length conditions. The narrowest line length condition was
+perceived as promoting the highest amount of reader concentration, while
+the medium line-length condition was considered to be the most optimally
+presented length for reading.&lt;/p&gt;
+&lt;figcaption&gt;
+&lt;p&gt;– &lt;span class=&quot;citation&quot; data-cites=&quot;bernard2003effects&quot;&gt;Bernard et
+al. (&lt;a href=&quot;https://xn--izc.com/posts/optimal-line-length/#ref-bernard2003effects&quot; role=&quot;doc-biblioref&quot;&gt;2003&lt;/a&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;span class=&quot;citation&quot; data-cites=&quot;beymerRussellOrton&quot;&gt;Beymer et al.
+(&lt;a href=&quot;https://xn--izc.com/posts/optimal-line-length/#ref-beymerRussellOrton&quot; role=&quot;doc-biblioref&quot;&gt;2005&lt;/a&gt;)&lt;/span&gt;
+performed an eye-tracking study along these same lines.&lt;/p&gt;
+&lt;p&gt;From the paper:&lt;/p&gt;
+&lt;figure&gt;
+&lt;p&gt;Comparing the wide and narrow formatting conditions, our analysis
+shows that for narrow formatting, subjects (a) read slightly faster, (b)
+have fewer regressions, (c) retain more information in a post-test of
+the material, but (d) tend to abandon the ends of longer paragraphs.&lt;/p&gt;
+&lt;figcaption&gt;
+&lt;p&gt;– &lt;span class=&quot;citation&quot; data-cites=&quot;beymerRussellOrton&quot;&gt;Beymer et
+al. (&lt;a href=&quot;https://xn--izc.com/posts/optimal-line-length/#ref-beymerRussellOrton&quot; role=&quot;doc-biblioref&quot;&gt;2005&lt;/a&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;In other words, there’s a &lt;em&gt;slight&lt;/em&gt; preference for narrower
+columns, but there’s no consensus on whether there’s a significant
+improvement in reading speed. Some evidence exists to suggest that
+comprehension is slightly better with narrower columns.&lt;/p&gt;
+&lt;div id=&quot;refs&quot; class=&quot;references csl-bib-body hanging-indent&quot; data-entry-spacing=&quot;0&quot; data-line-spacing=&quot;2&quot; role=&quot;list&quot;&gt;
+&lt;div id=&quot;ref-bernard2003effects&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Bernard, M. L., Fernandez, M., Hull, S., &amp;amp; Chaparro, B. S. (2003).
+The effects of line length on children and adults’ perceived and actual
+online reading performance. &lt;em&gt;Proceedings of the Human Factors and
+Ergonomics Society Annual Meeting&lt;/em&gt;, &lt;em&gt;47&lt;/em&gt;, 1375–1379.
+&lt;/div&gt;
+&lt;div id=&quot;ref-beymerRussellOrton&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Beymer, D., Russell, D. M., &amp;amp; Orton, P. Z. (2005). Wide vs. Narrow
+paragraphs: An eye tracking analysis. In M. F. Costabile &amp;amp; F.
+Paternò (Eds.), &lt;em&gt;Human-computer interaction - INTERACT 2005&lt;/em&gt; (pp.
+741–752). Springer Berlin Heidelberg.
+&lt;/div&gt;
+&lt;/div&gt;
+
+      </content>
+    </entry>
     <entry>
       <title>An Intuition on Shannon Entropy</title>
       <link href="https://xn--izc.com/posts/an-intuition-on-entropy/" />
@@ -25,29 +184,29 @@ can be misleading. Googling for “information theory” should come up with
 plenty of options for a more thorough treatment of information
 theory.&lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;Entropy comes up in &lt;a href=&quot;https://en.wikipedia.org/wiki/Information_theory&quot;&gt;information
-theory&lt;/a&gt; as a way to measure &lt;em&gt;“uncertainty”&lt;/em&gt; or alternatively a
-measure of &lt;em&gt;“information”&lt;/em&gt;. Information theory itself was first
-formalized by &lt;a href=&quot;https://en.wikipedia.org/wiki/Claude_Shannon&quot;&gt;Claude Shannon&lt;/a&gt;
+&lt;p&gt;In &lt;a href=&quot;https://en.wikipedia.org/wiki/Information_theory&quot;&gt;information
+theory&lt;/a&gt;, entropy is a way to measure &lt;em&gt;“uncertainty”&lt;/em&gt; or
+alternatively a measure of &lt;em&gt;“information”&lt;/em&gt;. The field of
+information theory itself was first formalized by &lt;a href=&quot;https://en.wikipedia.org/wiki/Claude_Shannon&quot;&gt;Claude Shannon&lt;/a&gt;
 who’s name comes up often in the literature.&lt;/p&gt;
 &lt;p&gt;Conceptually &lt;em&gt;information&lt;/em&gt; and &lt;em&gt;uncertainty&lt;/em&gt; are
 opposing forces. More of one and you have less of the other.&lt;/p&gt;
 &lt;figure&gt;
-&lt;img src=&quot;https://xn--izc.com/posts/an-intuition-on-entropy/scale.jpg&quot; title=&quot;An allegorical pencil drawing of an ornate scale. The left pan represents &amp;#39;Information&amp;#39; with a neat pile of books and scrolls. The right pan represents &amp;#39;Uncertainty&amp;#39; with a chaotic vortex of dissolving papers, gears, and symbols. The scale is in perfect equilibrium, illustrating the conceptual balance between order and disorder.&quot; alt=&quot;The balance between Information and Uncertainty. Not ““; I don’t know what Gemini was thinking there. (Generated with Gemini.)&quot; /&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/an-intuition-on-entropy/scale.jpg&quot; title=&quot;An allegorical pencil drawing of an ornate scale. The left pan represents &amp;#39;Information&amp;#39; with a neat pile of books and scrolls. The right pan represents &amp;#39;Uncertainty&amp;#39; with a chaotic vortex of dissolving papers, gears, and symbols. The scale is in perfect equilibrium, illustrating the conceptual balance between order and disorder.&quot; alt=&quot;The balance between Information and Uncertainty. Not “uncetrinity”; I don’t know what Gemini was thinking there. (Generated with Gemini.)&quot; /&gt;
 &lt;figcaption aria-hidden=&quot;true&quot;&gt;The balance between Information and
-Uncertainty. Not ““; I don’t know what Gemini was thinking there.
-(Generated with Gemini.)&lt;/figcaption&gt;
+Uncertainty. Not “uncetrinity”; I don’t know what Gemini was thinking
+there. (Generated with Gemini.)&lt;/figcaption&gt;
 &lt;/figure&gt;
-&lt;p&gt;So, lack of information leads to uncertainty. In the absence of any
+&lt;p&gt;Lack of information leads to uncertainty. In the absence of any
 information we are in total uncertainty.&lt;/p&gt;
-&lt;p&gt;In practice any given situation where we are concerned with
+&lt;p&gt;In practice in any given situation where we are concerned with
 information begins with a well defined foundation which lays out a set
 of possible outcomes. Each piece of information we receive should narrow
-down the set of possible outcomes until we reach a state where we have
-what we need to know.&lt;/p&gt;
+down the set of possible outcomes until we reach an unambiguously
+certain outcome.&lt;/p&gt;
 &lt;p&gt;If we only have one possible outcome, then we are certain of that
 outcome. The measure of uncertainty could be thought of as a way of
-measuring how far we have to go to get to this certainty.&lt;/p&gt;
+measuring how far we have to go to get there.&lt;/p&gt;
 &lt;h3 id=&quot;shannon-entropy-is-a-measure-of-uncertainty&quot;&gt;Shannon entropy is
 a measure of uncertainty&lt;/h3&gt;
 &lt;p&gt;A good example of this is the classic game &lt;em&gt;“Guess who”&lt;/em&gt;,
@@ -60,23 +219,20 @@ game “Guess Who”&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;p&gt;We want to pinpoint a person of interest; which in this case
 translates to narrowing down the list of possibilities to 1. Each person
-has an equal probability of being the person of interest. At the
-beginning our uncertainty is &lt;span class=&quot;math inline&quot;&gt;&#92;frac{1}{24}&lt;/span&gt; because there are 24
-possibilities and we don’t know which one it is.&lt;/p&gt;
+has an equal probability of being the person of interest. Therefore at
+the beginning our uncertainty is 1 in 24 — or equivalently &lt;span class=&quot;math inline&quot;&gt;&#92;frac{1}{24}&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;Let’s look at two possible pieces of information:&lt;/p&gt;
 &lt;ol type=&quot;1&quot;&gt;
 &lt;li&gt;wears glasses – matches 5 persons&lt;/li&gt;
 &lt;li&gt;presents as a man – matches 18 persons&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;We started with 24 persons. Once we know that the person of interest
-is wearing glasses, we can narrow down the field to 5. On the other
-hand, knowing that the person presents as a man only narrows down the
-field to 18. The first piece of information is clearly more valuable
-than the second. By &lt;em&gt;“valuable”&lt;/em&gt; we mean &lt;em&gt;“reduces
-uncertainty”&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;So, with &lt;em&gt;“wears glasses”&lt;/em&gt;, our uncertainty went from &lt;span class=&quot;math inline&quot;&gt;&#92;frac{1}{24}&lt;/span&gt; to &lt;span class=&quot;math inline&quot;&gt;&#92;frac{1}{5}&lt;/span&gt;. Whereas, &lt;em&gt;“presents as a
-man”&lt;/em&gt;, only reduces the uncertainty from &lt;span class=&quot;math inline&quot;&gt;&#92;frac{1}{24}&lt;/span&gt; to &lt;span class=&quot;math inline&quot;&gt;&#92;frac{1}{18}&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;Entropy is a way to quantify –or measure– this difference.&lt;/p&gt;
+&lt;p&gt;We started with 24 possibilities. Once we know that the person of
+interest is wearing glasses, we can narrow down the field to 5. On the
+other hand, knowing that the person presents as a man only narrows down
+the field to 18. The first piece of information is &lt;em&gt;clearly more
+valuable&lt;/em&gt; than the second. By &lt;em&gt;“valuable”&lt;/em&gt; we mean
+&lt;em&gt;“reduces uncertainty”&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Entropy is a way to quantify –or measure– this valuableness.&lt;/p&gt;
 &lt;h3 id=&quot;choices-of-measure-for-a-single-outcome&quot;&gt;Choices of measure for
 a single outcome&lt;/h3&gt;
 &lt;p&gt;For the sake of discussion, let’s say the probability of a single
@@ -518,20 +674,22 @@ the details isn’t their job.&lt;a href=&quot;https://xn--izc.com/series/unsung
       <updated>2025-07-04T00:00:00Z</updated>
       <id>https://xn--izc.com/posts/catchment/</id>
       <content xml:lang="en" type="html">
-        &lt;p&gt;It is July 4, 2025, and many major universities &lt;span class=&quot;citation&quot; data-cites=&quot;affectedUniversities&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-affectedUniversities&quot; role=&quot;doc-biblioref&quot;&gt;[1]&lt;/a&gt;&lt;/span&gt; in
-the US are struggling to deal with threats and funding cuts from the
-Trump administration.&lt;/p&gt;
+        &lt;p&gt;It is July 4, 2025, and many major universities &lt;span class=&quot;citation&quot; data-cites=&quot;affectedUniversities&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-affectedUniversities&quot; role=&quot;doc-biblioref&quot;&gt;Alan Blinder,
+n.d.&lt;/a&gt;)&lt;/span&gt; in the US are struggling to deal with threats and
+funding cuts from the Trump administration.&lt;/p&gt;
 &lt;p&gt;A major impact of funding cuts is the loss of enrollments of
 promising students due to fewer programs. International students now
 face an even more uncertain future where they may not be able to enroll
-at all despite being accepted &lt;span class=&quot;citation&quot; data-cites=&quot;harvardGazette1&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-harvardGazette1&quot; role=&quot;doc-biblioref&quot;&gt;[2]&lt;/a&gt;&lt;/span&gt;, their student status may be
-invalidated without notice &lt;span class=&quot;citation&quot; data-cites=&quot;bigImmigrationBlog1&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-bigImmigrationBlog1&quot; role=&quot;doc-biblioref&quot;&gt;[3]&lt;/a&gt;&lt;/span&gt;, they are detained without recourse
-for exercising their rights &lt;span class=&quot;citation&quot; data-cites=&quot;time1&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-time1&quot; role=&quot;doc-biblioref&quot;&gt;[4]&lt;/a&gt;&lt;/span&gt;, or they are
-detained and denied entry to the US &lt;span class=&quot;citation&quot; data-cites=&quot;massLive1&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-massLive1&quot; role=&quot;doc-biblioref&quot;&gt;[5]&lt;/a&gt;&lt;/span&gt;.&lt;/p&gt;
+at all despite being accepted &lt;span class=&quot;citation&quot; data-cites=&quot;harvardGazette1&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-harvardGazette1&quot; role=&quot;doc-biblioref&quot;&gt;Harvard Staff, 2025&lt;/a&gt;)&lt;/span&gt;, their student
+status may be invalidated without notice &lt;span class=&quot;citation&quot; data-cites=&quot;bigImmigrationBlog1&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-bigImmigrationBlog1&quot; role=&quot;doc-biblioref&quot;&gt;Big Immigration Law Blog, 2025&lt;/a&gt;)&lt;/span&gt;, they
+are detained without recourse for exercising their rights &lt;span class=&quot;citation&quot; data-cites=&quot;time1&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-time1&quot; role=&quot;doc-biblioref&quot;&gt;Charlotte Alter, 2024&lt;/a&gt;)&lt;/span&gt;, or they are
+detained and denied entry to the US &lt;span class=&quot;citation&quot; data-cites=&quot;massLive1&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-massLive1&quot; role=&quot;doc-biblioref&quot;&gt;Melissa Hanson, 2025&lt;/a&gt;)&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;In addition, funding cuts have resulted in universities having to
-freeze academic programs or renege on accepted students &lt;span class=&quot;citation&quot; data-cites=&quot;bestColleges1&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-bestColleges1&quot; role=&quot;doc-biblioref&quot;&gt;[6]&lt;/a&gt;&lt;/span&gt;, jeopardizing ongoing research
-programs. Also as a side-effect, promising academics both in the US and
-abroad are looking towards universities outside of the US &lt;span class=&quot;citation&quot; data-cites=&quot;npr1&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-npr1&quot; role=&quot;doc-biblioref&quot;&gt;[7]&lt;/a&gt;&lt;/span&gt;.&lt;/p&gt;
+freeze academic programs or renege on accepted students &lt;span class=&quot;citation&quot; data-cites=&quot;bestColleges1&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-bestColleges1&quot; role=&quot;doc-biblioref&quot;&gt;BestColleges Staff,
+2025&lt;/a&gt;)&lt;/span&gt;, jeopardizing ongoing research programs. Also as a
+side-effect, promising academics both in the US and abroad are looking
+towards universities outside of the US &lt;span class=&quot;citation&quot; data-cites=&quot;npr1&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-npr1&quot; role=&quot;doc-biblioref&quot;&gt;Sequoia
+Carrillo, 2025&lt;/a&gt;)&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;Let’s have a look at the role these academic institutions are playing
 in the US’s industrial dominance, and the long-term effects of hampering
 their progress.&lt;/p&gt;
@@ -550,7 +708,7 @@ Historical Analysis&lt;/a&gt;.&lt;/p&gt;
 &lt;/section&gt;
 &lt;div class=&quot;fullbleed&quot;&gt;
 &lt;div class=&quot;fullbleed&quot;&gt;
-&lt;style&gt;
+  &lt;style&gt;
     /* Custom styles for the timeline */
     .timeline-container {
       position: relative;
@@ -645,33 +803,34 @@ Historical Analysis&lt;/a&gt;.&lt;/p&gt;
       margin-right: 1rem;
     }
   &lt;/style&gt;
-&lt;!-- Timeline Visualization --&gt;
-&lt;div class=&quot;timeline-container&quot;&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;timeline-line&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
-&amp;lt;div id=&amp;quot;timeline-events&amp;quot; class=&amp;quot;timeline-events&amp;quot;&amp;gt;
-  &amp;lt;template id=&amp;quot;event-template&amp;quot;&amp;gt;
-    &amp;lt;div class=&amp;quot;timeline-event&amp;quot;&amp;gt;
-      &amp;lt;div class=&amp;quot;timeline-year label&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
-      &amp;lt;div class=&amp;quot;timeline-dot&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
-    &amp;lt;/div&amp;gt;
-  &amp;lt;/template&amp;gt;
-  &amp;lt;!-- Events will be dynamically inserted here by JavaScript --&amp;gt;
-&amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;!-- Event Details Display --&gt;
-&lt;div id=&quot;timeline-details-container&quot; class=&quot;container&quot;&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;div id=&amp;quot;timeline-details&amp;quot; class=&amp;quot;preface&amp;quot;&amp;gt;
-  &amp;lt;h3 id=&amp;quot;details-title&amp;quot;&amp;gt;&amp;lt;/h3&amp;gt;
-  &amp;lt;p class=&amp;quot;oneline&amp;quot;&amp;gt;
-    &amp;lt;span class=&amp;quot;label&amp;quot;&amp;gt;When: &amp;lt;/span&amp;gt;&amp;lt;span id=&amp;quot;details-year&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;
-  &amp;lt;/p&amp;gt;
-  &amp;lt;p class=&amp;quot;oneline&amp;quot;&amp;gt;
-    &amp;lt;span class=&amp;quot;label&amp;quot;&amp;gt;Where: &amp;lt;/span&amp;gt;&amp;lt;span id=&amp;quot;details-locations&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;
-  &amp;lt;/p&amp;gt;
-  &amp;lt;p id=&amp;quot;details-description&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
-&amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;script&gt;
+  &lt;!-- Timeline Visualization --&gt;
+  &lt;div class=&quot;timeline-container&quot;&gt;
+    &lt;div class=&quot;timeline-line&quot;&gt;&lt;/div&gt;
+    &lt;div id=&quot;timeline-events&quot; class=&quot;timeline-events&quot;&gt;
+      &lt;template id=&quot;event-template&quot;&gt;
+        &lt;div class=&quot;timeline-event&quot;&gt;
+          &lt;div class=&quot;timeline-year label&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;timeline-dot&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/template&gt;
+      &lt;!-- Events will be dynamically inserted here by JavaScript --&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Event Details Display --&gt;
+  &lt;div id=&quot;timeline-details-container&quot; class=&quot;container&quot;&gt;
+    &lt;div id=&quot;timeline-details&quot; class=&quot;preface&quot;&gt;
+      &lt;h3 id=&quot;details-title&quot;&gt;&lt;/h3&gt;
+      &lt;p class=&quot;oneline&quot;&gt;
+        &lt;span class=&quot;label&quot;&gt;When: &lt;/span&gt;&lt;span id=&quot;details-year&quot;&gt;&lt;/span&gt;
+      &lt;/p&gt;
+      &lt;p class=&quot;oneline&quot;&gt;
+        &lt;span class=&quot;label&quot;&gt;Where: &lt;/span&gt;&lt;span id=&quot;details-locations&quot;&gt;&lt;/span&gt;
+      &lt;/p&gt;
+      &lt;p id=&quot;details-description&quot;&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;script&gt;
     document.addEventListener(&quot;DOMContentLoaded&quot;, function () {
       const timelineData = [
         {
@@ -830,6 +989,7 @@ Historical Analysis&lt;/a&gt;.&lt;/p&gt;
     });
   &lt;/script&gt;
 &lt;/div&gt;
+
 &lt;/div&gt;
 &lt;aside class=&quot;sidenote-1&quot;&gt;
 &lt;h4 id=&quot;hydro-catchment-area&quot;&gt;Hydro-Catchment Area&lt;/h4&gt;
@@ -861,10 +1021,11 @@ creativity and innovation for a particular field risks drying up.&lt;/p&gt;
 second world war, the United States has became one of the largest
 reservoirs of intellectual capital&lt;a href=&quot;https://xn--izc.com/posts/catchment/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;. While the rise of
 fascism in Europe drove some precipitation of knowledge into the US in
-the 1930s and 1940s &lt;span class=&quot;citation&quot; data-cites=&quot;lassig&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-lassig&quot; role=&quot;doc-biblioref&quot;&gt;[8]&lt;/a&gt;&lt;/span&gt;, the intellectual
-dominance that followed in the decades since the world wars was driven
-by a positive feedback loop which made the US increasingly attractive to
-the best minds of the world.&lt;/p&gt;
+the 1930s and 1940s &lt;span class=&quot;citation&quot; data-cites=&quot;lassig&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-lassig&quot; role=&quot;doc-biblioref&quot;&gt;L{“a}ssig, Simone,
+2017&lt;/a&gt;)&lt;/span&gt;, the intellectual dominance that followed in the
+decades since the world wars was driven by a positive feedback loop
+which made the US increasingly attractive to the best minds of the
+world.&lt;/p&gt;
 &lt;p&gt;The groundswells of industry established around major universities as
 well as billions of dollars of research funding from the NSF, NIH, and
 DARPA created prolific centers of intellectual activity. The Immigration
@@ -894,53 +1055,40 @@ exists in the first place.&lt;/p&gt;
 &lt;p&gt;The ongoing threats against these elite universities at the centers
 of intellectual catchment areas and the ongoing threats against
 immigration will undo what took a century to build.&lt;/p&gt;
-&lt;div id=&quot;refs&quot; class=&quot;references csl-bib-body&quot; data-entry-spacing=&quot;0&quot; role=&quot;list&quot;&gt;
+&lt;div id=&quot;refs&quot; class=&quot;references csl-bib-body hanging-indent&quot; data-entry-spacing=&quot;0&quot; data-line-spacing=&quot;2&quot; role=&quot;list&quot;&gt;
 &lt;div id=&quot;ref-affectedUniversities&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
-&lt;div class=&quot;csl-left-margin&quot;&gt;[1] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;Alan Blinder, &lt;span&gt;“Trump Has Targeted These
-Universities. Why?”&lt;/span&gt; [Online]. Available: &lt;a href=&quot;https://www.nytimes.com/article/trump-university-college.html&quot;&gt;https://www.nytimes.com/article/trump-university-college.html&lt;/a&gt;.
-[Accessed: 04-Jul-2025]&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&quot;ref-harvardGazette1&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
-&lt;div class=&quot;csl-left-margin&quot;&gt;[2] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;Harvard Staff, &lt;span&gt;“Federal judge blocks
-Trump plan to ban international students at Harvard,”&lt;/span&gt;
-12-Jun-2025. [Online]. Available: &lt;a href=&quot;https://news.harvard.edu/gazette/story/2025/06/federal-judge-blocks-trump-plan-to-ban-international-students-at-harvard/&quot;&gt;https://news.harvard.edu/gazette/story/2025/06/federal-judge-blocks-trump-plan-to-ban-international-students-at-harvard/&lt;/a&gt;.
-[Accessed: 04-Jul-2025]&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&quot;ref-bigImmigrationBlog1&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
-&lt;div class=&quot;csl-left-margin&quot;&gt;[3] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;Big
-Immigration Law Blog, &lt;span&gt;“The New Risk for Global Talent: F-1 SEVIS
-Terminations and Student Visa Revocations,”&lt;/span&gt; 10-Apr-2025.
-[Online]. Available: &lt;a href=&quot;https://www.bigimmigrationlawblog.com/2025/04/the-new-risk-for-global-talent-f-1-sevis-terminations-and-student-visa-revocations/&quot;&gt;https://www.bigimmigrationlawblog.com/2025/04/the-new-risk-for-global-talent-f-1-sevis-terminations-and-student-visa-revocations/&lt;/a&gt;.
-[Accessed: 04-Jul-2025]&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&quot;ref-time1&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
-&lt;div class=&quot;csl-left-margin&quot;&gt;[4] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;Charlotte Alter, &lt;span&gt;“These Are the Students
-Targeted by Trump’s Immigration Enforcement Over Campus
-Activism,”&lt;/span&gt; 02-Apr-2024. [Online]. Available: &lt;a href=&quot;https://time.com/7272060/international-students-targeted-trump-ice-detention-deport-campus-palestinian-activism/&quot;&gt;https://time.com/7272060/international-students-targeted-trump-ice-detention-deport-campus-palestinian-activism/&lt;/a&gt;.
-[Accessed: 04-Jul-2025]&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&quot;ref-massLive1&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
-&lt;div class=&quot;csl-left-margin&quot;&gt;[5] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;Melissa Hanson, &lt;span&gt;“Foreign Harvard students
-were detained at Logan Airport, denied visas after Trump
-proclamation,”&lt;/span&gt; 25-Jun-2025. [Online]. Available: &lt;a href=&quot;https://www.masslive.com/news/2025/06/foreign-harvard-students-were-detained-at-logan-airport-denied-visas-after-trump-proclamation.html&quot;&gt;https://www.masslive.com/news/2025/06/foreign-harvard-students-were-detained-at-logan-airport-denied-visas-after-trump-proclamation.html&lt;/a&gt;.
-[Accessed: 04-Jul-2025]&lt;/div&gt;
+Alan Blinder. (n.d.). &lt;em&gt;Trump Has Targeted These Universities.
+Why?&lt;/em&gt; Retrieved July 4, 2025, from &lt;a href=&quot;https://www.nytimes.com/article/trump-university-college.html&quot;&gt;https://www.nytimes.com/article/trump-university-college.html&lt;/a&gt;
 &lt;/div&gt;
 &lt;div id=&quot;ref-bestColleges1&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
-&lt;div class=&quot;csl-left-margin&quot;&gt;[6] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;BestColleges Staff, &lt;span&gt;“These Colleges and
-Universities Are Cutting Costs Over Federal Funding Freezes,”&lt;/span&gt;
-10-Jun-2025. [Online]. Available: &lt;a href=&quot;https://www.bestcolleges.com/news/colleges-university-cut-costs-federal-funding-freeze/&quot;&gt;https://www.bestcolleges.com/news/colleges-university-cut-costs-federal-funding-freeze/&lt;/a&gt;.
-[Accessed: 04-Jul-2025]&lt;/div&gt;
+BestColleges Staff. (2025, June 10). &lt;em&gt;These Colleges and Universities
+Are Cutting Costs Over Federal Funding Freezes&lt;/em&gt;. &lt;a href=&quot;https://www.bestcolleges.com/news/colleges-university-cut-costs-federal-funding-freeze/&quot;&gt;https://www.bestcolleges.com/news/colleges-university-cut-costs-federal-funding-freeze/&lt;/a&gt;
 &lt;/div&gt;
-&lt;div id=&quot;ref-npr1&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
-&lt;div class=&quot;csl-left-margin&quot;&gt;[7] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;Sequoia Carrillo, &lt;span&gt;“International students
-look to the U.K. instead of the U.S., as Trump squeezes visas,”&lt;/span&gt;
-05-Jun-2025. [Online]. Available: &lt;a href=&quot;https://www.npr.org/2025/06/05/nx-s1-5415740/trump-international-student-visas-uk-universities&quot;&gt;https://www.npr.org/2025/06/05/nx-s1-5415740/trump-international-student-visas-uk-universities&lt;/a&gt;.
-[Accessed: 04-Jul-2025]&lt;/div&gt;
+&lt;div id=&quot;ref-bigImmigrationBlog1&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Big Immigration Law Blog. (2025, April 10). &lt;em&gt;The New Risk for Global
+Talent: F-1 SEVIS Terminations and Student Visa Revocations&lt;/em&gt;. &lt;a href=&quot;https://www.bigimmigrationlawblog.com/2025/04/the-new-risk-for-global-talent-f-1-sevis-terminations-and-student-visa-revocations/&quot;&gt;https://www.bigimmigrationlawblog.com/2025/04/the-new-risk-for-global-talent-f-1-sevis-terminations-and-student-visa-revocations/&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-time1&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Charlotte Alter. (2024, April 2). &lt;em&gt;These Are the Students Targeted by
+Trump’s Immigration Enforcement Over Campus Activism&lt;/em&gt;. &lt;a href=&quot;https://time.com/7272060/international-students-targeted-trump-ice-detention-deport-campus-palestinian-activism/&quot;&gt;https://time.com/7272060/international-students-targeted-trump-ice-detention-deport-campus-palestinian-activism/&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-harvardGazette1&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Harvard Staff. (2025, June 12). &lt;em&gt;Federal judge blocks Trump plan to
+ban international students at Harvard&lt;/em&gt;. &lt;a href=&quot;https://news.harvard.edu/gazette/story/2025/06/federal-judge-blocks-trump-plan-to-ban-international-students-at-harvard/&quot;&gt;https://news.harvard.edu/gazette/story/2025/06/federal-judge-blocks-trump-plan-to-ban-international-students-at-harvard/&lt;/a&gt;
 &lt;/div&gt;
 &lt;div id=&quot;ref-lassig&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
-&lt;div class=&quot;csl-left-margin&quot;&gt;[8] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;L{“a}ssig, Simone, &lt;span&gt;“Strategies and
-Mechanisms of Scholar Rescue: The Intellectual Migration of the 1930s
-Reconsidered,”&lt;/span&gt; vol. 84, 4 vols., pp. 769–807, 2017. &lt;/div&gt;
+L{“a}ssig, Simone. (2017). &lt;em&gt;Strategies and Mechanisms of Scholar
+Rescue: The Intellectual Migration of the 1930s Reconsidered&lt;/em&gt;.
+&lt;em&gt;84&lt;/em&gt;, 769–807.
+&lt;/div&gt;
+&lt;div id=&quot;ref-massLive1&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Melissa Hanson. (2025, June 25). &lt;em&gt;Foreign Harvard students were
+detained at Logan Airport, denied visas after Trump proclamation&lt;/em&gt;.
+&lt;a href=&quot;https://www.masslive.com/news/2025/06/foreign-harvard-students-were-detained-at-logan-airport-denied-visas-after-trump-proclamation.html&quot;&gt;https://www.masslive.com/news/2025/06/foreign-harvard-students-were-detained-at-logan-airport-denied-visas-after-trump-proclamation.html&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-npr1&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Sequoia Carrillo. (2025, June 5). &lt;em&gt;International students look to the
+U.K. instead of the U.S., as Trump squeezes visas&lt;/em&gt;. &lt;a href=&quot;https://www.npr.org/2025/06/05/nx-s1-5415740/trump-international-student-visas-uk-universities&quot;&gt;https://www.npr.org/2025/06/05/nx-s1-5415740/trump-international-student-visas-uk-universities&lt;/a&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
@@ -1164,7 +1312,7 @@ world and that most people you will meet are good. I still sort of
 believe that people are good, but I’m beginning to think that the word
 &lt;em&gt;“most”&lt;/em&gt; may not be readily applicable.&lt;/p&gt;
 &lt;figure&gt;
-&lt;img src=&quot;https://xn--izc.com/posts/intermezzo-2025/do-not-press.png&quot; class=&quot;noinvert&quot; alt=&quot;A big red button labelled DO NOT PRESS is attached to the top of an ominous looking device to which many wires and conduits are attached.&quot; /&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/intermezzo-2025/do-not-press.jpg&quot; class=&quot;noinvert&quot; alt=&quot;A big red button labelled DO NOT PRESS is attached to the top of an ominous looking device to which many wires and conduits are attached.&quot; /&gt;
 &lt;figcaption aria-hidden=&quot;true&quot;&gt;A big red button labelled &lt;strong&gt;DO NOT
 PRESS&lt;/strong&gt; is attached to the top of an ominous looking device to
 which many wires and conduits are attached.&lt;/figcaption&gt;
@@ -2069,7 +2217,7 @@ against another’s ability to enact hyper-extraction.&lt;a href=&quot;https://x
       <id>https://xn--izc.com/posts/when-your-feature-gets-someone-hurt/</id>
       <content xml:lang="en" type="html">
         &lt;figure&gt;
-&lt;img src=&quot;https://xn--izc.com/posts/when-your-feature-gets-someone-hurt/album-of-ruins.jpeg&quot; class=&quot;noinvert&quot; alt=&quot;An old photo album containing pictures of ruins. (Generated with Gemini)&quot; /&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/when-your-feature-gets-someone-hurt/album-of-ruins.jpg&quot; class=&quot;noinvert&quot; alt=&quot;An old photo album containing pictures of ruins. (Generated with Gemini)&quot; /&gt;
 &lt;figcaption aria-hidden=&quot;true&quot;&gt;An old photo album containing pictures of
 ruins. (Generated with Gemini)&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -3538,8 +3686,8 @@ going.&lt;/p&gt;
 History Month&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Coincidentally there’s a paper making the rounds titled &lt;em&gt;“The
 gender gap in adolescent mental health: A cross-national investigation
-of 566,829 adolescents across 73 countries”&lt;/em&gt; &lt;span class=&quot;citation&quot; data-cites=&quot;campbell2021gender&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/gender-gap-in-adolescent-mental-health/#ref-campbell2021gender&quot; role=&quot;doc-biblioref&quot;&gt;[1]&lt;/a&gt;&lt;/span&gt;, which makes some these interesting
-claims:&lt;/p&gt;
+of 566,829 adolescents across 73 countries”&lt;/em&gt; &lt;span class=&quot;citation&quot; data-cites=&quot;campbell2021gender&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/gender-gap-in-adolescent-mental-health/#ref-campbell2021gender&quot; role=&quot;doc-biblioref&quot;&gt;Campbell et al., 2021&lt;/a&gt;)&lt;/span&gt;, which makes some
+these interesting claims:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Girls have worse average mental health than boys across 4 mental
 health measures.&lt;/li&gt;
@@ -3562,9 +3710,9 @@ would be interesting to see how the responses change now that people are
 coming out of a lengthy lock down.&lt;/li&gt;
 &lt;li&gt;Gender was binary. There was no non-binary option.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;The study &lt;span class=&quot;citation&quot; data-cites=&quot;campbell2021gender&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/gender-gap-in-adolescent-mental-health/#ref-campbell2021gender&quot; role=&quot;doc-biblioref&quot;&gt;[1]&lt;/a&gt;&lt;/span&gt;
-derives five measures of mental health based on the PISA 2018 dataset as
-follows:&lt;/p&gt;
+&lt;p&gt;The study &lt;span class=&quot;citation&quot; data-cites=&quot;campbell2021gender&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/gender-gap-in-adolescent-mental-health/#ref-campbell2021gender&quot; role=&quot;doc-biblioref&quot;&gt;Campbell et al.,
+2021&lt;/a&gt;)&lt;/span&gt; derives five measures of mental health based on the
+PISA 2018 dataset as follows:&lt;/p&gt;
 &lt;ol type=&quot;1&quot;&gt;
 &lt;li&gt;&lt;p&gt;&lt;em&gt;“Life satisfaction”&lt;/em&gt; measures responses to the question
 &lt;em&gt;“on a scale of 0-10, overall, how satisfied are you with your life
@@ -3600,9 +3748,9 @@ life”&lt;/em&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Details of the analysis are in &lt;a href=&quot;https://ars.els-cdn.com/content/image/1-s2.0-S2352827321000173-mmc1.pdf&quot;&gt;the
 companion document (PDF link)&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;In figure S2 of &lt;span class=&quot;citation&quot; data-cites=&quot;campbell2021gender&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/gender-gap-in-adolescent-mental-health/#ref-campbell2021gender&quot; role=&quot;doc-biblioref&quot;&gt;[1]&lt;/a&gt;&lt;/span&gt; shows the distribution of &lt;em&gt;life
-satisfaction&lt;/em&gt;. Again, developed nations are not doing well compared
-with countries like Saudi Arabia.&lt;/p&gt;
+&lt;p&gt;In figure S2 of &lt;span class=&quot;citation&quot; data-cites=&quot;campbell2021gender&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/gender-gap-in-adolescent-mental-health/#ref-campbell2021gender&quot; role=&quot;doc-biblioref&quot;&gt;Campbell et al., 2021&lt;/a&gt;)&lt;/span&gt; shows the
+distribution of &lt;em&gt;life satisfaction&lt;/em&gt;. Again, developed nations are
+not doing well compared with countries like Saudi Arabia.&lt;/p&gt;
 &lt;figure&gt;
 &lt;img src=&quot;https://xn--izc.com/posts/gender-gap-in-adolescent-mental-health/life-satisfaction-eu.png&quot; alt=&quot;Distribution of life satisfaction scores for France, Germany, Greece, and Iceland. The range of responses were from 0 through 10. Red is male, and blue is female.&quot; /&gt;
 &lt;figcaption aria-hidden=&quot;true&quot;&gt;Distribution of life satisfaction scores
@@ -3646,13 +3794,12 @@ very well.&lt;/figcaption&gt;
 are present in the study. And whether the subjects of the study are
 representative of the population is in doubt. Overall I find the study
 unconvincing.&lt;/p&gt;
-&lt;div id=&quot;refs&quot; class=&quot;references csl-bib-body&quot; data-entry-spacing=&quot;0&quot; role=&quot;list&quot;&gt;
+&lt;div id=&quot;refs&quot; class=&quot;references csl-bib-body hanging-indent&quot; data-entry-spacing=&quot;0&quot; data-line-spacing=&quot;2&quot; role=&quot;list&quot;&gt;
 &lt;div id=&quot;ref-campbell2021gender&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
-&lt;div class=&quot;csl-left-margin&quot;&gt;[1] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;O.
-L. Campbell, D. Bann, and P. Patalay, &lt;span&gt;“The gender gap in
+Campbell, O. L., Bann, D., &amp;amp; Patalay, P. (2021). The gender gap in
 adolescent mental health: A cross-national investigation of 566,829
-adolescents across 73 countries,”&lt;/span&gt; &lt;em&gt;SSM-population health&lt;/em&gt;,
-vol. 13, p. 100742, 2021. &lt;/div&gt;
+adolescents across 73 countries. &lt;em&gt;SSM-Population Health&lt;/em&gt;,
+&lt;em&gt;13&lt;/em&gt;, 100742.
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
@@ -3690,13 +3837,14 @@ mortality ratio&lt;/em&gt;, and &lt;em&gt;adolescent birth rate&lt;/em&gt;.&lt;a
 correspond to &lt;span class=&quot;noun&quot;&gt;noun&lt;/span&gt;, &lt;span class=&quot;adverb&quot;&gt;adverb&lt;/span&gt;, &lt;span class=&quot;gerund&quot;&gt;gerund&lt;/span&gt;, &lt;span class=&quot;preposition&quot;&gt;preposition&lt;/span&gt;, &lt;span class=&quot;adjective&quot;&gt;adjective&lt;/span&gt;, and &lt;span class=&quot;verb&quot;&gt;verb&lt;/span&gt;.
 This is basically how people use syntax highlighting.&lt;/p&gt;
 &lt;p&gt;Typographers have long known that punctuation alone can’t
-sufficiently convey emphasis and relative importance of prose. As &lt;span class=&quot;citation&quot; data-cites=&quot;truss2004eats&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/syntax-highlighting/#ref-truss2004eats&quot; role=&quot;doc-biblioref&quot;&gt;[1]&lt;/a&gt;&lt;/span&gt; points out &lt;em&gt;italics&lt;/em&gt; is
-&lt;em&gt;“the print equivalent of underlining”&lt;/em&gt; (via &lt;span class=&quot;citation&quot; data-cites=&quot;wiki:Italic_type&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/syntax-highlighting/#ref-wiki:Italic_type&quot; role=&quot;doc-biblioref&quot;&gt;[2]&lt;/a&gt;&lt;/span&gt;). A
-number of uses exist for this font variation including providing
-emphasis, stressing important points, or indicating foreign words and
-phrases. When conveying emphasis the syntactic role of a word does not
-change; the word just is &lt;em&gt;more&lt;/em&gt; important to make the central
-point than others.&lt;/p&gt;
+sufficiently convey emphasis and relative importance of prose. As &lt;span class=&quot;citation&quot; data-cites=&quot;truss2004eats&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/syntax-highlighting/#ref-truss2004eats&quot; role=&quot;doc-biblioref&quot;&gt;Truss, 2004&lt;/a&gt;)&lt;/span&gt;
+points out &lt;em&gt;italics&lt;/em&gt; is &lt;em&gt;“the print equivalent of
+underlining”&lt;/em&gt; (via &lt;span class=&quot;citation&quot; data-cites=&quot;wiki:Italic_type&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/syntax-highlighting/#ref-wiki:Italic_type&quot; role=&quot;doc-biblioref&quot;&gt;Wikipedia, 2021&lt;/a&gt;)&lt;/span&gt;). A number of uses
+exist for this font variation including providing emphasis, stressing
+important points, or indicating foreign words and phrases. When
+conveying emphasis the syntactic role of a word does not change; the
+word just is &lt;em&gt;more&lt;/em&gt; important to make the central point than
+others.&lt;/p&gt;
 &lt;p&gt;These key important words alone can’t convey a story. Grammar and
 completeness demand accompanying words. It is the role of formatting,
 whitespace, and punctuation to guide the reader towards what is
@@ -3726,17 +3874,14 @@ parts that need attention. You’d still need to do the legwork for the
 details. But for someone trying to figure out what some undocumented
 function is doing, this kind of highlight makes quick work of going past
 the boilerplate.&lt;/p&gt;
-&lt;div id=&quot;refs&quot; class=&quot;references csl-bib-body&quot; data-entry-spacing=&quot;0&quot; role=&quot;list&quot;&gt;
+&lt;div id=&quot;refs&quot; class=&quot;references csl-bib-body hanging-indent&quot; data-entry-spacing=&quot;0&quot; data-line-spacing=&quot;2&quot; role=&quot;list&quot;&gt;
 &lt;div id=&quot;ref-truss2004eats&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
-&lt;div class=&quot;csl-left-margin&quot;&gt;[1] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;L.
-Truss, &lt;span&gt;“Eats, shoots &amp;amp; leaves: The zero tolerance approach to
-punctuation,”&lt;/span&gt; Penguin, 2004, p. 146. &lt;/div&gt;
+Truss, L. (2004). &lt;em&gt;Eats, shoots &amp;amp; leaves: The zero tolerance
+approach to punctuation&lt;/em&gt; (p. 146). Penguin.
 &lt;/div&gt;
 &lt;div id=&quot;ref-wiki:Italic_type&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
-&lt;div class=&quot;csl-left-margin&quot;&gt;[2] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;Wikipedia, &lt;span&gt;“&lt;span class=&quot;nocase&quot;&gt;Italic
-type&lt;/span&gt; — &lt;span&gt;W&lt;/span&gt;ikipedia&lt;span&gt;,&lt;/span&gt; the free
-encyclopedia.”&lt;/span&gt; &lt;a href=&quot;http://en.wikipedia.org/w/index.php?title=Italic%20type&amp;amp;oldid=1049142359&quot; class=&quot;uri&quot;&gt;http://en.wikipedia.org/w/index.php?title=Italic%20type&amp;amp;oldid=1049142359&lt;/a&gt;,
-2021. &lt;/div&gt;
+Wikipedia. (2021). &lt;em&gt;&lt;span class=&quot;nocase&quot;&gt;Italic type&lt;/span&gt; —
+&lt;span&gt;W&lt;/span&gt;ikipedia&lt;span&gt;,&lt;/span&gt; the free encyclopedia&lt;/em&gt;. &lt;a href=&quot;http://en.wikipedia.org/w/index.php?title=Italic%20type&amp;amp;oldid=1049142359&quot; class=&quot;uri&quot;&gt;http://en.wikipedia.org/w/index.php?title=Italic%20type&amp;amp;oldid=1049142359&lt;/a&gt;.
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -3922,7 +4067,7 @@ paper that I have encountered.&lt;/p&gt;
 &lt;h2 id=&quot;an-unsuccessful-attempt-with-a-pixelbook&quot;&gt;An Unsuccessful
 Attempt With A Pixelbook&lt;/h2&gt;
 &lt;figure&gt;
-&lt;img src=&quot;https://xn--izc.com/posts/remarkable-first-impressions/picture-of-pixelbook.png&quot; alt=&quot;A Pixelbook like this was my first attempt at using a tablet for note-taking. (Image source)&quot; /&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/remarkable-first-impressions/picture-of-pixelbook.png&quot; class=&quot;noinvert&quot; alt=&quot;A Pixelbook like this was my first attempt at using a tablet for note-taking. (Image source)&quot; /&gt;
 &lt;figcaption aria-hidden=&quot;true&quot;&gt;A Pixelbook like this was my first
 attempt at using a tablet for note-taking. &lt;a href=&quot;https://www.google.com/chromebookdevice/google-pixelbook/&quot;&gt;(Image
 source)&lt;/a&gt;&lt;/figcaption&gt;
@@ -3953,7 +4098,7 @@ would be … easily distracted.&lt;/p&gt;
 &lt;h2 id=&quot;moderate-success-with-the-remarkable-2&quot;&gt;Moderate Success With
 The Remarkable 2&lt;/h2&gt;
 &lt;figure&gt;
-&lt;img src=&quot;https://xn--izc.com/posts/remarkable-first-impressions/picture-of-re2.png&quot; alt=&quot;The reMarkable 2 was my next choice. (Image Source)&quot; /&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/remarkable-first-impressions/picture-of-re2.png&quot; class=&quot;noinvert&quot; alt=&quot;The reMarkable 2 was my next choice. (Image Source)&quot; /&gt;
 &lt;figcaption aria-hidden=&quot;true&quot;&gt;The reMarkable 2 was my next choice. &lt;a href=&quot;https://remarkable.com/&quot;&gt;(Image Source)&lt;/a&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;p&gt;First of all, this is a note-taking device. You should not expect
@@ -5387,7 +5532,7 @@ that you can use the existing &lt;code&gt;fontStyle: &quot;italic&quot;&lt;/code
         &lt;h2 id=&quot;origins-of-the-phrase&quot;&gt;Origins of the phrase&lt;/h2&gt;
 &lt;p&gt;The title of this blog is &lt;strong&gt;Strong Opinions, Weakly
 Held&lt;/strong&gt;. The same concept shows up elsewhere are &lt;em&gt;Strong
-Opinions Loosely Held&lt;/em&gt;. An eponymous essay by Paul Saffo in &lt;span class=&quot;citation&quot; data-cites=&quot;Saffo&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/why-strong-opinions-weakly-held/#ref-Saffo&quot; role=&quot;doc-biblioref&quot;&gt;[1]&lt;/a&gt;&lt;/span&gt; introduced the world to this
+Opinions Loosely Held&lt;/em&gt;. An eponymous essay by Paul Saffo in &lt;span class=&quot;citation&quot; data-cites=&quot;Saffo&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/why-strong-opinions-weakly-held/#ref-Saffo&quot; role=&quot;doc-biblioref&quot;&gt;2020&lt;/a&gt;)&lt;/span&gt; introduced the world to this
 concept.&lt;/p&gt;
 &lt;p&gt;In his essay – which isn’t very long if you would like to &lt;a href=&quot;https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/&quot;&gt;read
 the whole thing yourself&lt;/a&gt; – he lays out the concept as follows:&lt;/p&gt;
@@ -5400,8 +5545,8 @@ systematically tear it apart, using the insights gained to guide my
 search for further indicators and information.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&quot;criticism&quot;&gt;Criticism&lt;/h2&gt;
-&lt;p&gt;Cedric Chin’s critique &lt;span class=&quot;citation&quot; data-cites=&quot;Cedric&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/why-strong-opinions-weakly-held/#ref-Cedric&quot; role=&quot;doc-biblioref&quot;&gt;[2]&lt;/a&gt;&lt;/span&gt; comes down to two
-points that the author summarizes as follows:&lt;/p&gt;
+&lt;p&gt;Cedric Chin’s critique &lt;span class=&quot;citation&quot; data-cites=&quot;Cedric&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/why-strong-opinions-weakly-held/#ref-Cedric&quot; role=&quot;doc-biblioref&quot;&gt;2020&lt;/a&gt;)&lt;/span&gt; comes down to
+two points that the author summarizes as follows:&lt;/p&gt;
 &lt;figure&gt;
 &lt;p&gt;In my experience, ‘strong opinions, weakly held’ is difficult to put
 into practice. Most people who try will either:&lt;/p&gt;
@@ -5419,7 +5564,7 @@ you willing to bet on that?” Doing so will jolt people into the types of
 thinking you want to encourage.&lt;/p&gt;
 &lt;/figcaption&gt;
 &lt;/figure&gt;
-&lt;p&gt;Michael Natkin on &lt;span class=&quot;citation&quot; data-cites=&quot;Michael&quot;&gt;&lt;a href=&quot;https://xn--izc.com/posts/why-strong-opinions-weakly-held/#ref-Michael&quot; role=&quot;doc-biblioref&quot;&gt;[3]&lt;/a&gt;&lt;/span&gt; points out the
+&lt;p&gt;Michael Natkin on &lt;span class=&quot;citation&quot; data-cites=&quot;Michael&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/why-strong-opinions-weakly-held/#ref-Michael&quot; role=&quot;doc-biblioref&quot;&gt;2020&lt;/a&gt;)&lt;/span&gt; points out the
 fallacy of assuming that strong opinions will be reliably
 challenged:&lt;/p&gt;
 &lt;figure&gt;
@@ -5482,23 +5627,18 @@ opinion itself. Doing so invites criticism and discussion instead of
 suppressing them.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 class=&quot;unnumbered&quot; id=&quot;references&quot;&gt;References&lt;/h2&gt;
-&lt;div id=&quot;refs&quot; class=&quot;references csl-bib-body&quot; data-entry-spacing=&quot;0&quot; role=&quot;list&quot;&gt;
+&lt;div id=&quot;refs&quot; class=&quot;references csl-bib-body hanging-indent&quot; data-entry-spacing=&quot;0&quot; data-line-spacing=&quot;2&quot; role=&quot;list&quot;&gt;
+&lt;div id=&quot;ref-Michael&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+&lt;em&gt;Strong opinions loosely held might be the worst idea in tech - the
+glowforge blog&lt;/em&gt;. (2020, September 4). &lt;a href=&quot;https://blog.glowforge.com/strong-opinions-loosely-held-might-be-the-worst-idea-in-tech/&quot;&gt;https://blog.glowforge.com/strong-opinions-loosely-held-might-be-the-worst-idea-in-tech/&lt;/a&gt;
+&lt;/div&gt;
 &lt;div id=&quot;ref-Saffo&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
-&lt;div class=&quot;csl-left-margin&quot;&gt;[1] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;&lt;span&gt;“Strong opinions weakly held : Paul
-saffo,”&lt;/span&gt; 04-Sep-2020. [Online]. Available: &lt;a href=&quot;https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/&quot;&gt;https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/&lt;/a&gt;.
-[Accessed: 04-Sep-2020]&lt;/div&gt;
+&lt;em&gt;Strong opinions weakly held : Paul saffo&lt;/em&gt;. (2020, September 4).
+&lt;a href=&quot;https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/&quot;&gt;https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/&lt;/a&gt;
 &lt;/div&gt;
 &lt;div id=&quot;ref-Cedric&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
-&lt;div class=&quot;csl-left-margin&quot;&gt;[2] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;&lt;span&gt;“&lt;span&gt;‘Strong opinions, weakly
-held’&lt;/span&gt; doesn’t work that well,”&lt;/span&gt; 04-Sep-2020. [Online].
-Available: &lt;a href=&quot;https://commoncog.com/blog/strong-opinions-weakly-held-is-bad/&quot;&gt;https://commoncog.com/blog/strong-opinions-weakly-held-is-bad/&lt;/a&gt;.
-[Accessed: 04-Sep-2020]&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&quot;ref-Michael&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
-&lt;div class=&quot;csl-left-margin&quot;&gt;[3] &lt;/div&gt;&lt;div class=&quot;csl-right-inline&quot;&gt;&lt;span&gt;“Strong opinions loosely held might be
-the worst idea in tech - the glowforge blog,”&lt;/span&gt; 04-Sep-2020.
-[Online]. Available: &lt;a href=&quot;https://blog.glowforge.com/strong-opinions-loosely-held-might-be-the-worst-idea-in-tech/&quot;&gt;https://blog.glowforge.com/strong-opinions-loosely-held-might-be-the-worst-idea-in-tech/&lt;/a&gt;.
-[Accessed: 04-Sep-2020]&lt;/div&gt;
+&lt;em&gt;&lt;span&gt;“Strong opinions, weakly held”&lt;/span&gt; doesn’t work that
+well&lt;/em&gt;. (2020, September 4). &lt;a href=&quot;https://commoncog.com/blog/strong-opinions-weakly-held-is-bad/&quot;&gt;https://commoncog.com/blog/strong-opinions-weakly-held-is-bad/&lt;/a&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 

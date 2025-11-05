@@ -32,16 +32,16 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
-    <link rel="stylesheet" href="/styles/katex.min.css" />
     <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Geist:wght@100..900&family=Inconsolata:wght@200..900&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
     />
+    <link rel="stylesheet" href="/styles/katex.min.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/anExJ29O9C.css" />
+    <link rel="stylesheet" href="/styles/aro4OGNh0r.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -68,38 +68,36 @@
       </nav>
     </header>
 
-    <article
-      class="container"
-      itemscope=""
-      itemtype="https://schema.org/BlogPosting"
-    >
+    <article itemscope="" itemtype="https://schema.org/BlogPosting">
       <link itemprop="url" href="/posts/just-the-right-amount/" />
       <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-      <header>
-        <h1 itemprop="name">Just Enough Technical Debt</h1>
-        <nav>
-          <span>
-            <span class="date"
-              >Posted on
+      <header class="container">
+        <div class="">
+          <h1 itemprop="name">Just Enough Technical Debt</h1>
+          <nav>
+            <div class="metadata">
+              Published on
               <time datetime="2023-07-08" itemprop="datePublished"
                 >July 8, 2023</time
-              ></span
-            >&nbsp;by
-            <span class="author" itemprop="author">Asanka Herath</span></span
-          >
-          <span></span>
-          <span class="tag">
-            <a href="/tags/engineering/">#Engineering</a>
-          </span>
-        </nav>
-        <div>
-          <span class="readingtime">
-            Estimated reading time is 4 minutes.
-          </span>
+              >
+              by <span class="author" itemprop="author">Asanka Herath</span>.
+
+              <br />
+              Estimated reading time is <time>4 minutes</time>.
+            </div>
+            <span></span>
+            <menu class="tags">
+              <li>
+                <span class="tag">
+                  <a href="/tags/engineering/">#Engineering</a>
+                </span>
+              </li>
+            </menu>
+          </nav>
         </div>
       </header>
 
-      <main itemprop="articleBody">
+      <main itemprop="articleBody" class="container">
         <p>
           Zero technical debt sounds like a great target to aim for. In my
           earlier developer days I strongly believed that all projects should go
@@ -177,7 +175,7 @@
         </p>
       </main>
 
-      <footer>
+      <footer class="container">
         <div>
           <p>Last modified: <time datetime="2023-07-08">July 8, 2023</time></p>
         </div>
@@ -189,195 +187,260 @@
     <footer class="container">
       <h2>More posts from this blog ...</h2>
       <div
-        class="post-card"
+        class="post-summary"
         itemscope=""
         itemtype="https://schema.org/BlogPosting"
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/posts/visualizing-people-2/">
-            <span itemprop="name">Visualizing A Million People</span>
+          <a itemprop="url" href="/posts/shannon-paper/">
+            <span itemprop="name">Shannon Paper</span>
           </a>
         </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2021-09-06" itemprop="datePublished"
-              >September 6, 2021</time
-            >
-          </span>
-
-          <span></span>
-          <span class="tag">
-            <a href="/tags/curiosity/">#Curiosity</a>
-          </span>
-        </nav>
-        <div>
-          <div class="summary-line">
-            <div class="summary" itemprop="abstract">
-              <p>
-                If your feature pisses off a million people what does this angry
-                mob look like? Spoiler: We only get to 750,000.
-              </p>
+        <div class="summary-row">
+          <div>
+            <nav>
+              <small>
+                Published on
+                <time datetime="2021-03-26" itemprop="datePublished"
+                  >March 26, 2021</time
+                >.
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag">
+                    <a href="/tags/math/">#Math</a>
+                  </span>
+                </li>
+              </menu>
+            </nav>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  Claude Shannon's
+                  <em>A mathematical theory of communication</em> is an oft
+                  cited classic in information theory. Let's dive in and try to
+                  tease apart the &quot;why&quot;s that are often overlooked
+                  when people build on top of the introduced theory. They are
+                  definitely things that I didn't consider to be obvious without
+                  the benefit of reading the paper.
+                </p>
+              </div>
             </div>
+            <p class="more"><a href="/posts/shannon-paper/">Read more …</a></p>
           </div>
-          <p class="more">
-            <a href="/posts/visualizing-people-2/">Read more …</a>
-          </p>
         </div>
       </div>
 
       <div
-        class="post-card"
+        class="post-summary"
         itemscope=""
         itemtype="https://schema.org/BlogPosting"
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/posts/syntax-highlighting/">
-            <span itemprop="name">On Highlighting Syntax vs. Semantics</span>
+          <a itemprop="url" href="/posts/asians-is-not-a-useful-category/">
+            <span itemprop="name">Asian Is Not a Useful Category</span>
           </a>
         </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2022-02-12" itemprop="datePublished"
-              >February 12, 2022</time
-            >
-          </span>
-
-          <span></span>
-          <span class="tag">
-            <a href="/tags/engineering/">#Engineering</a>
-          </span>
-        </nav>
-        <div>
-          <div class="summary-line">
-            <div class="summary" itemprop="abstract">
-              <p>
-                Takes a look at an alternate form of code highlighting based on
-                core semantics instead of syntactic role.
-              </p>
+        <div class="summary-row">
+          <div>
+            <nav>
+              <small>
+                Published on
+                <time datetime="2024-07-04" itemprop="datePublished"
+                  >July 4, 2024</time
+                >.
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag">
+                    <a href="/tags/culture/">#Culture</a>
+                  </span>
+                </li>
+                <li>
+                  <span class="tag">
+                    <a href="/tags/organizations/">#Organizations</a>
+                  </span>
+                </li>
+                <li>
+                  <span class="tag">
+                    <a href="/tags/inclusion-and-equity/"
+                      >#Inclusion and Equity</a
+                    >
+                  </span>
+                </li>
+              </menu>
+            </nav>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  Asking if someone is <em>&quot;Asian&quot;</em> in a question
+                  of ethnicity or demographics or pretty much any context is
+                  bad. There is no reasonable conclusion you can arrive at about
+                  a person based on the fact that they are
+                  <em>&quot;Asian&quot;</em>.
+                </p>
+              </div>
             </div>
+            <p class="more">
+              <a href="/posts/asians-is-not-a-useful-category/">Read more …</a>
+            </p>
           </div>
-          <p class="more">
-            <a href="/posts/syntax-highlighting/">Read more …</a>
-          </p>
         </div>
       </div>
 
       <div
-        class="post-card"
+        class="post-summary"
         itemscope=""
         itemtype="https://schema.org/BlogPosting"
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/posts/fourteen-years/">
-            <span itemprop="name">Fourteen Years</span>
+          <a itemprop="url" href="/posts/proof-of-work/">
+            <span itemprop="name">Proof of Work</span>
           </a>
         </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2024-12-31" itemprop="datePublished"
-              >December 31, 2024</time
-            >
-          </span>
-
-          <span></span>
-          <span class="tag">
-            <a href="/tags/career/">#Career</a>
-          </span>
-          <span class="tag">
-            <a href="/tags/culture/">#Culture</a>
-          </span>
-          <span class="tag">
-            <a href="/tags/organizations/">#Organizations</a>
-          </span>
-        </nav>
-        <div>
-          <div class="summary-line">
-            <div class="summary" itemprop="abstract">
-              <p>More reflections from foureteen years at Google.</p>
+        <div class="summary-row">
+          <div>
+            <nav>
+              <small
+                >Originally published on
+                <time datetime="2024-07-11" itemprop="dateCreated"
+                  >July 11, 2024</time
+                >, and updated on
+                <time datetime="2024-07-12" itemprop="datePublished"
+                  >July 12, 2024</time
+                >
+                .
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag">
+                    <a href="/tags/engineering/">#Engineering</a>
+                  </span>
+                </li>
+                <li>
+                  <span class="tag">
+                    <a href="/tags/career/">#Career</a>
+                  </span>
+                </li>
+                <li>
+                  <span class="tag">
+                    <a href="/tags/organizations/">#Organizations</a>
+                  </span>
+                </li>
+              </menu>
+            </nav>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  Working with a poorly thought-out, or overengineered
+                  technology stack, or an overly bureaucratic organization is
+                  <em>also a form of proof-of-work</em>.
+                </p>
+              </div>
             </div>
+            <p class="more"><a href="/posts/proof-of-work/">Read more …</a></p>
           </div>
-          <p class="more"><a href="/posts/fourteen-years/">Read more …</a></p>
         </div>
       </div>
 
       <div
-        class="post-card"
+        class="post-summary"
         itemscope=""
         itemtype="https://schema.org/BlogPosting"
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/series/unsung-team-roles/incentives/"
-            ><span class="series-name">Unsung Team Roles</span>:
-            <span itemprop="name">Incentives</span>
+          <a itemprop="url" href="/posts/comcast-technican-problem/">
+            <span itemprop="name">The Comcast Technician Problem</span>
           </a>
         </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2025-08-12" itemprop="datePublished"
-              >August 12, 2025</time
-            >
-          </span>
-
-          <span></span>
-          <span class="tag">
-            <a href="/tags/organizations/">#Organizations</a>
-          </span>
-        </nav>
-        <div>
-          <div class="summary-line">
-            <div class="summary" itemprop="abstract">
-              <p>
-                For a team to succeed, it needs the flexibility to
-                self-organize, which can lead to some members taking on more
-                work. To avoid burnout, these extra contributions must be
-                rewarded. Good managers are key, as they must recognize
-                individual efforts and their team-wide impact. Well-designed
-                incentives foster collaboration and reward those who strengthen
-                the team, while poor incentives cause employees to stick rigidly
-                to their roles and let the team fail.
-              </p>
+        <div class="summary-row">
+          <div>
+            <nav>
+              <small>
+                Published on
+                <time datetime="2020-07-13" itemprop="datePublished"
+                  >July 13, 2020</time
+                >.
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag">
+                    <a href="/tags/math/">#Math</a>
+                  </span>
+                </li>
+              </menu>
+            </nav>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  Given a set of tasks, incentives are often aligned towards
+                  dropping a task rather than allowing for perpetual accretion
+                  of delays.
+                </p>
+              </div>
             </div>
+            <p class="more">
+              <a href="/posts/comcast-technican-problem/">Read more …</a>
+            </p>
           </div>
-          <p class="more">
-            <a href="/series/unsung-team-roles/incentives/">Read more …</a>
-          </p>
         </div>
       </div>
 
       <div
-        class="post-card"
+        class="post-summary"
         itemscope=""
         itemtype="https://schema.org/BlogPosting"
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/posts/why-strong-opinions-weakly-held/">
+          <a
+            itemprop="url"
+            href="/posts/things-you-can-do-with-nvim-and-vscode/"
+          >
             <span itemprop="name"
-              >Why &#39;Strong Opinions Weakly Held&#39;</span
+              >Things You Can Do With Neovim and Vscode That You Can&#39;t Do
+              With Neovim Alone</span
             >
           </a>
         </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2020-08-28" itemprop="datePublished"
-              >August 28, 2020</time
-            >
-          </span>
-
-          <span></span>
-          <span class="tag">
-            <a href="/tags/meta/">#Meta</a>
-          </span>
-        </nav>
+        <div class="summary-row">
+          <div>
+            <nav>
+              <small>
+                Published on
+                <time datetime="2020-09-19" itemprop="datePublished"
+                  >September 19, 2020</time
+                >.
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag">
+                    <a href="/tags/tools/">#Tools</a>
+                  </span>
+                </li>
+                <li>
+                  <span class="tag">
+                    <a href="/tags/vim/">#Vim</a>
+                  </span>
+                </li>
+              </menu>
+            </nav>
+            <p class="more">
+              <a href="/posts/things-you-can-do-with-nvim-and-vscode/"
+                >Read more …</a
+              >
+            </p>
+          </div>
+        </div>
       </div>
     </footer>
 

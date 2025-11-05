@@ -32,16 +32,16 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
-    <link rel="stylesheet" href="/styles/katex.min.css" />
     <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Geist:wght@100..900&family=Inconsolata:wght@200..900&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
     />
+    <link rel="stylesheet" href="/styles/katex.min.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/anExJ29O9C.css" />
+    <link rel="stylesheet" href="/styles/aro4OGNh0r.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -68,38 +68,36 @@
       </nav>
     </header>
 
-    <article
-      class="container"
-      itemscope=""
-      itemtype="https://schema.org/BlogPosting"
-    >
+    <article itemscope="" itemtype="https://schema.org/BlogPosting">
       <link itemprop="url" href="/posts/ten-years/" />
       <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-      <header>
-        <h1 itemprop="name">Ten Years</h1>
-        <nav>
-          <span>
-            <span class="date"
-              >Posted on
+      <header class="container">
+        <div class="">
+          <h1 itemprop="name">Ten Years</h1>
+          <nav>
+            <div class="metadata">
+              Published on
               <time datetime="2020-12-09" itemprop="datePublished"
                 >December 9, 2020</time
-              ></span
-            >&nbsp;by
-            <span class="author" itemprop="author">Asanka Herath</span></span
-          >
-          <span></span>
-          <span class="tag">
-            <a href="/tags/career/">#Career</a>
-          </span>
-        </nav>
-        <div>
-          <span class="readingtime">
-            Estimated reading time is 4 minutes.
-          </span>
+              >
+              by <span class="author" itemprop="author">Asanka Herath</span>.
+
+              <br />
+              Estimated reading time is <time>4 minutes</time>.
+            </div>
+            <span></span>
+            <menu class="tags">
+              <li>
+                <span class="tag">
+                  <a href="/tags/career/">#Career</a>
+                </span>
+              </li>
+            </menu>
+          </nav>
         </div>
       </header>
 
-      <main itemprop="articleBody">
+      <main itemprop="articleBody" class="container">
         <p>
           It’s been ten years since I started at Google. The work anniversary
           fell on 6th of December.
@@ -165,7 +163,7 @@
         </p>
       </main>
 
-      <footer>
+      <footer class="container">
         <div>
           <p>
             Last modified: <time datetime="2020-12-09">December 9, 2020</time>
@@ -179,7 +177,145 @@
     <footer class="container">
       <h2>More posts from this blog ...</h2>
       <div
-        class="post-card"
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/shannon-paper/">
+            <span itemprop="name">Shannon Paper</span>
+          </a>
+        </h3>
+        <div class="summary-row">
+          <div>
+            <nav>
+              <small>
+                Published on
+                <time datetime="2021-03-26" itemprop="datePublished"
+                  >March 26, 2021</time
+                >.
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag">
+                    <a href="/tags/math/">#Math</a>
+                  </span>
+                </li>
+              </menu>
+            </nav>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  Claude Shannon's
+                  <em>A mathematical theory of communication</em> is an oft
+                  cited classic in information theory. Let's dive in and try to
+                  tease apart the &quot;why&quot;s that are often overlooked
+                  when people build on top of the introduced theory. They are
+                  definitely things that I didn't consider to be obvious without
+                  the benefit of reading the paper.
+                </p>
+              </div>
+            </div>
+            <p class="more"><a href="/posts/shannon-paper/">Read more …</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/ansible-cli-sugar/">
+            <span itemprop="name"
+              >Easier CLI for ad-hoc Ansible tasks and playbooks</span
+            >
+          </a>
+        </h3>
+        <div class="summary-row">
+          <div>
+            <nav>
+              <small>
+                Published on
+                <time datetime="2020-06-01" itemprop="datePublished"
+                  >June 1, 2020</time
+                >.
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag">
+                    <a href="/tags/tools/">#Tools</a>
+                  </span>
+                </li>
+              </menu>
+            </nav>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  Encode the host and group names into the name of a wrapper
+                  script for quick ad-hoc invocation of Ansible tasks and
+                  playbooks.
+                </p>
+              </div>
+            </div>
+            <p class="more">
+              <a href="/posts/ansible-cli-sugar/">Read more …</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/darpa-heilmeier-catechism/">
+            <span itemprop="name">DARPA&#39;s Heilmeier Catechism</span>
+          </a>
+        </h3>
+        <div class="summary-row">
+          <div>
+            <nav>
+              <small>
+                Published on
+                <time datetime="2022-06-28" itemprop="datePublished"
+                  >June 28, 2022</time
+                >.
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag">
+                    <a href="/tags/engineering/">#Engineering</a>
+                  </span>
+                </li>
+              </menu>
+            </nav>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  A set of questions help you think through and evaluate
+                  proposed projects and research programs.
+                </p>
+              </div>
+            </div>
+            <p class="more">
+              <a href="/posts/darpa-heilmeier-catechism/">Read more …</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="post-summary"
         itemscope=""
         itemtype="https://schema.org/BlogPosting"
       >
@@ -189,206 +325,103 @@
             <span itemprop="name">The Lettergrade Rule</span>
           </a>
         </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2022-09-16" itemprop="datePublished"
-              >September 16, 2022</time
-            >
-          </span>
-
-          <span></span>
-          <span class="tag">
-            <a href="/tags/engineering/">#engineering</a>
-          </span>
-        </nav>
-        <div>
-          <div class="summary-line">
-            <div class="summary" itemprop="abstract">
-              <p>
-                Don't block a code review because of minor issues that are best
-                left to the discretion of the author.
-              </p>
+        <div class="summary-row">
+          <div>
+            <nav>
+              <small>
+                Published on
+                <time datetime="2022-09-16" itemprop="datePublished"
+                  >September 16, 2022</time
+                >.
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag">
+                    <a href="/tags/engineering/">#Engineering</a>
+                  </span>
+                </li>
+              </menu>
+            </nav>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  Don't block a code review because of minor issues that are
+                  best left to the discretion of the author.
+                </p>
+              </div>
             </div>
+            <p class="more">
+              <a href="/posts/the-lettergrade-rule/">Read more …</a>
+            </p>
           </div>
-          <p class="more">
-            <a href="/posts/the-lettergrade-rule/">Read more …</a>
-          </p>
         </div>
       </div>
 
       <div
-        class="post-card"
+        class="post-summary"
         itemscope=""
         itemtype="https://schema.org/BlogPosting"
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a
-            itemprop="url"
-            href="/posts/happy-new-year-2024-and-year-in-review-2023/"
-          >
-            <span itemprop="name"
-              >Happy New Year 2024 and Year in Review 2023</span
-            >
+          <a itemprop="url" href="/posts/an-intuition-on-entropy/">
+            <span itemprop="name">An Intuition on Shannon Entropy</span>
           </a>
         </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2024-01-01" itemprop="datePublished"
-              >January 1, 2024</time
-            >
-          </span>
-
-          <span></span>
-          <span class="tag">
-            <a href="/tags/culture/">#Culture</a>
-          </span>
-        </nav>
-      </div>
-
-      <div
-        class="post-card"
-        itemscope=""
-        itemtype="https://schema.org/BlogPosting"
-      >
-        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <h3 class="title">
-          <a itemprop="url" href="/posts/why-i-hate-carousels/">
-            <span itemprop="name">Why I Hate Carousels</span>
+        <div class="summary-row">
+          <a href="/posts/an-intuition-on-entropy/">
+            <img
+              src="/img/4ywdW_OSoN-600.png"
+              alt="An allegorical pencil drawing of an ornate scale. The left pan represents &#39;Information&#39; with a neat pile of books and scrolls. The right pan represents &#39;Uncertainty&#39; with a chaotic vortex of dissolving papers, gears, and symbols. The scale is in perfect equilibrium, illustrating the conceptual balance between order and disorder."
+              class="hero"
+              width="600"
+              height="600"
+            />
           </a>
-        </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2024-01-25" itemprop="datePublished"
-              >January 25, 2024</time
-            >
-          </span>
 
-          <span></span>
-          <span class="tag">
-            <a href="/tags/usability/">#Usability</a>
-          </span>
-          <span class="tag">
-            <a href="/tags/engineering/">#Engineering</a>
-          </span>
-        </nav>
-        <div>
-          <div class="summary-line">
-            <div class="summary" itemprop="abstract">
-              <ul>
-                <li>Don't use carousels in your UI.</li>
+          <div>
+            <nav>
+              <small>
+                Published on
+                <time datetime="2025-09-27" itemprop="datePublished"
+                  >September 27, 2025</time
+                >.
+              </small>
+              <span></span>
+              <menu class="tags">
                 <li>
-                  Instead, if you must stick content into little cards, let the
-                  horionztal layout wrap to additional lines.
+                  <span class="tag">
+                    <a href="/tags/privacy/">#Privacy</a>
+                  </span>
                 </li>
                 <li>
-                  If you end up with too many horizontal lines of content, then
-                  you definitely have too many items that can be accessed via a
-                  horizontally panning UI. You need a different UI altogether.
+                  <span class="tag">
+                    <a href="/tags/programming/">#Programming</a>
+                  </span>
                 </li>
-              </ul>
+                <li>
+                  <span class="tag">
+                    <a href="/tags/entropy/">#Entropy</a>
+                  </span>
+                </li>
+              </menu>
+            </nav>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  Develop an intuition for Shannon entropy as a measure of
+                  information content. Using the game 'Guess Who' as a practical
+                  example, this post explains how entropy quantifies the
+                  reduction in ambiguity and builds up the mathematical
+                  formulation from basic principles.
+                </p>
+              </div>
             </div>
+            <p class="more">
+              <a href="/posts/an-intuition-on-entropy/">Read more …</a>
+            </p>
           </div>
-          <p class="more">
-            <a href="/posts/why-i-hate-carousels/">Read more …</a>
-          </p>
-        </div>
-      </div>
-
-      <div
-        class="post-card"
-        itemscope=""
-        itemtype="https://schema.org/BlogPosting"
-      >
-        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <h3 class="title">
-          <a itemprop="url" href="/posts/moved-to-eleventy/">
-            <span itemprop="name">I Moved This Blog To Eleventy</span>
-          </a>
-        </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2024-12-13" itemprop="datePublished"
-              >December 13, 2024</time
-            >
-          </span>
-
-          <span></span>
-          <span class="tag">
-            <a href="/tags/meta/">#Meta</a>
-          </span>
-        </nav>
-        <div>
-          <div class="summary-line">
-            <div class="summary" itemprop="abstract">
-              <p>
-                At long last, this blog &quot;outgrew&quot;<sup
-                  class="footnote-ref"
-                  ><a href="#fn1" id="fnref1">[1]</a></sup
-                >
-                Hugo and I had to go looking for a new static site generator.
-              </p>
-              <hr class="footnotes-sep" />
-              <section class="footnotes">
-                <ol class="footnotes-list">
-                  <li id="fn1" class="footnote-item">
-                    <p>
-                      Of course, by outgrew I mean I got bored and wanted to
-                      play with a new static site generator.
-                      <a href="#fnref1" class="footnote-backref">↩︎</a>
-                    </p>
-                  </li>
-                </ol>
-              </section>
-            </div>
-          </div>
-          <p class="more">
-            <a href="/posts/moved-to-eleventy/">Read more …</a>
-          </p>
-        </div>
-      </div>
-
-      <div
-        class="post-card"
-        itemscope=""
-        itemtype="https://schema.org/BlogPosting"
-      >
-        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <h3 class="title">
-          <a itemprop="url" href="/posts/intermezzo-2025/">
-            <span itemprop="name">Intermission - Q1 of 2025</span>
-          </a>
-        </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2025-05-03" itemprop="datePublished"
-              >May 3, 2025</time
-            >. Originally posted on
-            <time datetime="2025-04-07" itemprop="dateCreated"
-              >April 7, 2025</time
-            >
-          </span>
-
-          <span></span>
-          <span class="tag">
-            <a href="/tags/culture/">#Culture</a>
-          </span>
-        </nav>
-        <div>
-          <div class="summary-line">
-            <div class="summary" itemprop="abstract">
-              <p>
-                Hate can be suppressed temporarily, but cannot be contained for
-                too long.
-              </p>
-            </div>
-          </div>
-          <p class="more"><a href="/posts/intermezzo-2025/">Read more …</a></p>
         </div>
       </div>
     </footer>

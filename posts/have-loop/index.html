@@ -32,16 +32,16 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
-    <link rel="stylesheet" href="/styles/katex.min.css" />
     <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Geist:wght@100..900&family=Inconsolata:wght@200..900&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
     />
+    <link rel="stylesheet" href="/styles/katex.min.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/anExJ29O9C.css" />
+    <link rel="stylesheet" href="/styles/aro4OGNh0r.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -68,38 +68,36 @@
       </nav>
     </header>
 
-    <article
-      class="container"
-      itemscope=""
-      itemtype="https://schema.org/BlogPosting"
-    >
+    <article itemscope="" itemtype="https://schema.org/BlogPosting">
       <link itemprop="url" href="/posts/have-loop/" />
       <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-      <header>
-        <h1 itemprop="name">The Have-Loop</h1>
-        <nav>
-          <span>
-            <span class="date"
-              >Posted on
+      <header class="container">
+        <div class="">
+          <h1 itemprop="name">The Have-Loop</h1>
+          <nav>
+            <div class="metadata">
+              Published on
               <time datetime="2024-06-24" itemprop="datePublished"
                 >June 24, 2024</time
-              ></span
-            >&nbsp;by
-            <span class="author" itemprop="author">Asanka Herath</span></span
-          >
-          <span></span>
-          <span class="tag">
-            <a href="/tags/culture/">#Culture</a>
-          </span>
-        </nav>
-        <div>
-          <span class="readingtime">
-            Estimated reading time is 4 minutes.
-          </span>
+              >
+              by <span class="author" itemprop="author">Asanka Herath</span>.
+
+              <br />
+              Estimated reading time is <time>4 minutes</time>.
+            </div>
+            <span></span>
+            <menu class="tags">
+              <li>
+                <span class="tag">
+                  <a href="/tags/culture/">#Culture</a>
+                </span>
+              </li>
+            </menu>
+          </nav>
         </div>
       </header>
 
-      <main itemprop="articleBody">
+      <main itemprop="articleBody" class="container">
         <figure>
           <img
             src="/posts/have-loop/xdqvWvJJom-406.png"
@@ -193,7 +191,7 @@
         </section>
       </main>
 
-      <footer>
+      <footer class="container">
         <div>
           <p>Last modified: <time datetime="2024-06-24">June 24, 2024</time></p>
         </div>
@@ -205,158 +203,193 @@
     <footer class="container">
       <h2>More posts from this blog ...</h2>
       <div
-        class="post-card"
+        class="post-summary"
         itemscope=""
         itemtype="https://schema.org/BlogPosting"
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/posts/ephemeral-fingerprinting/">
-            <span itemprop="name">Ephemeral Fingerprinting On The Web</span>
+          <a itemprop="url" href="/posts/on-wontfixing-bugs/">
+            <span itemprop="name">On WontFixing Bugs</span>
           </a>
         </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2020-04-01" itemprop="datePublished"
-              >April 1, 2020</time
-            >
-          </span>
-
-          <span></span>
-          <span class="tag">
-            <a href="/tags/privacy/">#Privacy</a>
-          </span>
-        </nav>
-        <div>
-          <div class="summary-line">
-            <div class="summary" itemprop="abstract">
-              <p>
-                Any ephemeral low-entropy web observable property whose changes
-                are concurrently observable by multiple sites can lead to cross
-                site identity joining.
-              </p>
-              <p>
-                This method of identity joining does not require coordination
-                between multiple first parties. A single third party embedded
-                within multiple first parties can also use this method.
-              </p>
+        <div class="summary-row">
+          <div>
+            <nav>
+              <small>
+                Published on
+                <time datetime="2021-03-02" itemprop="datePublished"
+                  >March 2, 2021</time
+                >.
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag">
+                    <a href="/tags/engineering/">#Engineering</a>
+                  </span>
+                </li>
+              </menu>
+            </nav>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  Large projects accumulate a large number of issue reports over
+                  time. This is normal. Typically for a &quot;successful&quot;
+                  project the rate of new issues being reported will exceed the
+                  rate of issues being fixed. Hence the growth.
+                </p>
+                <p>
+                  But what are they to do about this ever-growing pile of bugs?
+                </p>
+              </div>
             </div>
+            <p class="more">
+              <a href="/posts/on-wontfixing-bugs/">Read more …</a>
+            </p>
           </div>
-          <p class="more">
-            <a href="/posts/ephemeral-fingerprinting/">Read more …</a>
-          </p>
         </div>
       </div>
 
       <div
-        class="post-card"
+        class="post-summary"
         itemscope=""
         itemtype="https://schema.org/BlogPosting"
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/posts/ten-years/">
-            <span itemprop="name">Ten Years</span>
+          <a itemprop="url" href="/posts/visualizing-people-2/">
+            <span itemprop="name">Visualizing A Million People</span>
           </a>
         </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2020-12-09" itemprop="datePublished"
-              >December 9, 2020</time
-            >
-          </span>
-
-          <span></span>
-          <span class="tag">
-            <a href="/tags/career/">#Career</a>
-          </span>
-        </nav>
-      </div>
-
-      <div
-        class="post-card"
-        itemscope=""
-        itemtype="https://schema.org/BlogPosting"
-      >
-        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <h3 class="title">
-          <a itemprop="url" href="/posts/promise-fatigue/">
-            <span itemprop="name">Promise Fatigue</span>
-          </a>
-        </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2022-11-01" itemprop="datePublished"
-              >November 1, 2022</time
-            >
-          </span>
-
-          <span></span>
-          <span class="tag">
-            <a href="/tags/culture/">#Culture</a>
-          </span>
-          <span class="tag">
-            <a href="/tags/career/">#Career</a>
-          </span>
-        </nav>
-        <div>
-          <div class="summary-line">
-            <div class="summary" itemprop="abstract">
-              <p>
-                Setting low but realistic expectations is better than setting
-                high but unrealistic ones.
-              </p>
+        <div class="summary-row">
+          <div>
+            <nav>
+              <small>
+                Published on
+                <time datetime="2021-09-06" itemprop="datePublished"
+                  >September 6, 2021</time
+                >.
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag">
+                    <a href="/tags/curiosity/">#Curiosity</a>
+                  </span>
+                </li>
+              </menu>
+            </nav>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  If your feature pisses off a million people what does this
+                  angry mob look like? Spoiler: We only get to 750,000.
+                </p>
+              </div>
             </div>
+            <p class="more">
+              <a href="/posts/visualizing-people-2/">Read more …</a>
+            </p>
           </div>
-          <p class="more"><a href="/posts/promise-fatigue/">Read more …</a></p>
         </div>
       </div>
 
       <div
-        class="post-card"
+        class="post-summary"
         itemscope=""
         itemtype="https://schema.org/BlogPosting"
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/posts/thirteen-years/">
-            <span itemprop="name">Thirteen Years</span>
+          <a itemprop="url" href="/posts/ansible-cli-sugar/">
+            <span itemprop="name"
+              >Easier CLI for ad-hoc Ansible tasks and playbooks</span
+            >
           </a>
         </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2023-12-07" itemprop="datePublished"
-              >December 7, 2023</time
-            >
-          </span>
-
-          <span></span>
-          <span class="tag">
-            <a href="/tags/career/">#Career</a>
-          </span>
-          <span class="tag">
-            <a href="/tags/culture/">#Culture</a>
-          </span>
-          <span class="tag">
-            <a href="/tags/organizations/">#Organizations</a>
-          </span>
-        </nav>
-        <div>
-          <div class="summary-line">
-            <div class="summary" itemprop="abstract">
-              <p>Some reflections from thirteen years at Google.</p>
+        <div class="summary-row">
+          <div>
+            <nav>
+              <small>
+                Published on
+                <time datetime="2020-06-01" itemprop="datePublished"
+                  >June 1, 2020</time
+                >.
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag">
+                    <a href="/tags/tools/">#Tools</a>
+                  </span>
+                </li>
+              </menu>
+            </nav>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  Encode the host and group names into the name of a wrapper
+                  script for quick ad-hoc invocation of Ansible tasks and
+                  playbooks.
+                </p>
+              </div>
             </div>
+            <p class="more">
+              <a href="/posts/ansible-cli-sugar/">Read more …</a>
+            </p>
           </div>
-          <p class="more"><a href="/posts/thirteen-years/">Read more …</a></p>
         </div>
       </div>
 
       <div
-        class="post-card"
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/the-point-of-a-strategy/">
+            <span itemprop="name">The Point of a Strategy</span>
+          </a>
+        </h3>
+        <div class="summary-row">
+          <div>
+            <nav>
+              <small>
+                Published on
+                <time datetime="2023-07-24" itemprop="datePublished"
+                  >July 24, 2023</time
+                >.
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag">
+                    <a href="/tags/career/">#Career</a>
+                  </span>
+                </li>
+                <li>
+                  <span class="tag">
+                    <a href="/tags/engineering/">#Engineering</a>
+                  </span>
+                </li>
+              </menu>
+            </nav>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>The only useful strategy is one that reduces risks.</p>
+              </div>
+            </div>
+            <p class="more">
+              <a href="/posts/the-point-of-a-strategy/">Read more …</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="post-summary"
         itemscope=""
         itemtype="https://schema.org/BlogPosting"
       >
@@ -364,43 +397,37 @@
         <h3 class="title">
           <a
             itemprop="url"
-            href="/posts/how-to-solve-a-problem-in-three-steps/"
+            href="/posts/happy-new-year-2024-and-year-in-review-2023/"
           >
-            <span itemprop="name">How to Solve a Problem in Three Steps</span>
+            <span itemprop="name"
+              >Happy New Year 2024 and Year in Review 2023</span
+            >
           </a>
         </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2024-07-08" itemprop="datePublished"
-              >July 8, 2024</time
-            >
-          </span>
-
-          <span></span>
-          <span class="tag">
-            <a href="/tags/organizations/">#Organizations</a>
-          </span>
-          <span class="tag">
-            <a href="/tags/career/">#Career</a>
-          </span>
-        </nav>
-        <div>
-          <div class="summary-line">
-            <div class="summary" itemprop="abstract">
-              <p>
-                If you don't know what a refridgerator is nor what an elephant
-                is you are likely to think that opening the door, putting the
-                elephant in, and closing the door is a viable strategy for
-                putting an elephant in the refridgerator.
-              </p>
-            </div>
+        <div class="summary-row">
+          <div>
+            <nav>
+              <small>
+                Published on
+                <time datetime="2024-01-01" itemprop="datePublished"
+                  >January 1, 2024</time
+                >.
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag">
+                    <a href="/tags/culture/">#Culture</a>
+                  </span>
+                </li>
+              </menu>
+            </nav>
+            <p class="more">
+              <a href="/posts/happy-new-year-2024-and-year-in-review-2023/"
+                >Read more …</a
+              >
+            </p>
           </div>
-          <p class="more">
-            <a href="/posts/how-to-solve-a-problem-in-three-steps/"
-              >Read more …</a
-            >
-          </p>
         </div>
       </div>
     </footer>

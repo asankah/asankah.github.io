@@ -32,16 +32,16 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
-    <link rel="stylesheet" href="/styles/katex.min.css" />
     <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Geist:wght@100..900&family=Inconsolata:wght@200..900&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
     />
+    <link rel="stylesheet" href="/styles/katex.min.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/anExJ29O9C.css" />
+    <link rel="stylesheet" href="/styles/aro4OGNh0r.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -68,40 +68,38 @@
       </nav>
     </header>
 
-    <article
-      class="container"
-      itemscope=""
-      itemtype="https://schema.org/BlogPosting"
-    >
+    <article itemscope="" itemtype="https://schema.org/BlogPosting">
       <link itemprop="url" href="/posts/git-autopush/" />
       <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-      <header>
-        <h1 itemprop="name">
-          Use Git hooks to automatically push after every commit
-        </h1>
-        <nav>
-          <span>
-            <span class="date"
-              >Posted on
+      <header class="container">
+        <div class="">
+          <h1 itemprop="name">
+            Use Git hooks to automatically push after every commit
+          </h1>
+          <nav>
+            <div class="metadata">
+              Published on
               <time datetime="2022-07-05" itemprop="datePublished"
                 >July 5, 2022</time
-              ></span
-            >&nbsp;by
-            <span class="author" itemprop="author">Asanka Herath</span></span
-          >
-          <span></span>
-          <span class="tag">
-            <a href="/tags/tools/">#tools</a>
-          </span>
-        </nav>
-        <div>
-          <span class="readingtime">
-            Estimated reading time is 2 minutes.
-          </span>
+              >
+              by <span class="author" itemprop="author">Asanka Herath</span>.
+
+              <br />
+              Estimated reading time is <time>2 minutes</time>.
+            </div>
+            <span></span>
+            <menu class="tags">
+              <li>
+                <span class="tag">
+                  <a href="/tags/tools/">#Tools</a>
+                </span>
+              </li>
+            </menu>
+          </nav>
         </div>
       </header>
 
-      <main itemprop="articleBody">
+      <main itemprop="articleBody" class="container">
         <p>
           A Git hook is a shell script that is invoked at specific points during
           some Git operations. They are documented in
@@ -142,7 +140,7 @@
         <script src="https://gist.github.com/asankah/a6263bbd6081bffd031ca066e5177df2.js"></script>
       </main>
 
-      <footer>
+      <footer class="container">
         <div>
           <p>Last modified: <time datetime="2022-07-05">July 5, 2022</time></p>
         </div>
@@ -154,226 +152,246 @@
     <footer class="container">
       <h2>More posts from this blog ...</h2>
       <div
-        class="post-card"
+        class="post-summary"
         itemscope=""
         itemtype="https://schema.org/BlogPosting"
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/posts/ansible-cli-sugar/">
+          <a itemprop="url" href="/posts/mark-goes-up-and-down/">
             <span itemprop="name"
-              >Easier CLI for ad-hoc Ansible tasks and playbooks</span
+              >Markdown should be readble without knowing Markdown</span
             >
           </a>
         </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2020-06-01" itemprop="datePublished"
-              >June 1, 2020</time
-            >
-          </span>
-
-          <span></span>
-          <span class="tag">
-            <a href="/tags/tools/">#Tools</a>
-          </span>
-        </nav>
-        <div>
-          <div class="summary-line">
-            <div class="summary" itemprop="abstract">
-              <p>
-                Encode the host and group names into the name of a wrapper
-                script for quick ad-hoc invocation of Ansible tasks and
-                playbooks.
-              </p>
+        <div class="summary-row">
+          <div>
+            <nav>
+              <small>
+                Published on
+                <time datetime="2022-04-05" itemprop="datePublished"
+                  >April 5, 2022</time
+                >.
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag">
+                    <a href="/tags/tools/">#Tools</a>
+                  </span>
+                </li>
+                <li>
+                  <span class="tag">
+                    <a href="/tags/engineering/">#Engineering</a>
+                  </span>
+                </li>
+              </menu>
+            </nav>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  Markdown documents should be readble without understanding
+                  complex mark-up. A growing number of Markdown syntax
+                  extensions take the form of HTML or HTML-like tags and
+                  boilerplate that hinder readability. Instead we should focus
+                  on how some construct should be presented in plain-text for
+                  human consumption and then add minimal structure to it for
+                  machine consumption.
+                </p>
+              </div>
             </div>
+            <p class="more">
+              <a href="/posts/mark-goes-up-and-down/">Read more …</a>
+            </p>
           </div>
-          <p class="more">
-            <a href="/posts/ansible-cli-sugar/">Read more …</a>
-          </p>
         </div>
       </div>
 
       <div
-        class="post-card"
+        class="post-summary"
         itemscope=""
         itemtype="https://schema.org/BlogPosting"
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/posts/use-drop-not-edit/">
+          <a itemprop="url" href="/posts/notes-on-fact-checking/">
             <span itemprop="name"
-              >Vim: Use Drop Not Edit, SBuffer Not Buffer</span
-            >
+              >Notes from Crash Course&#39;s Videos on Fact Checking Information
+              You See On The Internet
+            </span>
           </a>
         </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2020-07-07" itemprop="datePublished"
-              >July 7, 2020</time
-            >
-          </span>
-
-          <span></span>
-          <span class="tag">
-            <a href="/tags/tools/">#Tools</a>
-          </span>
-          <span class="tag">
-            <a href="/tags/vim/">#Vim</a>
-          </span>
-        </nav>
-        <div>
-          <div class="summary-line">
-            <div class="summary" itemprop="abstract">
-              <p>
-                Use the <code>:drop</code> command instead of
-                <code>:edit</code> in Vim. It will reuse an existing window
-                instead of creating a new one.
-              </p>
+        <div class="summary-row">
+          <div>
+            <nav>
+              <small>
+                Published on
+                <time datetime="2020-07-04" itemprop="datePublished"
+                  >July 4, 2020</time
+                >.
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag">
+                    <a href="/tags/curiosity/">#Curiosity</a>
+                  </span>
+                </li>
+              </menu>
+            </nav>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  Hank Green's Crash Course YouTube channel has an excellent
+                  series about navigating digital information. It's an excellent
+                  guide to how internet users could intelligently consume
+                  information they see on the internet. These are my
+                  (incomplete) notes from the series.
+                </p>
+              </div>
             </div>
+            <p class="more">
+              <a href="/posts/notes-on-fact-checking/">Read more …</a>
+            </p>
           </div>
-          <p class="more">
-            <a href="/posts/use-drop-not-edit/">Read more …</a>
-          </p>
         </div>
       </div>
 
       <div
-        class="post-card"
+        class="post-summary"
         itemscope=""
         itemtype="https://schema.org/BlogPosting"
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/posts/evluating-negatives/">
-            <span itemprop="name"
-              >Inclusion/Equity and Evaluating Negatives</span
-            >
+          <a itemprop="url" href="/posts/have-loop/">
+            <span itemprop="name">The Have-Loop</span>
           </a>
         </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2024-01-10" itemprop="datePublished"
-              >January 10, 2024</time
-            >
-          </span>
-
-          <span></span>
-          <span class="tag">
-            <a href="/tags/engineering/">#Engineering</a>
-          </span>
-          <span class="tag">
-            <a href="/tags/inclusion-and-equity/">#Inclusion and Equity</a>
-          </span>
-        </nav>
-        <div>
-          <div class="summary-line">
-            <div class="summary" itemprop="abstract">
-              <p>
-                Evaluating properties like inclusion and equity of products
-                can't be done through exhaustive enumeration of product
-                outcomes. Instead we will need to increasingly rely on the
-                controls that we place how we construct the products.
-              </p>
+        <div class="summary-row">
+          <div>
+            <nav>
+              <small>
+                Published on
+                <time datetime="2024-06-24" itemprop="datePublished"
+                  >June 24, 2024</time
+                >.
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag">
+                    <a href="/tags/culture/">#Culture</a>
+                  </span>
+                </li>
+              </menu>
+            </nav>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  Have-loops are positive feedback loops which cause
+                  unsustainable concentration of limited resources. Once you
+                  learn to recognize them, you will see them everywhere.
+                </p>
+              </div>
             </div>
+            <p class="more"><a href="/posts/have-loop/">Read more …</a></p>
           </div>
-          <p class="more">
-            <a href="/posts/evluating-negatives/">Read more …</a>
-          </p>
         </div>
       </div>
 
       <div
-        class="post-card"
+        class="post-summary"
         itemscope=""
         itemtype="https://schema.org/BlogPosting"
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/series/unsung-team-roles/crossbeams/"
-            ><span class="series-name">Unsung Team Roles</span>:
-            <span itemprop="name"
-              >Soft Roles as Organizational Cross Beams</span
-            >
+          <a itemprop="url" href="/posts/moved-to-eleventy/">
+            <span itemprop="name">I Moved This Blog To Eleventy</span>
           </a>
         </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2025-08-12" itemprop="datePublished"
-              >August 12, 2025</time
-            >
-          </span>
-
-          <span></span>
-          <span class="tag">
-            <a href="/tags/organizations/">#Organizations</a>
-          </span>
-        </nav>
-        <div>
-          <div class="summary-line">
-            <div class="summary" itemprop="abstract">
-              <p>
-                Leadership is fallible and imperfect. Soft roles emerge as they
-                are needed to account for various team roles that are needed but
-                not formally defined. Some of these roles help teams function,
-                and some others act as crossbeams that hold an entire
-                organization together.
-              </p>
+        <div class="summary-row">
+          <div>
+            <nav>
+              <small>
+                Published on
+                <time datetime="2024-12-13" itemprop="datePublished"
+                  >December 13, 2024</time
+                >.
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag">
+                    <a href="/tags/meta/">#Meta</a>
+                  </span>
+                </li>
+              </menu>
+            </nav>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  At long last, this blog &quot;outgrew&quot;<sup
+                    class="footnote-ref"
+                    ><a href="#fn1" id="fnref1">[1]</a></sup
+                  >
+                  Hugo and I had to go looking for a new static site generator.
+                </p>
+                <hr class="footnotes-sep" />
+                <section class="footnotes">
+                  <ol class="footnotes-list">
+                    <li id="fn1" class="footnote-item">
+                      <p>
+                        Of course, by outgrew I mean I got bored and wanted to
+                        play with a new static site generator.
+                        <a href="#fnref1" class="footnote-backref">↩︎</a>
+                      </p>
+                    </li>
+                  </ol>
+                </section>
+              </div>
             </div>
+            <p class="more">
+              <a href="/posts/moved-to-eleventy/">Read more …</a>
+            </p>
           </div>
-          <p class="more">
-            <a href="/series/unsung-team-roles/crossbeams/">Read more …</a>
-          </p>
         </div>
       </div>
 
       <div
-        class="post-card"
+        class="post-summary"
         itemscope=""
         itemtype="https://schema.org/BlogPosting"
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/series/unsung-team-roles/incentives/"
-            ><span class="series-name">Unsung Team Roles</span>:
-            <span itemprop="name">Incentives</span>
+          <a itemprop="url" href="/posts/symbol-name-types/">
+            <span itemprop="name">Names for Name Conventions</span>
           </a>
         </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2025-08-12" itemprop="datePublished"
-              >August 12, 2025</time
-            >
-          </span>
-
-          <span></span>
-          <span class="tag">
-            <a href="/tags/organizations/">#Organizations</a>
-          </span>
-        </nav>
-        <div>
-          <div class="summary-line">
-            <div class="summary" itemprop="abstract">
-              <p>
-                For a team to succeed, it needs the flexibility to
-                self-organize, which can lead to some members taking on more
-                work. To avoid burnout, these extra contributions must be
-                rewarded. Good managers are key, as they must recognize
-                individual efforts and their team-wide impact. Well-designed
-                incentives foster collaboration and reward those who strengthen
-                the team, while poor incentives cause employees to stick rigidly
-                to their roles and let the team fail.
-              </p>
-            </div>
+        <div class="summary-row">
+          <div>
+            <nav>
+              <small>
+                Published on
+                <time datetime="2020-08-24" itemprop="datePublished"
+                  >August 24, 2020</time
+                >.
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag">
+                    <a href="/tags/engineering/">#Engineering</a>
+                  </span>
+                </li>
+              </menu>
+            </nav>
+            <p class="more">
+              <a href="/posts/symbol-name-types/">Read more …</a>
+            </p>
           </div>
-          <p class="more">
-            <a href="/series/unsung-team-roles/incentives/">Read more …</a>
-          </p>
         </div>
       </div>
     </footer>

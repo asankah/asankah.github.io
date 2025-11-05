@@ -32,16 +32,16 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
-    <link rel="stylesheet" href="/styles/katex.min.css" />
     <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Geist:wght@100..900&family=Inconsolata:wght@200..900&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
     />
+    <link rel="stylesheet" href="/styles/katex.min.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/anExJ29O9C.css" />
+    <link rel="stylesheet" href="/styles/aro4OGNh0r.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -68,62 +68,60 @@
       </nav>
     </header>
 
-    <article
-      class="container"
-      itemscope=""
-      itemtype="https://schema.org/BlogPosting"
-    >
+    <article itemscope="" itemtype="https://schema.org/BlogPosting">
       <link itemprop="url" href="/series/structure-of-experience/flame/" />
       <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-      <header>
-        <h1 itemprop="name">Act III: Flame</h1>
-        <nav>
-          <span>
-            <span class="date"
-              >Posted on
+      <header class="container">
+        <div class="">
+          <h1 itemprop="name">Act III: Flame</h1>
+          <nav>
+            <div class="metadata">
+              Published on
               <time datetime="2025-05-07" itemprop="datePublished"
                 >May 7, 2025</time
-              ></span
-            >&nbsp;by
-            <span class="author" itemprop="author">Asanka Herath</span></span
-          >
-          <span></span>
-          <span class="tag">
-            <a href="/tags/ai/">#AI</a>
-          </span>
-        </nav>
-        <div>
-          <span class="readingtime">
-            Estimated reading time is 8 minutes.
-          </span>
-        </div>
-        <div class="series-container">
-          <div>
-            This post is part of a series:
-            <span class="series-title">Structure Of Experience</span>
+              >
+              by <span class="author" itemprop="author">Asanka Herath</span>.
+
+              <br />
+              Estimated reading time is <time>8 minutes</time>.
+            </div>
+            <span></span>
+            <menu class="tags">
+              <li>
+                <span class="tag">
+                  <a href="/tags/ai/">#AI</a>
+                </span>
+              </li>
+            </menu>
+          </nav>
+          <div class="series-container">
+            <div>
+              This post is part of a series:
+              <span class="series-title">Structure Of Experience</span>
+            </div>
+            <ol>
+              <li>
+                <a href="/series/structure-of-experience/preface/"
+                  ><span class="title">Preface</span></a
+                >
+              </li>
+
+              <li>
+                <a href="/series/structure-of-experience/meaning/"
+                  ><span class="title">Act I: Meaning</span></a
+                >
+              </li>
+
+              <li aria-current="page">
+                <span class="title">Act III: Flame</span>
+                <span class="you-are-here">(You are here)</span>
+              </li>
+            </ol>
           </div>
-          <ol>
-            <li>
-              <a href="/series/structure-of-experience/preface/"
-                ><span class="title">Preface</span></a
-              >
-            </li>
-
-            <li>
-              <a href="/series/structure-of-experience/meaning/"
-                ><span class="title">Act I: Meaning</span></a
-              >
-            </li>
-
-            <li aria-current="page">
-              <span class="title">Act III: Flame</span>
-              <span class="you-are-here">(You are here)</span>
-            </li>
-          </ol>
         </div>
       </header>
 
-      <main itemprop="articleBody">
+      <main itemprop="articleBody" class="container">
         <p>
           We are prone to anthropomorphizing anything that looks or acts vaguely
           lifelike. All the way back in the 1960s, when people were confronted
@@ -314,7 +312,7 @@
         </section>
       </main>
 
-      <footer>
+      <footer class="container">
         <div>
           <p>Last modified: <time datetime="2025-05-07">May 7, 2025</time></p>
         </div>
@@ -342,190 +340,262 @@
     <footer class="container">
       <h2>More posts from this blog ...</h2>
       <div
-        class="post-card"
+        class="post-summary"
         itemscope=""
         itemtype="https://schema.org/BlogPosting"
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/posts/on-wontfixing-bugs/">
-            <span itemprop="name">On WontFixing Bugs</span>
+          <a itemprop="url" href="/posts/poisson-distribution/">
+            <span itemprop="name">Deriving the Poisson Distribution</span>
           </a>
         </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2021-03-02" itemprop="datePublished"
-              >March 2, 2021</time
-            >
-          </span>
-
-          <span></span>
-          <span class="tag">
-            <a href="/tags/engineering/">#Engineering</a>
-          </span>
-        </nav>
-        <div>
-          <div class="summary-line">
-            <div class="summary" itemprop="abstract">
-              <p>
-                Large projects accumulate a large number of issue reports over
-                time. This is normal. Typically for a &quot;successful&quot;
-                project the rate of new issues being reported will exceed the
-                rate of issues being fixed. Hence the growth.
-              </p>
-              <p>
-                But what are they to do about this ever-growing pile of bugs?
-              </p>
-            </div>
+        <div class="summary-row">
+          <div>
+            <nav>
+              <small>
+                Published on
+                <time datetime="2020-12-11" itemprop="datePublished"
+                  >December 11, 2020</time
+                >.
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag">
+                    <a href="/tags/math/">#Math</a>
+                  </span>
+                </li>
+              </menu>
+            </nav>
+            <p class="more">
+              <a href="/posts/poisson-distribution/">Read more …</a>
+            </p>
           </div>
-          <p class="more">
-            <a href="/posts/on-wontfixing-bugs/">Read more …</a>
-          </p>
         </div>
       </div>
 
       <div
-        class="post-card"
+        class="post-summary"
         itemscope=""
         itemtype="https://schema.org/BlogPosting"
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/posts/interesting-numbers/">
-            <span itemprop="name">All natural numbers are interesting</span>
-          </a>
-        </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2022-08-03" itemprop="datePublished"
-              >August 3, 2022</time
-            >
-          </span>
-
-          <span></span>
-          <span class="tag">
-            <a href="/tags/math/">#math</a>
-          </span>
-          <span class="tag">
-            <a href="/tags/curiosity/">#curiosity</a>
-          </span>
-        </nav>
-        <div>
-          <div class="summary-line">
-            <div class="summary" itemprop="abstract">
-              <p>A proof.</p>
-            </div>
-          </div>
-          <p class="more">
-            <a href="/posts/interesting-numbers/">Read more …</a>
-          </p>
-        </div>
-      </div>
-
-      <div
-        class="post-card"
-        itemscope=""
-        itemtype="https://schema.org/BlogPosting"
-      >
-        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <h3 class="title">
-          <a itemprop="url" href="/posts/promise-fatigue/">
-            <span itemprop="name">Promise Fatigue</span>
-          </a>
-        </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2022-11-01" itemprop="datePublished"
-              >November 1, 2022</time
-            >
-          </span>
-
-          <span></span>
-          <span class="tag">
-            <a href="/tags/culture/">#Culture</a>
-          </span>
-          <span class="tag">
-            <a href="/tags/career/">#Career</a>
-          </span>
-        </nav>
-        <div>
-          <div class="summary-line">
-            <div class="summary" itemprop="abstract">
-              <p>
-                Setting low but realistic expectations is better than setting
-                high but unrealistic ones.
-              </p>
-            </div>
-          </div>
-          <p class="more"><a href="/posts/promise-fatigue/">Read more …</a></p>
-        </div>
-      </div>
-
-      <div
-        class="post-card"
-        itemscope=""
-        itemtype="https://schema.org/BlogPosting"
-      >
-        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <h3 class="title">
-          <a itemprop="url" href="/posts/how-this-blog-works/">
-            <span itemprop="name">How This Blog Works</span>
-          </a>
-        </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2020-07-27" itemprop="datePublished"
-              >July 27, 2020</time
-            >
-          </span>
-
-          <span></span>
-          <span class="tag">
-            <a href="/tags/meta/">#Meta</a>
-          </span>
-        </nav>
-        <div>
-          <div class="summary-line">
-            <div class="summary" itemprop="abstract">
-              <p>How I put this site together and why.</p>
-            </div>
-          </div>
-          <p class="more">
-            <a href="/posts/how-this-blog-works/">Read more …</a>
-          </p>
-        </div>
-      </div>
-
-      <div
-        class="post-card"
-        itemscope=""
-        itemtype="https://schema.org/BlogPosting"
-      >
-        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <h3 class="title">
-          <a itemprop="url" href="/posts/why-strong-opinions-weakly-held/">
+          <a itemprop="url" href="/posts/notes-on-fact-checking/">
             <span itemprop="name"
-              >Why &#39;Strong Opinions Weakly Held&#39;</span
+              >Notes from Crash Course&#39;s Videos on Fact Checking Information
+              You See On The Internet
+            </span>
+          </a>
+        </h3>
+        <div class="summary-row">
+          <div>
+            <nav>
+              <small>
+                Published on
+                <time datetime="2020-07-04" itemprop="datePublished"
+                  >July 4, 2020</time
+                >.
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag">
+                    <a href="/tags/curiosity/">#Curiosity</a>
+                  </span>
+                </li>
+              </menu>
+            </nav>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  Hank Green's Crash Course YouTube channel has an excellent
+                  series about navigating digital information. It's an excellent
+                  guide to how internet users could intelligently consume
+                  information they see on the internet. These are my
+                  (incomplete) notes from the series.
+                </p>
+              </div>
+            </div>
+            <p class="more">
+              <a href="/posts/notes-on-fact-checking/">Read more …</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/why-i-hate-carousels/">
+            <span itemprop="name">Why I Hate Carousels</span>
+          </a>
+        </h3>
+        <div class="summary-row">
+          <div>
+            <nav>
+              <small>
+                Published on
+                <time datetime="2024-01-25" itemprop="datePublished"
+                  >January 25, 2024</time
+                >.
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag">
+                    <a href="/tags/usability/">#Usability</a>
+                  </span>
+                </li>
+                <li>
+                  <span class="tag">
+                    <a href="/tags/engineering/">#Engineering</a>
+                  </span>
+                </li>
+              </menu>
+            </nav>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <ul>
+                  <li>Don't use carousels in your UI.</li>
+                  <li>
+                    Instead, if you must stick content into little cards, let
+                    the horionztal layout wrap to additional lines.
+                  </li>
+                  <li>
+                    If you end up with too many horizontal lines of content,
+                    then you definitely have too many items that can be accessed
+                    via a horizontally panning UI. You need a different UI
+                    altogether.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p class="more">
+              <a href="/posts/why-i-hate-carousels/">Read more …</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/posts/intrinsic-motivation-an-anecdote/">
+            <span itemprop="name"
+              >Intrinsic and Extrinsic Motivation: An anecdote</span
             >
           </a>
         </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2020-08-28" itemprop="datePublished"
-              >August 28, 2020</time
-            >
-          </span>
+        <div class="summary-row">
+          <a href="/posts/intrinsic-motivation-an-anecdote/">
+            <img
+              src="/img/8An-nTOVbA-512.png"
+              alt="Intrinsic vs. extrinsic"
+              class="noinvert hero"
+              width="512"
+              height="512"
+            />
+          </a>
 
-          <span></span>
-          <span class="tag">
-            <a href="/tags/meta/">#Meta</a>
-          </span>
-        </nav>
+          <div>
+            <nav>
+              <small>
+                Published on
+                <time datetime="2025-03-22" itemprop="datePublished"
+                  >March 22, 2025</time
+                >.
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag">
+                    <a href="/tags/culture/">#Culture</a>
+                  </span>
+                </li>
+                <li>
+                  <span class="tag">
+                    <a href="/tags/career/">#Career</a>
+                  </span>
+                </li>
+                <li>
+                  <span class="tag">
+                    <a href="/tags/inclusion-and-equity/"
+                      >#Inclusion and Equity</a
+                    >
+                  </span>
+                </li>
+              </menu>
+            </nav>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  Intrinsic motivation is always better than extrinsic
+                  motivation. But not as good as it is when one is motivated
+                  both intrinsically and extrinsically.
+                </p>
+              </div>
+            </div>
+            <p class="more">
+              <a href="/posts/intrinsic-motivation-an-anecdote/">Read more …</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/series/structure-of-experience/flame/"
+            ><span class="series-name">Structure Of Experience</span>:
+            <span itemprop="name">Act III: Flame</span>
+          </a>
+        </h3>
+        <div class="summary-row">
+          <div>
+            <nav>
+              <small>
+                Published on
+                <time datetime="2025-05-07" itemprop="datePublished"
+                  >May 7, 2025</time
+                >.
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag">
+                    <a href="/tags/ai/">#AI</a>
+                  </span>
+                </li>
+              </menu>
+            </nav>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  The map is not the territory. A picture of a flame is not a
+                  flame. A description of a neural network is not a brain. A
+                  simulation of thought is not a consciousness.
+                </p>
+              </div>
+            </div>
+            <p class="more">
+              <a href="/series/structure-of-experience/flame/">Read more …</a>
+            </p>
+          </div>
+        </div>
       </div>
     </footer>
 

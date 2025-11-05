@@ -32,16 +32,16 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
-    <link rel="stylesheet" href="/styles/katex.min.css" />
     <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Geist:wght@100..900&family=Inconsolata:wght@200..900&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
     />
+    <link rel="stylesheet" href="/styles/katex.min.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link rel="stylesheet" href="/styles/anExJ29O9C.css" />
+    <link rel="stylesheet" href="/styles/aro4OGNh0r.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -68,38 +68,36 @@
       </nav>
     </header>
 
-    <article
-      class="container"
-      itemscope=""
-      itemtype="https://schema.org/BlogPosting"
-    >
+    <article itemscope="" itemtype="https://schema.org/BlogPosting">
       <link itemprop="url" href="/posts/the-lettergrade-rule/" />
       <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-      <header>
-        <h1 itemprop="name">The Lettergrade Rule</h1>
-        <nav>
-          <span>
-            <span class="date"
-              >Posted on
+      <header class="container">
+        <div class="">
+          <h1 itemprop="name">The Lettergrade Rule</h1>
+          <nav>
+            <div class="metadata">
+              Published on
               <time datetime="2022-09-16" itemprop="datePublished"
                 >September 16, 2022</time
-              ></span
-            >&nbsp;by
-            <span class="author" itemprop="author">Asanka Herath</span></span
-          >
-          <span></span>
-          <span class="tag">
-            <a href="/tags/engineering/">#engineering</a>
-          </span>
-        </nav>
-        <div>
-          <span class="readingtime">
-            Estimated reading time is 3 minutes.
-          </span>
+              >
+              by <span class="author" itemprop="author">Asanka Herath</span>.
+
+              <br />
+              Estimated reading time is <time>3 minutes</time>.
+            </div>
+            <span></span>
+            <menu class="tags">
+              <li>
+                <span class="tag">
+                  <a href="/tags/engineering/">#Engineering</a>
+                </span>
+              </li>
+            </menu>
+          </nav>
         </div>
       </header>
 
-      <main itemprop="articleBody">
+      <main itemprop="articleBody" class="container">
         <p>How do you know when a code review is “done”?</p>
         <p>
           Let’s say you are the reviewer and see many small changes you’d like
@@ -156,7 +154,7 @@
         </ul>
       </main>
 
-      <footer>
+      <footer class="container">
         <div>
           <p>
             Last modified: <time datetime="2022-09-16">September 16, 2022</time>
@@ -170,202 +168,248 @@
     <footer class="container">
       <h2>More posts from this blog ...</h2>
       <div
-        class="post-card"
+        class="post-summary"
         itemscope=""
         itemtype="https://schema.org/BlogPosting"
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/posts/visualizing-people/">
-            <span itemprop="name">Visualizing Internet Users</span>
+          <a itemprop="url" href="/posts/shannon-paper/">
+            <span itemprop="name">Shannon Paper</span>
           </a>
         </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2020-11-21" itemprop="datePublished"
-              >November 21, 2020</time
-            >
-          </span>
-
-          <span></span>
-          <span class="tag">
-            <a href="/tags/engineering/">#Engineering</a>
-          </span>
-          <span class="tag">
-            <a href="/tags/curiosity/">#Curiosity</a>
-          </span>
-        </nav>
-      </div>
-
-      <div
-        class="post-card"
-        itemscope=""
-        itemtype="https://schema.org/BlogPosting"
-      >
-        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <h3 class="title">
-          <a itemprop="url" href="/posts/remarkable-first-impressions/">
-            <span itemprop="name">Note-taking on a reMarkable 2</span>
-          </a>
-        </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2021-12-30" itemprop="datePublished"
-              >December 30, 2021</time
-            >
-          </span>
-
-          <span></span>
-          <span class="tag">
-            <a href="/tags/remarkable-2/">#Remarkable 2</a>
-          </span>
-          <span class="tag">
-            <a href="/tags/reviews/">#Reviews</a>
-          </span>
-        </nav>
-        <div>
-          <div class="summary-line">
-            <div class="summary" itemprop="abstract">
-              <p>Sentiments after using the reMarkable 2 tablet for a month.</p>
+        <div class="summary-row">
+          <div>
+            <nav>
+              <small>
+                Published on
+                <time datetime="2021-03-26" itemprop="datePublished"
+                  >March 26, 2021</time
+                >.
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag">
+                    <a href="/tags/math/">#Math</a>
+                  </span>
+                </li>
+              </menu>
+            </nav>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  Claude Shannon's
+                  <em>A mathematical theory of communication</em> is an oft
+                  cited classic in information theory. Let's dive in and try to
+                  tease apart the &quot;why&quot;s that are often overlooked
+                  when people build on top of the introduced theory. They are
+                  definitely things that I didn't consider to be obvious without
+                  the benefit of reading the paper.
+                </p>
+              </div>
             </div>
+            <p class="more"><a href="/posts/shannon-paper/">Read more …</a></p>
           </div>
-          <p class="more">
-            <a href="/posts/remarkable-first-impressions/">Read more …</a>
-          </p>
         </div>
       </div>
 
       <div
-        class="post-card"
+        class="post-summary"
         itemscope=""
         itemtype="https://schema.org/BlogPosting"
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/posts/syntax-highlighting/">
-            <span itemprop="name">On Highlighting Syntax vs. Semantics</span>
+          <a itemprop="url" href="/posts/darpa-heilmeier-catechism/">
+            <span itemprop="name">DARPA&#39;s Heilmeier Catechism</span>
           </a>
         </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2022-02-12" itemprop="datePublished"
-              >February 12, 2022</time
-            >
-          </span>
-
-          <span></span>
-          <span class="tag">
-            <a href="/tags/engineering/">#Engineering</a>
-          </span>
-        </nav>
-        <div>
-          <div class="summary-line">
-            <div class="summary" itemprop="abstract">
-              <p>
-                Takes a look at an alternate form of code highlighting based on
-                core semantics instead of syntactic role.
-              </p>
+        <div class="summary-row">
+          <div>
+            <nav>
+              <small>
+                Published on
+                <time datetime="2022-06-28" itemprop="datePublished"
+                  >June 28, 2022</time
+                >.
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag">
+                    <a href="/tags/engineering/">#Engineering</a>
+                  </span>
+                </li>
+              </menu>
+            </nav>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  A set of questions help you think through and evaluate
+                  proposed projects and research programs.
+                </p>
+              </div>
             </div>
+            <p class="more">
+              <a href="/posts/darpa-heilmeier-catechism/">Read more …</a>
+            </p>
           </div>
-          <p class="more">
-            <a href="/posts/syntax-highlighting/">Read more …</a>
-          </p>
         </div>
       </div>
 
       <div
-        class="post-card"
+        class="post-summary"
         itemscope=""
         itemtype="https://schema.org/BlogPosting"
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a
-            itemprop="url"
-            href="/posts/gender-gap-in-adolescent-mental-health/"
-          >
-            <span itemprop="name"
-              >On Gender Gap in Adolescent Mental Health</span
-            >
+          <a itemprop="url" href="/posts/the-point-of-a-strategy/">
+            <span itemprop="name">The Point of a Strategy</span>
           </a>
         </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2022-03-01" itemprop="datePublished"
-              >March 1, 2022</time
-            >
-          </span>
-
-          <span></span>
-          <span class="tag">
-            <a href="/tags/inclusion-and-equity/">#Inclusion and Equity</a>
-          </span>
-        </nav>
-        <div>
-          <div class="summary-line">
-            <div class="summary" itemprop="abstract">
-              <p>
-                A recent study found that more gender-equal countries have
-                larger gender gaps in mental health. I look at the data that
-                seems to have yielded this counter-intuitive results and find it
-                lacking.
-              </p>
+        <div class="summary-row">
+          <div>
+            <nav>
+              <small>
+                Published on
+                <time datetime="2023-07-24" itemprop="datePublished"
+                  >July 24, 2023</time
+                >.
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag">
+                    <a href="/tags/career/">#Career</a>
+                  </span>
+                </li>
+                <li>
+                  <span class="tag">
+                    <a href="/tags/engineering/">#Engineering</a>
+                  </span>
+                </li>
+              </menu>
+            </nav>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>The only useful strategy is one that reduces risks.</p>
+              </div>
             </div>
+            <p class="more">
+              <a href="/posts/the-point-of-a-strategy/">Read more …</a>
+            </p>
           </div>
-          <p class="more">
-            <a href="/posts/gender-gap-in-adolescent-mental-health/"
-              >Read more …</a
-            >
-          </p>
         </div>
       </div>
 
       <div
-        class="post-card"
+        class="post-summary"
         itemscope=""
         itemtype="https://schema.org/BlogPosting"
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h3 class="title">
-          <a itemprop="url" href="/posts/use-drop-not-edit/">
-            <span itemprop="name"
-              >Vim: Use Drop Not Edit, SBuffer Not Buffer</span
-            >
+          <a itemprop="url" href="/posts/intermezzo-2025/">
+            <span itemprop="name">Intermission - Q1 of 2025</span>
           </a>
         </h3>
-        <nav>
-          <span class="date">
-            Last updated on
-            <time datetime="2020-07-07" itemprop="datePublished"
-              >July 7, 2020</time
-            >
-          </span>
+        <div class="summary-row">
+          <a href="/posts/intermezzo-2025/">
+            <img
+              src="/img/UalksBToBr-800.png"
+              alt="A big red button labelled **DO NOT PRESS** is attached to the top of an ominous looking device to which many wires and conduits are attached."
+              class="noinvert hero"
+              width="800"
+              height="532"
+            />
+          </a>
 
-          <span></span>
-          <span class="tag">
-            <a href="/tags/tools/">#Tools</a>
-          </span>
-          <span class="tag">
-            <a href="/tags/vim/">#Vim</a>
-          </span>
-        </nav>
-        <div>
-          <div class="summary-line">
-            <div class="summary" itemprop="abstract">
-              <p>
-                Use the <code>:drop</code> command instead of
-                <code>:edit</code> in Vim. It will reuse an existing window
-                instead of creating a new one.
-              </p>
+          <div>
+            <nav>
+              <small
+                >Originally published on
+                <time datetime="2025-04-07" itemprop="dateCreated"
+                  >April 7, 2025</time
+                >, and updated on
+                <time datetime="2025-05-03" itemprop="datePublished"
+                  >May 3, 2025</time
+                >
+                .
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag">
+                    <a href="/tags/culture/">#Culture</a>
+                  </span>
+                </li>
+              </menu>
+            </nav>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  Hate can be suppressed temporarily, but cannot be contained
+                  for too long.
+                </p>
+              </div>
             </div>
+            <p class="more">
+              <a href="/posts/intermezzo-2025/">Read more …</a>
+            </p>
           </div>
-          <p class="more">
-            <a href="/posts/use-drop-not-edit/">Read more …</a>
-          </p>
+        </div>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h3 class="title">
+          <a itemprop="url" href="/series/unsung-team-roles/incentives/"
+            ><span class="series-name">Unsung Team Roles</span>:
+            <span itemprop="name">Incentives</span>
+          </a>
+        </h3>
+        <div class="summary-row">
+          <div>
+            <nav>
+              <small>
+                Published on
+                <time datetime="2025-08-12" itemprop="datePublished"
+                  >August 12, 2025</time
+                >.
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag">
+                    <a href="/tags/organizations/">#Organizations</a>
+                  </span>
+                </li>
+              </menu>
+            </nav>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  For a team to succeed, it needs the flexibility to
+                  self-organize, which can lead to some members taking on more
+                  work. To avoid burnout, these extra contributions must be
+                  rewarded. Good managers are key, as they must recognize
+                  individual efforts and their team-wide impact. Well-designed
+                  incentives foster collaboration and reward those who
+                  strengthen the team, while poor incentives cause employees to
+                  stick rigidly to their roles and let the team fail.
+                </p>
+              </div>
+            </div>
+            <p class="more">
+              <a href="/series/unsung-team-roles/incentives/">Read more …</a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
