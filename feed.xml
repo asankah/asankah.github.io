@@ -5,13 +5,74 @@
   <link href="https://xn--izc.com/feed.xml" rel="self" />
   <link href="https://xn--izc.com/" />
   <updated>
-    2025-10-05T00:00:00Z
+    2025-12-16T00:00:00Z
   </updated>
   <id>https://xn--izc.com/</id>
   <author>
     <name>Asanka Herath</name>
     <email>asanka@gmail.com</email>
   </author>
+    <entry>
+      <title>What&#39;s your cog ratio?</title>
+      <link href="https://xn--izc.com/posts/cog-ratio/" />
+      <updated>2025-12-16T00:00:00Z</updated>
+      <id>https://xn--izc.com/posts/cog-ratio/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;As far as product development is concerned, the only thing that
+matters is the change we make in the user experience. We want our users
+to be happier because our product exists or, at the very least, less
+sad.&lt;/p&gt;
+&lt;p&gt;So when we build things we expect that our work will result in a
+positive change for our users.&lt;/p&gt;
+&lt;p&gt;However not everyone is in the business of making direct changes to
+products. In fact not even developers&lt;a href=&quot;https://xn--izc.com/posts/cog-ratio/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; spend every minute
+building things. Instead most of the work on a mature product has to do
+with planning, monitoring, testing, discussing, deliberating, and doing
+all manner of tasks that have no direct bearing on the material&lt;a href=&quot;https://xn--izc.com/posts/cog-ratio/#fn2&quot; class=&quot;footnote-ref&quot; id=&quot;fnref2&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; composition of the product.&lt;/p&gt;
+&lt;p&gt;Roles like program managers and product managers are one more degree
+removed from the engineered product. On top of that managers, HR,
+finance, and all the supporting roles are even further removed from the
+user experience.&lt;/p&gt;
+&lt;p&gt;Support infrastructure like build systems, testing infrastructure,
+and monitoring infrastructure help people build, monitor, and improve
+the product. However, the people working on the infrastracture are even
+further removed from the form and function of the final product.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/cog-ratio/arthur-granson-machine-with-concrete.jpg&quot; class=&quot;noinvert&quot; alt=&quot;Arthur Ganson - Machine with Concrete. The gear reductions mean the final gear will make one revolution in over 2 trillion years. The machine runs uninterrupted even though the final gear is embedded in concrete, and cannot rotate. CC BY-SA 3.0&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Arthur Ganson - &lt;a href=&quot;https://en.wikipedia.org/wiki/Arthur_Ganson#/media/File:Arthur_Ganson-Machine_with_Concrete-AEC-002.jpg&quot;&gt;Machine
+with Concrete&lt;/a&gt;. The gear reductions mean the final gear will make one
+revolution in over 2 trillion years. The machine runs uninterrupted even
+though the final gear is embedded in concrete, and cannot rotate. CC
+BY-SA 3.0&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;In common parlance, the term &lt;em&gt;cog ratio&lt;/em&gt; refers to the ratio
+of the number of teeth of one cog to the number of teeth of another cog.
+It translates to the number of turns we expect from the driven cog for
+each turn of the driving cog.&lt;/p&gt;
+&lt;p&gt;It’s cliche to think of ourselves as cogs in a large machine. But if
+we do, it seems natural to wonder what our cog ratio is with respect to
+the final products we ship our users.&lt;/p&gt;
+&lt;p&gt;This is specially true when the products we work on are not end user
+products, but are either infrastructure or support products that help
+people who help people who … build the product. What would the effect be
+if this product or service you are working on didn’t exist? By how much
+do you think your work will improve the lives of our users?&lt;/p&gt;
+&lt;p&gt;Does the product improve no matter how fast you turn?&lt;/p&gt;
+&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;Contrary to common belief, developers in larger outfits
+spend most of their time communicating with each other rather than
+building things. See &lt;a href=&quot;https://komoroske.com/slime-mold/&quot;&gt;Coordination Headwinds&lt;/a&gt; by
+Alex Komoroske.&lt;a href=&quot;https://xn--izc.com/posts/cog-ratio/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn2&quot;&gt;&lt;p&gt;We are using the term “material” loosely here, since
+software products aren’t technically material. It refers to the bits and
+bytes that comprise the product.&lt;a href=&quot;https://xn--izc.com/posts/cog-ratio/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+
+      </content>
+    </entry>
     <entry>
       <title>Optimal line-length for publishing on the web</title>
       <link href="https://xn--izc.com/posts/optimal-line-length/" />
