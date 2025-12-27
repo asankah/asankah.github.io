@@ -1,87 +1,97 @@
 :root {
   color-scheme: light dark;
   --background: light-dark(rgb(239, 239, 239), rgb(30, 30, 30));
-  --border-color: light-dark(rgb(142, 124, 124), rgb(74, 68, 45));
-  --aside-border-color: light-dark(rgb(149, 149, 149), rgb(101, 101, 101));
-  --text-color: light-dark(rgb(46, 46, 46), rgb(224, 224, 224));
-  --blockquote-color: light-dar(rgb(49, 49, 49), rgb(175, 175, 175));
-  --heading-text-color: light-dark(rgb(72, 72, 72), rgb(217, 216, 212));
-  --dimmed-text-color: light-dark(rgb(78, 78, 78), rgb(163, 163, 163));
-  --shadow-color: light-dark(rgb(85, 85, 85), rgb(238, 238, 238));
-  --notice-background-color: light-dark(rgb(204, 134, 134), rgb(87, 29, 29));
-  --table-header-border-color: light-dark(rgb(85, 77, 77), rgb(173, 173, 173));
-  --table-odd-row-color: light-dark(rgb(214, 214, 214), rgb(43, 43, 43));
-  --tag-background-color: light-dark(rgb(206, 202, 181), rgb(50, 50, 50));
-  --tag-text-color: light-dark(rgb(46, 46, 46), rgb(190, 186, 186));
+  --heading-text-color: #349865;
+  --text-color: light-dark(rgb(30, 30, 30), rgb(239, 239, 239));
+  --dimmed-text-color: color-mix(in oklch, light-dark(rgb(30, 30, 30), rgb(239, 239, 239)) 60%, light-dark(rgb(239, 239, 239), rgb(30, 30, 30)));
+  --border-color: #395E8E;
+  --aside-border-color: #395E8E;
+  --blockquote-color: #D8A24A;
+  --shadow-color: light-dark(rgb(30, 30, 30), rgb(239, 239, 239));
+  --notice-background-color: color-mix(in oklch, #D86C4A 60%, light-dark(rgb(239, 239, 239), rgb(30, 30, 30)));
+  --table-header-border-color: color-mix(in oklch, #D8A24A 60%, light-dark(rgb(239, 239, 239), rgb(30, 30, 30)));
+  --table-odd-row-color: color-mix(in oklch, #D8A24A 30%, light-dark(rgb(239, 239, 239), rgb(30, 30, 30)));
+  --tag-background-color: color-mix(in oklch, #395E8E 30%, light-dark(rgb(239, 239, 239), rgb(30, 30, 30)));
+  --tag-text-color: light-dark(rgb(30, 30, 30), rgb(239, 239, 239));
+}
+
+h1, h2, h3, h4 {
+  color: var(--heading-text-color);
+}
+
+body {
+  background: var(--background);
+  color: var(--text-color);
 }
 
 :root {
   --font-weight-normal: 400;
   --font-weight-bold: 600;
-  --font-size-aside: 14pt;
+  --font-size-aside: 12pt;
   --font-size-block-code: 10pt;
   --font-size-blockquote: 18pt;
-  --font-size-body: 16pt;
-  --font-size-caption: 14pt;
+  --font-size-body: 12pt;
+  --font-size-caption: 10pt;
   --font-size-displaymath: 18pt;
-  --font-size-h1: 22pt;
+  --font-size-h1: 32pt;
   --font-size-h1-title: 18pt;
   --font-size-h2: 20pt;
   --font-size-h2-footer: 14pt;
   --font-size-h3: 18pt;
   --font-size-h4: 16pt;
-  --font-size-inline-code: 12pt;
+  --font-size-inline-code: 10pt;
   --font-size-preposition: 14pt;
-  --font-size-series-container: 14pt;
-  --font-size-small: 14pt;
-  --font-size-table-caption: 14pt;
-  --font-size-tag: 14pt;
+  --font-size-series-container: 12pt;
+  --font-size-small: 10pt;
+  --font-size-table-caption: 11pt;
+  --font-size-tag: 11pt;
   font-size: 16pt;
 }
 
 body {
-  font-family: "EB Garamond", serif;
+  font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: var(--font-weight-normal);
   font-size: var(--font-size-body);
   line-height: 1.5;
+  font-variation-settings: "wdth" 100;
 }
 
 h1 {
-  font-family: "Geist", sans-serif;
+  font-family: "Crimson Pro", serif;
   font-optical-sizing: auto;
   font-weight: var(--font-weight-bold);
   font-style: normal;
   font-size: var(--font-size-h1);
-  line-height: 1;
+  line-height: 1.2;
 }
 
 h2 {
-  font-family: "Geist", sans-serif;
+  font-family: "Crimson Pro", serif;
   font-optical-sizing: auto;
   font-weight: var(--font-weight-bold);
   font-style: normal;
   font-size: var(--font-size-h2);
-  line-height: 1;
+  line-height: 1.2;
 }
 
 h3 {
-  font-family: "Geist", sans-serif;
+  font-family: "Crimson Pro", serif;
   font-optical-sizing: auto;
   font-weight: var(--font-weight-bold);
   font-style: normal;
   font-size: var(--font-size-h3);
-  line-height: 1;
+  line-height: 1.2;
 }
 
 h4 {
-  font-family: "Geist", sans-serif;
+  font-family: "Crimson Pro", serif;
   font-optical-sizing: auto;
   font-weight: var(--font-weight-bold);
   font-style: normal;
   font-size: var(--font-size-h4);
-  line-height: 1;
+  line-height: 1.2;
 }
 
 code {
@@ -106,12 +116,12 @@ pre {
 
 .references::before {
   content: "References";
-  font-family: "Geist", sans-serif;
+  font-family: "Crimson Pro", serif;
   font-optical-sizing: auto;
   font-weight: var(--font-weight-bold);
   font-style: normal;
   font-size: var(--font-size-h2);
-  line-height: 1;
+  line-height: 1.2;
   display: block;
   padding-bottom: 1rem;
 }
@@ -314,12 +324,13 @@ code span.wa {
 @media (width < 70rem) {
   .sidenote-1, sidenote-card-1 {
     margin-left: 4rem;
-    font-family: "EB Garamond", serif;
+    font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: var(--font-weight-normal);
     font-size: var(--font-size-aside);
     line-height: 1.5;
+    font-variation-settings: "wdth" 100;
     border-top: 3px solid;
     border-bottom: 1px solid;
     border-image: linear-gradient(in oklab 90deg, rgba(0, 0, 0, 0) 0%, var(--border-color) 50%, rgba(0, 0, 0, 0) 100%) 10;
@@ -335,12 +346,13 @@ code span.wa {
     margin-left: 1rem;
     margin-right: 1rem;
     max-width: calc(anchor-size(width) / 2);
-    font-family: "EB Garamond", serif;
+    font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: var(--font-weight-normal);
     font-size: var(--font-size-aside);
     line-height: 1.5;
+    font-variation-settings: "wdth" 100;
     border-top: 3px solid;
     border-bottom: 1px solid;
     border-image: linear-gradient(in oklab 90deg, rgba(0, 0, 0, 0) 0%, var(--border-color) 50%, rgba(0, 0, 0, 0) 100%) 10;
@@ -358,12 +370,13 @@ code span.wa {
 @media (width < 70rem) {
   .sidenote-2, sidenote-card-2 {
     margin-left: 4rem;
-    font-family: "EB Garamond", serif;
+    font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: var(--font-weight-normal);
     font-size: var(--font-size-aside);
     line-height: 1.5;
+    font-variation-settings: "wdth" 100;
     border-top: 3px solid;
     border-bottom: 1px solid;
     border-image: linear-gradient(in oklab 90deg, rgba(0, 0, 0, 0) 0%, var(--border-color) 50%, rgba(0, 0, 0, 0) 100%) 10;
@@ -379,12 +392,13 @@ code span.wa {
     margin-left: 1rem;
     margin-right: 1rem;
     max-width: calc(anchor-size(width) / 2);
-    font-family: "EB Garamond", serif;
+    font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: var(--font-weight-normal);
     font-size: var(--font-size-aside);
     line-height: 1.5;
+    font-variation-settings: "wdth" 100;
     border-top: 3px solid;
     border-bottom: 1px solid;
     border-image: linear-gradient(in oklab 90deg, rgba(0, 0, 0, 0) 0%, var(--border-color) 50%, rgba(0, 0, 0, 0) 100%) 10;
@@ -402,12 +416,13 @@ code span.wa {
 @media (width < 70rem) {
   .sidenote-3, sidenote-card-3 {
     margin-left: 4rem;
-    font-family: "EB Garamond", serif;
+    font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: var(--font-weight-normal);
     font-size: var(--font-size-aside);
     line-height: 1.5;
+    font-variation-settings: "wdth" 100;
     border-top: 3px solid;
     border-bottom: 1px solid;
     border-image: linear-gradient(in oklab 90deg, rgba(0, 0, 0, 0) 0%, var(--border-color) 50%, rgba(0, 0, 0, 0) 100%) 10;
@@ -423,12 +438,13 @@ code span.wa {
     margin-left: 1rem;
     margin-right: 1rem;
     max-width: calc(anchor-size(width) / 2);
-    font-family: "EB Garamond", serif;
+    font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: var(--font-weight-normal);
     font-size: var(--font-size-aside);
     line-height: 1.5;
+    font-variation-settings: "wdth" 100;
     border-top: 3px solid;
     border-bottom: 1px solid;
     border-image: linear-gradient(in oklab 90deg, rgba(0, 0, 0, 0) 0%, var(--border-color) 50%, rgba(0, 0, 0, 0) 100%) 10;
@@ -446,12 +462,13 @@ code span.wa {
 @media (width < 70rem) {
   .sidenote-4, sidenote-card-4 {
     margin-left: 4rem;
-    font-family: "EB Garamond", serif;
+    font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: var(--font-weight-normal);
     font-size: var(--font-size-aside);
     line-height: 1.5;
+    font-variation-settings: "wdth" 100;
     border-top: 3px solid;
     border-bottom: 1px solid;
     border-image: linear-gradient(in oklab 90deg, rgba(0, 0, 0, 0) 0%, var(--border-color) 50%, rgba(0, 0, 0, 0) 100%) 10;
@@ -467,12 +484,13 @@ code span.wa {
     margin-left: 1rem;
     margin-right: 1rem;
     max-width: calc(anchor-size(width) / 2);
-    font-family: "EB Garamond", serif;
+    font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: var(--font-weight-normal);
     font-size: var(--font-size-aside);
     line-height: 1.5;
+    font-variation-settings: "wdth" 100;
     border-top: 3px solid;
     border-bottom: 1px solid;
     border-image: linear-gradient(in oklab 90deg, rgba(0, 0, 0, 0) 0%, var(--border-color) 50%, rgba(0, 0, 0, 0) 100%) 10;
@@ -484,8 +502,6 @@ code span.wa {
 }
 
 body {
-  background: var(--background);
-  color: var(--text-color);
   margin: 0;
 }
 body > header {
@@ -647,12 +663,13 @@ menu.tags * {
 
 header small,
 nav small {
-  font-family: "EB Garamond", serif;
+  font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-style: italic;
   font-weight: var(--font-weight-normal);
   font-size: var(--font-size-small);
   line-height: 1.5;
+  font-variation-settings: "wdth" 100;
   color: var(--dimmed-text-color);
 }
 
@@ -705,12 +722,14 @@ nav .disabled {
 }
 
 .tag:not(.katex-html > .tag) * {
-  font-family: "Geist", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
-  font-weight: var(--font-weight-normal);
   font-style: normal;
+  font-weight: var(--font-weight-normal);
   font-size: var(--font-size-tag);
-  line-height: 1;
+  line-height: 1.5;
+  font-variation-settings: "wdth" 100;
+  font-variant-caps: titling-caps;
   color: var(--tag-text-color);
 }
 .tag:not(.katex-html > .tag) *[aria-current=page] {
@@ -732,12 +751,12 @@ nav .disabled {
 }
 
 .label {
-  font-family: "Geist", sans-serif;
+  font-family: "Crimson Pro", serif;
   font-optical-sizing: auto;
   font-weight: var(--font-weight-bold);
   font-style: normal;
   font-size: var(--font-size-body);
-  line-height: 1;
+  line-height: 1.2;
 }
 
 .smaller {
@@ -749,12 +768,13 @@ article header {
   position: relative;
 }
 article header .metadata {
-  font-family: "EB Garamond", serif;
+  font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-style: italic;
   font-weight: var(--font-weight-normal);
   font-size: var(--font-size-small);
   line-height: 1.5;
+  font-variation-settings: "wdth" 100;
 }
 article header .banner {
   z-index: -1;
@@ -790,12 +810,13 @@ article .katex {
   font-size: var(--font-size-displaymath);
 }
 article > blockquote {
-  font-family: "EB Garamond", serif;
+  font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-style: italic;
   font-weight: var(--font-weight-normal);
   font-size: var(--font-size-blockquote);
   line-height: 1.5;
+  font-variation-settings: "wdth" 100;
 }
 article figure:has(> p:first-child) {
   margin-top: 0;
@@ -889,12 +910,12 @@ article .footnote-ref {
   margin-top: 0;
 }
 .series-container .series-title {
-  font-family: "Geist", sans-serif;
+  font-family: "Crimson Pro", serif;
   font-optical-sizing: auto;
   font-weight: var(--font-weight-bold);
   font-style: normal;
   font-size: var(--font-size-series-container);
-  line-height: 1;
+  line-height: 1.2;
 }
 .series-container .you-are-here {
   font-style: italic;
@@ -920,12 +941,12 @@ table {
   border-spacing: 0;
 }
 table thead {
-  font-family: "Geist", sans-serif;
+  font-family: "Crimson Pro", serif;
   font-optical-sizing: auto;
   font-weight: var(--font-weight-bold);
   font-style: normal;
   font-size: var(--font-size-body);
-  line-height: 1;
+  line-height: 1.2;
 }
 table thead th {
   font-weight: var(--font-weight-normal);
@@ -938,12 +959,12 @@ table tbody tr:nth-child(even) {
   background-color: var(--table-odd-row-color);
 }
 table caption {
-  font-family: "Geist", sans-serif;
+  font-family: "Crimson Pro", serif;
   font-optical-sizing: auto;
   font-weight: var(--font-weight-bold);
   font-style: normal;
   font-size: var(--font-size-table-caption);
-  line-height: 1;
+  line-height: 1.2;
   text-align: center;
   margin-bottom: 1rem;
 }
