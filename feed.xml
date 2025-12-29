@@ -401,7 +401,7 @@ P(&#92;omega) &#92;right)
 &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Where &lt;span class=&quot;math inline&quot;&gt;&#92;Omega&lt;/span&gt; is the set of all
 possible outcomes.&lt;/p&gt;
-&lt;h1 id=&quot;formalities&quot;&gt;Formalities&lt;/h1&gt;
+&lt;h2 id=&quot;formalities&quot;&gt;Formalities&lt;/h2&gt;
 &lt;p&gt;A common critique is that Shannon entropy can be misleading. Let’s
 see why.&lt;/p&gt;
 &lt;p&gt;Let’s start with a &lt;strong&gt;probability space&lt;/strong&gt;. It consists
@@ -457,14 +457,12 @@ H(P) = - &#92;sum_{&#92;omega &#92;in &#92;Omega} P(&#92;omega) &#92;cdot &#92;l
       <updated>2025-08-12T00:00:00Z</updated>
       <id>https://xn--izc.com/series/unsung-team-roles/incentives/</id>
       <content xml:lang="en" type="html">
-        &lt;div class=&quot;sidenote-host-1&quot;&gt;
-&lt;p&gt;Teams can fail in many ways&lt;a href=&quot;https://xn--izc.com/series/unsung-team-roles/incentives/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;. But when they succeed,
+        &lt;p&gt;Teams can fail in many ways&lt;a href=&quot;https://xn--izc.com/series/unsung-team-roles/incentives/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;. But when they succeed,
 the most critical roles are those that form the communication structures
 within and across teams. Forming these structures require teammates to
 have some level of autonomy. In turn this requires a team stucture that
 allows the team the freedom of movement to reconfigure itself to serve
 the teams’ goals.&lt;/p&gt;
-&lt;/div&gt;
 &lt;aside class=&quot;sidenote-1&quot;&gt;
 &lt;h4 id=&quot;no-heros&quot;&gt;No Heros&lt;/h4&gt;
 &lt;p&gt;Any organization whose success depends on their employees working
@@ -475,12 +473,14 @@ understand what organizational cross beams are necessary to keep the
 &lt;p&gt;See &lt;a href=&quot;https://sre.google/resources/practices-and-processes/no-heroes/&quot;&gt;Why
 Heroism Is Bad&lt;/a&gt; in the Google SRE site.&lt;/p&gt;
 &lt;/aside&gt;
+&lt;div class=&quot;sidenote-host-1&quot;&gt;
 &lt;p&gt;If the conditions are right, a healthy team will fill in the gaps by
 rebalancing their responsibilities. Such a rebalancing will inevitably
 lead to an uneven distribution of burden. With time the burden will
 become increasingly visceral, which will lead to burnout, resentment,
 and attrition. For an uneven burden to be sustained, that burden must be
 commesurately rewarded.&lt;/p&gt;
+&lt;/div&gt;
 &lt;p&gt;Accurately measuring the contributions of each team member is a
 hitherto unsolved problem. Managers are often left with gut instincts to
 fall back on, which comes with a laundry list of shortcomings like bias
