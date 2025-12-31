@@ -37,8 +37,7 @@
       href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Inconsolata:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap&family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles/katex.min.css" />
-    <link rel="stylesheet" href="/styles/s-6cLx0t1Y.css" />
+    <link rel="stylesheet" href="/styles/xwYp5imfW2.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -127,10 +126,7 @@
           If Hugo allowed configuring all this via frontmatter, that may
           introduce some tricky security issues.
         </p>
-        <p
-          style="anchor-name: --fnref1-anchor"
-          data-anchor-name="--fnref1-anchor"
-        >
+        <p>
           Say you download a Hugo theme from the web and try to build your site.
           A theme could include frontmatter that causes Pandoc to run an unsafe
           binary. That’s not great. So it is understandable that this kind of
@@ -140,6 +136,8 @@
             id="fnref1"
             role="doc-noteref"
             interestfor="fnref1-preview"
+            style="anchor-name: --fnref1-anchor"
+            data-anchor-name="--fnref1-anchor"
             ><sup>1</sup></a
           >. While my patch worked, it was safe only because I controlled every
           aspect of the blog.
@@ -178,10 +176,7 @@
         </p>
         <h2 id="templating">Templating</h2>
         <h3 id="webc-eleventy-is-broken">WebC + Eleventy Is Broken</h3>
-        <p
-          style="anchor-name: --fnref2-anchor"
-          data-anchor-name="--fnref2-anchor"
-        >
+        <p>
           Eleventy supports a templating language called
           <a href="https://www.11ty.dev/docs/languages/webc/">WebC</a>. It
           follows the web-component way of defining layouts, but can avoid much
@@ -194,6 +189,8 @@
             id="fnref2"
             role="doc-noteref"
             interestfor="fnref2-preview"
+            style="anchor-name: --fnref2-anchor"
+            data-anchor-name="--fnref2-anchor"
             ><sup>2</sup></a
           >.
         </p>
@@ -214,10 +211,7 @@
           didn’t try) require manual labor to get stuff into the bundles.
         </p>
         <h3 id="nunjucks-eleventy-works">Nunjucks + Eleventy Works</h3>
-        <p
-          style="anchor-name: --fnref3-anchor"
-          data-anchor-name="--fnref3-anchor"
-        >
+        <p>
           The next templating language I looked at was Nunjucks. I had briefly
           looked at Liquid as well, but for my purposes Nunjucks and Liquid
           seemed to be quite similar. Nunjucks won out because it had safer
@@ -227,6 +221,8 @@
             id="fnref3"
             role="doc-noteref"
             interestfor="fnref3-preview"
+            style="anchor-name: --fnref3-anchor"
+            data-anchor-name="--fnref3-anchor"
             ><sup>3</sup></a
           >.
         </p>
@@ -369,66 +365,60 @@
           </ol>
         </section>
 
-        <aside
-          id="fnref1-preview"
-          class="footnote-preview"
+        <div
           popover="auto"
+          class="footnote-preview-container"
+          id="fnref1-preview"
           style="position-anchor: --fnref1-anchor"
         >
-          <li id="fn1">
-            <p>
-              There are ways to mitigate this problem. For example, we could
-              restrict which flags can be inherited from themes, or require that
-              certain options can only be set from the top level
-              <code>hugo.yaml</code> file that the user controls.<a
-                href="#fnref1"
-                class="footnote-back"
-                role="doc-backlink"
-                >↩︎</a
-              >
-            </p>
-          </li>
-        </aside>
-        <aside
-          id="fnref2-preview"
-          class="footnote-preview"
+          <div class="footnote-preview-arrow" aria-hidden="true"></div>
+          <aside class="footnote-preview">
+            <div>
+              <p>
+                There are ways to mitigate this problem. For example, we could
+                restrict which flags can be inherited from themes, or require
+                that certain options can only be set from the top level
+                <code>hugo.yaml</code> file that the user controls.
+              </p>
+            </div>
+          </aside>
+        </div>
+        <div
           popover="auto"
+          class="footnote-preview-container"
+          id="fnref2-preview"
           style="position-anchor: --fnref2-anchor"
         >
-          <li id="fn2">
-            <p>
-              Not quite all the way true because use of shadow DOM and custom
-              elements was not a requirement.<a
-                href="#fnref2"
-                class="footnote-back"
-                role="doc-backlink"
-                >↩︎</a
-              >
-            </p>
-          </li>
-        </aside>
-        <aside
-          id="fnref3-preview"
-          class="footnote-preview"
+          <div class="footnote-preview-arrow" aria-hidden="true"></div>
+          <aside class="footnote-preview">
+            <div>
+              <p>
+                Not quite all the way true because use of shadow DOM and custom
+                elements was not a requirement.
+              </p>
+            </div>
+          </aside>
+        </div>
+        <div
           popover="auto"
+          class="footnote-preview-container"
+          id="fnref3-preview"
           style="position-anchor: --fnref3-anchor"
         >
-          <li id="fn3">
-            <p>
-              The defaults I’m referring to is what happens with a tag like
-              <code>{{ foo }}</code> where the contents of the variable
-              <code>foo</code> would be inserted into the document. Nunjucks
-              will treat the contents as unsafe and requires manually opting
-              into unsafe injection via <code>{{ foo | safe }}</code>. Liquid
-              will insert the contents with no escaping.<a
-                href="#fnref3"
-                class="footnote-back"
-                role="doc-backlink"
-                >↩︎</a
-              >
-            </p>
-          </li>
-        </aside>
+          <div class="footnote-preview-arrow" aria-hidden="true"></div>
+          <aside class="footnote-preview">
+            <div>
+              <p>
+                The defaults I’m referring to is what happens with a tag like
+                <code>{{ foo }}</code> where the contents of the variable
+                <code>foo</code> would be inserted into the document. Nunjucks
+                will treat the contents as unsafe and requires manually opting
+                into unsafe injection via <code>{{ foo | safe }}</code>. Liquid
+                will insert the contents with no escaping.
+              </p>
+            </div>
+          </aside>
+        </div>
       </main>
 
       <footer class="container">
@@ -451,45 +441,9 @@
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h2 class="title">
-          <a itemprop="url" href="/posts/inktober-stripes/">
-            <span itemprop="name">Inktober - Stripes</span>
-          </a>
-        </h2>
-        <div class="summary-row">
-          <div>
-            <nav>
-              <small>
-                Published on
-                <time datetime="2022-01-21" itemprop="datePublished"
-                  >January 21, 2022</time
-                >.
-              </small>
-              <span></span>
-              <menu class="tags">
-                <li>
-                  <span class="tag">
-                    #<a href="/tags/inktober/">Inktober</a>
-                  </span>
-                </li>
-              </menu>
-            </nav>
-            <p class="more">
-              <a href="/posts/inktober-stripes/">Read more …</a>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="post-summary"
-        itemscope=""
-        itemtype="https://schema.org/BlogPosting"
-      >
-        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <h2 class="title">
-          <a itemprop="url" href="/posts/git-autopush/">
+          <a itemprop="url" href="/posts/ansible-cli-sugar/">
             <span itemprop="name"
-              >Use Git hooks to automatically push after every commit</span
+              >Easier CLI for ad-hoc Ansible tasks and playbooks</span
             >
           </a>
         </h2>
@@ -498,8 +452,8 @@
             <nav>
               <small>
                 Published on
-                <time datetime="2022-07-05" itemprop="datePublished"
-                  >July 5, 2022</time
+                <time datetime="2020-06-01" itemprop="datePublished"
+                  >June 1, 2020</time
                 >.
               </small>
               <span></span>
@@ -512,56 +466,14 @@
             <div class="summary-row">
               <div itemprop="abstract">
                 <p>
-                  During before and after various Git operations, Git invokes
-                  special hooks that can be used execute custom scripts. This
-                  article explains how to use them to automatically push to an
-                  upstream repository every time you make a commit to a local
-                  repo.
-                </p>
-              </div>
-            </div>
-            <p class="more"><a href="/posts/git-autopush/">Read more …</a></p>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="post-summary"
-        itemscope=""
-        itemtype="https://schema.org/BlogPosting"
-      >
-        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <h2 class="title">
-          <a itemprop="url" href="/series/structure-of-experience/meaning/"
-            ><span class="series-name">Structure Of Experience</span>:
-            <span itemprop="name">Act I: Meaning</span>
-          </a>
-        </h2>
-        <div class="summary-row">
-          <div>
-            <nav>
-              <small>
-                Published on
-                <time datetime="2025-05-04" itemprop="datePublished"
-                  >May 4, 2025</time
-                >.
-              </small>
-              <span></span>
-              <menu class="tags">
-                <li>
-                  <span class="tag"> #<a href="/tags/ai/">AI</a> </span>
-                </li>
-              </menu>
-            </nav>
-            <div class="summary-row">
-              <div itemprop="abstract">
-                <p>
-                  Language builds meaning by combining your inner experiences.
+                  Encode the host and group names into the name of a wrapper
+                  script for quick ad-hoc invocation of Ansible tasks and
+                  playbooks.
                 </p>
               </div>
             </div>
             <p class="more">
-              <a href="/series/structure-of-experience/meaning/">Read more …</a>
+              <a href="/posts/ansible-cli-sugar/">Read more …</a>
             </p>
           </div>
         </div>
@@ -574,9 +486,8 @@
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h2 class="title">
-          <a itemprop="url" href="/series/unsung-team-roles/glue-people/"
-            ><span class="series-name">Unsung Team Roles</span>:
-            <span itemprop="name">Ode to Glue People</span>
+          <a itemprop="url" href="/posts/inktober-wild/">
+            <span itemprop="name">Inktober - Wild</span>
           </a>
         </h2>
         <div class="summary-row">
@@ -584,15 +495,56 @@
             <nav>
               <small>
                 Published on
-                <time datetime="2025-08-12" itemprop="datePublished"
-                  >August 12, 2025</time
+                <time datetime="2022-01-13" itemprop="datePublished"
+                  >January 13, 2022</time
                 >.
               </small>
               <span></span>
               <menu class="tags">
                 <li>
                   <span class="tag">
-                    #<a href="/tags/organizations/">Organizations</a>
+                    #<a href="/tags/inktober/">Inktober</a>
+                  </span>
+                </li>
+              </menu>
+            </nav>
+            <p class="more"><a href="/posts/inktober-wild/">Read more …</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h2 class="title">
+          <a
+            itemprop="url"
+            href="/posts/gender-gap-in-adolescent-mental-health/"
+          >
+            <span itemprop="name"
+              >On Gender Gap in Adolescent Mental Health</span
+            >
+          </a>
+        </h2>
+        <div class="summary-row">
+          <div>
+            <nav>
+              <small>
+                Published on
+                <time datetime="2022-03-01" itemprop="datePublished"
+                  >March 1, 2022</time
+                >.
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag">
+                    #<a href="/tags/inclusion-and-equity/"
+                      >Inclusion and Equity</a
+                    >
                   </span>
                 </li>
               </menu>
@@ -600,20 +552,17 @@
             <div class="summary-row">
               <div itemprop="abstract">
                 <p>
-                  While managers may be constrained in their communication,
-                  special individuals create unofficial channels where team
-                  members feel safe to share information. Acting as social hubs
-                  or &quot;speakeasies,&quot; they foster trust and enable the
-                  free flow of timely, factual information, which helps
-                  colleagues make better decisions and navigate turmoil. Despite
-                  their critical function in preventing team collapse and
-                  reducing isolation, this &quot;glue work&quot; is typically
-                  not formally recognized or compensated.
+                  A recent study found that more gender-equal countries have
+                  larger gender gaps in mental health. I look at the data that
+                  seems to have yielded this counter-intuitive results and find
+                  it lacking.
                 </p>
               </div>
             </div>
             <p class="more">
-              <a href="/series/unsung-team-roles/glue-people/">Read more …</a>
+              <a href="/posts/gender-gap-in-adolescent-mental-health/"
+                >Read more …</a
+              >
             </p>
           </div>
         </div>
@@ -626,44 +575,24 @@
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h2 class="title">
-          <a itemprop="url" href="/posts/an-intuition-on-entropy/">
-            <span itemprop="name">An Intuition on Shannon Entropy</span>
+          <a itemprop="url" href="/posts/darpa-heilmeier-catechism/">
+            <span itemprop="name">DARPA&#39;s Heilmeier Catechism</span>
           </a>
         </h2>
         <div class="summary-row">
-          <a href="/posts/an-intuition-on-entropy/">
-            <img
-              src="/img/4ywdW_OSoN-600.png"
-              alt="An allegorical pencil drawing of an ornate scale. The left pan represents &#39;Information&#39; with a neat pile of books and scrolls. The right pan represents &#39;Uncertainty&#39; with a chaotic vortex of dissolving papers, gears, and symbols. The scale is in perfect equilibrium, illustrating the conceptual balance between order and disorder."
-              class="hero"
-              width="600"
-              height="600"
-            />
-          </a>
-
           <div>
             <nav>
               <small>
                 Published on
-                <time datetime="2025-09-27" itemprop="datePublished"
-                  >September 27, 2025</time
+                <time datetime="2022-06-28" itemprop="datePublished"
+                  >June 28, 2022</time
                 >.
               </small>
               <span></span>
               <menu class="tags">
                 <li>
                   <span class="tag">
-                    #<a href="/tags/privacy/">Privacy</a>
-                  </span>
-                </li>
-                <li>
-                  <span class="tag">
-                    #<a href="/tags/programming/">Programming</a>
-                  </span>
-                </li>
-                <li>
-                  <span class="tag">
-                    #<a href="/tags/entropy/">Entropy</a>
+                    #<a href="/tags/engineering/">Engineering</a>
                   </span>
                 </li>
               </menu>
@@ -671,16 +600,49 @@
             <div class="summary-row">
               <div itemprop="abstract">
                 <p>
-                  Develop an intuition for Shannon entropy as a measure of
-                  information content. Using the game 'Guess Who' as a practical
-                  example, this post explains how entropy quantifies the
-                  reduction in ambiguity and builds up the mathematical
-                  formulation from basic principles.
+                  A set of questions help you think through and evaluate
+                  proposed projects and research programs.
                 </p>
               </div>
             </div>
             <p class="more">
-              <a href="/posts/an-intuition-on-entropy/">Read more …</a>
+              <a href="/posts/darpa-heilmeier-catechism/">Read more …</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h2 class="title">
+          <a itemprop="url" href="/posts/symbol-name-types/">
+            <span itemprop="name">Names for Name Conventions</span>
+          </a>
+        </h2>
+        <div class="summary-row">
+          <div>
+            <nav>
+              <small>
+                Published on
+                <time datetime="2020-08-24" itemprop="datePublished"
+                  >August 24, 2020</time
+                >.
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag">
+                    #<a href="/tags/engineering/">Engineering</a>
+                  </span>
+                </li>
+              </menu>
+            </nav>
+            <p class="more">
+              <a href="/posts/symbol-name-types/">Read more …</a>
             </p>
           </div>
         </div>

@@ -37,8 +37,7 @@
       href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Inconsolata:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap&family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles/katex.min.css" />
-    <link rel="stylesheet" href="/styles/s-6cLx0t1Y.css" />
+    <link rel="stylesheet" href="/styles/xwYp5imfW2.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -99,10 +98,7 @@
 
       <main itemprop="articleBody" class="container">
         <p>Names I’ve seen used to refer to naming conventions:</p>
-        <ul
-          style="anchor-name: --fnref1-anchor"
-          data-anchor-name="--fnref1-anchor"
-        >
+        <ul>
           <li>
             <code>snake_case</code>, <code>hacker_case</code>,
             <code>unix_hacker_style</code> : Everything is lower case, though
@@ -122,6 +118,8 @@
               id="fnref1"
               role="doc-noteref"
               interestfor="fnref1-preview"
+              style="anchor-name: --fnref1-anchor"
+              data-anchor-name="--fnref1-anchor"
               ><sup>1</sup></a
             >, CSS styles, commands (e.g. <code>git-receive-pack</code>).
           </li>
@@ -159,27 +157,26 @@
           </ol>
         </section>
 
-        <aside
-          id="fnref1-preview"
-          class="footnote-preview"
+        <div
           popover="auto"
+          class="footnote-preview-container"
+          id="fnref1-preview"
           style="position-anchor: --fnref1-anchor"
         >
-          <li id="fn1">
-            <p>
-              Opinions vary on whether the correct convention for command line
-              options is <code>snake_case</code> or <code>kabob-case</code>.
-              Long form options are often written as <code>--long-option</code>,
-              but can also be <code>--long_option</code> (where the delimiter
-              within the option is <code>_</code>).<a
-                href="#fnref1"
-                class="footnote-back"
-                role="doc-backlink"
-                >↩︎</a
-              >
-            </p>
-          </li>
-        </aside>
+          <div class="footnote-preview-arrow" aria-hidden="true"></div>
+          <aside class="footnote-preview">
+            <div>
+              <p>
+                Opinions vary on whether the correct convention for command line
+                options is <code>snake_case</code> or <code>kabob-case</code>.
+                Long form options are often written as
+                <code>--long-option</code>, but can also be
+                <code>--long_option</code> (where the delimiter within the
+                option is <code>_</code>).
+              </p>
+            </div>
+          </aside>
+        </div>
       </main>
 
       <footer class="container">
@@ -202,13 +199,8 @@
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h2 class="title">
-          <a
-            itemprop="url"
-            href="/posts/sometimes-its-the-interviewers-who-suck/"
-          >
-            <span itemprop="name"
-              >Sometimes It&#39;s the Interviewers Who Suck</span
-            >
+          <a itemprop="url" href="/posts/identity-domains/">
+            <span itemprop="name">Identity Domains</span>
           </a>
         </h2>
         <div class="summary-row">
@@ -216,21 +208,29 @@
             <nav>
               <small>
                 Published on
-                <time datetime="2021-03-20" itemprop="datePublished"
-                  >March 20, 2021</time
+                <time datetime="2020-05-01" itemprop="datePublished"
+                  >May 1, 2020</time
                 >.
               </small>
               <span></span>
               <menu class="tags">
                 <li>
-                  <span class="tag"> #<a href="/tags/career/">Career</a> </span>
+                  <span class="tag">
+                    #<a href="/tags/privacy/">Privacy</a>
+                  </span>
                 </li>
               </menu>
             </nav>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  An Identity Domain is a scope within which we assume that the
+                  user's identity can roam freely.
+                </p>
+              </div>
+            </div>
             <p class="more">
-              <a href="/posts/sometimes-its-the-interviewers-who-suck/"
-                >Read more …</a
-              >
+              <a href="/posts/identity-domains/">Read more …</a>
             </p>
           </div>
         </div>
@@ -243,8 +243,8 @@
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h2 class="title">
-          <a itemprop="url" href="/posts/shannon-paper/">
-            <span itemprop="name">Shannon Paper</span>
+          <a itemprop="url" href="/posts/poisson-distribution/">
+            <span itemprop="name">Deriving the Poisson Distribution</span>
           </a>
         </h2>
         <div class="summary-row">
@@ -252,8 +252,8 @@
             <nav>
               <small>
                 Published on
-                <time datetime="2021-03-26" itemprop="datePublished"
-                  >March 26, 2021</time
+                <time datetime="2020-12-11" itemprop="datePublished"
+                  >December 11, 2020</time
                 >.
               </small>
               <span></span>
@@ -263,20 +263,9 @@
                 </li>
               </menu>
             </nav>
-            <div class="summary-row">
-              <div itemprop="abstract">
-                <p>
-                  Claude Shannon's
-                  <em>A mathematical theory of communication</em> is an oft
-                  cited classic in information theory. Let's dive in and try to
-                  tease apart the &quot;why&quot;s that are often overlooked
-                  when people build on top of the introduced theory. They are
-                  definitely things that I didn't consider to be obvious without
-                  the benefit of reading the paper.
-                </p>
-              </div>
-            </div>
-            <p class="more"><a href="/posts/shannon-paper/">Read more …</a></p>
+            <p class="more">
+              <a href="/posts/poisson-distribution/">Read more …</a>
+            </p>
           </div>
         </div>
       </div>
@@ -338,6 +327,49 @@
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h2 class="title">
+          <a itemprop="url" href="/posts/comcast-technican-problem/">
+            <span itemprop="name">The Comcast Technician Problem</span>
+          </a>
+        </h2>
+        <div class="summary-row">
+          <div>
+            <nav>
+              <small>
+                Published on
+                <time datetime="2020-07-13" itemprop="datePublished"
+                  >July 13, 2020</time
+                >.
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag"> #<a href="/tags/math/">Math</a> </span>
+                </li>
+              </menu>
+            </nav>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  Given a set of tasks, incentives are often aligned towards
+                  dropping a task rather than allowing for perpetual accretion
+                  of delays.
+                </p>
+              </div>
+            </div>
+            <p class="more">
+              <a href="/posts/comcast-technican-problem/">Read more …</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h2 class="title">
           <a itemprop="url" href="/series/unsung-team-roles/emergence/"
             ><span class="series-name">Unsung Team Roles</span>:
             <span itemprop="name">Emergence of Soft Roles</span>
@@ -375,64 +407,6 @@
             <p class="more">
               <a href="/series/unsung-team-roles/emergence/">Read more …</a>
             </p>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="post-summary"
-        itemscope=""
-        itemtype="https://schema.org/BlogPosting"
-      >
-        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <h2 class="title">
-          <a itemprop="url" href="/posts/cog-ratio/">
-            <span itemprop="name">What&#39;s your cog ratio?</span>
-          </a>
-        </h2>
-        <div class="summary-row">
-          <a href="/posts/cog-ratio/">
-            <img
-              src="/img/DFcev-mNF2-200.png"
-              alt="Cogs, cogs, cogs."
-              class="noinvert hero"
-              width="200"
-              height="109"
-            />
-          </a>
-
-          <div>
-            <nav>
-              <small>
-                Published on
-                <time datetime="2025-12-16" itemprop="datePublished"
-                  >December 16, 2025</time
-                >.
-              </small>
-              <span></span>
-              <menu class="tags">
-                <li>
-                  <span class="tag">
-                    #<a href="/tags/organizations/">Organizations</a>
-                  </span>
-                </li>
-              </menu>
-            </nav>
-            <div class="summary-row">
-              <div itemprop="abstract">
-                <p>
-                  The &quot;cog ratio&quot; is a metaphor for how much an
-                  individual's work on a product directly translates into a
-                  better user experience. While everyone on a team contributes,
-                  roles further from direct product development—like management,
-                  HR, or infrastructure—can feel disconnected from the end-user.
-                  What is our own &quot;cog ratio&quot; and how effectively will
-                  our efforts truly drive meaningful change for the people we
-                  serve?
-                </p>
-              </div>
-            </div>
-            <p class="more"><a href="/posts/cog-ratio/">Read more …</a></p>
           </div>
         </div>
       </div>
