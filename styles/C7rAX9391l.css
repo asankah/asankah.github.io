@@ -1299,8 +1299,28 @@ body {
 .references .csl-entry {
   padding-bottom: 1rem;
 }
-.references .csl-entry a {
-  display: block;
+.references .csl-entry .csl-title {
+  font-weight: bold;
+}
+.references .csl-entry .csl-container-title {
+  font-style: italic;
+}
+.references .csl-entry .csl-abstract {
+  font-style: italics;
+  font-size: smaller;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color: var(--dimmed-text-color);
+  text-justify: auto;
+}
+.references .csl-entry .csl-year {
+  font-weight: bold;
+}
+.references .csl-entry .csl-url, .references .csl-entry .csl-accessed {
+  font-size: smaller;
+}
+.references .csl-entry .csl-scholar-link {
+  font-size: smaller;
 }
 
 pre > code.sourceCode {
