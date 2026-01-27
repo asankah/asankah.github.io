@@ -5,13 +5,344 @@
   <link href="https://xn--izc.com/feed.xml" rel="self" />
   <link href="https://xn--izc.com/" />
   <updated>
-    2025-12-16T00:00:00Z
+    2026-01-27T00:00:00Z
   </updated>
   <id>https://xn--izc.com/</id>
   <author>
     <name>Asanka Herath</name>
     <email>asanka@gmail.com</email>
   </author>
+    <entry>
+      <title>The Increasingly Inaccurately Named User-Agent</title>
+      <link href="https://xn--izc.com/posts/user-agents/" />
+      <updated>2026-01-27T00:00:00Z</updated>
+      <id>https://xn--izc.com/posts/user-agents/</id>
+      <content xml:lang="en" type="html">
+        &lt;aside class=&quot;preface&quot;&gt;
+The title is a reference to the five-volume &lt;a href=&quot;https://en.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy&quot;&gt;Hitchhiker’s
+Guide to the Galaxy&lt;/a&gt; series by Douglas Adams. The fourth and fifth
+volumes in the series list themselves as being part of &lt;q&gt;the
+increasingly inaccurately named Hitchhiker’s Trilogy.&lt;/q&gt;
+&lt;/aside&gt;
+&lt;h2 id=&quot;the-user-agent-as-the-users-ambassador&quot;&gt;The User-Agent as the
+user’s ambassador&lt;/h2&gt;
+&lt;p&gt;The idea of a user agent dates back to the early days of the
+Internet. Every computer system that involves humans needs some
+mechanism to represent human intent. We can’t move electrons directly.
+So, we must interact with some device &lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;
+within the computer system as a proxy. This device, which interfaces
+with the system on behalf of the human (i.e. user), is called the
+&lt;strong&gt;user agent&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Right from the start, the role of the user agent is to accurately
+represent the user’s intent, and to accurately reflect back the state of
+the system to the user.&lt;/p&gt;
+&lt;p&gt;In an email system, this user agent is called a mail user agent
+(&lt;abbr&gt;MUA&lt;/abbr&gt;) &lt;span class=&quot;citation&quot; data-cites=&quot;tracy2002guidelines&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#ref-tracy2002guidelines&quot; role=&quot;doc-biblioref&quot;&gt;Tracy et al., 2002&lt;/a&gt;)&lt;/span&gt;. For the web, it
+should be called a web user agent (&lt;abbr&gt;WUA&lt;/abbr&gt;) &lt;span class=&quot;citation&quot; data-cites=&quot;w3c:webuseragents&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#ref-w3c:webuseragents&quot; role=&quot;doc-biblioref&quot;&gt;Yasskin &amp;amp;
+Capadisli, 2026&lt;/a&gt;)&lt;/span&gt;. But because web user agents —which you
+might refer to as web browsers— are so dominant, people have dropped the
+superfluous “web” part.&lt;/p&gt;
+&lt;figure&gt;
+&lt;pre class=&quot;man&quot;&gt;&lt;code&gt;MUTT(1)                     User Manuals                    MUTT(1)
+
+NAME
+       mutt - The Mutt Mail User Agent
+
+SYNOPSIS
+       mutt [-hNpRxZ] [-s subject] [-c cc-addr] [-a file] ...
+            [-F rcfile] [-H draft] [-i include] [-f mailbox]
+            [address] ...
+
+DESCRIPTION
+       Mutt is a small but very powerful text-based MIME mail client.
+       Mutt is highly configurable, and is well suited to the mail
+       power user with advanced features like key bindings, keyboard
+       macros, mail threading, regular expression searches and a
+       powerful pattern matching language for selecting groups of
+       messages.
+
+       &amp;quot;All mail clients suck.  This one just sucks less.&amp;quot;
+       - me, circa 1995&lt;/code&gt;&lt;/pre&gt;
+&lt;figcaption&gt;
+An ancient manual page for the Mutt email client circa 1995. Note that
+the program is described as &lt;q&gt;The Mutt Mail User Agent&lt;/q&gt;.
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Over time, user agents have evolved from simple command-line
+interfaces to sophisticated graphical browsers and services. Modern user
+agents are versatile platforms integrating a wide array of advanced
+capabilities and protocols. &lt;span class=&quot;citation&quot; data-cites=&quot;wiki:NCSAMosaic&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#ref-wiki:NCSAMosaic&quot; role=&quot;doc-biblioref&quot;&gt;Wikipedia, 2025&lt;/a&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;In the early days of the web, people took the user agent’s role very
+seriously, almost religiously. Unlike email, where the &lt;abbr&gt;MUA&lt;/abbr&gt;
+does simple tasks like fetching and sending messages, the
+&lt;abbr&gt;UA&lt;/abbr&gt; has a broader job. Technical requirements are so
+demanding that only a few well-resourced tech companies can build and
+maintain a full-featured UA from scratch. The standards documents for a
+compliant UA are thousands of pages long &lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fn2&quot; class=&quot;footnote-ref&quot; id=&quot;fnref2&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;.
+These standards are not perfect or complete, but they have been crafted
+through person-millenia of effort to ensure security and
+correctness.&lt;/p&gt;
+&lt;p&gt;Beyond technical requirements, there is an increasingly important
+social contract.&lt;/p&gt;
+&lt;h2 id=&quot;the-user-agent-must-act-on-behalf-of-the-user&quot;&gt;The User-Agent
+must act on behalf of the user&lt;/h2&gt;
+&lt;p&gt;… and must be loyal and reliable.&lt;/p&gt;
+&lt;p&gt;The UA must accurately render web pages as described by server
+responses and verify claims made by servers. For instance, when a user
+attempts to visit a suspicious or known phishing website, most modern
+browsers will steer them away from it &lt;span class=&quot;citation&quot; data-cites=&quot;mozilla2024security&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#ref-mozilla2024security&quot; role=&quot;doc-biblioref&quot;&gt;Mozilla, 2024&lt;/a&gt;)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The UA shouldn’t be sending data to random third parties unknown to
+the user, nor should it be furnishing information that the user hasn’t
+offered to share. All this while, each visited page triggers hundreds of
+network requests to dozens of third-party sites.&lt;/p&gt;
+&lt;h2 id=&quot;the-user-agent-must-act-only-on-behalf-of-the-user.&quot;&gt;The
+User-Agent must act ONLY on behalf of the user.&lt;/h2&gt;
+&lt;p&gt;When we say &lt;q&gt;The UA acts on behalf of the user …&lt;/q&gt;, there’s an
+unsaid part: The UA acts &lt;strong&gt;only&lt;/strong&gt; on behalf of the user.
+But modern web technology is so complex that users cannot fully
+understand how their user agent interacts with the internet. Thus, they
+have no means of rigorously verifying that all the UA’s activity is
+aligned with the user’s interests and only the user’s interests.&lt;/p&gt;
+&lt;p&gt;This user-UA relationship depends on layers of implicit,
+non-negotiable trust, which are unverifiable &lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fn3&quot; class=&quot;footnote-ref&quot; id=&quot;fnref3&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;it-matters-who-owns-the-user-agent.&quot;&gt;It matters who owns the
+User-Agent.&lt;/h2&gt;
+&lt;p&gt;Because of this functional opacity and implied trust, it matters
+greatly who owns and controls the UA. This control determines whether
+the UA’s priorities align with the user’s or the owner’s, and whether
+the owners can be held accountable if they fail to uphold their end of
+the social contract. In reality, the only way to force the UA owners to
+respect user intent is through legislation &lt;span class=&quot;citation&quot; data-cites=&quot;w3c:privacyprinciples&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#ref-w3c:privacyprinciples&quot; role=&quot;doc-biblioref&quot;&gt;Berjon &amp;amp; Yasskin, 2025&lt;/a&gt;)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;However, this article is not about UAs.&lt;/p&gt;
+&lt;p&gt;We only took that detour to explain what a UA is, the degree of
+trust, and the power imbalance. Now let’s look at yet another kind of
+user agent. It has even more information about you, must be trusted to
+act in your best interest, and its behavior cannot be verified.&lt;/p&gt;
+&lt;h2 id=&quot;user-agents-with-ai-superpowers&quot;&gt;User-Agents with AI superpowers
+…&lt;/h2&gt;
+&lt;p&gt;I’m talking about the coming AI-powered user agents (referred to as
+&lt;abbr&gt;AIUA&lt;/abbr&gt;s in this article). These do more than just fetch and
+present web pages for users. &lt;abbr&gt;AIUA&lt;/abbr&gt;s are like traditional
+UAs, but far more powerful. They collect and interpret massive amounts
+of user data and perform actions on behalf of the user. By design, these
+agents must have access to deeply personal data &lt;span class=&quot;citation&quot; data-cites=&quot;yang2025adoption&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#ref-yang2025adoption&quot; role=&quot;doc-biblioref&quot;&gt;Yang et al., 2025&lt;/a&gt;)&lt;/span&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;need-to-feed-on-your-data&quot;&gt;… need to feed on your data …&lt;/h2&gt;
+&lt;p&gt;Data sharing is a non-negotiable. For now, these AIUAs will rely on a
+remotely located brain &lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fn4&quot; class=&quot;footnote-ref&quot; id=&quot;fnref4&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt;. Hence, the logic applied to
+decisions affecting you will be unknowable. More distressingly, it may
+even be unknowable to the people who built them &lt;span class=&quot;citation&quot; data-cites=&quot;aysel2025explainable&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#ref-aysel2025explainable&quot; role=&quot;doc-biblioref&quot;&gt;Aysel et al., 2025&lt;/a&gt;)&lt;/span&gt;. This opacity
+largely stems from the complexity of AI models, which involve numerous
+layers of computation, making their inner workings difficult to
+interpret. Additionally, a lack of comprehensive interpretability tools
+contributes to this issue, leaving both users and developers with a
+limited understanding of their decision-making processes &lt;span class=&quot;citation&quot; data-cites=&quot;aryaxai:beyondtransparency&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#ref-aryaxai:beyondtransparency&quot; role=&quot;doc-biblioref&quot;&gt;AryaXAI,
+2025&lt;/a&gt;)&lt;/span&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;but-wont-swear-any-allegiance.&quot;&gt;… but won’t swear any
+allegiance.&lt;/h2&gt;
+&lt;p&gt;In the classic UA trust model, if you see a recommendation for a
+product, you know a handful of entities whose interests this
+recommendation or ad serves. With AIUAs, you will have no idea if a
+recommendation serves your best interest or someone else’s. It could try
+to help you but fail because its training data is biased toward someone
+else’s interests. This bias is difficult to detect. &lt;span class=&quot;citation&quot; data-cites=&quot;ryan2025ai&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#ref-ryan2025ai&quot; role=&quot;doc-biblioref&quot;&gt;Ryan, 2025&lt;/a&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&quot;they-are-opaque.&quot;&gt;They are opaque.&lt;/h3&gt;
+&lt;p&gt;Even with a relatively simpler system like the UA with well-defined
+trust boundaries, trust remains a difficult problem. We are moving
+towards indecipherable systems like AIUAs with even fuzzier trust
+boundaries. We don’t have thousands of pages of specifications for these
+AI systems. Instead, there are trillions of training tokens that only
+offer loose guidance. Not to mention basic attack vectors like prompt
+injection still haven’t been sufficiently mitigated &lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fn5&quot; class=&quot;footnote-ref&quot; id=&quot;fnref5&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;5&lt;/sup&gt;&lt;/a&gt;.
+Nobody can guarantee where AIUAs’ allegiance lies. &lt;span class=&quot;citation&quot; data-cites=&quot;openai2025hardening&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#ref-openai2025hardening&quot; role=&quot;doc-biblioref&quot;&gt;OpenAI,
+2025&lt;/a&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;they-are-deceptively-trustworthy&quot;&gt;They are deceptively
+trustworthy …&lt;/h2&gt;
+&lt;p&gt;AIUAs can easily gain people’s trust. Some people even fall in love
+with them &lt;span class=&quot;citation&quot; data-cites=&quot;demopoulos2025women&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#ref-demopoulos2025women&quot; role=&quot;doc-biblioref&quot;&gt;Demopoulos,
+2025&lt;/a&gt;)&lt;/span&gt; or follow them to their deaths. Our politics, values,
+and consumption habits are easy pickings for a mildly motivated AIUA to
+manipulate. To make things even worse, people trust what AIUAs tell them
+about the world without checking. The more people choose AIUAs as the
+goggles with which they see the world, the more these agents can shape a
+convincing alternate reality.&lt;/p&gt;
+&lt;h2 id=&quot;and-difficult-to-align.&quot;&gt;… and difficult to align.&lt;/h2&gt;
+&lt;p&gt;Perhaps the most interesting example of an intentionally modified
+foundational model is Grok, Elon Musk’s xAI chatbot. In July 2025, after
+Musk announced he had “improved” Grok to make it less “politically
+correct,” the chatbot began posting antisemitic content on X. This
+included praising Hitler and making false claims about Jewish people.
+&lt;span class=&quot;citation&quot; data-cites=&quot;siddiqui2025elon&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#ref-siddiqui2025elon&quot; role=&quot;doc-biblioref&quot;&gt;Siddiqui,
+2025&lt;/a&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Grok isn’t an outlier. DeepSeek shocked the foundation model world
+when it came out. It was an open-weight model from China whose
+performance was comparable to the biggest foundation models at the time.
+Yet there was a problem: DeepSeek didn’t like to talk about Tiananmen
+Square. &lt;span class=&quot;citation&quot; data-cites=&quot;lu2025deepseek&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#ref-lu2025deepseek&quot; role=&quot;doc-biblioref&quot;&gt;Lu, 2025&lt;/a&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Trying to steer foundation models toward or away from bias often
+leads to outcomes that diverge from intentions. &lt;span class=&quot;citation&quot; data-cites=&quot;sun2025aligned&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#ref-sun2025aligned&quot; role=&quot;doc-biblioref&quot;&gt;Sun et al., 2025&lt;/a&gt;)&lt;/span&gt; While it sounds like
+self-sabotage, it’s not absurd to suggest that Google would comply with
+a request to politically “align” Gemini —hypothetically of course.
+Google scaled back its DEI hiring goals and other diversity programs in
+early 2025 after facing political and legal pressure. &lt;span class=&quot;citation&quot; data-cites=&quot;ap2025google&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#ref-ap2025google&quot; role=&quot;doc-biblioref&quot;&gt;Associated Press, 2025&lt;/a&gt;)&lt;/span&gt; Standing up for
+what’s right at the expense of profit seems an unrealistic
+expectation.&lt;/p&gt;
+&lt;p&gt;In summary,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;We see the world through complex yet predictable machines — called
+user agents. They are difficult to understand, but they do our bidding,
+more or less.&lt;/li&gt;
+&lt;li&gt;We are moving towards handing over our agency to even more complex
+machines. But this time, they are unpredictable, poorly understood, and
+pretty much impossible to align with our interests in a verifiable
+way.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That’s terrifying. But what can we do about it? In the next part of
+this series, we will delve into practical strategies and explore
+cutting-edge research to address and mitigate the risks associated with
+AI-powered user agents. We’ll examine the role of transparency in AI
+development and look at how emerging frameworks could help ensure AI
+systems act in our best interests.&lt;/p&gt;
+&lt;div id=&quot;refs&quot; class=&quot;references csl-bib-body hanging-indent&quot; data-entry-spacing=&quot;0&quot; data-line-spacing=&quot;2&quot; role=&quot;list&quot;&gt;
+&lt;div id=&quot;ref-aryaxai:beyondtransparency&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+AryaXAI. (2025). &lt;em&gt;&lt;span&gt;Beyond Transparency: Reimagining AI
+Interpretability Paradigms&lt;/span&gt;&lt;/em&gt;. &lt;a href=&quot;https://www.aryaxai.com/article/beyond-transparency-reimagining-ai-interpretability-paradigms&quot; class=&quot;uri&quot;&gt;https://www.aryaxai.com/article/beyond-transparency-reimagining-ai-interpretability-paradigms&lt;/a&gt;.
+&lt;a href=&quot;https://www.aryaxai.com/article/beyond-transparency-reimagining-ai-interpretability-paradigms&quot;&gt;https://www.aryaxai.com/article/beyond-transparency-reimagining-ai-interpretability-paradigms&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-ap2025google&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Associated Press. (2025). &lt;em&gt;Google scraps its diversity hiring goals
+as it complies with &lt;span&gt;T&lt;/span&gt;rump’s new government contractor
+rules&lt;/em&gt;. &lt;a href=&quot;https://apnews.com/article/16a937d5d9b6447251c4c40c2ad1c915&quot; class=&quot;uri&quot;&gt;https://apnews.com/article/16a937d5d9b6447251c4c40c2ad1c915&lt;/a&gt;.
+&lt;a href=&quot;https://apnews.com/article/16a937d5d9b6447251c4c40c2ad1c915&quot;&gt;https://apnews.com/article/16a937d5d9b6447251c4c40c2ad1c915&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-aysel2025explainable&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Aysel, H. I., Cai, X., &amp;amp; Prugel-Bennett, A. (2025). Explainable
+artificial intelligence: Advancements and limitations. &lt;em&gt;Applied
+Sciences&lt;/em&gt;. &lt;a href=&quot;https://doi.org/10.3390/app15137261&quot;&gt;https://doi.org/10.3390/app15137261&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-businesshorizons2025balancing&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Balancing explainability and privacy in &lt;span&gt;AI&lt;/span&gt; systems: A
+strategic imperative for managers. (2025). &lt;em&gt;Business Horizons&lt;/em&gt;.
+&lt;a href=&quot;https://doi.org/10.1016/j.bushor.2025.10.004&quot;&gt;https://doi.org/10.1016/j.bushor.2025.10.004&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-w3c:privacyprinciples&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Berjon, R., &amp;amp; Yasskin, J. (2025). &lt;em&gt;Privacy principles&lt;/em&gt;. &lt;a href=&quot;https://www.w3.org/TR/privacy-principles/&quot; class=&quot;uri&quot;&gt;https://www.w3.org/TR/privacy-principles/&lt;/a&gt;. &lt;a href=&quot;https://www.w3.org/TR/privacy-principles/&quot;&gt;https://www.w3.org/TR/privacy-principles/&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-demopoulos2025women&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Demopoulos, A. (2025). &lt;em&gt;The women in love with &lt;span&gt;AI&lt;/span&gt;
+companions: &lt;span&gt;“&lt;span&gt;I&lt;/span&gt; vowed to my chatbot that
+&lt;span&gt;I&lt;/span&gt; wouldn’t leave him”&lt;/span&gt;&lt;/em&gt;. &lt;a href=&quot;https://www.theguardian.com/technology/2025/sep/09/ai-chatbot-love-relationships&quot; class=&quot;uri&quot;&gt;https://www.theguardian.com/technology/2025/sep/09/ai-chatbot-love-relationships&lt;/a&gt;.
+&lt;a href=&quot;https://www.theguardian.com/technology/2025/sep/09/ai-chatbot-love-relationships&quot;&gt;https://www.theguardian.com/technology/2025/sep/09/ai-chatbot-love-relationships&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-lu2025deepseek&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Lu, D. (2025). &lt;em&gt;We tried out &lt;span&gt;D&lt;/span&gt;eep&lt;span&gt;S&lt;/span&gt;eek.
+&lt;span&gt;I&lt;/span&gt;t worked well, until we asked it about
+&lt;span&gt;T&lt;/span&gt;iananmen &lt;span&gt;S&lt;/span&gt;quare and &lt;span&gt;T&lt;/span&gt;aiwan&lt;/em&gt;.
+&lt;a href=&quot;https://www.theguardian.com/technology/2025/jan/28/we-tried-out-deepseek-it-works-well-until-we-asked-it-about-tiananmen-square-and-taiwan&quot; class=&quot;uri&quot;&gt;https://www.theguardian.com/technology/2025/jan/28/we-tried-out-deepseek-it-works-well-until-we-asked-it-about-tiananmen-square-and-taiwan&lt;/a&gt;.
+&lt;a href=&quot;https://www.theguardian.com/technology/2025/jan/28/we-tried-out-deepseek-it-works-well-until-we-asked-it-about-tiananmen-square-and-taiwan&quot;&gt;https://www.theguardian.com/technology/2025/jan/28/we-tried-out-deepseek-it-works-well-until-we-asked-it-about-tiananmen-square-and-taiwan&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-mozilla2024security&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Mozilla. (2024). &lt;em&gt;What do the security warning codes mean? |
+&lt;span&gt;Firefox&lt;/span&gt; &lt;span&gt;Help&lt;/span&gt;&lt;/em&gt;. &lt;a href=&quot;https://support.mozilla.org/kb/como-resolve-fracos-criptografia-erro-mensagens-firefox&quot; class=&quot;uri&quot;&gt;https://support.mozilla.org/kb/como-resolve-fracos-criptografia-erro-mensagens-firefox&lt;/a&gt;.
+&lt;a href=&quot;https://support.mozilla.org/kb/como-resolve-fracos-criptografia-erro-mensagens-firefox&quot;&gt;https://support.mozilla.org/kb/como-resolve-fracos-criptografia-erro-mensagens-firefox&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-openai2025hardening&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+OpenAI. (2025). &lt;em&gt;Continuously hardening &lt;span&gt;ChatGPT&lt;/span&gt;
+&lt;span&gt;Atlas&lt;/span&gt; against prompt injection attacks&lt;/em&gt;. &lt;a href=&quot;https://openai.com/index/hardening-atlas-against-prompt-injection/&quot; class=&quot;uri&quot;&gt;https://openai.com/index/hardening-atlas-against-prompt-injection/&lt;/a&gt;.
+&lt;a href=&quot;https://openai.com/index/hardening-atlas-against-prompt-injection/&quot;&gt;https://openai.com/index/hardening-atlas-against-prompt-injection/&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-ryan2025ai&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Ryan, C. (2025). &lt;em&gt;When AI buys from AI, who do we trust?&lt;/em&gt; &lt;a href=&quot;https://www.techradar.com/pro/when-ai-buys-from-ai-who-do-we-trust&quot; class=&quot;uri&quot;&gt;https://www.techradar.com/pro/when-ai-buys-from-ai-who-do-we-trust&lt;/a&gt;.
+&lt;a href=&quot;https://www.techradar.com/pro/when-ai-buys-from-ai-who-do-we-trust&quot;&gt;https://www.techradar.com/pro/when-ai-buys-from-ai-who-do-we-trust&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-siddiqui2025elon&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Siddiqui, F. (2025). &lt;em&gt;Elon &lt;span&gt;M&lt;/span&gt;usk’s &lt;span&gt;AI&lt;/span&gt;
+chatbot &lt;span&gt;G&lt;/span&gt;rok launches into antisemitic rant amid
+updates&lt;/em&gt;. &lt;a href=&quot;https://www.washingtonpost.com/technology/2025/07/08/elon-musk-grok-ai-antisemitism/&quot; class=&quot;uri&quot;&gt;https://www.washingtonpost.com/technology/2025/07/08/elon-musk-grok-ai-antisemitism/&lt;/a&gt;.
+&lt;a href=&quot;https://www.washingtonpost.com/technology/2025/07/08/elon-musk-grok-ai-antisemitism/&quot;&gt;https://www.washingtonpost.com/technology/2025/07/08/elon-musk-grok-ai-antisemitism/&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-sun2025aligned&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Sun, L., Mao, C., Hofmann, V., &amp;amp; Bai, X. (2025). Aligned but blind:
+Alignment increases implicit bias by reducing awareness of race.
+&lt;em&gt;arXiv Preprint arXiv:2506.00253&lt;/em&gt;. &lt;a href=&quot;https://doi.org/10.48550/arXiv.2506.00253&quot;&gt;https://doi.org/10.48550/arXiv.2506.00253&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-tracy2002guidelines&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Tracy, M., Jansen, W., &amp;amp; Bisker, S. (2002). Guidelines on electronic
+mail security. &lt;em&gt;NIST Special Publication&lt;/em&gt;, &lt;em&gt;800&lt;/em&gt;, 45.
+&lt;/div&gt;
+&lt;div id=&quot;ref-wiki:NCSAMosaic&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Wikipedia. (2025). &lt;em&gt;&lt;span&gt;NCSA Mosaic&lt;/span&gt; —
+&lt;span&gt;W&lt;/span&gt;ikipedia&lt;span&gt;,&lt;/span&gt; the free encyclopedia&lt;/em&gt;. &lt;a href=&quot;https://en.wikipedia.org/wiki/NCSA_Mosaic&quot; class=&quot;uri&quot;&gt;https://en.wikipedia.org/wiki/NCSA_Mosaic&lt;/a&gt;. &lt;a href=&quot;https://en.wikipedia.org/wiki/NCSA_Mosaic&quot;&gt;https://en.wikipedia.org/wiki/NCSA_Mosaic&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-yang2025adoption&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Yang, J., Yonack, N., Zyskowski, K., Yarats, D., Ho, J., &amp;amp; Ma, J.
+(2025). The adoption and usage of AI agents: Early evidence from
+perplexity. &lt;em&gt;arXiv Preprint arXiv:2512.07828&lt;/em&gt;. &lt;a href=&quot;https://doi.org/10.48550/arXiv.2512.07828&quot;&gt;https://doi.org/10.48550/arXiv.2512.07828&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-w3c:webuseragents&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Yasskin, J., &amp;amp; Capadisli, S. (2026). &lt;em&gt;Web user agents&lt;/em&gt;. &lt;a href=&quot;https://www.w3.org/TR/web-user-agents/#audience&quot; class=&quot;uri&quot;&gt;https://www.w3.org/TR/web-user-agents/#audience&lt;/a&gt;. &lt;a href=&quot;https://www.w3.org/TR/web-user-agents/#audience&quot;&gt;https://www.w3.org/TR/web-user-agents/#audience&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;I’m using the term “device” loosely here because the
+user agent often consists of an entire stack of hardware and software.
+In literature, you’ll find the terms “device,” “machine,” and “system”
+used interchangeably, depending on the context.&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn2&quot;&gt;&lt;p&gt;I worked on Google Chrome for over a decade on the
+networking stack, and briefly on the renderer. Calling it thousands of
+pages of standards is an understatement. Modern UAs face so many quirks
+and misbehaviors that, in some areas, we have more code handling quirks
+than implementing the intended specifications. We can’t just refuse to
+talk to large portions of the internet or refuse to render millions of
+older web pages just because the code wouldn’t look good.&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn3&quot;&gt;&lt;p&gt;Okay so this might need a little bit of qualification.
+Aren’t the biggest names in the browser game open source? Aren’t they
+all, like, based on Chromium? Why can’t we just read the source code and
+figure out whether it is doing anything odd?&lt;/p&gt;
+&lt;p&gt;The reality is that people &lt;em&gt;have&lt;/em&gt; and are actively watching
+open source browser projects with eagle eyes. Unfortunately, even if we
+can verify the open source parts of the browser, that’s not the end of
+the story. See, when you visit a web site, there could be data being
+sent to hundreds of websites. Even if the browesr tells you each and
+every one of those web sites, it would not be practical for anyone to
+manually vet and understand what is going on. Even beyond that, not all
+the functional bits of a browser is open-source. In fact, perhaps the
+most questionable parts of a browser –like AI integration, media rights
+management, how it works with various hardware devices– are closed
+source for many reasons.&lt;/p&gt;
+&lt;p&gt;So it all boils down to whether it really matters if your security
+depends on you performing something infeasible for all practical
+purposes; kinda like being forced to read each and every privacy policy
+and binding contract you have to click through.&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn4&quot;&gt;&lt;p&gt;Not all large language models are “hosted,” which means
+that the model is actually stored far away in a server and you can only
+talk to it through a mediating service. There are powerful language
+models that you can store in your own computer. Currently there is a
+large performance gap between the so-called &lt;q&gt;open weights&lt;/q&gt; models
+and their larger hosted counterparts. If that wasn’t a big deal, any
+language model that you can run on your machine is going to require some
+pretty hefty hardware. So tl;dr, it is possible to run a large language
+model on your computer. But that’s not an option for most (&amp;gt;99%)
+people.&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fnref4&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn5&quot;&gt;&lt;p&gt;&lt;q&gt;Prompt injection&lt;/q&gt; refers to a security issue where
+someone can craft a malicious prompt or include some malicious text that
+when used with a large langauge model causes that model to
+misbehave.&lt;/p&gt;
+&lt;p&gt;There are ongoing efforts that are trying to address these concerns.
+Researchers are exploring potential solutions, such as model auditing,
+to assess biases and decision-making processes within AI systems.
+Additionally, improving explainability is a key area of interest, as it
+would enhance our capability to interpret AIUA actions and decisions.
+Developing technical safeguards, such as robust encryption and secure
+access controls, could also serve as preventive measures against misuse.
+&lt;span class=&quot;citation&quot; data-cites=&quot;businesshorizons2025balancing&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#ref-businesshorizons2025balancing&quot; role=&quot;doc-biblioref&quot;&gt;&lt;span&gt;“Balancing Explainability and Privacy in
+&lt;span&gt;AI&lt;/span&gt; Systems,”&lt;/span&gt; 2025&lt;/a&gt;)&lt;/span&gt;&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fnref5&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+
+      </content>
+    </entry>
     <entry>
       <title>What&#39;s your cog ratio?</title>
       <link href="https://xn--izc.com/posts/cog-ratio/" />

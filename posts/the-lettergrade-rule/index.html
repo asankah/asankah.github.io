@@ -37,7 +37,7 @@
       href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Inconsolata:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap&family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles/C7rAX9391l.css" />
+    <link rel="stylesheet" href="/styles/m1FKAxYdhy.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
 
@@ -173,8 +173,8 @@
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h2 class="title">
-          <a itemprop="url" href="/posts/ephemeral-fingerprinting/">
-            <span itemprop="name">Ephemeral Fingerprinting On The Web</span>
+          <a itemprop="url" href="/posts/poisson-distribution/">
+            <span itemprop="name">Deriving the Poisson Distribution</span>
           </a>
         </h2>
         <div class="summary-row">
@@ -182,35 +182,19 @@
             <nav>
               <small>
                 Published on
-                <time datetime="2020-04-01" itemprop="datePublished"
-                  >April 1, 2020</time
+                <time datetime="2020-12-11" itemprop="datePublished"
+                  >December 11, 2020</time
                 >.
               </small>
               <span></span>
               <menu class="tags">
                 <li>
-                  <span class="tag">
-                    #<a href="/tags/privacy/">Privacy</a>
-                  </span>
+                  <span class="tag"> #<a href="/tags/math/">Math</a> </span>
                 </li>
               </menu>
             </nav>
-            <div class="summary-row">
-              <div itemprop="abstract">
-                <p>
-                  Any ephemeral low-entropy web observable property whose
-                  changes are concurrently observable by multiple sites can lead
-                  to cross site identity joining.
-                </p>
-                <p>
-                  This method of identity joining does not require coordination
-                  between multiple first parties. A single third party embedded
-                  within multiple first parties can also use this method.
-                </p>
-              </div>
-            </div>
             <p class="more">
-              <a href="/posts/ephemeral-fingerprinting/">Read more …</a>
+              <a href="/posts/poisson-distribution/">Read more …</a>
             </p>
           </div>
         </div>
@@ -223,8 +207,8 @@
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h2 class="title">
-          <a itemprop="url" href="/posts/darpa-heilmeier-catechism/">
-            <span itemprop="name">DARPA&#39;s Heilmeier Catechism</span>
+          <a itemprop="url" href="/posts/shannon-paper/">
+            <span itemprop="name">Shannon Paper</span>
           </a>
         </h2>
         <div class="summary-row">
@@ -232,30 +216,31 @@
             <nav>
               <small>
                 Published on
-                <time datetime="2022-06-28" itemprop="datePublished"
-                  >June 28, 2022</time
+                <time datetime="2021-03-26" itemprop="datePublished"
+                  >March 26, 2021</time
                 >.
               </small>
               <span></span>
               <menu class="tags">
                 <li>
-                  <span class="tag">
-                    #<a href="/tags/engineering/">Engineering</a>
-                  </span>
+                  <span class="tag"> #<a href="/tags/math/">Math</a> </span>
                 </li>
               </menu>
             </nav>
             <div class="summary-row">
               <div itemprop="abstract">
                 <p>
-                  A set of questions help you think through and evaluate
-                  proposed projects and research programs.
+                  Claude Shannon's
+                  <em>A mathematical theory of communication</em> is an oft
+                  cited classic in information theory. Let's dive in and try to
+                  tease apart the &quot;why&quot;s that are often overlooked
+                  when people build on top of the introduced theory. They are
+                  definitely things that I didn't consider to be obvious without
+                  the benefit of reading the paper.
                 </p>
               </div>
             </div>
-            <p class="more">
-              <a href="/posts/darpa-heilmeier-catechism/">Read more …</a>
-            </p>
+            <p class="more"><a href="/posts/shannon-paper/">Read more …</a></p>
           </div>
         </div>
       </div>
@@ -267,8 +252,10 @@
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h2 class="title">
-          <a itemprop="url" href="/posts/why-i-hate-carousels/">
-            <span itemprop="name">Why I Hate Carousels</span>
+          <a itemprop="url" href="/posts/git-autopush/">
+            <span itemprop="name"
+              >Use Git hooks to automatically push after every commit</span
+            >
           </a>
         </h2>
         <div class="summary-row">
@@ -276,44 +263,29 @@
             <nav>
               <small>
                 Published on
-                <time datetime="2024-01-25" itemprop="datePublished"
-                  >January 25, 2024</time
+                <time datetime="2022-07-05" itemprop="datePublished"
+                  >July 5, 2022</time
                 >.
               </small>
               <span></span>
               <menu class="tags">
                 <li>
-                  <span class="tag">
-                    #<a href="/tags/usability/">Usability</a>
-                  </span>
-                </li>
-                <li>
-                  <span class="tag">
-                    #<a href="/tags/engineering/">Engineering</a>
-                  </span>
+                  <span class="tag"> #<a href="/tags/tools/">Tools</a> </span>
                 </li>
               </menu>
             </nav>
             <div class="summary-row">
               <div itemprop="abstract">
-                <ul>
-                  <li>Don't use carousels in your UI.</li>
-                  <li>
-                    Instead, if you must stick content into little cards, let
-                    the horionztal layout wrap to additional lines.
-                  </li>
-                  <li>
-                    If you end up with too many horizontal lines of content,
-                    then you definitely have too many items that can be accessed
-                    via a horizontally panning UI. You need a different UI
-                    altogether.
-                  </li>
-                </ul>
+                <p>
+                  During before and after various Git operations, Git invokes
+                  special hooks that can be used execute custom scripts. This
+                  article explains how to use them to automatically push to an
+                  upstream repository every time you make a commit to a local
+                  repo.
+                </p>
               </div>
             </div>
-            <p class="more">
-              <a href="/posts/why-i-hate-carousels/">Read more …</a>
-            </p>
+            <p class="more"><a href="/posts/git-autopush/">Read more …</a></p>
           </div>
         </div>
       </div>
@@ -325,8 +297,8 @@
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h2 class="title">
-          <a itemprop="url" href="/posts/fourteen-years/">
-            <span itemprop="name">Fourteen Years</span>
+          <a itemprop="url" href="/posts/have-loop/">
+            <span itemprop="name">The Have-Loop</span>
           </a>
         </h2>
         <div class="summary-row">
@@ -334,33 +306,29 @@
             <nav>
               <small>
                 Published on
-                <time datetime="2024-12-31" itemprop="datePublished"
-                  >December 31, 2024</time
+                <time datetime="2024-06-24" itemprop="datePublished"
+                  >June 24, 2024</time
                 >.
               </small>
               <span></span>
               <menu class="tags">
-                <li>
-                  <span class="tag"> #<a href="/tags/career/">Career</a> </span>
-                </li>
                 <li>
                   <span class="tag">
                     #<a href="/tags/culture/">Culture</a>
                   </span>
                 </li>
-                <li>
-                  <span class="tag">
-                    #<a href="/tags/organizations/">Organizations</a>
-                  </span>
-                </li>
               </menu>
             </nav>
             <div class="summary-row">
               <div itemprop="abstract">
-                <p>More reflections from foureteen years at Google.</p>
+                <p>
+                  Have-loops are positive feedback loops which cause
+                  unsustainable concentration of limited resources. Once you
+                  learn to recognize them, you will see them everywhere.
+                </p>
               </div>
             </div>
-            <p class="more"><a href="/posts/fourteen-years/">Read more …</a></p>
+            <p class="more"><a href="/posts/have-loop/">Read more …</a></p>
           </div>
         </div>
       </div>
@@ -372,53 +340,59 @@
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <h2 class="title">
-          <a itemprop="url" href="/posts/intermezzo-2025/">
-            <span itemprop="name">Intermission - Q1 of 2025</span>
+          <a itemprop="url" href="/posts/user-agents/">
+            <span itemprop="name"
+              >The Increasingly Inaccurately Named User-Agent</span
+            >
           </a>
         </h2>
         <div class="summary-row">
-          <a href="/posts/intermezzo-2025/">
+          <a href="/posts/user-agents/">
             <img
-              src="/img/UalksBToBr-800.png"
-              alt="A big red button labelled **DO NOT PRESS** is attached to the top of an ominous looking device to which many wires and conduits are attached."
+              src="/img/Afx7s0Loi9-200.png"
+              alt="A scary user agent"
               class="noinvert hero"
-              width="800"
-              height="532"
+              loading="lazy"
+              width="559"
+              height="559"
+              srcset="
+                /img/Afx7s0Loi9-200.png 200w,
+                /img/Afx7s0Loi9-400.png 400w,
+                /img/Afx7s0Loi9-559.png 559w
+              "
+              sizes="auto"
             />
           </a>
 
           <div>
             <nav>
-              <small
-                >Originally published on
-                <time datetime="2025-04-07" itemprop="dateCreated"
-                  >April 7, 2025</time
-                >, and updated on
-                <time datetime="2025-05-03" itemprop="datePublished"
-                  >May 3, 2025</time
-                >
-                .
+              <small>
+                Published on
+                <time datetime="2026-01-27" itemprop="datePublished"
+                  >January 27, 2026</time
+                >.
               </small>
               <span></span>
               <menu class="tags">
                 <li>
-                  <span class="tag">
-                    #<a href="/tags/culture/">Culture</a>
-                  </span>
+                  <span class="tag"> #<a href="/tags/ai/">AI</a> </span>
                 </li>
               </menu>
             </nav>
             <div class="summary-row">
               <div itemprop="abstract">
                 <p>
-                  Hate can be suppressed temporarily, but cannot be contained
-                  for too long.
+                  Once a technical term and then a philosophy, the User Agent
+                  has gradually lost its allegiance to the user. The coming AI
+                  powered super-user-agents are even more detached from their
+                  role as a loyal ambassador to the user. Instead it's far more
+                  likely that those user-agents will manipulate the user on
+                  behalf of its benefactors, and it will be diificult if not
+                  impossible to tell what they are doing.
                 </p>
               </div>
             </div>
-            <p class="more">
-              <a href="/posts/intermezzo-2025/">Read more …</a>
-            </p>
+            <p class="more"><a href="/posts/user-agents/">Read more …</a></p>
           </div>
         </div>
       </div>

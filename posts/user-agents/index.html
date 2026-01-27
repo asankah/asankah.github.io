@@ -1,0 +1,2132 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>The Increasingly Inaccurately Named User-Agent</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/apple-touch-icon.png"
+    />
+    <link rel="icon" href="/images/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon-32x32.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/images/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Inconsolata:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap&family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/m1FKAxYdhy.css" />
+    <link rel="me" href="mailto:asanka@gmail.com" />
+    <link rel="me" href="https://github.com/asankah" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="ai-generated" content="none" />
+  </head>
+
+  <body>
+    <header class="container">
+      <nav class="top" itemscope="" itemtype="https://schema.org/Blog">
+        <h1 itemprop="name">
+          <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
+        </h1>
+        <span></span>
+
+        <h2><a href="/">Home</a></h2>
+
+        <h2 itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="/about/me/" itemprop="sameAs">About</a>
+        </h2>
+
+        <h2><a href="/tags/">Tags</a></h2>
+        <h2>
+          <a href="/feed.xml"><img src="/images/rss.svg" /></a>
+        </h2>
+      </nav>
+    </header>
+
+    <article itemscope="" itemtype="https://schema.org/BlogPosting">
+      <link itemprop="url" href="/posts/user-agents/" />
+      <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+      <header class="container">
+        <div class="banner">
+          <img
+            src="/img/-Gx1AYfDKk-200.png"
+            alt="A scary user agent"
+            class="banner-image"
+            loading="lazy"
+            width="1024"
+            height="559"
+            srcset="
+              /img/-Gx1AYfDKk-200.png   200w,
+              /img/-Gx1AYfDKk-400.png   400w,
+              /img/-Gx1AYfDKk-600.png   600w,
+              /img/-Gx1AYfDKk-800.png   800w,
+              /img/-Gx1AYfDKk-1024.png 1024w
+            "
+            sizes="auto"
+          />
+        </div>
+
+        <div class="banner-text">
+          <h1 itemprop="name">
+            The Increasingly Inaccurately Named User-Agent
+          </h1>
+          <nav>
+            <div class="metadata">
+              Published on
+              <time datetime="2026-01-27" itemprop="datePublished"
+                >January 27, 2026</time
+              >
+              by <span class="author" itemprop="author">Asanka Herath</span>.
+
+              <br />
+              Estimated reading time is <time>27 minutes</time>.
+            </div>
+            <span></span>
+            <menu class="tags">
+              <li>
+                <span class="tag"> #<a href="/tags/ai/">AI</a> </span>
+              </li>
+            </menu>
+          </nav>
+        </div>
+      </header>
+
+      <main itemprop="articleBody" class="container">
+        <aside class="preface">
+          The title is a reference to the five-volume
+          <a
+            href="https://en.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy"
+            >Hitchhiker’s Guide to the Galaxy</a
+          >
+          series by Douglas Adams. The fourth and fifth volumes in the series
+          list themselves as being part of
+          <q>the increasingly inaccurately named Hitchhiker’s Trilogy.</q>
+        </aside>
+        <h2 id="the-user-agent-as-the-users-ambassador">
+          The User-Agent as the user’s ambassador
+        </h2>
+        <p>
+          The idea of a user agent dates back to the early days of the Internet.
+          Every computer system that involves humans needs some mechanism to
+          represent human intent. We can’t move electrons directly. So, we must
+          interact with some device
+          <a
+            href="#fn1"
+            class="footnote-ref"
+            id="fnref1"
+            role="doc-noteref"
+            interestfor="ref-1-preview"
+            style="anchor-name: --ref-1-preview-anchor"
+            ><sup>1</sup></a
+          >
+          within the computer system as a proxy. This device, which interfaces
+          with the system on behalf of the human (i.e. user), is called the
+          <strong>user agent</strong>.
+        </p>
+        <p>
+          Right from the start, the role of the user agent is to accurately
+          represent the user’s intent, and to accurately reflect back the state
+          of the system to the user.
+        </p>
+        <p>
+          In an email system, this user agent is called a mail user agent
+          (<abbr>MUA</abbr>)
+          <span class="citation" data-cites="tracy2002guidelines"
+            >(<a
+              href="#ref-tracy2002guidelines"
+              role="doc-biblioref"
+              interestfor="ref-6-preview"
+              style="anchor-name: --ref-6-preview-anchor"
+              >Tracy et al., 2002</a
+            >)</span
+          >. For the web, it should be called a web user agent
+          (<abbr>WUA</abbr>)
+          <span class="citation" data-cites="w3c:webuseragents"
+            >(<a
+              href="#ref-w3c:webuseragents"
+              role="doc-biblioref"
+              interestfor="ref-7-preview"
+              style="anchor-name: --ref-7-preview-anchor"
+              >Yasskin &amp; Capadisli, 2026</a
+            >)</span
+          >. But because web user agents —which you might refer to as web
+          browsers— are so dominant, people have dropped the superfluous “web”
+          part.
+        </p>
+        <figure>
+          <pre
+            class="man"
+          ><code>MUTT(1)                     User Manuals                    MUTT(1)
+
+NAME
+       mutt - The Mutt Mail User Agent
+
+SYNOPSIS
+       mutt [-hNpRxZ] [-s subject] [-c cc-addr] [-a file] ...
+            [-F rcfile] [-H draft] [-i include] [-f mailbox]
+            [address] ...
+
+DESCRIPTION
+       Mutt is a small but very powerful text-based MIME mail client.
+       Mutt is highly configurable, and is well suited to the mail
+       power user with advanced features like key bindings, keyboard
+       macros, mail threading, regular expression searches and a
+       powerful pattern matching language for selecting groups of
+       messages.
+
+       &quot;All mail clients suck.  This one just sucks less.&quot;
+       - me, circa 1995</code></pre>
+          <figcaption>
+            An ancient manual page for the Mutt email client circa 1995. Note
+            that the program is described as <q>The Mutt Mail User Agent</q>.
+          </figcaption>
+        </figure>
+        <p>
+          Over time, user agents have evolved from simple command-line
+          interfaces to sophisticated graphical browsers and services. Modern
+          user agents are versatile platforms integrating a wide array of
+          advanced capabilities and protocols.
+          <span class="citation" data-cites="wiki:NCSAMosaic"
+            >(<a
+              href="#ref-wiki:NCSAMosaic"
+              role="doc-biblioref"
+              interestfor="ref-8-preview"
+              style="anchor-name: --ref-8-preview-anchor"
+              >Wikipedia, 2025</a
+            >)</span
+          >
+        </p>
+        <p>
+          In the early days of the web, people took the user agent’s role very
+          seriously, almost religiously. Unlike email, where the
+          <abbr>MUA</abbr>
+          does simple tasks like fetching and sending messages, the
+          <abbr>UA</abbr> has a broader job. Technical requirements are so
+          demanding that only a few well-resourced tech companies can build and
+          maintain a full-featured UA from scratch. The standards documents for
+          a compliant UA are thousands of pages long
+          <a
+            href="#fn2"
+            class="footnote-ref"
+            id="fnref2"
+            role="doc-noteref"
+            interestfor="ref-2-preview"
+            style="anchor-name: --ref-2-preview-anchor"
+            ><sup>2</sup></a
+          >. These standards are not perfect or complete, but they have been
+          crafted through person-millenia of effort to ensure security and
+          correctness.
+        </p>
+        <p>
+          Beyond technical requirements, there is an increasingly important
+          social contract.
+        </p>
+        <h2 id="the-user-agent-must-act-on-behalf-of-the-user">
+          The User-Agent must act on behalf of the user
+        </h2>
+        <p>… and must be loyal and reliable.</p>
+        <p>
+          The UA must accurately render web pages as described by server
+          responses and verify claims made by servers. For instance, when a user
+          attempts to visit a suspicious or known phishing website, most modern
+          browsers will steer them away from it
+          <span class="citation" data-cites="mozilla2024security"
+            >(<a
+              href="#ref-mozilla2024security"
+              role="doc-biblioref"
+              interestfor="ref-9-preview"
+              style="anchor-name: --ref-9-preview-anchor"
+              >Mozilla, 2024</a
+            >)</span
+          >.
+        </p>
+        <p>
+          The UA shouldn’t be sending data to random third parties unknown to
+          the user, nor should it be furnishing information that the user hasn’t
+          offered to share. All this while, each visited page triggers hundreds
+          of network requests to dozens of third-party sites.
+        </p>
+        <h2 id="the-user-agent-must-act-only-on-behalf-of-the-user.">
+          The User-Agent must act ONLY on behalf of the user.
+        </h2>
+        <p>
+          When we say <q>The UA acts on behalf of the user …</q>, there’s an
+          unsaid part: The UA acts <strong>only</strong> on behalf of the user.
+          But modern web technology is so complex that users cannot fully
+          understand how their user agent interacts with the internet. Thus,
+          they have no means of rigorously verifying that all the UA’s activity
+          is aligned with the user’s interests and only the user’s interests.
+        </p>
+        <p>
+          This user-UA relationship depends on layers of implicit,
+          non-negotiable trust, which are unverifiable
+          <a
+            href="#fn3"
+            class="footnote-ref"
+            id="fnref3"
+            role="doc-noteref"
+            interestfor="ref-3-preview"
+            style="anchor-name: --ref-3-preview-anchor"
+            ><sup>3</sup></a
+          >.
+        </p>
+        <h2 id="it-matters-who-owns-the-user-agent.">
+          It matters who owns the User-Agent.
+        </h2>
+        <p>
+          Because of this functional opacity and implied trust, it matters
+          greatly who owns and controls the UA. This control determines whether
+          the UA’s priorities align with the user’s or the owner’s, and whether
+          the owners can be held accountable if they fail to uphold their end of
+          the social contract. In reality, the only way to force the UA owners
+          to respect user intent is through legislation
+          <span class="citation" data-cites="w3c:privacyprinciples"
+            >(<a
+              href="#ref-w3c:privacyprinciples"
+              role="doc-biblioref"
+              interestfor="ref-10-preview"
+              style="anchor-name: --ref-10-preview-anchor"
+              >Berjon &amp; Yasskin, 2025</a
+            >)</span
+          >.
+        </p>
+        <p>However, this article is not about UAs.</p>
+        <p>
+          We only took that detour to explain what a UA is, the degree of trust,
+          and the power imbalance. Now let’s look at yet another kind of user
+          agent. It has even more information about you, must be trusted to act
+          in your best interest, and its behavior cannot be verified.
+        </p>
+        <h2 id="user-agents-with-ai-superpowers">
+          User-Agents with AI superpowers …
+        </h2>
+        <p>
+          I’m talking about the coming AI-powered user agents (referred to as
+          <abbr>AIUA</abbr>s in this article). These do more than just fetch and
+          present web pages for users. <abbr>AIUA</abbr>s are like traditional
+          UAs, but far more powerful. They collect and interpret massive amounts
+          of user data and perform actions on behalf of the user. By design,
+          these agents must have access to deeply personal data
+          <span class="citation" data-cites="yang2025adoption"
+            >(<a
+              href="#ref-yang2025adoption"
+              role="doc-biblioref"
+              interestfor="ref-11-preview"
+              style="anchor-name: --ref-11-preview-anchor"
+              >Yang et al., 2025</a
+            >)</span
+          >.
+        </p>
+        <h2 id="need-to-feed-on-your-data">… need to feed on your data …</h2>
+        <p>
+          Data sharing is a non-negotiable. For now, these AIUAs will rely on a
+          remotely located brain
+          <a
+            href="#fn4"
+            class="footnote-ref"
+            id="fnref4"
+            role="doc-noteref"
+            interestfor="ref-4-preview"
+            style="anchor-name: --ref-4-preview-anchor"
+            ><sup>4</sup></a
+          >. Hence, the logic applied to decisions affecting you will be
+          unknowable. More distressingly, it may even be unknowable to the
+          people who built them
+          <span class="citation" data-cites="aysel2025explainable"
+            >(<a
+              href="#ref-aysel2025explainable"
+              role="doc-biblioref"
+              interestfor="ref-12-preview"
+              style="anchor-name: --ref-12-preview-anchor"
+              >Aysel et al., 2025</a
+            >)</span
+          >. This opacity largely stems from the complexity of AI models, which
+          involve numerous layers of computation, making their inner workings
+          difficult to interpret. Additionally, a lack of comprehensive
+          interpretability tools contributes to this issue, leaving both users
+          and developers with a limited understanding of their decision-making
+          processes
+          <span class="citation" data-cites="aryaxai:beyondtransparency"
+            >(<a
+              href="#ref-aryaxai:beyondtransparency"
+              role="doc-biblioref"
+              interestfor="ref-13-preview"
+              style="anchor-name: --ref-13-preview-anchor"
+              >AryaXAI, 2025</a
+            >)</span
+          >.
+        </p>
+        <h2 id="but-wont-swear-any-allegiance.">
+          … but won’t swear any allegiance.
+        </h2>
+        <p>
+          In the classic UA trust model, if you see a recommendation for a
+          product, you know a handful of entities whose interests this
+          recommendation or ad serves. With AIUAs, you will have no idea if a
+          recommendation serves your best interest or someone else’s. It could
+          try to help you but fail because its training data is biased toward
+          someone else’s interests. This bias is difficult to detect.
+          <span class="citation" data-cites="ryan2025ai"
+            >(<a
+              href="#ref-ryan2025ai"
+              role="doc-biblioref"
+              interestfor="ref-14-preview"
+              style="anchor-name: --ref-14-preview-anchor"
+              >Ryan, 2025</a
+            >)</span
+          >
+        </p>
+        <h3 id="they-are-opaque.">They are opaque.</h3>
+        <p>
+          Even with a relatively simpler system like the UA with well-defined
+          trust boundaries, trust remains a difficult problem. We are moving
+          towards indecipherable systems like AIUAs with even fuzzier trust
+          boundaries. We don’t have thousands of pages of specifications for
+          these AI systems. Instead, there are trillions of training tokens that
+          only offer loose guidance. Not to mention basic attack vectors like
+          prompt injection still haven’t been sufficiently mitigated
+          <a
+            href="#fn5"
+            class="footnote-ref"
+            id="fnref5"
+            role="doc-noteref"
+            interestfor="ref-5-preview"
+            style="anchor-name: --ref-5-preview-anchor"
+            ><sup>5</sup></a
+          >. Nobody can guarantee where AIUAs’ allegiance lies.
+          <span class="citation" data-cites="openai2025hardening"
+            >(<a
+              href="#ref-openai2025hardening"
+              role="doc-biblioref"
+              interestfor="ref-15-preview"
+              style="anchor-name: --ref-15-preview-anchor"
+              >OpenAI, 2025</a
+            >)</span
+          >
+        </p>
+        <h2 id="they-are-deceptively-trustworthy">
+          They are deceptively trustworthy …
+        </h2>
+        <p>
+          AIUAs can easily gain people’s trust. Some people even fall in love
+          with them
+          <span class="citation" data-cites="demopoulos2025women"
+            >(<a
+              href="#ref-demopoulos2025women"
+              role="doc-biblioref"
+              interestfor="ref-16-preview"
+              style="anchor-name: --ref-16-preview-anchor"
+              >Demopoulos, 2025</a
+            >)</span
+          >
+          or follow them to their deaths. Our politics, values, and consumption
+          habits are easy pickings for a mildly motivated AIUA to manipulate. To
+          make things even worse, people trust what AIUAs tell them about the
+          world without checking. The more people choose AIUAs as the goggles
+          with which they see the world, the more these agents can shape a
+          convincing alternate reality.
+        </p>
+        <h2 id="and-difficult-to-align.">… and difficult to align.</h2>
+        <p>
+          Perhaps the most interesting example of an intentionally modified
+          foundational model is Grok, Elon Musk’s xAI chatbot. In July 2025,
+          after Musk announced he had “improved” Grok to make it less
+          “politically correct,” the chatbot began posting antisemitic content
+          on X. This included praising Hitler and making false claims about
+          Jewish people.
+          <span class="citation" data-cites="siddiqui2025elon"
+            >(<a
+              href="#ref-siddiqui2025elon"
+              role="doc-biblioref"
+              interestfor="ref-17-preview"
+              style="anchor-name: --ref-17-preview-anchor"
+              >Siddiqui, 2025</a
+            >)</span
+          >
+        </p>
+        <p>
+          Grok isn’t an outlier. DeepSeek shocked the foundation model world
+          when it came out. It was an open-weight model from China whose
+          performance was comparable to the biggest foundation models at the
+          time. Yet there was a problem: DeepSeek didn’t like to talk about
+          Tiananmen Square.
+          <span class="citation" data-cites="lu2025deepseek"
+            >(<a
+              href="#ref-lu2025deepseek"
+              role="doc-biblioref"
+              interestfor="ref-18-preview"
+              style="anchor-name: --ref-18-preview-anchor"
+              >Lu, 2025</a
+            >)</span
+          >
+        </p>
+        <p>
+          Trying to steer foundation models toward or away from bias often leads
+          to outcomes that diverge from intentions.
+          <span class="citation" data-cites="sun2025aligned"
+            >(<a
+              href="#ref-sun2025aligned"
+              role="doc-biblioref"
+              interestfor="ref-19-preview"
+              style="anchor-name: --ref-19-preview-anchor"
+              >Sun et al., 2025</a
+            >)</span
+          >
+          While it sounds like self-sabotage, it’s not absurd to suggest that
+          Google would comply with a request to politically “align” Gemini
+          —hypothetically of course. Google scaled back its DEI hiring goals and
+          other diversity programs in early 2025 after facing political and
+          legal pressure.
+          <span class="citation" data-cites="ap2025google"
+            >(<a
+              href="#ref-ap2025google"
+              role="doc-biblioref"
+              interestfor="ref-20-preview"
+              style="anchor-name: --ref-20-preview-anchor"
+              >Associated Press, 2025</a
+            >)</span
+          >
+          Standing up for what’s right at the expense of profit seems an
+          unrealistic expectation.
+        </p>
+        <p>In summary,</p>
+        <ul>
+          <li>
+            We see the world through complex yet predictable machines — called
+            user agents. They are difficult to understand, but they do our
+            bidding, more or less.
+          </li>
+          <li>
+            We are moving towards handing over our agency to even more complex
+            machines. But this time, they are unpredictable, poorly understood,
+            and pretty much impossible to align with our interests in a
+            verifiable way.
+          </li>
+        </ul>
+        <p>
+          That’s terrifying. But what can we do about it? In the next part of
+          this series, we will delve into practical strategies and explore
+          cutting-edge research to address and mitigate the risks associated
+          with AI-powered user agents. We’ll examine the role of transparency in
+          AI development and look at how emerging frameworks could help ensure
+          AI systems act in our best interests.
+        </p>
+        <div
+          id="refs"
+          class="references csl-bib-body hanging-indent"
+          data-entry-spacing="0"
+          data-line-spacing="2"
+          role="list"
+        >
+          <div
+            id="ref-aryaxai:beyondtransparency"
+            class="csl-entry"
+            role="listitem"
+          >
+            <span class="csl-title"
+              >Beyond Transparency: Reimagining AI Interpretability
+              Paradigms</span
+            >.
+            <a
+              href="https://www.aryaxai.com/article/beyond-transparency-reimagining-ai-interpretability-paradigms"
+              class="csl-url"
+            >
+              [www.aryaxai.com] </a
+            ><span class="csl-note">[Online; accessed 7-April-2025]</span>.
+            <span class="csl-authors"
+              ><span class="csl-author">AryaXAI, </span></span
+            >
+            <span class="csl-year">2025</span>.
+            <a
+              href="https://scholar.google.com/scholar?hl=en&q=Beyond%20Transparency%3A%20Reimagining%20AI%20Interpretability%20Paradigms"
+              target="_blank"
+              class="csl-scholar-link"
+              >(Google Scholar)</a
+            >
+          </div>
+          <div id="ref-ap2025google" class="csl-entry" role="listitem">
+            <span class="csl-title"
+              >Google scraps its diversity hiring goals as it complies with
+              Trump's new government contractor rules</span
+            >.
+            <a
+              href="https://apnews.com/article/16a937d5d9b6447251c4c40c2ad1c915"
+              class="csl-url"
+            >
+              [apnews.com] </a
+            ><span class="csl-note"
+              >Associated Press. [Online; accessed 7-April-2025]</span
+            >.
+            <span class="csl-authors"
+              ><span class="csl-author">Associated Press, </span></span
+            >
+            <span class="csl-year">2025</span>.
+            <a
+              href="https://scholar.google.com/scholar?hl=en&q=Google%20scraps%20its%20diversity%20hiring%20goals%20as%20it%20complies%20with%20Trump's%20new%20government%20contractor%20rules"
+              target="_blank"
+              class="csl-scholar-link"
+              >(Google Scholar)</a
+            >
+            <blockquote class="csl-abstract">
+              Google is scrapping some of its diversity hiring targets, joining
+              a lengthening list of U.S. companies that have been abandoning or
+              scaling back their diversity, equity and inclusion programs.
+            </blockquote>
+          </div>
+          <div id="ref-aysel2025explainable" class="csl-entry" role="listitem">
+            <span class="csl-title"
+              >Explainable Artificial Intelligence: Advancements and
+              Limitations</span
+            >
+            - <span class="csl-container-title">Applied Sciences</span>.
+            <a href="https://doi.org/10.3390/app15137261" class="csl-url">
+              [doi.org] </a
+            ><span class="csl-authors"
+              ><span class="csl-author">Aysel, H. I.</span>,
+              <span class="csl-author">Cai, X.</span>,
+              <span class="csl-author">Prugel-Bennett, A.</span></span
+            >
+            <span class="csl-year">2025</span>.
+            <a
+              href="https://scholar.google.com/scholar?hl=en&q=Explainable%20Artificial%20Intelligence%3A%20Advancements%20and%20Limitations"
+              target="_blank"
+              class="csl-scholar-link"
+              >(Google Scholar)</a
+            >
+          </div>
+          <div
+            id="ref-businesshorizons2025balancing"
+            class="csl-entry"
+            role="listitem"
+          >
+            <span class="csl-title"
+              >Balancing explainability and privacy in AI systems: A strategic
+              imperative for managers</span
+            >
+            - <span class="csl-container-title">Business Horizons</span>.
+            <a
+              href="https://doi.org/10.1016/j.bushor.2025.10.004"
+              class="csl-url"
+            >
+              [doi.org]
+            </a>
+            <span class="csl-year">2025</span>.
+            <a
+              href="https://scholar.google.com/scholar?hl=en&q=Balancing%20explainability%20and%20privacy%20in%20AI%20systems%3A%20A%20strategic%20imperative%20for%20managers"
+              target="_blank"
+              class="csl-scholar-link"
+              >(Google Scholar)</a
+            >
+          </div>
+          <div id="ref-w3c:privacyprinciples" class="csl-entry" role="listitem">
+            <span class="csl-title">Privacy Principles</span>.
+            <a href="https://www.w3.org/TR/privacy-principles/" class="csl-url">
+              [www.w3.org] </a
+            ><span class="csl-note"
+              >W3C Statement, 15 May 2025. [Online; accessed 7-April-2025]</span
+            >.
+            <span class="csl-authors"
+              ><span class="csl-author">Berjon, R.</span>,
+              <span class="csl-author">Yasskin, J.</span></span
+            >
+            <span class="csl-year">2025</span>.
+            <a
+              href="https://scholar.google.com/scholar?hl=en&q=Privacy%20Principles"
+              target="_blank"
+              class="csl-scholar-link"
+              >(Google Scholar)</a
+            >
+            <blockquote class="csl-abstract">
+              Privacy is an essential part of the web. This document provides
+              definitions for privacy and related concepts that are applicable
+              worldwide as well as a set of privacy principles that should guide
+              the development of the web as a trustworthy platform.
+            </blockquote>
+          </div>
+          <div id="ref-demopoulos2025women" class="csl-entry" role="listitem">
+            <span class="csl-title"
+              >The women in love with AI companions: ‘I vowed to my chatbot that
+              I wouldn’t leave him’</span
+            >.
+            <a
+              href="https://www.theguardian.com/technology/2025/sep/09/ai-chatbot-love-relationships"
+              class="csl-url"
+            >
+              [www.theguardian.com] </a
+            ><span class="csl-note"
+              >The Guardian. [Online; accessed 7-April-2025]</span
+            >.
+            <span class="csl-authors"
+              ><span class="csl-author">Demopoulos, A.</span></span
+            >
+            <span class="csl-year">2025</span>.
+            <a
+              href="https://scholar.google.com/scholar?hl=en&q=The%20women%20in%20love%20with%20AI%20companions%3A%20%E2%80%98I%20vowed%20to%20my%20chatbot%20that%20I%20wouldn%E2%80%99t%20leave%20him%E2%80%99"
+              target="_blank"
+              class="csl-scholar-link"
+              >(Google Scholar)</a
+            >
+            <blockquote class="csl-abstract">
+              Experts are concerned about people emotionally depending on AI,
+              but these women say their digital companions are misunderstood.
+            </blockquote>
+          </div>
+          <div id="ref-lu2025deepseek" class="csl-entry" role="listitem">
+            <span class="csl-title"
+              >We tried out DeepSeek. It worked well, until we asked it about
+              Tiananmen Square and Taiwan</span
+            >.
+            <a
+              href="https://www.theguardian.com/technology/2025/jan/28/we-tried-out-deepseek-it-works-well-until-we-asked-it-about-tiananmen-square-and-taiwan"
+              class="csl-url"
+            >
+              [www.theguardian.com] </a
+            ><span class="csl-note"
+              >The Guardian. [Online; accessed 7-April-2025]</span
+            >.
+            <span class="csl-authors"
+              ><span class="csl-author">Lu, D.</span></span
+            >
+            <span class="csl-year">2025</span>.
+            <a
+              href="https://scholar.google.com/scholar?hl=en&q=We%20tried%20out%20DeepSeek.%20It%20worked%20well%2C%20until%20we%20asked%20it%20about%20Tiananmen%20Square%20and%20Taiwan"
+              target="_blank"
+              class="csl-scholar-link"
+              >(Google Scholar)</a
+            >
+            <blockquote class="csl-abstract">
+              The AI app soared up the Apple charts and rocked US stocks, but
+              the Chinese chatbot was reluctant to discuss sensitive questions
+              about China and its government.
+            </blockquote>
+          </div>
+          <div id="ref-mozilla2024security" class="csl-entry" role="listitem">
+            <span class="csl-title"
+              >What do the security warning codes mean? | Firefox Help</span
+            >.
+            <a
+              href="https://support.mozilla.org/kb/como-resolve-fracos-criptografia-erro-mensagens-firefox"
+              class="csl-url"
+            >
+              [support.mozilla.org] </a
+            ><span class="csl-note"
+              >Mozilla Support. [Online; accessed 7-April-2025]</span
+            >.
+            <span class="csl-authors"
+              ><span class="csl-author">Mozilla, </span></span
+            >
+            <span class="csl-year">2024</span>.
+            <a
+              href="https://scholar.google.com/scholar?hl=en&q=What%20do%20the%20security%20warning%20codes%20mean%3F%20%7C%20Firefox%20Help"
+              target="_blank"
+              class="csl-scholar-link"
+              >(Google Scholar)</a
+            >
+          </div>
+          <div id="ref-openai2025hardening" class="csl-entry" role="listitem">
+            <span class="csl-title"
+              >Continuously hardening ChatGPT Atlas against prompt injection
+              attacks</span
+            >.
+            <a
+              href="https://openai.com/index/hardening-atlas-against-prompt-injection/"
+              class="csl-url"
+            >
+              [openai.com] </a
+            ><span class="csl-note"
+              >OpenAI blog. [Online; accessed 7-April-2025]</span
+            >.
+            <span class="csl-authors"
+              ><span class="csl-author">OpenAI, </span></span
+            >
+            <span class="csl-year">2025</span>.
+            <a
+              href="https://scholar.google.com/scholar?hl=en&q=Continuously%20hardening%20ChatGPT%20Atlas%20against%20prompt%20injection%20attacks"
+              target="_blank"
+              class="csl-scholar-link"
+              >(Google Scholar)</a
+            >
+          </div>
+          <div id="ref-ryan2025ai" class="csl-entry" role="listitem">
+            <span class="csl-title">When AI buys from AI, who do we trust?</span
+            >.
+            <a
+              href="https://www.techradar.com/pro/when-ai-buys-from-ai-who-do-we-trust"
+              class="csl-url"
+            >
+              [www.techradar.com] </a
+            ><span class="csl-note"
+              >TechRadar. [Online; accessed 7-April-2025]</span
+            >.
+            <span class="csl-authors"
+              ><span class="csl-author">Ryan, C.</span></span
+            >
+            <span class="csl-year">2025</span>.
+            <a
+              href="https://scholar.google.com/scholar?hl=en&q=When%20AI%20buys%20from%20AI%2C%20who%20do%20we%20trust%3F"
+              target="_blank"
+              class="csl-scholar-link"
+              >(Google Scholar)</a
+            >
+            <blockquote class="csl-abstract">
+              Trust is no longer optional infrastructure.
+            </blockquote>
+          </div>
+          <div id="ref-siddiqui2025elon" class="csl-entry" role="listitem">
+            <span class="csl-title"
+              >Elon Musk’s AI chatbot Grok launches into antisemitic rant amid
+              updates</span
+            >.
+            <a
+              href="https://www.washingtonpost.com/technology/2025/07/08/elon-musk-grok-ai-antisemitism/"
+              class="csl-url"
+            >
+              [www.washingtonpost.com] </a
+            ><span class="csl-note"
+              >The Washington Post. [Online; accessed 7-April-2025]</span
+            >.
+            <span class="csl-authors"
+              ><span class="csl-author">Siddiqui, F.</span></span
+            >
+            <span class="csl-year">2025</span>.
+            <a
+              href="https://scholar.google.com/scholar?hl=en&q=Elon%20Musk%E2%80%99s%20AI%20chatbot%20Grok%20launches%20into%20antisemitic%20rant%20amid%20updates"
+              target="_blank"
+              class="csl-scholar-link"
+              >(Google Scholar)</a
+            >
+          </div>
+          <div id="ref-sun2025aligned" class="csl-entry" role="listitem">
+            <span class="csl-title"
+              >Aligned but Blind: Alignment Increases Implicit Bias by Reducing
+              Awareness of Race</span
+            >
+            -
+            <span class="csl-container-title"
+              >arXiv preprint arXiv:2506.00253</span
+            >.
+            <a href="https://doi.org/10.48550/arXiv.2506.00253" class="csl-url">
+              [doi.org] </a
+            ><span class="csl-authors"
+              ><span class="csl-author">Sun, L.</span>,
+              <span class="csl-author">Mao, C.</span>,
+              <span class="csl-author">Hofmann, V.</span>,
+              <span class="csl-author">Bai, X.</span></span
+            >
+            <span class="csl-year">2025</span>.
+            <a
+              href="https://scholar.google.com/scholar?hl=en&q=Aligned%20but%20Blind%3A%20Alignment%20Increases%20Implicit%20Bias%20by%20Reducing%20Awareness%20of%20Race"
+              target="_blank"
+              class="csl-scholar-link"
+              >(Google Scholar)</a
+            >
+            <blockquote class="csl-abstract">
+              Although value-aligned language models (LMs) appear unbiased in
+              explicit bias evaluations, they often exhibit stereotypes in
+              implicit word association tasks, raising concerns about their fair
+              usage. We investigate the mechanisms behind this discrepancy and
+              find that alignment surprisingly amplifies implicit bias in model
+              outputs.
+            </blockquote>
+          </div>
+          <div id="ref-tracy2002guidelines" class="csl-entry" role="listitem">
+            <span class="csl-title"
+              >Guidelines on electronic mail security</span
+            >
+            - <span class="csl-container-title">NIST Special Publication</span>.
+            <span class="csl-authors"
+              ><span class="csl-author">Tracy, M.</span>,
+              <span class="csl-author">Jansen, W.</span>,
+              <span class="csl-author">Bisker, S.</span></span
+            >
+            <span class="csl-year">2002</span>.
+            <span class="csl-page">pp. 45 </span>
+            <a
+              href="https://scholar.google.com/scholar?hl=en&q=Guidelines%20on%20electronic%20mail%20security"
+              target="_blank"
+              class="csl-scholar-link"
+              >(Google Scholar)</a
+            >
+            <blockquote class="csl-abstract">
+              Electronic mail (e-mail) is a critical business application, but
+              it is also a source of security risks. This publication provides
+              guidelines for securing e-mail systems, including client and
+              server security, as well as the infrastructure that supports
+              e-mail.
+            </blockquote>
+          </div>
+          <div id="ref-wiki:NCSAMosaic" class="csl-entry" role="listitem">
+            <span class="csl-title"
+              >NCSA Mosaic — Wikipedia, The Free Encyclopedia</span
+            >.
+            <a href="https://en.wikipedia.org/wiki/NCSA_Mosaic" class="csl-url">
+              [en.wikipedia.org] </a
+            ><span class="csl-note">[Online; accessed 7-April-2025]</span>.
+            <span class="csl-authors"
+              ><span class="csl-author">Wikipedia, </span></span
+            >
+            <span class="csl-year">2025</span>.
+            <a
+              href="https://scholar.google.com/scholar?hl=en&q=NCSA%20Mosaic%20%E2%80%94%20Wikipedia%2C%20The%20Free%20Encyclopedia"
+              target="_blank"
+              class="csl-scholar-link"
+              >(Google Scholar)</a
+            >
+            <blockquote class="csl-abstract">
+              NCSA Mosaic is a discontinued early web browser. It was the first
+              browser to display images inline with text instead of in a
+              separate window. It is often described as the first graphical web
+              browser.
+            </blockquote>
+          </div>
+          <div id="ref-yang2025adoption" class="csl-entry" role="listitem">
+            <span class="csl-title"
+              >The Adoption and Usage of AI Agents: Early Evidence from
+              Perplexity</span
+            >
+            -
+            <span class="csl-container-title"
+              >arXiv preprint arXiv:2512.07828</span
+            >.
+            <a href="https://doi.org/10.48550/arXiv.2512.07828" class="csl-url">
+              [doi.org] </a
+            ><span class="csl-authors"
+              ><span class="csl-author">Yang, J.</span>,
+              <span class="csl-author">Yonack, N.</span>,
+              <span class="csl-author">Zyskowski, K.</span>,
+              <span class="csl-author">Yarats, D.</span>,
+              <span class="csl-author">Ho, J.</span>,
+              <span class="csl-author">Ma, J.</span></span
+            >
+            <span class="csl-year">2025</span>.
+            <a
+              href="https://scholar.google.com/scholar?hl=en&q=The%20Adoption%20and%20Usage%20of%20AI%20Agents%3A%20Early%20Evidence%20from%20Perplexity"
+              target="_blank"
+              class="csl-scholar-link"
+              >(Google Scholar)</a
+            >
+            <blockquote class="csl-abstract">
+              This paper presents the first large-scale field study of the
+              adoption, usage intensity, and use cases of general-purpose AI
+              agents operating in open-world web environments. Our analysis
+              centers on Comet, an AI-powered browser developed by Perplexity,
+              and its integrated agent, Comet Assistant. Drawing on hundreds of
+              millions of anonymized user interactions, we address three
+              fundamental questions: Who is using AI agents? How intensively are
+              they using them? And what are they using them for?
+            </blockquote>
+          </div>
+          <div id="ref-w3c:webuseragents" class="csl-entry" role="listitem">
+            <span class="csl-title">Web User Agents</span>.
+            <a
+              href="https://www.w3.org/TR/web-user-agents/#audience"
+              class="csl-url"
+            >
+              [www.w3.org] </a
+            ><span class="csl-note"
+              >W3C Working Draft, 20 January 2026. [Online; accessed
+              7-April-2025]</span
+            >.
+            <span class="csl-authors"
+              ><span class="csl-author">Yasskin, J.</span>,
+              <span class="csl-author">Capadisli, S.</span></span
+            >
+            <span class="csl-year">2026</span>.
+            <a
+              href="https://scholar.google.com/scholar?hl=en&q=Web%20User%20Agents"
+              target="_blank"
+              class="csl-scholar-link"
+              >(Google Scholar)</a
+            >
+          </div>
+        </div>
+        <section
+          id="footnotes"
+          class="footnotes footnotes-end-of-document"
+          role="doc-endnotes"
+        >
+          <hr />
+          <ol>
+            <li id="fn1">
+              <p>
+                I’m using the term “device” loosely here because the user agent
+                often consists of an entire stack of hardware and software. In
+                literature, you’ll find the terms “device,” “machine,” and
+                “system” used interchangeably, depending on the context.<a
+                  href="#fnref1"
+                  class="footnote-back"
+                  role="doc-backlink"
+                  ><span class="material-symbols-outlined"
+                    >arrow_upward</span
+                  ></a
+                >
+              </p>
+            </li>
+            <li id="fn2">
+              <p>
+                I worked on Google Chrome for over a decade on the networking
+                stack, and briefly on the renderer. Calling it thousands of
+                pages of standards is an understatement. Modern UAs face so many
+                quirks and misbehaviors that, in some areas, we have more code
+                handling quirks than implementing the intended specifications.
+                We can’t just refuse to talk to large portions of the internet
+                or refuse to render millions of older web pages just because the
+                code wouldn’t look good.<a
+                  href="#fnref2"
+                  class="footnote-back"
+                  role="doc-backlink"
+                  ><span class="material-symbols-outlined"
+                    >arrow_upward</span
+                  ></a
+                >
+              </p>
+            </li>
+            <li id="fn3">
+              <p>
+                Okay so this might need a little bit of qualification. Aren’t
+                the biggest names in the browser game open source? Aren’t they
+                all, like, based on Chromium? Why can’t we just read the source
+                code and figure out whether it is doing anything odd?
+              </p>
+              <p>
+                The reality is that people <em>have</em> and are actively
+                watching open source browser projects with eagle eyes.
+                Unfortunately, even if we can verify the open source parts of
+                the browser, that’s not the end of the story. See, when you
+                visit a web site, there could be data being sent to hundreds of
+                websites. Even if the browesr tells you each and every one of
+                those web sites, it would not be practical for anyone to
+                manually vet and understand what is going on. Even beyond that,
+                not all the functional bits of a browser is open-source. In
+                fact, perhaps the most questionable parts of a browser –like AI
+                integration, media rights management, how it works with various
+                hardware devices– are closed source for many reasons.
+              </p>
+              <p>
+                So it all boils down to whether it really matters if your
+                security depends on you performing something infeasible for all
+                practical purposes; kinda like being forced to read each and
+                every privacy policy and binding contract you have to click
+                through.<a
+                  href="#fnref3"
+                  class="footnote-back"
+                  role="doc-backlink"
+                  ><span class="material-symbols-outlined"
+                    >arrow_upward</span
+                  ></a
+                >
+              </p>
+            </li>
+            <li id="fn4">
+              <p>
+                Not all large language models are “hosted,” which means that the
+                model is actually stored far away in a server and you can only
+                talk to it through a mediating service. There are powerful
+                language models that you can store in your own computer.
+                Currently there is a large performance gap between the so-called
+                <q>open weights</q> models and their larger hosted counterparts.
+                If that wasn’t a big deal, any language model that you can run
+                on your machine is going to require some pretty hefty hardware.
+                So tl;dr, it is possible to run a large language model on your
+                computer. But that’s not an option for most (&gt;99%) people.<a
+                  href="#fnref4"
+                  class="footnote-back"
+                  role="doc-backlink"
+                  ><span class="material-symbols-outlined"
+                    >arrow_upward</span
+                  ></a
+                >
+              </p>
+            </li>
+            <li id="fn5">
+              <p>
+                <q>Prompt injection</q> refers to a security issue where someone
+                can craft a malicious prompt or include some malicious text that
+                when used with a large langauge model causes that model to
+                misbehave.
+              </p>
+              <p>
+                There are ongoing efforts that are trying to address these
+                concerns. Researchers are exploring potential solutions, such as
+                model auditing, to assess biases and decision-making processes
+                within AI systems. Additionally, improving explainability is a
+                key area of interest, as it would enhance our capability to
+                interpret AIUA actions and decisions. Developing technical
+                safeguards, such as robust encryption and secure access
+                controls, could also serve as preventive measures against
+                misuse.
+                <span
+                  class="citation"
+                  data-cites="businesshorizons2025balancing"
+                  >(<a
+                    href="#ref-businesshorizons2025balancing"
+                    role="doc-biblioref"
+                    interestfor="ref-21-preview"
+                    style="anchor-name: --ref-21-preview-anchor"
+                    ><span
+                      >“Balancing Explainability and Privacy in
+                      <span>AI</span> Systems,”</span
+                    >
+                    2025</a
+                  >)</span
+                ><a href="#fnref5" class="footnote-back" role="doc-backlink"
+                  ><span class="material-symbols-outlined"
+                    >arrow_upward</span
+                  ></a
+                >
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <div
+          popover="auto"
+          class="footnote-preview-container"
+          id="ref-1-preview"
+          style="position-anchor: --ref-1-preview-anchor"
+        >
+          <div class="footnote-preview-arrow" aria-hidden="true"></div>
+          <aside class="footnote-preview">
+            <div>
+              <p>
+                I’m using the term “device” loosely here because the user agent
+                often consists of an entire stack of hardware and software. In
+                literature, you’ll find the terms “device,” “machine,” and
+                “system” used interchangeably, depending on the context.
+              </p>
+            </div>
+          </aside>
+        </div>
+        <div
+          popover="auto"
+          class="footnote-preview-container"
+          id="ref-2-preview"
+          style="position-anchor: --ref-2-preview-anchor"
+        >
+          <div class="footnote-preview-arrow" aria-hidden="true"></div>
+          <aside class="footnote-preview">
+            <div>
+              <p>
+                I worked on Google Chrome for over a decade on the networking
+                stack, and briefly on the renderer. Calling it thousands of
+                pages of standards is an understatement. Modern UAs face so many
+                quirks and misbehaviors that, in some areas, we have more code
+                handling quirks than implementing the intended specifications.
+                We can’t just refuse to talk to large portions of the internet
+                or refuse to render millions of older web pages just because the
+                code wouldn’t look good.
+              </p>
+            </div>
+          </aside>
+        </div>
+        <div
+          popover="auto"
+          class="footnote-preview-container"
+          id="ref-3-preview"
+          style="position-anchor: --ref-3-preview-anchor"
+        >
+          <div class="footnote-preview-arrow" aria-hidden="true"></div>
+          <aside class="footnote-preview">
+            <div>
+              <p>
+                Okay so this might need a little bit of qualification. Aren’t
+                the biggest names in the browser game open source? Aren’t they
+                all, like, based on Chromium? Why can’t we just read the source
+                code and figure out whether it is doing anything odd?
+              </p>
+              <p>
+                The reality is that people <em>have</em> and are actively
+                watching open source browser projects with eagle eyes.
+                Unfortunately, even if we can verify the open source parts of
+                the browser, that’s not the end of the story. See, when you
+                visit a web site, there could be data being sent to hundreds of
+                websites. Even if the browesr tells you each and every one of
+                those web sites, it would not be practical for anyone to
+                manually vet and understand what is going on. Even beyond that,
+                not all the functional bits of a browser is open-source. In
+                fact, perhaps the most questionable parts of a browser –like AI
+                integration, media rights management, how it works with various
+                hardware devices– are closed source for many reasons.
+              </p>
+              <p>
+                So it all boils down to whether it really matters if your
+                security depends on you performing something infeasible for all
+                practical purposes; kinda like being forced to read each and
+                every privacy policy and binding contract you have to click
+                through.
+              </p>
+            </div>
+          </aside>
+        </div>
+        <div
+          popover="auto"
+          class="footnote-preview-container"
+          id="ref-4-preview"
+          style="position-anchor: --ref-4-preview-anchor"
+        >
+          <div class="footnote-preview-arrow" aria-hidden="true"></div>
+          <aside class="footnote-preview">
+            <div>
+              <p>
+                Not all large language models are “hosted,” which means that the
+                model is actually stored far away in a server and you can only
+                talk to it through a mediating service. There are powerful
+                language models that you can store in your own computer.
+                Currently there is a large performance gap between the so-called
+                <q>open weights</q> models and their larger hosted counterparts.
+                If that wasn’t a big deal, any language model that you can run
+                on your machine is going to require some pretty hefty hardware.
+                So tl;dr, it is possible to run a large language model on your
+                computer. But that’s not an option for most (&gt;99%) people.
+              </p>
+            </div>
+          </aside>
+        </div>
+        <div
+          popover="auto"
+          class="footnote-preview-container"
+          id="ref-5-preview"
+          style="position-anchor: --ref-5-preview-anchor"
+        >
+          <div class="footnote-preview-arrow" aria-hidden="true"></div>
+          <aside class="footnote-preview">
+            <div>
+              <p>
+                <q>Prompt injection</q> refers to a security issue where someone
+                can craft a malicious prompt or include some malicious text that
+                when used with a large langauge model causes that model to
+                misbehave.
+              </p>
+              <p>
+                There are ongoing efforts that are trying to address these
+                concerns. Researchers are exploring potential solutions, such as
+                model auditing, to assess biases and decision-making processes
+                within AI systems. Additionally, improving explainability is a
+                key area of interest, as it would enhance our capability to
+                interpret AIUA actions and decisions. Developing technical
+                safeguards, such as robust encryption and secure access
+                controls, could also serve as preventive measures against
+                misuse.
+                <span
+                  class="citation"
+                  data-cites="businesshorizons2025balancing"
+                  >(<a
+                    href="#ref-businesshorizons2025balancing"
+                    role="doc-biblioref"
+                    ><span
+                      >“Balancing Explainability and Privacy in
+                      <span>AI</span> Systems,”</span
+                    >
+                    2025</a
+                  >)</span
+                >
+              </p>
+            </div>
+          </aside>
+        </div>
+        <div
+          popover="auto"
+          class="footnote-preview-container"
+          id="ref-6-preview"
+          style="position-anchor: --ref-6-preview-anchor"
+        >
+          <div class="footnote-preview-arrow" aria-hidden="true"></div>
+          <aside class="footnote-preview">
+            <div id="ref-tracy2002guidelines" class="csl-entry" role="listitem">
+              <span class="csl-title"
+                >Guidelines on electronic mail security</span
+              >
+              -
+              <span class="csl-container-title">NIST Special Publication</span>.
+              <span class="csl-authors"
+                ><span class="csl-author">Tracy, M.</span>,
+                <span class="csl-author">Jansen, W.</span>,
+                <span class="csl-author">Bisker, S.</span></span
+              >
+              <span class="csl-year">2002</span>.
+              <span class="csl-page">pp. 45 </span>
+              <a
+                href="https://scholar.google.com/scholar?hl=en&q=Guidelines%20on%20electronic%20mail%20security"
+                target="_blank"
+                class="csl-scholar-link"
+                >(Google Scholar)</a
+              >
+              <blockquote class="csl-abstract">
+                Electronic mail (e-mail) is a critical business application, but
+                it is also a source of security risks. This publication provides
+                guidelines for securing e-mail systems, including client and
+                server security, as well as the infrastructure that supports
+                e-mail.
+              </blockquote>
+            </div>
+          </aside>
+        </div>
+        <div
+          popover="auto"
+          class="footnote-preview-container"
+          id="ref-7-preview"
+          style="position-anchor: --ref-7-preview-anchor"
+        >
+          <div class="footnote-preview-arrow" aria-hidden="true"></div>
+          <aside class="footnote-preview">
+            <div id="ref-w3c:webuseragents" class="csl-entry" role="listitem">
+              <span class="csl-title">Web User Agents</span>.
+              <a
+                href="https://www.w3.org/TR/web-user-agents/#audience"
+                class="csl-url"
+              >
+                [www.w3.org] </a
+              ><span class="csl-note"
+                >W3C Working Draft, 20 January 2026. [Online; accessed
+                7-April-2025]</span
+              >.
+              <span class="csl-authors"
+                ><span class="csl-author">Yasskin, J.</span>,
+                <span class="csl-author">Capadisli, S.</span></span
+              >
+              <span class="csl-year">2026</span>.
+              <a
+                href="https://scholar.google.com/scholar?hl=en&q=Web%20User%20Agents"
+                target="_blank"
+                class="csl-scholar-link"
+                >(Google Scholar)</a
+              >
+            </div>
+          </aside>
+        </div>
+        <div
+          popover="auto"
+          class="footnote-preview-container"
+          id="ref-8-preview"
+          style="position-anchor: --ref-8-preview-anchor"
+        >
+          <div class="footnote-preview-arrow" aria-hidden="true"></div>
+          <aside class="footnote-preview">
+            <div id="ref-wiki:NCSAMosaic" class="csl-entry" role="listitem">
+              <span class="csl-title"
+                >NCSA Mosaic — Wikipedia, The Free Encyclopedia</span
+              >.
+              <a
+                href="https://en.wikipedia.org/wiki/NCSA_Mosaic"
+                class="csl-url"
+              >
+                [en.wikipedia.org] </a
+              ><span class="csl-note">[Online; accessed 7-April-2025]</span>.
+              <span class="csl-authors"
+                ><span class="csl-author">Wikipedia, </span></span
+              >
+              <span class="csl-year">2025</span>.
+              <a
+                href="https://scholar.google.com/scholar?hl=en&q=NCSA%20Mosaic%20%E2%80%94%20Wikipedia%2C%20The%20Free%20Encyclopedia"
+                target="_blank"
+                class="csl-scholar-link"
+                >(Google Scholar)</a
+              >
+              <blockquote class="csl-abstract">
+                NCSA Mosaic is a discontinued early web browser. It was the
+                first browser to display images inline with text instead of in a
+                separate window. It is often described as the first graphical
+                web browser.
+              </blockquote>
+            </div>
+          </aside>
+        </div>
+        <div
+          popover="auto"
+          class="footnote-preview-container"
+          id="ref-9-preview"
+          style="position-anchor: --ref-9-preview-anchor"
+        >
+          <div class="footnote-preview-arrow" aria-hidden="true"></div>
+          <aside class="footnote-preview">
+            <div id="ref-mozilla2024security" class="csl-entry" role="listitem">
+              <span class="csl-title"
+                >What do the security warning codes mean? | Firefox Help</span
+              >.
+              <a
+                href="https://support.mozilla.org/kb/como-resolve-fracos-criptografia-erro-mensagens-firefox"
+                class="csl-url"
+              >
+                [support.mozilla.org] </a
+              ><span class="csl-note"
+                >Mozilla Support. [Online; accessed 7-April-2025]</span
+              >.
+              <span class="csl-authors"
+                ><span class="csl-author">Mozilla, </span></span
+              >
+              <span class="csl-year">2024</span>.
+              <a
+                href="https://scholar.google.com/scholar?hl=en&q=What%20do%20the%20security%20warning%20codes%20mean%3F%20%7C%20Firefox%20Help"
+                target="_blank"
+                class="csl-scholar-link"
+                >(Google Scholar)</a
+              >
+            </div>
+          </aside>
+        </div>
+        <div
+          popover="auto"
+          class="footnote-preview-container"
+          id="ref-10-preview"
+          style="position-anchor: --ref-10-preview-anchor"
+        >
+          <div class="footnote-preview-arrow" aria-hidden="true"></div>
+          <aside class="footnote-preview">
+            <div
+              id="ref-w3c:privacyprinciples"
+              class="csl-entry"
+              role="listitem"
+            >
+              <span class="csl-title">Privacy Principles</span>.
+              <a
+                href="https://www.w3.org/TR/privacy-principles/"
+                class="csl-url"
+              >
+                [www.w3.org] </a
+              ><span class="csl-note"
+                >W3C Statement, 15 May 2025. [Online; accessed
+                7-April-2025]</span
+              >.
+              <span class="csl-authors"
+                ><span class="csl-author">Berjon, R.</span>,
+                <span class="csl-author">Yasskin, J.</span></span
+              >
+              <span class="csl-year">2025</span>.
+              <a
+                href="https://scholar.google.com/scholar?hl=en&q=Privacy%20Principles"
+                target="_blank"
+                class="csl-scholar-link"
+                >(Google Scholar)</a
+              >
+              <blockquote class="csl-abstract">
+                Privacy is an essential part of the web. This document provides
+                definitions for privacy and related concepts that are applicable
+                worldwide as well as a set of privacy principles that should
+                guide the development of the web as a trustworthy platform.
+              </blockquote>
+            </div>
+          </aside>
+        </div>
+        <div
+          popover="auto"
+          class="footnote-preview-container"
+          id="ref-11-preview"
+          style="position-anchor: --ref-11-preview-anchor"
+        >
+          <div class="footnote-preview-arrow" aria-hidden="true"></div>
+          <aside class="footnote-preview">
+            <div id="ref-yang2025adoption" class="csl-entry" role="listitem">
+              <span class="csl-title"
+                >The Adoption and Usage of AI Agents: Early Evidence from
+                Perplexity</span
+              >
+              -
+              <span class="csl-container-title"
+                >arXiv preprint arXiv:2512.07828</span
+              >.
+              <a
+                href="https://doi.org/10.48550/arXiv.2512.07828"
+                class="csl-url"
+              >
+                [doi.org] </a
+              ><span class="csl-authors"
+                ><span class="csl-author">Yang, J.</span>,
+                <span class="csl-author">Yonack, N.</span>,
+                <span class="csl-author">Zyskowski, K.</span>,
+                <span class="csl-author">Yarats, D.</span>,
+                <span class="csl-author">Ho, J.</span>,
+                <span class="csl-author">Ma, J.</span></span
+              >
+              <span class="csl-year">2025</span>.
+              <a
+                href="https://scholar.google.com/scholar?hl=en&q=The%20Adoption%20and%20Usage%20of%20AI%20Agents%3A%20Early%20Evidence%20from%20Perplexity"
+                target="_blank"
+                class="csl-scholar-link"
+                >(Google Scholar)</a
+              >
+              <blockquote class="csl-abstract">
+                This paper presents the first large-scale field study of the
+                adoption, usage intensity, and use cases of general-purpose AI
+                agents operating in open-world web environments. Our analysis
+                centers on Comet, an AI-powered browser developed by Perplexity,
+                and its integrated agent, Comet Assistant. Drawing on hundreds
+                of millions of anonymized user interactions, we address three
+                fundamental questions: Who is using AI agents? How intensively
+                are they using them? And what are they using them for?
+              </blockquote>
+            </div>
+          </aside>
+        </div>
+        <div
+          popover="auto"
+          class="footnote-preview-container"
+          id="ref-12-preview"
+          style="position-anchor: --ref-12-preview-anchor"
+        >
+          <div class="footnote-preview-arrow" aria-hidden="true"></div>
+          <aside class="footnote-preview">
+            <div
+              id="ref-aysel2025explainable"
+              class="csl-entry"
+              role="listitem"
+            >
+              <span class="csl-title"
+                >Explainable Artificial Intelligence: Advancements and
+                Limitations</span
+              >
+              - <span class="csl-container-title">Applied Sciences</span>.
+              <a href="https://doi.org/10.3390/app15137261" class="csl-url">
+                [doi.org] </a
+              ><span class="csl-authors"
+                ><span class="csl-author">Aysel, H. I.</span>,
+                <span class="csl-author">Cai, X.</span>,
+                <span class="csl-author">Prugel-Bennett, A.</span></span
+              >
+              <span class="csl-year">2025</span>.
+              <a
+                href="https://scholar.google.com/scholar?hl=en&q=Explainable%20Artificial%20Intelligence%3A%20Advancements%20and%20Limitations"
+                target="_blank"
+                class="csl-scholar-link"
+                >(Google Scholar)</a
+              >
+            </div>
+          </aside>
+        </div>
+        <div
+          popover="auto"
+          class="footnote-preview-container"
+          id="ref-13-preview"
+          style="position-anchor: --ref-13-preview-anchor"
+        >
+          <div class="footnote-preview-arrow" aria-hidden="true"></div>
+          <aside class="footnote-preview">
+            <div
+              id="ref-aryaxai:beyondtransparency"
+              class="csl-entry"
+              role="listitem"
+            >
+              <span class="csl-title"
+                >Beyond Transparency: Reimagining AI Interpretability
+                Paradigms</span
+              >.
+              <a
+                href="https://www.aryaxai.com/article/beyond-transparency-reimagining-ai-interpretability-paradigms"
+                class="csl-url"
+              >
+                [www.aryaxai.com] </a
+              ><span class="csl-note">[Online; accessed 7-April-2025]</span>.
+              <span class="csl-authors"
+                ><span class="csl-author">AryaXAI, </span></span
+              >
+              <span class="csl-year">2025</span>.
+              <a
+                href="https://scholar.google.com/scholar?hl=en&q=Beyond%20Transparency%3A%20Reimagining%20AI%20Interpretability%20Paradigms"
+                target="_blank"
+                class="csl-scholar-link"
+                >(Google Scholar)</a
+              >
+            </div>
+          </aside>
+        </div>
+        <div
+          popover="auto"
+          class="footnote-preview-container"
+          id="ref-14-preview"
+          style="position-anchor: --ref-14-preview-anchor"
+        >
+          <div class="footnote-preview-arrow" aria-hidden="true"></div>
+          <aside class="footnote-preview">
+            <div id="ref-ryan2025ai" class="csl-entry" role="listitem">
+              <span class="csl-title"
+                >When AI buys from AI, who do we trust?</span
+              >.
+              <a
+                href="https://www.techradar.com/pro/when-ai-buys-from-ai-who-do-we-trust"
+                class="csl-url"
+              >
+                [www.techradar.com] </a
+              ><span class="csl-note"
+                >TechRadar. [Online; accessed 7-April-2025]</span
+              >.
+              <span class="csl-authors"
+                ><span class="csl-author">Ryan, C.</span></span
+              >
+              <span class="csl-year">2025</span>.
+              <a
+                href="https://scholar.google.com/scholar?hl=en&q=When%20AI%20buys%20from%20AI%2C%20who%20do%20we%20trust%3F"
+                target="_blank"
+                class="csl-scholar-link"
+                >(Google Scholar)</a
+              >
+              <blockquote class="csl-abstract">
+                Trust is no longer optional infrastructure.
+              </blockquote>
+            </div>
+          </aside>
+        </div>
+        <div
+          popover="auto"
+          class="footnote-preview-container"
+          id="ref-15-preview"
+          style="position-anchor: --ref-15-preview-anchor"
+        >
+          <div class="footnote-preview-arrow" aria-hidden="true"></div>
+          <aside class="footnote-preview">
+            <div id="ref-openai2025hardening" class="csl-entry" role="listitem">
+              <span class="csl-title"
+                >Continuously hardening ChatGPT Atlas against prompt injection
+                attacks</span
+              >.
+              <a
+                href="https://openai.com/index/hardening-atlas-against-prompt-injection/"
+                class="csl-url"
+              >
+                [openai.com] </a
+              ><span class="csl-note"
+                >OpenAI blog. [Online; accessed 7-April-2025]</span
+              >.
+              <span class="csl-authors"
+                ><span class="csl-author">OpenAI, </span></span
+              >
+              <span class="csl-year">2025</span>.
+              <a
+                href="https://scholar.google.com/scholar?hl=en&q=Continuously%20hardening%20ChatGPT%20Atlas%20against%20prompt%20injection%20attacks"
+                target="_blank"
+                class="csl-scholar-link"
+                >(Google Scholar)</a
+              >
+            </div>
+          </aside>
+        </div>
+        <div
+          popover="auto"
+          class="footnote-preview-container"
+          id="ref-16-preview"
+          style="position-anchor: --ref-16-preview-anchor"
+        >
+          <div class="footnote-preview-arrow" aria-hidden="true"></div>
+          <aside class="footnote-preview">
+            <div id="ref-demopoulos2025women" class="csl-entry" role="listitem">
+              <span class="csl-title"
+                >The women in love with AI companions: ‘I vowed to my chatbot
+                that I wouldn’t leave him’</span
+              >.
+              <a
+                href="https://www.theguardian.com/technology/2025/sep/09/ai-chatbot-love-relationships"
+                class="csl-url"
+              >
+                [www.theguardian.com] </a
+              ><span class="csl-note"
+                >The Guardian. [Online; accessed 7-April-2025]</span
+              >.
+              <span class="csl-authors"
+                ><span class="csl-author">Demopoulos, A.</span></span
+              >
+              <span class="csl-year">2025</span>.
+              <a
+                href="https://scholar.google.com/scholar?hl=en&q=The%20women%20in%20love%20with%20AI%20companions%3A%20%E2%80%98I%20vowed%20to%20my%20chatbot%20that%20I%20wouldn%E2%80%99t%20leave%20him%E2%80%99"
+                target="_blank"
+                class="csl-scholar-link"
+                >(Google Scholar)</a
+              >
+              <blockquote class="csl-abstract">
+                Experts are concerned about people emotionally depending on AI,
+                but these women say their digital companions are misunderstood.
+              </blockquote>
+            </div>
+          </aside>
+        </div>
+        <div
+          popover="auto"
+          class="footnote-preview-container"
+          id="ref-17-preview"
+          style="position-anchor: --ref-17-preview-anchor"
+        >
+          <div class="footnote-preview-arrow" aria-hidden="true"></div>
+          <aside class="footnote-preview">
+            <div id="ref-siddiqui2025elon" class="csl-entry" role="listitem">
+              <span class="csl-title"
+                >Elon Musk’s AI chatbot Grok launches into antisemitic rant amid
+                updates</span
+              >.
+              <a
+                href="https://www.washingtonpost.com/technology/2025/07/08/elon-musk-grok-ai-antisemitism/"
+                class="csl-url"
+              >
+                [www.washingtonpost.com] </a
+              ><span class="csl-note"
+                >The Washington Post. [Online; accessed 7-April-2025]</span
+              >.
+              <span class="csl-authors"
+                ><span class="csl-author">Siddiqui, F.</span></span
+              >
+              <span class="csl-year">2025</span>.
+              <a
+                href="https://scholar.google.com/scholar?hl=en&q=Elon%20Musk%E2%80%99s%20AI%20chatbot%20Grok%20launches%20into%20antisemitic%20rant%20amid%20updates"
+                target="_blank"
+                class="csl-scholar-link"
+                >(Google Scholar)</a
+              >
+            </div>
+          </aside>
+        </div>
+        <div
+          popover="auto"
+          class="footnote-preview-container"
+          id="ref-18-preview"
+          style="position-anchor: --ref-18-preview-anchor"
+        >
+          <div class="footnote-preview-arrow" aria-hidden="true"></div>
+          <aside class="footnote-preview">
+            <div id="ref-lu2025deepseek" class="csl-entry" role="listitem">
+              <span class="csl-title"
+                >We tried out DeepSeek. It worked well, until we asked it about
+                Tiananmen Square and Taiwan</span
+              >.
+              <a
+                href="https://www.theguardian.com/technology/2025/jan/28/we-tried-out-deepseek-it-works-well-until-we-asked-it-about-tiananmen-square-and-taiwan"
+                class="csl-url"
+              >
+                [www.theguardian.com] </a
+              ><span class="csl-note"
+                >The Guardian. [Online; accessed 7-April-2025]</span
+              >.
+              <span class="csl-authors"
+                ><span class="csl-author">Lu, D.</span></span
+              >
+              <span class="csl-year">2025</span>.
+              <a
+                href="https://scholar.google.com/scholar?hl=en&q=We%20tried%20out%20DeepSeek.%20It%20worked%20well%2C%20until%20we%20asked%20it%20about%20Tiananmen%20Square%20and%20Taiwan"
+                target="_blank"
+                class="csl-scholar-link"
+                >(Google Scholar)</a
+              >
+              <blockquote class="csl-abstract">
+                The AI app soared up the Apple charts and rocked US stocks, but
+                the Chinese chatbot was reluctant to discuss sensitive questions
+                about China and its government.
+              </blockquote>
+            </div>
+          </aside>
+        </div>
+        <div
+          popover="auto"
+          class="footnote-preview-container"
+          id="ref-19-preview"
+          style="position-anchor: --ref-19-preview-anchor"
+        >
+          <div class="footnote-preview-arrow" aria-hidden="true"></div>
+          <aside class="footnote-preview">
+            <div id="ref-sun2025aligned" class="csl-entry" role="listitem">
+              <span class="csl-title"
+                >Aligned but Blind: Alignment Increases Implicit Bias by
+                Reducing Awareness of Race</span
+              >
+              -
+              <span class="csl-container-title"
+                >arXiv preprint arXiv:2506.00253</span
+              >.
+              <a
+                href="https://doi.org/10.48550/arXiv.2506.00253"
+                class="csl-url"
+              >
+                [doi.org] </a
+              ><span class="csl-authors"
+                ><span class="csl-author">Sun, L.</span>,
+                <span class="csl-author">Mao, C.</span>,
+                <span class="csl-author">Hofmann, V.</span>,
+                <span class="csl-author">Bai, X.</span></span
+              >
+              <span class="csl-year">2025</span>.
+              <a
+                href="https://scholar.google.com/scholar?hl=en&q=Aligned%20but%20Blind%3A%20Alignment%20Increases%20Implicit%20Bias%20by%20Reducing%20Awareness%20of%20Race"
+                target="_blank"
+                class="csl-scholar-link"
+                >(Google Scholar)</a
+              >
+              <blockquote class="csl-abstract">
+                Although value-aligned language models (LMs) appear unbiased in
+                explicit bias evaluations, they often exhibit stereotypes in
+                implicit word association tasks, raising concerns about their
+                fair usage. We investigate the mechanisms behind this
+                discrepancy and find that alignment surprisingly amplifies
+                implicit bias in model outputs.
+              </blockquote>
+            </div>
+          </aside>
+        </div>
+        <div
+          popover="auto"
+          class="footnote-preview-container"
+          id="ref-20-preview"
+          style="position-anchor: --ref-20-preview-anchor"
+        >
+          <div class="footnote-preview-arrow" aria-hidden="true"></div>
+          <aside class="footnote-preview">
+            <div id="ref-ap2025google" class="csl-entry" role="listitem">
+              <span class="csl-title"
+                >Google scraps its diversity hiring goals as it complies with
+                Trump's new government contractor rules</span
+              >.
+              <a
+                href="https://apnews.com/article/16a937d5d9b6447251c4c40c2ad1c915"
+                class="csl-url"
+              >
+                [apnews.com] </a
+              ><span class="csl-note"
+                >Associated Press. [Online; accessed 7-April-2025]</span
+              >.
+              <span class="csl-authors"
+                ><span class="csl-author">Associated Press, </span></span
+              >
+              <span class="csl-year">2025</span>.
+              <a
+                href="https://scholar.google.com/scholar?hl=en&q=Google%20scraps%20its%20diversity%20hiring%20goals%20as%20it%20complies%20with%20Trump's%20new%20government%20contractor%20rules"
+                target="_blank"
+                class="csl-scholar-link"
+                >(Google Scholar)</a
+              >
+              <blockquote class="csl-abstract">
+                Google is scrapping some of its diversity hiring targets,
+                joining a lengthening list of U.S. companies that have been
+                abandoning or scaling back their diversity, equity and inclusion
+                programs.
+              </blockquote>
+            </div>
+          </aside>
+        </div>
+        <div
+          popover="auto"
+          class="footnote-preview-container"
+          id="ref-21-preview"
+          style="position-anchor: --ref-21-preview-anchor"
+        >
+          <div class="footnote-preview-arrow" aria-hidden="true"></div>
+          <aside class="footnote-preview">
+            <div
+              id="ref-businesshorizons2025balancing"
+              class="csl-entry"
+              role="listitem"
+            >
+              <span class="csl-title"
+                >Balancing explainability and privacy in AI systems: A strategic
+                imperative for managers</span
+              >
+              - <span class="csl-container-title">Business Horizons</span>.
+              <a
+                href="https://doi.org/10.1016/j.bushor.2025.10.004"
+                class="csl-url"
+              >
+                [doi.org]
+              </a>
+              <span class="csl-year">2025</span>.
+              <a
+                href="https://scholar.google.com/scholar?hl=en&q=Balancing%20explainability%20and%20privacy%20in%20AI%20systems%3A%20A%20strategic%20imperative%20for%20managers"
+                target="_blank"
+                class="csl-scholar-link"
+                >(Google Scholar)</a
+              >
+            </div>
+          </aside>
+        </div>
+      </main>
+
+      <footer class="container">
+        <div>
+          <p>
+            Last modified: <time datetime="2026-01-27">January 27, 2026</time>
+          </p>
+        </div>
+      </footer>
+    </article>
+
+    <div class="container"></div>
+
+    <footer class="container">
+      <h2>More posts from this blog ...</h2>
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h2 class="title">
+          <a itemprop="url" href="/posts/on-wontfixing-bugs/">
+            <span itemprop="name">On WontFixing Bugs</span>
+          </a>
+        </h2>
+        <div class="summary-row">
+          <div>
+            <nav>
+              <small>
+                Published on
+                <time datetime="2021-03-02" itemprop="datePublished"
+                  >March 2, 2021</time
+                >.
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag">
+                    #<a href="/tags/engineering/">Engineering</a>
+                  </span>
+                </li>
+              </menu>
+            </nav>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  Large projects accumulate a large number of issue reports over
+                  time. This is normal. Typically for a &quot;successful&quot;
+                  project the rate of new issues being reported will exceed the
+                  rate of issues being fixed. Hence the growth.
+                </p>
+                <p>
+                  But what are they to do about this ever-growing pile of bugs?
+                </p>
+              </div>
+            </div>
+            <p class="more">
+              <a href="/posts/on-wontfixing-bugs/">Read more …</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h2 class="title">
+          <a itemprop="url" href="/posts/shannon-paper/">
+            <span itemprop="name">Shannon Paper</span>
+          </a>
+        </h2>
+        <div class="summary-row">
+          <div>
+            <nav>
+              <small>
+                Published on
+                <time datetime="2021-03-26" itemprop="datePublished"
+                  >March 26, 2021</time
+                >.
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag"> #<a href="/tags/math/">Math</a> </span>
+                </li>
+              </menu>
+            </nav>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  Claude Shannon's
+                  <em>A mathematical theory of communication</em> is an oft
+                  cited classic in information theory. Let's dive in and try to
+                  tease apart the &quot;why&quot;s that are often overlooked
+                  when people build on top of the introduced theory. They are
+                  definitely things that I didn't consider to be obvious without
+                  the benefit of reading the paper.
+                </p>
+              </div>
+            </div>
+            <p class="more"><a href="/posts/shannon-paper/">Read more …</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h2 class="title">
+          <a itemprop="url" href="/posts/notes-on-fact-checking/">
+            <span itemprop="name"
+              >Notes from Crash Course&#39;s Videos on Fact Checking Information
+              You See On The Internet
+            </span>
+          </a>
+        </h2>
+        <div class="summary-row">
+          <div>
+            <nav>
+              <small>
+                Published on
+                <time datetime="2020-07-04" itemprop="datePublished"
+                  >July 4, 2020</time
+                >.
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag">
+                    #<a href="/tags/curiosity/">Curiosity</a>
+                  </span>
+                </li>
+              </menu>
+            </nav>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  Hank Green's Crash Course YouTube channel has an excellent
+                  series about navigating digital information. It's an excellent
+                  guide to how internet users could intelligently consume
+                  information they see on the internet. These are my
+                  (incomplete) notes from the series.
+                </p>
+              </div>
+            </div>
+            <p class="more">
+              <a href="/posts/notes-on-fact-checking/">Read more …</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h2 class="title">
+          <a itemprop="url" href="/posts/promise-fatigue/">
+            <span itemprop="name">Promise Fatigue</span>
+          </a>
+        </h2>
+        <div class="summary-row">
+          <div>
+            <nav>
+              <small>
+                Published on
+                <time datetime="2022-11-01" itemprop="datePublished"
+                  >November 1, 2022</time
+                >.
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag">
+                    #<a href="/tags/culture/">Culture</a>
+                  </span>
+                </li>
+                <li>
+                  <span class="tag"> #<a href="/tags/career/">Career</a> </span>
+                </li>
+              </menu>
+            </nav>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  Setting low but realistic expectations is better than setting
+                  high but unrealistic ones.
+                </p>
+              </div>
+            </div>
+            <p class="more">
+              <a href="/posts/promise-fatigue/">Read more …</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h2 class="title">
+          <a
+            itemprop="url"
+            href="/posts/things-you-can-do-with-nvim-and-vscode/"
+          >
+            <span itemprop="name"
+              >Things You Can Do With Neovim and Vscode That You Can&#39;t Do
+              With Neovim Alone</span
+            >
+          </a>
+        </h2>
+        <div class="summary-row">
+          <div>
+            <nav>
+              <small>
+                Published on
+                <time datetime="2020-09-19" itemprop="datePublished"
+                  >September 19, 2020</time
+                >.
+              </small>
+              <span></span>
+              <menu class="tags">
+                <li>
+                  <span class="tag"> #<a href="/tags/tools/">Tools</a> </span>
+                </li>
+                <li>
+                  <span class="tag"> #<a href="/tags/vim/">Vim</a> </span>
+                </li>
+              </menu>
+            </nav>
+            <p class="more">
+              <a href="/posts/things-you-can-do-with-nvim-and-vscode/"
+                >Read more …</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"
+    ></script>
+    <script>
+      var dnt,
+        doNotTrack = !1;
+      if (
+        (!1 &&
+          ((dnt =
+            navigator.doNotTrack ||
+            window.doNotTrack ||
+            navigator.msDoNotTrack),
+          (doNotTrack = dnt == "1" || dnt == "yes")),
+        !doNotTrack)
+      ) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        (gtag("js", new Date()), gtag("config", "G-GSREL2EZ4Y"));
+      }
+    </script>
+  </body>
+</html>
