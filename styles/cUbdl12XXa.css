@@ -1185,10 +1185,8 @@ body {
   body {
     margin: 0;
   }
-  @media (width >= 70rem) {
-    .container {
-      grid-template-columns: minmax(1rem, auto) minmax(30rem, 40rem) minmax(1rem, auto);
-    }
+  .container {
+    grid-template-columns: minmax(1rem, auto) minmax(30rem, 40rem) minmax(1rem, auto);
   }
   @media (width < 70rem) {
     .container {
@@ -1243,65 +1241,81 @@ body {
     padding-bottom: 1rem;
   }
 }
+:root {
+  --font-weight-normal: 400;
+  --font-weight-bold: 600;
+  --font-size-aside: 0.8rem;
+  --font-size-block-code: 0.8rem;
+  --font-size-blockquote: 1.6rem;
+  --font-size-body: 1rem;
+  --font-size-caption: 0.8rem;
+  --font-size-displaymath: 1.2rem;
+  --font-size-h1: 2.5rem;
+  --font-weight-h1: 800;
+  --font-size-h2: 1.75rem;
+  --font-weight-h2: 700;
+  --font-size-h3: 1.4rem;
+  --font-weight-h3: 600;
+  --font-size-h4: 1.4rem;
+  --font-weight-h4: 600;
+  --font-size-blog-title: 1.2rem;
+  --font-size-navigation-fragments: 0.8rem;
+  --font-size-inline-code: 0.8rem;
+  --font-size-preposition: 1.2rem;
+  --font-size-series-container: 1rem;
+  --font-size-small: 0.8rem;
+  --font-size-footnotes: 0.8rem;
+  --font-size-table-caption: 0.9rem;
+  --font-size-tag: 0.9rem;
+  font-size: 16pt;
+}
+
+/* Burnt Orange */
+:root {
+  color-scheme: light dark;
+  --background: light-dark(#fcfbf9, #1a1a1a);
+  --h1-text-color: light-dark(#1a252f, #f3f4f6);
+  --h2-text-color: light-dark(#d35400, #e67e22);
+  --h3-text-color: light-dark(#e67e22, #d35400);
+  --h4-text-color: light-dark(#e67e22, #d35400);
+  --text-color: light-dark(#2c3e50, #d1d5db);
+  --dimmed-text-color: color-mix(in oklch, light-dark(#2c3e50, #d1d5db) 60%, light-dark(#fcfbf9, #1a1a1a));
+  --code-background-color: light-dark(#eaeaea, #2d2d2d);
+  --border-color: light-dark(#e0e0e0, #333);
+  --aside-border-color: light-dark(#d35400, #e67e22);
+  --blockquote-color: light-dark(#d35400, #e67e22);
+  --shadow-color: light-dark(#2c3e50, #d1d5db);
+  --link-color: light-dark(#2980b9, #60a5fa);
+  --notice-background-color: color-mix(in oklch, light-dark(#d35400, #e67e22) 60%, light-dark(#fcfbf9, #1a1a1a));
+  --table-header-border-color: color-mix(in oklch, light-dark(#d35400, #e67e22) 60%, light-dark(#fcfbf9, #1a1a1a));
+  --table-odd-row-color: color-mix(in oklch, light-dark(#e67e22, #d35400) 10%, light-dark(#fcfbf9, #1a1a1a));
+  --tag-background-color: color-mix(in oklch, light-dark(#d35400, #e67e22) 30%, light-dark(#fcfbf9, #1a1a1a));
+  --tag-text-color: light-dark(#2c3e50, #d1d5db);
+  --pill-background-color: color-mix(in oklch, light-dark(#d35400, #e67e22) 30%, light-dark(#fcfbf9, #1a1a1a));
+  --pill-text-color: light-dark(#2c3e50, #d1d5db);
+  --popover-background-color: color-mix(in oklch, light-dark(#d35400, #e67e22) 30%, light-dark(#fcfbf9, #1a1a1a));
+  --popover-text-color: light-dark(#2c3e50, #d1d5db);
+  --popover-border-color: light-dark(#d35400, #e67e22);
+}
+
 @layer header-footer {
-  body > header, body > footer {
-    box-shadow: 0 0 6px var(--shadow-color);
-  }
   footer .post-summary {
     font-size: var(--font-size-caption);
   }
   footer .post-summary .title {
     font-size: var(--font-size-h3);
   }
+  footer h2 {
+    font-family: "Merriweather", Georgia, Cambria, "Times New Roman", Times, serif;
+    font-optical-sizing: auto;
+    font-variation-settings: "wdth" 100;
+    font-weight: var(--font-weight-h2);
+    font-style: normal;
+    font-size: var(--font-size-h2);
+    line-height: 1.2;
+    color: var(--h1-text-color);
+  }
 }
-:root {
-  color-scheme: light dark;
-  --background: light-dark(rgb(239, 239, 239), rgb(30, 30, 30));
-  --heading-text-color: #349865;
-  --subheading-text-color: #6d85a4;
-  --text-color: light-dark(rgb(30, 30, 30), rgb(239, 239, 239));
-  --dimmed-text-color: color-mix(in oklch, light-dark(rgb(30, 30, 30), rgb(239, 239, 239)) 60%, light-dark(rgb(239, 239, 239), rgb(30, 30, 30)));
-  --border-color: #6d85a4;
-  --aside-border-color: #6d85a4;
-  --blockquote-color: #D8A24A;
-  --shadow-color: light-dark(rgb(30, 30, 30), rgb(239, 239, 239));
-  --notice-background-color: color-mix(in oklch, #D86C4A 60%, light-dark(rgb(239, 239, 239), rgb(30, 30, 30)));
-  --table-header-border-color: color-mix(in oklch, #D8A24A 60%, light-dark(rgb(239, 239, 239), rgb(30, 30, 30)));
-  --table-odd-row-color: color-mix(in oklch, #D8A24A 30%, light-dark(rgb(239, 239, 239), rgb(30, 30, 30)));
-  --tag-background-color: color-mix(in oklch, #6d85a4 30%, light-dark(rgb(239, 239, 239), rgb(30, 30, 30)));
-  --tag-text-color: light-dark(rgb(30, 30, 30), rgb(239, 239, 239));
-  --pill-background-color: color-mix(in oklch, #6d85a4 30%, light-dark(rgb(239, 239, 239), rgb(30, 30, 30)));
-  --pill-text-color: light-dark(rgb(30, 30, 30), rgb(239, 239, 239));
-  --popover-background-color: color-mix(in oklch, #6d85a4 30%, light-dark(rgb(239, 239, 239), rgb(30, 30, 30)));
-  --popover-text-color: light-dark(rgb(30, 30, 30), rgb(239, 239, 239));
-  --popover-border-color: #6d85a4;
-}
-
-:root {
-  --font-weight-normal: 400;
-  --font-weight-bold: 600;
-  --font-size-aside: 10pt;
-  --font-size-block-code: 10pt;
-  --font-size-blockquote: 18pt;
-  --font-size-body: 12pt;
-  --font-size-caption: 10pt;
-  --font-size-displaymath: 16pt;
-  --font-size-h1: 32pt;
-  --font-size-h1-title: 18pt;
-  --font-size-h2: 20pt;
-  --font-size-h2-footer: 14pt;
-  --font-size-h3: 18pt;
-  --font-size-h4: 16pt;
-  --font-size-inline-code: 10pt;
-  --font-size-preposition: 14pt;
-  --font-size-series-container: 12pt;
-  --font-size-small: 10pt;
-  --font-size-footnotes: 11pt;
-  --font-size-table-caption: 11pt;
-  --font-size-tag: 11pt;
-  font-size: 16pt;
-}
-
 @layer article {
   article header {
     margin-bottom: 1rem;
@@ -1310,31 +1324,73 @@ body {
   article header .metadata {
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
+    font-variation-settings: "wdth" 100;
     font-style: normal;
     font-weight: var(--font-weight-normal);
     font-size: var(--font-size-small);
     line-height: 1.5;
-    font-variation-settings: "wdth" 100;
+    font-variant-caps: all-petite-caps;
+    color: var(--dimmed-text-color);
   }
-  article header .banner {
-    z-index: -1;
-    anchor-name: --banner;
+  article header .metadata .author {
+    font-weight: var(--font-weight-bold);
   }
-  article header .banner img {
-    width: 100%;
+  article header img {
+    max-width: 100%;
+    object-fit: contain;
     height: auto;
-    filter: none;
   }
-  article header .banner-text {
-    position-anchor: --banner;
-    position: absolute;
-    top: calc(anchor(top) + 1rem);
-    left: calc(anchor(left) + 1rem);
-    right: calc(anchor(right) + 1rem);
-    margin: 0;
-    text-shadow: 3px 3px 5px black;
-    color-scheme: dark;
-    color: var(--text-color);
+  article h1,
+  article h2,
+  article h3,
+  article h4 {
+    line-height: 1.3;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  article h3, article h4 {
+    margin-bottom: 0.6rem;
+  }
+  article h1 {
+    font-family: "Merriweather", Georgia, Cambria, "Times New Roman", Times, serif;
+    font-optical-sizing: auto;
+    font-variation-settings: "wdth" 100;
+    font-weight: var(--font-weight-h1);
+    font-style: normal;
+    font-size: var(--font-size-h1);
+    line-height: 1.2;
+    color: var(--h1-text-color);
+    margin-top: 0;
+  }
+  article h2 {
+    font-family: "Merriweather", Georgia, Cambria, "Times New Roman", Times, serif;
+    font-optical-sizing: auto;
+    font-variation-settings: "wdth" 100;
+    font-weight: var(--font-weight-h2);
+    font-style: normal;
+    font-size: var(--font-size-h2);
+    line-height: 1.2;
+    color: var(--h2-text-color);
+  }
+  article h3 {
+    font-family: "Merriweather", Georgia, Cambria, "Times New Roman", Times, serif;
+    font-optical-sizing: auto;
+    font-variation-settings: "wdth" 100;
+    font-weight: var(--font-weight-h3);
+    font-style: normal;
+    font-size: var(--font-size-h3);
+    line-height: 1.2;
+    color: var(--h3-text-color);
+  }
+  article h4 {
+    font-family: "Merriweather", Georgia, Cambria, "Times New Roman", Times, serif;
+    font-optical-sizing: auto;
+    font-variation-settings: "wdth" 100;
+    font-weight: var(--font-weight-h4);
+    font-style: normal;
+    font-size: var(--font-size-h4);
+    line-height: 1.2;
+    color: var(--h4-text-color);
   }
   article p > img,
   article ul > img,
@@ -1347,13 +1403,12 @@ body {
     font-size: var(--font-size-displaymath);
   }
   article > blockquote {
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-optical-sizing: auto;
     font-style: italic;
     font-weight: var(--font-weight-normal);
     font-size: var(--font-size-blockquote);
     line-height: 1.5;
-    font-variation-settings: "wdth" 100;
   }
   article figure:has(> p:first-child) {
     margin-top: 0;
@@ -1403,6 +1458,45 @@ body {
   article footer p:last-child {
     margin-bottom: 1em;
   }
+  article code {
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: var(--font-weight-normal);
+    font-style: normal;
+    line-height: 1.5;
+    font-size: var(--font-size-inline-code);
+  }
+  article pre {
+    background-color: var(--code-background-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--border-color);
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: var(--font-weight-normal);
+    font-style: normal;
+    line-height: 1.5;
+    font-size: var(--font-size-block-code);
+    color: var(--code-text-color);
+  }
+  article .preface {
+    color: var(--dimmed-text-color);
+    font-size: var(--font-size-caption);
+    margin: 1rem;
+    float: right;
+    width: calc(100% - 4rem);
+    padding: 0.75rem;
+    font-size: var(--font-size-aside);
+    margin: 1rem;
+  }
+  article .preface * {
+    margin: 1rem auto 0 auto;
+  }
+  article .preface *:first-child {
+    margin-top: 0;
+  }
   article .glossary,
   article .aside {
     float: right;
@@ -1423,8 +1517,9 @@ body {
     margin: 0 1rem 1rem 1rem;
   }
   article dt {
-    font-family: "Crimson Pro", serif;
+    font-family: "Merriweather", Georgia, Cambria, "Times New Roman", Times, serif;
     font-optical-sizing: auto;
+    font-variation-settings: "wdth" 100;
     font-weight: var(--font-weight-bold);
     font-style: normal;
     font-size: var(--font-size-body);
@@ -1439,18 +1534,76 @@ body {
     font-size: smaller;
     color: var(--dimmed-text-color);
   }
+  article figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  article figure img {
+    max-width: 100%;
+    object-fit: contain;
+    height: auto;
+  }
+  article figure figcaption {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-table-caption);
+    line-height: 1.5;
+    color: var(--dimmed-text-color);
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  article table {
+    border: none;
+    border-spacing: 0;
+  }
+  article table thead {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-variation-settings: "wdth" 100;
+    font-style: normal;
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-body);
+    line-height: 1.5;
+  }
+  article table thead th {
+    font-weight: var(--font-weight-bold);
+    border-bottom: 1pt solid var(--table-header-border-color);
+    text-align: left;
+  }
+  article table tbody td {
+    vertical-align: top;
+  }
+  article table tbody tr:nth-child(even) {
+    background-color: var(--table-odd-row-color);
+  }
+  article table caption {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-table-caption);
+    line-height: 1.5;
+    color: var(--dimmed-text-color);
+    text-align: center;
+    margin-bottom: 1rem;
+  }
 }
 .references::before {
   content: "References";
-  font-family: "Crimson Pro", serif;
+  font-family: "Merriweather", Georgia, Cambria, "Times New Roman", Times, serif;
   font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
   font-weight: var(--font-weight-bold);
   font-style: normal;
   font-size: var(--font-size-h2);
   line-height: 1.2;
   display: block;
   padding-bottom: 1rem;
-  color: var(--heading-text-color);
+  color: var(--h1-text-color);
 }
 .references .csl-entry {
   padding-bottom: 1rem;
@@ -1699,13 +1852,12 @@ sidenote-card-1 {
   .sidenote-1,
   sidenote-card-1 {
     margin: 0 4rem 1rem 4rem;
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: var(--font-weight-normal);
     font-size: var(--font-size-aside);
     line-height: 1.5;
-    font-variation-settings: "wdth" 100;
   }
 }
 @media (width >= 70rem) {
@@ -1718,13 +1870,12 @@ sidenote-card-1 {
     margin-left: 1rem;
     margin-right: 1rem;
     max-width: calc(anchor-size(width) / 2);
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: var(--font-weight-normal);
     font-size: var(--font-size-aside);
     line-height: 1.5;
-    font-variation-settings: "wdth" 100;
   }
   .sidenote-1 *,
   sidenote-card-1 * {
@@ -1746,13 +1897,12 @@ sidenote-card-2 {
   .sidenote-2,
   sidenote-card-2 {
     margin: 0 4rem 1rem 4rem;
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: var(--font-weight-normal);
     font-size: var(--font-size-aside);
     line-height: 1.5;
-    font-variation-settings: "wdth" 100;
   }
 }
 @media (width >= 70rem) {
@@ -1765,13 +1915,12 @@ sidenote-card-2 {
     margin-left: 1rem;
     margin-right: 1rem;
     max-width: calc(anchor-size(width) / 2);
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: var(--font-weight-normal);
     font-size: var(--font-size-aside);
     line-height: 1.5;
-    font-variation-settings: "wdth" 100;
   }
   .sidenote-2 *,
   sidenote-card-2 * {
@@ -1793,13 +1942,12 @@ sidenote-card-3 {
   .sidenote-3,
   sidenote-card-3 {
     margin: 0 4rem 1rem 4rem;
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: var(--font-weight-normal);
     font-size: var(--font-size-aside);
     line-height: 1.5;
-    font-variation-settings: "wdth" 100;
   }
 }
 @media (width >= 70rem) {
@@ -1812,13 +1960,12 @@ sidenote-card-3 {
     margin-left: 1rem;
     margin-right: 1rem;
     max-width: calc(anchor-size(width) / 2);
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: var(--font-weight-normal);
     font-size: var(--font-size-aside);
     line-height: 1.5;
-    font-variation-settings: "wdth" 100;
   }
   .sidenote-3 *,
   sidenote-card-3 * {
@@ -1840,13 +1987,12 @@ sidenote-card-4 {
   .sidenote-4,
   sidenote-card-4 {
     margin: 0 4rem 1rem 4rem;
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: var(--font-weight-normal);
     font-size: var(--font-size-aside);
     line-height: 1.5;
-    font-variation-settings: "wdth" 100;
   }
 }
 @media (width >= 70rem) {
@@ -1859,13 +2005,12 @@ sidenote-card-4 {
     margin-left: 1rem;
     margin-right: 1rem;
     max-width: calc(anchor-size(width) / 2);
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: var(--font-weight-normal);
     font-size: var(--font-size-aside);
     line-height: 1.5;
-    font-variation-settings: "wdth" 100;
   }
   .sidenote-4 *,
   sidenote-card-4 * {
@@ -1900,13 +2045,12 @@ sidenote-card-4 {
     margin-left: 1rem;
     margin-right: 1rem;
     max-width: calc(anchor-size(width) / 2);
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: var(--font-weight-normal);
     font-size: var(--font-size-aside);
     line-height: 1.5;
-    font-variation-settings: "wdth" 100;
   }
   .footnote-preview * {
     margin-left: 0;
@@ -1944,80 +2088,26 @@ sidenote-card-4 {
 }
 
 @layer base, layout, header-footer, article, highlight;
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: var(--font-weight-normal);
   font-size: var(--font-size-body);
   line-height: 1.5;
-  font-variation-settings: "wdth" 100;
+  background-color: var(--background);
   background: var(--background);
   color: var(--text-color);
-}
-
-h1 {
-  font-family: "Crimson Pro", serif;
-  font-optical-sizing: auto;
-  font-weight: var(--font-weight-bold);
-  font-style: normal;
-  font-size: var(--font-size-h1);
-  line-height: 1.2;
-  color: var(--heading-text-color);
-}
-
-h2 {
-  font-family: "Crimson Pro", serif;
-  font-optical-sizing: auto;
-  font-weight: var(--font-weight-bold);
-  font-style: normal;
-  font-size: var(--font-size-h2);
-  line-height: 1.2;
-  color: var(--subheading-text-color);
-}
-
-h3 {
-  font-family: "Crimson Pro", serif;
-  font-optical-sizing: auto;
-  font-weight: var(--font-weight-bold);
-  font-style: normal;
-  font-size: var(--font-size-h3);
-  line-height: 1.2;
-  color: var(--heading-text-color);
-}
-
-h4 {
-  font-family: "Crimson Pro", serif;
-  font-optical-sizing: auto;
-  font-weight: var(--font-weight-bold);
-  font-style: normal;
-  font-size: var(--font-size-h4);
-  line-height: 1.2;
-  color: var(--subheading-text-color);
-}
-
-code {
-  font-family: "Inconsolata", monospace;
-  font-optical-sizing: auto;
-  font-weight: var(--font-weight-normal);
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-  line-height: 1.5;
-  font-size: var(--font-size-inline-code);
-}
-
-pre {
-  font-family: "Inconsolata", monospace;
-  font-optical-sizing: auto;
-  font-weight: var(--font-weight-normal);
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-  line-height: 1.5;
-  font-size: var(--font-size-block-code);
+  line-height: 1.75;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 menu.tags {
-  color: var(--heading-text-color);
+  color: var(--h2-text-color);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -2041,15 +2131,30 @@ menu.tags * {
   margin: 0.5 auto;
 }
 
-.post-summary h3 a {
-  color: var(--heading-text-color);
+.post-summary .title {
+  font-family: "Merriweather", Georgia, Cambria, "Times New Roman", Times, serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+  font-weight: var(--font-weight-bold);
+  font-style: normal;
+  font-size: var(--font-size-h3);
+  line-height: 1.2;
 }
-.post-summary h3 a:visited {
-  color: var(--heading-text-color);
+.post-summary .title a {
+  color: var(--h2-text-color);
 }
-.post-summary .date {
-  font-size: var(--font-size-caption);
-  font-style: italic;
+.post-summary .title a:visited {
+  color: var(--h2-text-color);
+}
+.post-summary .metadata {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+  font-style: normal;
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-small);
+  line-height: 1.5;
+  font-variant-caps: all-petite-caps;
   color: var(--dimmed-text-color);
 }
 .post-summary *[itemprop=abstract] :first-child {
@@ -2085,36 +2190,19 @@ menu.tags * {
   }
 }
 
-.preface {
-  color: var(--dimmed-text-color);
-  margin: 1rem;
-  float: right;
-  width: calc(100% - 4rem);
-  padding: 0.75rem;
-  font-size: var(--font-size-aside);
-  margin: 1rem;
-}
-.preface * {
-  margin: 1rem auto 0 auto;
-}
-.preface *:first-child {
-  margin-top: 0;
-}
-
 header small,
 nav small {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-optical-sizing: auto;
   font-style: italic;
   font-weight: var(--font-weight-normal);
   font-size: var(--font-size-small);
   line-height: 1.5;
-  font-variation-settings: "wdth" 100;
   color: var(--dimmed-text-color);
 }
 
 nav {
-  color: var(--subheading-text-color);
+  color: var(--h2-text-color);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -2136,16 +2224,32 @@ nav > *:empty {
   flex-grow: 1;
 }
 nav h1 {
-  font-size: var(--font-size-h1-title);
-  font-weight: 600;
+  font-family: "Merriweather", Georgia, Cambria, "Times New Roman", Times, serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+  font-weight: var(--font-weight-bold);
+  font-style: normal;
+  font-size: var(--font-size-blog-title);
+  line-height: 1.2;
+  color: light-dark(#d35400, #e67e22);
   margin: 1rem auto;
 }
 nav h2 {
-  font-size: var(--font-size-h2-footer);
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+  font-style: normal;
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-navigation-fragments);
+  line-height: 1.5;
+  color: light-dark(#d35400, #e67e22);
   margin: 1rem auto;
 }
 nav a {
-  color: var(--subheading-text-color);
+  color: light-dark(#d35400, #e67e22);
+}
+nav a:hover {
+  color: light-dark(#e67e22, #d35400);
 }
 nav .disabled {
   color: var(--dimmed-text-color);
@@ -2154,11 +2258,10 @@ nav .disabled {
 .tag:not(.katex-html > .tag) * {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
-  font-style: normal;
+  font-variation-settings: "wdth" 100;
   font-weight: var(--font-weight-normal);
   font-size: var(--font-size-tag);
   line-height: 1.5;
-  font-variation-settings: "wdth" 100;
   font-variant-caps: titling-caps;
   color: var(--tag-text-color);
 }
@@ -2173,6 +2276,7 @@ nav .disabled {
   display: inline-flex;
   background-color: var(--tag-background-color);
   margin: 0.2rem;
+  font-size: var(--font-size-caption);
 }
 
 .material-symbols-outlined {
@@ -2183,11 +2287,11 @@ nav .disabled {
 .label {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
   font-style: normal;
   font-weight: var(--font-weight-normal);
   font-size: var(--font-size-body);
   line-height: 1.5;
-  font-variation-settings: "wdth" 100;
 }
 
 .smaller {
@@ -2212,8 +2316,9 @@ nav .disabled {
   margin-top: 0;
 }
 .series-container .series-title {
-  font-family: "Crimson Pro", serif;
+  font-family: "Merriweather", Georgia, Cambria, "Times New Roman", Times, serif;
   font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
   font-weight: var(--font-weight-bold);
   font-style: normal;
   font-size: var(--font-size-series-container);
@@ -2221,55 +2326,6 @@ nav .disabled {
 }
 .series-container .you-are-here {
   font-style: italic;
-}
-
-figure {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-figure img {
-  max-width: 100%;
-  object-fit: contain;
-  height: auto;
-}
-figure figcaption {
-  color: var(--dimmed-text-color);
-}
-
-table {
-  border: 1px solid var(--border-color);
-  border-spacing: 0;
-}
-table thead {
-  font-family: "Crimson Pro", serif;
-  font-optical-sizing: auto;
-  font-weight: var(--font-weight-bold);
-  font-style: normal;
-  font-size: var(--font-size-body);
-  line-height: 1.2;
-}
-table thead th {
-  font-weight: var(--font-weight-normal);
-  border-bottom: 1pt solid var(--table-header-border-color);
-}
-table tbody td {
-  vertical-align: top;
-}
-table tbody tr:nth-child(even) {
-  background-color: var(--table-odd-row-color);
-}
-table caption {
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-weight: var(--font-weight-normal);
-  font-size: var(--font-size-table-caption);
-  line-height: 1.5;
-  font-variation-settings: "wdth" 100;
-  text-align: center;
-  margin-bottom: 1rem;
 }
 
 @media (prefers-color-scheme: dark) {

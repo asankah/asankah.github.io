@@ -24,8 +24,8 @@ Guide to the Galaxy&lt;/a&gt; series by Douglas Adams. The fourth and fifth
 volumes in the series list themselves as being part of &lt;q&gt;the
 increasingly inaccurately named Hitchhiker’s Trilogy.&lt;/q&gt;
 &lt;/aside&gt;
-&lt;h2 id=&quot;the-user-agent-as-the-users-ambassador&quot;&gt;The User-Agent as the
-user’s ambassador&lt;/h2&gt;
+&lt;h3 id=&quot;the-user-agent-as-the-users-ambassador&quot;&gt;The User-Agent as the
+user’s ambassador&lt;/h3&gt;
 &lt;p&gt;The idea of a user agent dates back to the early days of the
 Internet. Every computer system that involves humans needs some
 mechanism to represent human intent. We can’t move electrons directly.
@@ -84,8 +84,8 @@ through person-millenia of effort to ensure security and
 correctness.&lt;/p&gt;
 &lt;p&gt;Beyond technical requirements, there is an increasingly important
 social contract.&lt;/p&gt;
-&lt;h2 id=&quot;the-user-agent-must-act-on-behalf-of-the-user&quot;&gt;The User-Agent
-must act on behalf of the user&lt;/h2&gt;
+&lt;h3 id=&quot;the-user-agent-must-act-on-behalf-of-the-user&quot;&gt;The User-Agent
+must act on behalf of the user&lt;/h3&gt;
 &lt;p&gt;… and must be loyal and reliable.&lt;/p&gt;
 &lt;p&gt;The UA must accurately render web pages as described by server
 responses and verify claims made by servers. For instance, when a user
@@ -95,8 +95,8 @@ browsers will steer them away from it &lt;span class=&quot;citation&quot; data-c
 the user, nor should it be furnishing information that the user hasn’t
 offered to share. All this while, each visited page triggers hundreds of
 network requests to dozens of third-party sites.&lt;/p&gt;
-&lt;h2 id=&quot;the-user-agent-must-act-only-on-behalf-of-the-user.&quot;&gt;The
-User-Agent must act ONLY on behalf of the user.&lt;/h2&gt;
+&lt;h3 id=&quot;the-user-agent-must-act-only-on-behalf-of-the-user.&quot;&gt;The
+User-Agent must act ONLY on behalf of the user.&lt;/h3&gt;
 &lt;p&gt;When we say &lt;q&gt;The UA acts on behalf of the user …&lt;/q&gt;, there’s an
 unsaid part: The UA acts &lt;strong&gt;only&lt;/strong&gt; on behalf of the user.
 But modern web technology is so complex that users cannot fully
@@ -105,8 +105,8 @@ have no means of rigorously verifying that all the UA’s activity is
 aligned with the user’s interests and only the user’s interests.&lt;/p&gt;
 &lt;p&gt;This user-UA relationship depends on layers of implicit,
 non-negotiable trust, which are unverifiable &lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fn3&quot; class=&quot;footnote-ref&quot; id=&quot;fnref3&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;it-matters-who-owns-the-user-agent.&quot;&gt;It matters who owns the
-User-Agent.&lt;/h2&gt;
+&lt;h3 id=&quot;it-matters-who-owns-the-user-agent.&quot;&gt;It matters who owns the
+User-Agent.&lt;/h3&gt;
 &lt;p&gt;Because of this functional opacity and implied trust, it matters
 greatly who owns and controls the UA. This control determines whether
 the UA’s priorities align with the user’s or the owner’s, and whether
@@ -118,15 +118,15 @@ respect user intent is through legislation &lt;span class=&quot;citation&quot; d
 trust, and the power imbalance. Now let’s look at yet another kind of
 user agent. It has even more information about you, must be trusted to
 act in your best interest, and its behavior cannot be verified.&lt;/p&gt;
-&lt;h2 id=&quot;user-agents-with-ai-superpowers&quot;&gt;User-Agents with AI superpowers
-…&lt;/h2&gt;
+&lt;h3 id=&quot;user-agents-with-ai-superpowers&quot;&gt;User-Agents with AI superpowers
+…&lt;/h3&gt;
 &lt;p&gt;I’m talking about the coming AI-powered user agents (referred to as
 &lt;abbr&gt;AIUA&lt;/abbr&gt;s in this article). These do more than just fetch and
 present web pages for users. &lt;abbr&gt;AIUA&lt;/abbr&gt;s are like traditional
 UAs, but far more powerful. They collect and interpret massive amounts
 of user data and perform actions on behalf of the user. By design, these
 agents must have access to deeply personal data &lt;span class=&quot;citation&quot; data-cites=&quot;yang2025adoption&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#ref-yang2025adoption&quot; role=&quot;doc-biblioref&quot;&gt;Yang et al., 2025&lt;/a&gt;)&lt;/span&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;need-to-feed-on-your-data&quot;&gt;… need to feed on your data …&lt;/h2&gt;
+&lt;h3 id=&quot;need-to-feed-on-your-data&quot;&gt;… need to feed on your data …&lt;/h3&gt;
 &lt;p&gt;Data sharing is a non-negotiable. For now, these AIUAs will rely on a
 remotely located brain &lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fn4&quot; class=&quot;footnote-ref&quot; id=&quot;fnref4&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt;. Hence, the logic applied to
 decisions affecting you will be unknowable. More distressingly, it may
@@ -137,8 +137,8 @@ interpret. Additionally, a lack of comprehensive interpretability tools
 contributes to this issue, leaving both users and developers with a
 limited understanding of their decision-making processes &lt;span class=&quot;citation&quot; data-cites=&quot;aryaxai:beyondtransparency&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#ref-aryaxai:beyondtransparency&quot; role=&quot;doc-biblioref&quot;&gt;AryaXAI,
 2025&lt;/a&gt;)&lt;/span&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;but-wont-swear-any-allegiance.&quot;&gt;… but won’t swear any
-allegiance.&lt;/h2&gt;
+&lt;h3 id=&quot;but-wont-swear-any-allegiance.&quot;&gt;… but won’t swear any
+allegiance.&lt;/h3&gt;
 &lt;p&gt;In the classic UA trust model, if you see a recommendation for a
 product, you know a handful of entities whose interests this
 recommendation or ad serves. With AIUAs, you will have no idea if a
@@ -155,8 +155,8 @@ offer loose guidance. Not to mention basic attack vectors like prompt
 injection still haven’t been sufficiently mitigated &lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fn5&quot; class=&quot;footnote-ref&quot; id=&quot;fnref5&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;5&lt;/sup&gt;&lt;/a&gt;.
 Nobody can guarantee where AIUAs’ allegiance lies. &lt;span class=&quot;citation&quot; data-cites=&quot;openai2025hardening&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#ref-openai2025hardening&quot; role=&quot;doc-biblioref&quot;&gt;OpenAI,
 2025&lt;/a&gt;)&lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&quot;they-are-deceptively-trustworthy&quot;&gt;They are deceptively
-trustworthy …&lt;/h2&gt;
+&lt;h3 id=&quot;they-are-deceptively-trustworthy&quot;&gt;They are deceptively
+trustworthy …&lt;/h3&gt;
 &lt;p&gt;AIUAs can easily gain people’s trust. Some people even fall in love
 with them &lt;span class=&quot;citation&quot; data-cites=&quot;demopoulos2025women&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#ref-demopoulos2025women&quot; role=&quot;doc-biblioref&quot;&gt;Demopoulos,
 2025&lt;/a&gt;)&lt;/span&gt; or follow them to their deaths. Our politics, values,
@@ -165,7 +165,7 @@ manipulate. To make things even worse, people trust what AIUAs tell them
 about the world without checking. The more people choose AIUAs as the
 goggles with which they see the world, the more these agents can shape a
 convincing alternate reality.&lt;/p&gt;
-&lt;h2 id=&quot;and-difficult-to-align.&quot;&gt;… and difficult to align.&lt;/h2&gt;
+&lt;h3 id=&quot;and-difficult-to-align.&quot;&gt;… and difficult to align.&lt;/h3&gt;
 &lt;p&gt;Perhaps the most interesting example of an intentionally modified
 foundational model is Grok, Elon Musk’s xAI chatbot. In July 2025, after
 Musk announced he had “improved” Grok to make it less “politically
