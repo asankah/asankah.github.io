@@ -13,6 +13,8 @@
 .var-index { color: blue }
 .var-value { color: green }
 .hi { font-weight: bold; }
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 @font-face {
   font-display: block;
   font-family: KaTeX_AMS;
@@ -1248,6 +1250,7 @@ body {
   --font-size-block-code: 0.8rem;
   --font-size-blockquote: 1.6rem;
   --font-size-body: 1rem;
+  --font-size-inline-citation: 0.8rem;
   --font-size-caption: 0.8rem;
   --font-size-displaymath: 1.2rem;
   --font-size-h1: 2.5rem;
@@ -1306,9 +1309,8 @@ body {
     font-size: var(--font-size-h3);
   }
   footer h2 {
-    font-family: "Merriweather", Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-optical-sizing: auto;
-    font-variation-settings: "wdth" 100;
     font-weight: var(--font-weight-h2);
     font-style: normal;
     font-size: var(--font-size-h2);
@@ -1352,9 +1354,8 @@ body {
     margin-bottom: 0.6rem;
   }
   article h1 {
-    font-family: "Merriweather", Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-optical-sizing: auto;
-    font-variation-settings: "wdth" 100;
     font-weight: var(--font-weight-h1);
     font-style: normal;
     font-size: var(--font-size-h1);
@@ -1363,9 +1364,8 @@ body {
     margin-top: 0;
   }
   article h2 {
-    font-family: "Merriweather", Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-optical-sizing: auto;
-    font-variation-settings: "wdth" 100;
     font-weight: var(--font-weight-h2);
     font-style: normal;
     font-size: var(--font-size-h2);
@@ -1373,9 +1373,8 @@ body {
     color: var(--h2-text-color);
   }
   article h3 {
-    font-family: "Merriweather", Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-optical-sizing: auto;
-    font-variation-settings: "wdth" 100;
     font-weight: var(--font-weight-h3);
     font-style: normal;
     font-size: var(--font-size-h3);
@@ -1383,9 +1382,8 @@ body {
     color: var(--h3-text-color);
   }
   article h4 {
-    font-family: "Merriweather", Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-optical-sizing: auto;
-    font-variation-settings: "wdth" 100;
     font-weight: var(--font-weight-h4);
     font-style: normal;
     font-size: var(--font-size-h4);
@@ -1403,8 +1401,7 @@ body {
     font-size: var(--font-size-displaymath);
   }
   article > blockquote {
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-optical-sizing: auto;
+    font-family: "Crimson Text", serif;
     font-style: italic;
     font-weight: var(--font-weight-normal);
     font-size: var(--font-size-blockquote);
@@ -1517,9 +1514,8 @@ body {
     margin: 0 1rem 1rem 1rem;
   }
   article dt {
-    font-family: "Merriweather", Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-optical-sizing: auto;
-    font-variation-settings: "wdth" 100;
     font-weight: var(--font-weight-bold);
     font-style: normal;
     font-size: var(--font-size-body);
@@ -1546,8 +1542,7 @@ body {
     height: auto;
   }
   article figure figcaption {
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-optical-sizing: auto;
+    font-family: "Crimson Text", serif;
     font-style: normal;
     font-weight: var(--font-weight-normal);
     font-size: var(--font-size-table-caption);
@@ -1581,8 +1576,7 @@ body {
     background-color: var(--table-odd-row-color);
   }
   article table caption {
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-optical-sizing: auto;
+    font-family: "Crimson Text", serif;
     font-style: normal;
     font-weight: var(--font-weight-normal);
     font-size: var(--font-size-table-caption);
@@ -1592,77 +1586,96 @@ body {
     margin-bottom: 1rem;
   }
 }
-.references::before {
-  content: "References";
-  font-family: "Merriweather", Georgia, Cambria, "Times New Roman", Times, serif;
-  font-optical-sizing: auto;
-  font-variation-settings: "wdth" 100;
-  font-weight: var(--font-weight-bold);
-  font-style: normal;
-  font-size: var(--font-size-h2);
-  line-height: 1.2;
-  display: block;
-  padding-bottom: 1rem;
-  color: var(--h1-text-color);
+@layer article {
+  .references::before {
+    content: "References";
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: var(--font-weight-bold);
+    font-style: normal;
+    font-size: var(--font-size-h2);
+    line-height: 1.2;
+    display: block;
+    padding-bottom: 1rem;
+    color: var(--h1-text-color);
+  }
+  .references .csl-entry {
+    padding-bottom: 1rem;
+  }
+  .references .csl-entry .csl-title {
+    font-weight: bold;
+  }
+  .references .csl-entry .csl-container-title {
+    font-style: italic;
+  }
+  .references .csl-entry .csl-abstract {
+    font-style: italics;
+    font-size: smaller;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: var(--dimmed-text-color);
+    text-justify: auto;
+  }
+  .references .csl-entry .csl-year {
+    font-weight: bold;
+  }
+  .references .csl-entry .csl-url,
+  .references .csl-entry .csl-accessed {
+    font-size: smaller;
+  }
+  .references .csl-entry .csl-scholar-link {
+    font-size: smaller;
+  }
+  .footnote-ref {
+    padding-inline-end: 0.3rem;
+    text-decoration: none;
+  }
+  .footnote-ref > sup::before {
+    content: "[";
+  }
+  .footnote-ref > sup::after {
+    content: "]";
+  }
+  a.footnote-back {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.1rem 0.3rem;
+    color: var(--pill-text-color);
+    background-color: var(--pill-background-color);
+    border-radius: 10rem;
+    border: 1px var(--border-color) solid;
+    margin: 0 0.2rem;
+    font-size: small;
+  }
+  a.footnote-back .material-symbols-outlined {
+    font-size: small;
+    content: "arrow_upward"/"Back";
+  }
+  .footnotes {
+    font-size: var(--font-size-footnotes);
+  }
+  .citation {
+    font-size: var(--font-size-inline-citation);
+  }
+  .citation a::after {
+    content: "fact_check"/"Citation";
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 20;
+    vertical-align: middle;
+    font-family: "Material Symbols Outlined";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: "liga";
+    -webkit-font-smoothing: antialiased;
+  }
 }
-.references .csl-entry {
-  padding-bottom: 1rem;
-}
-.references .csl-entry .csl-title {
-  font-weight: bold;
-}
-.references .csl-entry .csl-container-title {
-  font-style: italic;
-}
-.references .csl-entry .csl-abstract {
-  font-style: italics;
-  font-size: smaller;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  color: var(--dimmed-text-color);
-  text-justify: auto;
-}
-.references .csl-entry .csl-year {
-  font-weight: bold;
-}
-.references .csl-entry .csl-url,
-.references .csl-entry .csl-accessed {
-  font-size: smaller;
-}
-.references .csl-entry .csl-scholar-link {
-  font-size: smaller;
-}
-
-.footnote-ref {
-  padding-inline-end: 0.3rem;
-  text-decoration: none;
-}
-.footnote-ref > sup::before {
-  content: "[";
-}
-.footnote-ref > sup::after {
-  content: "]";
-}
-
-a.footnote-back {
-  text-decoration: none;
-  display: inline-block;
-  padding: 0.1rem 0.3rem;
-  color: var(--pill-text-color);
-  background-color: var(--pill-background-color);
-  border-radius: 10rem;
-  border: 1px var(--border-color) solid;
-  margin: 0 0.2rem;
-  font-size: small;
-}
-a.footnote-back .material-symbols-outlined {
-  font-size: small;
-}
-
-.footnotes {
-  font-size: var(--font-size-footnotes);
-}
-
 @layer highlight {
   pre > code.sourceCode {
     white-space: pre;
@@ -1839,262 +1852,242 @@ a.footnote-back .material-symbols-outlined {
     font-style: italic;
   } /* Warning */
 }
-.sidenote-host-1,
-sidenote-anchor-1 {
-  anchor-name: --anchor-1;
-}
-
-.sidenote-1,
-sidenote-card-1 {
-  position-anchor: --anchor-1;
-}
-@media (width < 70rem) {
+@layer article {
+  .sidenote-host-1,
+  sidenote-anchor-1 {
+    anchor-name: --anchor-1;
+  }
   .sidenote-1,
   sidenote-card-1 {
-    margin: 0 4rem 1rem 4rem;
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: var(--font-weight-normal);
-    font-size: var(--font-size-aside);
-    line-height: 1.5;
+    position-anchor: --anchor-1;
   }
-}
-@media (width >= 70rem) {
-  .sidenote-1,
-  sidenote-card-1 {
-    display: block;
-    position: absolute;
-    top: anchor(top);
-    left: anchor(right);
-    margin-left: 1rem;
-    margin-right: 1rem;
-    max-width: calc(anchor-size(width) / 2);
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: var(--font-weight-normal);
-    font-size: var(--font-size-aside);
-    line-height: 1.5;
+  @media (width < 70rem) {
+    .sidenote-1,
+    sidenote-card-1 {
+      margin: 0 4rem 1rem 4rem;
+      font-family: "Crimson Text", serif;
+      font-style: normal;
+      font-weight: var(--font-weight-normal);
+      font-size: var(--font-size-aside);
+      line-height: 1.5;
+    }
   }
-  .sidenote-1 *,
-  sidenote-card-1 * {
-    margin-left: 0;
-    margin-right: 0;
+  @media (width >= 70rem) {
+    .sidenote-1,
+    sidenote-card-1 {
+      display: block;
+      position: absolute;
+      top: anchor(top);
+      left: anchor(right);
+      margin-left: 1rem;
+      margin-right: 1rem;
+      max-width: calc(anchor-size(width) / 2);
+      font-family: "Crimson Text", serif;
+      font-style: normal;
+      font-weight: var(--font-weight-normal);
+      font-size: var(--font-size-aside);
+      line-height: 1.5;
+    }
+    .sidenote-1 *,
+    sidenote-card-1 * {
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
-}
-
-.sidenote-host-2,
-sidenote-anchor-2 {
-  anchor-name: --anchor-2;
-}
-
-.sidenote-2,
-sidenote-card-2 {
-  position-anchor: --anchor-2;
-}
-@media (width < 70rem) {
+  .sidenote-host-2,
+  sidenote-anchor-2 {
+    anchor-name: --anchor-2;
+  }
   .sidenote-2,
   sidenote-card-2 {
-    margin: 0 4rem 1rem 4rem;
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: var(--font-weight-normal);
-    font-size: var(--font-size-aside);
-    line-height: 1.5;
+    position-anchor: --anchor-2;
   }
-}
-@media (width >= 70rem) {
-  .sidenote-2,
-  sidenote-card-2 {
-    display: block;
-    position: absolute;
-    top: anchor(top);
-    left: anchor(right);
-    margin-left: 1rem;
-    margin-right: 1rem;
-    max-width: calc(anchor-size(width) / 2);
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: var(--font-weight-normal);
-    font-size: var(--font-size-aside);
-    line-height: 1.5;
+  @media (width < 70rem) {
+    .sidenote-2,
+    sidenote-card-2 {
+      margin: 0 4rem 1rem 4rem;
+      font-family: "Crimson Text", serif;
+      font-style: normal;
+      font-weight: var(--font-weight-normal);
+      font-size: var(--font-size-aside);
+      line-height: 1.5;
+    }
   }
-  .sidenote-2 *,
-  sidenote-card-2 * {
-    margin-left: 0;
-    margin-right: 0;
+  @media (width >= 70rem) {
+    .sidenote-2,
+    sidenote-card-2 {
+      display: block;
+      position: absolute;
+      top: anchor(top);
+      left: anchor(right);
+      margin-left: 1rem;
+      margin-right: 1rem;
+      max-width: calc(anchor-size(width) / 2);
+      font-family: "Crimson Text", serif;
+      font-style: normal;
+      font-weight: var(--font-weight-normal);
+      font-size: var(--font-size-aside);
+      line-height: 1.5;
+    }
+    .sidenote-2 *,
+    sidenote-card-2 * {
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
-}
-
-.sidenote-host-3,
-sidenote-anchor-3 {
-  anchor-name: --anchor-3;
-}
-
-.sidenote-3,
-sidenote-card-3 {
-  position-anchor: --anchor-3;
-}
-@media (width < 70rem) {
+  .sidenote-host-3,
+  sidenote-anchor-3 {
+    anchor-name: --anchor-3;
+  }
   .sidenote-3,
   sidenote-card-3 {
-    margin: 0 4rem 1rem 4rem;
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: var(--font-weight-normal);
-    font-size: var(--font-size-aside);
-    line-height: 1.5;
+    position-anchor: --anchor-3;
   }
-}
-@media (width >= 70rem) {
-  .sidenote-3,
-  sidenote-card-3 {
-    display: block;
-    position: absolute;
-    top: anchor(top);
-    left: anchor(right);
-    margin-left: 1rem;
-    margin-right: 1rem;
-    max-width: calc(anchor-size(width) / 2);
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: var(--font-weight-normal);
-    font-size: var(--font-size-aside);
-    line-height: 1.5;
+  @media (width < 70rem) {
+    .sidenote-3,
+    sidenote-card-3 {
+      margin: 0 4rem 1rem 4rem;
+      font-family: "Crimson Text", serif;
+      font-style: normal;
+      font-weight: var(--font-weight-normal);
+      font-size: var(--font-size-aside);
+      line-height: 1.5;
+    }
   }
-  .sidenote-3 *,
-  sidenote-card-3 * {
-    margin-left: 0;
-    margin-right: 0;
+  @media (width >= 70rem) {
+    .sidenote-3,
+    sidenote-card-3 {
+      display: block;
+      position: absolute;
+      top: anchor(top);
+      left: anchor(right);
+      margin-left: 1rem;
+      margin-right: 1rem;
+      max-width: calc(anchor-size(width) / 2);
+      font-family: "Crimson Text", serif;
+      font-style: normal;
+      font-weight: var(--font-weight-normal);
+      font-size: var(--font-size-aside);
+      line-height: 1.5;
+    }
+    .sidenote-3 *,
+    sidenote-card-3 * {
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
-}
-
-.sidenote-host-4,
-sidenote-anchor-4 {
-  anchor-name: --anchor-4;
-}
-
-.sidenote-4,
-sidenote-card-4 {
-  position-anchor: --anchor-4;
-}
-@media (width < 70rem) {
+  .sidenote-host-4,
+  sidenote-anchor-4 {
+    anchor-name: --anchor-4;
+  }
   .sidenote-4,
   sidenote-card-4 {
-    margin: 0 4rem 1rem 4rem;
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: var(--font-weight-normal);
-    font-size: var(--font-size-aside);
-    line-height: 1.5;
+    position-anchor: --anchor-4;
   }
-}
-@media (width >= 70rem) {
-  .sidenote-4,
-  sidenote-card-4 {
-    display: block;
+  @media (width < 70rem) {
+    .sidenote-4,
+    sidenote-card-4 {
+      margin: 0 4rem 1rem 4rem;
+      font-family: "Crimson Text", serif;
+      font-style: normal;
+      font-weight: var(--font-weight-normal);
+      font-size: var(--font-size-aside);
+      line-height: 1.5;
+    }
+  }
+  @media (width >= 70rem) {
+    .sidenote-4,
+    sidenote-card-4 {
+      display: block;
+      position: absolute;
+      top: anchor(top);
+      left: anchor(right);
+      margin-left: 1rem;
+      margin-right: 1rem;
+      max-width: calc(anchor-size(width) / 2);
+      font-family: "Crimson Text", serif;
+      font-style: normal;
+      font-weight: var(--font-weight-normal);
+      font-size: var(--font-size-aside);
+      line-height: 1.5;
+    }
+    .sidenote-4 *,
+    sidenote-card-4 * {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  .footnote-preview-container {
     position: absolute;
-    top: anchor(top);
-    left: anchor(right);
-    margin-left: 1rem;
-    margin-right: 1rem;
-    max-width: calc(anchor-size(width) / 2);
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: var(--font-weight-normal);
-    font-size: var(--font-size-aside);
-    line-height: 1.5;
+    top: anchor(bottom);
+    left: anchor(center);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    max-width: 20rem;
+    background-color: transparent;
+    align-content: center;
+    filter: drop-shadow(0 0 6px var(--shadow-color));
+    transform: translateX(-50%);
   }
-  .sidenote-4 *,
-  sidenote-card-4 * {
-    margin-left: 0;
-    margin-right: 0;
+  @media (width < 70rem) {
+    .footnote-preview {
+      display: none;
+    }
   }
-}
-
-.footnote-preview-container {
-  position: absolute;
-  top: anchor(bottom);
-  left: anchor(center);
-  margin: 0;
-  padding: 0;
-  border: 0;
-  max-width: 20rem;
-  background-color: transparent;
-  align-content: center;
-  filter: drop-shadow(0 0 6px var(--shadow-color));
-  transform: translateX(-50%);
-}
-
-@media (width < 70rem) {
-  .footnote-preview {
-    display: none;
+  @media (width >= 70rem) {
+    .footnote-preview {
+      top: anchor(top);
+      left: anchor(right);
+      margin-left: 1rem;
+      margin-right: 1rem;
+      max-width: calc(anchor-size(width) / 2);
+      font-family: "Crimson Text", serif;
+      font-style: normal;
+      font-weight: var(--font-weight-normal);
+      font-size: var(--font-size-aside);
+      line-height: 1.5;
+    }
+    .footnote-preview * {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .footnote-preview {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: 0.5rem;
+      background-color: var(--popover-background-color);
+      color: var(--popover-text-color);
+      border-radius: 0.5rem;
+    }
+    .footnote-preview p:last-of-type {
+      margin-bottom: 0;
+    }
   }
-}
-@media (width >= 70rem) {
-  .footnote-preview {
-    top: anchor(top);
-    left: anchor(right);
-    margin-left: 1rem;
-    margin-right: 1rem;
-    max-width: calc(anchor-size(width) / 2);
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: var(--font-weight-normal);
-    font-size: var(--font-size-aside);
-    line-height: 1.5;
+  .footnote-preview-arrow::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    border-bottom: 1rem solid var(--popover-background-color);
+    left: 50%;
+    transform: translate(-50%, 1px);
   }
-  .footnote-preview * {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .footnote-preview {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0.5rem;
-    background-color: var(--popover-background-color);
-    color: var(--popover-text-color);
-    border-radius: 0.5rem;
-  }
-  .footnote-preview p:last-of-type {
-    margin-bottom: 0;
+  .footnote-preview-arrow {
+    height: 1rem;
+    width: 100%;
   }
 }
-
-.footnote-preview-arrow::before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  top: 0;
-  border-left: 1rem solid transparent;
-  border-right: 1rem solid transparent;
-  border-bottom: 1rem solid var(--popover-background-color);
-  left: 50%;
-  transform: translate(-50%, 1px);
-}
-
-.footnote-preview-arrow {
-  height: 1rem;
-  width: 100%;
-}
-
 @layer base, layout, header-footer, article, highlight;
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-optical-sizing: auto;
+  font-family: "Crimson Text", serif;
   font-style: normal;
   font-weight: var(--font-weight-normal);
   font-size: var(--font-size-body);
@@ -2132,9 +2125,8 @@ menu.tags * {
 }
 
 .post-summary .title {
-  font-family: "Merriweather", Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-optical-sizing: auto;
-  font-variation-settings: "wdth" 100;
   font-weight: var(--font-weight-bold);
   font-style: normal;
   font-size: var(--font-size-h3);
@@ -2192,8 +2184,7 @@ menu.tags * {
 
 header small,
 nav small {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-optical-sizing: auto;
+  font-family: "Crimson Text", serif;
   font-style: italic;
   font-weight: var(--font-weight-normal);
   font-size: var(--font-size-small);
@@ -2224,9 +2215,8 @@ nav > *:empty {
   flex-grow: 1;
 }
 nav h1 {
-  font-family: "Merriweather", Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-optical-sizing: auto;
-  font-variation-settings: "wdth" 100;
   font-weight: var(--font-weight-bold);
   font-style: normal;
   font-size: var(--font-size-blog-title);
@@ -2316,9 +2306,8 @@ nav .disabled {
   margin-top: 0;
 }
 .series-container .series-title {
-  font-family: "Merriweather", Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-optical-sizing: auto;
-  font-variation-settings: "wdth" 100;
   font-weight: var(--font-weight-bold);
   font-style: normal;
   font-size: var(--font-size-series-container);
