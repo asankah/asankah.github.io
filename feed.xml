@@ -5,7 +5,7 @@
   <link href="https://xn--izc.com/feed.xml" rel="self" />
   <link href="https://xn--izc.com/" />
   <updated>
-    2026-01-27T00:00:00Z
+    2026-02-02T00:00:00Z
   </updated>
   <id>https://xn--izc.com/</id>
   <author>
@@ -15,7 +15,7 @@
     <entry>
       <title>The Increasingly Inaccurately Named User-Agent</title>
       <link href="https://xn--izc.com/posts/user-agents/" />
-      <updated>2026-01-27T00:00:00Z</updated>
+      <updated>2026-02-02T00:00:00Z</updated>
       <id>https://xn--izc.com/posts/user-agents/</id>
       <content xml:lang="en" type="html">
         &lt;aside class=&quot;preface&quot;&gt;
@@ -24,9 +24,21 @@ Guide to the Galaxy&lt;/a&gt; series by Douglas Adams. The fourth and fifth
 volumes in the series list themselves as being part of &lt;q&gt;the
 increasingly inaccurately named Hitchhiker’s Trilogy.&lt;/q&gt;
 &lt;/aside&gt;
-&lt;h3 id=&quot;the-user-agent-as-the-users-ambassador&quot;&gt;The User-Agent as the
-user’s ambassador&lt;/h3&gt;
-&lt;p&gt;The idea of a user agent dates back to the early days of the
+&lt;p&gt;The User-Agent, the thing you might refer to as the web browser, was
+supposed to be your loyal representative. Over time browser makers
+diluted its loyalty; incrementally first introducing features and
+components that restricted what the user could do with a browser in
+order to serve the rights of content owners. Then gradually they
+introduced behaviors that complicated the custodianship of the users’
+data. How did this happen?&lt;/p&gt;
+&lt;p&gt;In the near future, you will encounter an objectively more chaotic
+creature – an AI powered user-agent. One that aggregates much more about
+you over time and one that aims to act much more broadly on your behalf.
+How do we negotiate trust with an entity whose behavior isn’t well
+understood even by its creators?&lt;/p&gt;
+&lt;h3 id=&quot;the-user-agent-is-the-users-loyal-servant&quot;&gt;The User-Agent is the
+user’s loyal servant&lt;/h3&gt;
+&lt;p&gt;The concept of a user agent dates back to the early days of the
 Internet. Every computer system that involves humans needs some
 mechanism to represent human intent. We can’t move electrons directly.
 So, we must interact with some device &lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;
@@ -84,9 +96,8 @@ through person-millenia of effort to ensure security and
 correctness.&lt;/p&gt;
 &lt;p&gt;Beyond technical requirements, there is an increasingly important
 social contract.&lt;/p&gt;
-&lt;h3 id=&quot;the-user-agent-must-act-on-behalf-of-the-user&quot;&gt;The User-Agent
-must act on behalf of the user&lt;/h3&gt;
-&lt;p&gt;… and must be loyal and reliable.&lt;/p&gt;
+&lt;h3 id=&quot;the-user-agent-must-act-on-behalf-of-the-user.&quot;&gt;The User-Agent
+must act on behalf of the user.&lt;/h3&gt;
 &lt;p&gt;The UA must accurately render web pages as described by server
 responses and verify claims made by servers. For instance, when a user
 attempts to visit a suspicious or known phishing website, most modern
@@ -97,23 +108,26 @@ offered to share. All this while, each visited page triggers hundreds of
 network requests to dozens of third-party sites.&lt;/p&gt;
 &lt;h3 id=&quot;the-user-agent-must-act-only-on-behalf-of-the-user.&quot;&gt;The
 User-Agent must act ONLY on behalf of the user.&lt;/h3&gt;
-&lt;p&gt;When we say &lt;q&gt;The UA acts on behalf of the user …&lt;/q&gt;, there’s an
-unsaid part: The UA acts &lt;strong&gt;only&lt;/strong&gt; on behalf of the user.
-But modern web technology is so complex that users cannot fully
-understand how their user agent interacts with the internet. Thus, they
-have no means of rigorously verifying that all the UA’s activity is
-aligned with the user’s interests and only the user’s interests.&lt;/p&gt;
+&lt;p&gt;With competing and conflicting interests for the user-agent to act on
+behalf of the user on the internet, it must act &lt;strong&gt;only&lt;/strong&gt; on
+behalf of the user. But modern web technology is so complex that users
+cannot fully understand how their user agent interacts with the
+internet. Thus, they have no means of rigorously verifying that all the
+UA’s activity is aligned with the user’s interests and only the user’s
+interests.&lt;/p&gt;
 &lt;p&gt;This user-UA relationship depends on layers of implicit,
 non-negotiable trust, which are unverifiable &lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fn3&quot; class=&quot;footnote-ref&quot; id=&quot;fnref3&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;h3 id=&quot;it-matters-who-owns-the-user-agent.&quot;&gt;It matters who owns the
+&lt;h3 id=&quot;it-matters-who-makes-the-user-agent.&quot;&gt;It matters who makes the
 User-Agent.&lt;/h3&gt;
 &lt;p&gt;Because of this functional opacity and implied trust, it matters
-greatly who owns and controls the UA. This control determines whether
-the UA’s priorities align with the user’s or the owner’s, and whether
-the owners can be held accountable if they fail to uphold their end of
-the social contract. In reality, the only way to force the UA owners to
-respect user intent is through legislation &lt;span class=&quot;citation&quot; data-cites=&quot;w3c:privacyprinciples&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#ref-w3c:privacyprinciples&quot; role=&quot;doc-biblioref&quot;&gt;Berjon &amp;amp; Yasskin, 2025&lt;/a&gt;)&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;However, this article is not about UAs.&lt;/p&gt;
+greatly who owns and controls the UA. This control allows the maker to
+determine whether the UA’s priorities align with the user’s or the
+maker’s, and whether the makers can be held accountable if they fail to
+uphold their end of the social contract. In reality, the only way to
+force the UA makers to respect user intent is through legislation &lt;span class=&quot;citation&quot; data-cites=&quot;w3c:privacyprinciples&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#ref-w3c:privacyprinciples&quot; role=&quot;doc-biblioref&quot;&gt;Berjon &amp;amp;
+Yasskin, 2025&lt;/a&gt;)&lt;/span&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;however-this-article-is-not-about-those-uas.&quot;&gt;However, this
+article is not about those UAs.&lt;/h3&gt;
 &lt;p&gt;We only took that detour to explain what a UA is, the degree of
 trust, and the power imbalance. Now let’s look at yet another kind of
 user agent. It has even more information about you, must be trusted to
@@ -137,7 +151,7 @@ interpret. Additionally, a lack of comprehensive interpretability tools
 contributes to this issue, leaving both users and developers with a
 limited understanding of their decision-making processes &lt;span class=&quot;citation&quot; data-cites=&quot;aryaxai:beyondtransparency&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#ref-aryaxai:beyondtransparency&quot; role=&quot;doc-biblioref&quot;&gt;AryaXAI,
 2025&lt;/a&gt;)&lt;/span&gt;.&lt;/p&gt;
-&lt;h3 id=&quot;but-wont-swear-any-allegiance.&quot;&gt;… but won’t swear any
+&lt;h3 id=&quot;but-cant-swear-any-allegiance.&quot;&gt;… but can’t swear any
 allegiance.&lt;/h3&gt;
 &lt;p&gt;In the classic UA trust model, if you see a recommendation for a
 product, you know a handful of entities whose interests this
@@ -145,7 +159,8 @@ recommendation or ad serves. With AIUAs, you will have no idea if a
 recommendation serves your best interest or someone else’s. It could try
 to help you but fail because its training data is biased toward someone
 else’s interests. This bias is difficult to detect. &lt;span class=&quot;citation&quot; data-cites=&quot;ryan2025ai&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#ref-ryan2025ai&quot; role=&quot;doc-biblioref&quot;&gt;Ryan, 2025&lt;/a&gt;)&lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&quot;they-are-opaque.&quot;&gt;They are opaque.&lt;/h3&gt;
+&lt;h3 id=&quot;they-are-opaque-even-to-those-who-make-them.&quot;&gt;They are opaque,
+even to those who make them.&lt;/h3&gt;
 &lt;p&gt;Even with a relatively simpler system like the UA with well-defined
 trust boundaries, trust remains a difficult problem. We are moving
 towards indecipherable systems like AIUAs with even fuzzier trust
@@ -291,11 +306,12 @@ In literature, you’ll find the terms “device,” “machine,” and “syste
 used interchangeably, depending on the context.&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li id=&quot;fn2&quot;&gt;&lt;p&gt;I worked on Google Chrome for over a decade on the
 networking stack, and briefly on the renderer. Calling it thousands of
-pages of standards is an understatement. Modern UAs face so many quirks
-and misbehaviors that, in some areas, we have more code handling quirks
-than implementing the intended specifications. We can’t just refuse to
-talk to large portions of the internet or refuse to render millions of
-older web pages just because the code wouldn’t look good.&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+pages of standards is an understatement.&lt;/p&gt;
+&lt;p&gt;Modern UAs face so many quirks and misbehaviors that, in some areas,
+we have more code handling quirks than implementing the intended
+specifications. We can’t just refuse to talk to large portions of the
+internet or refuse to render millions of older web pages just because
+the code wouldn’t look good.&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li id=&quot;fn3&quot;&gt;&lt;p&gt;Okay so this might need a little bit of qualification.
 Aren’t the biggest names in the browser game open source? Aren’t they
 all, like, based on Chromium? Why can’t we just read the source code and
