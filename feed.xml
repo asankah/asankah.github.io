@@ -18,12 +18,13 @@
       <updated>2026-02-02T00:00:00Z</updated>
       <id>https://xn--izc.com/posts/user-agents/</id>
       <content xml:lang="en" type="html">
-        &lt;aside class=&quot;preface&quot;&gt;
+        &lt;aside class=&quot;sidenote-1&quot;&gt;
 The title is a reference to the five-volume &lt;a href=&quot;https://en.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy&quot;&gt;Hitchhiker’s
 Guide to the Galaxy&lt;/a&gt; series by Douglas Adams. The fourth and fifth
 volumes in the series list themselves as being part of &lt;q&gt;the
 increasingly inaccurately named Hitchhiker’s Trilogy.&lt;/q&gt;
 &lt;/aside&gt;
+&lt;div class=&quot;sidenote-host-1&quot;&gt;
 &lt;p&gt;The User-Agent, the thing you might refer to as the web browser, was
 supposed to be your loyal representative. Over time browser makers
 diluted its loyalty; incrementally first introducing features and
@@ -31,6 +32,7 @@ components that restricted what the user could do with a browser in
 order to serve the rights of content owners. Then gradually they
 introduced behaviors that complicated the custodianship of the users’
 data. How did this happen?&lt;/p&gt;
+&lt;/div&gt;
 &lt;p&gt;In the near future, you will encounter an objectively more chaotic
 creature – an AI powered user-agent. One that aggregates much more about
 you over time and one that aims to act much more broadly on your behalf.
@@ -115,8 +117,32 @@ cannot fully understand how their user agent interacts with the
 internet. Thus, they have no means of rigorously verifying that all the
 UA’s activity is aligned with the user’s interests and only the user’s
 interests.&lt;/p&gt;
+&lt;div class=&quot;sidenote-host-2&quot;&gt;
 &lt;p&gt;This user-UA relationship depends on layers of implicit,
-non-negotiable trust, which are unverifiable &lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fn3&quot; class=&quot;footnote-ref&quot; id=&quot;fnref3&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+non-negotiable trust, which are unverifiable.&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&quot;sidenote-2&quot;&gt;
+&lt;h3 id=&quot;are-uas-really-unverifiable&quot;&gt;Are UAs really unverifiable?&lt;/h3&gt;
+&lt;p&gt;Okay so this might need a little bit of qualification. Aren’t the
+biggest names in the browser game open source? Aren’t they all, like,
+based on Chromium? Why can’t we just read the source code and figure out
+whether it is doing anything odd?&lt;/p&gt;
+&lt;p&gt;The reality is that people &lt;em&gt;have&lt;/em&gt; and are actively watching
+open source browser projects with eagle eyes. Unfortunately, even if we
+can verify the open source parts of the browser, that’s not the end of
+the story. See, when you visit a web site, there could be data being
+sent to hundreds of websites. Even if the browesr tells you each and
+every one of those web sites, it would not be practical for anyone to
+manually vet and understand what is going on. Even beyond that, not all
+the functional bits of a browser is open-source. In fact, perhaps the
+most questionable parts of a browser –like AI integration, media rights
+management, how it works with various hardware devices– are closed
+source for many reasons.&lt;/p&gt;
+So it all boils down to whether it really matters if your security
+depends on you performing something infeasible for all practical
+purposes; kinda like being forced to read each and every privacy policy
+and binding contract you have to click through.
+&lt;/aside&gt;
 &lt;h3 id=&quot;it-matters-who-makes-the-user-agent.&quot;&gt;It matters who makes the
 User-Agent.&lt;/h3&gt;
 &lt;p&gt;Because of this functional opacity and implied trust, it matters
@@ -142,7 +168,7 @@ of user data and perform actions on behalf of the user. By design, these
 agents must have access to deeply personal data &lt;span class=&quot;citation&quot; data-cites=&quot;yang2025adoption&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#ref-yang2025adoption&quot; role=&quot;doc-biblioref&quot;&gt;Yang et al., 2025&lt;/a&gt;)&lt;/span&gt;.&lt;/p&gt;
 &lt;h3 id=&quot;need-to-feed-on-your-data&quot;&gt;… need to feed on your data …&lt;/h3&gt;
 &lt;p&gt;Data sharing is a non-negotiable. For now, these AIUAs will rely on a
-remotely located brain &lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fn4&quot; class=&quot;footnote-ref&quot; id=&quot;fnref4&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt;. Hence, the logic applied to
+remotely located brain &lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fn3&quot; class=&quot;footnote-ref&quot; id=&quot;fnref3&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;. Hence, the logic applied to
 decisions affecting you will be unknowable. More distressingly, it may
 even be unknowable to the people who built them &lt;span class=&quot;citation&quot; data-cites=&quot;aysel2025explainable&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#ref-aysel2025explainable&quot; role=&quot;doc-biblioref&quot;&gt;Aysel et al., 2025&lt;/a&gt;)&lt;/span&gt;. This opacity
 largely stems from the complexity of AI models, which involve numerous
@@ -167,7 +193,7 @@ towards indecipherable systems like AIUAs with even fuzzier trust
 boundaries. We don’t have thousands of pages of specifications for these
 AI systems. Instead, there are trillions of training tokens that only
 offer loose guidance. Not to mention basic attack vectors like prompt
-injection still haven’t been sufficiently mitigated &lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fn5&quot; class=&quot;footnote-ref&quot; id=&quot;fnref5&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;5&lt;/sup&gt;&lt;/a&gt;.
+injection still haven’t been sufficiently mitigated &lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fn4&quot; class=&quot;footnote-ref&quot; id=&quot;fnref4&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt;.
 Nobody can guarantee where AIUAs’ allegiance lies. &lt;span class=&quot;citation&quot; data-cites=&quot;openai2025hardening&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#ref-openai2025hardening&quot; role=&quot;doc-biblioref&quot;&gt;OpenAI,
 2025&lt;/a&gt;)&lt;/span&gt;&lt;/p&gt;
 &lt;h3 id=&quot;they-are-deceptively-trustworthy&quot;&gt;They are deceptively
@@ -312,26 +338,7 @@ we have more code handling quirks than implementing the intended
 specifications. We can’t just refuse to talk to large portions of the
 internet or refuse to render millions of older web pages just because
 the code wouldn’t look good.&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn3&quot;&gt;&lt;p&gt;Okay so this might need a little bit of qualification.
-Aren’t the biggest names in the browser game open source? Aren’t they
-all, like, based on Chromium? Why can’t we just read the source code and
-figure out whether it is doing anything odd?&lt;/p&gt;
-&lt;p&gt;The reality is that people &lt;em&gt;have&lt;/em&gt; and are actively watching
-open source browser projects with eagle eyes. Unfortunately, even if we
-can verify the open source parts of the browser, that’s not the end of
-the story. See, when you visit a web site, there could be data being
-sent to hundreds of websites. Even if the browesr tells you each and
-every one of those web sites, it would not be practical for anyone to
-manually vet and understand what is going on. Even beyond that, not all
-the functional bits of a browser is open-source. In fact, perhaps the
-most questionable parts of a browser –like AI integration, media rights
-management, how it works with various hardware devices– are closed
-source for many reasons.&lt;/p&gt;
-&lt;p&gt;So it all boils down to whether it really matters if your security
-depends on you performing something infeasible for all practical
-purposes; kinda like being forced to read each and every privacy policy
-and binding contract you have to click through.&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn4&quot;&gt;&lt;p&gt;Not all large language models are “hosted,” which means
+&lt;li id=&quot;fn3&quot;&gt;&lt;p&gt;Not all large language models are “hosted,” which means
 that the model is actually stored far away in a server and you can only
 talk to it through a mediating service. There are powerful language
 models that you can store in your own computer. Currently there is a
@@ -340,8 +347,8 @@ and their larger hosted counterparts. If that wasn’t a big deal, any
 language model that you can run on your machine is going to require some
 pretty hefty hardware. So tl;dr, it is possible to run a large language
 model on your computer. But that’s not an option for most (&amp;gt;99%)
-people.&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fnref4&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn5&quot;&gt;&lt;p&gt;&lt;q&gt;Prompt injection&lt;/q&gt; refers to a security issue where
+people.&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn4&quot;&gt;&lt;p&gt;&lt;q&gt;Prompt injection&lt;/q&gt; refers to a security issue where
 someone can craft a malicious prompt or include some malicious text that
 when used with a large langauge model causes that model to
 misbehave.&lt;/p&gt;
@@ -353,7 +360,7 @@ would enhance our capability to interpret AIUA actions and decisions.
 Developing technical safeguards, such as robust encryption and secure
 access controls, could also serve as preventive measures against misuse.
 &lt;span class=&quot;citation&quot; data-cites=&quot;businesshorizons2025balancing&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#ref-businesshorizons2025balancing&quot; role=&quot;doc-biblioref&quot;&gt;&lt;span&gt;“Balancing Explainability and Privacy in
-&lt;span&gt;AI&lt;/span&gt; Systems,”&lt;/span&gt; 2025&lt;/a&gt;)&lt;/span&gt;&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fnref5&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;span&gt;AI&lt;/span&gt; Systems,”&lt;/span&gt; 2025&lt;/a&gt;)&lt;/span&gt;&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fnref4&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
 

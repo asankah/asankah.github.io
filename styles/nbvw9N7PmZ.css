@@ -1,18 +1,11 @@
-.noun { color: blue }
-.adverb { color: green }
-.gerund { color: purple }
-.preposition { color: brown }
-.verb { color: red }
-.determiner { color: navy }
-.conjunction { color: maroon }
-.pronoun { color: teal }
-.adjective { color: olive }
-.proper { color: coral }
-
-.function { color: teal }
-.var-index { color: blue }
-.var-value { color: green }
-.hi { font-weight: bold; }
+main {
+  ul {
+    list-style-type: none;
+  }
+}
+.tag > a {
+  font-size: var(--font-size-body);
+}
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 @font-face {
@@ -1190,7 +1183,7 @@ body {
   .container {
     grid-template-columns: minmax(1rem, auto) minmax(30rem, 40rem) minmax(1rem, auto);
   }
-  @media (width < 70rem) {
+  @media (width < 100rem) {
     .container {
       grid-template-columns: minmax(1rem, auto) minmax(30rem, 40rem) minmax(1rem, auto);
     }
@@ -1849,7 +1842,7 @@ body {
   sidenote-card-1 {
     position-anchor: --anchor-1;
   }
-  @media (width < 70rem) {
+  @media (width < 100rem) {
     .sidenote-1,
     sidenote-card-1 {
       margin: 0 4rem 1rem 4rem;
@@ -1860,7 +1853,7 @@ body {
       line-height: 1.5;
     }
   }
-  @media (width >= 70rem) {
+  @media (width >= 100rem) {
     .sidenote-1,
     sidenote-card-1 {
       display: block;
@@ -1890,7 +1883,7 @@ body {
   sidenote-card-2 {
     position-anchor: --anchor-2;
   }
-  @media (width < 70rem) {
+  @media (width < 100rem) {
     .sidenote-2,
     sidenote-card-2 {
       margin: 0 4rem 1rem 4rem;
@@ -1901,7 +1894,7 @@ body {
       line-height: 1.5;
     }
   }
-  @media (width >= 70rem) {
+  @media (width >= 100rem) {
     .sidenote-2,
     sidenote-card-2 {
       display: block;
@@ -1931,7 +1924,7 @@ body {
   sidenote-card-3 {
     position-anchor: --anchor-3;
   }
-  @media (width < 70rem) {
+  @media (width < 100rem) {
     .sidenote-3,
     sidenote-card-3 {
       margin: 0 4rem 1rem 4rem;
@@ -1942,7 +1935,7 @@ body {
       line-height: 1.5;
     }
   }
-  @media (width >= 70rem) {
+  @media (width >= 100rem) {
     .sidenote-3,
     sidenote-card-3 {
       display: block;
@@ -1972,7 +1965,7 @@ body {
   sidenote-card-4 {
     position-anchor: --anchor-4;
   }
-  @media (width < 70rem) {
+  @media (width < 100rem) {
     .sidenote-4,
     sidenote-card-4 {
       margin: 0 4rem 1rem 4rem;
@@ -1983,7 +1976,7 @@ body {
       line-height: 1.5;
     }
   }
-  @media (width >= 70rem) {
+  @media (width >= 100rem) {
     .sidenote-4,
     sidenote-card-4 {
       display: block;
@@ -2018,12 +2011,12 @@ body {
     filter: drop-shadow(0 0 6px var(--shadow-color));
     transform: translateX(-50%);
   }
-  @media (width < 70rem) {
+  @media (width < 100rem) {
     .footnote-preview {
       display: none;
     }
   }
-  @media (width >= 70rem) {
+  @media (width >= 100rem) {
     .footnote-preview {
       top: anchor(top);
       left: anchor(right);
