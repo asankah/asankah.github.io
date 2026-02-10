@@ -1,14 +1,15 @@
-.label {
-    display: inline-block;
-    width: 3.5rem;
-}
-.oneline {
-    margin-bottom: 0;
-}
-.event-description {
-    margin-top: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+.socials {
+  display: flex;
+  flex-direction: horizontal;
+  justify-content: center;
+  column-gap: 2em;
+
+  margin-top: 2em;
+  margin-bottom: 1em;
+
+  * {
+    display: block;
+  }
 }
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
@@ -1441,6 +1442,9 @@ body {
     margin-right: 0;
     width: 50%;
   }
+  article li + li {
+    margin-top: 0.75rem;
+  }
   article footer {
     font-size: var(--font-size-caption);
     color: var(--dimmed-text-color);
@@ -1491,6 +1495,9 @@ body {
   article .preface *:first-child {
     margin-top: 0;
   }
+  article q {
+    font-style: italic;
+  }
   article .glossary,
   article .aside {
     float: right;
@@ -1525,6 +1532,7 @@ body {
   article dd .variant {
     font-style: italic;
     font-size: smaller;
+    font-weight: bold;
     color: var(--dimmed-text-color);
   }
   article figure {
@@ -1627,11 +1635,15 @@ body {
     padding-inline-end: 0.3rem;
     text-decoration: none;
   }
-  .footnote-ref > sup::before {
-    content: "[";
-  }
-  .footnote-ref > sup::after {
-    content: "]";
+  .footnote-ref > sup {
+    display: inline-block;
+    padding: 0.1rem 0.3rem;
+    color: var(--pill-text-color);
+    background-color: var(--pill-background-color);
+    border-radius: 10rem;
+    border: 1px var(--border-color) solid;
+    margin: 0 0.2rem;
+    font-size: small;
   }
   a.footnote-back {
     text-decoration: none;
@@ -1659,6 +1671,17 @@ body {
     font-weight: var(--font-weight-normal);
     font-size: var(--font-size-inline-citation);
     line-height: 1.5;
+  }
+  .citation a {
+    display: inline-block;
+    padding: 0.1rem 0.3rem;
+    color: var(--pill-text-color);
+    background-color: var(--pill-background-color);
+    border-radius: 10rem;
+    border: 1px var(--border-color) solid;
+    margin: 0 0.2rem;
+    font-size: small;
+    content: "Ref";
   }
 }
 @layer highlight {
