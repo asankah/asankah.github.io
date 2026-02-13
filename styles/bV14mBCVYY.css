@@ -1350,7 +1350,8 @@ body {
     margin-top: 2.5rem;
     margin-bottom: 1rem;
   }
-  article h3, article h4 {
+  article h3,
+  article h4 {
     margin-bottom: 0.2rem;
   }
   article h1 {
@@ -1446,6 +1447,27 @@ body {
   }
   article li + li {
     margin-top: 0.75rem;
+  }
+  article hr::before {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 20;
+    vertical-align: middle;
+    font-family: "Material Symbols Outlined";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: "liga";
+    -webkit-font-smoothing: antialiased;
+    content: "stat_0";
+  }
+  article hr {
+    border: none;
   }
   article footer {
     font-size: var(--font-size-caption);

@@ -5,13 +5,98 @@
   <link href="https://xn--izc.com/feed.xml" rel="self" />
   <link href="https://xn--izc.com/" />
   <updated>
-    2026-02-09T00:00:00Z
+    2026-02-13T00:00:00Z
   </updated>
   <id>https://xn--izc.com/</id>
   <author>
     <name>Asanka Herath</name>
     <email>asanka@gmail.com</email>
   </author>
+    <entry>
+      <title>False Precision and Vibe Coding</title>
+      <link href="https://xn--izc.com/posts/false-precision/" />
+      <updated>2026-02-13T00:00:00Z</updated>
+      <id>https://xn--izc.com/posts/false-precision/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;It occurs to me how much of human communication is
+disambiguation.&lt;/p&gt;
+&lt;p&gt;We have short lives and shorter attention spans. So we have to be
+tactful about fitting in just enough detail into the brief blips of
+attention that we are afforded. We wouldn’t enjoy listening to
+protracted descriptions of things we already know. So we fast-run along
+a stream of concepts where we only lay down just enough track for people
+to keep up.&lt;/p&gt;
+&lt;p&gt;We narrate things.&lt;/p&gt;
+&lt;p&gt;We tell stories, episodic journeys with familiar names and places and
+little else other than dialogue and the occasional pantomime. We convey
+so little detail, but for the right audience, the story is as vibrant,
+colorful, and detailed as anything from their own sensory
+experiences.&lt;/p&gt;
+&lt;p&gt;Things unsaid are those that don’t need saying. The listeners know
+how to fill in the gaps.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Effective communication requires knowing how to balance what to say
+and what to leave out —either because it is a detail that is unambiguous
+or because it’s an intentional gap that we want the listener to
+fill.&lt;/p&gt;
+&lt;p&gt;Programming, at least the “classical” kind, does not afford us this
+luxury. Everything has to be laid out precisely and in detail; even when
+those irrelevant details. So we seek the comfort of layer after layer of
+abstraction that hides details we don’t want to see. The same
+abstractions alleviates us of the responsibility of saying what we don’t
+need to say.&lt;/p&gt;
+&lt;p&gt;We hope that, much like our human conversation partners, the computer
+would fill in the gaps predictably and reliably. We hope it will do what
+we mean, not what we said. We are disappointed, frustrated, and
+occasionally amused when reality surprises us.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Software is a description of a machine.&lt;/p&gt;
+&lt;p&gt;Software is only useful when something interprets it and actualizes
+the machine. Actualizers –a.k.a. computers– aren’t smart. Every layer of
+a computer system needs to be told what exactly it is supposed to do.
+There cannot be any guesswork. So the description of the machine must
+contain excruciating detail, because the computer that actuates it has
+no ability to fill in the blanks.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/false-precision/false-precision.png&quot; alt=&quot;Vaguely understood problem + False precision ⟶ Precise and detailed solution&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Vaguely understood problem + False
+precision ⟶ Precise and detailed solution&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;We start with a vague understanding of the problem space. But
+somewhere along the way, we have to inject it with false precision so
+that the description becomes complete.&lt;/p&gt;
+&lt;p&gt;This is why so much of modern software is based on false precision—at
+least when it comes to end-user-facing systems. We are forced to
+describe a behavior in rigid detail despite our incomplete understanding
+of the problem space or lack of desire to overspecify the wrong
+solution. The precision we inject becomes part of the solution, and in
+large systems, indistinguishable from pertinent details. Sadly, our
+descriptions of machines rarely allow us to demarcate necessary
+precision and unnecessary precision.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Until now, that is. Finally, we have something that can take an
+incomplete, vague description of our machine—stated in terms of what it
+does or what its effect should be on something: &lt;strong&gt;vibe
+coding&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Or to be more specific, &lt;strong&gt;vibe coding
+specifications&lt;/strong&gt;.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/false-precision/vague-specification.png&quot; alt=&quot;Vaguely understood problem ⟶ Equally vague specification ⟶ &amp;lt;AI Actuator&amp;gt; ⟶ Precise and detailed solution&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Vaguely understood problem ⟶ Equally
+vague specification ⟶ &amp;lt;AI Actuator&amp;gt; ⟶ Precise and detailed
+solution&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Our final actuators are still brute-force stupid. But at least now we
+have something between us and the actuator that can fill in these pesky
+gaps and again allow us the luxury of ambiguity.&lt;/p&gt;
+&lt;p&gt;Ambiguity allows us to be earnest in our imperfect understanding of
+the problem. We didn’t understand the problem because we have no perfect
+understanding of the messiest, most important part of the
+problem—&lt;strong&gt;us&lt;/strong&gt;. But now, finally, we can state our problem
+the way we see it: vaguely and imprecisely.&lt;/p&gt;
+
+      </content>
+    </entry>
     <entry>
       <title>The Increasingly Inaccurately Named User-Agent</title>
       <link href="https://xn--izc.com/posts/user-agents/" />
@@ -3361,8 +3446,8 @@ is killing the planet; but it still kind of works.&lt;a href=&quot;https://xn--i
       <updated>2023-08-12T23:29:31Z</updated>
       <id>https://xn--izc.com/posts/a-good-api/</id>
       <content xml:lang="en" type="html">
-        &lt;p&gt;Once in a while an API comes around that makes me stop and and look
-at what I’m doing.&lt;/p&gt;
+        &lt;p&gt;Once in a while, an API comes around that makes me stop and look at
+what I’m doing.&lt;/p&gt;
 &lt;p&gt;Like many aspects of design, when it comes to APIs, what is not there
 matters as much as what is. Engineers like to fiddle around with things.
 So they like to add knobs and dials for fiddling around with things.&lt;/p&gt;
@@ -3385,22 +3470,22 @@ diagram by dragging points around.&lt;/li&gt;
 &lt;p&gt;There are millions of ways of designing this. But g9’s approach takes
 the cake. You can take a shortcut and have a look at their &lt;a href=&quot;https://github.com/bijection/g9#docs&quot;&gt;API documentation&lt;/a&gt; or
 their &lt;a href=&quot;https://omrelli.ug/g9/gallery/&quot;&gt;examples&lt;/a&gt;. But
-basically it is this:&lt;/p&gt;
+basically, it is this:&lt;/p&gt;
 &lt;ol type=&quot;1&quot;&gt;
 &lt;li&gt;Tell us what your mutable parameters are.&lt;/li&gt;
-&lt;li&gt;Draw your diagram with based on the set of parameters.&lt;/li&gt;
+&lt;li&gt;Draw your diagram based on the set of parameters.&lt;/li&gt;
 &lt;li&gt;…&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;That’s it. That’s all there is.&lt;/p&gt;
 &lt;p&gt;Now, you can sit there and come up with a million knobs that you
-claim makes the API more powerful. And you might be right – you’ll be
+claim make the API more powerful. And you might be right – you’ll be
 able to do more things with the API with the knobs you add.&lt;/p&gt;
 &lt;p&gt;But when you start treating simplicity as a feature, you’ll notice
 that adding knobs isn’t the same as making a more powerful API. All
 those additional knobs must be essentially invisible for people who
-don’t need them. Otherwise every addtional knob will waste more of your
-users’ time and energy for nothing.&lt;/p&gt;
-&lt;p&gt;The power of an API comes from letting users to express more with
+don’t need them. Otherwise, every additional knob will waste more of
+your users’ time and energy for nothing.&lt;/p&gt;
+&lt;p&gt;The power of an API comes from letting users express more with
 less.&lt;/p&gt;
 
       </content>

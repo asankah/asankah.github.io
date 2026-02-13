@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>False Precision and Vibe Coding</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/apple-touch-icon.png"
+    />
+    <link rel="icon" href="/images/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon-32x32.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/images/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+
+    <link rel="stylesheet" href="/styles/JZsbbq6WKO.css" />
+    <link rel="me" href="mailto:asanka@gmail.com" />
+    <link rel="me" href="https://github.com/asankah" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="ai-generated" content="none" />
+  </head>
+
+  <body>
+    <header class="container">
+      <nav class="top" itemscope="" itemtype="https://schema.org/Blog">
+        <h1 itemprop="name">
+          <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
+        </h1>
+        <span></span>
+
+        <h2><a href="/">Home</a></h2>
+
+        <h2 itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="/about/me/" itemprop="sameAs">About</a>
+        </h2>
+
+        <h2><a href="/tags/">Tags</a></h2>
+        <h2>
+          <a href="/feed.xml"><img src="/images/rss.svg" /></a>
+        </h2>
+      </nav>
+    </header>
+
+    <article itemscope="" itemtype="https://schema.org/BlogPosting">
+      <link itemprop="url" href="/posts/false-precision/" />
+      <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+      <header class="container">
+        <div class="metadata">
+          <time datetime="2026-02-13" itemprop="datePublished"
+            >February 13, 2026</time
+          >
+          • <span class="author" itemprop="author">Asanka Herath</span>. •
+          <time>6 min</time> read
+        </div>
+        <h1 itemprop="name">False Precision and Vibe Coding</h1>
+        <nav>
+          <span></span>
+          <menu class="tags">
+            <li>
+              <span class="tag"> #<a href="/tags/ai/">AI</a> </span>
+            </li>
+          </menu>
+        </nav>
+
+        <div class="banner">
+          <img
+            src="/img/9ZbuKZGAJk-200.png"
+            alt="False precision"
+            class="banner-image"
+            loading="lazy"
+            width="800"
+            height="436"
+            srcset="
+              /img/9ZbuKZGAJk-200.png 200w,
+              /img/9ZbuKZGAJk-400.png 400w,
+              /img/9ZbuKZGAJk-600.png 600w,
+              /img/9ZbuKZGAJk-800.png 800w
+            "
+            sizes="auto"
+          />
+        </div>
+      </header>
+
+      <main itemprop="articleBody" class="container">
+        <p>
+          It occurs to me how much of human communication is disambiguation.
+        </p>
+        <p>
+          We have short lives and shorter attention spans. So we have to be
+          tactful about fitting in just enough detail into the brief blips of
+          attention that we are afforded. We wouldn’t enjoy listening to
+          protracted descriptions of things we already know. So we fast-run
+          along a stream of concepts where we only lay down just enough track
+          for people to keep up.
+        </p>
+        <p>We narrate things.</p>
+        <p>
+          We tell stories, episodic journeys with familiar names and places and
+          little else other than dialogue and the occasional pantomime. We
+          convey so little detail, but for the right audience, the story is as
+          vibrant, colorful, and detailed as anything from their own sensory
+          experiences.
+        </p>
+        <p>
+          Things unsaid are those that don’t need saying. The listeners know how
+          to fill in the gaps.
+        </p>
+        <hr />
+        <p>
+          Effective communication requires knowing how to balance what to say
+          and what to leave out —either because it is a detail that is
+          unambiguous or because it’s an intentional gap that we want the
+          listener to fill.
+        </p>
+        <p>
+          Programming, at least the “classical” kind, does not afford us this
+          luxury. Everything has to be laid out precisely and in detail; even
+          when those irrelevant details. So we seek the comfort of layer after
+          layer of abstraction that hides details we don’t want to see. The same
+          abstractions alleviates us of the responsibility of saying what we
+          don’t need to say.
+        </p>
+        <p>
+          We hope that, much like our human conversation partners, the computer
+          would fill in the gaps predictably and reliably. We hope it will do
+          what we mean, not what we said. We are disappointed, frustrated, and
+          occasionally amused when reality surprises us.
+        </p>
+        <hr />
+        <p>Software is a description of a machine.</p>
+        <p>
+          Software is only useful when something interprets it and actualizes
+          the machine. Actualizers –a.k.a. computers– aren’t smart. Every layer
+          of a computer system needs to be told what exactly it is supposed to
+          do. There cannot be any guesswork. So the description of the machine
+          must contain excruciating detail, because the computer that actuates
+          it has no ability to fill in the blanks.
+        </p>
+        <figure>
+          <img
+            src="/posts/false-precision/qq0beQoXtG-200.png"
+            alt="Vaguely understood problem + False precision ⟶ Precise and detailed solution"
+            loading="lazy"
+            width="1757"
+            height="483"
+            srcset="
+              /posts/false-precision/qq0beQoXtG-200.png   200w,
+              /posts/false-precision/qq0beQoXtG-400.png   400w,
+              /posts/false-precision/qq0beQoXtG-600.png   600w,
+              /posts/false-precision/qq0beQoXtG-800.png   800w,
+              /posts/false-precision/qq0beQoXtG-1757.png 1757w
+            "
+            sizes="auto"
+          />
+          <figcaption aria-hidden="true">
+            Vaguely understood problem + False precision ⟶ Precise and detailed
+            solution
+          </figcaption>
+        </figure>
+        <p>
+          We start with a vague understanding of the problem space. But
+          somewhere along the way, we have to inject it with false precision so
+          that the description becomes complete.
+        </p>
+        <p>
+          This is why so much of modern software is based on false precision—at
+          least when it comes to end-user-facing systems. We are forced to
+          describe a behavior in rigid detail despite our incomplete
+          understanding of the problem space or lack of desire to overspecify
+          the wrong solution. The precision we inject becomes part of the
+          solution, and in large systems, indistinguishable from pertinent
+          details. Sadly, our descriptions of machines rarely allow us to
+          demarcate necessary precision and unnecessary precision.
+        </p>
+        <hr />
+        <p>
+          Until now, that is. Finally, we have something that can take an
+          incomplete, vague description of our machine—stated in terms of what
+          it does or what its effect should be on something:
+          <strong>vibe coding</strong>.
+        </p>
+        <p>
+          Or to be more specific, <strong>vibe coding specifications</strong>.
+        </p>
+        <figure>
+          <img
+            src="/posts/false-precision/E7wSUcRFyf-200.png"
+            alt="Vaguely understood problem ⟶ Equally vague specification ⟶ &lt;AI Actuator&gt; ⟶ Precise and detailed solution"
+            loading="lazy"
+            width="1539"
+            height="692"
+            srcset="
+              /posts/false-precision/E7wSUcRFyf-200.png   200w,
+              /posts/false-precision/E7wSUcRFyf-400.png   400w,
+              /posts/false-precision/E7wSUcRFyf-600.png   600w,
+              /posts/false-precision/E7wSUcRFyf-800.png   800w,
+              /posts/false-precision/E7wSUcRFyf-1539.png 1539w
+            "
+            sizes="auto"
+          />
+          <figcaption aria-hidden="true">
+            Vaguely understood problem ⟶ Equally vague specification ⟶ &lt;AI
+            Actuator&gt; ⟶ Precise and detailed solution
+          </figcaption>
+        </figure>
+        <p>
+          Our final actuators are still brute-force stupid. But at least now we
+          have something between us and the actuator that can fill in these
+          pesky gaps and again allow us the luxury of ambiguity.
+        </p>
+        <p>
+          Ambiguity allows us to be earnest in our imperfect understanding of
+          the problem. We didn’t understand the problem because we have no
+          perfect understanding of the messiest, most important part of the
+          problem—<strong>us</strong>. But now, finally, we can state our
+          problem the way we see it: vaguely and imprecisely.
+        </p>
+      </main>
+
+      <footer class="container">
+        <div>
+          <p>
+            Last modified: <time datetime="2026-02-13">February 13, 2026</time>
+          </p>
+        </div>
+      </footer>
+    </article>
+
+    <div class="container"></div>
+
+    <footer class="container">
+      <h2>More posts from this blog ...</h2>
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h2 class="title">
+          <a itemprop="url" href="/posts/syntax-highlighting/">
+            <span itemprop="name">On Highlighting Syntax vs. Semantics</span>
+          </a>
+        </h2>
+        <nav>
+          <div class="metadata">
+            <time datetime="2022-02-12" itemprop="datePublished"
+              >February 12, 2022</time
+            >.
+          </div>
+          <span></span>
+          <menu class="tags">
+            <li>
+              <span class="tag">
+                #<a href="/tags/engineering/">Engineering</a>
+              </span>
+            </li>
+          </menu>
+        </nav>
+        <div class="summary-row">
+          <div>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  Takes a look at an alternate form of code highlighting based
+                  on core semantics instead of syntactic role.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="more">
+          <a href="/posts/syntax-highlighting/">Read more …</a>
+        </p>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h2 class="title">
+          <a itemprop="url" href="/posts/git-autopush/">
+            <span itemprop="name"
+              >Use Git hooks to automatically push after every commit</span
+            >
+          </a>
+        </h2>
+        <nav>
+          <div class="metadata">
+            <time datetime="2022-07-05" itemprop="datePublished"
+              >July 5, 2022</time
+            >.
+          </div>
+          <span></span>
+          <menu class="tags">
+            <li>
+              <span class="tag"> #<a href="/tags/tools/">Tools</a> </span>
+            </li>
+          </menu>
+        </nav>
+        <div class="summary-row">
+          <div>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  During before and after various Git operations, Git invokes
+                  special hooks that can be used execute custom scripts. This
+                  article explains how to use them to automatically push to an
+                  upstream repository every time you make a commit to a local
+                  repo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="more"><a href="/posts/git-autopush/">Read more …</a></p>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h2 class="title">
+          <a itemprop="url" href="/posts/notes-on-fact-checking/">
+            <span itemprop="name"
+              >Notes from Crash Course&#39;s Videos on Fact Checking Information
+              You See On The Internet
+            </span>
+          </a>
+        </h2>
+        <nav>
+          <div class="metadata">
+            <time datetime="2020-07-04" itemprop="datePublished"
+              >July 4, 2020</time
+            >.
+          </div>
+          <span></span>
+          <menu class="tags">
+            <li>
+              <span class="tag">
+                #<a href="/tags/curiosity/">Curiosity</a>
+              </span>
+            </li>
+          </menu>
+        </nav>
+        <div class="summary-row">
+          <div>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  Hank Green's Crash Course YouTube channel has an excellent
+                  series about navigating digital information. It's an excellent
+                  guide to how internet users could intelligently consume
+                  information they see on the internet. These are my
+                  (incomplete) notes from the series.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="more">
+          <a href="/posts/notes-on-fact-checking/">Read more …</a>
+        </p>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h2 class="title">
+          <a itemprop="url" href="/posts/just-the-right-amount/">
+            <span itemprop="name">Just Enough Technical Debt</span>
+          </a>
+        </h2>
+        <nav>
+          <div class="metadata">
+            <time datetime="2023-07-08" itemprop="datePublished"
+              >July 8, 2023</time
+            >.
+          </div>
+          <span></span>
+          <menu class="tags">
+            <li>
+              <span class="tag">
+                #<a href="/tags/engineering/">Engineering</a>
+              </span>
+            </li>
+          </menu>
+        </nav>
+        <div class="summary-row">
+          <div>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>Zero technical debt isn't always the answer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="more">
+          <a href="/posts/just-the-right-amount/">Read more …</a>
+        </p>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h2 class="title">
+          <a itemprop="url" href="/series/structure-of-experience/preface/"
+            ><span class="series-name">Structure Of Experience</span>:
+            <span itemprop="name">Preface</span>
+          </a>
+        </h2>
+        <nav>
+          <div class="metadata">
+            <time datetime="2025-05-01" itemprop="datePublished"
+              >May 1, 2025</time
+            >.
+          </div>
+          <span></span>
+          <menu class="tags">
+            <li>
+              <span class="tag"> #<a href="/tags/ai/">AI</a> </span>
+            </li>
+          </menu>
+        </nav>
+        <div class="summary-row">
+          <div>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  A very gentle introduction to how large language models
+                  <em>almost</em> capture human experience through language.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="more">
+          <a href="/series/structure-of-experience/preface/">Read more …</a>
+        </p>
+      </div>
+    </footer>
+
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"
+    ></script>
+    <script>
+      var dnt,
+        doNotTrack = !1;
+      if (
+        (!1 &&
+          ((dnt =
+            navigator.doNotTrack ||
+            window.doNotTrack ||
+            navigator.msDoNotTrack),
+          (doNotTrack = dnt == "1" || dnt == "yes")),
+        !doNotTrack)
+      ) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        (gtag("js", new Date()), gtag("config", "G-GSREL2EZ4Y"));
+      }
+    </script>
+  </body>
+</html>
