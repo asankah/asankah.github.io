@@ -1,11 +1,18 @@
-main {
-  ul {
-    list-style-type: none;
-  }
-}
-.tag > a {
-  font-size: var(--font-size-body);
-}
+.noun { color: blue }
+.adverb { color: green }
+.gerund { color: purple }
+.preposition { color: brown }
+.verb { color: red }
+.determiner { color: navy }
+.conjunction { color: maroon }
+.pronoun { color: teal }
+.adjective { color: olive }
+.proper { color: coral }
+
+.function { color: teal }
+.var-index { color: blue }
+.var-value { color: green }
+.hi { font-weight: bold; }
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 @font-face {
@@ -161,7 +168,7 @@ main {
 }
 
 .katex .katex-version:after {
-  content: "0.16.28";
+  content: "0.16.33";
 }
 
 .katex .katex-mathml {
@@ -982,6 +989,17 @@ main {
 .katex svg {
   fill: currentColor;
   stroke: currentColor;
+  display: block;
+  height: inherit;
+  position: absolute;
+  width: 100%;
+}
+
+.katex svg path {
+  stroke: none;
+}
+
+.katex svg {
   fill-rule: nonzero;
   fill-opacity: 1;
   stroke-width: 1;
@@ -991,14 +1009,6 @@ main {
   stroke-dasharray: none;
   stroke-dashoffset: 0;
   stroke-opacity: 1;
-  display: block;
-  height: inherit;
-  position: absolute;
-  width: 100%;
-}
-
-.katex svg path {
-  stroke: none;
 }
 
 .katex img {
@@ -1181,17 +1191,17 @@ body {
     margin: 0;
   }
   .container {
-    grid-template-columns: minmax(1rem, auto) minmax(30rem, 40rem) minmax(1rem, auto);
+    grid-template-columns: auto minmax(1rem, min(40rem, 800px)) auto;
+    column-gap: 1rem;
   }
-  @media (width < 100rem) {
+  @media (width < 80rem) {
     .container {
-      grid-template-columns: minmax(1rem, auto) minmax(30rem, 40rem) minmax(1rem, auto);
+      column-gap: 0.2rem;
     }
   }
   .container {
     display: grid;
     grid-column: 2;
-    column-gap: 1rem;
   }
   .container > .fullbleed {
     grid-column: 1/-1 !important;
@@ -1891,7 +1901,7 @@ body {
   sidenote-card-1 {
     position-anchor: --anchor-1;
   }
-  @media (width < 100rem) {
+  @media (width < 80rem) {
     .sidenote-1,
     sidenote-card-1 {
       margin: 0 4rem 1rem 4rem;
@@ -1902,7 +1912,7 @@ body {
       line-height: 1.5;
     }
   }
-  @media (width >= 100rem) {
+  @media (width >= 80rem) {
     .sidenote-1,
     sidenote-card-1 {
       display: block;
@@ -1932,7 +1942,7 @@ body {
   sidenote-card-2 {
     position-anchor: --anchor-2;
   }
-  @media (width < 100rem) {
+  @media (width < 80rem) {
     .sidenote-2,
     sidenote-card-2 {
       margin: 0 4rem 1rem 4rem;
@@ -1943,7 +1953,7 @@ body {
       line-height: 1.5;
     }
   }
-  @media (width >= 100rem) {
+  @media (width >= 80rem) {
     .sidenote-2,
     sidenote-card-2 {
       display: block;
@@ -1973,7 +1983,7 @@ body {
   sidenote-card-3 {
     position-anchor: --anchor-3;
   }
-  @media (width < 100rem) {
+  @media (width < 80rem) {
     .sidenote-3,
     sidenote-card-3 {
       margin: 0 4rem 1rem 4rem;
@@ -1984,7 +1994,7 @@ body {
       line-height: 1.5;
     }
   }
-  @media (width >= 100rem) {
+  @media (width >= 80rem) {
     .sidenote-3,
     sidenote-card-3 {
       display: block;
@@ -2014,7 +2024,7 @@ body {
   sidenote-card-4 {
     position-anchor: --anchor-4;
   }
-  @media (width < 100rem) {
+  @media (width < 80rem) {
     .sidenote-4,
     sidenote-card-4 {
       margin: 0 4rem 1rem 4rem;
@@ -2025,7 +2035,7 @@ body {
       line-height: 1.5;
     }
   }
-  @media (width >= 100rem) {
+  @media (width >= 80rem) {
     .sidenote-4,
     sidenote-card-4 {
       display: block;
@@ -2060,12 +2070,12 @@ body {
     filter: drop-shadow(0 0 6px var(--shadow-color));
     transform: translateX(-50%);
   }
-  @media (width < 100rem) {
+  @media (width < 80rem) {
     .footnote-preview {
       display: none;
     }
   }
-  @media (width >= 100rem) {
+  @media (width >= 80rem) {
     .footnote-preview {
       top: anchor(top);
       left: anchor(right);
@@ -2133,6 +2143,7 @@ menu.tags {
   color: var(--h2-text-color);
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   column-gap: 0.2rem;
@@ -2200,7 +2211,7 @@ menu.tags * {
 .post-summary .summary-row > div {
   flex-grow: 1;
 }
-@media (width < 50rem) {
+@media (width < 80rem) {
   .post-summary .summary-row {
     flex-direction: column;
   }
@@ -2275,6 +2286,11 @@ nav .disabled {
   color: var(--dimmed-text-color);
 }
 
+@media (width < 80rem) {
+  nav {
+    column-gap: 0.3rem;
+  }
+}
 .tag:not(.katex-html > .tag) * {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
