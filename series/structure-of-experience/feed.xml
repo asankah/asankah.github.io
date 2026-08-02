@@ -5,7 +5,7 @@
   <link href="https://xn--izc.com/series/structure-of-experience/feed.xml" rel="self" />
   <link href="https://xn--izc.com/" />
   <updated>
-    2026-02-15T00:00:00Z
+    2026-08-02T00:00:00Z
   </updated>
   <id>https://xn--izc.com/</id>
   <author>
@@ -91,7 +91,7 @@ develops.”&lt;/p&gt;
 &lt;p&gt;— &lt;a href=&quot;https://www.anthropic.com/research/exploring-model-welfare&quot;&gt;Anthropic&lt;/a&gt;&lt;/p&gt;
 &lt;/figcaption&gt;
 &lt;/figure&gt;
-&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;ELIZA is fascinating in how simple the whole system is
@@ -107,7 +107,7 @@ with the specifics of the flame we are trying to simulate. It can just
 as well happen while trying to &lt;a href=&quot;https://web.math.princeton.edu/math_alive/Crypto/Lab2/Factorization.html&quot;&gt;factor
 a large prime&lt;/a&gt;.&lt;a href=&quot;https://xn--izc.com/series/structure-of-experience/flame/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/aside&gt;
 
       </content>
     </entry>

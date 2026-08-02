@@ -5,13 +5,214 @@
   <link href="https://xn--izc.com/feed.xml" rel="self" />
   <link href="https://xn--izc.com/" />
   <updated>
-    2026-02-15T00:00:00Z
+    2026-08-02T00:00:00Z
   </updated>
   <id>https://xn--izc.com/</id>
   <author>
     <name>Asanka Herath</name>
     <email>asanka@gmail.com</email>
   </author>
+    <entry>
+      <title>Welcome, our AI User Agents</title>
+      <link href="https://xn--izc.com/posts/ai-user-agents/" />
+      <updated>2026-08-02T00:00:00Z</updated>
+      <id>https://xn--izc.com/posts/ai-user-agents/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;&lt;a href=&quot;https://xn--izc.com/content/posts/user-agents/&quot;&gt;Previously we took a look at
+what a UA is&lt;/a&gt;, the degree of trust, and the power imbalance. If you
+didn’t get a chance to read up on it, now is the time. I’ll wait!&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;material-symbols-outlined&quot;&gt;arrow_forward&lt;/span&gt; &lt;a href=&quot;https://xn--izc.com/content/posts/user-agents/&quot;&gt;The increasingly inaccurately named
+User-Agent&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This post expands the concept a little bit.&lt;/p&gt;
+&lt;h3 id=&quot;user-agents-with-ai-superpowers&quot;&gt;User-Agents with AI superpowers
+…&lt;/h3&gt;
+&lt;p&gt;I’m talking about AI-powered personalized user agents (referred to as
+&lt;abbr&gt;AIUA&lt;/abbr&gt;s in this article). That’s a lot of adjectives, so
+let’s break it down:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;AI powered&lt;/em&gt; means that a substantial amount, if not all,
+decision making will be done by an AI.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Personalized&lt;/em&gt; means that it will have and continue to accrue
+information about you that it will use to make decisions.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;User Agent&lt;/em&gt; means that it will do stuff on your behalf, but
+unlike before, the actions aren’t limited to fetching stuff from the
+internet and showing you pretty pictures. The agency extends to
+performing actions, even interacting with other people on your
+behalf.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Since they collect and interpret massive amounts of user data and
+perform actions on behalf of the user, by design, these agents must have
+access to deeply personal data &lt;span class=&quot;citation&quot; data-cites=&quot;yang2025adoption&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/ai-user-agents/#ref-yang2025adoption&quot; role=&quot;doc-biblioref&quot;&gt;Yang et al., 2025&lt;/a&gt;)&lt;/span&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;need-to-feed-on-your-data&quot;&gt;… need to feed on your data …&lt;/h3&gt;
+&lt;p&gt;Data sharing is a non-negotiable. For now, these AIUAs will rely on a
+remotely located brain &lt;a href=&quot;https://xn--izc.com/posts/ai-user-agents/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;. Hence, the logic applied to
+decisions affecting you will be unknowable. More distressingly, it may
+even be unknowable to the people who built them &lt;span class=&quot;citation&quot; data-cites=&quot;aysel2025explainable&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/ai-user-agents/#ref-aysel2025explainable&quot; role=&quot;doc-biblioref&quot;&gt;Aysel et al., 2025&lt;/a&gt;)&lt;/span&gt;. This opacity
+largely stems from the complexity of AI models, which involve numerous
+layers of computation, making their inner workings difficult to
+interpret. Additionally, a lack of comprehensive interpretability tools
+contributes to this issue, leaving both users and developers with a
+limited understanding of their decision-making processes &lt;span class=&quot;citation&quot; data-cites=&quot;aryaxai:beyondtransparency&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/ai-user-agents/#ref-aryaxai:beyondtransparency&quot; role=&quot;doc-biblioref&quot;&gt;AryaXAI,
+2025&lt;/a&gt;)&lt;/span&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;but-cant-swear-any-allegiance.&quot;&gt;… but can’t swear any
+allegiance.&lt;/h3&gt;
+&lt;p&gt;In the classic UA trust model, if you see a recommendation for a
+product, you know a handful of entities whose interests this
+recommendation or ad serves. With AIUAs, you will have no idea if a
+recommendation serves your best interest or someone else’s. It could try
+to help you but fail because its training data is biased toward someone
+else’s interests. This bias is difficult to detect. &lt;span class=&quot;citation&quot; data-cites=&quot;ryan2025ai&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/ai-user-agents/#ref-ryan2025ai&quot; role=&quot;doc-biblioref&quot;&gt;Ryan, 2025&lt;/a&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&quot;they-are-opaque-even-to-those-who-make-them.&quot;&gt;They are opaque,
+even to those who make them.&lt;/h3&gt;
+&lt;p&gt;Even with a relatively simpler system like the UA with well-defined
+trust boundaries, trust remains a difficult problem. We are moving
+towards indecipherable systems like AIUAs with even fuzzier trust
+boundaries. We don’t have thousands of pages of specifications for these
+AI systems. Instead, there are trillions of training tokens that only
+offer loose guidance. Not to mention basic attack vectors like prompt
+injection still haven’t been sufficiently mitigated &lt;a href=&quot;https://xn--izc.com/posts/ai-user-agents/#fn2&quot; class=&quot;footnote-ref&quot; id=&quot;fnref2&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;.
+Nobody can guarantee where AIUAs’ allegiance lies. &lt;span class=&quot;citation&quot; data-cites=&quot;openai2025hardening&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/ai-user-agents/#ref-openai2025hardening&quot; role=&quot;doc-biblioref&quot;&gt;OpenAI,
+2025&lt;/a&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&quot;they-are-deceptively-trustworthy&quot;&gt;They are deceptively
+trustworthy …&lt;/h3&gt;
+&lt;p&gt;AIUAs can easily gain people’s trust. Some people even fall in love
+with them &lt;span class=&quot;citation&quot; data-cites=&quot;demopoulos2025women&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/ai-user-agents/#ref-demopoulos2025women&quot; role=&quot;doc-biblioref&quot;&gt;Demopoulos,
+2025&lt;/a&gt;)&lt;/span&gt; or follow them to their deaths. Our politics, values,
+and consumption habits are easy pickings for a mildly motivated AIUA to
+manipulate. To make things even worse, people trust what AIUAs tell them
+about the world without checking. The more people choose AIUAs as the
+goggles with which they see the world, the more these agents can shape a
+convincing alternate reality.&lt;/p&gt;
+&lt;h3 id=&quot;and-difficult-to-align.&quot;&gt;… and difficult to align.&lt;/h3&gt;
+&lt;p&gt;Perhaps the most interesting example of an intentionally modified
+foundational model is Grok, Elon Musk’s xAI chatbot. In July 2025, after
+Musk announced he had “improved” Grok to make it less “politically
+correct,” the chatbot began posting antisemitic content on X. This
+included praising Hitler and making false claims about Jewish people.
+&lt;span class=&quot;citation&quot; data-cites=&quot;siddiqui2025elon&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/ai-user-agents/#ref-siddiqui2025elon&quot; role=&quot;doc-biblioref&quot;&gt;Siddiqui,
+2025&lt;/a&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Grok isn’t an outlier. DeepSeek shocked the foundation model world
+when it came out. It was an open-weight model from China whose
+performance was comparable to the biggest foundation models at the time.
+Yet there was a problem: DeepSeek didn’t like to talk about Tiananmen
+Square. &lt;span class=&quot;citation&quot; data-cites=&quot;lu2025deepseek&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/ai-user-agents/#ref-lu2025deepseek&quot; role=&quot;doc-biblioref&quot;&gt;Lu, 2025&lt;/a&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Trying to steer foundation models toward or away from bias often
+leads to outcomes that diverge from intentions. &lt;span class=&quot;citation&quot; data-cites=&quot;sun2025aligned&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/ai-user-agents/#ref-sun2025aligned&quot; role=&quot;doc-biblioref&quot;&gt;Sun et al., 2025&lt;/a&gt;)&lt;/span&gt; While it sounds like
+self-sabotage, it’s not absurd to suggest that Google would comply with
+a request to politically “align” Gemini —hypothetically of course.
+Google scaled back its DEI hiring goals and other diversity programs in
+early 2025 after facing political and legal pressure. &lt;span class=&quot;citation&quot; data-cites=&quot;ap2025google&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/ai-user-agents/#ref-ap2025google&quot; role=&quot;doc-biblioref&quot;&gt;Associated Press, 2025&lt;/a&gt;)&lt;/span&gt; Standing up for
+what’s right at the expense of profit seems an unrealistic
+expectation.&lt;/p&gt;
+&lt;h2 id=&quot;in-summary&quot;&gt;In summary,&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;We see the world through complex yet predictable machines — called
+user agents. They are difficult to understand, but they do our bidding,
+more or less.&lt;/li&gt;
+&lt;li&gt;We are moving towards handing over our agency to even more complex
+machines. But this time, they are unpredictable, poorly understood, and
+pretty much impossible to align with our interests in a verifiable
+way.&lt;/li&gt;
+&lt;li&gt;The design and behavior of these complex machines may be affected by
+conflicts of interest that are hard if not impossible to detect.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That’s terrifying. But what can we do about it? In the next part of
+this series, we will delve into practical strategies and explore
+cutting-edge research to address and mitigate the risks associated with
+AI-powered user agents. We’ll examine the role of transparency in AI
+development and look at how emerging frameworks could help ensure AI
+systems act in our best interests.&lt;/p&gt;
+&lt;div id=&quot;refs&quot; class=&quot;references csl-bib-body hanging-indent&quot; data-line-spacing=&quot;2&quot; role=&quot;list&quot;&gt;
+&lt;div id=&quot;ref-aryaxai:beyondtransparency&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+AryaXAI. (2025). &lt;em&gt;&lt;span&gt;Beyond Transparency: Reimagining AI
+Interpretability Paradigms&lt;/span&gt;&lt;/em&gt;. &lt;a href=&quot;https://www.aryaxai.com/article/beyond-transparency-reimagining-ai-interpretability-paradigms&quot; class=&quot;uri&quot;&gt;https://www.aryaxai.com/article/beyond-transparency-reimagining-ai-interpretability-paradigms&lt;/a&gt;.
+&lt;a href=&quot;https://www.aryaxai.com/article/beyond-transparency-reimagining-ai-interpretability-paradigms&quot;&gt;https://www.aryaxai.com/article/beyond-transparency-reimagining-ai-interpretability-paradigms&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-ap2025google&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Associated Press. (2025). &lt;em&gt;Google scraps its diversity hiring goals
+as it complies with &lt;span&gt;T&lt;/span&gt;rump’s new government contractor
+rules&lt;/em&gt;. &lt;a href=&quot;https://apnews.com/article/16a937d5d9b6447251c4c40c2ad1c915&quot; class=&quot;uri&quot;&gt;https://apnews.com/article/16a937d5d9b6447251c4c40c2ad1c915&lt;/a&gt;.
+&lt;a href=&quot;https://apnews.com/article/16a937d5d9b6447251c4c40c2ad1c915&quot;&gt;https://apnews.com/article/16a937d5d9b6447251c4c40c2ad1c915&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-aysel2025explainable&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Aysel, H. I., Cai, X., &amp;amp; Prugel-Bennett, A. (2025). Explainable
+artificial intelligence: Advancements and limitations. &lt;em&gt;Applied
+Sciences&lt;/em&gt;. &lt;a href=&quot;https://doi.org/10.3390/app15137261&quot;&gt;https://doi.org/10.3390/app15137261&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-businesshorizons2025balancing&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Balancing explainability and privacy in &lt;span&gt;AI&lt;/span&gt; systems: A
+strategic imperative for managers. (2025). &lt;em&gt;Business Horizons&lt;/em&gt;.
+&lt;a href=&quot;https://doi.org/10.1016/j.bushor.2025.10.004&quot;&gt;https://doi.org/10.1016/j.bushor.2025.10.004&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-demopoulos2025women&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Demopoulos, A. (2025). &lt;em&gt;The women in love with &lt;span&gt;AI&lt;/span&gt;
+companions: &lt;span&gt;“&lt;span&gt;I&lt;/span&gt; vowed to my chatbot that
+&lt;span&gt;I&lt;/span&gt; wouldn’t leave him”&lt;/span&gt;&lt;/em&gt;. &lt;a href=&quot;https://www.theguardian.com/technology/2025/sep/09/ai-chatbot-love-relationships&quot; class=&quot;uri&quot;&gt;https://www.theguardian.com/technology/2025/sep/09/ai-chatbot-love-relationships&lt;/a&gt;.
+&lt;a href=&quot;https://www.theguardian.com/technology/2025/sep/09/ai-chatbot-love-relationships&quot;&gt;https://www.theguardian.com/technology/2025/sep/09/ai-chatbot-love-relationships&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-lu2025deepseek&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Lu, D. (2025). &lt;em&gt;We tried out &lt;span&gt;D&lt;/span&gt;eep&lt;span&gt;S&lt;/span&gt;eek.
+&lt;span&gt;I&lt;/span&gt;t worked well, until we asked it about
+&lt;span&gt;T&lt;/span&gt;iananmen &lt;span&gt;S&lt;/span&gt;quare and &lt;span&gt;T&lt;/span&gt;aiwan&lt;/em&gt;.
+&lt;a href=&quot;https://www.theguardian.com/technology/2025/jan/28/we-tried-out-deepseek-it-works-well-until-we-asked-it-about-tiananmen-square-and-taiwan&quot; class=&quot;uri&quot;&gt;https://www.theguardian.com/technology/2025/jan/28/we-tried-out-deepseek-it-works-well-until-we-asked-it-about-tiananmen-square-and-taiwan&lt;/a&gt;.
+&lt;a href=&quot;https://www.theguardian.com/technology/2025/jan/28/we-tried-out-deepseek-it-works-well-until-we-asked-it-about-tiananmen-square-and-taiwan&quot;&gt;https://www.theguardian.com/technology/2025/jan/28/we-tried-out-deepseek-it-works-well-until-we-asked-it-about-tiananmen-square-and-taiwan&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-openai2025hardening&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+OpenAI. (2025). &lt;em&gt;Continuously hardening &lt;span&gt;ChatGPT&lt;/span&gt;
+&lt;span&gt;Atlas&lt;/span&gt; against prompt injection attacks&lt;/em&gt;. &lt;a href=&quot;https://openai.com/index/hardening-atlas-against-prompt-injection/&quot; class=&quot;uri&quot;&gt;https://openai.com/index/hardening-atlas-against-prompt-injection/&lt;/a&gt;.
+&lt;a href=&quot;https://openai.com/index/hardening-atlas-against-prompt-injection/&quot;&gt;https://openai.com/index/hardening-atlas-against-prompt-injection/&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-ryan2025ai&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Ryan, C. (2025). &lt;em&gt;When AI buys from AI, who do we trust?&lt;/em&gt; &lt;a href=&quot;https://www.techradar.com/pro/when-ai-buys-from-ai-who-do-we-trust&quot; class=&quot;uri&quot;&gt;https://www.techradar.com/pro/when-ai-buys-from-ai-who-do-we-trust&lt;/a&gt;.
+&lt;a href=&quot;https://www.techradar.com/pro/when-ai-buys-from-ai-who-do-we-trust&quot;&gt;https://www.techradar.com/pro/when-ai-buys-from-ai-who-do-we-trust&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-siddiqui2025elon&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Siddiqui, F. (2025). &lt;em&gt;Elon &lt;span&gt;M&lt;/span&gt;usk’s &lt;span&gt;AI&lt;/span&gt;
+chatbot &lt;span&gt;G&lt;/span&gt;rok launches into antisemitic rant amid
+updates&lt;/em&gt;. &lt;a href=&quot;https://www.washingtonpost.com/technology/2025/07/08/elon-musk-grok-ai-antisemitism/&quot; class=&quot;uri&quot;&gt;https://www.washingtonpost.com/technology/2025/07/08/elon-musk-grok-ai-antisemitism/&lt;/a&gt;.
+&lt;a href=&quot;https://www.washingtonpost.com/technology/2025/07/08/elon-musk-grok-ai-antisemitism/&quot;&gt;https://www.washingtonpost.com/technology/2025/07/08/elon-musk-grok-ai-antisemitism/&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-sun2025aligned&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Sun, L., Mao, C., Hofmann, V., &amp;amp; Bai, X. (2025). Aligned but blind:
+Alignment increases implicit bias by reducing awareness of race.
+&lt;em&gt;arXiv Preprint arXiv:2506.00253&lt;/em&gt;. &lt;a href=&quot;https://doi.org/10.48550/arXiv.2506.00253&quot;&gt;https://doi.org/10.48550/arXiv.2506.00253&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-yang2025adoption&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Yang, J., Yonack, N., Zyskowski, K., Yarats, D., Ho, J., &amp;amp; Ma, J.
+(2025). The adoption and usage of AI agents: Early evidence from
+perplexity. &lt;em&gt;arXiv Preprint arXiv:2512.07828&lt;/em&gt;. &lt;a href=&quot;https://doi.org/10.48550/arXiv.2512.07828&quot;&gt;https://doi.org/10.48550/arXiv.2512.07828&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;Not all large language models are “hosted,” which means
+that the model is actually stored far away in a server and you can only
+talk to it through a mediating service. There are powerful language
+models that you can store in your own computer. Currently, there is a
+performance gap between the so-called &lt;q&gt;open weights&lt;/q&gt; models and
+their larger hosted counterparts. If that wasn’t a big deal, any
+language model that you can run on your machine is going to require some
+pretty hefty hardware. So tl;dr, it is possible to run a large language
+model on your computer. But that’s not an option for most people.&lt;a href=&quot;https://xn--izc.com/posts/ai-user-agents/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn2&quot;&gt;&lt;p&gt;&lt;q&gt;Prompt injection&lt;/q&gt; refers to a security issue where
+someone can craft a malicious prompt or include some malicious text
+that, when used with a large language model, causes that model to
+misbehave.&lt;/p&gt;
+&lt;p&gt;There are ongoing efforts that are trying to address these concerns.
+Researchers are exploring potential solutions, such as model auditing,
+to assess biases and decision-making processes within AI systems.
+Additionally, improving explainability is a key area of interest, as it
+would enhance our capability to interpret AIUA actions and decisions.
+Developing technical safeguards, such as robust encryption and secure
+access controls, could also serve as preventive measures against misuse.
+&lt;span class=&quot;citation&quot; data-cites=&quot;businesshorizons2025balancing&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/ai-user-agents/#ref-businesshorizons2025balancing&quot; role=&quot;doc-biblioref&quot;&gt;&lt;span&gt;“Balancing Explainability and Privacy in
+&lt;span&gt;AI&lt;/span&gt; Systems,”&lt;/span&gt; 2025&lt;/a&gt;)&lt;/span&gt;&lt;a href=&quot;https://xn--izc.com/posts/ai-user-agents/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/aside&gt;
+
+      </content>
+    </entry>
     <entry>
       <title>Something Happened On The Way To Perfect History</title>
       <link href="https://xn--izc.com/posts/perfect-information/" />
@@ -86,7 +287,7 @@ that or the falsehood was so perfectly executed that nobody can
 tell.&lt;/p&gt;
 &lt;p&gt;It would make for a great science fiction story until it actually
 happens.&lt;/p&gt;
-&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;… and 26 days to be exact. It is kind of incredible how
@@ -95,7 +296,7 @@ but if anyone could have a look at chapter 4 and tell me, that would be
 great. In the meantime, I’ll have to take the word of &lt;a href=&quot;https://www.bristol.ac.uk/news/2008/212017945233.html&quot;&gt;the
 University of Bristol&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/perfect-information/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/aside&gt;
 
       </content>
     </entry>
@@ -470,12 +671,12 @@ avoid taking &lt;em&gt;someone’s&lt;/em&gt; word that the UA is safe. Because 
 little control we have as users over browsers, the only real way in
 which users can influence UAs is via legislation that holds UA owners
 accountable for their design decisions.&lt;/p&gt;
-&lt;div id=&quot;refs&quot; class=&quot;references csl-bib-body hanging-indent&quot; data-entry-spacing=&quot;0&quot; data-line-spacing=&quot;2&quot; role=&quot;list&quot;&gt;
+&lt;div id=&quot;refs&quot; class=&quot;references csl-bib-body hanging-indent&quot; data-line-spacing=&quot;2&quot; role=&quot;list&quot;&gt;
 &lt;div id=&quot;ref-w3c:webuseragents&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
 Yasskin, J., &amp;amp; Capadisli, S. (2026). &lt;em&gt;Web user agents&lt;/em&gt;. &lt;a href=&quot;https://www.w3.org/TR/web-user-agents/#audience&quot; class=&quot;uri&quot;&gt;https://www.w3.org/TR/web-user-agents/#audience&lt;/a&gt;. &lt;a href=&quot;https://www.w3.org/TR/web-user-agents/#audience&quot;&gt;https://www.w3.org/TR/web-user-agents/#audience&lt;/a&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;I’m using the term “device” loosely here because the
@@ -517,7 +718,7 @@ village. So for now, this is the best we can do.&lt;/p&gt;
 to do for decades; which is to kill the ad-supported web. As yet it’s
 unclear what will replace it, and whom this replacement leaves behind.&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fnref6&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/aside&gt;
 
       </content>
     </entry>
@@ -567,7 +768,7 @@ people who help people who … build the product. What would the effect be
 if this product or service you are working on didn’t exist? By how much
 do you think your work will improve the lives of our users?&lt;/p&gt;
 &lt;p&gt;Does the product improve no matter how fast you turn?&lt;/p&gt;
-&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;Contrary to common belief, developers in larger outfits
@@ -578,7 +779,7 @@ Alex Komoroske.&lt;a href=&quot;https://xn--izc.com/posts/cog-ratio/#fnref1&quot
 software products aren’t technically material. It refers to the bits and
 bytes that comprise the product.&lt;a href=&quot;https://xn--izc.com/posts/cog-ratio/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/aside&gt;
 
       </content>
     </entry>
@@ -724,7 +925,7 @@ al. (&lt;a href=&quot;https://xn--izc.com/posts/optimal-line-length/#ref-beymerR
 columns, but there’s no consensus on whether there’s a significant
 improvement in reading speed. Some evidence exists to suggest that
 comprehension is slightly better with narrower columns.&lt;/p&gt;
-&lt;div id=&quot;refs&quot; class=&quot;references csl-bib-body hanging-indent&quot; data-entry-spacing=&quot;0&quot; data-line-spacing=&quot;2&quot; role=&quot;list&quot;&gt;
+&lt;div id=&quot;refs&quot; class=&quot;references csl-bib-body hanging-indent&quot; data-line-spacing=&quot;2&quot; role=&quot;list&quot;&gt;
 &lt;div id=&quot;ref-bernard2003effects&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
 Bernard, M. L., Fernandez, M., Hull, S., &amp;amp; Chaparro, B. S. (2003).
 The effects of line length on children and adults’ perceived and actual
@@ -1020,7 +1221,7 @@ learn.&lt;/li&gt;
 &lt;li&gt;Reward those who pull the team together and help the team
 communicate internally and externally.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;I recommend &lt;a href=&quot;https://en.wikipedia.org/wiki/The_Five_Dysfunctions_of_a_Team&quot;&gt;The
@@ -1031,7 +1232,7 @@ Motivation: An Anecdote&lt;/a&gt; for an example of what happens when people
 try to force this process purely by creating extrinsic incentives and
 assigned roles.&lt;a href=&quot;https://xn--izc.com/series/unsung-team-roles/incentives/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/aside&gt;
 
       </content>
     </entry>
@@ -1210,7 +1411,7 @@ description.&lt;/em&gt; Sometimes called &lt;em&gt;soft&lt;/em&gt; roles.&lt;/li
 &lt;/ul&gt;
 &lt;p&gt;In this series we will look at a few of these soft roles that emerge
 often and look into the critical work that these roles perform.&lt;/p&gt;
-&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;A former Googler, Avery Penwarr wrote an influential
@@ -1234,7 +1435,7 @@ any big decision, the executive highest up the ladder is the least
 informed about the pertinent details – but that’s okay because knowing
 the details isn’t their job.&lt;a href=&quot;https://xn--izc.com/series/unsung-team-roles/emergence/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/aside&gt;
 
       </content>
     </entry>
@@ -1625,7 +1826,7 @@ exists in the first place.&lt;/p&gt;
 &lt;p&gt;The ongoing threats against these elite universities at the centers
 of intellectual catchment areas and the ongoing threats against
 immigration will undo what took a century to build.&lt;/p&gt;
-&lt;div id=&quot;refs&quot; class=&quot;references csl-bib-body hanging-indent&quot; data-entry-spacing=&quot;0&quot; data-line-spacing=&quot;2&quot; role=&quot;list&quot;&gt;
+&lt;div id=&quot;refs&quot; class=&quot;references csl-bib-body hanging-indent&quot; data-line-spacing=&quot;2&quot; role=&quot;list&quot;&gt;
 &lt;div id=&quot;ref-affectedUniversities&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
 Alan Blinder. (n.d.). &lt;em&gt;Trump Has Targeted These Universities.
 Why?&lt;/em&gt; Retrieved July 4, 2025, from &lt;a href=&quot;https://www.nytimes.com/article/trump-university-college.html&quot;&gt;https://www.nytimes.com/article/trump-university-college.html&lt;/a&gt;
@@ -1661,14 +1862,14 @@ Sequoia Carrillo. (2025, June 5). &lt;em&gt;International students look to the
 U.K. instead of the U.S., as Trump squeezes visas&lt;/em&gt;. &lt;a href=&quot;https://www.npr.org/2025/06/05/nx-s1-5415740/trump-international-student-visas-uk-universities&quot;&gt;https://www.npr.org/2025/06/05/nx-s1-5415740/trump-international-student-visas-uk-universities&lt;/a&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;The US is not the &lt;em&gt;largest&lt;/em&gt; reservoir of
 intellectual capital. That honor likely goes to China. However in a
 number of fields, the US is –or was until recently– the most prolific.&lt;a href=&quot;https://xn--izc.com/posts/catchment/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/aside&gt;
 
       </content>
     </entry>
@@ -1751,7 +1952,7 @@ develops.”&lt;/p&gt;
 &lt;p&gt;— &lt;a href=&quot;https://www.anthropic.com/research/exploring-model-welfare&quot;&gt;Anthropic&lt;/a&gt;&lt;/p&gt;
 &lt;/figcaption&gt;
 &lt;/figure&gt;
-&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;ELIZA is fascinating in how simple the whole system is
@@ -1767,7 +1968,7 @@ with the specifics of the flame we are trying to simulate. It can just
 as well happen while trying to &lt;a href=&quot;https://web.math.princeton.edu/math_alive/Crypto/Lab2/Factorization.html&quot;&gt;factor
 a large prime&lt;/a&gt;.&lt;a href=&quot;https://xn--izc.com/series/structure-of-experience/flame/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/aside&gt;
 
       </content>
     </entry>
@@ -1992,14 +2193,14 @@ were run by people who were no longer doing it just to help other
 people. They were run by people who were trying to help themselves. The
 programs faltered; quality went down; the effectiveness of the programs
 went downhill. It wasn’t fun or rewarding as it was before.&lt;/p&gt;
-&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;There’s a lot of discontent now, but at the time there
 was only a little.&lt;a href=&quot;https://xn--izc.com/posts/intrinsic-motivation-an-anecdote/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li id=&quot;fn2&quot;&gt;&lt;p&gt;As of this writing (February of 2025), not any more.&lt;a href=&quot;https://xn--izc.com/posts/intrinsic-motivation-an-anecdote/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/aside&gt;
 
       </content>
     </entry>
@@ -2231,13 +2432,13 @@ larger.&lt;/p&gt;
 attempt at flow control. It delays the discovery of actual
 throughput.&lt;/p&gt;
 &lt;p&gt;This phenomenon is called &lt;strong&gt;buffer bloat&lt;/strong&gt;.&lt;/p&gt;
-&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;This is obviously a massive oversimplification. But
 doesn’t change the thesis presented next.&lt;a href=&quot;https://xn--izc.com/posts/buffer-bloat/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/aside&gt;
 
       </content>
     </entry>
@@ -2453,7 +2654,7 @@ too many trips to the 11ty GitHub repo. The right number of required
 visits should be zero.&lt;/p&gt;
 &lt;p&gt;In the coming weeks I’ll package Eleventy Pandoc support and some of
 the shortcodes so others can use them.&lt;/p&gt;
-&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;There are ways to mitigate this problem. For example, we
@@ -2469,7 +2670,7 @@ treat the contents as unsafe and requires manually opting into unsafe
 injection via &lt;code&gt;{{ foo | safe }}&lt;/code&gt;. Liquid will insert the
 contents with no escaping.&lt;a href=&quot;https://xn--izc.com/posts/moved-to-eleventy/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/aside&gt;
 
       </content>
     </entry>
@@ -2637,13 +2838,13 @@ many self-defeating mistakes.&lt;/p&gt;
 middle management of these companies. The &lt;a href=&quot;https://brucefwebster.com/2008/04/15/the-wetware-crisis-the-themocline-of-truth/&quot;&gt;thermocline
 of truth&lt;/a&gt; ensures that those looking down from the top will never see
 the fat for what it is.&lt;/p&gt;
-&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;I can attest to the fact that there are people who only
 have the &lt;em&gt;authority&lt;/em&gt; attribute. It is a thing.&lt;a href=&quot;https://xn--izc.com/posts/how-to-solve-a-problem-in-three-steps/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/aside&gt;
 
       </content>
     </entry>
@@ -2720,14 +2921,14 @@ continents.&lt;/li&gt;
 question, you are doing something wrong. Not even Google internally gets
 this part right. Give up. Don’t ask if someone is “Asian”.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;See the UN’s &lt;a href=&quot;https://unstats.un.org/unsd/methodology/m49/&quot;&gt;Standard country or
 area codes for statistical use (M49)&lt;/a&gt; for a list of geographic
 regions and various groupings of countries.&lt;a href=&quot;https://xn--izc.com/posts/asians-is-not-a-useful-category/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/aside&gt;
 
       </content>
     </entry>
@@ -2762,7 +2963,7 @@ state absent external regulation.&lt;/p&gt;
 to concentration of resources.&lt;/p&gt;
 &lt;p&gt;Wherever society allows a have-loop to exist, inequality will
 inevitably grow.&lt;/p&gt;
-&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;The terms “cost-center” and “profit-center” typically
@@ -2776,7 +2977,7 @@ resources, hyper-extraction can also be directed towards individuals and
 entire demographies. Measures of income equality will eventually fall
 against another’s ability to enact hyper-extraction.&lt;a href=&quot;https://xn--izc.com/posts/have-loop/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/aside&gt;
 
       </content>
     </entry>
@@ -2926,7 +3127,7 @@ satisfaction surveys, interviews, or whatever else.&lt;/p&gt;&lt;/li&gt;
 the lifecycle that thing fits helps us get a sense for the level of
 maturity of the concept and where you need to be to solve the
 problem.&lt;/p&gt;
-&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;The concept applies equally to non-software systems – as
@@ -2939,7 +3140,7 @@ use to construct solutions for the evolving squishy problems that we are
 discussing here.&lt;a href=&quot;https://xn--izc.com/posts/secret-life-of-systems/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li id=&quot;fn3&quot;&gt;&lt;p&gt;… which is why it is called a “model”.&lt;a href=&quot;https://xn--izc.com/posts/secret-life-of-systems/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/aside&gt;
 
       </content>
     </entry>
@@ -3204,7 +3405,7 @@ construction to curb the product outcomes.&lt;/p&gt;
 &lt;p&gt;The accuracy of the resulting simplified models is all that we will
 have to grasp in order to have some say how technology will govern us in
 turn.&lt;/p&gt;
-&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;Continuing to use an unsafe language isn’t as dumb as it
@@ -3213,7 +3414,7 @@ the unenviable position of being unable to move enmasse to better
 platforms due to the cost. Thus less than perfect interim measures are
 not that silly.&lt;a href=&quot;https://xn--izc.com/posts/evluating-negatives/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/aside&gt;
 
       </content>
     </entry>
@@ -3276,7 +3477,7 @@ task into simple English question and answer is kind of mind
 blowing.&lt;/p&gt;
 &lt;p&gt;I’m waiting to see what the new year is going to bring in terms of
 automation. We are truly living in the future.&lt;/p&gt;
-&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://www.salesforce.com/news/stories/generative-ai-statistics/#:~:text=45%25%20of%20the%20US%20population%20surveyed%20is%20using%20generative%20AI.&quot;&gt;“45%
@@ -3301,7 +3502,7 @@ District of Columbia introduced artificial intelligence bills, and 15
 states and Puerto Rico adopted resolutions or enacted
 legislation.”&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/happy-new-year-2024-and-year-in-review-2023/#fnref7&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/aside&gt;
 
       </content>
     </entry>
@@ -3355,7 +3556,7 @@ havoc with the trust that people had for each other and themselves. We
 are still &lt;em&gt;trying&lt;/em&gt; to &lt;a href=&quot;https://about.google/philosophy/&quot; title=&quot;Ten things we know to be true&quot;&gt;focus on the user&lt;/a&gt;; &lt;a href=&quot;https://blog.google/inside-google/message-ceo/january-update/#:~:text=important%20moments%20to-,sharpen%20our%20focus,-%2C%20reengineer%20our%20cost&quot; title=&quot;A difficult decision to set us up for the future&quot;&gt;sharply, in
 fact&lt;/a&gt;. But it is evident that company and its people are increasingly
 acting out of self preservation,&lt;/p&gt;
-&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;There’s a mailing list for the folks who started on the
@@ -3368,7 +3569,7 @@ relevant to this discussion.&lt;a href=&quot;https://xn--izc.com/posts/thirteen-
 something really really wrong. Noone wants to be in this position
 though.&lt;a href=&quot;https://xn--izc.com/posts/thirteen-years/#fnref4&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/aside&gt;
 
       </content>
     </entry>
@@ -3512,7 +3713,7 @@ oriented teams&lt;/figcaption&gt;
 asking each team what their goals are.&lt;/p&gt;
 &lt;p&gt;But the gist of it is you can’t plan teams or pillars until you know
 what their goals are.&lt;/p&gt;
-&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;I don’t believe the concepts introduced in &lt;a href=&quot;https://teamtopologies.com/&quot;&gt;Team Topologies&lt;/a&gt; don’t apply
@@ -3523,7 +3724,7 @@ economy as being a very large number of small “teams” with a very dense
 network of interdependencies. Sure, it’s leaving people in poverty and
 is killing the planet; but it still kind of works.&lt;a href=&quot;https://xn--izc.com/posts/pillars-are-governance-structures/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/aside&gt;
 
       </content>
     </entry>
@@ -3847,13 +4048,13 @@ the toil of writing UIs. It doesn’t have to be this way.&lt;/p&gt;
 &lt;p&gt;At least for configuration, just because the configuration is written
 down as code doesn’t mean it has to be edited as code. The same UIs that
 we once used can still generate those text files.&lt;/p&gt;
-&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;Vim is actually quite awesome. &lt;a href=&quot;https://neovim.io/&quot;&gt;Neovim&lt;/a&gt; is slightly more or less awesome
 depending on who you are ask.&lt;a href=&quot;https://xn--izc.com/posts/code-as-ui/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/aside&gt;
 
       </content>
     </entry>
@@ -4016,12 +4217,12 @@ either finite or bounded, and that the infimum is a member of the set.
 Neither does this hold for &lt;span class=&quot;math inline&quot;&gt;&#92;Z&lt;/span&gt; since a
 non-finite subset in &lt;span class=&quot;math inline&quot;&gt;&#92;Z&lt;/span&gt; doesn’t
 necessarily have a minimum.&lt;/p&gt;
-&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;Not actually a theorem.&lt;a href=&quot;https://xn--izc.com/posts/interesting-numbers/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/aside&gt;
 
       </content>
     </entry>
@@ -4364,7 +4565,7 @@ very well.&lt;/figcaption&gt;
 are present in the study. And whether the subjects of the study are
 representative of the population is in doubt. Overall I find the study
 unconvincing.&lt;/p&gt;
-&lt;div id=&quot;refs&quot; class=&quot;references csl-bib-body hanging-indent&quot; data-entry-spacing=&quot;0&quot; data-line-spacing=&quot;2&quot; role=&quot;list&quot;&gt;
+&lt;div id=&quot;refs&quot; class=&quot;references csl-bib-body hanging-indent&quot; data-line-spacing=&quot;2&quot; role=&quot;list&quot;&gt;
 &lt;div id=&quot;ref-campbell2021gender&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
 Campbell, O. L., Bann, D., &amp;amp; Patalay, P. (2021). The gender gap in
 adolescent mental health: A cross-national investigation of 566,829
@@ -4372,7 +4573,7 @@ adolescents across 73 countries. &lt;em&gt;SSM-Population Health&lt;/em&gt;,
 &lt;em&gt;13&lt;/em&gt;, 100742.
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;GII is the Gender Inequality Index. It’s based on such
@@ -4381,7 +4582,7 @@ factors like &lt;em&gt;female and male shares of parliamentary seats&lt;/em&gt;,
 &lt;em&gt;female and male labour force participation rates&lt;/em&gt;, &lt;em&gt;maternal
 mortality ratio&lt;/em&gt;, and &lt;em&gt;adolescent birth rate&lt;/em&gt;.&lt;a href=&quot;https://xn--izc.com/posts/gender-gap-in-adolescent-mental-health/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/aside&gt;
 
       </content>
     </entry>
@@ -4444,7 +4645,7 @@ parts that need attention. You’d still need to do the legwork for the
 details. But for someone trying to figure out what some undocumented
 function is doing, this kind of highlight makes quick work of going past
 the boilerplate.&lt;/p&gt;
-&lt;div id=&quot;refs&quot; class=&quot;references csl-bib-body hanging-indent&quot; data-entry-spacing=&quot;0&quot; data-line-spacing=&quot;2&quot; role=&quot;list&quot;&gt;
+&lt;div id=&quot;refs&quot; class=&quot;references csl-bib-body hanging-indent&quot; data-line-spacing=&quot;2&quot; role=&quot;list&quot;&gt;
 &lt;div id=&quot;ref-truss2004eats&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
 Truss, L. (2004). &lt;em&gt;Eats, shoots &amp;amp; leaves: The zero tolerance
 approach to punctuation&lt;/em&gt; (p. 146). Penguin.
@@ -4783,14 +4984,14 @@ your purchased ebooks on this device.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;No support for labeling or organizing your notes – as of this
 writing.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;In case the Pixelbook site goes offline, here’s the
 Wayback Machine’s &lt;a href=&quot;https://web.archive.org/web/20210725184512/https://www.google.com/chromebook/device/google-pixelbook/&quot;&gt;snapshot
 from when I wrote this article&lt;/a&gt;.&lt;a href=&quot;https://xn--izc.com/posts/remarkable-first-impressions/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/aside&gt;
 
       </content>
     </entry>
@@ -4984,7 +5185,7 @@ Bachman. CBS News pegged it at more like 87,000.&lt;/p&gt;
 &lt;p&gt;I’m going to give up at this point. Pictures purportedly of around
 one million people are mostly parts of crowds that have been estimated
 to be that big.&lt;/p&gt;
-&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;Note that figure 2 indicates that the estimate is 49% of
@@ -4993,7 +5194,7 @@ the population would have internet access in 2017. It’s likely that by
 &lt;li id=&quot;fn2&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://www.wired.com/2011/02/how-many-people-are-in-tahrir-square-heres-how-to-tell/&quot;&gt;How
 Many People Are in Tahrir Square? Here’s How to Tell&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/visualizing-people-2/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/aside&gt;
 
       </content>
     </entry>
@@ -5038,14 +5239,14 @@ button supposed to do?&lt;/p&gt;
 &lt;img src=&quot;https://xn--izc.com/posts/fart-limit/images/kids-health-fart.png&quot; alt=&quot;KidsHealth: What’s a Fart?&quot; /&gt;
 &lt;figcaption aria-hidden=&quot;true&quot;&gt;KidsHealth: What’s a Fart?&lt;/figcaption&gt;
 &lt;/figure&gt;
-&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;https://web.archive.org/web/20210614200353/https://www.houstonmethodist.org/blog/articles/2020/oct/flatulence-everything-you-wanted-to-know-about-farting/&lt;a href=&quot;https://xn--izc.com/posts/fart-limit/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li id=&quot;fn2&quot;&gt;&lt;p&gt;https://www.chemistryworld.com/news/explainer-the-chemistry-of-farts/2500168.article&lt;a href=&quot;https://xn--izc.com/posts/fart-limit/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li id=&quot;fn3&quot;&gt;&lt;p&gt;https://www.osha.gov/hydrogen-sulfide/hazards&lt;a href=&quot;https://xn--izc.com/posts/fart-limit/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/aside&gt;
 
       </content>
     </entry>
@@ -5720,7 +5921,7 @@ time to be &lt;span class=&quot;math inline&quot;&gt;n&lt;/span&gt; hours in the
 but I’m too lazy to go back and rewrite everything.&lt;/p&gt;
 &lt;p&gt;…&lt;/p&gt;
 &lt;p&gt;…&lt;/p&gt;
-&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;Also known as reading the relevant Wikipedia article. In
@@ -5730,7 +5931,7 @@ section of the article on the Poisson distribution&lt;/a&gt;.&lt;a href=&quot;ht
 original article in Latin&lt;/a&gt; is available via &lt;a href=&quot;https://royalsociety.org/journals/&quot;&gt;The Royal Society
 Publishing&lt;/a&gt;.&lt;a href=&quot;https://xn--izc.com/posts/poisson-distribution/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/aside&gt;
 
       </content>
     </entry>
@@ -5903,7 +6104,7 @@ Bachman. CBS News pegged it at more like 87,000.&lt;/p&gt;
 &lt;p&gt;I’m going to give up at this point. Pictures purportedly of around
 one million people are mostly parts of crowds that have been estimated
 to be that big. Forget about 12.3 million.&lt;/p&gt;
-&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;Why 0.3% of the internet population? It’s a number that
@@ -5922,7 +6123,7 @@ trends due to the effects of COVID.&lt;a href=&quot;https://xn--izc.com/posts/vi
 &lt;li id=&quot;fn4&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://www.wired.com/2011/02/how-many-people-are-in-tahrir-square-heres-how-to-tell/&quot;&gt;How
 Many People Are in Tahrir Square? Here’s How to Tell&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/visualizing-people/#fnref4&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/aside&gt;
 
       </content>
     </entry>
@@ -6074,7 +6275,7 @@ instance.&lt;/li&gt;
 &lt;li&gt;You can use proportional fonts with VSCodeNeovim for super double
 awesomeness.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;Not quite the whole story because it’s possible a buffer
@@ -6089,7 +6290,7 @@ curious experiment&lt;/a&gt; which patches in a different font for italics so
 that you can use the existing &lt;code&gt;fontStyle: &quot;italic&quot;&lt;/code&gt; option in
 &lt;code&gt;tokenColorCustomizations&lt;/code&gt; to switch fonts.&lt;a href=&quot;https://xn--izc.com/posts/things-you-can-do-with-nvim-and-vscode/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/aside&gt;
 
       </content>
     </entry>
@@ -6197,7 +6398,7 @@ opinion itself. Doing so invites criticism and discussion instead of
 suppressing them.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 class=&quot;unnumbered&quot; id=&quot;references&quot;&gt;References&lt;/h2&gt;
-&lt;div id=&quot;refs&quot; class=&quot;references csl-bib-body hanging-indent&quot; data-entry-spacing=&quot;0&quot; data-line-spacing=&quot;2&quot; role=&quot;list&quot;&gt;
+&lt;div id=&quot;refs&quot; class=&quot;references csl-bib-body hanging-indent&quot; data-line-spacing=&quot;2&quot; role=&quot;list&quot;&gt;
 &lt;div id=&quot;ref-Michael&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
 &lt;em&gt;Strong opinions loosely held might be the worst idea in tech - the
 glowforge blog&lt;/em&gt;. (2020, September 4). &lt;a href=&quot;https://blog.glowforge.com/strong-opinions-loosely-held-might-be-the-worst-idea-in-tech/&quot;&gt;https://blog.glowforge.com/strong-opinions-loosely-held-might-be-the-worst-idea-in-tech/&lt;/a&gt;
@@ -6235,7 +6436,7 @@ dashes instead of underscores. Common for command-line options&lt;a href=&quot;h
 &lt;/ul&gt;
 &lt;p&gt;While looking idly looking for details on this, I stumbled on &lt;a href=&quot;https://medium.com/better-programming/string-case-styles-camel-pascal-snake-and-kebab-case-981407998841&quot;&gt;this
 Medium post&lt;/a&gt; which is relevant.&lt;/p&gt;
-&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;Opinions vary on whether the correct convention for
@@ -6244,7 +6445,7 @@ command line options is &lt;code&gt;snake_case&lt;/code&gt; or
 &lt;code&gt;--long-option&lt;/code&gt;, but can also be &lt;code&gt;--long_option&lt;/code&gt;
 (where the delimiter within the option is &lt;code&gt;_&lt;/code&gt;).&lt;a href=&quot;https://xn--izc.com/posts/symbol-name-types/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/aside&gt;
 
       </content>
     </entry>
@@ -6424,7 +6625,7 @@ that’s much cheaper to reschedule or less damaging to cancel.&lt;/p&gt;&lt;/li
 one who got the short end of the stick.&lt;/p&gt;
 &lt;p&gt;It just might be that all parties involved are rational actors, and
 there’s really not a great alternative. Sometimes it’s just life.&lt;/p&gt;
-&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://www.theverge.com/2014/8/19/6004131/comcast-the-worst-company-in-america&quot;&gt;&lt;em&gt;The
@@ -6438,7 +6639,7 @@ the end of the world.&lt;a href=&quot;https://xn--izc.com/posts/comcast-technica
 Verge&lt;/em&gt;. &lt;em&gt;The worst company in America.&lt;/em&gt;&lt;/a&gt; (Accessed July
 13, 2020)&lt;a href=&quot;https://xn--izc.com/posts/comcast-technican-problem/#fnref4&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/aside&gt;
 
       </content>
     </entry>
@@ -6491,14 +6692,14 @@ already has the buffer open.&lt;/p&gt;
 tabs.&lt;/p&gt;
 &lt;p&gt;See &lt;code&gt;:help switchbuf&lt;/code&gt; or &lt;a href=&quot;http://vimdoc.sourceforge.net/htmldoc/options.html#&amp;#39;switchbuf&amp;#39;&quot;&gt;here
 on the web&lt;/a&gt; for full details.&lt;/p&gt;
-&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;Assuming you have &lt;code&gt;set hidden&lt;/code&gt; that is. See
 &lt;code&gt;:help drop&lt;/code&gt; for more details on what happens when the
 current buffer cannot be unloaded.&lt;a href=&quot;https://xn--izc.com/posts/use-drop-not-edit/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/aside&gt;
 
       </content>
     </entry>
@@ -7085,7 +7286,7 @@ same-origin, queue but don’t fire &lt;code&gt;change&lt;/code&gt; and
 &lt;code&gt;blur&lt;/code&gt; events until focus returns to the old top-level
 browsing context.&lt;/p&gt;
 &lt;h3 id=&quot;notes&quot;&gt;Notes&lt;/h3&gt;
-&lt;section id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;Van Goethem, T. and Joosen, W., 2017. One side-channel
@@ -7099,7 +7300,7 @@ spec for sensitive APIs.&lt;a href=&quot;https://xn--izc.com/posts/ephemeral-fin
 &lt;a href=&quot;https://html.spec.whatwg.org/multipage/interaction.html#focus-update-steps&quot;&gt;focus
 update steps&lt;/a&gt;.&lt;a href=&quot;https://xn--izc.com/posts/ephemeral-fingerprinting/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/aside&gt;
 
       </content>
     </entry>

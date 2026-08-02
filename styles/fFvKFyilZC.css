@@ -1,19 +1,4 @@
-.noun { color: blue }
-.adverb { color: green }
-.gerund { color: purple }
-.preposition { color: brown }
-.verb { color: red }
-.determiner { color: navy }
-.conjunction { color: maroon }
-.pronoun { color: teal }
-.adjective { color: olive }
-.proper { color: coral }
-
-.function { color: teal }
-.var-index { color: blue }
-.var-value { color: green }
-.hi { font-weight: bold; }
-@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 @font-face {
   font-display: block;
@@ -158,6 +143,7 @@
 .katex {
   font: normal 1.21em KaTeX_Main, Times New Roman, serif;
   line-height: 1.2;
+  position: relative;
   text-indent: 0;
   text-rendering: auto;
 }
@@ -168,12 +154,13 @@
 }
 
 .katex .katex-version:after {
-  content: "0.16.33";
+  content: "0.16.47";
 }
 
 .katex .katex-mathml {
-  clip: rect(1px, 1px, 1px, 1px);
   border: 0;
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
   padding: 0;
@@ -369,6 +356,11 @@
 
 .katex .mspace {
   display: inline-block;
+}
+
+.katex .smash {
+  display: inline;
+  line-height: 0;
 }
 
 .katex .clap, .katex .llap, .katex .rlap {
@@ -1260,10 +1252,10 @@ body {
   --font-weight-h1: 800;
   --font-size-h2: 1.75rem;
   --font-weight-h2: 700;
-  --font-size-h3: 1.3rem;
-  --font-weight-h3: 400;
-  --font-size-h4: 1.2rem;
-  --font-weight-h4: 400;
+  --font-size-h3: 1.35rem;
+  --font-weight-h3: 700;
+  --font-size-h4: 1.15rem;
+  --font-weight-h4: 600;
   --font-size-blog-title: 1.2rem;
   --font-size-navigation-fragments: 0.8rem;
   --font-size-inline-code: 0.8rem;
@@ -1272,7 +1264,7 @@ body {
   --font-size-small: 0.8rem;
   --font-size-footnotes: 0.8rem;
   --font-size-table-caption: 0.9rem;
-  --font-size-tag: 0.9rem;
+  --font-size-tag: 0.7rem;
   font-size: 16pt;
 }
 
@@ -1317,7 +1309,9 @@ body {
     font-weight: var(--font-weight-h2);
     font-style: normal;
     font-size: var(--font-size-h2);
-    line-height: 1.2;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
     color: var(--h1-text-color);
   }
 }
@@ -1327,7 +1321,7 @@ body {
     position: relative;
   }
   article header .metadata {
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     font-optical-sizing: auto;
     font-variation-settings: "wdth" 100;
     font-style: normal;
@@ -1349,7 +1343,7 @@ body {
   article h2,
   article h3,
   article h4 {
-    line-height: 1.3;
+    line-height: 1.15;
     margin-top: 2.5rem;
     margin-bottom: 1rem;
   }
@@ -1357,13 +1351,23 @@ body {
   article h4 {
     margin-bottom: 0.2rem;
   }
+  article p,
+  article ul,
+  article ol,
+  article dl,
+  article figure,
+  article blockquote {
+    margin-bottom: 1rem;
+  }
   article h1 {
     font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-optical-sizing: auto;
     font-weight: var(--font-weight-h1);
     font-style: normal;
     font-size: var(--font-size-h1);
-    line-height: 1.2;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
     color: var(--h1-text-color);
     margin-top: 0;
   }
@@ -1373,7 +1377,9 @@ body {
     font-weight: var(--font-weight-h2);
     font-style: normal;
     font-size: var(--font-size-h2);
-    line-height: 1.2;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
     color: var(--h2-text-color);
   }
   article h3 {
@@ -1382,7 +1388,9 @@ body {
     font-weight: var(--font-weight-h3);
     font-style: normal;
     font-size: var(--font-size-h3);
-    line-height: 1.2;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
     color: var(--h3-text-color);
   }
   article h4 {
@@ -1391,7 +1399,9 @@ body {
     font-weight: var(--font-weight-h4);
     font-style: normal;
     font-size: var(--font-size-h4);
-    line-height: 1.2;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
     color: var(--h4-text-color);
   }
   article p > img,
@@ -1405,7 +1415,8 @@ body {
     font-size: var(--font-size-displaymath);
   }
   article > blockquote {
-    font-family: "Crimson Text", serif;
+    font-family: "Source Serif 4", Georgia, Cambria, "Times New Roman", Times, serif;
+    font-optical-sizing: auto;
     font-style: italic;
     font-weight: var(--font-weight-normal);
     font-size: var(--font-size-blockquote);
@@ -1489,7 +1500,7 @@ body {
     margin-bottom: 1em;
   }
   article code {
-    font-family: "Inconsolata", monospace;
+    font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
     font-optical-sizing: auto;
     font-weight: var(--font-weight-normal);
     font-style: normal;
@@ -1503,7 +1514,7 @@ body {
     overflow-x: auto;
     margin-bottom: 1.5rem;
     border: 1px solid var(--border-color);
-    font-family: "Inconsolata", monospace;
+    font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
     font-optical-sizing: auto;
     font-weight: var(--font-weight-normal);
     font-style: normal;
@@ -1555,7 +1566,9 @@ body {
     font-weight: var(--font-weight-bold);
     font-style: normal;
     font-size: var(--font-size-body);
-    line-height: 1.2;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
   }
   article dd p {
     margin-bottom: 0;
@@ -1579,7 +1592,8 @@ body {
     height: auto;
   }
   article figure figcaption {
-    font-family: "Crimson Text", serif;
+    font-family: "Source Serif 4", Georgia, Cambria, "Times New Roman", Times, serif;
+    font-optical-sizing: auto;
     font-style: normal;
     font-weight: var(--font-weight-normal);
     font-size: var(--font-size-table-caption);
@@ -1593,7 +1607,7 @@ body {
     border-spacing: 0;
   }
   article table thead {
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     font-optical-sizing: auto;
     font-variation-settings: "wdth" 100;
     font-style: normal;
@@ -1613,7 +1627,8 @@ body {
     background-color: var(--table-odd-row-color);
   }
   article table caption {
-    font-family: "Crimson Text", serif;
+    font-family: "Source Serif 4", Georgia, Cambria, "Times New Roman", Times, serif;
+    font-optical-sizing: auto;
     font-style: normal;
     font-weight: var(--font-weight-normal);
     font-size: var(--font-size-table-caption);
@@ -1624,6 +1639,11 @@ body {
   }
 }
 @layer article {
+  .references {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+  }
   .references::before {
     content: "References";
     font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -1631,22 +1651,33 @@ body {
     font-weight: var(--font-weight-bold);
     font-style: normal;
     font-size: var(--font-size-h2);
-    line-height: 1.2;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
     display: block;
     padding-bottom: 1rem;
     color: var(--h1-text-color);
   }
   .references .csl-entry {
     padding-bottom: 1rem;
+    line-height: 1.45;
+    font-size: 0.95rem;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-optical-sizing: auto;
+    font-variation-settings: "wdth" 100;
+    font-style: normal;
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-body);
+    line-height: 1.5;
   }
   .references .csl-entry .csl-title {
-    font-weight: bold;
+    font-weight: 700;
   }
   .references .csl-entry .csl-container-title {
     font-style: italic;
   }
   .references .csl-entry .csl-abstract {
-    font-style: italics;
+    font-style: italic;
     font-size: smaller;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -1657,11 +1688,10 @@ body {
     font-weight: bold;
   }
   .references .csl-entry .csl-url,
-  .references .csl-entry .csl-accessed {
-    font-size: smaller;
-  }
+  .references .csl-entry .csl-accessed,
   .references .csl-entry .csl-scholar-link {
     font-size: smaller;
+    color: var(--dimmed-text-color);
   }
   .footnote-ref {
     padding-inline-end: 0.3rem;
@@ -1696,13 +1726,16 @@ body {
     font-size: var(--font-size-footnotes);
   }
   .citation {
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     font-optical-sizing: auto;
     font-variation-settings: "wdth" 100;
     font-style: normal;
     font-weight: var(--font-weight-normal);
     font-size: var(--font-size-inline-citation);
     line-height: 1.5;
+    font-size: 0.78rem;
+    vertical-align: super;
+    color: var(--dimmed-text-color);
   }
   .citation a {
     display: inline-block;
@@ -1905,7 +1938,8 @@ body {
     .sidenote-1,
     sidenote-card-1 {
       margin: 0 4rem 1rem 4rem;
-      font-family: "Crimson Text", serif;
+      font-family: "Source Serif 4", Georgia, Cambria, "Times New Roman", Times, serif;
+      font-optical-sizing: auto;
       font-style: normal;
       font-weight: var(--font-weight-normal);
       font-size: var(--font-size-aside);
@@ -1922,7 +1956,8 @@ body {
       margin-left: 1rem;
       margin-right: 1rem;
       max-width: calc(anchor-size(width) / 2);
-      font-family: "Crimson Text", serif;
+      font-family: "Source Serif 4", Georgia, Cambria, "Times New Roman", Times, serif;
+      font-optical-sizing: auto;
       font-style: normal;
       font-weight: var(--font-weight-normal);
       font-size: var(--font-size-aside);
@@ -1946,7 +1981,8 @@ body {
     .sidenote-2,
     sidenote-card-2 {
       margin: 0 4rem 1rem 4rem;
-      font-family: "Crimson Text", serif;
+      font-family: "Source Serif 4", Georgia, Cambria, "Times New Roman", Times, serif;
+      font-optical-sizing: auto;
       font-style: normal;
       font-weight: var(--font-weight-normal);
       font-size: var(--font-size-aside);
@@ -1963,7 +1999,8 @@ body {
       margin-left: 1rem;
       margin-right: 1rem;
       max-width: calc(anchor-size(width) / 2);
-      font-family: "Crimson Text", serif;
+      font-family: "Source Serif 4", Georgia, Cambria, "Times New Roman", Times, serif;
+      font-optical-sizing: auto;
       font-style: normal;
       font-weight: var(--font-weight-normal);
       font-size: var(--font-size-aside);
@@ -1987,7 +2024,8 @@ body {
     .sidenote-3,
     sidenote-card-3 {
       margin: 0 4rem 1rem 4rem;
-      font-family: "Crimson Text", serif;
+      font-family: "Source Serif 4", Georgia, Cambria, "Times New Roman", Times, serif;
+      font-optical-sizing: auto;
       font-style: normal;
       font-weight: var(--font-weight-normal);
       font-size: var(--font-size-aside);
@@ -2004,7 +2042,8 @@ body {
       margin-left: 1rem;
       margin-right: 1rem;
       max-width: calc(anchor-size(width) / 2);
-      font-family: "Crimson Text", serif;
+      font-family: "Source Serif 4", Georgia, Cambria, "Times New Roman", Times, serif;
+      font-optical-sizing: auto;
       font-style: normal;
       font-weight: var(--font-weight-normal);
       font-size: var(--font-size-aside);
@@ -2028,7 +2067,8 @@ body {
     .sidenote-4,
     sidenote-card-4 {
       margin: 0 4rem 1rem 4rem;
-      font-family: "Crimson Text", serif;
+      font-family: "Source Serif 4", Georgia, Cambria, "Times New Roman", Times, serif;
+      font-optical-sizing: auto;
       font-style: normal;
       font-weight: var(--font-weight-normal);
       font-size: var(--font-size-aside);
@@ -2045,7 +2085,8 @@ body {
       margin-left: 1rem;
       margin-right: 1rem;
       max-width: calc(anchor-size(width) / 2);
-      font-family: "Crimson Text", serif;
+      font-family: "Source Serif 4", Georgia, Cambria, "Times New Roman", Times, serif;
+      font-optical-sizing: auto;
       font-style: normal;
       font-weight: var(--font-weight-normal);
       font-size: var(--font-size-aside);
@@ -2082,7 +2123,8 @@ body {
       margin-left: 1rem;
       margin-right: 1rem;
       max-width: calc(anchor-size(width) / 2);
-      font-family: "Crimson Text", serif;
+      font-family: "Source Serif 4", Georgia, Cambria, "Times New Roman", Times, serif;
+      font-optical-sizing: auto;
       font-style: normal;
       font-weight: var(--font-weight-normal);
       font-size: var(--font-size-aside);
@@ -2127,7 +2169,8 @@ html {
 }
 
 body {
-  font-family: "Crimson Text", serif;
+  font-family: "Source Serif 4", Georgia, Cambria, "Times New Roman", Times, serif;
+  font-optical-sizing: auto;
   font-style: normal;
   font-weight: var(--font-weight-normal);
   font-size: var(--font-size-body);
@@ -2147,11 +2190,16 @@ menu.tags {
   justify-content: space-around;
   align-items: center;
   column-gap: 0.2rem;
+  row-gap: 0.2rem;
   margin-block-start: 0;
   margin-block-end: 0;
 }
 menu.tags * {
   display: inline-flex;
+}
+menu.tags li {
+  margin-top: 0;
+  align-items: center;
 }
 
 .notice {
@@ -2171,7 +2219,9 @@ menu.tags * {
   font-weight: var(--font-weight-bold);
   font-style: normal;
   font-size: var(--font-size-h3);
-  line-height: 1.2;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
 }
 .post-summary .title a {
   color: var(--h2-text-color);
@@ -2180,7 +2230,7 @@ menu.tags * {
   color: var(--h2-text-color);
 }
 .post-summary .metadata {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-optical-sizing: auto;
   font-variation-settings: "wdth" 100;
   font-style: normal;
@@ -2225,7 +2275,8 @@ menu.tags * {
 
 header small,
 nav small {
-  font-family: "Crimson Text", serif;
+  font-family: "Source Serif 4", Georgia, Cambria, "Times New Roman", Times, serif;
+  font-optical-sizing: auto;
   font-style: italic;
   font-weight: var(--font-weight-normal);
   font-size: var(--font-size-small);
@@ -2261,12 +2312,14 @@ nav h1 {
   font-weight: var(--font-weight-bold);
   font-style: normal;
   font-size: var(--font-size-blog-title);
-  line-height: 1.2;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
   color: light-dark(#d35400, #e67e22);
   margin: 1rem auto;
 }
 nav h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-optical-sizing: auto;
   font-variation-settings: "wdth" 100;
   font-style: normal;
@@ -2292,7 +2345,7 @@ nav .disabled {
   }
 }
 .tag:not(.katex-html > .tag) * {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-optical-sizing: auto;
   font-variation-settings: "wdth" 100;
   font-weight: var(--font-weight-normal);
@@ -2305,14 +2358,13 @@ nav .disabled {
   font-weight: var(--font-weight-bold);
 }
 .tag:not(.katex-html > .tag) {
-  padding: 0.3rem 0.5rem;
+  padding: 0.15rem 0.35rem;
   color: var(--tag-text-color);
   border: 1px var(--border-color) solid;
   border-radius: 10rem;
   display: inline-flex;
   background-color: var(--tag-background-color);
-  margin: 0.2rem;
-  font-size: var(--font-size-caption);
+  margin: 0.05rem;
 }
 
 .material-symbols-outlined {
@@ -2321,7 +2373,7 @@ nav .disabled {
 }
 
 .label {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-optical-sizing: auto;
   font-variation-settings: "wdth" 100;
   font-style: normal;
@@ -2357,7 +2409,9 @@ nav .disabled {
   font-weight: var(--font-weight-bold);
   font-style: normal;
   font-size: var(--font-size-series-container);
-  line-height: 1.2;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
 }
 .series-container .you-are-here {
   font-style: italic;
