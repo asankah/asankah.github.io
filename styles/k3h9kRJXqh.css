@@ -1,10 +1,14 @@
-main {
-  ul {
-    list-style-type: none;
-  }
+.label {
+    display: inline-block;
+    width: 3.5rem;
 }
-.tag > a {
-  font-size: var(--font-size-body);
+.oneline {
+    margin-bottom: 0;
+}
+.event-description {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
@@ -1321,6 +1325,14 @@ body {
     letter-spacing: -0.02em;
     text-wrap: balance;
     color: var(--h1-text-color);
+  }
+  body > footer {
+    font-family: "Source Serif 4", Georgia, Cambria, "Times New Roman", Times, serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-small);
+    line-height: 1.5;
   }
 }
 @layer article {

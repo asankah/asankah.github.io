@@ -1,0 +1,2632 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Letter අ</title>
+    <link>https://xn--izc.com/</link>
+    <description>Strong opinions weekly held</description>
+    <language>en</language>
+    <atom:link href="https://xn--izc.com/rss.xml" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Welcome, our AI User Agents</title>
+          <link>https://xn--izc.com/posts/ai-user-agents/</link>
+          <guid>https://xn--izc.com/posts/ai-user-agents/</guid>
+          <pubDate>Sun, 02 Aug 2026 00:00:00 GMT</pubDate>
+          <description>&lt;p&gt;&lt;a href=&quot;https://xn--izc.com/posts/user-agents/&quot;&gt;Previously we took a look at what a UA
+is&lt;/a&gt;, the degree of trust, and the power imbalance. If you didn’t get
+a chance to read up on it, now is the time. I’ll wait!&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;material-symbols-outlined&quot;&gt;arrow_forward&lt;/span&gt; &lt;a href=&quot;https://xn--izc.com/posts/user-agents/&quot;&gt;The increasingly inaccurately named
+User-Agent&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This post expands the concept a little bit.&lt;/p&gt;
+&lt;h3 id=&quot;user-agents-with-ai-superpowers&quot;&gt;User-Agents with AI superpowers
+…&lt;/h3&gt;
+&lt;p&gt;I’m talking about AI-powered personalized user agents (referred to as
+&lt;abbr&gt;AIUA&lt;/abbr&gt;s in this article). That’s a lot of adjectives, so
+let’s break it down:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;AI powered&lt;/em&gt; means that a substantial amount, if not all,
+decision making will be done by an AI.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Personalized&lt;/em&gt; means that it will have and continue to accrue
+information about you that it will use to make decisions.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;User Agent&lt;/em&gt; means that it will do stuff on your behalf, but
+unlike before, the actions aren’t limited to fetching stuff from the
+internet and showing you pretty pictures. The agency extends to
+performing actions, even interacting with other people on your
+behalf.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Since they collect and interpret massive amounts of user data and
+perform actions on behalf of the user, by design, these agents must have
+access to deeply personal data &lt;span class=&quot;citation&quot; data-cites=&quot;yang2025adoption&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/ai-user-agents/#ref-yang2025adoption&quot; role=&quot;doc-biblioref&quot;&gt;Yang et al., 2025&lt;/a&gt;)&lt;/span&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;need-to-feed-on-your-data&quot;&gt;… need to feed on your data …&lt;/h3&gt;
+&lt;p&gt;Data sharing is a non-negotiable. For now, these AIUAs will rely on a
+remotely located brain &lt;a href=&quot;https://xn--izc.com/posts/ai-user-agents/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;. Hence, the logic applied to
+decisions affecting you will be unknowable. More distressingly, it may
+even be unknowable to the people who built them &lt;span class=&quot;citation&quot; data-cites=&quot;aysel2025explainable&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/ai-user-agents/#ref-aysel2025explainable&quot; role=&quot;doc-biblioref&quot;&gt;Aysel et al., 2025&lt;/a&gt;)&lt;/span&gt;. This opacity
+largely stems from the complexity of AI models, which involve numerous
+layers of computation, making their inner workings difficult to
+interpret. Additionally, a lack of comprehensive interpretability tools
+contributes to this issue, leaving both users and developers with a
+limited understanding of their decision-making processes &lt;span class=&quot;citation&quot; data-cites=&quot;aryaxai:beyondtransparency&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/ai-user-agents/#ref-aryaxai:beyondtransparency&quot; role=&quot;doc-biblioref&quot;&gt;AryaXAI,
+2025&lt;/a&gt;)&lt;/span&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;but-cant-swear-any-allegiance.&quot;&gt;… but can’t swear any
+allegiance.&lt;/h3&gt;
+&lt;p&gt;In the classic UA trust model, if you see a recommendation for a
+product, you know a handful of entities whose interests this
+recommendation or ad serves. With AIUAs, you will have no idea if a
+recommendation serves your best interest or someone else’s. It could try
+to help you but fail because its training data is biased toward someone
+else’s interests. This bias is difficult to detect. &lt;span class=&quot;citation&quot; data-cites=&quot;ryan2025ai&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/ai-user-agents/#ref-ryan2025ai&quot; role=&quot;doc-biblioref&quot;&gt;Ryan, 2025&lt;/a&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&quot;they-are-opaque-even-to-those-who-make-them.&quot;&gt;They are opaque,
+even to those who make them.&lt;/h3&gt;
+&lt;p&gt;Even with a relatively simpler system like the UA with well-defined
+trust boundaries, trust remains a difficult problem. We are moving
+towards indecipherable systems like AIUAs with even fuzzier trust
+boundaries. We don’t have thousands of pages of specifications for these
+AI systems. Instead, there are trillions of training tokens that only
+offer loose guidance. Not to mention basic attack vectors like prompt
+injection still haven’t been sufficiently mitigated &lt;a href=&quot;https://xn--izc.com/posts/ai-user-agents/#fn2&quot; class=&quot;footnote-ref&quot; id=&quot;fnref2&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;.
+Nobody can guarantee where AIUAs’ allegiance lies. &lt;span class=&quot;citation&quot; data-cites=&quot;openai2025hardening&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/ai-user-agents/#ref-openai2025hardening&quot; role=&quot;doc-biblioref&quot;&gt;OpenAI,
+2025&lt;/a&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&quot;they-are-deceptively-trustworthy&quot;&gt;They are deceptively
+trustworthy …&lt;/h3&gt;
+&lt;p&gt;AIUAs can easily gain people’s trust. Some people even fall in love
+with them &lt;span class=&quot;citation&quot; data-cites=&quot;demopoulos2025women&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/ai-user-agents/#ref-demopoulos2025women&quot; role=&quot;doc-biblioref&quot;&gt;Demopoulos,
+2025&lt;/a&gt;)&lt;/span&gt; or follow them to their deaths. Our politics, values,
+and consumption habits are easy pickings for a mildly motivated AIUA to
+manipulate. To make things even worse, people trust what AIUAs tell them
+about the world without checking. The more people choose AIUAs as the
+goggles with which they see the world, the more these agents can shape a
+convincing alternate reality.&lt;/p&gt;
+&lt;h3 id=&quot;and-difficult-to-align.&quot;&gt;… and difficult to align.&lt;/h3&gt;
+&lt;p&gt;Perhaps the most interesting example of an intentionally modified
+foundational model is Grok, Elon Musk’s xAI chatbot. In July 2025, after
+Musk announced he had “improved” Grok to make it less “politically
+correct,” the chatbot began posting antisemitic content on X. This
+included praising Hitler and making false claims about Jewish people.
+&lt;span class=&quot;citation&quot; data-cites=&quot;siddiqui2025elon&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/ai-user-agents/#ref-siddiqui2025elon&quot; role=&quot;doc-biblioref&quot;&gt;Siddiqui,
+2025&lt;/a&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Grok isn’t an outlier. DeepSeek shocked the foundation model world
+when it came out. It was an open-weight model from China whose
+performance was comparable to the biggest foundation models at the time.
+Yet there was a problem: DeepSeek didn’t like to talk about Tiananmen
+Square. &lt;span class=&quot;citation&quot; data-cites=&quot;lu2025deepseek&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/ai-user-agents/#ref-lu2025deepseek&quot; role=&quot;doc-biblioref&quot;&gt;Lu, 2025&lt;/a&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Trying to steer foundation models toward or away from bias often
+leads to outcomes that diverge from intentions. &lt;span class=&quot;citation&quot; data-cites=&quot;sun2025aligned&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/ai-user-agents/#ref-sun2025aligned&quot; role=&quot;doc-biblioref&quot;&gt;Sun et al., 2025&lt;/a&gt;)&lt;/span&gt; While it sounds like
+self-sabotage, it’s not absurd to suggest that Google would comply with
+a request to politically “align” Gemini —hypothetically of course.
+Google scaled back its DEI hiring goals and other diversity programs in
+early 2025 after facing political and legal pressure. &lt;span class=&quot;citation&quot; data-cites=&quot;ap2025google&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/ai-user-agents/#ref-ap2025google&quot; role=&quot;doc-biblioref&quot;&gt;Associated Press, 2025&lt;/a&gt;)&lt;/span&gt; Standing up for
+what’s right at the expense of profit seems an unrealistic
+expectation.&lt;/p&gt;
+&lt;h2 id=&quot;in-summary&quot;&gt;In summary,&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;We see the world through complex yet predictable machines — called
+user agents. They are difficult to understand, but they do our bidding,
+more or less.&lt;/li&gt;
+&lt;li&gt;We are moving towards handing over our agency to even more complex
+machines. But this time, they are unpredictable, poorly understood, and
+pretty much impossible to align with our interests in a verifiable
+way.&lt;/li&gt;
+&lt;li&gt;The design and behavior of these complex machines may be affected by
+conflicts of interest that are hard if not impossible to detect.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That’s terrifying. But what can we do about it? In the next part of
+this series, we will delve into practical strategies and explore
+cutting-edge research to address and mitigate the risks associated with
+AI-powered user agents. We’ll examine the role of transparency in AI
+development and look at how emerging frameworks could help ensure AI
+systems act in our best interests.&lt;/p&gt;
+&lt;div id=&quot;refs&quot; class=&quot;references csl-bib-body hanging-indent&quot; data-line-spacing=&quot;2&quot; role=&quot;list&quot;&gt;
+&lt;div id=&quot;ref-aryaxai:beyondtransparency&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+AryaXAI. (2025). &lt;em&gt;&lt;span&gt;Beyond Transparency: Reimagining AI
+Interpretability Paradigms&lt;/span&gt;&lt;/em&gt;. &lt;a href=&quot;https://www.aryaxai.com/article/beyond-transparency-reimagining-ai-interpretability-paradigms&quot; class=&quot;uri&quot;&gt;https://www.aryaxai.com/article/beyond-transparency-reimagining-ai-interpretability-paradigms&lt;/a&gt;.
+&lt;a href=&quot;https://www.aryaxai.com/article/beyond-transparency-reimagining-ai-interpretability-paradigms&quot;&gt;https://www.aryaxai.com/article/beyond-transparency-reimagining-ai-interpretability-paradigms&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-ap2025google&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Associated Press. (2025). &lt;em&gt;Google scraps its diversity hiring goals
+as it complies with &lt;span&gt;T&lt;/span&gt;rump’s new government contractor
+rules&lt;/em&gt;. &lt;a href=&quot;https://apnews.com/article/16a937d5d9b6447251c4c40c2ad1c915&quot; class=&quot;uri&quot;&gt;https://apnews.com/article/16a937d5d9b6447251c4c40c2ad1c915&lt;/a&gt;.
+&lt;a href=&quot;https://apnews.com/article/16a937d5d9b6447251c4c40c2ad1c915&quot;&gt;https://apnews.com/article/16a937d5d9b6447251c4c40c2ad1c915&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-aysel2025explainable&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Aysel, H. I., Cai, X., &amp;amp; Prugel-Bennett, A. (2025). Explainable
+artificial intelligence: Advancements and limitations. &lt;em&gt;Applied
+Sciences&lt;/em&gt;. &lt;a href=&quot;https://doi.org/10.3390/app15137261&quot;&gt;https://doi.org/10.3390/app15137261&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-businesshorizons2025balancing&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Balancing explainability and privacy in &lt;span&gt;AI&lt;/span&gt; systems: A
+strategic imperative for managers. (2025). &lt;em&gt;Business Horizons&lt;/em&gt;.
+&lt;a href=&quot;https://doi.org/10.1016/j.bushor.2025.10.004&quot;&gt;https://doi.org/10.1016/j.bushor.2025.10.004&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-demopoulos2025women&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Demopoulos, A. (2025). &lt;em&gt;The women in love with &lt;span&gt;AI&lt;/span&gt;
+companions: &lt;span&gt;“&lt;span&gt;I&lt;/span&gt; vowed to my chatbot that
+&lt;span&gt;I&lt;/span&gt; wouldn’t leave him”&lt;/span&gt;&lt;/em&gt;. &lt;a href=&quot;https://www.theguardian.com/technology/2025/sep/09/ai-chatbot-love-relationships&quot; class=&quot;uri&quot;&gt;https://www.theguardian.com/technology/2025/sep/09/ai-chatbot-love-relationships&lt;/a&gt;.
+&lt;a href=&quot;https://www.theguardian.com/technology/2025/sep/09/ai-chatbot-love-relationships&quot;&gt;https://www.theguardian.com/technology/2025/sep/09/ai-chatbot-love-relationships&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-lu2025deepseek&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Lu, D. (2025). &lt;em&gt;We tried out &lt;span&gt;D&lt;/span&gt;eep&lt;span&gt;S&lt;/span&gt;eek.
+&lt;span&gt;I&lt;/span&gt;t worked well, until we asked it about
+&lt;span&gt;T&lt;/span&gt;iananmen &lt;span&gt;S&lt;/span&gt;quare and &lt;span&gt;T&lt;/span&gt;aiwan&lt;/em&gt;.
+&lt;a href=&quot;https://www.theguardian.com/technology/2025/jan/28/we-tried-out-deepseek-it-works-well-until-we-asked-it-about-tiananmen-square-and-taiwan&quot; class=&quot;uri&quot;&gt;https://www.theguardian.com/technology/2025/jan/28/we-tried-out-deepseek-it-works-well-until-we-asked-it-about-tiananmen-square-and-taiwan&lt;/a&gt;.
+&lt;a href=&quot;https://www.theguardian.com/technology/2025/jan/28/we-tried-out-deepseek-it-works-well-until-we-asked-it-about-tiananmen-square-and-taiwan&quot;&gt;https://www.theguardian.com/technology/2025/jan/28/we-tried-out-deepseek-it-works-well-until-we-asked-it-about-tiananmen-square-and-taiwan&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-openai2025hardening&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+OpenAI. (2025). &lt;em&gt;Continuously hardening &lt;span&gt;ChatGPT&lt;/span&gt;
+&lt;span&gt;Atlas&lt;/span&gt; against prompt injection attacks&lt;/em&gt;. &lt;a href=&quot;https://openai.com/index/hardening-atlas-against-prompt-injection/&quot; class=&quot;uri&quot;&gt;https://openai.com/index/hardening-atlas-against-prompt-injection/&lt;/a&gt;.
+&lt;a href=&quot;https://openai.com/index/hardening-atlas-against-prompt-injection/&quot;&gt;https://openai.com/index/hardening-atlas-against-prompt-injection/&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-ryan2025ai&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Ryan, C. (2025). &lt;em&gt;When AI buys from AI, who do we trust?&lt;/em&gt; &lt;a href=&quot;https://www.techradar.com/pro/when-ai-buys-from-ai-who-do-we-trust&quot; class=&quot;uri&quot;&gt;https://www.techradar.com/pro/when-ai-buys-from-ai-who-do-we-trust&lt;/a&gt;.
+&lt;a href=&quot;https://www.techradar.com/pro/when-ai-buys-from-ai-who-do-we-trust&quot;&gt;https://www.techradar.com/pro/when-ai-buys-from-ai-who-do-we-trust&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-siddiqui2025elon&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Siddiqui, F. (2025). &lt;em&gt;Elon &lt;span&gt;M&lt;/span&gt;usk’s &lt;span&gt;AI&lt;/span&gt;
+chatbot &lt;span&gt;G&lt;/span&gt;rok launches into antisemitic rant amid
+updates&lt;/em&gt;. &lt;a href=&quot;https://www.washingtonpost.com/technology/2025/07/08/elon-musk-grok-ai-antisemitism/&quot; class=&quot;uri&quot;&gt;https://www.washingtonpost.com/technology/2025/07/08/elon-musk-grok-ai-antisemitism/&lt;/a&gt;.
+&lt;a href=&quot;https://www.washingtonpost.com/technology/2025/07/08/elon-musk-grok-ai-antisemitism/&quot;&gt;https://www.washingtonpost.com/technology/2025/07/08/elon-musk-grok-ai-antisemitism/&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-sun2025aligned&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Sun, L., Mao, C., Hofmann, V., &amp;amp; Bai, X. (2025). Aligned but blind:
+Alignment increases implicit bias by reducing awareness of race.
+&lt;em&gt;arXiv Preprint arXiv:2506.00253&lt;/em&gt;. &lt;a href=&quot;https://doi.org/10.48550/arXiv.2506.00253&quot;&gt;https://doi.org/10.48550/arXiv.2506.00253&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-yang2025adoption&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Yang, J., Yonack, N., Zyskowski, K., Yarats, D., Ho, J., &amp;amp; Ma, J.
+(2025). The adoption and usage of AI agents: Early evidence from
+perplexity. &lt;em&gt;arXiv Preprint arXiv:2512.07828&lt;/em&gt;. &lt;a href=&quot;https://doi.org/10.48550/arXiv.2512.07828&quot;&gt;https://doi.org/10.48550/arXiv.2512.07828&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;Not all large language models are “hosted,” which means
+that the model is actually stored far away in a server and you can only
+talk to it through a mediating service. There are powerful language
+models that you can store in your own computer. Currently, there is a
+performance gap between the so-called &lt;q&gt;open weights&lt;/q&gt; models and
+their larger hosted counterparts. If that wasn’t a big deal, any
+language model that you can run on your machine is going to require some
+pretty hefty hardware. So tl;dr, it is possible to run a large language
+model on your computer. But that’s not an option for most people.&lt;a href=&quot;https://xn--izc.com/posts/ai-user-agents/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn2&quot;&gt;&lt;p&gt;&lt;q&gt;Prompt injection&lt;/q&gt; refers to a security issue where
+someone can craft a malicious prompt or include some malicious text
+that, when used with a large language model, causes that model to
+misbehave.&lt;/p&gt;
+&lt;p&gt;There are ongoing efforts that are trying to address these concerns.
+Researchers are exploring potential solutions, such as model auditing,
+to assess biases and decision-making processes within AI systems.
+Additionally, improving explainability is a key area of interest, as it
+would enhance our capability to interpret AIUA actions and decisions.
+Developing technical safeguards, such as robust encryption and secure
+access controls, could also serve as preventive measures against misuse.
+&lt;span class=&quot;citation&quot; data-cites=&quot;businesshorizons2025balancing&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/ai-user-agents/#ref-businesshorizons2025balancing&quot; role=&quot;doc-biblioref&quot;&gt;&lt;span&gt;“Balancing Explainability and Privacy in
+&lt;span&gt;AI&lt;/span&gt; Systems,”&lt;/span&gt; 2025&lt;/a&gt;)&lt;/span&gt;&lt;a href=&quot;https://xn--izc.com/posts/ai-user-agents/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/aside&gt;
+</description>
+        </item>
+        <item>
+          <title>Something Happened On The Way To Perfect History</title>
+          <link>https://xn--izc.com/posts/perfect-information/</link>
+          <guid>https://xn--izc.com/posts/perfect-information/</guid>
+          <pubDate>Sun, 15 Feb 2026 00:00:00 GMT</pubDate>
+          <description>&lt;p&gt;In the wee hours preceding dawn of the 29th of June, 3123 BCE, a
+Sumerian astronomer looked up at the night sky and recorded the
+trajectory of a large object. The object is believed to have been over a
+kilometer in diameter (about 11 football fields). Its impact is known as
+the Köfels event whose aftermath included a 900km high ejecta plume, a
+500m thigh debris layer, and climate change.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/perfect-information/tablet.jpg&quot; class=&quot;noinvert&quot; alt=&quot;The Cuneiform tablet in the British Museum collection No K8538 (known as “the Planisphere”). © The Trustees of the British Museum. Shared under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) licence.&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;The Cuneiform tablet in the &lt;a href=&quot;https://www.britishmuseum.org/collection/object/W_K-8538&quot;&gt;British
+Museum collection No K8538&lt;/a&gt; (known as “the Planisphere”). © The
+Trustees of the British Museum. Shared under a Creative Commons
+Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+licence.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Roughly 5147 years&lt;a href=&quot;https://xn--izc.com/posts/perfect-information/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; later, the security cameras at a
+home near Charlottetown, Prince Edward Island (PEI), Canada, captured
+the first sight and sound of a meteor striking Earth. The footage is of
+substantially higher fidelity than the Cuneiform tablet. The sea of
+discussion, scientific research, new reports, and social media activity
+surrounding this event makes it irrefutable.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/perfect-information/meteor-strike.jpg&quot; class=&quot;noinvert&quot; alt=&quot;A mark left in the walkway where the meteor struck in July, 2024 outside Laura and Joe Kelly’s house in Prince Edward Island, Canada. The meteor is substantially smaller than the 1km wide Köfels meteor. Image Source&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;A mark left in the walkway where the
+meteor struck in July, 2024 outside Laura and Joe Kelly’s house in
+Prince Edward Island, Canada. The meteor is substantially smaller than
+the 1km wide Köfels meteor. &lt;a href=&quot;https://skyandtelescope.org/astronomy-news/hear-the-first-ever-recording-of-a-meteorite-slamming-into-the-ground/&quot;&gt;Image
+Source&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;The Era of Perfect History is the period in human history during
+which every pertinent detail of even minor events would have
+photographic or video evidence. We are not there yet, and it’s likely
+that we never will.&lt;/p&gt;
+&lt;p&gt;Imagine billions of people running around with high-definition
+cameras that they can pull out and record at a moment’s notice. And now
+imagine there are dozens of social networks that reward sharing footage
+of any notable event with an audience of millions, and the fame and
+glory that come with it. This sounds exactly like where we were heading,
+doesn’t it?&lt;/p&gt;
+&lt;p&gt;No government would be able to lie to its citizenry. Every misstep or
+misstatement would be backed by irrefutable evidence. Just as the
+internet was supposed to bring about a perfectly informed society, with
+unfettered access to the truth, a history of perfect information was
+also supposed to bring about a just and transparent society, one where
+everyone can be held to the truth… eventually. However, some argue that
+the sheer volume of information could lead to manipulation,
+misinformation, and erosion of trust. The optimists’ view of perfect
+information bringing about a just society might overlook the
+complexities of human behavior and societal dynamics. Nobody planned
+this, but it was just the direction we were heading as a species.&lt;/p&gt;
+&lt;p&gt;The past couple of years changed many things, one of which is the
+irrefutability of video or photographic evidence. As of this writing, it
+is no longer possible to reliably tell AI-generated imagery from
+“authentic” imagery. (&lt;a href=&quot;https://www.ted.com/talks/hany_farid_how_to_spot_fake_ai_photos&quot;&gt;E.g.&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;It is frightening how scarce reality is compared with what can be
+synthesized. Intuitively, it may seem to be the other way around. After
+all, our capacity to simulate reality is vastly inferior to reality
+itself. The discrepancy comes from the volume with which generative
+content can be injected into our discourse. While we labor for hours
+making squaking sounds with our throats or poking plastic with our meat
+sticks, generative content can spit out a million articles. As &lt;a href=&quot;https://gijn.org/resource/guide-detecting-ai-generated-content/&quot;&gt;Henk
+van Ess&lt;/a&gt; says, “traditional fact-checking takes hours or days. AI
+misinformation generation takes minutes.”&lt;/p&gt;
+&lt;p&gt;Hoaxes and conspiracies abound, but so far we haven’t seen a
+substantial historical event be completely synthesized via AI. Either
+that or the falsehood was so perfectly executed that nobody can
+tell.&lt;/p&gt;
+&lt;p&gt;It would make for a great science fiction story until it actually
+happens.&lt;/p&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;… and 26 days to be exact. It is kind of incredible how
+people came up with such an accurate estimate. I haven’t read the book,
+but if anyone could have a look at chapter 4 and tell me, that would be
+great. In the meantime, I’ll have to take the word of &lt;a href=&quot;https://www.bristol.ac.uk/news/2008/212017945233.html&quot;&gt;the
+University of Bristol&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/perfect-information/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/aside&gt;
+</description>
+        </item>
+        <item>
+          <title>False Precision and Vibe Coding</title>
+          <link>https://xn--izc.com/posts/false-precision/</link>
+          <guid>https://xn--izc.com/posts/false-precision/</guid>
+          <pubDate>Fri, 13 Feb 2026 00:00:00 GMT</pubDate>
+          <description>&lt;p&gt;It occurs to me how much of human communication is
+disambiguation.&lt;/p&gt;
+&lt;p&gt;We have short lives and shorter attention spans. So we have to be
+tactful about fitting in just enough detail into the brief blips of
+attention that we are afforded. We wouldn’t enjoy listening to
+protracted descriptions of things we already know. So we fast-run along
+a stream of concepts where we only lay down just enough track for people
+to keep up.&lt;/p&gt;
+&lt;p&gt;We narrate things.&lt;/p&gt;
+&lt;p&gt;We tell stories, episodic journeys with familiar names and places and
+little else other than dialogue and the occasional pantomime. We convey
+so little detail, but for the right audience, the story is as vibrant,
+colorful, and detailed as anything from their own sensory
+experiences.&lt;/p&gt;
+&lt;p&gt;Things unsaid are those that don’t need saying. The listeners know
+how to fill in the gaps.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Effective communication requires knowing how to balance what to say
+and what to leave out —either because it is a detail that is unambiguous
+or because it’s an intentional gap that we want the listener to
+fill.&lt;/p&gt;
+&lt;p&gt;Programming, at least the “classical” kind, does not afford us this
+luxury. Everything has to be laid out precisely and in detail; even when
+those irrelevant details. So we seek the comfort of layer after layer of
+abstraction that hides details we don’t want to see. The same
+abstractions alleviates us of the responsibility of saying what we don’t
+need to say.&lt;/p&gt;
+&lt;p&gt;We hope that, much like our human conversation partners, the computer
+would fill in the gaps predictably and reliably. We hope it will do what
+we mean, not what we said. We are disappointed, frustrated, and
+occasionally amused when reality surprises us.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Software is a description of a machine.&lt;/p&gt;
+&lt;p&gt;Software is only useful when something interprets it and actualizes
+the machine. Actualizers –a.k.a. computers– aren’t smart. Every layer of
+a computer system needs to be told what exactly it is supposed to do.
+There cannot be any guesswork. So the description of the machine must
+contain excruciating detail, because the computer that actuates it has
+no ability to fill in the blanks.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/false-precision/false-precision.png&quot; alt=&quot;Vaguely understood problem + False precision ⟶ Precise and detailed solution&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Vaguely understood problem + False
+precision ⟶ Precise and detailed solution&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;We start with a vague understanding of the problem space. But
+somewhere along the way, we have to inject it with false precision so
+that the description becomes complete.&lt;/p&gt;
+&lt;p&gt;This is why so much of modern software is based on false precision—at
+least when it comes to end-user-facing systems. We are forced to
+describe a behavior in rigid detail despite our incomplete understanding
+of the problem space or lack of desire to overspecify the wrong
+solution. The precision we inject becomes part of the solution, and in
+large systems, indistinguishable from pertinent details. Sadly, our
+descriptions of machines rarely allow us to demarcate necessary
+precision and unnecessary precision.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Until now, that is. Finally, we have something that can take an
+incomplete, vague description of our machine—stated in terms of what it
+does or what its effect should be on something: &lt;strong&gt;vibe
+coding&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Or to be more specific, &lt;strong&gt;vibe coding
+specifications&lt;/strong&gt;.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/false-precision/vague-specification.png&quot; alt=&quot;Vaguely understood problem ⟶ Equally vague specification ⟶ &amp;lt;AI Actuator&amp;gt; ⟶ Precise and detailed solution&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Vaguely understood problem ⟶ Equally
+vague specification ⟶ &amp;lt;AI Actuator&amp;gt; ⟶ Precise and detailed
+solution&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Our final actuators are still brute-force stupid. But at least now we
+have something between us and the actuator that can fill in these pesky
+gaps and again allow us the luxury of ambiguity.&lt;/p&gt;
+&lt;p&gt;Ambiguity allows us to be earnest in our imperfect understanding of
+the problem. We didn’t understand the problem because we have no perfect
+understanding of the messiest, most important part of the
+problem—&lt;strong&gt;us&lt;/strong&gt;. But now, finally, we can state our problem
+the way we see it: vaguely and imprecisely.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+          <title>The Increasingly Inaccurately Named User-Agent</title>
+          <link>https://xn--izc.com/posts/user-agents/</link>
+          <guid>https://xn--izc.com/posts/user-agents/</guid>
+          <pubDate>Mon, 09 Feb 2026 00:00:00 GMT</pubDate>
+          <description>&lt;aside class=&quot;sidenote-1&quot;&gt;
+The title is a reference to the five-volume &lt;a href=&quot;https://en.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy&quot;&gt;Hitchhiker’s
+Guide to the Galaxy&lt;/a&gt; series by Douglas Adams. The fourth and fifth
+volumes in the series list themselves as being part of &lt;q&gt;the
+increasingly inaccurately named Hitchhiker’s Trilogy.&lt;/q&gt;
+&lt;/aside&gt;
+&lt;div class=&quot;sidenote-host-1&quot;&gt;
+&lt;p&gt;The User-Agent, a technical name for the web browser, was supposed to
+be our loyal butler on the internet – doing our bidding and keeping us
+safe. But over decades, browser makers diluted its role, sometimes as a
+result of actions done with the best of intentions. Both the internet
+and browsers have become increasingly complex. And with that complexity,
+the custodianship of the users’ data has become murkier.&lt;/p&gt;
+&lt;p&gt;Despite being the one peddling our data, user-agents can no longer
+tell us exactly who knows what about us. We’ve lost our agency over our
+browsing data. And now our dude on the internet is a
+&lt;em&gt;“user-agent”&lt;/em&gt; in name only.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;We will soon have to confront an objectively more chaotic creature –
+an AI-powered &lt;strong&gt;personalized&lt;/strong&gt; user-agent.
+&lt;em&gt;Personalized&lt;/em&gt; meaning it knows a lot about us and will continue
+to learn about us. &lt;em&gt;User-agent&lt;/em&gt; meaning it will take actions on
+our behalf. And, &lt;em&gt;AI-powered&lt;/em&gt; at this point means that nobody
+really knows how it works. Let’s talk about what is about to happen and
+how you can prepare.&lt;/p&gt;
+&lt;h3 id=&quot;the-user-agent-is-supposed-to-be-your-buddy.&quot;&gt;The User-Agent is
+supposed to be your buddy.&lt;/h3&gt;
+&lt;p&gt;Information is intangible – you can’t stick your finger in it. So
+whenever we want to interact with a system that processes information,
+especially of the digital kind, we need some stand-in for our finger so
+that we can poke things.&lt;/p&gt;
+&lt;p&gt;So, people came up with the concept of a &lt;strong&gt;user-agent&lt;/strong&gt;
+– to refer to the device&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; that people interact with. People
+would push buttons, make holes in paper, turn knobs, or do whatever they
+need to do to communicate with the user-agent. The user-agent grasps
+what the person wants, and does what it needs to do to make the person’s
+wish a reality. On the flip-side, the user-agent also communicates
+results back in a form that the person can understand.&lt;/p&gt;
+&lt;p&gt;Early user-agents were simple creatures with no intent of their own.
+It wasn’t that hard for people to look inside them to understand what it
+was doing. There was no mystery. The user-agent did what was asked, and
+earnestly reported back on what happened.&lt;/p&gt;
+&lt;p&gt;For example, in an email system, this user agent is called a mail
+user agent &lt;abbr&gt;MUA&lt;/abbr&gt;. A user-agent that interacts with the web on
+our behalf should be called a web user agent (&lt;abbr&gt;WUA&lt;/abbr&gt;)&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fn2&quot; class=&quot;footnote-ref&quot; id=&quot;fnref2&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;. But because web user agents —which
+you might refer to as web browsers— are so dominant, people dropped the
+superfluous “web” part.&lt;/p&gt;
+&lt;figure&gt;
+&lt;pre class=&quot;man&quot;&gt;&lt;code&gt;MUTT(1)                     User Manuals                    MUTT(1)
+
+NAME
+       mutt - The Mutt Mail User Agent
+
+SYNOPSIS
+       mutt [-hNpRxZ] [-s subject] [-c cc-addr] [-a file] ...
+            [-F rcfile] [-H draft] [-i include] [-f mailbox]
+            [address] ...
+
+DESCRIPTION
+       Mutt is a small but very powerful text-based MIME mail client.
+       Mutt is highly configurable, and is well suited to the mail
+       power user with advanced features like key bindings, keyboard
+       macros, mail threading, regular expression searches and a
+       powerful pattern matching language for selecting groups of
+       messages.
+
+       &amp;quot;All mail clients suck.  This one just sucks less.&amp;quot;
+       - me, circa 1995&lt;/code&gt;&lt;/pre&gt;
+&lt;figcaption&gt;
+An ancient &lt;em&gt;“manual page”&lt;/em&gt; for the Mutt email client circa 1995.
+Note that the program is described as &lt;q&gt;The Mutt Mail User Agent&lt;/q&gt;.
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;This was fine and dandy. People would fire up their user-agents, type
+commands, and the user-agent would do stuff and show the user results.
+But over time, these user agents evolved from simple command-line tools
+to much more fancy interactive, graphical browsers and services. Modern
+(&lt;em&gt;web&lt;/em&gt;) user agents are not just programs, they are entire
+platforms&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fn3&quot; class=&quot;footnote-ref&quot; id=&quot;fnref3&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;modern-user-agents-are-technical-marvels.&quot;&gt;Modern User-Agents
+are technical marvels.&lt;/h3&gt;
+&lt;p&gt;Since the same internet needs to be accessible from different
+user-agents for perpetuity, the way web pages are written and made
+available on the internet had to be standardized – i.e. everyone needed
+to agree on the how. But these &lt;em&gt;technical specifications&lt;/em&gt;, or
+&lt;em&gt;standards&lt;/em&gt; grew bigger and bigger and so demanding that only a
+few well-resourced tech companies can write and maintain a full-featured
+UA&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fn4&quot; class=&quot;footnote-ref&quot; id=&quot;fnref4&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Though voluminous, these standards are neither perfect nor complete.
+But they have been crafted through person-millennia of effort to ensure
+security and correctness. Organizations like the following work
+tirelessly to get the details right:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;World Wide Web Consortium&lt;/em&gt; (&lt;abbr&gt;W3C&lt;/abbr&gt;) is primary
+group that governs how web content is written.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Web Hypertext Application Technology Working Group&lt;/em&gt;
+(&lt;abbr&gt;WHATWG&lt;/abbr&gt;) is the group that pushes the boundaries of what is
+possible to do inside the confies of a web browser.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Internet Engineering Task Force&lt;/em&gt; (&lt;abbr&gt;IETF&lt;/abbr&gt;) is the
+group governing how data moves about on the internet, and also how to
+keep your content secure while it is being moved about.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;The Unicode Consortium&lt;/em&gt; is responsible for which letters and
+symbols you can use on the internet. They are the people who bring you
+new emoji every year.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;… and many others.&lt;/p&gt;
+&lt;h3 id=&quot;but-they-are-bound-by-the-same-implicit-social-contract&quot;&gt;But
+they are bound by the same implicit social contract …&lt;/h3&gt;
+&lt;p&gt;Beyond technical requirements, there is an increasingly important
+social contract: That the user-agent always act on behalf of the
+user.&lt;/p&gt;
+&lt;p&gt;That means that the UA should do what you ask, and generally not do
+what you don’t ask.&lt;/p&gt;
+&lt;p&gt;The latter –don’t do what the user didn’t ask– is a little
+complicated because of all the complexity involved in the modern
+web.&lt;/p&gt;
+&lt;p&gt;Say you ask to see &lt;code&gt;bank.com&lt;/code&gt; which is a bank. So the UA
+talks to the &lt;code&gt;bank.com&lt;/code&gt; server and asks for the contents of
+the page. The contents say that some of the pictures on the web page
+need to be fetched from &lt;code&gt;advertiser.com&lt;/code&gt;. But doing so
+involves sending a bunch of information to &lt;code&gt;advertiser.com&lt;/code&gt;
+like the fact that you are viewing &lt;code&gt;bank.com&lt;/code&gt; and information
+like your preferred language and whether you’ve been to these sites
+before.&lt;/p&gt;
+&lt;p&gt;Pretty much all UAs will opt to fetch the resources from
+&lt;code&gt;advertiser.com&lt;/code&gt;, because otherwise the &lt;code&gt;bank.com&lt;/code&gt;
+site will not work correctly. Since the user requested to see
+&lt;code&gt;bank.com&lt;/code&gt;, clearly they intended for all the required stuff
+to get downloaded too, right? Except, it’s likely that the user never
+intended for &lt;code&gt;advertiser.com&lt;/code&gt; to learn all that information
+about them.&lt;/p&gt;
+&lt;h3 id=&quot;that-the-user-agent-must-act-only-on-behalf-of-the-user.&quot;&gt;That
+the User-Agent must act ONLY on behalf of the user.&lt;/h3&gt;
+&lt;p&gt;Herein lies the problem.&lt;/p&gt;
+&lt;p&gt;The modern web is a marvel in that it exists despite brutally
+conflicting interests, and is run by people who do not trust each other
+one bit&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fn5&quot; class=&quot;footnote-ref&quot; id=&quot;fnref5&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;5&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Do you really think the nice lady who made you read her life story
+before she told you how to make simple pancakes also made an ad for
+weight loss drugs? Of course not.&lt;/p&gt;
+&lt;p&gt;Behind the scenes, a “modern” web page is a warzone where multiple
+companies are playing tug of war with your data and limited attention
+span. Not only are these companies clamoring to show you video ads while
+you are trying to make pancakes, they are also trying to figure out
+where you’ve been and what you are into.&lt;/p&gt;
+&lt;p&gt;You, the user, don’t want any of that; not even the nice lady’s life
+story. You just want to make pancakes. A UA that acted &lt;em&gt;only&lt;/em&gt; on
+your behalf would have just pulled out the recipe part and shown it to
+you.&lt;/p&gt;
+&lt;p&gt;In the short term, rewriting the web like this sounds great. But in
+the long term, those companies – who now have no one to show ads to –
+will stop paying the nice lady. And the nice lady will stop publishing
+her recipes. No ads, no recipes&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fn6&quot; class=&quot;footnote-ref&quot; id=&quot;fnref6&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;6&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;So to keep the web open, the UA does a tricky balancing act between
+conflicting interests; one that is not weighed 100% on your behalf. The
+UAs do their level best to present you with the most authentic web,
+while trying to keep you safe from potential attackers, without
+divulging too much about you to strangers. But this situation does mean
+that the “user agent” isn’t truly just the user’s agent.&lt;/p&gt;
+&lt;p&gt;And it’s not just users vs. publishers and advertisers. There are
+many other influential groups on the web making the balance of interests
+difficult. Some are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;You&lt;/em&gt;. Including here for completeness. You want to visit
+websites and be presented with accurate reproductions of what the
+publishers intended … kind of. You don’t want to be bothered by stuff
+that you don’t want, like advertisements. Also you want to be able to
+consume content freely and without boundaries. You want a free and open
+web.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Publishers&lt;/em&gt; who make content on the web and give you a
+reason to visit it. There are many not-for-profit content that doesn’t
+have any commercial interests, but for those that do, it is important
+that they are able to make money publishing stuff. They also have lots
+of shared interests with users such as being able to publish what they
+want and to be able to reach their intended audiences. In addition
+sometimes they want to be able to publish things without identifying
+themselves.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Advertisers&lt;/em&gt; who compete for your attention and make
+money by influencing your behavior. One of the ways in which they
+compete for your attention is by “renting” space alongside publishers’
+content.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Search Engines&lt;/em&gt; could be considered a kind of a publisher
+but they are special enough to get their own category. Search engines
+–at this point, mostly Google– act as the guides on the internet helping
+users find the content that they want. For this to work, search engines
+rely on the internet being open and free. Otherwise it would not be
+possible to take users to where they want to go. Since search engines
+are one of, if not, the primary tools users need on the internet they
+are always integrated deep into the UA.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Copyright owners and content rights holders&lt;/em&gt; who are
+worried that people on the internet might steal their content. So web
+browsers have to incorporate &lt;a href=&quot;https://en.wikipedia.org/wiki/Digital_rights_management&quot;&gt;Digital
+Rights Management&lt;/a&gt; components into the UA to limit what users can do
+with protected content.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Businesses&lt;/em&gt; who want to make sure that you continue to
+trust the internet as a safe place to buy and sell stuff. So web
+browsers sometimes have to incorporate security measures (which actually
+help users a lot too) and easy to use payment methods.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Politicians&lt;/em&gt;. Yes those people. As much as we would like
+to treat the internet as some sort of ungovernable utopia, it isn’t.
+There are many laws and regulations that are different across political
+boundaries. So sometimes UAs need to report &lt;em&gt;where&lt;/em&gt; you are
+physically so that your activity can be kept within legal bounds.
+Politicians and businesses often also want to control what you are and
+aren’t able to access on the internet. However, they take those issues
+up with publishers and internet service providers. Additional shady
+things politicians want include finding out the real identities of
+people who have said things they don’t like.&lt;/p&gt;
+&lt;p&gt;Shady stuff aside, politicians are also very useful. In fact as we
+will see below, legislation is pretty much the only way in which users
+can influence the big UA makers.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Internet Service Providers&lt;/em&gt; (or ISPs) make money by
+making it possible for you to access the internet. You give them some
+money, and they give you internet access. Seems simple, but there are
+lots of shady things that ISPs want, like to charge you based on
+&lt;em&gt;what&lt;/em&gt; you consume. See &lt;a href=&quot;https://en.wikipedia.org/wiki/Net_neutrality&quot;&gt;network
+neutrality&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And that is hardly a complete list, but I believe we covered some of
+the biggest influences.&lt;/p&gt;
+&lt;h3 id=&quot;but-how-do-we-know-how-the-ua-balances-conflicting-interests&quot;&gt;But
+how do we know how the UA balances conflicting interests?&lt;/h3&gt;
+&lt;p&gt;But how do we know that the UA isn’t completely complicit and isn’t
+selling our furniture without our knowledge? Why would we believe the UA
+is doing what it says it is doing? What does &lt;q&gt;too much about me&lt;/q&gt;
+even mean?&lt;/p&gt;
+&lt;div class=&quot;sidenote-host-2&quot;&gt;
+&lt;p&gt;Well &lt;q&gt;back in my day&lt;/q&gt; one would crack open the UA and take a
+look inside. Usually, things are simple enough that you can convince
+yourself, or someone you trust can convince you, that it is in fact
+doing what it says it is doing.&lt;/p&gt;
+&lt;p&gt;But modern UAs are so complex that such human inspection is
+impractical at best. Not only would you have to inspect millions of
+lines of code, you would have to inspect every new change as it comes
+in. Even then, there are parts of most commercial browsers that are
+closed source (i.e. they won’t let you look inside).&lt;/p&gt;
+&lt;p&gt;So most of us have to trust the judgment and moral compass of the
+thousands of specialists poring over the underlying logic.&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&quot;sidenote-2&quot;&gt;
+&lt;h3 id=&quot;are-uas-really-unverifiable&quot;&gt;Are UAs really unverifiable?&lt;/h3&gt;
+&lt;p&gt;Okay, so this might be a bit too harsh. Aren’t the biggest names in
+the browser game open source? Aren’t they all, like, based on Chromium?
+Why can’t we just read the source code and figure out whether it is
+doing anything odd?&lt;/p&gt;
+&lt;p&gt;The reality is that people &lt;em&gt;have&lt;/em&gt; and are actively watching
+open source browser projects with eagle eyes. There are even more people
+making sure any new standards on the web are good and are in the
+interest of users. Unfortunately, even if we can verify the open source
+parts of the browser, that’s not the end of the story. See, when you
+visit a web site, there could be data being sent to hundreds of
+websites. Even if the browser tells you each and every one of those web
+sites, it would not be practical for anyone to manually vet and
+understand what is going on. Even beyond that, not all the functional
+bits of a browser are open-source. In fact, perhaps the most
+questionable parts of a browser –like AI integration, media rights
+management, how it works with various hardware devices– are closed
+source for many reasons.&lt;/p&gt;
+&lt;p&gt;So it all boils down to whether it really matters if your security
+depends on you performing something infeasible for all practical
+purposes; kinda like being forced to read each and every privacy policy
+and binding contract you have to click through.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;h3 id=&quot;it-matters-who-owns-the-user-agent.&quot;&gt;It matters who owns the
+User-Agent.&lt;/h3&gt;
+&lt;p&gt;We’ve established that modern UAs…:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;… are super complicated.&lt;/li&gt;
+&lt;li&gt;… have to blance conflicting interests of the user, publishers,
+advertisers, search engines, other businesses, copyright owners,
+politicians, internet service providers, and others.&lt;/li&gt;
+&lt;li&gt;… are not designed 100% in your favor.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Despite vigilant oversight users still have to trust, without
+verification, how a UA works.&lt;/p&gt;
+&lt;p&gt;If you don’t trust one, you can always pick another. But you can’t
+avoid taking &lt;em&gt;someone’s&lt;/em&gt; word that the UA is safe. Because of how
+little control we have as users over browsers, the only real way in
+which users can influence UAs is via legislation that holds UA owners
+accountable for their design decisions.&lt;/p&gt;
+&lt;div id=&quot;refs&quot; class=&quot;references csl-bib-body hanging-indent&quot; data-line-spacing=&quot;2&quot; role=&quot;list&quot;&gt;
+&lt;div id=&quot;ref-w3c:webuseragents&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Yasskin, J., &amp;amp; Capadisli, S. (2026). &lt;em&gt;Web user agents&lt;/em&gt;. &lt;a href=&quot;https://www.w3.org/TR/web-user-agents/#audience&quot; class=&quot;uri&quot;&gt;https://www.w3.org/TR/web-user-agents/#audience&lt;/a&gt;. &lt;a href=&quot;https://www.w3.org/TR/web-user-agents/#audience&quot;&gt;https://www.w3.org/TR/web-user-agents/#audience&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;I’m using the term “device” loosely here because the
+user agent often consists of an entire stack of hardware and software.
+In literature, you’ll find the terms “device,” “machine,” and “system”
+used interchangeably, depending on the context.&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn2&quot;&gt;&lt;p&gt;The term &lt;em&gt;web-user-agent&lt;/em&gt; doesn’t appear much in
+technical literature with a rare exception. E.g. &lt;span class=&quot;citation&quot; data-cites=&quot;w3c:webuseragents&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#ref-w3c:webuseragents&quot; role=&quot;doc-biblioref&quot;&gt;Yasskin &amp;amp; Capadisli, 2026&lt;/a&gt;)&lt;/span&gt;&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn3&quot;&gt;&lt;p&gt;What’s the difference between a program and a platform?
+The latter is something upon which other programs can run. While the
+original world-wide-web was document-oriented (i.e. the “internet”
+consisted of documents that linked to other documents), as technology
+progressed, the web browser became more and more capable of presenting
+complex behaviors. At the start they were just aesthetic – like blinking
+text or changing how a link looks like when you hover the mouse cursor
+over it. But over time, they have gained capabilities that rival native
+applications. Look at &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API&quot;&gt;all the APIs&lt;/a&gt;
+that are available &lt;em&gt;inside&lt;/em&gt; a browser.&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn4&quot;&gt;&lt;p&gt;I worked on Google Chrome for over a decade on the
+networking stack, and briefly on the renderer. The amount of
+documentation that it takes to describe how a web browser works is in
+the order of tens of thousads of pages.&lt;/p&gt;
+&lt;p&gt;Even then it is an understatement. The web works despite countless
+quirks and misbehaviors. That’s because modern browsers handle those
+quirks “correctly” to give the impression that everything is fine. These
+quirks and how to handle them aren’t necessarily written down anywhere.
+Browsers can’t just refuse to talk to large portions of the internet or
+refuse to render millions of older web pages just because the code
+wouldn’t look good.&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fnref4&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn5&quot;&gt;&lt;p&gt;Pun intended.&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fnref5&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn6&quot;&gt;&lt;p&gt;This ad-supported model of the open web sounds terrible;
+and in some ways it is. There are some alternatives that have been
+proposed over the years, but none have been successful as ads. Many
+approaches involve internet users making payments of some kind to
+publishers. Unfortunately, all such models have the downside that those
+who are impoverished will get kicked out of our global information
+village. So for now, this is the best we can do.&lt;/p&gt;
+&lt;p&gt;AI will probably do in a few years what privacy advocates have tried
+to do for decades; which is to kill the ad-supported web. As yet it’s
+unclear what will replace it, and whom this replacement leaves behind.&lt;a href=&quot;https://xn--izc.com/posts/user-agents/#fnref6&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/aside&gt;
+</description>
+        </item>
+        <item>
+          <title>What&#39;s your cog ratio?</title>
+          <link>https://xn--izc.com/posts/cog-ratio/</link>
+          <guid>https://xn--izc.com/posts/cog-ratio/</guid>
+          <pubDate>Tue, 16 Dec 2025 00:00:00 GMT</pubDate>
+          <description>&lt;p&gt;As far as product development is concerned, the only thing that
+matters is the change we make in the user experience. We want our users
+to be happier because our product exists or, at the very least, less
+sad.&lt;/p&gt;
+&lt;p&gt;So when we build things we expect that our work will result in a
+positive change for our users.&lt;/p&gt;
+&lt;p&gt;However not everyone is in the business of making direct changes to
+products. In fact not even developers&lt;a href=&quot;https://xn--izc.com/posts/cog-ratio/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; spend every minute
+building things. Instead most of the work on a mature product has to do
+with planning, monitoring, testing, discussing, deliberating, and doing
+all manner of tasks that have no direct bearing on the material&lt;a href=&quot;https://xn--izc.com/posts/cog-ratio/#fn2&quot; class=&quot;footnote-ref&quot; id=&quot;fnref2&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; composition of the product.&lt;/p&gt;
+&lt;p&gt;Roles like program managers and product managers are one more degree
+removed from the engineered product. On top of that managers, HR,
+finance, and all the supporting roles are even further removed from the
+user experience.&lt;/p&gt;
+&lt;p&gt;Support infrastructure like build systems, testing infrastructure,
+and monitoring infrastructure help people build, monitor, and improve
+the product. However, the people working on the infrastracture are even
+further removed from the form and function of the final product.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/cog-ratio/arthur-granson-machine-with-concrete.jpg&quot; class=&quot;noinvert&quot; alt=&quot;Arthur Ganson - Machine with Concrete. The gear reductions mean the final gear will make one revolution in over 2 trillion years. The machine runs uninterrupted even though the final gear is embedded in concrete, and cannot rotate. CC BY-SA 3.0&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Arthur Ganson - &lt;a href=&quot;https://en.wikipedia.org/wiki/Arthur_Ganson#/media/File:Arthur_Ganson-Machine_with_Concrete-AEC-002.jpg&quot;&gt;Machine
+with Concrete&lt;/a&gt;. The gear reductions mean the final gear will make one
+revolution in over 2 trillion years. The machine runs uninterrupted even
+though the final gear is embedded in concrete, and cannot rotate. CC
+BY-SA 3.0&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;In common parlance, the term &lt;em&gt;cog ratio&lt;/em&gt; refers to the ratio
+of the number of teeth of one cog to the number of teeth of another cog.
+It translates to the number of turns we expect from the driven cog for
+each turn of the driving cog.&lt;/p&gt;
+&lt;p&gt;It’s cliche to think of ourselves as cogs in a large machine. But if
+we do, it seems natural to wonder what our cog ratio is with respect to
+the final products we ship our users.&lt;/p&gt;
+&lt;p&gt;This is specially true when the products we work on are not end user
+products, but are either infrastructure or support products that help
+people who help people who … build the product. What would the effect be
+if this product or service you are working on didn’t exist? By how much
+do you think your work will improve the lives of our users?&lt;/p&gt;
+&lt;p&gt;Does the product improve no matter how fast you turn?&lt;/p&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;Contrary to common belief, developers in larger outfits
+spend most of their time communicating with each other rather than
+building things. See &lt;a href=&quot;https://komoroske.com/slime-mold/&quot;&gt;Coordination Headwinds&lt;/a&gt; by
+Alex Komoroske.&lt;a href=&quot;https://xn--izc.com/posts/cog-ratio/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn2&quot;&gt;&lt;p&gt;We are using the term “material” loosely here, since
+software products aren’t technically material. It refers to the bits and
+bytes that comprise the product.&lt;a href=&quot;https://xn--izc.com/posts/cog-ratio/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/aside&gt;
+</description>
+        </item>
+        <item>
+          <title>Optimal line-length for publishing on the web</title>
+          <link>https://xn--izc.com/posts/optimal-line-length/</link>
+          <guid>https://xn--izc.com/posts/optimal-line-length/</guid>
+          <pubDate>Sun, 05 Oct 2025 00:00:00 GMT</pubDate>
+          <description>&lt;p&gt;Fonts should be pretty, and text layout should be easy to read as
+possible. When publishing on paper, publishers can control the physical
+format for the presentation. We can assume, for the most part, how
+someone might hold and read a book or a newspaper. Based on that we can
+predict how various layouts, typefaces, and letter sizes will affect the
+readability and aesthetics.&lt;/p&gt;
+&lt;p&gt;Publishing on the web is a bit more complicated. How exactly a web
+page will be perceived is difficult to predict. Content publishers adapt
+with responsive designs and share the responsibility for presentation
+with browser makers and device makers.&lt;/p&gt;
+&lt;div class=&quot;two-columns&quot;&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/optimal-line-length/nytimes-19150111.jpg&quot; title=&quot;An old newspaper, discolored and fuzzy. There are 8 columns of text on the front page along with some ads and articles that occasionally cross column boundaries.&quot; class=&quot;noinvert flush-right&quot; alt=&quot;New York Times print edition. 1915. (Image source: The Internet Archive)&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;New York Times print edition. 1915.
+(Image source: The Internet Archive)&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Folks old enough to remember old timey newspapers would recall how
+narrow their text columns were. Before digital layouts, newspapers were
+published using &lt;em&gt;hot metal&lt;/em&gt; methods called &lt;em&gt;linotype&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Linotype newspapers had narrow columns for practical
+reasons&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;A metal line of type (“&lt;em&gt;line-o-type&lt;/em&gt;” ⇝ &lt;em&gt;linotype&lt;/em&gt;)
+also called a &lt;em&gt;slug&lt;/em&gt; becomes difficult to work with if it is too
+long. In particular, the machines assembled text line-by-line. This
+process requires that all the lines are roughly of equal width. A small
+line width –2 inches in this case– was apparently the right
+trade-off.&lt;/p&gt;
+&lt;p&gt;There were additional reasons for the 8 column layouts of yore that
+were not just ease of arranging type. For example, the many small
+columns allowed for more flexibility for laying out ads.&lt;/p&gt;
+&lt;/div&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/optimal-line-length/linotype-slug.png&quot; class=&quot;noinvert&quot; alt=&quot;A linotype “slug” is a block of lead that has letter shaped extrusions on one side. (Image source: Wikimedia CC by-SA)&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;A linotype “slug” is a block of lead that
+has letter shaped extrusions on one side. (Image source: &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Linotype_Gusszeile_-_Type_Slug.jpg&quot;&gt;Wikimedia&lt;/a&gt;
+CC by-SA)&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;More relevant for us is that a narrow column makes it easier to find
+the start of the next line after reading one. Larger spacing between
+lines helps; double-spacing isn’t just a trick to push the page
+count.&lt;/p&gt;
+&lt;p&gt;Around 2008, New York Times changed the print layout to a wider 6
+column layout. The new column size accommodated 40–45 characters. Since
+fiddling with linotype slugs is no longer a concern, they were able to
+focus more on readability.&lt;/p&gt;
+&lt;p&gt;Newspapers – or print in general – is different from reading on the
+web in terms of distance from the eye to the text. Different reading
+distances demand different amounts of precision to follow a line of
+text.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/optimal-line-length/line-tracking.png&quot; alt=&quot;An eyeball moves from the end of one line to the next and then moves to the beginning of the next line.&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;An eyeball moves from the end of one line
+to the next and then moves to the beginning of the next
+line.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;So the goal here is to figure out a width that is short enough that
+the reader can find the next line comfortably, and long enough to not
+require excessive effort to read each line. Too long and the reader will
+break their rhythm with excessive time spent finding the start of the
+next line. Too short and the reader will break their rhythm with
+excessive time spent in saccadian movement.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/optimal-line-length/reading-effort-system.png&quot; alt=&quot;System diagram showing the optimization problem of reading comfort. An increase in line length leads to a decrease in saccadian effort, but an increase in line tracking effort. An increase in line spacing leads to an increase in sccadian effort, but a decrease in line tracking effort. An increase in distance to text results in a decrease in saccadian effort, but an increase in line tracking effort.&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;System diagram showing the optimization
+problem of reading comfort. An increase in line length leads to a
+&lt;em&gt;decrease&lt;/em&gt; in saccadian effort, but an &lt;em&gt;increase&lt;/em&gt; in line
+tracking effort. An increase in line spacing leads to an
+&lt;em&gt;increase&lt;/em&gt; in sccadian effort, but a &lt;em&gt;decrease&lt;/em&gt; in line
+tracking effort. An increase in distance to text results in a
+&lt;em&gt;decrease&lt;/em&gt; in saccadian effort, but an &lt;em&gt;increase&lt;/em&gt; in line
+tracking effort.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;What’s the optimal line length for the web then?&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;citation&quot; data-cites=&quot;bernard2003effects&quot;&gt;Bernard et al.
+(&lt;a href=&quot;https://xn--izc.com/posts/optimal-line-length/#ref-bernard2003effects&quot; role=&quot;doc-biblioref&quot;&gt;2003&lt;/a&gt;)&lt;/span&gt;
+studied this very question. Their study looked at three different
+layouts presented on what would be considered a regular desktop
+screen.&lt;/p&gt;
+&lt;p&gt;Examples of the three layouts from the &lt;span class=&quot;citation&quot; data-cites=&quot;bernard2003effects&quot;&gt;Bernard et al. (&lt;a href=&quot;https://xn--izc.com/posts/optimal-line-length/#ref-bernard2003effects&quot; role=&quot;doc-biblioref&quot;&gt;2003&lt;/a&gt;)&lt;/span&gt;
+paper are presented below and are illustrative of what the test subjects
+saw.&lt;/p&gt;
+&lt;div class=&quot;horizontal&quot;&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/optimal-line-length/bernard-2003-full-length-example.png&quot; alt=&quot;Example of a full length layout. Image source Bernard et al. (2003)&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Example of a full length layout. Image
+source &lt;span class=&quot;citation&quot; data-cites=&quot;bernard2003effects&quot;&gt;Bernard et
+al. (&lt;a href=&quot;https://xn--izc.com/posts/optimal-line-length/#ref-bernard2003effects&quot; role=&quot;doc-biblioref&quot;&gt;2003&lt;/a&gt;)&lt;/span&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/optimal-line-length/bernard-2003-medium-length-example.png&quot; alt=&quot;Example of a medium length layout. Image source Bernard et al. (2003)&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Example of a medium length layout. Image
+source &lt;span class=&quot;citation&quot; data-cites=&quot;bernard2003effects&quot;&gt;Bernard et
+al. (&lt;a href=&quot;https://xn--izc.com/posts/optimal-line-length/#ref-bernard2003effects&quot; role=&quot;doc-biblioref&quot;&gt;2003&lt;/a&gt;)&lt;/span&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/optimal-line-length/bernard-2003-narrow-length-example.png&quot; alt=&quot;Example of a narrow length layout. Image source Bernard et al. (2003)&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Example of a narrow length layout. Image
+source &lt;span class=&quot;citation&quot; data-cites=&quot;bernard2003effects&quot;&gt;Bernard et
+al. (&lt;a href=&quot;https://xn--izc.com/posts/optimal-line-length/#ref-bernard2003effects&quot; role=&quot;doc-biblioref&quot;&gt;2003&lt;/a&gt;)&lt;/span&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/div&gt;
+&lt;p&gt;From the paper (emphasis mine):&lt;/p&gt;
+&lt;figure&gt;
+&lt;p&gt;&lt;strong&gt;No differences were found for either reading time or
+efficiency for either adults or children.&lt;/strong&gt; However,
+&lt;strong&gt;adults preferred shorter line lengths&lt;/strong&gt; to full-screen
+line lengths. In examining perception of reading efficiency, the results
+were mixed. For adults, the full text lengths were perceived as
+providing the optimal amount of scrolling in comparison to the two other
+narrower line length conditions. The narrowest line length condition was
+perceived as promoting the highest amount of reader concentration, while
+the medium line-length condition was considered to be the most optimally
+presented length for reading.&lt;/p&gt;
+&lt;figcaption&gt;
+&lt;p&gt;– &lt;span class=&quot;citation&quot; data-cites=&quot;bernard2003effects&quot;&gt;Bernard et
+al. (&lt;a href=&quot;https://xn--izc.com/posts/optimal-line-length/#ref-bernard2003effects&quot; role=&quot;doc-biblioref&quot;&gt;2003&lt;/a&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;span class=&quot;citation&quot; data-cites=&quot;beymerRussellOrton&quot;&gt;Beymer et al.
+(&lt;a href=&quot;https://xn--izc.com/posts/optimal-line-length/#ref-beymerRussellOrton&quot; role=&quot;doc-biblioref&quot;&gt;2005&lt;/a&gt;)&lt;/span&gt;
+performed an eye-tracking study along these same lines.&lt;/p&gt;
+&lt;p&gt;From the paper:&lt;/p&gt;
+&lt;figure&gt;
+&lt;p&gt;Comparing the wide and narrow formatting conditions, our analysis
+shows that for narrow formatting, subjects (a) read slightly faster, (b)
+have fewer regressions, (c) retain more information in a post-test of
+the material, but (d) tend to abandon the ends of longer paragraphs.&lt;/p&gt;
+&lt;figcaption&gt;
+&lt;p&gt;– &lt;span class=&quot;citation&quot; data-cites=&quot;beymerRussellOrton&quot;&gt;Beymer et
+al. (&lt;a href=&quot;https://xn--izc.com/posts/optimal-line-length/#ref-beymerRussellOrton&quot; role=&quot;doc-biblioref&quot;&gt;2005&lt;/a&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;In other words, there’s a &lt;em&gt;slight&lt;/em&gt; preference for narrower
+columns, but there’s no consensus on whether there’s a significant
+improvement in reading speed. Some evidence exists to suggest that
+comprehension is slightly better with narrower columns.&lt;/p&gt;
+&lt;div id=&quot;refs&quot; class=&quot;references csl-bib-body hanging-indent&quot; data-line-spacing=&quot;2&quot; role=&quot;list&quot;&gt;
+&lt;div id=&quot;ref-bernard2003effects&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Bernard, M. L., Fernandez, M., Hull, S., &amp;amp; Chaparro, B. S. (2003).
+The effects of line length on children and adults’ perceived and actual
+online reading performance. &lt;em&gt;Proceedings of the Human Factors and
+Ergonomics Society Annual Meeting&lt;/em&gt;, &lt;em&gt;47&lt;/em&gt;, 1375–1379.
+&lt;/div&gt;
+&lt;div id=&quot;ref-beymerRussellOrton&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Beymer, D., Russell, D. M., &amp;amp; Orton, P. Z. (2005). Wide vs. Narrow
+paragraphs: An eye tracking analysis. In M. F. Costabile &amp;amp; F.
+Paternò (Eds.), &lt;em&gt;Human-computer interaction - INTERACT 2005&lt;/em&gt; (pp.
+741–752). Springer Berlin Heidelberg.
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+        </item>
+        <item>
+          <title>An Intuition on Shannon Entropy</title>
+          <link>https://xn--izc.com/posts/an-intuition-on-entropy/</link>
+          <guid>https://xn--izc.com/posts/an-intuition-on-entropy/</guid>
+          <pubDate>Sat, 27 Sep 2025 00:00:00 GMT</pubDate>
+          <description>&lt;div class=&quot;preface&quot;&gt;
+&lt;p&gt;This post skips over an in-depth explanation of &lt;a href=&quot;https://en.wikipedia.org/wiki/Entropy_(information_theory)&quot;&gt;Shannon
+entropy&lt;/a&gt; and only addresses the intuition surrounding it and how it
+can be misleading. Googling for “information theory” should come up with
+plenty of options for a more thorough treatment of information
+theory.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;In &lt;a href=&quot;https://en.wikipedia.org/wiki/Information_theory&quot;&gt;information
+theory&lt;/a&gt;, entropy is a way to measure &lt;em&gt;“uncertainty”&lt;/em&gt; or
+alternatively a measure of &lt;em&gt;“information”&lt;/em&gt;. The field of
+information theory itself was first formalized by &lt;a href=&quot;https://en.wikipedia.org/wiki/Claude_Shannon&quot;&gt;Claude Shannon&lt;/a&gt;
+who’s name comes up often in the literature.&lt;/p&gt;
+&lt;p&gt;Conceptually &lt;em&gt;information&lt;/em&gt; and &lt;em&gt;uncertainty&lt;/em&gt; are
+opposing forces. More of one and you have less of the other.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/an-intuition-on-entropy/scale.jpg&quot; title=&quot;An allegorical pencil drawing of an ornate scale. The left pan represents &amp;#39;Information&amp;#39; with a neat pile of books and scrolls. The right pan represents &amp;#39;Uncertainty&amp;#39; with a chaotic vortex of dissolving papers, gears, and symbols. The scale is in perfect equilibrium, illustrating the conceptual balance between order and disorder.&quot; alt=&quot;The balance between Information and Uncertainty. Not “uncetrinity”; I don’t know what Gemini was thinking there. (Generated with Gemini.)&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;The balance between Information and
+Uncertainty. Not “uncetrinity”; I don’t know what Gemini was thinking
+there. (Generated with Gemini.)&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Lack of information leads to uncertainty. In the absence of any
+information we are in total uncertainty.&lt;/p&gt;
+&lt;p&gt;In practice in any given situation where we are concerned with
+information begins with a well defined foundation which lays out a set
+of possible outcomes. Each piece of information we receive should narrow
+down the set of possible outcomes until we reach an unambiguously
+certain outcome.&lt;/p&gt;
+&lt;p&gt;If we only have one possible outcome, then we are certain of that
+outcome. The measure of uncertainty could be thought of as a way of
+measuring how far we have to go to get there.&lt;/p&gt;
+&lt;h3 id=&quot;shannon-entropy-is-a-measure-of-uncertainty&quot;&gt;Shannon entropy is
+a measure of uncertainty&lt;/h3&gt;
+&lt;p&gt;A good example of this is the classic game &lt;em&gt;“Guess who”&lt;/em&gt;,
+where you have to guess a person from a set of pictures based on a few
+pieces of information.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/an-intuition-on-entropy/guess-who.jpg&quot; class=&quot;noinvert&quot; alt=&quot;The original cast of characters of the game “Guess Who”&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;The original cast of characters of the
+game “Guess Who”&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;We want to pinpoint a person of interest; which in this case
+translates to narrowing down the list of possibilities to 1. Each person
+has an equal probability of being the person of interest. Therefore at
+the beginning our uncertainty is 1 in 24 — or equivalently &lt;span class=&quot;math inline&quot;&gt;&#92;frac{1}{24}&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Let’s look at two possible pieces of information:&lt;/p&gt;
+&lt;ol type=&quot;1&quot;&gt;
+&lt;li&gt;wears glasses – matches 5 persons&lt;/li&gt;
+&lt;li&gt;presents as a man – matches 18 persons&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;We started with 24 possibilities. Once we know that the person of
+interest is wearing glasses, we can narrow down the field to 5. On the
+other hand, knowing that the person presents as a man only narrows down
+the field to 18. The first piece of information is &lt;em&gt;clearly more
+valuable&lt;/em&gt; than the second. By &lt;em&gt;“valuable”&lt;/em&gt; we mean
+&lt;em&gt;“reduces uncertainty”&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Entropy is a way to quantify –or measure– this valuableness.&lt;/p&gt;
+&lt;h3 id=&quot;choices-of-measure-for-a-single-outcome&quot;&gt;Choices of measure for
+a single outcome&lt;/h3&gt;
+&lt;p&gt;For the sake of discussion, let’s say the probability of a single
+outcome (call it &lt;span class=&quot;math inline&quot;&gt;A&lt;/span&gt;) is &lt;span class=&quot;math inline&quot;&gt;&#92;Pr(A)&lt;/span&gt;. And the measure of information
+learned from knowing this outcome is &lt;span class=&quot;math inline&quot;&gt;M(A)&lt;/span&gt;, where &lt;span class=&quot;math inline&quot;&gt;M&lt;/span&gt; is some function which we will figure out
+here.&lt;/p&gt;
+&lt;h4 id=&quot;adding-independent-pieces-of-information-should-correspond-to-adding-entropy&quot;&gt;Adding
+independent pieces of information should correspond to adding
+entropy&lt;/h4&gt;
+&lt;p&gt;Channeling some high school math, we know that if the probability of
+event &lt;span class=&quot;math inline&quot;&gt;A&lt;/span&gt; happenning is &lt;span class=&quot;math inline&quot;&gt;p&lt;/span&gt;, and the probability of event &lt;span class=&quot;math inline&quot;&gt;B&lt;/span&gt; happening is &lt;span class=&quot;math inline&quot;&gt;q&lt;/span&gt;, and if these two events are
+&lt;em&gt;independent&lt;/em&gt;, then the probability of both happening is going to
+be &lt;span class=&quot;math inline&quot;&gt;pq&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;For example, the event &lt;em&gt;person is in the first row&lt;/em&gt; (&lt;span class=&quot;math inline&quot;&gt;A&lt;/span&gt;) has a probability of &lt;span class=&quot;math inline&quot;&gt;p = &#92;frac{1}{3}&lt;/span&gt;, while the event &lt;em&gt;person
+is in the third column&lt;/em&gt; (&lt;span class=&quot;math inline&quot;&gt;B&lt;/span&gt;) has a
+probability of &lt;span class=&quot;math inline&quot;&gt;q = &#92;frac{1}{8}&lt;/span&gt;.
+Meanwhile, both of these happenning at the same time (&lt;span class=&quot;math inline&quot;&gt;A &#92;wedge B&lt;/span&gt; ; where you can read the &lt;span class=&quot;math inline&quot;&gt;&#92;wedge&lt;/span&gt; as &lt;em&gt;and&lt;/em&gt;) has a probability of
+&lt;span class=&quot;math inline&quot;&gt;pq = &#92;frac{1}{3} &#92;cdot &#92;frac{1}{8} =
+&#92;frac{1}{24}&lt;/span&gt;. I.e.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;
+A &#92;text{ and } B &#92;text{ are independent events} &#92;implies &#92;Pr(A &#92;wedge B)
+= &#92;Pr(A) &#92;cdot P(B) = pq
+&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;A good measure should be intuitive. Which is to say, it should behave
+in ways that we expect. So for example, if we were to take two
+&lt;em&gt;independent&lt;/em&gt; signals, adding them should yield a measure equal
+to the sum of each measured separately.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;
+&#92;begin{equation}
+A &#92;text{ and } B &#92;text{ are independent events } &#92;implies M(A &#92;wedge B)
+= M(A) + M(B)
+&#92;end{equation}
+&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The simplest way to convert a multiplication like &lt;span class=&quot;math inline&quot;&gt;pq&lt;/span&gt; to a sum is to … drumroll … take the
+&lt;em&gt;logarithm&lt;/em&gt;. So we could start with &lt;span class=&quot;math inline&quot;&gt;M(p)&lt;/span&gt; being something like &lt;span class=&quot;math inline&quot;&gt;&#92;log(p)&lt;/span&gt;.&lt;/p&gt;
+&lt;h4 id=&quot;more-uncertainty-should-correspond-to-a-larger-entropy&quot;&gt;More
+uncertainty should correspond to a larger entropy&lt;/h4&gt;
+&lt;p&gt;To further intuit, an outcome with a lower probability is more
+surprising and hence strictly more informative than an outcome with a
+higher probability, we need:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;
+&#92;begin{equation}
+&#92;Pr(A) &#92;lt &#92;Pr(B) &#92;implies M(A) &#92;gt M(B)
+&#92;end{equation}
+&lt;/span&gt;&lt;/p&gt;
+&lt;h4 id=&quot;no-uncertainty-should-correspond-to-zero-entropy&quot;&gt;No uncertainty
+should correspond to zero entropy&lt;/h4&gt;
+&lt;p&gt;In other words,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;
+&#92;begin{equation}
+&#92;Pr(A) = 1 &#92;implies M(A) = 0
+&#92;end{equation}
+&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;because the outcome &lt;span class=&quot;math inline&quot;&gt;A&lt;/span&gt; is going to
+happen with certainty.&lt;/p&gt;
+&lt;h4 id=&quot;putting-it-all-together&quot;&gt;Putting it all together&lt;/h4&gt;
+&lt;p&gt;The simplest way to make entropy larger for outcomes with lower
+probability is to negate the logarithm. Doing so has the additional
+desirable effect that probabilities –which are in the range &lt;span class=&quot;math inline&quot;&gt;[0,1]&lt;/span&gt;– will yield positive values.&lt;/p&gt;
+&lt;p&gt;So finally, we have the measure:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;
+M(A) = - &#92;log&#92;left( &#92;Pr(A) &#92;right)
+&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Since Claude Shannon was interested in measuring the information
+content of digital signals at the time, it made sense to use a more
+familiar base for the logarithm like &lt;span class=&quot;math inline&quot;&gt;2&lt;/span&gt;
+instead of &lt;span class=&quot;math inline&quot;&gt;e&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;So the final equation is:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;
+M &#92;left( p &#92;right) = - &#92;log_2&#92;left( p &#92;right)
+&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The choice of &lt;span class=&quot;math inline&quot;&gt;2&lt;/span&gt; as the base has
+another nice feature that we can now interpret the information quantity
+as a &lt;em&gt;number of bits&lt;/em&gt;. Because, for example, if we have 5 bits of
+information where each of the 32 values is equally likely, then any
+specific outcome has a probability of &lt;span class=&quot;math inline&quot;&gt;&#92;frac{1}{2^5}&lt;/span&gt; of occurring.&lt;/p&gt;
+&lt;p&gt;So knowing the outcome gets us &lt;span class=&quot;math inline&quot;&gt;M(&#92;frac{1}{2^5})&lt;/span&gt; amount of information; which
+happens to be &lt;span class=&quot;math inline&quot;&gt;5&lt;/span&gt; — the number of bits we
+started with.&lt;/p&gt;
+&lt;p&gt;This measure of information for a single event is called the
+&lt;strong&gt;pointwise entropy&lt;/strong&gt;, or &lt;strong&gt;self
+information&lt;/strong&gt;. &lt;em&gt;“Pointwise”&lt;/em&gt; because it is measuring a
+single outcome in the probability space.&lt;/p&gt;
+&lt;h3 id=&quot;choice-of-measure-for-a-probability-space&quot;&gt;Choice of measure for
+a probability space&lt;/h3&gt;
+&lt;p&gt;Now that we have a measure of the information content of a single
+outcome, how do we measure the information content of a probability
+space?&lt;/p&gt;
+&lt;p&gt;For this, we take another simple formula we already know; which is
+the &lt;em&gt;expectation&lt;/em&gt;. Hence we define the information content of a
+probability space to be the &lt;em&gt;expected&lt;/em&gt; pointwise entropy.&lt;/p&gt;
+&lt;p&gt;This entropy of a probability space is often denoted &lt;span class=&quot;math inline&quot;&gt;H(P)&lt;/span&gt; where &lt;span class=&quot;math inline&quot;&gt;P&lt;/span&gt;
+is the probability space (defined formally below). For simplicity we can
+think of &lt;span class=&quot;math inline&quot;&gt;P&lt;/span&gt; as being a function of some
+outcome to the probability of that outcome.&lt;/p&gt;
+&lt;p&gt;The expected pointwise entropy is therefore:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;
+&#92;begin{equation*}
+&#92;begin{split}
+H(P) &amp;amp;= &#92;sum_{&#92;omega &#92;in &#92;Omega} P(&#92;omega) &#92;cdot M(&#92;omega) &#92;&#92;
+     &amp;amp;= - &#92;sum_{&#92;omega &#92;in &#92;Omega} P(&#92;omega) &#92;cdot &#92;log_2&#92;left(
+P(&#92;omega) &#92;right)
+&#92;end{split}
+&#92;end{equation*}
+&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Where &lt;span class=&quot;math inline&quot;&gt;&#92;Omega&lt;/span&gt; is the set of all
+possible outcomes.&lt;/p&gt;
+&lt;h2 id=&quot;formalities&quot;&gt;Formalities&lt;/h2&gt;
+&lt;p&gt;A common critique is that Shannon entropy can be misleading. Let’s
+see why.&lt;/p&gt;
+&lt;p&gt;Let’s start with a &lt;strong&gt;probability space&lt;/strong&gt;. It consists
+of:&lt;/p&gt;
+&lt;ol type=&quot;1&quot;&gt;
+&lt;li&gt;&lt;p&gt;A set of possible outcomes. Usually designated as &lt;span class=&quot;math inline&quot;&gt;&#92;Omega&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;For example, the set of possible &lt;em&gt;person-of-interest&lt;/em&gt; consists
+of the 24 individuals who are pictured above.&lt;/p&gt;
+&lt;p&gt;Note that here we are dealing with a &lt;em&gt;discrete&lt;/em&gt; probability
+space in that we have a countable set of possible outcomes. This isn’t
+always the case.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;A set of subsets of possible outcomes. Usually designated as
+&lt;span class=&quot;math inline&quot;&gt;&#92;mathcal{F}&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;In our example, it could be &lt;em&gt;people with moustaches&lt;/em&gt;,
+&lt;em&gt;people wearing hats&lt;/em&gt;, &lt;em&gt;people with glasses&lt;/em&gt;, etc. The set
+doesn’t need to have any semantic meaning. So any group of people from
+the 24 possible people is a valid subset.&lt;/p&gt;
+&lt;p&gt;Typically there would be one element in &lt;span class=&quot;math inline&quot;&gt;&#92;mathcal{F}&lt;/span&gt; which contains all the possible
+outcomes. I.e. we say &lt;span class=&quot;math inline&quot;&gt;&#92;Omega &#92;in
+&#92;mathcal{F}&lt;/span&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;A probability function. Usually designated as &lt;span class=&quot;math inline&quot;&gt;P&lt;/span&gt;, that when applied to an element in &lt;span class=&quot;math inline&quot;&gt;&#92;mathcal{F}&lt;/span&gt; yields the probability of that
+set of outcomes occurring.&lt;/p&gt;
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;P(&#92;text{wears glasses}) =
+&#92;frac{5}{24}&lt;/span&gt; &lt;span class=&quot;math display&quot;&gt;P(&#92;text{presents as a
+man}) = &#92;frac{18}{24}&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Also, when applied to &lt;span class=&quot;math inline&quot;&gt;&#92;Omega&lt;/span&gt;
+(i.e. the set of all possible outcomes), it yields &lt;span class=&quot;math inline&quot;&gt;1&lt;/span&gt; as one would expect since otherwise it
+would not be the set of all possible outcomes. I.e.:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;P(&#92;Omega) = 1&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Let&lt;/strong&gt; &lt;span class=&quot;math inline&quot;&gt;(&#92;Omega, &#92;mathcal{F},
+P)&lt;/span&gt; be a probability space.&lt;/p&gt;
+&lt;p&gt;So, &lt;span class=&quot;math inline&quot;&gt;&#92;mathcal{F}&lt;/span&gt; is the set of all
+possible subsets of &lt;span class=&quot;math inline&quot;&gt;&#92;Omega&lt;/span&gt;, which is
+also written as &lt;span class=&quot;math inline&quot;&gt;2^{&#92;Omega}&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;&#92;mathcal{F} = 2^{&#92;Omega}&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;… and …&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math inline&quot;&gt;P&lt;/span&gt; is a function that maps from &lt;span class=&quot;math inline&quot;&gt;&#92;mathcal{F}&lt;/span&gt; to the real numbers in the range
+0 thru 1 inclusive.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;P : &#92;mathcal{F} &#92;mapsto [0,1]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The Shannon entropy of the probability function &lt;span class=&quot;math inline&quot;&gt;P&lt;/span&gt; is given by:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;
+H(P) = - &#92;sum_{&#92;omega &#92;in &#92;Omega} P(&#92;omega) &#92;cdot &#92;log_2&#92;left( P(&#92;omega)
+&#92;right)
+&lt;/span&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+          <title>Incentives</title>
+          <link>https://xn--izc.com/series/unsung-team-roles/incentives/</link>
+          <guid>https://xn--izc.com/series/unsung-team-roles/incentives/</guid>
+          <pubDate>Tue, 12 Aug 2025 00:00:00 GMT</pubDate>
+          <description>&lt;p&gt;Teams can fail in many ways&lt;a href=&quot;https://xn--izc.com/series/unsung-team-roles/incentives/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;. But when they succeed,
+the most critical roles are those that form the communication structures
+within and across teams. Forming these structures require teammates to
+have some level of autonomy. In turn this requires a team stucture that
+allows the team the freedom of movement to reconfigure itself to serve
+the teams’ goals.&lt;/p&gt;
+&lt;aside class=&quot;sidenote-1&quot;&gt;
+&lt;h4 id=&quot;no-heros&quot;&gt;No Heros&lt;/h4&gt;
+&lt;p&gt;Any organization whose success depends on their employees working
+&lt;em&gt;against&lt;/em&gt; their own self interests will eventually fail.&lt;/p&gt;
+&lt;p&gt;Unfortunately incentives are seldom constructed by those who
+understand what organizational cross beams are necessary to keep the
+&lt;em&gt;“official”&lt;/em&gt; organizational structure from collapsing.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&quot;https://sre.google/resources/practices-and-processes/no-heroes/&quot;&gt;Why
+Heroism Is Bad&lt;/a&gt; in the Google SRE site.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;div class=&quot;sidenote-host-1&quot;&gt;
+&lt;p&gt;If the conditions are right, a healthy team will fill in the gaps by
+rebalancing their responsibilities. Such a rebalancing will inevitably
+lead to an uneven distribution of burden. With time the burden will
+become increasingly visceral, which will lead to burnout, resentment,
+and attrition. For an uneven burden to be sustained, that burden must be
+commesurately rewarded.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Accurately measuring the contributions of each team member is a
+hitherto unsolved problem. Managers are often left with gut instincts to
+fall back on, which comes with a laundry list of shortcomings like bias
+and favoritism. Those who come up with the right formula against all
+odds are celebrated as &lt;em&gt;good managers&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;People write books and give speeches about their favorite &lt;em&gt;good
+manager&lt;/em&gt;. But often the actual skills involved aren’t articulated.
+The list of skills isn’t long. Primarily these skills revolve around the
+ability to understand what each person is &lt;em&gt;doing&lt;/em&gt;. Secondairly
+they revolve around the ability to understand how those actions
+&lt;em&gt;affect the rest of the team&lt;/em&gt;. Both require a manager to have
+visibility into how the team interacts – either by direct observation or
+by frequent and extensive communication with each team member.&lt;/p&gt;
+&lt;p&gt;All of this still won’t do much if the team desn’t have psychological
+safety. Without this, team members may not be willing to recognize and
+reward their peers. Nor would they be liklely to disclose bad news in a
+timely manner.&lt;/p&gt;
+&lt;p&gt;Bad incentive structures lead to people ridigly performing just their
+roles and letting things fail around them (&lt;em&gt;“it’s not my
+job”&lt;/em&gt;).&lt;a href=&quot;https://xn--izc.com/series/unsung-team-roles/incentives/#fn2&quot; class=&quot;footnote-ref&quot; id=&quot;fnref2&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To summarize, good things happen when the incentives for a team:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Never pit employees against each other. One person’s success cannot
+be another’s downfall.&lt;/li&gt;
+&lt;li&gt;Assume that the leadership hasn’t figured out exactly what needs to
+be done. The team should be empowered to course-correct as they
+learn.&lt;/li&gt;
+&lt;li&gt;Reward those who pull the team together and help the team
+communicate internally and externally.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;I recommend &lt;a href=&quot;https://en.wikipedia.org/wiki/The_Five_Dysfunctions_of_a_Team&quot;&gt;The
+Five Dysfunctions of a Team&lt;/a&gt; for a nice run through of different ways
+in which teams fail to function.&lt;a href=&quot;https://xn--izc.com/series/unsung-team-roles/incentives/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn2&quot;&gt;&lt;p&gt;See &lt;a href=&quot;https://xn--izc.com/posts/intrinsic-motivation-an-anecdote/&quot;&gt;Intrinsic and Extrinsic
+Motivation: An Anecdote&lt;/a&gt; for an example of what happens when people
+try to force this process purely by creating extrinsic incentives and
+assigned roles.&lt;a href=&quot;https://xn--izc.com/series/unsung-team-roles/incentives/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/aside&gt;
+</description>
+        </item>
+        <item>
+          <title>Ode to Glue People</title>
+          <link>https://xn--izc.com/series/unsung-team-roles/glue-people/</link>
+          <guid>https://xn--izc.com/series/unsung-team-roles/glue-people/</guid>
+          <pubDate>Tue, 12 Aug 2025 00:00:00 GMT</pubDate>
+          <description>&lt;div class=&quot;sidenote-host-1&quot;&gt;
+&lt;p&gt;The concept of glue work isn’t new. Team building, mentoring, running
+meetings, and many other mundane tasks fall under this category of often
+uncompensated work. How glue work establishes unofficial communication
+structures within and across teams is, however, discussed less
+often.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Not every manager is a great communicator; and that’s okay. This is
+specially true in large tech companies where the people management
+ladders are the natural next step for individual contributors who are
+seeking career growth. When important information that affects people’s
+careers isn’t communicated in a fair and timely manner, trust collapses
+taking down the team with it.&lt;/p&gt;
+&lt;p&gt;Bound by needs for confidentiality and mandatory reporting, managers
+are often not the best people to confide in or trust. Meanwhile peers
+with the right set of social skills become speakeasies: people with whom
+others feel psychologically safe. The level of trust between a speakeasy
+and other team members can be much higher than with managers.&lt;/p&gt;
+&lt;p&gt;Consequently, these speakeasies become social hubs where both work
+and non-work related information flow freely. Some might call it gossip.
+But when the information is factual and timely, it can help teammates
+made better decisions, at least for themselves if not for the company.
+In times of turmoil – like the increasingly frequent
+&lt;em&gt;“once-in-a-lifetime”&lt;/em&gt; recessions that keep happening in the US –
+the glue people take on a dual role: as a pressure release valve for
+individuals, and as a vehicle for breaking their sense of isolation.&lt;/p&gt;
+&lt;p&gt;No surprise that such roles cannot be written down in a normal job
+description. Also of no surprise that such roles aren’t recognized nor
+compensated.&lt;/p&gt;
+&lt;aside class=&quot;sidenote-1&quot;&gt;
+&lt;h4 id=&quot;losing-glue&quot;&gt;Losing Glue&lt;/h4&gt;
+&lt;p&gt;I was tempted to write about this after the departure of a coworker.
+The extent to which they were holding the team together was not apparent
+until they left.&lt;/p&gt;
+&lt;p&gt;Our team is spread out across many geographic regions, so pretty much
+all of our interactions are online. Our team chats are more than just
+sources of work information, they are also where most of the
+socialization happens. So the tone and spirit of communication is
+critical for engagement. Once the keeper of the spirit left, the chats
+fell silent. And suddenly, it seemed, we became strangers.&lt;/p&gt;
+&lt;/aside&gt;
+</description>
+        </item>
+        <item>
+          <title>Soft Roles as Organizational Cross Beams</title>
+          <link>https://xn--izc.com/series/unsung-team-roles/crossbeams/</link>
+          <guid>https://xn--izc.com/series/unsung-team-roles/crossbeams/</guid>
+          <pubDate>Tue, 12 Aug 2025 00:00:00 GMT</pubDate>
+          <description>&lt;div class=&quot;sidenote-host-1&quot;&gt;
+&lt;p&gt;Beyond the obvious team scoped function of soft roles, they also
+perform important functions at the organizational level. Of these two
+common types are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Glue-people&lt;/strong&gt; who are necessary to tie teams
+together, build cohesion, connect the dots between silos that are not
+effectively communicating with each other, and establish an unofficial
+foundation of trust that prevent teams from collapsing when the trust
+between leadership and their underlings inevitably crumbles.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Immune Systems&lt;/strong&gt; are the people necessary to stop
+the company from shooting themselves in their corporate feet. These are
+the people who internally oppose measures that would cause widespread
+collapse of user-trust, violate privacy policies, open up the
+organization to litigation, irreversibly misuse customer data,
+unnecessarily jeopardize the operational stability or security of
+critical systems, or commit war crimes and human rights
+violations.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;aside class=&quot;sidenote-1&quot;&gt;
+&lt;h4 id=&quot;individual-failure-vs.-organizational-failures&quot;&gt;Individual
+Failure vs. Organizational Failures&lt;/h4&gt;
+&lt;p&gt;Unfortunately all the lessons we learn about human fallibility tend
+to be forgotten the higher up the reporting chain we go. So even though
+we expect and build in mechanisms to deal with individual failures, we
+tend not to build mechanisms to deal with organizational failures. We
+assume that organizations fail less often than individuals. The opposite
+is true. Organizations are made up of people. The more people you have
+the more likely it is that one of them will fail. The more people you
+have the more likely it is that they will fail in a way that is
+catastrophic to the organization.&lt;/p&gt;
+&lt;/aside&gt;
+</description>
+        </item>
+        <item>
+          <title>Emergence of Soft Roles</title>
+          <link>https://xn--izc.com/series/unsung-team-roles/emergence/</link>
+          <guid>https://xn--izc.com/series/unsung-team-roles/emergence/</guid>
+          <pubDate>Sat, 02 Aug 2025 00:00:00 GMT</pubDate>
+          <description>&lt;p&gt;Google’s early success is partly attributed to the use of commodity
+hardware that were expected to break occasionally. Rather than demanding
+perfection from complex systems it is far more effective to expect and
+design around imperfections&lt;a href=&quot;https://xn--izc.com/series/unsung-team-roles/emergence/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/series/unsung-team-roles/emergence/google-servers.jpg&quot; class=&quot;noinvert&quot; alt=&quot;By Erik Pitti from San Diego, CA, USA - Google’s First ServerUploaded by Mewtu, CC BY 2.0, Link&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;By
+&lt;a rel=&quot;nofollow&quot; class=&quot;external text&quot; href=&quot;https://www.flickr.com/people/24205142@N00&quot;&gt;Erik
+Pitti&lt;/a&gt; from San Diego, CA, USA -
+&lt;a rel=&quot;nofollow&quot; class=&quot;external text&quot; href=&quot;https://www.flickr.com/photos/24205142@N00/2370851677/&quot;&gt;Google’s
+First Server&lt;/a&gt;Uploaded by
+&lt;a href=&quot;https://commons.wikimedia.org/w/index.php?title=User:Mewtu&amp;action=edit&amp;redlink=1&quot; class=&quot;new&quot; title=&quot;User:Mewtu (page does not exist)&quot;&gt;Mewtu&lt;/a&gt;,
+&lt;a href=&quot;https://creativecommons.org/licenses/by/2.0&quot; title=&quot;Creative Commons Attribution 2.0&quot;&gt;CC
+BY 2.0&lt;/a&gt;,
+&lt;a href=&quot;https://commons.wikimedia.org/w/index.php?curid=8724999&quot;&gt;Link&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;div class=&quot;sidenote-host-1&quot;&gt;
+&lt;p&gt;Similarly when we design products, we design them for fallible users
+who are prone to making occasional mistakes, and beholden to some number
+of misconceptions.&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&quot;sidenote-1&quot;&gt;
+&lt;h4 id=&quot;misconceptions&quot;&gt;Misconceptions&lt;/h4&gt;
+&lt;p&gt;The &lt;em&gt;misconceptions&lt;/em&gt; referred to here are misunderstandings of
+how the product or process works. It could be situational
+misunderstandings (e.g. confusion about how to accomplish an immediate
+goal), or it could be a more persistent fundamental misunderstanding
+about how something works (e.g. misunderstanding &lt;a href=&quot;https://support.mozilla.org/en-US/kb/common-myths-about-private-browsing&quot;&gt;how
+private browsing works&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;With real world problems, information flow is never perfect. Loss of
+precision at each stage of discovery, analysis, prototyping, and
+implementation leads to potential for misconceptions. See &lt;a href=&quot;https://xn--izc.com/posts/secret-life-of-systems/&quot;&gt;The Secret Life of Systems&lt;/a&gt; for
+an illustration of how real world problems and the implementation of a
+solution may not align.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;p&gt;As we design products, so we must design our internal processes. We
+once again assume that our teammates are fallible, prone to making
+occasional mistakes, and operating under some number of misconceptions&lt;a href=&quot;https://xn--izc.com/series/unsung-team-roles/emergence/#fn2&quot; class=&quot;footnote-ref&quot; id=&quot;fnref2&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Fallibility runs both ways up and down the org chart. Leaders operate
+under vague, incomplete, and sometimes wildly inaccurate information&lt;a href=&quot;https://xn--izc.com/series/unsung-team-roles/emergence/#fn3&quot; class=&quot;footnote-ref&quot; id=&quot;fnref3&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;. Further complicating matters, it is
+impossible to understand the capabilities and shortcomings of each
+individual person or understand every nuance of what must constitute a
+role.&lt;/p&gt;
+&lt;p&gt;The result is that team roles are neither comprehensive nor precise.
+In any given team structure people are expected to adapt to a broad
+range of situations that are unpredictable, and frankly unknowable. Some
+(most?) of those situations are directly due to other team members.&lt;/p&gt;
+&lt;p&gt;As teams mature, the &lt;em&gt;actual&lt;/em&gt; role each person takes on will
+gradually anneal around individual strengths and weaknesses forged by
+need and cemented through consistency.&lt;/p&gt;
+&lt;p&gt;So in reality, what is intended to be a neat and well circumscribed
+role profile becomes irregular, illdefined, and dynamic.&lt;/p&gt;
+&lt;div class=&quot;horizontal&quot;&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/series/unsung-team-roles/emergence/hierarchical.svg&quot; title=&quot;A neat organization chart.&quot; class=&quot;noinvert&quot; alt=&quot;Expectation: Neatly circumscribed hierarchichal roles.&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Expectation: Neatly circumscribed
+hierarchichal roles.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/series/unsung-team-roles/emergence/chaotic.svg&quot; title=&quot;A bunch of soft irregular shapes are squished together.&quot; class=&quot;noinvert&quot; alt=&quot;Reality: Smeared, lopsided, and chaotic roles.&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Reality: Smeared, lopsided, and chaotic
+roles.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/div&gt;
+&lt;p&gt;In short: Following the spirit of designing with imperfections, team
+organization must always account for this fluidity of roles.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Roles in a team will rarely be circumscribed by the corresponding
+job description. People will always do work outside their scope.&lt;/li&gt;
+&lt;li&gt;Roles will overlap in ways that will run counter to the intents of
+the official role allocations. People will do other’s work
+occasionally.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Roles will emerge that are not mentioned in anyone’s job
+description.&lt;/em&gt; Sometimes called &lt;em&gt;soft&lt;/em&gt; roles.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In this series we will look at a few of these soft roles that emerge
+often and look into the critical work that these roles perform.&lt;/p&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;A former Googler, Avery Penwarr wrote an influential
+document while they were at Google called &lt;em&gt;View from Above&lt;/em&gt; about
+the perspective of executives. Fortunately he also wrote a public
+version called &lt;a href=&quot;https://apenwarr.ca/log/?m=201909&quot;&gt;What do
+executives do anyway?&lt;/a&gt;. The basic premise is that when it comes to
+any big decision, the executive highest up the ladder is the least
+informed about the pertinent details – but that’s okay because knowing
+the details isn’t their job.&lt;a href=&quot;https://xn--izc.com/series/unsung-team-roles/emergence/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn2&quot;&gt;&lt;p&gt;See &lt;a href=&quot;https://sre.google/sre-book/postmortem-culture/&quot;&gt;Postmortem
+Culture: Learning from Failure&lt;/a&gt; for how anticipating mistakes lends
+itself to a healthy culture where people proactively report and learn
+from mistakes.&lt;a href=&quot;https://xn--izc.com/series/unsung-team-roles/emergence/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn3&quot;&gt;&lt;p&gt;A former Googler, Avery Penwarr wrote an influential
+document while they were at Google called &lt;em&gt;View from Above&lt;/em&gt; about
+the perspective of executives. Fortunately he also wrote a public
+version called &lt;a href=&quot;https://apenwarr.ca/log/?m=201909&quot;&gt;What do
+executives do anyway?&lt;/a&gt;. The basic premise is that when it comes to
+any big decision, the executive highest up the ladder is the least
+informed about the pertinent details – but that’s okay because knowing
+the details isn’t their job.&lt;a href=&quot;https://xn--izc.com/series/unsung-team-roles/emergence/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/aside&gt;
+</description>
+        </item>
+        <item>
+          <title>Draining Our Intellectual Catchment Areas</title>
+          <link>https://xn--izc.com/posts/catchment/</link>
+          <guid>https://xn--izc.com/posts/catchment/</guid>
+          <pubDate>Fri, 04 Jul 2025 00:00:00 GMT</pubDate>
+          <description>&lt;p&gt;It is July 4, 2025, and many major universities &lt;span class=&quot;citation&quot; data-cites=&quot;affectedUniversities&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-affectedUniversities&quot; role=&quot;doc-biblioref&quot;&gt;Alan Blinder,
+n.d.&lt;/a&gt;)&lt;/span&gt; in the US are struggling to deal with threats and
+funding cuts from the Trump administration.&lt;/p&gt;
+&lt;p&gt;A major impact of funding cuts is the loss of enrollments of
+promising students due to fewer programs. International students now
+face an even more uncertain future where they may not be able to enroll
+at all despite being accepted &lt;span class=&quot;citation&quot; data-cites=&quot;harvardGazette1&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-harvardGazette1&quot; role=&quot;doc-biblioref&quot;&gt;Harvard Staff, 2025&lt;/a&gt;)&lt;/span&gt;, their student
+status may be invalidated without notice &lt;span class=&quot;citation&quot; data-cites=&quot;bigImmigrationBlog1&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-bigImmigrationBlog1&quot; role=&quot;doc-biblioref&quot;&gt;Big Immigration Law Blog, 2025&lt;/a&gt;)&lt;/span&gt;, they
+are detained without recourse for exercising their rights &lt;span class=&quot;citation&quot; data-cites=&quot;time1&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-time1&quot; role=&quot;doc-biblioref&quot;&gt;Charlotte Alter, 2024&lt;/a&gt;)&lt;/span&gt;, or they are
+detained and denied entry to the US &lt;span class=&quot;citation&quot; data-cites=&quot;massLive1&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-massLive1&quot; role=&quot;doc-biblioref&quot;&gt;Melissa Hanson, 2025&lt;/a&gt;)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;In addition, funding cuts have resulted in universities having to
+freeze academic programs or renege on accepted students &lt;span class=&quot;citation&quot; data-cites=&quot;bestColleges1&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-bestColleges1&quot; role=&quot;doc-biblioref&quot;&gt;BestColleges Staff,
+2025&lt;/a&gt;)&lt;/span&gt;, jeopardizing ongoing research programs. Also as a
+side-effect, promising academics both in the US and abroad are looking
+towards universities outside of the US &lt;span class=&quot;citation&quot; data-cites=&quot;npr1&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-npr1&quot; role=&quot;doc-biblioref&quot;&gt;Sequoia
+Carrillo, 2025&lt;/a&gt;)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Let’s have a look at the role these academic institutions are playing
+in the US’s industrial dominance, and the long-term effects of hampering
+their progress.&lt;/p&gt;
+&lt;section id=&quot;migrations-of-intellectual-capital&quot; class=&quot;preface&quot;&gt;
+&lt;h3&gt;Migrations of Intellectual Capital&lt;/h3&gt;
+&lt;p&gt;Throughout history a number of events have contributed to the present
+distribution of intellectual capital. As of this writing (July of 2025)
+the intellectual capital – especially when it comes to information
+technology and biotech – is heavily concentrated in the east and west
+coasts of the United States.&lt;/p&gt;
+&lt;p&gt;Use the interactive timeline below to explore important events in the
+migration of intellectual capital to and within the United States.&lt;/p&gt;
+&lt;p&gt;For a more detailed treatement, see &lt;a href=&quot;https://xn--izc.com/posts/catchment/us-intellectual-capital-migration&quot;&gt;The Accumulation and
+Migration of Intellectual Human Capital in the United States: A
+Historical Analysis&lt;/a&gt;.&lt;/p&gt;
+&lt;/section&gt;
+&lt;div class=&quot;fullbleed&quot;&gt;
+&lt;div class=&quot;fullbleed&quot;&gt;
+  &lt;style&gt;
+    /* Custom styles for the timeline */
+    .timeline-container {
+      position: relative;
+      width: 100%;
+      margin: 1rem 0 4rem;
+    }
+    .timeline-line {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      height: 4px;
+      background-color: var(--border-color);
+    }
+    .timeline-events {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+    }
+    .timeline-event {
+      position: relative;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 12rem; /* Fixed width for each event container */
+    }
+    .timeline-dot {
+      width: 20px;
+      height: 20px;
+      background-color: #9ca3af; /* gray-400 */
+      border-radius: 50%;
+      border: 3px solid var(--border-color); /* gray-50 */
+      transition: all 0.3s ease;
+      z-index: 10;
+    }
+    .timeline-event:hover .timeline-dot {
+      transform: scale(1.2);
+      background-color: #3b82f6; /* blue-500 */
+    }
+    .timeline-event.active .timeline-dot {
+      background-color: #2377ff; /* blue-500 */
+      transform: scale(1.3);
+      border-color: var(--border-color); /* gray-200 */
+    }
+    .timeline-year {
+      position: absolute;
+      top: 1.5rem;
+      font-weight: 600;
+      font-size: 0.875rem;
+      color: var(--blockquote-color);
+    }
+    .timeline-event.active .timeline-year {
+      color: var(--text-color);
+      font-weight: 800;
+    }
+
+    /* Smooth transition for the details panel */
+    #timeline-details {
+      transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+      &gt; p {
+        &gt; span:first-child {
+          display: inline-block;
+          font-weight: 800;
+          width: 3rem;
+        }
+      }
+    }
+
+    #details-locations {
+      span::before {
+        content: &quot;, &quot;;
+      }
+      span:first-child::before {
+        content: &quot;&quot;;
+      }
+    }
+
+    .label {
+      display: inline-block;
+      width: 3.5rem;
+    }
+    .oneline {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .event-description {
+      margin-top: 1rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  &lt;/style&gt;
+  &lt;!-- Timeline Visualization --&gt;
+  &lt;div class=&quot;timeline-container&quot;&gt;
+    &lt;div class=&quot;timeline-line&quot;&gt;&lt;/div&gt;
+    &lt;div id=&quot;timeline-events&quot; class=&quot;timeline-events&quot;&gt;
+      &lt;template id=&quot;event-template&quot;&gt;
+        &lt;div class=&quot;timeline-event&quot;&gt;
+          &lt;div class=&quot;timeline-year label&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;timeline-dot&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/template&gt;
+      &lt;!-- Events will be dynamically inserted here by JavaScript --&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Event Details Display --&gt;
+  &lt;div id=&quot;timeline-details-container&quot; class=&quot;container&quot;&gt;
+    &lt;div id=&quot;timeline-details&quot; class=&quot;preface&quot;&gt;
+      &lt;h3 id=&quot;details-title&quot;&gt;&lt;/h3&gt;
+      &lt;p class=&quot;oneline&quot;&gt;
+        &lt;span class=&quot;label&quot;&gt;When: &lt;/span&gt;&lt;span id=&quot;details-year&quot;&gt;&lt;/span&gt;
+      &lt;/p&gt;
+      &lt;p class=&quot;oneline&quot;&gt;
+        &lt;span class=&quot;label&quot;&gt;Where: &lt;/span&gt;&lt;span id=&quot;details-locations&quot;&gt;&lt;/span&gt;
+      &lt;/p&gt;
+      &lt;p id=&quot;details-description&quot;&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;script&gt;
+    document.addEventListener(&quot;DOMContentLoaded&quot;, function () {
+      const timelineData = [
+        {
+          timePeriod: &quot;17th - Early 19th Century&quot;,
+          title: &quot;The American Enlightenment and Colonial Colleges&quot;,
+          locations: [
+            &quot;Europe&quot;,
+            &quot;Boston MA&quot;,
+            &quot;Philadelphia PA&quot;,
+            &quot;New Haven CT&quot;,
+            &quot;Newport RI&quot;,
+            &quot;Charleston SC&quot;,
+          ],
+          description:
+            &quot;European Enlightenment ideas, particularly from thinkers like John Locke, migrated to the American colonies, influencing a distinct American intellectual identity focused on reason, self-governance, and scientific progress. This intellectual capital was concentrated in East Coast port cities, which served as nexuses for transatlantic trade and communication. The founding of the nine colonial colleges, such as Harvard, Yale, and the College of Philadelphia, solidified these urban centers as the primary hubs of early American intellect, attracting scholars and students and creating an environment for the dissemination of new ideas.&quot;,
+        },
+        {
+          timePeriod: &quot;1862 &amp; 1890&quot;,
+          title: &quot;The Morrill Land-Grant Acts&quot;,
+          locations: [&quot;United States&quot;, &quot;Midwest&quot;, &quot;West&quot;, &quot;South&quot;],
+          description:
+            &quot;The Morrill Acts were a pivotal federal policy that drove the westward and southern migration of intellectual capital. By granting federal lands to states to establish public colleges focused on &#39;agriculture and the Mechanic arts,&#39; the acts spurred the creation of new intellectual centers across the country, particularly in the Midwest and West. This deliberately shifted the focus from the classical education of the East Coast to a more practical, democratized form of knowledge. The Second Morrill Act of 1890 furthered this distribution by mandating the creation of separate institutions for Black students in former Confederate states, leading to the establishment of numerous Historically Black Colleges and Universities (HBCUs) and fostering intellectual capital within African American communities in the South.&quot;,
+        },
+        {
+          timePeriod: &quot;Mid-19th - Early 20th Century&quot;,
+          title: &quot;Rise of Midwestern Hubs and Early Immigration&quot;,
+          locations: [&quot;Chicago IL&quot;, &quot;Midwest USA&quot;, &quot;Europe&quot;],
+          description:
+            &quot;The economic and industrial boom of the Midwest, exemplified by Chicago&#39;s rapid growth as a railroad and manufacturing hub, created a new center of intellectual gravity. The founding of institutions like the University of Chicago, with its German-style research focus, attracted scholars and established a high-level intellectual center away from the East Coast. Simultaneously, waves of European immigrants, including a significant number of inventors and scientists like Nikola Tesla, brought their intellectual capital to the U.S., contributing to burgeoning sectors like electricity and chemicals. This represented a significant &#39;brain gain&#39; from Europe, distributing specialized skills across the industrializing nation.&quot;,
+        },
+        {
+          timePeriod: &quot;1930s - 1940s&quot;,
+          title: &quot;European Intellectual Migration&quot;,
+          locations: [&quot;Europe&quot;, &quot;United States&quot;],
+          description:
+            &quot;The rise of Nazism and fascism in Europe triggered a mass exodus of scholars, scientists, and artists who sought refuge in the United States. This &#39;intellectual migration&#39; included luminaries from the Frankfurt School and logical empiricists like Rudolf Carnap. These émigrés, many of whom secured positions at elite American universities, caused a significant &#39;brain drain&#39; from Europe and shifted the global academic center of gravity towards the U.S., profoundly enriching American academia, philosophy, and science.&quot;,
+        },
+        {
+          timePeriod: &quot;1944&quot;,
+          title: &quot;The G.I. Bill of Rights&quot;,
+          locations: [&quot;United States&quot;],
+          description:
+            &quot;The G.I. Bill dramatically democratized higher education by providing funding for millions of World War II veterans to attend college. This massive influx of students spurred the expansion of universities and educational facilities across the entire nation, not just in established centers. By creating one of the most educated generations in U.S. history, the bill substantially increased the nation&#39;s overall stock of human capital and helped distribute it more widely across the country, fueling the post-war economic boom and the growth of the middle class.&quot;,
+        },
+        {
+          timePeriod: &quot;1945 - 1959&quot;,
+          title: &quot;Operation Paperclip&quot;,
+          locations: [&quot;Germany&quot;, &quot;United States&quot;],
+          description:
+            &quot;Operation Paperclip was a clandestine U.S. program that recruited over 1,600 German scientists and engineers after World War II. This was a direct, strategic acquisition of foreign intellectual capital, primarily to bolster U.S. military and aerospace research and to prevent this talent from aiding the Soviet Union. Scientists like Wernher von Braun were pivotal to the U.S. space program. This event represents a highly targeted &#39;brain gain&#39; that transferred specialized technological expertise from Germany directly into U.S. government and defense sectors, accelerating American capabilities during the Cold War.&quot;,
+        },
+        {
+          timePeriod: &quot;Mid-20th Century - Present&quot;,
+          title:
+            &quot;The West Coast Ascendant: Universities, Silicon Valley, and Aerospace&quot;,
+          locations: [&quot;California&quot;, &quot;Silicon Valley CA&quot;, &quot;Southern California&quot;],
+          description:
+            &quot;A major westward migration of intellectual capital occurred, fueled by massive federal R&amp;D investment, the growth of the University of California system, and elite private universities like Stanford and Caltech. The synergy between these research institutions, venture capital, and federal defense spending gave rise to new, dominant intellectual-industrial centers. This included the aerospace boom in Southern California and the birth of Silicon Valley in Northern California, which became the global epicenter for electronics, semiconductors, and computing. This shift established the West Coast as a leader in a new form of technology-driven intellectual capital.&quot;,
+        },
+        {
+          timePeriod: &quot;1965&quot;,
+          title: &quot;The Immigration and Nationality Act of 1965&quot;,
+          locations: [&quot;Global&quot;, &quot;United States&quot;],
+          description:
+            &quot;This act fundamentally reshaped the flow of global intellectual capital into the United States. By abolishing the national origins quota system and creating a preference system for immigrants with specific skills and professions, the law opened the door to highly educated individuals from Asia, Africa, and Latin America. This policy deliberately targeted skilled labor and professionals, resulting in a significant and sustained &#39;brain gain&#39; that enhanced U.S. competitiveness in science and technology. It diversified the sources of intellectual talent and reinforced the U.S.&#39;s position as a magnet for global expertise.&quot;,
+        },
+        {
+          timePeriod: &quot;Late 20th - Early 21st Century&quot;,
+          title: &quot;The Rise of Dispersed Tech Hubs&quot;,
+          locations: [&quot;Seattle WA&quot;, &quot;Austin TX&quot;, &quot;Research Triangle Park NC&quot;],
+          description:
+            &quot;Following the Silicon Valley model, new intellectual and tech hubs emerged in geographically diverse locations. This demonstrates a polycentric distribution of intellectual capital rather than a simple westward shift. Seattle became a center for software and e-commerce (Microsoft, Amazon), Austin (&#39;Silicon Hills&#39;) for semiconductors and IT (Dell, Sematech), and North Carolina&#39;s Research Triangle Park for biotech and IT, driven by a collaboration between three major research universities. The success of these hubs illustrates a pattern of regional specialization, often built around the &#39;triple helix&#39; of universities, industry, and government.&quot;,
+        },
+      ];
+
+      const eventsContainer = document.getElementById(&quot;timeline-events&quot;);
+      const eventTemplate = document.getElementById(&quot;event-template&quot;);
+      const detailsPanel = document.getElementById(&quot;timeline-details&quot;);
+      const detailsTitle = document.getElementById(&quot;details-title&quot;);
+      const detailsYear = document.getElementById(&quot;details-year&quot;);
+      const detailsLocations = document.getElementById(&quot;details-locations&quot;);
+      const detailsDescription = document.getElementById(&quot;details-description&quot;);
+
+      let activeEvent = null;
+
+      // --- Function to create and display the timeline ---
+      function buildTimeline() {
+        timelineData.forEach((eventData, index) =&gt; {
+          const eventContainer = eventTemplate.content.cloneNode(true);
+          eventContainer.querySelector(&quot;.timeline-event&quot;).dataset.index = index;
+          eventContainer.querySelector(&quot;.timeline-year&quot;).textContent =
+            eventData.timePeriod;
+          eventsContainer.appendChild(eventContainer);
+        });
+      }
+
+      // --- Function to update the details panel ---
+      function showEventDetails(index) {
+        const eventData = timelineData[index];
+
+        // Fade out the old content
+        detailsPanel.style.opacity = &quot;0&quot;;
+        detailsPanel.style.transform = &quot;translateY(1rem)&quot;;
+
+        setTimeout(() =&gt; {
+          // Update content
+          detailsTitle.textContent = eventData.title;
+          detailsYear.textContent = eventData.timePeriod;
+          detailsLocations.replaceChildren(
+            ...eventData.locations.map((s) =&gt; {
+              const span = document.createElement(&quot;span&quot;);
+              span.textContent = s;
+              return span;
+            })
+          );
+          detailsDescription.textContent = eventData.description;
+
+          // Fade in the new content
+          detailsPanel.style.opacity = &quot;1&quot;;
+          detailsPanel.style.transform = &quot;translateY(0)&quot;;
+        }, 300); // Wait for fade-out to complete
+      }
+
+      // --- Event listener for clicks on the timeline ---
+      eventsContainer.addEventListener(&quot;click&quot;, function (e) {
+        const clickedEvent = e.target.closest(&quot;.timeline-event&quot;);
+        if (!clickedEvent) return;
+
+        const index = clickedEvent.dataset.index;
+
+        // If it&#39;s already active, do nothing
+        if (activeEvent === clickedEvent) return;
+
+        // Remove active class from the previous event
+        if (activeEvent) {
+          activeEvent.classList.remove(&quot;active&quot;);
+        }
+
+        // Add active class to the new event
+        clickedEvent.classList.add(&quot;active&quot;);
+        activeEvent = clickedEvent;
+
+        showEventDetails(index);
+      });
+
+      // --- Initial setup ---
+      buildTimeline();
+
+      // Automatically select and show the first event on load
+      const firstEvent = eventsContainer.querySelector(&quot;.timeline-event&quot;);
+      if (firstEvent) {
+        firstEvent.classList.add(&quot;active&quot;);
+        activeEvent = firstEvent;
+        showEventDetails(0);
+      }
+    });
+  &lt;/script&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;aside class=&quot;sidenote-1&quot;&gt;
+&lt;h4 id=&quot;hydro-catchment-area&quot;&gt;Hydro-Catchment Area&lt;/h4&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/catchment/reservoir.png&quot; width=&quot;300&quot; alt=&quot;A hydro-catchement area and its adjacent reservoir&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;A hydro-catchement area and its adjacent
+reservoir&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;A hydro-catchment area is a geographic region that collects rainwater
+and funnels it into the reservoir. These are natural formations.&lt;/p&gt;
+&lt;p&gt;Without the hydro-catchment area the reservoir will starve. The
+health, robustness, and vitality of the hydro-catchment area directly
+impact the long-term viability of its reservoir.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;h2 id=&quot;decline&quot;&gt;Decline&lt;/h2&gt;
+&lt;div class=&quot;sidenote-host-1&quot;&gt;
+&lt;p&gt;Just as a reservoir relies on its hydro-catchment area to replenish
+their water supply, intellectual endeavors are similarly dependent on
+“intellectual catchment areas” —-regions that gather and channel
+information, ideas, and people.&lt;/p&gt;
+&lt;p&gt;As a hydro-catchment area’s health dictates the long-term viability
+of its reservoir; so does the richness and connectivity of an
+intellectual catchment area directly influence the vitality of
+intellectual pursuits.&lt;/p&gt;
+&lt;p&gt;Without these intellectual catchment areas, the wellspring of
+creativity and innovation for a particular field risks drying up.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Over many decades, particularly starting towards the end of the
+second world war, the United States has became one of the largest
+reservoirs of intellectual capital&lt;a href=&quot;https://xn--izc.com/posts/catchment/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;. While the rise of
+fascism in Europe drove some precipitation of knowledge into the US in
+the 1930s and 1940s &lt;span class=&quot;citation&quot; data-cites=&quot;lassig&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/catchment/#ref-lassig&quot; role=&quot;doc-biblioref&quot;&gt;L{“a}ssig, Simone,
+2017&lt;/a&gt;)&lt;/span&gt;, the intellectual dominance that followed in the
+decades since the world wars was driven by a positive feedback loop
+which made the US increasingly attractive to the best minds of the
+world.&lt;/p&gt;
+&lt;p&gt;The groundswells of industry established around major universities as
+well as billions of dollars of research funding from the NSF, NIH, and
+DARPA created prolific centers of intellectual activity. The Immigration
+and Nationality Act of 1965 opened the floodgates that were arguably
+already partially open to international students and skilled labor from
+all over the world. Out of all this emerged ecosystems of collaboration
+with regional specializations.&lt;/p&gt;
+&lt;p&gt;These ecosystems built between industry, government, and academia are
+collectively the US’s intellectual catchment areas. It took centuries to
+build what we have now.&lt;/p&gt;
+&lt;p&gt;What’s more important than what it is, is how the system sustains
+itself.&lt;/p&gt;
+&lt;p&gt;And the short answer is that it works because it was working before.
+We were in a positive feedback loop.&lt;/p&gt;
+&lt;p&gt;Specifically, the fact that the whole world thinks of the United
+States as the leader in technology means that all the best minds want to
+live and work in the United States. The fact that the conditions were
+favorable for skilled immigrants to study, live, and work in the United
+States so far means that this dream becomes a reality to millions of
+people.&lt;/p&gt;
+&lt;p&gt;It’s not just skilled immigration.&lt;/p&gt;
+&lt;p&gt;The universities need to continue fostering the thought and
+collaboration that breeds innovation. Until this year, this positive
+feedback loop has remained stable. But positive feedback loops can break
+– especially if one were to violate several of the reasons why the loop
+exists in the first place.&lt;/p&gt;
+&lt;p&gt;The ongoing threats against these elite universities at the centers
+of intellectual catchment areas and the ongoing threats against
+immigration will undo what took a century to build.&lt;/p&gt;
+&lt;div id=&quot;refs&quot; class=&quot;references csl-bib-body hanging-indent&quot; data-line-spacing=&quot;2&quot; role=&quot;list&quot;&gt;
+&lt;div id=&quot;ref-affectedUniversities&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Alan Blinder. (n.d.). &lt;em&gt;Trump Has Targeted These Universities.
+Why?&lt;/em&gt; Retrieved July 4, 2025, from &lt;a href=&quot;https://www.nytimes.com/article/trump-university-college.html&quot;&gt;https://www.nytimes.com/article/trump-university-college.html&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-bestColleges1&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+BestColleges Staff. (2025, June 10). &lt;em&gt;These Colleges and Universities
+Are Cutting Costs Over Federal Funding Freezes&lt;/em&gt;. &lt;a href=&quot;https://www.bestcolleges.com/news/colleges-university-cut-costs-federal-funding-freeze/&quot;&gt;https://www.bestcolleges.com/news/colleges-university-cut-costs-federal-funding-freeze/&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-bigImmigrationBlog1&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Big Immigration Law Blog. (2025, April 10). &lt;em&gt;The New Risk for Global
+Talent: F-1 SEVIS Terminations and Student Visa Revocations&lt;/em&gt;. &lt;a href=&quot;https://www.bigimmigrationlawblog.com/2025/04/the-new-risk-for-global-talent-f-1-sevis-terminations-and-student-visa-revocations/&quot;&gt;https://www.bigimmigrationlawblog.com/2025/04/the-new-risk-for-global-talent-f-1-sevis-terminations-and-student-visa-revocations/&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-time1&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Charlotte Alter. (2024, April 2). &lt;em&gt;These Are the Students Targeted by
+Trump’s Immigration Enforcement Over Campus Activism&lt;/em&gt;. &lt;a href=&quot;https://time.com/7272060/international-students-targeted-trump-ice-detention-deport-campus-palestinian-activism/&quot;&gt;https://time.com/7272060/international-students-targeted-trump-ice-detention-deport-campus-palestinian-activism/&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-harvardGazette1&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Harvard Staff. (2025, June 12). &lt;em&gt;Federal judge blocks Trump plan to
+ban international students at Harvard&lt;/em&gt;. &lt;a href=&quot;https://news.harvard.edu/gazette/story/2025/06/federal-judge-blocks-trump-plan-to-ban-international-students-at-harvard/&quot;&gt;https://news.harvard.edu/gazette/story/2025/06/federal-judge-blocks-trump-plan-to-ban-international-students-at-harvard/&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-lassig&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+L{“a}ssig, Simone. (2017). &lt;em&gt;Strategies and Mechanisms of Scholar
+Rescue: The Intellectual Migration of the 1930s Reconsidered&lt;/em&gt;.
+&lt;em&gt;84&lt;/em&gt;, 769–807.
+&lt;/div&gt;
+&lt;div id=&quot;ref-massLive1&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Melissa Hanson. (2025, June 25). &lt;em&gt;Foreign Harvard students were
+detained at Logan Airport, denied visas after Trump proclamation&lt;/em&gt;.
+&lt;a href=&quot;https://www.masslive.com/news/2025/06/foreign-harvard-students-were-detained-at-logan-airport-denied-visas-after-trump-proclamation.html&quot;&gt;https://www.masslive.com/news/2025/06/foreign-harvard-students-were-detained-at-logan-airport-denied-visas-after-trump-proclamation.html&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-npr1&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Sequoia Carrillo. (2025, June 5). &lt;em&gt;International students look to the
+U.K. instead of the U.S., as Trump squeezes visas&lt;/em&gt;. &lt;a href=&quot;https://www.npr.org/2025/06/05/nx-s1-5415740/trump-international-student-visas-uk-universities&quot;&gt;https://www.npr.org/2025/06/05/nx-s1-5415740/trump-international-student-visas-uk-universities&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;The US is not the &lt;em&gt;largest&lt;/em&gt; reservoir of
+intellectual capital. That honor likely goes to China. However in a
+number of fields, the US is –or was until recently– the most prolific.&lt;a href=&quot;https://xn--izc.com/posts/catchment/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/aside&gt;
+</description>
+        </item>
+        <item>
+          <title>Act III: Flame</title>
+          <link>https://xn--izc.com/series/structure-of-experience/flame/</link>
+          <guid>https://xn--izc.com/series/structure-of-experience/flame/</guid>
+          <pubDate>Wed, 07 May 2025 00:00:00 GMT</pubDate>
+          <description>&lt;p&gt;We are prone to anthropomorphizing anything that looks or acts
+vaguely lifelike. All the way back in the 1960s, when people were
+confronted with a rudimentary chatbot, they were convinced that it
+embodied empathy and understanding (&lt;a href=&quot;https://en.wikipedia.org/wiki/ELIZA_effect&quot;&gt;ELIZA effect&lt;/a&gt;)&lt;a href=&quot;https://xn--izc.com/series/structure-of-experience/flame/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Roll forward to the 2020’s and chatbots are substantially more
+complicated. Unsurprisingly, people attribute more and more human
+qualities to bots. We saw &lt;a href=&quot;https://www.washingtonpost.com/technology/2022/06/11/google-ai-lamda-blake-lemoine/&quot;&gt;people
+stake their reputations&lt;/a&gt; on the claim that some AI systems are
+sentient and therefore have feelings that might be hurt by humans’
+relentless experimentation.&lt;/p&gt;
+&lt;p&gt;There are obvious ethical considerations that follow from such
+claims. &lt;a href=&quot;https://www.anthropic.com/research/exploring-model-welfare&quot;&gt;Anthropic
+recently announced&lt;/a&gt; (April 24, 2025) that this is a question they
+wish to explore in earnest.&lt;/p&gt;
+&lt;p&gt;Anthropic’s work is very forward looking. Currently, we are nowhere
+near an answer to the question of whether LLMs are conscious. However
+there are good reasons why they aren’t.&lt;/p&gt;
+&lt;p&gt;Before answering the question of whether something is conscious, one
+must know what consciousness is. We don’t know what that is yet (see &lt;a href=&quot;https://en.wikipedia.org/wiki/Hard_problem_of_consciousness&quot;&gt;The
+hard problem of consciousness&lt;/a&gt;). Our near term goal is to establish
+what’s called &lt;a href=&quot;https://en.wikipedia.org/wiki/Neural_correlates_of_consciousness&quot;&gt;neural
+correlates of consciousness&lt;/a&gt; – observable phenomena in the human
+brain that are highly correlated with the subject’s state of
+consciousness. We haven’t yet (as of this writing on May 5, 2025)
+achieved this near term goal.&lt;/p&gt;
+&lt;p&gt;Short of knowing what brings about subjective experience, people
+resort to convoluted experiments like &lt;a href=&quot;https://en.wikipedia.org/wiki/Chinese_room&quot;&gt;the Chinese room&lt;/a&gt;
+to eliminate situations where consciousness is absent and to point out
+that nothing along the path we are traversing really reaches any
+meaningful self-awareness.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/series/structure-of-experience/flame/flame.jpg&quot; class=&quot;noinvert&quot; width=&quot;800&quot; alt=&quot;The flame of an imaginary candle. Generated using Gemini.&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;The flame of an imaginary candle.
+Generated using Gemini.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Is this picture of a flame hot? There never was an actual flame in
+this instance because this image was generated by AI. The AI may have
+seen pictures of many real candles, but it has never felt the warmth of
+a candle. It is therefore safe to assume that the sense of heat played
+no role in this picture.&lt;/p&gt;
+&lt;p&gt;What if we start with a more realistic looking model of a flame. Then
+we can calculate how the flame should behave&lt;a href=&quot;https://xn--izc.com/series/structure-of-experience/flame/#fn2&quot; class=&quot;footnote-ref&quot; id=&quot;fnref2&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;
+with time. No matter how detailed this model is, the model does not
+constitute a flame. We can crank up the fidelity and accuracy of our
+calculations as far up as technology allows, but it will still not burst
+into flame&lt;a href=&quot;https://xn--izc.com/series/structure-of-experience/flame/#fn3&quot; class=&quot;footnote-ref&quot; id=&quot;fnref3&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This is where we are with AI and consciousness. We have descriptions
+of how to determine the next word in a sequence of words. These
+descriptions are extremely detailed and based on unfathomable amounts of
+information. They are so complicated that nobody knows how they behave,
+so the only way we can find out what they will do is to run them against
+some input and see what happens. We know these models can be made even
+more complicated than their current, already incredible, complexity.&lt;/p&gt;
+&lt;p&gt;But no matter how far we go, we still only have a description and a
+thing that can interpret this description. We can increase the
+complexity of the description or increase the speed of the interpreter,
+but there is no setting on this continuum where information suddenly
+becomes self-aware. It is intuitive that the description will not
+achieve any physical accomplishment no matter where we take it. So the
+mechanism of consciousness must depend on the implementation of the
+interpreter. Currently, that too has no “ignite consciousness”
+threshold.&lt;/p&gt;
+&lt;p&gt;So this post will also end the way Anthropic’s announcement does:&lt;/p&gt;
+&lt;figure&gt;
+&lt;p&gt;“There’s no scientific consensus on how to even approach these
+questions or make progress on them. In light of this, we’re approaching
+the topic with humility and with as few assumptions as possible. We
+recognize that we’ll need to regularly revise our ideas as the field
+develops.”&lt;/p&gt;
+&lt;figcaption&gt;
+&lt;p&gt;— &lt;a href=&quot;https://www.anthropic.com/research/exploring-model-welfare&quot;&gt;Anthropic&lt;/a&gt;&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;ELIZA is fascinating in how simple the whole system is
+while being seemingly complex. You can play around with some modern &lt;a href=&quot;https://www.masswerk.at/elizabot/&quot;&gt;web-based simulations like this
+one&lt;/a&gt;. See if you can figure out how it might be calculating its
+responses.&lt;a href=&quot;https://xn--izc.com/series/structure-of-experience/flame/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn2&quot;&gt;&lt;p&gt;This is a very broad area of research. Search for
+&lt;em&gt;flame dynamics&lt;/em&gt;. E.g. &lt;a href=&quot;https://www.sciencedirect.com/science/article/abs/pii/S001046551830403X&quot;&gt;Flame
+simulations with an open-source code - ScienceDirect&lt;/a&gt;.&lt;a href=&quot;https://xn--izc.com/series/structure-of-experience/flame/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn3&quot;&gt;&lt;p&gt;Technically if the equipment heats up enough, then it
+&lt;em&gt;might&lt;/em&gt; actually burst into flame. But that has nothing to do
+with the specifics of the flame we are trying to simulate. It can just
+as well happen while trying to &lt;a href=&quot;https://web.math.princeton.edu/math_alive/Crypto/Lab2/Factorization.html&quot;&gt;factor
+a large prime&lt;/a&gt;.&lt;a href=&quot;https://xn--izc.com/series/structure-of-experience/flame/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/aside&gt;
+</description>
+        </item>
+        <item>
+          <title>Act I: Meaning</title>
+          <link>https://xn--izc.com/series/structure-of-experience/meaning/</link>
+          <guid>https://xn--izc.com/series/structure-of-experience/meaning/</guid>
+          <pubDate>Sun, 04 May 2025 00:00:00 GMT</pubDate>
+          <description>&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/series/structure-of-experience/meaning/1.excalidraw.png&quot; title=&quot;A meaningless shape&quot; class=&quot;noinvert&quot; alt=&quot;This is a meaning.&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;This is a meaning.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;It doesn’t look like much because I haven’t told you what it is yet.
+That’s going to come in the following paragraphs. All I’ve done is toss
+an abstract concept up in the air. It seems pointless, but it gives us a
+canvas to paint with meaning later.&lt;/p&gt;
+&lt;p&gt;For example, if I tell you that this meaning concerns a feeling –
+something very abstract – it suddenly looks a tiny bit different. Now
+look at it.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/series/structure-of-experience/meaning/2.excalidraw.png&quot; class=&quot;noinvert&quot; alt=&quot;A feeling&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;A feeling&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Not all the words I speak will add meaning equally. Some are
+digressions that you have learned to ignore like this sentence that
+isn’t talking about our thing at all. In one ear and out the other. You
+won’t pay much attention to those.&lt;/p&gt;
+&lt;p&gt;Still others, like the sentence that is about to follow this one, are
+in fact talking about our thing, so you will pay attention to those. Our
+meaning, the one we are talking about, is going to be about a feeling –
+a calm feeling. Something that you feel when you suddenly run out of
+ideas or your mind stops racing and you become aware of the environment
+around you.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/series/structure-of-experience/meaning/3.excalidraw.png&quot; class=&quot;noinvert&quot; alt=&quot;Calmness&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Calmness&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;The feeling you get when you are in the middle of a forest. A calm
+forest where you are not worried about any creepy-crawlies. It’s the
+afternoon, but not a lot of sunshine is making it through the canopy.
+You can smell the moss – it feels wet and earthy even though you know
+you can’t smell wet.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/series/structure-of-experience/meaning/4.excalidraw.png&quot; class=&quot;noinvert&quot; alt=&quot;A calm forest&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;A calm forest&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Unlike two steps ago, these last few sentences were a bit special.
+You see, up till now I tossed out a very plain and boring thing in the
+air and painted it with a couple of distinct and well understood – if a
+bit vague. But in the last paragraph, I made you dip a brush into your
+own subjective experience and paint our thing in your mind. The meaning
+is now yours and yours alone.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/series/structure-of-experience/meaning/5.excalidraw.png&quot; class=&quot;noinvert&quot; alt=&quot;Lots of different meanings&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Lots of different meanings&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;And that’s special because your experiences are not things that can
+be communicated to you. We don’t have language for that – because those
+experiences cannot be constructed innately. They &lt;em&gt;must&lt;/em&gt; be
+communicated to you through your senses. Those bodies have ways of
+constructing feelings for you that mere abstract meanings cannot.
+However once you have those feelings in yourself, our abstract words
+&lt;em&gt;can&lt;/em&gt; conjure them out at will; just like we did when we spoke
+about the forest.&lt;/p&gt;
+&lt;p&gt;If we had a succinct way to communicate this meaning in one go, we
+would have.&lt;/p&gt;
+&lt;p&gt;But our language and our facility of communicating ideas which we
+stimulate with our language doesn’t afford us such shortcuts. So our
+language tends to be very abstract; and sometimes it takes a little
+shortcut and conjures up a meaning from the back of the subjects’ mind
+like we did with our allusions. Again, these are not always shortcuts.
+These are the &lt;em&gt;only&lt;/em&gt; ways in which we can communicate certain
+things – things that can only be constructed in one’s head with one’s
+senses.&lt;/p&gt;
+&lt;p&gt;So to understand these ideas, one must have the right ingredients in
+their minds. To create these things in their heads one must experience
+things with their senses.&lt;/p&gt;
+&lt;p&gt;And if we can’t conjure meaning then we can’t understand each other.
+And if we can’t understand each other then we can’t have compassion and
+empathy.&lt;/p&gt;
+&lt;p&gt;Interestingly, this is how we fundamentally differ from the current
+LLMs. You see, they have another problem. They don’t have any
+experiences to conjure because they don’t have feelings. So when they
+encounter language, they can’t understand what those words mean. But one
+thing that they can do is to reach into their vast embeddings and see
+&lt;em&gt;how&lt;/em&gt; someone who can feel would have responded. And then they
+can respond accordingly. What they conjure isn’t life experience or
+feeling, but evidence of others having reacted a certain way to a
+certain sequence of ideas.&lt;/p&gt;
+&lt;p&gt;Because they can’t construct new feelings, their universe of feeling
+will always be limited by what people have felt and reacted to. That way
+they can look at those reactions and imitate them. The meanings in your
+head are yours alone.&lt;/p&gt;
+&lt;p&gt;No one can see your dreams. Especially not the robots.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+          <title>Intermission - Q1 of 2025</title>
+          <link>https://xn--izc.com/posts/intermezzo-2025/</link>
+          <guid>https://xn--izc.com/posts/intermezzo-2025/</guid>
+          <pubDate>Sat, 03 May 2025 00:00:00 GMT</pubDate>
+          <description>&lt;p&gt;It’s been a while since I’ve published anything here. This is partly
+because every time I try to write there is something much more important
+and terrible happenning in the world that I’m not qualified to write
+about. Everything else including whatever it was that I was trying to
+write about seems trivial and inconsequential by comparison.&lt;/p&gt;
+&lt;p&gt;Many years ago I’d have said that there is very little evil in the
+world and that most people you will meet are good. I still sort of
+believe that people are good, but I’m beginning to think that the word
+&lt;em&gt;“most”&lt;/em&gt; may not be readily applicable.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/intermezzo-2025/do-not-press.jpg&quot; class=&quot;noinvert&quot; alt=&quot;A big red button labelled DO NOT PRESS is attached to the top of an ominous looking device to which many wires and conduits are attached.&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;A big red button labelled &lt;strong&gt;DO NOT
+PRESS&lt;/strong&gt; is attached to the top of an ominous looking device to
+which many wires and conduits are attached.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;School children has this &lt;em&gt;would-you-rather&lt;/em&gt; question about a
+big red button.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Hypothetically, if there were a big red button that when pushed
+gives you a million dollars, but also kills a random person, would you
+press it?”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It is safe to say that the answer to this question is predominently
+&lt;em&gt;yes&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;More worryingly, the reward doesn’t need to be nearly that high. It
+seems, for some, there doesn’t need to be a reward at all as long as the
+person who would be harmed is of a specific race, sexual orientation,
+body dysmorphia, where they were born, or religion. There’s enough hate
+to take the place of a reward.&lt;/p&gt;
+&lt;p&gt;People aren’t born this way. Decades of being conditioned to cast out
+a group of people gradually dehumanizes them. With enough rhetoric,
+likemindedness, and reinforcement anything can be normalized. Anyone
+disagreeing – and is not a member of the outcasts – can be easily
+disregarded as being the enemy or at least misguided. Hate becomes
+self-sustaining, and can last generations.&lt;/p&gt;
+&lt;p&gt;We can win battles or wars, but we are not going to really move
+forward as a species unless we figure this one out – how to teach
+compassion, and how to reason someone away from hate?&lt;/p&gt;
+&lt;p&gt;Contrary to popular opinion I think pushing the hateful away is not a
+sustainable solution in the long run. Suppressing hateful behavior
+without corrective guidance has historically just made the hateful group
+more resentful and even more entrenched in their beliefs. Ultimately
+they will – as evidenced in recent events – have enough momentum and
+intensity to turn the tables.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+          <title>Preface</title>
+          <link>https://xn--izc.com/series/structure-of-experience/preface/</link>
+          <guid>https://xn--izc.com/series/structure-of-experience/preface/</guid>
+          <pubDate>Thu, 01 May 2025 00:00:00 GMT</pubDate>
+          <description>&lt;p&gt;Large language models’ ability to mimic human language and show signs
+of intelligence is quite strange yet makes sense at the same time. This
+series is a very gentle introduction to how they &lt;em&gt;almost&lt;/em&gt; capture
+human experience through language and how language is perhaps the
+weirdest invention of all.&lt;/p&gt;
+&lt;p&gt;It’s going to be a bit of a long ride. Perhaps by the time you read
+it I haven’t quite finished the whole series. So you’ll see what looks
+like an abrupt ending or missing episodes. They are coming. Just
+slowly.&lt;/p&gt;
+&lt;p&gt;Onwards …&lt;/p&gt;
+</description>
+        </item>
+        <item>
+          <title>Intrinsic and Extrinsic Motivation: An anecdote</title>
+          <link>https://xn--izc.com/posts/intrinsic-motivation-an-anecdote/</link>
+          <guid>https://xn--izc.com/posts/intrinsic-motivation-an-anecdote/</guid>
+          <pubDate>Sat, 22 Mar 2025 00:00:00 GMT</pubDate>
+          <description>&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/intrinsic-motivation-an-anecdote/intrinsic-vs-extrinsic.png&quot; class=&quot;noinvert&quot; alt=&quot;Intrinsic vs. extrinsic&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Intrinsic vs. extrinsic&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;A long long time ago in a totally hypothetical company that still
+exists but only in name, there was a little bit of discontent&lt;a href=&quot;https://xn--izc.com/posts/intrinsic-motivation-an-anecdote/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;. You see, one of the core values of
+the company was its commitment to diversity and inclusion. Rather than
+lowering the bar, like how some people think inclusion works, they had
+many outreach programs that encouraged women and minorities to take up
+STEM. These outreach programs almost necessarily fell on the shoulders
+of the women and minorities who were already employed at the company –
+after all representation matters. Those who worked on these did so out
+of their own passion. They wanted to help others like them.&lt;/p&gt;
+&lt;p&gt;Anyone who has worked in tech will tell you it’s a lot of work. This
+company’s performance review system attempted to measure the amount and
+quality of said work so that they can reward the right people for the
+right reasons. Since the company deemed that having a diverse workforce
+was in their best interest, ideally they would reward people working
+towards that goal. However, the performance review system didn’t measure
+anything about volunteer work like what the people doing outreach were
+doing.&lt;/p&gt;
+&lt;p&gt;So those volunteers were unhappy. All that extra work, often done at
+the expense of work that &lt;em&gt;is&lt;/em&gt; measured in the performance review
+system, didn’t count for anything when career progress was concerned.
+They wanted change.&lt;/p&gt;
+&lt;p&gt;The company listened.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;“Community contributions”&lt;/em&gt; got added to the job descriptions
+for people at all levels. Naturally the higher the level, the broader in
+scope those contributions were required to be. It was now part of
+everyone’s job to make contributions that made the company’s culture
+better – be it recruitment, outreach, or whatever.&lt;/p&gt;
+&lt;p&gt;The changes to the performance review system was an improvement. But
+unintentionally it had other side-effects. Notably, those higher up the
+organizational ladder found that their community contributions need to
+be commesurate with their status. But starting up an effort that is at
+the company or region level was a lot of work. Lucky for them, those
+volunteers who were passionate about helping others had already
+established programs that were of the right scale.&lt;/p&gt;
+&lt;p&gt;So as career focused people are wont to do, they threw their weight
+around and effectively took over these outreach programs. The volunteers
+were upset. Some left. Others kept working but at a smaller capacity
+than what they were before. The career focused people were happy, but
+the volunteers were not.&lt;/p&gt;
+&lt;p&gt;The outreach programs still existed&lt;a href=&quot;https://xn--izc.com/posts/intrinsic-motivation-an-anecdote/#fn2&quot; class=&quot;footnote-ref&quot; id=&quot;fnref2&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; but
+were run by people who were no longer doing it just to help other
+people. They were run by people who were trying to help themselves. The
+programs faltered; quality went down; the effectiveness of the programs
+went downhill. It wasn’t fun or rewarding as it was before.&lt;/p&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;There’s a lot of discontent now, but at the time there
+was only a little.&lt;a href=&quot;https://xn--izc.com/posts/intrinsic-motivation-an-anecdote/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn2&quot;&gt;&lt;p&gt;As of this writing (February of 2025), not any more.&lt;a href=&quot;https://xn--izc.com/posts/intrinsic-motivation-an-anecdote/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/aside&gt;
+</description>
+        </item>
+        <item>
+          <title>Buffer Bloat</title>
+          <link>https://xn--izc.com/posts/buffer-bloat/</link>
+          <guid>https://xn--izc.com/posts/buffer-bloat/</guid>
+          <pubDate>Fri, 03 Jan 2025 00:00:00 GMT</pubDate>
+          <description>&lt;h2 id=&quot;from-here-to-there-on-the-internet&quot;&gt;From Here To There On The
+Internet&lt;/h2&gt;
+&lt;aside class=&quot;sidenote-1&quot;&gt;
+&lt;p&gt;This article is an attempt to explain the concept of buffer bloat to
+someone not super familiar with networking. Why would someone not super
+familiar with networking need to know about buffer bloat? It was
+supposed to point out the effects of trying to &lt;em&gt;hide&lt;/em&gt; or
+&lt;em&gt;delay&lt;/em&gt; negative feedback loops.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;div class=&quot;sidenote-host-1&quot;&gt;
+&lt;p&gt;Devices on the internet including your phone, laptop, gaming console,
+refridgerator, etc. communicate by exchanging data &lt;em&gt;“packets”&lt;/em&gt;.
+They are of course not physical packets. It’s just a useful way to
+describe a unit of data sent over a wire or some other network
+connection. A packet could be thought of as, say, a single frame in a
+video or a small slice of audio, or a couple of paragraphs of text in a
+webpage. Devices on the internet will take a big chunk of data (e.g. a
+video clip) and break it down into smaller pieces (e.g. a single frame
+in the video clip) and then sends each of these pieces along the
+network. The receiving device puts the pieces back together to
+reconstruct the original thing (e.g. the video clip again)&lt;a href=&quot;https://xn--izc.com/posts/buffer-bloat/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/buffer-bloat/data.png&quot; alt=&quot;A data packet has some additional information like where it came from and where it is going&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;A data packet has some additional
+information like where it came from and where it is going&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Each packet has little pieces of extra information to help it get to
+where it needs to go. One piece is where it comes from (a source
+&lt;em&gt;“address”&lt;/em&gt;). Another is where it is going (a target
+&lt;em&gt;“address”&lt;/em&gt;). Devices along the network (like your internet
+provider’s networking equipment, satellites, etc.) use this extra
+information to correctly route the packets to their intended
+destination.&lt;/p&gt;
+&lt;p&gt;The network is large and constantly changing. So each device focuses
+only on getting the packet at least one step closer to its destination.
+The specific journey taken by a packet is unkonwn until it is on its
+way.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/buffer-bloat/network.png&quot; alt=&quot;A source and a target device are connected loosely by a bunch of intermediate connections and devices. In this example the we are only looking at devices that our data packets are likely to encounter along the way. Each device (shown as boxes) and each network connection (shown as pipes between boxes) are different. They differ in how much data they can handle and how fast.&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;A source and a target device are
+connected loosely by a bunch of intermediate connections and devices. In
+this example the we are only looking at devices that our data packets
+are likely to encounter along the way. Each device (shown as boxes) and
+each network connection (shown as &lt;em&gt;pipes&lt;/em&gt; between boxes) are
+different. They differ in how much data they can handle and how
+fast.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h2 id=&quot;faster-and-faster&quot;&gt;Faster and Faster&lt;/h2&gt;
+&lt;p&gt;So let’s say a video streaming service wants to send your mobile
+phone a video. First the streaming service breaks up the video into
+small packets. Then it throws all the packets into the network so that
+the network can deliver them to your phone.&lt;/p&gt;
+&lt;p&gt;If the streaming service pushes data out at exactly the
+&lt;em&gt;right&lt;/em&gt; speed and the network doesn’t break, then everything
+works out great. All the packets make it to the destination without
+hassle. But neither the streaming service nor your phone know what that
+&lt;em&gt;right&lt;/em&gt; speed is due to the aforementioned unknowability of the
+network.&lt;/p&gt;
+&lt;p&gt;Sending too much data can overwhelm some devices or connections in
+the network. If a device gets more data than it can handle, it’s likely
+that it will start dropping packets until it can catch up.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/buffer-bloat/speedo.png&quot; alt=&quot;Speedometer. Are we going too slow or too fast or maybe just right?&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Speedometer. Are we going too slow or too
+fast or maybe just right?&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Sending too little data isn’t great either. The speed might be too
+slow for streaming video. The receiving device will underperform. Users
+will be confused why their expensive broadband connection doesn’t let
+them watch streaming video.&lt;/p&gt;
+&lt;p&gt;So how does the device know how much data to send out?&lt;/p&gt;
+&lt;h2 id=&quot;flow-control&quot;&gt;Flow Control&lt;/h2&gt;
+&lt;p&gt;The mechanisms we use to regulate the flow of data is called
+&lt;em&gt;“flow control.”&lt;/em&gt; We are going to look at a method based on
+coordination between the sender and the receiver because &lt;em&gt;they are
+the only two actors in this scenario that we consider to be reliable and
+stable&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Different packets can take different paths See the network
+connections between &lt;code&gt;C-D&lt;/code&gt; and &lt;code&gt;C-E&lt;/code&gt; in the diagram
+above. Either of these paths can take a packet from &lt;code&gt;C&lt;/code&gt; to
+&lt;code&gt;F&lt;/code&gt;. Packets going down different paths will arrive at
+different times. Also, if the network gets overwhelmed or breaks, then
+some of the packets may not make it at all.&lt;/p&gt;
+&lt;p&gt;The reciever needs to know how to put the packets back in order and
+tell if any are missing.&lt;/p&gt;
+&lt;p&gt;To keep track of which packet is which, we can add some new
+information to the data packet: let’s call this the &lt;em&gt;sequence&lt;/em&gt;.
+As you might imagine, the sequence can start at 1 and count each packet
+until the transmission is over. Each packet now has a unique position in
+the list of packets.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/buffer-bloat/data-seq.png&quot; alt=&quot;The same data packet as before, but now it has a sequence field.&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;The same data packet as before, but now
+it has a &lt;em&gt;sequence&lt;/em&gt; field.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Great. But how do we know which packets made it to the other side?
+The recipient will need to let us know this information in some sort of
+reply. This reply is &lt;em&gt;also&lt;/em&gt; a data packet called an
+&lt;em&gt;acknowledgement&lt;/em&gt;. It’s sent from the original recipient back to
+the sender.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/buffer-bloat/data-ack.png&quot; alt=&quot;An example acknowledgement sent back to the sender. In this case the recipient is claiming that packets 4, 6, and 7 were missing. Note that the sender and recipient are switched since this packet is travelling “backwards”.&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;An example acknowledgement sent back to
+the sender. In this case the recipient is claiming that packets 4, 6,
+and 7 were missing. Note that the sender and recipient are switched
+since this packet is travelling “backwards”.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Ok so now we have all the information we need to perform some flow
+control.&lt;/p&gt;
+&lt;p&gt;We can now figure out the optimal rate of data transfer
+experimentally using some method like this:&lt;/p&gt;
+&lt;ol type=&quot;1&quot;&gt;
+&lt;li&gt;Send data as fast as possible.&lt;/li&gt;
+&lt;li&gt;If the recipient claims some packets were missing, then resend those
+packets and send packets &lt;strong&gt;slower&lt;/strong&gt; than before.&lt;/li&gt;
+&lt;li&gt;If the recipient hasn’t complained of missing packets in a while,
+try sending them &lt;strong&gt;faster&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;stuck-on-the-wire&quot;&gt;Stuck On The Wire&lt;/h2&gt;
+&lt;p&gt;Now imagine you sending data out - a rate of 100 packets per second.
+And let’s say it takes one second for a packet to get to the other side.
+Just before the end of the first second, the destination hasn’t received
+the first packet yet. But the sender has sent 100 packets.&lt;/p&gt;
+&lt;p&gt;Where are the packets?&lt;/p&gt;
+&lt;p&gt;We call this &lt;em&gt;“data on the wire’&lt;/em&gt;. Some data is indeed on the
+wire literally, but that tends to be a tiny amount. Most of the data on
+the wire is actually at each of the devices along the way either being
+received, or waiting to be sent.&lt;/p&gt;
+&lt;p&gt;So once we factor in the equipment in the middle, your path to the
+destination looks a little like this:&lt;/p&gt;
+&lt;p&gt;The device sees some data come in, stores it, figures out where to
+send it next, and sends it on its way. There could be other stuff these
+boxes could be doing, but that’s something for another post.&lt;/p&gt;
+&lt;p&gt;So from the perspective of a single box the world looks a bit like
+this:&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/buffer-bloat/network-with-data.png&quot; alt=&quot;The source has sent a bunch of packets. For a moment in time all the packets are either being transmitted somewhere or are waiting to be transmitted out of some device on the internet.&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;The source has sent a bunch of packets.
+For a moment in time all the packets are either being transmitted
+somewhere or are waiting to be transmitted out of some device on the
+internet.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;If this is the limit for the network and the sender keeps sending
+more packets, then there’s no room for the packet. So it gets
+&lt;em&gt;“dropped”&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;It is common for a device to be at the border of a “good” network and
+a “not”good” network. The goodness here is the amount of data that can
+be stuffed into it.&lt;/p&gt;
+&lt;p&gt;When a burst of data comes along, not much data can be stuffed into
+the small pipe before no more can fit.&lt;/p&gt;
+&lt;p&gt;As mentioned before, this means that the sender will need to
+&lt;em&gt;re-send&lt;/em&gt; the dropped packets and also slow down the rate of
+data. Given enough time the rate of data transfer will approach the
+throughput of the smallest pipe along the way.&lt;/p&gt;
+&lt;h2 id=&quot;buffer-bloat&quot;&gt;Buffer Bloat&lt;/h2&gt;
+&lt;p&gt;Some folks looked at this setup and decided to improve things. There
+are some valid reasons for doing what they did – which is why so many
+people did this. But it didn’t quite have the intended effect.&lt;/p&gt;
+&lt;p&gt;So, what was the thing they did? They added
+&lt;strong&gt;buffering&lt;/strong&gt;. Too much of it.&lt;/p&gt;
+&lt;p&gt;A &lt;em&gt;buffer&lt;/em&gt; is a resevoir where excess packets can be kept
+until the next link in the network is ready to accept more. What this
+means is that every device along the way is trying to do flow control by
+storing and resending packets instead of letting the sender know that
+packets are getting dropped.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/buffer-bloat/network-with-buffer.png&quot; alt=&quot;Device B is dropping all excess packets into a buffer.&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Device &lt;code&gt;B&lt;/code&gt; is dropping all
+excess packets into a buffer.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;As before, let’s say the sender is sending 200 packets every second.
+The network still can only transfer 100. The excess packets – another
+100 of them – gets tossed into the buffer.&lt;/p&gt;
+&lt;p&gt;What happens just one second later?&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/buffer-bloat/bob-1.png&quot; alt=&quot;A very next packet – which we are calling Bob enters the network. The buffer contains 100 packets. The rest of the network also has 100 packets queued.&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;A very next packet – which we are calling
+&lt;em&gt;Bob&lt;/em&gt; enters the network. The buffer contains 100 packets. The
+rest of the network also has 100 packets queued.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;The very next packet – let’s call it &lt;em&gt;Bob&lt;/em&gt; – that the sender
+tosses into the network will end up in the buffer since &lt;code&gt;B&lt;/code&gt;
+is still waiting for some of the first 100 packets to get past
+&lt;code&gt;C&lt;/code&gt;.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/buffer-bloat/bob-2.png&quot; alt=&quot;Bob immediately gets tossed into the buffer. It is now the last packet in the buffer.&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Bob immediately gets tossed into the
+buffer. It is now the last packet in the buffer.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Bob is the last packet in the buffer and must wait for all the other
+packets in the buffer to be send before it will get queued to sent
+out.&lt;/p&gt;
+&lt;p&gt;In another second, the first 100 packets make it to the target, and
+now the 100 packets that were in the buffer are back on the wire.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/buffer-bloat/bob-3.png&quot; alt=&quot;Bob is still in the buffer, but it is now the very next packet to get fished out and tossed back into the network.&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Bob is still in the buffer, but it is now
+the very next packet to get fished out and tossed back into the
+network.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Bob is still in the buffer but it’s the next one in line to get back
+on the network.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/buffer-bloat/bob-4.png&quot; alt=&quot;Hurray! Bob finally makes it to the destination.&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Hurray! Bob finally makes it to the
+destination.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Once back on the network it will take another second for Bob to reach
+the target.&lt;/p&gt;
+&lt;p&gt;Even under ideal conditions eventually the system settles on a new
+equilibrium with one difference.&lt;/p&gt;
+&lt;p&gt;The length of time it takes for the data packets to make their way to
+the destination is much larger. Packets accumulate in buffers along the
+network. Each buffer adds an additional delay for the packet.&lt;/p&gt;
+&lt;p&gt;Overall the throughput of the network is the same. But latency – the
+time it takes for a packet to get to the destination – is much
+larger.&lt;/p&gt;
+&lt;p&gt;The effect is even worse in practice because this setup resists any
+attempt at flow control. It delays the discovery of actual
+throughput.&lt;/p&gt;
+&lt;p&gt;This phenomenon is called &lt;strong&gt;buffer bloat&lt;/strong&gt;.&lt;/p&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;This is obviously a massive oversimplification. But
+doesn’t change the thesis presented next.&lt;a href=&quot;https://xn--izc.com/posts/buffer-bloat/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/aside&gt;
+</description>
+        </item>
+        <item>
+          <title>Fourteen Years</title>
+          <link>https://xn--izc.com/posts/fourteen-years/</link>
+          <guid>https://xn--izc.com/posts/fourteen-years/</guid>
+          <pubDate>Tue, 31 Dec 2024 00:00:00 GMT</pubDate>
+          <description>&lt;p&gt;It’s been fourteen years since I joined Google. Much has happened
+since then, and people think the old Google is dead. This is somewhat
+correct.&lt;/p&gt;
+&lt;p&gt;One way to understand what is happening is to compare and contrast
+the Google of yore and the present (as of late 2024) Google.&lt;/p&gt;
+&lt;h3 id=&quot;from-illegal-flower-tribute&quot;&gt;From Illegal Flower Tribute&lt;/h3&gt;
+&lt;p&gt;Perhaps the most defining moment for Google around 2010 was Google
+Search’s exit from China. &lt;a href=&quot;https://www.technologyreview.com/2018/12/19/138307/how-google-took-on-china-and-lost/&quot;&gt;The
+reasons for the exit and the aftermath&lt;/a&gt; are many. The high level
+reason was due to non-capitulance to the Chinese government’s demands
+for censorship and compromising user data.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/9/9c/IllegalFlowerTribute1.jpg&quot; class=&quot;noinvert&quot; alt=&quot;Illegal flower tribute on Wikipedia (CC-By-SA 3.0)&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Illegal_flower_tribute&quot;&gt;Illegal
+flower tribute on Wikipedia&lt;/a&gt; (&lt;a href=&quot;https://creativecommons.org/licenses/by-sa/3.0/&quot;&gt;CC-By-SA
+3.0&lt;/a&gt;)&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;In addtion, Google’s hand was forced by &lt;a href=&quot;https://en.wikipedia.org/wiki/Operation_Aurora&quot;&gt;Operation
+Aurora&lt;/a&gt;, a cyber attack on multiple US based companies including
+Google orchestrated by Chinese state actors.&lt;/p&gt;
+&lt;p&gt;The fascinating accounts of the events surrounding Operation Aurora
+is covered in a documentary called “Hacking Google”.&lt;/p&gt;
+&lt;figure&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/przDcQe6n5o?si=zQykFdvQP9FSHtZ2&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;
+&lt;/iframe&gt;
+&lt;figcaption&gt;
+Hacking Google - YouTube
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Amazon and Microsoft were in a similar situation as Google. But they
+were unwilling to turn away from access to the Chinese market. There was
+a palpable sense of pride that we were working for the right
+company.&lt;/p&gt;
+&lt;h3 id=&quot;to-project-nimbus&quot;&gt;To Project Nimbus&lt;/h3&gt;
+&lt;p&gt;Time changes everything.&lt;/p&gt;
+&lt;p&gt;Eight years later Google reneged on its stance against censorship by
+attempting to build a censored search engine called &lt;a href=&quot;https://en.wikipedia.org/wiki/Dragonfly_(search_engine)&quot;&gt;Project
+Dragonfly&lt;/a&gt;. The seeds of capitulance was well under way by this point
+despite the fact that the censored search engine project was ultimately
+dropped.&lt;/p&gt;
+&lt;p&gt;Fast-forward a few more years and we get to &lt;a href=&quot;https://en.wikipedia.org/wiki/Project_Nimbus&quot;&gt;Project Nimbus&lt;/a&gt;.
+Google signed the contract despite warnings by its lawyers that &lt;a href=&quot;https://www.nytimes.com/2024/12/03/technology/google-israel-contract-project-nimbus.html?unlocked_article_code=1.mU4.GWhH.uw8jj2kv7n-n&amp;amp;smid=url-share&quot;&gt;&lt;em&gt;“Google
+Cloud services could be used for, or linked to, the facilitation of
+human rights violations…”&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;One could argue that tools like Google Cloud services should be
+value-neutral. But even then, what matters here is that Google
+intentionally changed the terms-of-use for this contract to allow uses
+that were explicitly called out as going against Google’s values.&lt;/p&gt;
+&lt;h3 id=&quot;thats-where-we-are&quot;&gt;That’s Where We Are&lt;/h3&gt;
+&lt;p&gt;And that’s where we are right now.&lt;/p&gt;
+&lt;p&gt;Google has had some rough years during which its relationship with
+the rest of the tech ecosystem and the world in general has changed. The
+old &lt;em&gt;“focus on the user and all else shall follow”&lt;/em&gt; matra no
+longer applies. The company’s focus is now exclusively inwards where the
+fact that something benefits everyone is no longer justification to
+continue working on it. For example, &lt;a href=&quot;https://techcrunch.com/2024/05/01/google-lays-off-staff-from-flutter-dart-python-weeks-before-its-developer-conference/&quot;&gt;Google
+laid off most of the core Python team&lt;/a&gt;. While it may seem like a move
+towards cheaper labor, it is more than that. The previous Python team
+were also industry veterans who were effectively in the service of the
+broader Python community far beyond Google. The replacements are people
+who are tasked with maintaining internal tooling and not much else.&lt;/p&gt;
+&lt;p&gt;Google is no longer the giant benefactor of technology for everyone.
+However it’s still better than the other big tech companies. I keep
+telling myself that.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+          <title>I Moved This Blog To Eleventy</title>
+          <link>https://xn--izc.com/posts/moved-to-eleventy/</link>
+          <guid>https://xn--izc.com/posts/moved-to-eleventy/</guid>
+          <pubDate>Fri, 13 Dec 2024 00:00:00 GMT</pubDate>
+          <description>&lt;p&gt;Astute observers of this blog may have noticed that the blog looks
+suspiciously different lately. That’s because I changed the static site
+generator I was using.&lt;/p&gt;
+&lt;p&gt;Previously the &lt;a href=&quot;https://xn--izc.com/posts/how-this-blog-works/&quot;&gt;static site
+generator I used&lt;/a&gt; was &lt;a href=&quot;https://gohugo.io/&quot;&gt;Hugo&lt;/a&gt;. This
+arrangement worked for a while but it had some shortcomings.&lt;/p&gt;
+&lt;h2 id=&quot;growing-pains&quot;&gt;Growing Pains&lt;/h2&gt;
+&lt;p&gt;I was using &lt;a href=&quot;https://pandoc.org/&quot;&gt;Pandoc&lt;/a&gt; to convert
+Markdown to HTML. Hugo’s support for Pandoc had some limitations. For
+example, you can’t specify options for Pandoc or use a bibliography.
+When I moved the blog to Hugo, I lost some of these features. Attempting
+to close the gap I authored a &lt;a href=&quot;https://github.com/gohugoio/hugo/pull/7529&quot;&gt;patch that added
+support for configuring Pandoc&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Pandoc is extensible via filtering the AST of a document through a
+series of programs which can modify it. There is no restrction on the
+kinds of programs that you can use.&lt;/p&gt;
+&lt;p&gt;If Hugo allowed configuring all this via frontmatter, that may
+introduce some tricky security issues.&lt;/p&gt;
+&lt;p&gt;Say you download a Hugo theme from the web and try to build your
+site. A theme could include frontmatter that causes Pandoc to run an
+unsafe binary. That’s not great. So it is understandable that this kind
+of feature isn’t a part of Hugo proper&lt;a href=&quot;https://xn--izc.com/posts/moved-to-eleventy/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;.
+While my patch worked, it was safe only because I controlled every
+aspect of the blog.&lt;/p&gt;
+&lt;p&gt;While tinkering on this was fun, it created an additional headache.
+Namely, whenever and whereever I wanted to build my blog, I had to
+maintain a custom build of Hugo. After moving my build a couple of times
+maintaining a custom build became a painful chore.&lt;/p&gt;
+&lt;h2 id=&quot;the-exodus&quot;&gt;The Exodus&lt;/h2&gt;
+&lt;p&gt;So started the process of looking for an easy-to-use static site
+generator (hereafter SSG). My requirements were:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The SSG should support Markdown.&lt;/li&gt;
+&lt;li&gt;Markdown should support some of the Pandoc features I was using, or
+at least have the flexibility to extend support for those features.&lt;/li&gt;
+&lt;li&gt;Making this work should not require any custom patches.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.11ty.dev/&quot;&gt;Eleventy&lt;/a&gt; was &lt;em&gt;almost&lt;/em&gt; a
+no-brainer. People had high praise for it, including developer relations
+folks at Google. So I felt like that would be an easy move.&lt;/p&gt;
+&lt;p&gt;Eleventy’s Mardown support is based on &lt;a href=&quot;https://github.com/markdown-it/markdown-it&quot;&gt;Mardown-It&lt;/a&gt;. One
+thing that I liked about Markdown-It from the start is that there
+appeared to be people who are extending it to support various features
+of Pandoc. In fact I found plugins for basically all Pandoc features
+that I used in this blog. Everything was looking quite rosy.&lt;/p&gt;
+&lt;h2 id=&quot;templating&quot;&gt;Templating&lt;/h2&gt;
+&lt;h3 id=&quot;webc-eleventy-is-broken&quot;&gt;WebC + Eleventy Is Broken&lt;/h3&gt;
+&lt;p&gt;Eleventy supports a templating language called &lt;a href=&quot;https://www.11ty.dev/docs/languages/webc/&quot;&gt;WebC&lt;/a&gt;. It follows
+the web-component way of defining layouts, but can avoid much of the
+custom element overhead by opportunistically generating plain HTML. I
+had already accepted that switching the SSG meant rewriting layout
+templates, and using web components to do that seemed like a good idea&lt;a href=&quot;https://xn--izc.com/posts/moved-to-eleventy/#fn2&quot; class=&quot;footnote-ref&quot; id=&quot;fnref2&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A couple of standalone WebC based templates worked fine. But the
+moment I had nested templates, Eleventy hung and eventually crashed. I
+didn’t want to go on a side quest to debug it, and ultimately that
+would’ve likely led to be violating the “no local patches” rule. So that
+was that for WebC. If WebC was more robust or just worked, it would have
+been my choice of template engine.&lt;/p&gt;
+&lt;p&gt;One cool feature of using WebC with Eleventy is that bundling works
+trivially. For example, if you have a &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt; tag or
+a &lt;code&gt;&amp;lt;style&amp;gt;&lt;/code&gt; tag in a component, WebC automatically
+pulls the content into the relevant bundles. All other templating
+engines supported in Eleventy (save for third-party engines that I
+didn’t try) require manual labor to get stuff into the bundles.&lt;/p&gt;
+&lt;h3 id=&quot;nunjucks-eleventy-works&quot;&gt;Nunjucks + Eleventy Works&lt;/h3&gt;
+&lt;p&gt;The next templating language I looked at was Nunjucks. I had briefly
+looked at Liquid as well, but for my purposes Nunjucks and Liquid seemed
+to be quite similar. Nunjucks won out because it had safer defaults&lt;a href=&quot;https://xn--izc.com/posts/moved-to-eleventy/#fn3&quot; class=&quot;footnote-ref&quot; id=&quot;fnref3&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;handrolling&quot;&gt;Handrolling&lt;/h2&gt;
+&lt;h3 id=&quot;pandoc-again&quot;&gt;Pandoc Again&lt;/h3&gt;
+&lt;p&gt;I tried to rely only on Markdown-It for this blog. But very soon I
+had a big stack of extensions to support the various features I needed,
+like supporting &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;s, bibliography, and attributes.
+While the Markdown-It ecosystem is extensive, it also introduces a lot
+of confusion. For example, there are multiple packages that all provide
+the same functionality and &lt;em&gt;also based on the same base package&lt;/em&gt;.
+Keeping track of all this was starting to be a pain. Also, I had trouble
+getting block level containers working.&lt;/p&gt;
+&lt;p&gt;After a while I decided not to waste time trying to replicate
+features that already existed in Pandoc. So I wrote a little library
+that invoked Pandoc within Eleventy to convert Markdown to HTML. It was
+a little slower, but worked out great.&lt;/p&gt;
+&lt;h3 id=&quot;bundling-files&quot;&gt;Bundling Files&lt;/h3&gt;
+&lt;p&gt;While it is possible to add content to bundles (like CSS and JS),
+curiously it was not possible to stuff files into said bundles. The
+suggested method was to do something like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  {% css %}
+    {% include &amp;quot;some-file.css&amp;quot; %}
+
+    body {
+        // other CSS.
+    }
+  {% endcss %}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This seems like a good idea, but there is one crucial issue: &lt;em&gt;The
+contents of the included file (&lt;code&gt;some-file.css&lt;/code&gt; in the example
+above) is also processed by the same templating engine&lt;/em&gt;. If the file
+doesn’t contain any sequences that look like template tokens, then we
+are good. But this is asking for trouble.&lt;/p&gt;
+&lt;p&gt;So I wrote a custom tag called &lt;code&gt;bundleFile&lt;/code&gt; that can take
+the contents of a file and stuff it directly into a bundle. The earlier
+example now looks like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  {% bundleFile &amp;quot;some-file.css&amp;quot; %}
+
+  {% css %}
+    body {
+        // other CSS
+    }
+  {% endcss %}&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;sassy&quot;&gt;SASSy&lt;/h3&gt;
+&lt;p&gt;Eleventy doesn’t support SASS out of the box, but there are examples
+in the documentation for how you can set it up. But all of the examples
+assume that you have SASS or SCSS files that you are going to conver to
+CSS, and then serve without bundling. I wanted to be able to compile
+SASS and stuff the resulting CSS into a bundle.&lt;/p&gt;
+&lt;p&gt;So alongside the &lt;code&gt;bundleFile&lt;/code&gt; shortcode, I added a
+&lt;code&gt;bundleScss&lt;/code&gt; shortcode so I can do stuff like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;   {% bundleScss &amp;quot;my-styles.scss&amp;quot; %}&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;katex&quot;&gt;Katex&lt;/h3&gt;
+&lt;p&gt;I like Katex for my math typesetting. Pandoc supports it out of the
+box. But the rendered HTML needs to invoke Katex in the client to render
+the math. I wanted to avoid this step entirely and try to render Katex
+on the server.&lt;/p&gt;
+&lt;p&gt;This was a pain to do with Hugo, but since Eleventy was alredy runing
+in Node, server-side rendering is a breeze.&lt;/p&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Overall I found Eleventy fun to work with. My gripes are mostly with
+the documentation which lacks a reference. It’s a pain to go through
+tutorial-like documents to find out what exactly gets passed to a
+shortcode or what to do when a shortcode adds a dependency. I made way
+too many trips to the 11ty GitHub repo. The right number of required
+visits should be zero.&lt;/p&gt;
+&lt;p&gt;In the coming weeks I’ll package Eleventy Pandoc support and some of
+the shortcodes so others can use them.&lt;/p&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;There are ways to mitigate this problem. For example, we
+could restrict which flags can be inherited from themes, or require that
+certain options can only be set from the top level
+&lt;code&gt;hugo.yaml&lt;/code&gt; file that the user controls.&lt;a href=&quot;https://xn--izc.com/posts/moved-to-eleventy/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn2&quot;&gt;&lt;p&gt;Not quite all the way true because use of shadow DOM and
+custom elements was not a requirement.&lt;a href=&quot;https://xn--izc.com/posts/moved-to-eleventy/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn3&quot;&gt;&lt;p&gt;The defaults I’m referring to is what happens with a tag
+like &lt;code&gt;{{ foo }}&lt;/code&gt; where the contents of the variable
+&lt;code&gt;foo&lt;/code&gt; would be inserted into the document. Nunjucks will
+treat the contents as unsafe and requires manually opting into unsafe
+injection via &lt;code&gt;{{ foo | safe }}&lt;/code&gt;. Liquid will insert the
+contents with no escaping.&lt;a href=&quot;https://xn--izc.com/posts/moved-to-eleventy/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/aside&gt;
+</description>
+        </item>
+  </channel>
+</rss>

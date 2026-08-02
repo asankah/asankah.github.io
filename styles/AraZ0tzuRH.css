@@ -1327,6 +1327,14 @@ body {
     text-wrap: balance;
     color: var(--h1-text-color);
   }
+  body > footer {
+    font-family: "Source Serif 4", Georgia, Cambria, "Times New Roman", Times, serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-small);
+    line-height: 1.5;
+  }
 }
 @layer article {
   article header {
