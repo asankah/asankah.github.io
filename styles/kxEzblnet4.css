@@ -2439,6 +2439,9 @@ nav .disabled {
   .summary-row img {
     filter: invert(100%);
   }
+  .banner-image {
+    filter: invert(100%);
+  }
   .summary-row .noinvert {
     filter: none;
   }

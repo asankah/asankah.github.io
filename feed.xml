@@ -5,13 +5,154 @@
   <link href="https://xn--izc.com/feed.xml" rel="self" />
   <link href="https://xn--izc.com/" />
   <updated>
-    2026-08-02T00:00:00Z
+    2026-08-16T00:00:00Z
   </updated>
   <id>https://xn--izc.com/</id>
   <author>
     <name>Asanka Herath</name>
     <email>asanka@gmail.com</email>
   </author>
+    <entry>
+      <title>Hot vs. Cold Cognition</title>
+      <link href="https://xn--izc.com/posts/hot-vs-cold-cognition/" />
+      <updated>2026-08-16T00:00:00Z</updated>
+      <id>https://xn--izc.com/posts/hot-vs-cold-cognition/</id>
+      <content xml:lang="en" type="html">
+        &lt;dl&gt;
+&lt;dt&gt;cold cognition&lt;/dt&gt;
+&lt;dd&gt;
+&lt;p&gt;&lt;span class=&quot;phonetic&quot;&gt;/kōld käɡˈniSHən/&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;variant&quot;&gt;noun&lt;/span&gt; reasoning that is deliberate,
+rule-based, and largely indifferent to the reasoner’s emotional
+state.&lt;/p&gt;
+&lt;/dd&gt;
+&lt;dt&gt;hot cognition&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/dt&gt;
+&lt;dd&gt;
+&lt;p&gt;&lt;span class=&quot;phonetic&quot;&gt;/hät käɡˈniSHən/&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;variant&quot;&gt;noun&lt;/span&gt; judgment that is entangled with
+feeling — a sense of rightness or wrongness arrived at before, or
+instead of, any explicit reasoning.&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fn2&quot; class=&quot;footnote-ref&quot; id=&quot;fnref2&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;Ask someone why they didn’t trust a person the moment they walked
+into the room, and you’ll get an answer eventually. But the distrust
+came first. The reasons are a story told afterward, to a mind that
+already knew.&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fn3&quot; class=&quot;footnote-ref&quot; id=&quot;fnref3&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;That’s hot cognition. It’s not sloppy thinking, and it’s not the
+opposite of intelligence. It’s judgment that is inseparable from
+feeling, built up over a lifetime of encounters that never got written
+down anywhere, least of all in language.&lt;/p&gt;
+&lt;p&gt;Cold cognition is the other kind. Given the rules, follow them. Given
+the data, compute the answer. It doesn’t need you to have lived any
+particular life. It just needs you to apply the procedure correctly.&lt;/p&gt;
+&lt;p&gt;Most of what we’ve automated so far is cold cognition. Spreadsheets,
+compilers, search indexes, chess engines — all of it is procedure
+applied faithfully, at a scale and speed no person can match.&lt;/p&gt;
+&lt;p&gt;Large language models complicate the picture because they can now
+produce something that reads like judgment. Ask one whether a business
+plan is convincing, whether a sentence is cruel, whether a stranger’s
+argument is trustworthy, and it will answer with what looks exactly like
+a vibe.&lt;/p&gt;
+&lt;p&gt;But it isn’t one, not in the sense that matters. It’s statistical
+mimicry dressed up like genuine compassion.&lt;/p&gt;
+&lt;p&gt;A model’s “sense” of a thing is a statistical residue of what
+millions of people have said about similar things. It’s an average taken
+over other people’s hot cognition, compressed into weights. When it
+renders a judgment, it is not consulting a felt history of its own. It
+is predicting what a person — many people, blended — would say next.&lt;/p&gt;
+&lt;p&gt;That can be extraordinarily useful. It can also be right more often
+than any single person, in the way that a crowd’s guess at the weight of
+an ox beats most individual guesses.&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fn4&quot; class=&quot;footnote-ref&quot; id=&quot;fnref4&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt; But being a good
+aggregate of other people’s judgment is not the same thing as being a
+source of judgment.&lt;/p&gt;
+&lt;p&gt;The distinction matters because we are in a hurry to automate
+everything we can, and cold and hot cognition don’t fail the same way
+when automated carelessly.&lt;/p&gt;
+&lt;p&gt;Automate cold cognition and the worst case is a bug. Automate hot
+cognition — hand over the vibe check, the trust call, the sense of
+whether something is off — and you’ve quietly replaced a person’s lived
+judgment with a blended echo of everyone else’s, laundered to look like
+a heartfelt sentiment.&lt;/p&gt;
+&lt;p&gt;None of this means AI has no place in judgment-adjacent work. It
+means the place is augmentation, not substitution: surface the pattern,
+flag the precedent, do the cold-cognition legwork that judgment depends
+on — and leave the actual call, the part that has to come from a life
+actually lived, to the human who’s still standing there when the
+consequences come home to roost.&lt;/p&gt;
+&lt;h2 id=&quot;hot-vs.-cold-cognition-in-literature&quot;&gt;Hot vs. cold cognition in
+literature&lt;/h2&gt;
+&lt;p&gt;The terms are old, but the argument keeps getting re-litigated with
+new tools.&lt;/p&gt;
+&lt;p&gt;Robert Abelson’s 1963 chapter is where “hot cognition” enters the
+record, and it’s worth pausing on the context: he was building computer
+simulations of personality — specifically, of how people revise their
+beliefs — and trying to model how emotionally loaded input distorts that
+revision compared to neutral, algorithmic updating.&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fn5&quot; class=&quot;footnote-ref&quot; id=&quot;fnref5&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;5&lt;/sup&gt;&lt;/a&gt;
+Janet Metcalfe and Walter Mischel gave the framework its fullest
+psychological treatment in 1999, modeling self-control as a contest
+between a “hot,” impulsive, reflexive system and a “cool,” slow,
+strategic one — the paper most commonly cited when people invoke
+hot/cold cognition today.&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fn6&quot; class=&quot;footnote-ref&quot; id=&quot;fnref6&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;6&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The more directly relevant work is recent and empirical rather than
+theoretical. A team at Sapienza University of Rome benchmarked six large
+language models against expert ratings (NewsGuard, Media Bias/Fact
+Check) and human evaluators on judgments of news source credibility. The
+models often matched expert conclusions, but the paper argues the match
+is largely coincidental: models lean on lexical association and
+statistical priors rather than the contextual, normative reasoning
+experts actually use to get there. They call the resulting mismatch
+between apparent and actual process “epistemia” — the illusion of
+knowledge that surface plausibility creates.&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fn7&quot; class=&quot;footnote-ref&quot; id=&quot;fnref7&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;7&lt;/sup&gt;&lt;/a&gt; A
+companion commentary sharpened the framing further, describing the
+models’ output as “counterfeit judgments”: convincing enough to pass as
+the real thing, but produced by a different process entirely.&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fn8&quot; class=&quot;footnote-ref&quot; id=&quot;fnref8&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;8&lt;/sup&gt;&lt;/a&gt; That’s close to a direct, empirical
+version of the claim this post is making by argument alone — that a
+model’s vibe is a simulation of judgment, not a source of it.&lt;/p&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;Abelson, R. P. (1963). “Computer simulation of ‘hot
+cognition.’” In S. Tomkins &amp;amp; S. Messick (Eds.), &lt;em&gt;Computer
+Simulation of Personality&lt;/em&gt; (pp. 277–302). New York: Wiley.&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn2&quot;&gt;&lt;p&gt;The idea that affect can precede and operate
+independently of reasoned inference is most associated with Robert
+Zajonc’s 1980 paper “Feeling and Thinking: Preferences Need No
+Inferences,” which argued against the then-dominant view that emotion is
+downstream of cognitive appraisal. &lt;a href=&quot;https://doi.org/10.1037/0003-066X.35.2.151&quot; class=&quot;cite&quot;&gt;via APA
+PsycNET&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn3&quot;&gt;&lt;p&gt;This is an established, if still debated, finding rather
+than a rhetorical flourish. Nisbett and Wilson’s classic 1977 studies
+found that people routinely report confident reasons for judgments that
+could not have actually driven them, with no awareness that they’re
+confabulating. &lt;a href=&quot;https://doi.org/10.1037/0033-295X.84.3.231&quot; class=&quot;cite&quot;&gt;via APA PsycNET&lt;/a&gt; Jonathan Haidt’s social intuitionist
+model builds on this directly, arguing that moral judgment in particular
+is typically an intuition first, with reasoning arriving afterward
+mainly to construct a justification for a conclusion already reached. &lt;a href=&quot;https://doi.org/10.1037/0033-295X.108.4.814&quot; class=&quot;cite&quot;&gt;via APA
+PsycNET&lt;/a&gt; The open question in the field isn’t whether this happens,
+but how often reasoning is purely post hoc versus genuinely capable of
+revising the initial intuition.&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn4&quot;&gt;&lt;p&gt;Francis Galton’s 1907 note in &lt;em&gt;Nature&lt;/em&gt;, “Vox
+Populi,” describes a county-fair contest to guess the weight of an ox:
+the median of 787 guesses came within 1% of the true weight, even though
+almost no individual guess did. &lt;a href=&quot;https://doi.org/10.1038/075450a0&quot; class=&quot;cite&quot;&gt;via Nature&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fnref4&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn5&quot;&gt;&lt;p&gt;Abelson, R. P. (1963). “Computer simulation of ‘hot
+cognition.’” In S. Tomkins &amp;amp; S. Messick (Eds.), &lt;em&gt;Computer
+Simulation of Personality&lt;/em&gt; (pp. 277–302). New York: Wiley.&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fnref5&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn6&quot;&gt;&lt;p&gt;Metcalfe, J., &amp;amp; Mischel, W. (1999). “A
+Hot/Cool-System Analysis of Delay of Gratification: Dynamics of
+Willpower.” &lt;em&gt;Psychological Review&lt;/em&gt;, 106(1), 3–19. &lt;a href=&quot;https://doi.org/10.1037/0033-295X.106.1.3&quot; class=&quot;cite&quot;&gt;via APA
+PsycNET&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fnref6&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn7&quot;&gt;&lt;p&gt;Loru, E., Nudo, J., &amp;amp; Quattrociocchi, W. (2025).
+“The simulation of judgment in LLMs.” &lt;em&gt;PNAS&lt;/em&gt;, 122(42). &lt;a href=&quot;https://doi.org/10.1073/pnas.2518443122&quot; class=&quot;cite&quot;&gt;via
+PNAS&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fnref7&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn8&quot;&gt;&lt;p&gt;Perc, M. (2025). “Counterfeit judgments in large
+language models.” &lt;em&gt;PNAS&lt;/em&gt; (Commentary), 122(48). &lt;a href=&quot;https://doi.org/10.1073/pnas.2528527122&quot; class=&quot;cite&quot;&gt;via
+PNAS&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fnref8&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/aside&gt;
+
+      </content>
+    </entry>
     <entry>
       <title>Welcome, our AI User Agents</title>
       <link href="https://xn--izc.com/posts/ai-user-agents/" />

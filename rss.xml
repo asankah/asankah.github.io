@@ -7,6 +7,145 @@
     <language>en</language>
     <atom:link href="https://xn--izc.com/rss.xml" rel="self" type="application/rss+xml" />
         <item>
+          <title>Hot vs. Cold Cognition</title>
+          <link>https://xn--izc.com/posts/hot-vs-cold-cognition/</link>
+          <guid>https://xn--izc.com/posts/hot-vs-cold-cognition/</guid>
+          <pubDate>Sun, 16 Aug 2026 00:00:00 GMT</pubDate>
+          <description>&lt;dl&gt;
+&lt;dt&gt;cold cognition&lt;/dt&gt;
+&lt;dd&gt;
+&lt;p&gt;&lt;span class=&quot;phonetic&quot;&gt;/kōld käɡˈniSHən/&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;variant&quot;&gt;noun&lt;/span&gt; reasoning that is deliberate,
+rule-based, and largely indifferent to the reasoner’s emotional
+state.&lt;/p&gt;
+&lt;/dd&gt;
+&lt;dt&gt;hot cognition&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/dt&gt;
+&lt;dd&gt;
+&lt;p&gt;&lt;span class=&quot;phonetic&quot;&gt;/hät käɡˈniSHən/&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;variant&quot;&gt;noun&lt;/span&gt; judgment that is entangled with
+feeling — a sense of rightness or wrongness arrived at before, or
+instead of, any explicit reasoning.&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fn2&quot; class=&quot;footnote-ref&quot; id=&quot;fnref2&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;Ask someone why they didn’t trust a person the moment they walked
+into the room, and you’ll get an answer eventually. But the distrust
+came first. The reasons are a story told afterward, to a mind that
+already knew.&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fn3&quot; class=&quot;footnote-ref&quot; id=&quot;fnref3&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;That’s hot cognition. It’s not sloppy thinking, and it’s not the
+opposite of intelligence. It’s judgment that is inseparable from
+feeling, built up over a lifetime of encounters that never got written
+down anywhere, least of all in language.&lt;/p&gt;
+&lt;p&gt;Cold cognition is the other kind. Given the rules, follow them. Given
+the data, compute the answer. It doesn’t need you to have lived any
+particular life. It just needs you to apply the procedure correctly.&lt;/p&gt;
+&lt;p&gt;Most of what we’ve automated so far is cold cognition. Spreadsheets,
+compilers, search indexes, chess engines — all of it is procedure
+applied faithfully, at a scale and speed no person can match.&lt;/p&gt;
+&lt;p&gt;Large language models complicate the picture because they can now
+produce something that reads like judgment. Ask one whether a business
+plan is convincing, whether a sentence is cruel, whether a stranger’s
+argument is trustworthy, and it will answer with what looks exactly like
+a vibe.&lt;/p&gt;
+&lt;p&gt;But it isn’t one, not in the sense that matters. It’s statistical
+mimicry dressed up like genuine compassion.&lt;/p&gt;
+&lt;p&gt;A model’s “sense” of a thing is a statistical residue of what
+millions of people have said about similar things. It’s an average taken
+over other people’s hot cognition, compressed into weights. When it
+renders a judgment, it is not consulting a felt history of its own. It
+is predicting what a person — many people, blended — would say next.&lt;/p&gt;
+&lt;p&gt;That can be extraordinarily useful. It can also be right more often
+than any single person, in the way that a crowd’s guess at the weight of
+an ox beats most individual guesses.&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fn4&quot; class=&quot;footnote-ref&quot; id=&quot;fnref4&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt; But being a good
+aggregate of other people’s judgment is not the same thing as being a
+source of judgment.&lt;/p&gt;
+&lt;p&gt;The distinction matters because we are in a hurry to automate
+everything we can, and cold and hot cognition don’t fail the same way
+when automated carelessly.&lt;/p&gt;
+&lt;p&gt;Automate cold cognition and the worst case is a bug. Automate hot
+cognition — hand over the vibe check, the trust call, the sense of
+whether something is off — and you’ve quietly replaced a person’s lived
+judgment with a blended echo of everyone else’s, laundered to look like
+a heartfelt sentiment.&lt;/p&gt;
+&lt;p&gt;None of this means AI has no place in judgment-adjacent work. It
+means the place is augmentation, not substitution: surface the pattern,
+flag the precedent, do the cold-cognition legwork that judgment depends
+on — and leave the actual call, the part that has to come from a life
+actually lived, to the human who’s still standing there when the
+consequences come home to roost.&lt;/p&gt;
+&lt;h2 id=&quot;hot-vs.-cold-cognition-in-literature&quot;&gt;Hot vs. cold cognition in
+literature&lt;/h2&gt;
+&lt;p&gt;The terms are old, but the argument keeps getting re-litigated with
+new tools.&lt;/p&gt;
+&lt;p&gt;Robert Abelson’s 1963 chapter is where “hot cognition” enters the
+record, and it’s worth pausing on the context: he was building computer
+simulations of personality — specifically, of how people revise their
+beliefs — and trying to model how emotionally loaded input distorts that
+revision compared to neutral, algorithmic updating.&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fn5&quot; class=&quot;footnote-ref&quot; id=&quot;fnref5&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;5&lt;/sup&gt;&lt;/a&gt;
+Janet Metcalfe and Walter Mischel gave the framework its fullest
+psychological treatment in 1999, modeling self-control as a contest
+between a “hot,” impulsive, reflexive system and a “cool,” slow,
+strategic one — the paper most commonly cited when people invoke
+hot/cold cognition today.&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fn6&quot; class=&quot;footnote-ref&quot; id=&quot;fnref6&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;6&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The more directly relevant work is recent and empirical rather than
+theoretical. A team at Sapienza University of Rome benchmarked six large
+language models against expert ratings (NewsGuard, Media Bias/Fact
+Check) and human evaluators on judgments of news source credibility. The
+models often matched expert conclusions, but the paper argues the match
+is largely coincidental: models lean on lexical association and
+statistical priors rather than the contextual, normative reasoning
+experts actually use to get there. They call the resulting mismatch
+between apparent and actual process “epistemia” — the illusion of
+knowledge that surface plausibility creates.&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fn7&quot; class=&quot;footnote-ref&quot; id=&quot;fnref7&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;7&lt;/sup&gt;&lt;/a&gt; A
+companion commentary sharpened the framing further, describing the
+models’ output as “counterfeit judgments”: convincing enough to pass as
+the real thing, but produced by a different process entirely.&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fn8&quot; class=&quot;footnote-ref&quot; id=&quot;fnref8&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;8&lt;/sup&gt;&lt;/a&gt; That’s close to a direct, empirical
+version of the claim this post is making by argument alone — that a
+model’s vibe is a simulation of judgment, not a source of it.&lt;/p&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;Abelson, R. P. (1963). “Computer simulation of ‘hot
+cognition.’” In S. Tomkins &amp;amp; S. Messick (Eds.), &lt;em&gt;Computer
+Simulation of Personality&lt;/em&gt; (pp. 277–302). New York: Wiley.&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn2&quot;&gt;&lt;p&gt;The idea that affect can precede and operate
+independently of reasoned inference is most associated with Robert
+Zajonc’s 1980 paper “Feeling and Thinking: Preferences Need No
+Inferences,” which argued against the then-dominant view that emotion is
+downstream of cognitive appraisal. &lt;a href=&quot;https://doi.org/10.1037/0003-066X.35.2.151&quot; class=&quot;cite&quot;&gt;via APA
+PsycNET&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn3&quot;&gt;&lt;p&gt;This is an established, if still debated, finding rather
+than a rhetorical flourish. Nisbett and Wilson’s classic 1977 studies
+found that people routinely report confident reasons for judgments that
+could not have actually driven them, with no awareness that they’re
+confabulating. &lt;a href=&quot;https://doi.org/10.1037/0033-295X.84.3.231&quot; class=&quot;cite&quot;&gt;via APA PsycNET&lt;/a&gt; Jonathan Haidt’s social intuitionist
+model builds on this directly, arguing that moral judgment in particular
+is typically an intuition first, with reasoning arriving afterward
+mainly to construct a justification for a conclusion already reached. &lt;a href=&quot;https://doi.org/10.1037/0033-295X.108.4.814&quot; class=&quot;cite&quot;&gt;via APA
+PsycNET&lt;/a&gt; The open question in the field isn’t whether this happens,
+but how often reasoning is purely post hoc versus genuinely capable of
+revising the initial intuition.&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn4&quot;&gt;&lt;p&gt;Francis Galton’s 1907 note in &lt;em&gt;Nature&lt;/em&gt;, “Vox
+Populi,” describes a county-fair contest to guess the weight of an ox:
+the median of 787 guesses came within 1% of the true weight, even though
+almost no individual guess did. &lt;a href=&quot;https://doi.org/10.1038/075450a0&quot; class=&quot;cite&quot;&gt;via Nature&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fnref4&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn5&quot;&gt;&lt;p&gt;Abelson, R. P. (1963). “Computer simulation of ‘hot
+cognition.’” In S. Tomkins &amp;amp; S. Messick (Eds.), &lt;em&gt;Computer
+Simulation of Personality&lt;/em&gt; (pp. 277–302). New York: Wiley.&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fnref5&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn6&quot;&gt;&lt;p&gt;Metcalfe, J., &amp;amp; Mischel, W. (1999). “A
+Hot/Cool-System Analysis of Delay of Gratification: Dynamics of
+Willpower.” &lt;em&gt;Psychological Review&lt;/em&gt;, 106(1), 3–19. &lt;a href=&quot;https://doi.org/10.1037/0033-295X.106.1.3&quot; class=&quot;cite&quot;&gt;via APA
+PsycNET&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fnref6&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn7&quot;&gt;&lt;p&gt;Loru, E., Nudo, J., &amp;amp; Quattrociocchi, W. (2025).
+“The simulation of judgment in LLMs.” &lt;em&gt;PNAS&lt;/em&gt;, 122(42). &lt;a href=&quot;https://doi.org/10.1073/pnas.2518443122&quot; class=&quot;cite&quot;&gt;via
+PNAS&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fnref7&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn8&quot;&gt;&lt;p&gt;Perc, M. (2025). “Counterfeit judgments in large
+language models.” &lt;em&gt;PNAS&lt;/em&gt; (Commentary), 122(48). &lt;a href=&quot;https://doi.org/10.1073/pnas.2528527122&quot; class=&quot;cite&quot;&gt;via
+PNAS&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fnref8&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/aside&gt;
+</description>
+        </item>
+        <item>
           <title>Welcome, our AI User Agents</title>
           <link>https://xn--izc.com/posts/ai-user-agents/</link>
           <guid>https://xn--izc.com/posts/ai-user-agents/</guid>
@@ -2469,163 +2608,6 @@ who are tasked with maintaining internal tooling and not much else.&lt;/p&gt;
 &lt;p&gt;Google is no longer the giant benefactor of technology for everyone.
 However it’s still better than the other big tech companies. I keep
 telling myself that.&lt;/p&gt;
-</description>
-        </item>
-        <item>
-          <title>I Moved This Blog To Eleventy</title>
-          <link>https://xn--izc.com/posts/moved-to-eleventy/</link>
-          <guid>https://xn--izc.com/posts/moved-to-eleventy/</guid>
-          <pubDate>Fri, 13 Dec 2024 00:00:00 GMT</pubDate>
-          <description>&lt;p&gt;Astute observers of this blog may have noticed that the blog looks
-suspiciously different lately. That’s because I changed the static site
-generator I was using.&lt;/p&gt;
-&lt;p&gt;Previously the &lt;a href=&quot;https://xn--izc.com/posts/how-this-blog-works/&quot;&gt;static site
-generator I used&lt;/a&gt; was &lt;a href=&quot;https://gohugo.io/&quot;&gt;Hugo&lt;/a&gt;. This
-arrangement worked for a while but it had some shortcomings.&lt;/p&gt;
-&lt;h2 id=&quot;growing-pains&quot;&gt;Growing Pains&lt;/h2&gt;
-&lt;p&gt;I was using &lt;a href=&quot;https://pandoc.org/&quot;&gt;Pandoc&lt;/a&gt; to convert
-Markdown to HTML. Hugo’s support for Pandoc had some limitations. For
-example, you can’t specify options for Pandoc or use a bibliography.
-When I moved the blog to Hugo, I lost some of these features. Attempting
-to close the gap I authored a &lt;a href=&quot;https://github.com/gohugoio/hugo/pull/7529&quot;&gt;patch that added
-support for configuring Pandoc&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Pandoc is extensible via filtering the AST of a document through a
-series of programs which can modify it. There is no restrction on the
-kinds of programs that you can use.&lt;/p&gt;
-&lt;p&gt;If Hugo allowed configuring all this via frontmatter, that may
-introduce some tricky security issues.&lt;/p&gt;
-&lt;p&gt;Say you download a Hugo theme from the web and try to build your
-site. A theme could include frontmatter that causes Pandoc to run an
-unsafe binary. That’s not great. So it is understandable that this kind
-of feature isn’t a part of Hugo proper&lt;a href=&quot;https://xn--izc.com/posts/moved-to-eleventy/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;.
-While my patch worked, it was safe only because I controlled every
-aspect of the blog.&lt;/p&gt;
-&lt;p&gt;While tinkering on this was fun, it created an additional headache.
-Namely, whenever and whereever I wanted to build my blog, I had to
-maintain a custom build of Hugo. After moving my build a couple of times
-maintaining a custom build became a painful chore.&lt;/p&gt;
-&lt;h2 id=&quot;the-exodus&quot;&gt;The Exodus&lt;/h2&gt;
-&lt;p&gt;So started the process of looking for an easy-to-use static site
-generator (hereafter SSG). My requirements were:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The SSG should support Markdown.&lt;/li&gt;
-&lt;li&gt;Markdown should support some of the Pandoc features I was using, or
-at least have the flexibility to extend support for those features.&lt;/li&gt;
-&lt;li&gt;Making this work should not require any custom patches.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.11ty.dev/&quot;&gt;Eleventy&lt;/a&gt; was &lt;em&gt;almost&lt;/em&gt; a
-no-brainer. People had high praise for it, including developer relations
-folks at Google. So I felt like that would be an easy move.&lt;/p&gt;
-&lt;p&gt;Eleventy’s Mardown support is based on &lt;a href=&quot;https://github.com/markdown-it/markdown-it&quot;&gt;Mardown-It&lt;/a&gt;. One
-thing that I liked about Markdown-It from the start is that there
-appeared to be people who are extending it to support various features
-of Pandoc. In fact I found plugins for basically all Pandoc features
-that I used in this blog. Everything was looking quite rosy.&lt;/p&gt;
-&lt;h2 id=&quot;templating&quot;&gt;Templating&lt;/h2&gt;
-&lt;h3 id=&quot;webc-eleventy-is-broken&quot;&gt;WebC + Eleventy Is Broken&lt;/h3&gt;
-&lt;p&gt;Eleventy supports a templating language called &lt;a href=&quot;https://www.11ty.dev/docs/languages/webc/&quot;&gt;WebC&lt;/a&gt;. It follows
-the web-component way of defining layouts, but can avoid much of the
-custom element overhead by opportunistically generating plain HTML. I
-had already accepted that switching the SSG meant rewriting layout
-templates, and using web components to do that seemed like a good idea&lt;a href=&quot;https://xn--izc.com/posts/moved-to-eleventy/#fn2&quot; class=&quot;footnote-ref&quot; id=&quot;fnref2&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;A couple of standalone WebC based templates worked fine. But the
-moment I had nested templates, Eleventy hung and eventually crashed. I
-didn’t want to go on a side quest to debug it, and ultimately that
-would’ve likely led to be violating the “no local patches” rule. So that
-was that for WebC. If WebC was more robust or just worked, it would have
-been my choice of template engine.&lt;/p&gt;
-&lt;p&gt;One cool feature of using WebC with Eleventy is that bundling works
-trivially. For example, if you have a &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt; tag or
-a &lt;code&gt;&amp;lt;style&amp;gt;&lt;/code&gt; tag in a component, WebC automatically
-pulls the content into the relevant bundles. All other templating
-engines supported in Eleventy (save for third-party engines that I
-didn’t try) require manual labor to get stuff into the bundles.&lt;/p&gt;
-&lt;h3 id=&quot;nunjucks-eleventy-works&quot;&gt;Nunjucks + Eleventy Works&lt;/h3&gt;
-&lt;p&gt;The next templating language I looked at was Nunjucks. I had briefly
-looked at Liquid as well, but for my purposes Nunjucks and Liquid seemed
-to be quite similar. Nunjucks won out because it had safer defaults&lt;a href=&quot;https://xn--izc.com/posts/moved-to-eleventy/#fn3&quot; class=&quot;footnote-ref&quot; id=&quot;fnref3&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;handrolling&quot;&gt;Handrolling&lt;/h2&gt;
-&lt;h3 id=&quot;pandoc-again&quot;&gt;Pandoc Again&lt;/h3&gt;
-&lt;p&gt;I tried to rely only on Markdown-It for this blog. But very soon I
-had a big stack of extensions to support the various features I needed,
-like supporting &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;s, bibliography, and attributes.
-While the Markdown-It ecosystem is extensive, it also introduces a lot
-of confusion. For example, there are multiple packages that all provide
-the same functionality and &lt;em&gt;also based on the same base package&lt;/em&gt;.
-Keeping track of all this was starting to be a pain. Also, I had trouble
-getting block level containers working.&lt;/p&gt;
-&lt;p&gt;After a while I decided not to waste time trying to replicate
-features that already existed in Pandoc. So I wrote a little library
-that invoked Pandoc within Eleventy to convert Markdown to HTML. It was
-a little slower, but worked out great.&lt;/p&gt;
-&lt;h3 id=&quot;bundling-files&quot;&gt;Bundling Files&lt;/h3&gt;
-&lt;p&gt;While it is possible to add content to bundles (like CSS and JS),
-curiously it was not possible to stuff files into said bundles. The
-suggested method was to do something like this:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;  {% css %}
-    {% include &amp;quot;some-file.css&amp;quot; %}
-
-    body {
-        // other CSS.
-    }
-  {% endcss %}&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This seems like a good idea, but there is one crucial issue: &lt;em&gt;The
-contents of the included file (&lt;code&gt;some-file.css&lt;/code&gt; in the example
-above) is also processed by the same templating engine&lt;/em&gt;. If the file
-doesn’t contain any sequences that look like template tokens, then we
-are good. But this is asking for trouble.&lt;/p&gt;
-&lt;p&gt;So I wrote a custom tag called &lt;code&gt;bundleFile&lt;/code&gt; that can take
-the contents of a file and stuff it directly into a bundle. The earlier
-example now looks like this:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;  {% bundleFile &amp;quot;some-file.css&amp;quot; %}
-
-  {% css %}
-    body {
-        // other CSS
-    }
-  {% endcss %}&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;sassy&quot;&gt;SASSy&lt;/h3&gt;
-&lt;p&gt;Eleventy doesn’t support SASS out of the box, but there are examples
-in the documentation for how you can set it up. But all of the examples
-assume that you have SASS or SCSS files that you are going to conver to
-CSS, and then serve without bundling. I wanted to be able to compile
-SASS and stuff the resulting CSS into a bundle.&lt;/p&gt;
-&lt;p&gt;So alongside the &lt;code&gt;bundleFile&lt;/code&gt; shortcode, I added a
-&lt;code&gt;bundleScss&lt;/code&gt; shortcode so I can do stuff like this:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;   {% bundleScss &amp;quot;my-styles.scss&amp;quot; %}&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;katex&quot;&gt;Katex&lt;/h3&gt;
-&lt;p&gt;I like Katex for my math typesetting. Pandoc supports it out of the
-box. But the rendered HTML needs to invoke Katex in the client to render
-the math. I wanted to avoid this step entirely and try to render Katex
-on the server.&lt;/p&gt;
-&lt;p&gt;This was a pain to do with Hugo, but since Eleventy was alredy runing
-in Node, server-side rendering is a breeze.&lt;/p&gt;
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Overall I found Eleventy fun to work with. My gripes are mostly with
-the documentation which lacks a reference. It’s a pain to go through
-tutorial-like documents to find out what exactly gets passed to a
-shortcode or what to do when a shortcode adds a dependency. I made way
-too many trips to the 11ty GitHub repo. The right number of required
-visits should be zero.&lt;/p&gt;
-&lt;p&gt;In the coming weeks I’ll package Eleventy Pandoc support and some of
-the shortcodes so others can use them.&lt;/p&gt;
-&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
-&lt;hr /&gt;
-&lt;ol&gt;
-&lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;There are ways to mitigate this problem. For example, we
-could restrict which flags can be inherited from themes, or require that
-certain options can only be set from the top level
-&lt;code&gt;hugo.yaml&lt;/code&gt; file that the user controls.&lt;a href=&quot;https://xn--izc.com/posts/moved-to-eleventy/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn2&quot;&gt;&lt;p&gt;Not quite all the way true because use of shadow DOM and
-custom elements was not a requirement.&lt;a href=&quot;https://xn--izc.com/posts/moved-to-eleventy/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn3&quot;&gt;&lt;p&gt;The defaults I’m referring to is what happens with a tag
-like &lt;code&gt;{{ foo }}&lt;/code&gt; where the contents of the variable
-&lt;code&gt;foo&lt;/code&gt; would be inserted into the document. Nunjucks will
-treat the contents as unsafe and requires manually opting into unsafe
-injection via &lt;code&gt;{{ foo | safe }}&lt;/code&gt;. Liquid will insert the
-contents with no escaping.&lt;a href=&quot;https://xn--izc.com/posts/moved-to-eleventy/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/aside&gt;
 </description>
         </item>
   </channel>
