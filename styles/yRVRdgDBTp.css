@@ -1,3 +1,15 @@
+.label {
+    display: inline-block;
+    width: 3.5rem;
+}
+.oneline {
+    margin-bottom: 0;
+}
+.event-description {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
 @import url("https://fonts.googleapis.com/css2?family=Boogaloo&family=EB+Garamond:ital,wght@0,300..800;1,300..800&family=Google+Sans+Flex:opsz,wght@8..144,300..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 @font-face {
@@ -1298,6 +1310,7 @@ body {
   --popover-background-color: color-mix(in oklch, light-dark(#c67139, #c67139) 30%, light-dark(#f5ead8, #1a1a1a));
   --popover-text-color: light-dark(#201e1d, #d1d5db);
   --popover-border-color: light-dark(#c67139, #c67139);
+  --highlight-flash-color: color-mix(in oklch, light-dark(#c67139, #c67139) 55%, transparent);
 }
 
 @layer header-footer {
@@ -1645,6 +1658,24 @@ body {
   }
 }
 @layer article {
+  @keyframes reference-highlight-flash {
+    from {
+      box-shadow: 0 0 0 0.35rem var(--highlight-flash-color);
+    }
+    to {
+      box-shadow: 0 0 0 0.35rem transparent;
+    }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .footnotes li:target,
+    #refs .csl-entry:target {
+      animation: reference-highlight-flash 1.8s ease-out;
+      border-radius: 0.5rem;
+    }
+    .footnote-ref:target > sup {
+      animation: reference-highlight-flash 1.8s ease-out;
+    }
+  }
   .references {
     margin-top: 3rem;
     padding-top: 1rem;
