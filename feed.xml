@@ -26,18 +26,19 @@
 rule-based, and largely indifferent to the reasoner’s emotional
 state.&lt;/p&gt;
 &lt;/dd&gt;
-&lt;dt&gt;hot cognition&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/dt&gt;
+&lt;dt&gt;hot cognition &lt;span class=&quot;citation&quot; data-cites=&quot;abelson1963hotcognition&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#ref-abelson1963hotcognition&quot; role=&quot;doc-biblioref&quot;&gt;Abelson,
+1963&lt;/a&gt;)&lt;/span&gt;&lt;/dt&gt;
 &lt;dd&gt;
 &lt;p&gt;&lt;span class=&quot;phonetic&quot;&gt;/hät käɡˈniSHən/&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;variant&quot;&gt;noun&lt;/span&gt; judgment that is entangled with
 feeling — a sense of rightness or wrongness arrived at before, or
-instead of, any explicit reasoning.&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fn2&quot; class=&quot;footnote-ref&quot; id=&quot;fnref2&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+instead of, any explicit reasoning.&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/dd&gt;
 &lt;/dl&gt;
 &lt;p&gt;Ask someone why they didn’t trust a person the moment they walked
 into the room, and you’ll get an answer eventually. But the distrust
 came first. The reasons are a story told afterward, to a mind that
-already knew.&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fn3&quot; class=&quot;footnote-ref&quot; id=&quot;fnref3&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+already knew.&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fn2&quot; class=&quot;footnote-ref&quot; id=&quot;fnref2&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;That’s hot cognition. It’s not sloppy thinking, and it’s not the
 opposite of intelligence. It’s judgment that is inseparable from
 feeling, built up over a lifetime of encounters that never got written
@@ -62,7 +63,7 @@ renders a judgment, it is not consulting a felt history of its own. It
 is predicting what a person — many people, blended — would say next.&lt;/p&gt;
 &lt;p&gt;That can be extraordinarily useful. It can also be right more often
 than any single person, in the way that a crowd’s guess at the weight of
-an ox beats most individual guesses.&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fn4&quot; class=&quot;footnote-ref&quot; id=&quot;fnref4&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt; But being a good
+an ox beats most individual guesses.&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fn3&quot; class=&quot;footnote-ref&quot; id=&quot;fnref3&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt; But being a good
 aggregate of other people’s judgment is not the same thing as being a
 source of judgment.&lt;/p&gt;
 &lt;p&gt;The distinction matters because we are in a hurry to automate
@@ -87,12 +88,12 @@ new tools.&lt;/p&gt;
 record, and it’s worth pausing on the context: he was building computer
 simulations of personality — specifically, of how people revise their
 beliefs — and trying to model how emotionally loaded input distorts that
-revision compared to neutral, algorithmic updating.&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fn5&quot; class=&quot;footnote-ref&quot; id=&quot;fnref5&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;5&lt;/sup&gt;&lt;/a&gt;
-Janet Metcalfe and Walter Mischel gave the framework its fullest
-psychological treatment in 1999, modeling self-control as a contest
-between a “hot,” impulsive, reflexive system and a “cool,” slow,
+revision compared to neutral, algorithmic updating &lt;span class=&quot;citation&quot; data-cites=&quot;abelson1963hotcognition&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#ref-abelson1963hotcognition&quot; role=&quot;doc-biblioref&quot;&gt;Abelson,
+1963&lt;/a&gt;)&lt;/span&gt;. Janet Metcalfe and Walter Mischel gave the framework
+its fullest psychological treatment in 1999, modeling self-control as a
+contest between a “hot,” impulsive, reflexive system and a “cool,” slow,
 strategic one — the paper most commonly cited when people invoke
-hot/cold cognition today.&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fn6&quot; class=&quot;footnote-ref&quot; id=&quot;fnref6&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;6&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+hot/cold cognition today &lt;span class=&quot;citation&quot; data-cites=&quot;metcalfe1999hotcool&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#ref-metcalfe1999hotcool&quot; role=&quot;doc-biblioref&quot;&gt;Metcalfe &amp;amp; Mischel, 1999&lt;/a&gt;)&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;The more directly relevant work is recent and empirical rather than
 theoretical. A team at Sapienza University of Rome benchmarked six large
 language models against expert ratings (NewsGuard, Media Bias/Fact
@@ -102,52 +103,73 @@ is largely coincidental: models lean on lexical association and
 statistical priors rather than the contextual, normative reasoning
 experts actually use to get there. They call the resulting mismatch
 between apparent and actual process “epistemia” — the illusion of
-knowledge that surface plausibility creates.&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fn7&quot; class=&quot;footnote-ref&quot; id=&quot;fnref7&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;7&lt;/sup&gt;&lt;/a&gt; A
-companion commentary sharpened the framing further, describing the
-models’ output as “counterfeit judgments”: convincing enough to pass as
-the real thing, but produced by a different process entirely.&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fn8&quot; class=&quot;footnote-ref&quot; id=&quot;fnref8&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;8&lt;/sup&gt;&lt;/a&gt; That’s close to a direct, empirical
-version of the claim this post is making by argument alone — that a
-model’s vibe is a simulation of judgment, not a source of it.&lt;/p&gt;
+knowledge that surface plausibility creates &lt;span class=&quot;citation&quot; data-cites=&quot;loru2025simulation&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#ref-loru2025simulation&quot; role=&quot;doc-biblioref&quot;&gt;Loru et al., 2025&lt;/a&gt;)&lt;/span&gt;. A companion
+commentary sharpened the framing further, describing the models’ output
+as “counterfeit judgments”: convincing enough to pass as the real thing,
+but produced by a different process entirely &lt;span class=&quot;citation&quot; data-cites=&quot;perc2025counterfeit&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#ref-perc2025counterfeit&quot; role=&quot;doc-biblioref&quot;&gt;Perc, 2025&lt;/a&gt;)&lt;/span&gt;. That’s close to a direct,
+empirical version of the claim this post is making by argument alone —
+that a model’s vibe is a simulation of judgment, not a source of it.&lt;/p&gt;
+&lt;div id=&quot;refs&quot; class=&quot;references csl-bib-body hanging-indent&quot; data-line-spacing=&quot;2&quot; role=&quot;list&quot;&gt;
+&lt;div id=&quot;ref-abelson1963hotcognition&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Abelson, R. P. (1963). Computer simulation of ’hot cognition’. In S.
+Tomkins &amp;amp; S. Messick (Eds.), &lt;em&gt;Computer simulation of
+personality&lt;/em&gt; (pp. 277–302). Wiley.
+&lt;/div&gt;
+&lt;div id=&quot;ref-galton1907voxpopuli&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Galton, F. (1907). Vox populi. &lt;em&gt;Nature&lt;/em&gt;, &lt;em&gt;75&lt;/em&gt;, 450–451. &lt;a href=&quot;https://doi.org/10.1038/075450a0&quot;&gt;https://doi.org/10.1038/075450a0&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-haidt2001emotional&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Haidt, J. (2001). The emotional dog and its rational tail: A social
+intuitionist approach to moral judgment. &lt;em&gt;Psychological Review&lt;/em&gt;,
+&lt;em&gt;108&lt;/em&gt;(4), 814–834. &lt;a href=&quot;https://doi.org/10.1037/0033-295X.108.4.814&quot;&gt;https://doi.org/10.1037/0033-295X.108.4.814&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-loru2025simulation&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Loru, E., Nudo, J., &amp;amp; Quattrociocchi, W. (2025). The simulation of
+judgment in LLMs. &lt;em&gt;PNAS&lt;/em&gt;, &lt;em&gt;122&lt;/em&gt;(42). &lt;a href=&quot;https://doi.org/10.1073/pnas.2518443122&quot;&gt;https://doi.org/10.1073/pnas.2518443122&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-metcalfe1999hotcool&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Metcalfe, J., &amp;amp; Mischel, W. (1999). A hot/cool-system analysis of
+delay of gratification: Dynamics of willpower. &lt;em&gt;Psychological
+Review&lt;/em&gt;, &lt;em&gt;106&lt;/em&gt;(1), 3–19. &lt;a href=&quot;https://doi.org/10.1037/0033-295X.106.1.3&quot;&gt;https://doi.org/10.1037/0033-295X.106.1.3&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-nisbett1977telling&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Nisbett, R. E., &amp;amp; Wilson, T. D. (1977). Telling more than we can
+know: Verbal reports on mental processes. &lt;em&gt;Psychological Review&lt;/em&gt;,
+&lt;em&gt;84&lt;/em&gt;(3), 231–259. &lt;a href=&quot;https://doi.org/10.1037/0033-295X.84.3.231&quot;&gt;https://doi.org/10.1037/0033-295X.84.3.231&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-perc2025counterfeit&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Perc, M. (2025). Counterfeit judgments in large language models.
+&lt;em&gt;PNAS&lt;/em&gt;, &lt;em&gt;122&lt;/em&gt;(48). &lt;a href=&quot;https://doi.org/10.1073/pnas.2528527122&quot;&gt;https://doi.org/10.1073/pnas.2528527122&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-zajonc1980feeling&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Zajonc, R. B. (1980). Feeling and thinking: Preferences need no
+inferences. &lt;em&gt;American Psychologist&lt;/em&gt;, &lt;em&gt;35&lt;/em&gt;(2), 151–175. &lt;a href=&quot;https://doi.org/10.1037/0003-066X.35.2.151&quot;&gt;https://doi.org/10.1037/0003-066X.35.2.151&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
-&lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;Abelson, R. P. (1963). “Computer simulation of ‘hot
-cognition.’” In S. Tomkins &amp;amp; S. Messick (Eds.), &lt;em&gt;Computer
-Simulation of Personality&lt;/em&gt; (pp. 277–302). New York: Wiley.&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn2&quot;&gt;&lt;p&gt;The idea that affect can precede and operate
+&lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;The idea that affect can precede and operate
 independently of reasoned inference is most associated with Robert
 Zajonc’s 1980 paper “Feeling and Thinking: Preferences Need No
 Inferences,” which argued against the then-dominant view that emotion is
-downstream of cognitive appraisal. &lt;a href=&quot;https://doi.org/10.1037/0003-066X.35.2.151&quot; class=&quot;cite&quot;&gt;via APA
-PsycNET&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn3&quot;&gt;&lt;p&gt;This is an established, if still debated, finding rather
+downstream of cognitive appraisal &lt;span class=&quot;citation&quot; data-cites=&quot;zajonc1980feeling&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#ref-zajonc1980feeling&quot; role=&quot;doc-biblioref&quot;&gt;Zajonc, 1980&lt;/a&gt;)&lt;/span&gt;.&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn2&quot;&gt;&lt;p&gt;This is an established, if still debated, finding rather
 than a rhetorical flourish. Nisbett and Wilson’s classic 1977 studies
 found that people routinely report confident reasons for judgments that
 could not have actually driven them, with no awareness that they’re
-confabulating. &lt;a href=&quot;https://doi.org/10.1037/0033-295X.84.3.231&quot; class=&quot;cite&quot;&gt;via APA PsycNET&lt;/a&gt; Jonathan Haidt’s social intuitionist
-model builds on this directly, arguing that moral judgment in particular
-is typically an intuition first, with reasoning arriving afterward
-mainly to construct a justification for a conclusion already reached. &lt;a href=&quot;https://doi.org/10.1037/0033-295X.108.4.814&quot; class=&quot;cite&quot;&gt;via APA
-PsycNET&lt;/a&gt; The open question in the field isn’t whether this happens,
-but how often reasoning is purely post hoc versus genuinely capable of
-revising the initial intuition.&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn4&quot;&gt;&lt;p&gt;Francis Galton’s 1907 note in &lt;em&gt;Nature&lt;/em&gt;, “Vox
+confabulating &lt;span class=&quot;citation&quot; data-cites=&quot;nisbett1977telling&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#ref-nisbett1977telling&quot; role=&quot;doc-biblioref&quot;&gt;Nisbett &amp;amp;
+Wilson, 1977&lt;/a&gt;)&lt;/span&gt;. Jonathan Haidt’s social intuitionist model
+builds on this directly, arguing that moral judgment in particular is
+typically an intuition first, with reasoning arriving afterward mainly
+to construct a justification for a conclusion already reached &lt;span class=&quot;citation&quot; data-cites=&quot;haidt2001emotional&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#ref-haidt2001emotional&quot; role=&quot;doc-biblioref&quot;&gt;Haidt,
+2001&lt;/a&gt;)&lt;/span&gt;. The open question in the field isn’t whether this
+happens, but how often reasoning is purely post hoc versus genuinely
+capable of revising the initial intuition.&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn3&quot;&gt;&lt;p&gt;Francis Galton’s 1907 note in &lt;em&gt;Nature&lt;/em&gt;, “Vox
 Populi,” describes a county-fair contest to guess the weight of an ox:
 the median of 787 guesses came within 1% of the true weight, even though
-almost no individual guess did. &lt;a href=&quot;https://doi.org/10.1038/075450a0&quot; class=&quot;cite&quot;&gt;via Nature&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fnref4&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn5&quot;&gt;&lt;p&gt;Abelson, R. P. (1963). “Computer simulation of ‘hot
-cognition.’” In S. Tomkins &amp;amp; S. Messick (Eds.), &lt;em&gt;Computer
-Simulation of Personality&lt;/em&gt; (pp. 277–302). New York: Wiley.&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fnref5&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn6&quot;&gt;&lt;p&gt;Metcalfe, J., &amp;amp; Mischel, W. (1999). “A
-Hot/Cool-System Analysis of Delay of Gratification: Dynamics of
-Willpower.” &lt;em&gt;Psychological Review&lt;/em&gt;, 106(1), 3–19. &lt;a href=&quot;https://doi.org/10.1037/0033-295X.106.1.3&quot; class=&quot;cite&quot;&gt;via APA
-PsycNET&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fnref6&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn7&quot;&gt;&lt;p&gt;Loru, E., Nudo, J., &amp;amp; Quattrociocchi, W. (2025).
-“The simulation of judgment in LLMs.” &lt;em&gt;PNAS&lt;/em&gt;, 122(42). &lt;a href=&quot;https://doi.org/10.1073/pnas.2518443122&quot; class=&quot;cite&quot;&gt;via
-PNAS&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fnref7&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id=&quot;fn8&quot;&gt;&lt;p&gt;Perc, M. (2025). “Counterfeit judgments in large
-language models.” &lt;em&gt;PNAS&lt;/em&gt; (Commentary), 122(48). &lt;a href=&quot;https://doi.org/10.1073/pnas.2528527122&quot; class=&quot;cite&quot;&gt;via
-PNAS&lt;/a&gt;&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fnref8&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+almost no individual guess did &lt;span class=&quot;citation&quot; data-cites=&quot;galton1907voxpopuli&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#ref-galton1907voxpopuli&quot; role=&quot;doc-biblioref&quot;&gt;Galton, 1907&lt;/a&gt;)&lt;/span&gt;.&lt;a href=&quot;https://xn--izc.com/posts/hot-vs-cold-cognition/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/aside&gt;
 
@@ -2601,7 +2623,7 @@ reasons for the exit and the aftermath&lt;/a&gt; are many. The high level
 reason was due to non-capitulance to the Chinese government’s demands
 for censorship and compromising user data.&lt;/p&gt;
 &lt;figure&gt;
-&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/9/9c/IllegalFlowerTribute1.jpg&quot; class=&quot;noinvert&quot; alt=&quot;Illegal flower tribute on Wikipedia (CC-By-SA 3.0)&quot; /&gt;
+&lt;img src=&quot;https://xn--izc.com/posts/fourteen-years/IllegalFlowerTribute1.jpg&quot; class=&quot;noinvert&quot; alt=&quot;Illegal flower tribute on Wikipedia (CC-By-SA 3.0)&quot; /&gt;
 &lt;figcaption aria-hidden=&quot;true&quot;&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Illegal_flower_tribute&quot;&gt;Illegal
 flower tribute on Wikipedia&lt;/a&gt; (&lt;a href=&quot;https://creativecommons.org/licenses/by-sa/3.0/&quot;&gt;CC-By-SA
 3.0&lt;/a&gt;)&lt;/figcaption&gt;
