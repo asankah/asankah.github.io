@@ -1,0 +1,1216 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Making Durable Contributions</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/apple-touch-icon.png"
+    />
+    <link rel="icon" href="/images/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon-32x32.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/images/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+
+    <link rel="stylesheet" href="/styles/bXmApLpyvd.css" />
+    <link rel="me" href="mailto:asanka@gmail.com" />
+    <link rel="me" href="https://github.com/asankah" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="The Letter අ"
+      href="/rss.xml"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="ai-generated" content="none" />
+  </head>
+
+  <body>
+    <header class="container">
+      <nav class="top" itemscope="" itemtype="https://schema.org/Blog">
+        <h1 itemprop="name">
+          <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
+        </h1>
+        <span></span>
+
+        <h2><a href="/">Home</a></h2>
+
+        <h2 itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="/about/me/" itemprop="sameAs">About</a>
+        </h2>
+
+        <h2><a href="/tags/">Tags</a></h2>
+        <h2>
+          <a href="/rss.xml"><img src="/images/rss.svg" /></a>
+        </h2>
+      </nav>
+    </header>
+
+    <article itemscope="" itemtype="https://schema.org/BlogPosting">
+      <link itemprop="url" href="/posts/durable-contributions/" />
+      <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+      <header class="container">
+        <div class="metadata">
+          <time datetime="2026-09-08" itemprop="datePublished"
+            >September 8, 2026</time
+          >
+          • <span class="author" itemprop="author">Asanka Herath</span>. •
+          <time>25 min</time> read
+        </div>
+        <h1 itemprop="name">Making Durable Contributions</h1>
+        <nav>
+          <span></span>
+          <menu class="tags">
+            <li>
+              <span class="tag">
+                <a href="/tags/ai/">#AI</a>
+              </span>
+            </li>
+          </menu>
+        </nav>
+
+        <div class="banner">
+          <img
+            src="/img/spC09d6Ihh-200.png"
+            alt="A glowing digital river dissolves a sandcastle on a dark beach, while a mechanical hand reaches out of the current toward a map staked in the dry sand beside it"
+            class="noinvert banner-image"
+            loading="lazy"
+            width="1600"
+            height="893"
+            srcset="
+              /img/spC09d6Ihh-200.png   200w,
+              /img/spC09d6Ihh-400.png   400w,
+              /img/spC09d6Ihh-600.png   600w,
+              /img/spC09d6Ihh-800.png   800w,
+              /img/spC09d6Ihh-1600.png 1600w
+            "
+            sizes="auto"
+          />
+        </div>
+      </header>
+
+      <main itemprop="articleBody" class="container">
+        <p>
+          <em>The harness ate the app. Here’s what’s left worth making.</em>
+        </p>
+        <h2 id="build-headless">Build Headless</h2>
+        <h3 id="the-input-used-to-be-small">The input used to be small</h3>
+        <p>
+          It used to be that the only input to a model was a largely static
+          system prompt, a query, some content fetched on the basis of that
+          query (e.g. RAG), and that was pretty much it. The response that
+          followed was considered the entirety of the answer instead of a small
+          step in its direction. Multiple rounds of conversation just repeated
+          the last two steps over and over.
+        </p>
+        <p>
+          If you were building a product in that world, the shape of the
+          opportunity was obvious. The model was a component. You wrote the
+          retrieval, you wrote the prompt assembly, you wrote the loop, you
+          wrote the UI, you wrote the eval harness, you wrote the memory layer
+          if you wanted one. The model did inference; you did everything else.
+          Everything else was the product.
+        </p>
+        <p>
+          That world is gone, and I don’t think we’ve fully absorbed how gone it
+          is.
+        </p>
+        <h3 id="what-a-harness-is-now">What a harness is now</h3>
+        <p>
+          A modern harness brings in much more. Start with the conversation
+          trajectory — a sequence of events and chunks of content from the user,
+          the model, and the system. The trajectory is <em>not</em> the thing
+          passed into the inference step. A single inference step (called a
+          <em>generation</em>) sees some compiled, compacted, filtered,
+          re-ordered projection of it. Deciding what that projection is has
+          quietly become one of the highest-leverage engineering surfaces in the
+          stack.
+        </p>
+        <p>
+          Surrounding that: memory, an ecosystem of skills, rules, plugins,
+          tools, MCP servers, sub-agents, permissioning, observability.
+          Anthropic’s writing on long-running agents describes the harness as
+          the structure that lets an agent work coherently across many context
+          windows — initializer and worker agents, progress files, version
+          control, environment setup scripts, browser automation — because “each
+          new session begins with no memory of what came before,” and context
+          compaction alone doesn’t cover it.<a
+            href="#fn1"
+            class="footnote-ref"
+            id="fnref1"
+            role="doc-noteref"
+            interestfor="ref-1-preview"
+            style="anchor-name: --ref-1-preview-anchor"
+            ><sup>1</sup></a
+          >
+          There is now a small but real literature calling this
+          <em>harness engineering</em> and treating it as a discipline separate
+          from model work.<a
+            href="#fn2"
+            class="footnote-ref"
+            id="fnref2"
+            role="doc-noteref"
+            interestfor="ref-2-preview"
+            style="anchor-name: --ref-2-preview-anchor"
+            ><sup>2</sup></a
+          >
+        </p>
+        <p>
+          In combination this is a substantial and constantly improving machine
+          that operates on your data. And here is the part that matters
+          commercially: it improves without you. Every week it acquires new
+          tools, better memory, more reliable planning, tighter permissions,
+          cheaper inference. That compounding isn’t on your roadmap and it
+          doesn’t wait for you. So the only question that matters is whether it
+          compounds for you or against you — and that turns out to be something
+          you get to decide.
+        </p>
+        <h3 id="you-cant-compete-with-the-harness">
+          You can’t compete with the harness
+        </h3>
+        <p>
+          Any app you build will very quickly become obsolete against that kind
+          of inertia. Especially the big internal ones — like Antigravity and
+          JetSki internally at Google — which have distribution, data access,
+          and an organization’s full attention behind them.
+        </p>
+        <p>
+          This is not a claim that apps are dead. It’s a claim about where the
+          durable value sits. If your product is a thin arrangement of
+          retrieval, prompt, loop, and UI around a model, you have built, at
+          considerable expense, a slightly worse version of something several
+          other teams have already built — or are about to, with more people,
+          more distribution, and more momentum than you can match. Those teams
+          are competing with you. The harness isn’t — not in the sense that it’s
+          trying to beat you. It’s your competitor in the sense that a river is
+          a competitor to a sandcastle.
+        </p>
+        <h3 id="assimilate">Assimilate</h3>
+        <p>
+          So build headless. Contribute <em>only</em> your value-add, then walk
+          away — no interface of your own, no harness of your own, nothing
+          wrapped around the one thing you actually know how to do. Headless is
+          not a smaller version of the product you wanted to build. It’s a
+          different shape: the capability, exposed so that anything can pick it
+          up.<a
+            href="#fn3"
+            class="footnote-ref"
+            id="fnref3"
+            role="doc-noteref"
+            interestfor="ref-3-preview"
+            style="anchor-name: --ref-3-preview-anchor"
+            ><sup>3</sup></a
+          >
+        </p>
+        <p>
+          The river cuts both ways. You can’t out-build the current, but you can
+          put something in it. Every improvement the harness makes — better
+          planning, cheaper inference, a memory layer you didn’t write, a tool
+          shipped by someone you’ll never meet — arrives at your contribution
+          for free, provided your contribution is shaped to receive it. That’s
+          the actual trade: give up owning the experience, and in exchange
+          everyone else’s work compounds into yours. Own the experience and
+          you’re on the hook for keeping pace with all of it, alone, forever.
+        </p>
+        <p>
+          There will always be a need for data and for processing. You just no
+          longer need to ship them together.
+        </p>
+        <p>When everyone is building, let them build on yours.</p>
+        <h2 id="build-for-self-maintenance">Build for Self-Maintenance</h2>
+        <p>You are not going to be around.</p>
+        <p>
+          Not in any morbid sense — in the ordinary sense that attention moves,
+          teams re-org, priorities change, and the thing you built outlives the
+          window in which anyone is paid to care about it. We have always known
+          this and have always built as though it weren’t true, because the
+          alternative was bleak. Unmaintained meant dead.
+        </p>
+        <p>
+          That’s the part that changed. Unmaintained no longer means dead. It
+          means the thing keeps changing anyway, in the hands of an agent that
+          has to guess what you meant.
+        </p>
+        <p>
+          An agent can carry real maintenance weight now — bump dependencies,
+          follow an API migration, adapt to a schema that moved, keep something
+          running long after everyone who understood it has gone. But it can
+          only do that if it can work out what the thing was supposed to do and
+          how anyone knew it was working. Handed a repo with a documented method
+          and a test suite that means something, an agent will keep your work
+          alive. Handed clever code and no method, it will produce something
+          plausible. Plausible is worse than broken.
+        </p>
+        <p>
+          So what you owe whoever comes next isn’t the destination, it’s the
+          path once traveled. Document how it was built, not just what got
+          built. How it was built. How it was verified. What you tried and
+          rejected, and why — because the rejected branch is the part that gets
+          re-tried at enormous cost by someone who has no way to know it’s a
+          dead end. What the constraints were, especially the ones that came
+          from outside and left no trace in the code.
+        </p>
+        <p>
+          This is also, quietly, the strongest argument for writing evals —
+          which is most of what the last two sections are about. An eval suite
+          isn’t only there to hill-climb model behavior. It is the handover
+          document. It’s the one artifact that states what the thing is supposed
+          to do in a form a machine can act on without first reconstructing your
+          theory of the problem. And a well-written eval does more than describe
+          the behavior — it defines what <em>good</em> looks like, which means
+          every future iteration inherits a measuring stick instead of an
+          argument. Everything else is prose that somebody has to be persuaded
+          by.
+        </p>
+        <p>
+          Peter Naur’s argument was that reviving a program’s theory from its
+          documentation is strictly impossible
+          <span class="citation" data-cites="naur1985theory"
+            >(<a
+              href="#ref-naur1985theory"
+              role="doc-biblioref"
+              interestfor="ref-5-preview"
+              style="anchor-name: --ref-5-preview-anchor"
+              >Naur, 1985</a
+            >)</span
+          >. He’s right, and that’s precisely the reason to stop trying. Don’t
+          leave behind documentation that requires the theory to be rebuilt from
+          it. Leave something executable that encodes what you expected, so that
+          whoever comes next — human or not — can change the code correctly
+          without ever holding the theory you held.
+        </p>
+        <h3
+          id="if-youre-building-an-mvp-leave-a-well-lit-path-to-the-real-thing"
+        >
+          If you’re building an MVP, leave a well-lit path to the real thing
+        </h3>
+        <p>
+          The classic MVP failure isn’t that the first version is rough. It’s
+          that its compromises become invisible. Six months on, nobody can tell
+          which parts were deliberate simplifications and which parts were the
+          design, so everything gets treated as load-bearing and nothing gets
+          replaced. The shortcut calcifies into architecture.
+        </p>
+        <p>
+          Mark the shortcuts. Say it plainly in the repo: this is temporary,
+          this is what replaces it, this is what has to be true before that swap
+          is safe. An MVP whose compromises are documented is scaffolding. An
+          MVP whose compromises are invisible is a trap — and it’s a worse trap
+          now than it used to be, because the machine modifying it next has no
+          way to tell the difference and will faithfully preserve your hack
+          forever.
+        </p>
+        <p>Be prepared to hand things over to the machines and move on.</p>
+        <p>
+          That’s the discipline that makes “walk away” responsible rather than
+          negligent. Walking away is fine. Walking away without leaving the map
+          is how you end up with a codebase everyone is afraid of.
+        </p>
+        <h2 id="process-over-product">Process over Product</h2>
+        <p>
+          The same holds one level up, where the thing being handed over is an
+          analysis rather than an artifact. Do an analysis once and you have a
+          conclusion. What happens when things change and someone needs to know
+          whether the findings still hold?
+        </p>
+        <p>
+          A well-documented methodology lets another team — or another machine —
+          arrive at the finding again. ACM’s artifact badging separates three
+          degrees of this, and the distance between them is the whole point:<a
+            href="#fn4"
+            class="footnote-ref"
+            id="fnref4"
+            role="doc-noteref"
+            interestfor="ref-4-preview"
+            style="anchor-name: --ref-4-preview-anchor"
+            ><sup>4</sup></a
+          >
+        </p>
+        <ul>
+          <li>
+            <strong>Repeatable</strong>: the same team recreates the result
+            using the same experimental setup.
+          </li>
+          <li>
+            <strong>Reproducible</strong>: a different team obtains the same
+            result using your artifacts.
+          </li>
+          <li>
+            <strong>Replicable</strong>: a different team obtains the same
+            result using artifacts they developed independently.
+          </li>
+        </ul>
+        <p>
+          Most work stops at the first, and quietly assumes the other two. But
+          the third is the one that matters when the world moves, because it’s
+          the only one that still works after your artifacts have gone stale —
+          it’s what lets someone put the question to current data and find out
+          whether your conclusion survived. A conclusion has a half-life;
+          methodology doesn’t.
+        </p>
+        <h3 id="false-precision-and-whats-hiding-inside-it">
+          False precision, and what’s hiding inside it
+        </h3>
+        <p>
+          We pad our prompts with tools and procedures to account for the cases
+          where the model or agent we were working with didn’t perform well
+          enough. This is the accumulation of false precision, and most of it is
+          disposable — scaffolding built against a specific model’s specific
+          weaknesses on a specific Tuesday.
+        </p>
+        <p>But buried inside that padding are two things worth digging out:</p>
+        <p>
+          <strong
+            >1. Refinements to the problem statement and our understanding of
+            the world.</strong
+          >
+          Some parts of a problem — particularly its grounding — can neither be
+          derived nor readily assumed. These are observations about the real
+          world that are beyond the model’s reach. This is genuine information
+          content that doesn’t expire when the model improves.
+        </p>
+        <p>
+          <strong>2. Refinements to our expectations.</strong> What do we
+          <em>really</em> expect from the model? Is it data to support a
+          conclusion you already picked? Or are you looking for relevant
+          insights? Today you might instruct the model to look for specific
+          insights. It is more future-proof to describe your goal and then use
+          examples to steer a model that might go awry.
+        </p>
+        <p>
+          The discipline is separating these two from the scaffolding, and being
+          prepared to cull the scaffolding as models improve. Most prompt
+          libraries are archaeology: strata of workarounds for capabilities that
+          arrived two releases ago, preserved because nobody wants to be the one
+          who deletes a line and finds out why it was there.
+        </p>
+        <p>
+          Write down the grounding. Write down the expectations. Let the rest
+          rot.
+        </p>
+        <h2 id="dual-use-documentation-and-evals">
+          Dual-Use Documentation and Evals
+        </h2>
+        <p>
+          If a documented method is the thing worth leaving behind, the question
+          is what form it should take. My answer:
+        </p>
+        <p>
+          <strong>Dual-use documentation + evaluations &gt;&gt; skills.</strong>
+        </p>
+        <p>
+          There are many types of knowledge, and they are not equally scarce.
+        </p>
+        <p>
+          The most valuable document is the results of someone’s
+          <em>hot cognition</em> — their judgment, formed under real conditions,
+          about what actually matters. Then there are
+          <strong>shortcuts</strong>: much of what we call knowledge is
+          shortcuts, and in their absence someone will eventually rediscover
+          them. Then there is
+          <strong>observational or grounding</strong> knowledge, which brings in
+          real-world constraints, effects, and problems into the knowledge space
+          — the things that cannot be derived from first principles because they
+          are contingent facts about the world.
+        </p>
+        <p>
+          All three are valuable. None of them need to be — and arguably none of
+          them should be — packaged as skills.
+        </p>
+        <p>
+          Just write it down, for everyone. If an LLM wants it abridged, let it
+          abridge.
+        </p>
+        <p>
+          Here’s the underlying argument. How much needs to be abridged, and
+          what needs to be kept, isn’t some universal truth. It’s a function of
+          the difference between a model’s parametric knowledge and what you
+          need it to know. That difference is a moving target, and it moves in
+          one direction. Every packaging decision you bake in — every “the model
+          won’t know this so I’ll spell it out,” every procedural scaffold — is
+          a snapshot of a gap that is closing.
+        </p>
+        <p>
+          Your expectations, by contrast, are much more stable. What counts as a
+          good answer to your problem barely moves while the machinery
+          underneath it churns — and that is exactly the thing an eval captures
+          and a skill does not. A skill encodes how to get there, which goes
+          stale the moment the model can find its own way. An eval encodes what
+          <em>there</em> means, which stays true across every model that comes
+          after it. Write the standard down and it keeps working as a measuring
+          stick long after the instructions around it have rotted.
+        </p>
+        <p>
+          So: write down what you need it to know as guidelines, and especially
+          as <strong>evals</strong>. As models evolve, let them sort out the
+          difference. This holds even for procedural knowledge. Explain in
+          detail what you need. Get the model to build evaluation criteria and
+          maybe an autorater or two. Then let it hill-climb. Let the model
+          derive the skill.
+        </p>
+        <h3 id="the-problem-with-how-we-do-evals">
+          The problem with how we do evals
+        </h3>
+        <p>
+          People treat evals like unit testing. Having a few test cases is nice.
+          What we actually need are
+          <strong>test case generators and autoraters</strong> — property-based
+          testing, not example-based testing.
+        </p>
+        <p>
+          This isn’t just aesthetics. There’s now direct evidence for it. He et
+          al.’s Property-Generated Solver validates LLM-generated code against
+          high-level <em>properties</em> instead of scoring it against pass/fail
+          tests, turning each violation into a concrete counterexample rather
+          than a bare “test failed.” That sharper signal is what moves the
+          needle: up to a 13.4% pass@1 improvement over TDD-based refinement
+          methods, a fix rate above 64% on problems the model got wrong the
+          first time, and 1.4–1.6x the fix rate of the strongest debugging
+          baseline
+          <span class="citation" data-cites="he2026pbs"
+            >(<a
+              href="#ref-he2026pbs"
+              role="doc-biblioref"
+              interestfor="ref-6-preview"
+              style="anchor-name: --ref-6-preview-anchor"
+              >He et al., 2026</a
+            >)</span
+          >. The asymmetry is the point: a property is a more informative signal
+          than a failing test. That gap is exactly the thing you should be
+          harvesting.
+        </p>
+        <p>
+          Example-based tests also invite what that paper calls a cycle of
+          self-deception: flawed tests that mirror the flawed code, generated
+          from the same misunderstanding. Properties break the loop because
+          they’re written against intent rather than against implementation.
+        </p>
+        <h3 id="the-honest-caveat">The honest caveat</h3>
+        <p>
+          If you’re going to hand grading to an autorater, know what you’re
+          holding. A large-scale evaluation of 21 judge models across 541,000
+          judgments found something uncomfortable: production judges with
+          test-retest reliability above 0.95 and severe position bias above 0.10
+          at the same time. Consistent, dependable, and wrong in a stable
+          direction. The authors call it <em>reliability without validity</em>.
+          Chance-corrected agreement ran 33–41 points below raw exact-match
+          across every model tested, meaning the number most people report
+          systematically overstates how well their judge discriminates
+          <span class="citation" data-cites="norman2026judge"
+            >(<a
+              href="#ref-norman2026judge"
+              role="doc-biblioref"
+              interestfor="ref-7-preview"
+              style="anchor-name: --ref-7-preview-anchor"
+              >Norman et al., 2026</a
+            >)</span
+          >.
+        </p>
+        <p>
+          So the autorater is not a free oracle. It’s another squishy component,
+          and it needs to be grounded against something that isn’t itself a
+          model’s opinion. That problem — how do you build verifiable claims out
+          of unverifiable components — is big enough that it gets its own post.
+        </p>
+        <h2 id="the-through-line">The through-line</h2>
+        <p>Everything above is the same argument in four costumes.</p>
+        <p>
+          The harness will absorb any <em>product</em> you build in front of it.
+          It will not absorb the map you left behind, because a harness can
+          follow a path but it cannot remember one it never walked. It will not
+          absorb your methodology, because a methodology is a thing to be run,
+          not a thing to be replaced. It will not absorb your grounding
+          knowledge, because it doesn’t have it. And it will not absorb your
+          judgment about what good looks like, because that’s yours.
+        </p>
+        <p>
+          So contribute the parts that don’t have an expiry date stamped on them
+          by somebody else’s release schedule: what’s actually true about your
+          domain, what you actually expect, how anyone can check, and how
+          whoever comes next picks it up.
+        </p>
+        <p>Leave the map. Then walk away and let them build.</p>
+        <h2 class="unnumbered" id="notes">Notes</h2>
+        <div
+          id="refs"
+          class="references csl-bib-body hanging-indent"
+          data-line-spacing="2"
+          role="list"
+        >
+          <div id="ref-he2026pbs" class="csl-entry" role="listitem">
+            <span class="csl-title"
+              >PGS: Effective LLM Code Refinement via Property-Oriented and
+              Structurally Minimal Feedback</span
+            >
+            -
+            <span class="csl-container-title"
+              >Forty-third International Conference on Machine Learning</span
+            >.
+            <a href="https://openreview.net/forum?id=6xeSRifGeL" class="csl-url"
+              >openreview.net</a
+            ><span class="csl-authors"
+              ><span class="csl-author">He, L.</span>,
+              <span class="csl-author">Chen, Z.</span>,
+              <span class="csl-author">Zhang, Z.</span>,
+              <span class="csl-author">Gao, X.</span>,
+              <span class="csl-author">Sheng, L.</span></span
+            >
+            <span class="csl-year">2026</span>.
+            <a
+              href="https://scholar.google.com/scholar?hl=en&q=PGS%3A%20Effective%20LLM%20Code%20Refinement%20via%20Property-Oriented%20and%20Structurally%20Minimal%20Feedback"
+              target="_blank"
+              class="csl-scholar-link"
+              >(Google Scholar)</a
+            >
+          </div>
+          <div id="ref-naur1985theory" class="csl-entry" role="listitem">
+            <span class="csl-title">Programming as Theory Building</span> -
+            <span class="csl-container-title"
+              >Microprocessing and Microprogramming</span
+            >.
+            <a
+              href="https://gwern.net/doc/cs/algorithm/1985-naur.pdf"
+              class="csl-url"
+              >gwern.net</a
+            ><span class="csl-authors"
+              ><span class="csl-author">Naur, P.</span></span
+            >
+            <span class="csl-year">1985</span>.
+            <a
+              href="https://scholar.google.com/scholar?hl=en&q=Programming%20as%20Theory%20Building"
+              target="_blank"
+              class="csl-scholar-link"
+              >(Google Scholar)</a
+            >
+          </div>
+          <div id="ref-norman2026judge" class="csl-entry" role="listitem">
+            <span class="csl-title"
+              >Reliability without Validity: A Systematic, Large-Scale
+              Evaluation of LLM-as-a-Judge Models Across Agreement, Consistency,
+              and Bias</span
+            >
+            -
+            <span class="csl-container-title"
+              >arXiv preprint arXiv:2606.19544</span
+            >.
+            <a href="https://arxiv.org/html/2606.19544v1" class="csl-url"
+              >arxiv.org</a
+            ><span class="csl-authors"
+              ><span class="csl-author">Norman, J. D.</span>,
+              <span class="csl-author">Rivera, M. U.</span>,
+              <span class="csl-author">Hughes, D. A.</span></span
+            >
+            <span class="csl-year">2026</span>.
+            <a
+              href="https://scholar.google.com/scholar?hl=en&q=Reliability%20without%20Validity%3A%20A%20Systematic%2C%20Large-Scale%20Evaluation%20of%20LLM-as-a-Judge%20Models%20Across%20Agreement%2C%20Consistency%2C%20and%20Bias"
+              target="_blank"
+              class="csl-scholar-link"
+              >(Google Scholar)</a
+            >
+          </div>
+        </div>
+        <aside
+          id="footnotes"
+          class="footnotes footnotes-end-of-document"
+          role="doc-endnotes"
+        >
+          <hr />
+          <ol>
+            <li id="fn1">
+              <p>
+                Anthropic,
+                <a
+                  href="https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents"
+                  >“Effective harnesses for long-running agents”</a
+                >, November 26, 2025. See also
+                <a
+                  href="https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents"
+                  >“Effective context engineering for AI agents”</a
+                >.<a href="#fnref1" class="footnote-back" role="doc-backlink"
+                  ><span class="material-symbols-outlined"
+                    >arrow_upward</span
+                  ></a
+                >
+              </p>
+            </li>
+            <li id="fn2">
+              <p>
+                E.g. the
+                <a
+                  href="https://github.com/ai-boost/awesome-harness-engineering"
+                  >awesome-harness-engineering</a
+                >
+                collection, which organizes the space as tools, patterns, evals,
+                memory, MCP, permissions, observability, and orchestration.<a
+                  href="#fnref2"
+                  class="footnote-back"
+                  role="doc-backlink"
+                  ><span class="material-symbols-outlined"
+                    >arrow_upward</span
+                  ></a
+                >
+              </p>
+            </li>
+            <li id="fn3">
+              <p>
+                None of this says interfaces don’t matter. We are far better at
+                spatial understanding than at quantitative reasoning, which is
+                why a good visualization can carry an argument that a table of
+                the same numbers cannot; a bespoke UI earns its keep whenever
+                the spatial representation is doing real work. The question is
+                only whether <em>you</em> should be the one building it, given
+                that automation can now attach a specialized visualization to
+                your data faster than you could ship one yourself.<a
+                  href="#fnref3"
+                  class="footnote-back"
+                  role="doc-backlink"
+                  ><span class="material-symbols-outlined"
+                    >arrow_upward</span
+                  ></a
+                >
+              </p>
+            </li>
+            <li id="fn4">
+              <p>
+                Definitions from
+                <a href="https://www.acm.org/publications/badging-terms"
+                  >ACM’s badging terminology</a
+                >. Note that ACM swapped its reproducibility and replicability
+                definitions in May 2020 to align with the wider scientific
+                community, so anything published before then reverses the two.
+                Casual usage still treats “reproducible” as a catch-all for all
+                three, which is usually harmless and occasionally not.<a
+                  href="#fnref4"
+                  class="footnote-back"
+                  role="doc-backlink"
+                  ><span class="material-symbols-outlined"
+                    >arrow_upward</span
+                  ></a
+                >
+              </p>
+            </li>
+          </ol>
+        </aside>
+
+        <div
+          popover="auto"
+          class="footnote-preview-container"
+          id="ref-1-preview"
+          style="position-anchor: --ref-1-preview-anchor"
+        >
+          <div class="footnote-preview-arrow" aria-hidden="true"></div>
+          <aside class="footnote-preview">
+            <div>
+              <p>
+                Anthropic,
+                <a
+                  href="https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents"
+                  >“Effective harnesses for long-running agents”</a
+                >, November 26, 2025. See also
+                <a
+                  href="https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents"
+                  >“Effective context engineering for AI agents”</a
+                >.
+              </p>
+            </div>
+          </aside>
+        </div>
+        <div
+          popover="auto"
+          class="footnote-preview-container"
+          id="ref-2-preview"
+          style="position-anchor: --ref-2-preview-anchor"
+        >
+          <div class="footnote-preview-arrow" aria-hidden="true"></div>
+          <aside class="footnote-preview">
+            <div>
+              <p>
+                E.g. the
+                <a
+                  href="https://github.com/ai-boost/awesome-harness-engineering"
+                  >awesome-harness-engineering</a
+                >
+                collection, which organizes the space as tools, patterns, evals,
+                memory, MCP, permissions, observability, and orchestration.
+              </p>
+            </div>
+          </aside>
+        </div>
+        <div
+          popover="auto"
+          class="footnote-preview-container"
+          id="ref-3-preview"
+          style="position-anchor: --ref-3-preview-anchor"
+        >
+          <div class="footnote-preview-arrow" aria-hidden="true"></div>
+          <aside class="footnote-preview">
+            <div>
+              <p>
+                None of this says interfaces don’t matter. We are far better at
+                spatial understanding than at quantitative reasoning, which is
+                why a good visualization can carry an argument that a table of
+                the same numbers cannot; a bespoke UI earns its keep whenever
+                the spatial representation is doing real work. The question is
+                only whether <em>you</em> should be the one building it, given
+                that automation can now attach a specialized visualization to
+                your data faster than you could ship one yourself.
+              </p>
+            </div>
+          </aside>
+        </div>
+        <div
+          popover="auto"
+          class="footnote-preview-container"
+          id="ref-4-preview"
+          style="position-anchor: --ref-4-preview-anchor"
+        >
+          <div class="footnote-preview-arrow" aria-hidden="true"></div>
+          <aside class="footnote-preview">
+            <div>
+              <p>
+                Definitions from
+                <a href="https://www.acm.org/publications/badging-terms"
+                  >ACM’s badging terminology</a
+                >. Note that ACM swapped its reproducibility and replicability
+                definitions in May 2020 to align with the wider scientific
+                community, so anything published before then reverses the two.
+                Casual usage still treats “reproducible” as a catch-all for all
+                three, which is usually harmless and occasionally not.
+              </p>
+            </div>
+          </aside>
+        </div>
+        <div
+          popover="auto"
+          class="footnote-preview-container"
+          id="ref-5-preview"
+          style="position-anchor: --ref-5-preview-anchor"
+        >
+          <div class="footnote-preview-arrow" aria-hidden="true"></div>
+          <aside class="footnote-preview">
+            <div id="ref-naur1985theory" class="csl-entry" role="listitem">
+              <span class="csl-title">Programming as Theory Building</span> -
+              <span class="csl-container-title"
+                >Microprocessing and Microprogramming</span
+              >.
+              <a
+                href="https://gwern.net/doc/cs/algorithm/1985-naur.pdf"
+                class="csl-url"
+                >gwern.net</a
+              ><span class="csl-authors"
+                ><span class="csl-author">Naur, P.</span></span
+              >
+              <span class="csl-year">1985</span>.
+              <a
+                href="https://scholar.google.com/scholar?hl=en&q=Programming%20as%20Theory%20Building"
+                target="_blank"
+                class="csl-scholar-link"
+                >(Google Scholar)</a
+              >
+            </div>
+          </aside>
+        </div>
+        <div
+          popover="auto"
+          class="footnote-preview-container"
+          id="ref-6-preview"
+          style="position-anchor: --ref-6-preview-anchor"
+        >
+          <div class="footnote-preview-arrow" aria-hidden="true"></div>
+          <aside class="footnote-preview">
+            <div id="ref-he2026pbs" class="csl-entry" role="listitem">
+              <span class="csl-title"
+                >PGS: Effective LLM Code Refinement via Property-Oriented and
+                Structurally Minimal Feedback</span
+              >
+              -
+              <span class="csl-container-title"
+                >Forty-third International Conference on Machine Learning</span
+              >.
+              <a
+                href="https://openreview.net/forum?id=6xeSRifGeL"
+                class="csl-url"
+                >openreview.net</a
+              ><span class="csl-authors"
+                ><span class="csl-author">He, L.</span>,
+                <span class="csl-author">Chen, Z.</span>,
+                <span class="csl-author">Zhang, Z.</span>,
+                <span class="csl-author">Gao, X.</span>,
+                <span class="csl-author">Sheng, L.</span></span
+              >
+              <span class="csl-year">2026</span>.
+              <a
+                href="https://scholar.google.com/scholar?hl=en&q=PGS%3A%20Effective%20LLM%20Code%20Refinement%20via%20Property-Oriented%20and%20Structurally%20Minimal%20Feedback"
+                target="_blank"
+                class="csl-scholar-link"
+                >(Google Scholar)</a
+              >
+            </div>
+          </aside>
+        </div>
+        <div
+          popover="auto"
+          class="footnote-preview-container"
+          id="ref-7-preview"
+          style="position-anchor: --ref-7-preview-anchor"
+        >
+          <div class="footnote-preview-arrow" aria-hidden="true"></div>
+          <aside class="footnote-preview">
+            <div id="ref-norman2026judge" class="csl-entry" role="listitem">
+              <span class="csl-title"
+                >Reliability without Validity: A Systematic, Large-Scale
+                Evaluation of LLM-as-a-Judge Models Across Agreement,
+                Consistency, and Bias</span
+              >
+              -
+              <span class="csl-container-title"
+                >arXiv preprint arXiv:2606.19544</span
+              >.
+              <a href="https://arxiv.org/html/2606.19544v1" class="csl-url"
+                >arxiv.org</a
+              ><span class="csl-authors"
+                ><span class="csl-author">Norman, J. D.</span>,
+                <span class="csl-author">Rivera, M. U.</span>,
+                <span class="csl-author">Hughes, D. A.</span></span
+              >
+              <span class="csl-year">2026</span>.
+              <a
+                href="https://scholar.google.com/scholar?hl=en&q=Reliability%20without%20Validity%3A%20A%20Systematic%2C%20Large-Scale%20Evaluation%20of%20LLM-as-a-Judge%20Models%20Across%20Agreement%2C%20Consistency%2C%20and%20Bias"
+                target="_blank"
+                class="csl-scholar-link"
+                >(Google Scholar)</a
+              >
+            </div>
+          </aside>
+        </div>
+      </main>
+
+      <footer class="container">
+        <div>
+          <p>
+            Last modified: <time datetime="2026-09-08">September 8, 2026</time>
+          </p>
+        </div>
+      </footer>
+    </article>
+
+    <div class="container"></div>
+
+    <footer class="container">
+      <h2>More posts from this blog ...</h2>
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h2 class="title">
+          <a itemprop="url" href="/posts/ephemeral-fingerprinting/">
+            <span itemprop="name">Ephemeral Fingerprinting On The Web</span>
+          </a>
+        </h2>
+        <nav>
+          <div class="metadata">
+            <time datetime="2020-04-01" itemprop="datePublished"
+              >April 1, 2020</time
+            >.
+          </div>
+          <span></span>
+          <menu class="tags">
+            <li>
+              <span class="tag">
+                <a href="/tags/privacy/">#Privacy</a>
+              </span>
+            </li>
+          </menu>
+        </nav>
+        <div class="summary-row">
+          <div>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  Any ephemeral low-entropy web observable property whose
+                  changes are concurrently observable by multiple sites can lead
+                  to cross site identity joining.
+                </p>
+                <p>
+                  This method of identity joining does not require coordination
+                  between multiple first parties. A single third party embedded
+                  within multiple first parties can also use this method.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="more">
+          <a href="/posts/ephemeral-fingerprinting/">Read more …</a>
+        </p>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h2 class="title">
+          <a itemprop="url" href="/posts/poisson-distribution/">
+            <span itemprop="name">Deriving the Poisson Distribution</span>
+          </a>
+        </h2>
+        <nav>
+          <div class="metadata">
+            <time datetime="2020-12-11" itemprop="datePublished"
+              >December 11, 2020</time
+            >.
+          </div>
+          <span></span>
+          <menu class="tags">
+            <li>
+              <span class="tag">
+                <a href="/tags/math/">#Math</a>
+              </span>
+            </li>
+          </menu>
+        </nav>
+        <div class="summary-row">
+          <div></div>
+        </div>
+        <p class="more">
+          <a href="/posts/poisson-distribution/">Read more …</a>
+        </p>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h2 class="title">
+          <a itemprop="url" href="/posts/pillars-are-governance-structures/">
+            <span itemprop="name">Pillars And Governance Structures</span>
+          </a>
+        </h2>
+        <nav>
+          <div class="metadata">
+            <time datetime="2023-09-09" itemprop="datePublished"
+              >September 9, 2023</time
+            >.
+          </div>
+          <span></span>
+          <menu class="tags">
+            <li>
+              <span class="tag">
+                <a href="/tags/culture/">#Culture</a>
+              </span>
+            </li>
+            <li>
+              <span class="tag">
+                <a href="/tags/career/">#Career</a>
+              </span>
+            </li>
+            <li>
+              <span class="tag">
+                <a href="/tags/organizations/">#Organizations</a>
+              </span>
+            </li>
+          </menu>
+        </nav>
+        <div class="summary-row">
+          <div></div>
+        </div>
+        <p class="more">
+          <a href="/posts/pillars-are-governance-structures/">Read more …</a>
+        </p>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h2 class="title">
+          <a itemprop="url" href="/posts/user-agents/">
+            <span itemprop="name"
+              >The Increasingly Inaccurately Named User-Agent</span
+            >
+          </a>
+        </h2>
+        <nav>
+          <div class="metadata">
+            <time datetime="2026-01-27" itemprop="dateCreated"
+              >January 27, 2026</time
+            >
+            (Revised
+            <time datetime="2026-02-09" itemprop="datePublished"
+              >February 9, 2026</time
+            >
+            ) .
+          </div>
+          <span></span>
+          <menu class="tags">
+            <li>
+              <span class="tag">
+                <a href="/tags/ai/">#AI</a>
+              </span>
+            </li>
+          </menu>
+        </nav>
+        <div class="summary-row">
+          <a href="/posts/user-agents/">
+            <img
+              src="/img/Afx7s0Loi9-200.png"
+              alt="A scary user agent"
+              class="noinvert hero"
+              loading="lazy"
+              width="559"
+              height="559"
+              srcset="
+                /img/Afx7s0Loi9-200.png 200w,
+                /img/Afx7s0Loi9-400.png 400w,
+                /img/Afx7s0Loi9-559.png 559w
+              "
+              sizes="auto"
+            />
+          </a>
+
+          <div>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  Once a technical term and then a philosophy, the User Agent
+                  has gradually lost its allegiance to the user. The coming
+                  AI-powered super-user-agents are even more detached from their
+                  role as a loyal ambassador. Instead it's far more likely that
+                  those user-agents will manipulate users on behalf of their
+                  benefactors, and it will be difficult if not impossible to
+                  tell what they are doing.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="more"><a href="/posts/user-agents/">Read more …</a></p>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <h2 class="title">
+          <a itemprop="url" href="/posts/durable-contributions/">
+            <span itemprop="name">Making Durable Contributions</span>
+          </a>
+        </h2>
+        <nav>
+          <div class="metadata">
+            <time datetime="2026-09-08" itemprop="datePublished"
+              >September 8, 2026</time
+            >.
+          </div>
+          <span></span>
+          <menu class="tags">
+            <li>
+              <span class="tag">
+                <a href="/tags/ai/">#AI</a>
+              </span>
+            </li>
+          </menu>
+        </nav>
+        <div class="summary-row">
+          <a href="/posts/durable-contributions/">
+            <img
+              src="/img/P7pw1cOvqN-200.png"
+              alt="A glowing digital river dissolves a sandcastle on a dark beach, while a mechanical hand reaches out of the current toward a map staked in the dry sand beside it"
+              class="noinvert hero"
+              loading="lazy"
+              width="900"
+              height="900"
+              srcset="
+                /img/P7pw1cOvqN-200.png 200w,
+                /img/P7pw1cOvqN-400.png 400w,
+                /img/P7pw1cOvqN-600.png 600w,
+                /img/P7pw1cOvqN-800.png 800w,
+                /img/P7pw1cOvqN-900.png 900w
+              "
+              sizes="auto"
+            />
+          </a>
+
+          <div>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  The harness — memory, skills, tools, sub-agents, planning — is
+                  absorbing the product layer faster than anyone building on top
+                  of it can keep up. The durable move isn't to out-build it;
+                  it's to contribute headlessly, document the method rather than
+                  the artifact, and write evals instead of skills, so that what
+                  you leave behind keeps compounding after you've walked away.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="more">
+          <a href="/posts/durable-contributions/">Read more …</a>
+        </p>
+      </div>
+    </footer>
+
+    <footer class="container">
+      <p><a href="https://iheartrss.com/">I ♥ RSS</a></p>
+    </footer>
+
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-GSREL2EZ4Y"
+    ></script>
+    <script>
+      var dnt,
+        doNotTrack = !1;
+      if (
+        (!1 &&
+          ((dnt =
+            navigator.doNotTrack ||
+            window.doNotTrack ||
+            navigator.msDoNotTrack),
+          (doNotTrack = dnt == "1" || dnt == "yes")),
+        !doNotTrack)
+      ) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        (gtag("js", new Date()), gtag("config", "G-GSREL2EZ4Y"));
+      }
+    </script>
+  </body>
+</html>

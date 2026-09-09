@@ -5,13 +5,341 @@
   <link href="https://xn--izc.com/feed.xml" rel="self" />
   <link href="https://xn--izc.com/" />
   <updated>
-    2026-08-16T00:00:00Z
+    2026-09-08T00:00:00Z
   </updated>
   <id>https://xn--izc.com/</id>
   <author>
     <name>Asanka Herath</name>
     <email>asanka@gmail.com</email>
   </author>
+    <entry>
+      <title>Making Durable Contributions</title>
+      <link href="https://xn--izc.com/posts/durable-contributions/" />
+      <updated>2026-09-08T00:00:00Z</updated>
+      <id>https://xn--izc.com/posts/durable-contributions/</id>
+      <content xml:lang="en" type="html">
+        &lt;p&gt;&lt;em&gt;The harness ate the app. Here’s what’s left worth
+making.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;build-headless&quot;&gt;Build Headless&lt;/h2&gt;
+&lt;h3 id=&quot;the-input-used-to-be-small&quot;&gt;The input used to be small&lt;/h3&gt;
+&lt;p&gt;It used to be that the only input to a model was a largely static
+system prompt, a query, some content fetched on the basis of that query
+(e.g. RAG), and that was pretty much it. The response that followed was
+considered the entirety of the answer instead of a small step in its
+direction. Multiple rounds of conversation just repeated the last two
+steps over and over.&lt;/p&gt;
+&lt;p&gt;If you were building a product in that world, the shape of the
+opportunity was obvious. The model was a component. You wrote the
+retrieval, you wrote the prompt assembly, you wrote the loop, you wrote
+the UI, you wrote the eval harness, you wrote the memory layer if you
+wanted one. The model did inference; you did everything else. Everything
+else was the product.&lt;/p&gt;
+&lt;p&gt;That world is gone, and I don’t think we’ve fully absorbed how gone
+it is.&lt;/p&gt;
+&lt;h3 id=&quot;what-a-harness-is-now&quot;&gt;What a harness is now&lt;/h3&gt;
+&lt;p&gt;A modern harness brings in much more. Start with the conversation
+trajectory — a sequence of events and chunks of content from the user,
+the model, and the system. The trajectory is &lt;em&gt;not&lt;/em&gt; the thing
+passed into the inference step. A single inference step (called a
+&lt;em&gt;generation&lt;/em&gt;) sees some compiled, compacted, filtered, re-ordered
+projection of it. Deciding what that projection is has quietly become
+one of the highest-leverage engineering surfaces in the stack.&lt;/p&gt;
+&lt;p&gt;Surrounding that: memory, an ecosystem of skills, rules, plugins,
+tools, MCP servers, sub-agents, permissioning, observability.
+Anthropic’s writing on long-running agents describes the harness as the
+structure that lets an agent work coherently across many context windows
+— initializer and worker agents, progress files, version control,
+environment setup scripts, browser automation — because “each new
+session begins with no memory of what came before,” and context
+compaction alone doesn’t cover it.&lt;a href=&quot;https://xn--izc.com/posts/durable-contributions/#fn1&quot; class=&quot;footnote-ref&quot; id=&quot;fnref1&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; There is now a small but
+real literature calling this &lt;em&gt;harness engineering&lt;/em&gt; and treating
+it as a discipline separate from model work.&lt;a href=&quot;https://xn--izc.com/posts/durable-contributions/#fn2&quot; class=&quot;footnote-ref&quot; id=&quot;fnref2&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In combination this is a substantial and constantly improving machine
+that operates on your data. And here is the part that matters
+commercially: it improves without you. Every week it acquires new tools,
+better memory, more reliable planning, tighter permissions, cheaper
+inference. That compounding isn’t on your roadmap and it doesn’t wait
+for you. So the only question that matters is whether it compounds for
+you or against you — and that turns out to be something you get to
+decide.&lt;/p&gt;
+&lt;h3 id=&quot;you-cant-compete-with-the-harness&quot;&gt;You can’t compete with the
+harness&lt;/h3&gt;
+&lt;p&gt;Any app you build will very quickly become obsolete against that kind
+of inertia. Especially the big internal ones — like Antigravity and
+JetSki internally at Google — which have distribution, data access, and
+an organization’s full attention behind them.&lt;/p&gt;
+&lt;p&gt;This is not a claim that apps are dead. It’s a claim about where the
+durable value sits. If your product is a thin arrangement of retrieval,
+prompt, loop, and UI around a model, you have built, at considerable
+expense, a slightly worse version of something several other teams have
+already built — or are about to, with more people, more distribution,
+and more momentum than you can match. Those teams are competing with
+you. The harness isn’t — not in the sense that it’s trying to beat you.
+It’s your competitor in the sense that a river is a competitor to a
+sandcastle.&lt;/p&gt;
+&lt;h3 id=&quot;assimilate&quot;&gt;Assimilate&lt;/h3&gt;
+&lt;p&gt;So build headless. Contribute &lt;em&gt;only&lt;/em&gt; your value-add, then walk
+away — no interface of your own, no harness of your own, nothing wrapped
+around the one thing you actually know how to do. Headless is not a
+smaller version of the product you wanted to build. It’s a different
+shape: the capability, exposed so that anything can pick it up.&lt;a href=&quot;https://xn--izc.com/posts/durable-contributions/#fn3&quot; class=&quot;footnote-ref&quot; id=&quot;fnref3&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The river cuts both ways. You can’t out-build the current, but you
+can put something in it. Every improvement the harness makes — better
+planning, cheaper inference, a memory layer you didn’t write, a tool
+shipped by someone you’ll never meet — arrives at your contribution for
+free, provided your contribution is shaped to receive it. That’s the
+actual trade: give up owning the experience, and in exchange everyone
+else’s work compounds into yours. Own the experience and you’re on the
+hook for keeping pace with all of it, alone, forever.&lt;/p&gt;
+&lt;p&gt;There will always be a need for data and for processing. You just no
+longer need to ship them together.&lt;/p&gt;
+&lt;p&gt;When everyone is building, let them build on yours.&lt;/p&gt;
+&lt;h2 id=&quot;build-for-self-maintenance&quot;&gt;Build for Self-Maintenance&lt;/h2&gt;
+&lt;p&gt;You are not going to be around.&lt;/p&gt;
+&lt;p&gt;Not in any morbid sense — in the ordinary sense that attention moves,
+teams re-org, priorities change, and the thing you built outlives the
+window in which anyone is paid to care about it. We have always known
+this and have always built as though it weren’t true, because the
+alternative was bleak. Unmaintained meant dead.&lt;/p&gt;
+&lt;p&gt;That’s the part that changed. Unmaintained no longer means dead. It
+means the thing keeps changing anyway, in the hands of an agent that has
+to guess what you meant.&lt;/p&gt;
+&lt;p&gt;An agent can carry real maintenance weight now — bump dependencies,
+follow an API migration, adapt to a schema that moved, keep something
+running long after everyone who understood it has gone. But it can only
+do that if it can work out what the thing was supposed to do and how
+anyone knew it was working. Handed a repo with a documented method and a
+test suite that means something, an agent will keep your work alive.
+Handed clever code and no method, it will produce something plausible.
+Plausible is worse than broken.&lt;/p&gt;
+&lt;p&gt;So what you owe whoever comes next isn’t the destination, it’s the
+path once traveled. Document how it was built, not just what got built.
+How it was built. How it was verified. What you tried and rejected, and
+why — because the rejected branch is the part that gets re-tried at
+enormous cost by someone who has no way to know it’s a dead end. What
+the constraints were, especially the ones that came from outside and
+left no trace in the code.&lt;/p&gt;
+&lt;p&gt;This is also, quietly, the strongest argument for writing evals —
+which is most of what the last two sections are about. An eval suite
+isn’t only there to hill-climb model behavior. It is the handover
+document. It’s the one artifact that states what the thing is supposed
+to do in a form a machine can act on without first reconstructing your
+theory of the problem. And a well-written eval does more than describe
+the behavior — it defines what &lt;em&gt;good&lt;/em&gt; looks like, which means
+every future iteration inherits a measuring stick instead of an
+argument. Everything else is prose that somebody has to be persuaded
+by.&lt;/p&gt;
+&lt;p&gt;Peter Naur’s argument was that reviving a program’s theory from its
+documentation is strictly impossible &lt;span class=&quot;citation&quot; data-cites=&quot;naur1985theory&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/durable-contributions/#ref-naur1985theory&quot; role=&quot;doc-biblioref&quot;&gt;Naur, 1985&lt;/a&gt;)&lt;/span&gt;. He’s right, and that’s
+precisely the reason to stop trying. Don’t leave behind documentation
+that requires the theory to be rebuilt from it. Leave something
+executable that encodes what you expected, so that whoever comes next —
+human or not — can change the code correctly without ever holding the
+theory you held.&lt;/p&gt;
+&lt;h3 id=&quot;if-youre-building-an-mvp-leave-a-well-lit-path-to-the-real-thing&quot;&gt;If
+you’re building an MVP, leave a well-lit path to the real thing&lt;/h3&gt;
+&lt;p&gt;The classic MVP failure isn’t that the first version is rough. It’s
+that its compromises become invisible. Six months on, nobody can tell
+which parts were deliberate simplifications and which parts were the
+design, so everything gets treated as load-bearing and nothing gets
+replaced. The shortcut calcifies into architecture.&lt;/p&gt;
+&lt;p&gt;Mark the shortcuts. Say it plainly in the repo: this is temporary,
+this is what replaces it, this is what has to be true before that swap
+is safe. An MVP whose compromises are documented is scaffolding. An MVP
+whose compromises are invisible is a trap — and it’s a worse trap now
+than it used to be, because the machine modifying it next has no way to
+tell the difference and will faithfully preserve your hack forever.&lt;/p&gt;
+&lt;p&gt;Be prepared to hand things over to the machines and move on.&lt;/p&gt;
+&lt;p&gt;That’s the discipline that makes “walk away” responsible rather than
+negligent. Walking away is fine. Walking away without leaving the map is
+how you end up with a codebase everyone is afraid of.&lt;/p&gt;
+&lt;h2 id=&quot;process-over-product&quot;&gt;Process over Product&lt;/h2&gt;
+&lt;p&gt;The same holds one level up, where the thing being handed over is an
+analysis rather than an artifact. Do an analysis once and you have a
+conclusion. What happens when things change and someone needs to know
+whether the findings still hold?&lt;/p&gt;
+&lt;p&gt;A well-documented methodology lets another team — or another machine
+— arrive at the finding again. ACM’s artifact badging separates three
+degrees of this, and the distance between them is the whole point:&lt;a href=&quot;https://xn--izc.com/posts/durable-contributions/#fn4&quot; class=&quot;footnote-ref&quot; id=&quot;fnref4&quot; role=&quot;doc-noteref&quot;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Repeatable&lt;/strong&gt;: the same team recreates the result
+using the same experimental setup.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Reproducible&lt;/strong&gt;: a different team obtains the same
+result using your artifacts.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Replicable&lt;/strong&gt;: a different team obtains the same
+result using artifacts they developed independently.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Most work stops at the first, and quietly assumes the other two. But
+the third is the one that matters when the world moves, because it’s the
+only one that still works after your artifacts have gone stale — it’s
+what lets someone put the question to current data and find out whether
+your conclusion survived. A conclusion has a half-life; methodology
+doesn’t.&lt;/p&gt;
+&lt;h3 id=&quot;false-precision-and-whats-hiding-inside-it&quot;&gt;False precision, and
+what’s hiding inside it&lt;/h3&gt;
+&lt;p&gt;We pad our prompts with tools and procedures to account for the cases
+where the model or agent we were working with didn’t perform well
+enough. This is the accumulation of false precision, and most of it is
+disposable — scaffolding built against a specific model’s specific
+weaknesses on a specific Tuesday.&lt;/p&gt;
+&lt;p&gt;But buried inside that padding are two things worth digging out:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. Refinements to the problem statement and our understanding
+of the world.&lt;/strong&gt; Some parts of a problem — particularly its
+grounding — can neither be derived nor readily assumed. These are
+observations about the real world that are beyond the model’s reach.
+This is genuine information content that doesn’t expire when the model
+improves.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. Refinements to our expectations.&lt;/strong&gt; What do we
+&lt;em&gt;really&lt;/em&gt; expect from the model? Is it data to support a
+conclusion you already picked? Or are you looking for relevant insights?
+Today you might instruct the model to look for specific insights. It is
+more future-proof to describe your goal and then use examples to steer a
+model that might go awry.&lt;/p&gt;
+&lt;p&gt;The discipline is separating these two from the scaffolding, and
+being prepared to cull the scaffolding as models improve. Most prompt
+libraries are archaeology: strata of workarounds for capabilities that
+arrived two releases ago, preserved because nobody wants to be the one
+who deletes a line and finds out why it was there.&lt;/p&gt;
+&lt;p&gt;Write down the grounding. Write down the expectations. Let the rest
+rot.&lt;/p&gt;
+&lt;h2 id=&quot;dual-use-documentation-and-evals&quot;&gt;Dual-Use Documentation and
+Evals&lt;/h2&gt;
+&lt;p&gt;If a documented method is the thing worth leaving behind, the
+question is what form it should take. My answer:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Dual-use documentation + evaluations &amp;gt;&amp;gt;
+skills.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;There are many types of knowledge, and they are not equally
+scarce.&lt;/p&gt;
+&lt;p&gt;The most valuable document is the results of someone’s &lt;em&gt;hot
+cognition&lt;/em&gt; — their judgment, formed under real conditions, about
+what actually matters. Then there are &lt;strong&gt;shortcuts&lt;/strong&gt;: much
+of what we call knowledge is shortcuts, and in their absence someone
+will eventually rediscover them. Then there is &lt;strong&gt;observational or
+grounding&lt;/strong&gt; knowledge, which brings in real-world constraints,
+effects, and problems into the knowledge space — the things that cannot
+be derived from first principles because they are contingent facts about
+the world.&lt;/p&gt;
+&lt;p&gt;All three are valuable. None of them need to be — and arguably none
+of them should be — packaged as skills.&lt;/p&gt;
+&lt;p&gt;Just write it down, for everyone. If an LLM wants it abridged, let it
+abridge.&lt;/p&gt;
+&lt;p&gt;Here’s the underlying argument. How much needs to be abridged, and
+what needs to be kept, isn’t some universal truth. It’s a function of
+the difference between a model’s parametric knowledge and what you need
+it to know. That difference is a moving target, and it moves in one
+direction. Every packaging decision you bake in — every “the model won’t
+know this so I’ll spell it out,” every procedural scaffold — is a
+snapshot of a gap that is closing.&lt;/p&gt;
+&lt;p&gt;Your expectations, by contrast, are much more stable. What counts as
+a good answer to your problem barely moves while the machinery
+underneath it churns — and that is exactly the thing an eval captures
+and a skill does not. A skill encodes how to get there, which goes stale
+the moment the model can find its own way. An eval encodes what
+&lt;em&gt;there&lt;/em&gt; means, which stays true across every model that comes
+after it. Write the standard down and it keeps working as a measuring
+stick long after the instructions around it have rotted.&lt;/p&gt;
+&lt;p&gt;So: write down what you need it to know as guidelines, and especially
+as &lt;strong&gt;evals&lt;/strong&gt;. As models evolve, let them sort out the
+difference. This holds even for procedural knowledge. Explain in detail
+what you need. Get the model to build evaluation criteria and maybe an
+autorater or two. Then let it hill-climb. Let the model derive the
+skill.&lt;/p&gt;
+&lt;h3 id=&quot;the-problem-with-how-we-do-evals&quot;&gt;The problem with how we do
+evals&lt;/h3&gt;
+&lt;p&gt;People treat evals like unit testing. Having a few test cases is
+nice. What we actually need are &lt;strong&gt;test case generators and
+autoraters&lt;/strong&gt; — property-based testing, not example-based
+testing.&lt;/p&gt;
+&lt;p&gt;This isn’t just aesthetics. There’s now direct evidence for it. He et
+al.’s Property-Generated Solver validates LLM-generated code against
+high-level &lt;em&gt;properties&lt;/em&gt; instead of scoring it against pass/fail
+tests, turning each violation into a concrete counterexample rather than
+a bare “test failed.” That sharper signal is what moves the needle: up
+to a 13.4% pass@1 improvement over TDD-based refinement methods, a fix
+rate above 64% on problems the model got wrong the first time, and
+1.4–1.6x the fix rate of the strongest debugging baseline &lt;span class=&quot;citation&quot; data-cites=&quot;he2026pbs&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/durable-contributions/#ref-he2026pbs&quot; role=&quot;doc-biblioref&quot;&gt;He et al., 2026&lt;/a&gt;)&lt;/span&gt;. The asymmetry is the
+point: a property is a more informative signal than a failing test. That
+gap is exactly the thing you should be harvesting.&lt;/p&gt;
+&lt;p&gt;Example-based tests also invite what that paper calls a cycle of
+self-deception: flawed tests that mirror the flawed code, generated from
+the same misunderstanding. Properties break the loop because they’re
+written against intent rather than against implementation.&lt;/p&gt;
+&lt;h3 id=&quot;the-honest-caveat&quot;&gt;The honest caveat&lt;/h3&gt;
+&lt;p&gt;If you’re going to hand grading to an autorater, know what you’re
+holding. A large-scale evaluation of 21 judge models across 541,000
+judgments found something uncomfortable: production judges with
+test-retest reliability above 0.95 and severe position bias above 0.10
+at the same time. Consistent, dependable, and wrong in a stable
+direction. The authors call it &lt;em&gt;reliability without validity&lt;/em&gt;.
+Chance-corrected agreement ran 33–41 points below raw exact-match across
+every model tested, meaning the number most people report systematically
+overstates how well their judge discriminates &lt;span class=&quot;citation&quot; data-cites=&quot;norman2026judge&quot;&gt;(&lt;a href=&quot;https://xn--izc.com/posts/durable-contributions/#ref-norman2026judge&quot; role=&quot;doc-biblioref&quot;&gt;Norman et al., 2026&lt;/a&gt;)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;So the autorater is not a free oracle. It’s another squishy
+component, and it needs to be grounded against something that isn’t
+itself a model’s opinion. That problem — how do you build verifiable
+claims out of unverifiable components — is big enough that it gets its
+own post.&lt;/p&gt;
+&lt;h2 id=&quot;the-through-line&quot;&gt;The through-line&lt;/h2&gt;
+&lt;p&gt;Everything above is the same argument in four costumes.&lt;/p&gt;
+&lt;p&gt;The harness will absorb any &lt;em&gt;product&lt;/em&gt; you build in front of
+it. It will not absorb the map you left behind, because a harness can
+follow a path but it cannot remember one it never walked. It will not
+absorb your methodology, because a methodology is a thing to be run, not
+a thing to be replaced. It will not absorb your grounding knowledge,
+because it doesn’t have it. And it will not absorb your judgment about
+what good looks like, because that’s yours.&lt;/p&gt;
+&lt;p&gt;So contribute the parts that don’t have an expiry date stamped on
+them by somebody else’s release schedule: what’s actually true about
+your domain, what you actually expect, how anyone can check, and how
+whoever comes next picks it up.&lt;/p&gt;
+&lt;p&gt;Leave the map. Then walk away and let them build.&lt;/p&gt;
+&lt;h2 class=&quot;unnumbered&quot; id=&quot;notes&quot;&gt;Notes&lt;/h2&gt;
+&lt;div id=&quot;refs&quot; class=&quot;references csl-bib-body hanging-indent&quot; data-line-spacing=&quot;2&quot; role=&quot;list&quot;&gt;
+&lt;div id=&quot;ref-he2026pbs&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+He, L., Chen, Z., Zhang, Z., Gao, X., &amp;amp; Sheng, L. (2026).
+&lt;span&gt;PGS&lt;/span&gt;: Effective &lt;span&gt;LLM&lt;/span&gt; code refinement via
+property-oriented and structurally minimal feedback. &lt;em&gt;Forty-Third
+International Conference on Machine Learning&lt;/em&gt;. &lt;a href=&quot;https://openreview.net/forum?id=6xeSRifGeL&quot;&gt;https://openreview.net/forum?id=6xeSRifGeL&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-naur1985theory&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Naur, P. (1985). Programming as theory building. &lt;em&gt;Microprocessing and
+Microprogramming&lt;/em&gt;, &lt;em&gt;15&lt;/em&gt;. &lt;a href=&quot;https://gwern.net/doc/cs/algorithm/1985-naur.pdf&quot;&gt;https://gwern.net/doc/cs/algorithm/1985-naur.pdf&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;ref-norman2026judge&quot; class=&quot;csl-entry&quot; role=&quot;listitem&quot;&gt;
+Norman, J. D., Rivera, M. U., &amp;amp; Hughes, D. A. (2026). Reliability
+without validity: A systematic, large-scale evaluation of LLM-as-a-judge
+models across agreement, consistency, and bias. &lt;em&gt;arXiv Preprint
+arXiv:2606.19544&lt;/em&gt;. &lt;a href=&quot;https://arxiv.org/html/2606.19544v1&quot;&gt;https://arxiv.org/html/2606.19544v1&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;aside id=&quot;footnotes&quot; class=&quot;footnotes footnotes-end-of-document&quot; role=&quot;doc-endnotes&quot;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn1&quot;&gt;&lt;p&gt;Anthropic, &lt;a href=&quot;https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents&quot;&gt;“Effective
+harnesses for long-running agents”&lt;/a&gt;, November 26, 2025. See also &lt;a href=&quot;https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents&quot;&gt;“Effective
+context engineering for AI agents”&lt;/a&gt;.&lt;a href=&quot;https://xn--izc.com/posts/durable-contributions/#fnref1&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn2&quot;&gt;&lt;p&gt;E.g. the &lt;a href=&quot;https://github.com/ai-boost/awesome-harness-engineering&quot;&gt;awesome-harness-engineering&lt;/a&gt;
+collection, which organizes the space as tools, patterns, evals, memory,
+MCP, permissions, observability, and orchestration.&lt;a href=&quot;https://xn--izc.com/posts/durable-contributions/#fnref2&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn3&quot;&gt;&lt;p&gt;None of this says interfaces don’t matter. We are far
+better at spatial understanding than at quantitative reasoning, which is
+why a good visualization can carry an argument that a table of the same
+numbers cannot; a bespoke UI earns its keep whenever the spatial
+representation is doing real work. The question is only whether
+&lt;em&gt;you&lt;/em&gt; should be the one building it, given that automation can
+now attach a specialized visualization to your data faster than you
+could ship one yourself.&lt;a href=&quot;https://xn--izc.com/posts/durable-contributions/#fnref3&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&quot;fn4&quot;&gt;&lt;p&gt;Definitions from &lt;a href=&quot;https://www.acm.org/publications/badging-terms&quot;&gt;ACM’s badging
+terminology&lt;/a&gt;. Note that ACM swapped its reproducibility and
+replicability definitions in May 2020 to align with the wider scientific
+community, so anything published before then reverses the two. Casual
+usage still treats “reproducible” as a catch-all for all three, which is
+usually harmless and occasionally not.&lt;a href=&quot;https://xn--izc.com/posts/durable-contributions/#fnref4&quot; class=&quot;footnote-back&quot; role=&quot;doc-backlink&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/aside&gt;
+
+      </content>
+    </entry>
     <entry>
       <title>Hot vs. Cold Cognition</title>
       <link href="https://xn--izc.com/posts/hot-vs-cold-cognition/" />
