@@ -1,28 +1,18 @@
-main menu {
-  margin: 0;
-  padding: 0;
+.noun { color: blue }
+.adverb { color: green }
+.gerund { color: purple }
+.preposition { color: brown }
+.verb { color: red }
+.determiner { color: navy }
+.conjunction { color: maroon }
+.pronoun { color: teal }
+.adjective { color: olive }
+.proper { color: coral }
 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  li {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--half);
-    padding: var(--space-2) 0;
-    border-bottom: 1px solid var(--border-color);
-  }
-
-  .post-count {
-    font-size: var(--font-size-small);
-    color: var(--dimmed-text-color);
-    font-feature-settings: "tnum" 1;
-  }
-}
+.function { color: teal }
+.var-index { color: blue }
+.var-value { color: green }
+.hi { font-weight: bold; }
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 @font-face {
@@ -1816,7 +1806,8 @@ body {
   }
   .references .csl-entry .csl-url,
   .references .csl-entry .csl-accessed,
-  .references .csl-entry .csl-scholar-link {
+  .references .csl-entry .csl-scholar-link,
+  .references .csl-entry .csl-search-link {
     font-size: smaller;
     color: var(--dimmed-text-color);
   }

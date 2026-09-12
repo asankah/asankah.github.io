@@ -1791,7 +1791,8 @@ body {
   }
   .references .csl-entry .csl-url,
   .references .csl-entry .csl-accessed,
-  .references .csl-entry .csl-scholar-link {
+  .references .csl-entry .csl-scholar-link,
+  .references .csl-entry .csl-search-link {
     font-size: smaller;
     color: var(--dimmed-text-color);
   }
