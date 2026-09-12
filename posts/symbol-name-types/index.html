@@ -33,7 +33,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
 
-    <link rel="stylesheet" href="/styles/68cZCNXynE.css" />
+    <link rel="stylesheet" href="/styles/3JltTGl1ed.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
     <link
@@ -49,23 +49,22 @@
   </head>
 
   <body>
-    <header class="container">
+    <header class="container masthead">
       <nav class="top" itemscope="" itemtype="https://schema.org/Blog">
         <h1 itemprop="name">
           <a href="/" itemprop="url">Strong Opinions Weekly Held</a>
         </h1>
-        <span></span>
+        <a href="/">Home</a>
 
-        <h2><a href="/">Home</a></h2>
+        <span
+          itemprop="author"
+          itemscope=""
+          itemtype="https://schema.org/Person"
+          ><a href="/about/me/" itemprop="sameAs">About</a></span
+        >
 
-        <h2 itemprop="author" itemscope="" itemtype="https://schema.org/Person">
-          <a href="/about/me/" itemprop="sameAs">About</a>
-        </h2>
-
-        <h2><a href="/tags/">Tags</a></h2>
-        <h2>
-          <a href="/rss.xml"><img src="/images/rss.svg" /></a>
-        </h2>
+        <a href="/tags/">Tags</a>
+        <a href="/rss.xml">RSS</a>
       </nav>
     </header>
 
@@ -77,20 +76,17 @@
           <time datetime="2020-08-24" itemprop="datePublished"
             >August 24, 2020</time
           >
-          • <span class="author" itemprop="author">Asanka Herath</span>. •
+          · <span class="author" itemprop="author">Asanka Herath</span> ·
           <time>3 min</time> read
         </div>
         <h1 itemprop="name">Names for Name Conventions</h1>
-        <nav>
-          <span></span>
-          <menu class="tags">
-            <li>
-              <span class="tag">
-                <a href="/tags/engineering/">#Engineering</a>
-              </span>
-            </li>
-          </menu>
-        </nav>
+        <menu class="tags">
+          <li>
+            <span class="tag">
+              <a href="/tags/engineering/">#Engineering</a>
+            </span>
+          </li>
+        </menu>
       </header>
 
       <main itemprop="articleBody" class="container">
@@ -196,86 +192,45 @@
         itemtype="https://schema.org/BlogPosting"
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <h2 class="title">
-          <a itemprop="url" href="/posts/on-wontfixing-bugs/">
-            <span itemprop="name">On WontFixing Bugs</span>
-          </a>
-        </h2>
         <nav>
           <div class="metadata">
-            <time datetime="2021-03-02" itemprop="datePublished"
-              >March 2, 2021</time
-            >.
+            <time datetime="2020-04-01" itemprop="datePublished"
+              >April 1, 2020</time
+            >
           </div>
-          <span></span>
           <menu class="tags">
             <li>
               <span class="tag">
-                <a href="/tags/engineering/">#Engineering</a>
+                <a href="/tags/privacy/">#Privacy</a>
               </span>
             </li>
           </menu>
         </nav>
+        <h2 class="title">
+          <a itemprop="url" href="/posts/ephemeral-fingerprinting/">
+            <span itemprop="name">Ephemeral Fingerprinting On The Web</span>
+          </a>
+        </h2>
         <div class="summary-row">
           <div>
             <div class="summary-row">
               <div itemprop="abstract">
                 <p>
-                  Large projects accumulate a large number of issue reports over
-                  time. This is normal. Typically for a &quot;successful&quot;
-                  project the rate of new issues being reported will exceed the
-                  rate of issues being fixed. Hence the growth.
+                  Any ephemeral low-entropy web observable property whose
+                  changes are concurrently observable by multiple sites can lead
+                  to cross site identity joining.
                 </p>
                 <p>
-                  But what are they to do about this ever-growing pile of bugs?
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="more"><a href="/posts/on-wontfixing-bugs/">Read more …</a></p>
-      </div>
-
-      <div
-        class="post-summary"
-        itemscope=""
-        itemtype="https://schema.org/BlogPosting"
-      >
-        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <h2 class="title">
-          <a itemprop="url" href="/series/structure-of-experience/meaning/"
-            ><span class="series-name">Structure Of Experience</span>:
-            <span itemprop="name">Act I: Meaning</span>
-          </a>
-        </h2>
-        <nav>
-          <div class="metadata">
-            <time datetime="2025-05-04" itemprop="datePublished"
-              >May 4, 2025</time
-            >.
-          </div>
-          <span></span>
-          <menu class="tags">
-            <li>
-              <span class="tag">
-                <a href="/tags/ai/">#AI</a>
-              </span>
-            </li>
-          </menu>
-        </nav>
-        <div class="summary-row">
-          <div>
-            <div class="summary-row">
-              <div itemprop="abstract">
-                <p>
-                  Language builds meaning by combining your inner experiences.
+                  This method of identity joining does not require coordination
+                  between multiple first parties. A single third party embedded
+                  within multiple first parties can also use this method.
                 </p>
               </div>
             </div>
           </div>
         </div>
         <p class="more">
-          <a href="/series/structure-of-experience/meaning/">Read more …</a>
+          <a href="/posts/ephemeral-fingerprinting/">Read more …</a>
         </p>
       </div>
 
@@ -285,51 +240,41 @@
         itemtype="https://schema.org/BlogPosting"
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <h2 class="title">
-          <a itemprop="url" href="/posts/catchment/">
-            <span itemprop="name"
-              >Draining Our Intellectual Catchment Areas</span
-            >
-          </a>
-        </h2>
         <nav>
           <div class="metadata">
-            <time datetime="2025-07-04" itemprop="datePublished"
-              >July 4, 2025</time
-            >.
+            <time datetime="2020-06-01" itemprop="datePublished"
+              >June 1, 2020</time
+            >
           </div>
-          <span></span>
           <menu class="tags">
             <li>
               <span class="tag">
-                <a href="/tags/culture/">#Culture</a>
+                <a href="/tags/tools/">#Tools</a>
               </span>
             </li>
           </menu>
         </nav>
+        <h2 class="title">
+          <a itemprop="url" href="/posts/ansible-cli-sugar/">
+            <span itemprop="name"
+              >Easier CLI for ad-hoc Ansible tasks and playbooks</span
+            >
+          </a>
+        </h2>
         <div class="summary-row">
           <div>
             <div class="summary-row">
               <div itemprop="abstract">
                 <p>
-                  Intellectual catchment areas are collaborative ecosystems
-                  between universities and industries that attract talent and
-                  ideas. The United States became a hub of intellectual capital
-                  after World War II, thanks to a combination of industrial
-                  growth around universities, significant research funding, and
-                  favorable immigration policies.
-                </p>
-                <p>
-                  The current political climate is jeopardizing these
-                  ecosystems. Continued threats against universities and
-                  immigration could undo a century of progress, ultimately
-                  depleting the nation's source of creativity and innovation.
+                  Encode the host and group names into the name of a wrapper
+                  script for quick ad-hoc invocation of Ansible tasks and
+                  playbooks.
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <p class="more"><a href="/posts/catchment/">Read more …</a></p>
+        <p class="more"><a href="/posts/ansible-cli-sugar/">Read more …</a></p>
       </div>
 
       <div
@@ -338,19 +283,61 @@
         itemtype="https://schema.org/BlogPosting"
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <nav>
+          <div class="metadata">
+            <time datetime="2022-01-06" itemprop="datePublished"
+              >January 6, 2022</time
+            >
+          </div>
+          <menu class="tags">
+            <li>
+              <span class="tag">
+                <a href="/tags/remarkable-2/">#Remarkable 2</a>
+              </span>
+            </li>
+            <li>
+              <span class="tag">
+                <a href="/tags/tools/">#Tools</a>
+              </span>
+            </li>
+          </menu>
+        </nav>
         <h2 class="title">
-          <a itemprop="url" href="/series/unsung-team-roles/glue-people/"
-            ><span class="series-name">Unsung Team Roles</span>:
-            <span itemprop="name">Ode to Glue People</span>
+          <a itemprop="url" href="/posts/grab-diagram-workflow-re2/">
+            <span itemprop="name"
+              >Quickly grab a snapshot of your reMarkable tablet</span
+            >
           </a>
         </h2>
+        <div class="summary-row">
+          <div>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  How to bind a hotkey to grab a snapshot of your reMarkable
+                  display and copy it to the clipboard on a Mac.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="more">
+          <a href="/posts/grab-diagram-workflow-re2/">Read more …</a>
+        </p>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <nav>
           <div class="metadata">
             <time datetime="2025-08-12" itemprop="datePublished"
               >August 12, 2025</time
-            >.
+            >
           </div>
-          <span></span>
           <menu class="tags">
             <li>
               <span class="tag">
@@ -359,6 +346,12 @@
             </li>
           </menu>
         </nav>
+        <h2 class="title">
+          <a itemprop="url" href="/series/unsung-team-roles/glue-people/"
+            ><span class="series-name">Unsung Team Roles</span>:
+            <span itemprop="name">Ode to Glue People</span>
+          </a>
+        </h2>
         <div class="summary-row">
           <div>
             <div class="summary-row">
@@ -389,18 +382,12 @@
         itemtype="https://schema.org/BlogPosting"
       >
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <h2 class="title">
-          <a itemprop="url" href="/posts/hot-vs-cold-cognition/">
-            <span itemprop="name">Hot vs. Cold Cognition</span>
-          </a>
-        </h2>
         <nav>
           <div class="metadata">
-            <time datetime="2026-08-16" itemprop="datePublished"
-              >August 16, 2026</time
-            >.
+            <time datetime="2026-08-02" itemprop="datePublished"
+              >August 2, 2026</time
+            >
           </div>
-          <span></span>
           <menu class="tags">
             <li>
               <span class="tag">
@@ -409,21 +396,24 @@
             </li>
           </menu>
         </nav>
+        <h2 class="title">
+          <a itemprop="url" href="/posts/ai-user-agents/">
+            <span itemprop="name">Welcome, our AI User Agents</span>
+          </a>
+        </h2>
         <div class="summary-row">
-          <a href="/posts/hot-vs-cold-cognition/">
+          <a href="/posts/ai-user-agents/">
             <img
-              src="/img/Ufh1ZEb_Fk-200.png"
-              alt="Two identical flame silhouettes side by side: the left one solid black, the right one traced in dashed line and filled with a fine grid, like a circuit diagram of the first."
-              class="hero"
+              src="/img/Afx7s0Loi9-200.png"
+              alt="A scary user agent"
+              class="noinvert hero"
               loading="lazy"
-              width="1120"
-              height="1120"
+              width="559"
+              height="559"
               srcset="
-                /img/Ufh1ZEb_Fk-200.png   200w,
-                /img/Ufh1ZEb_Fk-400.png   400w,
-                /img/Ufh1ZEb_Fk-600.png   600w,
-                /img/Ufh1ZEb_Fk-800.png   800w,
-                /img/Ufh1ZEb_Fk-1120.png 1120w
+                /img/Afx7s0Loi9-200.png 200w,
+                /img/Afx7s0Loi9-400.png 400w,
+                /img/Afx7s0Loi9-559.png 559w
               "
               sizes="auto"
             />
@@ -433,20 +423,19 @@
             <div class="summary-row">
               <div itemprop="abstract">
                 <p>
-                  Cold cognition is procedure; hot cognition is judgment shaped
-                  by a lifetime of lived experience. AI can automate the former
-                  and imitate the latter, but a statistical blend of everyone
-                  else's judgment is not the same thing as being a source of
-                  judgment. Knowing the difference should decide what we
-                  automate and what we merely augment.
+                  Once a technical term and then a philosophy, the User Agent
+                  has gradually lost its allegiance to the user. The coming
+                  AI-powered super-user-agents are even more detached from their
+                  role as a loyal ambassador. Instead it's far more likely that
+                  those user-agents will manipulate users on behalf of their
+                  benefactors, and it will be difficult if not impossible to
+                  tell what they are doing.
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <p class="more">
-          <a href="/posts/hot-vs-cold-cognition/">Read more …</a>
-        </p>
+        <p class="more"><a href="/posts/ai-user-agents/">Read more …</a></p>
       </div>
     </footer>
 
