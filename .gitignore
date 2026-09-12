@@ -1,0 +1,4 @@
+# Editor/OS cruft — this repo holds generated output only.
+.DS_Store
+._*
+Thumbs.db
