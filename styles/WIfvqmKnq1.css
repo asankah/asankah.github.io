@@ -1,3 +1,32 @@
+.socials {
+  display: flex;
+  flex-direction: horizontal;
+  justify-content: center;
+  column-gap: 2em;
+
+  margin-top: 2em;
+  margin-bottom: 1em;
+
+  * {
+    display: block;
+  }
+
+  img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.8;
+  }
+
+  a:hover img {
+    opacity: 1;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .socials img {
+    filter: invert(100%);
+  }
+}
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
@@ -2384,7 +2413,7 @@ body {
     color: var(--text-color);
   }
   .comment-author:hover .comment-name {
-    color: var(--accent-color);
+    color: var(--accent-deep-color);
   }
   .comment-avatar {
     width: 32px;
@@ -2421,7 +2450,7 @@ body {
     color: var(--dimmed-text-color);
   }
   .comment-stamp:hover {
-    color: var(--accent-color);
+    color: var(--accent-deep-color);
   }
   .comment-body {
     font-family: "Lora", Georgia, Cambria, "Times New Roman", Times, serif;
@@ -2456,7 +2485,8 @@ body {
     content: " →";
   }
   .comments-reply a:hover {
-    color: var(--accent-color);
+    color: var(--accent-deep-color);
+    text-decoration: underline;
   }
   @media (width < 720px) {
     .comment {

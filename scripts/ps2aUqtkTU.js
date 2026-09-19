@@ -16,6 +16,9 @@
   var VISITOR_KEY = "blog.reactions.visitor";
   var SELECTION_MIN = 2;
 
+  // Don't re-read for a reader who merely alt-tabbed and came straight back.
+  var REFRESH_AFTER_MS = 20000;
+
   // ---------------------------------------------------------------- visitor
 
   // A random id, kept in this browser, that lets the service recognise a
@@ -344,15 +347,34 @@
       });
     }
 
-    this.api
-      .read()
-      .then(function (state) {
-        self.absorb(state);
-      })
-      .catch(function () {
-        // Counts are a nicety. If the service is down the buttons still work
-        // and the page is otherwise unaffected.
-      });
+    var refresh = function () {
+      self.api
+        .read()
+        .then(function (state) {
+          self.absorb(state);
+        })
+        .catch(function () {
+          // Counts are a nicety. If the service is down the buttons still work
+          // and the page is otherwise unaffected; a failed refresh leaves the
+          // counts already on screen alone.
+        });
+    };
+
+    // Counts other people have left arrive when the reader comes back to the
+    // tab, rather than on a timer: an idle tab should not keep talking to the
+    // service all day. Their own presses already update from the POST
+    // response, so this is only about everyone else's.
+    var hiddenSince = 0;
+    document.addEventListener("visibilitychange", function () {
+      if (document.hidden) {
+        hiddenSince = Date.now();
+        return;
+      }
+      if (Date.now() - hiddenSince < REFRESH_AFTER_MS) return;
+      refresh();
+    });
+
+    refresh();
   };
 
   function init() {

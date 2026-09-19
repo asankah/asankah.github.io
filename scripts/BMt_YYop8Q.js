@@ -16,6 +16,9 @@
   var VISITOR_KEY = "blog.reactions.visitor";
   var SELECTION_MIN = 2;
 
+  // Don't re-read for a reader who merely alt-tabbed and came straight back.
+  var REFRESH_AFTER_MS = 20000;
+
   // ---------------------------------------------------------------- visitor
 
   // A random id, kept in this browser, that lets the service recognise a
@@ -344,15 +347,34 @@
       });
     }
 
-    this.api
-      .read()
-      .then(function (state) {
-        self.absorb(state);
-      })
-      .catch(function () {
-        // Counts are a nicety. If the service is down the buttons still work
-        // and the page is otherwise unaffected.
-      });
+    var refresh = function () {
+      self.api
+        .read()
+        .then(function (state) {
+          self.absorb(state);
+        })
+        .catch(function () {
+          // Counts are a nicety. If the service is down the buttons still work
+          // and the page is otherwise unaffected; a failed refresh leaves the
+          // counts already on screen alone.
+        });
+    };
+
+    // Counts other people have left arrive when the reader comes back to the
+    // tab, rather than on a timer: an idle tab should not keep talking to the
+    // service all day. Their own presses already update from the POST
+    // response, so this is only about everyone else's.
+    var hiddenSince = 0;
+    document.addEventListener("visibilitychange", function () {
+      if (document.hidden) {
+        hiddenSince = Date.now();
+        return;
+      }
+      if (Date.now() - hiddenSince < REFRESH_AFTER_MS) return;
+      refresh();
+    });
+
+    refresh();
   };
 
   function init() {
@@ -690,15 +712,23 @@
 
   async function load(section) {
     var thread = section.querySelector(".comments-thread");
-    var intro = section.querySelector(".comments-intro");
     var context = readConfig(section);
     var atUri = toAtUri(section.dataset.bskyThread);
 
+    // A re-check keeps the comments already on screen: replacing them with a
+    // placeholder would flash, and replacing them with an error would lose
+    // readable content because a later request failed.
+    var reloading = section.dataset.bskyLoaded === "1";
+
     thread.hidden = false;
-    renderMessage(thread, "Loading comments…");
+    if (!reloading) renderMessage(thread, "Loading comments…");
+
+    function fail(message) {
+      if (!reloading) renderMessage(thread, message);
+    }
 
     if (!atUri) {
-      renderMessage(thread, "This post’s discussion link is malformed.");
+      fail("This post’s discussion link is malformed.");
       return;
     }
 
@@ -716,16 +746,13 @@
       if (!response.ok) throw new Error("HTTP " + response.status);
       payload = await response.json();
     } catch (error) {
-      renderMessage(
-        thread,
-        "Couldn’t reach Bluesky just now. The thread is still readable there."
-      );
+      fail("Couldn’t reach Bluesky just now. The thread is still readable there.");
       return;
     }
 
     var root = payload && payload.thread;
     if (!root || !root.post) {
-      renderMessage(thread, "That Bluesky thread is no longer available.");
+      fail("That Bluesky thread is no longer available.");
       return;
     }
 
@@ -763,10 +790,20 @@
       });
     }
 
-    if (intro) intro.hidden = true;
+    // The explanation has served its purpose once the thread is on screen, but
+    // the button has not: it is the only way to pick up replies posted since.
+    var blurb = section.querySelectorAll(".comments-intro > p");
+    for (var i = 0; i < blurb.length; i++) blurb[i].hidden = true;
     thread.setAttribute("tabindex", "-1");
-    thread.focus({ preventScroll: true });
+    if (!reloading) thread.focus({ preventScroll: true });
+    section.dataset.bskyLoaded = "1";
   }
+
+  var LOAD_LABEL = "Load comments from Bluesky";
+  var REFRESH_LABEL = "Check for new replies";
+
+  // Don't re-fetch for a reader who merely alt-tabbed and came straight back.
+  var REFRESH_AFTER_MS = 20000;
 
   function init() {
     document.querySelectorAll(".comments[data-bsky-thread]").forEach(
@@ -774,13 +811,33 @@
         var button = section.querySelector(".comments-load");
         if (!button) return;
         button.hidden = false; // only now is it something that works
-        button.addEventListener("click", function () {
+
+        function fetchThread() {
+          var loaded = section.dataset.bskyLoaded === "1";
           button.disabled = true;
-          button.textContent = "Loading…";
-          load(section).finally(function () {
+          button.textContent = loaded ? "Checking…" : "Loading…";
+          return load(section).finally(function () {
             button.disabled = false;
-            button.textContent = "Load comments from Bluesky";
+            button.textContent =
+              section.dataset.bskyLoaded === "1" ? REFRESH_LABEL : LOAD_LABEL;
           });
+        }
+
+        button.addEventListener("click", fetchThread);
+
+        // The path worth catching: a reader follows "Reply on Bluesky",
+        // replies, and comes back to this tab expecting to see it. Only ever
+        // after they have already asked for the thread once -- before that,
+        // this page still makes no request to Bluesky at all.
+        var hiddenSince = 0;
+        document.addEventListener("visibilitychange", function () {
+          if (document.hidden) {
+            hiddenSince = Date.now();
+            return;
+          }
+          if (section.dataset.bskyLoaded !== "1" || button.disabled) return;
+          if (Date.now() - hiddenSince < REFRESH_AFTER_MS) return;
+          fetchThread();
         });
       }
     );
