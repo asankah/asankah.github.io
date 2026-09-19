@@ -36,7 +36,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
 
-    <link rel="stylesheet" href="/styles/wQ4tiFj7jt.css" />
+    <link rel="stylesheet" href="/styles/yjl_-9a32M.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
     <link
@@ -104,14 +104,14 @@
       </header>
 
       <main itemprop="articleBody" class="container">
-        <p>
+        <p id="p-1kz1a9v" data-anchor="p-1kz1a9v">
           This is the third time I’ve tried in earnest to switch to VSCode from
           Vim (or Neovim in my case) for reasons not all of which are relevant
           to this post. But I love Vim style modal editing and I’ve grown
           accustomed to some features that aren’t present or not well emulated
           in <a href="https://github.com/VSCodeVim/Vim">VSCodeVim</a>.
         </p>
-        <p>
+        <p id="p-1endryj" data-anchor="p-1endryj">
           Enter
           <a href="https://github.com/asvetliakov/vscode-neovim"
             >VSCode Neovim</a
@@ -121,12 +121,12 @@
           So far it’s going great.
         </p>
         <h2 id="how-vscode-neovim-works">How VSCode Neovim Works</h2>
-        <p>
+        <p id="p-1h7ep2e" data-anchor="p-1h7ep2e">
           Here’s the gist of how this extension works. Feel free to skip to the
           good stuff below but this section is good background information for
           understanding <em>why</em> it works the way it does.
         </p>
-        <ol type="1">
+        <ol type="1" id="p-y66ps2" data-anchor="p-y66ps2">
           <li>
             <p><strong>Invokes an embedded Neovim instance.</strong></p>
             <p>
@@ -152,11 +152,11 @@
             </p>
           </li>
         </ol>
-        <p>
+        <p id="p-155bfz1" data-anchor="p-155bfz1">
           So far this is pretty standard fare for how Neovim would be embedded
           for a custom UI. But things get a bit interesting from the next step.
         </p>
-        <ol start="2" type="1">
+        <ol start="2" type="1" id="p-rncql4" data-anchor="p-rncql4">
           <li>
             <p>
               <strong
@@ -197,7 +197,7 @@
             </p>
           </li>
         </ol>
-        <p>
+        <p id="p-skm04s" data-anchor="p-skm04s">
           Of course I’m eliding lots of detail here including integrations for
           other areas of UI. But I think this captures the pertinent details.
           The extension is a pretty impressive piece of work which is well worth
@@ -206,20 +206,20 @@
         <h2 id="responsive-neovim-experience-over-a-laggy-ssh-connection">
           Responsive Neovim Experience Over A laggy SSH Connection
         </h2>
-        <p>
+        <p id="p-b8rsv0" data-anchor="p-b8rsv0">
           This gets to the reason why I’m trying to move to VSCode in the first
           place. I work on a project consisting of thousands of C++ source
           files. My home-office doesn’t have enough hardware to do regular
           builds, or in fact any build at all. The beefy machines are in a
           remote location accessible via SSH.
         </p>
-        <p>
+        <p id="p-s979zf" data-anchor="p-s979zf">
           I’ve been using Neovim over SSH for a while, but the latency really
           bothers me. And no, neither SCP nor SSHFS scratches this itch because
           I won’t have access to language smarts like <code>clangd</code> which
           require access to all the source files and some build tooling.
         </p>
-        <p>
+        <p id="p-xldnfp" data-anchor="p-xldnfp">
           <a href="https://code.visualstudio.com/docs/remote/remote-overview"
             >VSCode Remote Development</a
           >
@@ -227,7 +227,9 @@
           quite have all the functionality I needed. VSCodeNeovim addresses that
           last piece of the puzzle.
         </p>
-        <p>VSCode + Remote SSH + VSCodeNeovim + Neovim gives me:</p>
+        <p id="p-1bimw2k" data-anchor="p-1bimw2k">
+          VSCode + Remote SSH + VSCodeNeovim + Neovim gives me:
+        </p>
         <figure>
           <img
             src="/posts/things-you-can-do-with-nvim-and-vscode/4qsgTpY4ng-200.png"
@@ -248,7 +250,7 @@
             Architecture of VSCode + Remote SSH + VSCodeNeovim + Neovim
           </figcaption>
         </figure>
-        <ul>
+        <ul id="p-1hke9u6" data-anchor="p-1hke9u6">
           <li>
             On the remote machine:
             <ul>
@@ -278,7 +280,7 @@
             </ul>
           </li>
         </ul>
-        <p>
+        <p id="p-1m4c8pk" data-anchor="p-1m4c8pk">
           Since the embedded Neovim instance is local the editors are super
           responsive. Completions via <code>clangd</code> is still laggy as one
           might expect. But that’s something I’m willing to live with.
@@ -286,7 +288,7 @@
         <h2 id="proportional-fonts-with-neovim">
           Proportional Fonts With Neovim
         </h2>
-        <p>
+        <p id="p-1i161vp" data-anchor="p-1i161vp">
           Okay, so why would anyone actually want this? Turns out
           <a
             href="https://www.google.com/search?q=proportional+fonts+for+coding"
@@ -296,7 +298,7 @@
           a lot of my time writing Markdown with LatexMath. Staring at
           monospaced prose all day is not my cup of tea.
         </p>
-        <p>
+        <p id="p-11sppyk" data-anchor="p-11sppyk">
           This is what it looks like when I’m editing this post in VSCode (in
           Markdown).
         </p>
@@ -319,7 +321,7 @@
             Screenshot of VSCode editing Markdown in proportional font
           </figcaption>
         </figure>
-        <p>
+        <p id="p-1llt0ok" data-anchor="p-1llt0ok">
           The best part is that I can use my familiar Vim/Neovim keybindings and
           modal editing. I had to make a couple of customizations and I only
           have this set up for Markdown. But it works fairly well. One gotcha is
@@ -329,12 +331,12 @@
         <h3 id="monospace-code-with-proportional-comments">
           Monospace Code With Proportional Comments?
         </h3>
-        <p>
+        <p id="p-1fye0gx" data-anchor="p-1fye0gx">
           What I really want isn’t proportional fonts everywhere. Rather I only
           want proportional fonts for prose. In code, this would take the form
           of comments.
         </p>
-        <p>
+        <p id="p-1sg5n3b" data-anchor="p-1sg5n3b">
           Unfortunately, VSCode doesn’t support changing the font for specific
           syntactic tokens or scopes. That would’ve been ideal because it would
           let me configure things so that comments are in proportional font
@@ -352,7 +354,7 @@
           >, but hasn’t seen much activity.
         </p>
         <h2 id="takeaways">Takeaways</h2>
-        <ol type="1">
+        <ol type="1" id="p-1rzn24b" data-anchor="p-1rzn24b">
           <li>
             VSCodeNeovim is a functional replacement for the avid Neovim or
             perhaps Vim user who wants it both ways. Lots of caveats exist
@@ -488,21 +490,21 @@
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <nav>
           <div class="metadata">
-            <time datetime="2021-09-06" itemprop="datePublished"
-              >September 6, 2021</time
+            <time datetime="2021-03-26" itemprop="datePublished"
+              >March 26, 2021</time
             >
           </div>
           <menu class="tags">
             <li>
               <span class="tag">
-                <a href="/tags/curiosity/">#Curiosity</a>
+                <a href="/tags/math/">#Math</a>
               </span>
             </li>
           </menu>
         </nav>
         <h2 class="title">
-          <a itemprop="url" href="/posts/visualizing-people-2/">
-            <span itemprop="name">Visualizing A Million People</span>
+          <a itemprop="url" href="/posts/shannon-paper/">
+            <span itemprop="name">Shannon Paper</span>
           </a>
         </h2>
         <div class="summary-row">
@@ -510,15 +512,64 @@
             <div class="summary-row">
               <div itemprop="abstract">
                 <p>
-                  If your feature pisses off a million people what does this
-                  angry mob look like? Spoiler: We only get to 750,000.
+                  Claude Shannon's
+                  <em>A mathematical theory of communication</em> is an oft
+                  cited classic in information theory. Let's dive in and try to
+                  tease apart the &quot;why&quot;s that are often overlooked
+                  when people build on top of the introduced theory. They are
+                  definitely things that I didn't consider to be obvious without
+                  the benefit of reading the paper.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="more"><a href="/posts/shannon-paper/">Read more …</a></p>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <nav>
+          <div class="metadata">
+            <time datetime="2021-12-30" itemprop="datePublished"
+              >December 30, 2021</time
+            >
+          </div>
+          <menu class="tags">
+            <li>
+              <span class="tag">
+                <a href="/tags/remarkable-2/">#Remarkable 2</a>
+              </span>
+            </li>
+            <li>
+              <span class="tag">
+                <a href="/tags/reviews/">#Reviews</a>
+              </span>
+            </li>
+          </menu>
+        </nav>
+        <h2 class="title">
+          <a itemprop="url" href="/posts/remarkable-first-impressions/">
+            <span itemprop="name">Note-taking on a reMarkable 2</span>
+          </a>
+        </h2>
+        <div class="summary-row">
+          <div>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  Sentiments after using the reMarkable 2 tablet for a month.
                 </p>
               </div>
             </div>
           </div>
         </div>
         <p class="more">
-          <a href="/posts/visualizing-people-2/">Read more …</a>
+          <a href="/posts/remarkable-first-impressions/">Read more …</a>
         </p>
       </div>
 
@@ -530,14 +581,70 @@
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <nav>
           <div class="metadata">
-            <time datetime="2024-01-01" itemprop="datePublished"
-              >January 1, 2024</time
+            <time datetime="2024-01-10" itemprop="datePublished"
+              >January 10, 2024</time
             >
           </div>
           <menu class="tags">
             <li>
               <span class="tag">
-                <a href="/tags/culture/">#Culture</a>
+                <a href="/tags/engineering/">#Engineering</a>
+              </span>
+            </li>
+            <li>
+              <span class="tag">
+                <a href="/tags/inclusion-and-equity/">#Inclusion and Equity</a>
+              </span>
+            </li>
+          </menu>
+        </nav>
+        <h2 class="title">
+          <a itemprop="url" href="/posts/evluating-negatives/">
+            <span itemprop="name"
+              >Inclusion/Equity and Evaluating Negatives</span
+            >
+          </a>
+        </h2>
+        <div class="summary-row">
+          <div>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  Evaluating properties like inclusion and equity of products
+                  can't be done through exhaustive enumeration of product
+                  outcomes. Instead we will need to increasingly rely on the
+                  controls that we place how we construct the products.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="more">
+          <a href="/posts/evluating-negatives/">Read more …</a>
+        </p>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <nav>
+          <div class="metadata">
+            <time datetime="2024-07-08" itemprop="datePublished"
+              >July 8, 2024</time
+            >
+          </div>
+          <menu class="tags">
+            <li>
+              <span class="tag">
+                <a href="/tags/organizations/">#Organizations</a>
+              </span>
+            </li>
+            <li>
+              <span class="tag">
+                <a href="/tags/career/">#Career</a>
               </span>
             </li>
           </menu>
@@ -545,18 +652,27 @@
         <h2 class="title">
           <a
             itemprop="url"
-            href="/posts/happy-new-year-2024-and-year-in-review-2023/"
+            href="/posts/how-to-solve-a-problem-in-three-steps/"
           >
-            <span itemprop="name"
-              >Happy New Year 2024 and Year in Review 2023</span
-            >
+            <span itemprop="name">How to Solve a Problem in Three Steps</span>
           </a>
         </h2>
         <div class="summary-row">
-          <div></div>
+          <div>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  If you don't know what a refridgerator is nor what an elephant
+                  is you are likely to think that opening the door, putting the
+                  elephant in, and closing the door is a viable strategy for
+                  putting an elephant in the refridgerator.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
         <p class="more">
-          <a href="/posts/happy-new-year-2024-and-year-in-review-2023/"
+          <a href="/posts/how-to-solve-a-problem-in-three-steps/"
             >Read more …</a
           >
         </p>
@@ -570,112 +686,9 @@
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <nav>
           <div class="metadata">
-            <time datetime="2024-01-25" itemprop="datePublished"
-              >January 25, 2024</time
+            <time datetime="2025-05-01" itemprop="datePublished"
+              >May 1, 2025</time
             >
-          </div>
-          <menu class="tags">
-            <li>
-              <span class="tag">
-                <a href="/tags/usability/">#Usability</a>
-              </span>
-            </li>
-            <li>
-              <span class="tag">
-                <a href="/tags/engineering/">#Engineering</a>
-              </span>
-            </li>
-          </menu>
-        </nav>
-        <h2 class="title">
-          <a itemprop="url" href="/posts/why-i-hate-carousels/">
-            <span itemprop="name">Why I Hate Carousels</span>
-          </a>
-        </h2>
-        <div class="summary-row">
-          <div>
-            <div class="summary-row">
-              <div itemprop="abstract">
-                <ul>
-                  <li>Don't use carousels in your UI.</li>
-                  <li>
-                    Instead, if you must stick content into little cards, let
-                    the horionztal layout wrap to additional lines.
-                  </li>
-                  <li>
-                    If you end up with too many horizontal lines of content,
-                    then you definitely have too many items that can be accessed
-                    via a horizontally panning UI. You need a different UI
-                    altogether.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="more">
-          <a href="/posts/why-i-hate-carousels/">Read more …</a>
-        </p>
-      </div>
-
-      <div
-        class="post-summary"
-        itemscope=""
-        itemtype="https://schema.org/BlogPosting"
-      >
-        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <nav>
-          <div class="metadata">
-            <time datetime="2024-05-22" itemprop="datePublished"
-              >May 22, 2024</time
-            >
-          </div>
-          <menu class="tags">
-            <li>
-              <span class="tag">
-                <a href="/tags/culture/">#Culture</a>
-              </span>
-            </li>
-          </menu>
-        </nav>
-        <h2 class="title">
-          <a itemprop="url" href="/posts/when-your-feature-gets-someone-hurt/">
-            <span itemprop="name">When Your Feature Gets Someone Hurt</span>
-          </a>
-        </h2>
-        <div class="summary-row">
-          <div>
-            <div class="summary-row">
-              <div itemprop="abstract">
-                <p>
-                  If Google Photos incorrectly tags a photo, what's the worst
-                  that could happen?
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="more">
-          <a href="/posts/when-your-feature-gets-someone-hurt/">Read more …</a>
-        </p>
-      </div>
-
-      <div
-        class="post-summary"
-        itemscope=""
-        itemtype="https://schema.org/BlogPosting"
-      >
-        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <nav>
-          <div class="metadata">
-            <time datetime="2026-01-27" itemprop="dateCreated"
-              >January 27, 2026</time
-            >
-            (Revised
-            <time datetime="2026-02-09" itemprop="datePublished"
-              >February 9, 2026</time
-            >
-            )
           </div>
           <menu class="tags">
             <li>
@@ -686,47 +699,26 @@
           </menu>
         </nav>
         <h2 class="title">
-          <a itemprop="url" href="/posts/user-agents/">
-            <span itemprop="name"
-              >The Increasingly Inaccurately Named User-Agent</span
-            >
+          <a itemprop="url" href="/series/structure-of-experience/preface/"
+            ><span class="series-name">Structure Of Experience</span>:
+            <span itemprop="name">Preface</span>
           </a>
         </h2>
         <div class="summary-row">
-          <a href="/posts/user-agents/">
-            <img
-              src="/img/Afx7s0Loi9-200.png"
-              alt="A scary user agent"
-              class="noinvert hero"
-              loading="lazy"
-              width="559"
-              height="559"
-              srcset="
-                /img/Afx7s0Loi9-200.png 200w,
-                /img/Afx7s0Loi9-400.png 400w,
-                /img/Afx7s0Loi9-559.png 559w
-              "
-              sizes="auto"
-            />
-          </a>
-
           <div>
             <div class="summary-row">
               <div itemprop="abstract">
                 <p>
-                  Once a technical term and then a philosophy, the User Agent
-                  has gradually lost its allegiance to the user. The coming
-                  AI-powered super-user-agents are even more detached from their
-                  role as a loyal ambassador. Instead it's far more likely that
-                  those user-agents will manipulate users on behalf of their
-                  benefactors, and it will be difficult if not impossible to
-                  tell what they are doing.
+                  A very gentle introduction to how large language models
+                  <em>almost</em> capture human experience through language.
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <p class="more"><a href="/posts/user-agents/">Read more …</a></p>
+        <p class="more">
+          <a href="/series/structure-of-experience/preface/">Read more …</a>
+        </p>
       </div>
     </footer>
 

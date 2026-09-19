@@ -33,7 +33,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
 
-    <link rel="stylesheet" href="/styles/wQ4tiFj7jt.css" />
+    <link rel="stylesheet" href="/styles/yjl_-9a32M.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
     <link
@@ -90,7 +90,7 @@
       </header>
 
       <main itemprop="articleBody" class="container">
-        <p>
+        <p id="p-1q8dqrm" data-anchor="p-1q8dqrm">
           Claude Shannon’s <em>A mathematical theory of communication</em> is an
           oft cited classic in information theory. In fact, as of this writing
           there are 84’411 citations and 139 versions of the article on Google
@@ -115,20 +115,22 @@
             paper
           </figcaption>
         </figure>
-        <p>
+        <p id="p-1ya3v1h" data-anchor="p-1ya3v1h">
           Let’s dive in and try to tease apart the “why”s that are often
           overlooked when people build on top of the introduced theory. They are
           definitely things that I didn’t consider to be obvious without the
           benefit of reading the paper.
         </p>
-        <p>
+        <p id="p-19n4cvi" data-anchor="p-19n4cvi">
           The section headings below correspond to the sections in Shannon’s
           paper.
         </p>
         <h2 id="introduction">Introduction</h2>
-        <p>The paper’s introduction states the purpose as:</p>
-        <blockquote>
-          <p>
+        <p id="p-bhk23" data-anchor="p-bhk23">
+          The paper’s introduction states the purpose as:
+        </p>
+        <blockquote id="p-tyubim" data-anchor="p-tyubim">
+          <p id="p-tyubim-2" data-anchor="p-tyubim-2">
             … [To] extend [the general theory of communication] to include a
             number of new factors, in particular the effect of noise in the
             channel, and the savings possible due to the statistical structure
@@ -136,32 +138,34 @@
             destination of information.
           </p>
         </blockquote>
-        <p>The two most salient points from this section are</p>
-        <ol type="1">
+        <p id="p-1re478p" data-anchor="p-1re478p">
+          The two most salient points from this section are
+        </p>
+        <ol type="1" id="p-1hzp7wx" data-anchor="p-1hzp7wx">
           <li>the arguments for a logarithmic measure of information, and</li>
           <li>what a measure of information actually measures.</li>
         </ol>
-        <p>
+        <p id="p-g8ylnq" data-anchor="p-g8ylnq">
           Logarithmic measures are well suited for measuring information,
           Shannon states, because it’s
           <em>“nearer to our intuitive feeling as to the proper measure.”</em>
           Additional rationalization exists in the paper, but I found this to be
           the most convincing.
         </p>
-        <p>
+        <p id="p-1nwq1w7" data-anchor="p-1nwq1w7">
           To intuit, adding a channel that’s equal in capacity to an existing
           channel increases the space of transferrable messages quadratically.
           However our intuition finds it easier to think of this as doubling the
           capacity. The latter is more in line with a logarithmic measure.
         </p>
-        <p>
+        <p id="p-1njuq6a" data-anchor="p-1njuq6a">
           Information is what’s ultimately useful for the recipient. Hence a
           measure of information must be based on the ability gained by the
           recipient upon receipt of the message. Receiving a signal means that
           the recipient can now uniquely identify a message among a large number
           of possible messages, or to reduce the space of possible messages.
         </p>
-        <p>
+        <p id="p-19hsely" data-anchor="p-19hsely">
           <strong
             >If the destination receives 10 bits of information, that means that
             the recipient is now able to uniquely select a message from
@@ -242,18 +246,18 @@
           >
           outcomes.
         </p>
-        <p>
+        <p id="p-19f92m0" data-anchor="p-19f92m0">
           Hence the measure of information is based on the ratio of the space of
           possible messages before and after receipt of the information.
         </p>
-        <p>
+        <p id="p-1fd2ta4" data-anchor="p-1fd2ta4">
           The following sections focus on defining and measuring the space of
           messages.
         </p>
         <h2 id="part-i-discrete-noiseless-systems">
           Part I: Discrete Noiseless Systems
         </h2>
-        <p>
+        <p id="p-185s58f" data-anchor="p-185s58f">
           A discrete noiseless channel is one in which a selection of symbols
           from a finite alphabet can be transmitted from a source to a
           destination without loss. It’s not necessarily the case that each
@@ -262,11 +266,11 @@
           of time.
         </p>
         <h3 id="discrete-noiseless-channel">1. Discrete Noiseless Channel</h3>
-        <p>
+        <p id="p-mvp57x" data-anchor="p-mvp57x">
           Capacity of a channel is defined to be the maximum amount of
           information that can be transferred over that channel.
         </p>
-        <p>
+        <p id="p-vut7l" data-anchor="p-vut7l">
           The capacity
           <span class="katex"
             ><span class="katex-mathml"
@@ -289,7 +293,7 @@
           >
           of a discrete noiseless channel is defined to be:
         </p>
-        <p>
+        <p id="p-xfz3f6" data-anchor="p-xfz3f6">
           <span class="katex-display"
             ><span class="katex"
               ><span class="katex-mathml"
@@ -411,7 +415,7 @@
                     ></span></span></span></span></span
           ></span>
         </p>
-        <p>
+        <p id="p-wtrhj2" data-anchor="p-wtrhj2">
           Here
           <span class="katex"
             ><span class="katex-mathml"
@@ -462,7 +466,7 @@
           >
           to transmit. Let’s see how this comes about.
         </p>
-        <p>
+        <p id="p-fpvz6i" data-anchor="p-fpvz6i">
           From the prior definition of information, if the recipient receives
           <span class="katex"
             ><span class="katex-mathml"
@@ -525,7 +529,7 @@
           >
           possible messages.
         </p>
-        <p>
+        <p id="p-1n21jrz" data-anchor="p-1n21jrz">
           So we start with counting the number of possible messages that
           could’ve been transmitted over
           <span class="katex"
@@ -632,7 +636,7 @@
           >
           time. Hence the rate is:
         </p>
-        <p>
+        <p id="p-1vnvv7m" data-anchor="p-1vnvv7m">
           <span class="katex-display"
             ><span class="katex"
               ><span class="katex-mathml"
@@ -735,7 +739,7 @@
                     ></span></span></span></span></span
           ></span>
         </p>
-        <p>
+        <p id="p-1ksiy1a" data-anchor="p-1ksiy1a">
           To generalize, we find the limit of
           <span class="katex"
             ><span class="katex-mathml"
@@ -803,7 +807,7 @@
             ></span
           >.
         </p>
-        <p>
+        <p id="p-178tuly" data-anchor="p-178tuly">
           Suppose the channel can transmit
           <span class="katex"
             ><span class="katex-mathml"
@@ -1072,7 +1076,7 @@
             ></span
           >?
         </p>
-        <p>
+        <p id="p-xj1ydg" data-anchor="p-xj1ydg">
           To break this down a bit further, we can ask
           <em
             >“how many possible messages could there be that end in
@@ -1142,7 +1146,7 @@
             >?”</em
           >
         </p>
-        <p>
+        <p id="p-ahmr7s" data-anchor="p-ahmr7s">
           Any message that ends in
           <span class="katex"
             ><span class="katex-mathml"
@@ -1377,7 +1381,7 @@
                           ><span></span></span></span></span></span></span></span></span></span
           >. I.e.:
         </p>
-        <p>
+        <p id="p-1s9cdxa" data-anchor="p-1s9cdxa">
           <span class="katex-display"
             ><span class="katex"
               ><span class="katex-mathml"
@@ -1951,7 +1955,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
                           ><span></span></span></span></span></span></span></span></span
           ></span>
         </p>
-        <p>
+        <p id="p-kc4cyq" data-anchor="p-kc4cyq">
           As shown, the length of the
           <span class="katex"
             ><span class="katex-mathml"
@@ -2162,7 +2166,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
                           ><span></span></span></span></span></span></span></span></span></span
           >.
         </p>
-        <p>
+        <p id="p-147av6t" data-anchor="p-147av6t">
           Hence there can be
           <span class="katex"
             ><span class="katex-mathml"
@@ -2298,8 +2302,10 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
           ></span>
           prefix.
         </p>
-        <p>Thus we can state this problem recursively as follows:</p>
-        <p>
+        <p id="p-1t1vpu4" data-anchor="p-1t1vpu4">
+          Thus we can state this problem recursively as follows:
+        </p>
+        <p id="p-c3g159" data-anchor="p-c3g159">
           <span class="katex-display"
             ><span class="katex"
               ><span class="katex-mathml"
@@ -2506,7 +2512,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
             ></span
           >
         </p>
-        <p>
+        <p id="p-1velge1" data-anchor="p-1velge1">
           … where
           <span class="katex"
             ><span class="katex-mathml"
@@ -2658,14 +2664,14 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
             ></span
           >.
         </p>
-        <p>
+        <p id="p-eumpj6" data-anchor="p-eumpj6">
           Solving this equation involves recognizing that this is a
           <a href="https://en.wikipedia.org/wiki/Linear_difference_equation"
             >linear difference equation</a
           >
           (not to be confused with a linear <em>differential</em> equation).
         </p>
-        <p>
+        <p id="p-dnb121" data-anchor="p-dnb121">
           <strong
             >If all
             <span class="katex"
@@ -2713,7 +2719,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
           >, then the characteristic polynomial corresponding to this recurrence
           is:
         </p>
-        <p>
+        <p id="p-e36kki" data-anchor="p-e36kki">
           <span class="katex-display"
             ><span class="katex"
               ><span class="katex-mathml"
@@ -2937,7 +2943,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
             ></span
           >
         </p>
-        <p>
+        <p id="p-1pvyi5r" data-anchor="p-1pvyi5r">
           If
           <span class="katex"
             ><span class="katex-mathml"
@@ -3078,12 +3084,12 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
             ></span
           >.
         </p>
-        <p>
+        <p id="p-nygnlt" data-anchor="p-nygnlt">
           (I need to check the math here since Shannon just says this is a well
           known result and moves on.)
         </p>
-        <p>So now we have:</p>
-        <p>
+        <p id="p-x34sdx" data-anchor="p-x34sdx">So now we have:</p>
+        <p id="p-c9021y" data-anchor="p-c9021y">
           <span class="katex-display"
             ><span class="katex"
               ><span class="katex-mathml"
@@ -3246,7 +3252,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
         <h3 id="the-discrete-source-of-information">
           2. The Discrete Source of information
         </h3>
-        <p>
+        <p id="p-sccigh" data-anchor="p-sccigh">
           This section of the paper focuses on defining what at discrete source
           of information is. For our purposes it can be thought of as a
           stochastic process which produces a stream of symbols.
@@ -3254,12 +3260,12 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
         <h3 id="discrete-approximations-to-english">
           3. Discrete Approximations to English
         </h3>
-        <p>
+        <p id="p-4x3ga" data-anchor="p-4x3ga">
           Here we come to word and sentence generation using stochastic
           processes. In particular Shannon takes us through the progression of
           constructing messages via:
         </p>
-        <ol type="1">
+        <ol type="1" id="p-glqao1" data-anchor="p-glqao1">
           <li>
             Zero-order approximation. Symbols are individual letters with the
             addition of a space. Each symbol is selected with equal probability.
@@ -3287,7 +3293,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
             depend on the previous word. I.e. follows digrams.
           </li>
         </ol>
-        <p>
+        <p id="p-25i6g6" data-anchor="p-25i6g6">
           By the time we arrive at second-order word approximations, the
           generated messages start to resemble natural English albeit
           nonsensical.
@@ -3295,29 +3301,37 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
         <h3 id="graphical-representation-of-a-markoff-process">
           4. Graphical Representation of a Markoff process
         </h3>
-        <p>
+        <p id="p-12g8ryc" data-anchor="p-12g8ryc">
           Identifies the previous stochastic processes as Markoff processes.
           They are represented as a set of states. Each state can
           probabilistically transition to number of states with some probability
           distribution. Each transition emits a symbol.
         </p>
-        <p>
+        <p id="p-tb88bg" data-anchor="p-tb88bg">
           If the emitted symbol doesn’t depend on any prior symbol, then we only
           really need one state. It will have a self-edge for each possible
           emitted symbol.
         </p>
-        <pre class="graphviz"><code>digraph {
+        <pre
+          class="graphviz"
+          id="p-iwadby"
+          data-anchor="p-iwadby"
+        ><code>digraph {
   nodesep=1.5;
   S -&gt; S [label=&quot;0.2\n\n &#39;A&#39;&quot;];
   S -&gt; S [label=&quot;0.2\n \n&#39;B&#39;&quot;];
   S -&gt; S [label=&quot;0.6\n \n&#39;C&#39;&quot;];
 }</code></pre>
-        <p>
+        <p id="p-lozmkj" data-anchor="p-lozmkj">
           If the emitted symbol depends on the previous symbol, then there will
           be as many states needed as there are symbols. This is the case for
           digrams.
         </p>
-        <pre class="graphviz"><code>digraph {
+        <pre
+          class="graphviz"
+          id="p-1qlf6ao"
+          data-anchor="p-1qlf6ao"
+        ><code>digraph {
   A -&gt; A [label=&quot;0.33, A&quot;];
   A -&gt; B [label=&quot;0.33, B&quot;];
   A -&gt; C [label=&quot;0.33, C&quot;];
@@ -3328,7 +3342,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
   C -&gt; B [label=&quot;0.33, B&quot;];
   C -&gt; C [label=&quot;0.33, C&quot;];
 }</code></pre>
-        <p>
+        <p id="p-o9lqm0" data-anchor="p-o9lqm0">
           For trigrams, since they depend on the previous two symbols, require
           <span class="katex"
             ><span class="katex-mathml"
@@ -3367,8 +3381,8 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
           states.
         </p>
         <h3 id="ergodic-and-mixed-sources">5. Ergodic and Mixed Sources</h3>
-        <blockquote>
-          <p>
+        <blockquote id="p-1b6x1qe" data-anchor="p-1b6x1qe">
+          <p id="p-1b6x1qe-2" data-anchor="p-1b6x1qe-2">
             In an ergodic process every sequence produced by the process is the
             same in statistical properties. […] Roughly the ergodic property
             means statistical homogeneity.
@@ -3377,11 +3391,11 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
         <h3 id="choice-uncertainty-and-entropy">
           6. Choice Uncertainty and Entropy
         </h3>
-        <p>
+        <p id="p-134pjen" data-anchor="p-134pjen">
           Here we come to the part that is most often cited. The definition of
           entropy.
         </p>
-        <p>
+        <p id="p-yvyoh0" data-anchor="p-yvyoh0">
           Shannon lays out three requirements for a measure of information
           <span class="katex"
             ><span class="katex-mathml"
@@ -3527,7 +3541,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
                           ><span></span></span></span></span></span></span></span></span></span
           >:
         </p>
-        <ol type="1">
+        <ol type="1" id="p-8zkiij" data-anchor="p-8zkiij">
           <li>
             <span class="katex"
               ><span class="katex-mathml"
@@ -3805,8 +3819,8 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
             >.
           </li>
         </ol>
-        <blockquote>
-          <p>
+        <blockquote id="p-101udpz" data-anchor="p-101udpz">
+          <p id="p-101udpz-2" data-anchor="p-101udpz-2">
             The only
             <span class="katex"
               ><span class="katex-mathml"
@@ -3973,7 +3987,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
             ></span>
           </p>
         </blockquote>
-        <p>
+        <p id="p-1rkftc1" data-anchor="p-1rkftc1">
           The constant
           <span class="katex"
             ><span class="katex-mathml"
@@ -3996,7 +4010,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
           >
           is merely a unit of measure and can be set to 1.
         </p>
-        <p>
+        <p id="p-cbkill" data-anchor="p-cbkill">
           Some interesting properties of
           <span class="katex"
             ><span class="katex-mathml"
@@ -4018,7 +4032,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
             ></span
           >:
         </p>
-        <ol type="1">
+        <ol type="1" id="p-1q5ltpz" data-anchor="p-1q5ltpz">
           <li>
             <span class="katex"
               ><span class="katex-mathml"
@@ -5639,7 +5653,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
         <h3 id="the-entropy-of-an-information-source">
           7. The Entropy of an Information Source
         </h3>
-        <p>
+        <p id="p-ow550k" data-anchor="p-ow550k">
           Let
           <span class="katex"
             ><span class="katex-mathml"
@@ -5781,7 +5795,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
                           ><span></span></span></span></span></span></span></span></span></span
           >.
         </p>
-        <p>
+        <p id="p-7wuql9" data-anchor="p-7wuql9">
           Each state
           <span class="katex"
             ><span class="katex-mathml"
@@ -5871,7 +5885,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
           representing the entropy of all possible outputs from that state.
           I.e.:
         </p>
-        <p>
+        <p id="p-1p9ics0" data-anchor="p-1p9ics0">
           <span class="katex-display"
             ><span class="katex"
               ><span class="katex-mathml"
@@ -6034,7 +6048,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
                             ><span></span></span></span></span></span></span></span></span></span
           ></span>
         </p>
-        <p>
+        <p id="p-1lbd3io" data-anchor="p-1lbd3io">
           Each such state also has a probability of occurrence
           <span class="katex"
             ><span class="katex-mathml"
@@ -6079,12 +6093,12 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
                           ><span></span></span></span></span></span></span></span></span></span
           >.
         </p>
-        <p>
+        <p id="p-eu2l09" data-anchor="p-eu2l09">
           The entropy of the entire information source is the weighted sum of
           the state-wise entropies. The weight being the probability of
           occurrence. Thus:
         </p>
-        <p>
+        <p id="p-1q1un32" data-anchor="p-1q1un32">
           <span class="katex-display"
             ><span class="katex"
               ><span class="katex-mathml"
@@ -6529,12 +6543,12 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
                               ><span></span></span></span></span></span></span></span></span></span></span
           ></span>
         </p>
-        <p>
+        <p id="p-mbm3s8" data-anchor="p-mbm3s8">
           If the source is operating at some definite time rate, then the
           <strong>entropy per second</strong>, or
           <strong>entropy rate</strong> is <em>defined</em> to be:
         </p>
-        <p>
+        <p id="p-ceb6a3" data-anchor="p-ceb6a3">
           <span class="katex-display"
             ><span class="katex"
               ><span class="katex-mathml"
@@ -6669,7 +6683,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
                             ><span></span></span></span></span></span></span></span></span></span
           ></span>
         </p>
-        <p>
+        <p id="p-1yntbeg" data-anchor="p-1yntbeg">
           where
           <span class="katex"
             ><span class="katex-mathml"
@@ -6732,7 +6746,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
             ></span
           >.
         </p>
-        <p>
+        <p id="p-1fufam1" data-anchor="p-1fufam1">
           Shannon says “Clearly
           <span class="katex"
             ><span class="katex-mathml"
@@ -6896,11 +6910,11 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
                           ><span></span></span></span></span></span></span></span></span></span
           >.
         </p>
-        <p>
+        <p id="p-1sein4g" data-anchor="p-1sein4g">
           This is followed by a derivation that takes some work to follow. Let’s
           go through it step by step:
         </p>
-        <ol type="1">
+        <ol type="1" id="p-17p6d9k" data-anchor="p-17p6d9k">
           <li>
             <p>
               Suppose that the information source consists of a single state and
@@ -7243,8 +7257,8 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
             </p>
           </li>
         </ol>
-        <p>From there we see that:</p>
-        <p>
+        <p id="p-1q402wz" data-anchor="p-1q402wz">From there we see that:</p>
+        <p id="p-s5gr4z" data-anchor="p-s5gr4z">
           <span class="katex-display"
             ><span class="katex"
               ><span class="katex-mathml"
@@ -7530,21 +7544,26 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <nav>
           <div class="metadata">
-            <time datetime="2021-03-26" itemprop="datePublished"
-              >March 26, 2021</time
+            <time datetime="2021-12-30" itemprop="datePublished"
+              >December 30, 2021</time
             >
           </div>
           <menu class="tags">
             <li>
               <span class="tag">
-                <a href="/tags/math/">#Math</a>
+                <a href="/tags/remarkable-2/">#Remarkable 2</a>
+              </span>
+            </li>
+            <li>
+              <span class="tag">
+                <a href="/tags/reviews/">#Reviews</a>
               </span>
             </li>
           </menu>
         </nav>
         <h2 class="title">
-          <a itemprop="url" href="/posts/shannon-paper/">
-            <span itemprop="name">Shannon Paper</span>
+          <a itemprop="url" href="/posts/remarkable-first-impressions/">
+            <span itemprop="name">Note-taking on a reMarkable 2</span>
           </a>
         </h2>
         <div class="summary-row">
@@ -7552,159 +7571,14 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
             <div class="summary-row">
               <div itemprop="abstract">
                 <p>
-                  Claude Shannon's
-                  <em>A mathematical theory of communication</em> is an oft
-                  cited classic in information theory. Let's dive in and try to
-                  tease apart the &quot;why&quot;s that are often overlooked
-                  when people build on top of the introduced theory. They are
-                  definitely things that I didn't consider to be obvious without
-                  the benefit of reading the paper.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="more"><a href="/posts/shannon-paper/">Read more …</a></p>
-      </div>
-
-      <div
-        class="post-summary"
-        itemscope=""
-        itemtype="https://schema.org/BlogPosting"
-      >
-        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <nav>
-          <div class="metadata">
-            <time datetime="2024-06-24" itemprop="datePublished"
-              >June 24, 2024</time
-            >
-          </div>
-          <menu class="tags">
-            <li>
-              <span class="tag">
-                <a href="/tags/culture/">#Culture</a>
-              </span>
-            </li>
-          </menu>
-        </nav>
-        <h2 class="title">
-          <a itemprop="url" href="/posts/have-loop/">
-            <span itemprop="name">The Have-Loop</span>
-          </a>
-        </h2>
-        <div class="summary-row">
-          <div>
-            <div class="summary-row">
-              <div itemprop="abstract">
-                <p>
-                  Have-loops are positive feedback loops which cause
-                  unsustainable concentration of limited resources. Once you
-                  learn to recognize them, you will see them everywhere.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="more"><a href="/posts/have-loop/">Read more …</a></p>
-      </div>
-
-      <div
-        class="post-summary"
-        itemscope=""
-        itemtype="https://schema.org/BlogPosting"
-      >
-        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <nav>
-          <div class="metadata">
-            <time datetime="2024-07-11" itemprop="dateCreated"
-              >July 11, 2024</time
-            >
-            (Revised
-            <time datetime="2024-07-12" itemprop="datePublished"
-              >July 12, 2024</time
-            >
-            )
-          </div>
-          <menu class="tags">
-            <li>
-              <span class="tag">
-                <a href="/tags/engineering/">#Engineering</a>
-              </span>
-            </li>
-            <li>
-              <span class="tag">
-                <a href="/tags/career/">#Career</a>
-              </span>
-            </li>
-            <li>
-              <span class="tag">
-                <a href="/tags/organizations/">#Organizations</a>
-              </span>
-            </li>
-          </menu>
-        </nav>
-        <h2 class="title">
-          <a itemprop="url" href="/posts/proof-of-work/">
-            <span itemprop="name">Proof of Work</span>
-          </a>
-        </h2>
-        <div class="summary-row">
-          <div>
-            <div class="summary-row">
-              <div itemprop="abstract">
-                <p>
-                  Working with a poorly thought-out, or overengineered
-                  technology stack, or an overly bureaucratic organization is
-                  <em>also a form of proof-of-work</em>.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="more"><a href="/posts/proof-of-work/">Read more …</a></p>
-      </div>
-
-      <div
-        class="post-summary"
-        itemscope=""
-        itemtype="https://schema.org/BlogPosting"
-      >
-        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <nav>
-          <div class="metadata">
-            <time datetime="2025-05-07" itemprop="datePublished"
-              >May 7, 2025</time
-            >
-          </div>
-          <menu class="tags">
-            <li>
-              <span class="tag">
-                <a href="/tags/ai/">#AI</a>
-              </span>
-            </li>
-          </menu>
-        </nav>
-        <h2 class="title">
-          <a itemprop="url" href="/series/structure-of-experience/flame/"
-            ><span class="series-name">Structure Of Experience</span>:
-            <span itemprop="name">Act III: Flame</span>
-          </a>
-        </h2>
-        <div class="summary-row">
-          <div>
-            <div class="summary-row">
-              <div itemprop="abstract">
-                <p>
-                  The map is not the territory. A picture of a flame is not a
-                  flame. A description of a neural network is not a brain. A
-                  simulation of thought is not a consciousness.
+                  Sentiments after using the reMarkable 2 tablet for a month.
                 </p>
               </div>
             </div>
           </div>
         </div>
         <p class="more">
-          <a href="/series/structure-of-experience/flame/">Read more …</a>
+          <a href="/posts/remarkable-first-impressions/">Read more …</a>
         </p>
       </div>
 
@@ -7716,8 +7590,87 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <nav>
           <div class="metadata">
-            <time datetime="2025-07-04" itemprop="datePublished"
-              >July 4, 2025</time
+            <time datetime="2022-01-13" itemprop="datePublished"
+              >January 13, 2022</time
+            >
+          </div>
+          <menu class="tags">
+            <li>
+              <span class="tag">
+                <a href="/tags/inktober/">#Inktober</a>
+              </span>
+            </li>
+          </menu>
+        </nav>
+        <h2 class="title">
+          <a itemprop="url" href="/posts/inktober-decay/">
+            <span itemprop="name">Inktober - Decay</span>
+          </a>
+        </h2>
+        <div class="summary-row">
+          <div></div>
+        </div>
+        <p class="more"><a href="/posts/inktober-decay/">Read more …</a></p>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <nav>
+          <div class="metadata">
+            <time datetime="2020-07-04" itemprop="datePublished"
+              >July 4, 2020</time
+            >
+          </div>
+          <menu class="tags">
+            <li>
+              <span class="tag">
+                <a href="/tags/curiosity/">#Curiosity</a>
+              </span>
+            </li>
+          </menu>
+        </nav>
+        <h2 class="title">
+          <a itemprop="url" href="/posts/notes-on-fact-checking/">
+            <span itemprop="name"
+              >Notes from Crash Course&#39;s Videos on Fact Checking Information
+              You See On The Internet
+            </span>
+          </a>
+        </h2>
+        <div class="summary-row">
+          <div>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  Hank Green's Crash Course YouTube channel has an excellent
+                  series about navigating digital information. It's an excellent
+                  guide to how internet users could intelligently consume
+                  information they see on the internet. These are my
+                  (incomplete) notes from the series.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="more">
+          <a href="/posts/notes-on-fact-checking/">Read more …</a>
+        </p>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <nav>
+          <div class="metadata">
+            <time datetime="2024-05-22" itemprop="datePublished"
+              >May 22, 2024</time
             >
           </div>
           <menu class="tags">
@@ -7729,10 +7682,8 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
           </menu>
         </nav>
         <h2 class="title">
-          <a itemprop="url" href="/posts/catchment/">
-            <span itemprop="name"
-              >Draining Our Intellectual Catchment Areas</span
-            >
+          <a itemprop="url" href="/posts/when-your-feature-gets-someone-hurt/">
+            <span itemprop="name">When Your Feature Gets Someone Hurt</span>
           </a>
         </h2>
         <div class="summary-row">
@@ -7740,24 +7691,85 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
             <div class="summary-row">
               <div itemprop="abstract">
                 <p>
-                  Intellectual catchment areas are collaborative ecosystems
-                  between universities and industries that attract talent and
-                  ideas. The United States became a hub of intellectual capital
-                  after World War II, thanks to a combination of industrial
-                  growth around universities, significant research funding, and
-                  favorable immigration policies.
-                </p>
-                <p>
-                  The current political climate is jeopardizing these
-                  ecosystems. Continued threats against universities and
-                  immigration could undo a century of progress, ultimately
-                  depleting the nation's source of creativity and innovation.
+                  If Google Photos incorrectly tags a photo, what's the worst
+                  that could happen?
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <p class="more"><a href="/posts/catchment/">Read more …</a></p>
+        <p class="more">
+          <a href="/posts/when-your-feature-gets-someone-hurt/">Read more …</a>
+        </p>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <nav>
+          <div class="metadata">
+            <time datetime="2026-01-27" itemprop="dateCreated"
+              >January 27, 2026</time
+            >
+            (Revised
+            <time datetime="2026-02-09" itemprop="datePublished"
+              >February 9, 2026</time
+            >
+            )
+          </div>
+          <menu class="tags">
+            <li>
+              <span class="tag">
+                <a href="/tags/ai/">#AI</a>
+              </span>
+            </li>
+          </menu>
+        </nav>
+        <h2 class="title">
+          <a itemprop="url" href="/posts/user-agents/">
+            <span itemprop="name"
+              >The Increasingly Inaccurately Named User-Agent</span
+            >
+          </a>
+        </h2>
+        <div class="summary-row">
+          <a href="/posts/user-agents/">
+            <img
+              src="/img/Afx7s0Loi9-200.png"
+              alt="A scary user agent"
+              class="noinvert hero"
+              loading="lazy"
+              width="559"
+              height="559"
+              srcset="
+                /img/Afx7s0Loi9-200.png 200w,
+                /img/Afx7s0Loi9-400.png 400w,
+                /img/Afx7s0Loi9-559.png 559w
+              "
+              sizes="auto"
+            />
+          </a>
+
+          <div>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  Once a technical term and then a philosophy, the User Agent
+                  has gradually lost its allegiance to the user. The coming
+                  AI-powered super-user-agents are even more detached from their
+                  role as a loyal ambassador. Instead it's far more likely that
+                  those user-agents will manipulate users on behalf of their
+                  benefactors, and it will be difficult if not impossible to
+                  tell what they are doing.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="more"><a href="/posts/user-agents/">Read more …</a></p>
       </div>
     </footer>
 

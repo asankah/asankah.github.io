@@ -33,7 +33,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
 
-    <link rel="stylesheet" href="/styles/wQ4tiFj7jt.css" />
+    <link rel="stylesheet" href="/styles/yjl_-9a32M.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
     <link
@@ -90,8 +90,8 @@
       </header>
 
       <main itemprop="articleBody" class="container">
-        <p>TL;DR:</p>
-        <ul>
+        <p id="p-1a4sg2m" data-anchor="p-1a4sg2m">TL;DR:</p>
+        <ul id="p-6wjeaz" data-anchor="p-6wjeaz">
           <li>
             <p>
               Any web observable property whose changes are concurrently
@@ -126,24 +126,24 @@
             diagram of site isolation boundaries with overlap
           </figcaption>
         </figure>
-        <p>
+        <p id="p-1ujk69c" data-anchor="p-1ujk69c">
           <strong>Figure 1</strong>: Two sites observe a sequence of device
           orientation changes at times 𝒕₀, 𝒕₁,𝒕₂ .
         </p>
-        <p>
+        <p id="p-i2pgmw" data-anchor="p-i2pgmw">
           All sites on the same UA instance share a clock and therefore can
           agree on the timestamps with a small margin of error. The triplet 𝒕₀,
           𝒕₁,𝒕₂ has a high probability of uniquely identifying the user. The two
           sites can thus use these observations to conclude that the
           observations originate from the same user.
         </p>
-        <p>
+        <p id="p-l1v2c2" data-anchor="p-l1v2c2">
           As illustrated above, one or more low entropy signals observed
           concurrently can be used to identify a user with a high degree of
           confidence. Let’s call these <strong>ephemeral fingerprints</strong>.
           This document discusses two types:
         </p>
-        <ol type="1">
+        <ol type="1" id="p-qpjonf" data-anchor="p-qpjonf">
           <li>
             <p>
               <em
@@ -161,7 +161,7 @@
             </p>
           </li>
         </ol>
-        <p>
+        <p id="p-u4xswk" data-anchor="p-u4xswk">
           Signals considered for ephemeral fingerprinting don’t need to be
           highly identifying by themselves. The
           <a href="https://github.com/bslassey/privacy-budget"
@@ -170,7 +170,7 @@
           does not adequately account for fingerprinting based on concurrent
           observations of low entropy signals.
         </p>
-        <p>
+        <p id="p-1mibd35" data-anchor="p-1mibd35">
           Device orientation, from our earlier example, can take one of two
           values (portrait or landscape) and is unstable. Thus a single sample
           of device orientation carries almost no information. I.e. A recorded
@@ -178,7 +178,7 @@
           the user at a later time. However the timestamps corresponding to
           orientation changes could have identifying levels of entropy.
         </p>
-        <p>
+        <p id="p-mrd0pd" data-anchor="p-mrd0pd">
           These are not new. For example, this is discussed by Van Goethem et.
           al.
           <a
@@ -191,7 +191,7 @@
             ><sup>1</sup></a
           >
         </p>
-        <p>
+        <p id="p-1e8qf7w" data-anchor="p-1e8qf7w">
           who calls these “Cross-Session Events” (§ 5 of linked paper).
           Potential ephemeral fingerprinting surfaces also get flagged during
           standardization discussions (
@@ -204,23 +204,23 @@
           >).
         </p>
         <h3 id="modelling-correlated-events">Modelling Correlated Events</h3>
-        <p>
+        <p id="p-zw4yo5" data-anchor="p-zw4yo5">
           A correlatable event can be thought of as the tuple
           <code>&lt;surface-sample, timestamp&gt;</code>. The addition of the
           timestamp strictly increases the amount of information carried by the
           surface sample.
         </p>
         <h3 id="modelling-event-streams">Modelling Event Streams</h3>
-        <p>
+        <p id="p-1vlofys" data-anchor="p-1vlofys">
           An event stream is simply a list of observed samples
           <code>sample₀, sample₁, ...</code>.
         </p>
-        <p>
+        <p id="p-hcsxf4" data-anchor="p-hcsxf4">
           Each additional observation strictly increases the amount of
           information.
         </p>
         <h3 id="other-examples">Other Examples:</h3>
-        <ul>
+        <ul id="p-1jtzybp" data-anchor="p-1jtzybp">
           <li><code>Accelerometer</code> properties.</li>
           <li><code>Sensor</code>, <code>onreading</code> event.</li>
           <li>
@@ -238,8 +238,10 @@
         </ul>
         <h2 id="mitigation">Mitigation</h2>
         <h3 id="permissions">Permissions</h3>
-        <p><strong>Goal:</strong> Require informed consent from users.</p>
-        <p>
+        <p id="p-wjtzdt" data-anchor="p-wjtzdt">
+          <strong>Goal:</strong> Require informed consent from users.
+        </p>
+        <p id="p-fcappe" data-anchor="p-fcappe">
           There’s precedent for considering permissions
           <a
             href="#fn2"
@@ -253,8 +255,8 @@
           to be sufficient mitigation for similar issues. For example, the Media
           Capture API specification includes the following:
         </p>
-        <blockquote>
-          <p>
+        <blockquote id="p-il7gtb" data-anchor="p-il7gtb">
+          <p id="p-il7gtb-2" data-anchor="p-il7gtb-2">
             For origins to which permission has been granted, the devicechange
             event will be emitted across browsing contexts and origins each time
             a new media device is added or removed; user agents can mitigate the
@@ -262,7 +264,7 @@
             the timing of these events.
           </p>
         </blockquote>
-        <p style="text-align: right">
+        <p style="text-align: right" id="p-1vag2xa" data-anchor="p-1vag2xa">
           From §15 of
           <a
             href="https://w3c.github.io/mediacapture-main/#privacy-and-security-considerations"
@@ -270,12 +272,12 @@
           >
           specification.
         </p>
-        <p><strong>Pros</strong></p>
-        <ul>
+        <p id="p-imehg1" data-anchor="p-imehg1"><strong>Pros</strong></p>
+        <ul id="p-1348d7u" data-anchor="p-1348d7u">
           <li>Prevents drive-by fingerprinting.</li>
         </ul>
-        <p><strong>Cons</strong></p>
-        <ul>
+        <p id="p-sp2sso" data-anchor="p-sp2sso"><strong>Cons</strong></p>
+        <ul id="p-1wlhduu" data-anchor="p-1wlhduu">
           <li>
             <p>
               UI for permissions don’t disclose the fact that all sites that
@@ -288,23 +290,23 @@
           </li>
         </ul>
         <h3 id="fuzzing-timing-of-events">Fuzzing Timing of Events</h3>
-        <p>
+        <p id="p-1gm88vc" data-anchor="p-1gm88vc">
           <strong>Goal</strong>: Deter correlation of events by injecting timing
           skew.
         </p>
-        <p>
+        <p id="p-1qep0xv" data-anchor="p-1qep0xv">
           Mentioned in the snippet above from the Media Capture and Streams API
           and called out by Jeffrey Yasskin as a potential general mitigation in
           “desynchronize whole-browser events” in
           <a href="https://github.com/whatwg/html/issues/5215">this issue</a>
           filed against the WHATWG HTML specification.
         </p>
-        <p><strong>Pros</strong></p>
-        <ul>
+        <p id="p-imehg1-2" data-anchor="p-imehg1-2"><strong>Pros</strong></p>
+        <ul id="p-1oe9s6" data-anchor="p-1oe9s6">
           <li>Lowers confidence of identity equivalence.</li>
         </ul>
-        <p><strong>Cons</strong></p>
-        <ul>
+        <p id="p-sp2sso-2" data-anchor="p-sp2sso-2"><strong>Cons</strong></p>
+        <ul id="p-sttpyq" data-anchor="p-sttpyq">
           <li>
             <p>
               Precise timing may not be required. I.e. the lowered level of
@@ -316,18 +318,18 @@
         <h3 id="first-party-restriction-for-apis">
           First-Party Restriction for APIs
         </h3>
-        <p>
+        <p id="p-10it5tp" data-anchor="p-10it5tp">
           <strong>Goal</strong>: Deter identity correlation by third-party
           sites.
         </p>
-        <p>
+        <p id="p-1nszot8" data-anchor="p-1nszot8">
           Restrict APIs to the origin of the
           <a
             href="https://html.spec.whatwg.org/multipage/browsers.html#top-level-browsing-context"
             >top-level browsing context</a
           >.
         </p>
-        <p>
+        <p id="p-1atfvl8" data-anchor="p-1atfvl8">
           The latter may choose to explicitly delegate access to the APIs via
           <a href="https://w3c.github.io/webappsec-feature-policy/"
             >feature policies</a
@@ -335,16 +337,16 @@
           correlation of cross context events or attributes that may be made
           available by the API.
         </p>
-        <p><strong>Pros</strong></p>
-        <ul>
+        <p id="p-imehg1-3" data-anchor="p-imehg1-3"><strong>Pros</strong></p>
+        <ul id="p-ocjb2e" data-anchor="p-ocjb2e">
           <li>
             Makes it a requirement that first-parties actively cooperate with
             other first-parties or third-parties. I.e. Good first-party + bad
             third-party = safe.
           </li>
         </ul>
-        <p><strong>Cons</strong></p>
-        <ul>
+        <p id="p-sp2sso-3" data-anchor="p-sp2sso-3"><strong>Cons</strong></p>
+        <ul id="p-18m2xg7" data-anchor="p-18m2xg7">
           <li><p>Difficult to retrofit into existing APIs.</p></li>
           <li>
             <p>
@@ -364,11 +366,11 @@
         <h3 id="limit-api-access-to-visible-browsing-contexts">
           Limit API Access To Visible Browsing Contexts
         </h3>
-        <p>
+        <p id="p-1wvhcp5" data-anchor="p-1wvhcp5">
           <strong>Goal:</strong> Prevent background browsing contexts from
           skimming identifiable events.
         </p>
-        <p>
+        <p id="p-1iv1gfx" data-anchor="p-1iv1gfx">
           The Page Visibility API defines the
           <a href="https://w3c.github.io/page-visibility/#visibility-states"
             >visibility state of a document</a
@@ -376,19 +378,19 @@
           as <code>visible</code> if the document is
           <em>“at least partially visible on at least one screen”</em>.
         </p>
-        <p>
+        <p id="p-1w10tab" data-anchor="p-1w10tab">
           Restrict APIs to — possibly top-level — browsing context’s active
           document.
         </p>
-        <p><strong>Pros</strong></p>
-        <ul>
+        <p id="p-imehg1-4" data-anchor="p-imehg1-4"><strong>Pros</strong></p>
+        <ul id="p-wthnin" data-anchor="p-wthnin">
           <li>
             Is a convincing mitigation on mobile devices where only one
             top-level document can be visible at the same time.
           </li>
         </ul>
-        <p><strong>Cons</strong></p>
-        <ul>
+        <p id="p-sp2sso-4" data-anchor="p-sp2sso-4"><strong>Cons</strong></p>
+        <ul id="p-1s7us8u" data-anchor="p-1s7us8u">
           <li>
             <p>
               There could be multiple visible browsing contexts which still
@@ -406,14 +408,14 @@
         <h3 id="limit-events-to-focused-top-level-browsing-context">
           Limit Events To Focused Top-Level Browsing Context
         </h3>
-        <p>
+        <p id="p-1weuz07" data-anchor="p-1weuz07">
           <strong>Goal</strong>: Limit firing correlatable events to a single
           <a
             href="https://html.spec.whatwg.org/multipage/browsers.html#top-level-browsing-context"
             >top-level browsing context</a
           >.
         </p>
-        <p>
+        <p id="p-jmkva3" data-anchor="p-jmkva3">
           The HTML spec defines a concept of a
           <em
             ><a
@@ -430,48 +432,48 @@
           system input focus. There should be only one of these on a single
           device.
         </p>
-        <p>
+        <p id="p-mgw0sv" data-anchor="p-mgw0sv">
           <em
             >Let’s call the top-level browsing context that has system input
             focus as the</em
           >
           <strong>focused top-level browsing context</strong>.
         </p>
-        <p>
+        <p id="p-1s9jeds" data-anchor="p-1s9jeds">
           New specifications could restrict browser-wide events to the focused
           top-level browsing context.
         </p>
-        <p><strong>Pros</strong></p>
-        <ul>
+        <p id="p-imehg1-5" data-anchor="p-imehg1-5"><strong>Pros</strong></p>
+        <ul id="p-wi43d5" data-anchor="p-wi43d5">
           <li>
             Likely fits in well with the intended usage model for most APIs.
           </li>
         </ul>
-        <p><strong>Cons</strong></p>
-        <ul>
+        <p id="p-sp2sso-5" data-anchor="p-sp2sso-5"><strong>Cons</strong></p>
+        <ul id="p-sjmcwg" data-anchor="p-sjmcwg">
           <li>Does not address event stream fingerprinting via polling.</li>
         </ul>
         <h3 id="limit-api-access-to-focused-top-level-browsing-context">
           Limit API Access To Focused Top-Level Browsing Context
         </h3>
-        <p>
+        <p id="p-1q5uh27" data-anchor="p-1q5uh27">
           <strong>Goal</strong>: Limit access to sensitive APIs to a single
           <a
             href="https://html.spec.whatwg.org/multipage/browsers.html#top-level-browsing-context"
             >top-level browsing context</a
           >.
         </p>
-        <p>
+        <p id="p-1tkptlm" data-anchor="p-1tkptlm">
           Similar to the above, but addresses issues around polling by
           disallowing access to the entire API or sensitive attributes by
           restricting the entire API instead of just events.
         </p>
-        <p><strong>Pros</strong></p>
-        <ul>
+        <p id="p-imehg1-6" data-anchor="p-imehg1-6"><strong>Pros</strong></p>
+        <ul id="p-1hikl04" data-anchor="p-1hikl04">
           <li>Resilient to event stream fingerprinting via polling.</li>
         </ul>
-        <p><strong>Cons</strong></p>
-        <ul>
+        <p id="p-sp2sso-6" data-anchor="p-sp2sso-6"><strong>Cons</strong></p>
+        <ul id="p-hgtlqc" data-anchor="p-hgtlqc">
           <li>
             <p>
               Can’t be easily retrofitted to existing APIs since it requires
@@ -483,20 +485,24 @@
         <h3 id="secure-context-restriction-and-control-via-feature-policy">
           Secure-Context Restriction and Control via Feature-Policy
         </h3>
-        <p>These should be pretty standard at this point.</p>
-        <p><strong>Pros</strong></p>
-        <ul>
+        <p id="p-e7vafu" data-anchor="p-e7vafu">
+          These should be pretty standard at this point.
+        </p>
+        <p id="p-imehg1-7" data-anchor="p-imehg1-7"><strong>Pros</strong></p>
+        <ul id="p-14189l8" data-anchor="p-14189l8">
           <li>Just makes sense.</li>
         </ul>
-        <p><strong>Cons</strong></p>
-        <ul>
+        <p id="p-sp2sso-7" data-anchor="p-sp2sso-7"><strong>Cons</strong></p>
+        <ul id="p-1ly9vbo" data-anchor="p-1ly9vbo">
           <li>Not sufficient by itself.</li>
         </ul>
         <h2 id="spotting-ephemeral-fingerprinting-surfaces-in-web-specs">
           Spotting Ephemeral Fingerprinting Surfaces In Web Specs
         </h2>
-        <p><strong>Ephemeral fingerprints:</strong></p>
-        <ul>
+        <p id="p-13x5qnt" data-anchor="p-13x5qnt">
+          <strong>Ephemeral fingerprints:</strong>
+        </p>
+        <ul id="p-1g28tfw" data-anchor="p-1g28tfw">
           <li>
             <p>
               Require that multiple browsing contexts observe the same events or
@@ -526,7 +532,7 @@
           </li>
         </ul>
         <h3 id="what-to-look-for">What to look for:</h3>
-        <ul>
+        <ul id="p-1boetu3" data-anchor="p-1boetu3">
           <li>
             <p>Events with external triggers. E.g. hardware based events.</p>
           </li>
@@ -551,8 +557,10 @@
           </li>
         </ul>
         <h3 id="example">Example</h3>
-        <p>Consider <code>onfocus</code> and <code>onblur</code> events.</p>
-        <p>
+        <p id="p-u3gxt5" data-anchor="p-u3gxt5">
+          Consider <code>onfocus</code> and <code>onblur</code> events.
+        </p>
+        <p id="p-1ym14v0" data-anchor="p-1ym14v0">
           The
           <a
             href="https://html.spec.whatwg.org/multipage/interaction.html#focus-update-steps"
@@ -562,7 +570,7 @@
           node losing focus is an <code>input</code> element,
           <code>focus</code>, and <code>blur</code>.
         </p>
-        <p>
+        <p id="p-55m8hy" data-anchor="p-55m8hy">
           When focus traverses a browsing context boundary, these events may be
           fired simultaneously to two different browsing contexts. Browsers
           mitigate this by not firing <code>blur</code> for cross site tab
@@ -571,7 +579,7 @@
           switching browser windows.
         </p>
         <h4 id="possible-mitigation">Possible Mitigation</h4>
-        <p>
+        <p id="p-1lklix0" data-anchor="p-1lklix0">
           When the <em>new chain</em> and the <em>old chain</em>
           <a
             href="#fn3"
@@ -726,28 +734,57 @@
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <nav>
           <div class="metadata">
-            <time datetime="2022-04-05" itemprop="datePublished"
-              >April 5, 2022</time
+            <time datetime="2020-11-21" itemprop="datePublished"
+              >November 21, 2020</time
             >
           </div>
           <menu class="tags">
-            <li>
-              <span class="tag">
-                <a href="/tags/tools/">#Tools</a>
-              </span>
-            </li>
             <li>
               <span class="tag">
                 <a href="/tags/engineering/">#Engineering</a>
               </span>
             </li>
+            <li>
+              <span class="tag">
+                <a href="/tags/curiosity/">#Curiosity</a>
+              </span>
+            </li>
           </menu>
         </nav>
         <h2 class="title">
-          <a itemprop="url" href="/posts/mark-goes-up-and-down/">
-            <span itemprop="name"
-              >Markdown should be readble without knowing Markdown</span
+          <a itemprop="url" href="/posts/visualizing-people/">
+            <span itemprop="name">Visualizing Internet Users</span>
+          </a>
+        </h2>
+        <div class="summary-row">
+          <div></div>
+        </div>
+        <p class="more"><a href="/posts/visualizing-people/">Read more …</a></p>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <nav>
+          <div class="metadata">
+            <time datetime="2021-06-14" itemprop="datePublished"
+              >June 14, 2021</time
             >
+          </div>
+          <menu class="tags">
+            <li>
+              <span class="tag">
+                <a href="/tags/curiosity/">#Curiosity</a>
+              </span>
+            </li>
+          </menu>
+        </nav>
+        <h2 class="title">
+          <a itemprop="url" href="/posts/fart-limit/">
+            <span itemprop="name">Fart Limit</span>
           </a>
         </h2>
         <div class="summary-row">
@@ -755,20 +792,55 @@
             <div class="summary-row">
               <div itemprop="abstract">
                 <p>
-                  Markdown documents should be readble without understanding
-                  complex mark-up. A growing number of Markdown syntax
-                  extensions take the form of HTML or HTML-like tags and
-                  boilerplate that hinder readability. Instead we should focus
-                  on how some construct should be presented in plain-text for
-                  human consumption and then add minimal structure to it for
-                  machine consumption.
+                  Can a fart be fatal? Let's see what science and OSHA have to
+                  say.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="more"><a href="/posts/fart-limit/">Read more …</a></p>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <nav>
+          <div class="metadata">
+            <time datetime="2021-09-06" itemprop="datePublished"
+              >September 6, 2021</time
+            >
+          </div>
+          <menu class="tags">
+            <li>
+              <span class="tag">
+                <a href="/tags/curiosity/">#Curiosity</a>
+              </span>
+            </li>
+          </menu>
+        </nav>
+        <h2 class="title">
+          <a itemprop="url" href="/posts/visualizing-people-2/">
+            <span itemprop="name">Visualizing A Million People</span>
+          </a>
+        </h2>
+        <div class="summary-row">
+          <div>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  If your feature pisses off a million people what does this
+                  angry mob look like? Spoiler: We only get to 750,000.
                 </p>
               </div>
             </div>
           </div>
         </div>
         <p class="more">
-          <a href="/posts/mark-goes-up-and-down/">Read more …</a>
+          <a href="/posts/visualizing-people-2/">Read more …</a>
         </p>
       </div>
 
@@ -780,24 +852,21 @@
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <nav>
           <div class="metadata">
-            <time datetime="2025-08-12" itemprop="datePublished"
-              >August 12, 2025</time
+            <time datetime="2024-06-24" itemprop="datePublished"
+              >June 24, 2024</time
             >
           </div>
           <menu class="tags">
             <li>
               <span class="tag">
-                <a href="/tags/organizations/">#Organizations</a>
+                <a href="/tags/culture/">#Culture</a>
               </span>
             </li>
           </menu>
         </nav>
         <h2 class="title">
-          <a itemprop="url" href="/series/unsung-team-roles/crossbeams/"
-            ><span class="series-name">Unsung Team Roles</span>:
-            <span itemprop="name"
-              >Soft Roles as Organizational Cross Beams</span
-            >
+          <a itemprop="url" href="/posts/have-loop/">
+            <span itemprop="name">The Have-Loop</span>
           </a>
         </h2>
         <div class="summary-row">
@@ -805,19 +874,15 @@
             <div class="summary-row">
               <div itemprop="abstract">
                 <p>
-                  Leadership is fallible and imperfect. Soft roles emerge as
-                  they are needed to account for various team roles that are
-                  needed but not formally defined. Some of these roles help
-                  teams function, and some others act as crossbeams that hold an
-                  entire organization together.
+                  Have-loops are positive feedback loops which cause
+                  unsustainable concentration of limited resources. Once you
+                  learn to recognize them, you will see them everywhere.
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <p class="more">
-          <a href="/series/unsung-team-roles/crossbeams/">Read more …</a>
-        </p>
+        <p class="more"><a href="/posts/have-loop/">Read more …</a></p>
       </div>
 
       <div
@@ -828,179 +893,34 @@
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <nav>
           <div class="metadata">
-            <time datetime="2025-09-27" itemprop="datePublished"
-              >September 27, 2025</time
+            <time datetime="2020-07-27" itemprop="datePublished"
+              >July 27, 2020</time
             >
           </div>
           <menu class="tags">
             <li>
               <span class="tag">
-                <a href="/tags/privacy/">#Privacy</a>
-              </span>
-            </li>
-            <li>
-              <span class="tag">
-                <a href="/tags/programming/">#Programming</a>
-              </span>
-            </li>
-            <li>
-              <span class="tag">
-                <a href="/tags/entropy/">#Entropy</a>
+                <a href="/tags/meta/">#Meta</a>
               </span>
             </li>
           </menu>
         </nav>
         <h2 class="title">
-          <a itemprop="url" href="/posts/an-intuition-on-entropy/">
-            <span itemprop="name">An Intuition on Shannon Entropy</span>
+          <a itemprop="url" href="/posts/how-this-blog-works/">
+            <span itemprop="name">How This Blog Works</span>
           </a>
         </h2>
         <div class="summary-row">
           <div>
             <div class="summary-row">
               <div itemprop="abstract">
-                <p>
-                  Develop an intuition for Shannon entropy as a measure of
-                  information content. Using the game 'Guess Who' as a practical
-                  example, this post explains how entropy quantifies the
-                  reduction in ambiguity and builds up the mathematical
-                  formulation from basic principles.
-                </p>
+                <p>How I put this site together and why.</p>
               </div>
             </div>
           </div>
         </div>
         <p class="more">
-          <a href="/posts/an-intuition-on-entropy/">Read more …</a>
-        </p>
-      </div>
-
-      <div
-        class="post-summary"
-        itemscope=""
-        itemtype="https://schema.org/BlogPosting"
-      >
-        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <nav>
-          <div class="metadata">
-            <time datetime="2026-02-13" itemprop="datePublished"
-              >February 13, 2026</time
-            >
-          </div>
-          <menu class="tags">
-            <li>
-              <span class="tag">
-                <a href="/tags/ai/">#AI</a>
-              </span>
-            </li>
-          </menu>
-        </nav>
-        <h2 class="title">
-          <a itemprop="url" href="/posts/false-precision/">
-            <span itemprop="name">False Precision and Vibe Coding</span>
-          </a>
-        </h2>
-        <div class="summary-row">
-          <a href="/posts/false-precision/">
-            <img
-              src="/img/pQfYJLe643-200.png"
-              alt="False precision"
-              class="noinvert hero"
-              loading="lazy"
-              width="433"
-              height="433"
-              srcset="
-                /img/pQfYJLe643-200.png 200w,
-                /img/pQfYJLe643-400.png 400w,
-                /img/pQfYJLe643-433.png 433w
-              "
-              sizes="auto"
-            />
-          </a>
-
-          <div>
-            <div class="summary-row">
-              <div itemprop="abstract">
-                <p>
-                  &quot;Classic&quot; or artisanal programming forces people to
-                  inject precision into vague problem statements because the
-                  crafting of software demands it. The false precision thus
-                  injected often becomes part of the machine description, and
-                  thus difficult to extract. Vibe coding is an opportunity to
-                  maintain separation of our vague problem understanding and
-                  allow AI to fill in the gaps to construct an equally precision
-                  solution as before. But now we can prevent false precision
-                  from contaminating the problem statement.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="more"><a href="/posts/false-precision/">Read more …</a></p>
-      </div>
-
-      <div
-        class="post-summary"
-        itemscope=""
-        itemtype="https://schema.org/BlogPosting"
-      >
-        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <nav>
-          <div class="metadata">
-            <time datetime="2026-09-08" itemprop="datePublished"
-              >September 8, 2026</time
-            >
-          </div>
-          <menu class="tags">
-            <li>
-              <span class="tag">
-                <a href="/tags/ai/">#AI</a>
-              </span>
-            </li>
-          </menu>
-        </nav>
-        <h2 class="title">
-          <a itemprop="url" href="/posts/durable-contributions/">
-            <span itemprop="name">Making Durable Contributions</span>
-          </a>
-        </h2>
-        <div class="summary-row">
-          <a href="/posts/durable-contributions/">
-            <img
-              src="/img/P7pw1cOvqN-200.png"
-              alt="A glowing digital river dissolves a sandcastle on a dark beach, while a mechanical hand reaches out of the current toward a map staked in the dry sand beside it"
-              class="noinvert hero"
-              loading="lazy"
-              width="900"
-              height="900"
-              srcset="
-                /img/P7pw1cOvqN-200.png 200w,
-                /img/P7pw1cOvqN-400.png 400w,
-                /img/P7pw1cOvqN-600.png 600w,
-                /img/P7pw1cOvqN-800.png 800w,
-                /img/P7pw1cOvqN-900.png 900w
-              "
-              sizes="auto"
-            />
-          </a>
-
-          <div>
-            <div class="summary-row">
-              <div itemprop="abstract">
-                <p>
-                  The harness — memory, skills, tools, sub-agents, planning — is
-                  absorbing the product layer faster than anyone building on top
-                  of it can keep up. The durable move isn't to out-build it;
-                  it's to contribute headlessly, document the method rather than
-                  the artifact, and write evals instead of skills, so that what
-                  you leave behind keeps compounding after you've walked away.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="more">
-          <a href="/posts/durable-contributions/">Read more …</a>
+          <a href="/posts/how-this-blog-works/">Read more …</a>
         </p>
       </div>
     </footer>

@@ -33,7 +33,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
 
-    <link rel="stylesheet" href="/styles/wQ4tiFj7jt.css" />
+    <link rel="stylesheet" href="/styles/yjl_-9a32M.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
     <link
@@ -97,13 +97,15 @@
       </header>
 
       <main itemprop="articleBody" class="container">
-        <p>
+        <p id="p-3007nl" data-anchor="p-3007nl">
           One everyday workflow that I wanted to optimize was quickly sketching
           out a diagram on the reMarkable tablet and including it in a document
           I was writing somewhere else.
         </p>
-        <p>My primary computer is a Mac. Here’s my solution:</p>
-        <ol type="1">
+        <p id="p-11wjhev" data-anchor="p-11wjhev">
+          My primary computer is a Mac. Here’s my solution:
+        </p>
+        <ol type="1" id="p-15nlq3u" data-anchor="p-15nlq3u">
           <li>
             Set up
             <a href="https://github.com/asankah/reSnap"><code>reSnap</code></a
@@ -124,13 +126,13 @@
             cleans it up, and sticks it in Mac’s clipboard.
           </li>
         </ol>
-        <p>
+        <p id="p-cl825r" data-anchor="p-cl825r">
           Details instructions follow. I can now just hit ⌘+⌃+⇧+P to grab the
           snapshot and then hit ⌘+V to paste it into whatever application I am
           using, usually Google Docs.
         </p>
         <h2 id="setting-up-resnap">Setting up <code>reSnap</code></h2>
-        <p>
+        <p id="p-10c5gek" data-anchor="p-10c5gek">
           I have
           <a href="https://github.com/asankah/reSnap"
             >my fork of <code>reSnap</code></a
@@ -142,12 +144,12 @@
           can grab my fork of reSnap
           <a href="https://github.com/asankah/reSnap">here</a>.
         </p>
-        <p>
+        <p id="p-j8ybxg" data-anchor="p-j8ybxg">
           On the reMarkable tablet side, you must follow the instructions in the
           <code>README</code> file to install <code>lz4</code> and
           <code>head</code> on the device.
         </p>
-        <p>
+        <p id="p-bqvce3" data-anchor="p-bqvce3">
           It is important to set up SSH to use password-less logins since the
           hotkey method relies on being able to connect without prompting for a
           password. See instructions for
@@ -156,17 +158,19 @@
             >setting up SSH for passwordless login</a
           >.
         </p>
-        <p>
+        <p id="p-194yw2y" data-anchor="p-194yw2y">
           On the local machine – which in my case is a Mac – you can install all
           the requirements using Homebrew as follows:
         </p>
         <div class="sourceCode" id="cb1">
           <pre
             class="sourceCode sh"
+            id="p-14i2lrd"
+            data-anchor="p-14i2lrd"
           ><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install ffmpeg imagemagick</span></code></pre>
         </div>
         <h2 id="creating-a-mac-quick-action">Creating a Mac Quick Action</h2>
-        <ol type="1">
+        <ol type="1" id="p-1o3cgad" data-anchor="p-1o3cgad">
           <li>
             <p>
               Start “Automator.”
@@ -261,10 +265,14 @@
             </p>
           </li>
         </ol>
-        <p>Try it out with the “Run” button.</p>
+        <p id="p-rp8ao8" data-anchor="p-rp8ao8">
+          Try it out with the “Run” button.
+        </p>
         <h2 id="binding-a-hotkey">Binding a hotkey</h2>
-        <p>Once you save your quick action, you can bind a hotkey like this:</p>
-        <ol type="1">
+        <p id="p-12v032i" data-anchor="p-12v032i">
+          Once you save your quick action, you can bind a hotkey like this:
+        </p>
+        <ol type="1" id="p-hh5hlf" data-anchor="p-hh5hlf">
           <li>
             <p>
               Open “System Preferences” and navigate to “Keyboard” -&gt;
@@ -300,8 +308,10 @@
           </li>
           <li><p>Double click on the “none” and type your hotkey.</p></li>
         </ol>
-        <p>That’s it.</p>
-        <p>Here’s what a snapshot looks like:</p>
+        <p id="p-o5yw9p" data-anchor="p-o5yw9p">That’s it.</p>
+        <p id="p-x8sygr" data-anchor="p-x8sygr">
+          Here’s what a snapshot looks like:
+        </p>
         <figure>
           <img
             src="/posts/grab-diagram-workflow-re2/0IUzJgM0zN-200.png"
@@ -323,12 +333,12 @@
         <h2 id="a-couple-of-notes-on-the---sketch-option">
           A couple of notes on the <code>--sketch</code> option
         </h2>
-        <p>
+        <p id="p-1ajqwaw" data-anchor="p-1ajqwaw">
           My fork of <code>reSnap</code> introduces a
           <code>--sketch</code> option that cleans up the picture a little bit.
           It currently does the following:
         </p>
-        <ol type="1">
+        <ol type="1" id="p-11jfglf" data-anchor="p-11jfglf">
           <li>
             Erase the little menu widget from the top-left corner of the image.
             Since <code>reSnap</code> grabs the image right off the framebuffer
@@ -352,7 +362,7 @@
             size just large enough to hold the actual image.
           </li>
         </ol>
-        <p>
+        <p id="p-1cdj976" data-anchor="p-1cdj976">
           All of this is done via an invocation of
           <a href="https://imagemagick.org/index.php">ImageMagick</a>.
         </p>
@@ -371,94 +381,6 @@
 
     <footer class="container">
       <h2>More posts from this blog ...</h2>
-      <div
-        class="post-summary"
-        itemscope=""
-        itemtype="https://schema.org/BlogPosting"
-      >
-        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <nav>
-          <div class="metadata">
-            <time datetime="2020-04-01" itemprop="datePublished"
-              >April 1, 2020</time
-            >
-          </div>
-          <menu class="tags">
-            <li>
-              <span class="tag">
-                <a href="/tags/privacy/">#Privacy</a>
-              </span>
-            </li>
-          </menu>
-        </nav>
-        <h2 class="title">
-          <a itemprop="url" href="/posts/ephemeral-fingerprinting/">
-            <span itemprop="name">Ephemeral Fingerprinting On The Web</span>
-          </a>
-        </h2>
-        <div class="summary-row">
-          <div>
-            <div class="summary-row">
-              <div itemprop="abstract">
-                <p>
-                  Any ephemeral low-entropy web observable property whose
-                  changes are concurrently observable by multiple sites can lead
-                  to cross site identity joining.
-                </p>
-                <p>
-                  This method of identity joining does not require coordination
-                  between multiple first parties. A single third party embedded
-                  within multiple first parties can also use this method.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="more">
-          <a href="/posts/ephemeral-fingerprinting/">Read more …</a>
-        </p>
-      </div>
-
-      <div
-        class="post-summary"
-        itemscope=""
-        itemtype="https://schema.org/BlogPosting"
-      >
-        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <nav>
-          <div class="metadata">
-            <time datetime="2021-03-20" itemprop="datePublished"
-              >March 20, 2021</time
-            >
-          </div>
-          <menu class="tags">
-            <li>
-              <span class="tag">
-                <a href="/tags/career/">#Career</a>
-              </span>
-            </li>
-          </menu>
-        </nav>
-        <h2 class="title">
-          <a
-            itemprop="url"
-            href="/posts/sometimes-its-the-interviewers-who-suck/"
-          >
-            <span itemprop="name"
-              >Sometimes It&#39;s the Interviewers Who Suck</span
-            >
-          </a>
-        </h2>
-        <div class="summary-row">
-          <div></div>
-        </div>
-        <p class="more">
-          <a href="/posts/sometimes-its-the-interviewers-who-suck/"
-            >Read more …</a
-          >
-        </p>
-      </div>
-
       <div
         class="post-summary"
         itemscope=""
@@ -498,8 +420,8 @@
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <nav>
           <div class="metadata">
-            <time datetime="2024-03-23" itemprop="datePublished"
-              >March 23, 2024</time
+            <time datetime="2022-06-28" itemprop="datePublished"
+              >June 28, 2022</time
             >
           </div>
           <menu class="tags">
@@ -508,16 +430,11 @@
                 <a href="/tags/engineering/">#Engineering</a>
               </span>
             </li>
-            <li>
-              <span class="tag">
-                <a href="/tags/curiosity/">#Curiosity</a>
-              </span>
-            </li>
           </menu>
         </nav>
         <h2 class="title">
-          <a itemprop="url" href="/posts/secret-life-of-systems/">
-            <span itemprop="name">Secret Life of Systems</span>
+          <a itemprop="url" href="/posts/darpa-heilmeier-catechism/">
+            <span itemprop="name">DARPA&#39;s Heilmeier Catechism</span>
           </a>
         </h2>
         <div class="summary-row">
@@ -525,21 +442,15 @@
             <div class="summary-row">
               <div itemprop="abstract">
                 <p>
-                  Lifecycles of software systems that solve real world problems
-                  can be broken down into distinct phases based on where it is
-                  with respect to the problem and the eventual solution.
-                </p>
-                <p>
-                  This article presents a taxonomy of these phases that should
-                  help you understand how each part of the lifecycle fits
-                  together.
+                  A set of questions help you think through and evaluate
+                  proposed projects and research programs.
                 </p>
               </div>
             </div>
           </div>
         </div>
         <p class="more">
-          <a href="/posts/secret-life-of-systems/">Read more …</a>
+          <a href="/posts/darpa-heilmeier-catechism/">Read more …</a>
         </p>
       </div>
 
@@ -551,35 +462,158 @@
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <nav>
           <div class="metadata">
-            <time datetime="2020-07-27" itemprop="datePublished"
-              >July 27, 2020</time
+            <time datetime="2020-07-13" itemprop="datePublished"
+              >July 13, 2020</time
             >
           </div>
           <menu class="tags">
             <li>
               <span class="tag">
-                <a href="/tags/meta/">#Meta</a>
+                <a href="/tags/math/">#Math</a>
               </span>
             </li>
           </menu>
         </nav>
         <h2 class="title">
-          <a itemprop="url" href="/posts/how-this-blog-works/">
-            <span itemprop="name">How This Blog Works</span>
+          <a itemprop="url" href="/posts/comcast-technican-problem/">
+            <span itemprop="name">The Comcast Technician Problem</span>
           </a>
         </h2>
         <div class="summary-row">
           <div>
             <div class="summary-row">
               <div itemprop="abstract">
-                <p>How I put this site together and why.</p>
+                <p>
+                  Given a set of tasks, incentives are often aligned towards
+                  dropping a task rather than allowing for perpetual accretion
+                  of delays.
+                </p>
               </div>
             </div>
           </div>
         </div>
         <p class="more">
-          <a href="/posts/how-this-blog-works/">Read more …</a>
+          <a href="/posts/comcast-technican-problem/">Read more …</a>
         </p>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <nav>
+          <div class="metadata">
+            <time datetime="2025-09-27" itemprop="datePublished"
+              >September 27, 2025</time
+            >
+          </div>
+          <menu class="tags">
+            <li>
+              <span class="tag">
+                <a href="/tags/privacy/">#Privacy</a>
+              </span>
+            </li>
+            <li>
+              <span class="tag">
+                <a href="/tags/programming/">#Programming</a>
+              </span>
+            </li>
+            <li>
+              <span class="tag">
+                <a href="/tags/entropy/">#Entropy</a>
+              </span>
+            </li>
+          </menu>
+        </nav>
+        <h2 class="title">
+          <a itemprop="url" href="/posts/an-intuition-on-entropy/">
+            <span itemprop="name">An Intuition on Shannon Entropy</span>
+          </a>
+        </h2>
+        <div class="summary-row">
+          <div>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  Develop an intuition for Shannon entropy as a measure of
+                  information content. Using the game 'Guess Who' as a practical
+                  example, this post explains how entropy quantifies the
+                  reduction in ambiguity and builds up the mathematical
+                  formulation from basic principles.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="more">
+          <a href="/posts/an-intuition-on-entropy/">Read more …</a>
+        </p>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <nav>
+          <div class="metadata">
+            <time datetime="2026-02-13" itemprop="datePublished"
+              >February 13, 2026</time
+            >
+          </div>
+          <menu class="tags">
+            <li>
+              <span class="tag">
+                <a href="/tags/ai/">#AI</a>
+              </span>
+            </li>
+          </menu>
+        </nav>
+        <h2 class="title">
+          <a itemprop="url" href="/posts/false-precision/">
+            <span itemprop="name">False Precision and Vibe Coding</span>
+          </a>
+        </h2>
+        <div class="summary-row">
+          <a href="/posts/false-precision/">
+            <img
+              src="/img/pQfYJLe643-200.png"
+              alt="False precision"
+              class="noinvert hero"
+              loading="lazy"
+              width="433"
+              height="433"
+              srcset="
+                /img/pQfYJLe643-200.png 200w,
+                /img/pQfYJLe643-400.png 400w,
+                /img/pQfYJLe643-433.png 433w
+              "
+              sizes="auto"
+            />
+          </a>
+
+          <div>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  &quot;Classic&quot; or artisanal programming forces people to
+                  inject precision into vague problem statements because the
+                  crafting of software demands it. The false precision thus
+                  injected often becomes part of the machine description, and
+                  thus difficult to extract. Vibe coding is an opportunity to
+                  maintain separation of our vague problem understanding and
+                  allow AI to fill in the gaps to construct an equally precision
+                  solution as before. But now we can prevent false precision
+                  from contaminating the problem statement.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="more"><a href="/posts/false-precision/">Read more …</a></p>
       </div>
     </footer>
 

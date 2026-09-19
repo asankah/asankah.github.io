@@ -33,7 +33,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
 
-    <link rel="stylesheet" href="/styles/wQ4tiFj7jt.css" />
+    <link rel="stylesheet" href="/styles/yjl_-9a32M.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
     <link
@@ -90,19 +90,19 @@
       </header>
 
       <main itemprop="articleBody" class="container">
-        <p>
+        <p id="p-19u23ob" data-anchor="p-19u23ob">
           Astute observers of this blog may have noticed that the blog looks
           suspiciously different lately. That’s because I changed the static
           site generator I was using.
         </p>
-        <p>
+        <p id="p-xwtjfq" data-anchor="p-xwtjfq">
           Previously the
           <a href="../how-this-blog-works/">static site generator I used</a> was
           <a href="https://gohugo.io">Hugo</a>. This arrangement worked for a
           while but it had some shortcomings.
         </p>
         <h2 id="growing-pains">Growing Pains</h2>
-        <p>
+        <p id="p-a00e93" data-anchor="p-a00e93">
           I was using <a href="https://pandoc.org/">Pandoc</a> to convert
           Markdown to HTML. Hugo’s support for Pandoc had some limitations. For
           example, you can’t specify options for Pandoc or use a bibliography.
@@ -112,16 +112,16 @@
             >patch that added support for configuring Pandoc</a
           >.
         </p>
-        <p>
+        <p id="p-rkzr1c" data-anchor="p-rkzr1c">
           Pandoc is extensible via filtering the AST of a document through a
           series of programs which can modify it. There is no restrction on the
           kinds of programs that you can use.
         </p>
-        <p>
+        <p id="p-1movwjk" data-anchor="p-1movwjk">
           If Hugo allowed configuring all this via frontmatter, that may
           introduce some tricky security issues.
         </p>
-        <p>
+        <p id="p-2oqbo5" data-anchor="p-2oqbo5">
           Say you download a Hugo theme from the web and try to build your site.
           A theme could include frontmatter that causes Pandoc to run an unsafe
           binary. That’s not great. So it is understandable that this kind of
@@ -136,18 +136,18 @@
           >. While my patch worked, it was safe only because I controlled every
           aspect of the blog.
         </p>
-        <p>
+        <p id="p-otjmk8" data-anchor="p-otjmk8">
           While tinkering on this was fun, it created an additional headache.
           Namely, whenever and whereever I wanted to build my blog, I had to
           maintain a custom build of Hugo. After moving my build a couple of
           times maintaining a custom build became a painful chore.
         </p>
         <h2 id="the-exodus">The Exodus</h2>
-        <p>
+        <p id="p-18fbxb3" data-anchor="p-18fbxb3">
           So started the process of looking for an easy-to-use static site
           generator (hereafter SSG). My requirements were:
         </p>
-        <ul>
+        <ul id="p-1dlthj1" data-anchor="p-1dlthj1">
           <li>The SSG should support Markdown.</li>
           <li>
             Markdown should support some of the Pandoc features I was using, or
@@ -155,12 +155,12 @@
           </li>
           <li>Making this work should not require any custom patches.</li>
         </ul>
-        <p>
+        <p id="p-16s4m23" data-anchor="p-16s4m23">
           <a href="https://www.11ty.dev/">Eleventy</a> was <em>almost</em> a
           no-brainer. People had high praise for it, including developer
           relations folks at Google. So I felt like that would be an easy move.
         </p>
-        <p>
+        <p id="p-izf7ud" data-anchor="p-izf7ud">
           Eleventy’s Mardown support is based on
           <a href="https://github.com/markdown-it/markdown-it">Mardown-It</a>.
           One thing that I liked about Markdown-It from the start is that there
@@ -170,7 +170,7 @@
         </p>
         <h2 id="templating">Templating</h2>
         <h3 id="webc-eleventy-is-broken">WebC + Eleventy Is Broken</h3>
-        <p>
+        <p id="p-4lt693" data-anchor="p-4lt693">
           Eleventy supports a templating language called
           <a href="https://www.11ty.dev/docs/languages/webc/">WebC</a>. It
           follows the web-component way of defining layouts, but can avoid much
@@ -187,7 +187,7 @@
             ><sup>2</sup></a
           >.
         </p>
-        <p>
+        <p id="p-1us6dg1" data-anchor="p-1us6dg1">
           A couple of standalone WebC based templates worked fine. But the
           moment I had nested templates, Eleventy hung and eventually crashed. I
           didn’t want to go on a side quest to debug it, and ultimately that
@@ -195,7 +195,7 @@
           that was that for WebC. If WebC was more robust or just worked, it
           would have been my choice of template engine.
         </p>
-        <p>
+        <p id="p-yi5ogv" data-anchor="p-yi5ogv">
           One cool feature of using WebC with Eleventy is that bundling works
           trivially. For example, if you have a <code>&lt;script&gt;</code> tag
           or a <code>&lt;style&gt;</code> tag in a component, WebC automatically
@@ -204,7 +204,7 @@
           didn’t try) require manual labor to get stuff into the bundles.
         </p>
         <h3 id="nunjucks-eleventy-works">Nunjucks + Eleventy Works</h3>
-        <p>
+        <p id="p-1yr17na" data-anchor="p-1yr17na">
           The next templating language I looked at was Nunjucks. I had briefly
           looked at Liquid as well, but for my purposes Nunjucks and Liquid
           seemed to be quite similar. Nunjucks won out because it had safer
@@ -220,7 +220,7 @@
         </p>
         <h2 id="handrolling">Handrolling</h2>
         <h3 id="pandoc-again">Pandoc Again</h3>
-        <p>
+        <p id="p-1j3ngd" data-anchor="p-1j3ngd">
           I tried to rely only on Markdown-It for this blog. But very soon I had
           a big stack of extensions to support the various features I needed,
           like supporting <code>&lt;div&gt;</code>s, bibliography, and
@@ -231,26 +231,26 @@
           this was starting to be a pain. Also, I had trouble getting block
           level containers working.
         </p>
-        <p>
+        <p id="p-15m22bn" data-anchor="p-15m22bn">
           After a while I decided not to waste time trying to replicate features
           that already existed in Pandoc. So I wrote a little library that
           invoked Pandoc within Eleventy to convert Markdown to HTML. It was a
           little slower, but worked out great.
         </p>
         <h3 id="bundling-files">Bundling Files</h3>
-        <p>
+        <p id="p-5vbby4" data-anchor="p-5vbby4">
           While it is possible to add content to bundles (like CSS and JS),
           curiously it was not possible to stuff files into said bundles. The
           suggested method was to do something like this:
         </p>
-        <pre><code>  {% css %}
+        <pre id="p-1163zzy" data-anchor="p-1163zzy"><code>  {% css %}
     {% include &quot;some-file.css&quot; %}
 
     body {
         // other CSS.
     }
   {% endcss %}</code></pre>
-        <p>
+        <p id="p-2mvdnp" data-anchor="p-2mvdnp">
           This seems like a good idea, but there is one crucial issue:
           <em
             >The contents of the included file (<code>some-file.css</code> in
@@ -259,12 +259,15 @@
           >. If the file doesn’t contain any sequences that look like template
           tokens, then we are good. But this is asking for trouble.
         </p>
-        <p>
+        <p id="p-1641r64" data-anchor="p-1641r64">
           So I wrote a custom tag called <code>bundleFile</code> that can take
           the contents of a file and stuff it directly into a bundle. The
           earlier example now looks like this:
         </p>
-        <pre><code>  {% bundleFile &quot;some-file.css&quot; %}
+        <pre
+          id="p-1p3jxxs"
+          data-anchor="p-1p3jxxs"
+        ><code>  {% bundleFile &quot;some-file.css&quot; %}
 
   {% css %}
     body {
@@ -272,31 +275,34 @@
     }
   {% endcss %}</code></pre>
         <h3 id="sassy">SASSy</h3>
-        <p>
+        <p id="p-1mkcofz" data-anchor="p-1mkcofz">
           Eleventy doesn’t support SASS out of the box, but there are examples
           in the documentation for how you can set it up. But all of the
           examples assume that you have SASS or SCSS files that you are going to
           conver to CSS, and then serve without bundling. I wanted to be able to
           compile SASS and stuff the resulting CSS into a bundle.
         </p>
-        <p>
+        <p id="p-n2g90x" data-anchor="p-n2g90x">
           So alongside the <code>bundleFile</code> shortcode, I added a
           <code>bundleScss</code> shortcode so I can do stuff like this:
         </p>
-        <pre><code>   {% bundleScss &quot;my-styles.scss&quot; %}</code></pre>
+        <pre
+          id="p-uje115"
+          data-anchor="p-uje115"
+        ><code>   {% bundleScss &quot;my-styles.scss&quot; %}</code></pre>
         <h3 id="katex">Katex</h3>
-        <p>
+        <p id="p-si4qop" data-anchor="p-si4qop">
           I like Katex for my math typesetting. Pandoc supports it out of the
           box. But the rendered HTML needs to invoke Katex in the client to
           render the math. I wanted to avoid this step entirely and try to
           render Katex on the server.
         </p>
-        <p>
+        <p id="p-1m0052q" data-anchor="p-1m0052q">
           This was a pain to do with Hugo, but since Eleventy was alredy runing
           in Node, server-side rendering is a breeze.
         </p>
         <h2 id="conclusion">Conclusion</h2>
-        <p>
+        <p id="p-90f6bh" data-anchor="p-90f6bh">
           Overall I found Eleventy fun to work with. My gripes are mostly with
           the documentation which lacks a reference. It’s a pain to go through
           tutorial-like documents to find out what exactly gets passed to a
@@ -304,7 +310,7 @@
           too many trips to the 11ty GitHub repo. The right number of required
           visits should be zero.
         </p>
-        <p>
+        <p id="p-gcjc0c" data-anchor="p-gcjc0c">
           In the coming weeks I’ll package Eleventy Pandoc support and some of
           the shortcodes so others can use them.
         </p>
@@ -440,36 +446,27 @@
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <nav>
           <div class="metadata">
-            <time datetime="2021-03-20" itemprop="datePublished"
-              >March 20, 2021</time
+            <time datetime="2022-01-13" itemprop="datePublished"
+              >January 13, 2022</time
             >
           </div>
           <menu class="tags">
             <li>
               <span class="tag">
-                <a href="/tags/career/">#Career</a>
+                <a href="/tags/inktober/">#Inktober</a>
               </span>
             </li>
           </menu>
         </nav>
         <h2 class="title">
-          <a
-            itemprop="url"
-            href="/posts/sometimes-its-the-interviewers-who-suck/"
-          >
-            <span itemprop="name"
-              >Sometimes It&#39;s the Interviewers Who Suck</span
-            >
+          <a itemprop="url" href="/posts/inktober-decay/">
+            <span itemprop="name">Inktober - Decay</span>
           </a>
         </h2>
         <div class="summary-row">
           <div></div>
         </div>
-        <p class="more">
-          <a href="/posts/sometimes-its-the-interviewers-who-suck/"
-            >Read more …</a
-          >
-        </p>
+        <p class="more"><a href="/posts/inktober-decay/">Read more …</a></p>
       </div>
 
       <div
@@ -480,21 +477,24 @@
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <nav>
           <div class="metadata">
-            <time datetime="2022-09-16" itemprop="datePublished"
-              >September 16, 2022</time
+            <time datetime="2020-07-04" itemprop="datePublished"
+              >July 4, 2020</time
             >
           </div>
           <menu class="tags">
             <li>
               <span class="tag">
-                <a href="/tags/engineering/">#Engineering</a>
+                <a href="/tags/curiosity/">#Curiosity</a>
               </span>
             </li>
           </menu>
         </nav>
         <h2 class="title">
-          <a itemprop="url" href="/posts/the-lettergrade-rule/">
-            <span itemprop="name">The Lettergrade Rule</span>
+          <a itemprop="url" href="/posts/notes-on-fact-checking/">
+            <span itemprop="name"
+              >Notes from Crash Course&#39;s Videos on Fact Checking Information
+              You See On The Internet
+            </span>
           </a>
         </h2>
         <div class="summary-row">
@@ -502,15 +502,18 @@
             <div class="summary-row">
               <div itemprop="abstract">
                 <p>
-                  Don't block a code review because of minor issues that are
-                  best left to the discretion of the author.
+                  Hank Green's Crash Course YouTube channel has an excellent
+                  series about navigating digital information. It's an excellent
+                  guide to how internet users could intelligently consume
+                  information they see on the internet. These are my
+                  (incomplete) notes from the series.
                 </p>
               </div>
             </div>
           </div>
         </div>
         <p class="more">
-          <a href="/posts/the-lettergrade-rule/">Read more …</a>
+          <a href="/posts/notes-on-fact-checking/">Read more …</a>
         </p>
       </div>
 
@@ -522,34 +525,37 @@
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <nav>
           <div class="metadata">
-            <time datetime="2023-07-08" itemprop="datePublished"
-              >July 8, 2023</time
+            <time datetime="2024-05-22" itemprop="datePublished"
+              >May 22, 2024</time
             >
           </div>
           <menu class="tags">
             <li>
               <span class="tag">
-                <a href="/tags/engineering/">#Engineering</a>
+                <a href="/tags/culture/">#Culture</a>
               </span>
             </li>
           </menu>
         </nav>
         <h2 class="title">
-          <a itemprop="url" href="/posts/just-the-right-amount/">
-            <span itemprop="name">Just Enough Technical Debt</span>
+          <a itemprop="url" href="/posts/when-your-feature-gets-someone-hurt/">
+            <span itemprop="name">When Your Feature Gets Someone Hurt</span>
           </a>
         </h2>
         <div class="summary-row">
           <div>
             <div class="summary-row">
               <div itemprop="abstract">
-                <p>Zero technical debt isn't always the answer.</p>
+                <p>
+                  If Google Photos incorrectly tags a photo, what's the worst
+                  that could happen?
+                </p>
               </div>
             </div>
           </div>
         </div>
         <p class="more">
-          <a href="/posts/just-the-right-amount/">Read more …</a>
+          <a href="/posts/when-your-feature-gets-someone-hurt/">Read more …</a>
         </p>
       </div>
 
@@ -561,8 +567,74 @@
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <nav>
           <div class="metadata">
-            <time datetime="2024-12-13" itemprop="datePublished"
-              >December 13, 2024</time
+            <time datetime="2026-02-15" itemprop="datePublished"
+              >February 15, 2026</time
+            >
+          </div>
+          <menu class="tags">
+            <li>
+              <span class="tag">
+                <a href="/tags/ai/">#AI</a>
+              </span>
+            </li>
+          </menu>
+        </nav>
+        <h2 class="title">
+          <a itemprop="url" href="/posts/perfect-information/">
+            <span itemprop="name"
+              >Something Happened On The Way To Perfect History</span
+            >
+          </a>
+        </h2>
+        <div class="summary-row">
+          <a href="/posts/perfect-information/">
+            <img
+              src="/img/lDqUti3JB_-200.png"
+              alt="Cuniform vs Digital records of history"
+              class="noinvert hero"
+              loading="lazy"
+              width="800"
+              height="800"
+              srcset="
+                /img/lDqUti3JB_-200.png 200w,
+                /img/lDqUti3JB_-400.png 400w,
+                /img/lDqUti3JB_-600.png 600w,
+                /img/lDqUti3JB_-800.png 800w
+              "
+              sizes="auto"
+            />
+          </a>
+
+          <div>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  Humanity was on a path toward &quot;The Era of Perfect
+                  History&quot;—an era where every event is backed by
+                  irrefutable video evidence. But the rise of AI-generated
+                  content has shattered the reliability of photographic proof,
+                  replacing the promise of absolute truth with a landscape of
+                  indistinguishable fakes and manufactured reality.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="more">
+          <a href="/posts/perfect-information/">Read more …</a>
+        </p>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <nav>
+          <div class="metadata">
+            <time datetime="2020-08-28" itemprop="datePublished"
+              >August 28, 2020</time
             >
           </div>
           <menu class="tags">
@@ -574,80 +646,17 @@
           </menu>
         </nav>
         <h2 class="title">
-          <a itemprop="url" href="/posts/moved-to-eleventy/">
-            <span itemprop="name">I Moved This Blog To Eleventy</span>
-          </a>
-        </h2>
-        <div class="summary-row">
-          <div>
-            <div class="summary-row">
-              <div itemprop="abstract">
-                <p>
-                  At long last, this blog &quot;outgrew&quot;<sup
-                    class="footnote-ref"
-                    ><a href="#fn1" id="fnref1">[1]</a></sup
-                  >
-                  Hugo and I had to go looking for a new static site generator.
-                </p>
-                <hr class="footnotes-sep" />
-                <section class="footnotes">
-                  <ol class="footnotes-list">
-                    <li id="fn1" class="footnote-item">
-                      <p>
-                        Of course, by outgrew I mean I got bored and wanted to
-                        play with a new static site generator.
-                        <a href="#fnref1" class="footnote-backref">↩︎</a>
-                      </p>
-                    </li>
-                  </ol>
-                </section>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="more"><a href="/posts/moved-to-eleventy/">Read more …</a></p>
-      </div>
-
-      <div
-        class="post-summary"
-        itemscope=""
-        itemtype="https://schema.org/BlogPosting"
-      >
-        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <nav>
-          <div class="metadata">
-            <time datetime="2020-07-13" itemprop="datePublished"
-              >July 13, 2020</time
+          <a itemprop="url" href="/posts/why-strong-opinions-weakly-held/">
+            <span itemprop="name"
+              >Why &#39;Strong Opinions Weakly Held&#39;</span
             >
-          </div>
-          <menu class="tags">
-            <li>
-              <span class="tag">
-                <a href="/tags/math/">#Math</a>
-              </span>
-            </li>
-          </menu>
-        </nav>
-        <h2 class="title">
-          <a itemprop="url" href="/posts/comcast-technican-problem/">
-            <span itemprop="name">The Comcast Technician Problem</span>
           </a>
         </h2>
         <div class="summary-row">
-          <div>
-            <div class="summary-row">
-              <div itemprop="abstract">
-                <p>
-                  Given a set of tasks, incentives are often aligned towards
-                  dropping a task rather than allowing for perpetual accretion
-                  of delays.
-                </p>
-              </div>
-            </div>
-          </div>
+          <div></div>
         </div>
         <p class="more">
-          <a href="/posts/comcast-technican-problem/">Read more …</a>
+          <a href="/posts/why-strong-opinions-weakly-held/">Read more …</a>
         </p>
       </div>
     </footer>

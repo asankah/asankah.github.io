@@ -33,7 +33,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
 
-    <link rel="stylesheet" href="/styles/wQ4tiFj7jt.css" />
+    <link rel="stylesheet" href="/styles/yjl_-9a32M.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
     <link
@@ -95,19 +95,21 @@
       </header>
 
       <main itemprop="articleBody" class="container">
-        <p>I’m going to assume you are a Vim user.</p>
-        <p>
+        <p id="p-9vrgb0" data-anchor="p-9vrgb0">
+          I’m going to assume you are a Vim user.
+        </p>
+        <p id="p-bev29r" data-anchor="p-bev29r">
           Say you have a several windows open in Vim and you want to edit
           another file. Using <code>:edit</code> works if you want to open the
           file in the current window unconditionally.
         </p>
-        <p>
+        <p id="p-1vwt9c2" data-anchor="p-1vwt9c2">
           <em>But that’s often not what you want.</em> If you have the same file
           open in another window, then the most efficient and least disruptive
           thing to do is to switch to that window.
         </p>
         <h2 id="drop">drop</h2>
-        <p>
+        <p id="p-as779h" data-anchor="p-as779h">
           That’s where <code>:drop</code> comes in. In case you aren’t familiar
           with the <code>drop</code> command, have a look at the help page in
           your favorite editor (<code>:help drop</code>) or
@@ -124,7 +126,7 @@
           >
           <code>:drop {file}</code> will:
         </p>
-        <ul>
+        <ul id="p-d5g4lm" data-anchor="p-d5g4lm">
           <li>
             Switch to the window in which <code>{file}</code> is already open.
           </li>
@@ -133,7 +135,7 @@
             <code>{file}</code> otherwise.
           </li>
         </ul>
-        <p>
+        <p id="p-1okhgpt" data-anchor="p-1okhgpt">
           The <code>:drop</code> command is intended to be used as the “open
           buffer” command for automated tooling like source browsers. For
           example, you can configure <code>coc-nvim</code>
@@ -147,24 +149,24 @@
           configuration JSON file.
         </p>
         <h2 id="switchbuf-or-swb">switchbuf or swb</h2>
-        <p>
+        <p id="p-1b2mhb6" data-anchor="p-1b2mhb6">
           Or perhaps configuring each plugin is too much work. Enter
           <code>switchbuf</code>. This is a global setting in Vim that controls
           how Vim switches between buffers.
         </p>
-        <p>
+        <p id="p-1owng1y" data-anchor="p-1owng1y">
           Setting <code>set switchbuf=useopen</code> has the same effect when
           invoking <code>buffer</code>. Note that using <code>sbuffer</code>,
           <code>sbnext</code>, or <code>sbrewind</code> automatically behaves as
           if this is the case. I.e. they will use an existing window if one
           already has the buffer open.
         </p>
-        <p>
+        <p id="p-1pcf2p4" data-anchor="p-1pcf2p4">
           Setting <code>set switchbuf=usetab</code> is similar to the effect of
           <code>useopen</code> except that it will look through windows in other
           tabs.
         </p>
-        <p>
+        <p id="p-1vpwq5v" data-anchor="p-1vpwq5v">
           See <code>:help switchbuf</code> or
           <a
             href="http://vimdoc.sourceforge.net/htmldoc/options.html#&#39;switchbuf&#39;"
@@ -234,21 +236,21 @@
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <nav>
           <div class="metadata">
-            <time datetime="2021-03-26" itemprop="datePublished"
-              >March 26, 2021</time
+            <time datetime="2020-05-01" itemprop="datePublished"
+              >May 1, 2020</time
             >
           </div>
           <menu class="tags">
             <li>
               <span class="tag">
-                <a href="/tags/math/">#Math</a>
+                <a href="/tags/privacy/">#Privacy</a>
               </span>
             </li>
           </menu>
         </nav>
         <h2 class="title">
-          <a itemprop="url" href="/posts/shannon-paper/">
-            <span itemprop="name">Shannon Paper</span>
+          <a itemprop="url" href="/posts/identity-domains/">
+            <span itemprop="name">Identity Domains</span>
           </a>
         </h2>
         <div class="summary-row">
@@ -256,19 +258,14 @@
             <div class="summary-row">
               <div itemprop="abstract">
                 <p>
-                  Claude Shannon's
-                  <em>A mathematical theory of communication</em> is an oft
-                  cited classic in information theory. Let's dive in and try to
-                  tease apart the &quot;why&quot;s that are often overlooked
-                  when people build on top of the introduced theory. They are
-                  definitely things that I didn't consider to be obvious without
-                  the benefit of reading the paper.
+                  An Identity Domain is a scope within which we assume that the
+                  user's identity can roam freely.
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <p class="more"><a href="/posts/shannon-paper/">Read more …</a></p>
+        <p class="more"><a href="/posts/identity-domains/">Read more …</a></p>
       </div>
 
       <div
@@ -279,27 +276,38 @@
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <nav>
           <div class="metadata">
-            <time datetime="2022-01-13" itemprop="datePublished"
-              >January 13, 2022</time
+            <time datetime="2022-09-16" itemprop="datePublished"
+              >September 16, 2022</time
             >
           </div>
           <menu class="tags">
             <li>
               <span class="tag">
-                <a href="/tags/inktober/">#Inktober</a>
+                <a href="/tags/engineering/">#Engineering</a>
               </span>
             </li>
           </menu>
         </nav>
         <h2 class="title">
-          <a itemprop="url" href="/posts/inktober-decay/">
-            <span itemprop="name">Inktober - Decay</span>
+          <a itemprop="url" href="/posts/the-lettergrade-rule/">
+            <span itemprop="name">The Lettergrade Rule</span>
           </a>
         </h2>
         <div class="summary-row">
-          <div></div>
+          <div>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  Don't block a code review because of minor issues that are
+                  best left to the discretion of the author.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <p class="more"><a href="/posts/inktober-decay/">Read more …</a></p>
+        <p class="more">
+          <a href="/posts/the-lettergrade-rule/">Read more …</a>
+        </p>
       </div>
 
       <div
@@ -310,14 +318,14 @@
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <nav>
           <div class="metadata">
-            <time datetime="2023-07-24" itemprop="datePublished"
-              >July 24, 2023</time
+            <time datetime="2022-10-28" itemprop="datePublished"
+              >October 28, 2022</time
             >
           </div>
           <menu class="tags">
             <li>
               <span class="tag">
-                <a href="/tags/career/">#Career</a>
+                <a href="/tags/culture/">#Culture</a>
               </span>
             </li>
             <li>
@@ -328,21 +336,21 @@
           </menu>
         </nav>
         <h2 class="title">
-          <a itemprop="url" href="/posts/the-point-of-a-strategy/">
-            <span itemprop="name">The Point of a Strategy</span>
+          <a itemprop="url" href="/posts/the-loss-of-a-virtuous-culture/">
+            <span itemprop="name">The Loss of a Virtuous Culture</span>
           </a>
         </h2>
         <div class="summary-row">
           <div>
             <div class="summary-row">
               <div itemprop="abstract">
-                <p>The only useful strategy is one that reduces risks.</p>
+                <p>Luck isn't enough. You need a culture of virtue.</p>
               </div>
             </div>
           </div>
         </div>
         <p class="more">
-          <a href="/posts/the-point-of-a-strategy/">Read more …</a>
+          <a href="/posts/the-loss-of-a-virtuous-culture/">Read more …</a>
         </p>
       </div>
 
@@ -354,49 +362,34 @@
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <nav>
           <div class="metadata">
-            <time datetime="2024-07-08" itemprop="datePublished"
-              >July 8, 2024</time
+            <time datetime="2020-07-27" itemprop="datePublished"
+              >July 27, 2020</time
             >
           </div>
           <menu class="tags">
             <li>
               <span class="tag">
-                <a href="/tags/organizations/">#Organizations</a>
-              </span>
-            </li>
-            <li>
-              <span class="tag">
-                <a href="/tags/career/">#Career</a>
+                <a href="/tags/meta/">#Meta</a>
               </span>
             </li>
           </menu>
         </nav>
         <h2 class="title">
-          <a
-            itemprop="url"
-            href="/posts/how-to-solve-a-problem-in-three-steps/"
-          >
-            <span itemprop="name">How to Solve a Problem in Three Steps</span>
+          <a itemprop="url" href="/posts/how-this-blog-works/">
+            <span itemprop="name">How This Blog Works</span>
           </a>
         </h2>
         <div class="summary-row">
           <div>
             <div class="summary-row">
               <div itemprop="abstract">
-                <p>
-                  If you don't know what a refridgerator is nor what an elephant
-                  is you are likely to think that opening the door, putting the
-                  elephant in, and closing the door is a viable strategy for
-                  putting an elephant in the refridgerator.
-                </p>
+                <p>How I put this site together and why.</p>
               </div>
             </div>
           </div>
         </div>
         <p class="more">
-          <a href="/posts/how-to-solve-a-problem-in-three-steps/"
-            >Read more …</a
-          >
+          <a href="/posts/how-this-blog-works/">Read more …</a>
         </p>
       </div>
 
@@ -408,41 +401,65 @@
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <nav>
           <div class="metadata">
-            <time datetime="2025-04-07" itemprop="dateCreated"
-              >April 7, 2025</time
+            <time datetime="2026-01-27" itemprop="dateCreated"
+              >January 27, 2026</time
             >
             (Revised
-            <time datetime="2025-05-03" itemprop="datePublished"
-              >May 3, 2025</time
+            <time datetime="2026-02-09" itemprop="datePublished"
+              >February 9, 2026</time
             >
             )
           </div>
           <menu class="tags">
             <li>
               <span class="tag">
-                <a href="/tags/culture/">#Culture</a>
+                <a href="/tags/ai/">#AI</a>
               </span>
             </li>
           </menu>
         </nav>
         <h2 class="title">
-          <a itemprop="url" href="/posts/intermezzo-2025/">
-            <span itemprop="name">Intermission - Q1 of 2025</span>
+          <a itemprop="url" href="/posts/user-agents/">
+            <span itemprop="name"
+              >The Increasingly Inaccurately Named User-Agent</span
+            >
           </a>
         </h2>
         <div class="summary-row">
+          <a href="/posts/user-agents/">
+            <img
+              src="/img/Afx7s0Loi9-200.png"
+              alt="A scary user agent"
+              class="noinvert hero"
+              loading="lazy"
+              width="559"
+              height="559"
+              srcset="
+                /img/Afx7s0Loi9-200.png 200w,
+                /img/Afx7s0Loi9-400.png 400w,
+                /img/Afx7s0Loi9-559.png 559w
+              "
+              sizes="auto"
+            />
+          </a>
+
           <div>
             <div class="summary-row">
               <div itemprop="abstract">
                 <p>
-                  Hate can be suppressed temporarily, but cannot be contained
-                  for too long.
+                  Once a technical term and then a philosophy, the User Agent
+                  has gradually lost its allegiance to the user. The coming
+                  AI-powered super-user-agents are even more detached from their
+                  role as a loyal ambassador. Instead it's far more likely that
+                  those user-agents will manipulate users on behalf of their
+                  benefactors, and it will be difficult if not impossible to
+                  tell what they are doing.
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <p class="more"><a href="/posts/intermezzo-2025/">Read more …</a></p>
+        <p class="more"><a href="/posts/user-agents/">Read more …</a></p>
       </div>
     </footer>
 

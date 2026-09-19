@@ -33,7 +33,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
 
-    <link rel="stylesheet" href="/styles/wQ4tiFj7jt.css" />
+    <link rel="stylesheet" href="/styles/yjl_-9a32M.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
     <link
@@ -120,7 +120,7 @@
           </p>
         </aside>
         <div class="sidenote-host-1">
-          <p>
+          <p id="p-1x6i4wp" data-anchor="p-1x6i4wp">
             Devices on the internet including your phone, laptop, gaming
             console, refridgerator, etc. communicate by exchanging data
             <em>“packets”</em>. They are of course not physical packets. It’s
@@ -162,7 +162,7 @@
             from and where it is going
           </figcaption>
         </figure>
-        <p>
+        <p id="p-1dnnh4g" data-anchor="p-1dnnh4g">
           Each packet has little pieces of extra information to help it get to
           where it needs to go. One piece is where it comes from (a source
           <em>“address”</em>). Another is where it is going (a target
@@ -171,7 +171,7 @@
           information to correctly route the packets to their intended
           destination.
         </p>
-        <p>
+        <p id="p-4jqxp9" data-anchor="p-4jqxp9">
           The network is large and constantly changing. So each device focuses
           only on getting the packet at least one step closer to its
           destination. The specific journey taken by a packet is unkonwn until
@@ -204,13 +204,13 @@
           </figcaption>
         </figure>
         <h2 id="faster-and-faster">Faster and Faster</h2>
-        <p>
+        <p id="p-1d8pea4" data-anchor="p-1d8pea4">
           So let’s say a video streaming service wants to send your mobile phone
           a video. First the streaming service breaks up the video into small
           packets. Then it throws all the packets into the network so that the
           network can deliver them to your phone.
         </p>
-        <p>
+        <p id="p-genvso" data-anchor="p-genvso">
           If the streaming service pushes data out at exactly the
           <em>right</em> speed and the network doesn’t break, then everything
           works out great. All the packets make it to the destination without
@@ -218,7 +218,7 @@
           that <em>right</em> speed is due to the aforementioned unknowability
           of the network.
         </p>
-        <p>
+        <p id="p-uswp6" data-anchor="p-uswp6">
           Sending too much data can overwhelm some devices or connections in the
           network. If a device gets more data than it can handle, it’s likely
           that it will start dropping packets until it can catch up.
@@ -242,15 +242,17 @@
             Speedometer. Are we going too slow or too fast or maybe just right?
           </figcaption>
         </figure>
-        <p>
+        <p id="p-ygmzq6" data-anchor="p-ygmzq6">
           Sending too little data isn’t great either. The speed might be too
           slow for streaming video. The receiving device will underperform.
           Users will be confused why their expensive broadband connection
           doesn’t let them watch streaming video.
         </p>
-        <p>So how does the device know how much data to send out?</p>
+        <p id="p-wseu8l" data-anchor="p-wseu8l">
+          So how does the device know how much data to send out?
+        </p>
         <h2 id="flow-control">Flow Control</h2>
-        <p>
+        <p id="p-6fw7sj" data-anchor="p-6fw7sj">
           The mechanisms we use to regulate the flow of data is called
           <em>“flow control.”</em> We are going to look at a method based on
           coordination between the sender and the receiver because
@@ -259,7 +261,7 @@
             be reliable and stable</em
           >.
         </p>
-        <p>
+        <p id="p-vewxyc" data-anchor="p-vewxyc">
           Different packets can take different paths See the network connections
           between <code>C-D</code> and <code>C-E</code> in the diagram above.
           Either of these paths can take a packet from <code>C</code> to
@@ -267,11 +269,11 @@
           different times. Also, if the network gets overwhelmed or breaks, then
           some of the packets may not make it at all.
         </p>
-        <p>
+        <p id="p-9d2fop" data-anchor="p-9d2fop">
           The reciever needs to know how to put the packets back in order and
           tell if any are missing.
         </p>
-        <p>
+        <p id="p-4o0q77" data-anchor="p-4o0q77">
           To keep track of which packet is which, we can add some new
           information to the data packet: let’s call this the <em>sequence</em>.
           As you might imagine, the sequence can start at 1 and count each
@@ -297,7 +299,7 @@
             <em>sequence</em> field.
           </figcaption>
         </figure>
-        <p>
+        <p id="p-1uiltdo" data-anchor="p-1uiltdo">
           Great. But how do we know which packets made it to the other side? The
           recipient will need to let us know this information in some sort of
           reply. This reply is <em>also</em> a data packet called an
@@ -325,15 +327,15 @@
             travelling “backwards”.
           </figcaption>
         </figure>
-        <p>
+        <p id="p-fbt526" data-anchor="p-fbt526">
           Ok so now we have all the information we need to perform some flow
           control.
         </p>
-        <p>
+        <p id="p-bjy929" data-anchor="p-bjy929">
           We can now figure out the optimal rate of data transfer experimentally
           using some method like this:
         </p>
-        <ol type="1">
+        <ol type="1" id="p-1kobif7" data-anchor="p-1kobif7">
           <li>Send data as fast as possible.</li>
           <li>
             If the recipient claims some packets were missing, then resend those
@@ -345,29 +347,29 @@
           </li>
         </ol>
         <h2 id="stuck-on-the-wire">Stuck On The Wire</h2>
-        <p>
+        <p id="p-v8rdfi" data-anchor="p-v8rdfi">
           Now imagine you sending data out - a rate of 100 packets per second.
           And let’s say it takes one second for a packet to get to the other
           side. Just before the end of the first second, the destination hasn’t
           received the first packet yet. But the sender has sent 100 packets.
         </p>
-        <p>Where are the packets?</p>
-        <p>
+        <p id="p-1vqyh11" data-anchor="p-1vqyh11">Where are the packets?</p>
+        <p id="p-18xstxm" data-anchor="p-18xstxm">
           We call this <em>“data on the wire’</em>. Some data is indeed on the
           wire literally, but that tends to be a tiny amount. Most of the data
           on the wire is actually at each of the devices along the way either
           being received, or waiting to be sent.
         </p>
-        <p>
+        <p id="p-1ubqfuy" data-anchor="p-1ubqfuy">
           So once we factor in the equipment in the middle, your path to the
           destination looks a little like this:
         </p>
-        <p>
+        <p id="p-1yp439b" data-anchor="p-1yp439b">
           The device sees some data come in, stores it, figures out where to
           send it next, and sends it on its way. There could be other stuff
           these boxes could be doing, but that’s something for another post.
         </p>
-        <p>
+        <p id="p-hezcch" data-anchor="p-hezcch">
           So from the perspective of a single box the world looks a bit like
           this:
         </p>
@@ -393,37 +395,37 @@
             transmitted out of some device on the internet.
           </figcaption>
         </figure>
-        <p>
+        <p id="p-5vx9fx" data-anchor="p-5vx9fx">
           If this is the limit for the network and the sender keeps sending more
           packets, then there’s no room for the packet. So it gets
           <em>“dropped”</em>.
         </p>
-        <p>
+        <p id="p-zl1fgu" data-anchor="p-zl1fgu">
           It is common for a device to be at the border of a “good” network and
           a “not”good” network. The goodness here is the amount of data that can
           be stuffed into it.
         </p>
-        <p>
+        <p id="p-1wgq49j" data-anchor="p-1wgq49j">
           When a burst of data comes along, not much data can be stuffed into
           the small pipe before no more can fit.
         </p>
-        <p>
+        <p id="p-1o33peo" data-anchor="p-1o33peo">
           As mentioned before, this means that the sender will need to
           <em>re-send</em> the dropped packets and also slow down the rate of
           data. Given enough time the rate of data transfer will approach the
           throughput of the smallest pipe along the way.
         </p>
         <h2 id="buffer-bloat">Buffer Bloat</h2>
-        <p>
+        <p id="p-1y40e07" data-anchor="p-1y40e07">
           Some folks looked at this setup and decided to improve things. There
           are some valid reasons for doing what they did – which is why so many
           people did this. But it didn’t quite have the intended effect.
         </p>
-        <p>
+        <p id="p-1of1ay" data-anchor="p-1of1ay">
           So, what was the thing they did? They added
           <strong>buffering</strong>. Too much of it.
         </p>
-        <p>
+        <p id="p-gsvy0b" data-anchor="p-gsvy0b">
           A <em>buffer</em> is a resevoir where excess packets can be kept until
           the next link in the network is ready to accept more. What this means
           is that every device along the way is trying to do flow control by
@@ -450,12 +452,14 @@
             Device <code>B</code> is dropping all excess packets into a buffer.
           </figcaption>
         </figure>
-        <p>
+        <p id="p-87mq91" data-anchor="p-87mq91">
           As before, let’s say the sender is sending 200 packets every second.
           The network still can only transfer 100. The excess packets – another
           100 of them – gets tossed into the buffer.
         </p>
-        <p>What happens just one second later?</p>
+        <p id="p-1n71hzb" data-anchor="p-1n71hzb">
+          What happens just one second later?
+        </p>
         <figure>
           <img
             src="/posts/buffer-bloat/VdGyYTM64u-200.png"
@@ -478,7 +482,7 @@
             also has 100 packets queued.
           </figcaption>
         </figure>
-        <p>
+        <p id="p-1d955ul" data-anchor="p-1d955ul">
           The very next packet – let’s call it <em>Bob</em> – that the sender
           tosses into the network will end up in the buffer since <code>B</code>
           is still waiting for some of the first 100 packets to get past
@@ -505,12 +509,12 @@
             packet in the buffer.
           </figcaption>
         </figure>
-        <p>
+        <p id="p-f2tjee" data-anchor="p-f2tjee">
           Bob is the last packet in the buffer and must wait for all the other
           packets in the buffer to be send before it will get queued to sent
           out.
         </p>
-        <p>
+        <p id="p-ggoiu2" data-anchor="p-ggoiu2">
           In another second, the first 100 packets make it to the target, and
           now the 100 packets that were in the buffer are back on the wire.
         </p>
@@ -535,7 +539,7 @@
             get fished out and tossed back into the network.
           </figcaption>
         </figure>
-        <p>
+        <p id="p-bx6goh" data-anchor="p-bx6goh">
           Bob is still in the buffer but it’s the next one in line to get back
           on the network.
         </p>
@@ -559,28 +563,30 @@
             Hurray! Bob finally makes it to the destination.
           </figcaption>
         </figure>
-        <p>
+        <p id="p-1c9e0ka" data-anchor="p-1c9e0ka">
           Once back on the network it will take another second for Bob to reach
           the target.
         </p>
-        <p>
+        <p id="p-18q1c6s" data-anchor="p-18q1c6s">
           Even under ideal conditions eventually the system settles on a new
           equilibrium with one difference.
         </p>
-        <p>
+        <p id="p-1x81qrx" data-anchor="p-1x81qrx">
           The length of time it takes for the data packets to make their way to
           the destination is much larger. Packets accumulate in buffers along
           the network. Each buffer adds an additional delay for the packet.
         </p>
-        <p>
+        <p id="p-84zhh3" data-anchor="p-84zhh3">
           Overall the throughput of the network is the same. But latency – the
           time it takes for a packet to get to the destination – is much larger.
         </p>
-        <p>
+        <p id="p-18gxyp" data-anchor="p-18gxyp">
           The effect is even worse in practice because this setup resists any
           attempt at flow control. It delays the discovery of actual throughput.
         </p>
-        <p>This phenomenon is called <strong>buffer bloat</strong>.</p>
+        <p id="p-14w6225" data-anchor="p-14w6225">
+          This phenomenon is called <strong>buffer bloat</strong>.
+        </p>
         <aside
           id="footnotes"
           class="footnotes footnotes-end-of-document"
@@ -643,23 +649,21 @@
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <nav>
           <div class="metadata">
-            <time datetime="2022-07-05" itemprop="datePublished"
-              >July 5, 2022</time
+            <time datetime="2020-05-01" itemprop="datePublished"
+              >May 1, 2020</time
             >
           </div>
           <menu class="tags">
             <li>
               <span class="tag">
-                <a href="/tags/tools/">#Tools</a>
+                <a href="/tags/privacy/">#Privacy</a>
               </span>
             </li>
           </menu>
         </nav>
         <h2 class="title">
-          <a itemprop="url" href="/posts/git-autopush/">
-            <span itemprop="name"
-              >Use Git hooks to automatically push after every commit</span
-            >
+          <a itemprop="url" href="/posts/identity-domains/">
+            <span itemprop="name">Identity Domains</span>
           </a>
         </h2>
         <div class="summary-row">
@@ -667,17 +671,14 @@
             <div class="summary-row">
               <div itemprop="abstract">
                 <p>
-                  During before and after various Git operations, Git invokes
-                  special hooks that can be used execute custom scripts. This
-                  article explains how to use them to automatically push to an
-                  upstream repository every time you make a commit to a local
-                  repo.
+                  An Identity Domain is a scope within which we assume that the
+                  user's identity can roam freely.
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <p class="more"><a href="/posts/git-autopush/">Read more …</a></p>
+        <p class="more"><a href="/posts/identity-domains/">Read more …</a></p>
       </div>
 
       <div
@@ -688,21 +689,163 @@
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <nav>
           <div class="metadata">
-            <time datetime="2023-12-07" itemprop="datePublished"
-              >December 7, 2023</time
+            <time datetime="2024-01-25" itemprop="datePublished"
+              >January 25, 2024</time
             >
           </div>
           <menu class="tags">
             <li>
               <span class="tag">
-                <a href="/tags/career/">#Career</a>
+                <a href="/tags/usability/">#Usability</a>
               </span>
             </li>
             <li>
               <span class="tag">
-                <a href="/tags/culture/">#Culture</a>
+                <a href="/tags/engineering/">#Engineering</a>
               </span>
             </li>
+          </menu>
+        </nav>
+        <h2 class="title">
+          <a itemprop="url" href="/posts/why-i-hate-carousels/">
+            <span itemprop="name">Why I Hate Carousels</span>
+          </a>
+        </h2>
+        <div class="summary-row">
+          <div>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <ul>
+                  <li>Don't use carousels in your UI.</li>
+                  <li>
+                    Instead, if you must stick content into little cards, let
+                    the horionztal layout wrap to additional lines.
+                  </li>
+                  <li>
+                    If you end up with too many horizontal lines of content,
+                    then you definitely have too many items that can be accessed
+                    via a horizontally panning UI. You need a different UI
+                    altogether.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="more">
+          <a href="/posts/why-i-hate-carousels/">Read more …</a>
+        </p>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <nav>
+          <div class="metadata">
+            <time datetime="2024-03-23" itemprop="datePublished"
+              >March 23, 2024</time
+            >
+          </div>
+          <menu class="tags">
+            <li>
+              <span class="tag">
+                <a href="/tags/engineering/">#Engineering</a>
+              </span>
+            </li>
+            <li>
+              <span class="tag">
+                <a href="/tags/curiosity/">#Curiosity</a>
+              </span>
+            </li>
+          </menu>
+        </nav>
+        <h2 class="title">
+          <a itemprop="url" href="/posts/secret-life-of-systems/">
+            <span itemprop="name">Secret Life of Systems</span>
+          </a>
+        </h2>
+        <div class="summary-row">
+          <div>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  Lifecycles of software systems that solve real world problems
+                  can be broken down into distinct phases based on where it is
+                  with respect to the problem and the eventual solution.
+                </p>
+                <p>
+                  This article presents a taxonomy of these phases that should
+                  help you understand how each part of the lifecycle fits
+                  together.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="more">
+          <a href="/posts/secret-life-of-systems/">Read more …</a>
+        </p>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <nav>
+          <div class="metadata">
+            <time datetime="2020-07-13" itemprop="datePublished"
+              >July 13, 2020</time
+            >
+          </div>
+          <menu class="tags">
+            <li>
+              <span class="tag">
+                <a href="/tags/math/">#Math</a>
+              </span>
+            </li>
+          </menu>
+        </nav>
+        <h2 class="title">
+          <a itemprop="url" href="/posts/comcast-technican-problem/">
+            <span itemprop="name">The Comcast Technician Problem</span>
+          </a>
+        </h2>
+        <div class="summary-row">
+          <div>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  Given a set of tasks, incentives are often aligned towards
+                  dropping a task rather than allowing for perpetual accretion
+                  of delays.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="more">
+          <a href="/posts/comcast-technican-problem/">Read more …</a>
+        </p>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <nav>
+          <div class="metadata">
+            <time datetime="2025-12-16" itemprop="datePublished"
+              >December 16, 2025</time
+            >
+          </div>
+          <menu class="tags">
             <li>
               <span class="tag">
                 <a href="/tags/organizations/">#Organizations</a>
@@ -711,105 +854,23 @@
           </menu>
         </nav>
         <h2 class="title">
-          <a itemprop="url" href="/posts/thirteen-years/">
-            <span itemprop="name">Thirteen Years</span>
+          <a itemprop="url" href="/posts/cog-ratio/">
+            <span itemprop="name">What&#39;s your cog ratio?</span>
           </a>
         </h2>
         <div class="summary-row">
-          <div>
-            <div class="summary-row">
-              <div itemprop="abstract">
-                <p>Some reflections from thirteen years at Google.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="more"><a href="/posts/thirteen-years/">Read more …</a></p>
-      </div>
-
-      <div
-        class="post-summary"
-        itemscope=""
-        itemtype="https://schema.org/BlogPosting"
-      >
-        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <nav>
-          <div class="metadata">
-            <time datetime="2025-05-04" itemprop="datePublished"
-              >May 4, 2025</time
-            >
-          </div>
-          <menu class="tags">
-            <li>
-              <span class="tag">
-                <a href="/tags/ai/">#AI</a>
-              </span>
-            </li>
-          </menu>
-        </nav>
-        <h2 class="title">
-          <a itemprop="url" href="/series/structure-of-experience/meaning/"
-            ><span class="series-name">Structure Of Experience</span>:
-            <span itemprop="name">Act I: Meaning</span>
-          </a>
-        </h2>
-        <div class="summary-row">
-          <div>
-            <div class="summary-row">
-              <div itemprop="abstract">
-                <p>
-                  Language builds meaning by combining your inner experiences.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="more">
-          <a href="/series/structure-of-experience/meaning/">Read more …</a>
-        </p>
-      </div>
-
-      <div
-        class="post-summary"
-        itemscope=""
-        itemtype="https://schema.org/BlogPosting"
-      >
-        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <nav>
-          <div class="metadata">
-            <time datetime="2026-02-15" itemprop="datePublished"
-              >February 15, 2026</time
-            >
-          </div>
-          <menu class="tags">
-            <li>
-              <span class="tag">
-                <a href="/tags/ai/">#AI</a>
-              </span>
-            </li>
-          </menu>
-        </nav>
-        <h2 class="title">
-          <a itemprop="url" href="/posts/perfect-information/">
-            <span itemprop="name"
-              >Something Happened On The Way To Perfect History</span
-            >
-          </a>
-        </h2>
-        <div class="summary-row">
-          <a href="/posts/perfect-information/">
+          <a href="/posts/cog-ratio/">
             <img
-              src="/img/lDqUti3JB_-200.png"
-              alt="Cuniform vs Digital records of history"
+              src="/img/W03-n_bn4p-200.png"
+              alt="Cogs, cogs, cogs."
               class="noinvert hero"
               loading="lazy"
-              width="800"
-              height="800"
+              width="434"
+              height="434"
               srcset="
-                /img/lDqUti3JB_-200.png 200w,
-                /img/lDqUti3JB_-400.png 400w,
-                /img/lDqUti3JB_-600.png 600w,
-                /img/lDqUti3JB_-800.png 800w
+                /img/W03-n_bn4p-200.png 200w,
+                /img/W03-n_bn4p-400.png 400w,
+                /img/W03-n_bn4p-434.png 434w
               "
               sizes="auto"
             />
@@ -819,85 +880,20 @@
             <div class="summary-row">
               <div itemprop="abstract">
                 <p>
-                  Humanity was on a path toward &quot;The Era of Perfect
-                  History&quot;—an era where every event is backed by
-                  irrefutable video evidence. But the rise of AI-generated
-                  content has shattered the reliability of photographic proof,
-                  replacing the promise of absolute truth with a landscape of
-                  indistinguishable fakes and manufactured reality.
+                  The &quot;cog ratio&quot; is a metaphor for how much an
+                  individual's work on a product directly translates into a
+                  better user experience. While everyone on a team contributes,
+                  roles further from direct product development—like management,
+                  HR, or infrastructure—can feel disconnected from the end-user.
+                  What is our own &quot;cog ratio&quot; and how effectively will
+                  our efforts truly drive meaningful change for the people we
+                  serve?
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <p class="more">
-          <a href="/posts/perfect-information/">Read more …</a>
-        </p>
-      </div>
-
-      <div
-        class="post-summary"
-        itemscope=""
-        itemtype="https://schema.org/BlogPosting"
-      >
-        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <nav>
-          <div class="metadata">
-            <time datetime="2026-08-16" itemprop="datePublished"
-              >August 16, 2026</time
-            >
-          </div>
-          <menu class="tags">
-            <li>
-              <span class="tag">
-                <a href="/tags/ai/">#AI</a>
-              </span>
-            </li>
-          </menu>
-        </nav>
-        <h2 class="title">
-          <a itemprop="url" href="/posts/hot-vs-cold-cognition/">
-            <span itemprop="name">Hot vs. Cold Cognition</span>
-          </a>
-        </h2>
-        <div class="summary-row">
-          <a href="/posts/hot-vs-cold-cognition/">
-            <img
-              src="/img/Ufh1ZEb_Fk-200.png"
-              alt="Two identical flame silhouettes side by side: the left one solid black, the right one traced in dashed line and filled with a fine grid, like a circuit diagram of the first."
-              class="hero"
-              loading="lazy"
-              width="1120"
-              height="1120"
-              srcset="
-                /img/Ufh1ZEb_Fk-200.png   200w,
-                /img/Ufh1ZEb_Fk-400.png   400w,
-                /img/Ufh1ZEb_Fk-600.png   600w,
-                /img/Ufh1ZEb_Fk-800.png   800w,
-                /img/Ufh1ZEb_Fk-1120.png 1120w
-              "
-              sizes="auto"
-            />
-          </a>
-
-          <div>
-            <div class="summary-row">
-              <div itemprop="abstract">
-                <p>
-                  Cold cognition is procedure; hot cognition is judgment shaped
-                  by a lifetime of lived experience. AI can automate the former
-                  and imitate the latter, but a statistical blend of everyone
-                  else's judgment is not the same thing as being a source of
-                  judgment. Knowing the difference should decide what we
-                  automate and what we merely augment.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="more">
-          <a href="/posts/hot-vs-cold-cognition/">Read more …</a>
-        </p>
+        <p class="more"><a href="/posts/cog-ratio/">Read more …</a></p>
       </div>
     </footer>
 

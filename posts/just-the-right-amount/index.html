@@ -33,7 +33,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
 
-    <link rel="stylesheet" href="/styles/wQ4tiFj7jt.css" />
+    <link rel="stylesheet" href="/styles/yjl_-9a32M.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
     <link
@@ -90,18 +90,20 @@
       </header>
 
       <main itemprop="articleBody" class="container">
-        <p>
+        <p id="p-19bxohh" data-anchor="p-19bxohh">
           Zero technical debt sounds like a great target to aim for. In my
           earlier developer days I strongly believed that all projects should go
           for this target. At a company all-hands I heard from a senior engineer
           that having zero technical debt is often not what we want. I felt
           betrayed.
         </p>
-        <p>Why is it that zero technical debt isn’t what we want?</p>
+        <p id="p-ly6cmd" data-anchor="p-ly6cmd">
+          Why is it that zero technical debt isn’t what we want?
+        </p>
         <h2 id="memory-allocation-strategy-leak-all-allocations">
           Memory Allocation Strategy: Leak All Allocations
         </h2>
-        <p>
+        <p id="p-1y98pem" data-anchor="p-1y98pem">
           Let’s take a moment and think of a hypothetical program. If you knew
           that your program ran once and terminated, would you go through the
           effort of deallocating each individual memory allocation at the end?
@@ -110,7 +112,7 @@
           who’s memory consumption is bounded and less than the available memory
           the more efficient strategy is to just leak all memory.
         </p>
-        <p>
+        <p id="p-5db2wr" data-anchor="p-5db2wr">
           One might wonder if such a strategy would break reusability. “Leak all
           allocations” doesn’t mean that you shouldn’t call
           <code>free()</code> (or equivalent) in your code. It means that the
@@ -125,7 +127,7 @@
         <h2 id="what-does-just-enough-technical-debt-look-like">
           What Does Just Enough Technical Debt Look Like?
         </h2>
-        <p>
+        <p id="p-17c7nt3" data-anchor="p-17c7nt3">
           Some of the motivation for stopping short of perfect comes from the
           <a href="https://en.wikipedia.org/wiki/The_Mythical_Man-Month"
             >Mythical Man Month</a
@@ -158,7 +160,7 @@
             </p>
           </figcaption>
         </figure>
-        <p>
+        <p id="p-1wa8xrr" data-anchor="p-1wa8xrr">
           Software projects tend to be characteristically similar. Putting too
           much effort into a project features you don’t need and polishing up
           code that nobody will reuse is wasteful. It’s just a little bit harder
@@ -273,21 +275,75 @@
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <nav>
           <div class="metadata">
-            <time datetime="2022-06-28" itemprop="datePublished"
-              >June 28, 2022</time
+            <time datetime="2023-12-07" itemprop="datePublished"
+              >December 7, 2023</time
             >
           </div>
           <menu class="tags">
             <li>
               <span class="tag">
-                <a href="/tags/engineering/">#Engineering</a>
+                <a href="/tags/career/">#Career</a>
+              </span>
+            </li>
+            <li>
+              <span class="tag">
+                <a href="/tags/culture/">#Culture</a>
+              </span>
+            </li>
+            <li>
+              <span class="tag">
+                <a href="/tags/organizations/">#Organizations</a>
               </span>
             </li>
           </menu>
         </nav>
         <h2 class="title">
-          <a itemprop="url" href="/posts/darpa-heilmeier-catechism/">
-            <span itemprop="name">DARPA&#39;s Heilmeier Catechism</span>
+          <a itemprop="url" href="/posts/thirteen-years/">
+            <span itemprop="name">Thirteen Years</span>
+          </a>
+        </h2>
+        <div class="summary-row">
+          <div>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>Some reflections from thirteen years at Google.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="more"><a href="/posts/thirteen-years/">Read more …</a></p>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <nav>
+          <div class="metadata">
+            <time datetime="2020-07-07" itemprop="datePublished"
+              >July 7, 2020</time
+            >
+          </div>
+          <menu class="tags">
+            <li>
+              <span class="tag">
+                <a href="/tags/tools/">#Tools</a>
+              </span>
+            </li>
+            <li>
+              <span class="tag">
+                <a href="/tags/vim/">#Vim</a>
+              </span>
+            </li>
+          </menu>
+        </nav>
+        <h2 class="title">
+          <a itemprop="url" href="/posts/use-drop-not-edit/">
+            <span itemprop="name"
+              >Vim: Use Drop Not Edit, SBuffer Not Buffer</span
+            >
           </a>
         </h2>
         <div class="summary-row">
@@ -295,16 +351,15 @@
             <div class="summary-row">
               <div itemprop="abstract">
                 <p>
-                  A set of questions help you think through and evaluate
-                  proposed projects and research programs.
+                  Use the <code>:drop</code> command instead of
+                  <code>:edit</code> in Vim. It will reuse an existing window
+                  instead of creating a new one.
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <p class="more">
-          <a href="/posts/darpa-heilmeier-catechism/">Read more …</a>
-        </p>
+        <p class="more"><a href="/posts/use-drop-not-edit/">Read more …</a></p>
       </div>
 
       <div
@@ -315,52 +370,8 @@
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <nav>
           <div class="metadata">
-            <time datetime="2022-08-03" itemprop="datePublished"
-              >August 3, 2022</time
-            >
-          </div>
-          <menu class="tags">
-            <li>
-              <span class="tag">
-                <a href="/tags/math/">#Math</a>
-              </span>
-            </li>
-            <li>
-              <span class="tag">
-                <a href="/tags/curiosity/">#Curiosity</a>
-              </span>
-            </li>
-          </menu>
-        </nav>
-        <h2 class="title">
-          <a itemprop="url" href="/posts/interesting-numbers/">
-            <span itemprop="name">All natural numbers are interesting</span>
-          </a>
-        </h2>
-        <div class="summary-row">
-          <div>
-            <div class="summary-row">
-              <div itemprop="abstract">
-                <p>A proof.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="more">
-          <a href="/posts/interesting-numbers/">Read more …</a>
-        </p>
-      </div>
-
-      <div
-        class="post-summary"
-        itemscope=""
-        itemtype="https://schema.org/BlogPosting"
-      >
-        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <nav>
-          <div class="metadata">
-            <time datetime="2026-09-08" itemprop="datePublished"
-              >September 8, 2026</time
+            <time datetime="2026-08-16" itemprop="datePublished"
+              >August 16, 2026</time
             >
           </div>
           <menu class="tags">
@@ -372,25 +383,25 @@
           </menu>
         </nav>
         <h2 class="title">
-          <a itemprop="url" href="/posts/durable-contributions/">
-            <span itemprop="name">Making Durable Contributions</span>
+          <a itemprop="url" href="/posts/hot-vs-cold-cognition/">
+            <span itemprop="name">Hot vs. Cold Cognition</span>
           </a>
         </h2>
         <div class="summary-row">
-          <a href="/posts/durable-contributions/">
+          <a href="/posts/hot-vs-cold-cognition/">
             <img
-              src="/img/P7pw1cOvqN-200.png"
-              alt="A glowing digital river dissolves a sandcastle on a dark beach, while a mechanical hand reaches out of the current toward a map staked in the dry sand beside it"
-              class="noinvert hero"
+              src="/img/Ufh1ZEb_Fk-200.png"
+              alt="Two identical flame silhouettes side by side: the left one solid black, the right one traced in dashed line and filled with a fine grid, like a circuit diagram of the first."
+              class="hero"
               loading="lazy"
-              width="900"
-              height="900"
+              width="1120"
+              height="1120"
               srcset="
-                /img/P7pw1cOvqN-200.png 200w,
-                /img/P7pw1cOvqN-400.png 400w,
-                /img/P7pw1cOvqN-600.png 600w,
-                /img/P7pw1cOvqN-800.png 800w,
-                /img/P7pw1cOvqN-900.png 900w
+                /img/Ufh1ZEb_Fk-200.png   200w,
+                /img/Ufh1ZEb_Fk-400.png   400w,
+                /img/Ufh1ZEb_Fk-600.png   600w,
+                /img/Ufh1ZEb_Fk-800.png   800w,
+                /img/Ufh1ZEb_Fk-1120.png 1120w
               "
               sizes="auto"
             />
@@ -400,19 +411,19 @@
             <div class="summary-row">
               <div itemprop="abstract">
                 <p>
-                  The harness — memory, skills, tools, sub-agents, planning — is
-                  absorbing the product layer faster than anyone building on top
-                  of it can keep up. The durable move isn't to out-build it;
-                  it's to contribute headlessly, document the method rather than
-                  the artifact, and write evals instead of skills, so that what
-                  you leave behind keeps compounding after you've walked away.
+                  Cold cognition is procedure; hot cognition is judgment shaped
+                  by a lifetime of lived experience. AI can automate the former
+                  and imitate the latter, but a statistical blend of everyone
+                  else's judgment is not the same thing as being a source of
+                  judgment. Knowing the difference should decide what we
+                  automate and what we merely augment.
                 </p>
               </div>
             </div>
           </div>
         </div>
         <p class="more">
-          <a href="/posts/durable-contributions/">Read more …</a>
+          <a href="/posts/hot-vs-cold-cognition/">Read more …</a>
         </p>
       </div>
     </footer>

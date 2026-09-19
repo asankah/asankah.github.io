@@ -33,7 +33,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
 
-    <link rel="stylesheet" href="/styles/wQ4tiFj7jt.css" />
+    <link rel="stylesheet" href="/styles/yjl_-9a32M.css" />
     <link rel="me" href="mailto:asanka@gmail.com" />
     <link rel="me" href="https://github.com/asankah" />
     <link
@@ -90,8 +90,10 @@
       </header>
 
       <main itemprop="articleBody" class="container">
-        <p>Where does the Poisson Distribution come from?</p>
-        <p>
+        <p id="p-1ityefm" data-anchor="p-1ityefm">
+          Where does the Poisson Distribution come from?
+        </p>
+        <p id="p-wxxwt3" data-anchor="p-wxxwt3">
           A little bit of research<a
             href="#fn1"
             class="footnote-ref"
@@ -121,33 +123,37 @@
           >
           (not the original title).
         </p>
-        <p>A few steps that will get us there is laid out below.</p>
-        <p>Let’s start with a simple “rate” problem.</p>
-        <blockquote>
-          <p>
+        <p id="p-1f29j9f" data-anchor="p-1f29j9f">
+          A few steps that will get us there is laid out below.
+        </p>
+        <p id="p-h5t6ex" data-anchor="p-h5t6ex">
+          Let’s start with a simple “rate” problem.
+        </p>
+        <blockquote id="p-ki7f3t" data-anchor="p-ki7f3t">
+          <p id="p-ki7f3t-2" data-anchor="p-ki7f3t-2">
             How likely is it that you’ll receive 12 visits next week given that
             you had 10 visitors this week?
           </p>
         </blockquote>
-        <p>
+        <p id="p-6u0tz9" data-anchor="p-6u0tz9">
           This is clearly not a question to be answered based on a lot of
           information. However when the assumption is that
           <em>on average</em> you get 10 visitors a week, then the question
           sounds a bit more reasonable.
         </p>
-        <p>
+        <p id="p-44aqj9" data-anchor="p-44aqj9">
           While we say the <em>rate</em> is 10 visitors per week, that’s
           obviously not going to be uniformly distributed. Maybe given the
           nature of your site, people are more likely to visit over the week-end
           rather than during the week. However for the purpose of this analysis
           we are going to assume that the rate is uniform.
         </p>
-        <p>
+        <p id="p-1r7cdk0" data-anchor="p-1r7cdk0">
           Simplifying things a bit more, we can ask the question in a different
           way:
         </p>
-        <blockquote>
-          <p>
+        <blockquote id="p-6ly9fh" data-anchor="p-6ly9fh">
+          <p id="p-6ly9fh-2" data-anchor="p-6ly9fh-2">
             How likely is that that the rate of visitors for your site will be
             <span class="katex"
               ><span class="katex-mathml"
@@ -257,9 +263,9 @@
             per day?
           </p>
         </blockquote>
-        <p>Or in another way:</p>
-        <blockquote>
-          <p>
+        <p id="p-1f9merz" data-anchor="p-1f9merz">Or in another way:</p>
+        <blockquote id="p-bso71p" data-anchor="p-bso71p">
+          <p id="p-bso71p-2" data-anchor="p-bso71p-2">
             How likely is that that the rate of visitors for your site will be
             <span class="katex"
               ><span class="katex-mathml"
@@ -379,13 +385,13 @@
             per hour?
           </p>
         </blockquote>
-        <p>
+        <p id="p-10l61a" data-anchor="p-10l61a">
           Why do this? Without much explanation this reformulation gets us to a
           rate that’s less than one per unit of time being considered. This way
           we can now look at each time unit and assume that we’ll either get 1
           visitor or none any given hour.
         </p>
-        <p>
+        <p id="p-ehayc7" data-anchor="p-ehayc7">
           So each hour, there’s a probability of
           <span class="katex"
             ><span class="katex-mathml"
@@ -506,16 +512,16 @@
           The term <em>arrivals</em> or <em>occurrences</em> is common in
           literature.
         </p>
-        <p>
+        <p id="p-nuewha" data-anchor="p-nuewha">
           The probability that there will be 12 visitors is the probability that
           there will be 12 hour slots where there’s an arrival and the rest will
           be slots without an arrival.
         </p>
-        <p>
+        <p id="p-i3movu" data-anchor="p-i3movu">
           Treating this as a list of one-hour “slots”, the outcome would look
           like:
         </p>
-        <table>
+        <table id="p-nfopcm" data-anchor="p-nfopcm">
           <thead>
             <tr class="header">
               <th>0</th>
@@ -539,7 +545,7 @@
           </thead>
           <tbody></tbody>
         </table>
-        <p>
+        <p id="p-1onh459" data-anchor="p-1onh459">
           The number in each box is the number of arrivals during that slot
           which is either 1 or 0. So there are
           <span class="katex"
@@ -663,7 +669,7 @@
             ></span
           >.
         </p>
-        <p>
+        <p id="p-34jm1f" data-anchor="p-34jm1f">
           So for there to be exactly
           <span class="katex"
             ><span class="katex-mathml"
@@ -766,7 +772,7 @@
           >
           zeros.
         </p>
-        <p>
+        <p id="p-1r2q0nf" data-anchor="p-1r2q0nf">
           So the probability of one of those events happening is
           <span class="katex"
             ><span class="katex-mathml"
@@ -852,7 +858,7 @@
             ></span
           >.
         </p>
-        <p>
+        <p id="p-23v1bn" data-anchor="p-23v1bn">
           But there are lots of ways of choosing
           <span class="katex"
             ><span class="katex-mathml"
@@ -951,7 +957,7 @@
           >
           ways.
         </p>
-        <p>
+        <p id="p-1u6dyv5" data-anchor="p-1u6dyv5">
           So the probability of getting exactly
           <span class="katex"
             ><span class="katex-mathml"
@@ -974,7 +980,7 @@
           >
           arrivals is:
         </p>
-        <p>
+        <p id="p-1hewnaw" data-anchor="p-1hewnaw">
           <span class="katex-display"
             ><span class="katex"
               ><span class="katex-mathml"
@@ -1114,15 +1120,15 @@
             ></span
           >
         </p>
-        <p>With me so far?</p>
-        <p>
+        <p id="p-1qec8ad" data-anchor="p-1qec8ad">With me so far?</p>
+        <p id="p-1l0audp" data-anchor="p-1l0audp">
           Astute readers will note that we did some hand-waving up there.
           Specifically we assumed that the possibilities for any 1-hour block is
           either there being an arrival or there not being one. This isn’t
           always the case since there could be more than 1 arrival in any given
           hour.
         </p>
-        <p>
+        <p id="p-1fhqqbf" data-anchor="p-1fhqqbf">
           One way to address this is to consider increasingly smaller units of
           time. For example, if we divide the one-hour block into
           <span class="katex"
@@ -1194,7 +1200,7 @@
           is very large, then it is increasingly likely that the choices are
           either 1 or 0.
         </p>
-        <p>
+        <p id="p-1v38bxy" data-anchor="p-1v38bxy">
           So the number of boxes is now
           <span class="katex"
             ><span class="katex-mathml"
@@ -1279,7 +1285,7 @@
                   ></span></span></span></span></span
           >. Substituting these, our new probability is:
         </p>
-        <p>
+        <p id="p-hz53pl" data-anchor="p-hz53pl">
           <span class="katex-display"
             ><span class="katex"
               ><span class="katex-mathml"
@@ -1521,7 +1527,7 @@
             ></span
           >
         </p>
-        <p>
+        <p id="p-fqrdir" data-anchor="p-fqrdir">
           Alright. We are getting somewhere now. The next step is to increase
           <span class="katex"
             ><span class="katex-mathml"
@@ -1559,7 +1565,7 @@
             ></span
           >.
         </p>
-        <p>
+        <p id="p-my64jj" data-anchor="p-my64jj">
           <span class="katex-display"
             ><span class="katex"
               ><span class="katex-mathml"
@@ -2388,12 +2394,12 @@
                               ><span></span></span></span></span></span></span></span></span></span></span
           ></span>
         </p>
-        <p>
+        <p id="p-izjyx5" data-anchor="p-izjyx5">
           The right side looks a bit daunting, the we can simplify things quite
           a bit by looking at each part separately.
         </p>
-        <p>For example:</p>
-        <p>
+        <p id="p-1c75x24" data-anchor="p-1c75x24">For example:</p>
+        <p id="p-ibpl18" data-anchor="p-ibpl18">
           <span class="katex-display"
             ><span class="katex"
               ><span class="katex-mathml"
@@ -3553,8 +3559,8 @@
                               ><span></span></span></span></span></span></span></span></span></span></span
           ></span>
         </p>
-        <p>Furthermore:</p>
-        <p>
+        <p id="p-1y7pdg2" data-anchor="p-1y7pdg2">Furthermore:</p>
+        <p id="p-t0wgsn" data-anchor="p-t0wgsn">
           <span class="katex-display"
             ><span class="katex"
               ><span class="katex-mathml"
@@ -3993,7 +3999,7 @@
             ></span
           >
         </p>
-        <p>
+        <p id="p-zzupty" data-anchor="p-zzupty">
           As
           <span class="katex"
             ><span class="katex-mathml"
@@ -4123,8 +4129,8 @@
             ></span
           >. This makes our lives a bit easier.
         </p>
-        <p>Now we have:</p>
-        <p>
+        <p id="p-1eil0x1" data-anchor="p-1eil0x1">Now we have:</p>
+        <p id="p-2wlhuk" data-anchor="p-2wlhuk">
           <span class="katex-display"
             ><span class="katex"
               ><span class="katex-mathml"
@@ -4918,8 +4924,8 @@
                               ><span></span></span></span></span></span></span></span></span></span></span
           ></span>
         </p>
-        <p>Remember that:</p>
-        <p>
+        <p id="p-509q33" data-anchor="p-509q33">Remember that:</p>
+        <p id="p-1rgwqf6" data-anchor="p-1rgwqf6">
           <span class="katex-display"
             ><span class="katex"
               ><span class="katex-mathml"
@@ -5081,7 +5087,7 @@
             ></span
           >
         </p>
-        <p>
+        <p id="p-h5bb5x" data-anchor="p-h5bb5x">
           So substituting
           <span class="katex"
             ><span class="katex-mathml"
@@ -5143,7 +5149,7 @@
           >
           gets us:
         </p>
-        <p>
+        <p id="p-8ulnf2" data-anchor="p-8ulnf2">
           <span class="katex-display"
             ><span class="katex"
               ><span class="katex-mathml"
@@ -5314,7 +5320,7 @@
             ></span
           >
         </p>
-        <p>
+        <p id="p-17p2nqi" data-anchor="p-17p2nqi">
           Now going back to
           <span class="katex"
             ><span class="katex-mathml"
@@ -5342,7 +5348,7 @@
             ></span
           >:
         </p>
-        <p>
+        <p id="p-1ed5s5o" data-anchor="p-1ed5s5o">
           <span class="katex-display"
             ><span class="katex"
               ><span class="katex-mathml"
@@ -5492,7 +5498,7 @@
                     ></span></span></span></span></span
           ></span>
         </p>
-        <p>
+        <p id="p-1jvuhz4" data-anchor="p-1jvuhz4">
           Let’s do another substitution. Remember that
           <span class="katex"
             ><span class="katex-mathml"
@@ -5593,8 +5599,8 @@
             ></span
           >.
         </p>
-        <p>This gives us:</p>
-        <p>
+        <p id="p-j72j1x" data-anchor="p-j72j1x">This gives us:</p>
+        <p id="p-e26pm5" data-anchor="p-e26pm5">
           <span class="katex-display"
             ><span class="katex"
               ><span class="katex-mathml"
@@ -5740,8 +5746,10 @@
                     ></span></span></span></span></span
           ></span>
         </p>
-        <p>… which is the PDF of the Poisson distribution.</p>
-        <p>
+        <p id="p-ixpp9m" data-anchor="p-ixpp9m">
+          … which is the PDF of the Poisson distribution.
+        </p>
+        <p id="p-d5637j" data-anchor="p-d5637j">
           n.b.: In retrospect it would’ve been easier to consider the unit of
           time to be
           <span class="katex"
@@ -5873,26 +5881,21 @@
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <nav>
           <div class="metadata">
-            <time datetime="2021-12-30" itemprop="datePublished"
-              >December 30, 2021</time
+            <time datetime="2020-04-01" itemprop="datePublished"
+              >April 1, 2020</time
             >
           </div>
           <menu class="tags">
             <li>
               <span class="tag">
-                <a href="/tags/remarkable-2/">#Remarkable 2</a>
-              </span>
-            </li>
-            <li>
-              <span class="tag">
-                <a href="/tags/reviews/">#Reviews</a>
+                <a href="/tags/privacy/">#Privacy</a>
               </span>
             </li>
           </menu>
         </nav>
         <h2 class="title">
-          <a itemprop="url" href="/posts/remarkable-first-impressions/">
-            <span itemprop="name">Note-taking on a reMarkable 2</span>
+          <a itemprop="url" href="/posts/ephemeral-fingerprinting/">
+            <span itemprop="name">Ephemeral Fingerprinting On The Web</span>
           </a>
         </h2>
         <div class="summary-row">
@@ -5900,14 +5903,21 @@
             <div class="summary-row">
               <div itemprop="abstract">
                 <p>
-                  Sentiments after using the reMarkable 2 tablet for a month.
+                  Any ephemeral low-entropy web observable property whose
+                  changes are concurrently observable by multiple sites can lead
+                  to cross site identity joining.
+                </p>
+                <p>
+                  This method of identity joining does not require coordination
+                  between multiple first parties. A single third party embedded
+                  within multiple first parties can also use this method.
                 </p>
               </div>
             </div>
           </div>
         </div>
         <p class="more">
-          <a href="/posts/remarkable-first-impressions/">Read more …</a>
+          <a href="/posts/ephemeral-fingerprinting/">Read more …</a>
         </p>
       </div>
 
@@ -5919,52 +5929,32 @@
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <nav>
           <div class="metadata">
-            <time datetime="2024-01-25" itemprop="datePublished"
-              >January 25, 2024</time
+            <time datetime="2020-11-21" itemprop="datePublished"
+              >November 21, 2020</time
             >
           </div>
           <menu class="tags">
             <li>
               <span class="tag">
-                <a href="/tags/usability/">#Usability</a>
+                <a href="/tags/engineering/">#Engineering</a>
               </span>
             </li>
             <li>
               <span class="tag">
-                <a href="/tags/engineering/">#Engineering</a>
+                <a href="/tags/curiosity/">#Curiosity</a>
               </span>
             </li>
           </menu>
         </nav>
         <h2 class="title">
-          <a itemprop="url" href="/posts/why-i-hate-carousels/">
-            <span itemprop="name">Why I Hate Carousels</span>
+          <a itemprop="url" href="/posts/visualizing-people/">
+            <span itemprop="name">Visualizing Internet Users</span>
           </a>
         </h2>
         <div class="summary-row">
-          <div>
-            <div class="summary-row">
-              <div itemprop="abstract">
-                <ul>
-                  <li>Don't use carousels in your UI.</li>
-                  <li>
-                    Instead, if you must stick content into little cards, let
-                    the horionztal layout wrap to additional lines.
-                  </li>
-                  <li>
-                    If you end up with too many horizontal lines of content,
-                    then you definitely have too many items that can be accessed
-                    via a horizontally panning UI. You need a different UI
-                    altogether.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          <div></div>
         </div>
-        <p class="more">
-          <a href="/posts/why-i-hate-carousels/">Read more …</a>
-        </p>
+        <p class="more"><a href="/posts/visualizing-people/">Read more …</a></p>
       </div>
 
       <div
@@ -5975,36 +5965,21 @@
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <nav>
           <div class="metadata">
-            <time datetime="2024-07-11" itemprop="dateCreated"
-              >July 11, 2024</time
+            <time datetime="2024-05-22" itemprop="datePublished"
+              >May 22, 2024</time
             >
-            (Revised
-            <time datetime="2024-07-12" itemprop="datePublished"
-              >July 12, 2024</time
-            >
-            )
           </div>
           <menu class="tags">
             <li>
               <span class="tag">
-                <a href="/tags/engineering/">#Engineering</a>
-              </span>
-            </li>
-            <li>
-              <span class="tag">
-                <a href="/tags/career/">#Career</a>
-              </span>
-            </li>
-            <li>
-              <span class="tag">
-                <a href="/tags/organizations/">#Organizations</a>
+                <a href="/tags/culture/">#Culture</a>
               </span>
             </li>
           </menu>
         </nav>
         <h2 class="title">
-          <a itemprop="url" href="/posts/proof-of-work/">
-            <span itemprop="name">Proof of Work</span>
+          <a itemprop="url" href="/posts/when-your-feature-gets-someone-hurt/">
+            <span itemprop="name">When Your Feature Gets Someone Hurt</span>
           </a>
         </h2>
         <div class="summary-row">
@@ -6012,15 +5987,16 @@
             <div class="summary-row">
               <div itemprop="abstract">
                 <p>
-                  Working with a poorly thought-out, or overengineered
-                  technology stack, or an overly bureaucratic organization is
-                  <em>also a form of proof-of-work</em>.
+                  If Google Photos incorrectly tags a photo, what's the worst
+                  that could happen?
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <p class="more"><a href="/posts/proof-of-work/">Read more …</a></p>
+        <p class="more">
+          <a href="/posts/when-your-feature-gets-someone-hurt/">Read more …</a>
+        </p>
       </div>
 
       <div
@@ -6086,31 +6062,22 @@
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <nav>
           <div class="metadata">
-            <time datetime="2020-09-19" itemprop="datePublished"
-              >September 19, 2020</time
+            <time datetime="2020-08-28" itemprop="datePublished"
+              >August 28, 2020</time
             >
           </div>
           <menu class="tags">
             <li>
               <span class="tag">
-                <a href="/tags/tools/">#Tools</a>
-              </span>
-            </li>
-            <li>
-              <span class="tag">
-                <a href="/tags/vim/">#Vim</a>
+                <a href="/tags/meta/">#Meta</a>
               </span>
             </li>
           </menu>
         </nav>
         <h2 class="title">
-          <a
-            itemprop="url"
-            href="/posts/things-you-can-do-with-nvim-and-vscode/"
-          >
+          <a itemprop="url" href="/posts/why-strong-opinions-weakly-held/">
             <span itemprop="name"
-              >Things You Can Do With Neovim and Vscode That You Can&#39;t Do
-              With Neovim Alone</span
+              >Why &#39;Strong Opinions Weakly Held&#39;</span
             >
           </a>
         </h2>
@@ -6118,9 +6085,7 @@
           <div></div>
         </div>
         <p class="more">
-          <a href="/posts/things-you-can-do-with-nvim-and-vscode/"
-            >Read more …</a
-          >
+          <a href="/posts/why-strong-opinions-weakly-held/">Read more …</a>
         </p>
       </div>
     </footer>
