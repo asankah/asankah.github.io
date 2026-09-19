@@ -42,7 +42,7 @@
       title="The Letter අ"
       href="/rss.xml"
     />
-
+    <script defer="" src="/scripts/P5Q02ZnoDk.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <meta name="ai-generated" content="none" />
@@ -581,6 +581,57 @@
 
     <div class="container"></div>
 
+    <div
+      class="reactions container"
+      data-reactions-endpoint="https://asanka-blog-reactions.netlify.app/v1/reactions"
+      data-reactions-page="/posts/visualizing-people/"
+      data-reactions-paragraphs="1"
+    >
+      <div class="reactions-row" role="group" aria-label="React to this post">
+        <button
+          type="button"
+          class="reaction"
+          data-kind="up"
+          aria-pressed="false"
+          disabled=""
+        >
+          <span class="reaction-mark" aria-hidden="true">👍</span>
+          <span class="reaction-label">Agree</span>
+          <span class="reaction-count" hidden=""></span>
+        </button>
+        <button
+          type="button"
+          class="reaction"
+          data-kind="hmm"
+          aria-pressed="false"
+          disabled=""
+        >
+          <span class="reaction-mark" aria-hidden="true">🤔</span>
+          <span class="reaction-label">Not sure</span>
+          <span class="reaction-count" hidden=""></span>
+        </button>
+        <button
+          type="button"
+          class="reaction"
+          data-kind="til"
+          aria-pressed="false"
+          disabled=""
+        >
+          <span class="reaction-mark" aria-hidden="true">💡</span>
+          <span class="reaction-label">Learned something</span>
+          <span class="reaction-count" hidden=""></span>
+        </button>
+      </div>
+
+      <script type="application/json" class="reactions-kinds">
+        [
+          { "kind": "up", "mark": "👍", "label": "Agree" },
+          { "kind": "hmm", "mark": "🤔", "label": "Not sure" },
+          { "kind": "til", "mark": "💡", "label": "Learned something" }
+        ]
+      </script>
+    </div>
+
     <footer class="container">
       <h2>More posts from this blog ...</h2>
       <div
@@ -591,58 +642,27 @@
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <nav>
           <div class="metadata">
-            <time datetime="2022-01-13" itemprop="datePublished"
-              >January 13, 2022</time
+            <time datetime="2022-01-06" itemprop="datePublished"
+              >January 6, 2022</time
             >
           </div>
           <menu class="tags">
             <li>
               <span class="tag">
-                <a href="/tags/inktober/">#Inktober</a>
+                <a href="/tags/remarkable-2/">#Remarkable 2</a>
               </span>
             </li>
-          </menu>
-        </nav>
-        <h2 class="title">
-          <a itemprop="url" href="/posts/inktober-wild/">
-            <span itemprop="name">Inktober - Wild</span>
-          </a>
-        </h2>
-        <div class="summary-row">
-          <div></div>
-        </div>
-        <p class="more"><a href="/posts/inktober-wild/">Read more …</a></p>
-      </div>
-
-      <div
-        class="post-summary"
-        itemscope=""
-        itemtype="https://schema.org/BlogPosting"
-      >
-        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <nav>
-          <div class="metadata">
-            <time datetime="2022-04-05" itemprop="datePublished"
-              >April 5, 2022</time
-            >
-          </div>
-          <menu class="tags">
             <li>
               <span class="tag">
                 <a href="/tags/tools/">#Tools</a>
               </span>
             </li>
-            <li>
-              <span class="tag">
-                <a href="/tags/engineering/">#Engineering</a>
-              </span>
-            </li>
           </menu>
         </nav>
         <h2 class="title">
-          <a itemprop="url" href="/posts/mark-goes-up-and-down/">
+          <a itemprop="url" href="/posts/grab-diagram-workflow-re2/">
             <span itemprop="name"
-              >Markdown should be readble without knowing Markdown</span
+              >Quickly grab a snapshot of your reMarkable tablet</span
             >
           </a>
         </h2>
@@ -651,20 +671,15 @@
             <div class="summary-row">
               <div itemprop="abstract">
                 <p>
-                  Markdown documents should be readble without understanding
-                  complex mark-up. A growing number of Markdown syntax
-                  extensions take the form of HTML or HTML-like tags and
-                  boilerplate that hinder readability. Instead we should focus
-                  on how some construct should be presented in plain-text for
-                  human consumption and then add minimal structure to it for
-                  machine consumption.
+                  How to bind a hotkey to grab a snapshot of your reMarkable
+                  display and copy it to the clipboard on a Mac.
                 </p>
               </div>
             </div>
           </div>
         </div>
         <p class="more">
-          <a href="/posts/mark-goes-up-and-down/">Read more …</a>
+          <a href="/posts/grab-diagram-workflow-re2/">Read more …</a>
         </p>
       </div>
 
@@ -676,14 +691,99 @@
         <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
         <nav>
           <div class="metadata">
-            <time datetime="2022-10-28" itemprop="datePublished"
-              >October 28, 2022</time
+            <time datetime="2022-07-05" itemprop="datePublished"
+              >July 5, 2022</time
+            >
+          </div>
+          <menu class="tags">
+            <li>
+              <span class="tag">
+                <a href="/tags/tools/">#Tools</a>
+              </span>
+            </li>
+          </menu>
+        </nav>
+        <h2 class="title">
+          <a itemprop="url" href="/posts/git-autopush/">
+            <span itemprop="name"
+              >Use Git hooks to automatically push after every commit</span
+            >
+          </a>
+        </h2>
+        <div class="summary-row">
+          <div>
+            <div class="summary-row">
+              <div itemprop="abstract">
+                <p>
+                  During before and after various Git operations, Git invokes
+                  special hooks that can be used execute custom scripts. This
+                  article explains how to use them to automatically push to an
+                  upstream repository every time you make a commit to a local
+                  repo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="more"><a href="/posts/git-autopush/">Read more …</a></p>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <nav>
+          <div class="metadata">
+            <time datetime="2024-01-01" itemprop="datePublished"
+              >January 1, 2024</time
             >
           </div>
           <menu class="tags">
             <li>
               <span class="tag">
                 <a href="/tags/culture/">#Culture</a>
+              </span>
+            </li>
+          </menu>
+        </nav>
+        <h2 class="title">
+          <a
+            itemprop="url"
+            href="/posts/happy-new-year-2024-and-year-in-review-2023/"
+          >
+            <span itemprop="name"
+              >Happy New Year 2024 and Year in Review 2023</span
+            >
+          </a>
+        </h2>
+        <div class="summary-row">
+          <div></div>
+        </div>
+        <p class="more">
+          <a href="/posts/happy-new-year-2024-and-year-in-review-2023/"
+            >Read more …</a
+          >
+        </p>
+      </div>
+
+      <div
+        class="post-summary"
+        itemscope=""
+        itemtype="https://schema.org/BlogPosting"
+      >
+        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
+        <nav>
+          <div class="metadata">
+            <time datetime="2024-01-25" itemprop="datePublished"
+              >January 25, 2024</time
+            >
+          </div>
+          <menu class="tags">
+            <li>
+              <span class="tag">
+                <a href="/tags/usability/">#Usability</a>
               </span>
             </li>
             <li>
@@ -694,21 +794,33 @@
           </menu>
         </nav>
         <h2 class="title">
-          <a itemprop="url" href="/posts/the-loss-of-a-virtuous-culture/">
-            <span itemprop="name">The Loss of a Virtuous Culture</span>
+          <a itemprop="url" href="/posts/why-i-hate-carousels/">
+            <span itemprop="name">Why I Hate Carousels</span>
           </a>
         </h2>
         <div class="summary-row">
           <div>
             <div class="summary-row">
               <div itemprop="abstract">
-                <p>Luck isn't enough. You need a culture of virtue.</p>
+                <ul>
+                  <li>Don't use carousels in your UI.</li>
+                  <li>
+                    Instead, if you must stick content into little cards, let
+                    the horionztal layout wrap to additional lines.
+                  </li>
+                  <li>
+                    If you end up with too many horizontal lines of content,
+                    then you definitely have too many items that can be accessed
+                    via a horizontally panning UI. You need a different UI
+                    altogether.
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
         <p class="more">
-          <a href="/posts/the-loss-of-a-virtuous-culture/">Read more …</a>
+          <a href="/posts/why-i-hate-carousels/">Read more …</a>
         </p>
       </div>
 
@@ -765,50 +877,6 @@
           </div>
         </div>
         <p class="more"><a href="/posts/moved-to-eleventy/">Read more …</a></p>
-      </div>
-
-      <div
-        class="post-summary"
-        itemscope=""
-        itemtype="https://schema.org/BlogPosting"
-      >
-        <link itemprop="isPartOf" itemtype="https://schema.org/Blog" href="/" />
-        <nav>
-          <div class="metadata">
-            <time datetime="2025-05-07" itemprop="datePublished"
-              >May 7, 2025</time
-            >
-          </div>
-          <menu class="tags">
-            <li>
-              <span class="tag">
-                <a href="/tags/ai/">#AI</a>
-              </span>
-            </li>
-          </menu>
-        </nav>
-        <h2 class="title">
-          <a itemprop="url" href="/series/structure-of-experience/flame/"
-            ><span class="series-name">Structure Of Experience</span>:
-            <span itemprop="name">Act III: Flame</span>
-          </a>
-        </h2>
-        <div class="summary-row">
-          <div>
-            <div class="summary-row">
-              <div itemprop="abstract">
-                <p>
-                  The map is not the territory. A picture of a flame is not a
-                  flame. A description of a neural network is not a brain. A
-                  simulation of thought is not a consciousness.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="more">
-          <a href="/series/structure-of-experience/flame/">Read more …</a>
-        </p>
       </div>
     </footer>
 
