@@ -1,30 +1,26 @@
-.socials {
-  display: flex;
-  flex-direction: horizontal;
-  justify-content: center;
-  column-gap: 2em;
+main menu {
+  margin: 0;
+  padding: 0;
 
-  margin-top: 2em;
-  margin-bottom: 1em;
-
-  * {
-    display: block;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
 
-  img {
-    width: 24px;
-    height: 24px;
-    opacity: 0.8;
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--half);
+    padding: var(--space-2) 0;
+    border-bottom: 1px solid var(--border-color);
   }
 
-  a:hover img {
-    opacity: 1;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .socials img {
-    filter: invert(100%);
+  .post-count {
+    font-size: var(--font-size-small);
+    color: var(--dimmed-text-color);
+    font-feature-settings: "tnum" 1;
   }
 }
 @charset "UTF-8";
@@ -1578,21 +1574,6 @@ body {
   }
   article .footnotes > hr {
     margin: var(--leading) 0 var(--half);
-  }
-  article footer {
-    font-size: var(--font-size-small);
-    line-height: var(--leading);
-    color: var(--dimmed-text-color);
-    text-align: right;
-    border-top: 1px solid var(--border-color);
-    padding-top: var(--half);
-    margin-top: var(--leading);
-  }
-  article footer p {
-    margin-bottom: 0;
-  }
-  article footer p:last-child {
-    margin-bottom: 0;
   }
   article code {
     font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;

@@ -1550,21 +1550,6 @@ body {
   article .footnotes > hr {
     margin: var(--leading) 0 var(--half);
   }
-  article footer {
-    font-size: var(--font-size-small);
-    line-height: var(--leading);
-    color: var(--dimmed-text-color);
-    text-align: right;
-    border-top: 1px solid var(--border-color);
-    padding-top: var(--half);
-    margin-top: var(--leading);
-  }
-  article footer p {
-    margin-bottom: 0;
-  }
-  article footer p:last-child {
-    margin-bottom: 0;
-  }
   article code {
     font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
     font-optical-sizing: auto;
