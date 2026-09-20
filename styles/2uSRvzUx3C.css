@@ -1,31 +1,14 @@
-.socials {
-  display: flex;
-  flex-direction: horizontal;
-  justify-content: center;
-  column-gap: 2em;
-
-  margin-top: 2em;
-  margin-bottom: 1em;
-
-  * {
-    display: block;
-  }
-
-  img {
-    width: 24px;
-    height: 24px;
-    opacity: 0.8;
-  }
-
-  a:hover img {
-    opacity: 1;
-  }
+.label {
+    display: inline-block;
+    width: 3.5rem;
 }
-
-@media (prefers-color-scheme: dark) {
-  .socials img {
-    filter: invert(100%);
-  }
+.oneline {
+    margin-bottom: 0;
+}
+.event-description {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
@@ -1780,6 +1763,8 @@ body {
   }
   .references .csl-entry {
     padding-bottom: var(--half);
+  }
+  .csl-entry {
     font-family: "Lora", Georgia, Cambria, "Times New Roman", Times, serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -1787,13 +1772,13 @@ body {
     font-size: var(--font-size-footnotes);
     line-height: 1.5;
   }
-  .references .csl-entry .csl-title {
+  .csl-entry .csl-title {
     font-weight: var(--font-weight-bold);
   }
-  .references .csl-entry .csl-container-title {
+  .csl-entry .csl-container-title {
     font-style: italic;
   }
-  .references .csl-entry .csl-abstract {
+  .csl-entry .csl-abstract {
     font-family: "Lora", Georgia, Cambria, "Times New Roman", Times, serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -1805,13 +1790,13 @@ body {
     padding-left: var(--half);
     border-left: 2px solid var(--border-strong-color);
   }
-  .references .csl-entry .csl-year {
+  .csl-entry .csl-year {
     font-weight: bold;
   }
-  .references .csl-entry .csl-url,
-  .references .csl-entry .csl-accessed,
-  .references .csl-entry .csl-scholar-link,
-  .references .csl-entry .csl-search-link {
+  .csl-entry .csl-url,
+  .csl-entry .csl-accessed,
+  .csl-entry .csl-scholar-link,
+  .csl-entry .csl-search-link {
     font-size: smaller;
     color: var(--dimmed-text-color);
   }
