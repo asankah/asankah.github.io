@@ -1777,12 +1777,16 @@ body {
     font-style: italic;
   }
   .references .csl-entry .csl-abstract {
-    font-style: italic;
-    font-size: smaller;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    color: var(--dimmed-text-color);
-    text-justify: auto;
+    font-family: "Lora", Georgia, Cambria, "Times New Roman", Times, serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-small);
+    line-height: 1.5;
+    color: var(--muted-text-color);
+    margin: var(--space-2) 0 var(--space-2) var(--space-2);
+    padding-left: var(--half);
+    border-left: 2px solid var(--border-strong-color);
   }
   .references .csl-entry .csl-year {
     font-weight: bold;
