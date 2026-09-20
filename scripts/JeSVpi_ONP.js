@@ -1,3 +1,142 @@
+// The bar that a text selection raises inside an article.
+//
+// Two features want to hang something off a selected passage -- reacting to it
+// and discussing it -- and only one bar should ever appear. This owns the bar:
+// when it is created, when it moves, when it goes away, and which block the
+// selection belongs to. Features contribute buttons and are told the anchor.
+//
+// Selection is the trigger rather than a permanent control on every paragraph,
+// because a control per paragraph would put several tab stops between a
+// keyboard reader and the next sentence, and a hover-only affordance would not
+// exist at all on a phone. Selecting text works with a mouse, a long-press,
+// and Shift+Arrow alike.
+(function () {
+  "use strict";
+
+  var SELECTION_MIN = 2;
+
+  var bar = null;
+  var contributors = [];
+  var current = null; // { anchor, text, block }
+
+  function ensureBar() {
+    if (bar) return bar;
+    bar = document.createElement("div");
+    bar.className = "reaction-bar";
+    bar.setAttribute("role", "group");
+    bar.setAttribute("aria-label", "For the selected passage");
+    bar.hidden = true;
+    // Parked at the end of the document until a selection moves it next to
+    // the passage it belongs to; see show().
+    document.body.appendChild(bar);
+    contributors.forEach(function (contributor) {
+      contributor.mounted = true;
+      bar.appendChild(contributor.button);
+    });
+    return bar;
+  }
+
+  function hide() {
+    if (bar) bar.hidden = true;
+    current = null;
+  }
+
+  function show() {
+    var selection = window.getSelection();
+    if (!selection || selection.isCollapsed || !selection.rangeCount) return hide();
+
+    var text = selection.toString().trim();
+    if (text.length < SELECTION_MIN) return hide();
+
+    var range = selection.getRangeAt(0);
+    var node = range.commonAncestorContainer;
+    if (node.nodeType === Node.TEXT_NODE) node = node.parentNode;
+    var block = node && node.closest ? node.closest("[data-anchor]") : null;
+    if (!block || !block.closest("article main")) return hide();
+
+    ensureBar();
+    current = { anchor: block.dataset.anchor, text: text, block: block };
+    bar.dataset.reactionAnchor = current.anchor;
+    contributors.forEach(function (contributor) {
+      if (contributor.onShow) contributor.onShow(current);
+    });
+
+    // Sit the bar immediately after the passage in the document, so Tab from
+    // the passage reaches it rather than sending the reader to the end of the
+    // page. It stays absolutely positioned in page coordinates: neither the
+    // block nor its parent establishes a containing block, so moving it does
+    // not change where it lands.
+    if (bar.previousElementSibling !== block) block.after(bar);
+
+    var rect = range.getBoundingClientRect();
+    bar.hidden = false;
+    var width = bar.offsetWidth;
+    var left = rect.left + rect.width / 2 - width / 2 + window.scrollX;
+    left = Math.max(8, Math.min(left, window.innerWidth - width - 8));
+    bar.style.left = left + "px";
+    bar.style.top = rect.top + window.scrollY - bar.offsetHeight - 8 + "px";
+  }
+
+  /**
+   * Adds a button to the bar. `onActivate` is called with the current
+   * selection, `onShow` before the bar appears so the button can update
+   * itself. Buttons appear in registration order.
+   */
+  function register(options) {
+    var button = options.button;
+    button.addEventListener("mousedown", function (event) {
+      // Keep the selection alive through the click.
+      event.preventDefault();
+    });
+    button.addEventListener("click", function () {
+      if (current && options.onActivate) options.onActivate(current, button);
+    });
+    var contributor = { button: button, onShow: options.onShow, mounted: false };
+    contributors.push(contributor);
+    if (bar) {
+      contributor.mounted = true;
+      bar.appendChild(button);
+    }
+  }
+
+  function start() {
+    var update = function (event) {
+      if (event && event.target && event.target.closest &&
+          event.target.closest(".reaction-bar")) {
+        return; // a press on the bar itself, not a new selection
+      }
+      show();
+    };
+    document.addEventListener("mouseup", update);
+    document.addEventListener("keyup", function (event) {
+      var key = event.key || "";
+      if (key === "Shift" || key.indexOf("Arrow") === 0) update();
+    });
+    document.addEventListener("selectionchange", function () {
+      var selection = window.getSelection();
+      if (!selection || selection.isCollapsed) hide();
+    });
+    // Escape dismisses it; scrolling does not need to, since the bar is
+    // positioned in page coordinates and travels with the passage.
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") hide();
+    });
+  }
+
+  window.BlogSelectionBar = {
+    register: register,
+    hide: hide,
+    current: function () {
+      return current;
+    },
+  };
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", start);
+  } else {
+    start();
+  }
+})();
 // Reader reactions.
 //
 // Three marks against the post, and -- when the reader selects a passage --
@@ -14,7 +153,6 @@
   "use strict";
 
   var VISITOR_KEY = "blog.reactions.visitor";
-  var SELECTION_MIN = 2;
 
   // Don't re-read for a reader who merely alt-tabbed and came straight back.
   var REFRESH_AFTER_MS = 20000;
@@ -95,8 +233,6 @@
     this.kinds = this.readKinds();
     this.totals = {};
     this.mine = {};
-    this.bar = null;
-    this.barAnchor = null;
   }
 
   Reactions.prototype.readKinds = function () {
@@ -217,13 +353,12 @@
 
   // ------------------------------------------------------- selection bar
 
-  Reactions.prototype.buildBar = function () {
+  // The bar itself belongs to content/scripts/selection-bar.js, which both
+  // this and the comment script hang buttons off so a selection only ever
+  // raises one. Here we contribute the three marks.
+  Reactions.prototype.registerMarks = function () {
     var self = this;
-    var bar = document.createElement("div");
-    bar.className = "reaction-bar";
-    bar.setAttribute("role", "group");
-    bar.setAttribute("aria-label", "React to the selected passage");
-    bar.hidden = true;
+    if (!window.BlogSelectionBar) return;
 
     this.kinds.forEach(function (entry) {
       var button = document.createElement("button");
@@ -249,66 +384,17 @@
       count.hidden = true;
       button.appendChild(count);
 
-      button.addEventListener("mousedown", function (event) {
-        // Keep the selection alive through the click.
-        event.preventDefault();
+      window.BlogSelectionBar.register({
+        button: button,
+        onShow: function () {
+          // The bar carries the anchor, so paint() can fill these in.
+          self.paint();
+        },
+        onActivate: function (selection) {
+          self.toggle(selection.anchor, entry.kind, button);
+        },
       });
-      button.addEventListener("click", function () {
-        if (self.barAnchor) self.toggle(self.barAnchor, entry.kind, button);
-      });
-      bar.appendChild(button);
     });
-
-    // Parked at the end of the document until a selection moves it next to
-    // the passage it belongs to; see showBarForSelection.
-    document.body.appendChild(bar);
-    return bar;
-  };
-
-  Reactions.prototype.hideBar = function () {
-    if (this.bar) this.bar.hidden = true;
-    this.barAnchor = null;
-  };
-
-  Reactions.prototype.showBarForSelection = function () {
-    var selection = window.getSelection();
-    if (!selection || selection.isCollapsed || !selection.rangeCount) {
-      return this.hideBar();
-    }
-    if (selection.toString().trim().length < SELECTION_MIN) {
-      return this.hideBar();
-    }
-
-    var range = selection.getRangeAt(0);
-    var node = range.commonAncestorContainer;
-    if (node.nodeType === Node.TEXT_NODE) node = node.parentNode;
-    var block = node && node.closest ? node.closest("[data-anchor]") : null;
-    if (!block || !block.closest("article main")) return this.hideBar();
-
-    if (!this.bar) this.bar = this.buildBar();
-    this.barAnchor = block.dataset.anchor;
-
-    // Sit the bar immediately after the passage in the document, so Tab from
-    // the passage reaches it rather than sending the reader to the end of the
-    // page. It stays absolutely positioned in page coordinates: neither the
-    // block nor its parent establishes a containing block, so moving it does
-    // not change where it lands.
-    if (this.bar.previousElementSibling !== block) {
-      block.after(this.bar);
-    }
-
-    // Wrap the bar in a holder so `data-reaction-anchor` drives paint().
-    this.bar.dataset.reactionAnchor = this.barAnchor;
-    this.paint();
-
-    var rect = range.getBoundingClientRect();
-    this.bar.hidden = false;
-    var width = this.bar.offsetWidth;
-    var left = rect.left + rect.width / 2 - width / 2 + window.scrollX;
-    left = Math.max(8, Math.min(left, window.innerWidth - width - 8));
-    this.bar.style.left = left + "px";
-    this.bar.style.top =
-      rect.top + window.scrollY - this.bar.offsetHeight - 8 + "px";
   };
 
   // ------------------------------------------------------------------ init
@@ -323,29 +409,7 @@
       });
     });
 
-    if (this.perParagraph) {
-      var update = function (event) {
-        if (event && event.target && event.target.closest &&
-            event.target.closest(".reaction-bar")) {
-          return; // a press on the bar itself, not a new selection
-        }
-        self.showBarForSelection();
-      };
-      document.addEventListener("mouseup", update);
-      document.addEventListener("keyup", function (event) {
-        var key = event.key || "";
-        if (key === "Shift" || key.indexOf("Arrow") === 0) update();
-      });
-      document.addEventListener("selectionchange", function () {
-        var selection = window.getSelection();
-        if (!selection || selection.isCollapsed) self.hideBar();
-      });
-      // Escape dismisses it; scrolling does not need to, since the bar is
-      // positioned in page coordinates and travels with the passage.
-      document.addEventListener("keydown", function (event) {
-        if (event.key === "Escape") self.hideBar();
-      });
-    }
+    if (this.perParagraph) this.registerMarks();
 
     var refresh = function () {
       self.api
@@ -412,6 +476,106 @@
 
   var POST_COLLECTION = "app.bsky.feed.post";
 
+  // ------------------------------------------------------ anchored comments
+
+  // A comment on a passage is a quote post of the announcement thread whose
+  // text carries a deep link back to the block it is about:
+  //
+  //   https://xn--izc.com/posts/foo/#p-1a2b3c:~:text=the%20selected%20words
+  //
+  // The fragment does double duty. `#p-1a2b3c` is the block id that
+  // lib/anchors.ts derives from the block's own text, and it is what the
+  // renderer matches on -- exact, and not defeated by the passage being
+  // quoted loosely. The `:~:text=` directive after it is for the browser,
+  // which scrolls to and highlights the words themselves.
+  //
+  // Quote posts rather than replies because Bluesky's compose intent takes
+  // only `text`: there is no reply-to parameter, but a bsky.app post URL in
+  // the text becomes a quote embed, and app.bsky.feed.getQuotes finds them
+  // afterwards. It also means "detach quote" is a moderation lever here.
+  var COMPOSE_INTENT = "https://bsky.app/intent/compose?text=";
+
+  // Bluesky's limit, in grapheme clusters. The deep link and the quoted
+  // post's URL both count against it, so the passage gets whatever is left.
+  var POST_LIMIT = 300;
+  var SNIPPET_MIN = 12;
+
+  function graphemes(text) {
+    if (typeof Intl !== "undefined" && Intl.Segmenter) {
+      var segmenter = new Intl.Segmenter(undefined, { granularity: "grapheme" });
+      var n = 0;
+      // eslint-disable-next-line no-unused-vars
+      for (var _ of segmenter.segment(text)) n++;
+      return n;
+    }
+    return Array.from(text).length;
+  }
+
+  function deepLink(anchor, snippet) {
+    return (
+      location.origin +
+      location.pathname +
+      "#" +
+      anchor +
+      ":~:text=" +
+      encodeURIComponent(snippet)
+    );
+  }
+
+  /**
+   * Builds the compose text, trimming the quoted passage until the whole post
+   * fits. Returns null if even the shortest passage cannot fit, which would
+   * mean the two URLs alone have used the budget.
+   */
+  function composeText(anchor, passage, threadUrl) {
+    var snippet = passage.replace(/\s+/g, " ").trim();
+    while (snippet.length >= SNIPPET_MIN) {
+      var body = "“" + snippet + "”\n\n" + deepLink(anchor, snippet) + "\n\n" + threadUrl;
+      if (graphemes(body) <= POST_LIMIT) return body;
+      // Trim back to a word boundary so the quote does not end mid-word.
+      var cut = snippet.slice(0, Math.floor(snippet.length * 0.8));
+      var space = cut.lastIndexOf(" ");
+      snippet = (space > SNIPPET_MIN ? cut.slice(0, space) : cut).trim();
+      // Drop any trailing punctuation the cut landed on, so the quote reads
+      // "…some great storytelling…" rather than "…storytelling.…".
+      snippet = snippet.replace(/[\s\p{P}]+$/u, "") + "…";
+      if (snippet.length <= SNIPPET_MIN + 1) break;
+    }
+    return null;
+  }
+
+  /**
+   * Pulls the block id out of a link back to this page. Returns null for any
+   * link that is not one of ours, so an unrelated URL in a quote post cannot
+   * anchor a comment to a passage.
+   */
+  function anchorFromLink(uri) {
+    var parsed;
+    try {
+      parsed = new URL(uri, location.href);
+    } catch (error) {
+      return null;
+    }
+    if (parsed.origin !== location.origin) return null;
+    if (parsed.pathname !== location.pathname) return null;
+    var hash = parsed.hash.replace(/^#/, "");
+    if (!hash) return null;
+    var id = hash.split(":~:")[0];
+    return /^[A-Za-z0-9._~-]{1,64}$/.test(id) ? id : null;
+  }
+
+  /** Every link a post record carries, from its facets. */
+  function linksIn(record) {
+    var facets = Array.isArray(record && record.facets) ? record.facets : [];
+    var uris = [];
+    facets.forEach(function (facet) {
+      (facet.features || []).forEach(function (feature) {
+        if (typeof feature.uri === "string") uris.push(feature.uri);
+      });
+    });
+    return uris;
+  }
+
   // ------------------------------------------------------------- memory
 
   // Opening the comments on a post is a standing preference, not a one-off:
@@ -457,15 +621,18 @@
   }
 
   /** Records that this reader opened the thread, and caches it if it is small. */
-  function remember(atUri, payload) {
+  function remember(atUri, payload, quotes) {
     if (!atUri) return;
     var memory = readMemory();
     var entry = { at: Date.now() };
     try {
-      var serialized = JSON.stringify(payload);
+      var serialized = JSON.stringify({ payload: payload, quotes: quotes });
       // A very long thread is remembered as a preference but not cached; the
       // next visit opens it and fetches, rather than filling up storage.
-      if (serialized.length <= CACHE_MAX_BYTES) entry.payload = payload;
+      if (serialized.length <= CACHE_MAX_BYTES) {
+        entry.payload = payload;
+        if (quotes) entry.quotes = quotes;
+      }
     } catch (error) {
       /* unserializable: keep the preference, drop the cache */
     }
@@ -756,6 +923,69 @@
     return article;
   }
 
+  /** The passage a block holds, trimmed to something quotable. */
+  function passageText(anchor) {
+    var block = document.getElementById(anchor);
+    if (!block) return "";
+    var text = (block.textContent || "").replace(/\s+/g, " ").trim();
+    return text.length > 140 ? text.slice(0, 139).trimEnd() + "…" : text;
+  }
+
+  /** A group of comments about one passage, headed by the passage itself. */
+  function renderPassage(anchor, posts) {
+    var group = element("section", "comment-passage");
+    group.dataset.anchor = anchor;
+
+    var header = element("p", "comment-passage-quote");
+    var quoted = passageText(anchor);
+    if (quoted) {
+      var link = element("a");
+      link.href = "#" + anchor;
+      link.textContent = "“" + quoted + "”";
+      header.appendChild(link);
+    } else {
+      // The passage has been edited away since the comment was written. Say
+      // so rather than silently dropping a real comment on the floor.
+      header.className += " comment-passage-gone";
+      header.textContent = "On a passage that has since been revised";
+    }
+    group.appendChild(header);
+
+    posts.forEach(function (post) {
+      group.appendChild(renderComment({ post: post, depth: 0 }));
+    });
+    return group;
+  }
+
+  /**
+   * Marks the blocks that have passage comments, so a reader meets them while
+   * reading rather than only at the bottom. A readout, not a control: no tab
+   * stop, and it is a link to the comment rather than anything that toggles.
+   */
+  function markAnchoredBlocks(anchored) {
+    document.querySelectorAll("article main .passage-comment-mark").forEach(
+      function (mark) {
+        mark.remove();
+      }
+    );
+    Object.keys(anchored).forEach(function (anchor) {
+      var block = document.getElementById(anchor);
+      if (!block) return;
+      var tag = block.tagName;
+      // A <span> is only legal inside a block that takes flow content.
+      if (tag !== "P" && tag !== "BLOCKQUOTE") return;
+      var mark = element("a", "passage-comment-mark");
+      mark.href = "#comments";
+      var n = anchored[anchor].length;
+      mark.textContent = "💬 " + n;
+      mark.setAttribute(
+        "aria-label",
+        n + (n === 1 ? " comment" : " comments") + " on this passage"
+      );
+      block.appendChild(mark);
+    });
+  }
+
   function renderMessage(container, text) {
     container.replaceChildren();
     var paragraph = element("p", "comments-message");
@@ -793,11 +1023,38 @@
    * from cache is filtered by the denylist and label list built into *this*
    * page load, not the one it was saved under.
    */
+  /**
+   * Quote posts of the announcement thread that carry a deep link back to a
+   * block on this page, keyed by that block's id. Same moderation gates as a
+   * reply -- a quote post is a post, and a blocked author is blocked here too.
+   */
+  function anchoredFrom(quotes, context) {
+    var byAnchor = {};
+    var posts = (quotes && Array.isArray(quotes.posts)) ? quotes.posts : [];
+    posts.forEach(function (post) {
+      if (!isVisible(post, context)) return;
+      var uris = linksIn(post.record);
+      for (var i = 0; i < uris.length; i++) {
+        var anchor = anchorFromLink(uris[i]);
+        if (!anchor) continue;
+        (byAnchor[anchor] = byAnchor[anchor] || []).push(post);
+        return; // one anchor per post: the first link back to this page wins
+      }
+    });
+    Object.keys(byAnchor).forEach(function (anchor) {
+      byAnchor[anchor].sort(function (a, b) {
+        return (Date.parse(a.indexedAt) || 0) - (Date.parse(b.indexedAt) || 0);
+      });
+    });
+    return byAnchor;
+  }
+
   function render(section, payload, options) {
     var thread = section.querySelector(".comments-thread");
     var context = readConfig(section);
     var reloading = !!(options && options.reloading);
     var fail = (options && options.fail) || function () {};
+    var quotes = options && options.quotes;
 
     var root = payload && payload.thread;
     if (!root || !root.post) {
@@ -826,18 +1083,30 @@
       collect(reply, 0, context, entries);
     });
 
+    var anchored = anchoredFrom(quotes, context);
+    var anchoredCount = Object.keys(anchored).reduce(function (n, key) {
+      return n + anchored[key].length;
+    }, 0);
+
     thread.replaceChildren();
-    if (!entries.length) {
+    var total = entries.length + anchoredCount;
+    if (!total) {
       renderMessage(thread, "No comments yet.");
     } else {
       var count = element("p", "comments-count");
-      count.textContent =
-        entries.length + (entries.length === 1 ? " comment" : " comments");
+      count.textContent = total + (total === 1 ? " comment" : " comments");
       thread.appendChild(count);
+
+      // Passage comments first, each under the words it is about.
+      Object.keys(anchored).forEach(function (anchor) {
+        thread.appendChild(renderPassage(anchor, anchored[anchor]));
+      });
+
       entries.forEach(function (entry) {
         thread.appendChild(renderComment(entry));
       });
     }
+    markAnchoredBlocks(anchored);
 
     // The explanation has served its purpose once the thread is on screen, but
     // the button has not: it is the only way to pick up replies posted since.
@@ -880,6 +1149,20 @@
       context.maxDepth +
       "&parentHeight=0";
 
+    // Started before the thread is awaited so the two are in flight together.
+    var quotePromise = fetch(
+      context.service +
+        "/xrpc/app.bsky.feed.getQuotes?uri=" +
+        encodeURIComponent(atUri) +
+        "&limit=100",
+      { headers: { Accept: "*/*" } }
+    ).then(function (response) {
+      return response.ok ? response.json() : null;
+    });
+    // Nothing awaits this until the thread has rendered; claim it now so a
+    // rejection cannot surface as an unhandled rejection in the meantime.
+    quotePromise.catch(function () {});
+
     var payload;
     try {
       var response = await fetch(endpoint, { headers: { Accept: "*/*" } });
@@ -890,9 +1173,72 @@
       return;
     }
 
-    if (render(section, payload, { reloading: reloading, fail: fail })) {
-      remember(atUri, payload);
+    // The thread renders as soon as it arrives. Quote posts -- the passage
+    // comments -- are a second request, and the replies must not wait on it:
+    // a slow or failing getQuotes would otherwise hold up the whole thread.
+    var cached = recall(atUri);
+    if (!render(section, payload, {
+      reloading: reloading,
+      fail: fail,
+      quotes: cached && cached.quotes,
+    })) {
+      return;
     }
+    remember(atUri, payload, cached && cached.quotes);
+
+    quotePromise
+      .then(function (quotes) {
+        if (!quotes) return;
+        // Re-render with the passage comments folded in. `reloading` so the
+        // thread already on screen is replaced without a placeholder.
+        if (render(section, payload, { reloading: true, quotes: quotes })) {
+          remember(atUri, payload, quotes);
+        }
+      })
+      .catch(function () {
+        // Passage comments are an enhancement; the thread stands without them.
+      });
+  }
+
+  /**
+   * Hangs a Discuss button off the shared selection bar. Pressing it opens
+   * Bluesky's composer with the passage quoted, a deep link back to it, and
+   * the announcement post's URL -- which the composer turns into a quote
+   * embed, and which is how the reply is found again.
+   *
+   * This opens a compose window and nothing else: no post is made on the
+   * reader's behalf, and they can edit or abandon it.
+   */
+  function registerDiscuss(section) {
+    if (!window.BlogSelectionBar) return;
+    var threadUrl = section.dataset.bskyThread;
+    if (!threadUrl) return;
+
+    var button = document.createElement("button");
+    button.type = "button";
+    button.className = "reaction reaction-small discuss-passage";
+    button.title = "Discuss this passage on Bluesky";
+
+    var mark = document.createElement("span");
+    mark.className = "reaction-mark";
+    mark.setAttribute("aria-hidden", "true");
+    mark.textContent = "💬";
+    button.appendChild(mark);
+
+    var label = document.createElement("span");
+    label.className = "reaction-label sr-only";
+    label.textContent = "Discuss this passage on Bluesky";
+    button.appendChild(label);
+
+    window.BlogSelectionBar.register({
+      button: button,
+      onActivate: function (selection) {
+        var text = composeText(selection.anchor, selection.text, threadUrl);
+        if (!text) return; // nothing would fit; leave the selection alone
+        window.open(COMPOSE_INTENT + encodeURIComponent(text), "_blank", "noopener");
+        window.BlogSelectionBar.hide();
+      },
+    });
   }
 
   var LOAD_LABEL = "Load comments from Bluesky";
@@ -945,12 +1291,16 @@
           });
         }
 
+        registerDiscuss(section);
+
         // A reader who opened this thread before gets it opened again, with
         // the copy they last saw on screen immediately and a fresh one on the
         // way. Nothing here runs for a post they have not opened.
         var seen = recall(atUri);
         if (seen) {
-          if (seen.payload) render(section, seen.payload, { reloading: false });
+          if (seen.payload) {
+            render(section, seen.payload, { reloading: false, quotes: seen.quotes });
+          }
           relabel();
           fetchThread();
         }

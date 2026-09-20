@@ -1,3 +1,142 @@
+// The bar that a text selection raises inside an article.
+//
+// Two features want to hang something off a selected passage -- reacting to it
+// and discussing it -- and only one bar should ever appear. This owns the bar:
+// when it is created, when it moves, when it goes away, and which block the
+// selection belongs to. Features contribute buttons and are told the anchor.
+//
+// Selection is the trigger rather than a permanent control on every paragraph,
+// because a control per paragraph would put several tab stops between a
+// keyboard reader and the next sentence, and a hover-only affordance would not
+// exist at all on a phone. Selecting text works with a mouse, a long-press,
+// and Shift+Arrow alike.
+(function () {
+  "use strict";
+
+  var SELECTION_MIN = 2;
+
+  var bar = null;
+  var contributors = [];
+  var current = null; // { anchor, text, block }
+
+  function ensureBar() {
+    if (bar) return bar;
+    bar = document.createElement("div");
+    bar.className = "reaction-bar";
+    bar.setAttribute("role", "group");
+    bar.setAttribute("aria-label", "For the selected passage");
+    bar.hidden = true;
+    // Parked at the end of the document until a selection moves it next to
+    // the passage it belongs to; see show().
+    document.body.appendChild(bar);
+    contributors.forEach(function (contributor) {
+      contributor.mounted = true;
+      bar.appendChild(contributor.button);
+    });
+    return bar;
+  }
+
+  function hide() {
+    if (bar) bar.hidden = true;
+    current = null;
+  }
+
+  function show() {
+    var selection = window.getSelection();
+    if (!selection || selection.isCollapsed || !selection.rangeCount) return hide();
+
+    var text = selection.toString().trim();
+    if (text.length < SELECTION_MIN) return hide();
+
+    var range = selection.getRangeAt(0);
+    var node = range.commonAncestorContainer;
+    if (node.nodeType === Node.TEXT_NODE) node = node.parentNode;
+    var block = node && node.closest ? node.closest("[data-anchor]") : null;
+    if (!block || !block.closest("article main")) return hide();
+
+    ensureBar();
+    current = { anchor: block.dataset.anchor, text: text, block: block };
+    bar.dataset.reactionAnchor = current.anchor;
+    contributors.forEach(function (contributor) {
+      if (contributor.onShow) contributor.onShow(current);
+    });
+
+    // Sit the bar immediately after the passage in the document, so Tab from
+    // the passage reaches it rather than sending the reader to the end of the
+    // page. It stays absolutely positioned in page coordinates: neither the
+    // block nor its parent establishes a containing block, so moving it does
+    // not change where it lands.
+    if (bar.previousElementSibling !== block) block.after(bar);
+
+    var rect = range.getBoundingClientRect();
+    bar.hidden = false;
+    var width = bar.offsetWidth;
+    var left = rect.left + rect.width / 2 - width / 2 + window.scrollX;
+    left = Math.max(8, Math.min(left, window.innerWidth - width - 8));
+    bar.style.left = left + "px";
+    bar.style.top = rect.top + window.scrollY - bar.offsetHeight - 8 + "px";
+  }
+
+  /**
+   * Adds a button to the bar. `onActivate` is called with the current
+   * selection, `onShow` before the bar appears so the button can update
+   * itself. Buttons appear in registration order.
+   */
+  function register(options) {
+    var button = options.button;
+    button.addEventListener("mousedown", function (event) {
+      // Keep the selection alive through the click.
+      event.preventDefault();
+    });
+    button.addEventListener("click", function () {
+      if (current && options.onActivate) options.onActivate(current, button);
+    });
+    var contributor = { button: button, onShow: options.onShow, mounted: false };
+    contributors.push(contributor);
+    if (bar) {
+      contributor.mounted = true;
+      bar.appendChild(button);
+    }
+  }
+
+  function start() {
+    var update = function (event) {
+      if (event && event.target && event.target.closest &&
+          event.target.closest(".reaction-bar")) {
+        return; // a press on the bar itself, not a new selection
+      }
+      show();
+    };
+    document.addEventListener("mouseup", update);
+    document.addEventListener("keyup", function (event) {
+      var key = event.key || "";
+      if (key === "Shift" || key.indexOf("Arrow") === 0) update();
+    });
+    document.addEventListener("selectionchange", function () {
+      var selection = window.getSelection();
+      if (!selection || selection.isCollapsed) hide();
+    });
+    // Escape dismisses it; scrolling does not need to, since the bar is
+    // positioned in page coordinates and travels with the passage.
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") hide();
+    });
+  }
+
+  window.BlogSelectionBar = {
+    register: register,
+    hide: hide,
+    current: function () {
+      return current;
+    },
+  };
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", start);
+  } else {
+    start();
+  }
+})();
 // Reader reactions.
 //
 // Three marks against the post, and -- when the reader selects a passage --
@@ -14,7 +153,6 @@
   "use strict";
 
   var VISITOR_KEY = "blog.reactions.visitor";
-  var SELECTION_MIN = 2;
 
   // Don't re-read for a reader who merely alt-tabbed and came straight back.
   var REFRESH_AFTER_MS = 20000;
@@ -95,8 +233,6 @@
     this.kinds = this.readKinds();
     this.totals = {};
     this.mine = {};
-    this.bar = null;
-    this.barAnchor = null;
   }
 
   Reactions.prototype.readKinds = function () {
@@ -217,13 +353,12 @@
 
   // ------------------------------------------------------- selection bar
 
-  Reactions.prototype.buildBar = function () {
+  // The bar itself belongs to content/scripts/selection-bar.js, which both
+  // this and the comment script hang buttons off so a selection only ever
+  // raises one. Here we contribute the three marks.
+  Reactions.prototype.registerMarks = function () {
     var self = this;
-    var bar = document.createElement("div");
-    bar.className = "reaction-bar";
-    bar.setAttribute("role", "group");
-    bar.setAttribute("aria-label", "React to the selected passage");
-    bar.hidden = true;
+    if (!window.BlogSelectionBar) return;
 
     this.kinds.forEach(function (entry) {
       var button = document.createElement("button");
@@ -249,66 +384,17 @@
       count.hidden = true;
       button.appendChild(count);
 
-      button.addEventListener("mousedown", function (event) {
-        // Keep the selection alive through the click.
-        event.preventDefault();
+      window.BlogSelectionBar.register({
+        button: button,
+        onShow: function () {
+          // The bar carries the anchor, so paint() can fill these in.
+          self.paint();
+        },
+        onActivate: function (selection) {
+          self.toggle(selection.anchor, entry.kind, button);
+        },
       });
-      button.addEventListener("click", function () {
-        if (self.barAnchor) self.toggle(self.barAnchor, entry.kind, button);
-      });
-      bar.appendChild(button);
     });
-
-    // Parked at the end of the document until a selection moves it next to
-    // the passage it belongs to; see showBarForSelection.
-    document.body.appendChild(bar);
-    return bar;
-  };
-
-  Reactions.prototype.hideBar = function () {
-    if (this.bar) this.bar.hidden = true;
-    this.barAnchor = null;
-  };
-
-  Reactions.prototype.showBarForSelection = function () {
-    var selection = window.getSelection();
-    if (!selection || selection.isCollapsed || !selection.rangeCount) {
-      return this.hideBar();
-    }
-    if (selection.toString().trim().length < SELECTION_MIN) {
-      return this.hideBar();
-    }
-
-    var range = selection.getRangeAt(0);
-    var node = range.commonAncestorContainer;
-    if (node.nodeType === Node.TEXT_NODE) node = node.parentNode;
-    var block = node && node.closest ? node.closest("[data-anchor]") : null;
-    if (!block || !block.closest("article main")) return this.hideBar();
-
-    if (!this.bar) this.bar = this.buildBar();
-    this.barAnchor = block.dataset.anchor;
-
-    // Sit the bar immediately after the passage in the document, so Tab from
-    // the passage reaches it rather than sending the reader to the end of the
-    // page. It stays absolutely positioned in page coordinates: neither the
-    // block nor its parent establishes a containing block, so moving it does
-    // not change where it lands.
-    if (this.bar.previousElementSibling !== block) {
-      block.after(this.bar);
-    }
-
-    // Wrap the bar in a holder so `data-reaction-anchor` drives paint().
-    this.bar.dataset.reactionAnchor = this.barAnchor;
-    this.paint();
-
-    var rect = range.getBoundingClientRect();
-    this.bar.hidden = false;
-    var width = this.bar.offsetWidth;
-    var left = rect.left + rect.width / 2 - width / 2 + window.scrollX;
-    left = Math.max(8, Math.min(left, window.innerWidth - width - 8));
-    this.bar.style.left = left + "px";
-    this.bar.style.top =
-      rect.top + window.scrollY - this.bar.offsetHeight - 8 + "px";
   };
 
   // ------------------------------------------------------------------ init
@@ -323,29 +409,7 @@
       });
     });
 
-    if (this.perParagraph) {
-      var update = function (event) {
-        if (event && event.target && event.target.closest &&
-            event.target.closest(".reaction-bar")) {
-          return; // a press on the bar itself, not a new selection
-        }
-        self.showBarForSelection();
-      };
-      document.addEventListener("mouseup", update);
-      document.addEventListener("keyup", function (event) {
-        var key = event.key || "";
-        if (key === "Shift" || key.indexOf("Arrow") === 0) update();
-      });
-      document.addEventListener("selectionchange", function () {
-        var selection = window.getSelection();
-        if (!selection || selection.isCollapsed) self.hideBar();
-      });
-      // Escape dismisses it; scrolling does not need to, since the bar is
-      // positioned in page coordinates and travels with the passage.
-      document.addEventListener("keydown", function (event) {
-        if (event.key === "Escape") self.hideBar();
-      });
-    }
+    if (this.perParagraph) this.registerMarks();
 
     var refresh = function () {
       self.api

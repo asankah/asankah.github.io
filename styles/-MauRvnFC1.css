@@ -1,26 +1,30 @@
-main menu {
-  margin: 0;
-  padding: 0;
+.socials {
+  display: flex;
+  flex-direction: horizontal;
+  justify-content: center;
+  column-gap: 2em;
 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  margin-top: 2em;
+  margin-bottom: 1em;
+
+  * {
+    display: block;
   }
 
-  li {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--half);
-    padding: var(--space-2) 0;
-    border-bottom: 1px solid var(--border-color);
+  img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.8;
   }
 
-  .post-count {
-    font-size: var(--font-size-small);
-    color: var(--dimmed-text-color);
-    font-feature-settings: "tnum" 1;
+  a:hover img {
+    opacity: 1;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .socials img {
+    filter: invert(100%);
   }
 }
 @charset "UTF-8";
@@ -2471,6 +2475,65 @@ body {
   .comment-likes {
     margin: var(--space-1) 0 0;
   }
+  .comment-passage {
+    margin-bottom: var(--leading);
+    padding-left: var(--half);
+    border-left: 2px solid var(--accent-color);
+  }
+  .comment-passage-quote {
+    font-family: "Lora", Georgia, Cambria, "Times New Roman", Times, serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-aside);
+    line-height: 1.5;
+    color: var(--muted-text-color);
+    margin: 0 0 var(--space-2);
+  }
+  .comment-passage-quote a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .comment-passage-quote a:hover {
+    color: var(--accent-deep-color);
+    text-decoration: underline;
+  }
+  .comment-passage-gone {
+    font-family: "Lora", Georgia, Cambria, "Times New Roman", Times, serif;
+    font-optical-sizing: auto;
+    font-size: var(--font-size-kicker);
+    font-weight: var(--font-weight-normal);
+    font-style: normal;
+    line-height: var(--leading);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-feature-settings: "tnum" 1;
+    color: var(--accent-deep-color);
+    font-style: normal;
+    color: var(--dimmed-text-color);
+  }
+  .passage-comment-mark {
+    font-family: "Lora", Georgia, Cambria, "Times New Roman", Times, serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-small);
+    line-height: 1.5;
+    position: absolute;
+    right: calc(100% + var(--space-4));
+    top: var(--leading);
+    white-space: nowrap;
+    text-decoration: none;
+    color: var(--dimmed-text-color);
+  }
+  .passage-comment-mark:hover {
+    color: var(--accent-deep-color);
+  }
+  @media (width < 74rem) {
+    .passage-comment-mark {
+      display: none;
+    }
+  }
   .comments-reply {
     font-family: "Lora", Georgia, Cambria, "Times New Roman", Times, serif;
     font-optical-sizing: auto;
@@ -2708,14 +2771,14 @@ nav.top a {
   white-space: nowrap;
 }
 nav.top a:hover, nav.top a[aria-current=page] {
-  color: var(--accent-color);
+  color: var(--accent-deep-color);
 }
 nav.top h1 a {
   font-size: inherit;
   color: inherit;
 }
 nav.top h1 a:hover {
-  color: var(--accent-color);
+  color: var(--accent-deep-color);
 }
 @media (width < 720px) {
   nav.top h1 {
@@ -2787,7 +2850,8 @@ menu.tags li {
   text-decoration: none;
 }
 .tag:not(.katex-html > .tag) a:hover {
-  color: var(--accent-color);
+  color: var(--accent-deep-color);
+  text-decoration: underline;
 }
 .tag:not(.katex-html > .tag):has([aria-current=page]) {
   background-color: var(--tag-current-background-color);
@@ -2902,7 +2966,8 @@ main > .post-summary:first-child {
   text-decoration: none;
 }
 .post-summary .more a:hover {
-  color: var(--accent-color);
+  color: var(--accent-deep-color);
+  text-decoration: underline;
 }
 .post-summary .summary-row {
   display: flex;
@@ -2991,7 +3056,7 @@ nav a {
   text-decoration: none;
 }
 nav a:hover {
-  color: var(--accent-color);
+  color: var(--accent-deep-color);
 }
 nav .disabled,
 nav .diabled {
