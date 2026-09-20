@@ -2343,6 +2343,30 @@ body {
     border-color: var(--border-color);
     cursor: default;
   }
+  .comments-hide {
+    font-family: "Lora", Georgia, Cambria, "Times New Roman", Times, serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-caption);
+    line-height: 1.5;
+    display: inline-block;
+    margin-bottom: var(--leading);
+    margin-left: var(--space-2);
+    padding: var(--space-1) var(--space-4);
+    color: var(--dimmed-text-color);
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+  }
+  .comments-hide[hidden] {
+    display: none;
+  }
+  .comments-hide:hover {
+    color: var(--text-color);
+    border-color: var(--border-strong-color);
+  }
   .comments-count,
   .comments-message {
     font-family: "Lora", Georgia, Cambria, "Times New Roman", Times, serif;

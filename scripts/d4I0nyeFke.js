@@ -412,6 +412,83 @@
 
   var POST_COLLECTION = "app.bsky.feed.post";
 
+  // ------------------------------------------------------------- memory
+
+  // Opening the comments on a post is a standing preference, not a one-off:
+  // a reader who asked once gets them opened on the way back, with the last
+  // thread they saw already on screen while a fresh copy is fetched.
+  //
+  // Only threads this reader has explicitly opened are here, one entry per
+  // post, in this browser alone. "Hide comments" forgets the post again, so
+  // the preference stays revocable rather than being a one-way door.
+  var MEMORY_KEY = "blog.comments.opened";
+  var MEMORY_MAX = 20; // posts remembered, newest first
+  // Per thread. A real thread is a few KB; this is a ceiling for a pathological
+  // one, kept low because localStorage is shared with everything else the
+  // reader's browser keeps for this origin.
+  var CACHE_MAX_BYTES = 64 * 1024;
+  var CACHE_MAX_AGE_MS = 14 * 24 * 60 * 60 * 1000;
+
+  function readMemory() {
+    try {
+      var raw = window.localStorage.getItem(MEMORY_KEY);
+      var parsed = raw ? JSON.parse(raw) : null;
+      return parsed && typeof parsed === "object" ? parsed : {};
+    } catch (error) {
+      return {};
+    }
+  }
+
+  function writeMemory(memory) {
+    // Newest first, capped, so one reader's history cannot grow without bound.
+    var keys = Object.keys(memory).sort(function (a, b) {
+      return (memory[b].at || 0) - (memory[a].at || 0);
+    });
+    var kept = {};
+    keys.slice(0, MEMORY_MAX).forEach(function (key) {
+      kept[key] = memory[key];
+    });
+    try {
+      window.localStorage.setItem(MEMORY_KEY, JSON.stringify(kept));
+    } catch (error) {
+      // Quota, a private window, blocked site data: the feature is a
+      // convenience, so losing it changes nothing else about the page.
+    }
+  }
+
+  /** Records that this reader opened the thread, and caches it if it is small. */
+  function remember(atUri, payload) {
+    if (!atUri) return;
+    var memory = readMemory();
+    var entry = { at: Date.now() };
+    try {
+      var serialized = JSON.stringify(payload);
+      // A very long thread is remembered as a preference but not cached; the
+      // next visit opens it and fetches, rather than filling up storage.
+      if (serialized.length <= CACHE_MAX_BYTES) entry.payload = payload;
+    } catch (error) {
+      /* unserializable: keep the preference, drop the cache */
+    }
+    memory[atUri] = entry;
+    writeMemory(memory);
+  }
+
+  function forget(atUri) {
+    var memory = readMemory();
+    if (!(atUri in memory)) return;
+    delete memory[atUri];
+    writeMemory(memory);
+  }
+
+  /** The remembered entry for a post, or null if it is absent or too old. */
+  function recall(atUri) {
+    if (!atUri) return null;
+    var entry = readMemory()[atUri];
+    if (!entry) return null;
+    if (Date.now() - (entry.at || 0) > CACHE_MAX_AGE_MS) return null;
+    return entry;
+  }
+
   // ---------------------------------------------------------------- helpers
 
   // `https://bsky.app/profile/<handle-or-did>/post/<rkey>` -> the AT-URI the
@@ -710,50 +787,22 @@
     };
   }
 
-  async function load(section) {
+  /**
+   * Turns a getPostThread payload into the rendered thread. Every moderation
+   * gate is re-applied here rather than at fetch time, so a payload replayed
+   * from cache is filtered by the denylist and label list built into *this*
+   * page load, not the one it was saved under.
+   */
+  function render(section, payload, options) {
     var thread = section.querySelector(".comments-thread");
     var context = readConfig(section);
-    var atUri = toAtUri(section.dataset.bskyThread);
-
-    // A re-check keeps the comments already on screen: replacing them with a
-    // placeholder would flash, and replacing them with an error would lose
-    // readable content because a later request failed.
-    var reloading = section.dataset.bskyLoaded === "1";
-
-    thread.hidden = false;
-    if (!reloading) renderMessage(thread, "Loading comments…");
-
-    function fail(message) {
-      if (!reloading) renderMessage(thread, message);
-    }
-
-    if (!atUri) {
-      fail("This post’s discussion link is malformed.");
-      return;
-    }
-
-    var endpoint =
-      context.service +
-      "/xrpc/app.bsky.feed.getPostThread?uri=" +
-      encodeURIComponent(atUri) +
-      "&depth=" +
-      context.maxDepth +
-      "&parentHeight=0";
-
-    var payload;
-    try {
-      var response = await fetch(endpoint, { headers: { Accept: "*/*" } });
-      if (!response.ok) throw new Error("HTTP " + response.status);
-      payload = await response.json();
-    } catch (error) {
-      fail("Couldn’t reach Bluesky just now. The thread is still readable there.");
-      return;
-    }
+    var reloading = !!(options && options.reloading);
+    var fail = (options && options.fail) || function () {};
 
     var root = payload && payload.thread;
     if (!root || !root.post) {
       fail("That Bluesky thread is no longer available.");
-      return;
+      return false;
     }
 
     // The author's own "hide reply" decisions travel with the root post. This
@@ -797,6 +846,53 @@
     thread.setAttribute("tabindex", "-1");
     if (!reloading) thread.focus({ preventScroll: true });
     section.dataset.bskyLoaded = "1";
+    return true;
+  }
+
+  async function load(section) {
+    var thread = section.querySelector(".comments-thread");
+    var context = readConfig(section);
+    var atUri = toAtUri(section.dataset.bskyThread);
+
+    // A re-check keeps the comments already on screen: replacing them with a
+    // placeholder would flash, and replacing them with an error would lose
+    // readable content because a later request failed. Replaying from cache
+    // counts as already on screen for the same reason.
+    var reloading = section.dataset.bskyLoaded === "1";
+
+    thread.hidden = false;
+    if (!reloading) renderMessage(thread, "Loading comments…");
+
+    function fail(message) {
+      if (!reloading) renderMessage(thread, message);
+    }
+
+    if (!atUri) {
+      fail("This post’s discussion link is malformed.");
+      return;
+    }
+
+    var endpoint =
+      context.service +
+      "/xrpc/app.bsky.feed.getPostThread?uri=" +
+      encodeURIComponent(atUri) +
+      "&depth=" +
+      context.maxDepth +
+      "&parentHeight=0";
+
+    var payload;
+    try {
+      var response = await fetch(endpoint, { headers: { Accept: "*/*" } });
+      if (!response.ok) throw new Error("HTTP " + response.status);
+      payload = await response.json();
+    } catch (error) {
+      fail("Couldn’t reach Bluesky just now. The thread is still readable there.");
+      return;
+    }
+
+    if (render(section, payload, { reloading: reloading, fail: fail })) {
+      remember(atUri, payload);
+    }
   }
 
   var LOAD_LABEL = "Load comments from Bluesky";
@@ -810,7 +906,17 @@
       function (section) {
         var button = section.querySelector(".comments-load");
         if (!button) return;
+        var atUri = toAtUri(section.dataset.bskyThread);
+        var thread = section.querySelector(".comments-thread");
+        var hide = section.querySelector(".comments-hide");
+
         button.hidden = false; // only now is it something that works
+
+        function relabel() {
+          var loaded = section.dataset.bskyLoaded === "1";
+          button.textContent = loaded ? REFRESH_LABEL : LOAD_LABEL;
+          if (hide) hide.hidden = !loaded;
+        }
 
         function fetchThread() {
           var loaded = section.dataset.bskyLoaded === "1";
@@ -818,17 +924,41 @@
           button.textContent = loaded ? "Checking…" : "Loading…";
           return load(section).finally(function () {
             button.disabled = false;
-            button.textContent =
-              section.dataset.bskyLoaded === "1" ? REFRESH_LABEL : LOAD_LABEL;
+            relabel();
           });
         }
 
         button.addEventListener("click", fetchThread);
 
+        // Collapsing is also how a reader takes the standing preference back:
+        // the post is forgotten, so the next visit is quiet again.
+        if (hide) {
+          hide.addEventListener("click", function () {
+            forget(atUri);
+            section.dataset.bskyLoaded = "";
+            thread.replaceChildren();
+            thread.hidden = true;
+            var blurb = section.querySelectorAll(".comments-intro > p");
+            for (var i = 0; i < blurb.length; i++) blurb[i].hidden = false;
+            relabel();
+            button.focus();
+          });
+        }
+
+        // A reader who opened this thread before gets it opened again, with
+        // the copy they last saw on screen immediately and a fresh one on the
+        // way. Nothing here runs for a post they have not opened.
+        var seen = recall(atUri);
+        if (seen) {
+          if (seen.payload) render(section, seen.payload, { reloading: false });
+          relabel();
+          fetchThread();
+        }
+
         // The path worth catching: a reader follows "Reply on Bluesky",
         // replies, and comes back to this tab expecting to see it. Only ever
-        // after they have already asked for the thread once -- before that,
-        // this page still makes no request to Bluesky at all.
+        // after they have asked for the thread once -- before that, this page
+        // still makes no request to Bluesky at all.
         var hiddenSince = 0;
         document.addEventListener("visibilitychange", function () {
           if (document.hidden) {
